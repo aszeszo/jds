@@ -1,0 +1,38 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWbrasero-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWbrasero-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWbrasero-devel.copyright
+d none include 0755 root bin
+d none include/brasero 0755 root bin
+f none include/brasero/brasero-drive-selection.h=usr/include/brasero/brasero-drive-selection.h 0644 root bin
+f none include/brasero/brasero-drive.h=usr/include/brasero/brasero-drive.h 0644 root bin
+f none include/brasero/brasero-media.h=usr/include/brasero/brasero-media.h 0644 root bin
+f none include/brasero/brasero-medium-monitor.h=usr/include/brasero/brasero-medium-monitor.h 0644 root bin
+f none include/brasero/brasero-medium-selection.h=usr/include/brasero/brasero-medium-selection.h 0644 root bin
+f none include/brasero/brasero-medium.h=usr/include/brasero/brasero-medium.h 0644 root bin
+f none include/brasero/brasero-units.h=usr/include/brasero/brasero-units.h 0644 root bin
+f none include/brasero/brasero-volume.h=usr/include/brasero/brasero-volume.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libbrasero-media.pc=usr/lib/pkgconfig/libbrasero-media.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/brasero 0755 root bin
+f none share/gtk-doc/html/brasero/BraseroDrive.html=usr/share/gtk-doc/html/brasero/BraseroDrive.html 0644 root bin
+f none share/gtk-doc/html/brasero/BraseroDriveSelection.html=usr/share/gtk-doc/html/brasero/BraseroDriveSelection.html 0644 root bin
+f none share/gtk-doc/html/brasero/BraseroMedium.html=usr/share/gtk-doc/html/brasero/BraseroMedium.html 0644 root bin
+f none share/gtk-doc/html/brasero/BraseroMediumMonitor.html=usr/share/gtk-doc/html/brasero/BraseroMediumMonitor.html 0644 root bin
+f none share/gtk-doc/html/brasero/BraseroMediumSelection.html=usr/share/gtk-doc/html/brasero/BraseroMediumSelection.html 0644 root bin
+f none share/gtk-doc/html/brasero/BraseroVolume.html=usr/share/gtk-doc/html/brasero/BraseroVolume.html 0644 root bin
+f none share/gtk-doc/html/brasero/brasero-brasero-media.html=usr/share/gtk-doc/html/brasero/brasero-brasero-media.html 0644 root bin
+f none share/gtk-doc/html/brasero/brasero-brasero-units.html=usr/share/gtk-doc/html/brasero/brasero-brasero-units.html 0644 root bin
+f none share/gtk-doc/html/brasero/brasero.devhelp=usr/share/gtk-doc/html/brasero/brasero.devhelp 0644 root bin
+f none share/gtk-doc/html/brasero/brasero.devhelp2=usr/share/gtk-doc/html/brasero/brasero.devhelp2 0644 root bin
+f none share/gtk-doc/html/brasero/ch01.html=usr/share/gtk-doc/html/brasero/ch01.html 0644 root bin
+f none share/gtk-doc/html/brasero/home.png=usr/share/gtk-doc/html/brasero/home.png 0644 root bin
+f none share/gtk-doc/html/brasero/index.html=usr/share/gtk-doc/html/brasero/index.html 0644 root bin
+f none share/gtk-doc/html/brasero/index.sgml=usr/share/gtk-doc/html/brasero/index.sgml 0644 root bin
+f none share/gtk-doc/html/brasero/left.png=usr/share/gtk-doc/html/brasero/left.png 0644 root bin
+f none share/gtk-doc/html/brasero/right.png=usr/share/gtk-doc/html/brasero/right.png 0644 root bin
+f none share/gtk-doc/html/brasero/style.css=usr/share/gtk-doc/html/brasero/style.css 0644 root bin
+f none share/gtk-doc/html/brasero/up.png=usr/share/gtk-doc/html/brasero/up.png 0644 root bin

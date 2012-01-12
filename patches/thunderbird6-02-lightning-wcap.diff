@@ -1,0 +1,110 @@
+
+# HG changeset patch
+# User Philipp Kewisch <mozilla@kewis.ch>
+# Date 1313582520 -7200
+# Node ID 8a69d7c008eb14a33501bcba0a102d1af09e63cc
+# Parent  06fdb5abb9bd3a2e56f6a1ddf13c43f99091e75d
+Fix bug 679669 - Update calendar for nsIUnicharStreamLoader changes. r=mmecca,a=philipp
+
+diff --git a/calendar/base/content/calendar-dnd-listener.js b/calendar/base/content/calendar-dnd-listener.js
+--- a/calendar/base/content/calendar-dnd-listener.js
++++ b/calendar/base/content/calendar-dnd-listener.js
+@@ -325,28 +325,21 @@ calDNDBaseObserver.prototype = {
+                             charset = channel.contentCharset;
+                         }
+                         if (!charset || charset.length == 0) {
+                             charset = "UTF-8";
+                         }
+                         return charset;
+                     },
+ 
+-                    onStreamComplete: function(loader, context, status, unicharData) {
+-                        if (unicharData) {
+-                            var str = "";
+-                            var str_ = {};
+-                            while (unicharData.readString(-1, str_)) {
+-                                str += str_.value;
+-                            }
+-                            var parser = Components.classes["@mozilla.org/calendar/ics-parser;1"]
+-                                         .createInstance(Components.interfaces.calIIcsParser);
+-                            parser.parseString(str);
+-                            self.onDropItems(parser.getItems({}).concat(parser.getParentlessItems({})));
+-                        }
++                    onStreamComplete: function(loader, context, status, unicharString) {
++                        var parser = Components.classes["@mozilla.org/calendar/ics-parser;1"]
++                                     .createInstance(Components.interfaces.calIIcsParser);
++                        parser.parseString(unicharString);
++                        self.onDropItems(parser.getItems({}).concat(parser.getParentlessItems({})));
+                     }
+                 };
+ 
+                 try {
+                     loader.init(listener, Components.interfaces.nsIUnicharStreamLoader.DEFAULT_SEGMENT_SIZE);
+                     channel.asyncOpen(loader, null);
+                 } catch(e) {
+                     Components.utils.reportError(e)
+diff --git a/calendar/providers/wcap/calWcapRequest.js b/calendar/providers/wcap/calWcapRequest.js
+--- a/calendar/providers/wcap/calWcapRequest.js
++++ b/calendar/providers/wcap/calWcapRequest.js
+@@ -306,55 +306,43 @@ calWcapNetworkRequest.prototype = {
+     },
+ 
+     /**
+      * @see nsIUnicharStreamLoaderObserver
+      */
+     onStreamComplete: function calWcapNetworkRequest_onStreamComplete(aLoader,
+                                                                       aContext,
+                                                                       aStatus,
+-                                                                      /* nsIUnicharInputStream */ unicharData) {
++                                                                      unicharData) {
+         this.m_loader = null;
+ 
+         if (LOG_LEVEL > 0 && this.m_bLogging) {
+             log("status: " + errorToString(aStatus), this);
+         }
+         if (aStatus != Components.results.NS_OK) {
+             this.execRespFunc(aStatus);
+             return;
+         }
+ 
+-        var result = "";
+-        try {
+-            if (unicharData) {
+-                var str_ = {};
+-                while (unicharData.readString(-1, str_)) {
+-                    result += str_.value;
+-                }
+-            }
+-            if (LOG_LEVEL > 2 && this.m_bLogging) {
+-                log("contentCharset = " + aLoader.charset + "\nrequest result:\n" + result, this);
+-            }
+-        } catch (exc) {
+-            this.execRespFunc(exc);
+-            return;
++        if (LOG_LEVEL > 2 && this.m_bLogging) {
++            log("contentCharset = " + aLoader.charset + "\nrequest result:\n" + unicharData, this);
+         }
+ 
+         var httpChannel = aLoader.channel.QueryInterface(Components.interfaces.nsIHttpChannel);
+         switch (httpChannel.responseStatus / 100) {
+             case 2: /* 2xx codes */
+                 // Everything worked out, we are done
+-                this.execRespFunc(aStatus, result);
++                this.execRespFunc(aStatus, unicharData);
+                 break;
+             default: {
+                 // Something else went wrong
+                 var error = ("A request Error Occurred. Status Code: " +
+                              httpChannel.responseStatus + " " +
+                              httpChannel.responseStatusText + " Body: " +
+-                             result);
++                             unicharData);
+                 this.execRespFunc(Components.Exception(error, NS_BINDING_FAILED));
+                 break;
+             }
+         }
+     },
+ 
+     toString: function calWcapNetworkRequest_toString() {
+         var ret = ("calWcapNetworkRequest id=" + this.id +
+

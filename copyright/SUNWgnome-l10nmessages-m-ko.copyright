@@ -1,0 +1,1397 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  Korean translation of tracker.
+  Copyright (C) 2007 THE tracker'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the tracker package.
+  Namhyung Kim <namhyung@gmail.com>, 2007.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  Korean translation for dia
+  Copyright (C) 2000 Free Software Foundation, Inc.
+  Young-Ho,Cha <ganadist@dacome.co.kr>, 2000,
+  Jin-Hwan, Jeong <yongdoria@gmail.con>, 2008, 2009.2.
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  dasher Korean message translation
+  This file is distributed under the same license as dasher package.
+  Changwoo Ryu <cwryu@debian.org> 2003-2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 "translator-credits"에 추가하세요.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  gok Korean translation.
+  This file is distributed under the same license as the gok package.
+  Changwoo Ryu <cwryu@debian.org>, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  at-spi
+  This file is distributed under the same license as the at-spi package.
+  Changwoo Ryu <cwryu@debian.org>, 2003, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  mousetweaks Korean translation
+  This file is distributed under the same license as the mousetweaks package.
+ 
+  based on gnome-control-center translation,
+  Young-Ho Cha <ganadist@chollian.net>, 2002, 2006.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2006, 2007, 2008, 2009.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  This file is distributed under the same license as the orca package.
+  Changwoo Ryu <cwryu@debian.org>, 2006, 2007, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  Quick Lounge korean translation
+  Copyright (C) 2002 Free Software Foundation, Inc.
+  Young-Ho, Cha <ganadist@chollian.net>, 2002
+  Namhyung Kim <namhyung@gmail.com>, 2007.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  gnome-netstatus Korean message translation
+  This file is distributed under the same license as the gnome-netstatus package.
+  Young-Ho Cha <ganadist@gmail.com>, 2004.
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  ko.po for File Roller.
+  This file is distributed under the same license as the file-rollerpackage.
+ 
+  Kang Joeng-Hee <Keizi@mail.co.kr>, 2001.
+  Young-Ho Cha <ganadist@mizi.com>, 2003, 2006, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 2003, 2004, 2006, 2007, 2008, 2009.
+ 
+  새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  gcaltool Korean message translation
+  This file is distributed under the same license as the gcalctool package.
+  Young-Ho, Cha <ganadist@gmail.com>, 2003, 2005.
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+  새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  This file is distributed under the same license as the brasero package.
+  Changwoo Ryu <cwryu@debian.org>, 2009.
+ 
+  새로 번역하시는 분은 아래 "translator-credits"에 추가하세요.
+ 
+  주의:
+  - 이 프로그램의 이름인 Brasero는 "브라세로"로 음역.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  sound-juicer korean translation.
+  This file is distributed under the same license as the sound-juicer package.
+ 
+  Young-Ho Cha <ganadist@gmail.com>, 2005, 2006, 2008
+  Changwoo Ryu <cwryu@debian.org>, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 "translator-credits"에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  Korean messages for libbonobo
+  Chideok Hwang <hwang@mizi.co.kr>, 2000.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  Korean messages for gconf-editor
+  This file is distributed under the same license as the gconf-editor package.
+ 
+  Young-Ho Cha <ganadist@mizi.com>, 2003.
+  Changwoo Ryu <cwryu@debian.org>, 2002, 2006, 2007, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  gconf  Korean message translation
+  This file is distributed under the same license as the gconf package.
+  Chideok Hwang <hwang@mizi.co.kr>, 2000.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  bug-buddy ko.po
+  This file is distributed under the same license as the bug-buddy package.
+ 
+  Chideok Hwang <hwang@mizi.co.kr>, 2000, 2001.
+  Nam SungHyun <namsh@kldp.org>, 2001
+  Young-Ho, Cha <ganadist@mizi.com>, 2002, 2005
+  Changwoo Ryu <cwryu@debian.org>, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  Korean translation for the gDesklets
+  Copyright (C) 2003 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gDesklets package.
+  DongCheon Park <dcpark@kaist.ac.kr>, 2003
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  gnome-control-center Korean message translation
+  This file is distributed under the same license as the gnome-control-center package.
+  Young-Ho Cha <ganadist@chollian.net>, 2002, 2006.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2006, 2007, 2008, 2009.
+ 
+ 
+  새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  gnome-settings-daemon Korean translation
+  This file is distributed under the same license as the gnome-settings-daemon package.
+ 
+  Young-Ho Cha <ganadist@chollian.net>, 2002, 2006
+  Changwoo Ryu <cwryu@debian.org>, 2002-2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  zenity
+  This file is distributed under the same license as the zenity package.
+  Young-Ho, Cha <ganadist@mizi.com>, 2004.
+  Changwoo Ryu <ganadist@mizi.com>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  Korean messages for gdm
+  update by Young-Ho, Cha <ganadist@chollian.net>, 2001, 2006.
+  update by ChiDeok, Hwang <hwang@mizi.co.kr>, 2001.
+  Eunju Kim <eukim@redhat.com>, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 1999, 2002, 2004, 2006, 2007, 2008.
+ 
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  nautilus ko.po
+ 
+  Young-Ho Cha <ganadist@mizi.com>, 2000~2002, 2003, 2004, 2006~2008.
+  Eunju Kim <eukim@redhat.com>, 2007.
+  Namhyung Kim <namhyung@gmail.com>, 2008.
+  Changwoo Ryu <cwryu@debian.org>, 2002, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 "translator-credits"에 추가하세요.
+ 
+  주의:
+  - 이 프로그램의 이름인 Nautilus는 "노틸러스"로 음역.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+  Ning Harry Fu <harry.fu@sun.com>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  gtksourceview
+  This file is distributed under the same license as the gtksourceview package.
+ 
+  Changwoo Ryu <cwryu@debian.org>, 2003-2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  gtksourceview
+  Changwoo Ryu <cwryu@debian.org>, 2003-2006, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  yelp ko.po
+ 
+  Young-Ho, Cha <ganadist@chollian.net>, 2002, 2005, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  ghex ko.po
+  Changwoo Ryu <cwryu@debian.org>, 1998
+  Chideok, Hwang <hwang@mizi.co.kr> 2001.
+  Changwoo Ryu <cwryu@debian.org>, 2002
+  Namhyung Kim <namhyung@gmail.com>, 2007.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Pidgin Korean translation
+  Copyright (C) YYYY, Sang-hyun S <artsilly@kuls.korea.ac.kr>
+  Copyright (C) YYYY, A Ho-seok Lee <alee@debian.org>
+  Copyright (C) 2003, Kyeong-uk Son <hey@gnome.or.kr>
+  Copyright (C) 2007, sushizang <sushizang@empal.com>
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  Copyright (C) 1999 Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+  Sung-Hyun Nam <namsh@kldp.org>, 1999.
+  Dongsu Jang <iolo@hellocity.net>, 2004.
+  Choi, Ji-Hui <like.a.dust@gmail.com>, 2007.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  gThumb, best image tool for GNOME.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  Kang, JeongHee <Keizi@mail.co.kr>, 2001, 2002.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  eog ko.po
+  This file is distributed under the same license as the eog package.
+ 
+  Sung-Hyun Nam <namsh@kldp.org>, 1999
+  Young-Ho Cha <ganadist@chollian.net>, 2000,2001,2006
+  Changwoo Ryu  <cwryu@debian.org>, 2002-2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 "tranalstor-credits"에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  libgnome
+  This file is distributed under the same license as the libgnome package.
+ 
+  Young-Ho, Cha <ganadist@chollian.net>, 2002.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  Korean messages for libbonoboui
+  Changwoo Ryu <cwryu@debian.org>, 2002-2006, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  gnome-keyring Korean trnaslation
+  This file is distributed under the same license as the gnome-keyring package.
+ 
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2006, 2007, 2008, 2009.
+  Young-Ho Cha <ganadist@gmail.com>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  gnome-media ko.po
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Updated by Young-Ho, Cha <ganadist@chollian.net>, 2000, 2006, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 1998, 2002, 2003, 2004, 2006, 2008, 2009.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gst-plugin-good package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  Young-Ho, Cha <ganadist@mizi.com>, 2002, 2003, 2004.
+  Changwoo Ryu <cwryu@debian.org>, 2004.
+  Namhyung Kim <namhyung@gmail.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  Korean translation for Totem
+  Jang,Jae-Man <jacojang@korea.com>, 2003.
+  Young-Ho Cha <ganadist@gmail.com>, 2006
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+  새로 번역하신 분은 아래 "translator-credits"에 추가해 주세요.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  alacarte Korean translation
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  Changwoo Ryu <cwryu@debian.org>, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  gnome-panel
+  This file is distributed under the same license as the gnome-panel package
+ 
+  Sung-Hyun Nam <namsh@kldp.org>, 2000.
+  Young-Ho Cha <ganadist@chollian.net>, 2000, 2001, 2006, 2007.
+  Eunju Kim <eukim@redhat.com>, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 1998, 2002-2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  Korean translation of gnome-desktop
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Sung-Hyun Nam <namsh@kldp.org>, 2000.
+  Young-Ho Cha <ganadist@chollian.net>, 2000,2001,2003, 2007.
+  Eunju Kim <eukim@redhat.com>, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 1998, 2002, 2003, 2004, 2005, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  gnome-menus Korean message translation
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Sung-Hyun Nam <namsh@kldp.org>, 2000.
+  Young-Ho Cha <ganadist@chollian.net>, 2000,2001,2003, 2007.
+  Eunju Kim <eukim@redhat.com>, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 1998, 2002, 2003, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  libwnck
+  Young-Ho, Cha <ganadist@chollian.net>, 2002.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2005, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  evince korean translation
+  This file is distributed under the same license as the evince package.
+  Young-Ho Cha <ganadist at mizi dot com>, 2005
+  Changwoo Ryu <cwryu@debian.org>, 2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 translator-credits에 추가해 주세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  This file is distributed under the same license as the PACKAGE package.
+  Changwoo Ryu <cwryu@debian.org>, 2004.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  Korean translation for gnome-power-manager
+  This file is distributed under the same license as the gnome-power-manager package.
+  Copyright (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+  Changwoo Ryu <cwryu@debian.org>, 2006, 2007, 2008.
+ 
+ 
+  새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  vino korean translation
+  This file is distributed under the same license as the vino package.
+ 
+  Young-Ho Cha, <ganadist@mizi.com> 2004,2007
+  Changwoo Ryu <cwryu@debian.org> 2008, 2009.
+ 
+  새로 번역하신 분은 아래 "translator-credits"에 추가하세요.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  gnome-session Korean message translation
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Updated by Sung-Hyun Nam <namsh@kldp.org>, 2000
+  Updated by Young-Ho Cha <ganadist@chollian.net>, 2000,2001,2006,2007
+  Changwoo Ryu <cwryu@debian.org>, 1998,2002-2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  gnome-system-monitor Korean translation
+  This file is distributed under the same license as the gnome-system-monitor package.
+ 
+  Young-Ho, Cha <ganadist@chollian.net> 2002, 2006, 2007
+  Changwoo Ryu <cwryu@debian.org> 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  gnome system tools Korean Translation
+  Young-Ho, Cha <ganadist@chollian.net>, 2000, 2001, 2002, 2004.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+  yongzhe.zhao@sun.com
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  gnome-terminal korean translation
+  This file is distributed under the same license as the gnome-terminal package.
+  Young-ho, Cha <ganadist at mizi.com>, 2002-2003, 2007.
+  Changwoo Ryu <cwryu at debian.org>, 2003, 2007, 2009.
+ 
+  새로 번역하시는 분은 아래 "translator-credits"에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  gedit ko.po
+  This file is distributed under the same license as the gedit package.
+ 
+  Sung-Hyun Nam <namsh@lgic.co.kr>, 1998
+  Chideok Hwang <hwang@mizi.co.kr>, 2000, 2001
+  Young-Ho, Cha <ganadist@chollian.net>, 2000, 2002, 2007
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  gnome-backgrounds korean translation
+  Copyright (C) 2006 THE gnome-backgrounds' COPYRIGHT HOLDER
+  This file is distributed under the same license as the gnome-backgrounds package.
+  Young-Ho Cha <ganadist@gmail.com>, 2005-2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  gnome-themes korean translation
+  This file is distributed under the same license as the gnome-themes package.
+  Young-Ho, Cha <ganadist@mizi.com>, 2002
+  Changwoo Ryu <cwryu@debian.org>, 2008, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  Glade Korean messages
+  This file is distributed under the same license as the glade package.
+ 
+  Changwoo Ryu <cwryu@debian.org>, 2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  gnome-utils ko.po
+  This file is distributed under the same license as the gnome-util package.
+ 
+  update by Young-Ho, Cha <ganadist@chollian.net>, 2001
+  Changwoo Ryu <cwryu@debian.org>, 1998, 2002-2006, 2007, 2008, 2009.
+ 
+  새로 번역하시는 분은 아래 translator-credits에 추가하세요.
+ 
+  주의:
+  - Baobab은 "바오밥"으로 음역
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  gnome-vfs ko.po
+  This file is distributed under the same license as the gnome-vfs package.
+ 
+  Young-Ho Cha <ganadist@dacome.co.kr>, 2000.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2007, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  shared-mime-info korean translation (based on gnome-mime-data)
+  This file is distributed under the same license as the shared-mime-info package.
+  Young-Ho Cha <ganadist@gmail.com>, 2004-2008
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  gnome-mime-types ko.po
+  Young-Ho Cha <ganadist@dacome.co.kr>, 2000.
+  Changwoo Ryu <cwryu@debian.org>, 2002-2004.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  metacity korean translation
+  This file is distributed under the same license as the metacity package
+  Young-Ho, Cha <ganadist@chollian.net>, 2002, 2006.
+  Changwoo Ryu <cwryu@debian.org>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  seahorse Korean message translation
+  This file is distributed under the same license as the seahorse package.
+  Changwoo Ryu <cwryu@debian.org>, 2007, 2008, 2009.
+ 
+  새로 번역하는 분은 아래 "translator-credit"에 추가하세요.
+ 
+  주의:
+  - 이 프로그램의 이름인 Seahorse는 "시호스"로 음역.
+  - 보안 관련 용어가 많으므로 번역 용어 선택에 주의.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  Korean translation of xdg-user-dirs-gtk.
+  Copyright (C) 2007 THE xdg-user-dirs-gtk'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the xdg-user-dirs-gtk package.
+  Namhyung Kim <namhyung@gmail.com>, 2007.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Korean translation of xdg-user-dirs.
+  Copyright (C) 2007 Google, Inc.
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  translation of evolution to Korean
+  This file is distributed under the same license as the evolution package.
+  Sung-Hyun Nam, 2000.
+  ChiDeok Hwang <hwang@mizi.co.kr>, 2001.
+  Young-Ho Cha <ganadist@mizi.com>, 2000, 2002.
+  Eunju Kim <eukim@redhat.com>, 2007.
+  Changwoo Ryu <cwryu@debian.org>, 2003-2006, 2007, 2008, 2009.
+ 
+  참고:
+  - "Evolution"은 "에볼루션"으로 음역.
+  - "아무개 wrote:", "---Original Message---", "---Forwarded Message---"
+    식으로 메일의 본문 일부분을 차지하는 문자열의 번역은 사용자
+    UI만의 문제가 아니므로 생각해 볼 일이다. 현재는 번역되지 않았거나
+    소극적으로 번역되어 있다.
+ 
+  - 영어 문장 순서대로 쓰고 문장 중간중간에 입력창이나 콤보박스 따위를 넣은
+    식으로 번역하기 어려운 케이스가 많다. UI XML 파일이나 소스 코드에서 직접
+    확인하는 수밖에 없고, 장기적으로 원문을 바로잡아야 한다.
+ 
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  Korean translation of gtkhtml.
+  This file is distributed under the same license as the gtkhtml package.
+ 
+  Chideok Hwang <hwang@mizi.co.kr>, 2000, 2001.
+  Young-Ho, Cha <ganadist@chollian.net>, 2000, 2001, 2002.
+  Changwoo Ryu <cwryu@debian.org>, 2004-2006, 2007, 2008, 2009.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  evolution-exchange Korean translation
+  This file is distributed under the same license as the evolution-exchange package.
+ 
+  Changwoo Ryu <cwryu@debian.org>, 2004-2006, 2007, 2008, 2009.
+ 
+  참고:
+  - "Evolution"은 "에볼루션"으로 음역.
+  - MS에서 사용하는 이름은 MS의 한글 번역을 따른다. 단 영어로 표기하지는 않는다.
+    예를 들어 Outlook Web Access를 MS에서는 "Outlook 웹 서비스"라고 하고 있지만
+    "아웃룩 웹 서비스"라고 번역한다.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  evolution-data-server translation
+  This file is distributed under the same license as the evolution-data-server package.
+  Sung-Hyun Nam 2000.
+  ChiDeok Hwang <hwang@mizi.co.kr>, 2001.
+  Young-Ho Cha <ganadist@mizi.com>, 2000, 2002.
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  참고:
+  - "Evolution"은 "에볼루션"으로 음역.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  Changwoo Ryu <cwryu@debian.org>, 2004, 2005.
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of ko.po to
+  translation of ko.po to Korean
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+  Eunju Kim <eukim@redhat.com>, 2006, 2007.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

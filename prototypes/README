@@ -1,0 +1,6 @@
+The package prototypes in this directory are for reference only, they
+are not used during the build process.  You can use them to verify if
+the packages you build have the same contents as the official JDS builds.
+To do so, simply diff(1) your dynamically generated prototype found in
+$cbe_prefix/packages/PKGMAPS/proto/SUNWsome-package.proto with the one
+in the subdirectory matching your platform.

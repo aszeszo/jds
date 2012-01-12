@@ -1,0 +1,29 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcairo.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcairo.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcairo.copyright
+f none share/doc/SUNWcairo/cairo-1.8.10/AUTHORS=usr/share/doc/SUNWcairo/cairo-1.8.10/AUTHORS 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/COPYING.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/COPYING.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/COPYING-LGPL-2.1.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/COPYING-LGPL-2.1.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/COPYING-MPL-1.1.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/COPYING-MPL-1.1.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.0.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.0.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.2.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.2.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.4.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.4.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.6.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/ChangeLog.pre-1.6.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/NEWS.bz2=usr/share/doc/SUNWcairo/cairo-1.8.10/NEWS.bz2 0444 root bin
+f none share/doc/SUNWcairo/cairo-1.8.10/README=usr/share/doc/SUNWcairo/cairo-1.8.10/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libcairo.so=libcairo.so.2.10800.10
+s none lib/libcairo.so.2=libcairo.so.2.10800.10
+f none lib/libcairo.so.2.10800.10=usr/lib/libcairo.so.2.10800.10 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libcairo.so=libcairo.so.2.10800.10
+s none lib/sparcv9/libcairo.so.2=libcairo.so.2.10800.10
+f none lib/sparcv9/libcairo.so.2.10800.10=usr/lib/sparcv9/libcairo.so.2.10800.10 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWcairo 0755 root bin
+d none share/doc/SUNWcairo/cairo-1.8.10 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libcairo.3=usr/share/man/man3/libcairo.3 0644 root bin

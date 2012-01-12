@@ -1,0 +1,13 @@
+diff -urN devmgr.orig/src/devmgr-dialog.c devmgr.new/src/devmgr-dialog.c
+--- devmgr.orig/src/devmgr-dialog.c	2011-06-13 14:57:37.035522970 +0100
++++ devmgr.new/src/devmgr-dialog.c	2011-06-13 14:58:10.443713362 +0100
+@@ -918,7 +918,8 @@
+ }
+ 
+ void
+-workspace_changed_callback(WnckScreen *screen, gpointer data)
++workspace_changed_callback(WnckScreen *screen, WnckWorkspace *prev, 
++			   gpointer data)
+ {
+   char *zonename = get_zonename( screen );
+   gint value = GPOINTER_TO_INT(data);

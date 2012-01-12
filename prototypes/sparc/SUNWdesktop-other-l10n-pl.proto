@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-other-l10n-pl.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-other-l10n-pl.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-other-l10n-pl.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/pl 0755 root other
+d none share/locale/pl/LC_MESSAGES 0755 root other
+f none share/locale/pl/LC_MESSAGES/COPYING.desktop-other.gz=usr/share/locale/pl/LC_MESSAGES/COPYING.desktop-other.gz 0644 root other
+f none share/locale/pl/LC_MESSAGES/bluefish.mo=usr/share/locale/pl/LC_MESSAGES/bluefish.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/bluefish_plugin_about.mo=usr/share/locale/pl/LC_MESSAGES/bluefish_plugin_about.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/bluefish_plugin_charmap.mo=usr/share/locale/pl/LC_MESSAGES/bluefish_plugin_charmap.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/bluefish_plugin_entities.mo=usr/share/locale/pl/LC_MESSAGES/bluefish_plugin_entities.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/bluefish_plugin_htmlbar.mo=usr/share/locale/pl/LC_MESSAGES/bluefish_plugin_htmlbar.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/bluefish_plugin_infbrowser.mo=usr/share/locale/pl/LC_MESSAGES/bluefish_plugin_infbrowser.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/bluefish_plugin_snippets.mo=usr/share/locale/pl/LC_MESSAGES/bluefish_plugin_snippets.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/codeina.mo=usr/share/locale/pl/LC_MESSAGES/codeina.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/contact-lookup-applet.mo=usr/share/locale/pl/LC_MESSAGES/contact-lookup-applet.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/dcraw.mo=usr/share/locale/pl/LC_MESSAGES/dcraw.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/dialog.mo=usr/share/locale/pl/LC_MESSAGES/dialog.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/findutils.mo=usr/share/locale/pl/LC_MESSAGES/findutils.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/gftp.mo=usr/share/locale/pl/LC_MESSAGES/gftp.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/gkrellm.mo=usr/share/locale/pl/LC_MESSAGES/gkrellm.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/gobby.mo=usr/share/locale/pl/LC_MESSAGES/gobby.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/goffice-0.8.5.mo=usr/share/locale/pl/LC_MESSAGES/goffice-0.8.5.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/planner.mo=usr/share/locale/pl/LC_MESSAGES/planner.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/terminator.mo=usr/share/locale/pl/LC_MESSAGES/terminator.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/time-slider.mo=usr/share/locale/pl/LC_MESSAGES/time-slider.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/transmission.mo=usr/share/locale/pl/LC_MESSAGES/transmission.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/tsclient.mo=usr/share/locale/pl/LC_MESSAGES/tsclient.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/xsane.mo=usr/share/locale/pl/LC_MESSAGES/xsane.mo 0644 root other

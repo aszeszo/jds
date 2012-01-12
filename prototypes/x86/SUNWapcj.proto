@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapcj.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapcj.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapcj.copyright
+d none lib 0755 root bin
+d none lib/apoc 0755 root bin
+f none lib/apoc/apocjlaunch=usr/lib/apoc/apocjlaunch 0755 root bin
+f none lib/apoc/libapoc_java.so=usr/lib/apoc/libapoc_java.so 0755 root bin
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/apoc 0755 root bin
+f none share/lib/apoc/apocprefs.jar=usr/share/lib/apoc/apocprefs.jar 0644 root bin

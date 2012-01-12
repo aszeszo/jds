@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopensolaris-gdm-themes.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopensolaris-gdm-themes.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopensolaris-gdm-themes.copyright
+d none share 0755 root sys
+d none share/gdm 0755 root bin
+d none share/gdm/themes 0755 root bin
+d none share/gdm/themes/Indiana 0755 root bin
+f none share/gdm/themes/Indiana/GdmGreeterTheme.desktop=usr/share/gdm/themes/Indiana/GdmGreeterTheme.desktop 0644 root bin
+f none share/gdm/themes/Indiana/Indiana.xml=usr/share/gdm/themes/Indiana/Indiana.xml 0644 root bin
+f none share/gdm/themes/Indiana/box-opensolaris.jpg=usr/share/gdm/themes/Indiana/box-opensolaris.jpg 0644 root bin
+f none share/gdm/themes/Indiana/opensolaris.jpg=usr/share/gdm/themes/Indiana/opensolaris.jpg 0644 root bin
+f none share/gdm/themes/Indiana/screenshot.jpg=usr/share/gdm/themes/Indiana/screenshot.jpg 0644 root bin
+f none share/gdm/themes/Indiana/warning.png=usr/share/gdm/themes/Indiana/warning.png 0644 root bin

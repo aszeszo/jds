@@ -1,0 +1,120 @@
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/de.po
+--- a/po/de.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/de.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -357,3 +357,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "Beim _Abmelden Zuweisung aufheben"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> hat keine Zuordnungsfunktion--see user_attr(4)"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/es.po
+--- a/po/es.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/es.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -357,3 +357,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "Desasignar al _salir"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> no tiene capacidades de asignación, consulte user_attr(4)"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/fr.po
+--- a/po/fr.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/fr.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -357,3 +357,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "Libérer à _la déconnexion"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> ne dispose pas de capacités d'allocation--voir user_attr(4)"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/it.po
+--- a/po/it.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/it.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -357,3 +357,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "Disalloca alla _chiusura sessione"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> non dispone di capacità di allocazione--vedere  user_attr(4)"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/ja.po
+--- a/po/ja.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/ja.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -488,3 +488,8 @@
+ #: src/devmgr-props-dialog.c:492
+ msgid "Deallocate on _logout"
+ msgstr "ログアウト時に割り当て解除(_L)"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> は割り当て機能を持っていません--user_attr(4) を参照してください"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/ko.po
+--- a/po/ko.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/ko.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -267,3 +267,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "로그아웃 시 할당 해제(_L)"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b>에는 할당 기능이 없음--user_attr(4) 참조"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/pt_BR.po
+--- a/po/pt_BR.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/pt_BR.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -357,3 +357,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "Desalocar no _logoff"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> não possui recursos de alocação -- consulte user_attr(4)"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/zh_CN.po
+--- a/po/zh_CN.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/zh_CN.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -267,3 +267,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "退出时解除分配(_L)"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> 没有分配功能 - 请参见 user_attr(4)"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/zh_HK.po
+--- a/po/zh_HK.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/zh_HK.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -267,3 +267,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "登出時取消配置(_L)"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> 沒有配置能力--請參閱 user_attr(4)"
+diff -r 505dc6096b8e -r 3ebfdf5cda87 po/zh_TW.po
+--- a/po/zh_TW.po	Wed Aug 24 23:26:39 2011 +0800
++++ b/po/zh_TW.po	Wed Aug 24 23:28:59 2011 +0800
+@@ -267,3 +267,8 @@
+ #: src/devmgr-props-dialog.c:1538
+ msgid "Deallocate on _logout"
+ msgstr "登出時取消配置(_L)"
++
++#: ../src/devmgr-dialog.c:950 ../src/devmgr-dialog.c:2297
++#, c-format
++msgid "<b>%s</b> does not have allocation capabilities--see user_attr(4)"
++msgstr "<b>%s</b> 沒有配置能力--請參閱 user_attr(4)"

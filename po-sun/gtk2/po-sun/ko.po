@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:43+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
+
+# SUN_BRANDING
+#. trusted path restriction label
+#: ../gtk/gtkfilechooserdefault.c:5202
+msgid "You do not have sufficient clearance to use this file chooser"
+msgstr "이 파일 선택기를 사용할 수 있는 권한이 없습니다. "
+
+# SUN_BRANDING
+#: ../gtk/gtkfilesel.c:723
+msgid "_Documents"
+msgstr "문서(_D)"
+
+# SUN_BRANDING
+#: ../gtk/gtkfilesel.c:746
+msgid "D_esktop"
+msgstr "바탕 화면(_E)"
+
+# SUN_BRANDING
+#: ../gtk/gtkfilesel.c:769
+msgid "_Home"
+msgstr "내 폴더(_H)"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:853
+msgid "printer offline"
+msgstr "프린터 오프라인"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:871
+msgid "ready to print"
+msgstr "인쇄 준비 완료"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:874
+msgid "processing job"
+msgstr "작업 처리 중"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:878
+msgid "paused"
+msgstr "일시 중지됨"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:881
+msgid "unknown"
+msgstr "알 수 없음"

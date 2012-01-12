@@ -1,0 +1,30 @@
+Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+
+------------------------------------------------------------------
+
+  For the avoidance of doubt, except that if any license choice other
+  than GPL or LGPL is available it will apply instead, Sun elects to
+  use only the General Public License version 2 (GPLv2) at this time
+  for any software where a choice of GPL license versions is made
+  available with the language indicating that GPLv2 or any later
+  version may be used, or where a choice of which version of the GPL
+  is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for nautilus-sendto-%{nst.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: List of authors of %{nst.name}
+  COPYING.bz2: GNU GPL v2
+  ChangeLog.bz2: List of the most important changes of %{nst.name}
+  ChangeLog.pre-1.1.4.1.bz2: List of the most important changes of %{nst.name}
+  NEWS.bz2: List of the news in %{nst.name}
+  README: More information about %{nst.name}
+
+ The sources of nautilus-sendto-%{nst.version} were downloaded
+ from %{nst.SOURCE0.url}

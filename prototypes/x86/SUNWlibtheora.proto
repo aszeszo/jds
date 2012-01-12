@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibtheora.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibtheora.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibtheora.copyright
+f none share/doc/SUNWlibtheora/AUTHORS=usr/share/doc/SUNWlibtheora/AUTHORS 0444 root bin
+f none share/doc/SUNWlibtheora/CHANGES.bz2=usr/share/doc/SUNWlibtheora/CHANGES.bz2 0444 root bin
+f none share/doc/SUNWlibtheora/COPYING.bz2=usr/share/doc/SUNWlibtheora/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibtheora/README=usr/share/doc/SUNWlibtheora/README 0444 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libtheora.so=libtheora.so.0.3.10
+s none lib/amd64/libtheora.so.0=libtheora.so.0.3.10
+f none lib/amd64/libtheora.so.0.3.10=usr/lib/amd64/libtheora.so.0.3.10 0755 root bin
+s none lib/amd64/libtheoradec.so=libtheoradec.so.1.1.4
+s none lib/amd64/libtheoradec.so.1=libtheoradec.so.1.1.4
+f none lib/amd64/libtheoradec.so.1.1.4=usr/lib/amd64/libtheoradec.so.1.1.4 0755 root bin
+s none lib/amd64/libtheoraenc.so=libtheoraenc.so.1.1.2
+s none lib/amd64/libtheoraenc.so.1=libtheoraenc.so.1.1.2
+f none lib/amd64/libtheoraenc.so.1.1.2=usr/lib/amd64/libtheoraenc.so.1.1.2 0755 root bin
+s none lib/libtheora.so=libtheora.so.0.3.10
+s none lib/libtheora.so.0=libtheora.so.0.3.10
+f none lib/libtheora.so.0.3.10=usr/lib/libtheora.so.0.3.10 0755 root bin
+s none lib/libtheoradec.so=libtheoradec.so.1.1.4
+s none lib/libtheoradec.so.1=libtheoradec.so.1.1.4
+f none lib/libtheoradec.so.1.1.4=usr/lib/libtheoradec.so.1.1.4 0755 root bin
+s none lib/libtheoraenc.so=libtheoraenc.so.1.1.2
+s none lib/libtheoraenc.so.1=libtheoraenc.so.1.1.2
+f none lib/libtheoraenc.so.1.1.2=usr/lib/libtheoraenc.so.1.1.2 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibtheora 0755 root bin

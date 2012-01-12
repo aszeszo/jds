@@ -1,0 +1,146 @@
+# Copyright (C) 2009 Sun Microsystems, Inc
+# This file is distributed under the same license as the compiz-desktop-integration package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: compiz-desktop-integration HEAD\n"
+       "Report-Msgid-Bugs-To: \n"
+       "POT-Creation-Date: 2009-12-03 10:19+0800\n"
+       "PO-Revision-Date: 2010-01-20 20:31+0100\n"
+       "Last-Translator: Robert Antoni Buj\n"
+       "Language-Team: Catalan language team <i18n-discuss@opensolaris.org>\n"
+       "MIME-Version: 1.0\n"
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+#: ../compiz-config.glade.h:1
+msgid "<b>Status</b>"
+msgstr "<b>Estat</b>"
+
+#: ../compiz-config.glade.h:2
+msgid "<b>System Compatibility checks</b>"
+msgstr "<b>Comprovacions de compatibilitat del sistema</b>"
+
+#: ../compiz-config.glade.h:3
+msgid "Architecture"
+msgstr "Arquitectura"
+
+#: ../compiz-config.glade.h:4
+msgid "Session Type"
+msgstr "Tipus de sessió"
+
+#: ../compiz-config.glade.h:5
+msgid "Video Card"
+msgstr "Targeta gràfica"
+
+#: ../compiz-config.glade.h:6
+msgid "Video Card Driver"
+msgstr "Controlador targeta gràfica"
+
+#: ../compiz-config.glade.h:7
+msgid "Visual Effect System Checks"
+msgstr "Comprovació de sistema dels efectes visuals"
+
+#: ../compiz-config.glade.h:8
+msgid "Xserver Configuration"
+msgstr "Configuració del Xserver"
+
+#: ../compiz-config.glade.h:9
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../compiz-config.glade.h:10
+msgid "modify configuration"
+msgstr "modificar configuració"
+
+#: ../compiz-config.glade.h:11
+msgid "undefined"
+msgstr "sense definir"
+
+#: ../compiz-config.glade.h:12
+msgid "unknown"
+msgstr "desconegut"
+
+#: ../compiz-configure.in:113
+msgid "support 3D acceleration"
+msgstr "suport d'acceleració 3D"
+
+#: ../compiz-configure.in:115
+#, c-format
+msgid ""
+"no supported driver for card of type (%s) : Compiz will not run on this "
+"system"
+msgstr ""
+       "controlador no suportat per la targeta de tipus (%s) : Compiz no s'executarà en aquest sistema"
+
+#: ../compiz-configure.in:116
+msgid "no 3D acceleration"
+msgstr "sense acceleració 3D"
+
+#: ../compiz-configure.in:131
+msgid "Trusted Session detected : Compiz will not run in this configuration"
+msgstr "Sessió de confiança detectada: Compiz no s'executarà en aquesta configuració"
+
+#: ../compiz-configure.in:132
+msgid "Trusted Session"
+msgstr "Sessió de confiança"
+
+#: ../compiz-configure.in:142
+msgid "Sunray Session detected : Compiz will not run in this configuration"
+msgstr "Sessió Sunray detectada: Compiz no s'executarà en aquesta configuració"
+
+#: ../compiz-configure.in:143
+msgid "Sunray Session"
+msgstr "Sessió Sunray"
+
+#: ../compiz-configure.in:145
+msgid "Regular Session"
+msgstr "Sessió regular"
+
+#: ../compiz-configure.in:190 ../compiz-configure.in:241
+msgid "configured"
+msgstr "configurat"
+
+#: ../compiz-configure.in:192 ../compiz-configure.in:243
+msgid "Xorg configuration file is not configured to run the visual effects"
+msgstr "El fitxer de configuració de Xorg no està configurat per executar efectes visuals"
+
+#: ../compiz-configure.in:193 ../compiz-configure.in:244
+msgid "not configured"
+msgstr "no configurat"
+
+#: ../compiz-configure.in:344
+msgid "This system can run the visual effects"
+msgstr "El sistema pot executar els efectes visuals"
+
+#: ../compiz-configure.in:346
+msgid ""
+"This system can run the visual effects but is not configured to do so. Click "
+"on the modify button to configure it."
+msgstr ""
+       "El sistema no pot executar els efectes visuals ja que no està configurat per a fer-ho. Cliqueu al botó modificar, per a configurar-ho."
+
+#: ../compiz-configure.in:349
+msgid ""
+"This system cannot run the visual effects as it is not running a regular "
+"session"
+msgstr ""
+       "El sistema no pot executar els efectes visuals ja que no s'està executant en una sessió regular"
+
+#: ../compiz-configure.in:353
+msgid ""
+"This system can run the visual effects but the current graphics driver does "
+"not support 3D acceleration. Refer to http://opensolaris.org/os/project/dri/ "
+"for more information about the supported cards"
+msgstr ""
+       "El sistema pot executar els efectes visuals però la targeta gràfica actual no suporta l'acceleració 3D. Adreceu-vos a http://opensolaris.org/os/project/dri/ "
+       "per a més informació quant a les targetes suportades"
+
+#: ../compiz-configure.in:356
+msgid ""
+"This system cannot run the visual effects due to the lack of supported 3D "
+"Video Card Driver"
+msgstr ""
+       "El sistema pot executar els efectes visuals degut a la llacuna en el suport de controladors de targetes gràfiques 3D"

@@ -1,0 +1,27 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibcdio.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibcdio.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibcdio.copyright
+d none bin 0755 root bin
+f none bin/cd-drive=usr/bin/cd-drive 0755 root bin
+f none bin/cd-info=usr/bin/cd-info 0755 root bin
+f none bin/cd-paranoia=usr/bin/cd-paranoia 0755 root bin
+f none bin/cd-read=usr/bin/cd-read 0755 root bin
+f none bin/iso-info=usr/bin/iso-info 0755 root bin
+f none bin/iso-read=usr/bin/iso-read 0755 root bin
+f none bin/mmc-tool=usr/bin/mmc-tool 0755 root bin
+d none lib 0755 root bin
+s none lib/libcdio.so=libcdio.so.7.1.0
+s none lib/libcdio.so.7=libcdio.so.7.1.0
+f none lib/libcdio.so.7.1.0=usr/lib/libcdio.so.7.1.0 0755 root bin
+s none lib/libcdio_cdda.so=libcdio_cdda.so.0.0.2
+s none lib/libcdio_cdda.so.0=libcdio_cdda.so.0.0.2
+f none lib/libcdio_cdda.so.0.0.2=usr/lib/libcdio_cdda.so.0.0.2 0755 root bin
+s none lib/libcdio_paranoia.so=libcdio_paranoia.so.0.0.2
+s none lib/libcdio_paranoia.so.0=libcdio_paranoia.so.0.0.2
+f none lib/libcdio_paranoia.so.0.0.2=usr/lib/libcdio_paranoia.so.0.0.2 0755 root bin
+s none lib/libiso9660.so=libiso9660.so.5.0.1
+s none lib/libiso9660.so.5=libiso9660.so.5.0.1
+f none lib/libiso9660.so.5.0.1=usr/lib/libiso9660.so.5.0.1 0755 root bin
+s none lib/libudf.so=libudf.so.0.0.0
+s none lib/libudf.so.0=libudf.so.0.0.0
+f none lib/libudf.so.0.0.0=usr/lib/libudf.so.0.0.0 0755 root bin

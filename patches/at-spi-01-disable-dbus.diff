@@ -1,0 +1,11 @@
+--- at-spi-1.29.2/at-spi.schemas.in	2009-11-09 15:14:28.000000000 +0800
++++ at-spi-1.29.2-mod/at-spi.schemas.in	2009-11-17 10:43:38.652377000 +0800
+@@ -18,7 +18,7 @@
+       <applyto>/desktop/gnome/interface/at-spi-corba</applyto>
+       <owner>gnome</owner>
+       <type>bool</type>
+-      <default>false</default>
++      <default>true</default>
+       <locale name="C">
+         <short>Enable CORBA-based AT-SPI infrastructure</short>
+         <long>In combination with /desktop/gnome/interface/accessibility, this key is needed to enable the CORBA-based AT-SPI infrastructure.  Otherwise, the D-Bus AT-SPI infrastructure will be used.</long>

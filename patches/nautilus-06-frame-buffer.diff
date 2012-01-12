@@ -1,0 +1,62 @@
+--- nautilus-3.1.3/libnautilus-private/org.gnome.nautilus.gschema.xml.in.orig	2011-07-20 08:33:11.960537746 +0100
++++ nautilus-3.1.3/libnautilus-private/org.gnome.nautilus.gschema.xml.in	2011-07-20 08:42:19.037449495 +0100
+@@ -360,6 +360,11 @@
+       <_summary>Fade the background on change</_summary>
+       <_description>If set to true, then Nautilus will use a fade effect to change the desktop background.</_description>
+     </key>
++    <key name="primary-screen" type="i">
++      <default>0</default>
++      <_summary>Primary magnification screen</_summary>
++      <_description> This screen can be set if you want to have a screen other than screen 0 as the default screen, while working with magnifier.</_description>
++    </key>
+   </schema>
+ 
+   <schema id="org.gnome.nautilus.window-state" path="/org/gnome/nautilus/window-state/" gettext-domain="nautilus">
+--- nautilus-3.1.3/libnautilus-private/nautilus-global-preferences.h.orig	2011-07-20 09:07:16.166242314 +0100
++++ nautilus-3.1.3/libnautilus-private/nautilus-global-preferences.h	2011-07-20 09:02:35.220585656 +0100
+@@ -177,6 +177,7 @@
+ #define NAUTILUS_PREFERENCES_DESKTOP_NETWORK_VISIBLE       "network-icon-visible"
+ #define NAUTILUS_PREFERENCES_DESKTOP_NETWORK_NAME          "network-icon-name"
+ #define NAUTILUS_PREFERENCES_DESKTOP_BACKGROUND_FADE       "background-fade"
++#define NAUTILUS_PREFERENCES_DESKTOP_PRIMARY_SCREEN        "primary-screen"
+ 
+ /* bulk rename utility */
+ #define NAUTILUS_PREFERENCES_BULK_RENAME_TOOL              "bulk-rename-tool"
+--- nautilus-3.1.3/src/nautilus-icon-view.c.orig	2011-07-20 09:34:55.453069426 +0100
++++ nautilus-3.1.3/src/nautilus-icon-view.c	2011-07-20 09:40:29.809158634 +0100
+@@ -467,19 +467,33 @@
+ should_show_file_on_screen (NautilusView *view, NautilusFile *file)
+ {
+ 	char *screen_string;
+-	int screen_num;
++	char default_screen_string[8];
++	int screen_num, default_screen_num;
+ 	NautilusIconView *icon_view;
+ 	GdkScreen *screen;
+ 
+ 	icon_view = NAUTILUS_ICON_VIEW (view);
+ 
++
++	/* Get the primary magnification screen in multi-head setup */
++	if (icon_view->details->num_screens > 1) {
++		default_screen_num = g_settings_get_int (nautilus_desktop_preferences,
++			NAUTILUS_PREFERENCES_DESKTOP_PRIMARY_SCREEN);
++
++	/* single head setup. So, default screen is 0 */
++	} else {
++		default_screen_num = 0;
++	}
++
++	sprintf (default_screen_string, "%d", default_screen_num);
++
+ 	if (!nautilus_view_should_show_file (view, file)) {
+ 		return FALSE;
+ 	}
+ 	
+ 	/* Get the screen for this icon from the metadata. */
+ 	screen_string = nautilus_file_get_metadata
+-		(file, NAUTILUS_METADATA_KEY_SCREEN, "0");
++		(file, NAUTILUS_METADATA_KEY_SCREEN, default_screen_num);
+ 	screen_num = atoi (screen_string);
+ 	g_free (screen_string);
+ 	screen = gtk_widget_get_screen (GTK_WIDGET (view));

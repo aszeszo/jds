@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-panel-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-panel-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-panel-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/clock.schemas=etc/gconf/schemas/clock.schemas 0644 root sys
+f none etc/gconf/schemas/notification-daemon.schemas=etc/gconf/schemas/notification-daemon.schemas 0644 root sys
+f none etc/gconf/schemas/panel-compatibility.schemas=etc/gconf/schemas/panel-compatibility.schemas 0644 root sys
+f none etc/gconf/schemas/panel-default-setup.entries=etc/gconf/schemas/panel-default-setup.entries 0644 root sys
+f none etc/gconf/schemas/panel-general.schemas=etc/gconf/schemas/panel-general.schemas 0644 root sys
+f none etc/gconf/schemas/panel-global.schemas=etc/gconf/schemas/panel-global.schemas 0644 root sys
+f none etc/gconf/schemas/panel-object.schemas=etc/gconf/schemas/panel-object.schemas 0644 root sys
+f none etc/gconf/schemas/panel-toplevel.schemas=etc/gconf/schemas/panel-toplevel.schemas 0644 root sys
+f none etc/gconf/schemas/window-list.schemas=etc/gconf/schemas/window-list.schemas 0644 root sys
+f none etc/gconf/schemas/workspace-switcher.schemas=etc/gconf/schemas/workspace-switcher.schemas 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/menus 0755 root sys
+f none etc/xdg/menus/applications.menu=etc/xdg/menus/applications.menu 0644 root sys
+f none etc/xdg/menus/settings.menu=etc/xdg/menus/settings.menu 0644 root sys

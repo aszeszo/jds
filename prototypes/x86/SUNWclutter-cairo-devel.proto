@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWclutter-cairo-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWclutter-cairo-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWclutter-cairo-devel.copyright
+d none include 0755 root bin
+d none include/clutter-0.8 0755 root bin
+d none include/clutter-0.8/clutter-cairo 0755 root bin
+f none include/clutter-0.8/clutter-cairo/clutter-cairo.h=usr/include/clutter-0.8/clutter-cairo/clutter-cairo.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/clutter-cairo-0.8.pc=usr/lib/pkgconfig/clutter-cairo-0.8.pc 0644 root bin

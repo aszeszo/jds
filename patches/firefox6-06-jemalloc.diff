@@ -1,0 +1,98 @@
+diff --git a/config/jemalloc_solaris.map b/config/jemalloc_solaris.map
+new file mode 100644
+index 0000000..7f4db39
+--- /dev/null
++++ b/config/jemalloc_solaris.map
+@@ -0,0 +1,12 @@
++{
++    global:
++        calloc             = NODIRECT;
++        free               = NODIRECT;
++        jemalloc_stats     = NODIRECT;
++        malloc             = NODIRECT;
++        malloc_usable_size = NODIRECT;
++        memalign           = NODIRECT;
++        posix_memalign     = NODIRECT;
++        realloc            = NODIRECT;
++        valloc             = NODIRECT;
++};
+diff --git a/js/src/config/jemalloc_solaris.map b/js/src/config/jemalloc_solaris.map
+new file mode 100644
+index 0000000..7f4db39
+--- /dev/null
++++ b/js/src/config/jemalloc_solaris.map
+@@ -0,0 +1,12 @@
++{
++    global:
++        calloc             = NODIRECT;
++        free               = NODIRECT;
++        jemalloc_stats     = NODIRECT;
++        malloc             = NODIRECT;
++        malloc_usable_size = NODIRECT;
++        memalign           = NODIRECT;
++        posix_memalign     = NODIRECT;
++        realloc            = NODIRECT;
++        valloc             = NODIRECT;
++};
+diff --git a/config/config.mk b/config/config.mk
+index 8aef9e5..1ddeaad 100644
+--- a/config/config.mk
++++ b/config/config.mk
+@@ -147,7 +147,7 @@
+ MOZ_WIDGET_SUPPORT_LIBS    = $(DIST)/lib/$(LIB_PREFIX)widgetsupport_s.$(LIB_SUFFIX)
+ 
+ ifdef MOZ_MEMORY
+-ifneq ($(OS_ARCH),WINNT)
++ifneq (,$(filter-out WINNT SunOS,$(OS_ARCH)))
+ JEMALLOC_LIBS = $(MKSHLIB_FORCE_ALL) $(call EXPAND_MOZLIBNAME,jemalloc) $(MKSHLIB_UNFORCE_ALL)
+ # If we are linking jemalloc into a program, we want the jemalloc symbols
+ # to be exported
+diff --git a/js/src/config/config.mk b/js/src/config/config.mk
+index 8aef9e5..1ddeaad 100644
+--- a/js/src/config/config.mk
++++ b/js/src/config/config.mk
+@@ -147,7 +147,7 @@
+ MOZ_WIDGET_SUPPORT_LIBS    = $(DIST)/lib/$(LIB_PREFIX)widgetsupport_s.$(LIB_SUFFIX)
+ 
+ ifdef MOZ_MEMORY
+-ifneq ($(OS_ARCH),WINNT)
++ifneq (,$(filter-out WINNT SunOS,$(OS_ARCH)))
+ JEMALLOC_LIBS = $(MKSHLIB_FORCE_ALL) $(call EXPAND_MOZLIBNAME,jemalloc) $(MKSHLIB_UNFORCE_ALL)
+ # If we are linking jemalloc into a program, we want the jemalloc symbols
+ # to be exported
+diff --git a/toolkit/library/Makefile.in b/toolkit/library/Makefile.in
+index 841a77b..bf10981 100644
+--- a/toolkit/library/Makefile.in
++++ b/toolkit/library/Makefile.in
+@@ -246,6 +246,12 @@
+ 
+ include $(srcdir)/libxul-rules.mk
+ 
++ifdef MOZ_MEMORY
++ifeq ($(OS_ARCH),SunOS)
++EXTRA_DSO_LDOPTS += $(call EXPAND_LIBNAME_PATH,jemalloc,$(DIST)/lib) -M $(topsrcdir)/config/jemalloc_solaris.map -z interpose
++endif
++endif
++
+ ifeq ($(OS_ARCH),OpenBSD)
+ # Needed by nsAuthGSSAPI
+ EXTRA_DSO_LDOPTS += -lkrb5 -lcrypto
+diff --git a/xpcom/build/Makefile.in b/xpcom/build/Makefile.in
+index 9421f4c..52a110b 100644
+--- a/xpcom/build/Makefile.in
++++ b/xpcom/build/Makefile.in
+@@ -191,6 +191,14 @@ ifdef HAVE_CLOCK_MONOTONIC
+ EXTRA_DSO_LDOPTS += $(REALTIME_LIBS)
+ endif
+ 
++ifndef MOZ_ENABLE_LIBXUL
++ifdef MOZ_MEMORY
++ifeq ($(OS_ARCH),SunOS)
++EXTRA_DSO_LDOPTS += $(call EXPAND_LIBNAME_PATH,jemalloc,$(DIST)/lib) -M $(topsrcdir)/config/jemalloc_solaris.map -z interpose
++endif
++endif
++endif
++
+ ifeq ($(OS_ARCH),WINNT)
+ OS_LIBS += $(call EXPAND_LIBNAME,shell32 ole32 uuid version)
+ ifneq (,$(MOZ_DEBUG)$(NS_TRACE_MALLOC))

@@ -1,0 +1,303 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2009/432 ConsoleKit -->
+<!ENTITY cmd "ck-seat-tool">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2009 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<refentry id="ck-seat-tool-1m">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1m</manvolnum>
+<refmiscinfo class="date">24 Oct 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1m;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>
+&cmd;
+</primary></indexterm>
+<indexterm><primary>
+ConsoleKit seat tool
+</primary></indexterm>
+<refnamediv id="ck-seat-tool-1m-name">
+<refname>&cmd;</refname>
+<refpurpose>
+ConsoleKit seat tool
+</refpurpose></refnamediv>
+<refsynopsisdiv id="ck-seat-tool-1m-synp"><title>&synp-tt;</title>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="plain"><option>-add</option></arg>
+<arg choice="plain"><option>-display-type=<replaceable>type</replaceable></option></arg>
+<arg choice="opt"><option>-seat-id=<replaceable>id</replaceable></option></arg>
+<arg choice="opt"><option>-session-type=<replaceable>type</replaceable></option></arg> 
+<arg rep="repeat"><option role="nodash"><replaceable>variable</replaceable>,<replaceable>variable</replaceable></option></arg>
+</cmdsynopsis>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="plain"><option>-delete</option></arg>
+<arg choice="plain"><option>-session-id=<replaceable>id</replaceable></option></arg>
+</cmdsynopsis>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-version</option></arg>
+</cmdsynopsis>
+
+</refsynopsisdiv>
+
+<refsect1 id="ck-seat-tool-1m-desc"><title>&desc-tt;</title>
+<para>
+<command>&cmd;</command> is a utility that causes ConsoleKit to add or delete
+a ConsoleKit session in a dymanic fashion.  When adding a session, the
+<option>-display-type</option> option must be specified.  When deleting a
+session, the <option>-session-id</option> option must be specified.
+</para>
+
+<para>
+To use <command>&cmd;</command>, it must be run as the same user which is
+running the main ConsoleKit daemon, which is normally the root user.  Otherwise
+the request is ignored.
+</para>
+
+<para>
+When adding a session, the <option>-seat-id</option> option works as follows:
+</para>
+
+<itemizedlist>
+<listitem><para>
+If <option>-seat-id=<replaceable>id</replaceable></option> is provided and this
+seat exists, then a new session will be added to that seat.
+</para></listitem>
+<listitem><para>
+If <option>-seat-id=<replaceable>id</replaceable></option> is provided, but
+this seat does not exist, then a new seat with the specified seat.
+<replaceable>id</replaceable> is created, and a new session added to that seat.
+</para></listitem>
+<listitem><para>
+If <option>-seat-id=<replaceable>id</replaceable></option> is not given, a new
+seat <replaceable>id</replaceable> (Seat#) will be generated, and a new session
+added to that seat. 
+</para></listitem>
+</itemizedlist>
+
+<para>
+Note that to delete a session which is running on a particular DISPLAY, it
+may be necessary to run the 
+<citerefentry><refentrytitle>ck\-list\-sessions</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+command to find the corresponding session ID for a given DISPLAY.
+</para>
+</refsect1>
+
+<refsect1 id="ck-seat-tool-1m-opts">
+<title>&opts-tt;</title>
+<para>
+The following options are supported:
+</para>
+<variablelist termlength="medium">
+
+<varlistentry>
+<term><option>a</option>, <option>-add</option></term>
+<listitem><para>
+Add the specified session.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+
+<term><option>d</option>, <option>-delete</option></term>
+<listitem><para>
+Delete the specified session.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-display-type=<replaceable>type</replaceable></option></term>
+<listitem><para>
+This option is only available when adding a session.  Specifies the display
+<replaceable>type</replaceable> in the ConsoleKit display configuration that
+will be associated with the session.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>h</option>, <option>-help</option></term>
+<listitem><para>
+Display detailed usage message.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-seat-id=<replaceable>id</replaceable></option></term>
+<listitem><para>
+This option is only available when adding a session. Specifies the seat
+<replaceable>id</replaceable> that will be associated with the session.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-session-id=<replaceable>id</replaceable></option></term>
+<listitem><para>
+This option is only available when deleting a session.  Specifies the session
+<replaceable>id</replaceable> associated with session that will be deleted.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-session-type=<replaceable>type</replaceable></option></term>
+<listitem><para>
+This option is only available when adding a session.  Specifies the session
+<replaceable>type</replaceable> that will be associated with the session.  The
+default value is &quot;LoginWindow&quot;.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>V</option>, <option>-version</option></term>
+<listitem><para>
+Display the version of the <command>&cmd;</command> application.
+</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="ck-seat-tool-1m-oper">
+<title>&oper-tt;</title>
+<para>
+The following operand is supported only when adding a session:
+</para>
+<variablelist termlength="wholeline">
+
+<varlistentry>
+<term><option role="nodash"><replaceable>variable</replaceable></option></term>
+<listitem>
+
+<para>
+The <replaceable>variable</replaceable> operand is only available when adding a
+sesssion.  The command to run when starting a session is specified in a
+ConsoleKit display configuration file named
+<filename>/etc/ConsoleKit/displays.d/<replaceable>display_type</replaceable>.display</filename>,
+where <replaceable>display_type</replaceable> is specified by the
+<option>-display-type</option> option.  This file is in standard INI format.
+The command is specified by the key &quot;X11/Exec&quot;.  For example:
+</para>
+
+<screen>
+[X11]
+Exec=/usr/X11/bin/Xorg $display -br -verbose $vt
+</screen>
+
+<para>
+Arguments that start with the &quot;$&quot; sign are variables.  The values
+for these variables can be specified with the
+<replaceable>variable</replaceable> operand.  For example, if this value is
+&quot;display=:0,vt=vt9&quot;, this would set the &quot;$display&quot;
+argument to &quot;:0&quot; and the &quot;$vt&quot; argument to &quot;vt9&quot;.
+</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="ck-seat-tool-1m-exam"><title>&exam-tt;</title>
+<example role="example">
+<title>To add a session to the next available seat with a display type of
+&quot;Local&quot; and start it on display &quot;:20&quot;</title>
+<para>
+<screen>
+example% <userinput>&cmd; <option>a</option> <option>-display-type=Local</option> display=:20</userinput>
+</screen>
+</para>
+</example>
+<example role="example">
+<title>To add a session to Seat10 with a session type of
+&quot;LoginWindow&quot;, a display type of &quot;Local&quot;, and
+start it on display &quot;:20&quot;</title>
+<para>
+<screen>
+example% <userinput>&cmd; <option>a</option> <option>-session-type=LoginWindow</option> <option>-display-type=Local</option> <option>-seat-id=Seat10</option> display=:20</userinput>
+</screen>
+</para>
+</example>
+<example role="example">
+<title>To remove the session with session ID
+&quot;/org/freedesktop/ConsoleKit/Session2&quot;</title>
+<para>
+<screen>
+example% <userinput>&cmd; <option>-d</option> <option>-session-id=/org/freedesktop/ConsoleKit/Session2</option></userinput>
+</screen>
+</para>
+</example>
+</refsect1>
+
+<refsect1 id="ck-seat-tool-1m-file"><title>&file-tt;</title>
+<para>
+The following files are used by this application:
+</para>
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/usr/sbin/&cmd;</filename></term>
+<listitem><para>
+Executable for ConsoleKit seat tool.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/ConsoleKit/displays.d</filename></term>
+<listitem><para>
+ConsoleKit display configuration files.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="ck-seat-tool-1m-attr"><title>&attr-tt;</title>
+<para>
+See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>library/xdg/consolekit</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="ck-seat-tool-1m-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>ck-history</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-launch-session</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-list-sessions</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdmdynamic</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>console-kit-daemon</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="ck-seat-tool-1m-note"><title>&note-tt;</title>
+<para>
+Written by Brian Cameron, Sun Microsystems Inc., 2009.
+Copyright (c) 2009 by Sun Microsystems, Inc.
+</para>
+</refsect1>
+</refentry>

@@ -1,0 +1,137 @@
+commit 010fe3b486610f3105d8756fb82aa315f7e54c40
+Author: Halton Huo <halton.huo@sun.com>
+Date:   Thu May 6 15:29:02 2010 +0800
+
+    Make code is compatible with diffrent ifaddrs strcucture
+    
+    OpenSolaris (after b137) uses "struct sockaddr_storage", not "struct sockaddr"
+    for ifa_addr member of "struct ifaddrs". This is followed RFC2553. Before
+    BSD and Linux systems move to follow RFC2553, the codes need to be compiled
+    under both cases.
+    
+    Fixes https://bugzilla.gnome.org/show_bug.cgi?id=617848
+
+diff --git a/configure.in b/configure.in
+index 7f56569..ba7d19a 100644
+--- a/configure.in
++++ b/configure.in
+@@ -331,13 +331,24 @@ AC_CHECK_FUNCS([gettimeofday])
+ AC_CHECK_LIB(resolv, herror)
+ 
+ dnl Check for getifaddrs
+-AC_TRY_COMPILE([
+-      #include <ifaddrs.h>
+-    ],[
+-      struct ifaddrs *myaddrs;
+-      getifaddrs (&myaddrs);
+-    ], have_getifaddrs=yes, have_getifaddrs=no)
+-AM_CONDITIONAL(HAVE_GETIFADDRS, [test "$have_getifaddrs" = "yes"])
++AM_CONDITIONAL(SELF_IFADDRS, test "x$ac_cv_header_ifaddrs_h" != "xyes")
++
++dnl RFC2553 introduce sockaddr_storage as ifa_addr member in ifaddrs structure
++dnl Not all distros follow this.
++if test "x$ac_cv_header_ifaddrs_h" = "xyes"; then
++        AC_TRY_COMPILE([
++          #include <ifaddrs.h>
++          #include <net/if.h>
++          ],[
++          struct ifaddrs *myaddrs;
++          getifaddrs (&myaddrs);
++          if (myaddrs->ifa_addr->ss_family == AF_INET) {
++          }
++        ], have_sockaddr_storage=yes, have_sockaddr_storage=no)
++        if test "x$have_sockaddr_storage" = "xyes"; then
++           AC_DEFINE(RFC2553, [], [Define to if follow RFC2553 ])
++        fi
++fi
+ 
+ dnl
+ dnl End of libvncserver stuff
+diff --git a/server/libvncserver/Makefile.am b/server/libvncserver/Makefile.am
+index 315081f..6a8072d 100644
+--- a/server/libvncserver/Makefile.am
++++ b/server/libvncserver/Makefile.am
+@@ -37,7 +37,7 @@ libvncserver_la_LIBADD =	\
+ 	$(LIBGCRYPT_LIBS)	\
+ 	$(NULL)
+ 
+-if !HAVE_GETIFADDRS
++if SELF_IFADDRS
+ libvncserver_la_LIBADD += ifaddr/libifaddrs.la
+ endif
+ 
+diff --git a/server/libvncserver/ifaddr/Makefile.am b/server/libvncserver/ifaddr/Makefile.am
+index 466340f..b292ba8 100644
+--- a/server/libvncserver/ifaddr/Makefile.am
++++ b/server/libvncserver/ifaddr/Makefile.am
+@@ -1,4 +1,4 @@
+-if !HAVE_GETIFADDRS
++if SELF_IFADDRS
+ noinst_LTLIBRARIES = libifaddrs.la
+ libifaddrs_la_SOURCES = 	\
+ 	getifaddrs.c 		\
+diff --git a/server/libvncserver/sockets.c b/server/libvncserver/sockets.c
+index 74a639c..c4275b0 100644
+--- a/server/libvncserver/sockets.c
++++ b/server/libvncserver/sockets.c
+@@ -78,6 +78,11 @@
+ #include "ifaddr/ifaddrs.h"
+ #endif
+ 
++#ifdef RFC2553
++#define ADDR_FAMILY_MEMBER ss_family
++#else
++#define ADDR_FAMILY_MEMBER sa_family
++#endif
+ 
+ #if defined(__linux__) && defined(NEED_TIMEVAL)
+ struct timeval 
+@@ -621,7 +626,7 @@ ListenOnTCPPort(rfbScreenInfoPtr rfbScreen, int port, const char *netIface)
+     if (ifa->ifa_addr == NULL || (ifa->ifa_flags & IFF_UP) == 0) 
+       continue;
+ 
+-    if (ifa->ifa_addr->sa_family == AF_INET) {
++    if (ifa->ifa_addr->ADDR_FAMILY_MEMBER == AF_INET) {
+       struct sockaddr_in *s4 = (struct sockaddr_in*)ifa->ifa_addr;
+       s4->sin_port           = htons(port);
+ 
+@@ -635,11 +640,11 @@ ListenOnTCPPort(rfbScreenInfoPtr rfbScreen, int port, const char *netIface)
+       }
+     }
+ #ifdef ENABLE_IPV6            
+-    if (ifa->ifa_addr->sa_family == AF_INET6) {
++    if (ifa->ifa_addr->ADDR_FAMILY_MEMBER == AF_INET6) {
+       struct sockaddr_in6 *s6 = (struct sockaddr_in6*)ifa->ifa_addr;
+       s6->sin6_port           = htons(port);
+ 
+-      if (inet_ntop(ifa->ifa_addr->sa_family, (struct sockaddr*)&s6->sin6_addr, buf, sizeof(buf)) == NULL) {
++      if (inet_ntop(ifa->ifa_addr->ADDR_FAMILY_MEMBER, (struct sockaddr*)&s6->sin6_addr, buf, sizeof(buf)) == NULL) {
+         rfbLog("%s: inet_ntop failed!\n", ifa->ifa_name);
+         continue; 
+       }
+diff --git a/server/vino-dbus-listener.c b/server/vino-dbus-listener.c
+index 6caf5b1..774ec9f 100644
+--- a/server/vino-dbus-listener.c
++++ b/server/vino-dbus-listener.c
+@@ -62,6 +62,12 @@
+ #include "libvncserver/ifaddr/ifaddrs.h"
+ #endif
+ 
++#ifdef RFC2553
++#define ADDR_FAMILY_MEMBER ss_family
++#else
++#define ADDR_FAMILY_MEMBER sa_family
++#endif
++
+ #define VINO_DBUS_BUS_NAME  "org.gnome.Vino"
+ 
+ G_DEFINE_TYPE (VinoDBusListener, vino_dbus_listener, G_TYPE_OBJECT)
+@@ -126,7 +132,7 @@ get_local_hostname (VinoDBusListener *listener)
+       if (ifa->ifa_addr == NULL || ifa->ifa_name == NULL || (ifa->ifa_flags & IFF_UP) == 0)
+ 	continue;
+ 
+-      switch (ifa->ifa_addr->sa_family)
++      switch (ifa->ifa_addr->ADDR_FAMILY_MEMBER)
+ 	{
+ 	  case AF_INET:
+ 	    sin = &((struct sockaddr_in *)ifa->ifa_addr)->sin_addr;

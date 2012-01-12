@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-pdf-viewer-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-pdf-viewer-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-pdf-viewer-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/evince-thumbnailer-ps.schemas=etc/gconf/schemas/evince-thumbnailer-ps.schemas 0644 root sys
+f none etc/gconf/schemas/evince-thumbnailer.schemas=etc/gconf/schemas/evince-thumbnailer.schemas 0644 root sys
+f none etc/gconf/schemas/evince.schemas=etc/gconf/schemas/evince.schemas 0644 root sys

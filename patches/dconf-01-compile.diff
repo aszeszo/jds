@@ -1,0 +1,71 @@
+--- dconf-0.7.5/bin/Makefile.am-orig	2011-07-06 17:25:42.470164797 -0500
++++ dconf-0.7.5/bin/Makefile.am	2011-07-06 17:26:04.082865862 -0500
+@@ -1,5 +1,4 @@
+-AM_CFLAGS = -std=c89 -Wall -Wmissing-prototypes -Wwrite-strings
+-CFLAGS += -Wno-error
++AM_CFLAGS = -xc99
+ INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/engine -I$(top_srcdir)/client -I$(top_srcdir)/gvdb $(gio_CFLAGS)
+ 
+ bin_PROGRAMS = dconf
+--- dconf-0.7.5/tests/gsettings.c-orig	2011-07-06 17:24:51.801541216 -0500
++++ dconf-0.7.5/tests/gsettings.c	2011-07-06 17:25:03.486002554 -0500
+@@ -58,7 +58,7 @@ do_write_tree (GTree *tree)
+ static void
+ do_sync (void)
+ {
+-  return G_SETTINGS_BACKEND_GET_CLASS (backend)
++  G_SETTINGS_BACKEND_GET_CLASS (backend)
+     ->sync (backend);
+ }
+ 
+--- dconf-0.7.5/tests/Makefile.am-orig	2011-07-06 17:24:30.841868133 -0500
++++ dconf-0.7.5/tests/Makefile.am	2011-07-06 17:24:39.728570341 -0500
+@@ -1,4 +1,4 @@
+-AM_CFLAGS = -std=c89 -Wall -Wmissing-prototypes -Wwrite-strings
++AM_CFLAGS = -xc99
+ INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/engine -I$(top_srcdir)/client $(gio_CFLAGS) -I$(top_srcdir)/dbus-1 $(dbus_CFLAGS)
+ 
+ noinst_PROGRAMS = paths gsettings dbus1
+--- dconf-0.7.5/editor/Makefile.am-orig	2011-07-06 17:26:14.116709797 -0500
++++ dconf-0.7.5/editor/Makefile.am	2011-07-06 17:26:23.968472098 -0500
+@@ -2,7 +2,6 @@ bin_PROGRAMS = dconf-editor
+ 
+ AM_CFLAGS = $(gtk_CFLAGS) $(gmodule_CFLAGS) $(libxml_CFLAGS) -I$(top_srcdir)/common -I$(top_srcdir)/client -DPKGDATADIR=\"@datadir@/dconf-editor\"
+ AM_VALAFLAGS = --vapidir ../client --pkg gtk+-3.0 --pkg gmodule-2.0 --pkg libxml-2.0 --pkg dconf
+-CFLAGS += -Wno-error
+ dconf_editor_LDADD = ../client/libdconf.so.0 $(gtk_LIBS) $(gmodule_LIBS) $(gee_LIBS) $(libxml_LIBS)
+ dconf_editor_SOURCES = config.vapi dconf-editor.vala dconf-model.vala dconf-schema.vala dconf-view.vala
+ 
+--- dconf-0.7.5/gsettings/Makefile.am-orig	2011-07-06 17:22:58.200501391 -0500
++++ dconf-0.7.5/gsettings/Makefile.am	2011-07-06 17:23:48.455308814 -0500
+@@ -1,4 +1,4 @@
+-AM_CFLAGS = -std=c89 -Wall -Wmissing-prototypes -Wwrite-strings -fPIC -DPIC
++AM_CFLAGS = -xc99 -fPIC -DPIC
+ INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/gvdb -I$(top_srcdir)/engine $(gio_CFLAGS)
+ 
+ giomodules_PROGRAMS = libdconfsettings.so
+--- dconf-0.7.5/dbus-1/Makefile.am-orig	2011-07-06 17:24:03.741413999 -0500
++++ dconf-0.7.5/dbus-1/Makefile.am	2011-07-06 17:24:18.458428491 -0500
+@@ -1,4 +1,4 @@
+-AM_CFLAGS = -std=c89 -Wall -Wmissing-prototypes -Wwrite-strings -fPIC -DPIC
++AM_CFLAGS = -xc99 -fPIC -DPIC
+ INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/gvdb -I$(top_srcdir)/engine $(dbus_CFLAGS) $(glib_CFLAGS)
+ 
+ dconf_dbus_1includedir = $(includedir)/dconf-dbus-1
+--- dconf-0.7.5/client/Makefile.am-orig	2011-07-06 17:25:13.080731966 -0500
++++ dconf-0.7.5/client/Makefile.am	2011-07-06 17:25:30.722128730 -0500
+@@ -1,5 +1,4 @@
+-AM_CFLAGS = -std=c89 -Wall -Wmissing-prototypes -Wwrite-strings -D__dconf_h__ -fPIC -DPIC
+-CFLAGS += -Wno-error
++AM_CFLAGS = -xc99 -D__dconf_h__ -fPIC -DPIC
+ INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/gvdb -I$(top_srcdir)/engine $(gio_CFLAGS)
+ 
+ shlibdir=$(libdir)
+--- dconf-0.7.5/service/Makefile.am-orig	2011-07-06 17:04:29.645845341 -0500
++++ dconf-0.7.5/service/Makefile.am	2011-07-06 17:04:34.354460905 -0500
+@@ -1,4 +1,4 @@
+-AM_CFLAGS = $(gio_CFLAGS) -I$(top_srcdir)/gvdb -I$(top_srcdir)/common -Wall -Wmissing-prototypes -Wwrite-strings
++AM_CFLAGS = $(gio_CFLAGS) -I$(top_srcdir)/gvdb -I$(top_srcdir)/common 
+ 
+ libexec_PROGRAMS = dconf-service
+ 

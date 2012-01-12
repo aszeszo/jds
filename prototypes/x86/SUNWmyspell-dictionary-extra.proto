@@ -1,0 +1,175 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-extra.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-extra.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-extra.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/bg-BG.aff=../../../../usr/share/spell/myspell/bg_BG.aff
+s none lib/firefox/dictionaries/bg-BG.dic=../../../../usr/share/spell/myspell/bg_BG.dic
+s none lib/firefox/dictionaries/ca-ES.aff=../../../../usr/share/spell/myspell/ca_ES.aff
+s none lib/firefox/dictionaries/ca-ES.dic=../../../../usr/share/spell/myspell/ca_ES.dic
+s none lib/firefox/dictionaries/da-DK.aff=../../../../usr/share/spell/myspell/da_DK.aff
+s none lib/firefox/dictionaries/da-DK.dic=../../../../usr/share/spell/myspell/da_DK.dic
+s none lib/firefox/dictionaries/el-GR.aff=../../../../usr/share/spell/myspell/el_GR.aff
+s none lib/firefox/dictionaries/el-GR.dic=../../../../usr/share/spell/myspell/el_GR.dic
+s none lib/firefox/dictionaries/et-EE.aff=../../../../usr/share/spell/myspell/et_EE.aff
+s none lib/firefox/dictionaries/et-EE.dic=../../../../usr/share/spell/myspell/et_EE.dic
+s none lib/firefox/dictionaries/he-IL.aff=../../../../usr/share/spell/myspell/he_IL.aff
+s none lib/firefox/dictionaries/he-IL.dic=../../../../usr/share/spell/myspell/he_IL.dic
+s none lib/firefox/dictionaries/hr-HR.aff=../../../../usr/share/spell/myspell/hr_HR.aff
+s none lib/firefox/dictionaries/hr-HR.dic=../../../../usr/share/spell/myspell/hr_HR.dic
+s none lib/firefox/dictionaries/lt-LT.aff=../../../../usr/share/spell/myspell/lt_LT.aff
+s none lib/firefox/dictionaries/lt-LT.dic=../../../../usr/share/spell/myspell/lt_LT.dic
+s none lib/firefox/dictionaries/lv-LV.aff=../../../../usr/share/spell/myspell/lv_LV.aff
+s none lib/firefox/dictionaries/lv-LV.dic=../../../../usr/share/spell/myspell/lv_LV.dic
+s none lib/firefox/dictionaries/nb-NO.aff=../../../../usr/share/spell/myspell/nb_NO.aff
+s none lib/firefox/dictionaries/nb-NO.dic=../../../../usr/share/spell/myspell/nb_NO.dic
+s none lib/firefox/dictionaries/nl-NL.aff=../../../../usr/share/spell/myspell/nl_NL.aff
+s none lib/firefox/dictionaries/nl-NL.dic=../../../../usr/share/spell/myspell/nl_NL.dic
+s none lib/firefox/dictionaries/nn-NO.aff=../../../../usr/share/spell/myspell/nn_NO.aff
+s none lib/firefox/dictionaries/nn-NO.dic=../../../../usr/share/spell/myspell/nn_NO.dic
+s none lib/firefox/dictionaries/pt-PT.aff=../../../../usr/share/spell/myspell/pt_PT.aff
+s none lib/firefox/dictionaries/pt-PT.dic=../../../../usr/share/spell/myspell/pt_PT.dic
+s none lib/firefox/dictionaries/ro-RO.aff=../../../../usr/share/spell/myspell/ro_RO.aff
+s none lib/firefox/dictionaries/ro-RO.dic=../../../../usr/share/spell/myspell/ro_RO.dic
+s none lib/firefox/dictionaries/sk-SK.aff=../../../../usr/share/spell/myspell/sk_SK.aff
+s none lib/firefox/dictionaries/sk-SK.dic=../../../../usr/share/spell/myspell/sk_SK.dic
+s none lib/firefox/dictionaries/sl-SI.aff=../../../../usr/share/spell/myspell/sl_SI.aff
+s none lib/firefox/dictionaries/sl-SI.dic=../../../../usr/share/spell/myspell/sl_SI.dic
+s none lib/firefox/dictionaries/th-TH.aff=../../../../usr/share/spell/myspell/th_TH.aff
+s none lib/firefox/dictionaries/th-TH.dic=../../../../usr/share/spell/myspell/th_TH.dic
+s none lib/firefox/dictionaries/uk-UA.aff=../../../../usr/share/spell/myspell/uk_UA.aff
+s none lib/firefox/dictionaries/uk-UA.dic=../../../../usr/share/spell/myspell/uk_UA.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/bg-BG.aff=../../../../usr/share/spell/myspell/bg_BG.aff
+s none lib/thunderbird/dictionaries/bg-BG.dic=../../../../usr/share/spell/myspell/bg_BG.dic
+s none lib/thunderbird/dictionaries/ca-ES.aff=../../../../usr/share/spell/myspell/ca_ES.aff
+s none lib/thunderbird/dictionaries/ca-ES.dic=../../../../usr/share/spell/myspell/ca_ES.dic
+s none lib/thunderbird/dictionaries/da-DK.aff=../../../../usr/share/spell/myspell/da_DK.aff
+s none lib/thunderbird/dictionaries/da-DK.dic=../../../../usr/share/spell/myspell/da_DK.dic
+s none lib/thunderbird/dictionaries/el-GR.aff=../../../../usr/share/spell/myspell/el_GR.aff
+s none lib/thunderbird/dictionaries/el-GR.dic=../../../../usr/share/spell/myspell/el_GR.dic
+s none lib/thunderbird/dictionaries/et-EE.aff=../../../../usr/share/spell/myspell/et_EE.aff
+s none lib/thunderbird/dictionaries/et-EE.dic=../../../../usr/share/spell/myspell/et_EE.dic
+s none lib/thunderbird/dictionaries/he-IL.aff=../../../../usr/share/spell/myspell/he_IL.aff
+s none lib/thunderbird/dictionaries/he-IL.dic=../../../../usr/share/spell/myspell/he_IL.dic
+s none lib/thunderbird/dictionaries/hr-HR.aff=../../../../usr/share/spell/myspell/hr_HR.aff
+s none lib/thunderbird/dictionaries/hr-HR.dic=../../../../usr/share/spell/myspell/hr_HR.dic
+s none lib/thunderbird/dictionaries/lt-LT.aff=../../../../usr/share/spell/myspell/lt_LT.aff
+s none lib/thunderbird/dictionaries/lt-LT.dic=../../../../usr/share/spell/myspell/lt_LT.dic
+s none lib/thunderbird/dictionaries/lv-LV.aff=../../../../usr/share/spell/myspell/lv_LV.aff
+s none lib/thunderbird/dictionaries/lv-LV.dic=../../../../usr/share/spell/myspell/lv_LV.dic
+s none lib/thunderbird/dictionaries/nb-NO.aff=../../../../usr/share/spell/myspell/nb_NO.aff
+s none lib/thunderbird/dictionaries/nb-NO.dic=../../../../usr/share/spell/myspell/nb_NO.dic
+s none lib/thunderbird/dictionaries/nl-NL.aff=../../../../usr/share/spell/myspell/nl_NL.aff
+s none lib/thunderbird/dictionaries/nl-NL.dic=../../../../usr/share/spell/myspell/nl_NL.dic
+s none lib/thunderbird/dictionaries/nn-NO.aff=../../../../usr/share/spell/myspell/nn_NO.aff
+s none lib/thunderbird/dictionaries/nn-NO.dic=../../../../usr/share/spell/myspell/nn_NO.dic
+s none lib/thunderbird/dictionaries/pt-PT.aff=../../../../usr/share/spell/myspell/pt_PT.aff
+s none lib/thunderbird/dictionaries/pt-PT.dic=../../../../usr/share/spell/myspell/pt_PT.dic
+s none lib/thunderbird/dictionaries/ro-RO.aff=../../../../usr/share/spell/myspell/ro_RO.aff
+s none lib/thunderbird/dictionaries/ro-RO.dic=../../../../usr/share/spell/myspell/ro_RO.dic
+s none lib/thunderbird/dictionaries/sk-SK.aff=../../../../usr/share/spell/myspell/sk_SK.aff
+s none lib/thunderbird/dictionaries/sk-SK.dic=../../../../usr/share/spell/myspell/sk_SK.dic
+s none lib/thunderbird/dictionaries/sl-SI.aff=../../../../usr/share/spell/myspell/sl_SI.aff
+s none lib/thunderbird/dictionaries/sl-SI.dic=../../../../usr/share/spell/myspell/sl_SI.dic
+s none lib/thunderbird/dictionaries/th-TH.aff=../../../../usr/share/spell/myspell/th_TH.aff
+s none lib/thunderbird/dictionaries/th-TH.dic=../../../../usr/share/spell/myspell/th_TH.dic
+s none lib/thunderbird/dictionaries/uk-UA.aff=../../../../usr/share/spell/myspell/uk_UA.aff
+s none lib/thunderbird/dictionaries/uk-UA.dic=../../../../usr/share/spell/myspell/uk_UA.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/bg_BG 0755 root bin
+f none share/doc/myspell-dictionary/bg_BG/COPYING=usr/share/doc/myspell-dictionary/bg_BG/COPYING 0644 root other
+f none share/doc/myspell-dictionary/bg_BG/COPYING.BULGARIAN=usr/share/doc/myspell-dictionary/bg_BG/COPYING.BULGARIAN 0644 root other
+f none share/doc/myspell-dictionary/bg_BG/ChangeLog=usr/share/doc/myspell-dictionary/bg_BG/ChangeLog 0644 root other
+f none share/doc/myspell-dictionary/bg_BG/README=usr/share/doc/myspell-dictionary/bg_BG/README 0644 root other
+f none share/doc/myspell-dictionary/bg_BG/THANKS=usr/share/doc/myspell-dictionary/bg_BG/THANKS 0644 root other
+f none share/doc/myspell-dictionary/bg_BG/TODO=usr/share/doc/myspell-dictionary/bg_BG/TODO 0644 root other
+d none share/doc/myspell-dictionary/ca_ES 0755 root bin
+f none share/doc/myspell-dictionary/ca_ES/README_ca_ES.txt=usr/share/doc/myspell-dictionary/ca_ES/README_ca_ES.txt 0644 root other
+d none share/doc/myspell-dictionary/da_DK 0755 root bin
+f none share/doc/myspell-dictionary/da_DK/README_da_DK.txt=usr/share/doc/myspell-dictionary/da_DK/README_da_DK.txt 0644 root other
+f none share/doc/myspell-dictionary/da_DK/da_DK.excluded=usr/share/doc/myspell-dictionary/da_DK/da_DK.excluded 0644 root other
+d none share/doc/myspell-dictionary/el_GR 0755 root bin
+f none share/doc/myspell-dictionary/el_GR/README_el_GR.txt=usr/share/doc/myspell-dictionary/el_GR/README_el_GR.txt 0644 root other
+d none share/doc/myspell-dictionary/et_EE 0755 root bin
+f none share/doc/myspell-dictionary/et_EE/litsents.html=usr/share/doc/myspell-dictionary/et_EE/litsents.html 0644 root other
+d none share/doc/myspell-dictionary/he_IL 0755 root bin
+f none share/doc/myspell-dictionary/he_IL/README_he_IL.txt=usr/share/doc/myspell-dictionary/he_IL/README_he_IL.txt 0644 root other
+d none share/doc/myspell-dictionary/hr_HR 0755 root bin
+f none share/doc/myspell-dictionary/hr_HR/README_hr_HR.txt=usr/share/doc/myspell-dictionary/hr_HR/README_hr_HR.txt 0644 root other
+d none share/doc/myspell-dictionary/lt_LT 0755 root bin
+f none share/doc/myspell-dictionary/lt_LT/INSTRUKCIJOS.txt=usr/share/doc/myspell-dictionary/lt_LT/INSTRUKCIJOS.txt 0644 root other
+f none share/doc/myspell-dictionary/lt_LT/README.EN=usr/share/doc/myspell-dictionary/lt_LT/README.EN 0644 root other
+f none share/doc/myspell-dictionary/lt_LT/dictionary.lst=usr/share/doc/myspell-dictionary/lt_LT/dictionary.lst 0644 root other
+d none share/doc/myspell-dictionary/lv_LV 0755 root bin
+f none share/doc/myspell-dictionary/lv_LV/README_lv_LV.txt=usr/share/doc/myspell-dictionary/lv_LV/README_lv_LV.txt 0644 root other
+f none share/doc/myspell-dictionary/lv_LV/changelog.txt=usr/share/doc/myspell-dictionary/lv_LV/changelog.txt 0644 root other
+f none share/doc/myspell-dictionary/lv_LV/license.txt=usr/share/doc/myspell-dictionary/lv_LV/license.txt 0644 root other
+f none share/doc/myspell-dictionary/lv_LV/lin-lv_LV_add.sh=usr/share/doc/myspell-dictionary/lv_LV/lin-lv_LV_add.sh 0644 root other
+f none share/doc/myspell-dictionary/lv_LV/version.txt=usr/share/doc/myspell-dictionary/lv_LV/version.txt 0644 root other
+f none share/doc/myspell-dictionary/lv_LV/win-lv_LV_add.bat=usr/share/doc/myspell-dictionary/lv_LV/win-lv_LV_add.bat 0644 root other
+d none share/doc/myspell-dictionary/nb_NO 0755 root bin
+f none share/doc/myspell-dictionary/nb_NO/README_nb_NO.txt=usr/share/doc/myspell-dictionary/nb_NO/README_nb_NO.txt 0644 root other
+d none share/doc/myspell-dictionary/nl_NL 0755 root bin
+f none share/doc/myspell-dictionary/nl_NL/README_nl_NL.txt=usr/share/doc/myspell-dictionary/nl_NL/README_nl_NL.txt 0644 root other
+d none share/doc/myspell-dictionary/nn_NO 0755 root bin
+f none share/doc/myspell-dictionary/nn_NO/README_nn_NO.txt=usr/share/doc/myspell-dictionary/nn_NO/README_nn_NO.txt 0644 root other
+d none share/doc/myspell-dictionary/pt_PT 0755 root bin
+f none share/doc/myspell-dictionary/pt_PT/COPYING=usr/share/doc/myspell-dictionary/pt_PT/COPYING 0644 root other
+f none share/doc/myspell-dictionary/pt_PT/README_pt_PT.txt=usr/share/doc/myspell-dictionary/pt_PT/README_pt_PT.txt 0644 root other
+d none share/doc/myspell-dictionary/ro_RO 0755 root bin
+f none share/doc/myspell-dictionary/ro_RO/COPYING.GPL=usr/share/doc/myspell-dictionary/ro_RO/COPYING.GPL 0644 root other
+f none share/doc/myspell-dictionary/ro_RO/COPYING.LGPL=usr/share/doc/myspell-dictionary/ro_RO/COPYING.LGPL 0644 root other
+f none share/doc/myspell-dictionary/ro_RO/COPYING.MPL=usr/share/doc/myspell-dictionary/ro_RO/COPYING.MPL 0644 root other
+f none share/doc/myspell-dictionary/ro_RO/README_ro_RO.txt=usr/share/doc/myspell-dictionary/ro_RO/README_ro_RO.txt 0644 root other
+d none share/doc/myspell-dictionary/sk_SK 0755 root bin
+f none share/doc/myspell-dictionary/sk_SK/README_sk_SK.txt=usr/share/doc/myspell-dictionary/sk_SK/README_sk_SK.txt 0644 root other
+d none share/doc/myspell-dictionary/sl_SI 0755 root bin
+f none share/doc/myspell-dictionary/sl_SI/README_sl_SI.txt=usr/share/doc/myspell-dictionary/sl_SI/README_sl_SI.txt 0644 root other
+d none share/doc/myspell-dictionary/th_TH 0755 root bin
+f none share/doc/myspell-dictionary/th_TH/ChangeLog.txt=usr/share/doc/myspell-dictionary/th_TH/ChangeLog.txt 0644 root other
+f none share/doc/myspell-dictionary/th_TH/README_th_TH.txt=usr/share/doc/myspell-dictionary/th_TH/README_th_TH.txt 0644 root other
+d none share/doc/myspell-dictionary/uk_UA 0755 root bin
+f none share/doc/myspell-dictionary/uk_UA/README_uk_UA.txt=usr/share/doc/myspell-dictionary/uk_UA/README_uk_UA.txt 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/bg_BG.aff=usr/share/spell/myspell/bg_BG.aff 0644 root other
+f none share/spell/myspell/bg_BG.dic=usr/share/spell/myspell/bg_BG.dic 0644 root other
+f none share/spell/myspell/ca_ES.aff=usr/share/spell/myspell/ca_ES.aff 0644 root other
+f none share/spell/myspell/ca_ES.dic=usr/share/spell/myspell/ca_ES.dic 0644 root other
+f none share/spell/myspell/da_DK.aff=usr/share/spell/myspell/da_DK.aff 0644 root other
+f none share/spell/myspell/da_DK.dic=usr/share/spell/myspell/da_DK.dic 0644 root other
+f none share/spell/myspell/el_GR.aff=usr/share/spell/myspell/el_GR.aff 0644 root other
+f none share/spell/myspell/el_GR.dic=usr/share/spell/myspell/el_GR.dic 0644 root other
+f none share/spell/myspell/et_EE.aff=usr/share/spell/myspell/et_EE.aff 0644 root other
+f none share/spell/myspell/et_EE.dic=usr/share/spell/myspell/et_EE.dic 0644 root other
+f none share/spell/myspell/he_IL.aff=usr/share/spell/myspell/he_IL.aff 0644 root other
+f none share/spell/myspell/he_IL.dic=usr/share/spell/myspell/he_IL.dic 0644 root other
+f none share/spell/myspell/hr_HR.aff=usr/share/spell/myspell/hr_HR.aff 0644 root other
+f none share/spell/myspell/hr_HR.dic=usr/share/spell/myspell/hr_HR.dic 0644 root other
+f none share/spell/myspell/lt_LT.aff=usr/share/spell/myspell/lt_LT.aff 0644 root other
+f none share/spell/myspell/lt_LT.dic=usr/share/spell/myspell/lt_LT.dic 0644 root other
+f none share/spell/myspell/lv_LV.aff=usr/share/spell/myspell/lv_LV.aff 0644 root other
+f none share/spell/myspell/lv_LV.dic=usr/share/spell/myspell/lv_LV.dic 0644 root other
+f none share/spell/myspell/nb_NO.aff=usr/share/spell/myspell/nb_NO.aff 0644 root other
+f none share/spell/myspell/nb_NO.dic=usr/share/spell/myspell/nb_NO.dic 0644 root other
+f none share/spell/myspell/nl_NL.aff=usr/share/spell/myspell/nl_NL.aff 0644 root other
+f none share/spell/myspell/nl_NL.dic=usr/share/spell/myspell/nl_NL.dic 0644 root other
+f none share/spell/myspell/nn_NO.aff=usr/share/spell/myspell/nn_NO.aff 0644 root other
+f none share/spell/myspell/nn_NO.dic=usr/share/spell/myspell/nn_NO.dic 0644 root other
+f none share/spell/myspell/pt_PT.aff=usr/share/spell/myspell/pt_PT.aff 0644 root other
+f none share/spell/myspell/pt_PT.dic=usr/share/spell/myspell/pt_PT.dic 0644 root other
+f none share/spell/myspell/ro_RO.aff=usr/share/spell/myspell/ro_RO.aff 0644 root other
+f none share/spell/myspell/ro_RO.dic=usr/share/spell/myspell/ro_RO.dic 0644 root other
+f none share/spell/myspell/sk_SK.aff=usr/share/spell/myspell/sk_SK.aff 0644 root other
+f none share/spell/myspell/sk_SK.dic=usr/share/spell/myspell/sk_SK.dic 0644 root other
+f none share/spell/myspell/sl_SI.aff=usr/share/spell/myspell/sl_SI.aff 0644 root other
+f none share/spell/myspell/sl_SI.dic=usr/share/spell/myspell/sl_SI.dic 0644 root other
+f none share/spell/myspell/th_TH.aff=usr/share/spell/myspell/th_TH.aff 0644 root other
+f none share/spell/myspell/th_TH.dic=usr/share/spell/myspell/th_TH.dic 0644 root other
+f none share/spell/myspell/uk_UA.aff=usr/share/spell/myspell/uk_UA.aff 0644 root other
+f none share/spell/myspell/uk_UA.dic=usr/share/spell/myspell/uk_UA.dic 0644 root other

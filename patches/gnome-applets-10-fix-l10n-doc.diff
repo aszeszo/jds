@@ -1,0 +1,5102 @@
+diff -r 037e75edb8ed accessx-status/docs/ca/accessx-status.xml
+--- a/accessx-status/docs/ca/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/ca/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Equip de documentació del GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/cs/accessx-status.xml
+--- a/accessx-status/docs/cs/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/cs/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2009.</year><holder>Lucas Lommer (llommer@svn.gnome.org)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Dokumentační tým GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/de/accessx-status.xml
+--- a/accessx-status/docs/de/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/de/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME-Dokumentationsprojekt</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+@@ -105,7 +106,7 @@
+ 		  <revnumber>Handbuch des Applets zur Barrierefreiheitsüberwachung der Tastatur V0.1</revnumber> 
+ 		  <date>März 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed accessx-status/docs/el/accessx-status.xml
+--- a/accessx-status/docs/el/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/el/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Ομάδα Τεκμηρίωσης GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/en_GB/accessx-status.xml
+--- a/accessx-status/docs/en_GB/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/en_GB/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2007</year><holder>David Lodge (dave@cirt.net)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>GNOME Documentation Team</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		  <surname>Desktop Documentation Team</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+@@ -105,7 +106,7 @@
+ 		  <revnumber>Keyboard Accessibility Monitor Applet Manual V0.1</revnumber> 
+ 		  <date>March 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed accessx-status/docs/es/accessx-status.xml
+--- a/accessx-status/docs/es/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/es/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2007</year><holder>Jorge González (jorge.gonzalez.gonzalez@hispalinux.es)</holder></copyright><copyright><year>2006</year><holder>María Majadas (maria.majadas@hispalinux.es)</holder></copyright><copyright><year>2005</year><holder>Francisco Javier F. Serrador (serrador@gnome.org)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Equipo de documentación de Gnome</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/eu/accessx-status.xml
+--- a/accessx-status/docs/eu/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/eu/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2008.</year><holder>Hizkuntza Politikarako Sailburuordetza (hizkpol@ej-gv.es)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOMEren dokumentazio-taldea</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/fi/accessx-status.xml
+--- a/accessx-status/docs/fi/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/fi/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2008</year><holder>Jukka Heikkilä (jutsco@gmail.com)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Gnome dokumentointiryhmä</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/fr/accessx-status.xml
+--- a/accessx-status/docs/fr/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/fr/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2005, 2006.</year><holder>Christophe Bliard (christophe.bliard@trux.info)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Équipe de documentation GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/it/accessx-status.xml
+--- a/accessx-status/docs/it/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/it/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2005, 2007.</year><holder>Luca Ferretti (elle.uca@libero.it)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Team di documentazione GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+@@ -105,7 +106,7 @@
+ 		  <revnumber>Manuale applet Monitor accessibilità tastiera V0.1</revnumber> 
+ 		  <date>Marzo 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Team documentazione Sun GNOME</para> 
++			 <para role="author">Team documentazione Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Progetto di documentazione GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed accessx-status/docs/ko/accessx-status.xml
+--- a/accessx-status/docs/ko/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/ko/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2008.</year><holder>류창우 (cwryu@debian.org)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>그놈 문서 팀</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/nl/accessx-status.xml
+--- a/accessx-status/docs/nl/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/nl/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2006</year><holder>Inge Loots (inge.loots@gmail.com)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -109,10 +110,10 @@
+ 		  <email>davyd#madely.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Documentatieteam van GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+@@ -144,7 +145,7 @@
+ 		  <revnumber>Handleiding toetsenbord-toegankelijkheids-monitor-applet V0.1</revnumber> 
+ 		  <date>Maart 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Documentatie-team van Sun GNOME</para> 
++			 <para role="author">Documentatie-team van Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">GNOME Documentatie Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed accessx-status/docs/oc/accessx-status.xml
+--- a/accessx-status/docs/oc/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/oc/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -129,10 +130,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Còla de documentacion de GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/sv/accessx-status.xml
+--- a/accessx-status/docs/sv/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/sv/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2006</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -73,7 +74,7 @@
+ 		  <firstname>Suns</firstname> 
+ 		  <surname>GNOME-dokumentationsteam</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/uk/accessx-status.xml
+--- a/accessx-status/docs/uk/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/uk/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2004, 2005</year><holder>Максим Дзюманенко (mvd@mylinux.ua)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Команда документування GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+diff -r 037e75edb8ed accessx-status/docs/zh_CN/accessx-status.xml
+--- a/accessx-status/docs/zh_CN/accessx-status.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/accessx-status/docs/zh_CN/accessx-status.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright><copyright><year>2009.</year><holder>TeliuTe (teliute@163.com)</holder></copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -70,10 +71,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME 文档小组</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+@@ -105,7 +106,7 @@
+ 		  <revnumber>键盘辅助功能监视器手册 V0.1</revnumber> 
+ 		  <date>2003年3月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed battstat/docs/bg/battstat.xml
+--- a/battstat/docs/bg/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/bg/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -79,7 +80,7 @@
+       <author>
+         <firstname>Екип на Sun</firstname>
+         <surname>за документация на GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/ca/battstat.xml
+--- a/battstat/docs/ca/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/ca/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equip de documentació del GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/cs/battstat.xml
+--- a/battstat/docs/cs/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/cs/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Dokumentační tým GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/da/battstat.xml
+--- a/battstat/docs/da/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/da/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME-dokumentationsholdet</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+@@ -155,7 +156,7 @@
+         <revnumber>Manual til panelprogrammet batteriovervåger version 2.2</revnumber>
+         <date>August 2004</date>
+         <revdescription>
+-          <para role="author">Sun GNOME-dokumentationsholdet</para>
++          <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+           <para role="publisher">GNOME-dokumentationsprojekt</para>
+         </revdescription>
+       </revision>
+diff -r 037e75edb8ed battstat/docs/de/battstat.xml
+--- a/battstat/docs/de/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/de/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME-Dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+@@ -155,7 +156,7 @@
+         <revnumber>Batterieladeanzeige-Applet-Handbuch V2.2</revnumber>
+         <date>August 2004</date>
+         <revdescription>
+-          <para role="author">Sun GNOME-Dokumentationsteam</para>
++          <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+           <para role="publisher">GNOME-Dokumentationsprojekt</para>
+         </revdescription>
+       </revision>
+diff -r 037e75edb8ed battstat/docs/el/battstat.xml
+--- a/battstat/docs/el/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/el/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Ομάδα τεκμηρίωσης του Gnome</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/en_GB/battstat.xml
+--- a/battstat/docs/en_GB/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/en_GB/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+@@ -155,7 +156,7 @@
+         <revnumber>Battery Charge Monitor Applet Manual V2.2</revnumber>
+         <date>August 2004</date>
+         <revdescription>
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription>
+       </revision>
+diff -r 037e75edb8ed battstat/docs/es/battstat.xml
+--- a/battstat/docs/es/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/es/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equipo de documentación de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/eu/battstat.xml
+--- a/battstat/docs/eu/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/eu/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOMEren dokumentazio-taldea</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor </firstname>
+diff -r 037e75edb8ed battstat/docs/fi/battstat.xml
+--- a/battstat/docs/fi/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/fi/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Gnome dokumentointiryhmä</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/fr/battstat.xml
+--- a/battstat/docs/fr/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/fr/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Équipe de documentation GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/ko/battstat.xml
+--- a/battstat/docs/ko/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/ko/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -40,7 +41,8 @@
+       <year>1999</year> 
+       <year>2000</year> 
+       <holder>Jorgen Pehrson</holder> 
+-    </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++    </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+ <!-- translators: uncomment this:
+ 
+     <copyright>
+@@ -77,9 +79,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>그놈 문서 팀</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/oc/battstat.xml
+--- a/battstat/docs/oc/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/oc/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -32,7 +32,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -138,9 +139,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Còla de documentacion de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/pt_BR/battstat.xml
+--- a/battstat/docs/pt_BR/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/pt_BR/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equipe de Documentação do GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/sv/battstat.xml
+--- a/battstat/docs/sv/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/sv/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -79,7 +80,7 @@
+       <author>
+         <firstname>Suns</firstname>
+         <surname>GNOME-dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/uk/battstat.xml
+--- a/battstat/docs/uk/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/uk/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -32,7 +32,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -79,9 +80,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Команда документування GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -r 037e75edb8ed battstat/docs/zh_CN/battstat.xml
+--- a/battstat/docs/zh_CN/battstat.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/battstat/docs/zh_CN/battstat.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -77,9 +78,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME 文档团队</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+@@ -155,7 +156,7 @@
+         <revnumber>电池电量监视程序手册 V2.2</revnumber>
+         <date>2004年8月</date>
+         <revdescription>
+-          <para role="author">Sun GNOME 文档团队</para>
++          <para role="author">Oracle Solaris Desktop 文档团队</para>
+           <para role="publisher">GNOME 文档项目</para>
+         </revdescription>
+       </revision>
+diff -r 037e75edb8ed charpick/help/ca/char-palette.xml
+--- a/charpick/help/ca/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/ca/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Equip de documentació del GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/cs/char-palette.xml
+--- a/charpick/help/cs/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/cs/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Dokumentační tým GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/de/char-palette.xml
+--- a/charpick/help/de/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/de/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>GNOME Dokumentationsteam</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/el/char-palette.xml
+--- a/charpick/help/el/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/el/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Ομάδα τεκμηρίωσης GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/en_GB/char-palette.xml
+--- a/charpick/help/en_GB/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/en_GB/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
+-       <surname>GNOME Documentation Team</surname>
++       <firstname>Oracle Solaris</firstname>
++       <surname>Desktop Documentation Team</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/es/char-palette.xml
+--- a/charpick/help/es/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/es/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Equipo de documentación de GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/eu/char-palette.xml
+--- a/charpick/help/eu/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/eu/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>GNOMEren dokumentazio-taldea</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/fi/char-palette.xml
+--- a/charpick/help/fi/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/fi/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Gnome dokumentointiryhmä</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/fr/char-palette.xml
+--- a/charpick/help/fr/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/fr/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Équipe de documentation GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/it/char-palette.xml
+--- a/charpick/help/it/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/it/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Gruppo di documentazione GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/ko/char-palette.xml
+--- a/charpick/help/ko/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/ko/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,11 +35,13 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+-  </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007, 2008.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++  </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007, 2008.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+   <publisher role="maintainer">
+     <publishername>그놈 문서 프로젝트</publishername>
+   </publisher>
+@@ -66,10 +68,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>그놈 문서 팀</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/nl/char-palette.xml
+--- a/charpick/help/nl/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/nl/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -37,7 +37,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -68,10 +69,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>GNOME Documentatie Team</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/oc/char-palette.xml
+--- a/charpick/help/oc/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/oc/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -37,7 +37,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -127,10 +128,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Còla de documentacion de GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/pt_BR/char-palette.xml
+--- a/charpick/help/pt_BR/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/pt_BR/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Equipe de Documentação do GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/ru/char-palette.xml
+--- a/charpick/help/ru/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/ru/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Команда документирования GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/sv/char-palette.xml
+--- a/charpick/help/sv/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/sv/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -69,7 +70,7 @@
+        <firstname>Suns</firstname>
+        <surname>GNOME-dokumentationsteam</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/uk/char-palette.xml
+--- a/charpick/help/uk/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/uk/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -37,7 +37,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -68,10 +69,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>Команда документування GNOME</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed charpick/help/zh_CN/char-palette.xml
+--- a/charpick/help/zh_CN/char-palette.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/charpick/help/zh_CN/char-palette.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++  <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -66,10 +67,10 @@
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
++       <firstname>Oracle Solaris</firstname>
+        <surname>GNOME 文档团队</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -r 037e75edb8ed drivemount/help/ca/drivemount.xml
+--- a/drivemount/help/ca/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/ca/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equip de documentació del GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/cs/drivemount.xml
+--- a/drivemount/help/cs/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/cs/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Dokumentační tým GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/de/drivemount.xml
+--- a/drivemount/help/de/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/de/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME-Dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+@@ -133,7 +134,7 @@
+ 	<revnumber>Platteneinbindungs-Applet-Handbuch V2.1</revnumber> 
+ 	<date>Februar 2004</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME-Dokumentationsteam</para>
++          <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+           <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed drivemount/help/el/drivemount.xml
+--- a/drivemount/help/el/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/el/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Ομάδα Τεκμηρίωσης GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/en_GB/drivemount.xml
+--- a/drivemount/help/en_GB/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/en_GB/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+@@ -133,7 +134,7 @@
+ 	<revnumber>Disk Mounter Applet Manual V2.1</revnumber> 
+ 	<date>February 2004</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed drivemount/help/es/drivemount.xml
+--- a/drivemount/help/es/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/es/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equipo de documentación de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/eu/drivemount.xml
+--- a/drivemount/help/eu/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/eu/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOMEren dokumentazio-taldea</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/fi/drivemount.xml
+--- a/drivemount/help/fi/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/fi/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Gnome dokumentointiprojekti</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/fr/drivemount.xml
+--- a/drivemount/help/fr/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/fr/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Équipe de documentation GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/it/drivemount.xml
+--- a/drivemount/help/it/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/it/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Team di documentazione GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/ko/drivemount.xml
+--- a/drivemount/help/ko/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/ko/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -38,7 +39,8 @@
+     <copyright> 
+       <year>2000</year> 
+       <holder>Dan Mueth</holder> 
+-    </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++    </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+ <!-- translators: uncomment this:
+ 
+   <copyright>
+@@ -83,9 +85,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>그놈 문서 팀</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/oc/drivemount.xml
+--- a/drivemount/help/oc/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/oc/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -143,9 +144,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Còla de documentacion de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/pa/drivemount.xml
+--- a/drivemount/help/pa/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/pa/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -83,7 +83,7 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME ਦਸਤਾਵੇਜ਼ ਟੀਮ</surname>
+         <affiliation><orgname>ਸਨ ਮਾਈਕਰੋਸਿਸਟਮ</orgname></affiliation>
+       </author>
+diff -r 037e75edb8ed drivemount/help/ru/drivemount.xml
+--- a/drivemount/help/ru/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/ru/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Команда документации GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/sv/drivemount.xml
+--- a/drivemount/help/sv/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/sv/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -85,7 +86,7 @@
+       <author>
+         <firstname>Suns</firstname>
+         <surname>GNOME-dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/uk/drivemount.xml
+--- a/drivemount/help/uk/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/uk/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -30,7 +30,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -84,9 +85,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Команда документування GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+diff -r 037e75edb8ed drivemount/help/zh_CN/drivemount.xml
+--- a/drivemount/help/zh_CN/drivemount.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/drivemount/help/zh_CN/drivemount.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -83,9 +84,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNMOE 文档团队</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John</firstname> 
+@@ -133,7 +134,7 @@
+ 	<revnumber>磁盘挂载器小程序手册 V2.1</revnumber> 
+ 	<date>2004年2月</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME 文档团队</para>
++          <para role="author">Oracle Solaris Desktop 文档团队</para>
+           <para role="publisher">GNOME 文档项目</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed geyes/docs/ast/geyes.xml
+--- a/geyes/docs/ast/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/ast/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Equipu de Documentación de GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/ca/geyes.xml
+--- a/geyes/docs/ca/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/ca/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Equip de documentació del GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/cs/geyes.xml
+--- a/geyes/docs/cs/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/cs/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Dokumentační tým GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/da/geyes.xml
+--- a/geyes/docs/da/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/da/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME-dokumentationsholdet</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Manual til Øjne-panelprogram v. 2.6</revnumber> 
+ 		  <date>Februar 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Manual til Øjne-panelprogram v. 2.5</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Manual til Øjne-panelprogram v. 2.4</revnumber> 
+ 		  <date>August 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Manual til Øjne-panelprogram v. 2.3</revnumber> 
+ 		  <date>Januar 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -150,7 +151,7 @@
+ 		  <revnumber>Manual til Øjne-panelprogram v. 2.2</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -158,7 +159,7 @@
+ 		  <revnumber>Manual til Øjne-panelprogram v. 2.1</revnumber> 
+ 		  <date>Juni 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -166,7 +167,7 @@
+ 		  <revnumber>Manual til Øjne-panelprogram v. 2.0</revnumber> 
+ 		  <date>Marts 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed geyes/docs/de/geyes.xml
+--- a/geyes/docs/de/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/de/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME-Dokumentationsteam</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/el/geyes.xml
+--- a/geyes/docs/el/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/el/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Ομάδα τεκμηρίωσης του GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/en_GB/geyes.xml
+--- a/geyes/docs/en_GB/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/en_GB/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>GNOME Documentation Team</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		  <surname>Desktop Documentation Team</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Geyes Applet Manual V2.6</revnumber> 
+ 		  <date>February 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Geyes Applet Manual V2.5</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Geyes Applet Manual V2.4</revnumber> 
+ 		  <date>August 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Geyes Applet Manual V2.3</revnumber> 
+ 		  <date>January 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -150,7 +151,7 @@
+ 		  <revnumber>Geyes Applet Manual V2.2</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -158,7 +159,7 @@
+ 		  <revnumber>Geyes Applet Manual V2.1</revnumber> 
+ 		  <date>June 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -166,7 +167,7 @@
+ 		  <revnumber>Geyes Applet Manual V2.0</revnumber> 
+ 		  <date>March 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed geyes/docs/es/geyes.xml
+--- a/geyes/docs/es/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/es/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Equipo de documentación de GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/eu/geyes.xml
+--- a/geyes/docs/eu/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/eu/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOMEren dokumentazio-taldea</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/fi/geyes.xml
+--- a/geyes/docs/fi/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/fi/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Gnome dokumentointiryhmä</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/fr/geyes.xml
+--- a/geyes/docs/fr/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/fr/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Équipe de documentation GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/it/geyes.xml
+--- a/geyes/docs/it/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/it/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2005</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Team di documentazione GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/ko/geyes.xml
+--- a/geyes/docs/ko/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/ko/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -34,7 +35,8 @@
+ 	 <copyright> 
+ 		<year>2000</year> 
+ 		<holder>Arjan Scherpenisse</holder> 
+-	 </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++	 </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+ <!-- translators: uncomment this:
+ 
+   <copyright>
+@@ -66,10 +68,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>그놈 문서 팀</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/oc/geyes.xml
+--- a/geyes/docs/oc/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/oc/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -126,10 +127,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Còla de documentacion de GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/ru/geyes.xml
+--- a/geyes/docs/ru/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/ru/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Команда документирования GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/sv/geyes.xml
+--- a/geyes/docs/sv/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/sv/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -69,7 +70,7 @@
+ 		  <firstname>Suns</firstname> 
+ 		  <surname>GNOME-dokumentationsteam</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/uk/geyes.xml
+--- a/geyes/docs/uk/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/uk/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -67,10 +68,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Команда документування GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 037e75edb8ed geyes/docs/zh_CN/geyes.xml
+--- a/geyes/docs/zh_CN/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/zh_CN/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME 文档小组</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Geyes 大眼睛小程序手册 V2.6</revnumber> 
+ 		  <date>2004年2月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Geyes 大眼睛小程序手册 V2.5</revnumber> 
+ 		  <date>2003年9月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Geyes 大眼睛小程序手册 V2.4</revnumber> 
+ 		  <date>2003年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Geyes 大眼睛小程序手册 V2.3</revnumber> 
+ 		  <date>2003年1月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -150,7 +151,7 @@
+ 		  <revnumber>Geyes 大眼睛小程序手册 V2.2</revnumber> 
+ 		  <date>2002年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -158,7 +159,7 @@
+ 		  <revnumber>Geyes 大眼睛小程序手册 V2.1</revnumber> 
+ 		  <date>2002年6月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -166,7 +167,7 @@
+ 		  <revnumber>Geyes 大眼睛小程序手册 V2.0</revnumber> 
+ 		  <date>2002年3月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed geyes/docs/zh_HK/geyes.xml
+--- a/geyes/docs/zh_HK/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/zh_HK/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME 文件隊伍</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.6</revnumber> 
+ 		  <date>2004年5月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件隊伍</para> 
++			 <para role="author">Oracle Solaris Desktop 文件隊伍</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.5</revnumber> 
+ 		  <date>2003年9月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件隊伍</para> 
++			 <para role="author">Oracle Solaris Desktop 文件隊伍</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.4</revnumber> 
+ 		  <date>2003年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件隊伍</para> 
++			 <para role="author">Oracle Solaris Desktop 文件隊伍</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.3</revnumber> 
+ 		  <date>2003年1月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件隊伍</para> 
++			 <para role="author">Oracle Solaris Desktop 文件隊伍</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -150,7 +151,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.2</revnumber> 
+ 		  <date>2002年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件隊伍</para> 
++			 <para role="author">Oracle Solaris Desktop 文件隊伍</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -158,7 +159,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.1</revnumber> 
+ 		  <date>2002年6月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件隊伍</para> 
++			 <para role="author">Oracle Solaris Desktop 文件隊伍</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -166,7 +167,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.0</revnumber> 
+ 		  <date>2002年5月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件隊伍</para> 
++			 <para role="author">Oracle Solaris Desktop 文件隊伍</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed geyes/docs/zh_TW/geyes.xml
+--- a/geyes/docs/zh_TW/geyes.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/geyes/docs/zh_TW/geyes.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -25,7 +25,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -66,10 +67,10 @@
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME 文件團隊</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.6</revnumber> 
+ 		  <date>2004年5月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件團隊</para> 
++			 <para role="author">Oracle Solaris Desktop 文件團隊</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.5</revnumber> 
+ 		  <date>2003年9月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件團隊</para> 
++			 <para role="author">Oracle Solaris Desktop 文件團隊</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.4</revnumber> 
+ 		  <date>2003年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件團隊</para> 
++			 <para role="author">Oracle Solaris Desktop 文件團隊</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.3</revnumber> 
+ 		  <date>2003年1月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件團隊</para> 
++			 <para role="author">Oracle Solaris Desktop 文件團隊</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -150,7 +151,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.2</revnumber> 
+ 		  <date>2002年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件團隊</para> 
++			 <para role="author">Oracle Solaris Desktop 文件團隊</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -158,7 +159,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.1</revnumber> 
+ 		  <date>2002年6月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件團隊</para> 
++			 <para role="author">Oracle Solaris Desktop 文件團隊</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -166,7 +167,7 @@
+ 		  <revnumber>Geyes 小眼睛程式手冊 V2.0</revnumber> 
+ 		  <date>2002年5月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文件團隊</para> 
++			 <para role="author">Oracle Solaris Desktop 文件團隊</para> 
+ 			 <para role="publisher">GNOME 文件計劃</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed gweather/docs/ar/gweather.xml
+--- a/gweather/docs/ar/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/ar/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -153,11 +154,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>فريق توثيق جنوم</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/ca/gweather.xml
+--- a/gweather/docs/ca/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/ca/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Equip de documentació del GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/cs/gweather.xml
+--- a/gweather/docs/cs/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/cs/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Dokumentační tým GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+@@ -169,7 +170,7 @@
+           <revnumber>Příručka V2.4 k appletu Zprávy o počasí</revnumber>  		
+           <date>Únor 2004</date>  		  
+           <revdescription>
+-	    <para role="author">Dokumentační tým Sun GNOME</para>
++	    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+ 	    <para role="publisher">Dokumentační projekt GNOME</para>
+           </revdescription>
+         </revision>
+@@ -177,7 +178,7 @@
+           <revnumber>Příručka V2.3 k appletu Zprávy o počasí</revnumber>  		
+           <date>Leden 2003</date>  		  
+           <revdescription>
+-	    <para role="author">Dokumentační tým Sun GNOME</para>
++	    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+ 	    <para role="publisher">Dokumentační projekt GNOME</para>
+           </revdescription>
+         </revision>  
+@@ -185,7 +186,7 @@
+           <revnumber>Příručka V2.2 k appletu Zprávy o počasí</revnumber>  		
+           <date>Srpen 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Dokumentační tým Sun GNOME</para>
++	    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+ 	    <para role="publisher">Dokumentační projekt GNOME</para>
+           </revdescription>
+         </revision>  
+@@ -193,7 +194,7 @@
+           <revnumber>Příručka V2.1 k appletu Zprávy o počasí</revnumber>  		
+           <date>Červenec 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Dokumentační tým Sun GNOME</para>
++	    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+ 	    <para role="publisher">Dokumentační projekt GNOME</para>
+           </revdescription>
+         </revision>
+@@ -201,7 +202,7 @@
+           <revnumber>Příručka V2.0 k appletu Zprávy o počasí</revnumber>  		
+           <date>Březen 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Dokumentační tým Sun GNOME</para>
++	    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+ 	    <para role="publisher">Dokumentační projekt GNOME</para>
+           </revdescription>
+         </revision>
+diff -r 037e75edb8ed gweather/docs/de/gweather.xml
+--- a/gweather/docs/de/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/de/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>GNOME Dokumentationsteam</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+@@ -169,7 +170,7 @@
+           <revnumber>Wetterbericht-Applet-Handbuch V2.4</revnumber>  		
+           <date>February 2004</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME-Dokumentationsteam</para>
++	    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	    <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription>
+         </revision>
+@@ -177,7 +178,7 @@
+           <revnumber>Wetterbericht-Applet-Handbuch V2.3</revnumber>  		
+           <date>Januar 2003</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME-Dokumentationsteam</para>
++	    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	    <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription>
+         </revision>  
+@@ -185,7 +186,7 @@
+           <revnumber>Wetterbericht-Applet-Handbuch V2.2</revnumber>  		
+           <date>August 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME-Dokumentationsteam</para>
++	    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	    <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription>
+         </revision>  
+@@ -193,7 +194,7 @@
+           <revnumber>Wetterbericht-Applet-Handbuch V2.1</revnumber>  		
+           <date>Juli 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME-Dokumentationsteam</para>
++	    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	    <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription>
+         </revision>
+@@ -201,7 +202,7 @@
+           <revnumber>Wetterbericht-Applet-Handbuch V2.0</revnumber>  		
+           <date>März 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME-Dokumentationsteam</para>
++	    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	    <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription>
+         </revision>
+diff -r 037e75edb8ed gweather/docs/el/gweather.xml
+--- a/gweather/docs/el/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/el/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
+-	<surname>GNOME Documentation Team</surname>            		  
++	<firstname>Oracle Solaris</firstname>  		  
++	<surname>Desktop Documentation Team</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+@@ -169,7 +170,7 @@
+           <revnumber>Εγχειρίδιο εφαρμογής Δελτίο Καιρού Εκδ. 2.4</revnumber>  		
+           <date>Φεβρουάριος 2004</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>
+@@ -177,7 +178,7 @@
+           <revnumber>Εγχειρίδιο εφαρμογής Δελτίο Καιρού Εκδ. 2.3</revnumber>  		
+           <date>Ιανουάριος 2003</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>  
+@@ -185,7 +186,7 @@
+           <revnumber>Εγχειρίδιο εφαρμογής Δελτίο Καιρού Εκδ. 2.2</revnumber>  		
+           <date>Αύγουστος 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>  
+@@ -193,7 +194,7 @@
+           <revnumber>Εγχειρίδιο εφαρμογής Δελτίο Καιρού Εκδ. 2.1</revnumber>  		
+           <date>Ιούλιος 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>
+@@ -201,7 +202,7 @@
+           <revnumber>Εγχειρίδιο εφαρμογής Δελτίο Καιρού Εκδ. 2.0</revnumber>  		
+           <date>Μάρτιος 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>
+diff -r 037e75edb8ed gweather/docs/en_GB/gweather.xml
+--- a/gweather/docs/en_GB/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/en_GB/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
+-	<surname>GNOME Documentation Team</surname>            		  
++	<firstname>Oracle Solaris</firstname>  		  
++	<surname>Desktop Documentation Team</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+@@ -169,7 +170,7 @@
+           <revnumber>Weather Report Applet Manual V2.4</revnumber>  		
+           <date>February 2004</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>
+@@ -177,7 +178,7 @@
+           <revnumber>Weather Report Applet Manual V2.3</revnumber>  		
+           <date>January 2003</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>  
+@@ -185,7 +186,7 @@
+           <revnumber>Weather Report Applet Manual V2.2</revnumber>  		
+           <date>August 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>  
+@@ -193,7 +194,7 @@
+           <revnumber>Weather Report Applet Manual V2.1</revnumber>  		
+           <date>July 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>
+@@ -201,7 +202,7 @@
+           <revnumber>Weather Report Applet Manual V2.0</revnumber>  		
+           <date>March 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentation Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	    <para role="publisher">GNOME Documentation Project</para>
+           </revdescription>
+         </revision>
+diff -r 037e75edb8ed gweather/docs/es/gweather.xml
+--- a/gweather/docs/es/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/es/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Equipo de documentación de GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/eu/gweather.xml
+--- a/gweather/docs/eu/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/eu/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -38,7 +38,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -99,11 +100,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>GNOMEren dokumentazio-taldea</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/fi/gweather.xml
+--- a/gweather/docs/fi/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/fi/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Gnome dokumentointiryhmä</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/fr/gweather.xml
+--- a/gweather/docs/fr/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/fr/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Équipe de documentation GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/ko/gweather.xml
+--- a/gweather/docs/ko/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/ko/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -38,7 +38,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -49,7 +50,8 @@
+ 		<year>1999</year>  		
+ 		<year>2000</year>
+ 		<holder>Dan Mueth</holder>  	 
+-      </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++      </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+       <!-- translators: uncomment this:
+       
+         <copyright>
+@@ -99,11 +101,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>그놈 문서 팀</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/nl/gweather.xml
+--- a/gweather/docs/nl/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/nl/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -38,7 +38,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -99,11 +100,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>GNOME Documentatie Team</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+@@ -174,7 +175,7 @@
+           <revnumber>Handleiding voor Weerbericht V2.4</revnumber>  		
+           <date>Februari 2004</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentatie Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentatie Team</para>
+ 	    <para role="publisher">GNOME Documentatie Project</para>
+           </revdescription>
+         </revision>
+@@ -182,7 +183,7 @@
+           <revnumber>Handleiding voor Weerbericht V2.3</revnumber>  		
+           <date>Januari 2003</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentatie Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentatie Team</para>
+ 	    <para role="publisher">GNOME Documentatie Project</para>
+           </revdescription>
+         </revision>  
+@@ -190,7 +191,7 @@
+           <revnumber>Handleiding voor Weerbericht V2.2</revnumber>  		
+           <date>Augustus 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentatie Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentatie Team</para>
+ 	    <para role="publisher">GNOME Documentatie Project</para>
+           </revdescription>
+         </revision>  
+@@ -198,7 +199,7 @@
+           <revnumber>Handleiding voor Weerbericht V2.1</revnumber>  		
+           <date>July 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentatie Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentatie Team</para>
+ 	    <para role="publisher">GNOME Documentatie Project</para>
+           </revdescription>
+         </revision>
+@@ -206,7 +207,7 @@
+           <revnumber>Handleiding voor Weerbericht V2.0</revnumber>  		
+           <date>Maart 2002</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME Documentatie Team</para>
++	    <para role="author">Oracle Solaris Desktop Documentatie Team</para>
+ 	    <para role="publisher">GNOME Documentatie Project</para>
+           </revdescription>
+         </revision>
+diff -r 037e75edb8ed gweather/docs/oc/gweather.xml
+--- a/gweather/docs/oc/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/oc/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -38,7 +38,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -158,11 +159,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Còla de documentacion de GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/pt_BR/gweather.xml
+--- a/gweather/docs/pt_BR/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/pt_BR/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Equipe de Documentação do GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/ru/gweather.xml
+--- a/gweather/docs/ru/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/ru/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Команда документирования GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/sv/gweather.xml
+--- a/gweather/docs/sv/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/sv/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -98,7 +99,7 @@
+ 	<surname>GNOME-dokumentationsteam</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/uk/gweather.xml
+--- a/gweather/docs/uk/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/uk/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -38,7 +38,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -99,11 +100,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>Команда документування GNOME</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -r 037e75edb8ed gweather/docs/zh_CN/gweather.xml
+--- a/gweather/docs/zh_CN/gweather.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/gweather/docs/zh_CN/gweather.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -33,7 +33,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -94,11 +95,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun</firstname>  		  
++	<firstname>Oracle Solaris</firstname>  		  
+ 	<surname>GNOME 文档团队</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+@@ -169,7 +170,7 @@
+           <revnumber>气象报告小工具手册 V2.4</revnumber>  		
+           <date>2004年2月</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME 文档团队</para>
++	    <para role="author">Oracle Solaris Desktop 文档团队</para>
+ 	    <para role="publisher">GNOME 文档项目</para>
+           </revdescription>
+         </revision>
+@@ -177,7 +178,7 @@
+           <revnumber>气象报告小程序手册 V2.3</revnumber>  		
+           <date>2003年1月</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME 文档团队</para>
++	    <para role="author">Oracle Solaris Desktop 文档团队</para>
+ 	    <para role="publisher">GNOME 文档项目</para>
+           </revdescription>
+         </revision>  
+@@ -185,7 +186,7 @@
+           <revnumber>气象报告小程序手册 V2.2</revnumber>  		
+           <date>2002年8月</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME 文档团队</para>
++	    <para role="author">Oracle Solaris Desktop 文档团队</para>
+ 	    <para role="publisher">GNOME 文档项目</para>
+           </revdescription>
+         </revision>  
+@@ -193,7 +194,7 @@
+           <revnumber>气象报告小程序手册 V2.1</revnumber>  		
+           <date>2002年7月</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME 文档团队</para>
++	    <para role="author">Oracle Solaris Desktop 文档团队</para>
+ 	    <para role="publisher">GNOME 文档项目</para>
+           </revdescription>
+         </revision>
+@@ -201,7 +202,7 @@
+           <revnumber>气象报告小程序手册 V2.0</revnumber>  		
+           <date>2002年3月</date>  		  
+           <revdescription>
+-	    <para role="author">Sun GNOME 文档团队</para>
++	    <para role="author">Oracle Solaris Desktop 文档团队</para>
+ 	    <para role="publisher">GNOME 文档项目</para>
+           </revdescription>
+         </revision>
+diff -r 037e75edb8ed invest-applet/docs/en_GB/invest-applet.xml
+--- a/invest-applet/docs/en_GB/invest-applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/invest-applet/docs/en_GB/invest-applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -73,7 +73,7 @@
+   <authorgroup> 
+     <author>
+       <firstname/>
+-      <surname>GNOME Documentation Team</surname>
++      <surname>Desktop Documentation Team</surname>
+     </author>
+     <author> 
+       <firstname>Terrence</firstname> 
+diff -r 037e75edb8ed mini-commander/help/ca/command-line.xml
+--- a/mini-commander/help/ca/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/ca/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Equip de documentació del GNOME</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/de/command-line.xml
+--- a/mini-commander/help/de/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/de/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>GNOME-Dokumentationsteam</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/el/command-line.xml
+--- a/mini-commander/help/el/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/el/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Ομάδα Τεκμηρίωσης GNOME</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/en_GB/command-line.xml
+--- a/mini-commander/help/en_GB/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/en_GB/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
+-      <surname>GNOME Documentation Team</surname>
++      <firstname>Oracle Solaris</firstname>
++      <surname>Desktop Documentation Team</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/es/command-line.xml
+--- a/mini-commander/help/es/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/es/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Equipo de documentación de Gnome</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/eu/command-line.xml
+--- a/mini-commander/help/eu/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/eu/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>GNOMEren dokumentazio-taldea</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/fr/command-line.xml
+--- a/mini-commander/help/fr/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/fr/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Équipe de documentation GNOME</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/ko/command-line.xml
+--- a/mini-commander/help/ko/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/ko/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -44,7 +45,8 @@
+   <copyright> 
+     <year>1998</year> 
+     <holder>Dan Mueth</holder> 
+-  </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++  </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+   <!-- translators: uncomment this:
+        <copyright>
+        <year>2003</year>
+@@ -74,10 +76,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>그놈 문서 팀</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/oc/command-line.xml
+--- a/mini-commander/help/oc/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/oc/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -133,10 +134,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Còla de documentacion de GNOME</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/pt_BR/command-line.xml
+--- a/mini-commander/help/pt_BR/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/pt_BR/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Equipe de Documentação do GNOME</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/sv/command-line.xml
+--- a/mini-commander/help/sv/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/sv/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -76,7 +77,7 @@
+       <firstname>Suns</firstname>
+       <surname>GNOME-dokumentationsteam</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/uk/command-line.xml
+--- a/mini-commander/help/uk/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/uk/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -74,10 +75,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Команда документування GNOME</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mini-commander/help/zh_CN/command-line.xml
+--- a/mini-commander/help/zh_CN/command-line.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mini-commander/help/zh_CN/command-line.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -73,10 +74,10 @@
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>GNOME 文档小组</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -r 037e75edb8ed mixer/docs/ca/mixer_applet2.xml
+--- a/mixer/docs/ca/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/ca/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/cs/mixer_applet2.xml
+--- a/mixer/docs/cs/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/cs/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/da/mixer_applet2.xml
+--- a/mixer/docs/da/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/da/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -109,7 +110,7 @@
+ 		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.6</revnumber> 
+ 		  <date>Februar 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -117,7 +118,7 @@
+ 		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.5</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -125,7 +126,7 @@
+ 		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.4</revnumber> 
+ 		  <date>August 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.3</revnumber> 
+ 		  <date>Marts 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.2</revnumber> 
+ 		  <date>Januar 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.1</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Manual til panelprogrammet lydstyrkekontrol V2.0</revnumber> 
+ 		  <date>April 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para> 
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para> 
+ 			 <para role="publisher">GNOME-dokumentationsholdet</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed mixer/docs/de/mixer_applet2.xml
+--- a/mixer/docs/de/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/de/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -109,7 +110,7 @@
+ 		  <revnumber>Lautstärkeregler-Applet-Handbuch V2.6</revnumber> 
+ 		  <date>Februar 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -117,7 +118,7 @@
+ 		  <revnumber>Lautstärkeregler-Applet-Handbuch V2.5</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -125,7 +126,7 @@
+ 		  <revnumber>Lautstärkeregler-Applet-Handbuch V2.4</revnumber> 
+ 		  <date>August 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Lautstärkeregler-Applet-Handbuch V2.3</revnumber> 
+ 		  <date>März 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Lautstärkeregler-Applet-Handbuch V2.2</revnumber> 
+ 		  <date>Januar 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Lautstärkeregler-Applet-Handbuch V2.1</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Lautstärkeregler-Applet-Handbuch V2.0</revnumber> 
+ 		  <date>April 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME-Dokumentationsteam</para> 
++			 <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed mixer/docs/el/mixer_applet2.xml
+--- a/mixer/docs/el/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/el/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -109,7 +110,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ελέγχου έντασης ήχου V2.6</revnumber> 
+ 		  <date>Φεβρουάριος 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Ομάδα Τεκμηρίωσης Sun GNOME</para> 
++			 <para role="author">Ομάδα Τεκμηρίωσης Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -117,7 +118,7 @@
+ 		  <revnumber>Εγχειδίδιο μικροεφαρμογής ελέγχου έντασης ήχου V2.5</revnumber> 
+ 		  <date>Σεπτέμβριος 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Ομάδα Τεκμηρίωσης Sun GNOME</para> 
++			 <para role="author">Ομάδα Τεκμηρίωσης Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -125,7 +126,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ελέγχου έντασης ήχου V2.4</revnumber> 
+ 		  <date>Αύγουστος 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Ομάδα Τεκμηρίωσης Sun GNOME</para> 
++			 <para role="author">Ομάδα Τεκμηρίωσης Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ελέγχου έντασης ήχου V2.3</revnumber> 
+ 		  <date>Μάρτιος 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Ομάδα Τεκμηρίωσης Sun GNOME</para> 
++			 <para role="author">Ομάδα Τεκμηρίωσης Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ελέγχου έντασης ήχου V2.2</revnumber> 
+ 		  <date>Ιανουάριος 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Ομάδα Τεκμηρίωσης Sun GNOME</para> 
++			 <para role="author">Ομάδα Τεκμηρίωσης Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ελέγχου έντασης ήχου V2.1</revnumber> 
+ 		  <date>Αύγουστος 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Ομάδα Τεκμηρίωσης Sun GNOME</para> 
++			 <para role="author">Ομάδα Τεκμηρίωσης Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ελέγχου έντασης ήχου V2.0</revnumber> 
+ 		  <date>Απρίλιος 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Ομάδα Τεκμηρίωσης Sun GNOME</para> 
++			 <para role="author">Ομάδα Τεκμηρίωσης Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed mixer/docs/en_GB/mixer_applet2.xml
+--- a/mixer/docs/en_GB/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/en_GB/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -109,7 +110,7 @@
+ 		  <revnumber>Volume Control Applet Manual V2.6</revnumber> 
+ 		  <date>February 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -117,7 +118,7 @@
+ 		  <revnumber>Volume Control Applet Manual V2.5</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -125,7 +126,7 @@
+ 		  <revnumber>Volume Control Applet Manual V2.4</revnumber> 
+ 		  <date>August 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Volume Control Applet Manual V2.3</revnumber> 
+ 		  <date>March 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Volume Control Applet Manual V2.2</revnumber> 
+ 		  <date>January 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Volume Control Applet Manual V2.1</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Volume Control Applet Manual V2.0</revnumber> 
+ 		  <date>April 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed mixer/docs/es/mixer_applet2.xml
+--- a/mixer/docs/es/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/es/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/fi/mixer_applet2.xml
+--- a/mixer/docs/fi/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/fi/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/fr/mixer_applet2.xml
+--- a/mixer/docs/fr/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/fr/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/hu/mixer_applet2.xml
+--- a/mixer/docs/hu/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/hu/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002.</year> 
+ 		<year>2003.</year> 
+ 		<year>2004.</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000.</year> 
+@@ -109,7 +110,7 @@
+ 		  <revnumber>A Hangerőszabályzó kisalkalmazás kézikönyvének 2.6-os verziója</revnumber> 
+ 		  <date>2004 februárja</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME dokumentációs csapat</para> 
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para> 
+ 			 <para role="publisher">GNOME dokumentációs projekt</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -117,7 +118,7 @@
+ 		  <revnumber>A Hangerőszabályzó kisalkalmazás kézikönyvének 2.5-ös verziója</revnumber> 
+ 		  <date>2003 szeptembere</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME dokumentációs csapat</para> 
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para> 
+ 			 <para role="publisher">GNOME dokumentációs projekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -125,7 +126,7 @@
+ 		  <revnumber>A Hangerőszabályzó kisalkalmazás kézikönyvének 2.4-es verziója</revnumber> 
+ 		  <date>2003 augusztusa</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME dokumentációs csapat</para> 
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para> 
+ 			 <para role="publisher">GNOME dokumentációs projekt</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -133,7 +134,7 @@
+ 		  <revnumber>A Hangerőszabályzó kisalkalmazás kézikönyvének 2.3-as verziója</revnumber> 
+ 		  <date>2003 márciusa</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME dokumentációs csapat</para> 
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para> 
+ 			 <para role="publisher">GNOME dokumentációs projekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -141,7 +142,7 @@
+ 		  <revnumber>A Hangerőszabályzó kisalkalmazás kézikönyvének 2.2-es verziója</revnumber> 
+ 		  <date>2003 januárja</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME dokumentációs csapat</para> 
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para> 
+ 			 <para role="publisher">GNOME dokumentációs projekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -149,7 +150,7 @@
+ 		  <revnumber>A Hangerőszabályzó kisalkalmazás kézikönyvének 2.1-es verziója</revnumber> 
+ 		  <date>2002 augusztusa</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME dokumentációs csapat</para> 
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para> 
+ 			 <para role="publisher">GNOME dokumentációs projekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -157,7 +158,7 @@
+ 		  <revnumber>A Hangerőszabályzó kisalkalmazás kézikönyvének 2.0-s verziója</revnumber> 
+ 		  <date>2002 áprilisa</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME dokumentációs csapat</para> 
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para> 
+ 			 <para role="publisher">GNOME dokumentációs projekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed mixer/docs/it/mixer_applet2.xml
+--- a/mixer/docs/it/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/it/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/ko/mixer_applet2.xml
+--- a/mixer/docs/ko/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/ko/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,12 +26,14 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+ 		<holder>Dan Mueth</holder> 
+-	 </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007, 2008.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++	 </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007, 2008.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+ <!-- translators: uncomment this:
+ 
+   <copyright>
+diff -r 037e75edb8ed mixer/docs/oc/mixer_applet2.xml
+--- a/mixer/docs/oc/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/oc/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/pt_BR/mixer_applet2.xml
+--- a/mixer/docs/pt_BR/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/pt_BR/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/ru/mixer_applet2.xml
+--- a/mixer/docs/ru/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/ru/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/sv/mixer_applet2.xml
+--- a/mixer/docs/sv/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/sv/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/uk/mixer_applet2.xml
+--- a/mixer/docs/uk/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/uk/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+diff -r 037e75edb8ed mixer/docs/zh_CN/mixer_applet2.xml
+--- a/mixer/docs/zh_CN/mixer_applet2.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/mixer/docs/zh_CN/mixer_applet2.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -26,7 +26,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -109,7 +110,7 @@
+ 		  <revnumber>音量控制器手册 V2.6</revnumber> 
+ 		  <date>2004年2月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -117,7 +118,7 @@
+ 		  <revnumber>音量控制器手册 V2.5</revnumber> 
+ 		  <date>2003年9月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -125,7 +126,7 @@
+ 		  <revnumber>音量控制器手册 V2.4</revnumber> 
+ 		  <date>2003年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>  
+@@ -133,7 +134,7 @@
+ 		  <revnumber>音量控制器手册 V2.3</revnumber> 
+ 		  <date>2003年3月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -141,7 +142,7 @@
+ 		  <revnumber>音量控制器手册 V2.2</revnumber> 
+ 		  <date>2003年1月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -149,7 +150,7 @@
+ 		  <revnumber>音量控制器手册 V2.1</revnumber> 
+ 		  <date>2002年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -157,7 +158,7 @@
+ 		  <revnumber>音量控制器手册 V2.0</revnumber> 
+ 		  <date>2002年4月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 037e75edb8ed multiload/docs/ca/multiload.xml
+--- a/multiload/docs/ca/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/ca/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/cs/multiload.xml
+--- a/multiload/docs/cs/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/cs/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/de/multiload.xml
+--- a/multiload/docs/de/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/de/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+@@ -134,7 +135,7 @@
+ 	<revnumber>Handbuch zum Systemmonitor-Applet V2.1</revnumber> 
+ 	<date>Februar 2004</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME-Dokumentationsteam</para>
++          <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+           <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed multiload/docs/el/multiload.xml
+--- a/multiload/docs/el/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/el/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+@@ -134,7 +135,7 @@
+ 	<revnumber>System Monitor Applet Manual V2.1</revnumber> 
+ 	<date>February 2004</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed multiload/docs/en_GB/multiload.xml
+--- a/multiload/docs/en_GB/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/en_GB/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+@@ -134,7 +135,7 @@
+ 	<revnumber>System Monitor Applet Manual V2.1</revnumber> 
+ 	<date>February 2004</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed multiload/docs/es/multiload.xml
+--- a/multiload/docs/es/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/es/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/fi/multiload.xml
+--- a/multiload/docs/fi/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/fi/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/fr/multiload.xml
+--- a/multiload/docs/fr/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/fr/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/ko/multiload.xml
+--- a/multiload/docs/ko/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/ko/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,14 +28,16 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+       <year>2003</year> 
+       <year>2004</year> 
+       <holder>Chee Bin HOH</holder> 
+-    </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright> 
++    </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright> 
+ 
+ <!-- translators: uncomment this:
+     <copyright>
+diff -r 037e75edb8ed multiload/docs/oc/multiload.xml
+--- a/multiload/docs/oc/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/oc/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/pt_BR/multiload.xml
+--- a/multiload/docs/pt_BR/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/pt_BR/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/ru/multiload.xml
+--- a/multiload/docs/ru/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/ru/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+@@ -134,7 +135,7 @@
+ 	<revnumber>Руководство вер. 2.1 по апплету "Системный монитор".</revnumber> 
+ 	<date>Февраль 2004</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">Проект документации GNOME</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed multiload/docs/sv/multiload.xml
+--- a/multiload/docs/sv/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/sv/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/uk/multiload.xml
+--- a/multiload/docs/uk/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/uk/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -29,7 +29,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+diff -r 037e75edb8ed multiload/docs/zh_CN/multiload.xml
+--- a/multiload/docs/zh_CN/multiload.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/multiload/docs/zh_CN/multiload.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -28,7 +28,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+@@ -134,7 +135,7 @@
+ 	<revnumber>系统监视器小程序手册 V2.1</revnumber> 
+ 	<date>2004年2月</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME 文档项目</para>
+ 	</revdescription> 
+       </revision> 
+diff -r 037e75edb8ed stickynotes/docs/ca/stickynotes_applet.xml
+--- a/stickynotes/docs/ca/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/ca/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/cs/stickynotes_applet.xml
+--- a/stickynotes/docs/cs/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/cs/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+@@ -142,7 +143,7 @@
+ 		<revnumber>Příručka V2.3 k appletu Lepicí poznámky</revnumber> 
+ 		<date>Ünor 2004</date> 
+ 		<revdescription> 
+-                    <para role="author">Dokumentační tým Sun GNOME</para>
++                    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+                     <para role="publisher">Dokumentační projekt GNOME</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -150,7 +151,7 @@
+ 		<revnumber>Příručka V2.2 k appletu Lepicí poznámky</revnumber> 
+ 		<date>Listopad 2003</date> 
+ 		<revdescription>
+-                    <para role="author">Dokumentační tým Sun GNOME</para>
++                    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+                     <para role="publisher">Dokumentační projekt GNOME</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -158,7 +159,7 @@
+ 		<revnumber>Příručka V2.1 k appletu Lepicí poznámky</revnumber> 
+ 		<date>Srpen 2003</date> 
+ 		<revdescription> 
+-                    <para role="author">Dokumentační tým Sun GNOME</para>
++                    <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+                     <para role="publisher">Dokumentační projekt GNOME</para>
+ 		</revdescription> 
+ 	    </revision>
+diff -r 037e75edb8ed stickynotes/docs/de/stickynotes_applet.xml
+--- a/stickynotes/docs/de/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/de/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+@@ -142,7 +143,7 @@
+ 		<revnumber>Klebezettel-Applet-Handbuch V2.3</revnumber> 
+ 		<date>Februar 2004</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME-Dokumentationsteam</para>
++                    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+                     <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -150,7 +151,7 @@
+ 		<revnumber>Klebezettel-Applet-Handbuch V2.2</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription>
+-                    <para role="author">Sun GNOME-Dokumentationsteam</para>
++                    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+                     <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -158,7 +159,7 @@
+ 		<revnumber>Klebezettel-Applet-Handbuch V2.1</revnumber> 
+ 		<date>August 2003</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME-Dokumentationsteam</para>
++                    <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+                     <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+ 	    </revision>
+diff -r 037e75edb8ed stickynotes/docs/el/stickynotes_applet.xml
+--- a/stickynotes/docs/el/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/el/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/en_GB/stickynotes_applet.xml
+--- a/stickynotes/docs/en_GB/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/en_GB/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+@@ -142,7 +143,7 @@
+ 		<revnumber>Sticky Notes Applet Manual V2.3</revnumber> 
+ 		<date>February 2004</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME Documentation Team</para>
++                    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                     <para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -150,7 +151,7 @@
+ 		<revnumber>Sticky Notes Applet Manual V2.2</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription>
+-                    <para role="author">Sun GNOME Documentation Team</para>
++                    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                     <para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -158,7 +159,7 @@
+ 		<revnumber>Sticky Notes Applet Manual V2.1</revnumber> 
+ 		<date>August 2003</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME Documentation Team</para>
++                    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                     <para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+ 	    </revision>
+diff -r 037e75edb8ed stickynotes/docs/es/stickynotes_applet.xml
+--- a/stickynotes/docs/es/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/es/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/eu/stickynotes_applet.xml
+--- a/stickynotes/docs/eu/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/eu/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/fi/stickynotes_applet.xml
+--- a/stickynotes/docs/fi/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/fi/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/fr/stickynotes_applet.xml
+--- a/stickynotes/docs/fr/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/fr/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/ko/stickynotes_applet.xml
+--- a/stickynotes/docs/ko/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/ko/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,12 +35,14 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+         <holder>Loban A Rahman</holder> 
+-      </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright> 
++      </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright> 
+ 
+ 	<!-- Translators: uncomment this:
+ 	<copyright>
+@@ -202,7 +204,7 @@
+ 		<revnumber>Sticky Notes Applet Manual V2.3</revnumber> 
+ 		<date>February 2004</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME Documentation Team</para>
++                    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                     <para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -210,7 +212,7 @@
+ 		<revnumber>Sticky Notes Applet Manual V2.2</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription>
+-                    <para role="author">Sun GNOME Documentation Team</para>
++                    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                     <para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -218,7 +220,7 @@
+ 		<revnumber>Sticky Notes Applet Manual V2.1</revnumber> 
+ 		<date>August 2003</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME Documentation Team</para>
++                    <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                     <para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+ 	    </revision>
+diff -r 037e75edb8ed stickynotes/docs/oc/stickynotes_applet.xml
+--- a/stickynotes/docs/oc/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/oc/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/pt_BR/stickynotes_applet.xml
+--- a/stickynotes/docs/pt_BR/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/pt_BR/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/ru/stickynotes_applet.xml
+--- a/stickynotes/docs/ru/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/ru/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/sv/stickynotes_applet.xml
+--- a/stickynotes/docs/sv/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/sv/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/uk/stickynotes_applet.xml
+--- a/stickynotes/docs/uk/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/uk/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -35,7 +35,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+diff -r 037e75edb8ed stickynotes/docs/zh_CN/stickynotes_applet.xml
+--- a/stickynotes/docs/zh_CN/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/zh_CN/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+@@ -142,7 +143,7 @@
+ 		<revnumber>置顶便笺程序手册 V2.3</revnumber> 
+ 		<date>2004年2月</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME 文件组</para>
++                    <para role="author">Oracle Solaris Desktop 文件组</para>
+                     <para role="publisher">GNOME 文件项目</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -150,7 +151,7 @@
+ 		<revnumber>置顶便笺程序手册 V2.2</revnumber> 
+ 		<date>2003年11月</date> 
+ 		<revdescription>
+-                    <para role="author">Sun GNOME 文件组</para>
++                    <para role="author">Oracle Solaris Desktop 文件组</para>
+                     <para role="publisher">GNOME 文件项目</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -158,7 +159,7 @@
+ 		<revnumber>置顶便笺程序手册 V2.1</revnumber> 
+ 		<date>2003年8月</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME 文件组</para>
++                    <para role="author">Oracle Solaris Desktop 文件组</para>
+                     <para role="publisher">GNOME 文件项目</para>
+ 		</revdescription> 
+ 	    </revision>
+diff -r 037e75edb8ed stickynotes/docs/zh_HK/stickynotes_applet.xml
+--- a/stickynotes/docs/zh_HK/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/zh_HK/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+@@ -142,7 +143,7 @@
+ 		<revnumber>便條程式使用者指南 V2.3</revnumber> 
+ 		<date>2004年2月</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME 文件隊伍</para>
++                    <para role="author">Oracle Solaris Desktop 文件隊伍</para>
+                     <para role="publisher">GNOME 文件計劃</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -150,7 +151,7 @@
+ 		<revnumber>便條程式使用者指南 V2.2</revnumber> 
+ 		<date>2003年十一月</date> 
+ 		<revdescription>
+-                    <para role="author">Sun GNOME 文件隊伍</para>
++                    <para role="author">Oracle Solaris Desktop 文件隊伍</para>
+                     <para role="publisher">GNOME 文件計劃</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -158,7 +159,7 @@
+ 		<revnumber>便條程式使用者指南 V2.1</revnumber> 
+ 		<date>2003年8月</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME 文件隊伍</para>
++                    <para role="author">Oracle Solaris Desktop 文件隊伍</para>
+                     <para role="publisher">GNOME 文件計劃</para>
+ 		</revdescription> 
+ 	    </revision>
+diff -r 037e75edb8ed stickynotes/docs/zh_TW/stickynotes_applet.xml
+--- a/stickynotes/docs/zh_TW/stickynotes_applet.xml	Fri Jul 08 14:43:51 2011 +0800
++++ b/stickynotes/docs/zh_TW/stickynotes_applet.xml	Fri Jul 08 16:39:07 2011 +0800
+@@ -34,7 +34,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+@@ -142,7 +143,7 @@
+ 		<revnumber>便條程式使用者指南 V2.3</revnumber> 
+ 		<date>2004年2月</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME 文件團隊</para>
++                    <para role="author">Oracle Solaris Desktop 文件團隊</para>
+                     <para role="publisher">GNOME 文件計劃</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -150,7 +151,7 @@
+ 		<revnumber>便條程式使用者指南 V2.2</revnumber> 
+ 		<date>2003年十一月</date> 
+ 		<revdescription>
+-                    <para role="author">Sun GNOME 文件團隊</para>
++                    <para role="author">Oracle Solaris Desktop 文件團隊</para>
+                     <para role="publisher">GNOME 文件計劃</para>
+ 		</revdescription> 
+ 	    </revision>
+@@ -158,7 +159,7 @@
+ 		<revnumber>便條程式使用者指南 V2.1</revnumber> 
+ 		<date>2003年8月</date> 
+ 		<revdescription> 
+-                    <para role="author">Sun GNOME 文件團隊</para>
++                    <para role="author">Oracle Solaris Desktop 文件團隊</para>
+                     <para role="publisher">GNOME 文件計劃</para>
+ 		</revdescription> 
+ 	    </revision>

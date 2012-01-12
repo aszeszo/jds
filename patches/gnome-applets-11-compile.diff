@@ -1,0 +1,22 @@
+--- gnome-applets-3.1.91/mixer/Makefile.am-orig	2011-09-15 00:40:48.803122707 -0500
++++ gnome-applets-3.1.91/mixer/Makefile.am	2011-09-15 00:40:55.656734882 -0500
+@@ -22,7 +22,7 @@ noinst_HEADERS = \
+ 
+ mixer_applet2_LDADD = 					\
+ 	$(MIXER_LIBS) 					\
+-	$(GNOME_APPLETS_LIBS)
++	$(GNOME_APPLETS_LIBS) $(LIBM)
+ 
+ appletdir       = $(datadir)/gnome-panel/4.0/applets
+ applet_in_files = org.gnome.applets.MixerApplet.panel-applet.in
+--- gnome-applets-3.1.91/battstat/Makefile.am-orig	2011-09-15 00:33:43.194917839 -0500
++++ gnome-applets-3.1.91/battstat/Makefile.am	2011-09-15 00:33:52.447539093 -0500
+@@ -55,7 +55,7 @@ battstat_applet_2_LDADD = \
+ 		     $(GNOME_APPLETS_LIBS) \
+ 		     $(LIBNOTIFY_LIBS) \
+ 		     $(HAL_LIBS) \
+-		     $(APMLIB)
++		     $(APMLIB) $(LIBM)
+ 
+ schemasdir   = @GCONF_SCHEMA_FILE_DIR@
+ schemas_in_files = battstat.schemas.in

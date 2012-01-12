@@ -1,0 +1,16 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: MIT
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  LICENSE: copyright and authors
+  README: more information about PyYAML.
+
+ The sources of PyYAML-%{pyyaml.version} were downloaded
+ from %{pyyaml.SOURCE0.url}

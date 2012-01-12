@@ -1,0 +1,177 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2009/199 Coherernce for OpenSolaris-->
+<!ENTITY envr-tt "ENVIRONMENT VARIABLES">
+<!ENTITY cmd "coherence">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2009, Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<?Pub UDT _bookmark _target>
+<?Pub Inc>
+<refentry id="coherence-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">14 Aug 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>&cmd;</primary></indexterm>
+<refnamediv id="coherence-1-name"><refname>&cmd;</refname>
+<refpurpose>DLNA/UPnP framework written in Python</refpurpose></refnamediv>
+<refsynopsisdiv id="coherence-1-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-daemon</option></arg>
+<arg choice="opt"><option>-noconfig</option></arg>
+<arg choice="opt"><option>-version</option></arg>
+<arg choice="opt"><option>-configfile <replaceable>file</replaceable></option></arg>
+<arg choice="opt"><option>-logfile <replaceable>file</replaceable></option></arg>
+<arg choice="opt"><option>-plugin <replaceable>value</replaceable></option></arg>
+</option></arg>
+</cmdsynopsis></refsynopsisdiv>
+<refsect1 id="coherence-1-desc"><title>&desc-tt;</title>
+<para>
+Coherence is a DLNA (Digital Living Network Alliance)/UPnP (Universal Plug and Play) Framework written in Python.
+</para>
+<para>
+Coherence is divided into three main parts: the core, the virtual devices, and the device backends. The core of Coherence provides an implementation of:
+<itemizedlist>
+<listitem><para>
+a SSDP (Simple Service Discovery Protocol) server.
+</para></listitem>
+<listitem><para>
+a MSEARCH (command to find other devices connected to the UPnP network) client to find other devices connected to the network.
+</para></listitem>
+<listitem><para>
+server and client for HTTP/SOAP requests.
+</para></listitem>
+<listitem><para>
+server and client for Event Subscription and Notification.
+</para></listitem>
+</itemizedlist>
+</para>
+<para>
+The virtual devices contain:
+<itemizedlist>
+<listitem><para>
+Media Server to provide media content (local storage or online services) and directory information.
+</para></listitem>
+<listitem><para>
+Media Renderer to play back media content provided by the Media Server.
+</para></listitem>
+<listitem><para>
+Control Point to interconnect Media Server and Media Renderer.
+</para></listitem>
+</itemizedlist>
+The virtual device implementation registers with the core, declares which service interfaces it is using, and attaches callbacks which map the service actions to its backend. It's generally a translation map between the core and the device backend.
+</para>
+<para>
+The device backend is the part to host, render and control the media files. The following components could act as the device backend: file systems to store the media files, audio/video hardware and desktop GUI applications to render the media content and control the playback.
+</para>
+<para>
+For users, Coherence can be used in conjunction with <citerefentry><refentrytitle>rhythmbox</refentrytitle><manvolnum>1</manvolnum></citerefentry>, <citerefentry><refentrytitle>totem</refentrytitle><manvolnum>1</manvolnum></citerefentry>, or <citerefentry><refentrytitle>elisa</refentrytitle><manvolnum>1</manvolnum></citerefentry>. When used in this way, these programs become controllable DLNA/UPnP Media Renderers. Coherence can also be configured as a DLNA/UPnP Media Server and exports local and remote media files via its backend to other UPnP clients.
+</para>
+<refsect1 id="coherence-1-opts"><title>&opts-tt;</title>
+<para>
+The following options are supported:
+</para>
+<variablelist termlength="medium">
+<varlistentry><term><option>-d, --daemon</option></term>
+<listitem><para>Daemonize the coherence process.</para>
+</listitem></varlistentry>
+<varlistentry><term><option>--noconfig</option></term>
+<listitem><para>
+Ignore any configuration file found.
+</para>
+</listitem></varlistentry>
+<varlistentry><term><option>-v, --version</option></term>
+<listitem><para>
+Display the current version of <command>&cmd;</command>.
+</para>
+</listitem></varlistentry>
+<varlistentry><term><option>-c, --configfile=<replaceable>file</replaceable></option></term>
+<listitem><para>Specify the location of the configuration <replaceable>file</replaceable>. The default location is $HOME/.coherence. An example configuration <replaceable>file</replaceable> can be found at /var/coherence/coherence.conf</para>
+</listitem></varlistentry>
+<varlistentry><term><option>-l, --logfile=<replaceable>file</replaceable></option></term>
+<listitem><para>Specify the location of the log <replaceable>file</replaceable>. No log <replaceable>file</replaceable> will be generated if the option is not used.</para>
+</listitem></varlistentry>
+<varlistentry><term><option>-p, --plugin=<replaceable>plugin</replaceable></option></term>
+<listitem>
+<para>Activate <replaceable>plugin</replaceable>. No plugin will be activated by default.</para>
+</listitem></varlistentry>
+<varlistentry><term><option>--help</option></term>
+<listitem><para>Display program usage.</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="coherence-1-exam"><title>&exam-tt;</title>
+<para>
+The examples below show how to activate Coherence plugin. Please note that one plugin contains several keywords: backend/plugin name. Users can activate plugin by specifying key "backend" to one of the available backends:
+</para>
+<para>BetterLight, AmpacheStore, FlickrStore, MiroStore, ElisaPlayer, Gallery2Store, TestStore, DVBDStore, FSStore, BuzztardPlayer, GStreamerPlayer, SimpleLight, BuzztardStore, ITVStore, SWR3Store, TrackerStore, LolcatsStore, BBCStore, MediaStore, AppleTrailersStore, LastFMStore, AxisCamStore, ElisaMediaStore, YouTubeStore, PicasaStore, TEDStore, IRadioStore</para>
+<example role="example">
+<title>Plugin Activation</title>
+<para>Activate the FSStore Plugin to export local file system:
+<screen>example% <userinput>coherence --plugin=backend:FSStore,name=MediaCenter</userinput></screen></para>
+<para>Activate the IRadioStore Plugin:
+<screen>example% <userinput>coherence --plugin=backend:IRadioStore,name=radio</userinput></screen></para>
+</example>
+
+<refsect1 id="coherence-1-file"><title>&file-tt;</title>
+<variablelist termlength="wide">
+<varlistentry><term><filename>~/<replaceable>.coherence</replaceable></filename></term><listitem>
+<para>
+Per user configuration file.
+</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+<refsect1 id="coherence-1-attr"><title>&attr-tt;</title>
+<para>See <olink targetdocent="REFMAN5" localinfo="attributes-5"><citerefentry>
+<refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1"><colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row><entry align="center" valign="middle">ATTRIBUTE TYPE</entry><entry align="center"
+valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>SUNWpython24-coherence</para></entry>
+</row>
+<row><entry colname="COLSPEC0"><para>Interface stability</para></entry><entry
+colname="COLSPEC1"><para>Volatile</para></entry></row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="coherence-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>elisa</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>python</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>rhythmbox</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>totem</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+<para>
+For more information about <command>&cmd;</command>, please refer to
+<literal>http://coherence.beebits.net/</literal>.
+</para>
+<para>
+If you find any bugs in <command>&cmd;</command>, please report them to GNOME's
+Bugzilla at <literal>https://coherence.beebits.net/newticket</literal>.</para>
+</refsect1>
+<refsect1 id="coherence-1-note"><title>&note-tt;</title>
+<para>Written by Alfred Peng, Sun Microsystems Inc., 2009. </para>
+</refsect1>
+</refentry>

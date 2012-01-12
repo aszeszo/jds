@@ -1,0 +1,48 @@
+--- a/plugin/gtk-vnc-plugin.h	Mon Jan 25 16:33:36 2010
++++ b/plugin/gtk-vnc-plugin.h	Mon Jan 25 16:26:54 2010
+@@ -44,6 +44,11 @@
+ #define MIME_TYPES_HANDLED  "application/x-gtk-vnc:gtk-vnc:VNC viewer"
+ #define PLUGIN_DESCRIPTION  "VNC (remote desktop) viewer plugin"
+ 
++#define uint16 uint16_t
++#define int16 int16_t
++#define uint32 uint32_t
++#define int32 int32_t
++
+ typedef struct {
+   uint16 mode;
+   NPWindow *window;
+--- a/plugin/npshell.c	Mon Jan 25 16:24:38 2010
++++ b/plugin/npshell.c	Mon Jan 25 16:30:51 2010
+@@ -81,8 +81,13 @@
+ #include <string.h>
+ 
+ #include <npapi.h>
+-#include <npupp.h>
+ 
++#include <nspr.h>
++#define uint16 uint16_t
++#define int16 int16_t
++#define uint32 uint32_t
++#define int32 int32_t
++
+ #include "gtk-vnc-plugin.h"
+ 
+ /***********************************************************************
+--- a/plugin/npunix.c	Mon Jan 25 16:24:31 2010
++++ b/plugin/npunix.c	Mon Jan 25 16:30:58 2010
+@@ -55,8 +55,13 @@
+ 
+ #include <stdio.h>
+ #include <npapi.h>
+-#include <npupp.h>
+ 
++#include <npfunctions.h>
++#define uint16 uint16_t
++#define int16 int16_t
++#define uint32 uint32_t
++#define int32 int32_t
++
+ #include <glib.h>               /* just for G_GNUC_UNUSED */
+ 
+ /*

@@ -1,0 +1,31 @@
+--- dbus-1.2.24/configure.ac-orig	2011-09-30 21:12:37.033450586 -0500
++++ dbus-1.2.24/configure.ac	2011-09-30 21:12:47.778034752 -0500
+@@ -543,7 +543,7 @@ AC_DEFINE_UNQUOTED([DBUS_USE_SYNC], [$ha
+ AC_SEARCH_LIBS(socket,[socket network])
+ AC_CHECK_FUNC(gethostbyname,,[AC_CHECK_LIB(nsl,gethostbyname)])
+ 
+-AC_CHECK_FUNCS(vsnprintf vasprintf nanosleep usleep setenv clearenv unsetenv socketpair getgrouplist fpathconf setrlimit poll setlocale localeconv strtoll strtoull)
++AC_CHECK_FUNCS(vsnprintf vasprintf nanosleep usleep setenv clearenv unsetenv socketpair getgrouplist fpathconf setrlimit poll setlocale localeconv strtoll strtoull closefrom)
+ 
+ AC_CHECK_HEADERS([syslog.h])
+ if test "x$ac_cv_header_syslog_h" = "xyes"; then
+--- /usr/tmp/clean/dbus-1.2.24/dbus/dbus-sysdeps-unix.c	2010-03-23 19:01:27.000000000 +0000
++++ dbus-1.2.24/dbus/dbus-sysdeps-unix.c	2010-08-12 07:57:32.613009883 +0100
+@@ -2986,6 +2986,9 @@
+       if (dup2 (errors_pipe[WRITE_END], 2) == -1)
+         _exit (1);
+ 
++#if HAVE_CLOSEFROM
++      closefrom(3);
++#else
+       maxfds = sysconf (_SC_OPEN_MAX);
+       /* Pick something reasonable if for some reason sysconf
+        * says unlimited.
+@@ -2995,6 +2998,7 @@
+       /* close all inherited fds */
+       for (i = 3; i < maxfds; i++)
+         close (i);
++#endif
+ 
+       sigprocmask (SIG_SETMASK, &old_set, NULL);
+ 

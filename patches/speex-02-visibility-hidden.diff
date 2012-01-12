@@ -1,0 +1,10 @@
+--- speex-1.2rc1/configure.ac.ori	2010-11-15 05:41:20.969821786 +0000
++++ speex-1.2rc1/configure.ac	2010-11-15 07:01:35.800674138 +0000
+@@ -90,7 +90,6 @@
+ AC_MSG_RESULT($has_sse)  
+ 
+ SAVE_CFLAGS="$CFLAGS"
+-CFLAGS="$CFLAGS -fvisibility=hidden"
+ AC_MSG_CHECKING(for ELF visibility)
+ AC_COMPILE_IFELSE([
+ AC_LANG_PROGRAM([[

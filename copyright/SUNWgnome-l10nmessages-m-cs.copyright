@@ -1,0 +1,1653 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  Czech translation of tracker.
+  Copyright (C) 2008 the author(s) of tracker.
+  This file is distributed under the same license as the tracker package.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  Dia 2 Czech translation.
+  Copyright (C) 2002, 2008 the author(s) of Dia 2.
+  Copyrigtt (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the dia package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  Czech translation of dasher.
+  Copyright (C) 2004, 2005, 2008, 2009 the author(s) of dasher.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the dasher package.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  Translation of gok to Czech.
+  Copyright (C) 2003, 2008, 2009 the author(s) of gok.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the GOK package.
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Jiří Eischmann <jiri@eischmann.cz>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  Czech translation of at-spi.
+  Copyright (C) 2008 the author(s) of at-spi.
+  This file is distributed under the same license as the at-spi package.
+  Miloslav Trmac <mitr@volny.cz>, 2003.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  Czech translation of mousetweaks.
+  Copyright (C) 2008, 2009 the author(s) of mousetweaks.
+  This file is distributed under the same license as the mousetweaks package.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008.
+  Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  Czech translation of orca.
+  Copyright (C) 2004, 2008, 2009 the author(s) of orca.
+  This file is distributed under the same license as the orca package.
+  Miloslav Trmac <mitr@volny.cz>, 2004.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Martin Sukany <sukany@braillnet.cz>, 2008.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  Czech translation of quick-lounge-applet
+  This file is distributed under the same license as the Quick Lounge applet package.
+  Copyright (C) 2003 Free Software Foundation.
+  Copyright (C) 2004, 2005 quick-lounge-applet'S COPYRIGHT OWNER
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  Czech translation of gnome-netstatus
+  Copyright (C) 2003, 2004 gnome-netstatus'S COPYRIGHT HOLDER
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>
+  This file is distributed under the same license as the netstatus package.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Lucas Lommer <llommer@svn.gnome.org>, 2009. (small fix only)
+  Andre Klapper <ak-47@gmx.net>, 2009. (small fixes only)
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  Czech translation of file-roller.
+  Copyright (C) 2008, 2009 the author(s) of file-roller.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the file-roller package.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  Czech translation of gcalctool.
+  Copyright (C) 2003, 2004, 2005, 2006, 2009 the author(s) of gcalctool.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gcalctool package.
+  Miloslav Trmac <mitr@volny.cz>, 2003 - 2006.
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Petr Pulc <petrpulc@gmail.com>, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2009.
+  Marek Černocký <marek@manet.cz>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  Czech translation of gtkam
+  Copyright (C) 2003 Miloslav Trmac
+  This file is distributed under the same license as the gtkam package.
+  Miloslav Trmac <mitr@volny.cz>, 2003.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  Czech translation of brasero.
+  Copyright (C) 2008, 2009 the author(s) of brasero.
+  This file is distributed under the same license as the brasero package.
+  Zbyněk Mrkvička <zbynek@mrkvicka.eu>, 2007.
+  ZOiD <sp.pok@seznam.cz>, 2007.
+  Gor, 2007.
+  Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Kamil Páral <ripper42@gmail.com>, 2009.
+  Andre Klapper <ak-47@gmx.net>, 2009.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  Czech translation of sound-juicer.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009 the author(s) of sound-juicer.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the sound-juicer package.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008.
+  Pavel Šefránek <ps@pjoul.cz>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  Czech translation of libbonobo.
+  Copyright (C) 2002, 2008 Free Software Foundation.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the libbonobo package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005, 2006.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  Czech translation of gconf-editor.
+  Copyright (C) 2002, 2004, 2006, 2008 Free Software Foundation.
+  Copyright (C) 2004, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2009 Martin Picek <picek.martin@gnome-cesko.cz>
+  This file is distributed under the same license as the gconf-editor package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2006.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  Czech translation of GConf.
+  Copyright (C) 2002, 2007, 2008 the author(s) of GConf.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  Copyright (C) 2009 Martin Picek <picek.martin@gnome-cesko.cz>.
+  This file is distributed under the same license as the gconf package.
+  George Lebl <jirka@5z.com>, 2000.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jiří Eischmann <jiri@eischmann.cz>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
+  Marek Černocký <marek@manet.cz>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  Czech translation for Bug Buddy.
+  Copyright (C) 2002, 2007, 2008, 2009 the author(s) of Bug Buddy.
+  Copyright (C) 2003, 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the bug-buddy package.
+  George Lebl <jirka@5z.com>, 2000.
+  Michal Bukovjan <michal.bukovjan@openone.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  Czech translation of gDesklets
+  This file is distributed under the same license as the gDesklets package.
+  Copyright (C) 2004, 2005 gDesklet'S COPYRIGHT HOLDER.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>
+  Ondra 'Kepi' Kudlik <kepi@cacwa.cz>, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  Czech translation of gnome-control-center.
+  Copyright (C) 1999, 2003, 2006, 2007, 2008, 2009 the author(s) of gnome-control-center.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gnome-control-center package.
+  David Šauer <davids@penguin.cz>, 1999.
+  Jiří Lebl <jirka@5z.cz>, 2002.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+  Andre Klapper <ak-47@gmx.net>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  Czech translation of gnome-settings-daemon.
+  Copyright (C) 1999,2003, 2006, 2007, 2008, 2009 the author(s) of gnome-settings-daemon.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gnome-settings-daemon package.
+  David Šauer <davids@penguin.cz>, 1999.
+  Jiří Lebl <jirka@5z.cz>, 2002.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  Czech translation of zenity.
+  Copyright (C) 2008 the author(s) of zenity.
+  Copyright (C) 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2008 Pavel Šefránek <ps@pjoul.cz>.
+  This file is distributed under the same license as the zenity.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Pavel Šefránek <ps@pjoul.cz>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  Czech translation of gdm.
+  Copyright (C) 2002, 2003, 2007, 2008 the author(s) of gdm.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  Copyright (C) 2006 Petr Tomeš <ptomes@gmail.com>.
+  This file is distributed under the same license as the gdm package.
+  George Lebl <jirka@5z.com>, 2000.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  Czech translation of Nautilus merged with the translation of eel.
+  Copyright (C) 2001, 2003, 2006, 2007, 2008, 2009 the author(s) of Nautilus.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the nautilus package.
+  George Lebl <jirka@5z.com>, 2001.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
+  Minor fixes by Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lukas Novotny  <lukasnov@cvs.gnome.org>, 2006.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Lukas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+  Tomas Bzatek <tbzatek@redhat.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  Czech translation of gtksourceview.
+  Copyright (C) 2003, 2004, 2005, 2006, 2008, 2009 the author(s) of gtksourceview.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gtksourceview package.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008. 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Lukáš Ručka <lukassoftwares@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  Czech translation of gtksourceview.
+  Copyright (C) 2003, 2004, 2005, 2006 gtksourceview's COPYRIGHT HOLDER
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>
+  This file is distributed under the same license as the gtksourceview package.
+  Miloslav Trmac <mitr@volny.cz>, 2003 - 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  Czech translation of Yelp.
+  Copyright (C) 2002, 2008 Free Software Foundation.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the yelp package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  translation of cs.po to Czech
+  Czech message catalog for ghex.
+  Copyright (C) 1999,2003 Free Software Foundation, Inc.
+  Copyright (C) 2004 gtex'S COPYRIGHT HOLDER
+  Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>
+  David Sauer <davids@penguin.cz>, 1999
+  Michal Bukovjan <bukm@centrum.cz>, 2002,2003.
+  Miloslav Trmac <mitr@volny.cz>, 2004.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Czech translation of Pidgin
+  Copyright (C) 2002, Honza Král <hkral@centrum.cz>
+  Copyright (C) 2003, 2004, 2005, 2007 Miloslav Trmac <mitr@volny.cz>
+  Copyright (C) 2008 David Vachulka <david@konstrukce-cad.com>
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  Czech translation of the GIMP.
+  Copyright (C) 2001, 2003, 2006, 2007, 2008, 2009 the author(s) of the GIMP.
+  Copyright (C) 2003, 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gimp package.
+  Stanislav Brabec <utx@penguin.cz>, 1998-2001.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003 - 2005.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  Translation of gthumb to Czech.
+  Copyright (C) 2002, 2008 Free Software Foundation, Inc.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gthumb package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  Czech translation of Eye Of Gnome.
+  Copyright (C) 2002, 2006, 2007, 2008 the author(s) of Eye Of Gnome.
+  Copyright (C) 2003, 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the eog package.
+  George Lebl <jirka@5z.com>, 2000.
+  Michal Bukovjan <michal.bukovjan@openone.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008.
+  Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  Translation of libgnome to Czech.
+  Copyright (C) 2008, 2009 the author(s) of libgnome.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the libgnome package.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Petr Tomeš <ptomes@gmail.com>, 2003.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  Czech translation of gnome-keyring.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009 the author(s) of gnome-keyring.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-keyring package.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  Czech translation of libbonoboui.
+  Copyright (C) 2002 Free Software Foundation, Inc.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2004, 2005, 2006.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  Czech messages for gnome-media.
+  Copyright (C) 2001, 2007, 2008, 2009 the author(s) of gnome-media.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gnome-media package.
+  Stanislav Brabec <utx@penguin.cz>, 2000, 2001.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Czech translation of gst-plugins-good.
+  Copyright (C) 2007, 2008, 2009 the author(s) of gst-plugins-good.
+  Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>.
+  This file is put in the public domain.
+  Miloslav Trmac <mitr@volny.cz>, 2004.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Czech translations of gst-plugins-base.
+  Copyright (C) 2007, 2008, 2009 the author(s) of gst-plugins-base.
+  Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>.
+  This file is put in the public domain.
+  Miloslav Trmac <mitr@volny.cz>, 2004.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Czech translation of gstreamer.
+  Copyright (C) 2004, 2005, 2007, 2008 gstreamer's COPYRIGHT HOLDER
+  Copyright (C) 2004, 2005, 2007, 2008 Miloslav Trmac <mitr@volny.cz>
+  This file is put in the public domain.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005, 2007, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  Czech translation of totem.
+  Copyright (C) 2002, 2008 the author(s) of totem.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  Copyright (C) 2009 Martin Picek <picek.martin@gnome-cesko.cz>.
+  This file is distributed under the same license as the totem package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Pavel Šefránek <ps@pjoul.cz>, 2008.
+  Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
+  Marek Černocký <marek@manet.cz>, 2009.
+  Lucas Lommer <llommer@svn.gnome.org>, 2009. (just fixes)
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  Czech translation of rhythmbox.
+  Copyright (C) 2002, 2008 the author(s) of rhythmbox.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2007 Martin Picek <picek.martin@gmail.com>.
+  This file is distributed under the same license as the rhythmbox package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Martin Picek <picek.martin@gmail.com>, 2007.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  translation of cs.po to Czech
+  Czech translation of PACKAGE.
+  Copyright (C) 2006 THE PACKAGE'S COPYRIGHT HOLDER
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>
+  This file is distributed under the same license as the PACKAGE package.
+ 
+ 
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  Czech translation of gnome-menus.
+  Copyright (C) 2004, 2005, 2007, 2008, 2009 the author(s) of gnome-menus.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-menus package.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  Czech translation of libwnck.
+  Copyright (C) 2004, 2005, 2006, 2007, 2009 Free Software Foundation, Inc.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the libwnck package.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  Czech message catalog for gnome-desktop.
+  Copyright (C) 1999, 2006, 2007, 2008, 2009 the author(s) of gnome-desktop.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-desktop package.
+  GIS <gis@academy.cas.cz>, 1999.
+  David Šauer <davids@penguin.cz>, 1999.
+  George Lebl <jirka@5z.com>, 2000, 2001.
+  Stanislav Brabec <utx@penguin.cz>, 2000, 2001.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  Czech translation of gnome-panel.
+  Copyright (C) 1999, 2006, 2007, 2008, 2009 the author(s) of gnome-panel.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-panel package.
+  GIS <gis@academy.cas.cz>, 1999.
+  David Šauer <davids@penguin.cz>, 1999.
+  George Lebl <jirka@5z.com>, 2000, 2001.
+  Stanislav Brabec <utx@penguin.cz>, 2000, 2001.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  Czech translation of evince.
+  Copyright (C) 2005, 2006, 2008, 2009 the author(s) of evince.
+  Copyright (C) 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2009 Martin Picek <picek.martin@gnome-cesko.cz>.
+  This file is distributed under the same license as the evince package.
+  Miloslav Trmac <mitr@volny.cz>, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
+  Martin Picek <picek.martin@gnome-cesko.cz>, 2009.
+  Jan Drábek <repli2dev@gmail.com>, 2009.
+  Marek Černocký <marek@manet.cz>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  Czech translation of gnome-pilot
+  Copyright (C) 2003, 2004, 2006 gnome-pilot'S COPYRIGHT HOLDER
+  Copyright (C) 2004, 2006 Miloslav Trmac <mitr@volny.cz>
+  This file is distributed under the same license as the gnome-pilot package.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  Czech translation of gnome-power-manager.
+  Copyright (C) 2008 the author(s) of gnome-power-manager.
+  Copyright (C) 2008 Pavel Šefránek <ps@pjoul.cz>.
+  This file is distributed under the same license as the gnome-power-manager package.
+  Tomas Kyjovsky <tomas.kyjovsky@mail.muni.cz>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Pavel Šefránek <ps@pjoul.cz>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  Czech translation of vino.
+  Copyright (C) 2008, 2009 the author(s) of vino.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2008 Pavel Šefránek <ps@pjoul.cz>.
+  This file is distributed under the same license as the vino.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Pavel Šefránek <ps@pjoul.cz>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  Translation of gnome-session to Czech.
+  Copyright (C) 1999, 2003, 2007, 2008, 2009 the author(s) of gnome-session.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-session package.
+  GIS <gis@academy.cas.cz>, 1999.
+  David Šauer <davids@penguin.cz>, 1999.
+  George Lebl <jirka@5z.com>, 2000, 2001.
+  Stanislav Brabec <utx@penguin.cz>, 2000, 2001.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  Czech translation of gnome-system-monitor.
+  Copyright (C) 2008, 2009 the author(s) of gnome-system-monitor.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-system-monitor package.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  GNOME System Tools Czech translation.
+  Copyright (C) 2002 Free Software Foundation
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>
+  This file is distributed under the same license as the gnome-system-tools package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002,2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003 - 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2003 - 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  Czech translation of GNOME Terminal.
+  Copyright (C) 2002, 2006, 2008, 2009 the author(s) of GNOME Terminal.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-terminal package.
+  Stanislav Brabec <utx@penguin.cz>, 2002.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  Czech translation of gedit.
+  Copyright (C) 2002, 2003, 2006, 2007, 2008, 2009 the author(s) of gedit.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gedit package.
+  Michal Bukovjan <michal.bukovjan@openone.cz>, 2002.
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Jiří Eischmann <jiri@eischmann.cz>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Kamil Páral <ripper42@gmail.com>, 2009.
+  Lucas Lommer <llommer@svn.gnome.org>, 2009. (just one fix)
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  Czech translation of gnome-icon-theme.
+  Copyright (C) 2002, 2008 Free Software Foundation.
+  Copyright (C) 2008 Pavel Šefránek <ps@pjoul.cz>.
+  This file is distributed under the same license as the gnome-icon-theme package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2005.
+  Pavel Šefránek <ps@pjoul.cz>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  Czech translation of gnome-backgrounds.
+  Copyright (C) 2004, 2005, 2006, 2008 the author(s) of gnome-backgrounds.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gnome-backgrounds package.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Pavel Šefránek <ps@pjoul.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  Czech translation of gnome-themes.
+  Copyright (C) 2002, 2003, 2006, 2008 the author(s) of gnome-themes.
+  Copyright (C) 2002, 2003 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gnome-themes package.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Pavel Šefránek <ps@pjoul.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  Glade3 translation - Czech.
+  Copyright (C) 2009 the author(s) of glade3.
+  This file is distributed under the same license as the glade3 package.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2009.
+  Václav Švejcar <xwinus@gmail.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  Czech translation for gnome-utils.
+  Copyright (C) 2001, 2003, 2006, 2007, 2008 the author(s) of gnome-utils.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gnome-utils package.
+  David Sauer <davids@penguin.cz>, 1999.
+  George Lebl <jirka@5z.com>, 2000, 2001.
+  Michal Bukovjan <bukm@centrum.cz>, 2002, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008, 2009.
+  Adrian Guniš <andygun@seznam.cz>, 2008, 2009.
+  Lucas Lommer <llommer@svn.gnome.org>, 2009 (just a small fix).
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  Czech translation of gnome-mime-data.
+  based on Slovak translation of gnome-mime-data
+  Copyright (C) 2002 Free Software Foundation, Inc.
+  Copyright (C) 2003, 2004 Miloslav Trmac <mitr@volny.cz>
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Czech translation of shared-mime-info.
+  Based on Slovak translation of gnome-mime-data.
+  Copyright (C) 2002, 2004, 2005, 2006, 2007, 2008 the author(s) of shared-mime-info.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the shared-mime-info package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  Czech translation of gnome-vfs.
+  Copyright (C) 2002, 2008 Free Software Foundation.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the gnome-vfs package.
+  Michal Bukovjan <bukm@centrum.cz>, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006.
+  Lucas Lommer <llommer@svn.gnome.org>. 2008
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  Czech translation of Metacity.
+  Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 the author(s) of Metacity.
+  Copyright (C) 2003, 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the metacity package.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Petr Kovar <pknbe@volny.cz>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  Czech translation of gtkspell.
+  Copyright (C) 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtkspell package.
+  Petr Kovar <pknbe@volny.cz>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  Czech translation of seahorse.
+  Copyright (C) 1996, 2003, 2008 the author(s) of seahorse.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the seahorse package.
+  Petr Domansky <doman@atlas.cz>, 2000.
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008.
+  Vitezslav Kotrla <vitezslav.kotrla@gmail.com>, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  Czech translation of xdg-user-dirs-gtk.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the xdg-user-dirs-gtk package.
+  Kamil Páral <ripper42@gmail.com>, 2008.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Czech translation of xdg-user-dirs
+  Copyright (C) 2007 Red Hat, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+  Jiří Netolický <netolish@gmail.com>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  Czech translation of evolution.
+  Copyright (C) 2002, 2003, 2006, 2007, 2008, 2009 the author(s) of evolution.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the evolution package.
+  Radka Doulíková <doulikova@centrum.cz>, 2002.
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Tomeš <ptomes@gmail.com>, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2006, 2007.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Jiri Eischmann <jiri@eischmann.cz>, 2008, 2009.
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  Czech translation of gtkhtml.
+  Copyright (C) 2000, 2007, 2008, 2009 the author(s) of gtkhtml.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the gtkhtml package.
+  Radka Soukupova <Radka.Soukupova@centrum.cz>, 2000, 2002.
+  Miloslav Trmac <mitr@volny.cz>, 2002, 2003, 2004, 2005, 2006.
+  Jakub Friedl <jfriedl@suse.cz>, 2007.
+  Lucas Lommer <llommer@svn.gnome.org>, 2008, 2009.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Marek Černocký <marek@manet.cz>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  Czech translation of evolution-exchange.
+  Copyright (C) 2004, 2005, 2006, 2008 the author(s) of evolution-exchange.
+  Copyright (C) 2004, 2005, 2006 Miloslav Trmac <mitr@volny.cz>.
+  Copyright (C) 2006 Lukas Novotny <lukasnov@cvs.gnome.org>.
+  This file is distributed under the same license as the evolution-exchange package.
+  Miloslav Trmac <mitr@volny.cz>, 2004, 2005, 2006.
+  Lukas Novotny <lukasnov@cvs.gnome.org>, 2006.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Jiří Eischmann <jiri@eischmann.cz>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  Czech translation of evolution-data-server.
+  Copyright (C) 2002, 2003, 2008, 2009 the author(s) of evolution-data-server.
+  Copyright (C) 2004, 2005 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the evolution-data-server package.
+  Radka Doulíková <doulikova@centrum.cz>, 2002.
+  Michal Bukovjan <bukm@centrum.cz>, 2003.
+  Miloslav Trmac <mitr@volny.cz>, 2003, 2004, 2005.
+  Petr Kovar <pknbe@volny.cz>, 2008.
+  Jiří Eischmann <jiri@eischmann.cz> 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  Czech translation of evolution-jescs.
+  Copyright (C) 2004, 2009 the author(s) of evolution-jescs.
+  Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the evolution-jescs package.
+  Miloslav Trmac <mitr@volny.cz>, 2004.
+  Jiri Eischmann <jiri@eischmann.cz>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  Czech translation of evolution-webcal.
+  Copyright (C) 2004 Free Software Foundation.
+  Copyright (C) 2004 Miloslav Trmac <mitr@volny.cz>.
+  This file is distributed under the same license as the evolution-webcal package.
+  Miloslav Trmac <mitr@volny.cz>, 2004.
+  Jiří Eischmann <jiri@eischmann.cz>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  Czech translation for virt-manager
+  Copyright (C) 2007 FSF
+  This file is distributed under the same license as the virt-manager package.
+  Milan Kerslager <kerslage@linux.cz>, 2007.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

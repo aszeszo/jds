@@ -1,0 +1,698 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:44+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
+
+#: ../data/time-slider.desktop.in.h:1
+msgid "Configure the system to take automatic snapshots of your data"
+msgstr "System für automatische Snapshots Ihrer Daten konfigurieren"
+
+#: ../data/time-slider.desktop.in.h:2
+#: ../usr/share/time-slider/lib/time_slider/applet.py:634
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:648
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:830
+msgid "Time Slider"
+msgstr "Zeit-Schieberegler"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:2
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:365
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:520
+#, no-c-format, python-format
+msgid "%d snapshots will be deleted."
+msgstr "%d Schnappschüsse werden gelöscht."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:3
+msgid "<b>Summary</b>"
+msgstr "<b>Zusammenfassung</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:4
+msgid "D_eselect All"
+msgstr "A_uswahl für alle aufheben"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:5
+msgid "Delete Snapshots"
+msgstr "Schnappschüsse löschen"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:6
+msgid "Deleting Snapshots"
+msgstr "Löschen von Schnappschüssen"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:7
+msgid "Deleting snapshots..."
+msgstr "Schnappschüsse werden gelöscht..."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:8
+msgid "Exit when done. "
+msgstr "Beenden Sie die Anwendung, wenn Sie fertig sind.  "
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:9
+msgid "File System:"
+msgstr "Dateisystem:"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:10
+msgid "Name:"
+msgstr "Name:"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:11
+msgid "Press Delete to continue."
+msgstr "Klicken Sie auf \"Löschen\", um fortzufahren."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:12
+msgid "Scanning snapshots..."
+msgstr "Suche nach Schnappschüssen wird ausgeführt..."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:13
+msgid "Select ZFS snapshots to delete from the list below."
+msgstr "Wählen Sie aus der nachstehenden Liste die zu löschenden ZFS-Schnappschüsse aus."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:14
+msgid "Type:"
+msgstr "Typ:"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:1
+msgid "<b>Enable Time Slider</b>"
+msgstr "<b>Zeit-Schieberegler aktivieren</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:2
+msgid "<b>External Back Up</b>"
+msgstr "<b>Externe Sicherung</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:3
+msgid "<b>File Systems To Back Up</b>"
+msgstr "<b>Dateisystem zur Sicherung</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:4
+msgid "Advanced Options"
+msgstr "Erweiterte Optionen"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:5
+msgid "Backup Device:"
+msgstr "Sicherungsgerät:"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:6
+msgid "C_ustom:"
+msgstr "B_enutzerdefiniert:"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:7
+msgid "Configuring Time Slider..."
+msgstr "Konfiguriere Zeit-Schieberegler..."
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:8
+msgid "For advanced users"
+msgstr "Für erfahrene Benutzer"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:9
+msgid "Recommended for most users"
+msgstr "Empfohlen für die meisten Benutzer"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:10
+msgid "Reduce backups when storage space usage exceeds:"
+msgstr "Sicherungen reduzieren, wenn Speicherplatznutzung Folgendes überschreitet:"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:11
+msgid "Replicate backups to an external drive"
+msgstr "Sicherungen auf einem externen Laufwerk replizieren"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:12
+msgid "Time Slider Manager"
+msgstr "Zeit-Schieberegler-Manager"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:13
+msgid "Time Slider backs up data regularly by taking timed ZFS Snapshots"
+msgstr "Der Zeit-Schieberegler sichert regelmäßig Daten durch Erfassung von zeitlich festgelegten ZFS-Schnappschüssen"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:14
+msgid "_All"
+msgstr "_Alle"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:15
+msgid "_Delete Snapshots..."
+msgstr "_Schnappschüsse löschen..."
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:16
+msgid "of file system capacity"
+msgstr "der Dateisystemkapazität"
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:1
+msgid "Take a snapshot now"
+msgstr "Jetzt einen Schnappschuss nehmen"
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:2
+msgid "Take a snapshot of "
+msgstr "Einen Schnappschuss nehmen von  "
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:3
+msgid "with the name :"
+msgstr "mit dem Namen:"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:1
+msgid "10 Mo"
+msgstr "10  Mo"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:2
+msgid "19/01/09"
+msgstr "19/01/09"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:3
+msgid "<b>Current Version</b>"
+msgstr "<b>Aktuelle Version</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:4
+msgid "<b>Older Versions</b>"
+msgstr "<b>Ältere Versionen</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:5
+msgid "Double click to open the file"
+msgstr "Auf die Datei doppelklicken, um sie zu öffnen"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:6
+msgid "Open the current version of the file"
+msgstr "Die aktuelle Version der Datei öffnen"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:7
+msgid "Scanning for older versions"
+msgstr "Nach älteren Versionen suchen"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:8
+msgid "Time Slider File Version Explorer"
+msgstr "Time  Slider  File  Version  Explorer"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:9
+msgid "compare"
+msgstr "vergleichen"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:10
+msgid "filename"
+msgstr "Dateiname"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:11
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:12
+msgid "last modified : "
+msgstr "Letzte Änderung:  "
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:13
+msgid "name :"
+msgstr "Name:"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:14
+msgid "size : "
+msgstr "Größe:  "
+
+#: ../usr/share/time-slider/lib/plugin/zfssend/zfssend.py:36
+msgid "Do I work?"
+msgstr "Arbeitet mein System?"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:138
+msgid "Update Backups Now"
+msgstr "Sicherungen jetzt aktualisieren"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:334
+msgid "Backup Started"
+msgstr "Sicherung wurde gestartet"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:335
+#, python-format
+msgid ""
+"Backing up snapshots to:\n"
+"<b>%s</b>\n"
+"Do not disconnect the backup device."
+msgstr "Schnappschüsse werden gesichert in:\n<b>%s</b>\nTrennen Sie nicht die Verbindung zum Sicherungsgerät."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:345
+#, python-format
+msgid ""
+"Backing up: <b>'%s'\n"
+"%d</b> snapshots remaining.\n"
+"Do not disconnect the backup device."
+msgstr "Sichern: <b>'%s'\n%d</b> verbleibende Schnappschüsse.\nTrennen Sie nicht die Verbindung zum Sicherungsgerät."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:364
+msgid "Backup Complete"
+msgstr "Sicherung abgeschlossen"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:365
+#, python-format
+msgid ""
+"Your snapshots have been backed up to:\n"
+"<b>%s</b>"
+msgstr "Ihre Schnappschüsse sind gesichert in:\n<b>%s</b>"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:376
+msgid "Your backups are up to date."
+msgstr "Ihre Sicherungen sind auf dem neuesten Stand."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:380
+#, python-format
+msgid "%d snapshots are queued for backup."
+msgstr "%d Schnappschüsse sind zur Sicherung in der Warteschlange gespeichert."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:457
+msgid "Time Slider: Low Space Warning"
+msgstr "Zeit-Schieberegler: Wenig Speicherkapazitätwarnung"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:468
+#, python-format
+msgid "Emergency: '%s' is full!"
+msgstr "Notfall: '%s' ist voll!"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:469
+#, python-format
+msgid "The file system: '%s', is over %s%% full."
+msgstr "Das Dateisystem: '%s', ist über %s%% voll."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:471
+#, python-format
+msgid ""
+"The file system: '%s', is over %s%% full.\n"
+"As an emergency measure, Time Slider has destroyed all of its backups.\n"
+"To fix this problem, delete any unnecessary files on '%s', or add disk space "
+"(see ZFS documentation)."
+msgstr "Das Dateisystem: '%s', ist über %s%% voll.\nDer Zeit-Schieberegler hat im Zuge einer Notfallmaßnahme alle Sicherungsdateien gelöscht.\nUm dieses Problem zu beheben, löschen Sie alle nicht benötigten Dateien auf '%s', oder fügen Sie Speicherplatz hinzu (siehe ZFS-Dokumentation)."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:480
+#, python-format
+msgid "Emergency: '%s' is almost full!"
+msgstr "Notfall: '%s' ist fast voll!"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:481
+#: ../usr/share/time-slider/lib/time_slider/applet.py:496
+#: ../usr/share/time-slider/lib/time_slider/applet.py:511
+#, python-format
+msgid "The file system: '%s', exceeded %s%% of its total capacity"
+msgstr "Das Dateisystem: '%s', überschreitet %s%% der totalen Kapazität"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:484
+#, python-format
+msgid ""
+"The file system: '%s', exceeded %s%% of its total capacity. As an emerency "
+"measure, Time Slider has has destroyed most or all of its backups to prevent "
+"the disk becoming full. To prevent this from happening again, delete any "
+"unnecessary files on '%s', or add disk space (see ZFS documentation)."
+msgstr "Das Dateisystem: '%s', %s%% der Gesamtkapazität überschritten. Der Zeit-Schieberegler hat im Zuge einer Abhilfemaßnahme nahzu alle Sicherungsdateien gelöscht, um ein Überschreiten der Datenträgerkapazität zu verhindern.\nUm zu vermeiden, dass dieses Problem erneut auftritt, löschen Sie alle nicht benötigten Dateien auf '%s', oder fügen Sie Speicherplatz hinzu (siehe ZFS-Dokumentation)."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:495
+#, python-format
+msgid "Urgent: '%s' is almost full!"
+msgstr "Dringend: '%s' ist fast voll!"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:499
+#, python-format
+msgid ""
+"The file system: '%s', exceeded %s%% of its total capacity. As a remedial "
+"measure, Time Slider has destroyed some backups, and will destroy more, "
+"eventually all, as capacity continues to diminish.\n"
+"To prevent this from happening again, delete any unnecessary files on '%s', "
+"or add disk space (see ZFS documentation)."
+msgstr "Das Dateisystem: '%s', %s%% der Gesamtkapazität überschritten. Der Zeit-Schieberegler hat im Zuge einer Abhilfemaßnahme einige Sicherungsdateien gelöscht und wird weitere und letztlich alle Sicherungsdateien löschen, wenn die Kapazität weiter abnimmt.\nUm zu verhindern, dass dieses Problem erneut auftritt, löschen Sie alle nicht benötigten Dateien auf '%s', oder fügen Sie Speicherplatz hinzu (siehe ZFS-Dokumentation)."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:510
+#, python-format
+msgid "Warning: '%s' is getting full"
+msgstr "Warnung: '%s' wird voll"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:514
+#, python-format
+msgid ""
+"'%s' exceeded %s%% of its total capacity. To fix this, Time Slider has "
+"destroyed some recent backups, and will destroy more as capacity continues "
+"to diminish.\n"
+"To prevent this from happening again, delete any unnecessary files on '%s', "
+"or add disk space (see ZFS documentation).\n"
+msgstr "Das Dateisystem: '%s', %s%% der Gesamtkapazität überschritten. Der Zeit-Schieberegler hat einige kürzlich erstellte Sicherungsdateien gelöscht und wird weitere Sicherungsdateien löschen, wenn die Kapazität weiter abnimmt.\nUm zu verhindern, dass dieses Problem erneut auftritt, löschen Sie alle nicht benötigten Dateien auf '%s', oder fügen Sie Speicherplatz hinzu (siehe ZFS-Dokumentation).\n"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:530
+msgid "Details..."
+msgstr "Details..."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:567
+msgid "Configure Time Slider..."
+msgstr "Zeit-Schieberegler konfigurieren..."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:227
+msgid "Type"
+msgstr "Typ"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:235
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:224
+msgid "Mount Point"
+msgstr "Einhängepunkt"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:243
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:227
+msgid "File System Name"
+msgstr "Dateisystemname"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:251
+msgid "Snapshot Name"
+msgstr "Schnappschussname"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:260
+msgid "Creation Time"
+msgstr "Erstellungszeit"
+
+#. Note to developers.
+#. The second element is for internal matching and should not
+#. be i18ned under any circumstances.
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:272
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:287
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:300
+msgid "All"
+msgstr "Alle"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:273
+msgid "Backups"
+msgstr "Sicherungen"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:274
+msgid "Snapshots"
+msgstr "Schnappschüsse"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:301
+msgid "Monthly"
+msgstr "Monatlich"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:302
+msgid "Weekly"
+msgstr "Wöchentlich"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:303
+msgid "Daily"
+msgstr "Täglich"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:304
+msgid "Hourly"
+msgstr "Stündlich"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:305
+msgid "1/4 Hourly"
+msgstr "Viertelstündlich"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:328
+msgid "Snapshot can not be deleted"
+msgstr "Schnappschuss kann nicht gelöscht werden"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:329
+#, python-format
+msgid ""
+"%s has one or more dependent clones and will not be deleted. To delete this "
+"snapshot, first delete all datasets and snapshots cloned from this snapshot."
+msgstr "%s hat einen oder mehrere abhängige Klone und wird nicht gelöscht.  Um diesen Schnappschuss zu löschen, löschen Sie zunächst alle Datensätze und Schnappschüsse, die aus diesem Schnappschuss geklont wurden."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:355
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:510
+msgid "1 external backup will be deleted."
+msgstr "1 externe Sicherung wird gelöscht."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:357
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:512
+#, python-format
+msgid "%d external backups will be deleted."
+msgstr "%d externe Sicherungen werden gelöscht."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:363
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:518
+msgid "1 snapshot will be deleted."
+msgstr "1 Schnappschuss wird gelöscht."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:451
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:178
+msgid "Legacy"
+msgstr "Veraltet"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:454
+msgid "Snapshot"
+msgstr "Schnappschuss"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:470
+msgid "Backup"
+msgstr "Sicherung"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:560
+msgid "Some snapshots could not be read"
+msgstr "Einige Schnappschüsse konnten nicht gelesen werden"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:584
+msgid "Some snapshots could not be deleted"
+msgstr "Einige Schnappschüsse konnten nicht gelöscht werden"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:758
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:1320
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:215
+msgid "Insufficient Priviliges"
+msgstr "Nicht ausreichend Zugriffsrechte"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:759
+msgid ""
+"Snapshot deletion requires administrative privileges to run. You have not "
+"been assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "Die Löschung von Schnappschüssen erfordert Administratorrechte.  Ihnen wurden nicht die nötigen Administratorrechte zugewiesen.\n\nWenden Sie sich an Ihren Systemadministrator.  "
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:246
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:247
+msgid "Hint"
+msgstr "Hinweis"
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:248
+msgid ""
+"Installing the optional meld package will enhance the file comparison "
+"visualization"
+msgstr "Mit der Installation des optionalen meld-Pakets wird die Dateivergleichsvirtualisierung verbessert."
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:316
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:179
+msgid "Invalid arguments count."
+msgstr "Ungültige Argumente."
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:318
+msgid ""
+"Version explorer requires 2 arguments :\n"
+"- The path of the root snapshot directory.\n"
+"- The filename to explore."
+msgstr "Versions-Explorer erfordert 2 Argumente:\n-  Pfad des Schnappschuss-Stammverzeichnisses.\n-  Dateiname, nach dem gesucht werden soll."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:218
+msgid "Select"
+msgstr "Auswählen"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:222
+msgid "Replicate"
+msgstr "Replizieren"
+
+#. Indicates path is unset: ''
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:269
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:479
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:562
+msgid "(None)"
+msgstr "(Kein)"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:275
+msgid "Other..."
+msgstr "Andere..."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:319
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:357
+msgid "Snapshot manager service error"
+msgstr "Schnappschussverwaltungsservice-Fehler"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:320
+#, python-format
+msgid ""
+"The snapshot manager service does not appear to be installed on this "
+"system.\n"
+"\n"
+"See the svcs(1) man page for more information.\n"
+"\n"
+"Details:\n"
+"%s"
+msgstr "Der Schnappschussverwaltungsservice scheint auf diesem System nicht installiert zu sein.\n\nWeitere Informationen finden Sie in der Online-Dokumentation, svcs(1).\n\nDetails:\n%s"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:341
+msgid "Snapshot manager service dependency error"
+msgstr "Abhängigkeitsfehler im Zusammenhang mit dem Schnappschussverwaltungsservice"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:342
+#, python-format
+msgid ""
+"The snapshot manager service has been placed offline due to a dependency "
+"problem. The following dependency problems were found:\n"
+"\n"
+"%s\n"
+"\n"
+"Run \"svcs -xv\" from a command prompt for more information about these "
+"dependency problems."
+msgstr "Der Schnappschussverwaltungsservice wurde wegen eines Abhängigkeitsproblems offline geschaltet.  Folgende Abhängigkeitsprobleme wurden festgestellt:\n\n%s\n\nFühren Sie über eine Eingabeaufforderung den Befehl \"svcs  -xv\" aus, um weitere Informationen zu diesen Abhängigkeitsproblemen zu erhalten."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:358
+msgid ""
+"The snapshot manager service has encountered a problem and has been disabled "
+"until the problem is fixed.\n"
+"\n"
+"See the svcs(1) man page for more information."
+msgstr "Der Schnappschussverwaltungsservice ist von einem Problem betroffen und wurde bis zur Behebung des Problems deaktiviert.\n\nWeitere Informationen finden Sie in der Online-Dokumentation, svcs(1)."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:528
+msgid "Unsuitable Backup Location"
+msgstr "Ungeeignete Sicherungsadresse"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:594
+msgid "Select A Back Up Device"
+msgstr "Sicherungsgerät auswählen"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:637
+#, python-format
+msgid ""
+"Time Slider suggests a device with a capacity of at least <b>%s</b>.\n"
+"The device: '<b>%s</b>'\n"
+"only has <b>%s</b>\n"
+"Do you want to use it anyway?"
+msgstr "Der Zeit-Schieberegler empfiehlt ein Gerät mit folgender Mindestkapazität: <b>%s</b>.\nDas Gerät: '<b>%s</b>'\nverfügt nur über <b>%s</b>\nMöchten Sie es dennoch verwenden?"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:679
+msgid ""
+"No backup device was selected.\n"
+"Please select an empty device."
+msgstr "Es wurde kein Sicherungsgerät ausgewählt.\nWählen Sie ein leeres Gerät."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:704
+#, python-format
+msgid ""
+"'%s'\n"
+"is not writable. The backup device must be writable by the system "
+"administrator.\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\nist nicht beschreibbar. Das Sicherungsgerät muss für den Systemadministrator beschreibbar sein.\n\nVerwenden Sie ein anderes Gerät."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:720
+#, python-format
+msgid ""
+"'%s'\n"
+"contains an incompatible file system. The selected device must have a Unix "
+"style file system that supports file linking, such as UFS\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\nenthält ein nicht kompatibles Dateisystem. Das ausgewählte Gerät muss ein UNIX-Dateisystem aufweisen, das das Verknüpfen von Dateien unterstützt (z. B. UFS).\n\nVerwenden Sie ein anderes Gerät."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:755
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:784
+#, python-format
+msgid ""
+"'%s'\n"
+" is not an empty device.\n"
+"\n"
+"Please select an empty device."
+msgstr "'%s'\n ist kein leeres Gerät.\n\nWählen Sie ein leeres Gerät."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:804
+#, python-format
+msgid ""
+"'%s'\n"
+"is a Time Slider external backup device that is already in use by another "
+"system. Backup devices may not be shared between systems.\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\nist ein externes Zeit-Schieberegler-Sicherungsgerät, das bereits von einem anderen System verwendet wird. Sicherungsgeräte können nicht von mehreren Systemen gemeinsam genutzt werden.\n\nVerwenden Sie ein anderes Gerät."
+
+#. Looks like a device that we previously used,
+#. but discontinued using in favour of some other
+#. device.
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:819
+#, python-format
+msgid ""
+"'<b>%s</b>' appears to be a a device previously configured for use by this "
+"system.\n"
+"\n"
+"Do you want resume use of this device for backups?"
+msgstr "'<b>%s</b>' scheint ein Gerät zu sein, das zuvor für die Nutzung durch dieses System konfiguriert wurde.\n\nMöchten Sie dieses Gerät weiterhin für die Sicherungen verwenden?"
+
+#. Definitely can't use this since it's a
+#. snapshotted filesystem.
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:859
+#, python-format
+msgid ""
+"'%s'\n"
+"belongs to the ZFS filesystem '%s' which is already selected for regular ZFS "
+"snaphots.\n"
+"\n"
+"Please select a drive not already in use by Time Slider"
+msgstr "'%s'\ngehört zum ZFS-Dateisystem '%s', das bereits für reguläre ZFS-Schnappschüsse ausgewählt ist.\n\nVerwenden Sie ein Laufwerk, das noch nicht für den Zeit-Schieberegler verwendet wird."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:880
+#, python-format
+msgid ""
+"'%s'\n"
+"belongs to the ZFS pool '%s' which is already being used to store ZFS "
+"snaphots.\n"
+"\n"
+"Please select a drive not already in use by Time Slider"
+msgstr "'%s'\ngehört zum ZFS-Pool '%s', der bereits zum Speichern von ZFS-Schnappschüssen verwendet wird.\n\nWählen Sie ein Laufwerk, das noch nicht für den Zeit-Schieberegler verwendet wird."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:1321
+msgid ""
+"The snapshot manager service requires administrative privileges to run. You "
+"have not been assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "Für die Ausführung des Schnappschussverwaltungsservice sind Administratorrechte erforderlich. Ihnen wurden nicht die nötigen Administratorrechte zugewiesen.\n\nWenden Sie sich an den Systemadministrator "
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:116
+msgid "Invalid characters in snapshot name"
+msgstr "Schnappschussname enthält ungültige Zeichen"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:117
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:147
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:180
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:216
+msgid "Error"
+msgstr "Fehler"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:118
+msgid ""
+"Allowed characters for snapshot names are :\n"
+"[a-z][A-Z][0-9][-_.:\n"
+"All invalid characters will be removed\n"
+msgstr "Folgende Zeichen sind für den Schnappschussnamen zulässig:\n[a-z][A-Z][0-9][-_.:\nAlle ungültigen Zeichen werden entfernt\n"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:146
+msgid "Error occured while creating the snapshot"
+msgstr "Fehler beim Erstellen des Schnappschusses"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:155
+msgid "Snapshot created successfully"
+msgstr "Schnappschuss wurde erfolgreich erstellt"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:156
+msgid "Success"
+msgstr "Erfolgreich"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:157
+#, python-format
+msgid ""
+"A snapshot of zfs filesystem %(zfs_fs)s\n"
+"named %(valid_name)s\n"
+"has been created.\n"
+msgstr "Ein Schnappschuss des ZFS-Dateisystems %(zfs_fs)s\nmit dem Namen %(valid_name)s\nwurde erstellt.\n"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:181
+msgid ""
+"Snapshot Now requires 2 arguments :\n"
+"- The path of the directory to be snapshotted.\n"
+"- The zfs filesystem corresponding to this directory."
+msgstr "\"Schnappschuss jetzt\" erfordert 2 Argumente:\n-  Pfad des Verzeichnisses, von dem ein Schnappschuss genommen werden soll.\n-  Entsprechendes ZFS-Dateisystem für dieses Verzeichnis."
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:217
+msgid ""
+"Snapshot Now requires administrative privileges to run. You have not been "
+"assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "\"Schnappschuss jetzt\" erfordert Administratorrechte.  Ihnen wurden nicht die nötigen Administratorrechte zugewiesen.\n\nWenden Sie sich an Ihren Systemadministrator.  "

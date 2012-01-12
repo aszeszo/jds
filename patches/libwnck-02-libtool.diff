@@ -1,0 +1,12 @@
+--- libwnck-3.2.0/configure.ac-orig	2011-10-04 00:45:27.047917014 -0500
++++ libwnck-3.2.0/configure.ac	2011-10-04 00:46:30.682441999 -0500
+@@ -42,8 +42,7 @@ AC_SUBST(WNCK_MAJOR_VERSION)
+ AC_SUBST(WNCK_MINOR_VERSION)
+ AC_SUBST(WNCK_MICRO_VERSION)
+ 
+-LT_PREREQ([2.2.6])
+-LT_INIT([dlopen disable-static])
++AC_PROG_LIBTOOL
+ 
+ IT_PROG_INTLTOOL([0.40.6])
+ 

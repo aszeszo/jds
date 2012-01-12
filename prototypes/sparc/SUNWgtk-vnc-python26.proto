@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk-vnc-python26.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk-vnc-python26.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk-vnc-python26.copyright
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/64 0755 root bin
+f none lib/python2.6/vendor-packages/64/gtkvnc.so=usr/lib/python2.6/vendor-packages/64/gtkvnc.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtkvnc.so=usr/lib/python2.6/vendor-packages/gtkvnc.so 0755 root bin

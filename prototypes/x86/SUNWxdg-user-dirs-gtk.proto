@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxdg-user-dirs-gtk.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxdg-user-dirs-gtk.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxdg-user-dirs-gtk.copyright
+f none share/doc/SUNWxdg-user-dirs-gtk/AUTHORS=usr/share/doc/SUNWxdg-user-dirs-gtk/AUTHORS 0444 root bin
+f none share/doc/SUNWxdg-user-dirs-gtk/COPYING.bz2=usr/share/doc/SUNWxdg-user-dirs-gtk/COPYING.bz2 0444 root bin
+f none share/doc/SUNWxdg-user-dirs-gtk/ChangeLog.bz2=usr/share/doc/SUNWxdg-user-dirs-gtk/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWxdg-user-dirs-gtk/NEWS=usr/share/doc/SUNWxdg-user-dirs-gtk/NEWS 0444 root bin
+f none share/doc/SUNWxdg-user-dirs-gtk/README=usr/share/doc/SUNWxdg-user-dirs-gtk/README 0444 root bin
+f none share/doc/SUNWxdg-user-dirs-gtk/po/ChangeLog.bz2=usr/share/doc/SUNWxdg-user-dirs-gtk/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/xdg-user-dirs-gtk-update=usr/bin/xdg-user-dirs-gtk-update 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWxdg-user-dirs-gtk 0755 root bin
+d none share/doc/SUNWxdg-user-dirs-gtk/po 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/xdg-user-dirs-gtk-update.1=usr/share/man/man1/xdg-user-dirs-gtk-update.1 0644 root bin

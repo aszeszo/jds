@@ -1,0 +1,38 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibunique-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibunique-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibunique-devel.copyright
+d none include 0755 root bin
+d none include/unique-1.0 0755 root bin
+d none include/unique-1.0/unique 0755 root bin
+f none include/unique-1.0/unique/unique.h=usr/include/unique-1.0/unique/unique.h 0644 root bin
+f none include/unique-1.0/unique/uniqueapp.h=usr/include/unique-1.0/unique/uniqueapp.h 0644 root bin
+f none include/unique-1.0/unique/uniquebackend.h=usr/include/unique-1.0/unique/uniquebackend.h 0644 root bin
+f none include/unique-1.0/unique/uniqueenumtypes.h=usr/include/unique-1.0/unique/uniqueenumtypes.h 0644 root bin
+f none include/unique-1.0/unique/uniquemessage.h=usr/include/unique-1.0/unique/uniquemessage.h 0644 root bin
+f none include/unique-1.0/unique/uniqueversion.h=usr/include/unique-1.0/unique/uniqueversion.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/unique-1.0.pc=usr/lib/pkgconfig/unique-1.0.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/unique-1.0.pc=usr/lib/sparcv9/pkgconfig/unique-1.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/unique 0755 root bin
+f none share/gtk-doc/html/unique/UniqueApp.html=usr/share/gtk-doc/html/unique/UniqueApp.html 0644 root bin
+f none share/gtk-doc/html/unique/UniqueBackend.html=usr/share/gtk-doc/html/unique/UniqueBackend.html 0644 root bin
+f none share/gtk-doc/html/unique/home.png=usr/share/gtk-doc/html/unique/home.png 0644 root bin
+f none share/gtk-doc/html/unique/index.html=usr/share/gtk-doc/html/unique/index.html 0644 root bin
+f none share/gtk-doc/html/unique/index.sgml=usr/share/gtk-doc/html/unique/index.sgml 0644 root bin
+f none share/gtk-doc/html/unique/ix01.html=usr/share/gtk-doc/html/unique/ix01.html 0644 root bin
+f none share/gtk-doc/html/unique/left.png=usr/share/gtk-doc/html/unique/left.png 0644 root bin
+f none share/gtk-doc/html/unique/license.html=usr/share/gtk-doc/html/unique/license.html 0644 root bin
+f none share/gtk-doc/html/unique/right.png=usr/share/gtk-doc/html/unique/right.png 0644 root bin
+f none share/gtk-doc/html/unique/style.css=usr/share/gtk-doc/html/unique/style.css 0644 root bin
+f none share/gtk-doc/html/unique/unique-Message-Data.html=usr/share/gtk-doc/html/unique/unique-Message-Data.html 0644 root bin
+f none share/gtk-doc/html/unique/unique-Versioning-Information.html=usr/share/gtk-doc/html/unique/unique-Versioning-Information.html 0644 root bin
+f none share/gtk-doc/html/unique/unique-overview.html=usr/share/gtk-doc/html/unique/unique-overview.html 0644 root bin
+f none share/gtk-doc/html/unique/unique.devhelp=usr/share/gtk-doc/html/unique/unique.devhelp 0644 root bin
+f none share/gtk-doc/html/unique/unique.devhelp2=usr/share/gtk-doc/html/unique/unique.devhelp2 0644 root bin
+f none share/gtk-doc/html/unique/up.png=usr/share/gtk-doc/html/unique/up.png 0644 root bin

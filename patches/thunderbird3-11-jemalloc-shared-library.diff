@@ -1,0 +1,29 @@
+diff -r 32c1026e3c36 config/config.mk
+--- a/config/config.mk	Wed Jul 27 18:35:18 2011 +0200
++++ b/config/config.mk	Tue Aug 02 15:54:10 2011 +0800
+@@ -147,7 +147,7 @@
+ MOZ_WIDGET_SUPPORT_LIBS    = $(DIST)/lib/$(LIB_PREFIX)widgetsupport_s.$(LIB_SUFFIX)
+ 
+ ifdef MOZ_MEMORY
+-ifneq (,$(filter-out WINNT WINCE,$(OS_ARCH)))
++ifneq (,$(filter-out WINNT WINCE SunOS,$(OS_ARCH)))
+ JEMALLOC_LIBS = $(MKSHLIB_FORCE_ALL) $(call EXPAND_MOZLIBNAME,jemalloc) $(MKSHLIB_UNFORCE_ALL)
+ endif
+ endif
+diff -r 32c1026e3c36 config/jemalloc_solaris.map
+--- /dev/null	Thu Jan 01 00:00:00 1970 +0000
++++ b/config/jemalloc_solaris.map	Tue Aug 02 15:54:10 2011 +0800
+@@ -0,0 +1,13 @@
++{
++    global:
++        calloc             = NODIRECT;
++        free               = NODIRECT;
++        jemalloc_stats     = NODIRECT;
++        malloc             = NODIRECT;
++        malloc_usable_size = NODIRECT;
++        memalign           = NODIRECT;
++        posix_memalign     = NODIRECT;
++        realloc            = NODIRECT;
++        valloc             = NODIRECT;
++};
++

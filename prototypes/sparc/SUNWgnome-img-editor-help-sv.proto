@@ -1,0 +1,38 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-img-editor-help-sv.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-img-editor-help-sv.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-img-editor-help-sv.copyright
+d none share 0755 root sys
+d none share/gimp 0755 root bin
+d none share/gimp/2.0 0755 root bin
+d none share/gimp/2.0/help 0755 root bin
+d none share/gimp/2.0/help/sv 0755 root bin
+f none share/gimp/2.0/help/sv/gfdl-1.html=usr/share/gimp/2.0/help/sv/gfdl-1.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-10.html=usr/share/gimp/2.0/help/sv/gfdl-10.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-2.html=usr/share/gimp/2.0/help/sv/gfdl-2.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-3.html=usr/share/gimp/2.0/help/sv/gfdl-3.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-4.html=usr/share/gimp/2.0/help/sv/gfdl-4.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-5.html=usr/share/gimp/2.0/help/sv/gfdl-5.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-6.html=usr/share/gimp/2.0/help/sv/gfdl-6.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-7.html=usr/share/gimp/2.0/help/sv/gfdl-7.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-8.html=usr/share/gimp/2.0/help/sv/gfdl-8.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-9.html=usr/share/gimp/2.0/help/sv/gfdl-9.html 0644 root bin
+f none share/gimp/2.0/help/sv/gfdl-addendum.html=usr/share/gimp/2.0/help/sv/gfdl-addendum.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-help-index.html=usr/share/gimp/2.0/help/sv/gimp-help-index.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-help-plain.css=usr/share/gimp/2.0/help/sv/gimp-help-plain.css 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-help-screen.css=usr/share/gimp/2.0/help/sv/gimp-help-screen.css 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-help.xml=usr/share/gimp/2.0/help/sv/gimp-help.xml 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-tool-clone.html=usr/share/gimp/2.0/help/sv/gimp-tool-clone.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-toolbox-areas.html=usr/share/gimp/2.0/help/sv/gimp-toolbox-areas.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-toolbox-image-area.html=usr/share/gimp/2.0/help/sv/gimp-toolbox-image-area.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-toolbox-indicator-area.html=usr/share/gimp/2.0/help/sv/gimp-toolbox-indicator-area.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-toolbox.html=usr/share/gimp/2.0/help/sv/gimp-toolbox.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-tools-color.html=usr/share/gimp/2.0/help/sv/gimp-tools-color.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-tools-paint.html=usr/share/gimp/2.0/help/sv/gimp-tools-paint.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-tools-selection.html=usr/share/gimp/2.0/help/sv/gimp-tools-selection.html 0644 root bin
+f none share/gimp/2.0/help/sv/gimp-xrefs.xml=usr/share/gimp/2.0/help/sv/gimp-xrefs.xml 0644 root bin
+f none share/gimp/2.0/help/sv/gimp22.css=usr/share/gimp/2.0/help/sv/gimp22.css 0644 root bin
+f none share/gimp/2.0/help/sv/glossary.html=usr/share/gimp/2.0/help/sv/glossary.html 0644 root bin
+f none share/gimp/2.0/help/sv/help-missing.html=usr/share/gimp/2.0/help/sv/help-missing.html 0644 root bin
+f none share/gimp/2.0/help/sv/index.html=usr/share/gimp/2.0/help/sv/index.html 0644 root bin
+f none share/gimp/2.0/help/sv/legal.html=usr/share/gimp/2.0/help/sv/legal.html 0644 root bin
+f none share/gimp/2.0/help/sv/pt01.html=usr/share/gimp/2.0/help/sv/pt01.html 0644 root bin

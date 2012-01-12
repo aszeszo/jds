@@ -1,0 +1,34 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWglib-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWglib-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWglib-java.copyright
+d none include 0755 root bin
+d none include/glib-java 0755 root bin
+f none include/glib-java/glib_java.h=usr/include/glib-java/glib_java.h 0644 root bin
+f none include/glib-java/jg_jnu.h=usr/include/glib-java/jg_jnu.h 0644 root bin
+d none lib 0755 root bin
+f none lib/libglibjni-0.4.so=usr/lib/libglibjni-0.4.so 0755 root bin
+s none lib/libglibjni.so=libglibjni-0.4.so
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/glib-java.pc=usr/lib/pkgconfig/glib-java.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/glib-java-0.3.2 0755 root bin
+f none share/doc/glib-java-0.3.2/AUTHORS=usr/share/doc/glib-java-0.3.2/AUTHORS 0644 root bin
+f none share/doc/glib-java-0.3.2/COPYING=usr/share/doc/glib-java-0.3.2/COPYING 0644 root bin
+f none share/doc/glib-java-0.3.2/INSTALL=usr/share/doc/glib-java-0.3.2/INSTALL 0644 root bin
+f none share/doc/glib-java-0.3.2/NEWS=usr/share/doc/glib-java-0.3.2/NEWS 0644 root bin
+f none share/doc/glib-java-0.3.2/README=usr/share/doc/glib-java-0.3.2/README 0644 root bin
+d none share/glib-java 0755 root bin
+d none share/glib-java/macros 0755 root bin
+f none share/glib-java/macros/ac_prog_jar.m4=usr/share/glib-java/macros/ac_prog_jar.m4 0644 root bin
+f none share/glib-java/macros/ac_prog_javac.m4=usr/share/glib-java/macros/ac_prog_javac.m4 0644 root bin
+f none share/glib-java/macros/ac_prog_javac_works.m4=usr/share/glib-java/macros/ac_prog_javac_works.m4 0644 root bin
+f none share/glib-java/macros/ac_prog_javadoc.m4=usr/share/glib-java/macros/ac_prog_javadoc.m4 0644 root bin
+f none share/glib-java/macros/am_path_docbook.m4=usr/share/glib-java/macros/am_path_docbook.m4 0644 root bin
+f none share/glib-java/macros/am_path_gcj.m4=usr/share/glib-java/macros/am_path_gcj.m4 0644 root bin
+f none share/glib-java/macros/jg_check_nativecompile.m4=usr/share/glib-java/macros/jg_check_nativecompile.m4 0644 root bin
+f none share/glib-java/macros/jg_common.m4=usr/share/glib-java/macros/jg_common.m4 0644 root bin
+f none share/glib-java/macros/jg_lib.m4=usr/share/glib-java/macros/jg_lib.m4 0644 root bin
+d none share/java 0755 root bin
+f none share/java/glib0.4-0.3.2.jar=usr/share/java/glib0.4-0.3.2.jar 0644 root bin
+s none share/java/glib0.4.jar=glib0.4-0.3.2.jar

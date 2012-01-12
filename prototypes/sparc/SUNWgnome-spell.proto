@@ -1,0 +1,39 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-spell.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-spell.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-spell.copyright
+f none share/doc/SUNWgnome-spell/AUTHORS=usr/share/doc/SUNWgnome-spell/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-spell/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-spell/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-spell/ChangeLog.bz2=usr/share/doc/SUNWgnome-spell/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-spell/NEWS.bz2=usr/share/doc/SUNWgnome-spell/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-spell/README=usr/share/doc/SUNWgnome-spell/README 0444 root bin
+d none bin 0755 root bin
+f none bin/enchant=usr/bin/enchant 0755 root bin
+f none bin/enchant-lsmod=usr/bin/enchant-lsmod 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/enchant=usr/bin/sparcv9/enchant 0755 root bin
+f none bin/sparcv9/enchant-lsmod=usr/bin/sparcv9/enchant-lsmod 0755 root bin
+d none lib 0755 root bin
+d none lib/enchant 0755 root bin
+f none lib/enchant/libenchant_ispell.so=usr/lib/enchant/libenchant_ispell.so 0755 root bin
+f none lib/enchant/libenchant_myspell.so=usr/lib/enchant/libenchant_myspell.so 0755 root bin
+s none lib/libenchant.so=libenchant.so.1.6.0
+s none lib/libenchant.so.1=libenchant.so.1.6.0
+f none lib/libenchant.so.1.6.0=usr/lib/libenchant.so.1.6.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/enchant 0755 root bin
+f none lib/sparcv9/enchant/libenchant_ispell.so=usr/lib/sparcv9/enchant/libenchant_ispell.so 0755 root bin
+f none lib/sparcv9/enchant/libenchant_myspell.so=usr/lib/sparcv9/enchant/libenchant_myspell.so 0755 root bin
+s none lib/sparcv9/libenchant.so=libenchant.so.1.6.0
+s none lib/sparcv9/libenchant.so.1=libenchant.so.1.6.0
+f none lib/sparcv9/libenchant.so.1.6.0=usr/lib/sparcv9/libenchant.so.1.6.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-spell 0755 root bin
+d none share/enchant 0755 root bin
+f none share/enchant/enchant.ordering=usr/share/enchant/enchant.ordering 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/enchant-lsmod.1=usr/share/man/man1/enchant-lsmod.1 0644 root bin
+f none share/man/man1/enchant.1=usr/share/man/man1/enchant.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libenchant.3=usr/share/man/man3/libenchant.3 0644 root bin

@@ -1,0 +1,46 @@
+#!/usr/bin/python2.4
+
+import subprocess
+
+SPECTOOL="/jds/cbe/bin/spectool"
+
+def cmd(execute, get_ret=True, get_err=True):
+  cmd_p = subprocess.Popen(execute,
+    shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+  if get_err:
+    cmd_err = cmd_p.stderr.read()
+  else:
+    cmd_err = ""
+
+  cmd_out = cmd_p.stdout.read()
+  outp = cmd_out
+  cmd_out = ""
+  for o in outp.split("\n"):
+    if o != "" and o != "\n":
+      cmd_out = cmd_out + o + "\n"
+
+  if get_ret:
+    return_code = cmd_p.wait()
+  else:
+    return_code = 0
+
+  return return_code, cmd_out, cmd_err
+
+
+(ret, out, err) = cmd("ls closed/*.spec *.spec")
+
+uninstalled = 0
+installed   = 0
+
+for spec in out.rstrip("\n").split("\n"):
+  (ret, out, err) = cmd("%s get_package_names %s" % (SPECTOOL, spec)) 
+  packages = out.rstrip("\n").split("\n")
+  (ret, out, err) = cmd("pkginfo -q %s" % packages[0])
+  if ret != 0:
+    uninstalled+=1
+  else:
+    installed+=1
+
+print "Installed   %s" % installed
+print "Uninstalled %s" % uninstalled

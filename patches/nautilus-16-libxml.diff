@@ -1,0 +1,11 @@
+--- nautilus-3.1.3/configure.in-orig	2011-07-07 22:05:50.859846913 -0500
++++ nautilus-3.1.3/configure.in	2011-07-07 22:05:55.586245272 -0500
+@@ -6,7 +6,7 @@ m4_define(glib_minver,                 2
+ m4_define(gnome_desktop_minver,        3.0.0)
+ m4_define(pango_minver,                1.28.3)
+ m4_define(gtk_minver,                  3.1.6)
+-m4_define(xml_minver,                  2.7.8)
++m4_define(xml_minver,                  2.7.6)
+ m4_define(exif_minver,                 0.6.20)
+ m4_define(exempi_minver,               2.1.0)
+ m4_define(notify_minver,               0.7.0)

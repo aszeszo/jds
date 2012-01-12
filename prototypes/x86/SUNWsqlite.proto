@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsqlite.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsqlite.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsqlite.copyright
+d none bin 0755 root bin
+f none bin/sqlite3=usr/bin/sqlite3 0755 root bin
+d none lib 0755 root bin
+s none lib/libsqlite3-3.5.4.so.0=libsqlite3-3.5.4.so.0.8.6
+f none lib/libsqlite3-3.5.4.so.0.8.6=usr/lib/libsqlite3-3.5.4.so.0.8.6 0755 root bin
+s none lib/libsqlite3.so=libsqlite3-3.5.4.so.0.8.6

@@ -1,0 +1,22 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibvte-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibvte-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibvte-java.copyright
+d none lib 0755 root bin
+f none lib/libvtejni-0.12.so=usr/lib/libvtejni-0.12.so 0755 root bin
+s none lib/libvtejni.so=libvtejni-0.12.so
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/vte-java.pc=usr/lib/pkgconfig/vte-java.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/libvte-java-0.12.1 0755 root bin
+f none share/doc/libvte-java-0.12.1/AUTHORS=usr/share/doc/libvte-java-0.12.1/AUTHORS 0644 root bin
+f none share/doc/libvte-java-0.12.1/COPYING=usr/share/doc/libvte-java-0.12.1/COPYING 0644 root bin
+f none share/doc/libvte-java-0.12.1/NEWS=usr/share/doc/libvte-java-0.12.1/NEWS 0644 root bin
+f none share/doc/libvte-java-0.12.1/README=usr/share/doc/libvte-java-0.12.1/README 0644 root bin
+d none share/doc/libvte-java-0.12.1/examples 0755 root bin
+d none share/doc/libvte-java-0.12.1/examples/doc 0755 root bin
+d none share/doc/libvte-java-0.12.1/examples/doc/examples 0755 root bin
+d none share/doc/libvte-java-0.12.1/examples/doc/examples/vte 0755 root bin
+d none share/java 0755 root bin
+f none share/java/vte0.12-0.12.1.jar=usr/share/java/vte0.12-0.12.1.jar 0644 root bin
+s none share/java/vte0.12.jar=vte0.12-0.12.1.jar

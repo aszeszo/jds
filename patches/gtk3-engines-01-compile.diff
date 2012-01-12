@@ -1,0 +1,20 @@
+--- gtk-engines-2.91.1/engines/clearlooks/src/clearlooks_style.c-orig	2011-07-07 17:09:34.476575608 -0500
++++ gtk-engines-2.91.1/engines/clearlooks/src/clearlooks_style.c	2011-07-07 17:11:00.176523923 -0500
+@@ -718,7 +718,7 @@ clearlooks_style_draw_box (DRAW_ARGS)
+ #ifdef HAVE_WORKING_ANIMATION
+ 		if(clearlooks_style->animation && clearlooks_animation_is_progressbar (widget))
+ 		{
+-#warning Assuming non-pulsing progress bars because there is currently no way to query them in GTK+ 3.0.
++/* warning Assuming non-pulsing progress bars because there is currently no way to query them in GTK+ 3.0. */
+ 			clearlooks_animation_progressbar_add ((gpointer)widget);
+ 		}
+ 
+@@ -744,7 +744,7 @@ clearlooks_style_draw_box (DRAW_ARGS)
+                              progressbar.orientation = CL_ORIENTATION_TOP_TO_BOTTOM;
+                         }
+ 			progressbar.value = gtk_progress_bar_get_fraction(GTK_PROGRESS_BAR(widget));
+-#warning Assuming non-pulsing progress bars because there is currently no way to query them in GTK+ 3.0.
++/* #warning Assuming non-pulsing progress bars because there is currently no way to query them in GTK+ 3.0. */
+ 			progressbar.pulsing = FALSE;
+ 		}
+ 		else

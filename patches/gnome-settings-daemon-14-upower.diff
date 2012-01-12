@@ -1,0 +1,44 @@
+--- gnome-settings-daemon-3.1.4/configure.ac-orig	2011-08-07 10:05:01.072994698 -0500
++++ gnome-settings-daemon-3.1.4/configure.ac	2011-08-07 10:06:07.306266011 -0500
+@@ -371,7 +371,17 @@ dnl ====================================
+ # ---------------------------------------------------------------------------
+ # UPower
+ # ---------------------------------------------------------------------------
+-PKG_CHECK_MODULES(UPOWER, upower-glib >= 0.9.1)
++PKG_CHECK_MODULES(UPOWER_GLIB,
++        upower-glib >= 0.9.1,
++        have_upower_glib=yes,
++        have_upower_glib=no)
++if test "x$have_upower_glib" = "xyes" ; then
++  AC_DEFINE(HAVE_UPOWER_GLIB, [], [Define if we have upower_glib])
++fi
++AM_CONDITIONAL(HAVE_UPOWER_GLIB, test x$have_upower_glib = xyes)
++AC_SUBST(HAVE_UPOWER_GLIB)
++AC_SUBST(UPOWER_GLIB_CFLAGS)
++AC_SUBST(UPOWER_GLIB_LIBS)
+ 
+ # ---------------------------------------------------------------------------
+ # PolicyKit
+--- gnome-settings-daemon-3.1.4/plugins/Makefile.am-orig	2011-10-21 02:09:15.776791165 -0500
++++ gnome-settings-daemon-3.1.4/plugins/Makefile.am	2011-10-21 02:09:53.540769249 -0500
+@@ -9,7 +9,6 @@ enabled_plugins =	\
+ 	cursor		\
+ 	datetime	\
+ 	dummy		\
+-	power		\
+ 	housekeeping    \
+ 	keybindings	\
+ 	keyboard	\
+@@ -23,6 +22,12 @@ enabled_plugins =	\
+ 
+ disabled_plugins = $(NULL)
+ 
++if HAVE_UPOWER_GLIB
++enabled_plugins += power
++else
++disabled_plugins += power
++endif
++
+ if BUILD_GCONF_BRIDGE
+ enabled_plugins += gconf
+ else

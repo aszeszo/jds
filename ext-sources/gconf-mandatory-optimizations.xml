@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<gconfentryfile>
+
+    <entrylist base="/apps/panel/global">
+        <entry>
+            <key>enable_animations</key>
+            <value>
+                <bool>false</bool>
+            </value>
+        </entry>
+        <entry>
+            <key>locked_down</key>
+            <value>
+                <bool>true</bool>
+            </value>
+        </entry>
+    </entrylist>
+
+
+    <entrylist base="/apps/gnome-session/options">
+        <entry>
+            <key>logout_effect</key>
+            <value>
+                <string>black</string>
+            </value>
+        </entry>
+    </entrylist>
+
+
+    <entrylist base="/apps/metacity">
+        <entry>
+            <key>general/reduced_resources</key>
+            <value>
+                <bool>true</bool>
+            </value>
+        </entry>
+        <entry>
+            <key>global_keybindings/panel_run_dialog</key>
+            <value>
+                <string>disabled</string>
+            </value>
+        </entry>
+        <entry>
+            <key>global_keybindings/panel_run_dialog_list</key>
+            <value>
+                <string>disabled</string>
+            </value>
+        </entry>
+    </entrylist>
+
+
+    <entrylist base="/apps/nautilus/preferences">
+        <entry>
+            <key>show_directory_item_counts</key>
+            <value>
+                <string>never</string>
+            </value>
+        </entry>
+        <entry>
+            <key>show_icon_text</key>
+            <value>
+                <string>never</string>
+            </value>
+        </entry>
+        <entry>
+            <key>show_image_thumbnails</key>
+            <value>
+                <string>never</string>
+            </value>
+        </entry>
+        <entry>
+            <key>preview_sound</key>
+            <value>
+                <string>never</string>
+            </value>
+        </entry>
+        <entry>
+            <key>background_fade</key>
+            <value>
+                <bool>false</bool>
+            </value>
+        </entry>
+    </entrylist>
+
+
+    <entrylist base="/desktop/gnome">
+        <entry>
+            <key>multi-user-desktop/version</key>
+            <value>
+                <int>1</int>
+            </value>
+        </entry>
+        <entry>
+            <key>interface/enable_animations</key>
+            <value>
+                <bool>false</bool>
+            </value>
+        </entry>
+        <entry>
+            <key>interface/menus_have_icons</key>
+            <value>
+                <bool>true</bool>
+            </value>
+        </entry>
+        <entry>
+            <key>lockdown/restrict_application_launching</key>
+            <value>
+                <bool>true</bool>
+            </value>
+        </entry>
+        <entry>
+            <key>lockdown/disable_command_line</key>
+            <value>
+                <bool>true</bool>
+            </value>
+        </entry>
+        <entry>
+            <key>session/required_components/windowmanager</key>
+            <value>
+                <string>metacity</string>
+            </value>
+        </entry>
+        <entry>
+            <key>session/required_components/filemanager</key>
+            <value>
+                <string>nautilus</string>
+            </value>
+        </entry>
+        <entry>
+            <key>session/required_components/panel</key>
+            <value>
+                <string>gnome-panel</string>
+            </value>
+        </entry>
+    </entrylist>
+
+</gconfentryfile>
+

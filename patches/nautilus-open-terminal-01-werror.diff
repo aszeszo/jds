@@ -1,0 +1,10 @@
+--- nautilus-open-terminal-0.19/src/Makefile.am-orig	2011-07-07 22:40:28.900599192 -0500
++++ nautilus-open-terminal-0.19/src/Makefile.am	2011-07-07 22:40:32.902489906 -0500
+@@ -5,7 +5,6 @@ INCLUDES =						\
+ 	-I$(top_srcdir)					\
+ 	-I$(top_builddir)				\
+ 	$(WARN_CFLAGS)                                  \
+-	-Werror                                         \
+ 	$(DISABLE_DEPRECATED)				\
+ 	$(NAUTILUS_CFLAGS)				\
+ 	$(GCONF_CFLAGS)					\

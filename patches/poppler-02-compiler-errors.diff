@@ -1,0 +1,34 @@
+--- poppler-0.18.0/goo/gstrtod.cc-orig	2011-10-05 10:24:53.017046405 -0500
++++ poppler-0.18.0/goo/gstrtod.cc	2011-10-05 10:25:53.245030974 -0500
+@@ -26,6 +26,9 @@
+ #include <cerrno>
+ #include <cstdlib>
+ #include <cstring>
++#include <stdlib.h>
++#include <strings.h>
++#include <locale.h>
+ 
+ #define ascii_isspace(c) \
+   (c == ' ' || c == '\f' || c == '\n' || c == '\r' || c == '\t' || c == '\v')
+--- poppler-0.18.0/glib/demo/Makefile.am-orig	2011-10-05 10:34:51.959929980 -0500
++++ poppler-0.18.0/glib/demo/Makefile.am	2011-10-05 10:35:15.490068163 -0500
+@@ -2,8 +2,6 @@ INCLUDES = 					\
+ 	-I$(top_srcdir)/glib			\
+ 	-I$(top_builddir)/glib			\
+ 	$(GTK_TEST_CFLAGS)			\
+-	$(POPPLER_GLIB_DISABLE_DEPRECATED)	\
+-	-DGTK_DISABLE_DEPRECATED		\
+ 	$(POPPLER_GLIB_DISABLE_SINGLE_INCLUDES)
+ 
+ AM_LDFLAGS = @auto_import_flags@
+--- poppler-0.18.0/utils/pdftocairo.cc-orig	2011-10-05 10:31:09.799537309 -0500
++++ poppler-0.18.0/utils/pdftocairo.cc	2011-10-05 10:32:30.569470483 -0500
+@@ -50,7 +50,7 @@
+ #include "PDFDocFactory.h"
+ #include "CairoOutputDev.h"
+ #if USE_CMS
+-#include <lcms.h>
++#include <lcms/lcms.h>
+ #endif
+ #include <cairo.h>
+ #if CAIRO_HAS_PS_SURFACE

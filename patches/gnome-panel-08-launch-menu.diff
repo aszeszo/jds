@@ -1,0 +1,428 @@
+/jds/bin/diff -uprN gnome-panel-2.27.91.old/gnome-panel/panel-menu-items.h gnome-panel-2.27.91/gnome-panel/panel-menu-items.h
+--- gnome-panel-2.27.91.old/gnome-panel/panel-menu-items.h	2009-08-26 18:01:21.913408000 +0100
++++ gnome-panel-2.27.91/gnome-panel/panel-menu-items.h	2009-08-26 18:05:50.187738000 +0100
+@@ -92,6 +92,7 @@ void panel_menu_item_activate_desktop_fi
+ 					    const char *path);
+ void panel_place_menu_item_recreate_menu (GtkWidget *widget);
+ void panel_desktop_menu_item_recreate_menu (PanelDesktopMenuItem *desktop_item);
++void panel_menu_items_append_from_desktop (GtkWidget *menu, char *path, char *force_name, gboolean use_icon);
+ 
+ G_END_DECLS
+ 
+/jds/bin/diff -uprN gnome-panel-2.27.91.old/gnome-panel/panel-recent.c gnome-panel-2.27.91/gnome-panel/panel-recent.c
+--- gnome-panel-2.27.91.old/gnome-panel/panel-recent.c	2009-08-26 18:01:21.768563000 +0100
++++ gnome-panel-2.27.91/gnome-panel/panel-recent.c	2009-08-26 18:08:54.473010000 +0100
+@@ -217,12 +217,15 @@ panel_recent_append_documents_menu (GtkW
+ 
+ 	//FIXME this is not possible with GtkRecent...: egg_recent_view_gtk_set_icon_size (view, panel_menu_icon_get_size ());
+ 
+-	g_signal_connect_object (manager, "changed",
++    if (manager) {
++	    g_signal_connect_object (manager, "changed",
+ 				 G_CALLBACK (panel_recent_manager_changed_cb),
+ 				 menu_item, 0);
+ 
+-	size = 0;
+-	g_object_get (manager, "size", &size, NULL);
++	    size = 0;
++	    g_object_get (manager, "size", &size, NULL);
++    }
++
+ 	gtk_widget_set_sensitive (menu_item, size > 0);
+ 
+ 	add_menu_separator (recent_menu);
+/jds/bin/diff -uprN gnome-panel-2.27.91.old/gnome-panel/panel-menu-button.c gnome-panel-2.27.91/gnome-panel/panel-menu-button.c
+--- gnome-panel-2.27.91.old/gnome-panel/panel-menu-button.c	2009-08-26 18:01:21.891125000 +0100
++++ gnome-panel-2.27.91/gnome-panel/panel-menu-button.c	2009-08-26 18:06:26.574994000 +0100
+@@ -63,6 +63,7 @@ typedef enum {
+ 	FIRST_MENU,
+ 	APPLICATIONS_MENU,
+ #define DEFAULT_MENU      APPLICATIONS_MENU
++    PREFERENCES_MENU,
+ 	SETTINGS_MENU,
+ 	LAST_MENU
+ } MenuPathRoot;
+@@ -75,6 +76,7 @@ typedef struct {
+ 
+ static MenuPathRootItem root_items [] = {
+ 	{ APPLICATIONS_MENU, "applications", "applications.menu" },
++	{ PREFERENCES_MENU,  "preferences", "preferences.menu" },
+ 	{ SETTINGS_MENU,     "settings",     "settings.menu"     }
+ };
+ 
+/jds/bin/diff -uprN gnome-panel-2.27.92.old/gnome-panel/menu.h gnome-panel-2.27.92/gnome-panel/menu.h
+--- gnome-panel-2.27.92.old/gnome-panel/menu.h	2009-09-14 11:22:36.904041000 +0100
++++ gnome-panel-2.27.92/gnome-panel/menu.h	2009-09-14 11:24:31.781701000 +0100
+@@ -69,6 +69,8 @@ GtkWidget      *add_menu_separator   (Gt
+ 
+ gboolean menu_dummy_button_press_event (GtkWidget      *menuitem,
+ 					GdkEventButton *event);
++void run_applications (GtkWidget *widget, gpointer user_data);
++void applications_menu_append (GtkWidget *main_menu);
+ 
+ 
+ G_END_DECLS
+/jds/bin/diff -uprN gnome-panel-2.27.92.old/gnome-panel/panel-menu-items.c gnome-panel-2.27.92/gnome-panel/panel-menu-items.c
+--- gnome-panel-2.27.92.old/gnome-panel/panel-menu-items.c	2009-09-14 11:22:36.905438000 +0100
++++ gnome-panel-2.27.92/gnome-panel/panel-menu-items.c	2009-09-14 11:52:23.800537000 +0100
+@@ -139,7 +139,7 @@ activate_desktop_uri (GtkWidget *menuite
+ 		       g_get_user_special_dir (G_USER_DIRECTORY_DESKTOP));
+ }
+  
+-static void
++void
+ panel_menu_items_append_from_desktop (GtkWidget *menu,
+ 				      char      *path,
+ 				      char      *force_name,
+@@ -1008,23 +1008,10 @@ panel_place_menu_item_create_menu (Panel
+ 	char      *name;
+ 	char      *uri;
+ 	GFile     *file;
++	GtkRecentManager *recent_view;
+ 
+ 	places_menu = panel_create_menu ();
+ 
+-	file = g_file_new_for_path (g_get_home_dir ());
+-	uri = g_file_get_uri (file);
+-	name = panel_util_get_label_for_uri (uri);
+-	g_object_unref (file);
+-	
+-	panel_menu_items_append_place_item (PANEL_ICON_HOME, NULL,
+-					    name,
+-					    _("Open your personal folder"),
+-					    places_menu,
+-					    G_CALLBACK (activate_home_uri),
+-					    uri);
+-	g_free (name);
+-	g_free (uri);
+-
+ 	if (!gconf_client_get_bool (panel_gconf_get_client (),
+ 				    DESKTOP_IS_HOME_DIR_KEY,
+ 				    NULL)) {
+@@ -1077,13 +1064,10 @@ panel_place_menu_item_create_menu (Panel
+ 
+ 	add_menu_separator (places_menu);
+ 
+-	panel_menu_items_append_from_desktop (places_menu,
+-					      "gnome-search-tool.desktop",
+-					      NULL,
+-                                              FALSE);
+-
+-	panel_recent_append_documents_menu (places_menu,
+-					    place_item->priv->recent_manager);
++    recent_view = gtk_recent_manager_get_default ();
++    panel_recent_append_documents_menu (places_menu, recent_view);
++    panel_menu_items_append_from_desktop (places_menu,
++        "gnome-search-tool.desktop", NULL, FALSE);
+ 
+ 	return places_menu;
+ }
+@@ -1149,34 +1133,32 @@ panel_place_menu_item_mounts_changed (GV
+ 	panel_place_menu_item_recreate_menu (place_menu);
+ }
+ 
+-static void
+-panel_desktop_menu_item_append_menu (GtkWidget *menu,
+-				     gpointer   data)
++static GtkWidget *
++add_xdg_menu (const char *name, const char *path, const char *icon)
+ {
+-	PanelDesktopMenuItem *parent;
+-	gboolean              add_separator;
+-	GList                *children;
+-	GList                *last;
+-
+-	parent = PANEL_DESKTOP_MENU_ITEM (data);
+-
+-	add_separator = FALSE;
+-	children = gtk_container_get_children (GTK_CONTAINER (menu));
+-	last = g_list_last (children);
+-
+-	if (last != NULL)
+-		add_separator = !GTK_IS_SEPARATOR (GTK_WIDGET (last->data));
+-
+-	g_list_free (children);
+-
+-	if (add_separator)
+-		add_menu_separator (menu);
+-
+-	panel_menu_items_append_from_desktop (menu, "yelp.desktop", NULL, FALSE);
+-	panel_menu_items_append_from_desktop (menu, "gnome-about.desktop", NULL, FALSE);
++    GtkWidget *item;
++    GtkWidget *accel_label;
++    GtkWidget *image;
++    GtkWidget *menu;
++ 
++	item = gtk_image_menu_item_new ();
++ 
++    accel_label = gtk_accel_label_new (name);
++    gtk_misc_set_alignment (GTK_MISC (accel_label), 0.0, 0.5);
+ 
+-	if (parent->priv->append_lock_logout)
+-		panel_menu_items_append_lock_logout (menu);
++    gtk_container_add (GTK_CONTAINER (item), accel_label);
++    gtk_accel_label_set_accel_widget (GTK_ACCEL_LABEL (accel_label),
++                                      GTK_WIDGET (item));
++    gtk_widget_show (accel_label);
++ 
++	image = gtk_image_new_from_icon_name (icon, panel_menu_icon_get_size ());
++ 
++    gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
++    menu = create_applications_menu (path, NULL, TRUE);
++ 
++    gtk_menu_item_set_submenu (GTK_MENU_ITEM (item), menu);
++ 
++    return item;
+ }
+ 
+ static GtkWidget *
+@@ -1184,14 +1166,22 @@ panel_desktop_menu_item_create_menu (Pan
+ {
+ 	GtkWidget *desktop_menu;
+ 
+-	desktop_menu = create_applications_menu ("settings.menu", NULL, FALSE);
++    GtkWidget *item;
++
++    desktop_menu = panel_create_menu ();
+ 
+-	g_object_set_data (G_OBJECT (desktop_menu),
+-			   "panel-menu-append-callback",
+-			   panel_desktop_menu_item_append_menu);
+-	g_object_set_data (G_OBJECT (desktop_menu),
+-			   "panel-menu-append-callback-data",
+-			   desktop_item);
++    /* SUN_BRANDING */
++    item = add_xdg_menu (_("Preferences"), "preferences.menu", "gnome-settings");
++    gtk_menu_shell_append (GTK_MENU_SHELL (desktop_menu), item);
++    gtk_widget_show (item);
++
++    /* SUN_BRANDING */
++    item = add_xdg_menu (_("Administration"), "settings.menu", "gnome-system");
++    gtk_menu_shell_append (GTK_MENU_SHELL (desktop_menu), item);
++    gtk_widget_show (item);
++ 
++	panel_menu_items_append_from_desktop (desktop_menu, "yelp.desktop", NULL, FALSE);
++    panel_menu_items_append_lock_logout (desktop_menu);
+ 
+ 	return desktop_menu;
+ }
+/jds/bin/diff -uprN gnome-panel-2.27.92.old/gnome-panel/menu.c gnome-panel-2.27.92/gnome-panel/menu.c
+--- gnome-panel-2.27.92.old/gnome-panel/menu.c	2009-09-14 11:22:36.900978000 +0100
++++ gnome-panel-2.27.92/gnome-panel/menu.c	2009-09-14 11:49:56.345567000 +0100
+@@ -47,6 +47,7 @@
+ #include "panel-run-dialog.h"
+ #include "panel-lockdown.h"
+ #include "panel-icon-names.h"
++#include "panel-recent.h"
+ 
+ typedef struct {
+ 	GtkWidget    *pixmap;
+@@ -1785,39 +1786,127 @@ setup_menu_item_with_icon (GtkWidget   *
+ 	setup_menuitem (item, icon_size, NULL, title);
+ }
+ 
++void
++run_applications (GtkWidget *widget, gpointer user_data)
++{
++        if (!panel_lockdown_get_restrict_application_launching() &&
++            !panel_lockdown_get_disable_command_line()) {
++                panel_run_dialog_present (gtk_widget_get_screen (widget),
++                                          gtk_get_current_event_time ());
++        }
++}
++
++void
++applications_menu_append (GtkWidget   *main_menu)
++{
++        GtkWidget *item;
++        GtkWidget *accel_label;
++        GtkWidget *image;
++
++        if (panel_lockdown_get_disable_command_line())
++                return;
++
++        if (!g_object_get_data (G_OBJECT (main_menu),
++                                "panel-menu-needs-appending"))
++                return;
++
++        g_object_set_data (G_OBJECT (main_menu),
++                           "panel-menu-needs-appending", NULL);
++
++        add_menu_separator (main_menu);
++
++        item = gtk_image_menu_item_new ();
++
++        /* SUN_BRANDING */
++        accel_label = gtk_accel_label_new (_("Run Application..."));
++        gtk_misc_set_alignment (GTK_MISC (accel_label), 0.0, 0.5);
++
++        gtk_container_add (GTK_CONTAINER (item), accel_label);
++        gtk_accel_label_set_accel_widget (GTK_ACCEL_LABEL (accel_label),
++                                          GTK_WIDGET (item));
++        gtk_widget_show (accel_label);
++
++        image = gtk_image_new_from_icon_name (PANEL_ICON_RUN, panel_menu_icon_get_size ());
++        gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
++
++        g_signal_connect (item, "activate", G_CALLBACK (run_applications), NULL);
++        gtk_menu_shell_append (GTK_MENU_SHELL (main_menu), item);
++        gtk_widget_show (item);
++}
++
++GtkWidget *
++add_xdg_menu (const char *name, const char *path, const char *icon)
++{
++        GtkWidget *item;
++        GtkWidget *accel_label;
++        GtkWidget *image;
++        GtkWidget *menu;
++
++        item = gtk_image_menu_item_new ();
++
++        accel_label = gtk_accel_label_new (name);
++        gtk_misc_set_alignment (GTK_MISC (accel_label), 0.0, 0.5);
++
++        gtk_container_add (GTK_CONTAINER (item), accel_label);
++        gtk_accel_label_set_accel_widget (GTK_ACCEL_LABEL (accel_label),
++                                          GTK_WIDGET (item));
++        gtk_widget_show (accel_label);
++
++        image = gtk_image_new_from_icon_name (icon, panel_menu_icon_get_size ());
++
++        gtk_image_menu_item_set_image (GTK_IMAGE_MENU_ITEM (item), image);
++        menu = create_applications_menu (path, NULL, TRUE);
++
++        if (strcmp (path, "applications.menu") == 0) {
++                g_object_set_data (G_OBJECT (menu), "panel-menu-needs-appending", TRUE);
++                g_signal_connect (menu, "show", G_CALLBACK (applications_menu_append), NULL);
++        }
++
++        gtk_menu_item_set_submenu (GTK_MENU_ITEM (item), menu);
++
++        return item;
++}
++
+ static void
+ main_menu_append (GtkWidget *main_menu,
+ 		  gpointer   data)
+ {
+ 	PanelWidget *panel;
+ 	GtkWidget   *item;
+-	gboolean     add_separator;
+-	GList       *children;
+-	GList       *last;
++    GtkRecentManager *recent_view;
+ 
+ 	panel = PANEL_WIDGET (data);
+ 
+-	add_separator = FALSE;
+-	children = gtk_container_get_children (GTK_CONTAINER (main_menu));
+-	last = g_list_last (children);
+-	if (last != NULL) {
+-		add_separator = !GTK_IS_SEPARATOR (GTK_WIDGET (last->data));
+-	}
+-	g_list_free (children);
++    /* SUN_BRANDING */
++    item = add_xdg_menu (_("All Applications"), "applications.menu", "gnome-applications");
++    gtk_menu_shell_append (GTK_MENU_SHELL (main_menu), item);
++    gtk_widget_show (item);
+ 
+-	if (add_separator)
+-		add_menu_separator (main_menu);
++    add_menu_separator (main_menu);
+ 
+ 	item = panel_place_menu_item_new (TRUE);
+ 	panel_place_menu_item_set_panel (item, panel);
+ 	gtk_menu_shell_append (GTK_MENU_SHELL (main_menu), item);
+ 	gtk_widget_show (item);
+ 
+-	item = panel_desktop_menu_item_new (TRUE, FALSE);
+-	panel_desktop_menu_item_set_panel (item, panel);
++    recent_view = gtk_recent_manager_get_default ();
++    panel_recent_append_documents_menu (main_menu, recent_view);
++    panel_menu_items_append_from_desktop (main_menu, "gnome-search-tool.desktop", NULL, FALSE);
++
++    add_menu_separator (main_menu);
++
++    /* SUN_BRANDING */
++    item = add_xdg_menu (_("Preferences"), "preferences.menu", "gnome-settings");
+ 	gtk_menu_shell_append (GTK_MENU_SHELL (main_menu), item);
+ 	gtk_widget_show (item);
+ 
++    /* SUN_BRANDING */
++    item = add_xdg_menu (_("Administration"), "settings.menu", "gnome-system");
++    gtk_menu_shell_append (GTK_MENU_SHELL (main_menu), item);
++    gtk_widget_show (item);
++
++    panel_menu_items_append_from_desktop (main_menu, "yelp.desktop", NULL, FALSE);
++
+ 	panel_menu_items_append_lock_logout (main_menu);
+ }
+ 
+@@ -1826,7 +1915,7 @@ create_main_menu (PanelWidget *panel)
+ {
+ 	GtkWidget *main_menu;
+ 
+-	main_menu = create_applications_menu ("applications.menu", NULL, TRUE);
++	main_menu = create_applications_menu ("quickstart.menu", NULL, TRUE);
+ 
+ 	g_object_set_data (G_OBJECT (main_menu), "menu_panel", panel);
+ 	/* FIXME need to update the panel on parent_set */
+/jds/bin/diff -uprN gnome-panel-2.27.92.old/gnome-panel/panel-menu-bar.c gnome-panel-2.27.92/gnome-panel/panel-menu-bar.c
+--- gnome-panel-2.27.92.old/gnome-panel/panel-menu-bar.c	2009-09-22 14:37:48.346822883 +0100
++++ gnome-panel-2.27.92/gnome-panel/panel-menu-bar.c	2009-09-22 14:51:43.685055758 +0100
+@@ -154,13 +154,33 @@ panel_menubar_recreate_menus (PanelMenuB
+                                                (PanelDesktopMenuItem *)menubar->priv->desktop_item);
+ 
+                panel_menu_bar_parent_set ((GtkWidget *)menubar, NULL);
++               g_object_set_data (G_OBJECT (menubar->priv->applications_menu),
++                       "panel-menu-needs-appending", TRUE);
+        }
+ }
+ 
+ static void
++panel_menu_bar_handle_gmenu_change(GMenuTree *tree,
++			   GtkWidget *menu)
++{
++	g_object_set_data (G_OBJECT (menu),
++			"panel-menu-needs-appending", TRUE);
++}
++
++static void
++panel_menu_bar_remove_gmenu_monitor(GtkWidget *menu,
++				GMenuTree *tree)
++{
++	gmenu_tree_remove_monitor (tree,
++			(GMenuTreeChangedFunc) panel_menu_bar_handle_gmenu_change,
++			menu);
++}
++
++static void
+ panel_menu_bar_init (PanelMenuBar *menubar)
+ {
+ 	GtkWidget *image;
++	GMenuTree *tree;
+ 
+ 	menubar->priv = PANEL_MENU_BAR_GET_PRIVATE (menubar);
+ 
+@@ -168,6 +188,20 @@ panel_menu_bar_init (PanelMenuBar *menub
+ 
+ 	menubar->priv->applications_menu = create_applications_menu ("applications.menu", NULL, TRUE);
+ 
++	tree = gmenu_tree_lookup ("applications.menu", GMENU_TREE_FLAGS_NONE);
++
++	gmenu_tree_add_monitor (tree,
++			(GMenuTreeChangedFunc) panel_menu_bar_handle_gmenu_change,
++			menubar->priv->applications_menu);
++	g_signal_connect(menubar->priv->applications_menu, "destroy",
++			G_CALLBACK (panel_menu_bar_remove_gmenu_monitor), tree);
++	gmenu_tree_unref (tree);
++
++	g_object_set_data (G_OBJECT (menubar->priv->applications_menu),
++			"panel-menu-needs-appending", TRUE);
++	g_signal_connect (menubar->priv->applications_menu, "show",
++			G_CALLBACK(applications_menu_append), NULL);
++
+ 	menubar->priv->applications_item = panel_image_menu_item_new ();
+ 	gtk_menu_item_set_label (GTK_MENU_ITEM (menubar->priv->applications_item),
+ 				 _("Applications"));

@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapmca.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapmca.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapmca.copyright
+d none share 0755 root sys
+d none share/webconsole 0755 root bin
+d none share/webconsole/apoc 0755 noaccess noaccess
+d none share/webconsole/apoc/packages 0755 noaccess noaccess
+d none share/webconsole/apoc/packages/ConfigurationAgent_pkg 0755 noaccess noaccess
+d none share/webconsole/apoc/packages/ConfigurationAgent_pkg/lib 0755 noaccess noaccess
+f none share/webconsole/apoc/packages/ConfigurationAgent_pkg/lib/apoc_configurationAgent.jar=usr/share/webconsole/apoc/packages/ConfigurationAgent_pkg/lib/apoc_configurationAgent.jar 0744 noaccess noaccess
+d none share/webconsole/apoc/packages/ConfigurationAgent_pkg/templates 0755 noaccess noaccess
+d none share/webconsole/apoc/packages/ConfigurationAgent_pkg/templates/ConfigurationAgent 0755 noaccess noaccess
+f none share/webconsole/apoc/packages/ConfigurationAgent_pkg/templates/ConfigurationAgent/configAgentSettings.xml=usr/share/webconsole/apoc/packages/ConfigurationAgent_pkg/templates/ConfigurationAgent/configAgentSettings.xml 0744 noaccess noaccess

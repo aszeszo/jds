@@ -1,0 +1,43 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWogg-vorbis.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWogg-vorbis.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWogg-vorbis.copyright
+f none share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/AUTHORS=usr/share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/AUTHORS 0444 root bin
+f none share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/CHANGES.bz2=usr/share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/CHANGES.bz2 0444 root bin
+f none share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/COPYING.bz2=usr/share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/COPYING.bz2 0444 root bin
+f none share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/README=usr/share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0/README 0444 root bin
+f none share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/AUTHORS=usr/share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/AUTHORS 0444 root bin
+f none share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/CHANGES.bz2=usr/share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/CHANGES.bz2 0444 root bin
+f none share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/COPYING.bz2=usr/share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/README=usr/share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libogg.so=libogg.so.0.7.0
+s none lib/libogg.so.0=libogg.so.0.7.0
+f none lib/libogg.so.0.7.0=usr/lib/libogg.so.0.7.0 0755 root bin
+s none lib/libvorbis.so=libvorbis.so.0.4.4
+s none lib/libvorbis.so.0=libvorbis.so.0.4.4
+f none lib/libvorbis.so.0.4.4=usr/lib/libvorbis.so.0.4.4 0755 root bin
+s none lib/libvorbisenc.so=libvorbisenc.so.2.0.7
+s none lib/libvorbisenc.so.2=libvorbisenc.so.2.0.7
+f none lib/libvorbisenc.so.2.0.7=usr/lib/libvorbisenc.so.2.0.7 0755 root bin
+s none lib/libvorbisfile.so=libvorbisfile.so.3.3.2
+s none lib/libvorbisfile.so.3=libvorbisfile.so.3.3.2
+f none lib/libvorbisfile.so.3.3.2=usr/lib/libvorbisfile.so.3.3.2 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libogg.so=libogg.so.0.7.0
+s none lib/sparcv9/libogg.so.0=libogg.so.0.7.0
+f none lib/sparcv9/libogg.so.0.7.0=usr/lib/sparcv9/libogg.so.0.7.0 0755 root bin
+s none lib/sparcv9/libvorbis.so=libvorbis.so.0.4.4
+s none lib/sparcv9/libvorbis.so.0=libvorbis.so.0.4.4
+f none lib/sparcv9/libvorbis.so.0.4.4=usr/lib/sparcv9/libvorbis.so.0.4.4 0755 root bin
+s none lib/sparcv9/libvorbisenc.so=libvorbisenc.so.2.0.7
+s none lib/sparcv9/libvorbisenc.so.2=libvorbisenc.so.2.0.7
+f none lib/sparcv9/libvorbisenc.so.2.0.7=usr/lib/sparcv9/libvorbisenc.so.2.0.7 0755 root bin
+s none lib/sparcv9/libvorbisfile.so=libvorbisfile.so.3.3.2
+s none lib/sparcv9/libvorbisfile.so.3=libvorbisfile.so.3.3.2
+f none lib/sparcv9/libvorbisfile.so.3.3.2=usr/lib/sparcv9/libvorbisfile.so.3.3.2 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWogg-vorbis 0755 root bin
+d none share/doc/SUNWogg-vorbis/sparc 0755 root bin
+d none share/doc/SUNWogg-vorbis/sparc/libogg-1.2.0 0755 root bin
+d none share/doc/SUNWogg-vorbis/sparc/libvorbis-1.3.1 0755 root bin

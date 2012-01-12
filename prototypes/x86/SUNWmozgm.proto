@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmozgm.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmozgm.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmozgm.copyright
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/mozilla.desktop=usr/share/applications/mozilla.desktop 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/mozilla-icon.png=usr/share/pixmaps/mozilla-icon.png 0644 root bin

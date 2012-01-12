@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-config-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-config-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-config-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/2 0755 root sys
+v none etc/gconf/2/path=etc/gconf/2/path 0644 root sys
+d none etc/gconf/gconf.xml.defaults 0755 root sys
+d none etc/gconf/gconf.xml.mandatory 0755 root sys

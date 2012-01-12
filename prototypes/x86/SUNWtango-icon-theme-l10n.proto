@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtango-icon-theme-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtango-icon-theme-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtango-icon-theme-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other

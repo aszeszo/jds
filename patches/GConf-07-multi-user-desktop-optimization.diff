@@ -1,0 +1,24 @@
+--- gconf.orig/gconf/default.path.in	2011-06-30 16:31:21.588812309 +0200
++++ gconf/gconf/default.path.in	2011-06-30 16:35:11.224866035 +0200
+@@ -13,6 +13,10 @@
+ # wide sources in this file.
+ include @sysgconfdir@/2/local-mandatory.path
+ 
++# Mandatory Multi User Desktop Optimization.
++# Only the Sys Admin may override those settings.
++include @sysgconfdir@/2/local-multi-user-desktop-mandatory.path
++
+ # Now see where users want us to look - basically the user can stick arbitrary 
+ # sources in a ~/.gconf.path file and they're inserted here
+ include "$(HOME)/.gconf.path"
+@@ -29,6 +33,9 @@
+ # system-wide in this file.
+ include @sysgconfdir@/2/local-defaults.path
+ 
++# Default Multi User Desktop Optimization.
++include @sysgconfdir@/2/local-multi-user-desktop-defaults.path
++
+ # Finally, look at the systemwide defaults
+ xml:readonly:@sysgconfdir@/gconf.xml.defaults
+ 
+

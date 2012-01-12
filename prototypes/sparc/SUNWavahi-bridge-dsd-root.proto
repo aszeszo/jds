@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWavahi-bridge-dsd-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWavahi-bridge-dsd-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWavahi-bridge-dsd-root.copyright
+d none etc 0755 root sys
+d none etc/avahi 0755 root bin
+d none etc/avahi/services 0755 root bin
+d none etc/dbus-1 0755 root bin
+d none etc/dbus-1/system.d 0755 root bin
+v none etc/dbus-1/system.d/avahi-dbus.conf=etc/dbus-1/system.d/avahi-dbus.conf 0644 root bin
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/method 0755 root bin
+f none lib/svc/method/svc-avahi-bridge-dsd=lib/svc/method/svc-avahi-bridge-dsd 0555 root bin
+d none var 0755 root sys
+d none var/svc 0755 root sys
+d none var/svc/manifest 0755 root sys
+d none var/svc/manifest/system 0755 root sys
+f manifest var/svc/manifest/system/avahi-bridge-dsd.xml=var/svc/manifest/system/avahi-bridge-dsd.xml 0444 root sys

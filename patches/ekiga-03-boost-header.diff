@@ -1,0 +1,55 @@
+--- ekiga-3.2.5/lib/gui/xwindow.h.orig	2009-07-04 21:46:07.000000000 +0800
++++ ekiga-3.2.5/lib/gui/xwindow.h	2009-07-13 10:50:41.166188000 +0800
+@@ -39,7 +39,7 @@
+ #include <stdint.h>
+ #include "config.h"
+ 
+-#include <tr1/memory>
++#include <boost/tr1/memory.hpp>
+ 
+ #include <ptlib.h>
+ #include <ptlib/vconvert.h>
+--- ekiga-3.2.5/lib/engine/components/ldap/ldap-book.h.orig	2009-07-04 21:46:44.000000000 +0800
++++ ekiga-3.2.5/lib/engine/components/ldap/ldap-book.h	2009-07-13 10:50:41.164568000 +0800
+@@ -40,7 +40,7 @@
+ #define __LDAP_BOOK_H__
+ 
+ #include <vector>
+-#include <tr1/memory>
++#include <boost/tr1/memory.hpp>
+ #include <libxml/tree.h>
+ #include <glib/gi18n.h>
+ 
+--- ekiga-3.2.5/lib/engine/components/local-roster/local-presentity.h.orig	2009-07-04 21:46:44.000000000 +0800
++++ ekiga-3.2.5/lib/engine/components/local-roster/local-presentity.h	2009-07-13 10:50:41.163964000 +0800
+@@ -40,7 +40,7 @@
+ 
+ #include <libxml/tree.h>
+ 
+-#include <tr1/memory>
++#include <boost/tr1/memory.hpp>
+ 
+ 
+ #include "form.h"
+--- ekiga-3.2.5/lib/engine/components/libnotify/libnotify-main.cpp.orig	2009-07-04 21:46:44.000000000 +0800
++++ ekiga-3.2.5/lib/engine/components/libnotify/libnotify-main.cpp	2009-07-13 10:50:41.165517000 +0800
+@@ -36,7 +36,7 @@
+  */
+ 
+ #include <map>
+-#include <tr1/memory>
++#include <boost/tr1/memory.hpp>
+ 
+ #include <libnotify/notify.h>
+ 
+--- ekiga-3.2.5/lib/engine/components/call-history/history-contact.h.orig	2009-07-04 21:46:07.000000000 +0800
++++ ekiga-3.2.5/lib/engine/components/call-history/history-contact.h	2009-07-13 10:50:41.163275000 +0800
+@@ -38,7 +38,7 @@
+ 
+ #include <libxml/tree.h>
+ 
+-#include <tr1/memory>
++#include <boost/tr1/memory.hpp>
+ 
+ #include "services.h"
+ #include "contact-core.h"

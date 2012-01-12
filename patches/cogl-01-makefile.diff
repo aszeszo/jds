@@ -1,0 +1,11 @@
+--- cogl-1.8.0/tests/conform/Makefile.am-orig	2011-10-04 19:51:58.584334577 -0500
++++ cogl-1.8.0/tests/conform/Makefile.am	2011-10-04 19:52:03.938887679 -0500
+@@ -111,7 +111,7 @@ test_conformance_CPPFLAGS = \
+ 	-DCOGL_DISABLE_DEPRECATED \
+ 	-DTESTS_DATADIR=\""$(top_srcdir)/tests/data"\"
+ 
+-test_conformance_CFLAGS = -g3 -O0 $(COGL_DEP_CFLAGS) $(COGL_EXTRA_CFLAGS)
++test_conformance_CFLAGS = -O0 $(COGL_DEP_CFLAGS) $(COGL_EXTRA_CFLAGS)
+ test_conformance_LDADD = $(COGL_DEP_LIBS) $(top_builddir)/cogl/libcogl.la
+ test_conformance_LDFLAGS = -export-dynamic
+ 

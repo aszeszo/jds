@@ -1,0 +1,47 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-log-viewer.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-log-viewer.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-log-viewer.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-log-viewer.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-log-viewer.copyright
+d none bin 0755 root bin
+f none bin/gnome-system-log=usr/bin/gnome-system-log 0755 root bin
+d none lib 0755 root bin
+d none lib/gnome-system-log 0755 root bin
+d none lib/gnome-system-log/plugins 0755 root bin
+f none lib/gnome-system-log/plugins/grablogs.conf=usr/lib/gnome-system-log/plugins/grablogs.conf 0644 root bin
+f none lib/gnome-system-log/plugins/libbaseview.so=usr/lib/gnome-system-log/plugins/libbaseview.so 0755 root bin
+f none lib/gnome-system-log/plugins/libgrablogs.so=usr/lib/gnome-system-log/plugins/libgrablogs.so 0755 root bin
+f none lib/gnome-system-log/plugins/libpipelog.so=usr/lib/gnome-system-log/plugins/libpipelog.so 0755 root bin
+f none lib/gnome-system-log/plugins/libplainlog.so=usr/lib/gnome-system-log/plugins/libplainlog.so 0755 root bin
+f none lib/gnome-system-log/plugins/pipelog.conf=usr/lib/gnome-system-log/plugins/pipelog.conf 0644 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-system-log.desktop=usr/share/applications/gnome-system-log.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-log-viewer 0755 root bin
+f none share/doc/SUNWgnome-log-viewer/AUTHORS=usr/share/doc/SUNWgnome-log-viewer/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-log-viewer/COPYING.bz2=usr/share/doc/SUNWgnome-log-viewer/COPYING.bz2 0644 root bin
+f none share/doc/SUNWgnome-log-viewer/ChangeLog.bz2=usr/share/doc/SUNWgnome-log-viewer/ChangeLog.bz2 0644 root bin
+f none share/doc/SUNWgnome-log-viewer/NEWS.bz2=usr/share/doc/SUNWgnome-log-viewer/NEWS.bz2 0644 root bin
+f none share/doc/SUNWgnome-log-viewer/README=usr/share/doc/SUNWgnome-log-viewer/README 0644 root bin
+d none share/doc/SUNWgnome-log-viewer/logview 0755 root bin
+f none share/doc/SUNWgnome-log-viewer/logview/ChangeLog.bz2=usr/share/doc/SUNWgnome-log-viewer/logview/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-log-viewer/logview/help 0755 root bin
+f none share/doc/SUNWgnome-log-viewer/logview/help/ChangeLog.bz2=usr/share/doc/SUNWgnome-log-viewer/logview/help/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-log-viewer/po 0755 root bin
+f none share/doc/SUNWgnome-log-viewer/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-log-viewer/po/ChangeLog.bz2 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-system-log 0755 root bin
+d none share/gnome/help/gnome-system-log/C 0755 root bin
+d none share/gnome/help/gnome-system-log/C/figures 0755 root bin
+f none share/gnome/help/gnome-system-log/C/figures/syslog_window.png=usr/share/gnome/help/gnome-system-log/C/figures/syslog_window.png 0644 root bin
+f none share/gnome/help/gnome-system-log/C/gnome-system-log.xml=usr/share/gnome/help/gnome-system-log/C/gnome-system-log.xml 0644 root bin
+f none share/gnome/help/gnome-system-log/C/legal.xml=usr/share/gnome/help/gnome-system-log/C/legal.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-system-log.1=usr/share/man/man1/gnome-system-log.1 0644 root bin
+d none share/man/man4 0755 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-system-log 0755 root bin
+f none share/omf/gnome-system-log/gnome-system-log-C.omf=usr/share/omf/gnome-system-log/gnome-system-log-C.omf 0644 root bin

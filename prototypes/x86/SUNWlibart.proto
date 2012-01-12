@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibart.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibart.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibart.copyright
+f none share/doc/SUNWlibart/libart_lgpl-2.3.21/AUTHORS=usr/share/doc/SUNWlibart/libart_lgpl-2.3.21/AUTHORS 0444 root bin
+f none share/doc/SUNWlibart/libart_lgpl-2.3.21/COPYING.bz2=usr/share/doc/SUNWlibart/libart_lgpl-2.3.21/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibart/libart_lgpl-2.3.21/ChangeLog.bz2=usr/share/doc/SUNWlibart/libart_lgpl-2.3.21/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibart/libart_lgpl-2.3.21/NEWS.bz2=usr/share/doc/SUNWlibart/libart_lgpl-2.3.21/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibart/libart_lgpl-2.3.21/README=usr/share/doc/SUNWlibart/libart_lgpl-2.3.21/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libart_lgpl_2.so=libart_lgpl_2.so.2.3.21
+s none lib/libart_lgpl_2.so.2=libart_lgpl_2.so.2.3.21
+f none lib/libart_lgpl_2.so.2.3.21=usr/lib/libart_lgpl_2.so.2.3.21 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibart 0755 root bin
+d none share/doc/SUNWlibart/libart_lgpl-2.3.21 0755 root bin

@@ -1,0 +1,24 @@
+--- gtk+-3.1.8/configure.ac-orig	2011-07-05 20:26:51.103407687 -0500
++++ gtk+-3.1.8/configure.ac	2011-07-05 20:27:25.082457299 -0500
+@@ -59,6 +59,8 @@ AC_SUBST(CAIRO_REQUIRED_VERSION)
+ AC_SUBST(GDK_PIXBUF_REQUIRED_VERSION)
+ AC_SUBST(INTROSPECTION_REQUIRED_VERSION)
+ 
++AC_PROG_LIBTOOL
++
+ # Save this value here, since automake will set cflags later
+ cflags_set=${CFLAGS+set}
+ 
+@@ -199,12 +201,6 @@ if test "$os_win32" = "yes"; then
+   enable_shared=yes
+ fi
+ 
+-dnl Initialize libtool
+-LT_PREREQ([2.2.6])
+-LT_INIT([disable-static win32-dll])
+-# Create libtool early, because it's used in configure
+-LT_OUTPUT
+-
+ # Make sure we use 64-bit versions of various file stuff.
+ AC_SYS_LARGEFILE
+ 

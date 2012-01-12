@@ -1,0 +1,567 @@
+diff -r 70ef499d0f33 -r c1709450e70a po/de.po
+--- a/po/de.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/de.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -293,3 +293,27 @@
+ msgstr ""
+ "Die Empfindlichkeitsbeschriftung \"%s\" konnte nicht überprüft werden, da "
+ "auf die \t\t   Beschriftungskodierungendatei nicht zugegriffen werden konnte."
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "Authentifizierung fehlgeschlagen"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "Anmeldepasswort ändern..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "Arbeitsbereichpasswort ändern..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "Der Systemadministrator hat den Zugriff auf das System vorübergehend deaktiviert.\n"
++       "Wenden Sie sich an Ihren Systemadministrator"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "Kontoverwaltung konnte nicht festgelegt werden.\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/es.po
+--- a/po/es.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/es.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -290,3 +290,26 @@
+ msgstr ""
+ "No se pudo validar la etiqueta de sensibilidad \"%s\" porque \t\t    se ha "
+ "podido acceder al archivo de codificación de etiqueta"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "Autenticación no satisfactoria"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "Cambiar contraseña de inicio de sesión..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "Cambiar contraseña de espacio de trabajo..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "El administrador del sistema ha deshabilitado temporalmente el acceso al sistema.\n Póngase en contacto con el administrador del sistema."
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "No se pudo definir la gestión de cuentas.\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/fr.po
+--- a/po/fr.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/fr.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -292,3 +292,27 @@
+ msgstr ""
+ "Impossible de valider l'étiquette de la sensibilité \"%s\" parce que \t\t   "
+ "le fichier de codages de l'étiquette est inaccessible"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "Echec de l'authentification"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "Modifier le mot de passe de connexion..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "Modifier le mot de passe de l'espace de travail..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "L'administrateur système a temporairement désactivé l'accès au système.\n"
++       "Adressez-vous à votre administrateur système"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "La configuration de la gestion des comptes a échoué.\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/it.po
+--- a/po/it.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/it.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -289,3 +289,26 @@
+ msgstr ""
+ "Impossibile convalidare l'etichetta di riservatezza \"%s\": \t\t   "
+ "impossibile accedere al file di codifica delle etichette"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "Autenticazione non riuscita"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "Cambia password di accesso..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "Cambia password area di lavoro..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "L'amministratore di sistema ha disattivato temporaneamente l'accesso al sistema.\nConsultare l'amministratore di sistema"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "Impossibile impostare la gestione dell'account.\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/ja.po
+--- a/po/ja.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/ja.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -389,3 +389,27 @@
+ msgstr ""
+ "ラベルエンコーディングファイルにアクセスできないため、 \t\t   機密ラベル \"%s"
+ "\"を確認できませんでした"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "認証に失敗しました。"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "ログインパスワードを変更します..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "ワークスペースパスワードを変更します..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "システム管理者がシステムへのアクセスを一時的に無効にしています。\n"
++       "システム管理者に確認してください"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "アカウント管理を設定できませんでした。\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/ko.po
+--- a/po/ko.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/ko.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -257,3 +257,27 @@
+ msgstr ""
+ "\t\t   레이블 인코딩 파일에 액세스할 수 없어서 민감도 레이블 \"%s\"을(를) 검"
+ "증하지 못했습니다."
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "인증 실패"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "로그인 암호 변경..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "작업 공간 암호 변경..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "시스템 관리자가 시스템에 대한 액세스를 일시적으로 사용 안함으로 설정했습니다.\n"
++       "시스템 관리자에게 문의하십시오."
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "계정 관리를 설정할 수 없습니다.\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/pt_BR.po
+--- a/po/pt_BR.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/pt_BR.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -291,3 +291,27 @@
+ msgstr ""
+ "Não poderia validar o rótulo de sensibilidade \"%s\" porque o arquivo de "
+ "codificações de rótulo \t\t poderia não ser acessado"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "Falha de autenticação"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "Alterar senha de login..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "Alterar senha do espaço de trabalho..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "O administrador do sistema desativou temporariamente o acesso ao sistema.\n"
++       "Consulte o administrador do sistema"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "Não foi possível definir o gerenciamento de contas.\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/zh_CN.po
+--- a/po/zh_CN.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/zh_CN.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -253,3 +253,27 @@
+ "Could not validate sensitivity label \"%s\" because the \t\t   label "
+ "encodings file could not be accessed"
+ msgstr "无法验证灵敏性标签 \"%s\"，因为无法访问 \t\t 标签编码文件"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "验证失败"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "更改登录口令..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "更改工作区口令..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr ""
++       "系统管理员临时禁用了对系统的访问。\n"
++       "请与您的系统管理员联系"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "无法设置帐户管理。\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/zh_HK.po
+--- a/po/zh_HK.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/zh_HK.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -16,6 +16,113 @@
+ "Report-Msgid-Bugs-To: \n"
+ "Plural-Forms: nplurals=1; plural=0;\n"
+ 
++# COMMUNITY UNTRANS
++# SUN CHANGED MESSAGE
++# SUN LING REVIEWED
++#: src/tsol-user.c:455
++msgid "Sorry. Permission denied."
++msgstr "抱歉。權限被拒絕。"
++
++# COMMUNITY UNTRANS
++# SUN CHANGED MESSAGE
++# SUN LING REVIEWED
++#: src/tsol-user.c:458
++msgid "Wrong password. Permission denied"
++msgstr "錯誤的密碼。權限被拒絕"
++
++# COMMUNITY UNTRANS
++# SUN CHANGED MESSAGE
++# SUN LING REVIEWED
++#. System error
++#: src/tsol-user.c:462
++msgid "Unexpected failure. Password unchanged"
++msgstr "未預期的失敗。密碼未變更"
++
++# COMMUNITY UNTRANS
++# SUN CHANGED MESSAGE
++# SUN LING REVIEWED
++#: src/tsol-user.c:500
++#, c-format
++msgid "The user account for %s has expired. Permission denied."
++msgstr "%s 的使用者帳號已過期。權限被拒絕。"
++
++# COMMUNITY UNTRANS
++# SUN CHANGED MESSAGE
++# SUN LING REVIEWED
++#: src/tsol-user.c:504
++msgid "Permission denied."
++msgstr "權限被拒絕。"
++
++# COMMUNITY MESSAGE
++# COMMUNITY FUZZY
++# SUN CHANGED MESSAGE
++# SUN TECH REVIEWED
++# SUN LING REVIEWED
++#: src/tsol-user.c:81
++msgid ""
++"The workstation owner of this system could not be determined\n"
++"This means that your environment is probably corrupt or you are\n"
++"attempting to launch the Trusted JDS trusted stripe from \n"
++"outside of a Trusted JDS session. See your system administrator"
++msgstr ""
++"無法決定此系統的工作站所有者\n"
++"這表示您的環境可能已毀壞，或\n"
++"您正嘗試從 Trusted JDS 階段作業外部啟動 Trusted JDS\n"
++"信任的資料平行儲存區。請連絡您的系統管理員"
++
++# COMMUNITY MESSAGE
++# COMMUNITY FUZZY
++# SUN CHANGED MESSAGE
++# SUN TECH REVIEWED
++# SUN LING REVIEWED
++#: src/tsol-user.c:129
++msgid ""
++"Too many roles assigned to the user.\n"
++"Some roles may have been ignored."
++msgstr ""
++"指定了太多角色給使用者。\n"
++"有些角色可能已被忽略。"
++
++# COMMUNITY MESSAGE
++# COMMUNITY FUZZY
++# SUN CHANGED MESSAGE
++# SUN TECH REVIEWED
++# SUN LING REVIEWED
++#: src/tsol-user.c:145
++#, c-format
++msgid ""
++"The role \"%s\" is an invalid\n"
++"role on this system.\n"
++"See your system administrator."
++msgstr ""
++"角色「%s」在此系統上\n"
++"為無效的角色。\n"
++"請連絡您的系統管理員。"
++
++# COMMUNITY MESSAGE
++# COMMUNITY FUZZY
++# SUN CHANGED MESSAGE
++# SUN TECH REVIEWED
++# SUN LING REVIEWED
++#: src/tsol-user.c:534
++#, c-format
++msgid "The password for %s has not been changed."
++msgstr "%s 的密碼未變更。"
++
++# COMMUNITY MESSAGE
++# COMMUNITY FUZZY
++# SUN CHANGED MESSAGE
++# SUN TECH REVIEWED
++# SUN LING REVIEWED
++#: src/xagent-management.c:989
++#, c-format
++msgid ""
++"The saved role: \"%s\" is no longer granted to this user.\n"
++"See your system administrator"
++msgstr ""
++"不再授予此使用者已儲存的角色「%s」。\n"
++"請連絡您的系統管理員"
++
+ #: src/menus.c:158
+ msgid "Change Password..."
+ msgstr "變更密碼..."
+@@ -95,52 +202,6 @@
+ "attempting to assume a role: \n"
+ msgstr "請關閉下列視窗或將其移至其他工作區，然後再嘗試使用角色：\n"
+ 
+-# COMMUNITY MESSAGE
+-# COMMUNITY FUZZY
+-# SUN CHANGED MESSAGE
+-# SUN TECH REVIEWED
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:81
+-msgid ""
+-"The workstation owner of this system could not be determined\n"
+-"This means that your environment is probably corrupt or you are\n"
+-"attempting to launch the Trusted JDS trusted stripe from \n"
+-"outside of a Trusted JDS session. See your system administrator"
+-msgstr ""
+-"無法決定此系統的工作站所有者\n"
+-"這表示您的環境可能已毀壞，或\n"
+-"您正嘗試從 Trusted JDS 階段作業外部啟動 Trusted JDS\n"
+-"信任的資料平行儲存區。請連絡您的系統管理員"
+-
+-# COMMUNITY MESSAGE
+-# COMMUNITY FUZZY
+-# SUN CHANGED MESSAGE
+-# SUN TECH REVIEWED
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:129
+-msgid ""
+-"Too many roles assigned to the user.\n"
+-"Some roles may have been ignored."
+-msgstr ""
+-"指定了太多角色給使用者。\n"
+-"有些角色可能已被忽略。"
+-
+-# COMMUNITY MESSAGE
+-# COMMUNITY FUZZY
+-# SUN CHANGED MESSAGE
+-# SUN TECH REVIEWED
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:145
+-#, c-format
+-msgid ""
+-"The role \"%s\" is an invalid\n"
+-"role on this system.\n"
+-"See your system administrator."
+-msgstr ""
+-"角色「%s」在此系統上\n"
+-"為無效的角色。\n"
+-"請連絡您的系統管理員。"
+-
+ #: src/tsol-user.c:158
+ #, c-format
+ msgid ""
+@@ -167,53 +228,6 @@
+ msgid "Changing password for %s"
+ msgstr "變更 %s 的密碼"
+ 
+-# COMMUNITY UNTRANS
+-# SUN CHANGED MESSAGE
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:455
+-msgid "Sorry. Permission denied."
+-msgstr "抱歉。權限被拒絕。"
+-
+-# COMMUNITY UNTRANS
+-# SUN CHANGED MESSAGE
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:458
+-msgid "Wrong password. Permission denied"
+-msgstr "錯誤的密碼。權限被拒絕"
+-
+-# COMMUNITY UNTRANS
+-# SUN CHANGED MESSAGE
+-# SUN LING REVIEWED
+-#. System error
+-#: src/tsol-user.c:462
+-msgid "Unexpected failure. Password unchanged"
+-msgstr "未預期的失敗。密碼未變更"
+-
+-# COMMUNITY UNTRANS
+-# SUN CHANGED MESSAGE
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:500
+-#, c-format
+-msgid "The user account for %s has expired. Permission denied."
+-msgstr "%s 的使用者帳號已過期。權限被拒絕。"
+-
+-# COMMUNITY UNTRANS
+-# SUN CHANGED MESSAGE
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:504
+-msgid "Permission denied."
+-msgstr "權限被拒絕。"
+-
+-# COMMUNITY MESSAGE
+-# COMMUNITY FUZZY
+-# SUN CHANGED MESSAGE
+-# SUN TECH REVIEWED
+-# SUN LING REVIEWED
+-#: src/tsol-user.c:534
+-#, c-format
+-msgid "The password for %s has not been changed."
+-msgstr "%s 的密碼未變更。"
+-
+ #: src/ui-controller.c:174 src/ui-controller.c:453 src/ui-controller.c:587
+ #: src/ui-view.c:314 src/ui-view.c:483
+ msgid "Trusted Path"
+@@ -223,33 +237,42 @@
+ msgid "Couldn't get the window label\n"
+ msgstr "無法取得視窗標籤\n"
+ 
+-# COMMUNITY MESSAGE
+-# COMMUNITY FUZZY
+-# SUN CHANGED MESSAGE
+-# SUN TECH REVIEWED
+-# SUN LING REVIEWED
+-#: src/xagent-management.c:989
+-#, c-format
+-msgid ""
+-"The saved role: \"%s\" is no longer granted to this user.\n"
+-"See your system administrator"
+-msgstr ""
+-"不再授予此使用者已儲存的角色「%s」。\n"
+-"請連絡您的系統管理員"
+-
+ #: src/xagent-management.c:1014
+ #, c-format
+ msgid "The role: \"%s\" has been removed from this workspace"
+ msgstr "已從此工作區移除角色「%s」"
+ 
+-#~ msgid ""
+-#~ "Permission to operate as %s denied.\n"
+-#~ "See your system administrator"
+-#~ msgstr ""
+-#~ "以 %s 身份進行操作的權限遭到拒絕。\n"
+-#~ "請連絡您的系統管理員"
++msgid ""
++"Permission to operate as %s denied.\n"
++"See your system administrator"
++msgstr ""
++"以 %s 身份進行操作的權限遭到拒絕。\n"
++"請連絡您的系統管理員"
+ 
+-#~ msgid ""
+-#~ "Could not validate sensitivity label \"%s\" because the \t\t   label "
+-#~ "encodings file could not be accessed"
+-#~ msgstr "無法驗證私密性標籤「%s」，因為無法存取\t\t   標籤編碼檔案"
++msgid ""
++"Could not validate sensitivity label \"%s\" because the \t\t   label "
++"encodings file could not be accessed"
++msgstr "無法驗證私密性標籤「%s」，因為無法存取\t\t   標籤編碼檔案"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "驗證失敗"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "變更登入密碼..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "變更工作區密碼..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr "系統管理員已暫時停用系統的存取。\n"
++       "請聯絡您的系統管理員"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "無法設定帳號管理。\n"
+diff -r 70ef499d0f33 -r c1709450e70a po/zh_TW.po
+--- a/po/zh_TW.po	Wed Aug 24 23:19:50 2011 +0800
++++ b/po/zh_TW.po	Wed Aug 24 23:26:04 2011 +0800
+@@ -253,3 +253,26 @@
+ "Could not validate sensitivity label \"%s\" because the \t\t   label "
+ "encodings file could not be accessed"
+ msgstr "無法驗證私密性標籤「%s」，因為無法存取\t\t   標籤編碼檔案"
++
++#: ../src/xagent-proxy.c:442
++msgid "Authentication failed"
++msgstr "驗證失敗"
++
++#: ../src/menus.c:197
++msgid "Change Login Password..."
++msgstr "變更登入密碼..."
++
++#: ../src/menus.c:205
++msgid "Change Workspace Password..."
++msgstr "變更工作區密碼..."
++
++#: ../src/xagent-proxy.c:429
++msgid ""
++"The system administrator has temporarily disabled access to the system.\n"
++"See your system administrator"
++msgstr "系統管理員已暫時停用系統的存取。\n"
++       "請聯絡您的系統管理員"
++
++#: ../src/xagent-proxy.c:461
++msgid "Couldn't set account management.\n"
++msgstr "無法設定帳號管理。\n"

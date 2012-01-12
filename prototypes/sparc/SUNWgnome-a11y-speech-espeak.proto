@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-speech-espeak.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-speech-espeak.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-speech-espeak.copyright
+d none bin 0755 root bin
+f none bin/espeak-synthesis-driver=usr/bin/espeak-synthesis-driver 0755 root bin
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Espeak.server=usr/lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Espeak.server 0644 root bin

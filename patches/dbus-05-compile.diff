@@ -1,0 +1,40 @@
+--- dbus-1.4.14/dbus/sd-daemon.c-orig	2011-09-13 16:27:09.321997939 -0500
++++ dbus-1.4.14/dbus/sd-daemon.c	2011-09-13 16:30:20.044351351 -0500
+@@ -24,6 +24,8 @@
+   SOFTWARE.
+ ***/
+ 
++#define __EXTENSIONS__
++
+ #ifndef _GNU_SOURCE
+ #define _GNU_SOURCE
+ #endif
+--- dbus-1.4.14/Makefile.am-orig	2011-09-13 16:36:40.967786680 -0500
++++ dbus-1.4.14/Makefile.am	2011-09-13 16:36:45.644929457 -0500
+@@ -1,4 +1,4 @@
+-SUBDIRS=dbus bus tools test doc
++SUBDIRS=dbus bus tools doc
+ 
+ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = dbus-1.pc
+--- dbus-1.4.14/dbus/dbus-sysdeps-unix.c-orig	2011-09-13 16:41:50.420584386 -0500
++++ dbus-1.4.14/dbus/dbus-sysdeps-unix.c	2011-09-13 16:42:18.502907891 -0500
+@@ -55,6 +55,7 @@
+ #include <netinet/in.h>
+ #include <netdb.h>
+ #include <grp.h>
++#include <alloca.h>
+ 
+ #ifdef HAVE_ERRNO_H
+ #include <errno.h>
+--- dbus-1.4.16/dbus/dbus-sysdeps-util-unix.c-orig	2011-09-30 21:18:50.917672255 -0500
++++ dbus-1.4.16/dbus/dbus-sysdeps-util-unix.c	2011-09-30 21:20:36.768515077 -0500
+@@ -429,7 +429,7 @@ _dbus_request_file_descriptor_limit (uns
+ void
+ _dbus_init_system_log (void)
+ {
+-#ifdef HAVE_DECL_LOG_PERROR
++#ifdef LOG_PERROR
+   openlog ("dbus", LOG_PID | LOG_PERROR, LOG_DAEMON);
+ #else
+   openlog ("dbus", LOG_PID, LOG_DAEMON);

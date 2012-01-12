@@ -1,0 +1,73 @@
+diff -urN bugbuddy.orig/gnome-breakpad/gnome-breakpad.cc bugbuddy.new/gnome-breakpad/gnome-breakpad.cc
+--- bugbuddy.orig/gnome-breakpad/gnome-breakpad.cc	2010-02-01 15:10:35.296459110 +0000
++++ bugbuddy.new/gnome-breakpad/gnome-breakpad.cc	2010-02-01 17:00:55.493486622 +0000
+@@ -58,6 +58,9 @@
+ static void    check_if_gdb    ();
+ 
+ static gchar *bugbuddy;
++#if defined(sun) && defined(__SVR4)
++static gchar *solaris_bug_buddy_command[4];
++#endif
+ static GLogFunc old_handler = NULL;
+ 
+ typedef struct {
+@@ -202,6 +205,31 @@
+ 	}
+ }
+ 
++#if defined(sun) && defined(__SVR4)
++static void
++run_bug_buddy_solaris () 
++{
++	int pid;
++	int w;
++	int status;
++
++	pid = fork ();
++	switch (pid) {
++		case 0:
++			execl (solaris_bug_buddy_command[0], solaris_bug_buddy_command[0],
++                              solaris_bug_buddy_command[1], solaris_bug_buddy_command[2],
++				solaris_bug_buddy_command[3]);
++			break;
++		case -1: 
++			_exit (1);
++			break;
++		default:
++			w = waitpid (pid, &status, 0);
++			break;
++	}
++}
++#endif
++
+ static void
+ bugbuddy_segv_handle(int signum)
+ {
+@@ -221,7 +249,11 @@
+                 _exit(1);
+         }
+ 
++#if defined(sun) && defined(__SVR4)
++	run_bug_buddy_solaris ();
++#else
+ 	check_if_gdb ();
++#endif
+ 
+ #ifdef ENABLE_GOOGLE_BREAKPAD
+ 	/* If we are here is because there are no debug symbols or gdb couldn't be run.
+@@ -505,6 +537,15 @@
+ 						NULL, NULL, false);
+ #endif
+ 
++	
++#if defined(sun) && defined(__SVR4)
++	solaris_bug_buddy_command[0] = bugbuddy;
++	solaris_bug_buddy_command[1] = g_strdup_printf ("--appname=%s",
++							g_get_prgname ());
++	solaris_bug_buddy_command[2] = g_strdup_printf ("--pid=%d", getpid ());
++	solaris_bug_buddy_command[3] = NULL;
++#endif
++
+         static struct sigaction *setptr;
+        	static struct sigaction old_action;
+        	struct sigaction sa;

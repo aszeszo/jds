@@ -1,0 +1,12 @@
+diff -ruN gtksourceview-1.8.5.orig/docs/reference/Makefile.am gtksourceview-1.8.5/docs/reference/Makefile.am
+--- gtksourceview-1.8.5.orig/docs/reference/Makefile.am	2010-01-05 00:46:36.844942555 +0000
++++ gtksourceview-1.8.5/docs/reference/Makefile.am	2010-01-05 00:47:09.165661071 +0000
+@@ -44,7 +44,7 @@
+ content_files =	version.xml
+ 
+ # Extra options to supply to gtkdoc-fixref
+-FIXXREF_OPTIONS=
++FIXXREF_OPTIONS=--module=$(DOC_MODULE)
+ 
+ # include common portion ...
+ include $(top_srcdir)/gtk-doc.make

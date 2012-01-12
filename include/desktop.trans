@@ -1,0 +1,160 @@
+# Documentation facets
+#
+# man pages
+<transform dir file link hardlink path=usr.*/man(/.+){0,1}$ -> \
+    default facet.doc.man true>
+
+# texinfo docs
+<transform dir file link hardlink path=usr/.*/info(/.+){0,1}$ -> \
+    default facet.doc.info true>
+<transform file path=usr/.*/info/.+$ -> \
+    add restart_fmri svc:/application/texinfo-update:default>
+<transform file path=usr/.*/info/dir$ -> exit 1 "Error: packaged texinfo directory file (%<action.path>)" >
+
+# html docs
+<transform dir file link hardlink path=usr/.*/doc/.*(html?|css).* -> \
+    default facet.doc.html true>
+<transform dir file link hardlink path=usr/lib/help/.*\.html$ -> \
+    default facet.doc.html true>
+
+# gtk-doc
+<transform dir file link hardlink path=usr/share/gtk-doc -> \
+    default facet.doc.html true>
+
+# GNOME online help
+<transform dir file link hardlink path=usr/share/gnome/help -> \
+    default facet.doc.help true>
+<transform dir file link hardlink path=usr/share/omf -> \
+    default facet.doc.help true>
+
+# pdf docs
+<transform dir file link hardlink path=usr/.*/doc/.*\.pdf$ -> \
+    default facet.doc.html true>
+
+# general documentation
+<transform dir file link hardlink path=usr/.*/doc(/.+){0,1}$ -> \
+    default facet.doc true>
+
+# drop facet.doc if we have a type specific facet.
+<transform dir file link hardlink facet.doc.html=true -> delete facet.doc true>
+<transform dir file link hardlink facet.doc.info=true -> delete facet.doc true>
+<transform dir file link hardlink facet.doc.pdf=true -> delete facet.doc true>
+<transform dir file link hardlink facet.doc.man=true -> delete facet.doc true>
+#
+# Devel facets
+#
+# header files
+<transform dir file link hardlink path=usr.*/include(/.+){0,1} -> \
+    default facet.devel true>
+
+# archive libraries (on rare occasion, we should be delivering these)
+<transform file path=.*lib/.+\.a$ -> default facet.devel true>
+
+# .so links, we need to determine if this is a problem, I suspect that it is.
+#<transform link path=.*lib/.*\.so$ -> default facet.devel true>
+
+# lint libraries
+<transform file link hardlink path=.*/lib/llib-.* -> default facet.devel true>
+
+# pkg-config data
+<transform dir file link hardlink path=.*/pkgconfig(/.+\.pc){0,1}$ -> \
+    default facet.devel true>
+
+# autoconf macros
+<transform dir file link hardlink path=.*/aclocal(/.*\.m4){0,1}$ -> \
+    default facet.devel true>
+
+# gtk-doc
+<transform dir file link hardlink path=usr/share/gtk-doc -> \
+    default facet.devel true>
+
+#
+# Localization facets
+#
+# (1) general
+#
+# .../locale/xx/ -> facet.locale.xx=true
+# .../locale/xx_YY/ -> facet.locale.xx_YY=true
+<transform dir file link hardlink path=.+/locale/([a-z]{2,3}(_[A-Z]{2,3})?)([/.@].+)?$ -> default facet.locale.%<1> true>
+#
+# usr/share/gnome/help/<component>/xx/ -> facet.locale.xx=true
+# usr/share/gnome/help/<component>/xx_YY/ -> facet.locale.xx_YY=true
+<transform dir file link hardlink path=usr/share/gnome/help/[^/]+/([a-z]{2,3}(_[A-Z]{2,3})?)([/.@].+)?$ -> default facet.locale.%<1> true>
+#
+# usr/share/omf/<component>/<component>-xx.omf/ -> facet.locale.xx=true
+# usr/share/omf/<component>/<component>-xx_YY.omf/ -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/share/omf/[^/]+/[^/]+-([a-z]{2,3}(_[A-Z]{2,3})?)([.@][^/]+)?\.omf$ -> default facet.locale.%<1> true>
+
+#
+# (2) firefox
+#
+# usr/lib/firefox/dictionaries/xx-YY.aff -> facet.locale.xx_YY=true
+# usr/lib/firefox/dictionaries/xx-YY.dic -> facet.locale.xx_YY=true
+# usr/lib/firefox/dictionaries/xx-YY_u8.aff -> facet.locale.xx_YY=true
+# usr/lib/firefox/dictionaries/xx-YY_u8.dic -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/lib/firefox/dictionaries/([a-z]{2,3})-([A-Z]{2,3})(_u8)?\.(aff|dic)$ -> default facet.locale.%<1>_%<2> true>
+#
+# usr/lib/firefox/extensions/langpack-xx -> facet.locale.xx=true
+# usr/lib/firefox/extensions/langpack-xx-YY -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/lib/firefox/extensions/langpack-([a-z]{2,3})-([A-Z]{2,3})@.+$ -> default facet.locale.%<1>_%<2> true>
+<transform file link hardlink path=usr/lib/firefox/extensions/langpack-([a-z]{2,3})@.+$ -> default facet.locale.%<1> true>
+#
+#
+# (3) thunderbird
+#
+# usr/lib/thunderbird/dictionaries/xx-YY.aff -> facet.locale.xx_YY=true
+# usr/lib/thunderbird/dictionaries/xx-YY.dic -> facet.locale.xx_YY=true
+# usr/lib/thunderbird/dictionaries/xx-YY_u8.aff -> facet.locale.xx_YY=true
+# usr/lib/thunderbird/dictionaries/xx-YY_u8.dic -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/lib/thunderbird/dictionaries/([a-z]{2,3})-([A-Z]{2,3})(_u8)?\.(aff|dic)$ -> default facet.locale.%<1>_%<2> true>
+#
+# usr/lib/thunderbird/extensions/langpack-xx -> facet.locale.xx=true
+# usr/lib/thunderbird/extensions/langpack-xx-YY -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/lib/thunderbird/extensions/langpack-([a-z]{2,3})-([A-Z]{2,3})@.+$ -> default facet.locale.%<1>_%<2> true>
+<transform file link hardlink path=usr/lib/thunderbird/extensions/langpack-([a-z]{2,3})@.+$ -> default facet.locale.%<1> true>
+#
+# usr/lib/thunderbird/extensions/<code>/xx.manifest -> facet.locale.xx=true
+# usr/lib/thunderbird/extensions/<code>/xx-YY.manifest -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/lib/thunderbird/extensions/[^/]+/([a-z]{2,3})-([A-Z]{2,3})\.manifest$ -> default facet.locale.%<1>_%<2> true>
+<transform file link hardlink path=usr/lib/thunderbird/extensions/[^/]+/([a-z]{2,3})\.manifest$ -> default facet.locale.%<1> true>
+#
+# usr/lib/thunderbird/extensions/<code>/chrome/calendar-xx.jar -> facet.locale.xx=true
+# usr/lib/thunderbird/extensions/<code>/chrome/calendar-xx-YY.jar -> facet.locale.xx_YY=true
+# usr/lib/thunderbird/extensions/<code>/chrome/lightning-xx.jar -> facet.locale.xx=true
+# usr/lib/thunderbird/extensions/<code>/chrome/lightning-xx-YY.jar -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/lib/thunderbird/extensions/[^/]+/chrome/(calendar|lightning)-([a-z]{2,3})-([A-Z]{2,3})\.jar$ -> default facet.locale.%<2>_%<3> true>
+<transform file link hardlink path=usr/lib/thunderbird/extensions/[^/]+/chrome/(calendar|lightning)-([a-z]{2,3})\.jar$ -> default facet.locale.%<2> true>
+#
+# exception for en_US used also for C locale
+<transform file link hardlink path=usr/lib/thunderbird/extensions/[^/]+/chrome/(calendar|lightning)-en-US\.jar$ facet.locale.en_US=true -> delete facet.locale.en_US true>
+#
+# usr/lib/thunderbird/chrome/xx.jar -> facet.locale.xx=true
+# usr/lib/thunderbird/chrome/xx-YY.jar -> facet.locale.xx_YY=true
+# usr/lib/thunderbird/chrome/xx.manifest -> facet.locale.xx=true
+# usr/lib/thunderbird/chrome/xx-YY.manifest -> facet.locale.xx_YY=true
+<transform file link hardlink path=usr/lib/thunderbird/chrome/([a-z]{2,3})-([A-Z]{2,3})\.(jar|manifest)$ -> default facet.locale.%<1>_%<2> true>
+<transform file link hardlink path=usr/lib/thunderbird/chrome/([a-z]{2,3})\.(jar|manifest)$ -> default facet.locale.%<1> true>
+
+#
+# (4) other component specific
+#
+# usr/share/openproj/lib/openproj_xx.jar
+# usr/share/openproj/lib/openproj_xx_YY.jar
+<transform file link hardlink path=usr/share/openproj/lib/[^/]+_([a-z]{2,3}(_[A-Z]{2,3})?)\.jar$ -> default facet.locale.%<1> true>
+#
+# usr/share/gimp/2.0/help/xx/ -> facet.locale.xx=true
+# usr/share/gimp/2.0/help/xx_YY/ -> facet.locale.xx_YY=true
+# usr/share/gimp/2.0/help/images/<component>/xx/ -> facet.locale.xx=true
+# usr/share/gimp/2.0/help/images/<component>/xx_YY/ -> facet.locale.xx_YY=true
+# usr/share/gimp/2.0/help/images/filters/examples/xx/ -> facet.locale.xx=true
+# usr/share/gimp/2.0/help/images/filters/examples/xx_YY/ -> facet.locale.xx_YY=true
+<transform dir file link hardlink path=usr/share/gimp/2\.0/help/([a-z]{2,3}(_[A-Z]{2,3})?)([/.@].+)?$ -> default facet.locale.%<1> true>
+<transform dir file link hardlink path=usr/share/gimp/2\.0/help/images/[^/]+/([a-z]{2,3}(_[A-Z]{2,3})?)([/.@].+)?$ -> default facet.locale.%<1> true>
+<transform dir file link hardlink path=usr/share/gimp/2\.0/help/images/filters/examples/([a-z]{2,3}(_[A-Z]{2,3})?)([/.@].+)?$ -> default facet.locale.%<1> true>
+
+#
+# (y) add facet.loccale.zh_SG to zh_CN
+# (y) add facet.loccale.zh_HK to zh_TW
+#
+<transform dir file link hardlink facet.locale.zh_CN=true$ -> default facet.locale.zh_SG true>
+<transform dir file link hardlink facet.locale.zh_TW=true$ -> default facet.locale.zh_HK true>

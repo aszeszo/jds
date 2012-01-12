@@ -1,0 +1,27 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-libs-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-libs-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-libs-devel.copyright
+d none include 0755 root bin
+d none include/libgtkhtml-3.14 0755 root bin
+d none include/libgtkhtml-3.14/editor 0755 root bin
+f none include/libgtkhtml-3.14/editor/gtkhtml-editor-actions.h=usr/include/libgtkhtml-3.14/editor/gtkhtml-editor-actions.h 0644 root bin
+f none include/libgtkhtml-3.14/editor/gtkhtml-editor-common.h=usr/include/libgtkhtml-3.14/editor/gtkhtml-editor-common.h 0644 root bin
+f none include/libgtkhtml-3.14/editor/gtkhtml-editor-widgets.h=usr/include/libgtkhtml-3.14/editor/gtkhtml-editor-widgets.h 0644 root bin
+f none include/libgtkhtml-3.14/editor/gtkhtml-editor.h=usr/include/libgtkhtml-3.14/editor/gtkhtml-editor.h 0644 root bin
+f none include/libgtkhtml-3.14/editor/gtkhtml-spell-checker.h=usr/include/libgtkhtml-3.14/editor/gtkhtml-spell-checker.h 0644 root bin
+f none include/libgtkhtml-3.14/editor/gtkhtml-spell-language.h=usr/include/libgtkhtml-3.14/editor/gtkhtml-spell-language.h 0644 root bin
+d none include/libgtkhtml-3.14/gtkhtml 0755 root bin
+f none include/libgtkhtml-3.14/gtkhtml/gtkhtml-embedded.h=usr/include/libgtkhtml-3.14/gtkhtml/gtkhtml-embedded.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/gtkhtml-enums.h=usr/include/libgtkhtml-3.14/gtkhtml/gtkhtml-enums.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/gtkhtml-properties.h=usr/include/libgtkhtml-3.14/gtkhtml/gtkhtml-properties.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/gtkhtml-search.h=usr/include/libgtkhtml-3.14/gtkhtml/gtkhtml-search.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/gtkhtml-stream.h=usr/include/libgtkhtml-3.14/gtkhtml/gtkhtml-stream.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/gtkhtml-types.h=usr/include/libgtkhtml-3.14/gtkhtml/gtkhtml-types.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/gtkhtml.h=usr/include/libgtkhtml-3.14/gtkhtml/gtkhtml.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/htmlenums.h=usr/include/libgtkhtml-3.14/gtkhtml/htmlenums.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/htmltokenizer.h=usr/include/libgtkhtml-3.14/gtkhtml/htmltokenizer.h 0644 root bin
+f none include/libgtkhtml-3.14/gtkhtml/htmltypes.h=usr/include/libgtkhtml-3.14/gtkhtml/htmltypes.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gtkhtml-editor.pc=usr/lib/pkgconfig/gtkhtml-editor.pc 0644 root bin
+f none lib/pkgconfig/libgtkhtml-3.14.pc=usr/lib/pkgconfig/libgtkhtml-3.14.pc 0644 root bin

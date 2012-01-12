@@ -1,0 +1,22 @@
+--- nautilus-3.1.3/src/nautilus-places-sidebar.c.orig	2011-07-25 16:08:45.092892658 +0100
++++ nautilus-3.1.3/src/nautilus-places-sidebar.c	2011-07-25 16:13:21.205043502 +0100
+@@ -2938,6 +2938,7 @@
+ 	GtkTreeIter iter;
+ 	NautilusBookmark *bookmark;
+ 	int index;
++	GValue a = {0};
+ 
+ 	g_object_set (cell, "editable", FALSE, NULL);
+ 	
+@@ -2946,6 +2947,11 @@
+ 	gtk_tree_model_get (GTK_TREE_MODEL (sidebar->filter_model), &iter,
+ 		            PLACES_SIDEBAR_COLUMN_INDEX, &index,
+ 		            -1);
++	g_value_init (&a, G_TYPE_STRING);
++	g_value_set_static_string (&a, new_text);
++	gtk_list_store_set_value (sidebar->filter_model, &iter,
++				  PLACES_SIDEBAR_COLUMN_NAME, &a);
++	g_value_unset(&a);
+ 	gtk_tree_path_free (path);
+ 	bookmark = nautilus_bookmark_list_item_at (sidebar->bookmarks, index);
+ 

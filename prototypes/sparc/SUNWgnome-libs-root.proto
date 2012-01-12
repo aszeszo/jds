@@ -1,0 +1,31 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-libs-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-libs-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-libs-root.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-libs-root.preremove
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-libs-root.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-libs-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/desktop_gnome_accessibility_keyboard.schemas=etc/gconf/schemas/desktop_gnome_accessibility_keyboard.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_accessibility_startup.schemas=etc/gconf/schemas/desktop_gnome_accessibility_startup.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_applications_at_mobility.schemas=etc/gconf/schemas/desktop_gnome_applications_at_mobility.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_applications_at_visual.schemas=etc/gconf/schemas/desktop_gnome_applications_at_visual.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_applications_browser.schemas=etc/gconf/schemas/desktop_gnome_applications_browser.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_applications_office.schemas=etc/gconf/schemas/desktop_gnome_applications_office.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_applications_terminal.schemas=etc/gconf/schemas/desktop_gnome_applications_terminal.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_applications_window_manager.schemas=etc/gconf/schemas/desktop_gnome_applications_window_manager.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_background.schemas=etc/gconf/schemas/desktop_gnome_background.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_file_views.schemas=etc/gconf/schemas/desktop_gnome_file_views.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_interface.schemas=etc/gconf/schemas/desktop_gnome_interface.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_lockdown.schemas=etc/gconf/schemas/desktop_gnome_lockdown.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_peripherals_keyboard.schemas=etc/gconf/schemas/desktop_gnome_peripherals_keyboard.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_peripherals_mouse.schemas=etc/gconf/schemas/desktop_gnome_peripherals_mouse.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_sound.schemas=etc/gconf/schemas/desktop_gnome_sound.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_thumbnail_cache.schemas=etc/gconf/schemas/desktop_gnome_thumbnail_cache.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_thumbnailers.schemas=etc/gconf/schemas/desktop_gnome_thumbnailers.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_typing_break.schemas=etc/gconf/schemas/desktop_gnome_typing_break.schemas 0644 root sys
+d none etc/sound 0755 root sys
+d none etc/sound/events 0755 root sys
+f none etc/sound/events/gnome-2.soundlist=etc/sound/events/gnome-2.soundlist 0644 root sys
+f none etc/sound/events/gtk-events-2.soundlist=etc/sound/events/gtk-events-2.soundlist 0644 root sys

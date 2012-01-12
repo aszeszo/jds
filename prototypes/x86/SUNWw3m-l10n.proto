@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWw3m-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWw3m-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWw3m-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/ja 0755 root other
+d none share/locale/ja/LC_MESSAGES 0755 root other
+f none share/locale/ja/LC_MESSAGES/w3m.mo=usr/share/locale/ja/LC_MESSAGES/w3m.mo 0644 root other
+f none share/locale/ja/LC_MESSAGES/w3m.ui.copyright=usr/share/locale/ja/LC_MESSAGES/w3m.ui.copyright 0644 root other

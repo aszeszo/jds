@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-l10n-ui-fr.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-l10n-ui-fr.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-l10n-ui-fr.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/fr 0755 root other
+d none share/locale/fr/LC_MESSAGES 0755 root other
+f none share/locale/fr/LC_MESSAGES/COPYING.tjds.gz=usr/share/locale/fr/LC_MESSAGES/COPYING.tjds.gz 0644 root other
+f none share/locale/fr/LC_MESSAGES/libgnometsol-0.5.mo=usr/share/locale/fr/LC_MESSAGES/libgnometsol-0.5.mo 0644 root other
+f none share/locale/fr/LC_MESSAGES/tsoljds-tstripe.mo=usr/share/locale/fr/LC_MESSAGES/tsoljds-tstripe.mo 0644 root other
+f none share/locale/fr/LC_MESSAGES/tsoljdsdevmgr-0.0.1.mo=usr/share/locale/fr/LC_MESSAGES/tsoljdsdevmgr-0.0.1.mo 0644 root other
+f none share/locale/fr/LC_MESSAGES/tsoljdslabel-0.5.mo=usr/share/locale/fr/LC_MESSAGES/tsoljdslabel-0.5.mo 0644 root other
+f none share/locale/fr/LC_MESSAGES/tsoljdsselmgr-0.0.2.mo=usr/share/locale/fr/LC_MESSAGES/tsoljdsselmgr-0.0.2.mo 0644 root other

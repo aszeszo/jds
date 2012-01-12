@@ -1,0 +1,28 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-perf-meter.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-perf-meter.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-perf-meter.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-perf-meter.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-perf-meter.copyright
+d none bin 0755 root bin
+f none bin/gnome-perfmeter=usr/bin/gnome-perfmeter 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gperfmeter.desktop=usr/share/applications/gperfmeter.desktop 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/gperfmeter 0755 root bin
+d none share/gnome/gperfmeter/png 0755 root bin
+f none share/gnome/gperfmeter/png/dead.png=usr/share/gnome/gperfmeter/png/dead.png 0644 root bin
+f none share/gnome/gperfmeter/png/sick.png=usr/share/gnome/gperfmeter/png/sick.png 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-perfmeter 0755 root bin
+d none share/gnome/help/gnome-perfmeter/C 0755 root bin
+f none share/gnome/help/gnome-perfmeter/C/gnome-perfmeter.xml=usr/share/gnome/help/gnome-perfmeter/C/gnome-perfmeter.xml 0755 root bin
+f none share/gnome/help/gnome-perfmeter/C/legal.xml=usr/share/gnome/help/gnome-perfmeter/C/legal.xml 0755 root bin
+d none share/gperfmeter 0755 root bin
+d none share/gperfmeter/glade 0755 root bin
+f none share/gperfmeter/glade/gperfmeter.glade=usr/share/gperfmeter/glade/gperfmeter.glade 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-perfmeter 0755 root bin
+f none share/omf/gnome-perfmeter/gnome-perfmeter-C.omf=usr/share/omf/gnome-perfmeter/gnome-perfmeter-C.omf 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/perfmeter.png=usr/share/pixmaps/perfmeter.png 0644 root bin

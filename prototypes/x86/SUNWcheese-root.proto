@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcheese-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcheese-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcheese-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/cheese.schemas=etc/gconf/schemas/cheese.schemas 0644 root sys

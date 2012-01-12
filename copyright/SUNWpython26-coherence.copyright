@@ -1,0 +1,17 @@
+Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: MIT License
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  LICENSE.bz2: Coherence License
+  NEWS.bz2: list of the most important changes in Coherence.
+  ChangeLog.bz2: list of all changes and authors of Coherence.
+
+ The sources of Coherence-%{coherence.version} were downloaded
+ from %{coherence.SOURCE0.url}

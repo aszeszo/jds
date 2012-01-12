@@ -1,0 +1,27 @@
+diff --git a/gfx/cairo/cairo/src/cairo-xlib-surface.c b/gfx/cairo/cairo/src/cairo-xlib-surface.c
+index 80ce023..2cbef51 100644
+--- a/gfx/cairo/cairo/src/cairo-xlib-surface.c
++++ b/gfx/cairo/cairo/src/cairo-xlib-surface.c
+@@ -4046,7 +4046,8 @@ _cairo_xlib_surface_add_glyph (Display *dpy,
+ 	    n = new;
+ 	    d = (uint32_t *) data;
+ 	    do {
+-		*n++ = bswap_32 (*d++);
++		*n++ = bswap_32 (*d);
++		d++;
+ 	    } while (--c);
+ 	    data = (uint8_t *) new;
+ 	}
+diff --git a/gfx/cairo/cairo/src/cairoint.h b/gfx/cairo/cairo/src/cairoint.h
+index e0127e8..13eb9ec 100644
+--- a/gfx/cairo/cairo/src/cairoint.h
++++ b/gfx/cairo/cairo/src/cairoint.h
+@@ -2191,7 +2191,7 @@ _cairo_surface_has_device_transform (cairo_surface_t *surface) cairo_pure;
+  * in cairo-xlib-surface.c--again see -Wswitch-enum).
+  */
+ #define CAIRO_FORMAT_INVALID ((unsigned int) -1)
+-#define CAIRO_FORMAT_VALID(format) ((format) <= CAIRO_FORMAT_RGB16_565)
++#define CAIRO_FORMAT_VALID(format) ((unsigned int)(format) <= CAIRO_FORMAT_RGB16_565)
+ 
+ /* pixman-required stride alignment in bytes. */
+ #define CAIRO_STRIDE_ALIGNMENT (sizeof (uint32_t))

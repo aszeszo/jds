@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-tsoljdsdevmgr.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-tsoljdsdevmgr.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-tsoljdsdevmgr.copyright
+d none bin 0755 root bin
+f none bin/tsoljdsdevmgr=usr/bin/tsoljdsdevmgr 0755 root other
+d none share 0755 root sys
+d none share/locale 0755 root other

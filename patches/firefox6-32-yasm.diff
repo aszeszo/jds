@@ -1,0 +1,19 @@
+--- a/configure	2011-06-20 13:47:29.430038980 +0800
++++ b/configure	2011-06-20 13:51:41.439509615 +0800
+@@ -14119,7 +14119,7 @@
+   _YASM_VER_FILTER='s|.* \([0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}\.[0-9]\{1,\}\).*|\1|p'
+   
+ 
+-  YASM_VERSION=`yasm --version | sed -ne "$_YASM_VER_FILTER"`
++  YASM_VERSION=`$YASM --version | sed -ne "$_YASM_VER_FILTER"`
+   _YASM_MAJOR_VERSION=`echo ${YASM_VERSION} | $AWK -F\. '{ print $1 }'`
+   _YASM_MINOR_VERSION=`echo ${YASM_VERSION} | $AWK -F\. '{ print $2 }'`
+   _YASM_RELEASE=`      echo ${YASM_VERSION} | $AWK -F\. '{ print $3 }'`
+@@ -14682,7 +14682,6 @@
+ VPX_X86_ASM=
+ VPX_ARM_ASM=
+ MOZ_LIBJPEG_TURBO=1
+-LIBJPEG_TURBO_AS=
+ LIBJPEG_TURBO_ASFLAGS=
+ LIBJPEG_TURBO_X86_ASM=
+ LIBJPEG_TURBO_X64_ASM=

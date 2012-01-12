@@ -1,0 +1,176 @@
+#!/usr/bin/ksh -p
+#
+# CDDL HEADER START
+#
+# The contents of this file are subject to the terms of the
+# Common Development and Distribution License (the "License").
+# You may not use this file except in compliance with the License.
+#
+# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
+# or http://www.opensolaris.org/os/licensing.
+# See the License for the specific language governing permissions
+# and limitations under the License.
+#
+# When distributing Covered Code, include this CDDL HEADER in each
+# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
+# If applicable, add the following below this CDDL HEADER, with the
+# fields enclosed by brackets "[]" replaced with your own identifying
+# information: Portions Copyright [yyyy] [name of copyright owner]
+#
+# CDDL HEADER END
+#
+# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Use is subject to license terms.
+
+# Load SMF constants and functions
+. /lib/svc/share/smf_include.sh
+
+GCONF_DEFAULTS_VALUES="/usr/share/multi-user-desktop/gconf-defaults-optimizations.xml"
+GCONF_MANDATORY_VALUES="/usr/share/multi-user-desktop/gconf-mandatory-optimizations.xml"
+GCONF_DEFAULTS_DIR="/etc/gconf/gconf.xml.multi.user.desktop.defaults"
+GCONF_MANDATORY_DIR="/etc/gconf/gconf.xml.multi.user.desktop.mandatory"
+
+# The version of the GConf settings is installed by the GCONF_MANDATORY_VALUES schema
+# in the GConf path: /desktop/gnome/multi-user-desktop/version
+# When updating package associated with this script the version from the previously
+# installed GConf path may differ from this script, then the settings are removed and
+# re-applied.
+MULTI_USER_VERSION=1
+
+GCONF_TOOL="/usr/bin/gconftool-2"
+GCONF_MULTI_USER_VERSION="/desktop/gnome/multi-user-desktop/version"
+
+
+if [[ -z "$SMF_FMRI" ]]; then
+	print "This script can only be invoked by smf(5)"
+	exit $SMF_EXIT_ERR_NOSMF
+fi
+
+# NAME
+# 	is_folder_empty
+#
+# ARGUMENTS
+# 	arg1 - path to the folder
+#
+# DESCRIPTION
+# 	Checks if folder is empty.
+#
+#	Returns 0 if folder is empty, doesn't exists
+#	or there is no permissions to access it.
+#	1 if it's not empty.
+#
+is_folder_empty ()
+{
+	if [ "$(/usr/bin/ls -A "$1" 2>/dev/null)" ]; then
+		return 1
+	else
+		return 0
+	fi
+}
+
+# NAME
+# 	are_multiuser_gconf_settings_uptodate
+#
+# ARGUMENTS
+# 	NONE
+#
+# DESCRIPTION
+#	Checks if the GConf settings installed in the GCONF_DEFAULTS_DIR
+#	and GCONF_MANDATORY_DIR are up to date.
+#
+#	Returns 0 if the GConf settings are up to date, 1 otherwise.
+#
+are_multiuser_gconf_settings_uptodate ()
+{
+	RETVAL=1
+	multi_user_version_gconf="$($GCONF_TOOL --get $GCONF_MULTI_USER_VERSION 2>/dev/null)"
+	if [[ $multi_user_version_gconf -eq $MULTI_USER_VERSION ]]; then
+		RETVAL=0
+	fi
+	return $RETVAL
+
+}
+
+# NAME
+# 	clean_up_multiuser_gconf_settings
+#
+# ARGUMENTS
+# 	NONE
+#
+# DESCRIPTION
+# 	Removes previous Multi User Desktop GConf settings
+#       if necessary.
+#
+clean_up_multiuser_gconf_settings ()
+{
+	if ! are_multiuser_gconf_settings_uptodate; then
+		if ! is_folder_empty "$GCONF_DEFAULTS_DIR"; then
+			print "Removing old multi user desktop default settings."
+			rm -rf "${GCONF_DEFAULTS_DIR}/*"
+		fi
+		if ! is_folder_empty "$GCONF_MANDATORY_DIR"; then
+			print "Removing old multi user desktop mandatory settings."
+			rm -rf "${GCONF_MANDATORY_DIR}/*"
+		fi		
+	fi
+}
+
+case "$1" in
+'start')
+	clean_up_multiuser_gconf_settings
+
+	if is_folder_empty "$GCONF_DEFAULTS_DIR"; then
+		cmd_load="$GCONF_TOOL --direct --config-source xml:readwrite:${GCONF_DEFAULTS_DIR} --load=${GCONF_DEFAULTS_VALUES}"
+		# Print the command so that the log contains the command used
+		print $cmd_load
+		$cmd_load
+		if [[ $? -ne 0 ]]; then
+			print "failed to invoke: \"${cmd_load}\" for service: $SMF_FMRI"
+			exit $SMF_EXIT_ERR_CONFIG
+		fi
+	fi
+
+	if is_folder_empty "$GCONF_MANDATORY_DIR"; then
+		cmd_load="$GCONF_TOOL --direct --config-source xml:readwrite:${GCONF_MANDATORY_DIR} --load=${GCONF_MANDATORY_VALUES}"
+		print $cmd_load
+		exec $cmd_load
+		if [[ $? -ne 0 ]]; then
+			print "failed to invoke: \"${cmd_load}\" for service: $SMF_FMRI"
+			exit $SMF_EXIT_ERR_CONFIG
+		fi
+	fi
+
+	;;
+
+'stop')
+	clean_up_multiuser_gconf_settings
+
+	if ! is_folder_empty "$GCONF_DEFAULTS_DIR"; then
+		cmd_unload="$GCONF_TOOL --direct --config-source xml:readwrite:${GCONF_DEFAULTS_DIR} --unload=${GCONF_DEFAULTS_VALUES}"
+		print $cmd_unload
+		$cmd_unload
+		if [[ $? -ne 0 ]]; then
+			print "failed to invoke: \"${cmd_unload}\" for service: $SMF_FMRI"
+			exit $SMF_EXIT_ERR_CONFIG
+		fi
+	fi
+
+	if ! is_folder_empty "$GCONF_MANDATORY_DIR"; then
+		cmd_unload="$GCONF_TOOL --direct --config-source xml:readwrite:${GCONF_MANDATORY_DIR} --unload=${GCONF_MANDATORY_VALUES}"
+		print $cmd_unload
+		exec $cmd_unload
+		if [[ $? -ne 0 ]]; then
+			print "failed to invoke: \"${cmd_unload}\" for service: $SMF_FMRI"
+			exit $SMF_EXIT_ERR_CONFIG
+		fi
+	fi
+
+	;;
+
+*)
+	print "Usage: $0 { start | stop }"
+	exit $SMF_EXIT_ERR_CONFIG
+	;;
+
+esac
+exit $SMF_EXIT_OK

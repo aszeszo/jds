@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibrsvg-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibrsvg-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibrsvg-devel.copyright
+d none include 0755 root bin
+d none include/librsvg-2 0755 root bin
+d none include/librsvg-2/librsvg 0755 root bin
+f none include/librsvg-2/librsvg/librsvg-enum-types.h=usr/include/librsvg-2/librsvg/librsvg-enum-types.h 0644 root bin
+f none include/librsvg-2/librsvg/librsvg-features.h=usr/include/librsvg-2/librsvg/librsvg-features.h 0644 root bin
+f none include/librsvg-2/librsvg/rsvg-cairo.h=usr/include/librsvg-2/librsvg/rsvg-cairo.h 0644 root bin
+f none include/librsvg-2/librsvg/rsvg.h=usr/include/librsvg-2/librsvg/rsvg.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/librsvg-2.0.pc=usr/lib/pkgconfig/librsvg-2.0.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/librsvg-2.0.pc=usr/lib/sparcv9/pkgconfig/librsvg-2.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/librsvg-2.3=usr/share/man/man3/librsvg-2.3 0644 root bin

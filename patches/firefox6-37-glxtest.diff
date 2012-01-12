@@ -1,0 +1,24 @@
+diff --git a/toolkit/xre/glxtest.cpp b/toolkit/xre/glxtest.cpp
+--- a/toolkit/xre/glxtest.cpp
++++ b/toolkit/xre/glxtest.cpp
+@@ -54,16 +54,20 @@
+ #include <cstdio>
+ #include <cstdlib>
+ #include <unistd.h>
+ #include <GL/gl.h>
+ #include <GL/glx.h>
+ #include <dlfcn.h>
+ #include "nscore.h"
+ 
++#ifdef SOLARIS
++#include <stdio.h>
++#endif
++
+ namespace mozilla {
+ namespace widget {
+ // the read end of the pipe, which will be used by GfxInfo
+ extern int glxtest_pipe;
+ // the PID of the glxtest process, to pass to waitpid()
+ extern pid_t glxtest_pid;
+ }
+ }

@@ -1,0 +1,22 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgkrellm.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgkrellm.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgkrellm.copyright
+f none share/doc/SUNWgkrellm/COPYING.bz2=usr/share/doc/SUNWgkrellm/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgkrellm/COPYRIGHT.bz2=usr/share/doc/SUNWgkrellm/COPYRIGHT.bz2 0444 root bin
+f none share/doc/SUNWgkrellm/CREDITS.bz2=usr/share/doc/SUNWgkrellm/CREDITS.bz2 0444 root bin
+f none share/doc/SUNWgkrellm/Changelog.bz2=usr/share/doc/SUNWgkrellm/Changelog.bz2 0444 root bin
+f none share/doc/SUNWgkrellm/README=usr/share/doc/SUNWgkrellm/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gkrellm=usr/bin/gkrellm 0755 root bin
+f none bin/gkrellmd=usr/bin/gkrellmd 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gkrellm.desktop=usr/share/applications/gkrellm.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgkrellm 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gkrellm.1=usr/share/man/man1/gkrellm.1 0644 root bin
+f none share/man/man1/gkrellmd.1=usr/share/man/man1/gkrellmd.1 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/gkrellm.png=usr/share/pixmaps/gkrellm.png 0644 root bin

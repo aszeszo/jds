@@ -1,0 +1,244 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-l10ndocument-ja.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-l10ndocument-ja.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-ja.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-ja.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-l10ndocument-ja.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/clock 0755 root bin
+d none share/gnome/help/clock/ja 0755 root bin
+f none share/gnome/help/clock/ja/clock.xml=usr/share/gnome/help/clock/ja/clock.xml 0644 root bin
+d none share/gnome/help/clock/ja/figures 0755 root bin
+f none share/gnome/help/clock/ja/figures/clock_applet.png=usr/share/gnome/help/clock/ja/figures/clock_applet.png 0644 root bin
+f none share/gnome/help/clock/ja/legal.xml=usr/share/gnome/help/clock/ja/legal.xml 0644 root bin
+d none share/gnome/help/control-center 0755 root bin
+d none share/gnome/help/control-center/ja 0755 root bin
+f none share/gnome/help/control-center/ja/control-center.xml=usr/share/gnome/help/control-center/ja/control-center.xml 0644 root bin
+d none share/gnome/help/copyright 0755 root bin
+d none share/gnome/help/copyright/ja 0755 root bin
+f none share/gnome/help/copyright/ja/COPYING.gnome.gz=usr/share/gnome/help/copyright/ja/COPYING.gnome.gz 0644 root bin
+d none share/gnome/help/eog 0755 root bin
+d none share/gnome/help/eog/ja 0755 root bin
+f none share/gnome/help/eog/ja/eog.xml=usr/share/gnome/help/eog/ja/eog.xml 0644 root bin
+d none share/gnome/help/eog/ja/figures 0755 root bin
+s none share/gnome/help/eog/ja/figures/eog_save_as_window.png=../../C/figures/eog_save_as_window.png
+f none share/gnome/help/eog/ja/figures/eog_start_window.png=usr/share/gnome/help/eog/ja/figures/eog_start_window.png 0644 root bin
+s none share/gnome/help/eog/ja/figures/eog_toolbar_editor_window.png=../../C/figures/eog_toolbar_editor_window.png
+d none share/gnome/help/evince 0755 root bin
+d none share/gnome/help/evince/ja 0755 root bin
+f none share/gnome/help/evince/ja/evince.xml=usr/share/gnome/help/evince/ja/evince.xml 0644 root bin
+d none share/gnome/help/evince/ja/figures 0755 root bin
+f none share/gnome/help/evince/ja/figures/evince_start_window.png=usr/share/gnome/help/evince/ja/figures/evince_start_window.png 0644 root bin
+d none share/gnome/help/fsexam 0755 root bin
+d none share/gnome/help/fsexam/ja 0755 root bin
+d none share/gnome/help/fsexam/ja/figures 0755 root bin
+f none share/gnome/help/fsexam/ja/figures/fsexam-pref.png=usr/share/gnome/help/fsexam/ja/figures/fsexam-pref.png 0644 root bin
+f none share/gnome/help/fsexam/ja/figures/fsexam.png=usr/share/gnome/help/fsexam/ja/figures/fsexam.png 0644 root bin
+f none share/gnome/help/fsexam/ja/fsexam.xml=usr/share/gnome/help/fsexam/ja/fsexam.xml 0644 root bin
+d none share/gnome/help/gcalctool 0755 root bin
+d none share/gnome/help/gcalctool/ja 0755 root bin
+f none share/gnome/help/gcalctool/ja/absolute.page=usr/share/gnome/help/gcalctool/ja/absolute.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/base.page=usr/share/gnome/help/gcalctool/ja/base.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/boolean.page=usr/share/gnome/help/gcalctool/ja/boolean.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/complex.page=usr/share/gnome/help/gcalctool/ja/complex.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/conv-base.page=usr/share/gnome/help/gcalctool/ja/conv-base.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/conv-character.page=usr/share/gnome/help/gcalctool/ja/conv-character.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/conv-currency.page=usr/share/gnome/help/gcalctool/ja/conv-currency.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/conv-length.page=usr/share/gnome/help/gcalctool/ja/conv-length.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/conv-time.page=usr/share/gnome/help/gcalctool/ja/conv-time.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/conv-weight.page=usr/share/gnome/help/gcalctool/ja/conv-weight.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/equation.page=usr/share/gnome/help/gcalctool/ja/equation.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/factorial.page=usr/share/gnome/help/gcalctool/ja/factorial.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/factorize.page=usr/share/gnome/help/gcalctool/ja/factorize.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/financial.page=usr/share/gnome/help/gcalctool/ja/financial.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/functions.page=usr/share/gnome/help/gcalctool/ja/functions.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/index.page=usr/share/gnome/help/gcalctool/ja/index.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/keyboard.page=usr/share/gnome/help/gcalctool/ja/keyboard.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/legal.xml=usr/share/gnome/help/gcalctool/ja/legal.xml 0644 root bin
+f none share/gnome/help/gcalctool/ja/logarithm.page=usr/share/gnome/help/gcalctool/ja/logarithm.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/modulus.page=usr/share/gnome/help/gcalctool/ja/modulus.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/mouse.page=usr/share/gnome/help/gcalctool/ja/mouse.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/number-display.page=usr/share/gnome/help/gcalctool/ja/number-display.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/percentage.page=usr/share/gnome/help/gcalctool/ja/percentage.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/power.page=usr/share/gnome/help/gcalctool/ja/power.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/scientific.page=usr/share/gnome/help/gcalctool/ja/scientific.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/superscript.page=usr/share/gnome/help/gcalctool/ja/superscript.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/trigonometry.page=usr/share/gnome/help/gcalctool/ja/trigonometry.page 0644 root bin
+f none share/gnome/help/gcalctool/ja/variables.page=usr/share/gnome/help/gcalctool/ja/variables.page 0644 root bin
+d none share/gnome/help/gedit 0755 root bin
+d none share/gnome/help/gedit/ja 0755 root bin
+d none share/gnome/help/gedit/ja/figures 0755 root bin
+s none share/gnome/help/gedit/ja/figures/gedit_format_bold.png=../../C/figures/gedit_format_bold.png
+s none share/gnome/help/gedit/ja/figures/gedit_format_italic.png=../../C/figures/gedit_format_italic.png
+s none share/gnome/help/gedit/ja/figures/gedit_format_strikethrough.png=../../C/figures/gedit_format_strikethrough.png
+s none share/gnome/help/gedit/ja/figures/gedit_format_underline.png=../../C/figures/gedit_format_underline.png
+s none share/gnome/help/gedit/ja/figures/gedit_recent_files_menu_icon.png=../../C/figures/gedit_recent_files_menu_icon.png
+f none share/gnome/help/gedit/ja/figures/gedit_window.png=usr/share/gnome/help/gedit/ja/figures/gedit_window.png 0644 root bin
+f none share/gnome/help/gedit/ja/gedit.xml=usr/share/gnome/help/gedit/ja/gedit.xml 0644 root bin
+f none share/gnome/help/gedit/ja/legal.xml=usr/share/gnome/help/gedit/ja/legal.xml 0644 root bin
+d none share/gnome/help/ghex2 0755 root bin
+d none share/gnome/help/ghex2/ja 0755 root bin
+d none share/gnome/help/ghex2/ja/figures 0755 root bin
+f none share/gnome/help/ghex2/ja/figures/ghex_window_empty.png=usr/share/gnome/help/ghex2/ja/figures/ghex_window_empty.png 0644 root bin
+f none share/gnome/help/ghex2/ja/figures/ghex_window_open.png=usr/share/gnome/help/ghex2/ja/figures/ghex_window_open.png 0644 root bin
+f none share/gnome/help/ghex2/ja/ghex2.xml=usr/share/gnome/help/ghex2/ja/ghex2.xml 0644 root bin
+d none share/gnome/help/gnome-netstatus 0755 root bin
+d none share/gnome/help/gnome-netstatus/ja 0755 root bin
+d none share/gnome/help/gnome-netstatus/ja/figures 0755 root bin
+s none share/gnome/help/gnome-netstatus/ja/figures/gnome-netstatus-disconn.png=../../C/figures/gnome-netstatus-disconn.png
+s none share/gnome/help/gnome-netstatus/ja/figures/gnome-netstatus-error.png=../../C/figures/gnome-netstatus-error.png
+s none share/gnome/help/gnome-netstatus/ja/figures/gnome-netstatus-idle.png=../../C/figures/gnome-netstatus-idle.png
+s none share/gnome/help/gnome-netstatus/ja/figures/gnome-netstatus-rx.png=../../C/figures/gnome-netstatus-rx.png
+s none share/gnome/help/gnome-netstatus/ja/figures/gnome-netstatus-tx.png=../../C/figures/gnome-netstatus-tx.png
+s none share/gnome/help/gnome-netstatus/ja/figures/gnome-netstatus-txrx.png=../../C/figures/gnome-netstatus-txrx.png
+f none share/gnome/help/gnome-netstatus/ja/gnome-netstatus.xml=usr/share/gnome/help/gnome-netstatus/ja/gnome-netstatus.xml 0644 root bin
+f none share/gnome/help/gnome-netstatus/ja/legal.xml=usr/share/gnome/help/gnome-netstatus/ja/legal.xml 0644 root bin
+d none share/gnome/help/gnome-printinfo 0755 root bin
+d none share/gnome/help/gnome-printinfo/ja 0755 root bin
+d none share/gnome/help/gnome-printinfo/ja/figures 0755 root bin
+f none share/gnome/help/gnome-printinfo/ja/figures/main-window.png=usr/share/gnome/help/gnome-printinfo/ja/figures/main-window.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/ja/figures/per-printer-prefs.png=usr/share/gnome/help/gnome-printinfo/ja/figures/per-printer-prefs.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/ja/figures/search.png=usr/share/gnome/help/gnome-printinfo/ja/figures/search.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/ja/gnome-print-manager.xml=usr/share/gnome/help/gnome-printinfo/ja/gnome-print-manager.xml 0644 root bin
+f none share/gnome/help/gnome-printinfo/ja/legal.xml=usr/share/gnome/help/gnome-printinfo/ja/legal.xml 0644 root bin
+d none share/gnome/help/gnome-terminal 0755 root bin
+d none share/gnome/help/gnome-terminal/ja 0755 root bin
+d none share/gnome/help/gnome-terminal/ja/figures 0755 root bin
+f none share/gnome/help/gnome-terminal/ja/figures/gnome-terminal-default.png=usr/share/gnome/help/gnome-terminal/ja/figures/gnome-terminal-default.png 0644 root bin
+f none share/gnome/help/gnome-terminal/ja/figures/gnome-terminal-tabbed.png=usr/share/gnome/help/gnome-terminal/ja/figures/gnome-terminal-tabbed.png 0644 root bin
+f none share/gnome/help/gnome-terminal/ja/gnome-terminal.xml=usr/share/gnome/help/gnome-terminal/ja/gnome-terminal.xml 0644 root bin
+f none share/gnome/help/gnome-terminal/ja/legal.xml=usr/share/gnome/help/gnome-terminal/ja/legal.xml 0644 root bin
+d none share/gnome/help/gucharmap 0755 root bin
+d none share/gnome/help/gucharmap/ja 0755 root bin
+d none share/gnome/help/gucharmap/ja/figures 0755 root bin
+f none share/gnome/help/gucharmap/ja/figures/gucharmap_window.png=usr/share/gnome/help/gucharmap/ja/figures/gucharmap_window.png 0644 root bin
+f none share/gnome/help/gucharmap/ja/gucharmap.xml=usr/share/gnome/help/gucharmap/ja/gucharmap.xml 0644 root bin
+f none share/gnome/help/gucharmap/ja/legal.xml=usr/share/gnome/help/gucharmap/ja/legal.xml 0644 root bin
+d none share/gnome/help/ospm-pm 0755 root bin
+d none share/gnome/help/ospm-pm/ja 0755 root bin
+f none share/gnome/help/ospm-pm/ja/ospm-pm.xml=usr/share/gnome/help/ospm-pm/ja/ospm-pm.xml 0644 root bin
+d none share/gnome/help/system-admin-guide 0755 root bin
+d none share/gnome/help/system-admin-guide/ja 0755 root bin
+f none share/gnome/help/system-admin-guide/ja/system-admin-guide.xml=usr/share/gnome/help/system-admin-guide/ja/system-admin-guide.xml 0644 root bin
+d none share/gnome/help/totem 0755 root bin
+d none share/gnome/help/totem/ja 0755 root bin
+d none share/gnome/help/totem/ja/figures 0755 root bin
+s none share/gnome/help/totem/ja/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/ja/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/ja/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/ja/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/ja/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/ja/figures/totem_start_window.png=usr/share/gnome/help/totem/ja/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/ja/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/ja/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/ja/totem.xml=usr/share/gnome/help/totem/ja/totem.xml 0644 root bin
+d none share/gnome/help/user-guide 0755 root bin
+d none share/gnome/help/user-guide/ja 0755 root bin
+d none share/gnome/help/user-guide/ja/figures 0755 root bin
+f none share/gnome/help/user-guide/ja/figures/ask_pointer.png=usr/share/gnome/help/user-guide/ja/figures/ask_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/busy_pointer.png=usr/share/gnome/help/user-guide/ja/figures/busy_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/com_file_manager_menu.png=usr/share/gnome/help/user-guide/ja/figures/com_file_manager_menu.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/copy_pointer.png=usr/share/gnome/help/user-guide/ja/figures/copy_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/force_quit.png=usr/share/gnome/help/user-guide/ja/figures/force_quit.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/four_hide_button.png=usr/share/gnome/help/user-guide/ja/figures/four_hide_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/gedit_window.png=usr/share/gnome/help/user-guide/ja/figures/gedit_window.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/gnome_panel.png=usr/share/gnome/help/user-guide/ja/figures/gnome_panel.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/hyperlink_pointer.png=usr/share/gnome/help/user-guide/ja/figures/hyperlink_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/ibeam_pointer.png=usr/share/gnome/help/user-guide/ja/figures/ibeam_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/link_pointer.png=usr/share/gnome/help/user-guide/ja/figures/link_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/lockscreen_icon.png=usr/share/gnome/help/user-guide/ja/figures/lockscreen_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/logout_icon.png=usr/share/gnome/help/user-guide/ja/figures/logout_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/menu_bar_applet.png=usr/share/gnome/help/user-guide/ja/figures/menu_bar_applet.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/menu_panel.png=usr/share/gnome/help/user-guide/ja/figures/menu_panel.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/move_panel_object_pointer.png=usr/share/gnome/help/user-guide/ja/figures/move_panel_object_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/move_pointer.png=usr/share/gnome/help/user-guide/ja/figures/move_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/movewindow_pointer.png=usr/share/gnome/help/user-guide/ja/figures/movewindow_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_browser_mode.png=usr/share/gnome/help/user-guide/ja/figures/naut_browser_mode.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_button_bar.png=usr/share/gnome/help/user-guide/ja/figures/naut_button_bar.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_computer_launcher.png=usr/share/gnome/help/user-guide/ja/figures/naut_computer_launcher.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_emblem.png=usr/share/gnome/help/user-guide/ja/figures/naut_emblem.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_go_to_location.png=usr/share/gnome/help/user-guide/ja/figures/naut_go_to_location.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_link_emblem.png=usr/share/gnome/help/user-guide/ja/figures/naut_link_emblem.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_noread_emblem.png=usr/share/gnome/help/user-guide/ja/figures/naut_noread_emblem.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_normal_size_button.png=usr/share/gnome/help/user-guide/ja/figures/naut_normal_size_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_nowrite_emblem.png=usr/share/gnome/help/user-guide/ja/figures/naut_nowrite_emblem.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_refine_search.png=usr/share/gnome/help/user-guide/ja/figures/naut_refine_search.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_sampleemblem1_icon.png=usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem1_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_sampleemblem2_icon.png=usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem2_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_sampleemblem3_icon.png=usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem3_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_sampleemblem_icon.png=usr/share/gnome/help/user-guide/ja/figures/naut_sampleemblem_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_samplesymlink_icon.png=usr/share/gnome/help/user-guide/ja/figures/naut_samplesymlink_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_search_bar.png=usr/share/gnome/help/user-guide/ja/figures/naut_search_bar.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_search_results.png=usr/share/gnome/help/user-guide/ja/figures/naut_search_results.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_spatial_icon_view.png=usr/share/gnome/help/user-guide/ja/figures/naut_spatial_icon_view.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_spatial_list_view.png=usr/share/gnome/help/user-guide/ja/figures/naut_spatial_list_view.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_spatial_mode.png=usr/share/gnome/help/user-guide/ja/figures/naut_spatial_mode.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_spatial_view.png=usr/share/gnome/help/user-guide/ja/figures/naut_spatial_view.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_starthere_launcher.png=usr/share/gnome/help/user-guide/ja/figures/naut_starthere_launcher.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_trash_launcher.png=usr/share/gnome/help/user-guide/ja/figures/naut_trash_launcher.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_zoom_in_button.png=usr/share/gnome/help/user-guide/ja/figures/naut_zoom_in_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/naut_zoom_out_button.png=usr/share/gnome/help/user-guide/ja/figures/naut_zoom_out_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/nautilus_restore_saved_search.png=usr/share/gnome/help/user-guide/ja/figures/nautilus_restore_saved_search.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/normal_pointer.png=usr/share/gnome/help/user-guide/ja/figures/normal_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/not_available_pointer.png=usr/share/gnome/help/user-guide/ja/figures/not_available_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/notification_area_icon.png=usr/share/gnome/help/user-guide/ja/figures/notification_area_icon.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/open_drawer.png=usr/share/gnome/help/user-guide/ja/figures/open_drawer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/openwindows_menu.png=usr/share/gnome/help/user-guide/ja/figures/openwindows_menu.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/panel_object_popup_menu.png=usr/share/gnome/help/user-guide/ja/figures/panel_object_popup_menu.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/resize_pointer.png=usr/share/gnome/help/user-guide/ja/figures/resize_pointer.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/run_button.png=usr/share/gnome/help/user-guide/ja/figures/run_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/sample_applet.png=usr/share/gnome/help/user-guide/ja/figures/sample_applet.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/screenshot_button.png=usr/share/gnome/help/user-guide/ja/figures/screenshot_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/searchtool_button.png=usr/share/gnome/help/user-guide/ja/figures/searchtool_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/show_desktop_button.png=usr/share/gnome/help/user-guide/ja/figures/show_desktop_button.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/titlebar_anno_window.png=usr/share/gnome/help/user-guide/ja/figures/titlebar_anno_window.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/titlebar_window.png=usr/share/gnome/help/user-guide/ja/figures/titlebar_window.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/typical_menu.png=usr/share/gnome/help/user-guide/ja/figures/typical_menu.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/window_list_applet.png=usr/share/gnome/help/user-guide/ja/figures/window_list_applet.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/window_list_group_applet.png=usr/share/gnome/help/user-guide/ja/figures/window_list_group_applet.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/workspace_switcher_applet.png=usr/share/gnome/help/user-guide/ja/figures/workspace_switcher_applet.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/yelp_add_bookmark.png=usr/share/gnome/help/user-guide/ja/figures/yelp_add_bookmark.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/yelp_edit_bookmarks.png=usr/share/gnome/help/user-guide/ja/figures/yelp_edit_bookmarks.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/yelp_preferences.png=usr/share/gnome/help/user-guide/ja/figures/yelp_preferences.png 0644 root bin
+f none share/gnome/help/user-guide/ja/figures/yelp_window.png=usr/share/gnome/help/user-guide/ja/figures/yelp_window.png 0644 root bin
+f none share/gnome/help/user-guide/ja/glossary.xml=usr/share/gnome/help/user-guide/ja/glossary.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/gosbasic.xml=usr/share/gnome/help/user-guide/ja/gosbasic.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/goscustdesk.xml=usr/share/gnome/help/user-guide/ja/goscustdesk.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/goseditmainmenu.xml=usr/share/gnome/help/user-guide/ja/goseditmainmenu.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/gosfeedback.xml=usr/share/gnome/help/user-guide/ja/gosfeedback.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/gosnautilus.xml=usr/share/gnome/help/user-guide/ja/gosnautilus.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/gosoverview.xml=usr/share/gnome/help/user-guide/ja/gosoverview.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/gospanel.xml=usr/share/gnome/help/user-guide/ja/gospanel.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/gosstartsession.xml=usr/share/gnome/help/user-guide/ja/gosstartsession.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/gostools.xml=usr/share/gnome/help/user-guide/ja/gostools.xml 0644 root bin
+f none share/gnome/help/user-guide/ja/user-guide.xml=usr/share/gnome/help/user-guide/ja/user-guide.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/clock 0755 root bin
+f none share/omf/clock/clock-ja.omf=usr/share/omf/clock/clock-ja.omf 0644 root bin
+d none share/omf/control-center 0755 root bin
+f none share/omf/control-center/control-center-ja.omf=usr/share/omf/control-center/control-center-ja.omf 0644 root bin
+d none share/omf/eog 0755 root bin
+f none share/omf/eog/eog-ja.omf=usr/share/omf/eog/eog-ja.omf 0644 root bin
+d none share/omf/evince 0755 root bin
+f none share/omf/evince/evince-ja.omf=usr/share/omf/evince/evince-ja.omf 0644 root bin
+d none share/omf/fsexam 0755 root bin
+f none share/omf/fsexam/fsexam-ja.omf=usr/share/omf/fsexam/fsexam-ja.omf 0644 root bin
+d none share/omf/gedit 0755 root bin
+f none share/omf/gedit/gedit-ja.omf=usr/share/omf/gedit/gedit-ja.omf 0644 root bin
+d none share/omf/gnome-netstatus 0755 root bin
+f none share/omf/gnome-netstatus/gnome-netstatus-ja.omf=usr/share/omf/gnome-netstatus/gnome-netstatus-ja.omf 0644 root bin
+d none share/omf/gnome-terminal 0755 root bin
+f none share/omf/gnome-terminal/gnome-terminal-ja.omf=usr/share/omf/gnome-terminal/gnome-terminal-ja.omf 0644 root bin
+d none share/omf/gucharmap 0755 root bin
+f none share/omf/gucharmap/gucharmap-ja.omf=usr/share/omf/gucharmap/gucharmap-ja.omf 0644 root bin
+d none share/omf/ospm-pm 0755 root bin
+f none share/omf/ospm-pm/ospm-pm-ja.omf=usr/share/omf/ospm-pm/ospm-pm-ja.omf 0644 root bin
+d none share/omf/printman 0755 root bin
+f none share/omf/printman/gnome-print-manager-ja.omf=usr/share/omf/printman/gnome-print-manager-ja.omf 0644 root bin
+d none share/omf/system-admin-guide 0755 root bin
+f none share/omf/system-admin-guide/system-admin-guide-ja.omf=usr/share/omf/system-admin-guide/system-admin-guide-ja.omf 0644 root bin
+d none share/omf/totem 0755 root bin
+f none share/omf/totem/totem-ja.omf=usr/share/omf/totem/totem-ja.omf 0644 root bin
+d none share/omf/user-guide 0755 root bin
+f none share/omf/user-guide/user-guide-ja.omf=usr/share/omf/user-guide/user-guide-ja.omf 0644 root bin

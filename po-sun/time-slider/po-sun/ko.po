@@ -1,0 +1,698 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:44+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
+
+#: ../data/time-slider.desktop.in.h:1
+msgid "Configure the system to take automatic snapshots of your data"
+msgstr "사용자 데이터의 자동 스냅샷을 만들도록 시스템 구성"
+
+#: ../data/time-slider.desktop.in.h:2
+#: ../usr/share/time-slider/lib/time_slider/applet.py:634
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:648
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:830
+msgid "Time Slider"
+msgstr "시간 슬라이더"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:2
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:365
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:520
+#, no-c-format, python-format
+msgid "%d snapshots will be deleted."
+msgstr "%d개의 스냅샷이 삭제됩니다."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:3
+msgid "<b>Summary</b>"
+msgstr "<b>요약</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:4
+msgid "D_eselect All"
+msgstr "모두 선택 해제(_E)"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:5
+msgid "Delete Snapshots"
+msgstr "스냅샷 삭제"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:6
+msgid "Deleting Snapshots"
+msgstr "스냅샷 삭제 중"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:7
+msgid "Deleting snapshots..."
+msgstr "스냅샷 삭제 중..."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:8
+msgid "Exit when done. "
+msgstr "완료 후 종료합니다. "
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:9
+msgid "File System:"
+msgstr "파일 시스템:"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:10
+msgid "Name:"
+msgstr "이름:"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:11
+msgid "Press Delete to continue."
+msgstr "계속하려면 삭제를 누르십시오."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:12
+msgid "Scanning snapshots..."
+msgstr "스냅샷 검색 중..."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:13
+msgid "Select ZFS snapshots to delete from the list below."
+msgstr "다음 목록에서 삭제할 ZFS 스냅샷을 선택하십시오."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:14
+msgid "Type:"
+msgstr "유형:"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:1
+msgid "<b>Enable Time Slider</b>"
+msgstr "<b>시간 슬라이더 활성화</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:2
+msgid "<b>External Back Up</b>"
+msgstr "<b>외부 백업</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:3
+msgid "<b>File Systems To Back Up</b>"
+msgstr "<b>백업할 파일 시스템</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:4
+msgid "Advanced Options"
+msgstr "고급 옵션"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:5
+msgid "Backup Device:"
+msgstr "백업 장치:"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:6
+msgid "C_ustom:"
+msgstr "사용자 정의(_U):"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:7
+msgid "Configuring Time Slider..."
+msgstr "시간 슬라이더를 구성하는 중..."
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:8
+msgid "For advanced users"
+msgstr "고급 사용자용"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:9
+msgid "Recommended for most users"
+msgstr "대부분의 사용자에게 권장"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:10
+msgid "Reduce backups when storage space usage exceeds:"
+msgstr "저장소 공간 사용량이 초과되는 경우 백업 줄이기:"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:11
+msgid "Replicate backups to an external drive"
+msgstr "외부 드라이브에 백업 복제"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:12
+msgid "Time Slider Manager"
+msgstr "시간 슬라이더 관리자"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:13
+msgid "Time Slider backs up data regularly by taking timed ZFS Snapshots"
+msgstr "시간 슬라이더는 시간이 지정된 ZFS 스냅샷을 가져와 데이터를 정기적으로 백업합니다."
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:14
+msgid "_All"
+msgstr "모두(_A)"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:15
+msgid "_Delete Snapshots..."
+msgstr "스냅샷 삭제(_D)..."
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:16
+msgid "of file system capacity"
+msgstr "- 파일 시스템 용량"
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:1
+msgid "Take a snapshot now"
+msgstr "지금 스냅샷 실행"
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:2
+msgid "Take a snapshot of "
+msgstr "다음 항목의 스냅샷 실행 "
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:3
+msgid "with the name :"
+msgstr "이름:"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:1
+msgid "10 Mo"
+msgstr "10Mo"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:2
+msgid "19/01/09"
+msgstr "19/01/09"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:3
+msgid "<b>Current Version</b>"
+msgstr "<b>현재 버전</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:4
+msgid "<b>Older Versions</b>"
+msgstr "<b>이전 버전</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:5
+msgid "Double click to open the file"
+msgstr "파일을 열려면 두 번 누릅니다."
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:6
+msgid "Open the current version of the file"
+msgstr "파일의 현재 버전을 엽니다."
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:7
+msgid "Scanning for older versions"
+msgstr "이전 버전 검색 중"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:8
+msgid "Time Slider File Version Explorer"
+msgstr "시간 슬라이더 파일 버전 탐색기"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:9
+msgid "compare"
+msgstr "비교"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:10
+msgid "filename"
+msgstr "파일 이름"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:11
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:12
+msgid "last modified : "
+msgstr "마지막 수정: "
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:13
+msgid "name :"
+msgstr "이름:"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:14
+msgid "size : "
+msgstr "크기: "
+
+#: ../usr/share/time-slider/lib/plugin/zfssend/zfssend.py:36
+msgid "Do I work?"
+msgstr "올바로 설정되었습니까?"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:138
+msgid "Update Backups Now"
+msgstr "지금 백업 업데이트"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:334
+msgid "Backup Started"
+msgstr "백업 시작"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:335
+#, python-format
+msgid ""
+"Backing up snapshots to:\n"
+"<b>%s</b>\n"
+"Do not disconnect the backup device."
+msgstr "스냅샷을 다음 위치에 백업하는 중입니다.\n<b>%s</b>\n백업 장치의 연결을 끊지 마십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:345
+#, python-format
+msgid ""
+"Backing up: <b>'%s'\n"
+"%d</b> snapshots remaining.\n"
+"Do not disconnect the backup device."
+msgstr "백업 중: <b>'%s'\n%d</b>개의 스냅샷이 남아 있습니다.\n백업 장치의 연결을 끊지 마십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:364
+msgid "Backup Complete"
+msgstr "백업 완료"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:365
+#, python-format
+msgid ""
+"Your snapshots have been backed up to:\n"
+"<b>%s</b>"
+msgstr "스냅샷이 다음 위치에 백업되었습니다.\n<b>%s</b>"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:376
+msgid "Your backups are up to date."
+msgstr "백업이 최신 상태입니다."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:380
+#, python-format
+msgid "%d snapshots are queued for backup."
+msgstr "%d개의 스냅샷이 백업을 위해 큐되어 있습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:457
+msgid "Time Slider: Low Space Warning"
+msgstr "시간 슬라이더: 공간 부족 경고"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:468
+#, python-format
+msgid "Emergency: '%s' is full!"
+msgstr "긴급: '%s'이(가) 꽉 찼습니다!"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:469
+#, python-format
+msgid "The file system: '%s', is over %s%% full."
+msgstr "파일 시스템 '%s'이(가) %s%% 이상으로 꽉 찼습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:471
+#, python-format
+msgid ""
+"The file system: '%s', is over %s%% full.\n"
+"As an emergency measure, Time Slider has destroyed all of its backups.\n"
+"To fix this problem, delete any unnecessary files on '%s', or add disk space "
+"(see ZFS documentation)."
+msgstr "파일 시스템 '%s'이(가) %s%% 이상으로 꽉 찼습니다.\n긴급 조치로 시간 슬라이더가 모든 백업을 삭제했습니다.\n이 문제를 해결하려면 '%s'에서 불필요한 파일을 삭제하거나 디스크 공간을 추가하십시오(ZFS 설명서 참조)."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:480
+#, python-format
+msgid "Emergency: '%s' is almost full!"
+msgstr "긴급: '%s'이(가) 거의 찼습니다!"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:481
+#: ../usr/share/time-slider/lib/time_slider/applet.py:496
+#: ../usr/share/time-slider/lib/time_slider/applet.py:511
+#, python-format
+msgid "The file system: '%s', exceeded %s%% of its total capacity"
+msgstr "파일 시스템 '%s'이(가) 총 용량의 %s%%을(를) 초과했습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:484
+#, python-format
+msgid ""
+"The file system: '%s', exceeded %s%% of its total capacity. As an emerency "
+"measure, Time Slider has has destroyed most or all of its backups to prevent "
+"the disk becoming full. To prevent this from happening again, delete any "
+"unnecessary files on '%s', or add disk space (see ZFS documentation)."
+msgstr "파일 시스템 '%s'이(가) 총 용량의 %s%%을(를) 초과했습니다. 긴급 조치로 시간 슬라이더가 백업의 대부분 또는 전체를 삭제하여 디스크가 꽉 차지 않도록 했습니다.이러한 문제를 방지하려면 '%s'에서 불필요한 파일을 삭제하거나 디스크 공간을 추가하십시오(ZFS 설명서 참조)."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:495
+#, python-format
+msgid "Urgent: '%s' is almost full!"
+msgstr "중요: '%s'이(가) 거의 찼습니다!"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:499
+#, python-format
+msgid ""
+"The file system: '%s', exceeded %s%% of its total capacity. As a remedial "
+"measure, Time Slider has destroyed some backups, and will destroy more, "
+"eventually all, as capacity continues to diminish.\n"
+"To prevent this from happening again, delete any unnecessary files on '%s', "
+"or add disk space (see ZFS documentation)."
+msgstr "파일 시스템 '%s'이(가) 총 용량의 %s%%을(를) 초과했습니다. 치료 조치로 시간 슬라이더가 일부 백업을 삭제했으며, 용량이 계속 줄어들 때 더 삭제하며 나중에 모두 삭제합니다.\n이러한 문제를 방지하려면 '%s'에서 불필요한 파일을 삭제하거나 디스크 공간을 추가하십시오(ZFS 설명서 참조)."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:510
+#, python-format
+msgid "Warning: '%s' is getting full"
+msgstr "경고: '%s'이(가) 꽉 찼습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:514
+#, python-format
+msgid ""
+"'%s' exceeded %s%% of its total capacity. To fix this, Time Slider has "
+"destroyed some recent backups, and will destroy more as capacity continues "
+"to diminish.\n"
+"To prevent this from happening again, delete any unnecessary files on '%s', "
+"or add disk space (see ZFS documentation).\n"
+msgstr "'%s'이(가) 총 용량의 %s%%을(를) 초과했습니다. 이 문제를 해결하기 위해 시간 슬라이더가 일부 최근 백업을 삭제했으며, 용량이 계속 줄어들 때 더 삭제합니다.\n이러한 문제를 방지하려면 '%s'에서 불필요한 파일을 삭제하거나 디스크 공간을 추가하십시오(ZFS 설명서 참조).\n"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:530
+msgid "Details..."
+msgstr "세부 정보..."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:567
+msgid "Configure Time Slider..."
+msgstr "시간 슬라이더 구성..."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:227
+msgid "Type"
+msgstr "유형"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:235
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:224
+msgid "Mount Point"
+msgstr "마운트 지점"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:243
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:227
+msgid "File System Name"
+msgstr "파일 시스템 이름"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:251
+msgid "Snapshot Name"
+msgstr "스냅샷 이름"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:260
+msgid "Creation Time"
+msgstr "생성 시간"
+
+#. Note to developers.
+#. The second element is for internal matching and should not
+#. be i18ned under any circumstances.
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:272
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:287
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:300
+msgid "All"
+msgstr "모두"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:273
+msgid "Backups"
+msgstr "백업"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:274
+msgid "Snapshots"
+msgstr "스냅샷"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:301
+msgid "Monthly"
+msgstr "매달"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:302
+msgid "Weekly"
+msgstr "매주"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:303
+msgid "Daily"
+msgstr "매일"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:304
+msgid "Hourly"
+msgstr "매시간"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:305
+msgid "1/4 Hourly"
+msgstr "매25분"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:328
+msgid "Snapshot can not be deleted"
+msgstr "스냅샷을 삭제할 수 없습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:329
+#, python-format
+msgid ""
+"%s has one or more dependent clones and will not be deleted. To delete this "
+"snapshot, first delete all datasets and snapshots cloned from this snapshot."
+msgstr "%s에 하나 이상의 종속 복제가 있어 삭제되지 않습니다. 이 스냅샷을 삭제하려면 먼저 이 스냅샷에서 복제된 모든 데이터 집합과 스냅샷을 삭제하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:355
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:510
+msgid "1 external backup will be deleted."
+msgstr "1개의 외부 백업이 삭제됩니다."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:357
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:512
+#, python-format
+msgid "%d external backups will be deleted."
+msgstr "%d개의 외부 백업이 삭제됩니다."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:363
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:518
+msgid "1 snapshot will be deleted."
+msgstr "1개의 스냅샷이 삭제됩니다."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:451
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:178
+msgid "Legacy"
+msgstr "레거시"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:454
+msgid "Snapshot"
+msgstr "스냅샷"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:470
+msgid "Backup"
+msgstr "백업"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:560
+msgid "Some snapshots could not be read"
+msgstr "일부 스냅샷을 읽을 수 없습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:584
+msgid "Some snapshots could not be deleted"
+msgstr "일부 스냅샷을 삭제할 수 없습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:758
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:1320
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:215
+msgid "Insufficient Priviliges"
+msgstr "권한 부족"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:759
+msgid ""
+"Snapshot deletion requires administrative privileges to run. You have not "
+"been assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "스냅샷 삭제 기능을 실행하려면 관리 권한이 필요합니다. 필요한관리 권한이 지정되지 않았습니다.\n\n시스템 관리자에게 문의하십시오. "
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:246
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:247
+msgid "Hint"
+msgstr "힌트"
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:248
+msgid ""
+"Installing the optional meld package will enhance the file comparison "
+"visualization"
+msgstr "선택적 meld 패키지를 설치하면 파일 비교 시각화가 향상됩니다."
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:316
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:179
+msgid "Invalid arguments count."
+msgstr "잘못된 인수 카운트입니다."
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:318
+msgid ""
+"Version explorer requires 2 arguments :\n"
+"- The path of the root snapshot directory.\n"
+"- The filename to explore."
+msgstr "버전 탐색기에 다음과 같은 2개의 인수가 필요합니다.\n- 루트 스냅샷 디렉토리의 경로\n- 탐색할 파일 이름"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:218
+msgid "Select"
+msgstr "선택"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:222
+msgid "Replicate"
+msgstr "복제"
+
+#. Indicates path is unset: ''
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:269
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:479
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:562
+msgid "(None)"
+msgstr "(없음)"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:275
+msgid "Other..."
+msgstr "기타..."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:319
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:357
+msgid "Snapshot manager service error"
+msgstr "스냅샷 관리자 서비스 오류"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:320
+#, python-format
+msgid ""
+"The snapshot manager service does not appear to be installed on this "
+"system.\n"
+"\n"
+"See the svcs(1) man page for more information.\n"
+"\n"
+"Details:\n"
+"%s"
+msgstr "스냅샷 관리자 서비스가 이 시스템에 설치되지 않은 것 같습니다.\n\n자세한 내용은 svcs(1) 매뉴얼 페이지를 참조하십시오.\n\n세부 정보:\n%s"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:341
+msgid "Snapshot manager service dependency error"
+msgstr "스냅샷 관리자 서비스 종속성 오류"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:342
+#, python-format
+msgid ""
+"The snapshot manager service has been placed offline due to a dependency "
+"problem. The following dependency problems were found:\n"
+"\n"
+"%s\n"
+"\n"
+"Run \"svcs -xv\" from a command prompt for more information about these "
+"dependency problems."
+msgstr "스냅샷 관리자 서비스가 종속성 문제로 인해 오프라인 상태로 설정되었습니다. 다음과 같은 종속성 문제가 발견되었습니다.\n\n%s\n\n이러한 종속성 문제에 대한 자세한 내용을 보려면 명령 프롬프트에서 \"svcs -xv\"를 실행하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:358
+msgid ""
+"The snapshot manager service has encountered a problem and has been disabled "
+"until the problem is fixed.\n"
+"\n"
+"See the svcs(1) man page for more information."
+msgstr "스냅샷 관리자 서비스에 문제가 발생하여 문제가 해결될 때까지 비활성화되었습니다.\n\n자세한 내용은 svcs(1) 매뉴얼 페이지를 참조하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:528
+msgid "Unsuitable Backup Location"
+msgstr "부적합한 백업 위치"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:594
+msgid "Select A Back Up Device"
+msgstr "백업 장치 선택"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:637
+#, python-format
+msgid ""
+"Time Slider suggests a device with a capacity of at least <b>%s</b>.\n"
+"The device: '<b>%s</b>'\n"
+"only has <b>%s</b>\n"
+"Do you want to use it anyway?"
+msgstr "시간 슬라이더는 용량이 <b>%s</b> 이상인 장치를 권장합니다.\n'<b>%s</b>' 장치의 용량은\n<b>%s</b>입니다.\n사용하시겠습니까?"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:679
+msgid ""
+"No backup device was selected.\n"
+"Please select an empty device."
+msgstr "백업 장치를 선택하지 않았습니다.\n빈 장치를 선택하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:704
+#, python-format
+msgid ""
+"'%s'\n"
+"is not writable. The backup device must be writable by the system "
+"administrator.\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\n위 장치에 쓸 수 없습니다. 시스템 관리자가 백업 장치에 쓸 수 있어야 합니다.\n\n다른 장치를 사용하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:720
+#, python-format
+msgid ""
+"'%s'\n"
+"contains an incompatible file system. The selected device must have a Unix "
+"style file system that supports file linking, such as UFS\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\n위 장치에 호환되지 않는 파일 시스템이 포함되어 있습니다. 선택한 장치는 파일 링크를 지원하는 Unix 스타일 파일 시스템(예: UFS)을 사용해야 합니다.\n\n다른 장치를 사용하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:755
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:784
+#, python-format
+msgid ""
+"'%s'\n"
+" is not an empty device.\n"
+"\n"
+"Please select an empty device."
+msgstr "'%s'\n위 장치는 빈 장치가 아닙니다.\n\n빈 장치를 선택하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:804
+#, python-format
+msgid ""
+"'%s'\n"
+"is a Time Slider external backup device that is already in use by another "
+"system. Backup devices may not be shared between systems.\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\n위 장치는 다른 시스템에서 이미 사용 중인 시간 슬라이더 외부 백업 장치입니다. 백업 장치는 시스템 간에 공유할 수 없습니다.\n\n다른 장치를 사용하십시오."
+
+#. Looks like a device that we previously used,
+#. but discontinued using in favour of some other
+#. device.
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:819
+#, python-format
+msgid ""
+"'<b>%s</b>' appears to be a a device previously configured for use by this "
+"system.\n"
+"\n"
+"Do you want resume use of this device for backups?"
+msgstr "'<b>%s</b>'은(는) 이 시스템에서 사용하기 위해 이전에 구성한 장치입니다.\n\n이 장치를 백업에 다시 사용하시겠습니까?"
+
+#. Definitely can't use this since it's a
+#. snapshotted filesystem.
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:859
+#, python-format
+msgid ""
+"'%s'\n"
+"belongs to the ZFS filesystem '%s' which is already selected for regular ZFS "
+"snaphots.\n"
+"\n"
+"Please select a drive not already in use by Time Slider"
+msgstr "'%s'\n위 항목은 일반 ZFS 스냅샷용으로 이미 선택한 ZFS 파일 시스템 '%s'에 속합니다.\n\n시간 슬라이더에서 사용하지 않는 드라이브를 선택하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:880
+#, python-format
+msgid ""
+"'%s'\n"
+"belongs to the ZFS pool '%s' which is already being used to store ZFS "
+"snaphots.\n"
+"\n"
+"Please select a drive not already in use by Time Slider"
+msgstr "'%s'\n위 항목은 일반 ZFS 스냅샷을 사용하는 데 이미 사용 중인 ZFS 풀 '%s'에 속합니다.\n\n시간 슬라이더에서 사용하지 않는 드라이브를 선택하십시오."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:1321
+msgid ""
+"The snapshot manager service requires administrative privileges to run. You "
+"have not been assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "스냅샷 관리자 서비스를 실행하려면 관리 권한이 필요합니다. 필요한 관리 권한이 지정되지 않았습니다.\n\n시스템 관리자에게 문의하십시오. "
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:116
+msgid "Invalid characters in snapshot name"
+msgstr "스냅샷 이름에 잘못된 문자가 있습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:117
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:147
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:180
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:216
+msgid "Error"
+msgstr "오류"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:118
+msgid ""
+"Allowed characters for snapshot names are :\n"
+"[a-z][A-Z][0-9][-_.:\n"
+"All invalid characters will be removed\n"
+msgstr "스냅샷 이름에 사용할 수 있는 문자는 다음과 같습니다.\n[a-z][A-Z][0-9][-_.:\n잘못된 문자는 모두 제거됩니다.\n"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:146
+msgid "Error occured while creating the snapshot"
+msgstr "스냅샷 생성 중 오류가 발생했습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:155
+msgid "Snapshot created successfully"
+msgstr "스냅샷이 성공적으로 생성되었습니다."
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:156
+msgid "Success"
+msgstr "성공"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:157
+#, python-format
+msgid ""
+"A snapshot of zfs filesystem %(zfs_fs)s\n"
+"named %(valid_name)s\n"
+"has been created.\n"
+msgstr "zfs 파일 시스템 %(zfs_fs)s의 스냅샷\n%(valid_name)s이(가)\n만들어졌습니다.\n"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:181
+msgid ""
+"Snapshot Now requires 2 arguments :\n"
+"- The path of the directory to be snapshotted.\n"
+"- The zfs filesystem corresponding to this directory."
+msgstr "지금 스냅샷 기능에는 다음과 같은 2개의 인수가 필요합니다.\n- 스냅샷될 디렉토리의 경로\n- 이 디렉토리에 해당하는 zfs 파일 시스템"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:217
+msgid ""
+"Snapshot Now requires administrative privileges to run. You have not been "
+"assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "지금 스냅샷 기능을 실행하려면 관리 권한이 필요합니다. 필요한 관리 권한이 지정되지 않았습니다.\n\n시스템 관리자에게 문의하십시오. "

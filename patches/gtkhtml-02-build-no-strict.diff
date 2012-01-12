@@ -1,0 +1,23 @@
+--- gtkhtml-3.31.5/configure.ac.orig	2010-08-05 16:48:02.854984542 +0800
++++ gtkhtml-3.31.5/configure.ac	2010-08-05 16:51:57.450526780 +0800
+@@ -102,7 +102,6 @@
+ dnl on GCC's previous "undefined" behavior, so disable strict-aliasing
+ dnl optimization until we can find and fix all the abuses.
+ dnl XXX This really belongs in AM_CFLAGS.
+-CFLAGS="$CFLAGS $WARNING_FLAGS -fno-strict-aliasing"
+ 
+ dnl *********************
+ dnl Necessary programs
+@@ -114,6 +113,12 @@
+ AC_FUNC_MALLOC
+ AC_TYPE_SIZE_T
+ 
++if test "x${GCC}" = "xyes"; then
++	CFLAGS="$CFLAGS $WARNING_FLAGS -fno-strict-aliasing"
++else
++	CFLAGS="$CFLAGS $WARNING_FLAGS"
++fi
++
+ AC_CHECK_FUNCS([memchr memmove memset regcomp setlocale strchr strcspn strrchr strstr strtol strtoull])
+ AC_CHECK_HEADERS([fcntl.h libintl.h])
+ 

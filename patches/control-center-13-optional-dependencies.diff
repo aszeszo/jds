@@ -1,0 +1,283 @@
+--- gnome-control-center-3.1.3/panels/datetime/cc-datetime-panel.c-orig	2011-07-07 15:52:10.490933043 -0500
++++ gnome-control-center-3.1.3/panels/datetime/cc-datetime-panel.c	2011-07-07 15:52:48.281752269 -0500
+@@ -31,7 +31,9 @@
+ #include <string.h>
+ #include <stdlib.h>
+ #include <libintl.h>
++#if HAVE_POLKIT
+ #include <polkit/polkit.h>
++#endif
+ 
+ /* FIXME: This should be "Etc/GMT" instead */
+ #define DEFAULT_TZ "Europe/London"
+@@ -1039,6 +1039,7 @@ cc_date_time_panel_init (CcDateTimePanel
+ 
+   queue_clock_update (self);
+ 
++#ifdef HAVE_POLKIT
+   /* add the lock button */
+   priv->permission = polkit_permission_new_sync ("org.gnome.settingsdaemon.datetimemechanism.configure", NULL, NULL, NULL);
+   if (priv->permission == NULL)
+@@ -1051,6 +1052,7 @@ cc_date_time_panel_init (CcDateTimePanel
+   g_signal_connect (priv->permission, "notify",
+                     G_CALLBACK (on_permission_changed), self);
+   on_permission_changed (priv->permission, NULL, self);
++#endif
+ }
+ 
+ void
+--- gnome-control-center-3.1.3/panels/Makefile.am-orig	2011-07-07 15:20:24.773352846 -0500
++++ gnome-control-center-3.1.3/panels/Makefile.am	2011-07-07 15:43:08.735970546 -0500
+@@ -2,15 +2,10 @@ SUBDIRS= \
+ 	common \
+ 	background \
+ 	screen \
+-	power \
+-	color \
+ 	display \
+ 	media \
+ 	mouse \
+-	online-accounts \
+ 	region \
+-	info \
+-	sound \
+ 	keyboard \
+ 	universal-access \
+ 	user-accounts \
+@@ -24,4 +19,24 @@ if BUILD_NETWORK
+ SUBDIRS += network
+ endif
+ 
++if BUILD_POWER_PANEL
++SUBDIRS += printers
++endif
++
++if BUILD_COLOR_PANEL
++SUBDIRS += color
++endif
++
++if BUILD_ONLINE_ACCOUNTS_PANEL
++SUBDIRS += online-accounts
++endif
++
++if BUILD_INFO_PANEL
++SUBDIRS += info
++endif
++
++if BUILD_SOUND_PANEL
++SUBDIRS += sound
++endif
++
+ -include $(top_srcdir)/git.mk
+--- gnome-control-center-3.1.3/panels/printers/pp-new-printer-dialog.c-orig	2011-07-07 15:53:36.090394307 -0500
++++ gnome-control-center-3.1.3/panels/printers/pp-new-printer-dialog.c	2011-07-07 15:57:28.063571217 -0500
+@@ -22,6 +22,7 @@
+ 
+ #include <unistd.h>
+ #include <stdlib.h>
++#include <locale.h>
+ #include <sys/types.h>
+ #include <sys/wait.h>
+ 
+--- gnome-control-center-3.1.3/panels/printers/cc-printers-panel.c-orig	2011-07-07 15:57:41.760021245 -0500
++++ gnome-control-center-3.1.3/panels/printers/cc-printers-panel.c	2011-07-07 15:58:08.196386036 -0500
+@@ -24,7 +24,9 @@
+ #include <string.h>
+ #include <glib/gi18n-lib.h>
+ #include <glib/gstdio.h>
++#if HAVE_POLKIT
+ #include <polkit/polkit.h>
++#endif
+ #include <dbus/dbus-glib.h>
+ #include <gdesktop-enums.h>
+ 
+@@ -2572,6 +2572,7 @@ cc_printers_panel_init (CcPrintersPanel 
+   cc_editable_entry_set_selectable (CC_EDITABLE_ENTRY (widget), TRUE);
+ 
+ 
++#ifdef HAVE_POLKIT
+   /* Add unlock button */
+   priv->permission = (GPermission *)polkit_permission_new_sync (
+     "org.opensuse.cupspkhelper.mechanism.all-edit", NULL, NULL, NULL);
+@@ -2585,6 +2586,7 @@ cc_printers_panel_init (CcPrintersPanel 
+     g_warning ("Your system does not have the cups-pk-helper's policy \
+ \"org.opensuse.cupspkhelper.mechanism.all-edit\" installed. \
+ Please check your installation");
++#endif
+ 
+   gtk_style_context_get_background_color (gtk_widget_get_style_context (top_widget),
+                                           GTK_STATE_FLAG_NORMAL,
+--- gnome-control-center-3.1.3/panels/user-accounts/um-user-panel.c-orig	2011-07-07 15:50:08.133704429 -0500
++++ gnome-control-center-3.1.3/panels/user-accounts/um-user-panel.c	2011-07-07 15:51:03.619112468 -0500
+@@ -31,7 +31,9 @@
+ #include <glib.h>
+ #include <glib/gi18n.h>
+ #include <gtk/gtk.h>
++#ifdef HAVE_POLKIT
+ #include <polkit/polkit.h>
++#endif
+ #include <dbus/dbus-glib-bindings.h>
+ 
+ #ifdef HAVE_CHEESE
+@@ -1190,10 +1190,12 @@ setup_main_window (UmUserPanelPrivate *d
+         g_signal_connect (button, "clicked",
+                           G_CALLBACK (change_fingerprint), d);
+ 
++#ifdef HAVE_POLKIT
+         d->permission = (GPermission *)polkit_permission_new_sync ("org.freedesktop.accounts.user-administration", NULL, NULL, NULL);
+         g_signal_connect (d->permission, "notify",
+                           G_CALLBACK (on_permission_changed), d);
+         on_permission_changed (d->permission, NULL, d);
++#endif
+ 
+         button = get_widget (d, "add-user-toolbutton");
+         names[0] = "changes-prevent-symbolic";
+--- gnome-control-center-3.1.3/panels/user-accounts/um-utils.c-orig	2011-07-07 15:45:41.137719830 -0500
++++ gnome-control-center-3.1.3/panels/user-accounts/um-utils.c	2011-07-07 15:48:02.810232389 -0500
+@@ -445,6 +445,7 @@ down_arrow (GtkStyleContext *context,
+ }
+ 
+ 
++#  define UT_NAMESIZE	32
+ #define MAXNAMELEN  (UT_NAMESIZE - 1)
+ 
+ static gboolean
+--- gnome-control-center-3.1.3/configure.ac-orig	2011-07-07 14:22:48.939934543 -0500
++++ gnome-control-center-3.1.3/configure.ac	2011-07-07 16:09:46.657240213 -0500
+@@ -92,34 +92,92 @@ PKG_CHECK_MODULES(SHELL, $COMMON_MODULES
+ PKG_CHECK_MODULES(BACKGROUND_PANEL, $COMMON_MODULES libxml-2.0 gnome-desktop-3.0
+                   gdk-pixbuf-2.0 >= $GDKPIXBUF_REQUIRED_VERSION)
+ PKG_CHECK_MODULES(DATETIME_PANEL, $COMMON_MODULES dbus-glib-1
+-                  polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION
+                   gdk-pixbuf-2.0 >= $GDKPIXBUF_REQUIRED_VERSION)
++
++PKG_CHECK_MODULES(POLKIT,
++        polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION,
++        have_polkit=yes,
++        have_polkit=no)
++if test "x$have_polkit" = "xyes" ; then
++  AC_DEFINE(BUILD_INFO_PANEL, [], [Define if we have polkit])
++  AC_DEFINE(HAVE_POLKIT, [], [Define if we have polkit])
++fi
++AM_CONDITIONAL(HAVE_POLKIT, test x$have_polkit = xyes)
++AC_SUBST(HAVE_POLKIT)
++AM_CONDITIONAL(BUILD_INFO_PANEL, test x$have_polkit = xyes)
++AC_SUBST(BUILD_INFO_PANEL)
++AC_SUBST(POLKIT_CFLAGS)
++AC_SUBST(POLKIT_LIBS)
++
+ PKG_CHECK_MODULES(DISPLAY_PANEL, $COMMON_MODULES dbus-glib-1 gnome-desktop-3.0 >= 3.1.0)
+-PKG_CHECK_MODULES(INFO_PANEL, $COMMON_MODULES libgtop-2.0
+-		  polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION)
++PKG_CHECK_MODULES(INFO_PANEL, $COMMON_MODULES libgtop-2.0)
+ PKG_CHECK_MODULES(KEYBOARD_PANEL, $COMMON_MODULES gconf-2.0 x11)
+ PKG_CHECK_MODULES(MEDIA_PANEL, $COMMON_MODULES)
+ PKG_CHECK_MODULES(MOUSE_PANEL, $COMMON_MODULES xi >= 1.2
+                   gnome-settings-daemon >= $GSD_REQUIRED_VERSION x11)
+ PKG_CHECK_MODULES(NETWORK_PANEL, $COMMON_MODULES)
+-PKG_CHECK_MODULES(ONLINE_ACCOUNTS_PANEL, $COMMON_MODULES goa-1.0 goa-backend-1.0)
+-PKG_CHECK_MODULES(POWER_PANEL, $COMMON_MODULES upower-glib >= 0.9.1
+-                  gnome-settings-daemon >= $GSD_REQUIRED_VERSION)
+-PKG_CHECK_MODULES(COLOR_PANEL, $COMMON_MODULES colord >= 0.1.8)
+-PKG_CHECK_MODULES(PRINTERS_PANEL, $COMMON_MODULES dbus-glib-1
+-                  polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION)
++
++PKG_CHECK_MODULES(ONLINE_ACCOUNTS_PANEL,
++        $COMMON_MODULES goa-1.0 goa-backend-1.0
++        goa-gobject-1 >= $POLKIT_REQUIRED_VERSION,
++        have_goa=yes,
++        have_goa=no)
++if test "x$have_goa" = "xyes" ; then
++  AC_DEFINE(BUILD_ONLINE_ACCOUNTS_PANEL, [], [Define if we have goa])
++fi
++AM_CONDITIONAL(BUILD_ONLINE_ACCOUNTS_PANEL, test x$have_goa = xyes)
++AC_SUBST(BUILD_HAVE_ONLINE_ACCOUNTS_PANEL)
++AC_SUBST(ONLINE_ACCOUNTS_PANEL_CFLAGS)
++AC_SUBST(ONLINE_ACCOUNTS_PANEL_LIBS)
++
++PKG_CHECK_MODULES(POWER_PANEL,
++        $COMMON_MODULES upower-glib >= 0.9.1,
++        have_upower_glib=yes,
++        have_upower_glib=no)
++if test "x$have_upower_glib" = "xyes" ; then
++  AC_DEFINE(BUILD_POWER_PANEL, [], [Define if we have upower_glib])
++fi
++AM_CONDITIONAL(BUILD_POWER_PANEL, test x$have_upower_glib = xyes)
++AC_SUBST(HAVE_POWER_PANEL)
++AC_SUBST(POWER_PANEL_CFLAGS)
++AC_SUBST(POWER_PANEL_LIBS)
++
++PKG_CHECK_MODULES(COLOR_PANEL,
++        $COMMON_MODULES colord >= 0.1.8,
++        have_colord=yes,
++        have_colord=no)
++if test "x$have_colord" = "xyes" ; then
++  AC_DEFINE(BUILD_COLOR_PANEL, [], [Define if we have colord])
++fi
++AM_CONDITIONAL(BUILD_COLOR_PANEL, test x$have_colord = xyes)
++AC_SUBST(BUILD_COLOR_PANEL)
++AC_SUBST(COLOR_PANEL_CFLAGS)
++AC_SUBST(COLOR_PANEL_LIBS)
++
++PKG_CHECK_MODULES(PRINTERS_PANEL, $COMMON_MODULES dbus-glib-1)
++
+ PKG_CHECK_MODULES(REGION_PANEL, $COMMON_MODULES libgnomekbd >= 2.91.91
+-                  polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION
+                   libxklavier >= 5.1 libgnomekbdui >= 2.91.91)
+ PKG_CHECK_MODULES(SCREEN_PANEL, $COMMON_MODULES)
+-PKG_CHECK_MODULES(SOUND_PANEL, $COMMON_MODULES libxml-2.0
+-                  libcanberra-gtk3 >= $CANBERRA_REQUIRED_VERSION
+-                  libpulse >= $PA_REQUIRED_VERSION
+-                  libpulse-mainloop-glib >= $PA_REQUIRED_VERSION
+-                  gconf-2.0)
++
++PKG_CHECK_MODULES(SOUND_PANEL,
++        $COMMON_MODULES libxml-2.0
++        libcanberra-gtk3 >= $CANBERRA_REQUIRED_VERSION
++        libpulse >= $PA_REQUIRED_VERSION
++        libpulse-mainloop-glib >= $PA_REQUIRED_VERSION
++        gconf-2.0,
++        have_pulse=yes,
++        have_pulse=no)
++if test "x$have_pulse" = "xyes" ; then
++  AC_DEFINE(BUILD_SOUND_PANEL, [], [Define if we have libpulse])
++fi
++AM_CONDITIONAL(BUILD_SOUND_PANEL, test x$have_pulse = xyes)
++AC_SUBST(BUILD_SOUND_PANEL)
++AC_SUBST(SOUND_PANEL_CFLAGS)
++AC_SUBST(SOUND_PANEL_LIBS)
++
+ PKG_CHECK_MODULES(UNIVERSAL_ACCESS_PANEL, $COMMON_MODULES gconf-2.0)
+ PKG_CHECK_MODULES(USER_ACCOUNTS_PANEL, $COMMON_MODULES dbus-glib-1
+-                  polkit-gobject-1 >= $POLKIT_REQUIRED_VERSION
+                   gnome-desktop-3.0
+                   gdk-pixbuf-2.0 >= $GDKPIXBUF_REQUIRED_VERSION)
+ PKG_CHECK_MODULES(WACOM_PANEL, $COMMON_MODULES
+--- gnome-control-center-3.1.90/panels/region/gnome-region-panel-system.c-orig	2011-09-02 18:02:05.007731037 -0500
++++ gnome-control-center-3.1.90/panels/region/gnome-region-panel-system.c	2011-09-02 18:03:04.892822596 -0500
+@@ -25,7 +25,9 @@
+ 
+ #include <string.h>
+ 
++#if HAVE_POLKIT
+ #include <polkit/polkit.h>
++#endif
+ 
+ #include <glib/gi18n.h>
+ 
+@@ -415,6 +417,7 @@ setup_system (GtkBuilder *dialog)
+         GDBusConnection *bus;
+         GtkWidget *button;
+ 
++#if HAVE_POLKIT
+         localed_permission = polkit_permission_new_sync ("org.freedesktop.locale1.set-locale", NULL, NULL, NULL);
+         if (localed_permission == NULL) {
+                 GtkWidget *tab_widget, *notebook;
+@@ -431,6 +434,7 @@ setup_system (GtkBuilder *dialog)
+         g_signal_connect (localed_permission, "notify",
+                           G_CALLBACK (on_permission_changed), dialog);
+         on_permission_changed (localed_permission, NULL, dialog);
++#endif
+ 
+ 
+         button = WID ("copy_settings_button");

@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWurlgrabber.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWurlgrabber.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWurlgrabber.copyright
+d none bin 0755 root bin
+f none bin/urlgrabber=usr/bin/urlgrabber 0755 root bin
+d none lib 0755 root bin
+d none lib/python2.4 0755 root bin
+d none lib/python2.4/vendor-packages 0755 root bin
+d none lib/python2.4/vendor-packages/urlgrabber 0755 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/__init__.py=usr/lib/python2.4/vendor-packages/urlgrabber/__init__.py 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/__init__.pyc=usr/lib/python2.4/vendor-packages/urlgrabber/__init__.pyc 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/byterange.py=usr/lib/python2.4/vendor-packages/urlgrabber/byterange.py 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/byterange.pyc=usr/lib/python2.4/vendor-packages/urlgrabber/byterange.pyc 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/grabber.py=usr/lib/python2.4/vendor-packages/urlgrabber/grabber.py 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/grabber.pyc=usr/lib/python2.4/vendor-packages/urlgrabber/grabber.pyc 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/keepalive.py=usr/lib/python2.4/vendor-packages/urlgrabber/keepalive.py 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/keepalive.pyc=usr/lib/python2.4/vendor-packages/urlgrabber/keepalive.pyc 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/mirror.py=usr/lib/python2.4/vendor-packages/urlgrabber/mirror.py 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/mirror.pyc=usr/lib/python2.4/vendor-packages/urlgrabber/mirror.pyc 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/progress.py=usr/lib/python2.4/vendor-packages/urlgrabber/progress.py 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/progress.pyc=usr/lib/python2.4/vendor-packages/urlgrabber/progress.pyc 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/sslfactory.py=usr/lib/python2.4/vendor-packages/urlgrabber/sslfactory.py 0644 root bin
+f none lib/python2.4/vendor-packages/urlgrabber/sslfactory.pyc=usr/lib/python2.4/vendor-packages/urlgrabber/sslfactory.pyc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/urlgrabber-3.1.0 0755 root bin
+f none share/doc/urlgrabber-3.1.0/ChangeLog=usr/share/doc/urlgrabber-3.1.0/ChangeLog 0644 root bin
+f none share/doc/urlgrabber-3.1.0/LICENSE=usr/share/doc/urlgrabber-3.1.0/LICENSE 0644 root bin
+f none share/doc/urlgrabber-3.1.0/README=usr/share/doc/urlgrabber-3.1.0/README 0644 root bin
+f none share/doc/urlgrabber-3.1.0/TODO=usr/share/doc/urlgrabber-3.1.0/TODO 0644 root bin

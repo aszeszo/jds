@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-gvfs-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-gvfs-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-gvfs-root.copyright
+d none etc 0755 root sys
+d none etc/profile.d 0755 root sys
+f none etc/profile.d/gvfs-bash-completion.sh=etc/profile.d/gvfs-bash-completion.sh 0755 root sys

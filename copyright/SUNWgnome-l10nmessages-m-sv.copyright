@@ -1,0 +1,1496 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  Swedish translation for avahi.
+  Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the avahi package.
+  Daniel Nylander <po@danielnylander.se>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  Swedish translation for tracker.
+  Copyright (C) 2006, 2007, 2008, 2009 Free Software Foundation
+  This file is distributed under the same license as the tracker package.
+  Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  Swedish messages for Dia.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  Fredrik Hallenberg <hallon@lysator.liu.se>, 1999.
+  Andreas Hyden <a.hyden@cyberpoint.se>.
+  Tomas Ögren <stric@ing.umu.se>, 2000.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Richard Hult <rhult@codefactory.se>, 2001.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  Swedish messages for dasher.
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  $Id: sv.po,v 1.10 2006/12/25 13:03:59 dnylande Exp $
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  Swedish messages for gok.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  $Id: sv.po,v 1.61 2006/08/22 21:19:03 dnylande Exp $
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  Swedish messages for at-spi.
+  Copyright (C) 2003, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the at-spi package.
+  Christian Rose <menthos@menthos.com>, 2003.
+  Daniel Nylander <po@danielnylander.se>, 2008, 2009.
+ 
+  $Id: sv.po,v 1.2 2003/07/02 07:58:39 menthos Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  Swedish translation for mousetweaks.
+  Copyright (C) 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the mousetweaks package.
+  Daniel Nylander <po@danielnylander.se>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  Swedish messages for orca.
+  Copyright (C) 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  Swedish translation of gnome-netstatus.
+  Copyright (C) 2003, 2004, 2005, 2007, 2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2007, 2009.
+ 
+  $Id: sv.po,v 1.21 2005/10/08 17:49:25 menthos Exp $
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  Swedish messages for quick-lounge-applet.
+  Copyright (C) 2003, 2006, 2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2003.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2009.
+ 
+  $Id: sv.po,v 1.2 2006/04/16 23:05:45 dnylande Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  Swedish messages for file-roller.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Jimmy Carlson <sanaya@telia.com>, 2002.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  Swedish translation for gcalctool
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  Swedish translation of gtkam
+  Copyright (C) 2006 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Sverker Wiberg <sverkerw@update.uu.se>, 2002.
+  Stefan Björnelund <stefanb@update.uu.se>, 2002.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  Swedish translation of brasero.
+  Copyright (C) 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the brasero package.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  Swedish messages for sound-juicer.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  Swedish messages for libbonobo.
+  Copyright (C) 2001, 2002, 2003, 2004, 2005 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+ 
+  $Id$
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  Swedish messages for gconf-editor.
+  Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  Swedish messages for GConf.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  Andreas Hyden <andreas.hyden@telia.com>, 2000.
+  Christian Rose <menthos@menthos.com>, 2000-2006.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2001.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  Swedish messages for bug-buddy.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  Richard Hult <rhult@hem.passagen.se>, 1999.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  Swedish messages for gdesklets.
+  Copyright (C) 2003, 2004, 2006 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006.
+  Christian Rose <menthos@menthos.com>, 2003, 2004.
+ 
+  $Id: sv.po,v 1.9 2006/10/14 06:29:18 dnylande Exp $
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  Swedish messages for gnome-settings-daemon
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-settings-daemon package.
+ 
+  FIXME: "Cursor" and "Pointer" are used inconsistently throughout the
+  application! Needs to be bug reported.
+ 
+  Martin Wahlen <mva@sbbs.se>, 1998, 1999.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  Swedish messages for gnome-control-center.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-control-center package.
+ 
+  FIXME: "Cursor" and "Pointer" are used inconsistently throughout the
+  application! Needs to be bug reported.
+ 
+  Martin Wahlen <mva@sbbs.se>, 1998, 1999.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  Swedish messages for zenity.
+  Copyright (C) 2003-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the zenity package.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+  Christian Rose <menthos@menthos.com>, 2003, 2004, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  Swedish messages for gdm2.
+  Copyright (C) 1999-2008 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+  Anders Carlsson <anders.carlsson@tordata.se>, 1999.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2001.
+ 
+  $Id: sv.po,v 1.116 2006/12/11 21:15:26 dnylande Exp $
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  Swedish messages for nautilus.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Richard Hult <rhult@hem.passagen.se>, 2000.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  Swedish messages for gtksourceview.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007.
+  Christian Rose <menthos@menthos.com>, 2003, 2004, 2005.
+ 
+  $Id: sv.po,v 1.23 2006/08/16 06:08:08 dnylande Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  Swedish messages for gtksourceview.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  Swedish messages for Yelp.
+  Copyright (C) 2001-2008 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2008.
+  Richard Hult <rhult@codefactory.se>, 2001.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  Swedish messages for ghex.
+  Copyright (C) 1999-2008 Free Software Foundation, Inc.
+  Tomas Ögren <stric@ing.umu.se>, 1999.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Pidgin Swedish translation
+  Copyright (C) 2001, Christian Rose <menthos@menthos.com>
+  Copyright (C) 2003-2004, Tore Lundqvist
+  Copyright (C) 2004-2007, Peter Hjalmarsson <xake@rymdraket.net>
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  Swedish messages for the GIMP.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  Tomas Ögren <stric@ing.umu.se>, 1999, 2000.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003.
+  Jan Morén <jan.moren@lucs.lu.se>, 2003.
+  Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  Swedish messages for gThumb.
+  Copyright (C) 2001-2007 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004.
+  Bo Rosén <bo.rosen@home.se>, 2001.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  Swedish messages for eog.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  Richard Hult <rhult@hem.passagen.se>, 1999.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2001.
+  Tomas Ögren <stric@ing.umu.se>, 2001.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  Swedish messages for libgnome.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  Swedish messages for libbonoboui.
+  Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+ 
+  $Id: sv.po,v 1.59 2006/08/14 11:24:13 dnylande Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  Swedish messages for gnome-keyring.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2003, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  Swedish messages for gnome-media.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Martin Wahlen <mva@sbbs.se>, 1998, 1999.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005, 2006.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  $Id: sv.po,v 1.99 2006/12/22 21:34:08 dnylande Exp $
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Swedish messages for gstreamer.
+  Copyright (C) 2004, 2005, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gstreamer package.
+  Christian Rose <menthos@menthos.com>, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Swedish messages for gst-plugins-base.
+  Copyright (C) 2004, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gst-plugins-base package.
+  Christian Rose <menthos@menthos.com>, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Swedish messages for gst-plugins-good.
+  Copyright (C) 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gst-plugins-good package.
+  Christian Rose <menthos@menthos.com>, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  Swedish messages for totem.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  Swedish messages for rhythmbox.
+  Copyright © 2002-2009 Free Software Foundation, Inc.
+  Fredrik Tuomas <fredrik@jpl.se>, 2005, 2006, 2007.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  Swedish messages for alacarte.
+  Copyright (C) 2006, 2007, 2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2006.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2009.
+ 
+  $Id: sv.po,v 1.3 2006/12/28 06:52:28 dnylande Exp $
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  Swedish messages for gnome-menus.
+  Copyright (C) 2004, 2005, 2006, 2007, 2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2004, 2005, 2006.
+  Daniel Nylander <po@danielnylander.se>, 2007, 2009.
+ 
+  $Id: sv.po,v 1.7 2006/01/08 20:42:48 menthos Exp $
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  Swedish messages for libwnck.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2009.
+ 
+  $Id: sv.po,v 1.53 2006/09/12 18:14:46 dnylande Exp $
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for notification-daemon.mo
+  Swedish translation for notification-daemon.
+  Copyright (C) 2006 Free Software Foundation
+  This file is distributed under the same license as the galago package.
+  Daniel Nylander <po@danielnylander.se>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  Swedish messages for gnome-panel.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Martin Wahlen <mva@sbbs.se>, 1998.
+  Anders Carlsson <anders.carlsson@tordata.se>, 1999.
+  Andreas Hyden  <a.hyden@cyberpoint.se>, 2000.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Johan Dahlin <jdahlin@telia.com>, 2002.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  Swedish messages for gnome-desktop.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Martin Wahlen <mva@sbbs.se>, 1998.
+  Anders Carlsson <anders.carlsson@tordata.se>, 1999.
+  Andreas Hyden  <a.hyden@cyberpoint.se>, 2000.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  $Id: sv.po,v 1.191 2006/11/19 16:10:54 dnylande Exp $
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  Swedish messages for evince.
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  "PostScript" bör enligt Datatermgruppen skrivas "Postscript" på svenska.
+  http://www.nada.kth.se/dataterm/fos-lista.html#f19
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  Swedish messages for gnome-pilot.
+  Copyright (C) 1999-2008 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+  Tomas Ögren <stric@ing.umu.se>, 1999.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004.
+  Richard Hult <rhult@codefactory.se>, 2001.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  Swedish messages for gnome-power-manager.
+  Copyright (C) 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+  Christian Rose <menthos@menthos.com>, 2005.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  Swedish messages for vino.
+  Copyright (C) 2004, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  Swedish messages for gnome-session.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Martin Wahlen <mva@sbbs.se>, 1998.
+  Anders Carlsson <anders.carlsson@tordata.se>, 1999.
+  Andreas Hyden  <a.hyden@cyberpoint.se>, 2000.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  Swedish messages for gnome-system-monitor.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  Swedish messages for GNOME System Tools.
+  Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2003.
+  Daniel Nylander <po@danielnylander.se>, 2006.
+ 
+  $Id: sv.po,v 1.114 2006/03/06 22:21:43 dnylande Exp $
+ 
+  FIXME: Internet should be spelled uppercase. That should be bug reported.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  Swedish messages for gnome-terminal.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+  Richard Hult <richard@imendio.com>, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  Swedish messages for gedit.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Martin Wahlen <mva@sslug.dk>, 1998.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 1999, 2000.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  Swedish messages for gnome-backgrounds.
+  Copyright (C) 2004-2008 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2008.
+ 
+  $Id: sv.po,v 1.2 2006/03/07 19:44:21 dnylande Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  translation of gnome-icon-theme.HEAD.po to Swedish
+  Swedish messages for gnome-icon-theme.
+  Copyright (C) 2002, 2003, 2004, 2005, 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-icon-theme
+  package.
+  Daniel Nylander <po@danielnylander.se>, 2007.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+ 
+  $Id: sv.po,v 1.19 2005/02/11 11:51:56 menthos Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  Swedish messages for gnome-themes.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-themes package.
+  Christian Rose <menthos@menthos.com>, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2008, 2009.
+ 
+  $Id: sv.po,v 1.24 2006/12/11 07:00:44 dnylande Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  Swedish messages for Glade3.
+  Copyright (C) 2001, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2001.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  Swedish messages for gnome-utils.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
+  Andreas Hyden <a.hyden@cyberpoint.se>.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  $Id: sv.po,v 1.161 2006/12/11 21:18:20 dnylande Exp $
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  Swedish messages for gnome-vfs.
+  Copyright (C) 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2008.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+ 
+  $Id: sv.po,v 1.104 2006/08/16 06:07:11 dnylande Exp $
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  Swedish messages for gnome-mime-data.
+  Copyright (C) 1999, 2000, 2001, 2002, 2003 Free Software Foundation, Inc.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003.
+ 
+  $Id: sv.po,v 1.43 2005/06/04 23:49:02 menthos Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Swedish messages for shared-mime-info.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the shared-mime-info package.
+  Christian Rose <menthos@menthos.com>, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  Swedish messages for metacity.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2001, 2002, 2003, 2004, 2005.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  Swedish translation of gtkspell.
+  Copyright (C) 2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtkspell package.
+  Daniel Nylander <po@danielnylander.se>, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for libgsf.mo
+  Swedish translation of libgsf.
+  Copyright (C) 2006-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the libgsf package.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  Swedish messages for seahorse.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2001, 2003, 2004.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  Swedish translation for xdg-user-dirs-gtk .
+  Copyright (C) 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the xdg-user-dirs-gtk package.
+  Daniel Nylander <po@danielnylander.se>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Swedish translation of xdg-user-dirs.
+  Copyright (C) 2007 Red Hat, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+  Daniel Nylander <po@danielnylander.se>, 2007.
+  Alexander Larsson <alexl@redhat.com>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  Swedish messages for Evolution.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Richard Hult <rhult@codefactory.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2001.
+  Johan Dahlin <johan@gnome.org>, 2001, 2006.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Terminology
+  appointment = möte
+  meeting = sammanträde
+  event = evenemang
+  task = uppgift
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  Swedish messages for gtkhtml.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2000.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  $Id: sv.po,v 1.103 2006/07/16 16:47:50 dnylande Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  Swedish messages for evolution-exchange.
+  Copyright (C) 2004-2008 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008.
+  Christian Rose <menthos@menthos.com>, 2004, 2005.
+ 
+  $Id: sv.po,v 1.23 2006/11/19 16:03:32 dnylande Exp $
+ 
+  Skenbar Outlook-terminologi:
+ 
+  Deleted Items folder			= mappen Borttaget
+  mailbox				= postlåda
+  public folder				= gemensam mapp
+  Secure Password Authentication	= säker lösenordsverifiering
+  Journal				= journal
+  Inbox					= inkorgen
+  Outbox				= utkorgen
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  Swedish messages for evolution-data-server.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Andreas Hyden <a.hyden@cyberpoint.se>, 2000.
+  Richard Hult <rhult@codefactory.se>, 2000, 2001.
+  Christian Rose <menthos@menthos.com>, 2000, 2001, 2002, 2003, 2004, 2005.
+  Martin Norbäck <d95mback@dtek.chalmers.se>, 2001.
+  Johan Dahlin <zilch.am@home.se>, 2001.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  Swedish translation of evolution-jescs.
+  Copyright (C) 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution-jescs package.
+  Daniel Nylander <po@danielnylander.se>, 2006, 2007, 2008, 2009.
+ 
+  Previously translated by Sun <gnome_int_l10n@ireland.sun.com> 2003-10-20
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  Swedish messages for evolution-webcal.
+  Copyright (C) 2004, 2005, 2006 Free Software Foundation, Inc.
+  Daniel Nylander <po@danielnylander.se>, 2006.
+  Christian Rose <menthos@menthos.com>, 2004, 2005.
+ 
+  $Id: sv.po,v 1.14 2006/12/22 21:37:52 dnylande Exp $
+ 
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  Swedish translation of virt-manager.
+  Copyright (C) 2006 THE virt-manager'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the virt-manager package.
+  Magnus Larsson <fedoratrans@gmail.com>, 2006, 2007.
+  Magnus Glantz <mg@hacka.net>, 2008
+ 
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

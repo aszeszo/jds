@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcairomm.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcairomm.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcairomm.copyright
+f none share/doc/SUNWcairomm/AUTHORS=usr/share/doc/SUNWcairomm/AUTHORS 0444 root bin
+f none share/doc/SUNWcairomm/COPYING.bz2=usr/share/doc/SUNWcairomm/COPYING.bz2 0444 root bin
+f none share/doc/SUNWcairomm/ChangeLog.bz2=usr/share/doc/SUNWcairomm/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWcairomm/NEWS.bz2=usr/share/doc/SUNWcairomm/NEWS.bz2 0444 root bin
+f none share/doc/SUNWcairomm/README=usr/share/doc/SUNWcairomm/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libcairomm-1.0.so=libcairomm-1.0.so.1.4.0
+s none lib/libcairomm-1.0.so.1=libcairomm-1.0.so.1.4.0
+f none lib/libcairomm-1.0.so.1.4.0=usr/lib/libcairomm-1.0.so.1.4.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWcairomm 0755 root bin

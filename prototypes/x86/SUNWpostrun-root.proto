@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpostrun-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpostrun-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpostrun-root.copyright
+d none var 0755 root sys
+d none var/lib 0755 root other
+d none var/lib/postrun 0755 root sys
+f none var/lib/postrun/postrun=var/lib/postrun/postrun 0755 root sys
+f none var/lib/postrun/postrun-runq=var/lib/postrun/postrun-runq 0755 root sys
+d none var/log 0755 root sys
+v none var/log/postrun.log=var/log/postrun.log 0644 root sys
+d none var/spool 0755 root bin
+d none var/spool/postrun 0755 root bin
+d none var/svc 0755 root sys
+d none var/svc/manifest 0755 root sys
+d none var/svc/manifest/system 0755 root sys
+f manifest var/svc/manifest/system/postrun.xml=var/svc/manifest/system/postrun.xml 0444 root sys

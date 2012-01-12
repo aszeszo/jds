@@ -1,0 +1,14 @@
+diff --git a/layout/base/FrameLayerBuilder.cpp b/layout/base/FrameLayerBuilder.cpp
+index e3ab866..c9486fe 100644
+--- a/layout/base/FrameLayerBuilder.cpp
++++ b/layout/base/FrameLayerBuilder.cpp
+@@ -914,6 +914,9 @@ ContainerState::PopThebesLayerData()
+       // a rectangle, it must therefore contain the visible region's GetBounds.
+       // Note that the visible region is already clipped appropriately.
+       nsIntRect visibleRect = data->mVisibleRegion.GetBounds();
++#if defined(__SUNPRO_CC) && defined(__sparc)
++      asm ("nop"); // compiler optimiztion bug
++#endif
+       colorLayer->SetClipRect(&visibleRect);
+ 
+       layer = colorLayer;

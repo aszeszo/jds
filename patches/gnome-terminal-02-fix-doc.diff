@@ -1,0 +1,29 @@
+--- gnome-terminal-2.30.2/help/C/gnome-terminal.xml.orig	2011-05-10 16:13:07.341385397 +0100
++++ gnome-terminal-2.30.2/help/C/gnome-terminal.xml	2011-05-10 16:13:40.460212988 +0100
+@@ -24,10 +24,8 @@
+        </para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2002</year> <year>2011</year> 
++	<holder>Oracle and/or its affiliates. All rights reserved.</holder>
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -55,10 +53,10 @@
+      </publisher> &legal; 
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
+-          <surname>GNOME Documentation Team</surname> 
++          <firstname>Oracle Solaris</firstname> 
++          <surname>Desktop Documentation Team</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 

@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWslocate.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWslocate.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWslocate.copyright
+f none share/doc/SUNWslocate/Changelog.bz2=usr/share/doc/SUNWslocate/Changelog.bz2 0444 root bin
+f none share/doc/SUNWslocate/LICENSE.bz2=usr/share/doc/SUNWslocate/LICENSE.bz2 0444 root bin
+f none share/doc/SUNWslocate/README=usr/share/doc/SUNWslocate/README 0444 root bin
+d none bin 0755 root bin
+f none bin/slocate=usr/bin/slocate 2755 root slocate
+s none bin/updatedb=slocate
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWslocate 0755 root bin
+d none share/doc/slocate 0755 root bin
+d none share/doc/slocate/samples 0755 root bin
+f none share/doc/slocate/samples/updatedb.conf=usr/share/doc/slocate/samples/updatedb.conf 444 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/slocate.1=usr/share/man/man1/slocate.1 0644 root bin
+f none share/man/man1/updatedb.1=usr/share/man/man1/updatedb.1 0644 root bin

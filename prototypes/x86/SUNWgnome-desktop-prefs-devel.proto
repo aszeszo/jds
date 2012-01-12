@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-desktop-prefs-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-desktop-prefs-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-desktop-prefs-devel.copyright
+d none include 0755 root bin
+d none include/gnome-settings-daemon-2.0 0755 root bin
+d none include/gnome-settings-daemon-2.0/gnome-settings-daemon 0755 root bin
+f none include/gnome-settings-daemon-2.0/gnome-settings-daemon/gnome-settings-client.h=usr/include/gnome-settings-daemon-2.0/gnome-settings-daemon/gnome-settings-client.h 0644 root bin
+f none include/gnome-settings-daemon-2.0/gnome-settings-daemon/gnome-settings-plugin.h=usr/include/gnome-settings-daemon-2.0/gnome-settings-daemon/gnome-settings-plugin.h 0644 root bin
+d none include/gnome-window-settings-2.0 0755 root bin
+f none include/gnome-window-settings-2.0/gnome-window-manager.h=usr/include/gnome-window-settings-2.0/gnome-window-manager.h 0644 root bin
+f none include/gnome-window-settings-2.0/gnome-wm-manager.h=usr/include/gnome-window-settings-2.0/gnome-wm-manager.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-settings-daemon.pc=usr/lib/pkgconfig/gnome-settings-daemon.pc 0644 root bin
+f none lib/pkgconfig/gnome-window-settings-2.0.pc=usr/lib/pkgconfig/gnome-window-settings-2.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/pkgconfig 0755 root bin
+f none share/pkgconfig/gnome-default-applications.pc=usr/share/pkgconfig/gnome-default-applications.pc 0644 root bin
+f none share/pkgconfig/gnome-keybindings.pc=usr/share/pkgconfig/gnome-keybindings.pc 0644 root bin

@@ -1,0 +1,819 @@
+--- nautilus-3.1.3/libnautilus-private/Makefile.am.orig	2011-07-01 17:47:03.000000000 +0100
++++ nautilus-3.1.3/libnautilus-private/Makefile.am	2011-07-20 10:19:20.116084129 +0100
+@@ -129,6 +129,8 @@
+ 	nautilus-lib-self-check-functions.h \
+ 	nautilus-link.c \
+ 	nautilus-link.h \
++	nautilus-lockdown.c \
++	nautilus-lockdown.h \
+ 	nautilus-merged-directory.c \
+ 	nautilus-merged-directory.h \
+ 	nautilus-metadata.h \
+--- nautilus-3.1.3/libnautilus-private/nautilus-directory-async.c.orig	2011-07-20 11:53:11.663923130 +0100
++++ nautilus-3.1.3/libnautilus-private/nautilus-directory-async.c	2011-07-20 11:53:37.630207391 +0100
+@@ -32,6 +32,7 @@
+ #include "nautilus-signaller.h"
+ #include "nautilus-global-preferences.h"
+ #include "nautilus-link.h"
++#include "nautilus-lockdown.h"
+ #include <eel/eel-glib-extensions.h>
+ #include <gtk/gtk.h>
+ #include <libxml/parser.h>
+@@ -859,6 +860,10 @@
+ 		return TRUE;
+ 	}
+ 
++	if (nautilus_lockdown_is_forbidden_file(directory, info)) {
++		return TRUE;
++	}
++
+ 	return FALSE;
+ }
+ 
+--- nautilus-3.1.3/libnautilus-private/nautilus-directory.c.orig	2011-05-30 19:32:43.000000000 +0100
++++ nautilus-3.1.3/libnautilus-private/nautilus-directory.c	2011-07-20 10:26:16.570368254 +0100
+@@ -317,6 +317,7 @@
+ 				  "changed::" NAUTILUS_PREFERENCES_SHOW_HIDDEN_FILES,
+ 				  G_CALLBACK(filtering_changed_callback),
+ 				  NULL);
++	nautilus_lockdown_notify_add(filtering_changed_callback, NULL);
+ 	g_signal_connect_swapped (nautilus_preferences,
+ 				  "changed::" NAUTILUS_PREFERENCES_SHOW_TEXT_IN_ICONS,
+ 				  G_CALLBACK (async_data_preference_changed_callback),
+--- nautilus-3.1.3/libnautilus-private/nautilus-file.c.orig	2011-07-20 10:28:46.132094358 +0100
++++ nautilus-3.1.3/libnautilus-private/nautilus-file.c	2011-07-20 10:32:12.597624478 +0100
+@@ -45,6 +45,7 @@
+ #include "nautilus-thumbnails.h"
+ #include "nautilus-vfs-file.h"
+ #include "nautilus-saved-search-file.h"
++#include "nautilus-lockdown.h"
+ #include <eel/eel-debug.h>
+ #include <eel/eel-glib-extensions.h>
+ #include <eel/eel-gtk-extensions.h>
+@@ -3319,6 +3320,7 @@ nautilus_file_should_show (NautilusFile 
+ 		return TRUE;
+ 	} else {
+ 		return (show_hidden || (!nautilus_file_is_hidden_file (file) && !is_file_hidden (file))) &&
++			!(nautilus_lockdown_is_forbidden_nautilus_file(file)) &&
+ 			(show_foreign || !(nautilus_file_is_in_desktop (file) && nautilus_file_is_foreign_link (file)));
+ 	}
+ }
+--- /dev/null	2011-07-21 09:21:01.000000000 +0100
++++ nautilus-3.1.3/libnautilus-private/nautilus-lockdown.c	2011-07-21 09:18:40.633123534 +0100
+@@ -0,0 +1,413 @@
++/* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 8 -*- */
++/*
++ * Copyright (C) 2004 Sun Microsystems, Inc.
++ *
++ * This program is free software; you can redistribute it and/or
++ * modify it under the terms of the GNU General Public License as
++ * published by the Free Software Foundation; either version 2 of the
++ * License, or (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful, but
++ * WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++ * General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
++ * 02111-1307, USA.
++ *
++ * Authors:
++ *      Matt Keenan  <matt.keenan@sun.com>
++ *      Mark McLoughlin  <mark@skynet.ie>
++ */
++
++#include <config.h>
++
++#include "nautilus-lockdown.h"
++#include "nautilus-global-preferences.h"
++#include "nautilus-program-choosing.h"
++/*#include <eel/eel-string.h>*/
++#include <gio/gio.h>
++#include <gio/gdesktopappinfo.h>
++
++#include <exec_attr.h>
++#include <user_attr.h>
++#include <secdb.h>
++#include <pwd.h>
++
++#include <string.h>
++
++#define N_LISTENERS 3
++
++typedef struct {
++        guint   initialized : 1;
++        guint   disable_command_line : 1;
++        guint   restrict_application_launching : 1;
++	
++        char**  allowed_applications;
++
++        guint   listeners [N_LISTENERS];
++
++        GSList *closures;
++} NautilusLockdown ;
++
++const gchar *command_line_execs[] = {
++	"/usr/bin/gnome-terminal",
++	"/usr/bin/xterm",
++};
++#define NUMBER_COMMAND_LINE_EXECS	2
++
++static NautilusLockdown nautilus_lockdown = { 0, };
++
++
++static inline void
++nautilus_lockdown_invoke_closures (NautilusLockdown *lockdown)
++{
++        GSList *l;
++
++        for (l = lockdown->closures; l; l = l->next)
++                g_closure_invoke (l->data, NULL, 0, NULL, NULL);
++}
++
++static void
++disable_command_line_notify (NautilusLockdown *lockdown)
++{
++        lockdown->disable_command_line = 
++            g_settings_get_boolean(gnome_lockdown_preferences,
++                                    NAUTILUS_PREFERENCES_LOCKDOWN_COMMAND_LINE) ;
++        nautilus_lockdown_invoke_closures (lockdown);
++}
++
++static void
++restrict_application_launching_notify (NautilusLockdown *lockdown)
++{
++        lockdown->restrict_application_launching =
++                g_settings_get_boolean (gnome_lockdown_preferences,
++                                NAUTILUS_PREFERENCES_LOCKDOWN_RESTRICT_APP_LAUNCHING);
++        nautilus_lockdown_invoke_closures (lockdown);
++}
++
++static void
++allowed_applications_notify (NautilusLockdown *lockdown)
++{
++        g_strfreev(lockdown->allowed_applications) ;
++        lockdown->allowed_applications = 
++                g_settings_get_strv(gnome_lockdown_preferences,
++                                    NAUTILUS_PREFERENCES_LOCKDOWN_ALLOWED_APPLICATIONS) ;
++        nautilus_lockdown_invoke_closures (lockdown);
++}
++
++static char**
++nautilus_lockdown_load_allowed_applications (NautilusLockdown *lockdown)
++{
++        char **retval;
++
++        retval = g_settings_get_strv(gnome_lockdown_preferences,
++                                    NAUTILUS_PREFERENCES_LOCKDOWN_ALLOWED_APPLICATIONS) ;
++	g_signal_connect_swapped (gnome_lockdown_preferences,
++                                  "changed::" NAUTILUS_PREFERENCES_LOCKDOWN_ALLOWED_APPLICATIONS,
++                                  G_CALLBACK(allowed_applications_notify), lockdown);
++        return retval;
++}
++
++void
++nautilus_lockdown_init (void)
++{
++	if (nautilus_lockdown_is_user_authorized()) 
++        {
++            nautilus_lockdown.disable_command_line = FALSE;
++            nautilus_lockdown.restrict_application_launching = FALSE;
++            nautilus_lockdown.initialized = TRUE;
++            return;
++        }
++
++        nautilus_lockdown.disable_command_line =
++		 g_settings_get_boolean (gnome_lockdown_preferences, 
++			NAUTILUS_PREFERENCES_LOCKDOWN_COMMAND_LINE);
++	g_signal_connect_swapped (gnome_lockdown_preferences,
++                                  "changed::" NAUTILUS_PREFERENCES_LOCKDOWN_COMMAND_LINE,
++                                  G_CALLBACK(disable_command_line_notify),
++                                  &nautilus_lockdown);
++        nautilus_lockdown.restrict_application_launching =
++		g_settings_get_boolean (gnome_lockdown_preferences, 
++			NAUTILUS_PREFERENCES_LOCKDOWN_RESTRICT_APP_LAUNCHING);
++	g_signal_connect_swapped (gnome_lockdown_preferences,
++                                  "changed::" NAUTILUS_PREFERENCES_LOCKDOWN_RESTRICT_APP_LAUNCHING,
++				  G_CALLBACK(restrict_application_launching_notify),
++                                  &nautilus_lockdown);
++        nautilus_lockdown.allowed_applications =
++                nautilus_lockdown_load_allowed_applications (
++                                                        &nautilus_lockdown) ;
++        nautilus_lockdown.initialized = TRUE;
++}
++
++void
++nautilus_lockdown_finalize (void)
++{
++    GSList *l = NULL ;
++
++        g_assert (nautilus_lockdown.initialized == TRUE);
++	g_signal_handlers_disconnect_by_func(gnome_lockdown_preferences,
++                                    G_CALLBACK(disable_command_line_notify), 
++                                    &nautilus_lockdown) ;
++	g_signal_handlers_disconnect_by_func(gnome_lockdown_preferences,
++                                    G_CALLBACK(restrict_application_launching_notify), 
++                                    &nautilus_lockdown) ;
++	g_signal_handlers_disconnect_by_func(gnome_lockdown_preferences,
++                                    G_CALLBACK(allowed_applications_notify), 
++                                    &nautilus_lockdown) ;
++        g_strfreev(nautilus_lockdown.allowed_applications) ;
++        for (l = nautilus_lockdown.closures; l; l = l->next) {
++                g_closure_unref (l->data);
++        }
++        g_slist_free (nautilus_lockdown.closures);
++        nautilus_lockdown.closures = NULL;
++        nautilus_lockdown.initialized = FALSE;
++}
++
++gboolean
++nautilus_lockdown_is_command_line_disabled (void)
++{
++        g_assert (nautilus_lockdown.initialized == TRUE);
++        return nautilus_lockdown.disable_command_line;
++}
++
++gboolean
++nautilus_lockdown_is_app_launching_restricted (void)
++{
++        g_assert (nautilus_lockdown.initialized == TRUE);
++        return nautilus_lockdown.restrict_application_launching;
++}
++
++char**
++nautilus_lockdown_get_allowed_apps (void)
++{
++	g_assert (nautilus_lockdown.initialized == TRUE);
++	return nautilus_lockdown.allowed_applications;
++}
++
++static GClosure *
++nautilus_lockdown_notify_find (GSList    *closures,
++                            GCallback  callback_func,
++                            gpointer   user_data)
++{
++        GSList *l;
++
++        for (l = closures; l; l = l->next) {
++                GCClosure *cclosure = l->data;
++                GClosure  *closure  = l->data;
++
++                if (closure->data == user_data &&
++                    cclosure->callback == callback_func)
++                        return closure;
++        }
++
++        return NULL;
++}
++
++static void
++marshal_user_data (GClosure     *closure,
++                   GValue       *return_value,
++                   guint         n_param_values,
++                   const GValue *param_values,
++                   gpointer      invocation_hint,
++                   gpointer      marshal_data)
++{
++        GCClosure *cclosure = (GCClosure*) closure;
++
++        g_return_if_fail (cclosure->callback != NULL);
++        g_return_if_fail (n_param_values == 0);
++
++        ((void (*) (gpointer *))cclosure->callback) (closure->data);
++}
++
++void
++nautilus_lockdown_notify_add (GCallback callback_func,
++                           gpointer  user_data)
++{
++        GClosure *closure;
++
++        g_assert (nautilus_lockdown_notify_find (nautilus_lockdown.closures,
++                                              callback_func,
++                                              user_data) == NULL);
++        closure = g_cclosure_new (callback_func, user_data, NULL);
++        g_closure_set_marshal (closure, marshal_user_data);
++        nautilus_lockdown.closures = g_slist_append (nautilus_lockdown.closures,
++                                                  closure);
++}
++
++void
++nautilus_lockdown_notify_remove (GCallback callback_func,
++                              gpointer  user_data)
++{
++        GClosure *closure;
++
++        closure = nautilus_lockdown_notify_find (nautilus_lockdown.closures,
++                                              callback_func,
++                                              user_data);
++        g_assert (closure != NULL);
++        nautilus_lockdown.closures = g_slist_remove (nautilus_lockdown.closures,
++                                                  closure);
++        g_closure_unref (closure);
++}
++
++static gboolean nautilus_lockdown_is_forbidden_uri(const char *uri)
++{
++    GFile *file;
++    GDesktopAppInfo *app_info;
++    char *file_path;
++    const char *command = NULL ;
++    gboolean ret_code = FALSE ;
++
++    file = g_file_new_for_uri (uri);
++    file_path = g_file_get_path (file);
++    g_object_unref (file);
++    app_info = g_desktop_app_info_new_from_filename (file_path);
++    g_free (file_path);
++    if (app_info != NULL) {
++	command = g_app_info_get_executable (app_info);
++    }
++    if (command == NULL) { return ret_code ; }
++    return nautilus_lockdown_is_forbidden_command(command) ;
++}
++
++static const char *GNOME_APP_MIME = "application/x-gnome-app-info" ;
++static const char *DESKTOP_MIME = "application/x-desktop" ;
++
++gboolean nautilus_lockdown_is_forbidden_file(NautilusDirectory *directory,
++                                             GFileInfo *file)
++{
++    const char *mime_type = g_file_info_get_content_type(file) ;
++
++    if (nautilus_lockdown.restrict_application_launching &&
++            mime_type != NULL &&
++            (strcmp(mime_type, GNOME_APP_MIME) == 0 ||
++             strcmp(mime_type, DESKTOP_MIME) == 0)) {
++        return nautilus_lockdown_is_forbidden_command(
++                    nautilus_directory_get_file_uri(directory, g_file_info_get_name(file)));
++    }
++    return FALSE ;
++}
++
++gboolean nautilus_lockdown_is_forbidden_nautilus_file(NautilusFile *file)
++{
++    if (nautilus_lockdown.restrict_application_launching &&
++                        (nautilus_file_is_mime_type(file, GNOME_APP_MIME) ||
++                         nautilus_file_is_mime_type(file, DESKTOP_MIME))) {
++        return nautilus_lockdown_is_forbidden_uri(nautilus_file_get_uri(file)) ;
++    }
++    return FALSE ;
++}
++
++gboolean nautilus_lockdown_is_forbidden_command(const char *command)
++{
++    char *commandCopy = NULL ;
++    char *program = NULL ;
++    char *allowed_app;
++    gboolean retCode = FALSE ;
++
++    if (!nautilus_lockdown.restrict_application_launching) { return retCode ; }
++    commandCopy = g_shell_unquote(command, NULL) ;
++    if (commandCopy == NULL) { commandCopy = g_strdup(command) ; }
++    strtok(commandCopy, " ") ;
++    if (g_path_is_absolute(commandCopy)) {
++        program = commandCopy ;
++    }
++    else {
++        char *stripped = g_path_get_basename(commandCopy) ;
++
++        program = g_find_program_in_path(stripped) ;
++        g_free(stripped) ;
++        g_free(commandCopy) ;
++    }
++    retCode = TRUE;
++    if (program != NULL) {
++        int i = 0;
++        allowed_app = nautilus_lockdown.allowed_applications[i];
++        while (allowed_app != NULL) {
++            if (!strcmp(allowed_app, program)) {
++                retCode = FALSE;
++                break;   
++            } else if (!strcmp(allowed_app, command)) {
++                retCode = FALSE;
++                break;   
++            }
++
++            allowed_app = nautilus_lockdown.allowed_applications[++i];
++        }
++        g_free(program) ;
++    }
++    return retCode ;
++}
++
++static gboolean
++has_root_role (char *username)
++{
++    userattr_t *userattr = NULL;
++    gchar *rolelist = NULL;
++    gchar *rolename = NULL;
++    static gboolean ret_val = FALSE;
++    static gboolean cached_root = FALSE;
++
++    if (cached_root == FALSE && (userattr = getusernam(username)) != NULL)
++    {
++        rolelist = kva_match(userattr->attr, USERATTR_ROLES_KW);
++        rolename = strtok(rolelist, ",");
++        while (rolename != NULL) {
++            if (strcmp (rolename, ROOT_ROLE) == 0) {
++                ret_val = TRUE;
++                break;
++            }
++            rolename = strtok(NULL, ",");
++        }
++     
++        free_userattr(userattr);
++        cached_root = TRUE;
++    }
++
++    return ret_val;
++}
++
++static gboolean
++has_admin_profile (char *username)
++{
++    execattr_t *execattr = NULL;
++    static gboolean ret_val = FALSE;
++    static gboolean cached_admin = FALSE;
++
++    if (cached_admin == FALSE && (execattr = getexecuser (username, NULL, NULL, GET_ALL)) != NULL)
++    {
++        while (execattr != NULL) {
++            if (strcmp (execattr->name, SYSTEM_ADMINISTRATOR_PROF) == 0)
++            {
++                ret_val = TRUE;
++                break;
++            }
++            execattr = execattr->next;
++        }
++        free_execattr (execattr);
++        cached_admin = TRUE;
++    }
++    return ret_val;
++}
++
++gboolean nautilus_lockdown_is_user_authorized(void) {
++    uid_t uid = getuid();
++    struct passwd *pw;
++
++    if ((pw = getpwuid(uid)) == NULL)
++        return FALSE;
++
++    if (has_admin_profile (pw->pw_name))
++        return TRUE;
++
++    if (has_root_role (pw->pw_name))
++        return TRUE;
++
++    if (uid == 0)
++        return TRUE;
++
++    return FALSE;
++}
++
+/opt/dtbld/bin/diff -uNr nautilus-2.30.1.original/libnautilus-private/nautilus-lockdown.h nautilus-2.30.1/libnautilus-private/nautilus-lockdown.h
+--- nautilus-2.30.1.original/libnautilus-private/nautilus-lockdown.h	1970-01-01 01:00:00.000000000 +0100
++++ nautilus-2.30.1/libnautilus-private/nautilus-lockdown.h	2010-12-27 16:00:00.379749810 +0100
+@@ -0,0 +1,59 @@
++/* -*- Mode: C; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 8 -*- */
++/*
++ * Copyright (C) 2004 Sun Microsystems, Inc.
++ *
++ * This program is free software; you can redistribute it and/or
++ * modify it under the terms of the GNU General Public License as
++ * published by the Free Software Foundation; either version 2 of the
++ * License, or (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful, but
++ * WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
++ * General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program; if not, write to the Free Software
++ * Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
++ * 02111-1307, USA.
++ *
++ * Authors:
++ *      Matt Keenan  <matt.keenan@sun.com>
++ *      Mark McLoughlin  <mark@skynet.ie>
++ */
++
++#ifndef __NAUTILUS_LOCKDOWN_H__
++#define __NAUTILUS_LOCKDOWN_H__
++
++/*#include <libgnomevfs/gnome-vfs.h>*/
++#include <glib.h>
++#include <glib-object.h>
++#include "nautilus-directory.h"
++
++G_BEGIN_DECLS
++
++void nautilus_lockdown_init     (void);
++void nautilus_lockdown_finalize (void);
++
++void nautilus_lockdown_notify_add    (GCallback callback_func,
++                                   gpointer  user_data);
++void nautilus_lockdown_notify_remove (GCallback callback_func,
++                                   gpointer  user_data);
++
++gboolean nautilus_lockdown_is_command_line_disabled(void) ;
++gboolean nautilus_lockdown_is_app_launching_restricted(void) ;
++char** nautilus_lockdown_get_allowed_apps(void) ;
++
++gboolean nautilus_lockdown_is_forbidden_file(NautilusDirectory *directory,
++                                             GFileInfo *file) ;
++gboolean nautilus_lockdown_is_forbidden_nautilus_file(NautilusFile *file) ;
++gboolean nautilus_lockdown_is_forbidden_command(const char *command) ;
++
++gboolean nautilus_lockdown_is_user_authorized(void);
++
++#define SYSTEM_ADMINISTRATOR_PROF "System Administrator"
++#define ROOT_ROLE "root"
++
++G_END_DECLS
++
++#endif /* __NAUTILUS_LOCKDOWN_H__ */
+--- nautilus-3.1.3/src/nautilus-view.c.orig	2011-07-20 12:13:03.112995621 +0100
++++ nautilus-3.1.3/src/nautilus-view.c	2011-07-20 12:16:08.990810763 +0100
+@@ -294,6 +294,7 @@
+ static void     disconnect_model_handlers                      (NautilusView      *view);
+ static void     metadata_for_directory_as_file_ready_callback  (NautilusFile         *file,
+ 								gpointer              callback_data);
++static void     lockdown_changed_callback                      (gpointer          context);
+ static void     metadata_for_files_in_directory_ready_callback (NautilusDirectory    *directory,
+ 								GList                *files,
+ 								gpointer              callback_data);
+@@ -2595,6 +2596,7 @@
+ 	g_signal_connect_swapped (nautilus_window_state,
+ 				  "changed::" NAUTILUS_WINDOW_STATE_START_WITH_STATUS_BAR,
+ 				  G_CALLBACK (nautilus_view_display_selection_info), view);
++	nautilus_lockdown_notify_add (lockdown_changed_callback, view);
+ }
+ 
+ static void
+@@ -2707,6 +2709,7 @@
+ 
+ 	g_signal_handlers_disconnect_by_func (gnome_lockdown_preferences,
+ 					      schedule_update_menus, view);
++	nautilus_lockdown_notify_remove (lockdown_changed_callback, view);
+ 
+ 	unschedule_pop_up_location_context_menu (view);
+ 	if (view->details->location_popup_event != NULL) {
+@@ -9139,6 +9142,15 @@
+ 	finish_loading_if_all_metadata_loaded (view);
+ }
+ 
++static void lockdown_changed_callback(gpointer context)
++{
++	NautilusView *view = NAUTILUS_VIEW(context) ;
++
++	if (view != NULL && view->details->model != NULL) {
++		load_directory(view, view->details->model) ;
++	}
++}
++
+ static void
+ disconnect_handler (GObject *object, int *id)
+ {
+--- nautilus-3.1.3/src/nautilus-tree-sidebar-model.c.orig	2011-07-20 10:55:45.592512785 +0100
++++ nautilus-3.1.3/src/nautilus-tree-sidebar-model.c	2011-07-20 10:58:59.728393654 +0100
+@@ -35,6 +35,7 @@
+ #include <libnautilus-private/nautilus-directory.h>
+ #include <libnautilus-private/nautilus-file-attributes.h>
+ #include <libnautilus-private/nautilus-file.h>
++#include <libnautilus-private/nautilus-lockdown.h>
+ 
+ #include <glib/gi18n.h>
+ #include <gtk/gtk.h>
+@@ -1683,6 +1684,14 @@
+ 	schedule_monitoring_update (model);
+ }
+ 
++void fm_tree_model_refresh_permissions(FMTreeModel *model)
++{
++    	g_return_if_fail(FM_IS_TREE_MODEL(model)) ;
++    	stop_monitoring(model) ;
++    	destroy_by_function(model, nautilus_lockdown_is_forbidden_nautilus_file);
++    	schedule_monitoring_update(model) ;
++}
++
+ static gboolean
+ file_is_not_directory (NautilusFile *file)
+ {
+--- nautilus-3.1.3/src/nautilus-tree-sidebar.c.orig	2011-07-21 07:52:04.776455196 +0100
++++ nautilus-3.1.3/src/nautilus-tree-sidebar.c	2011-07-21 07:52:30.461543895 +0100
+@@ -45,6 +45,7 @@
+ #include <libnautilus-private/nautilus-file-utilities.h>
+ #include <libnautilus-private/nautilus-global-preferences.h>
+ #include <libnautilus-private/nautilus-icon-names.h>
++#include <libnautilus-private/nautilus-lockdown.h>
+ #include <libnautilus-private/nautilus-program-choosing.h>
+ #include <libnautilus-private/nautilus-tree-view-drag-dest.h>
+ #include <libnautilus-private/nautilus-module.h>
+@@ -1444,6 +1445,7 @@
+ 		(view->details->child_model,
+ 		 g_settings_get_boolean (nautilus_tree_sidebar_preferences,
+ 					 NAUTILUS_PREFERENCES_TREE_SHOW_ONLY_DIRECTORIES));
++	fm_tree_model_refresh_permissions(view->details->child_model);
+ }
+ 
+ static void
+@@ -1503,6 +1505,7 @@
+ 				  "changed::" NAUTILUS_PREFERENCES_SHOW_HIDDEN_FILES,
+ 				  G_CALLBACK(filtering_changed_callback),
+ 				  view);
++	nautilus_lockdown_notify_add (filtering_changed_callback, view);
+ 
+ 	g_signal_connect_swapped (nautilus_tree_sidebar_preferences,
+ 				  "changed::" NAUTILUS_PREFERENCES_TREE_SHOW_ONLY_DIRECTORIES,
+@@ -1590,6 +1593,8 @@
+ 
+ 	view = FM_TREE_VIEW (object);
+ 
++	nautilus_lockdown_notify_remove (filtering_changed_callback, view);
++
+ 	g_free (view->details);
+ 
+ 	G_OBJECT_CLASS (parent_class)->finalize (object);
+--- nautilus-3.1.3/src/nautilus-window-menus.c.orig	2011-06-28 14:41:41.000000000 +0100
++++ nautilus-3.1.3/src/nautilus-window-menus.c	2011-07-20 11:22:55.879537675 +0100
+@@ -52,6 +52,7 @@
+ #include <libnautilus-private/nautilus-global-preferences.h>
+ #include <libnautilus-private/nautilus-icon-names.h>
+ #include <libnautilus-private/nautilus-ui-utilities.h>
++#include <libnautilus-private/nautilus-lockdown.h>
+ #include <libnautilus-private/nautilus-module.h>
+ #include <libnautilus-private/nautilus-undo-manager.h>
+ #include <libnautilus-private/nautilus-program-choosing.h>
+@@ -1409,6 +1410,34 @@
+ 	}
+ }
+ 
++static gboolean
++load_extension_menus_idle(gpointer context)
++{
++	NautilusWindow *window = NAUTILUS_WINDOW(context);
++
++	nautilus_window_load_extension_menus(window);
++	return FALSE;
++}
++
++static void
++lockdown_changed_callback(gpointer context)
++{
++	NautilusWindow *window = NAUTILUS_WINDOW(context);
++	g_idle_add(load_extension_menus_idle, window);
++}
++
++void
++nautilus_window_menus_lockdown_notify_remove (NautilusWindow *window)
++{
++	nautilus_lockdown_notify_remove(lockdown_changed_callback, window);
++}
++
++void
++nautilus_window_menus_lockdown_notify_add (NautilusWindow *window)
++{
++	nautilus_lockdown_notify_add(lockdown_changed_callback, window);
++}
++
+ void
+ nautilus_window_load_extension_menus (NautilusWindow *window)
+ {
+--- nautilus-3.1.3/src/nautilus-window.c.orig	2011-07-20 12:20:56.154446450 +0100
++++ nautilus-3.1.3/src/nautilus-window.c	2011-07-20 12:23:54.684091436 +0100
+@@ -655,6 +655,7 @@
+ 
+ 	slot = nautilus_window_open_slot (window->details->active_pane, 0);
+ 	nautilus_window_set_active_slot (window, slot);
++	nautilus_window_menus_lockdown_notify_add (window);
+ }
+ 
+ static void
+@@ -756,6 +757,8 @@
+ 
+ 	g_object_unref (window->details->ui_manager);
+ 
++	nautilus_window_menus_lockdown_notify_remove(window);
++
+ 	G_OBJECT_CLASS (nautilus_window_parent_class)->finalize (object);
+ }
+ 
+--- nautilus-3.1.3/src/nautilus-main.c.orig	2011-07-20 11:25:35.495181070 +0100
++++ nautilus-3.1.3/src/nautilus-main.c	2011-07-20 11:32:22.897238968 +0100
+@@ -33,6 +33,7 @@
+ #include "nautilus-application.h"
+ 
+ #include <libnautilus-private/nautilus-debug.h>
++#include <libnautilus-private/nautilus-lockdown.h>
+ #include <eel/eel-debug.h>
+ 
+ #include <glib/gi18n.h>
+@@ -96,6 +97,7 @@
+ 	xmp_init();
+ #endif
+ 
++	nautilus_lockdown_init ();
+ 	/* Run the nautilus application. */
+ 	application = nautilus_application_get_singleton ();
+ 
+@@ -104,6 +106,7 @@
+ 
+ 	g_object_unref (application);
+ 
++	nautilus_lockdown_finalize ();
+  	eel_debug_shut_down ();
+ 
+ 	return retval;
+--- nautilus-3.1.3/libnautilus-private/nautilus-program-choosing.c.orig	2011-04-04 19:01:22.000000000 +0100
++++ nautilus-3.1.3/libnautilus-private/nautilus-program-choosing.c	2011-07-20 11:46:44.096935230 +0100
+@@ -89,6 +89,22 @@
+ 	g_list_free_full (uris, g_free);
+ }
+ 
++static gboolean
++command_is_allowed (const char *full_command)
++{
++	gboolean allowed = !nautilus_lockdown_is_forbidden_command(full_command);
++	if (!allowed) {
++		eel_show_error_dialog
++			/* SUN_BRANDING */
++			(_("Sorry, This is a restricted application which "
++			    "you may not run."),
++			/* SUN_BRANDING */
++			_("Restricted Application"),
++			NULL);
++	}
++	return  allowed;
++}
++
+ void
+ nautilus_launch_application_by_uri (GAppInfo *application, 
+ 				    GList *uris,
+@@ -186,7 +202,16 @@
+ 	GdkDisplay *display;
+ 
+ 	if (use_terminal) {
+-		eel_gnome_open_terminal_on_screen (full_command, screen);
++		if (!nautilus_lockdown_is_command_line_disabled ()) {
++			eel_gnome_open_terminal_on_screen (full_command, screen);
++		} else {
++			eel_show_error_dialog
++				/* SUN_BRANDING */
++				(_("Sorry, this command requires a terminal "),
++				/* SUN_BRANDING */
++				_("Terminal access is restricted."),
++				NULL);
++		}
+ 	} else {
+ 		app = g_app_info_create_from_commandline (full_command, NULL, 0, NULL);
+ 
+@@ -278,6 +303,11 @@
+ 		}
+ 	}
+ 
++	if (!command_is_allowed  (command_string)) {
++		g_free (full_command);
++		return;
++	}
++
+ 	launch_application_from_command_internal (full_command, screen, use_terminal);
+ 
+ 	g_free (full_command);
+@@ -326,6 +356,10 @@
+ 			 parent_window);
+ 		return;
+ 	}
++
++	if (!command_is_allowed (g_app_info_get_executable (app_info))) {
++		return;
++	}
+ 	
+ 	/* count the number of uris with local paths */
+ 	count = 0;
+--- nautilus-3.1.3/libnautilus-private/nautilus-global-preferences.h.orig	2011-07-20 14:43:31.176027415 +0100
++++ nautilus-3.1.3/libnautilus-private/nautilus-global-preferences.h	2011-07-20 14:42:13.220573129 +0100
+@@ -184,6 +184,8 @@
+ 
+ /* Lockdown */
+ #define NAUTILUS_PREFERENCES_LOCKDOWN_COMMAND_LINE         "disable-command-line"
++#define NAUTILUS_PREFERENCES_LOCKDOWN_RESTRICT_APP_LAUNCHING "restrict-application-launching"
++#define NAUTILUS_PREFERENCES_LOCKDOWN_ALLOWED_APPLICATIONS "allowed_applications"
+ 
+ /* Desktop background */
+ #define NAUTILUS_PREFERENCES_SHOW_DESKTOP		   "show-desktop-icons"
+--- nautilus-3.1.3/src/nautilus-window-private.h.orig	2011-06-28 14:41:41.000000000 +0100
++++ nautilus-3.1.3/src/nautilus-window-private.h	2011-07-20 13:22:02.919610157 +0100
+@@ -174,6 +174,8 @@ void               nautilus_window_remov
+ 
+ void               nautilus_window_remove_bookmarks_menu_items           (NautilusWindow    *window);
+ void               nautilus_window_update_show_hide_menu_items           (NautilusWindow     *window);
++void               nautilus_window_menus_lockdown_notify_add             (NautilusWindow    *window);
++void               nautilus_window_menus_lockdown_notify_remove          (NautilusWindow    *window);
+ 
+ /* window toolbar */
+ void               nautilus_window_close_pane                            (NautilusWindow    *window,

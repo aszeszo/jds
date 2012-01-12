@@ -1,0 +1,24 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnonlin-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnonlin-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnonlin-devel.copyright
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/gnonlin-0.10 0755 root bin
+f none share/gtk-doc/html/gnonlin-0.10/GnlComposition.html=usr/share/gtk-doc/html/gnonlin-0.10/GnlComposition.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/GnlFileSource.html=usr/share/gtk-doc/html/gnonlin-0.10/GnlFileSource.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/GnlObject.html=usr/share/gtk-doc/html/gnonlin-0.10/GnlObject.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/GnlOperation.html=usr/share/gtk-doc/html/gnonlin-0.10/GnlOperation.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/GnlSource.html=usr/share/gtk-doc/html/gnonlin-0.10/GnlSource.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/GnlURISource.html=usr/share/gtk-doc/html/gnonlin-0.10/GnlURISource.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/ch01.html=usr/share/gtk-doc/html/gnonlin-0.10/ch01.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/ch02.html=usr/share/gtk-doc/html/gnonlin-0.10/ch02.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/gnonlin-0.10.devhelp=usr/share/gtk-doc/html/gnonlin-0.10/gnonlin-0.10.devhelp 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/gnonlin-0.10.devhelp2=usr/share/gtk-doc/html/gnonlin-0.10/gnonlin-0.10.devhelp2 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/home.png=usr/share/gtk-doc/html/gnonlin-0.10/home.png 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/index.html=usr/share/gtk-doc/html/gnonlin-0.10/index.html 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/index.sgml=usr/share/gtk-doc/html/gnonlin-0.10/index.sgml 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/left.png=usr/share/gtk-doc/html/gnonlin-0.10/left.png 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/right.png=usr/share/gtk-doc/html/gnonlin-0.10/right.png 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/style.css=usr/share/gtk-doc/html/gnonlin-0.10/style.css 0644 root bin
+f none share/gtk-doc/html/gnonlin-0.10/up.png=usr/share/gtk-doc/html/gnonlin-0.10/up.png 0644 root bin

@@ -1,0 +1,1804 @@
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/addftinfo/addftinfo.man groff-1.19.2/src/utils/addftinfo/addftinfo.man
+--- groff-1.19.2.old/src/utils/addftinfo/addftinfo.man	2009-02-25 15:14:52.875045000 +0000
++++ groff-1.19.2/src/utils/addftinfo/addftinfo.man	2009-02-25 15:24:43.486988000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001 Free Software Foundation, Inc.
+ 
+@@ -101,6 +102,21 @@ the unspecified parameters.
+ If a parameter is not specified the default will be used.
+ The defaults are chosen to have the reasonable values for
+ a Times font.
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff_font (@MAN5EXT@),
+ .BR groff (@MAN1EXT@),
+@@ -109,3 +125,4 @@ a Times font.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/afmtodit/afmtodit.man groff-1.19.2/src/utils/afmtodit/afmtodit.man
+--- groff-1.19.2.old/src/utils/afmtodit/afmtodit.man	2009-02-25 15:14:52.877689000 +0000
++++ groff-1.19.2/src/utils/afmtodit/afmtodit.man	2009-02-25 15:26:08.492313000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002, 2003, 2005 Free Software Foundation, Inc.
+ 
+@@ -323,6 +324,21 @@ Encoding used for text fonts.
+ Standard mapping.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR grops (@MAN1EXT@),
+@@ -335,3 +351,4 @@ The groff info file, section `Using Symb
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/eqn2graph/eqn2graph.man groff-1.19.2/contrib/eqn2graph/eqn2graph.man
+--- groff-1.19.2.old/contrib/eqn2graph/eqn2graph.man	2009-02-25 15:14:53.366881000 +0000
++++ groff-1.19.2/contrib/eqn2graph/eqn2graph.man	2009-02-25 15:27:52.580529000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\" $Id: eqn2graph.man,v 1.4 2003/10/28 07:46:23 wlemb Exp $
+ .\" This documentation is released to the public domain.
+ .
+@@ -98,6 +99,21 @@ Otherwise, temporary files will be creat
+ .BR /tmp .
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR pic2graph (@MAN1EXT@),
+ .BR grap2graph (@MAN1EXT@),
+@@ -113,3 +129,4 @@ Eric S. Raymond <esr@thyrsus.com>.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/gdiffmk/gdiffmk.man groff-1.19.2/contrib/gdiffmk/gdiffmk.man
+--- groff-1.19.2.old/contrib/gdiffmk/gdiffmk.man	2009-02-25 15:14:53.606295000 +0000
++++ groff-1.19.2/contrib/gdiffmk/gdiffmk.man	2009-02-25 15:29:04.548240000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig \"-*- nroff -*-
+ Copyright (C) 2004, 2005 Free Software Foundation, Inc.
+ 
+@@ -270,6 +271,21 @@ If not, write to the Free Software
+ Foundation, 51 Franklin St - Fifth Floor, Boston, MA 02110-1301, USA.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR nroff (@MAN1EXT@),
+@@ -279,3 +295,4 @@ Foundation, 51 Franklin St - Fifth Floor
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/preproc/eqn/eqn.man groff-1.19.2/src/preproc/eqn/eqn.man
+--- groff-1.19.2.old/src/preproc/eqn/eqn.man	2009-02-25 15:14:52.418122000 +0000
++++ groff-1.19.2/src/preproc/eqn/eqn.man	2009-02-25 19:29:42.702992000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2004, 2005 Free Software Foundation, Inc.
+ 
+@@ -1148,6 +1149,21 @@ Inline equations will be set at the poin
+ beginning of the input line.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@),
+@@ -1158,3 +1174,4 @@ beginning of the input line.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/preproc/grn/grn.man groff-1.19.2/src/preproc/grn/grn.man
+--- groff-1.19.2.old/src/preproc/grn/grn.man	2009-02-25 15:14:52.422757000 +0000
++++ groff-1.19.2/src/preproc/grn/grn.man	2009-02-25 19:31:01.392476000 +0000
+@@ -1,4 +1,4 @@
+-'\" t
++'\" te
+ .ig
+ Copyright (C) 2000, 2001, 2002, 2003, 2004 Free Software Foundation, Inc.
+ 
+@@ -632,6 +632,21 @@ cause problems if displayed on the
+ .BI @FONTDIR@/dev name /DESC
+ Device description file for device
+ .IR name .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH SEE ALSO
+ .BR gremlin (1),
+ .BR groff (@MAN1EXT@),
+@@ -650,3 +665,4 @@ Daniel Senderowicz and Werner Lemberg mo
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/indxbib/indxbib.man groff-1.19.2/src/utils/indxbib/indxbib.man
+--- groff-1.19.2.old/src/utils/indxbib/indxbib.man	2009-02-25 15:14:52.873426000 +0000
++++ groff-1.19.2/src/utils/indxbib/indxbib.man	2009-02-25 19:32:27.861774000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001 Free Software Foundation, Inc.
+ 
+@@ -201,6 +202,21 @@ List of common words.
+ .TP
+ .BI indxbib XXXXXX
+ Temporary file.
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR @g@refer (@MAN1EXT@),
+ .BR lkbib (@MAN1EXT@),
+@@ -209,3 +225,4 @@ Temporary file.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/lookbib/lookbib.man groff-1.19.2/src/utils/lookbib/lookbib.man
+--- groff-1.19.2.old/src/utils/lookbib/lookbib.man	2009-02-25 15:14:52.872468000 +0000
++++ groff-1.19.2/src/utils/lookbib/lookbib.man	2009-02-25 19:33:30.999027000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2004 Free Software Foundation, Inc.
+ 
+@@ -91,6 +92,21 @@ is\~6.
+ Index files.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR @g@refer (@MAN1EXT@),
+ .BR lkbib (@MAN1EXT@),
+@@ -99,3 +115,4 @@ Index files.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/preproc/eqn/neqn.man groff-1.19.2/src/preproc/eqn/neqn.man
+--- groff-1.19.2.old/src/preproc/eqn/neqn.man	2009-02-25 15:14:52.419708000 +0000
++++ groff-1.19.2/src/preproc/eqn/neqn.man	2009-02-25 19:34:49.975386000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 2001 Free Software Foundation, Inc.
+ 
+@@ -35,9 +36,25 @@ Note that
+ .B @g@eqn
+ does not support low-resolution, typewriter-like devices (although it may
+ work adequately for very simple input).
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR @g@eqn (@MAN1EXT@)
+ .
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/roff/nroff/nroff.man groff-1.19.2/src/roff/nroff/nroff.man
+--- groff-1.19.2.old/src/roff/nroff/nroff.man	2009-02-25 15:14:52.409376000 +0000
++++ groff-1.19.2/src/roff/nroff/nroff.man	2009-02-25 19:36:06.261790000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2001, 2002, 2003, 2005 Free Software Foundation, Inc.
+ 
+@@ -139,6 +140,21 @@ so warnings are suppressed.
+ nroff-style character definitions (in the file tty-char.tmac) are also
+ loaded to emulate unrepresentable glyphs.
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@),
+@@ -147,3 +163,4 @@ loaded to emulate unrepresentable glyphs
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/preproc/pic/pic.man groff-1.19.2/src/preproc/pic/pic.man
+--- groff-1.19.2.old/src/preproc/pic/pic.man	2009-02-25 15:14:52.414061000 +0000
++++ groff-1.19.2/src/preproc/pic/pic.man	2009-02-25 19:37:26.970319000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002, 2003, 2004 Free Software Foundation, Inc.
+ 
+@@ -1055,6 +1056,21 @@ and
+ macros.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .
+ .BR @g@troff (@MAN1EXT@),
+@@ -1107,3 +1123,4 @@ PostScript\*R is a registered trademark 
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/grap2graph/grap2graph.man groff-1.19.2/contrib/grap2graph/grap2graph.man
+--- groff-1.19.2.old/contrib/grap2graph/grap2graph.man	2009-02-25 15:14:53.367673000 +0000
++++ groff-1.19.2/contrib/grap2graph/grap2graph.man	2009-02-25 19:38:54.022885000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\" $Id: grap2graph.man,v 1.3 2003/10/28 07:46:23 wlemb Exp $
+ .\" This documentation is released to the public domain.
+ .
+@@ -88,6 +89,21 @@ Otherwise, temporary files will be creat
+ .BR /tmp .
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR pic2graph (@MAN1EXT@),
+ .BR eqn2graph (@MAN1EXT@),
+@@ -103,3 +119,4 @@ Eric S. Raymond <esr@thyrsus.com>
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/preproc/refer/refer.man groff-1.19.2/src/preproc/refer/refer.man
+--- groff-1.19.2.old/src/preproc/refer/refer.man	2009-02-25 15:14:52.665282000 +0000
++++ groff-1.19.2/src/preproc/refer/refer.man	2009-02-25 19:40:49.293533000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002, 2003, 2004, 2005
+   Free Software Foundation, Inc.
+@@ -1472,6 +1473,21 @@ If set, overrides the default database.
+ .
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR @g@indxbib (@MAN1EXT@),
+ .BR @g@lookbib (@MAN1EXT@),
+@@ -1490,3 +1506,4 @@ expressions.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/grodvi/grodvi.man groff-1.19.2/src/devices/grodvi/grodvi.man
+--- groff-1.19.2.old/src/devices/grodvi/grodvi.man	2009-02-25 15:14:52.672668000 +0000
++++ groff-1.19.2/src/devices/grodvi/grodvi.man	2009-02-25 19:41:58.836662000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002, 2003, 2004 Free Software Foundation, Inc.
+ 
+@@ -418,6 +419,21 @@ This is a consequence of the way \*(tx r
+ and widths of rules be rounded.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR tfmtodit (@MAN1EXT@),
+ .BR groff (@MAN1EXT@),
+@@ -432,3 +448,4 @@ and widths of rules be rounded.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/roff/groff/groff.man groff-1.19.2/src/roff/groff/groff.man
+--- groff-1.19.2.old/src/roff/groff/groff.man	2009-02-25 15:14:52.400358000 +0000
++++ groff-1.19.2/src/roff/groff/groff.man	2009-02-25 19:47:19.154728000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ groff.man
+ 
+@@ -1615,6 +1616,21 @@ Public License (GPL), while the document
+ Free Documentation License (FDL).
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -1730,3 +1746,4 @@ The following utilities are available:
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/groffer/groffer.man groff-1.19.2/contrib/groffer/groffer.man
+--- groff-1.19.2.old/contrib/groffer/groffer.man	2009-02-25 15:14:53.370327000 +0000
++++ groff-1.19.2/contrib/groffer/groffer.man	2009-02-25 19:48:57.291899000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .TH GROFFER @MAN1EXT@ "@MDATE@" "Groff Version @VERSION@"
+ .SH NAME
+ groffer \- display groff files and man\~pages on X and tty
+@@ -3845,6 +3846,21 @@ See
+ for information on availability.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -4016,3 +4032,4 @@ The decompression programs supported by
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/roff/grog/grog.man groff-1.19.2/src/roff/grog/grog.man
+--- groff-1.19.2.old/src/roff/grog/grog.man	2009-02-25 15:14:52.408276000 +0000
++++ groff-1.19.2/src/roff/grog/grog.man	2009-02-25 19:51:16.552137000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002, 2003 Free Software Foundation, Inc.
+ 
+@@ -74,6 +75,21 @@ will guess the appropriate command to pr
+ and then run it after adding the
+ .B \-Tdvi
+ option.
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR doctype (1),
+ .BR groff (@MAN1EXT@),
+@@ -89,3 +105,4 @@ option.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/grolbp/grolbp.man groff-1.19.2/src/devices/grolbp/grolbp.man
+--- groff-1.19.2.old/src/devices/grolbp/grolbp.man	2009-02-25 15:14:52.677096000 +0000
++++ groff-1.19.2/src/devices/grolbp/grolbp.man	2009-02-25 19:52:47.951957000 +0000
+@@ -1,4 +1,4 @@
+-'\" t
++'\" te
+ .\" The above line should force the use of tbl as a preprocessor
+ .\" vim: set syntax=nroff : 
+ .\" The above line should set vim into nroff mode
+@@ -324,6 +324,21 @@ Font description file for font
+ .B @MACRODIR@/lbp.tmac
+ Macros for use with
+ .BR grolbp .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH SEE ALSO
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@),
+@@ -334,3 +349,4 @@ Macros for use with
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/grolj4/grolj4.man groff-1.19.2/src/devices/grolj4/grolj4.man
+--- groff-1.19.2.old/src/devices/grolj4/grolj4.man	2009-02-25 15:14:52.673247000 +0000
++++ groff-1.19.2/src/devices/grolj4/grolj4.man	2009-02-25 19:53:57.745076000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1994-2000, 2001, 2002, 2004 Free Software Foundation, Inc.
+ 
+@@ -139,6 +140,21 @@ Macros for use with
+ .BR grolj4 .
+ .SH BUGS
+ Small dots.
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR lj4_font (@MAN5EXT@),
+ .BR groff (@MAN1EXT@),
+@@ -150,3 +166,4 @@ Small dots.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/grops/grops.man groff-1.19.2/src/devices/grops/grops.man
+--- groff-1.19.2.old/src/devices/grops/grops.man	2009-02-25 15:14:52.669454000 +0000
++++ groff-1.19.2/src/devices/grops/grops.man	2009-02-25 19:55:00.820650000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002, 2003, 2004, 2005
+   Free Software Foundation, Inc.
+@@ -1149,6 +1150,21 @@ PostScript printers (e.g. `eth' or `thor
+ Temporary file.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR afmtodit (@MAN1EXT@),
+ .BR groff (@MAN1EXT@),
+@@ -1168,3 +1184,4 @@ Temporary file.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/grotty/grotty.man groff-1.19.2/src/devices/grotty/grotty.man
+--- groff-1.19.2.old/src/devices/grotty/grotty.man	2009-02-25 15:14:52.671407000 +0000
++++ groff-1.19.2/src/devices/grotty/grotty.man	2009-02-25 19:56:06.038747000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002, 2003 Free Software Foundation, Inc.
+ 
+@@ -405,6 +406,21 @@ doesn't support anyway) but changes the 
+ cell, affecting all subsequent operations.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@),
+@@ -421,3 +437,4 @@ cell, affecting all subsequent operation
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+--- /usr/tmp/clean/groff-1.19.2/src/preproc/soelim/soelim.man	2004-08-07 05:52:54.000000000 +0100
++++ groff-1.19.2/src/preproc/soelim/soelim.man	2010-10-05 08:03:17.930397223 +0100
+@@ -1,4 +1,4 @@
+-'\" p
++'\" tep
+ .ig
+ Copyright (C) 1989-2000, 2001, 2003, 2004 Free Software Foundation, Inc.
+ 
+@@ -208,9 +208,25 @@
+ .fi
+ .\}
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@)
+ .
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/preproc/tbl/tbl.man groff-1.19.2/src/preproc/tbl/tbl.man
+--- groff-1.19.2.old/src/preproc/tbl/tbl.man	2009-02-25 15:14:52.411426000 +0000
++++ groff-1.19.2/src/preproc/tbl/tbl.man	2009-02-25 19:58:22.212495000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-1995, 2001, 2002, 2003, 2004
+   Free Software Foundation, Inc.
+@@ -484,6 +485,21 @@ For copyright reasons it cannot be inclu
+ but copies can be found with a title search on the World Wide Web.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@)
+@@ -491,3 +507,4 @@ but copies can be found with a title sea
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/roff/troff/troff.man groff-1.19.2/src/roff/troff/troff.man
+--- groff-1.19.2.old/src/roff/troff/troff.man	2009-02-25 15:14:52.407855000 +0000
++++ groff-1.19.2/src/roff/troff/troff.man	2009-02-25 19:59:16.471667000 +0000
+@@ -1,4 +1,4 @@
+-'\" t
++'\" te
+ .ig
+ troff.man
+ 
+@@ -642,6 +642,21 @@ This document is part of
+ the GNU roff distribution.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -703,3 +718,4 @@ presents all groff documentation within 
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/xditview/gxditview.man groff-1.19.2/src/devices/xditview/gxditview.man
+--- groff-1.19.2.old/src/devices/xditview/gxditview.man	2009-02-25 15:14:52.867520000 +0000
++++ groff-1.19.2/src/devices/xditview/gxditview.man	2009-02-25 20:00:24.514825000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .TH GXDITVIEW @MAN1EXT@ "@MDATE@" "Groff Version @VERSION@"
+ .
+ .
+@@ -365,6 +366,21 @@ SS	-adobe-symbol-medium-r-normal--*-100-
+ .fi
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR X (1),
+ .BR xrdb (1),
+@@ -408,3 +424,4 @@ James Clark
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/hpftodit/hpftodit.man groff-1.19.2/src/utils/hpftodit/hpftodit.man
+--- groff-1.19.2.old/src/utils/hpftodit/hpftodit.man	2009-02-25 15:14:52.871405000 +0000
++++ groff-1.19.2/src/utils/hpftodit/hpftodit.man	2009-02-25 20:01:39.730240000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .tr ~
+ .ig
+ Copyright (C) 1994-2000, 2001, 2003, 2004 Free Software Foundation, Inc.
+@@ -297,6 +298,21 @@ Font description file for font
+ .TP
+ .BI @FONTDIR@/devlj4/generate/ * .map
+ Symbol mapping files
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------------
+@@ -309,3 +325,4 @@ Symbol mapping files
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/lkbib/lkbib.man groff-1.19.2/src/utils/lkbib/lkbib.man
+--- groff-1.19.2.old/src/utils/lkbib/lkbib.man	2009-02-25 15:14:52.874354000 +0000
++++ groff-1.19.2/src/utils/lkbib/lkbib.man	2009-02-25 20:02:52.992322000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2004 Free Software Foundation, Inc.
+ 
+@@ -126,6 +127,21 @@ environment variable is not set.
+ Index files.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR @g@refer (@MAN1EXT@),
+ .BR @g@lookbib (@MAN1EXT@),
+@@ -134,3 +150,4 @@ Index files.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/mm/mmroff.man groff-1.19.2/contrib/mm/mmroff.man
+--- groff-1.19.2.old/contrib/mm/mmroff.man	2009-02-25 15:14:53.363987000 +0000
++++ groff-1.19.2/contrib/mm/mmroff.man	2009-02-25 20:03:52.824043000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\"
+ .\" $Id: mmroff.man,v 2.2 2001/12/09 12:15:09 wlemb Exp $
+ .\"
+@@ -35,6 +36,21 @@ Jörgen Hägg, Lund, Sweden <jh@axis.se>.
+ .B @TMAC_MDIR@/*.MT
+ .TP
+ .B @TMAC_MDIR@/locale
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff_mm(@MAN7EXT@),
+ .BR groff_mmse(@MAN7EXT@),
+@@ -47,3 +63,4 @@ Jörgen Hägg, Lund, Sweden <jh@axis.se>.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/pdfmark/pdfroff.man groff-1.19.2/contrib/pdfmark/pdfroff.man
+--- groff-1.19.2.old/contrib/pdfmark/pdfroff.man	2009-02-25 15:14:53.602591000 +0000
++++ groff-1.19.2/contrib/pdfmark/pdfroff.man	2009-02-25 20:04:58.213602000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .TH PDFROFF @MAN1EXT@ "@MDATE@" "Groff Version @VERSION@"
+ .\" --------------------------------------------------------------------
+ .\" Legal Matters
+@@ -487,6 +488,21 @@ for temporary and intermediate files.
+ .
+ .\" --------------------------------------------------------------------
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH SEE ALSO
+ See
+ .BR groff (@MAN1EXT@)
+@@ -550,3 +566,4 @@ site,
+ .
+ .\" --------------------------------------------------------------------
+ .\" EOF / vim: ft=groff
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/pfbtops/pfbtops.man groff-1.19.2/src/utils/pfbtops/pfbtops.man
+--- groff-1.19.2.old/src/utils/pfbtops/pfbtops.man	2009-02-25 15:14:52.876419000 +0000
++++ groff-1.19.2/src/utils/pfbtops/pfbtops.man	2009-02-25 20:06:38.662058000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-1995, 2001, 2003, 2004 Free Software Foundation, Inc.
+ 
+@@ -60,9 +61,25 @@ It must first be listed in
+ Print the version number.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR grops (@MAN1EXT@)
+ .
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/pic2graph/pic2graph.man groff-1.19.2/contrib/pic2graph/pic2graph.man
+--- groff-1.19.2.old/contrib/pic2graph/pic2graph.man	2009-02-25 15:14:53.366307000 +0000
++++ groff-1.19.2/contrib/pic2graph/pic2graph.man	2009-02-25 20:07:45.917953000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\" $Id: pic2graph.man,v 1.5 2003/10/28 07:46:24 wlemb Exp $
+ .\" This documentation is released to the public domain.
+ .TH PIC2GRAPH @MAN1EXT@ "@MDATE@" "Groff Version @VERSION@"
+@@ -122,6 +123,21 @@ Otherwise, temporary files will be creat
+ .BR /tmp .
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR eqn2graph (@MAN1EXT@),
+ .BR grap2graph (@MAN1EXT@),
+@@ -138,3 +154,4 @@ Eric S. Raymond <esr@thyrsus.com>, based
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/tfmtodit/tfmtodit.man groff-1.19.2/src/utils/tfmtodit/tfmtodit.man
+--- groff-1.19.2.old/src/utils/tfmtodit/tfmtodit.man	2009-02-25 15:14:52.870563000 +0000
++++ groff-1.19.2/src/utils/tfmtodit/tfmtodit.man	2009-02-25 20:08:46.189256000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-2000, 2001, 2002 Free Software Foundation, Inc.
+ 
+@@ -187,6 +188,21 @@ Device description file.
+ .BI @FONTDIR@/devdvi/ F
+ Font description file for font
+ .IR F .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR grodvi (@MAN1EXT@),
+@@ -195,3 +211,4 @@ Font description file for font
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/utils/xtotroff/xtotroff.man groff-1.19.2/src/utils/xtotroff/xtotroff.man
+--- groff-1.19.2.old/src/utils/xtotroff/xtotroff.man	2009-02-25 15:14:52.877337000 +0000
++++ groff-1.19.2/src/utils/xtotroff/xtotroff.man	2009-02-25 20:09:48.747359000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 2004 Free Software Foundation, Inc.
+ 
+@@ -101,9 +102,25 @@ Print the version number.
+ The only supported font encodings are `iso8859-1' and `adobe-fontspecific'.
+ .
+ .
++
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR gxditview (@MAN1EXT@)
+ .
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/groff.man groff-1.19.2/man/groff.man
+--- groff-1.19.2.old/man/groff.man	2009-02-25 15:14:53.167131000 +0000
++++ groff-1.19.2/man/groff.man	2009-02-26 15:31:44.791482000 +0000
+@@ -1,4 +1,4 @@
+-'\" t
++'\" te
+ .ig
+ groff.man
+ 
+@@ -3510,6 +3510,20 @@ it is maintained by
+ .MTO wl@gnu.org "Werner Lemberg" .
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -3562,3 +3576,4 @@ pointers to further documentation.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/grohtml/grohtml.man groff-1.19.2/src/devices/grohtml/grohtml.man
+--- groff-1.19.2.old/src/devices/grohtml/grohtml.man	2009-02-25 15:14:52.674247000 +0000
++++ groff-1.19.2/src/devices/grohtml/grohtml.man	2009-02-26 15:37:47.104283000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1999-2000, 2001, 2002, 2003, 2004 Free Software Foundation, Inc.
+ 
+@@ -279,6 +280,20 @@ has been completely redesigned and rewri
+ It is still beta code.
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR afmtodit (@MAN1EXT@),
+ .BR groff (@MAN1EXT@),
+@@ -291,3 +306,4 @@ It is still beta code.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/groff_font.man groff-1.19.2/man/groff_font.man
+--- groff-1.19.2.old/man/groff_font.man	2009-02-25 15:14:53.166635000 +0000
++++ groff-1.19.2/man/groff_font.man	2009-02-26 17:00:09.404947000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1989-1995, 2001, 2002, 2003, 2004 Free Software Foundation, Inc.
+ 
+@@ -648,6 +649,20 @@ of device
+ .IR name .
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .
+ .BR groff_out (@MAN5EXT@),
+@@ -658,3 +673,4 @@ of device
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/groff_out.man groff-1.19.2/man/groff_out.man
+--- groff-1.19.2.old/man/groff_out.man	2009-02-25 15:14:53.167512000 +0000
++++ groff-1.19.2/man/groff_out.man	2009-02-26 17:00:17.113488000 +0000
+@@ -1,4 +1,4 @@
+-'\" e
++'\" te
+ .\" The above line should force the use of eqn as a preprocessor
+ .ig
+ groff_out.5
+@@ -1932,6 +1932,20 @@ This parser is the definitive specificat
+ format.
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -2104,3 +2118,4 @@ maintained by
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/groff_tmac.man groff-1.19.2/man/groff_tmac.man
+--- groff-1.19.2.old/man/groff_tmac.man	2009-02-25 15:14:53.167873000 +0000
++++ groff-1.19.2/man/groff_tmac.man	2009-02-26 17:00:46.521722000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .TH GROFF_TMAC @MAN5EXT@ "@MDATE@" "Groff Version @VERSION@"
+ .SH NAME
+ groff_tmac \- macro files in the roff typesetting system
+@@ -1232,6 +1233,20 @@ it is maintained by
+ .MTO wl@gnu.org "Werner Lemberg" .
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -1280,3 +1295,4 @@ The Filesystem Hierarchy Standard is ava
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/groff_char.man groff-1.19.2/man/groff_char.man
+--- groff-1.19.2.old/man/groff_char.man	2009-02-25 15:14:53.165764000 +0000
++++ groff-1.19.2/man/groff_char.man	2009-02-26 16:58:45.439883000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .TH GROFF_CHAR @MAN7EXT@ "@MDATE@" "Groff Version @VERSION@"
+ .SH NAME
+ groff_char \- groff glyph names
+@@ -1389,6 +1390,20 @@ and
+ .el Bernd Warken <bwarken@mayn.de>.
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -1420,3 +1435,4 @@ No. 2, Summer 1989
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/groff_diff.man groff-1.19.2/man/groff_diff.man
+--- groff-1.19.2.old/man/groff_diff.man	2009-02-25 15:14:53.166332000 +0000
++++ groff-1.19.2/man/groff_diff.man	2009-02-26 16:59:14.402119000 +0000
+@@ -1,4 +1,4 @@
+-'\" e
++'\" te
+ .\" The above line should force the use of eqn as a preprocessor
+ .ig
+ groff_diff.man
+@@ -3791,6 +3791,20 @@ The
+ command line options and warnings are still documented in
+ .BR @g@troff (@MAN1EXT@).
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -3846,3 +3860,4 @@ of 1992, being the
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/ditroff.man groff-1.19.2/man/ditroff.man
+--- groff-1.19.2.old/man/ditroff.man	2009-02-25 15:14:53.165367000 +0000
++++ groff-1.19.2/man/ditroff.man	2009-02-26 16:57:36.648141000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ ditroff.man
+ 
+@@ -119,6 +120,20 @@ program is a wrapper around
+ that automatically handles postprocessing.
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -199,3 +214,4 @@ and is maintained by
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/man/roff.man groff-1.19.2/man/roff.man
+--- groff-1.19.2.old/man/roff.man	2009-02-25 15:14:53.168390000 +0000
++++ groff-1.19.2/man/roff.man	2009-02-26 17:01:15.686786000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ roff.man
+ 
+@@ -1089,6 +1090,20 @@ But things have improved considerably af
+ UNIX in 2001.
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -1276,3 +1291,4 @@ it is maintained by
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/tmac/groff_man.man groff-1.19.2/tmac/groff_man.man
+--- groff-1.19.2.old/tmac/groff_man.man	2009-02-25 15:14:53.335382000 +0000
++++ groff-1.19.2/tmac/groff_man.man	2009-02-26 18:50:40.523936000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ Copyright (C) 1999-2000, 2001, 2002, 2003, 2004, 2005
+ Free Software Foundation, Inc.
+@@ -737,6 +738,20 @@ Local changes and customizations should 
+ .
+ .\" -----------------------------------------------------------------
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .
+ Since the
+@@ -773,3 +788,4 @@ distribution.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/tmac/groff_mdoc.man groff-1.19.2/tmac/groff_mdoc.man
+--- groff-1.19.2.old/tmac/groff_mdoc.man	2009-02-25 15:14:53.335896000 +0000
++++ groff-1.19.2/tmac/groff_mdoc.man	2009-02-26 18:43:31.210283000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\" groff_mdoc.man
+ .\"
+ .\"   A complete reference of the mdoc macro package for GNU troff.
+@@ -4064,6 +4065,20 @@ package should be used.
+ .El
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .Sh "SEE ALSO"
+ .
+ .Xr groff 1 ,
+@@ -4132,3 +4147,4 @@ and certainly should be able to.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/tmac/groff_me.man groff-1.19.2/tmac/groff_me.man
+--- groff-1.19.2.old/tmac/groff_me.man	2009-02-25 15:14:53.336134000 +0000
++++ groff-1.19.2/tmac/groff_me.man	2009-02-26 18:44:28.861576000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\" Copyright (c) 1980 The Regents of the University of California.
+ .\" All rights reserved.
+ .\"
+@@ -68,6 +69,20 @@ is acceptable as input.
+ @MACRODIR@/me.tmac (a wrapper file for e.tmac)
+ .br
+ @MACRODIR@/e.tmac
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@)
+@@ -280,3 +295,4 @@ points.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/tmac/groff_ms.man groff-1.19.2/tmac/groff_ms.man
+--- groff-1.19.2.old/tmac/groff_ms.man	2009-02-25 15:14:53.336428000 +0000
++++ groff-1.19.2/tmac/groff_ms.man	2009-02-26 18:44:33.661179000 +0000
+@@ -1,4 +1,4 @@
+-'\" t
++'\" te
+ .ig
+ Copyright (C) 1989-1995, 2001, 2002, 2003, 2004, 2005
+   Free Software Foundation, Inc.
+@@ -1529,6 +1529,20 @@ Names containing only uppercase letters 
+ .
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .
+ .BR groff (@MAN1EXT@),
+@@ -1554,3 +1568,4 @@ rewritten by Larry Kollar
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/tmac/groff_trace.man groff-1.19.2/tmac/groff_trace.man
+--- groff-1.19.2.old/tmac/groff_trace.man	2009-02-25 15:14:53.336972000 +0000
++++ groff-1.19.2/tmac/groff_trace.man	2009-02-26 18:45:00.528182000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .
+ .TH GROFF_TRACE @MAN7EXT@ "@MDATE@" "Groff Version @VERSION@"
+ .SH NAME
+@@ -507,6 +508,20 @@ It was written by
+ .MTO bwarken@mayn.de "Bernd Warken".
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------
+@@ -548,3 +563,4 @@ file.
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/tmac/groff_www.man groff-1.19.2/tmac/groff_www.man
+--- groff-1.19.2.old/tmac/groff_www.man	2009-02-25 15:14:53.337216000 +0000
++++ groff-1.19.2/tmac/groff_www.man	2009-02-26 18:45:28.199884000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .TH GROFF_WWW @MAN7EXT@ "@MDATE@" "Groff Version @VERSION@"
+ .\" Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005
+ .\" Free Software Foundation, Inc.
+@@ -499,6 +500,20 @@ information is currently rendered as a P
+ @MACRODIR@/www.tmac
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@)
+@@ -523,3 +538,4 @@ reproduced, and say which version of gro
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/src/devices/grolj4/lj4_font.man groff-1.19.2/src/devices/grolj4/lj4_font.man
+--- groff-1.19.2.old/src/devices/grolj4/lj4_font.man	2009-02-25 15:14:52.673699000 +0000
++++ groff-1.19.2/src/devices/grolj4/lj4_font.man	2009-02-26 18:42:04.647479000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .tr ~
+ .ig
+ Copyright (C) 2004 Free Software Foundation, Inc.
+@@ -152,6 +153,20 @@ Device description file.
+ .BI @FONTDIR@/devlj4/ F
+ Font description file for font
+ .IR F .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .\" --------------------------------------------------------------------------
+ .SH "SEE ALSO"
+ .\" --------------------------------------------------------------------------
+@@ -165,3 +180,4 @@ Font description file for font
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/mm/groff_mm.man groff-1.19.2/contrib/mm/groff_mm.man
+--- groff-1.19.2.old/contrib/mm/groff_mm.man	2009-02-25 15:14:53.363223000 +0000
++++ groff-1.19.2/contrib/mm/groff_mm.man	2009-02-26 18:50:09.978022000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\"
+ .\" $Id: groff_mm.man,v 2.13 2004/07/03 12:46:56 wlemb Exp $
+ .\"
+@@ -2089,6 +2090,20 @@ Jörgen Hägg, Lund, Sweden <jh@axis.se>.
+ .B @TMAC_MDIR@/*.MT
+ .TP
+ .B @TMAC_MDIR@/locale
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SEE ALSO"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@),
+@@ -2102,3 +2117,4 @@ Jörgen Hägg, Lund, Sweden <jh@axis.se>.
+ .\" mode: nroff
+ .\" coding: latin-1
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/mm/groff_mmse.man groff-1.19.2/contrib/mm/groff_mmse.man
+--- groff-1.19.2.old/contrib/mm/groff_mmse.man	2009-02-25 15:14:53.363461000 +0000
++++ groff-1.19.2/contrib/mm/groff_mmse.man	2009-02-26 18:51:29.136035000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .\"
+ .\" $Id: groff_mmse.man,v 2.2 2001/12/09 12:15:09 wlemb Exp $
+ .\" Skrivet av Jörgen Hägg, Lund, Sverige
+@@ -72,6 +73,20 @@ Jörgen Hägg, Lund, Sweden <Jorgen.Hagg@a
+ .SH FILER
+ .B @MACRODIR@/tmac.@TMAC_M_PREFIX@mse
+ .B @TMAC_MDIR@/se_*.cov
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH "SE OCKSÅ"
+ .BR groff (@MAN1EXT@),
+ .BR @g@troff (@MAN1EXT@),
+@@ -84,3 +99,4 @@ Jörgen Hägg, Lund, Sweden <Jorgen.Hagg@a
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)
+/jds/bin/diff -uprN groff-1.19.2.old/contrib/mom/groff_mom.man groff-1.19.2/contrib/mom/groff_mom.man
+--- groff-1.19.2.old/contrib/mom/groff_mom.man	2009-02-25 15:14:53.596684000 +0000
++++ groff-1.19.2/contrib/mom/groff_mom.man	2009-02-26 18:52:30.143895000 +0000
+@@ -1,3 +1,4 @@
++'\" te
+ .ig
+ This file is part of groff, the GNU roff type-setting system.
+ 
+@@ -84,6 +85,20 @@ mom comes with her own (very) complete d
+ \[en] example files using mom
+ .
+ .
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++Availability^SUNWgroff
++Interface stability^Uncommitted
++.TE
++.sp
+ .SH AUTHOR
+ .
+ .B mom
+@@ -99,3 +114,4 @@ or directly to the author, either at the
+ .\" Local Variables:
+ .\" mode: nroff
+ .\" End:
++...\" LSARC 2008/425 GNU Troff (groff)

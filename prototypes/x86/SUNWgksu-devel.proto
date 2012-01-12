@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgksu-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgksu-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgksu-devel.copyright
+d none include 0755 root bin
+d none include/libgksu1.2 0755 root bin
+f none include/libgksu1.2/gksu-context.h=usr/include/libgksu1.2/gksu-context.h 0644 root bin
+f none include/libgksu1.2/gksu.h=usr/include/libgksu1.2/gksu.h 0644 root bin
+d none include/libgksuui1.0 0755 root bin
+f none include/libgksuui1.0/gksuui-convenience.h=usr/include/libgksuui1.0/gksuui-convenience.h 0644 root bin
+f none include/libgksuui1.0/gksuui-dialog.h=usr/include/libgksuui1.0/gksuui-dialog.h 0644 root bin
+f none include/libgksuui1.0/gksuui.h=usr/include/libgksuui1.0/gksuui.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libgksu1.2.pc=usr/lib/pkgconfig/libgksu1.2.pc 0644 root bin
+f none lib/pkgconfig/libgksuui1.0.pc=usr/lib/pkgconfig/libgksuui1.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/libgksu1.2 0755 root bin
+f none share/gtk-doc/html/libgksu1.2/ch01.html=usr/share/gtk-doc/html/libgksu1.2/ch01.html 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/home.png=usr/share/gtk-doc/html/libgksu1.2/home.png 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/index.html=usr/share/gtk-doc/html/libgksu1.2/index.html 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/index.sgml=usr/share/gtk-doc/html/libgksu1.2/index.sgml 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/left.png=usr/share/gtk-doc/html/libgksu1.2/left.png 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/libgksu1.2-GksuContext.html=usr/share/gtk-doc/html/libgksu1.2/libgksu1.2-GksuContext.html 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/libgksu1.2.devhelp=usr/share/gtk-doc/html/libgksu1.2/libgksu1.2.devhelp 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/libgksu1.2.devhelp2=usr/share/gtk-doc/html/libgksu1.2/libgksu1.2.devhelp2 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/right.png=usr/share/gtk-doc/html/libgksu1.2/right.png 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/style.css=usr/share/gtk-doc/html/libgksu1.2/style.css 0644 root bin
+f none share/gtk-doc/html/libgksu1.2/up.png=usr/share/gtk-doc/html/libgksu1.2/up.png 0644 root bin

@@ -1,0 +1,18 @@
+--- clutter-1.4.2/configure.ac-orig	2011-07-06 13:29:31.985914131 -0500
++++ clutter-1.4.2/configure.ac	2011-07-06 13:30:30.427746841 -0500
+@@ -1094,8 +1094,13 @@ AM_CONDITIONAL(ENABLE_PDFS, [test "x$ena
+ 
+ dnl === I18N ==================================================================
+ 
+-AM_GNU_GETTEXT_VERSION([0.17])
+-AM_GNU_GETTEXT([external])
++ALL_LINGUAS="de it pl zh_cn"
++AM_GLIB_GNU_GETTEXT
++AC_PROG_INTLTOOL
++USE_INCLUDED_LIBINTL=no
++AC_SUBST(USE_INCLUDED_LIBINTL)
++BUILD_INCLUDED_LIBINTL=no
++AC_SUBST(BUILD_INCLUDED_LIBINTL)
+ 
+ GETTEXT_PACKAGE="clutter-1.0"
+ AC_SUBST(GETTEXT_PACKAGE)

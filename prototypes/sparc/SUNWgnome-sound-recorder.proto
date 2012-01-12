@@ -1,0 +1,65 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-sound-recorder.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-sound-recorder.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-sound-recorder.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-sound-recorder.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-sound-recorder.copyright
+d none bin 0755 root bin
+f none bin/gnome-sound-recorder=usr/bin/gnome-sound-recorder 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-sound-recorder.desktop=usr/share/applications/gnome-sound-recorder.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-sound-recorder 0755 root bin
+f none share/doc/SUNWgnome-sound-recorder/AUTHORS=usr/share/doc/SUNWgnome-sound-recorder/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-sound-recorder/COPYING-DOCS.bz2=usr/share/doc/SUNWgnome-sound-recorder/COPYING-DOCS.bz2 0644 root bin
+f none share/doc/SUNWgnome-sound-recorder/COPYING.bz2=usr/share/doc/SUNWgnome-sound-recorder/COPYING.bz2 0644 root bin
+f none share/doc/SUNWgnome-sound-recorder/COPYING.grecord.bz2=usr/share/doc/SUNWgnome-sound-recorder/COPYING.grecord.bz2 0644 root bin
+f none share/doc/SUNWgnome-sound-recorder/NEWS.bz2=usr/share/doc/SUNWgnome-sound-recorder/NEWS.bz2 0644 root bin
+f none share/doc/SUNWgnome-sound-recorder/README=usr/share/doc/SUNWgnome-sound-recorder/README 0644 root bin
+d none share/doc/SUNWgnome-sound-recorder/grecord 0755 root bin
+f none share/doc/SUNWgnome-sound-recorder/grecord/AUTHORS=usr/share/doc/SUNWgnome-sound-recorder/grecord/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-sound-recorder/grecord/NEWS.bz2=usr/share/doc/SUNWgnome-sound-recorder/grecord/NEWS.bz2 0644 root bin
+f none share/doc/SUNWgnome-sound-recorder/grecord/README=usr/share/doc/SUNWgnome-sound-recorder/grecord/README 0644 root bin
+d none share/doc/SUNWgnome-sound-recorder/grecord/doc 0755 root bin
+f none share/doc/SUNWgnome-sound-recorder/grecord/doc/ChangeLog.bz2=usr/share/doc/SUNWgnome-sound-recorder/grecord/doc/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-sound-recorder/grecord/icons 0755 root bin
+f none share/doc/SUNWgnome-sound-recorder/grecord/icons/AUTHORS=usr/share/doc/SUNWgnome-sound-recorder/grecord/icons/AUTHORS 0644 root bin
+d none share/doc/SUNWgnome-sound-recorder/po 0755 root bin
+f none share/doc/SUNWgnome-sound-recorder/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-sound-recorder/po/ChangeLog.bz2 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome-sound-recorder 0755 root bin
+d none share/gnome-sound-recorder/ui 0755 root bin
+f none share/gnome-sound-recorder/ui/ui.xml=usr/share/gnome-sound-recorder/ui/ui.xml 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-sound-recorder 0755 root bin
+d none share/gnome/help/gnome-sound-recorder/C 0755 root bin
+d none share/gnome/help/gnome-sound-recorder/C/figures 0755 root bin
+f none share/gnome/help/gnome-sound-recorder/C/figures/grecord_window.png=usr/share/gnome/help/gnome-sound-recorder/C/figures/grecord_window.png 0644 root bin
+f none share/gnome/help/gnome-sound-recorder/C/gnome-sound-recorder.xml=usr/share/gnome/help/gnome-sound-recorder/C/gnome-sound-recorder.xml 0644 root bin
+f none share/gnome/help/gnome-sound-recorder/C/legal.xml=usr/share/gnome/help/gnome-sound-recorder/C/legal.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/gnome-sound-recorder.png=usr/share/icons/hicolor/16x16/apps/gnome-sound-recorder.png 0644 root bin
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/gnome-sound-recorder.png=usr/share/icons/hicolor/22x22/apps/gnome-sound-recorder.png 0644 root bin
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/gnome-sound-recorder.png=usr/share/icons/hicolor/24x24/apps/gnome-sound-recorder.png 0644 root bin
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/gnome-sound-recorder.png=usr/share/icons/hicolor/32x32/apps/gnome-sound-recorder.png 0644 root bin
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/gnome-sound-recorder.png=usr/share/icons/hicolor/48x48/apps/gnome-sound-recorder.png 0644 root bin
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/gnome-sound-recorder.svg=usr/share/icons/hicolor/scalable/apps/gnome-sound-recorder.svg 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-sound-recorder.1=usr/share/man/man1/gnome-sound-recorder.1 0755 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-sound-recorder 0755 root bin
+f none share/omf/gnome-sound-recorder/gnome-sound-recorder-C.omf=usr/share/omf/gnome-sound-recorder/gnome-sound-recorder-C.omf 0644 root bin

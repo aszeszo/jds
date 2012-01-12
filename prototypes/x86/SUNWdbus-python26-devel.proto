@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdbus-python26-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdbus-python26-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdbus-python26-devel.copyright
+d none include 0755 root bin
+d none include/dbus-1.0 0755 root bin
+d none include/dbus-1.0/dbus 0755 root bin
+f none include/dbus-1.0/dbus/dbus-python.h=usr/include/dbus-1.0/dbus/dbus-python.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/dbus-python.pc=usr/lib/pkgconfig/dbus-python.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/dbus-python 0755 root other
+f none share/doc/dbus-python/API_CHANGES.txt=usr/share/doc/dbus-python/API_CHANGES.txt 0644 root bin
+f none share/doc/dbus-python/HACKING.txt=usr/share/doc/dbus-python/HACKING.txt 0644 root bin
+f none share/doc/dbus-python/NEWS=usr/share/doc/dbus-python/NEWS 0644 root bin
+f none share/doc/dbus-python/README=usr/share/doc/dbus-python/README 0644 root bin
+f none share/doc/dbus-python/TODO=usr/share/doc/dbus-python/TODO 0644 root bin
+f none share/doc/dbus-python/tutorial.txt=usr/share/doc/dbus-python/tutorial.txt 0644 root bin

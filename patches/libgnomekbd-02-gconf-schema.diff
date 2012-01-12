@@ -1,0 +1,12 @@
+diff -urN libgnomekbd-2.30.0/libgnomekbd/desktop_gnome_peripherals_keyboard_xkb.schemas.in ../../SUNWgnome-keyboard-libs-2.30.0.hacked/i386/libgnomekbd-2.30.0/libgnomekbd/desktop_gnome_peripherals_keyboard_xkb.schemas.in
+--- libgnomekbd-2.30.0/libgnomekbd/desktop_gnome_peripherals_keyboard_xkb.schemas.in	2010-03-28 23:14:54.000000000 +0100
++++ ../../SUNWgnome-keyboard-libs-2.30.0.hacked/i386/libgnomekbd-2.30.0/libgnomekbd/desktop_gnome_peripherals_keyboard_xkb.schemas.in	2011-05-06 16:48:52.815388370 +0100
+@@ -230,7 +230,7 @@
+       <applyto>/desktop/gnome/peripherals/keyboard/indicator/fontSize</applyto>
+       <owner>gnome</owner>    
+       <type>int</type>
+-      <default></default>
++      <default>10</default>
+       <locale name="C">
+         <short>The font size</short>
+         <long>The font size for the layout indicator</long>

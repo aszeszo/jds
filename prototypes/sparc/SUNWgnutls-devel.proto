@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnutls-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnutls-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnutls-devel.copyright
+d none include 0755 root bin
+d none include/gnutls 0755 root bin
+f none include/gnutls/compat.h=usr/include/gnutls/compat.h 0644 root bin
+f none include/gnutls/crypto.h=usr/include/gnutls/crypto.h 0644 root bin
+f none include/gnutls/gnutls.h=usr/include/gnutls/gnutls.h 0644 root bin
+f none include/gnutls/gnutlsxx.h=usr/include/gnutls/gnutlsxx.h 0644 root bin
+f none include/gnutls/openpgp.h=usr/include/gnutls/openpgp.h 0644 root bin
+f none include/gnutls/pkcs12.h=usr/include/gnutls/pkcs12.h 0644 root bin
+f none include/gnutls/x509.h=usr/include/gnutls/x509.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnutls.pc=usr/lib/pkgconfig/gnutls.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/gnutls.pc=usr/lib/sparcv9/pkgconfig/gnutls.pc 0644 root bin

@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-l10ndocument-hi.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-l10ndocument-hi.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-hi.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-hi.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-l10ndocument-hi.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/copyright 0755 root bin
+d none share/gnome/help/copyright/hi 0755 root bin
+f none share/gnome/help/copyright/hi/COPYING.gnome.gz=usr/share/gnome/help/copyright/hi/COPYING.gnome.gz 0644 root bin
+d none share/gnome/help/glade 0755 root bin
+d none share/gnome/help/glade/hi 0755 root bin
+d none share/gnome/help/glade/hi/figures 0755 root bin
+f none share/gnome/help/glade/hi/figures/main-window.png=usr/share/gnome/help/glade/hi/figures/main-window.png 0644 root bin
+f none share/gnome/help/glade/hi/glade.xml=usr/share/gnome/help/glade/hi/glade.xml 0644 root bin
+f none share/gnome/help/glade/hi/legal.xml=usr/share/gnome/help/glade/hi/legal.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/glade 0755 root bin
+f none share/omf/glade/glade-hi.omf=usr/share/omf/glade/glade-hi.omf 0644 root bin

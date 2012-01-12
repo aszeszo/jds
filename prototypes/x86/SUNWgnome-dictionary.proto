@@ -1,0 +1,68 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-dictionary.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-dictionary.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-dictionary.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-dictionary.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-dictionary.copyright
+d none bin 0755 root bin
+f none bin/gnome-dictionary=usr/bin/gnome-dictionary 0755 root bin
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_DictionaryApplet.server=usr/lib/bonobo/servers/GNOME_DictionaryApplet.server 0644 root bin
+f none lib/gnome-dictionary-applet=usr/lib/gnome-dictionary-applet 0755 root bin
+s none lib/libgdict-1.0.so=libgdict-1.0.so.6.0.7
+s none lib/libgdict-1.0.so.6=libgdict-1.0.so.6.0.7
+f none lib/libgdict-1.0.so.6.0.7=usr/lib/libgdict-1.0.so.6.0.7 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-dictionary.desktop=usr/share/applications/gnome-dictionary.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-dictionary 0755 root bin
+f none share/doc/SUNWgnome-dictionary/AUTHORS=usr/share/doc/SUNWgnome-dictionary/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-dictionary/COPYING.bz2=usr/share/doc/SUNWgnome-dictionary/COPYING.bz2 0644 root bin
+f none share/doc/SUNWgnome-dictionary/ChangeLog.bz2=usr/share/doc/SUNWgnome-dictionary/ChangeLog.bz2 0644 root bin
+f none share/doc/SUNWgnome-dictionary/NEWS.bz2=usr/share/doc/SUNWgnome-dictionary/NEWS.bz2 0644 root bin
+f none share/doc/SUNWgnome-dictionary/README=usr/share/doc/SUNWgnome-dictionary/README 0644 root bin
+d none share/doc/SUNWgnome-dictionary/gnome-dictionary 0755 root bin
+f none share/doc/SUNWgnome-dictionary/gnome-dictionary/AUTHORS=usr/share/doc/SUNWgnome-dictionary/gnome-dictionary/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-dictionary/gnome-dictionary/README=usr/share/doc/SUNWgnome-dictionary/gnome-dictionary/README 0644 root bin
+d none share/doc/SUNWgnome-dictionary/gnome-dictionary/help 0755 root bin
+f none share/doc/SUNWgnome-dictionary/gnome-dictionary/help/ChangeLog.bz2=usr/share/doc/SUNWgnome-dictionary/gnome-dictionary/help/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-dictionary/po 0755 root bin
+f none share/doc/SUNWgnome-dictionary/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-dictionary/po/ChangeLog.bz2 0644 root bin
+d none share/gdict-1.0 0755 root bin
+d none share/gdict-1.0/sources 0755 root bin
+f none share/gdict-1.0/sources/default.desktop=usr/share/gdict-1.0/sources/default.desktop 0644 root bin
+f none share/gdict-1.0/sources/spanish.desktop=usr/share/gdict-1.0/sources/spanish.desktop 0644 root bin
+f none share/gdict-1.0/sources/thai.desktop=usr/share/gdict-1.0/sources/thai.desktop 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome-2.0 0755 root bin
+d none share/gnome-2.0/ui 0755 root bin
+f none share/gnome-2.0/ui/GNOME_DictionaryApplet.xml=usr/share/gnome-2.0/ui/GNOME_DictionaryApplet.xml 0644 root bin
+d none share/gnome-dictionary 0755 root bin
+f none share/gnome-dictionary/gnome-dictionary-preferences.ui=usr/share/gnome-dictionary/gnome-dictionary-preferences.ui 0644 root bin
+f none share/gnome-dictionary/gnome-dictionary-source.ui=usr/share/gnome-dictionary/gnome-dictionary-source.ui 0644 root bin
+f none share/gnome-dictionary/gnome-dictionary-ui.xml=usr/share/gnome-dictionary/gnome-dictionary-ui.xml 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-dictionary 0755 root bin
+d none share/gnome/help/gnome-dictionary/C 0755 root bin
+d none share/gnome/help/gnome-dictionary/C/figures 0755 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-add-source.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-add-source.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-applet-window.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-applet-window.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-applet.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-applet.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-application.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-application.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-find.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-find.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-lookup.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-lookup.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-preferences-print.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-preferences-print.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-preferences-source.png=usr/share/gnome/help/gnome-dictionary/C/figures/gnome-dictionary-preferences-source.png 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/gnome-dictionary.xml=usr/share/gnome/help/gnome-dictionary/C/gnome-dictionary.xml 0644 root bin
+f none share/gnome/help/gnome-dictionary/C/legal.xml=usr/share/gnome/help/gnome-dictionary/C/legal.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-dictionary.1=usr/share/man/man1/gnome-dictionary.1 0644 root bin
+d none share/man/man4 0755 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-dictionary 0755 root bin
+f none share/omf/gnome-dictionary/gnome-dictionary-C.omf=usr/share/omf/gnome-dictionary/gnome-dictionary-C.omf 0644 root bin

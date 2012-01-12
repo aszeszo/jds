@@ -1,0 +1,33 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWconsolekit-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWconsolekit-root.depend
+i preinstall=/jds/packages/PKGMAPS/scripts/SUNWconsolekit-root.preinstall
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWconsolekit-root.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWconsolekit-root.copyright
+d none etc 0755 root sys
+d none etc/ConsoleKit 0755 root sys
+d none etc/ConsoleKit/displays.d 0755 root sys
+f none etc/ConsoleKit/displays.d/Headless.display=etc/ConsoleKit/displays.d/Headless.display 0644 root sys
+f none etc/ConsoleKit/displays.d/Local.display=etc/ConsoleKit/displays.d/Local.display 0644 root sys
+f none etc/ConsoleKit/displays.d/LocalVNC.display=etc/ConsoleKit/displays.d/LocalVNC.display 0644 root sys
+f none etc/ConsoleKit/displays.d/RemoteMachine.display=etc/ConsoleKit/displays.d/RemoteMachine.display 0644 root sys
+f none etc/ConsoleKit/displays.d/Sunray.display=etc/ConsoleKit/displays.d/Sunray.display 0644 root sys
+d none etc/ConsoleKit/run-seat.d 0755 root sys
+d none etc/ConsoleKit/run-session.d 0755 root sys
+d none etc/ConsoleKit/seats.d 0755 root sys
+f none etc/ConsoleKit/seats.d/00-primary.seat=etc/ConsoleKit/seats.d/00-primary.seat 0644 root sys
+d none etc/ConsoleKit/sessions.d 0755 root sys
+f none etc/ConsoleKit/sessions.d/Headless.session=etc/ConsoleKit/sessions.d/Headless.session 0644 root sys
+f none etc/ConsoleKit/sessions.d/Local.session=etc/ConsoleKit/sessions.d/Local.session 0644 root sys
+f none etc/ConsoleKit/sessions.d/LocalVNC.session=etc/ConsoleKit/sessions.d/LocalVNC.session 0644 root sys
+f none etc/ConsoleKit/sessions.d/Remote.session=etc/ConsoleKit/sessions.d/Remote.session 0644 root sys
+d none etc/dbus-1 0755 root bin
+d none etc/dbus-1/system.d 0755 root bin
+f none etc/dbus-1/system.d/ConsoleKit.conf=etc/dbus-1/system.d/ConsoleKit.conf 0644 root sys
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/manifest 0755 root sys
+d none lib/svc/manifest/system 0755 root sys
+f none lib/svc/manifest/system/consolekit.xml=lib/svc/manifest/system/consolekit.xml 0444 root sys
+d none var 0755 root sys
+d none var/log 0755 root sys
+d none var/log/ConsoleKit 0755 root root

@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-webcal-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-webcal-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-webcal-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/evolution-webcal.schemas=etc/gconf/schemas/evolution-webcal.schemas 0644 root sys

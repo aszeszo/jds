@@ -1,0 +1,133 @@
+diff --git a/dom/plugins/ipc/PluginInstanceChild.cpp b/dom/plugins/ipc/PluginInstanceChild.cpp
+--- a/dom/plugins/ipc/PluginInstanceChild.cpp
++++ b/dom/plugins/ipc/PluginInstanceChild.cpp
+@@ -276,17 +276,17 @@ PluginInstanceChild::NPN_GetValue(NPNVar
+                                   void* aValue)
+ {
+     PLUGIN_LOG_DEBUG(("%s (aVar=%i)", FULLFUNCTION, (int) aVar));
+     AssertPluginThread();
+ 
+     switch(aVar) {
+ 
+     case NPNVSupportsWindowless:
+-#if defined(OS_LINUX) || defined(OS_WIN)
++#if defined(OS_LINUX) || defined(MOZ_X11) || defined(OS_WIN)
+         *((NPBool*)aValue) = true;
+ #else
+         *((NPBool*)aValue) = false;
+ #endif
+         return NPERR_NO_ERROR;
+ 
+ #if (MOZ_PLATFORM_MAEMO == 5) || (MOZ_PLATFORM_MAEMO == 6)
+     case NPNVSupportsWindowlessLocal: {
+@@ -295,17 +295,17 @@ PluginInstanceChild::NPN_GetValue(NPNVar
+         // we should set local rendering to false in order to render X-Plugin
+         // there is no possibility to change it later on maemo5 platform
+         mMaemoImageRendering = (!(graphicsSystem && !strcmp(graphicsSystem, "native")));
+ #endif
+         *((NPBool*)aValue) = mMaemoImageRendering;
+         return NPERR_NO_ERROR;
+     }
+ #endif
+-#if defined(OS_LINUX)
++#if defined(MOZ_X11)
+     case NPNVSupportsXEmbedBool:
+         *((NPBool*)aValue) = true;
+         return NPERR_NO_ERROR;
+ 
+     case NPNVToolkit:
+         *((NPNToolkitType*)aValue) = NPNVGtk2;
+         return NPERR_NO_ERROR;
+ 
+@@ -2346,17 +2346,26 @@ PluginInstanceChild::CreateOptSurface(vo
+     Display* dpy = mWsInfo.display;
+     Screen* screen = DefaultScreenOfDisplay(dpy);
+     if (format == gfxASurface::ImageFormatRGB24 &&
+         DefaultDepth(dpy, DefaultScreen(dpy)) == 16) {
+         format = gfxASurface::ImageFormatRGB16_565;
+     }
+ 
+     if (mSurfaceType == gfxASurface::SurfaceTypeXlib) {
+-        XRenderPictFormat* xfmt = gfxXlibSurface::FindRenderFormat(dpy, format);
++        if (!mIsTransparent  || mBackground) {
++            Visual* defaultVisual = DefaultVisualOfScreen(screen);
++            mCurrentSurface =
++                gfxXlibSurface::Create(screen, defaultVisual,
++                                       gfxIntSize(mWindow.width,
++                                                  mWindow.height));
++            return mCurrentSurface != nsnull;
++        }
++
++        XRenderPictFormat* xfmt = XRenderFindStandardFormat(dpy, PictStandardARGB32);
+         if (!xfmt) {
+             NS_ERROR("Need X falback surface, but FindRenderFormat failed");
+             return false;
+         }
+         mCurrentSurface =
+             gfxXlibSurface::Create(screen, xfmt,
+                                    gfxIntSize(mWindow.width,
+                                               mWindow.height));
+@@ -2720,17 +2729,17 @@ PluginInstanceChild::PaintRectToSurface(
+ #ifdef MOZ_X11
+     if (mIsTransparent && (GetQuirks() & PluginModuleChild::QUIRK_FLASH_EXPOSE_COORD_TRANSLATION)) {
+         // Work around a bug in Flash up to 10.1 d51 at least, where expose event
+         // top left coordinates within the plugin-rect and not at the drawable
+         // origin are misinterpreted.  (We can move the top left coordinate
+         // provided it is within the clipRect.), see bug 574583
+         plPaintRect.SetRect(0, 0, aRect.XMost(), aRect.YMost());
+     }
+-    if (renderSurface->GetType() != gfxASurface::SurfaceTypeXlib) {
++    if (mHelperSurface) {
+         // On X11 we can paint to non Xlib surface only with HelperSurface
+ #if (MOZ_PLATFORM_MAEMO == 5) || (MOZ_PLATFORM_MAEMO == 6)
+         // Don't use mHelperSurface if surface is image and mMaemoImageRendering is TRUE
+         if (!mMaemoImageRendering ||
+             renderSurface->GetType() != gfxASurface::SurfaceTypeImage)
+ #endif
+         renderSurface = mHelperSurface;
+     }
+@@ -2929,17 +2938,18 @@ PluginInstanceChild::ShowPluginFrame()
+          this, haveTransparentPixels ? " with alpha" : "",
+          rect.x, rect.y, rect.width, rect.height,
+          mCurrentSurface->GetSize().width, mCurrentSurface->GetSize().height));
+ 
+     if (CanPaintOnBackground()) {
+         PLUGIN_LOG_DEBUG(("  (on background)"));
+         // Source the background pixels ...
+         {
+-            nsRefPtr<gfxContext> ctx = new gfxContext(mCurrentSurface);
++            nsRefPtr<gfxContext> ctx =
++                new gfxContext(mHelperSurface ? mHelperSurface : mCurrentSurface);
+             ctx->SetSource(mBackground);
+             ctx->SetOperator(gfxContext::OPERATOR_SOURCE);
+             ctx->Rectangle(gfxRect(rect.x, rect.y, rect.width, rect.height));
+             ctx->Fill();
+         }
+         // ... and hand off to the plugin
+         // BEWARE: mBackground may die during this call
+         PaintRectToSurface(rect, mCurrentSurface, gfxRGBA(0.0, 0.0, 0.0, 0.0));
+@@ -3326,23 +3336,17 @@ PluginInstanceChild::SwapSurfaces()
+     mBackSurfaceActor = tmpactor;
+ #endif
+ 
+     // Outdated back surface... not usable anymore due to changed plugin size.
+     // Dropping obsolete surface
+     if (mCurrentSurface && mBackSurface &&
+         (mCurrentSurface->GetSize() != mBackSurface->GetSize() ||
+          mCurrentSurface->GetContentType() != mBackSurface->GetContentType())) {
+-        mCurrentSurface = nsnull;
+-#ifdef XP_WIN
+-        if (mCurrentSurfaceActor) {
+-            PPluginSurfaceChild::Send__delete__(mCurrentSurfaceActor);
+-            mCurrentSurfaceActor = NULL;
+-        }
+-#endif
++        ClearCurrentSurface();
+     }
+ }
+ 
+ void
+ PluginInstanceChild::ClearCurrentSurface()
+ {
+     mCurrentSurface = nsnull;
+ #ifdef XP_WIN

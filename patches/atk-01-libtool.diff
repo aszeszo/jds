@@ -1,0 +1,12 @@
+--- atk-2.0.1/configure.ac-orig	2011-07-06 00:27:07.917362791 -0500
++++ atk-2.0.1/configure.ac	2011-07-06 00:27:41.565852019 -0500
+@@ -88,8 +88,7 @@ dnl ====================================
+ AC_PROG_CC
+ 
+ # Initialize libtool
+-LT_PREREQ([2.2])
+-LT_INIT([disable-static win32-dll])
++AC_PROG_LIBTOOL
+ 
+ AC_CHECK_FUNCS(bind_textdomain_codeset)
+ 

@@ -1,0 +1,12 @@
+--- gvfs-1.6.7/common/gsysutils.c-orig	2011-10-11 00:57:14.811181662 -0500
++++ gvfs-1.6.7/common/gsysutils.c	2011-10-11 00:58:23.265611594 -0500
+@@ -20,6 +20,9 @@
+  * Author: Alexander Larsson <alexl@redhat.com>
+  */
+ 
++#define __EXTENSIONS__
++#define _XPG4_2
++
+ #include <config.h>
+ 
+ #if defined(HAVE_SYS_PARAM_H)

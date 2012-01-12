@@ -1,0 +1,178 @@
+--- gnome-session-3.1.3/configure.ac-orig	2011-07-07 05:57:21.376232163 -0500
++++ gnome-session-3.1.3/configure.ac	2011-07-07 05:59:35.847970574 -0500
+@@ -51,10 +51,21 @@ PKG_CHECK_MODULES(GNOME_SESSION,
+         gio-2.0 >= $GLIB_REQUIRED
+         gtk+-3.0 >= $GTK3_REQUIRED
+         dbus-glib-1 >= $DBUS_GLIB_REQUIRED
+-        upower-glib >= $UPOWER_REQUIRED
+         json-glib-1.0 >= $JSON_GLIB_REQUIRED
+ )
+ 
++PKG_CHECK_MODULES(UPOWER_GLIB,
++        upower-glib >= $UPOWER_REQUIRED,
++        have_upower_glib=yes,
++        have_upower_glib=no)
++if test "x$have_upower_glib" = "xyes" ; then
++  AC_DEFINE(HAVE_UPOWER_GLIB, [], [Define if we have upower_glib])
++fi
++AM_CONDITIONAL(HAVE_UPOWER_GLIB, test x$have_upower_glib = xyes)
++AC_SUBST(HAVE_UPOWER_GLIB)
++AC_SUBST(UPOWER_GLIB_CFLAGS)
++AC_SUBST(UPOWER_GLIB_LIBS)
++
+ PKG_CHECK_MODULES(SESSION_PROPERTIES,
+         glib-2.0 >= $GLIB_REQUIRED
+         gtk+-3.0 >= $GTK3_REQUIRED
+--- gnome-session-3.1.3/gnome-session/gsm-logout-dialog.c-orig	2011-07-07 06:02:02.990133427 -0500
++++ gnome-session-3.1.3/gnome-session/gsm-logout-dialog.c	2011-07-07 06:05:51.272311123 -0500
+@@ -27,7 +27,9 @@
+ #include <glib/gi18n.h>
+ #include <gtk/gtk.h>
+ 
++#if HAVE_UPOWER_GLIB
+ #include <upower.h>
++#endif
+ 
+ #include "gsm-logout-dialog.h"
+ #include "gsm-consolekit.h"
+@@ -52,7 +54,11 @@ struct _GsmLogoutDialogPrivate
+ {
+         GsmDialogLogoutType  type;
+ 
++#if HAVE_UPOWER_GLIB
+         UpClient            *up_client;
++#else
++        gpointer            *up_client;
++#endif
+         GsmConsolekit       *consolekit;
+ 
+         int                  timeout;
+@@ -144,7 +150,11 @@ gsm_logout_dialog_init (GsmLogoutDialog 
+         gtk_window_set_keep_above (GTK_WINDOW (logout_dialog), TRUE);
+         gtk_window_stick (GTK_WINDOW (logout_dialog));
+ 
++#if HAVE_UPOWER
+         logout_dialog->priv->up_client = up_client_new ();
++#else
++        logout_dialog->priv->up_client = NULL;
++#endif
+ 
+         logout_dialog->priv->consolekit = gsm_get_consolekit ();
+ 
+@@ -184,13 +194,21 @@ gsm_logout_dialog_destroy (GsmLogoutDial
+ static gboolean
+ gsm_logout_supports_system_suspend (GsmLogoutDialog *logout_dialog)
+ {
++#if HAVE_UPOWER_GLIB
+         return up_client_get_can_suspend (logout_dialog->priv->up_client);
++#else
++        return FALSE;
++#endif
+ }
+ 
+ static gboolean
+ gsm_logout_supports_system_hibernate (GsmLogoutDialog *logout_dialog)
+ {
++#if HAVE_UPOWER_GLIB
+         return up_client_get_can_hibernate (logout_dialog->priv->up_client);
++#else
++        return FALSE;
++#endif
+ }
+ 
+ static gboolean
+--- gnome-session-3.1.3/gnome-session/main.c-orig	2011-07-07 06:06:10.314939481 -0500
++++ gnome-session-3.1.3/gnome-session/main.c	2011-07-07 06:13:03.202799979 -0500
+@@ -31,9 +31,6 @@
+ #include <glib/gi18n.h>
+ #include <glib.h>
+ #include <gdk/gdkx.h>
+-#include <gtk/gtklabel.h>
+-#include <gtk/gtkvbox.h>
+-#include <gtk/gtkprogressbar.h>
+ #include <gtk/gtk.h>
+ 
+ #include <dbus/dbus.h>
+@@ -311,10 +308,10 @@ gsm_wait_for_unfinished_postrun () 
+ 
+     		gtk_container_add (GTK_CONTAINER (window), vbox);
+     		gtk_container_set_border_width (GTK_CONTAINER (window), 10);
+-    		gtk_box_pack_start_defaults (GTK_BOX (vbox), label);
++    		gtk_box_pack_start (GTK_BOX (vbox), label, TRUE, TRUE, 0);
+     		gtk_progress_bar_pulse (GTK_PROGRESS_BAR (progress));
+     		func_ref = g_timeout_add (100, postrun_progress_update, progress);
+-    		gtk_box_pack_start_defaults (GTK_BOX (vbox), progress);
++    		gtk_box_pack_start (GTK_BOX (vbox), progress, TRUE, TRUE, 0);
+ 
+     		gtk_window_set_position (GTK_WINDOW (window), GTK_WIN_POS_CENTER);
+ 
+--- gnome-session-3.1.3/gnome-session/gsm-manager.c-orig	2011-07-07 06:06:44.402323550 -0500
++++ gnome-session-3.1.3/gnome-session/gsm-manager.c	2011-07-07 06:09:08.566526684 -0500
+@@ -38,7 +38,9 @@
+ #include <dbus/dbus-glib.h>
+ #include <dbus/dbus-glib-lowlevel.h>
+ 
++#if HAVE_UPOWER_GLIB
+ #include <upower.h>
++#endif
+ 
+ #include <gtk/gtk.h> /* for logout dialog */
+ 
+@@ -154,7 +156,11 @@ struct GsmManagerPrivate
+         gboolean                dbus_disconnected : 1;
+ 
+         /* Interface with other parts of the system */
++#if HAVE_UPOWER_GLIB
+         UpClient               *up_client;
++#else
++        gpointer                up_client;
++#endif
+ 
+         GsmShell               *shell;
+         guint                   shell_end_session_dialog_canceled_id;
+@@ -1114,7 +1120,9 @@ manager_attempt_hibernate (GsmManager *m
+         GError   *error;
+         gboolean  ret;
+ 
++#if HAVE_UPOWER_GLIB
+         can_hibernate = up_client_get_can_hibernate (manager->priv->up_client);
++
+         if (can_hibernate) {
+ 
+                 /* lock the screen before we suspend */
+@@ -1128,6 +1136,7 @@ manager_attempt_hibernate (GsmManager *m
+                         g_error_free (error);
+                 }
+         }
++#endif
+ }
+ 
+ static void
+@@ -1137,6 +1146,7 @@ manager_attempt_suspend (GsmManager *man
+         GError   *error;
+         gboolean  ret;
+ 
++#if HAVE_UPOWER_GLIB
+         can_suspend = up_client_get_can_suspend (manager->priv->up_client);
+         if (can_suspend) {
+ 
+@@ -1151,6 +1161,7 @@ manager_attempt_suspend (GsmManager *man
+                         g_error_free (error);
+                 }
+         }
++#endif
+ }
+ 
+ static void
+@@ -2780,7 +2791,11 @@ gsm_manager_init (GsmManager *manager)
+                                       NULL,
+                                       NULL, NULL);
+ 
++#if HAVE_UPOWER_GLIB
+         manager->priv->up_client = up_client_new ();
++#else
++        manager->priv->up_client = NULL;
++#endif
+ 
+         manager->priv->shell = gsm_get_shell ();
+ }

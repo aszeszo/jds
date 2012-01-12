@@ -1,0 +1,97 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-l10ndocument-pl.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-l10ndocument-pl.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-pl.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-pl.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-l10ndocument-pl.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/baobab 0755 root bin
+d none share/gnome/help/baobab/pl 0755 root bin
+f none share/gnome/help/baobab/pl/baobab.xml=usr/share/gnome/help/baobab/pl/baobab.xml 0644 root bin
+d none share/gnome/help/baobab/pl/figures 0755 root bin
+s none share/gnome/help/baobab/pl/figures/baobab_fullscan.png=../../C/figures/baobab_fullscan.png
+s none share/gnome/help/baobab/pl/figures/baobab_prefs.png=../../C/figures/baobab_prefs.png
+s none share/gnome/help/baobab/pl/figures/baobab_remote.png=../../C/figures/baobab_remote.png
+s none share/gnome/help/baobab/pl/figures/baobab_ringschart1.png=../../C/figures/baobab_ringschart1.png
+s none share/gnome/help/baobab/pl/figures/baobab_ringschart2.png=../../C/figures/baobab_ringschart2.png
+s none share/gnome/help/baobab/pl/figures/baobab_treemaps.png=../../C/figures/baobab_treemaps.png
+s none share/gnome/help/baobab/pl/figures/baobab_window.png=../../C/figures/baobab_window.png
+d none share/gnome/help/control-center 0755 root bin
+d none share/gnome/help/control-center/pl 0755 root bin
+f none share/gnome/help/control-center/pl/control-center.xml=usr/share/gnome/help/control-center/pl/control-center.xml 0644 root bin
+d none share/gnome/help/copyright 0755 root bin
+d none share/gnome/help/copyright/pl 0755 root bin
+f none share/gnome/help/copyright/pl/COPYING.gnome.gz=usr/share/gnome/help/copyright/pl/COPYING.gnome.gz 0644 root bin
+d none share/gnome/help/dia 0755 root bin
+d none share/gnome/help/dia/pl 0755 root bin
+f none share/gnome/help/dia/pl/authors.xml=usr/share/gnome/help/dia/pl/authors.xml 0644 root bin
+f none share/gnome/help/dia/pl/dia.xml=usr/share/gnome/help/dia/pl/dia.xml 0644 root bin
+d none share/gnome/help/dia/pl/graphics 0755 root bin
+f none share/gnome/help/dia/pl/graphics/greendots.png=usr/share/gnome/help/dia/pl/graphics/greendots.png 0644 root bin
+f none share/gnome/help/dia/pl/graphics/home_network.png=usr/share/gnome/help/dia/pl/graphics/home_network.png 0644 root bin
+f none share/gnome/help/dia/pl/graphics/line_props.png=usr/share/gnome/help/dia/pl/graphics/line_props.png 0644 root bin
+f none share/gnome/help/dia/pl/intro.xml=usr/share/gnome/help/dia/pl/intro.xml 0644 root bin
+f none share/gnome/help/dia/pl/license.xml=usr/share/gnome/help/dia/pl/license.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-canvas.xml=usr/share/gnome/help/dia/pl/usage-canvas.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-customization.xml=usr/share/gnome/help/dia/pl/usage-customization.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-layers.xml=usr/share/gnome/help/dia/pl/usage-layers.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-loadsave.xml=usr/share/gnome/help/dia/pl/usage-loadsave.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-objects-selecting.xml=usr/share/gnome/help/dia/pl/usage-objects-selecting.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-objects-special.xml=usr/share/gnome/help/dia/pl/usage-objects-special.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-objects.xml=usr/share/gnome/help/dia/pl/usage-objects.xml 0644 root bin
+f none share/gnome/help/dia/pl/usage-quickstart.xml=usr/share/gnome/help/dia/pl/usage-quickstart.xml 0644 root bin
+d none share/gnome/help/eog 0755 root bin
+d none share/gnome/help/eog/pl 0755 root bin
+f none share/gnome/help/eog/pl/eog.xml=usr/share/gnome/help/eog/pl/eog.xml 0644 root bin
+d none share/gnome/help/eog/pl/figures 0755 root bin
+f none share/gnome/help/eog/pl/figures/eog_save_as_window.png=usr/share/gnome/help/eog/pl/figures/eog_save_as_window.png 0644 root bin
+f none share/gnome/help/eog/pl/figures/eog_start_window.png=usr/share/gnome/help/eog/pl/figures/eog_start_window.png 0644 root bin
+f none share/gnome/help/eog/pl/figures/eog_toolbar_editor_window.png=usr/share/gnome/help/eog/pl/figures/eog_toolbar_editor_window.png 0644 root bin
+d none share/gnome/help/fdl 0755 root bin
+d none share/gnome/help/fdl/pl 0755 root bin
+f none share/gnome/help/fdl/pl/fdl.xml=usr/share/gnome/help/fdl/pl/fdl.xml 0644 root bin
+d none share/gnome/help/sound-juicer 0755 root bin
+d none share/gnome/help/sound-juicer/pl 0755 root bin
+d none share/gnome/help/sound-juicer/pl/figures 0755 root bin
+f none share/gnome/help/sound-juicer/pl/figures/prefs.png=usr/share/gnome/help/sound-juicer/pl/figures/prefs.png 0644 root bin
+f none share/gnome/help/sound-juicer/pl/figures/startup.png=usr/share/gnome/help/sound-juicer/pl/figures/startup.png 0644 root bin
+f none share/gnome/help/sound-juicer/pl/legal.xml=usr/share/gnome/help/sound-juicer/pl/legal.xml 0644 root bin
+f none share/gnome/help/sound-juicer/pl/sound-juicer.xml=usr/share/gnome/help/sound-juicer/pl/sound-juicer.xml 0644 root bin
+d none share/gnome/help/totem 0755 root bin
+d none share/gnome/help/totem/pl 0755 root bin
+d none share/gnome/help/totem/pl/figures 0755 root bin
+s none share/gnome/help/totem/pl/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/pl/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/pl/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/pl/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+f none share/gnome/help/totem/pl/figures/totem_show_playlist_button.png=usr/share/gnome/help/totem/pl/figures/totem_show_playlist_button.png 0644 root bin
+f none share/gnome/help/totem/pl/figures/totem_start_window.png=usr/share/gnome/help/totem/pl/figures/totem_start_window.png 0644 root bin
+f none share/gnome/help/totem/pl/figures/totem_volume_maximum_button.png=usr/share/gnome/help/totem/pl/figures/totem_volume_maximum_button.png 0644 root bin
+f none share/gnome/help/totem/pl/figures/totem_volume_mute_button.png=usr/share/gnome/help/totem/pl/figures/totem_volume_mute_button.png 0644 root bin
+f none share/gnome/help/totem/pl/totem.xml=usr/share/gnome/help/totem/pl/totem.xml 0644 root bin
+d none share/gnome/help/vinagre 0755 root bin
+d none share/gnome/help/vinagre/pl 0755 root bin
+d none share/gnome/help/vinagre/pl/figures 0755 root bin
+f none share/gnome/help/vinagre/pl/figures/vinagre-auth-needed.png=usr/share/gnome/help/vinagre/pl/figures/vinagre-auth-needed.png 0644 root bin
+f none share/gnome/help/vinagre/pl/figures/vinagre-bookmarks-side-panel.png=usr/share/gnome/help/vinagre/pl/figures/vinagre-bookmarks-side-panel.png 0644 root bin
+f none share/gnome/help/vinagre/pl/figures/vinagre-connect-dialog.png=usr/share/gnome/help/vinagre/pl/figures/vinagre-connect-dialog.png 0644 root bin
+f none share/gnome/help/vinagre/pl/figures/vinagre-editing-bookmarks.png=usr/share/gnome/help/vinagre/pl/figures/vinagre-editing-bookmarks.png 0644 root bin
+f none share/gnome/help/vinagre/pl/figures/vinagre-saving-bookmarks.png=usr/share/gnome/help/vinagre/pl/figures/vinagre-saving-bookmarks.png 0644 root bin
+f none share/gnome/help/vinagre/pl/figures/vinagre-screenshot.png=usr/share/gnome/help/vinagre/pl/figures/vinagre-screenshot.png 0644 root bin
+f none share/gnome/help/vinagre/pl/vinagre.xml=usr/share/gnome/help/vinagre/pl/vinagre.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/baobab 0755 root bin
+f none share/omf/baobab/baobab-pl.omf=usr/share/omf/baobab/baobab-pl.omf 0644 root bin
+d none share/omf/control-center 0755 root bin
+f none share/omf/control-center/control-center-pl.omf=usr/share/omf/control-center/control-center-pl.omf 0644 root bin
+d none share/omf/eog 0755 root bin
+f none share/omf/eog/eog-pl.omf=usr/share/omf/eog/eog-pl.omf 0644 root bin
+d none share/omf/fdl 0755 root bin
+f none share/omf/fdl/fdl-pl.omf=usr/share/omf/fdl/fdl-pl.omf 0644 root bin
+d none share/omf/sound-juicer 0755 root bin
+f none share/omf/sound-juicer/sound-juicer-pl.omf=usr/share/omf/sound-juicer/sound-juicer-pl.omf 0644 root bin
+d none share/omf/totem 0755 root bin
+f none share/omf/totem/totem-pl.omf=usr/share/omf/totem/totem-pl.omf 0644 root bin
+d none share/omf/vinagre 0755 root bin
+f none share/omf/vinagre/vinagre-pl.omf=usr/share/omf/vinagre/vinagre-pl.omf 0644 root bin

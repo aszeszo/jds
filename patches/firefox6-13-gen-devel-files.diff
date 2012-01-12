@@ -1,0 +1,21 @@
+diff --git a/browser/installer/Makefile.in b/browser/installer/Makefile.in
+index 690bb38..46edf48 100644
+--- a/browser/installer/Makefile.in
++++ b/browser/installer/Makefile.in
+@@ -155,3 +155,5 @@ installer:: removed-files
+ ifdef INSTALLER_DIR
+ 	$(MAKE) -C $(INSTALLER_DIR)
+ endif
++
++libs:: make-sdk
+--- a/toolkit/library/Makefile.in
++++ b/toolkit/library/Makefile.in
+@@ -140,7 +140,7 @@
+ endif
+ endif
+ 
+-EXTRA_DSO_LDOPTS += $(LIBS_DIR) $(EXTRA_DSO_LIBS)
++EXTRA_DSO_LDOPTS += $(LIBS_DIR) $(EXTRA_DSO_LIBS) $(MKSHLIB_FORCE_ALL) $(LIBXUL_DIST)/lib/$(LIB_PREFIX)xpcomglue_s.$(LIB_SUFFIX) $(MKSHLIB_UNFORCE_ALL)
+ 
+ DEFINES += -DIMPL_XREAPI
+ 

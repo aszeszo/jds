@@ -1,0 +1,26 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWclutter.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWclutter.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWclutter.copyright
+f none share/doc/SUNWclutter/AUTHORS=usr/share/doc/SUNWclutter/AUTHORS 0444 root bin
+f none share/doc/SUNWclutter/COPYING.bz2=usr/share/doc/SUNWclutter/COPYING.bz2 0444 root bin
+f none share/doc/SUNWclutter/ChangeLog.bz2=usr/share/doc/SUNWclutter/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWclutter/NEWS.bz2=usr/share/doc/SUNWclutter/NEWS.bz2 0444 root bin
+f none share/doc/SUNWclutter/README=usr/share/doc/SUNWclutter/README 0444 root bin
+d none lib 0755 root bin
+d none lib/girepository-1.0 0755 root bin
+f none lib/girepository-1.0/Clutter-1.0.typelib=usr/lib/girepository-1.0/Clutter-1.0.typelib 0644 root bin
+f none lib/girepository-1.0/ClutterJson-1.0.typelib=usr/lib/girepository-1.0/ClutterJson-1.0.typelib 0644 root bin
+f none lib/girepository-1.0/Cogl-1.0.typelib=usr/lib/girepository-1.0/Cogl-1.0.typelib 0644 root bin
+s none lib/libclutter-glx-1.0.so=libclutter-glx-1.0.so.0.200.8
+s none lib/libclutter-glx-1.0.so.0=libclutter-glx-1.0.so.0.200.8
+f none lib/libclutter-glx-1.0.so.0.200.8=usr/lib/libclutter-glx-1.0.so.0.200.8 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWclutter 0755 root bin
+d none share/gir-1.0 0755 root bin
+f none share/gir-1.0/Clutter-1.0.gir=usr/share/gir-1.0/Clutter-1.0.gir 0644 root bin
+f none share/gir-1.0/ClutterJson-1.0.gir=usr/share/gir-1.0/ClutterJson-1.0.gir 0644 root bin
+f none share/gir-1.0/Cogl-1.0.gir=usr/share/gir-1.0/Cogl-1.0.gir 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libclutter-glx-1.0.3=usr/share/man/man3/libclutter-glx-1.0.3 0644 root bin

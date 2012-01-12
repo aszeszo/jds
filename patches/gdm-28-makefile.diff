@@ -1,0 +1,11 @@
+--- gdm-3.1.2/gui/simple-greeter/libgdmsimplegreeter/Makefile.am-orig	2011-07-14 17:05:53.673812751 -0500
++++ gdm-3.1.2/gui/simple-greeter/libgdmsimplegreeter/Makefile.am	2011-07-14 17:09:48.935113418 -0500
+@@ -26,6 +26,8 @@ libgdmsimplegreeter_la_SOURCES =		\
+ libgdmsimplegreeter_la_LIBADD =			\
+ 	$(GTK_LIBS)				\
+ 	$(top_builddir)/common/libgdmcommon.la	\
++	$(COMMON_LIBS)				\
++	-lsocket -lnsl				\
+ 	$(NULL)
+ 
+ libgdmsimplegreeter_la_LDFLAGS = 		\

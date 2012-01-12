@@ -1,0 +1,14 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-cache.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-cache.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-cache.copyright
+f none share/doc/SUNWdesktop-cache/AUTHORS=usr/share/doc/SUNWdesktop-cache/AUTHORS 0444 root bin
+f none share/doc/SUNWdesktop-cache/COPYING.bz2=usr/share/doc/SUNWdesktop-cache/COPYING.bz2 0444 root bin
+f none share/doc/SUNWdesktop-cache/ChangeLog.bz2=usr/share/doc/SUNWdesktop-cache/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWdesktop-cache/NEWS.bz2=usr/share/doc/SUNWdesktop-cache/NEWS.bz2 0444 root bin
+f none share/doc/SUNWdesktop-cache/README=usr/share/doc/SUNWdesktop-cache/README 0444 root bin
+d none share 0755 root sys
+d none share/desktop-cache 0755 root bin
+f none share/desktop-cache/find_newer=usr/share/desktop-cache/find_newer 0755 root bin
+f none share/desktop-cache/restart_fmri=usr/share/desktop-cache/restart_fmri 0755 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWdesktop-cache 0755 root bin

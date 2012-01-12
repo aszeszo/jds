@@ -1,0 +1,46 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopensp.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopensp.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopensp.copyright
+d none bin 0755 root bin
+s none bin/nsgmls=onsgmls
+f none bin/onsgmls=usr/bin/onsgmls 0755 root bin
+s none bin/osgml2xml=osx
+f none bin/osgmlnorm=usr/bin/osgmlnorm 0755 root bin
+f none bin/ospam=usr/bin/ospam 0755 root bin
+f none bin/ospcat=usr/bin/ospcat 0755 root bin
+f none bin/ospent=usr/bin/ospent 0755 root bin
+f none bin/osx=usr/bin/osx 0755 root bin
+s none bin/s2x=osx
+s none bin/sgml2xml=osx
+s none bin/sgmlnorm=osgmlnorm
+s none bin/spam=ospam
+s none bin/spcat=ospcat
+s none bin/spent=ospent
+d none lib 0755 root bin
+s none lib/libosp.so=libosp.so.4.0.0
+s none lib/libosp.so.4=libosp.so.4.0.0
+f none lib/libosp.so.4.0.0=usr/lib/libosp.so.4.0.0 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/nsgmls.1=usr/share/man/man1/nsgmls.1 0644 root bin
+f none share/man/man1/onsgmls.1=usr/share/man/man1/onsgmls.1 0644 root bin
+f none share/man/man1/osgml2xml.1=usr/share/man/man1/osgml2xml.1 0644 root bin
+f none share/man/man1/osgmlnorm.1=usr/share/man/man1/osgmlnorm.1 0644 root bin
+f none share/man/man1/ospam.1=usr/share/man/man1/ospam.1 0644 root bin
+f none share/man/man1/ospcat.1=usr/share/man/man1/ospcat.1 0644 root bin
+f none share/man/man1/ospent.1=usr/share/man/man1/ospent.1 0644 root bin
+f none share/man/man1/osx.1=usr/share/man/man1/osx.1 0644 root bin
+f none share/man/man1/s2x.1=usr/share/man/man1/s2x.1 0644 root bin
+f none share/man/man1/sgml2xml.1=usr/share/man/man1/sgml2xml.1 0644 root bin
+f none share/man/man1/sgmlnorm.1=usr/share/man/man1/sgmlnorm.1 0644 root bin
+f none share/man/man1/spam.1=usr/share/man/man1/spam.1 0644 root bin
+f none share/man/man1/spcat.1=usr/share/man/man1/spcat.1 0644 root bin
+f none share/man/man1/spent.1=usr/share/man/man1/spent.1 0644 root bin
+d none share/sgml 0755 root bin
+s none share/sgml/CATALOG.opensp=../../../..//var/lib/sgml/CATALOG.opensp
+d none share/sgml/opensp 0755 root bin
+f none share/sgml/opensp/japan.dcl=usr/share/sgml/opensp/japan.dcl 0644 root bin
+f none share/sgml/opensp/opensp-implied.dcl=usr/share/sgml/opensp/opensp-implied.dcl 0644 root bin
+f none share/sgml/opensp/xml.dcl=usr/share/sgml/opensp/xml.dcl 0644 root bin
+f none share/sgml/opensp/xml.soc=usr/share/sgml/opensp/xml.soc 0644 root bin

@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-utility-applets-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-utility-applets-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-utility-applets-devel.copyright
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/deskbar-applet.pc=usr/lib/pkgconfig/deskbar-applet.pc 0644 root bin

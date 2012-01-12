@@ -1,0 +1,40 @@
+#!/sbin/sh
+#
+# Copyright 2011, Oracle and/or its affiliates. All rights reserved.
+# Use is subject to license terms.
+#
+#pragma ident	"@(#)svc-accountsservice.src	1.1	06/02/06 SMI"
+#
+# For modifying parameters passed to dtlogin, do not edit
+# this script. Instead use svccfg(1m) to modify the SMF
+# repository. For example:
+#
+. /lib/svc/share/smf_include.sh
+
+if smf_is_nonglobalzone; then
+           /usr/sbin/svcadm disable -t svc:/system/accountsservice
+           echo "console-kit-daemon cannot be run in non-global zones"
+           sleep 5 &
+           exit $SMF_EXIT_OK
+fi
+
+case "$1" in
+'start')
+	FMRI=svc:/system/accountsservice:default
+
+	/usr/lib/accounts-daemon &
+
+	rc=$?
+	if [ $rc -ne 0 ]; then
+		echo "$0: accountsservice failed with $rc"
+		exit $SMF_EXIT_ERR_FATAL 
+	fi
+	;;
+
+*)
+	echo "Usage: $0 { start }"
+	exit $SMF_EXIT_ERR_FATAL
+	;;
+esac
+
+exit $SMF_EXIT_OK

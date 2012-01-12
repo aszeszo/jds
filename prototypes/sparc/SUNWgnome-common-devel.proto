@@ -1,0 +1,49 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-common-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-common-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-common-devel.copyright
+d none bin 0755 root bin
+f none bin/gnome-autogen.sh=usr/bin/gnome-autogen.sh 0755 root bin
+f none bin/gnome-doc-common=usr/bin/gnome-doc-common 0755 root bin
+f none bin/intltool-extract=usr/bin/intltool-extract 0755 root bin
+f none bin/intltool-merge=usr/bin/intltool-merge 0755 root bin
+f none bin/intltool-prepare=usr/bin/intltool-prepare 0755 root bin
+f none bin/intltool-update=usr/bin/intltool-update 0755 root bin
+f none bin/intltoolize=usr/bin/intltoolize 0755 root bin
+f none bin/pkg-config=usr/bin/pkg-config 0755 root bin
+d none lib 0755 root bin
+d none lib/intltool 0755 root bin
+d none lib/intltool/gettext-tools 0755 root bin
+d none lib/intltool/gettext-tools/lib 0755 root bin
+f none lib/intltool/gettext-tools/lib/charset.alias=usr/lib/intltool/gettext-tools/lib/charset.alias 0644 root bin
+f none lib/intltool/gettext-tools/lib/libgettextlib-0.16.1.so=usr/lib/intltool/gettext-tools/lib/libgettextlib-0.16.1.so 0755 root bin
+s none lib/intltool/gettext-tools/lib/libgettextlib.so=libgettextlib-0.16.1.so
+f none lib/intltool/gettext-tools/lib/libgettextsrc-0.16.1.so=usr/lib/intltool/gettext-tools/lib/libgettextsrc-0.16.1.so 0755 root bin
+s none lib/intltool/gettext-tools/lib/libgettextsrc.so=libgettextsrc-0.16.1.so
+f none lib/intltool/gettext-tools/msgmerge=usr/lib/intltool/gettext-tools/msgmerge 0755 root bin
+f none lib/intltool/gettext-tools/recode-sr-latin=usr/lib/intltool/gettext-tools/recode-sr-latin 0755 root bin
+f none lib/intltool/gettext-tools/xgettext=usr/lib/intltool/gettext-tools/xgettext 0755 root bin
+d none share 0755 root sys
+d none share/aclocal 0755 root other
+f none share/aclocal/gnome-common.m4=usr/share/aclocal/gnome-common.m4 0644 root bin
+f none share/aclocal/gnome-compiler-flags.m4=usr/share/aclocal/gnome-compiler-flags.m4 0644 root bin
+f none share/aclocal/intltool.m4=usr/share/aclocal/intltool.m4 0644 root bin
+f none share/aclocal/pkg.m4=usr/share/aclocal/pkg.m4 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/libasprintf 0755 root bin
+f none share/doc/libasprintf/autosprintf_all.html=usr/share/doc/libasprintf/autosprintf_all.html 0644 root bin
+d none share/gnome-common 0755 root bin
+d none share/gnome-common/data 0755 root bin
+f none share/gnome-common/data/omf.make=usr/share/gnome-common/data/omf.make 0644 root bin
+f none share/gnome-common/data/xmldocs.make=usr/share/gnome-common/data/xmldocs.make 0644 root bin
+d none share/info 0755 root bin
+f none share/info/autosprintf.info=usr/share/info/autosprintf.info 0644 root bin
+d none share/intltool 0755 root bin
+f none share/intltool/Makefile.in.in=usr/share/intltool/Makefile.in.in 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/intltool-extract.1=usr/share/man/man1/intltool-extract.1 0644 root bin
+f none share/man/man1/intltool-merge.1=usr/share/man/man1/intltool-merge.1 0644 root bin
+f none share/man/man1/intltool-prepare.1=usr/share/man/man1/intltool-prepare.1 0644 root bin
+f none share/man/man1/intltool-update.1=usr/share/man/man1/intltool-update.1 0644 root bin
+f none share/man/man1/intltoolize.1=usr/share/man/man1/intltoolize.1 0644 root bin
+f none share/man/man1/pkg-config.1=usr/share/man/man1/pkg-config.1 0644 root bin

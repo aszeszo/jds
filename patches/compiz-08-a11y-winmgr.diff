@@ -1,0 +1,56 @@
+--- ../../compiz	2010-02-08 09:59:43.000000000 +0000
++++ ../../../SUNWcompiz.hacked/compiz	2010-03-30 13:39:39.761614608 +0100
+@@ -1,6 +1,6 @@
+ #!/bin/bash
+ #
+-# Copyright (c) 2008, by Sun Microsystems, Inc.
++# Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved. 
+ #
+ # Checks if compiz can run with the current Xserver 
+ # display settings. If this is not the case 
+@@ -11,10 +11,12 @@
+ XDPYINFO="/usr/openwin/bin/xdpyinfo"
+ XPROP="/usr/openwin/bin/xprop"
+ SED="/usr/bin/sed"
++GCONFTOOL="/usr/bin/gconftool-2"
+ 
+ COMPIZ_BIN="/usr/bin/compiz-bin"
+ COMPIZ_OPTIONS="--indirect-rendering --fast-filter --replace"
+ COMPIZ_PLUGINS="ccp"
++GCONF_A11Y_KEY="/desktop/gnome/interface/accessibility"
+ 
+ DECORATOR="/usr/bin/gtk-window-decorator"
+ DECORATOR_OPTIONS="--replace"
+@@ -77,6 +79,20 @@
+   fi
+ }
+ 
++# Check whether accessibility is turn on or not
++check_accessibility()
++{
++  verbose "Checking for Acessibility: "
++  a11y_value=`$GCONFTOOL --get $GCONF_A11Y_KEY`
++  if [ "x$a11y_value" = "xtrue" ]; then
++    verbose "Enabled. \n"
++    return 1
++  else
++    verbose "       Disabled. \n"
++    return 0
++  fi
++}
++
+ # Check which card is present and add the right 
+ # environment variables
+ set_env_variables ()
+@@ -106,6 +122,11 @@
+ #
+ # Main routine of the script
+ #
++check_accessibility
++if [  $? -eq 1 ] ; then
++  abort_with_metacity 
++fi
++
+ check_trusted_session
+ if [  $? -eq 1 ] ; then
+   abort_with_metacity 

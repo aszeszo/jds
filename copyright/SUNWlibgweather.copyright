@@ -1,0 +1,32 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved. 
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for libgweather-%{libgweather.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libgweather-%{libgweather.version}
+
+    AUTHORS: List of authors of libgweather
+    libgweather/AUTHORS: List of authors of libgweather
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libgweather
+    libgweather/ChangeLog.bz2: List of all changes and authors of libgweather
+    NEWS.bz2: List of the most important changes to libgweather
+    README: More information about libgweather
+    data/README: More information about libgweather data
+    data/README.timezones: More information about libgweather timezone data
+    libgweather/README: More information about libgweather
+
+  The sources of libgweather-%{libgweather.version} were downloaded
+  from %{libgweather.SOURCE0.url}

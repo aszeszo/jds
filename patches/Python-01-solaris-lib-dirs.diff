@@ -1,0 +1,172 @@
+--- Python-2.4.6/setup.py.orig	2006-10-09 06:41:25.000000000 +1300
++++ Python-2.4.6/setup.py	2009-08-20 22:46:18.561556263 +1200
+@@ -239,9 +239,10 @@
+         return sys.platform
+ 
+     def detect_modules(self):
+-        # Ensure that /usr/local is always used
+-        add_dir_to_list(self.compiler.library_dirs, '/usr/local/lib')
+-        add_dir_to_list(self.compiler.include_dirs, '/usr/local/include')
++        if sys.platform != 'sunos5':
++            # Ensure that /usr/local is always used
++            add_dir_to_list(self.compiler.library_dirs, '/usr/local/lib')
++            add_dir_to_list(self.compiler.include_dirs, '/usr/local/include')
+ 
+         # Add paths to popular package managers on OS X/darwin
+         if sys.platform == "darwin":
+@@ -268,7 +269,7 @@
+         # be assumed that no additional -I,-L directives are needed.
+         lib_dirs = self.compiler.library_dirs + [
+             '/lib64', '/usr/lib64',
+-            '/lib', '/usr/lib',
++            '/lib', '/usr/lib'
+             ]
+         inc_dirs = self.compiler.include_dirs + ['/usr/include']
+         exts = []
+@@ -481,11 +482,23 @@
+         exts.append( Extension('_csv', ['_csv.c']) )
+ 
+         # socket(2)
++	socket_libs = []
++        if self.compiler.find_library_file(lib_dirs,
++                                           'socket'):
++            socket_libs.append('socket')
++        if self.compiler.find_library_file(lib_dirs,
++                                           'nsl'):
++            socket_libs.append('nsl')
++        if self.compiler.find_library_file(lib_dirs,
++                                           'resolv'):
++            socket_libs.append('resolv')
+         exts.append( Extension('_socket', ['socketmodule.c'],
+-                               depends = ['socketmodule.h']) )
++                               depends = ['socketmodule.h'],
++                               libraries = socket_libs) )
+         # Detect SSL support for the socket module (via _ssl)
+         ssl_incs = find_file('openssl/ssl.h', inc_dirs,
+-                             ['/usr/local/ssl/include',
++                             ['/usr/sfw/include',
++                              '/usr/local/ssl/include',
+                               '/usr/contrib/ssl/include/'
+                              ]
+                              )
+@@ -494,8 +507,13 @@
+                                ['/usr/kerberos/include'])
+             if krb5_h:
+                 ssl_incs += krb5_h
++	if sys.maxint == 2147483647L:
++	    sfw_libdir = '/usr/sfw/lib';
++	else:
++	    sfw_libdir = '/usr/sfw/lib/64';
+         ssl_libs = find_library_file(self.compiler, 'ssl',lib_dirs,
+-                                     ['/usr/local/ssl/lib',
++                                     [sfw_libdir,
++                                      '/usr/local/ssl/lib',
+                                       '/usr/contrib/ssl/lib/'
+                                      ] )
+ 
+@@ -504,6 +522,7 @@
+             exts.append( Extension('_ssl', ['_ssl.c'],
+                                    include_dirs = ssl_incs,
+                                    library_dirs = ssl_libs,
++                                   runtime_library_dirs = ssl_libs,
+                                    libraries = ['ssl', 'crypto'],
+                                    depends = ['socketmodule.h']), )
+ 
+@@ -727,6 +746,14 @@
+ 
+         # Curses support, requiring the System V version of curses, often
+         # provided by the ncurses library.
++        curses_lib_dirs = []
++        curses_inc_dirs = []
++        if platform == 'sunos5':
++            # look for ncurses in /usr/gnu on Solaris
++            curses_inc_dirs.append('/usr/include/ncurses')
++            curses_lib_dirs.append('/usr/gnu/lib')
++            curses_lib_dirs.append('/usr/gnu/lib/amd64')
++            curses_lib_dirs.append('/usr/gnu/lib/sparcv9')
+         panel_library = 'panel'
+         if (self.compiler.find_library_file(lib_dirs, 'ncursesw')):
+             curses_libs = ['ncursesw']
+@@ -735,10 +760,13 @@
+             panel_library = 'panelw'
+             exts.append( Extension('_curses', ['_cursesmodule.c'],
+                                    libraries = curses_libs) )
+-        elif (self.compiler.find_library_file(lib_dirs, 'ncurses')):
++        elif (self.compiler.find_library_file(lib_dirs + curses_lib_dirs, 'ncurses')):
+             curses_libs = ['ncurses']
+             exts.append( Extension('_curses', ['_cursesmodule.c'],
+-                                   libraries = curses_libs) )
++                                   libraries = curses_libs,
++                                   library_dirs = curses_lib_dirs,
++                                   runtime_library_dirs = curses_lib_dirs,
++                                   include_dirs = curses_inc_dirs ) )
+         elif (self.compiler.find_library_file(lib_dirs, 'curses')
+               and platform != 'darwin'):
+                 # OSX has an old Berkeley curses, not good enough for
+@@ -755,9 +783,12 @@
+ 
+         # If the curses module is enabled, check for the panel module
+         if (module_enabled(exts, '_curses') and
+-            self.compiler.find_library_file(lib_dirs, panel_library)):
++            self.compiler.find_library_file(lib_dirs + curses_lib_dirs, panel_library)):
+             exts.append( Extension('_curses_panel', ['_curses_panel.c'],
+-                                   libraries = [panel_library] + curses_libs) )
++                                   libraries = [panel_library] + curses_libs,
++                                   include_dirs = curses_inc_dirs,
++                                   library_dirs = curses_lib_dirs,
++                                   runtime_library_dirs = curses_lib_dirs ) )
+ 
+ 
+         # Andrew Kuchling's zlib module.  Note that some versions of zlib
+@@ -1023,13 +1054,23 @@
+ 
+         # Assume we haven't found any of the libraries or include files
+         # The versions with dots are used on Unix, and the versions without
+-        # dots on Windows, for detection by cygwin.
++        # dots on Windows, for detection by cygwin. 
++	added_lib_dirs = []
++	tcl_tk_lib_dirs = ['/usr/sfw/lib']
++	tcl_tk_inc_dirs = ['/usr/sfw/include']
+         tcllib = tklib = tcl_includes = tk_includes = None
+         for version in ['8.5', '85', '8.4', '84', '8.3', '83', '8.2',
+                         '82', '8.1', '81', '8.0', '80']:
+-            tklib = self.compiler.find_library_file(lib_dirs, 'tk' + version)
+-            tcllib = self.compiler.find_library_file(lib_dirs, 'tcl' + version)
++            tklib = self.compiler.find_library_file(lib_dirs, 'tk' + version, tcl_tk_lib_dirs)
++            tcllib = self.compiler.find_library_file(lib_dirs, 'tcl' + version, tcl_tk_lib_dirs)
++            if tklib and tcllib:
++                # Exit the loop when we've found the Tcl/Tk libraries
++                break
++            tklib = self.compiler.find_library_file(tcl_tk_lib_dirs, 'tk' + version)
++            tcllib = self.compiler.find_library_file(tcl_tk_lib_dirs, 'tcl' + version)
+             if tklib and tcllib:
++		# found the libs in a non-standard dir
++		added_lib_dirs.append(os.path.dirname(tcllib))
+                 # Exit the loop when we've found the Tcl/Tk libraries
+                 break
+ 
+@@ -1047,6 +1088,7 @@
+             for dir in inc_dirs:
+                 tcl_include_sub += [dir + os.sep + "tcl" + dotversion]
+                 tk_include_sub += [dir + os.sep + "tk" + dotversion]
++	    tcl_include_sub += tcl_tk_inc_dirs
+             tk_include_sub += tcl_include_sub
+             tcl_includes = find_file('tcl.h', inc_dirs, tcl_include_sub)
+             tk_includes = find_file('tk.h', inc_dirs, tk_include_sub)
+@@ -1058,7 +1100,7 @@
+ 
+         # OK... everything seems to be present for Tcl/Tk.
+ 
+-        include_dirs = [] ; libs = [] ; defs = [] ; added_lib_dirs = []
++        include_dirs = [] ; libs = [] ; defs = []
+         for dir in tcl_includes + tk_includes:
+             if dir not in include_dirs:
+                 include_dirs.append(dir)
+@@ -1111,6 +1153,7 @@
+                         include_dirs = include_dirs,
+                         libraries = libs,
+                         library_dirs = added_lib_dirs,
++                        runtime_library_dirs = added_lib_dirs
+                         )
+         self.extensions.append(ext)
+ 

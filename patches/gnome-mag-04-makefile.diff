@@ -1,0 +1,11 @@
+--- gnome-mag-0.16.2/magnifier/Makefile.am-orig	2011-10-24 11:47:44.687315172 -0500
++++ gnome-mag-0.16.2/magnifier/Makefile.am	2011-10-24 11:49:55.614286885 -0500
+@@ -78,7 +78,7 @@ GNOME_Magnifier_module_la_SOURCES = \
+ 	GNOME_Magnifier-imodule.c
+ 
+ # The X_LIBS must NOT be searched first or it breaks the build
+-LDADD = libgnome-mag.la $(DEPS_LIBS) $(X_LIBS) $(COLORBLIND_LIBS)
++LDADD = libgnome-mag.la $(DEPS_LIBS) $(X_LIBS) $(COLORBLIND_LIBS) -lm
+ 
+ serverinfodir= $(libdir)/bonobo/servers
+ $(server_in_files): $(server_in_files).in

@@ -1,0 +1,24 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-fonts.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-fonts.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-fonts.copyright
+d none share 0755 root sys
+d none share/fonts 0755 root bin
+d none share/fonts/TrueType 0755 root bin
+d none share/fonts/TrueType/baekmuk 0755 root bin
+f none share/fonts/TrueType/baekmuk/batang.ttf=usr/share/fonts/TrueType/baekmuk/batang.ttf 0755 root bin
+f none share/fonts/TrueType/baekmuk/dotum.ttf=usr/share/fonts/TrueType/baekmuk/dotum.ttf 0755 root bin
+f none share/fonts/TrueType/baekmuk/gulim.ttf=usr/share/fonts/TrueType/baekmuk/gulim.ttf 0755 root bin
+f none share/fonts/TrueType/baekmuk/hline.ttf=usr/share/fonts/TrueType/baekmuk/hline.ttf 0755 root bin
+d none share/fonts/TrueType/freefont 0755 root bin
+f none share/fonts/TrueType/freefont/FreeMono.ttf=usr/share/fonts/TrueType/freefont/FreeMono.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeMonoBold.ttf=usr/share/fonts/TrueType/freefont/FreeMonoBold.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeMonoBoldOblique.ttf=usr/share/fonts/TrueType/freefont/FreeMonoBoldOblique.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeMonoOblique.ttf=usr/share/fonts/TrueType/freefont/FreeMonoOblique.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSans.ttf=usr/share/fonts/TrueType/freefont/FreeSans.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSansBold.ttf=usr/share/fonts/TrueType/freefont/FreeSansBold.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSansBoldOblique.ttf=usr/share/fonts/TrueType/freefont/FreeSansBoldOblique.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSansOblique.ttf=usr/share/fonts/TrueType/freefont/FreeSansOblique.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSerif.ttf=usr/share/fonts/TrueType/freefont/FreeSerif.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSerifBold.ttf=usr/share/fonts/TrueType/freefont/FreeSerifBold.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSerifBoldItalic.ttf=usr/share/fonts/TrueType/freefont/FreeSerifBoldItalic.ttf 0755 root bin
+f none share/fonts/TrueType/freefont/FreeSerifItalic.ttf=usr/share/fonts/TrueType/freefont/FreeSerifItalic.ttf 0755 root bin

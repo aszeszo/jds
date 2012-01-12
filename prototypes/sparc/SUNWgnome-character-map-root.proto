@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-character-map-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-character-map-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-character-map-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gucharmap.schemas=etc/gconf/schemas/gucharmap.schemas 0644 root sys

@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-search-thunderbird.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-search-thunderbird.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-search-thunderbird.copyright
+d none lib 0755 root bin
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/extensions 0755 root bin
+d none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7} 0755 root bin
+d none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/chrome 0755 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/chrome.manifest=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/chrome.manifest 0644 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/chrome/tracker.jar=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/chrome/tracker.jar 0644 root bin
+d none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components 0755 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerCommandLine.js=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerCommandLine.js 0644 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerIndexer.js=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerIndexer.js 0644 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerQueue.js=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerQueue.js 0644 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerSettings.js=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/components/TrackerSettings.js 0644 root bin
+d none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/defaults 0755 root bin
+d none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/defaults/preferences 0755 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/defaults/preferences/default.js=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/defaults/preferences/default.js 0644 root bin
+f none lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/install.rdf=usr/lib/thunderbird/extensions/{b656ef18-fd76-45e6-95cc-8043f26361e7}/install.rdf 0644 root bin

@@ -1,0 +1,11 @@
+--- gobject-introspection-0.10.8/girepository/cmph/chd.c-orig	2011-07-05 13:04:46.895661207 -0500
++++ gobject-introspection-0.10.8/girepository/cmph/chd.c	2011-07-05 13:05:54.906782878 -0500
+@@ -203,7 +203,7 @@ int chd_dump(cmph_t *mphf, FILE *fd)
+ 	nbytes = fwrite(&data->packed_chd_phf_size, sizeof(cmph_uint32), (size_t)1, fd);
+ 	nbytes = fwrite(data->packed_chd_phf, data->packed_chd_phf_size, (size_t)1, fd);
+ 
+-	DEBUGP("Dumping compressed rank structure with %u bytes to disk\n", buflen);
++	DEBUGP("Dumping compressed rank structure with n bytes to disk\n");
+ 	nbytes = fwrite(&data->packed_cr_size, sizeof(cmph_uint32), (size_t)1, fd);
+ 	nbytes = fwrite(data->packed_cr, data->packed_cr_size, (size_t)1, fd);
+ 	

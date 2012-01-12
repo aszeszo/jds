@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapoc.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapoc.depend
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWapoc.preremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapoc.copyright
+d none lib 0755 root bin
+d none lib/apoc 0755 root bin
+f none lib/apoc/apocd=usr/lib/apoc/apocd 0744 root bin
+f none lib/apoc/libFileAccess.so=usr/lib/apoc/libFileAccess.so 0755 root bin
+f none lib/apoc/libdb.so.1=usr/lib/apoc/libdb.so.1 0755 root bin
+f none lib/apoc/libdb_java-4.2.so=usr/lib/apoc/libdb_java-4.2.so 0755 root bin
+s none lib/libapoc.so=libapoc.so.1
+f none lib/libapoc.so.1=usr/lib/libapoc.so.1 0755 root bin
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/apoc 0755 root bin
+f none share/lib/apoc/apocd.jar=usr/share/lib/apoc/apocd.jar 0644 root bin
+f none share/lib/apoc/db.jar=usr/share/lib/apoc/db.jar 0644 root bin

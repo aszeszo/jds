@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-wm-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-wm-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-wm-devel.copyright
+d none demo 0755 root bin
+d none demo/jds 0755 root bin
+d none demo/jds/bin 0755 root bin
+f none demo/jds/bin/metacity-window-demo=usr/demo/jds/bin/metacity-window-demo 0755 root bin
+d none include 0755 root bin
+d none include/metacity-1 0755 root bin
+d none include/metacity-1/metacity-private 0755 root bin
+f none include/metacity-1/metacity-private/boxes.h=usr/include/metacity-1/metacity-private/boxes.h 0644 root bin
+f none include/metacity-1/metacity-private/common.h=usr/include/metacity-1/metacity-private/common.h 0644 root bin
+f none include/metacity-1/metacity-private/gradient.h=usr/include/metacity-1/metacity-private/gradient.h 0644 root bin
+f none include/metacity-1/metacity-private/preview-widget.h=usr/include/metacity-1/metacity-private/preview-widget.h 0644 root bin
+f none include/metacity-1/metacity-private/theme-parser.h=usr/include/metacity-1/metacity-private/theme-parser.h 0644 root bin
+f none include/metacity-1/metacity-private/theme.h=usr/include/metacity-1/metacity-private/theme.h 0644 root bin
+f none include/metacity-1/metacity-private/util.h=usr/include/metacity-1/metacity-private/util.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libmetacity-private.pc=usr/lib/pkgconfig/libmetacity-private.pc 0644 root bin

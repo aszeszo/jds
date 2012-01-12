@@ -1,0 +1,38 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk2-engines.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk2-engines.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk2-engines.copyright
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/AUTHORS=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/AUTHORS 0444 root bin
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/COPYING.bz2=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/ChangeLog.bz2=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/NEWS.bz2=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/README=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/README 0444 root bin
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/engines/clearlooks/AUTHORS=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/engines/clearlooks/AUTHORS 0444 root bin
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/engines/hc/AUTHORS=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/engines/hc/AUTHORS 0444 root bin
+f none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/po/ChangeLog.bz2=usr/share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/po/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/gtk-2.0 0755 root bin
+d none lib/gtk-2.0/2.10.0 0755 root bin
+d none lib/gtk-2.0/2.10.0/engines 0755 root bin
+f none lib/gtk-2.0/2.10.0/engines/libclearlooks.so=usr/lib/gtk-2.0/2.10.0/engines/libclearlooks.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/engines/libhcengine.so=usr/lib/gtk-2.0/2.10.0/engines/libhcengine.so 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/gtk-2.0 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0/engines 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/engines/libclearlooks.so=usr/lib/sparcv9/gtk-2.0/2.10.0/engines/libclearlooks.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/engines/libhcengine.so=usr/lib/sparcv9/gtk-2.0/2.10.0/engines/libhcengine.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgtk2-engines 0755 root bin
+d none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1 0755 root bin
+d none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/engines 0755 root bin
+d none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/engines/clearlooks 0755 root bin
+d none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/engines/hc 0755 root bin
+d none share/doc/SUNWgtk2-engines/gtk-engines-2.20.1/po 0755 root bin
+d none share/gtk-engines 0755 root bin
+f none share/gtk-engines/clearlooks.xml=usr/share/gtk-engines/clearlooks.xml 0644 root bin
+f none share/gtk-engines/hcengine.xml=usr/share/gtk-engines/hcengine.xml 0644 root bin
+d none share/themes 0755 root bin
+d none share/themes/Clearlooks 0755 root bin
+d none share/themes/Clearlooks/gtk-2.0 0755 root bin
+f none share/themes/Clearlooks/gtk-2.0/gtkrc=usr/share/themes/Clearlooks/gtk-2.0/gtkrc 0644 root bin

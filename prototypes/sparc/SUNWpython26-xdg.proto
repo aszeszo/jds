@@ -1,0 +1,40 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpython26-xdg.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpython26-xdg.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpython26-xdg.copyright
+f none share/doc/SUNWpython26-xdg/AUTHORS=usr/share/doc/SUNWpython26-xdg/AUTHORS 0444 root bin
+f none share/doc/SUNWpython26-xdg/COPYING.bz2=usr/share/doc/SUNWpython26-xdg/COPYING.bz2 0444 root bin
+f none share/doc/SUNWpython26-xdg/ChangeLog.bz2=usr/share/doc/SUNWpython26-xdg/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWpython26-xdg/PKG-INFO=usr/share/doc/SUNWpython26-xdg/PKG-INFO 0444 root bin
+f none share/doc/SUNWpython26-xdg/README=usr/share/doc/SUNWpython26-xdg/README 0444 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+f none lib/python2.6/vendor-packages/pyxdg-0.19-py2.6.egg-info=usr/lib/python2.6/vendor-packages/pyxdg-0.19-py2.6.egg-info 0644 root bin
+d none lib/python2.6/vendor-packages/xdg 0755 root bin
+f none lib/python2.6/vendor-packages/xdg/BaseDirectory.py=usr/lib/python2.6/vendor-packages/xdg/BaseDirectory.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/BaseDirectory.pyc=usr/lib/python2.6/vendor-packages/xdg/BaseDirectory.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Config.py=usr/lib/python2.6/vendor-packages/xdg/Config.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Config.pyc=usr/lib/python2.6/vendor-packages/xdg/Config.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/DesktopEntry.py=usr/lib/python2.6/vendor-packages/xdg/DesktopEntry.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/DesktopEntry.pyc=usr/lib/python2.6/vendor-packages/xdg/DesktopEntry.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Exceptions.py=usr/lib/python2.6/vendor-packages/xdg/Exceptions.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Exceptions.pyc=usr/lib/python2.6/vendor-packages/xdg/Exceptions.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/IconTheme.py=usr/lib/python2.6/vendor-packages/xdg/IconTheme.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/IconTheme.pyc=usr/lib/python2.6/vendor-packages/xdg/IconTheme.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/IniFile.py=usr/lib/python2.6/vendor-packages/xdg/IniFile.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/IniFile.pyc=usr/lib/python2.6/vendor-packages/xdg/IniFile.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Locale.py=usr/lib/python2.6/vendor-packages/xdg/Locale.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Locale.pyc=usr/lib/python2.6/vendor-packages/xdg/Locale.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Menu.py=usr/lib/python2.6/vendor-packages/xdg/Menu.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Menu.pyc=usr/lib/python2.6/vendor-packages/xdg/Menu.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/MenuEditor.py=usr/lib/python2.6/vendor-packages/xdg/MenuEditor.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/MenuEditor.pyc=usr/lib/python2.6/vendor-packages/xdg/MenuEditor.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Mime.py=usr/lib/python2.6/vendor-packages/xdg/Mime.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/Mime.pyc=usr/lib/python2.6/vendor-packages/xdg/Mime.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/RecentFiles.py=usr/lib/python2.6/vendor-packages/xdg/RecentFiles.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/RecentFiles.pyc=usr/lib/python2.6/vendor-packages/xdg/RecentFiles.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/__init__.py=usr/lib/python2.6/vendor-packages/xdg/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/xdg/__init__.pyc=usr/lib/python2.6/vendor-packages/xdg/__init__.pyc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWpython26-xdg 0755 root bin

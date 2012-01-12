@@ -1,0 +1,281 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - rhythmbox-%{rhythmbox.version}
+  - totem-%{totem.version}
+
+Licensing and copyright information for rhythmbox-%{rhythmbox.version}:
+
+ License: GNU General Public License Version 2
+ License: MIT License
+ License: BSD License
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU GPL
+  AUTHORS: List of authors of %{rhythmbox.name}
+  NEWS.bz2: List of the most important changes in %{rhythmbox.name}
+  ChangeLog.bz2: List of all changes and authors of %{rhythmbox.name}
+  help/ChangeLog.bz2: List of all changes and authors of %{rhythmbox.name} Help
+  po/ChangeLog.bz2: List of all changes and authors of %{rhythmbox.name}.
+  README: More information about %{rhythmbox.name}
+
+  The %{rhythmbox.name} source files contain the following GPL license
+  exception:
+
+  ---
+
+  The Rhythmbox authors hereby grants permission for non-GPL compatible
+  GStreamer plugins to be used and distributed together with GStreamer
+  and Rhythmbox. This permission is above and beyond the permissions granted
+  by the GPL license by which Rhythmbox is covered. If you modify this code
+  you may extend this exception to your version of the code, but you are not
+  obligated to do so. If you do not wish to do so, delete this exception
+  statement from your version.
+
+  ---
+
+  Some code uses this MIT license:
+
+  Copyright (C) 2008 Novell, Inc.
+  Copyright (C) 2008 Christophe Fergeau <teuf@gnome.org>
+
+  Permission is hereby granted, free of charge, to any person obtaining
+  a copy of this software and associated documentation files (the
+  "Software"), to deal in the Software without restriction, including
+  without limitation the rights to use, copy, modify, merge, publish,
+  distribute, sublicense, and/or sell copies of the Software, and to
+  permit persons to whom the Software is furnished to do so, subject to
+  the following conditions:
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+  ---
+
+  The %{rhythmbox.name} coherance plugin module is licensed under the MIT
+  license specified at this URL: http://opensource.org/licenses/mit-license.php
+
+  ---
+
+  The podcast plugin uses this BSD license:
+
+  Copyright (C) 2004, Apple Computer, Inc. and The Mozilla Foundation.
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+
+  1. Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+  3. Neither the names of Apple Computer, Inc. ("Apple") or The Mozilla
+  Foundation ("Mozilla") nor the names of their contributors may be used
+  to endorse or promote products derived from this software without
+  specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY APPLE, MOZILLA AND THEIR CONTRIBUTORS "AS
+  IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+  TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+  PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL APPLE, MOZILLA OR
+  THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+  TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+  ---
+
+  Some of the podcast plugin code contains this license.  In the use in
+  rhythmbox, the LGPL 2.1 license is used:
+
+  ***** BEGIN LICENSE BLOCK *****
+  Version: MPL 1.1/GPL 2.0/LGPL 2.1
+
+  The contents of this file are subject to the Mozilla Public License Version
+  1.1 (the "License"); you may not use this file except in compliance with
+  the License. You may obtain a copy of the License at
+  http://www.mozilla.org/MPL/
+
+  Software distributed under the License is distributed on an "AS IS" basis,
+  WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+  for the specific language governing rights and limitations under the
+  License.
+
+  The Original Code is mozilla.org code.
+
+  The Initial Developer of the Original Code is
+  Netscape Communications Corporation.
+  Portions created by the Initial Developer are Copyright (C) 1998
+  the Initial Developer. All Rights Reserved.
+
+  Contributor(s):
+
+  Alternatively, the contents of this file may be used under the terms of
+  either the GNU General Public License Version 2 or later (the "GPL"), or
+  the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+  in which case the provisions of the GPL or the LGPL are applicable instead
+  of those above. If you wish to allow use of your version of this file only
+  under the terms of either the GPL or the LGPL, and not to allow others to
+  use your version of this file under the terms of the MPL, indicate your
+  decision by deleting the provisions above and replace them with the notice
+  and other provisions required by the GPL or the LGPL. If you do not delete
+  the provisions above, a recipient may use your version of this file under
+  the terms of any one of the MPL, the GPL or the LGPL.
+
+  * ***** END LICENSE BLOCK *****
+
+  ---
+
+ The sources of rhythmbox-%{rhythmbox.version} were downloaded
+ from %{rhythmbox.SOURCE0.url}
+
+Licensing and copyright information for totem-%{totem.version}:
+
+ License: GNU General Public License Version 2
+ License: GNU Library General Public License Version 2
+ License: BSD License
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  license_change.bz2: Information about the GPL exception to allow
+                      non-GPL compatible GStreamer plugins to be used
+                      and distributed together with GStreamer and Totem.
+  AUTHORS: List of authors of %{totem.name}
+  NEWS.bz2: List of the most important changes in %{totem.name}
+  ChangeLog.bz2: List of all changes and authors of %{totem.name}
+  help/ChangeLog.bz2: List of all changes and authors of %{totem.name} Help
+  po/ChangeLog.bz2: List of all changes and authors of %{totem.name}.
+  README: More information about %{totem.name}
+
+  ---
+
+  The jamendo plugin uses this BSD license:
+
+  Copyright (c) 2008 David JL <izimobil@gmail.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a
+  copy of this software and associated documentation files (the "Software"),
+  to deal in the Software without restriction, including without limitation
+  the rights to use, copy, modify, merge, publish, distribute, sublicense,
+  and/or sell copies of the Software, and to permit persons to whom the
+  Software is furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL
+  THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+  DEALINGS IN THE SOFTWARE.
+
+  ---
+
+  Some parts of the browser plugin code uses this BSD license:
+
+  Copyright (C) 2004, Apple Computer, Inc. and The Mozilla Foundation.
+  All rights reserved.
+
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are
+  met:
+
+  1. Redistributions of source code must retain the above copyright
+  notice, this list of conditions and the following disclaimer.
+  2. Redistributions in binary form must reproduce the above copyright
+  notice, this list of conditions and the following disclaimer in the
+  documentation and/or other materials provided with the distribution.
+  3. Neither the names of Apple Computer, Inc. ("Apple") or The Mozilla
+  Foundation ("Mozilla") nor the names of their contributors may be used
+  to endorse or promote products derived from this software without
+  specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY APPLE, MOZILLA AND THEIR CONTRIBUTORS "AS
+  IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+  TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+  PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL APPLE, MOZILLA OR
+  THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+  SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+  TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+  ---
+
+  Some parts of the browser plugin code contains this license.  In the
+  use in totem, the LGPL 2.1 license is used:
+
+  ***** BEGIN LICENSE BLOCK *****
+  Version: MPL 1.1/GPL 2.0/LGPL 2.1
+
+  The contents of this file are subject to the Mozilla Public License Version
+  1.1 (the "License"); you may not use this file except in compliance with
+  the License. You may obtain a copy of the License at
+  http://www.mozilla.org/MPL/
+
+  Software distributed under the License is distributed on an "AS IS" basis,
+  WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+  for the specific language governing rights and limitations under the
+  License.
+
+  The Original Code is mozilla.org code.
+
+  The Initial Developer of the Original Code is
+  Netscape Communications Corporation.
+  Portions created by the Initial Developer are Copyright (C) 1998
+  the Initial Developer. All Rights Reserved.
+
+  Contributor(s):
+
+  Alternatively, the contents of this file may be used under the terms of
+  either the GNU General Public License Version 2 or later (the "GPL"), or
+  the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+  in which case the provisions of the GPL or the LGPL are applicable instead
+  of those above. If you wish to allow use of your version of this file only
+  under the terms of either the GPL or the LGPL, and not to allow others to
+  use your version of this file under the terms of the MPL, indicate your
+  decision by deleting the provisions above and replace them with the notice
+  and other provisions required by the GPL or the LGPL. If you do not delete
+  the provisions above, a recipient may use your version of this file under
+  the terms of any one of the MPL, the GPL or the LGPL.
+
+  * ***** END LICENSE BLOCK *****
+
+  ---
+
+ The sources of totem-%{totem.version} were downloaded
+ from %{totem.SOURCE0.url}
+

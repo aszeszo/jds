@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:42+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:498 ../src/netstatus-icon.c:512
+#: ../src/netstatus-icon.c:524 ../src/netstatus-icon.c:532
+#, c-format
+msgid "<b>%-20s</b>: %s"
+msgstr "<b>%-20s</b>: %s"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:500
+msgid "Wireless Network"
+msgstr "无线网络"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:505
+#, c-format
+msgid "<b>%-20s</b>: %d%%"
+msgstr "<b>%-20s</b>: %d%%"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:507
+msgid "Signal Strength"
+msgstr "信号强度"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:514
+msgid "Operational Mode"
+msgstr "操作模式"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:526
+msgid "IP Address (v4)"
+msgstr "IP 地址 (v4)"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:240
+msgid "Track Active Interface"
+msgstr "跟踪活动接口"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:242
+msgid "Whether to track the system's active interface"
+msgstr "是否跟踪系统的活动接口"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:250
+msgid "ESSID"
+msgstr "ESSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:252
+msgid "Wireless ESSID"
+msgstr "无线 ESSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:260
+msgid "BSSID"
+msgstr "BSSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:262
+msgid "Wireless BSSID"
+msgstr "无线 BSSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:270
+msgid "BSS_MODE"
+msgstr "BSS_MODE"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:272
+msgid "Wireless BSS_Mode"
+msgstr "无线 BSS_Mode"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:280
+msgid "Wireless CONNECTED"
+msgstr "无线已连接"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:282
+msgid "Whether the interface is connected"
+msgstr "是否连接了接口"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:290
+msgid "MODE"
+msgstr "模式"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:292
+msgid "Wireless MODE"
+msgstr "无线模式"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:300
+msgid "SECURITY"
+msgstr "安全"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:302
+msgid "Wireless SECURITY"
+msgstr "无线安全"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:310
+msgid "AUTH_MODE"
+msgstr "AUTH_MODE"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:312
+msgid "Wireless AUTH_MODE"
+msgstr "无线 AUTH_MODE"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:588
+msgid "Infrastructure"
+msgstr "基础结构"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:593
+msgid "Computer-to-Computer (Ad Hoc)"
+msgstr "计算机到计算机（特定）"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:597
+msgid "Any"
+msgstr "任何"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:625
+msgid "None"
+msgstr "无"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:655
+msgid "Open"
+msgstr "打开"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:660
+msgid "Shared"
+msgstr "共享"

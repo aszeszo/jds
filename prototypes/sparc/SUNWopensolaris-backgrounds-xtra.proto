@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopensolaris-backgrounds-xtra.pkginfo
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopensolaris-backgrounds-xtra.copyright
+f none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/AUTHORS=usr/share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/AUTHORS 0444 root bin
+f none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/COPYING.bz2=usr/share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/COPYING.bz2 0444 root bin
+f none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/ChangeLog.bz2=usr/share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/NEWS.bz2=usr/share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/NEWS.bz2 0444 root bin
+f none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/README=usr/share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/README 0444 root bin
+f none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/po/ChangeLog.bz2=usr/share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/po/ChangeLog.bz2 0444 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWopensolaris-backgrounds 0755 root bin
+d none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8 0755 root bin
+d none share/doc/SUNWopensolaris-backgrounds/opensolaris-backgrounds-0.8/po 0755 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/backgrounds 0755 root bin
+d none share/pixmaps/backgrounds/opensolaris 0755 root bin
+f none share/pixmaps/backgrounds/opensolaris/clouds.jpg=usr/share/pixmaps/backgrounds/opensolaris/clouds.jpg 0644 root bin
+f none share/pixmaps/backgrounds/opensolaris/rings.jpg=usr/share/pixmaps/backgrounds/opensolaris/rings.jpg 0644 root bin
+f none share/pixmaps/backgrounds/opensolaris/stream.jpg=usr/share/pixmaps/backgrounds/opensolaris/stream.jpg 0644 root bin

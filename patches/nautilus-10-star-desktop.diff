@@ -1,0 +1,47 @@
+--- nautilus-3.1.3/src/nautilus-application.c.orig	2011-07-21 14:28:55.288946139 +0100
++++ nautilus-3.1.3/src/nautilus-application.c	2011-07-21 14:39:32.207221337 +0100
+@@ -750,6 +750,35 @@
+ }
+ 
+ static void
++check_star_icon (void)
++{
++	char *desktop_file;
++	char *system_file;
++	char *desktop_path;
++	struct stat desktop_buf;
++
++	desktop_path = nautilus_get_desktop_directory ();
++	desktop_file = g_build_filename (desktop_path,
++					 "star.desktop",
++					 NULL);
++	if (g_stat (desktop_file, &desktop_buf) == 0) {
++		struct stat system_buf;
++		system_file = g_build_filename (DATADIR "/applications",
++						"star.desktop",
++						NULL);
++		if (g_stat (system_file, &system_buf) == 0) {
++			if (desktop_buf.st_size != system_buf.st_size) {
++				g_unlink(desktop_file);
++			}
++		}
++		g_free (system_file);
++	}
++
++	g_free (desktop_file);
++	g_free (desktop_path);
++}
++
++static void
+ open_windows (NautilusApplication *application,
+ 	      GFile **files,
+ 	      gint n_files,
+@@ -1174,6 +1203,8 @@
+ 	/* register property pages */
+ 	nautilus_image_properties_page_register ();
+ 
++	check_star_icon();
++
+ 	/* initialize theming */
+ 	init_icons_and_styles ();
+ 	init_gtk_accels ();

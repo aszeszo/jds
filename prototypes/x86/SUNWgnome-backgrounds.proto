@@ -1,0 +1,39 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-backgrounds.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-backgrounds.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-backgrounds.copyright
+f none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/AUTHORS=usr/share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/COPYING.bz2=usr/share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/ChangeLog.bz2=usr/share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/NEWS.bz2=usr/share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/README=usr/share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/README 0444 root bin
+f none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/po/ChangeLog.bz2 0444 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-backgrounds 0755 root bin
+d none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0 0755 root bin
+d none share/doc/SUNWgnome-backgrounds/gnome-backgrounds-2.30.0/po 0755 root bin
+d none share/gnome-background-properties 0755 root bin
+f none share/gnome-background-properties/gnome-abstract.xml=usr/share/gnome-background-properties/gnome-abstract.xml 0644 root bin
+f none share/gnome-background-properties/gnome-nature.xml=usr/share/gnome-background-properties/gnome-nature.xml 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/backgrounds 0755 root bin
+d none share/pixmaps/backgrounds/gnome 0755 root bin
+d none share/pixmaps/backgrounds/gnome/abstract 0755 root bin
+f none share/pixmaps/backgrounds/gnome/abstract/Flow.png=usr/share/pixmaps/backgrounds/gnome/abstract/Flow.png 0644 root bin
+f none share/pixmaps/backgrounds/gnome/abstract/Gulp.png=usr/share/pixmaps/backgrounds/gnome/abstract/Gulp.png 0644 root bin
+f none share/pixmaps/backgrounds/gnome/abstract/Silk.png=usr/share/pixmaps/backgrounds/gnome/abstract/Silk.png 0644 root bin
+f none share/pixmaps/backgrounds/gnome/abstract/Spring.png=usr/share/pixmaps/backgrounds/gnome/abstract/Spring.png 0644 root bin
+f none share/pixmaps/backgrounds/gnome/abstract/Waves.png=usr/share/pixmaps/backgrounds/gnome/abstract/Waves.png 0644 root bin
+d none share/pixmaps/backgrounds/gnome/nature 0755 root bin
+f none share/pixmaps/backgrounds/gnome/nature/Aqua.jpg=usr/share/pixmaps/backgrounds/gnome/nature/Aqua.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/Blinds.jpg=usr/share/pixmaps/backgrounds/gnome/nature/Blinds.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/Dune.jpg=usr/share/pixmaps/backgrounds/gnome/nature/Dune.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/FreshFlower.jpg=usr/share/pixmaps/backgrounds/gnome/nature/FreshFlower.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/Garden.jpg=usr/share/pixmaps/backgrounds/gnome/nature/Garden.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/GreenMeadow.jpg=usr/share/pixmaps/backgrounds/gnome/nature/GreenMeadow.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/LadyBird.jpg=usr/share/pixmaps/backgrounds/gnome/nature/LadyBird.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/RainDrops.jpg=usr/share/pixmaps/backgrounds/gnome/nature/RainDrops.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/Storm.jpg=usr/share/pixmaps/backgrounds/gnome/nature/Storm.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/TwoWings.jpg=usr/share/pixmaps/backgrounds/gnome/nature/TwoWings.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/Wood.jpg=usr/share/pixmaps/backgrounds/gnome/nature/Wood.jpg 0644 root bin
+f none share/pixmaps/backgrounds/gnome/nature/YellowFlower.jpg=usr/share/pixmaps/backgrounds/gnome/nature/YellowFlower.jpg 0644 root bin

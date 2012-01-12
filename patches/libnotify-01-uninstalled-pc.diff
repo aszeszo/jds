@@ -1,0 +1,33 @@
+--- libnotify-0.4.5/configure.ac-orig	2009-01-20 17:39:42.592468000 -0600
++++ libnotify-0.4.5/configure.ac	2009-01-20 17:39:58.251226000 -0600
+@@ -190,6 +190,7 @@ AC_CONFIG_FILES([
+ Makefile
+ docs/Makefile
+ docs/reference/Makefile
++libnotify-uninstalled.pc
+ libnotify.pc
+ libnotify/Makefile
+ libnotify/notify-features.h
+--- /dev/null	2009-01-20 17:41:02.000000000 -0600
++++ libnotify-0.4.5/libnotify-uninstalled.pc.in	2009-01-20 17:39:35.092677000 -0600
+@@ -0,0 +1,8 @@
++
++Name: libnotify
++Description: Notifications Library
++Requires:
++Version: @VERSION@
++Libs: ${pc_top_builddir}/${pcfiledir}/libnotify/libnotify.la
++Cflags: -I${pc_top_builddir}/${pcfiledir}
++
+--- libnotify-0.4.5/configure.ac-orig	2011-07-06 12:47:44.017368255 -0500
++++ libnotify-0.4.5/configure.ac	2011-07-06 12:48:04.130778785 -0500
+@@ -83,8 +83,7 @@ AC_TYPE_SIZE_T
+ AC_EXEEXT
+ 
+ # Initialize libtool
+-LT_PREREQ([2.2])
+-LT_INIT
++AC_PROG_LIBTOOL
+ 
+ REQ_GTK_VERSION=2.90
+ REQ_GLIB_VERSION=2.26.0

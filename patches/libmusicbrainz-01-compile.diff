@@ -1,0 +1,22 @@
+--- libmusicbrainz-3.0.3/include/musicbrainz3/tag.h-orig	2010-10-04 16:59:36.574364705 -0500
++++ libmusicbrainz-3.0.3/include/musicbrainz3/tag.h	2010-10-04 16:59:42.398937927 -0500
+@@ -53,7 +53,7 @@ namespace MusicBrainz
+ 		void setName(const std::string &name);
+ 		
+ 		int getCount() const;
+-		void setCount(const int count);
++		void setCount(int count);
+ 		
+ 	private:
+ 		
+--- libmusicbrainz-3.0.3/include/musicbrainz3/track.h-orig	2010-10-04 16:53:57.490192447 -0500
++++ libmusicbrainz-3.0.3/include/musicbrainz3/track.h	2010-10-04 16:59:19.365647359 -0500
+@@ -114,7 +114,7 @@ namespace MusicBrainz
+ 		 *
+ 		 * @param duration an int containing the duration in milliseconds
+ 		 */
+-		void setDuration(const int duration);
++		void setDuration(int duration);
+ 		
+ 		/**
+ 		 * Returns a list of releases from this artist.

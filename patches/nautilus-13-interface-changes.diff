@@ -1,0 +1,156 @@
+--- nautilus-3.1.3/src/nautilus-shell-ui.xml.orig	2011-07-21 14:57:38.332309524 +0100
++++ nautilus-3.1.3/src/nautilus-shell-ui.xml	2011-07-21 15:01:53.767363271 +0100
+@@ -92,10 +92,13 @@
+ 	                </placeholder>
+ 	                <separator/>
+ 			<menuitem name="Home" action="Home"/>
++			<menuitem name="Desktop" action="Desktop"/>
+ 			<menuitem name="Computer" action="Go to Computer"/>
+-			<menuitem name="Go to Templates" action="Go to Templates"/>
+-			<menuitem name="Go to Trash" action="Go to Trash"/>
++			<separator/>
++		        <menuitem name="Go to FileSystem" action="Go to FileSystem"/>
+ 		        <menuitem name="Go to Network" action="Go to Network"/>
++		        <menuitem name="Go to Trash" action="Go to Trash"/>
++			<separator/>
+ 			<menuitem name="Go to Location" action="Go to Location"/>
+ 			<menuitem name="Search" action="Search"/>
+ 		</menu>
+--- nautilus-3.1.3/src/nautilus-places-sidebar.c.orig	2011-06-28 14:41:41.000000000 +0100
++++ nautilus-3.1.3/src/nautilus-places-sidebar.c	2011-07-21 16:19:50.756899741 +0100
+@@ -441,7 +441,7 @@ update_places (NautilusPlacesSidebar *si
+ 	GList *volumes;
+ 	GVolume *volume;
+ 	int bookmark_count, index;
+-	char *location, *mount_uri, *name, *desktop_path, *last_uri;
++	char *location, *mount_uri, *name, *desktop_path, *last_uri, *display_name;
+ 	const gchar *path, *bookmark_name;
+ 	GIcon *icon;
+ 	GFile *root;
+@@ -760,6 +760,18 @@ update_places (NautilusPlacesSidebar *si
+ 	}
+ 	g_list_free (mounts);
+ 
++	mount_uri = "computer:///"; /* No need to strdup */
++	icon = g_themed_icon_new ("gnome-fs-client");
++	last_iter = add_place (sidebar, PLACES_BUILT_IN,
++			       SECTION_COMPUTER,
++				/* SUN_BRANDING */
++				_("Computer"), icon,
++ 				mount_uri, NULL, NULL, NULL, 0, NULL);
++	g_object_unref (icon);
++	compare_for_selection (sidebar,
++			       location, mount_uri, last_uri,
++			       &last_iter, &select_path);
++
+ 	/* file system root */
+  	mount_uri = "file:///"; /* No need to strdup */
+ 	icon = g_themed_icon_new (NAUTILUS_ICON_FILESYSTEM);
+--- nautilus-3.1.3/src/nautilus-window-menus.c.orig	2011-07-21 15:04:26.964718841 +0100
++++ nautilus-3.1.3/src/nautilus-window-menus.c	2011-07-21 15:30:55.804338301 +0100
+@@ -67,6 +67,7 @@
+ 
+ #define NETWORK_URI          "network:"
+ #define COMPUTER_URI         "computer:"
++#define FILESYSTEM_URI       "file:///:"
+ #define BURN_CD_URI          "burn:"
+ 
+ static void
+@@ -132,6 +133,22 @@
+ }
+ 
+ static void
++action_desktop_callback (GtkAction *action, 
++		      gpointer user_data) 
++{
++	GFile *file;
++	gchar *desktop_uri;
++	NautilusWindowSlot *slot;
++
++	desktop_uri = nautilus_get_desktop_directory ();
++	file = g_file_new_for_path (desktop_uri);
++	nautilus_window_slot_go_to (slot, file,
++				    nautilus_event_should_open_in_new_tab ());
++	g_object_unref (file);
++}
++
++
++static void
+ action_go_to_computer_callback (GtkAction *action, 
+ 				gpointer user_data) 
+ {
+@@ -150,6 +167,17 @@
+ }
+ 
+ static void
++action_filesystem_callback (GtkAction *action, 
++		   	    gpointer user_data) 
++{
++	GFile *file;
++	file = g_file_new_for_uri (FILESYSTEM_URI);
++	nautilus_window_go_to (NAUTILUS_WINDOW (user_data),
++			       file);
++	g_object_unref (file);
++}
++
++static void
+ action_go_to_network_callback (GtkAction *action, 
+ 				gpointer user_data) 
+ {
+@@ -1005,6 +1033,18 @@
+   /* label, accelerator */       N_("_Home"), "<alt>Home",
+   /* tooltip */                  N_("Open your personal folder"),
+                                  G_CALLBACK (action_home_callback) },
++  /* name, stock id */         { "Desktop", "gnome-fs-desktop",
++  /* SUN_BRANDING */
++  /* label, accelerator */       N_("_Desktop"), NULL,
++  /* SUN_BRANDING */
++  /* tooltip */                  N_("Go to the Desktop"),
++                                 G_CALLBACK (action_desktop_callback) },
++  /* name, stock id */         { "Go to FileSystem", "gnome-dev-harddisk",
++  /* SUN_BRANDING */
++  /* label, accelerator */       N_("File _System"), NULL,
++  /* SUN_BRANDING */
++  /* tooltip */                  N_("Go to the file system"),
++                                 G_CALLBACK (action_filesystem_callback) },
+   /* name, stock id */         { "Go to Computer", NAUTILUS_ICON_COMPUTER,
+   /* label, accelerator */       N_("_Computer"), NULL,
+   /* tooltip */                  N_("Browse all local and remote disks and folders accessible from this computer"),
+--- nautilus-3.1.3/libnautilus-private/org.gnome.nautilus.gschema.xml.in.orig	2011-07-21 16:22:55.041901187 +0100
++++ nautilus-3.1.3/libnautilus-private/org.gnome.nautilus.gschema.xml.in	2011-07-22 07:56:43.661532846 +0100
+@@ -222,7 +222,7 @@
+       <_description>If true, labels will be placed beside icons rather than underneath them.</_description>
+     </key>
+     <key name="default-zoom-level" enum="org.gnome.nautilus.ZoomLevel">
+-      <default>'standard'</default>
++      <default>'small'</default>
+       <_summary>Default icon zoom level</_summary>
+       <_description>Default zoom level used by the icon view.</_description>
+     </key>
+@@ -301,22 +301,22 @@
+ 
+   <schema id="org.gnome.nautilus.desktop" path="/org/gnome/nautilus/desktop/" gettext-domain="nautilus">
+     <key name="font" type="s">
+-      <default l10n="messages" context="desktop-font">''</default>
++      <default l10n="messages" context="desktop-font">'Sans Book 10'</default>
+       <_summary>Desktop font</_summary>
+       <_description>The font _description used for the icons on the desktop.</_description>
+     </key>
+     <key name="home-icon-visible" type="b">
+-      <default>true</default>
++      <default>false</default>
+       <_summary>Home icon visible on desktop</_summary>
+       <_description>If this is set to true, an icon linking to the home folder will be put on the desktop.</_description>
+     </key>
+     <key name="computer-icon-visible" type="b">
+-      <default>true</default>
++      <default>false</default>
+       <_summary>Computer icon visible on desktop</_summary>
+       <_description>If this is set to true, an icon linking to the computer location will be put on the desktop.</_description>
+     </key>
+     <key name="trash-icon-visible" type="b">
+-      <default>true</default>
++      <default>false</default>
+       <_summary>Trash icon visible on desktop</_summary>
+       <_description>If this is set to true, an icon linking to the trash will be put on the desktop.</_description>
+     </key>

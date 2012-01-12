@@ -1,0 +1,44 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWclutter-gtk-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWclutter-gtk-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWclutter-gtk-devel.copyright
+d none include 0755 root bin
+d none include/clutter-1.0 0755 root bin
+d none include/clutter-1.0/clutter-gtk 0755 root bin
+f none include/clutter-1.0/clutter-gtk/clutter-gtk.h=usr/include/clutter-1.0/clutter-gtk/clutter-gtk.h 0644 root bin
+f none include/clutter-1.0/clutter-gtk/gtk-clutter-embed.h=usr/include/clutter-1.0/clutter-gtk/gtk-clutter-embed.h 0644 root bin
+f none include/clutter-1.0/clutter-gtk/gtk-clutter-scrollable.h=usr/include/clutter-1.0/clutter-gtk/gtk-clutter-scrollable.h 0644 root bin
+f none include/clutter-1.0/clutter-gtk/gtk-clutter-util.h=usr/include/clutter-1.0/clutter-gtk/gtk-clutter-util.h 0644 root bin
+f none include/clutter-1.0/clutter-gtk/gtk-clutter-viewport.h=usr/include/clutter-1.0/clutter-gtk/gtk-clutter-viewport.h 0644 root bin
+f none include/clutter-1.0/clutter-gtk/gtk-clutter-zoomable.h=usr/include/clutter-1.0/clutter-gtk/gtk-clutter-zoomable.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/clutter-gtk-0.10.pc=usr/lib/pkgconfig/clutter-gtk-0.10.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/clutter-gtk 0755 root bin
+f none share/gtk-doc/html/clutter-gtk/GtkClutterEmbed.html=usr/share/gtk-doc/html/clutter-gtk/GtkClutterEmbed.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/GtkClutterScrollable.html=usr/share/gtk-doc/html/clutter-gtk/GtkClutterScrollable.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/GtkClutterViewport.html=usr/share/gtk-doc/html/clutter-gtk/GtkClutterViewport.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/GtkClutterZoomable.html=usr/share/gtk-doc/html/clutter-gtk/GtkClutterZoomable.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ch01.html=usr/share/gtk-doc/html/clutter-gtk/ch01.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ch02.html=usr/share/gtk-doc/html/clutter-gtk/ch02.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ch03.html=usr/share/gtk-doc/html/clutter-gtk/ch03.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ch04.html=usr/share/gtk-doc/html/clutter-gtk/ch04.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/clutter-gtk-Utility-Functions.html=usr/share/gtk-doc/html/clutter-gtk/clutter-gtk-Utility-Functions.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/clutter-gtk.devhelp=usr/share/gtk-doc/html/clutter-gtk/clutter-gtk.devhelp 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/clutter-gtk.devhelp2=usr/share/gtk-doc/html/clutter-gtk/clutter-gtk.devhelp2 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/home.png=usr/share/gtk-doc/html/clutter-gtk/home.png 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/index.html=usr/share/gtk-doc/html/clutter-gtk/index.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/index.sgml=usr/share/gtk-doc/html/clutter-gtk/index.sgml 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ix01.html=usr/share/gtk-doc/html/clutter-gtk/ix01.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ix02.html=usr/share/gtk-doc/html/clutter-gtk/ix02.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ix03.html=usr/share/gtk-doc/html/clutter-gtk/ix03.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ix04.html=usr/share/gtk-doc/html/clutter-gtk/ix04.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ix05.html=usr/share/gtk-doc/html/clutter-gtk/ix05.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/ix06.html=usr/share/gtk-doc/html/clutter-gtk/ix06.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/left.png=usr/share/gtk-doc/html/clutter-gtk/left.png 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/license.html=usr/share/gtk-doc/html/clutter-gtk/license.html 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/right.png=usr/share/gtk-doc/html/clutter-gtk/right.png 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/style.css=usr/share/gtk-doc/html/clutter-gtk/style.css 0644 root bin
+f none share/gtk-doc/html/clutter-gtk/up.png=usr/share/gtk-doc/html/clutter-gtk/up.png 0644 root bin

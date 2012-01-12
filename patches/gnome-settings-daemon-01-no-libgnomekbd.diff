@@ -1,0 +1,84 @@
+diff -up gnome-settings-daemon-2.27.5/config.h.in.orig gnome-settings-daemon-2.27.5/config.h.in
+--- gnome-settings-daemon-2.27.5/config.h.in.orig	2009-07-27 23:26:58.000000000 +0100
++++ gnome-settings-daemon-2.27.5/config.h.in	2009-08-07 10:19:58.717269427 +0100
+@@ -108,3 +108,7 @@
+ 
+ /* Define to 1 if the X Window System is missing or not being used. */
+ #undef X_DISPLAY_MISSING
++
++/* Defined when gswitchit is detected */
++#undef HAVE_GSWITCHIT
++
+
+--- gnome-settings-daemon-2.26.1/plugins/keyboard/gsd-keyboard-manager.c.ori	2009-04-15 07:07:26.999526943 +0100
++++ gnome-settings-daemon-2.26.1/plugins/keyboard/gsd-keyboard-manager.c	2009-04-15 07:08:43.002715791 +0100
+@@ -36,6 +36,7 @@
+ #include <gdk/gdk.h>
+ #include <gdk/gdkx.h>
+ #include <gtk/gtk.h>
++#include <gconf/gconf-client.h>
+ 
+ #ifdef HAVE_X11_EXTENSIONS_XF86MISC_H
+ #  include <X11/extensions/xf86misc.h>
+@@ -48,7 +49,9 @@
+ #include "gnome-settings-profile.h"
+ #include "gsd-keyboard-manager.h"
+ 
++#ifdef HAVE_GSWITCHIT
+ #include "gsd-keyboard-xkb.h"
++#endif
+ #include "gsd-xmodmap.h"
+ 
+ #define GSD_KEYBOARD_MANAGER_GET_PRIVATE(o) (G_TYPE_INSTANCE_GET_PRIVATE ((o), GSD_TYPE_KEYBOARD_MANAGER, GsdKeyboardManagerPrivate))
+diff -ruN gnome-settings-daemon-2.29.6.orig/configure.ac gnome-settings-daemon-2.29.6/configure.ac
+--- gnome-settings-daemon-2.29.6.orig/configure.ac	2010-02-02 21:06:07.411263241 +0000
++++ gnome-settings-daemon-2.29.6/configure.ac	2010-02-02 21:06:43.656906338 +0000
+@@ -220,9 +220,19 @@
+ AC_SUBST(XF86MISC_LIBS)
+ AC_CHECK_X_HEADERS([X11/extensions/XKB.h])
+ 
+-PKG_CHECK_MODULES(LIBGNOMEKBDUI, [libgnomekbdui >= 2.29.5 libgnomekbd >= 2.29.5 libxklavier >= 5.0])
+-AC_SUBST(LIBGNOMEKBDUI_CFLAGS)
+-AC_SUBST(LIBGNOMEKBDUI_LIBS)
++AC_ARG_ENABLE(gswitchit,
++       AC_HELP_STRING([--disable-gswitchit],
++                      [Do not build with gswitchit support]),,
++                       enable_gswitchit=yes)
++
++if test x$enable_libxklavier = xyes; then
++    PKG_CHECK_MODULES(LIBGNOMEKBD, [libgnomekbd >= 2.21.4 libxklavier >= 4.0])
++    AC_SUBST(LIBGNOMEKBD_CFLAGS)
++    AC_SUBST(LIBGNOMEKBD_LIBS)
++
++    AC_DEFINE([HAVE_GSWITCHIT], 1, [Defined when gswitchit is detected])
++fi
++AM_CONDITIONAL(HAVE_GSWITCHIT, [test $enable_gswitchit = yes])
+ 
+ dnl ---------------------------------------------------------------------------
+ dnl - Housekeeping plugin stuff
+diff -ruN gnome-settings-daemon-2.29.6.orig/plugins/Makefile.am gnome-settings-daemon-2.29.6/plugins/Makefile.am
+--- gnome-settings-daemon-2.29.6.orig/plugins/Makefile.am	2010-02-02 22:25:29.229272945 +0000
++++ gnome-settings-daemon-2.29.6/plugins/Makefile.am	2010-02-02 22:25:39.768885880 +0000
+@@ -9,7 +9,6 @@
+ 	font		\
+ 	housekeeping    \
+ 	keybindings	\
+-	keyboard	\
+ 	media-keys	\
+ 	mouse		\
+ 	sound		\
+diff -ruN gnome-settings-daemon-2.30.0.orig/plugins/keyboard/gsd-keyboard-manager.c gnome-settings-daemon-2.30.0/plugins/keyboard/gsd-keyboard-manager.c
+--- gnome-settings-daemon-2.30.0.orig/plugins/keyboard/gsd-keyboard-manager.c	2010-04-03 22:37:07.453732740 +0100
++++ gnome-settings-daemon-2.30.0/plugins/keyboard/gsd-keyboard-manager.c	2010-04-03 22:39:28.378882891 +0100
+@@ -397,9 +397,11 @@
+ 
+         gconf_client_add_dir (client, GSD_KEYBOARD_KEY, GCONF_CLIENT_PRELOAD_RECURSIVE, NULL);
+ 
++#ifdef HAVE_GSWITCHIT
+         /* Essential - xkb initialization should happen before */
+         gsd_keyboard_xkb_set_post_activation_callback ((PostActivationCallback) gsd_load_modmap_files, NULL);
+         gsd_keyboard_xkb_init (client, manager);
++#endif
+ 
+ #ifdef HAVE_X11_EXTENSIONS_XKB_H
+         numlock_xkb_init (manager);

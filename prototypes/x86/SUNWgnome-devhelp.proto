@@ -1,0 +1,68 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-devhelp.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-devhelp.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-devhelp.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-devhelp.copyright
+f none share/doc/SUNWgnome-devhelp/AUTHORS=usr/share/doc/SUNWgnome-devhelp/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-devhelp/COPYING.bz2=usr/share/doc/SUNWgnome-devhelp/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-devhelp/ChangeLog.bz2=usr/share/doc/SUNWgnome-devhelp/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-devhelp/NEWS.bz2=usr/share/doc/SUNWgnome-devhelp/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-devhelp/README=usr/share/doc/SUNWgnome-devhelp/README 0444 root bin
+f none share/doc/SUNWgnome-devhelp/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-devhelp/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/devhelp=usr/bin/devhelp 0755 root bin
+d none lib 0755 root bin
+d none lib/gedit-2 0755 root bin
+d none lib/gedit-2/plugins 0755 root bin
+d none lib/gedit-2/plugins/devhelp 0755 root bin
+f none lib/gedit-2/plugins/devhelp.gedit-plugin=usr/lib/gedit-2/plugins/devhelp.gedit-plugin 0644 root bin
+f none lib/gedit-2/plugins/devhelp/__init__.py=usr/lib/gedit-2/plugins/devhelp/__init__.py 0644 root bin
+f none lib/gedit-2/plugins/devhelp/__init__.pyc=usr/lib/gedit-2/plugins/devhelp/__init__.pyc 0644 root bin
+f none lib/gedit-2/plugins/devhelp/__init__.pyo=usr/lib/gedit-2/plugins/devhelp/__init__.pyo 0644 root bin
+f none lib/gedit-2/plugins/devhelp/devhelp.py=usr/lib/gedit-2/plugins/devhelp/devhelp.py 0644 root bin
+f none lib/gedit-2/plugins/devhelp/devhelp.pyc=usr/lib/gedit-2/plugins/devhelp/devhelp.pyc 0644 root bin
+f none lib/gedit-2/plugins/devhelp/devhelp.pyo=usr/lib/gedit-2/plugins/devhelp/devhelp.pyo 0644 root bin
+s none lib/libdevhelp-1.so=libdevhelp-1.so.0.0.0
+s none lib/libdevhelp-1.so.0=libdevhelp-1.so.0.0.0
+f none lib/libdevhelp-1.so.0.0.0=usr/lib/libdevhelp-1.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/devhelp.desktop=usr/share/applications/devhelp.desktop 0644 root bin
+d none share/devhelp 0755 root bin
+f none share/devhelp/default-prefs.js=usr/share/devhelp/default-prefs.js 0644 root bin
+f none share/devhelp/devhelp.glade=usr/share/devhelp/devhelp.glade 0644 root bin
+d none share/devhelp/dtd 0755 root bin
+f none share/devhelp/dtd/devhelp-1.dtd=usr/share/devhelp/dtd/devhelp-1.dtd 0644 root bin
+d none share/devhelp/images 0755 root bin
+f none share/devhelp/images/book_closed.png=usr/share/devhelp/images/book_closed.png 0644 root bin
+f none share/devhelp/images/book_open.png=usr/share/devhelp/images/book_open.png 0644 root bin
+f none share/devhelp/images/helpdoc.png=usr/share/devhelp/images/helpdoc.png 0644 root bin
+d none share/devhelp/ui 0755 root bin
+f none share/devhelp/ui/window.ui=usr/share/devhelp/ui/window.ui 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-devhelp 0755 root bin
+d none share/doc/SUNWgnome-devhelp/po 0755 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/devhelp.png=usr/share/icons/hicolor/16x16/apps/devhelp.png 0644 root bin
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/devhelp.png=usr/share/icons/hicolor/22x22/apps/devhelp.png 0644 root bin
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/devhelp.png=usr/share/icons/hicolor/24x24/apps/devhelp.png 0644 root bin
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/devhelp.png=usr/share/icons/hicolor/32x32/apps/devhelp.png 0644 root bin
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/devhelp.png=usr/share/icons/hicolor/48x48/apps/devhelp.png 0644 root bin
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/devhelp.svg=usr/share/icons/hicolor/scalable/apps/devhelp.svg 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/devhelp.1=usr/share/man/man1/devhelp.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libdevhelp-1.3=usr/share/man/man3/libdevhelp-1.3 0644 root bin

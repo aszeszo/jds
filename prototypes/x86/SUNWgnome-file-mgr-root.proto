@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-file-mgr-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-file-mgr-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-file-mgr-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/apps_nautilus_preferences.schemas=etc/gconf/schemas/apps_nautilus_preferences.schemas 0644 root sys
+f none etc/gconf/schemas/gnome-mount.schemas=etc/gconf/schemas/gnome-mount.schemas 0644 root sys
+f none etc/gconf/schemas/nautilus-open-terminal.schemas=etc/gconf/schemas/nautilus-open-terminal.schemas 0644 root sys

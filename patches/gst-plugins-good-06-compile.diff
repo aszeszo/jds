@@ -1,0 +1,32 @@
+--- gst-plugins-good-0.10.30/ext/cairo/Makefile.am-orig	2011-10-02 12:52:36.091504571 -0500
++++ gst-plugins-good-0.10.30/ext/cairo/Makefile.am	2011-10-03 11:23:46.167299272 -0500
+@@ -38,7 +38,7 @@ libgstcairo_la_CFLAGS = \
+ libgstcairo_la_LIBADD = \
+ 	$(GST_BASE_LIBS) -lgstvideo-$(GST_MAJORMINOR) \
+ 	$(GST_LIBS) $(CAIRO_LIBS) $(CAIRO_GOBJECT_LIBS) $(LIBM)
+-libgstcairo_la_LDFLAGS = $(GST_PLUGIN_LDFLAGS)
++libgstcairo_la_LDFLAGS = $(GST_PLUGIN_LDFLAGS) $(GSTVIDEO_LIBS)
+ libgstcairo_la_LIBTOOLFLAGS = --tag=disable-static
+ 
+ EXTRA_DIST = gstcairo-marshal.list
+--- gst-plugins-good-0.10.30/configure.ac-orig	2011-10-03 11:11:20.330892190 -0500
++++ gst-plugins-good-0.10.30/configure.ac	2011-10-03 11:17:56.668850396 -0500
+@@ -231,6 +231,10 @@ if test -z $GST_TOOLS_DIR; then
+ fi
+ AC_SUBST(GST_TOOLS_DIR)
+ 
++PKG_CHECK_MODULES(GSTVIDEO, gstreamer-video-0.10)
++AC_SUBST(GSTVIDEO_CFLAGS)
++AC_SUBST(GSTVIDEO_LIBS)
++
+ AC_MSG_NOTICE(Using GStreamer Core Plugins in $GST_PLUGINS_DIR)
+ AC_MSG_NOTICE(Using GStreamer Base Plugins in $GSTPB_PLUGINS_DIR)
+ 
+--- gst-plugins-good-0.10.30/tests/examples/cairo/Makefile.am-orig	2011-10-03 14:56:00.319371309 -0500
++++ gst-plugins-good-0.10.30/tests/examples/cairo/Makefile.am	2011-10-03 14:57:17.140592569 -0500
+@@ -4,4 +4,4 @@ endif
+ 
+ cairo_overlay_SOURCES = cairo_overlay.c
+ cairo_overlay_CFLAGS = $(GST_PLUGINS_BASE_CFLAGS) $(GST_CFLAGS) $(CAIRO_CFLAGS)
+-cairo_overlay_LDADD = -lgstvideo-$(GST_MAJORMINOR) $(GST_LIBS) $(CAIRO_LIBS)
++cairo_overlay_LDADD = $(GST_LIBS) $(CAIRO_LIBS) $(GSTVIDEO_LIBS)

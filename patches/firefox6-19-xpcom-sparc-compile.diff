@@ -1,0 +1,17 @@
+diff --git a/xpcom/tests/Makefile.in b/xpcom/tests/Makefile.in
+index bb031c9..68a7b8e 100644
+--- a/xpcom/tests/Makefile.in
++++ b/xpcom/tests/Makefile.in
+@@ -151,6 +151,12 @@
+ # Make sure we have symbols in case we need to debug these.
+ MOZ_DEBUG_SYMBOLS = 1
+ 
++ifdef SOLARIS_SUNPRO_CXX
++ifeq (sparc,$(findstring sparc,$(OS_TEST)))
++MOZ_OPTIMIZE_FLAGS = -xO3
++endif
++endif
++
+ include $(topsrcdir)/config/rules.mk
+ 
+ LOCAL_INCLUDES	= \

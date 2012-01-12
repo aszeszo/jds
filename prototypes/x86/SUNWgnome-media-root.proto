@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-media-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-media-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-media-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gstreamer-0.10.schemas=etc/gconf/schemas/gstreamer-0.10.schemas 0644 root sys
+d none etc/security 0755 root sys
+e rbac etc/security/prof_attr=etc/security/prof_attr 0644 root sys

@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWrealplayer-l10n-pl.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWrealplayer-l10n-pl.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWrealplayer-l10n-pl.copyright
+d none lib 0755 root bin
+d none lib/RealPlay 0755 root bin
+d none lib/RealPlay/share 0755 root bin
+d none lib/RealPlay/share/locale 0755 root bin
+d none lib/RealPlay/share/locale/pl 0755 root bin
+f none lib/RealPlay/share/locale/pl/LICENSE=usr/lib/RealPlay/share/locale/pl/LICENSE 0644 root bin
+f none lib/RealPlay/share/locale/pl/README=usr/lib/RealPlay/share/locale/pl/README 0644 root bin
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/pl 0755 root other
+d none share/locale/pl/LC_MESSAGES 0755 root other
+f none share/locale/pl/LC_MESSAGES/libgtkhx.mo=usr/share/locale/pl/LC_MESSAGES/libgtkhx.mo 0755 root other
+f none share/locale/pl/LC_MESSAGES/realplay.mo=usr/share/locale/pl/LC_MESSAGES/realplay.mo 0755 root other

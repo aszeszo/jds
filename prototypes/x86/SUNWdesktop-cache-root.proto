@@ -1,0 +1,23 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-cache-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-cache-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-cache-root.copyright
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/method 0755 root bin
+f none lib/svc/method/desktop-mime-cache=lib/svc/method/desktop-mime-cache 0755 root bin
+f none lib/svc/method/gconf-cache=lib/svc/method/gconf-cache 0755 root bin
+f none lib/svc/method/icon-cache=lib/svc/method/icon-cache 0755 root bin
+f none lib/svc/method/input-method-cache=lib/svc/method/input-method-cache 0755 root bin
+f none lib/svc/method/mime-types-cache=lib/svc/method/mime-types-cache 0755 root bin
+f none lib/svc/method/pixbuf-loaders-installer=lib/svc/method/pixbuf-loaders-installer 0755 root bin
+d none var 0755 root sys
+d none var/svc 0755 root sys
+d manifest var/svc/manifest 0755 root sys
+d manifest var/svc/manifest/application 0755 root sys
+d manifest var/svc/manifest/application/desktop-cache 0755 root sys
+f manifest var/svc/manifest/application/desktop-cache/desktop-mime-cache.xml=var/svc/manifest/application/desktop-cache/desktop-mime-cache.xml 0644 root sys
+f manifest var/svc/manifest/application/desktop-cache/gconf-cache.xml=var/svc/manifest/application/desktop-cache/gconf-cache.xml 0644 root sys
+f manifest var/svc/manifest/application/desktop-cache/icon-cache.xml=var/svc/manifest/application/desktop-cache/icon-cache.xml 0644 root sys
+f manifest var/svc/manifest/application/desktop-cache/input-method-cache.xml=var/svc/manifest/application/desktop-cache/input-method-cache.xml 0644 root sys
+f manifest var/svc/manifest/application/desktop-cache/mime-types-cache.xml=var/svc/manifest/application/desktop-cache/mime-types-cache.xml 0644 root sys
+f manifest var/svc/manifest/application/desktop-cache/pixbuf-loaders-installer.xml=var/svc/manifest/application/desktop-cache/pixbuf-loaders-installer.xml 0644 root sys

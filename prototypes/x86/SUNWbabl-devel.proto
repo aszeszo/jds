@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWbabl-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWbabl-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWbabl-devel.copyright
+d none include 0755 root bin
+d none include/babl-0.1 0755 root bin
+d none include/babl-0.1/babl 0755 root bin
+f none include/babl-0.1/babl/babl-macros.h=usr/include/babl-0.1/babl/babl-macros.h 0644 root bin
+f none include/babl-0.1/babl/babl-types.h=usr/include/babl-0.1/babl/babl-types.h 0644 root bin
+f none include/babl-0.1/babl/babl-version.h=usr/include/babl-0.1/babl/babl-version.h 0644 root bin
+f none include/babl-0.1/babl/babl.h=usr/include/babl-0.1/babl/babl.h 0644 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/pkgconfig 0755 root other
+f none lib/amd64/pkgconfig/babl.pc=usr/lib/amd64/pkgconfig/babl.pc 0644 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/babl.pc=usr/lib/pkgconfig/babl.pc 0644 root bin

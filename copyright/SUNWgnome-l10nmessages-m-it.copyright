@@ -1,0 +1,1680 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  translation of avahi.master-tx.it.po to Italiano
+  Copyright (C) 2008 avahi.
+  This file is distributed under the same license as the avahi package.
+ 
+  Silvio Pierro <perplesso82@gmail.com>, 2008.
+  Gianluca Busiello <busiello@ceinge.unina.it>, 2008.
+  Francesco Tombolini <tombo@adamantio.net>, 2008.
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  Italian translation of Tracker
+  Copyright (C) 2006, 2007, 2008, 2009, Free Software Foundation, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Luca Ferretti <elle.uca@libero.it>, 2006, 2007, 2008, 2009.
+ : ../src/libtracker-common/tracker-utils.c:262
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  translation of dia-0.9.4_it.po to Italiana
+  traduzione di dia-0.9.4_it.po alla lingua Italiana
+  Copyright (C) 2000, 2004 Free Software Foundation, Inc.
+  Kostantino <inverness1ATvirgilio.it>, 2004.
+  Salvo Isaja <salvois@it.gnome.org>, 2000.
+  Kostantino <inverness1ATvirgilio.it>, 2004.
+ 
+  Luca Ferretti <elle.uca@libero.it>, 2009.
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  Traduzione italiana di Dasher.
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the dasher package.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2004-2008.
+  Milo Casagrande <milo@ubuntu.com>, 2008, 2009
+ 
+  PPM -> Prediction by Partial Match(Matching) sembra non abbia una traduzione in italiano
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  Italian translation of GOK
+  Copyright (C) 2000-2009  Free Software Foundation, Inc.
+  This file is distributed under the same license as the GOK package. (LGPL)
+  Impagliazzo Carlo <truijllo@_NOSPAM_supereva.it.it>, 2003.
+  Francesco Marletta <francesco.marletta@_NOSPAM_tiscali.it>, 2004.
+  Alessio Dessì <alessiodessi@_NOSPAM_tiscali.it>, 2005.
+  Francesco Marletta <francesco.marletta@_NOSPAM_tiscali.it>, 2008.
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2009, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  at-spi Italian translation.
+  Copyright (C) 2003 THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the at-spi package.
+ 
+  Alessio Frusciante <algol@firenze.linux.it>, 2003.
+  Luca Ferretti <elle.uca@libero.it>, 2009.
+  Luca Ferretti <elle.uca@libero.it>, 2009.
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  Italian language file for mousetweaks.
+  Copyright (C) 2007, 2008, 2009 The Free Software Foundation.
+  This file is distributed under the same license as the mousetweaks package.
+  Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
+  Luca Ferretti <elle.uca@libero.it>, 2008
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2008-2009, 2009.
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  Italian translation for Orca
+  Copyright (C) 2005 Sun Microsystems Inc.
+  Copyright (C) 2009 Free Softwaer Foundation, Inc.
+  This file is distributed under the same license as the Orca package.
+  Aldo "Xoen" Giambelluca <xoen@email.it>, 2005.
+ 
+ 
+  magnify vs zoom
+    <da scrivere>
+  bookmark
+    per evitare confusioni con altri tipi di segnalibro
+    (web browser, posizioni...) qui in orca lo traduco
+    come contrassegno
+  speak
+    leggere
+ 
+  Luca Ferretti <elle.uca@libero.it>, 2006, 2007. 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  gnome-netstatus Italian translation
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-netstatus package.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003-2005
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  Italian localization for the Quick Lounge applet.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Paolo Bacchilega <paolo.bacchilega@libero.it>, 2002-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  Italian translation of File Roller.
+  Copyright (C) 2001, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the file-roller package.
+  Paolo Bacchilega <paolo.bacch@tin.it>, 2001.
+  Roberto Rosselli Del Turco <rosselli@ling.unipi.it>, 2003, 2004.
+  Luca Ferretti <elle.uca@libero.it>, 2006-2008.
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  Traduzione italiana di gcaltool
+  Copyright (C) 2003-2009  Free Software Foundation, Inc.
+  This file is distributed under the same license as the gcalctool package.
+  Stefano Canepa <sc@linux.it>, 2003, 2004, 2005, 2006.
+  Sergio Durzu <sergio.durzu@ildeposito.org>, 2009.
+  Davide Falanga <davide.falanga@alice.it>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  ITALIAN TRANSLATION OF GTKAM-0.1.15
+  COPYRIGHT (C) 2008 Lutz Müller and others
+  This file is distributed under the same license as the gtkam package.
+ 
+  Daniele Medri <madrid@linux.it>, 2000.
+  Marco Colombo <m.colombo@ed.ac.uk>, 2005.
+  Vincenzo Campanella <vinz65@gmail.com>, 2008.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  Italian translation of brasero.
+  Copyright (C) 2006, 2007, 2008, 2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the brasero package.
+  Daniele Ciocci <daciocciNOSPAM@inwind.it>, 2006.
+  Milo Casagrande <milo AT ubuntu DOT com>, 2006-2009
+ 
+  file, directory e altri termini inglesi al plurale in italiano restano al singolare
+  le sigle per megabyte ecc... sono in maiuscole (da manuale di traduzione SUN)
+ 
+     burn -> masterizza
+     song -> brano, ho usato la stessa convenzione di Rhythmbox
+ 
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  Italian translation of sound-juicer.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009 THE Sound-Juicer'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the sound-juicer package.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  Italian localization for libbonobo
+  Copyright (C) 2001 Free Software Foundation, Inc.
+  Pier Luigi Fiorini <plfiorini@users.sourceforge.net>, 2000.
+  Christopher R. Gabriel <cgabriel@cgabriel.org, 2001
+  Alessio Frusciante <algol@firenze.linux.it>, 2003.
+  Luca Ferretti <elle.uca@libero.it>, 2005-2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  Italian translation of GConf-Editor.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gconf-editor package.
+  Pier Luigi Fiorini <plfiorini@supereva.it>, 2002.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003-2006.
+  Luca Ferretti <elle.uca@libero.it>, 2006-2008.
+  Milo Casagrande <milo@ubuntu.com>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  Italian localization for GConf
+  Copyright (C) 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gconf package.
+  Christopher R. Gabriel <cgabriel@gnu.org>, 2002.
+  Lapo Calamandrei <l_calamandrei@neri-group.com>, 2003.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003, 2004, 2005.
+  Luca Ferretti <elle.uca@libero.it>, 2006, 2007, 2008, 2009.
+  Milo Casagrande <milo@ubuntu.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  Italian translation for Bug Buddy
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the bug-buddy package.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>, 2000.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003-2006.
+  Luca Ferretti <elle.uca@libero.it>, 2006-2007.
+  Milo Casagramde <milo@ubuntu.com>, 2008-2009
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  gdesklets italian translation.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the gdesklets package.
+  Luigi Maselli <riccio at inmail sk>, 2003.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  Italian translation for gnome-settings-daemon
+  This file is relased with the same licence of gnome-settings-daemon package
+  Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Derivato dalla traduzione di gnome-control-center
+  Christopher R. Gabriel, 2001, 2002.
+  Alessio Dessì <alkex@inwind.it>, 2003, 2004, 2005, 2006, 2007.
+  Luca Ferretti <elle.uca@infinito.it>, 2003, 2004, 2005, 2005, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  Italian translation for gnome-control-center
+  Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is relased with the same licence of gnome-control-center-package
+  Christopher R. Gabriel, 2001, 2002.
+  Alessio Dessì <alkex@inwind.it>, 2003, 2004, 2005, 2006, 2007.
+  Milo Casagrande <milo@ubuntu.com>, 2009.
+  Luca Ferretti <elle.uca@infinito.it>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  zenity italian translation
+  Copyright (C) 2003 Free Software Foundation, Inc.
+  This file is distributed under the same license as the zenity package.
+  Stefano Canepa <sc@linux.it>, 2003, 2004, 2005, 2006.
+  Luca Ferretti <elle.uca@infinito.it>, 2005-2007.
+  Milo Casagrande <milo@ubuntu.com>, 2008
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  gdm2, the Gnome Display Manager, Italian translation
+  Copyright (C) 2000, 2001 Free Software Foundation, Inc.
+  Daniele Medri <madrid@linux.it>, 2000.
+  Salvo Isaja <salvois@it.gnome.org>, 2001.
+  Lapo Calamandrei <lapo@it.gnome.org>, 2003.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2004-2007.
+  Milo Casagrande <milo_casagrande@yahoo.it>, 2008
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  Italian translation of Nautilus
+  This file is distributed under the same license as nautilus package
+  Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@cgabriel.org>, 2000.
+  Pier Luigi Fiorini <plfiorini@supereva.it>, 2001,2002.
+ 
+  Luca Ferretti <elle.uca@libero.it>, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mount.mo
+  Italian translation for gnome-moune.
+  Copyright (C) 2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-mount package.
+  Luca Ferretti <elle.uca@libero.it>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  Italian translations for gtksourceview package.
+  Copyright (C) 2003 THE gtksourceview'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the gtksourceview
+  package.
+  Stefano Canepa <sc@linux.it>, 2003, 2004, 2005, 2006.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  Italian translations for gtksourceview package.
+  Copyright (C) 2003-2008. 2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtksourceview package.
+  Stefano Canepa <sc@linux.it>, 2003, 2004, 2005, 2006.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2006, 2007.
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  Italian translation of Yelp.
+  Copyright (C) 2002, 2003, 2004, 2005, 2005, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the yelp package.
+  Psyk[o] <shaihulud@supereva.it>, 2002.
+  Luca Ferretti <elle.uca@libero.it>, 2005-2006.
+  Milo Casagrande <milo@ubuntu.com>, 2007-2009
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  Italian localisation for GHEX
+  Copyright (C) 2000 Free Software Foundation, Inc.
+  FIRST AUTHOR: UNKNOWN (maybe Christopher R. Gabriel
+  <cgabriel@pluto.linux.it>
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Pidgin Italian translation
+  Copyright (C) 2002, Salvatore di Maggio <titanicus@libero.it>
+  Copyright (C) 2003-2009, Claudio Satriano <satriano@na.infn.it>
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  This is the Italian catalog for The GIMP.
+  Copyright (C) 1999 Free Software Foundation, Inc.
+  Daniele Medri <madrid@linux.it>, 2000-2002
+  Marco Ciampa <ciampix@libero.it>, 2003-2009
+  Alessandro Falappa <alessandro@falappa.net>, 2007-2008
+ 
+  Convenzioni adottate per Gimp:
+ 
+  brush = pennello
+  brush pipe = pennello animato
+  canvas = superficie (impreciso ma entrato nel gergo convenzionale grafico italiano)
+  emboss = rilievo
+  feather = sfumata
+  gradients = gradiente
+  layer = livello (errato ma entrato nel gergo convenzionale grafico italiano)
+  map = mappa
+  newsprint = effetto giornale
+  ripple = increspatura
+  pattern = motivo
+  path = tracciato
+  palette = tavolozza
+  (to) render = render, disegnare
+  stroke = delineare
+  (to) shear = inclinare
+  undo history = cronologia annullamenti
+  wave = onda
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  Traduzione italiana di gThumb.
+  Copyright (C) 2003 Free Software Foundation, Inc.
+  Paolo Bacchilega <paolo.bacchilega@libero.it>, 2003
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2003-2004
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  Italian translation for Eye Of Gnome
+  Copyright (C) 2001-2007, 2008, 2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as eog package.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>
+  Lapo Calamandrei <lapo@it.gnome.org>, 2003.
+  Luca Ferretti <elle.uca@libero.it>, 2003, 2004, 2005, 2006, 2007, 2008.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003, 2004, 2005, 2006.
+  Milo Casagrande <milo@ubuntu.com>, 2008, 2009.
+  Davide Falanga <davide.falanga@alice.it>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  Italian translation of libgnome
+  Copyright (C) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the libgnome package.
+  Christopher R. Gabriel <cgabriel@cgabriel.org>, 2001.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  Italian localization for libbonoboui
+  Copyright (C) 2001 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@cgabriel.org>, 2001.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003-2005.
+  Luca Ferretti <elle.uca@infinito.it>, 2003-2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  Italian Translation of gnome-keyring.
+  Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc
+  This file is distributed under the same license as the gnome-keyring package.
+  Luca Ferretti <elle.uca@libero.it>, 2008.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  gnome-media Italian translation
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same licence of the gnome-media package
+  Salvatore Isaja <salvois@it.gnome.org>, 2000-2002.
+  Luca Ferretti <elle.uca@infinito.it>.
+  Alessio Frusciante <algol@firenze.linux.it>, 2004.
+  Salvatore Isaja <salvois@it.gnome.org>, 2004, 2005.
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2006-2009, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Italian translation for gst-plugins-good package of GStreamer project.
+  Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009 GStreamer core team
+  This file is distributed under the same license as the gst-plugins-good package.
+ 
+  Luca Ferretti <elle.uca@infinito.it>, 2004, 2005, 2006, 2007, 2008, 2009.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gst-plugin-good package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Italian translation for gst-plugins-base package of GStreamer project.
+  Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009 GStreamer team
+  This file is distributed under the same license as the gst-plugins-base package.
+  Luca Ferretti <elle.uca@infinito.it>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Italian translation for gstreamer package of GStreamer project.
+  Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009 GStreamer team
+  This file is distributed under the same license as the gstreamer package.
+  Luca Ferretti <elle.uca@infinito.it>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Alcune note (essenzialmente una traduzione) dopo una lettura non troppo
+  approfondita del manuale di GStreamer
+ 
+  Tenete presente che, da un punto di vista dello sviluppatore, GStreamer
+  è pesantemente influenzato dalla struttura di GLib, ed in particolare
+  dei GObject, per cui le varie funzioni di libreria operano con il
+  criterio della programmazione orientata agli oggetti.
+ 
+  Per chi mi capisce, e tagliando via elementi qui non essenziali
+ 
+  GObject
+          GstObject
+                  GstPad
+                  GstElement
+                          GstBin
+                                  GstPipeline
+                                  GstThread
+ 
+ 
+  --- Elements ---
+ 
+  Un elemento è il blocco costruttivo di base per una "media pipeline".
+  Tutti i differenti elementi di alto livello usati sono derivati da
+  GstElement. Gli elementi sono "black boxes" con un numero di differenti
+  aspetti. Uno di questi aspetti è la presenza di "pads", o punti di
+  collegamento (link points). This terminology arises from soldering; pads
+  are where wires can be attached.
+ 
+  Tipi di elemento:
+        * source - genera i dati da usare in una pipeline, ad es. leggendo
+          da qualcosa (disco, rete, canale scheda audio...). Hanno solo un
+          source pad
+        * filter/codec - hanno dei pad di input ed output. Operano sui
+          dati che ricevono nel sink pad e producono dati sul loro source
+          pad. Un demuxer appartiene a questa categoria (1 in, 2 out)
+        * sink - punto d'uscita di una pipeline, accettano dati senza
+          produrne altri. Implementazioni di elementi sink sono la
+          scrittura su file, la riproduzione audio o video.
+ 
+  --- Pads ---
+ 
+  Sono l'interfaccia di un elemento verso il mondo esterno. Permettono di
+  esporre il tipo specifico di media che l'elemento può gestire.
+ 
+  I pad possono essere source e sink: ciò dipende dal punto di vista
+  dell'elemento cui appartengono
+ 
+  Tipi di pad:
+        * dinamici - l'elemento crea un pad se necessario, esempio: mpeg
+          multiplexer crea pad a seconda dei differenti stream elementari
+          rilevati nello stream mpeg
+        * requested - pad creato on demand
+ 
+  --- Capabilities ---
+ 
+  Usate per descrivere i tipi di dati che possono "attraversare" il pad.
+  Sono allegate al pad stesso. Capabilities sta per "capability chain"
+ 
+  [Salto le parti complicate] Le capabilities sono usate per
+  l'autoplugging (automatically finding plugins for a set of capabilities)
+  ed il rilevamento di compatibilità (tra due pad collegati - "caps
+  negotiation")
+ 
+  --- Link ---
+ 
+  Dati tre elementi (source, filter, sink) posso collegare in modo
+  opportuno i relativi pad, creando una catena. Vedi allegato.
+ 
+  --- Bins ---
+ 
+  Un bin è un elemento contenitore. È possibile aggiungere elementi ad un
+  bin, così come è possibile aggiungerlo ad un altro bin.
+ 
+  Consente di combinare un gruppo di elementi collegati in un elemento
+  logico. A questo punto non serve + ragionare in termini dei singoli
+  elementi, ma del bin.
+ 
+  Una pipeline è un elemento bin, un contenitore generico che consente la
+  schedulazione degli elementi contenuti. Il "toplevel bin" deve essere
+  una pipeline.
+ 
+  Anche un thread è un elemento bin, che consente l'esecuzione separata.
+ 
+  --- Buffers ---
+ 
+  Contengono i dati che scorrono (flow) attraverso una pipeline.
+  Tipicamente gli elementi source creano un nuovo buffer.
+ 
+  --- Element states ---
+ 
+        * NULL - predefinito, l'elemento è creato e non sta facendo
+          alcunché
+        * READY - pronto a fare qualcosa
+        * PAUSED - in pausa
+        * PLAYING - sta facendo qualcosa
+ 
+  Si passa da NULL a PLAYING attraverso i due stati intermedi.
+ 
+  ----------------------------------------
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  Totem's Italian translation.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Pier Luigi Fiorini <plfiorini@supereva.it>, 2002.
+  Davide Patti <dpatti@diit.unict.it>, 2008.
+  Gianvito Cavasoli <janvitus@ubuntu-it.org>, 2008, 2009.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  arch-tag: Italian translation of Rhythmbox.
+  Copyright (C)  2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Luca Ferretti <elle.uca@libero.it>, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  Convenzioni usate:
+  song & track		- Tradurre entrambi come "brano" tranne i casi
+         			in cui traccia è più adeguato.
+ 
+  Browser		- Ce ne sono due tipi: quello per condivisioni su
+  			Bonjour/Zeroconf ed il widget che permette di filtrare
+  			per artista/album/autore. Il primo è browser, il
+  			secondo catalogo (ove possibile distinguere)
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  Italian translation for alacarte
+  Copyright (c) 2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the alacarte package.
+  Alessio Frusciante <algol@firenze.linux.it>, 2006.
+  Milo Casagrande <milo@ubuntu.com>, 2006-2008
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  Italian translation for libwnck
+  This file is distributed under the same license as libwnck package
+  Copyright (C) 2002-2008 Free Software Foundation, Inc.
+  Pier Luigi Fiorini <plfiorini@supereva.it>, 2002.
+ 
+  Luca Ferretti <elle.uca@libero.it>, 2005, 2006, 2007, 2008, 2009.
+ 
+  Per ogni dubbio fare riferimento alla fd.o WM spec
+  http://standards.freedesktop.org/wm-spec/wm-spec-1.4.html
+ 
+  Nei messaggi del comando `wnckprop` è mantenuta la versione inglese
+  (pager, tasklist, workspace, viewport) perché considerato "tecnico"
+ 
+  Nei messaggi che appaiono nella UI vale
+    * workspace -> spazio di lavoro
+    * viewport -> spazio visibile
+  come da discussione su TP
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  Italian translation of gnome-menus.
+  Copyright (C) 2005, 2006, 2007, 2008, 2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-menus package.
+  Francesco Marletta <francesco.marletta @ tiscali.it>, 2005, 206, 2007, 2008, 2009.
+  Luca Ferretti <elle.uca@libero.it>, 2009
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for notification-daemon.mo
+  Italian translation for notification-daemon package.
+  Copyright (C) 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the notification-daemon package.
+  Luca Ferretti <elle.uca@libero.it>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  Italian Translation for gnome-panel
+  This file is distributed under the same license as gnome-panel package
+  Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>
+  Alessio Frusciante <algol@firenze.linux.it>, 2003
+ 
+  Luca Ferretti <elle.uca@libero.it>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  Italian translation for gnome-desktop
+  This file is distributed under the same license as gnome-desktop package
+  Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>, 1997, 1998, 1999, 2000, 2001, 2002.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003.
+  Luca Ferretti <elle.uca@libero.it>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  Italian translations of Evince package.
+  Copyright (C) 2005, 2006, 2007, 2008, 2009 the Evince'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the Evince package.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  Italian translation of gnome-pilot.
+  Copyright (C) 2005-2008 THE gnome-pilot'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the gnome-pilot package.
+  Andrea Zagli <azagli@inwind.it>, 2005-2008.
+ 
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  Italian translation of GNOME Power Manager.
+  Copyright (C) 2006 Free Software Foundation, Inc.
+  Paolo Insogna <shogun713@gmail.com>, 2006.
+  Daniele Medri <dmedri@gmail.com>, 2006.
+  Richard Hughes <richard@hughsie.com>, 2006.
+  Milo Casagrande <milo@ubuntu.com>, 200x-2008
+ 
+  GNOME Power Manager -> Gestore alimentazione GNOME
+  Power Manager -> Gestore alimentazione
+  Inhibit -> inibire, ma anche con sinonimi come disabilitare o impedire
+  Sleep -> Pausa
+  Hibernate -> Ibernare
+  Suspend -> Sospendere
+  Shutdown -> Arresto
+ 
+  Le varie modalità di DPMS sono state lasciate non tradotte:
+  http://www.pluto.it/files/ildp/HOWTO/Battery-Powered/displaytypes.html
+ 
+  to dim -> oscurare
+ 
+  AC Power -> alimentazione dalla rete elettrica
+  Battery power -> alimentazione dalla batteria
+ 
+  light sensor o ambient light sensor -> sensore di luce ambientale
+ 
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  Italian translation of vino.
+  Copyright (C) 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the vino package.
+  Alessio Frusciante <algol@firenze.linux.it>, 2004, 2005, 2006.
+  Milo Casagrande <milo@ubuntu.com>, 2007, 2008, 2009.
+  Luca Ferretti <elle.uca@infinito.it>, 2004, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  Italian translation for gnome-session
+  This file is distributed under the same license as gnome-session package
+  Copyright (C) 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>, 1997, 1998, 1999, 2000, 2001, 2002.
+  Luca Ferretti <elle.uca@libero.it>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  Italian messages for gnome-system-monitor
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  This package is distributed under the same license as the gnome-system-monitor package.
+  Luca Ferretti <elle.uca@libero.it> 2006, 2007, 2008.
+  Alessio Frusciante <algol@firenze.linux.it>, 2001, 2002, 2003, 2004, 2005, 2006, 2007.
+  Davide Falanga <davide.falanga@alice.it>, 2009.
+  Milo Casagrande <milo@ubuntu.com>, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  Italian localisation for gnome-setup-tools
+  Copyright (C) 2000 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@softwarelibero.org>, 2000.
+  Roberto Rosselli Del Turco <rosselli@ling.unipi.it>, 2004.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2004-2005.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  Italian translation of gnome-terminal.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-terminal package.
+  Stefano Canepa <sc@linux.it>, 2003, 2004, 2005, 2006, 2007.
+  Francesco Marletta <francesco.marletta@tiscali.it>, 2004.
+  Lorenzo Travaglio <ltrav02@yahoo.it>, 2008.
+  Milo Casagrande <milo@ubuntu.com>, 2009.
+  Davide Falanga <davide.falanga@alice.it>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  Italian translation of gedit
+  Copyright (C) 1998-2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gedit package.
+  Paolo Maggi <maggi@athena.polito.it> 2002
+  Giuseppe <quiquoqua@pn.itnet.it>, 1998.
+  Alessio Frusciante <algol@firenze.linux.it>, 2002.
+  Roberto Rosselli Del Turco <rosselli@ling.unipi.it>, 2003-2005.
+ 
+  Milo Casagrande <milo@ubuntu.com> 2005-2009, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  Italian translation of Gnome-backgrounds.
+  Copyright (C) 2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-backgrounds package.
+  Ida Gasparretti <vampiria74@tin.it>, 2007.
+  Flavia Weisghizzi <flavia@weisghizzi.it>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  gnome-themes Italian translation.
+  This file is distributed under the same license as the gnome-themes package.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc
+  Luca Ferretti <elle.uca@libero.it>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  Italian translation of gnome-icon-theme
+  Copyright (C) 2002 Free Software Foundation, Inc.
+  This file is distributed under the same license as the package.
+  Luca Ferretti <elle.uca@libero.it>, 2002-2007
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  Italian translation of glade.
+  Copyright (C) 2007-2009 Free Software Foundation, Inc.
+  Christopher Gabriel <cgabriel@pluto.linux.it>, 1999.
+  Andrea Zagli <azagli@libero.it>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  Italian traslation of gnome-utils
+  Released under the terms of GPL-2.1 license
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Alessio Frusciante <algol@firenze.linux.it>, 2003, 2005.
+  Lapo Calamandrei <lapo@it.gnome.org>, 2003.
+  Luca Ferretti <elle.uca@infinito.it>, 2004.
+  Fabio Marzocca <thesaltydog@gmail.com>, 2007.
+  Andrea Zagli <azagli@libero.it>, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  Italian translation for gnome-vfs
+  # This file is distributed under the same license as gnome-vfs package
+  Copyright (C) 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>, 2000, 2001, 2002.
+  Luca Ferretti <elle.uca@libero.it>, 2003, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  Italian localisation for gnome-mime-data
+  Copyright (C) 2000 Free Software Foundation, Inc.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>
+  Alessio Frusciante <algol@firenze.linux.it>, 2003.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Italian translation for freedesktop.org shared-mime-info.
+  Copyright (C) 2005, Free Software Foundation, Inc.
+  This file is distributed under the same license as the shared-mime-info package.
+  Christopher R. Gabriel <cgabriel@pluto.linux.it>
+  Alessio Frusciante <algol@firenze.linux.it>, 2003-2005.
+  Luca Ferretti <elle.uca@infinito.it>, 2005-2008.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  Italian translation of Metacity.
+  This file is distributed under the same license as metacity package
+  Copyright (C) 2002,2003,2004,2005,2006,2007,2008,2009 Free Software Foundation, Inc.
+  Pier Luigi Fiorini <plfiorini@libero.it>, 2002.
+  Lapo Calamandrei <lapo.calamandrei@virgilio.it>, 2003.
+  Luca Ferretti <elle.uca@libero.it>, 2004,2005,2006,2007,2008,2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  Italian messages for gtkspell.
+  Copyright (C) 2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtkspell package.
+  Marco Colombo <m.colombo@ed.ac.uk>, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  Italian translation of Seahorse
+  Copyright (C) 2006, 2007, 2008, 2009 the Free Software Foundation, Inc.
+  This file is distributed under the same license as the seahorse package.
+  Luigi maselli <metnik at tiscali.it>, 2003
+ 
+  keyserver -> server di chiavi come nel Manuale GNU sulla privacy
+  passphrase -> invariato come nel Manuale GNU sulla privacy
+  password keyring -> lascio solo portachiavi anche per uniformarsi col vecchio portachiavi di GNOME
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2006-2009, 2009.
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  Italian translation for xdg-user-dirs-gtk.
+  Copyright (C) 2007 Free Software Foundation Inc.
+  This file is distributed under the same license as the xdg-user-dirs-gtk package.
+  Luca Ferretti <elle.uca@libero.it>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Italian translation for xdg-user-dirs
+  Copyright (C) 2007 Free Software Foundation, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+  Luca Ferretti <elle.uca@libero.it>, 2007.
+ 
+  Questo commento è stato aggiunto per assicurare la codifica «UTF-8»
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  Italian translation for Evolution
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as evolution package
+  Based on translation of gal package too.
+  Christopher R. Gabriel <cgabriel@softwarelibero.org>, 2002
+  Clara Tattoni <clara.tattoni@libero.it>, 2000-2002
+  Ettore Perazzoli <ettore@ximian.com>, 2001
+  Marco Ciampa <ciampix@libero.it>, 2003-2005
+  Alessio Dessi <alessio.dessi@libero.it>, 2003
+  Monica Badia <Monica.Badia@Sun.COM>, 2003
+  Craig Jeffares <cjeffares@novell.com>, 2004.
+  Luca Ferretti <elle.uca@libero.it>, 2003-2008.
+  Milo Casagrande <milo@ubuntu.com>, 2009
+ 
+   Convenzioni adottate:
+ 
+   task          -> attività (2.26)
+   meeting       -> riunione
+   appointment   -> appuntamento
+   summary       -> indice
+   location      -> ubicazione (geografica),
+                    posizione (nel file system)
+   card          -> tessera
+   alarm         -> allarme
+   reminder      -> promemoria
+   junk          -> indesiderato 	(MS)
+   not junk      -> attendibile
+   offline       -> fuori rete
+   inline	       -> incorporato (sperimentale per 2.22)
+ 
+  Nota: a causa delle mie limitate capacità mentali, ho rimosso
+  molti commenti utili alla traduzione. Grazie all'svn e proverò
+  a recuperarli in seguito.  -Luca
+ 
+  Luca Ferretti <elle.uca@libero.it>, 2009.
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  Italian translation of GtkHTML.
+  Copyright (C) 2001-2008, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtkhtml package.
+  Pier Luigi Fiorini <plfiorini@libero.it>, 2001.
+  Luca Ferretti <elle.uca@libero.it>, 2003-2008.
+ 
+  Milo Casagrande <milo@ubuntu.com>, 2008-2009, 2009.
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  Evolution-exchange italian translation
+  Copyright (C) 2004-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution-exchange package.
+  Marco Ciampa <ciampix@libero.it>, 2004-2006.
+  Luca Ferretti <elle.uca@libero.it>, 2008.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  Italian translation of evolution-data-server
+  This file is distributed under the same license as evolution-data-server package
+  Copyright (C) 2000, 2001, 2002, 2003, 2005, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+  Clara Tattoni <clara.tattoni@libero.it>, 2000, 2001, 2002.
+  Ettore Perazzoli <ettore@ximian.com>, 2001.
+  Marco Ciampa <ciampix@libero.it>, 2003, 2004, 2005.
+  Alessio Dessi <alessio.dessi@libero.it>, 2003.
+  Monica Badia <Monica.Badia@Sun.COM>, 2003.
+  Luca Ferretti <elle.uca@libero.it>, 2006, 2007, 2008, 2009.
+ 
+  ### Glossario ###
+ 
+      journal		-> diario (Exchange)
+      task		-> attività
+      list		-> elenco
+      offline		-> fuori rete
+      home		-> abitazione se inteso casa
+      			-> personale se di indirizzo email/im
+  			   (contrapposto a lavoro)
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  evolution-webcal Italian translation
+  Copyright (C) 2004, Free Software Foundation, Inc
+  This file is distributed under the same license as evolution-webcal package.
+  Luca Ferretti <elle.uca@libero.it>, 2004-2007
+ 
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of virt-manager.tip.it.po to Italiano
+  This file is distributed under the same license as the virt-manager package.
+  Copyright (C) 2008 Red Hat, Inc. 2006.
+ 
+ 
+  Francesco Valente <fvalen@redhat.com>,2006.
+  Francesco Tombolini <tombo@adamantio.net>, 2007, 2008.
+  Silvio Pierro <perplesso82@gmail.com>, 2008.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

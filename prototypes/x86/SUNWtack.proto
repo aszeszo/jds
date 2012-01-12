@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtack.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtack.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtack.copyright
+f none gnu/share/doc/SUNWtack/CHANGES=usr/gnu/share/doc/SUNWtack/CHANGES 0444 root bin
+f none gnu/share/doc/SUNWtack/COPYING.bz2=usr/gnu/share/doc/SUNWtack/COPYING.bz2 0444 root bin
+f none gnu/share/doc/SUNWtack/HISTORY=usr/gnu/share/doc/SUNWtack/HISTORY 0444 root bin
+f none gnu/share/doc/SUNWtack/README=usr/gnu/share/doc/SUNWtack/README 0444 root bin
+d none gnu 0755 root bin
+d none gnu/bin 0755 root bin
+d none gnu/bin/amd64 0755 root bin
+f none gnu/bin/amd64/tack=usr/gnu/bin/amd64/tack 0755 root bin
+f none gnu/bin/tack=usr/gnu/bin/tack 0755 root bin
+d none gnu/share 0755 root sys
+d none gnu/share/doc 0755 root other
+d none gnu/share/doc/SUNWtack 0755 root bin
+d none gnu/share/man 0755 root bin
+d none gnu/share/man/man1 0755 root bin
+f none gnu/share/man/man1/tack.1=usr/gnu/share/man/man1/tack.1 0644 root bin

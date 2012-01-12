@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWnautilus-sendto.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWnautilus-sendto.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWnautilus-sendto.copyright
+f none share/doc/SUNWnautilus-sendto/AUTHORS=usr/share/doc/SUNWnautilus-sendto/AUTHORS 0444 root bin
+f none share/doc/SUNWnautilus-sendto/COPYING.bz2=usr/share/doc/SUNWnautilus-sendto/COPYING.bz2 0444 root bin
+f none share/doc/SUNWnautilus-sendto/ChangeLog.bz2=usr/share/doc/SUNWnautilus-sendto/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWnautilus-sendto/ChangeLog.pre-1.1.4.1.bz2=usr/share/doc/SUNWnautilus-sendto/ChangeLog.pre-1.1.4.1.bz2 0444 root bin
+f none share/doc/SUNWnautilus-sendto/NEWS.bz2=usr/share/doc/SUNWnautilus-sendto/NEWS.bz2 0444 root bin
+f none share/doc/SUNWnautilus-sendto/README=usr/share/doc/SUNWnautilus-sendto/README 0444 root bin
+d none bin 0755 root bin
+f none bin/nautilus-sendto=usr/bin/nautilus-sendto 0755 root bin
+d none lib 0755 root bin
+d none lib/nautilus 0755 root bin
+d none lib/nautilus-sendto 0755 root bin
+d none lib/nautilus-sendto/plugins 0755 root bin
+f none lib/nautilus-sendto/plugins/libnstevolution.so=usr/lib/nautilus-sendto/plugins/libnstevolution.so 0755 root bin
+f none lib/nautilus-sendto/plugins/libnstgajim.so=usr/lib/nautilus-sendto/plugins/libnstgajim.so 0755 root bin
+f none lib/nautilus-sendto/plugins/libnstpidgin.so=usr/lib/nautilus-sendto/plugins/libnstpidgin.so 0755 root bin
+f none lib/nautilus-sendto/plugins/libnstremovable_devices.so=usr/lib/nautilus-sendto/plugins/libnstremovable_devices.so 0755 root bin
+d none lib/nautilus/extensions-2.0 0755 root bin
+f none lib/nautilus/extensions-2.0/libnautilus-sendto.so=usr/lib/nautilus/extensions-2.0/libnautilus-sendto.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWnautilus-sendto 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/nautilus-sendto.1=usr/share/man/man1/nautilus-sendto.1 0644 root bin
+d none share/nautilus-sendto 0755 root bin
+d none share/nautilus-sendto/ui 0755 root bin
+f none share/nautilus-sendto/ui/nautilus-sendto.ui=usr/share/nautilus-sendto/ui/nautilus-sendto.ui 0644 root bin

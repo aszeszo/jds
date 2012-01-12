@@ -1,0 +1,31 @@
+--- gnome-settings-daemon-3.2.0/config.h.in-orig	2011-10-04 01:19:30.012934393 -0500
++++ gnome-settings-daemon-3.2.0/config.h.in	2011-10-04 01:20:07.863840714 -0500
+@@ -84,6 +84,9 @@
+ /* Define to 1 if you have the <unistd.h> header file. */
+ #undef HAVE_UNISTD_H
+ 
++/* Define if Xft functionality is available */
++#undef HAVE_XFT2
++
+ /* Define to the sub-directory in which libtool stores uninstalled libraries.
+    */
+ #undef LT_OBJDIR
+--- gnome-settings-daemon-3.2.0/configure.ac-orig	2011-10-04 01:19:36.808875589 -0500
++++ gnome-settings-daemon-3.2.0/configure.ac	2011-10-04 01:20:59.502920476 -0500
+@@ -93,6 +93,16 @@ AC_SUBST([GSD_PLUGIN_LDFLAGS])
+ 
+ AC_PATH_PROG(GLIB_GENMARSHAL, glib-genmarshal)
+ 
++dnl
++dnl Check for Xft version 2; we build in extra functionality to the font capplet
++dnl when we have it.
++dnl
++xft_modules=
++if $PKG_CONFIG --exists xft ; then
++  xft_modules="xft"
++  AC_DEFINE(HAVE_XFT2,,[Define if Xft functionality is available])
++fi
++
+ dnl ================================================================
+ dnl GSettings stuff
+ dnl ================================================================

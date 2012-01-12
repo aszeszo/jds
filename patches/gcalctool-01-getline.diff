@@ -1,0 +1,12 @@
+diff -ruN gcalctool-5.30.1.orig/src/gcalccmd.c gcalctool-5.30.1/src/gcalccmd.c
+--- gcalctool-5.30.1.orig/src/gcalccmd.c	2010-04-26 21:15:39.882380913 +0100
++++ gcalctool-5.30.1/src/gcalccmd.c	2010-04-26 21:16:12.603244434 +0100
+@@ -82,7 +82,7 @@
+     equation = (char *) malloc(MAXLINE * sizeof(char));
+     while (1) {
+         printf("> ");
+-        bytes_read = getline(&equation, &nbytes, stdin);
++        bytes_read = fgets(&equation, &nbytes, stdin);
+       
+         if (bytes_read >= 0)
+             str_adjust(equation);
