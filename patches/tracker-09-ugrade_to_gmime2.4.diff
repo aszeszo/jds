@@ -1,0 +1,205 @@
+diff -u tracker-0.6.95-old/src/tracker-indexer/modules/evolution-common.c tracker-0.6.95/src/tracker-indexer/modules/evolution-common.c
+--- tracker-0.6.95-old/src/tracker-indexer/modules/evolution-common.c	2009-09-24 10:25:13.448285000 +0800
++++ tracker-0.6.95/src/tracker-indexer/modules/evolution-common.c	2009-09-23 19:07:20.626853000 +0800
+@@ -96,9 +96,9 @@
+         const gchar *content_type = NULL;
+ 
+         if (GMIME_IS_MESSAGE (object)) {
+-                content_type = g_mime_message_get_header (GMIME_MESSAGE (object), "Content-Type");
++                content_type = g_mime_object_get_header (GMIME_MESSAGE (object), "Content-Type");
+         } else if (GMIME_IS_PART (object)) {
+-                content_type = g_mime_part_get_content_header (GMIME_PART (object), "Content-Type");
++                content_type = g_mime_object_get_header (GMIME_PART (object), "Content-Type");
+         }
+ 
+         if (!content_type) {
+diff -u tracker-0.6.95-old/src/tracker-indexer/modules/evolution-imap.c tracker-0.6.95/src/tracker-indexer/modules/evolution-imap.c
+--- tracker-0.6.95-old/src/tracker-indexer/modules/evolution-imap.c	2009-09-24 10:25:13.448858000 +0800
++++ tracker-0.6.95/src/tracker-indexer/modules/evolution-imap.c	2009-09-23 19:07:21.261667000 +0800
+@@ -557,7 +557,7 @@
+ static gboolean
+ get_attachment_info (const gchar            *mime_file,
+                      gchar                 **name,
+-                     GMimePartEncodingType  *encoding)
++                     GMimeContentEncoding  *encoding)
+ {
+ 	GMimeContentType *mime;
+ 	gchar *tmp, *mime_content;
+@@ -568,7 +568,7 @@
+ 	}
+ 
+ 	if (encoding) {
+-		*encoding = GMIME_PART_ENCODING_DEFAULT;
++		*encoding = GMIME_CONTENT_ENCODING_DEFAULT;
+ 	}
+ 
+ 	if (!g_file_get_contents (mime_file, &tmp, NULL, NULL)) {
+@@ -615,7 +615,7 @@
+ 			*name = g_strdup (g_mime_content_type_get_parameter (mime, "name"));
+ 		}
+ 
+-		g_mime_content_type_destroy (mime);
++		g_object_unref (mime);
+ 	}
+ 
+ 	if (name && !*name) {
+@@ -637,17 +637,17 @@
+ 		gchar *encoding_str = g_strndup (pos_encoding, pos_end_encoding - pos_encoding);
+ 
+ 		if (strcmp (encoding_str, "7bit") == 0) {
+-			*encoding = GMIME_PART_ENCODING_7BIT;
++			*encoding = GMIME_CONTENT_ENCODING_7BIT;
+ 		} else if (strcmp (encoding_str, "8bit") == 0) {
+-			*encoding = GMIME_PART_ENCODING_7BIT;
++			*encoding = GMIME_CONTENT_ENCODING_7BIT;
+ 		} else if (strcmp (encoding_str, "binary") == 0) {
+-			*encoding = GMIME_PART_ENCODING_BINARY;
++			*encoding = GMIME_CONTENT_ENCODING_BINARY;
+ 		} else if (strcmp (encoding_str, "base64") == 0) {
+-			*encoding = GMIME_PART_ENCODING_BASE64;
++			*encoding = GMIME_CONTENT_ENCODING_BASE64;
+ 		} else if (strcmp (encoding_str, "quoted-printable") == 0) {
+-			*encoding = GMIME_PART_ENCODING_QUOTEDPRINTABLE;
++			*encoding = GMIME_CONTENT_ENCODING_QUOTEDPRINTABLE;
+ 		} else if (strcmp (encoding_str, "x-uuencode") == 0) {
+-			*encoding = GMIME_PART_ENCODING_UUENCODE;
++			*encoding = GMIME_CONTENT_ENCODING_UUENCODE;
+ 		}
+ 
+ 		g_free (encoding_str);
+@@ -738,7 +738,7 @@
+                       gpointer     user_data)
+ {
+         GString *body = (GString *) user_data;
+-        GMimePartEncodingType part_encoding;
++        GMimeContentEncoding part_encoding;
+         GMimePart *part;
+         const gchar *content, *disposition, *filename;
+         gchar *encoding, *part_body;
+@@ -762,12 +762,12 @@
+ 
+ 	part = GMIME_PART (object);
+         filename = g_mime_part_get_filename (part);
+-	disposition = g_mime_part_get_content_disposition (part);
+-        part_encoding = g_mime_part_get_encoding (part);
++	disposition = g_mime_object_get_disposition (part);
++        part_encoding = g_mime_part_get_content_encoding (part);
+ 
+-        if (part_encoding == GMIME_PART_ENCODING_BINARY ||
+-            part_encoding == GMIME_PART_ENCODING_BASE64 ||
+-            part_encoding == GMIME_PART_ENCODING_UUENCODE) {
++        if (part_encoding == GMIME_CONTENT_ENCODING_BINARY ||
++            part_encoding == GMIME_CONTENT_ENCODING_BASE64 ||
++            part_encoding == GMIME_CONTENT_ENCODING_UUENCODE) {
+                 return;
+         }
+ 
+@@ -1030,7 +1030,7 @@
+ 	TrackerModuleMetadata *metadata;
+ 	GMimeStream *stream;
+ 	GMimeDataWrapper *wrapper;
+-	GMimePartEncodingType encoding;
++	GMimeContentEncoding encoding;
+ 	gchar *path, *name;
+ 
+ 	if (!get_attachment_info (mime_file, &name, &encoding)) {
+diff -u tracker-0.6.95-old/src/tracker-indexer/modules/evolution-pop.c tracker-0.6.95/src/tracker-indexer/modules/evolution-pop.c
+--- tracker-0.6.95-old/src/tracker-indexer/modules/evolution-pop.c	2009-09-24 10:25:13.461052000 +0800
++++ tracker-0.6.95/src/tracker-indexer/modules/evolution-pop.c	2009-09-24 10:20:20.916478000 +0800
+@@ -175,7 +175,7 @@
+ 	gchar *number;
+ 	gint id;
+ 
+-	header = g_mime_message_get_header (message, "X-Evolution");
++	header = g_mime_object_get_header (message, "X-Evolution");
+ 
+         if (!header) {
+                 return -1;
+@@ -291,7 +291,7 @@
+ {
+ 	const gchar *header, *pos;
+ 
+-	header = g_mime_message_get_header (message, "X-Evolution");
++	header = g_mime_object_get_header (message, "X-Evolution");
+ 
+ 	if (!header) {
+ 		return 0;
+@@ -304,25 +304,31 @@
+ 
+ static GList *
+ get_message_recipients (GMimeMessage *message,
+-                        const gchar  *type)
++                        GMimeRecipientType  type)
+ {
+ 	GList *list = NULL;
+ 	const InternetAddressList *addresses;
+ 
+ 	addresses = g_mime_message_get_recipients (message, type);
++	guint length = internet_address_list_length(addresses);
++	int i=0;
+ 
+-	while (addresses) {
++	while (i++ < length) {
+ 		InternetAddress *address;
+ 		gchar *str;
+ 
+-		address = addresses->address;
++		address = internet_address_list_get_address(addresses,i);
+ 
+-		if (address->name && address->value.addr) {
+-			str = g_strdup_printf ("%s %s", address->name, address->value.addr);
+-		} else if (address->value.addr) {
+-			str = g_strdup (address->value.addr);
+-		} else if (address->name) {
+-			str = g_strdup (address->name);
++		gchar *address_name = internet_address_get_name(address);
++
++		gchar *address_value = internet_address_to_string(address,TRUE);
++
++		if (address_name && address_value ) {
++			str = g_strdup_printf ("%s %s", address_name, address_value);
++		} else if (address_value) {
++			str = g_strdup (address_value);
++		} else if (address_name) {
++			str = g_strdup (address_name);
+ 		} else {
+ 			str = NULL;
+ 		}
+@@ -331,7 +337,6 @@
+ 			list = g_list_prepend (list, str);
+ 		}
+ 
+-		addresses = addresses->next;
+ 	}
+ 
+ 	return g_list_reverse (list);
+@@ -451,7 +456,7 @@
+ 	}
+ 
+ 	part = GMIME_PART (object);
+-	disposition = g_mime_part_get_content_disposition (part);
++	disposition = g_mime_object_get_disposition (part);
+ 
+ 	if (!disposition ||
+ 	    (strcmp (disposition, GMIME_DISPOSITION_ATTACHMENT) != 0 &&
+
+--- tracker-0.6.95-old/configure.ac	2009-09-24 10:25:13.924303000 +0800
++++ tracker-0.6.95/configure.ac	2009-09-23 18:44:29.164590000 +0800
+@@ -132,7 +132,7 @@
+ GTK_REQUIRED=2.16.0
+ GLADE_REQUIRED=2.5
+ QDBM_REQUIRED=1.8
+-GMIME_REQUIRED=2.1.0
++GMIME_REQUIRED=2.4.0
+ LIBXML2_REQUIRED=0.6
+ LIBNOTIFY_REQUIRED=0.4.3
+ HAL_REQUIRED=0.5
+@@ -182,7 +182,7 @@
+ AC_SUBST(PANGO_LIBS)
+ 
+ # Check for GMime
+-PKG_CHECK_MODULES(GMIME, [gmime-2.0 >= $GMIME_REQUIRED])
++PKG_CHECK_MODULES(GMIME, [gmime-2.4 >= $GMIME_REQUIRED])
+ AC_SUBST(GMIME_CFLAGS)
+ AC_SUBST(GMIME_LIBS)
+ 

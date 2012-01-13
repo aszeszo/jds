@@ -1,0 +1,29 @@
+diff -urN desktop-file-utils-0.17/src/update-desktop-database.c ../SUNWgnome-desktop-prefs-2.30.0.hacked/desktop-file-utils-0.17/src/update-desktop-database.c
+--- desktop-file-utils-0.17/src/update-desktop-database.c	2010-09-10 02:21:22.000000000 +0000
++++ ../SUNWgnome-desktop-prefs-2.30.0.hacked/desktop-file-utils-0.17/src/update-desktop-database.c	2011-03-23 12:47:27.468389557 +0000
+@@ -32,6 +32,7 @@
+ #include <sys/types.h>
+ #include <sys/stat.h>
+ #include <unistd.h>
++#include <grp.h>
+ 
+ #include <glib.h>
+ #include <glib/gi18n.h>
+@@ -313,6 +314,7 @@
+   GError *sync_error;
+   char *temp_cache_file, *cache_file;
+   FILE *tmp_file;
++  struct group *bingrp;
+ 
+   temp_cache_file = NULL;
+   sync_error = NULL;
+@@ -329,6 +331,9 @@
+ 
+   fclose (tmp_file);
+ 
++  bingrp= getgrnam ("bin");
++  chown (temp_cache_file, 0, bingrp->gr_gid); 
++
+   cache_file = g_build_filename (dir, CACHE_FILENAME, NULL);
+   if (rename (temp_cache_file, cache_file) < 0)
+     {

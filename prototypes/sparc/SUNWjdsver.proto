@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWjdsver.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWjdsver.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWjdsver.copyright
+d none etc 0755 root sys
+f none etc/product-info=etc/product-info 0644 root sys

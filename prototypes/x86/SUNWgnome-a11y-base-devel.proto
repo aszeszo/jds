@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-base-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-base-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-base-devel.copyright
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgailutil.3=usr/share/man/man3/libgailutil.3 0644 root bin

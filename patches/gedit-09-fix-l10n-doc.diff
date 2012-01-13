@@ -1,0 +1,1430 @@
+diff -r 3b45aeb8f433 help/bg/gedit.xml
+--- a/help/bg/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/bg/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2005</year><holder>Ростислав "zbrox" Райков (zbrox@i-space.org)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Екипът за документацията на Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+diff -r 3b45aeb8f433 help/ca/gedit.xml
+--- a/help/ca/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/ca/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Equip de documentació de Sun Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+diff -r 3b45aeb8f433 help/cs/gedit.xml
+--- a/help/cs/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/cs/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright><copyright><year>2009.</year><holder>Lucas Lommer (llommer@svn.gnome.org)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Dokumentační tým Sun Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+diff -r 3b45aeb8f433 help/da/gedit.xml
+--- a/help/da/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/da/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2008.</year><holder>M.P. Rommedahl (Lhademmor@gmail.com)</holder></copyright><copyright><year>2008.</year><holder>Ask Hjorth Larsen (asklarsen@gmail.com)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Sun Java skrivebordssystems-dokumentationsholdet</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>Manual til gedit v. 2.0</revnumber>
+ 		  <date>Marts 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>Manual til gedit v. 2.1</revnumber>
+ 		  <date>Juni 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>Manual til gedit v. 2.2</revnumber>
+ 		  <date>August 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>Manual til gedit v. 2.3</revnumber>
+ 		  <date>September 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>Manual til gedit v. 2.4</revnumber>
+ 		  <date>Januar 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>Manual til gedit v. 2.5</revnumber>
+ 		  <date>Marts 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>Manual til gedit v. 2.6</revnumber>
+ 		  <date>September 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>Manual til gedit v. 2.7</revnumber>
+ 		  <date>Marts 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME-dokumentationsholdet</para>
++			 <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 			 <para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/de/gedit.xml
+--- a/help/de/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/de/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2007</year><holder>Jan Arne Petersen (jap@gnome.org)</holder></copyright><copyright><year>2008-2010</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Sun Java-Desktop-System-Dokumentationsteam</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>gedit-Handbuch V2.0</revnumber>
+ 		  <date>März 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>gedit-Handbuch V2.1</revnumber>
+ 		  <date>Juni 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>gedit-Handbuch V2.2</revnumber>
+ 		  <date>August 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>gedit-Handbuch V2.3</revnumber>
+ 		  <date>September 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>gedit-Handbuch V2.4</revnumber>
+ 		  <date>Januar 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>gedit-Handbuch V2.5</revnumber>
+ 		  <date>März 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>gedit-Handbuch V2.6</revnumber>
+ 		  <date>September 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>gedit-Handbuch V2.7</revnumber>
+ 		  <date>März 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Dokumentationsteam</para>
++			 <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/el/gedit.xml
+--- a/help/el/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/el/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2009</year><holder>Μάριος Ζηντίλης (m.zindilis@dmajor.org)</holder></copyright><copyright><year>2009 &lt;mk73628@hotmail.com&gt;</year><holder>Μιχαήλ Κοτσαρίνης</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Ομάδα τεκμηρίωσης του συστήματος επιφάνειας εργασίας της Sun Java</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+diff -r 3b45aeb8f433 help/es/gedit.xml
+--- a/help/es/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/es/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2006-2009</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright><copyright><year>2005</year><holder>María Majadas (maria.majadas@hispalinux.es)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Equipo de documentación de Sun Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>Manual de gedit V2.0</revnumber>
+ 		  <date>Marzo 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>Manual de gedit V2.1</revnumber>
+ 		  <date>Junio 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>Manual de gedit V2.2</revnumber>
+ 		  <date>Agosto 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>Manual de gedit V2.3</revnumber>
+ 		  <date>Septiembre 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>Manual de gedit V2.4</revnumber>
+ 		  <date>Enero 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>Manual de gedit V2.5</revnumber>
+ 		  <date>Marzo 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>Manual de gedit V2.6</revnumber>
+ 		  <date>Septiembre 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>Manual de gedit V2.7</revnumber>
+ 		  <date>Marzo 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Equipo de documentación de Sun GNOME</para>
++			 <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Proyecto de documentación de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/fi/gedit.xml
+--- a/help/fi/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/fi/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2008</year><holder>Valto Wirkola (valto [dot] wirkola [at] yahoo [dot] com)</holder></copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>Lisätty näppäinyhdistelmätauluun</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>gedit-opas V2.0</revnumber>
+ 		  <date>Maaliskuu 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.1</revnumber>
+ 		  <date>Kesäkuu 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.2</revnumber>
+ 		  <date>Elokuu 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.3</revnumber>
+ 		  <date>Syyskuu 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.4</revnumber>
+ 		  <date>Tammikuu 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.5</revnumber>
+ 		  <date>Maaliskuu 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.6</revnumber>
+ 		  <date>Syyskuu 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.7</revnumber>
+ 		  <date>Maaliskuu 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>gedit-käyttöopas V2.8</revnumber>
+ 		  <date>Heinäkuu 2006</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:n ohjeistusprojekti</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/fr/gedit.xml
+--- a/help/fr/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/fr/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2006.</year><holder>Vincent Untz (vuntz@gnome.org)</holder></copyright><copyright><year>2006.</year><holder>Jonathan Ernst (jonathan@ernstfamily.ch)</holder></copyright><copyright><year>2006.</year><holder>Philippe Lefevre (ph.l@libertysurf.fr)</holder></copyright><copyright><year>2006.</year><holder>Christophe Bliard (christophe.bliard@trux.info)</holder></copyright><copyright><year>2007-2009.</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Équipe de documentation Sun Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+diff -r 3b45aeb8f433 help/hu/gedit.xml
+--- a/help/hu/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/hu/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002.</year>
+ 		<year>2003.</year>
+ 		<year>2004.</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000.</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2007., 2008.</year><holder>Kelemen Gábor (kelemeng@gnome.hu)</holder></copyright><copyright><year>2007., 2008.</year><holder>Őry Máté (orymate@gmail.com)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Sun Java Desktop System dokumentációs csapat</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>gedit kézikönyv 2.0</revnumber>
+ 		  <date>2002. március</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>gedit kézikönyv 2.1</revnumber>
+ 		  <date>2002. június</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>gedit kézikönyv 2.2</revnumber>
+ 		  <date>2002. augusztus</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>gedit kézikönyv 2.3</revnumber>
+ 		  <date>2002. szeptember</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>gedit kézikönyv 2.4</revnumber>
+ 		  <date>2003. január</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>gedit kézikönyv 2.5</revnumber>
+ 		  <date>2003. március</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>gedit kézikönyv 2.6</revnumber>
+ 		  <date>2003. szeptember</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>gedit kézikönyv 2.7</revnumber>
+ 		  <date>2004. március</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME dokumentációs csapat</para>
++			 <para role="author">Oracle Solaris Desktop dokumentációs csapat</para>
+ 			 <para role="publisher">GNOME dokumentációs projekt</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/it/gedit.xml
+--- a/help/it/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/it/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>Aggiunta la tabella sulle scorciatoie</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>Manuale di gedit V2.0</revnumber>
+ 		  <date>Marzo 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>Manuale di gedit V2.1</revnumber>
+ 		  <date>Giugno 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>Manuale di gedit V2.2</revnumber>
+ 		  <date>Agosto 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>Manuale di gedit V2.3</revnumber>
+ 		  <date>Settembre 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>Manuale di gedit V2.4</revnumber>
+ 		  <date>Gennaio 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>Manuale di gedit V2.5</revnumber>
+ 		  <date>Marzo 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>Manuale di gedit V2.6</revnumber>
+ 		  <date>Settembre 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>Manuale di gedit V2.7</revnumber>
+ 		  <date>Marzo 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>Manuale di gedit V2.8</revnumber>
+ 		  <date>Luglio 2006</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Progetto documentazione di GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/ja/gedit.xml
+--- a/help/ja/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/ja/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2008</year><holder>柴田 充也 (mty.shibata@gmail.com)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Sun Java デスクトップシステム ドキュメンテーションチーム</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>gedit マニュアル V2.0</revnumber>
+ 		  <date>2002 年 3 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>gedit マニュアル V2.1</revnumber>
+ 		  <date>2002 年 6 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>gedit マニュアル V2.2</revnumber>
+ 		  <date>2002 年 8 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>gedit マニュアル V2.3</revnumber>
+ 		  <date>2002 年 9 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>gedit マニュアル V2.4</revnumber>
+ 		  <date>2003 年 1 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>gedit マニュアル V2.5</revnumber>
+ 		  <date>2003 年 3 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>gedit マニュアル V2.6</revnumber>
+ 		  <date>2003 年 9 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>gedit マニュアル V2.7</revnumber>
+ 		  <date>2004 年 3 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++			 <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+ 			 <para role="publisher">GNOME ドキュメンテーション プロジェクト</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/ko/gedit.xml
+--- a/help/ko/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/ko/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>키보드 바로 가기 표 추가</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>gedit 설명서 버전 2.8</revnumber>
+ 		  <date>2006년 6월</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">그놈 문서 프로젝트</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/oc/gedit.xml
+--- a/help/oc/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/oc/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>Added the Shortcut Keys Table</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>gedit Manual V2.8</revnumber>
+ 		  <date>July 2006</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">Projècte de documentacion de GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/pt_BR/gedit.xml
+--- a/help/pt_BR/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/pt_BR/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2007</year><holder>Wagner Luís de Araújo Menezes Macêdo (wagnerluis1982@gmail.com)</holder></copyright><copyright><year>2007</year><holder>Pedro Vaz de Mello de Medeiros (pedrovmm@gmail.com)</holder></copyright><copyright><year>2007, 2008</year><holder>Leonardo Ferreira Fontenelle (leonardof@gnome.org)</holder></copyright><copyright><year>2008</year><holder>Vladimir Melo (vmelo@gnome.org)</holder></copyright><copyright><year>2008</year><holder>Fabricio Godoy (skarllot@gmail.com)</holder></copyright><copyright><year>2009</year><holder>Krix Apolinário (krixapolinario@gmail.com)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Equipe de Documentação da Sun Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>Manual do gedit V2.0</revnumber>
+ 		  <date>Março de 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>Manual do gedit V2.1</revnumber>
+ 		  <date>Junho de 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>Manual do gedit V2.2</revnumber>
+ 		  <date>Agosto de 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>Manual do gedit V2.3</revnumber>
+ 		  <date>Setembro de 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>Manual do gedit V2.4</revnumber>
+ 		  <date>Janeiro de 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>Manual do gedit V2.5</revnumber>
+ 		  <date>Março de 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>Manual do gedit V2.6</revnumber>
+ 		  <date>Setembro de 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>Manual do gedit V2.7</revnumber>
+ 		  <date>Março de 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Equipe de Documentação Sun GNOME</para>
++			 <para role="author">Equipe de Documentação Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/ru/gedit.xml
+--- a/help/ru/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/ru/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2006 - 2009.</year><holder>Салихов Тимур (Tima-S@yandex.ru)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Команда документирования Sun Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>Руководство версии 2.0 по gedit.</revnumber>
+ 		  <date>Март 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>Руководство версии 2.1 по gedit.</revnumber>
+ 		  <date>Июнь 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>Руководство версии 2.2 по gedit.</revnumber>
+ 		  <date>Август 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>Руководство версии 2.3 по gedit.</revnumber>
+ 		  <date>Сентябрь 2002</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>Руководство версии 2.4 по gedit.</revnumber>
+ 		  <date>Январь 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>Руководство версии 2.5 по gedit.</revnumber>
+ 		  <date>Март 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>Руководство версии 2.6 по gedit.</revnumber>
+ 		  <date>Сентябрь 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>Руководство версии 2.7 по gedit.</revnumber>
+ 		  <date>Март 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Команда документирования Sun GNOME</para>
++			 <para role="author">Команда документирования Oracle Solaris Desktop</para>
+ 			 <para role="publisher">Проект документирования GNOME</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/sv/gedit.xml
+--- a/help/sv/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/sv/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2007, 2008, 2009</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>Lade till tabell för snabbtangenter</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>Handbok för gedit v2.8</revnumber>
+ 		  <date>Juli 2006</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME:s dokumentationsprojekt</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/uk/gedit.xml
+--- a/help/uk/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/uk/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright><copyright><year>2007</year><holder>Максим Дзюманенко (dziumanenko@gmail.com)</holder></copyright>
+@@ -67,7 +68,7 @@
+ 		  <firstname>Sun команда документування Java Desktop System</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+diff -r 3b45aeb8f433 help/zh_CN/gedit.xml
+--- a/help/zh_CN/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/zh_CN/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>添加快捷键表</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>gedit 手册 V2.0</revnumber>
+ 		  <date>2002年3月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>gedit 手册 V2.1</revnumber>
+ 		  <date>2002年6月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>gedit 手册 V2.2</revnumber>
+ 		  <date>2002年8月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>gedit 手册 V2.3</revnumber>
+ 		  <date>2002年9月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>gedit 手册 V2.4</revnumber>
+ 		  <date>2003年1月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>gedit 手册 V2.5</revnumber>
+ 		  <date>2003年3月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>gedit 手册 V2.6</revnumber>
+ 		  <date>2003年9月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>gedit 手册 V2.7</revnumber>
+ 		  <date>2003年3月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>gedit 手册 V2.8</revnumber>
+ 		  <date>2006年7月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文档项目</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/zh_HK/gedit.xml
+--- a/help/zh_HK/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/zh_HK/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002 年</year>
+ 		<year>2003 年</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000 年</year>
+ 		<holder>Eric Baudais</holder> </copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>Added the Shortcut Keys Table</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>gedit 手冊 V2.0</revnumber>
+ 		  <date>2002 年 3 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>gedit 手冊 V2.1</revnumber>
+ 		  <date>2002 年 6 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>gedit 手冊 V2.2</revnumber>
+ 		  <date>2002 年 8 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>gedit 手冊 V2.3</revnumber>
+ 		  <date>2002 年 9 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>gedit 手冊 V2.4</revnumber>
+ 		  <date>2003 年 1 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>gedit 手冊 V2.5</revnumber>
+ 		  <date>2003 年 3 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>gedit Manual V2.6</revnumber>
+ 		  <date>September 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>gedit Manual V2.7</revnumber>
+ 		  <date>March 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>gedit Manual V2.8</revnumber>
+ 		  <date>July 2006</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+diff -r 3b45aeb8f433 help/zh_TW/gedit.xml
+--- a/help/zh_TW/gedit.xml	Fri Jul 08 14:37:49 2011 +0800
++++ b/help/zh_TW/gedit.xml	Fri Jul 08 16:37:44 2011 +0800
+@@ -27,7 +27,8 @@
+ 		<year>2002 年</year>
+ 		<year>2003 年</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000 年</year>
+ 		<holder>Eric Baudais</holder> </copyright>
+@@ -64,10 +65,10 @@
+ 			<contrib>Added the Shortcut Keys Table</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname/>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -122,7 +123,7 @@
+ 		  <revnumber>gedit 手冊 V2.0</revnumber>
+ 		  <date>2002 年 3 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -130,7 +131,7 @@
+ 		  <revnumber>gedit 手冊 V2.1</revnumber>
+ 		  <date>2002 年 6 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -138,7 +139,7 @@
+ 		  <revnumber>gedit 手冊 V2.2</revnumber>
+ 		  <date>2002 年 8 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -146,7 +147,7 @@
+ 		  <revnumber>gedit 手冊 V2.3</revnumber>
+ 		  <date>2002 年 9 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>gedit 手冊 V2.4</revnumber>
+ 		  <date>2003 年 1 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>gedit 手冊 V2.5</revnumber>
+ 		  <date>2003 年 3 月</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>gedit Manual V2.6</revnumber>
+ 		  <date>September 2003</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>gedit Manual V2.7</revnumber>
+ 		  <date>March 2004</date>
+ 		  <revdescription>
+-			 <para role="author">Sun GNOME 文件小組</para>
++			 <para role="author">Oracle Solaris Desktop 文件小組</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>gedit Manual V2.8</revnumber>
+ 		  <date>July 2006</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME 文件專案</para>
+ 		  </revdescription>
+ 		</revision>

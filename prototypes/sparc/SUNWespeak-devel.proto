@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWespeak-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWespeak-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWespeak-devel.copyright
+d none include 0755 root bin
+d none include/espeak 0755 root bin
+f none include/espeak/speak_lib.h=usr/include/espeak/speak_lib.h 0644 root bin

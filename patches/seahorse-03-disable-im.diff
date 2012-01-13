@@ -1,0 +1,18 @@
+--- seahorse-2.30.1/libseahorse/seahorse-passphrase.c.orig	2011-06-15 14:34:09.214456287 +0800
++++ seahorse-2.30.1/libseahorse/seahorse-passphrase.c	2011-06-15 14:35:39.461945315 +0800
+@@ -252,6 +252,7 @@
+         entry = GTK_ENTRY (gtk_entry_new_with_buffer (buffer));
+         g_object_unref (buffer);
+         gtk_entry_set_visibility (entry, FALSE);
++	gtk_object_set (GTK_OBJECT (entry), "im-module", "");
+         gtk_widget_set_size_request (GTK_WIDGET (entry), 200, -1);
+         g_object_set_data (G_OBJECT (dialog), "confirm-entry", entry);
+         g_signal_connect (G_OBJECT (entry), "activate", G_CALLBACK (confirm_callback), dialog);
+@@ -272,6 +273,7 @@
+     g_object_unref (buffer);
+     gtk_widget_set_size_request (GTK_WIDGET (entry), 200, -1);
+     gtk_entry_set_visibility (entry, FALSE);
++    gtk_object_set (GTK_OBJECT (entry), "im-module", "");
+     g_object_set_data (G_OBJECT (dialog), "secure-entry", entry);
+     g_signal_connect (G_OBJECT (entry), "activate", G_CALLBACK (enter_callback), dialog);
+     gtk_table_attach_defaults (table, GTK_WIDGET (entry), 1, 2, 1, 2);

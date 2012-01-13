@@ -1,0 +1,4 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-img-editor-help-zhCN.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-img-editor-help-zhCN.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-img-editor-help-zhCN.copyright
+d none share 0755 root sys

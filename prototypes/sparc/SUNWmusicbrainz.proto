@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmusicbrainz.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmusicbrainz.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmusicbrainz.copyright
+f none share/doc/SUNWmusicbrainz/AUTHORS=usr/share/doc/SUNWmusicbrainz/AUTHORS 0444 root bin
+f none share/doc/SUNWmusicbrainz/COPYING.bz2=usr/share/doc/SUNWmusicbrainz/COPYING.bz2 0444 root bin
+f none share/doc/SUNWmusicbrainz/README=usr/share/doc/SUNWmusicbrainz/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libmusicbrainz3.so=libmusicbrainz3.so.6
+s none lib/libmusicbrainz3.so.6=libmusicbrainz3.so.6.2.0
+f none lib/libmusicbrainz3.so.6.2.0=usr/lib/libmusicbrainz3.so.6.2.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWmusicbrainz 0755 root bin

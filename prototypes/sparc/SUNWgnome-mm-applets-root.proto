@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-mm-applets-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-mm-applets-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-mm-applets-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/mixer.schemas=etc/gconf/schemas/mixer.schemas 0644 root sys

@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWavant-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWavant-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWavant-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/awn-applets-shared.schemas=etc/gconf/schemas/awn-applets-shared.schemas 0644 root sys
+f none etc/gconf/schemas/awn.schemas=etc/gconf/schemas/awn.schemas 0644 root sys

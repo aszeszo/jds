@@ -1,0 +1,48 @@
+--- pidgin-2.7.0/configure.ac.old	2010-05-19 16:14:37.353493050 +0800
++++ pidgin-2.7.0/configure.ac	2010-05-19 16:14:57.627765006 +0800
+@@ -156,6 +156,8 @@
+ 		[AC_DEFINE([HAVE_GETADDRINFO]) LIBS="-lsocket -lsnl $LIBS"], , , -lnsl)])
+ AC_CHECK_FUNCS(inet_ntop)
+ AC_CHECK_FUNCS(getifaddrs)
++AC_CHECK_MEMBERS(struct ifaddrs.ifa_addr->ss_family,[],[],[[ #include <ifaddrs.h> 
++#include <net/if.h> ]])
+ dnl Check for socklen_t (in Unix98)
+ AC_MSG_CHECKING(for socklen_t)
+ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[
+--- pidgin-2.7.0/libpurple/network.c.old	2010-05-19 16:14:46.440830715 +0800
++++ pidgin-2.7.0/libpurple/network.c	2010-05-19 16:38:25.005674810 +0800
+@@ -57,6 +57,16 @@
+ #include <idna.h>
+ #endif
+ 
++/* Since OpenSolaris build 137, RFC2553 is supported
++ * so ifa_addr member of "struct ifaddrs" has type
++ * "struct sockaddr_storage" 
++ */
++#ifdef HAVE_STRUCT_IFADDRS_IFA_ADDR__SS_FAMILY
++#define ADDR_FAMILY_MEMBER ss_family
++#else
++#define ADDR_FAMILY_MEMBER sa_family
++#endif
++
+ /*
+  * Calling sizeof(struct ifreq) isn't always correct on
+  * Mac OS X (and maybe others).
+@@ -219,7 +229,7 @@
+ 	}
+ 
+ 	for (ifa = start; ifa; ifa = ifa->ifa_next) {
+-		int family = ifa->ifa_addr ? ifa->ifa_addr->sa_family : AF_UNSPEC;
++		int family = ifa->ifa_addr ? ifa->ifa_addr->ADDR_FAMILY_MEMBER: AF_UNSPEC;
+ 		char host[INET6_ADDRSTRLEN];
+ 		const char *tmp = NULL;
+ 
+@@ -265,7 +275,7 @@
+ 		ifr = (struct ifreq *)tmp;
+ 		tmp += HX_SIZE_OF_IFREQ(*ifr);
+ 
+-		if (ifr->ifr_addr.sa_family == AF_INET) {
++		if (ifr->ifr_addr.ADDR_FAMILY_MEMBER == AF_INET) {
+ 			struct sockaddr_in *sinptr = (struct sockaddr_in *)&ifr->ifr_addr;
+ 
+ 			inet_ntop(AF_INET, &sinptr->sin_addr, dst,

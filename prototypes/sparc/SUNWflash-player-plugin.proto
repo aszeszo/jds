@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWflash-player-plugin.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWflash-player-plugin.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWflash-player-plugin.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/plugins 0755 root bin
+f none lib/firefox/plugins/libflashplayer.so=usr/lib/firefox/plugins/libflashplayer.so 0755 root bin

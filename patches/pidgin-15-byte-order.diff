@@ -1,0 +1,12 @@
+--- pidgin-2.9.0/libpurple/ntlm.c.bak	2011-07-08 08:39:15.888842550 +0000
++++ pidgin-2.9.0/libpurple/ntlm.c	2011-07-08 08:38:13.216756850 +0000
+@@ -135,7 +135,8 @@
+ 	tmsg->dom_off   = GUINT32_TO_LE(sizeof(struct type1_message) + hostnamelen);
+ 	tmsg->host_len1 = tmsg->host_len2 = GUINT16_TO_LE(hostnamelen);
+ 	tmsg->host_off  = GUINT32_TO_LE(sizeof(struct type1_message));
+-	memcpy(msg + tmsg->host_off, hostname, hostnamelen);
++	//memcpy(msg + tmsg->host_off, hostname, hostnamelen);
++	memcpy(msg + sizeof(struct type1_message), hostname, hostnamelen);
+ 	memcpy(msg + tmsg->dom_off, domain, domainlen);
+ 
+ 	tmp = purple_base64_encode(msg, sizeof(struct type1_message) + hostnamelen + domainlen);

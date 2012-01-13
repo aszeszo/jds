@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibvisual-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibvisual-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibvisual-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/es_AR 0755 root other
+d none share/locale/es_AR/LC_MESSAGES 0755 root other
+f none share/locale/es_AR/LC_MESSAGES/libvisual-0.4.mo=usr/share/locale/es_AR/LC_MESSAGES/libvisual-0.4.mo 0644 root other
+f none share/locale/es_AR/LC_MESSAGES/libvisual-plugins-0.4.mo=usr/share/locale/es_AR/LC_MESSAGES/libvisual-plugins-0.4.mo 0644 root other
+d none share/locale/es_ES 0755 root other
+d none share/locale/es_ES/LC_MESSAGES 0755 root other
+f none share/locale/es_ES/LC_MESSAGES/libvisual-0.4.mo=usr/share/locale/es_ES/LC_MESSAGES/libvisual-0.4.mo 0644 root other
+f none share/locale/es_ES/LC_MESSAGES/libvisual-plugins-0.4.mo=usr/share/locale/es_ES/LC_MESSAGES/libvisual-plugins-0.4.mo 0644 root other

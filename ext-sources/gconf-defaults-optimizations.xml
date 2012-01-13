@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<gconfentryfile>
+
+    <entrylist base="/desktop/gnome">
+        <entry>
+            <key>background/color_shading_type</key>
+            <value>
+                <string>solid</string>
+            </value>
+        </entry>
+        <entry>
+            <key>background/picture_options</key>
+            <value>
+                <string>none</string>
+            </value>
+        </entry>
+        <entry>
+            <key>background/primary_color</key>
+            <value>
+                <string>#000000</string>
+            </value>
+        </entry>
+        <entry>
+            <key>background/draw_background</key>
+            <value>
+                <bool>false</bool>
+            </value>
+        </entry>
+        <entry>
+            <key>font_rendering/hinting</key>
+            <value>
+                <string>none</string>
+            </value>
+        </entry>
+        <entry>
+            <key>sound/event_sounds</key>
+            <value>
+                <bool>false</bool>
+            </value>
+        </entry>
+    </entrylist>
+
+</gconfentryfile>
+

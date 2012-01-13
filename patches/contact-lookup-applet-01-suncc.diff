@@ -1,0 +1,29 @@
+--- contact-lookup-applet-0.17/src/Makefile.am-orig	2010-10-27 23:44:56.326364696 -0500
++++ contact-lookup-applet-0.17/src/Makefile.am	2010-10-27 23:45:04.510633738 -0500
+@@ -17,7 +17,7 @@ libecontactentry_la_LIBADD = $(GTK_LIBS)
+ # The test program
+ noinst_PROGRAMS = test-entry
+ test_entry_SOURCES = test-entry.c
+-test_entry_CFLAGS = $(GTK_CFLAGS) $(EVO_CFLAGS) -Wall
++test_entry_CFLAGS = $(GTK_CFLAGS) $(EVO_CFLAGS)
+ test_entry_LDADD = $(GTK_LIBS) $(EVO_LIBS) libecontactentry.la
+ 
+ MARSHALFILES = econtactentry-marshal.c econtactentry-marshal.h
+@@ -42,5 +42,5 @@ contact_lookup_applet_SOURCES = \
+ 	glade-utils.h \
+ 	glade-utils.c
+ 
+-contact_lookup_applet_CFLAGS = $(GLADE_CFLAGS) $(PANEL_CFLAGS) $(GTK_CFLAGS) $(EVO_CFLAGS) -Wall
++contact_lookup_applet_CFLAGS = $(GLADE_CFLAGS) $(PANEL_CFLAGS) $(GTK_CFLAGS) $(EVO_CFLAGS)
+ contact_lookup_applet_LDADD = $(GLADE_LIBS) $(PANEL_LIBS) $(GTK_LIBS) $(EVO_LIBS) libecontactentry.la
+--- contact-lookup-applet-0.17/src/glade-utils.c-orig	2010-10-27 23:45:25.176235331 -0500
++++ contact-lookup-applet-0.17/src/glade-utils.c	2010-10-27 23:45:35.339541094 -0500
+@@ -163,7 +163,7 @@ get_icon (const char* icon_name, int siz
+   }
+   pixbuf = gtk_icon_theme_load_icon (theme, icon_name, size, 0, &error);
+   if (error) {
+-    g_warning ("%s: %s", __FUNCTION__, error->message);
++    g_warning ("%s: %s", G_GNUC_PRETTY_FUNCTION, error->message);
+     g_error_free (error);
+     return NULL;
+   }

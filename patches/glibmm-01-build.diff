@@ -1,0 +1,46 @@
+--- tests/glibmm_ustring_compose/main.cc.orig	2008-08-07 17:29:05.299259187 +0800
++++ tests/glibmm_ustring_compose/main.cc	2008-08-07 17:27:57.073869820 +0800
+@@ -19,7 +19,7 @@
+   int i = 1;
+   std::cout << Glib::ustring::compose("Compose strings: %1 and %2", 'f', &i) << std::endl;
+ 
+-  std::cout << Glib::ustring::compose("%1 is lower than 0x%2.", 12, Glib::ustring::format(std::hex, 16)) << std::endl;
++  //std::cout << Glib::ustring::compose("%1 is lower than 0x%2.", 12, Glib::ustring::format(std::hex, 16)) << std::endl;
+ 
+   //TODO: More tests.
+ 
+diff -ruN gio.orig/giomm/drive.cc gio/giomm/drive.cc
+--- gio.orig/giomm/drive.cc	2010-03-14 06:24:19.418208171 +0000
++++ gio/giomm/drive.cc	2010-03-14 06:24:39.550049903 +0000
+@@ -401,10 +401,10 @@
+   return g_drive_has_volumes(const_cast<GDrive*>(gobj()));
+ }
+ 
+-Glib::ListHandle< Glib::RefPtr<Volume> > Drive::get_volumes()
++/*Glib::ListHandle< Glib::RefPtr<Volume> > Drive::get_volumes()
+ {
+   return Glib::ListHandle< Glib::RefPtr<Volume> >(g_drive_get_volumes(gobj()), Glib::OWNERSHIP_SHALLOW);
+-}
++}*/
+ 
+ bool Drive::is_media_removable() const
+ {
+diff -ruN gio.orig/giomm/appinfo.cc gio/giomm/appinfo.cc
+--- gio.orig/giomm/appinfo.cc	2010-04-06 15:01:37.726524557 +0100
++++ gio/giomm/appinfo.cc	2010-04-06 15:01:57.272777485 +0100
+@@ -206,6 +206,7 @@
+ {
+   return Glib::RefPtr<AppLaunchContext>( new AppLaunchContext() );
+ }
++/*
+ std::string AppLaunchContext::get_display(const Glib::RefPtr<AppInfo>& info, const Glib::ListHandle< Glib::RefPtr<Gio::File> >& files)
+ {
+   return Glib::convert_return_gchar_ptr_to_stdstring(g_app_launch_context_get_display(gobj(), Glib::unwrap(info), files.data()));
+@@ -215,6 +216,7 @@
+ {
+   return Glib::convert_return_gchar_ptr_to_stdstring(g_app_launch_context_get_startup_notify_id(gobj(), Glib::unwrap(info), files.data()));
+ }
++*/
+ 
+ void AppLaunchContext::launch_failed(const std::string& startup_notify_id)
+ {

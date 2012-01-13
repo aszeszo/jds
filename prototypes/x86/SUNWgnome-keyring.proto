@@ -1,0 +1,47 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-keyring.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-keyring.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-keyring.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-keyring.copyright
+f none share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/AUTHORS=usr/share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/COPYING.bz2=usr/share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/ChangeLog.bz2=usr/share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/NEWS.bz2=usr/share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/README=usr/share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gnome-keyring-daemon=usr/bin/gnome-keyring-daemon 0755 root bin
+d none lib 0755 root bin
+d none lib/gnome-keyring 0755 root bin
+f none lib/gnome-keyring-prompt=usr/lib/gnome-keyring-prompt 0755 root bin
+f none lib/gnome-keyring/gnome-keyring-pkcs11.so=usr/lib/gnome-keyring/gnome-keyring-pkcs11.so 0755 root bin
+s none lib/libgcr.so=libgcr.so.0.0.0
+s none lib/libgcr.so.0=libgcr.so.0.0.0
+f none lib/libgcr.so.0.0.0=usr/lib/libgcr.so.0.0.0 0755 root bin
+s none lib/libgp11.so=libgp11.so.0.0.0
+s none lib/libgp11.so.0=libgp11.so.0.0.0
+f none lib/libgp11.so.0.0.0=usr/lib/libgp11.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+f none share/dbus-1/services/org.freedesktop.secrets.service=usr/share/dbus-1/services/org.freedesktop.secrets.service 0644 root bin
+f none share/dbus-1/services/org.gnome.keyring.service=usr/share/dbus-1/services/org.gnome.keyring.service 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-keyring 0755 root bin
+d none share/doc/SUNWgnome-keyring/gnome-keyring-2.30.3 0755 root bin
+d none share/gcr 0755 root other
+d none share/gcr/ui 0755 root other
+f none share/gcr/ui/gcr-certificate-basics-widget.ui=usr/share/gcr/ui/gcr-certificate-basics-widget.ui 0644 root bin
+f none share/gcr/ui/gcr-import-dialog.ui=usr/share/gcr/ui/gcr-import-dialog.ui 0644 root bin
+f none share/gcr/ui/gcr-unlock-options-widget.ui=usr/share/gcr/ui/gcr-unlock-options-widget.ui 0644 root bin
+d none share/gnome-keyring 0755 root other
+d none share/gnome-keyring/introspect 0755 root other
+f none share/gnome-keyring/introspect/introspect-collection.xml=usr/share/gnome-keyring/introspect/introspect-collection.xml 0644 root bin
+f none share/gnome-keyring/introspect/introspect-item.xml=usr/share/gnome-keyring/introspect/introspect-item.xml 0644 root bin
+f none share/gnome-keyring/introspect/introspect-prompt.xml=usr/share/gnome-keyring/introspect/introspect-prompt.xml 0644 root bin
+f none share/gnome-keyring/introspect/introspect-service.xml=usr/share/gnome-keyring/introspect/introspect-service.xml 0644 root bin
+f none share/gnome-keyring/introspect/introspect-session.xml=usr/share/gnome-keyring/introspect/introspect-session.xml 0644 root bin
+d none share/gnome-keyring/ui 0755 root other
+f none share/gnome-keyring/ui/gkd-prompt.ui=usr/share/gnome-keyring/ui/gkd-prompt.ui 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-keyring-daemon.1=usr/share/man/man1/gnome-keyring-daemon.1 0755 root bin

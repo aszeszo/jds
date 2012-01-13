@@ -1,0 +1,47 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgkrellm-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgkrellm-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgkrellm-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/bg 0755 root other
+d none share/locale/bg/LC_MESSAGES 0755 root other
+f none share/locale/bg/LC_MESSAGES/gkrellm.mo=usr/share/locale/bg/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/cs 0755 root other
+d none share/locale/cs/LC_MESSAGES 0755 root other
+f none share/locale/cs/LC_MESSAGES/gkrellm.mo=usr/share/locale/cs/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/da 0755 root other
+d none share/locale/da/LC_MESSAGES 0755 root other
+f none share/locale/da/LC_MESSAGES/gkrellm.mo=usr/share/locale/da/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/de 0755 root other
+d none share/locale/de/LC_MESSAGES 0755 root other
+f none share/locale/de/LC_MESSAGES/gkrellm.mo=usr/share/locale/de/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/es 0755 root other
+d none share/locale/es/LC_MESSAGES 0755 root other
+f none share/locale/es/LC_MESSAGES/gkrellm.mo=usr/share/locale/es/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/fr 0755 root other
+d none share/locale/fr/LC_MESSAGES 0755 root other
+f none share/locale/fr/LC_MESSAGES/gkrellm.mo=usr/share/locale/fr/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/it 0755 root other
+d none share/locale/it/LC_MESSAGES 0755 root other
+f none share/locale/it/LC_MESSAGES/gkrellm.mo=usr/share/locale/it/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/ja 0755 root other
+d none share/locale/ja/LC_MESSAGES 0755 root other
+f none share/locale/ja/LC_MESSAGES/gkrellm.mo=usr/share/locale/ja/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/nl 0755 root other
+d none share/locale/nl/LC_MESSAGES 0755 root other
+f none share/locale/nl/LC_MESSAGES/gkrellm.mo=usr/share/locale/nl/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/pl 0755 root other
+d none share/locale/pl/LC_MESSAGES 0755 root other
+f none share/locale/pl/LC_MESSAGES/gkrellm.mo=usr/share/locale/pl/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/pt_BR 0755 root other
+d none share/locale/pt_BR/LC_MESSAGES 0755 root other
+f none share/locale/pt_BR/LC_MESSAGES/gkrellm.mo=usr/share/locale/pt_BR/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/ru 0755 root other
+d none share/locale/ru/LC_MESSAGES 0755 root other
+f none share/locale/ru/LC_MESSAGES/gkrellm.mo=usr/share/locale/ru/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/sl 0755 root other
+d none share/locale/sl/LC_MESSAGES 0755 root other
+f none share/locale/sl/LC_MESSAGES/gkrellm.mo=usr/share/locale/sl/LC_MESSAGES/gkrellm.mo 0644 root other
+d none share/locale/sv 0755 root other
+d none share/locale/sv/LC_MESSAGES 0755 root other
+f none share/locale/sv/LC_MESSAGES/gkrellm.mo=usr/share/locale/sv/LC_MESSAGES/gkrellm.mo 0644 root other

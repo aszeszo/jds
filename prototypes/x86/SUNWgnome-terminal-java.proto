@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-terminal-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-terminal-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-terminal-java.copyright
+d none lib 0755 root bin
+f none lib/libvtejni-0.12.so=usr/lib/libvtejni-0.12.so 0755 root bin
+s none lib/libvtejni.so=libvtejni-0.12.so
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/java 0755 root sys
+f none share/lib/java/vte0.12-0.12.3.jar=usr/share/lib/java/vte0.12-0.12.3.jar 0644 root bin
+s none share/lib/java/vte0.12.jar=vte0.12-0.12.3.jar

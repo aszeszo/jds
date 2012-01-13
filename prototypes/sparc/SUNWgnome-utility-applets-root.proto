@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-utility-applets-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-utility-applets-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-utility-applets-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/battstat.schemas=etc/gconf/schemas/battstat.schemas 0644 root sys
+f none etc/gconf/schemas/charpick.schemas=etc/gconf/schemas/charpick.schemas 0644 root sys
+f none etc/gconf/schemas/deskbar-applet.schemas=etc/gconf/schemas/deskbar-applet.schemas 0644 root sys
+f none etc/gconf/schemas/multiload.schemas=etc/gconf/schemas/multiload.schemas 0644 root sys
+f none etc/gconf/schemas/quick-lounge.schemas=etc/gconf/schemas/quick-lounge.schemas 0644 root sys
+f none etc/gconf/schemas/stickynotes.schemas=etc/gconf/schemas/stickynotes.schemas 0644 root sys
+d none etc/sound 0755 root sys
+d none etc/sound/events 0755 root sys
+f none etc/sound/events/battstat_applet.soundlist=etc/sound/events/battstat_applet.soundlist 0644 root sys

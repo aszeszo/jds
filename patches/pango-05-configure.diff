@@ -1,0 +1,13 @@
+--- pango-1.28.3/configure.in-orig	2010-10-21 12:41:37.773208316 -0500
++++ pango-1.28.3/configure.in	2010-10-21 12:42:12.990254971 -0500
+@@ -554,7 +554,9 @@ for module in $included_modules; do
+     *-win32)	INCLUDED_WIN32_MODULES="$INCLUDED_WIN32_MODULES $included_path" ;;
+     *-atsui)	INCLUDED_ATSUI_MODULES="$INCLUDED_ATSUI_MODULES $included_path" ;;
+     *-lang)	INCLUDED_LANG_MODULES="$INCLUDED_LANG_MODULES $included_path" ;;
+-    *)		IFS="$pango_save_ifs" AC_MSG_ERROR([specified module $module not recognized]) ;;
++    *)		IFS="$pango_save_ifs"
++                AC_MSG_ERROR([specified module $module not recognized])
++                ;;
+   esac
+ done
+ IFS="$pango_save_ifs"

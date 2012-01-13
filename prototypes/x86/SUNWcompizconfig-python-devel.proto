@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompizconfig-python-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompizconfig-python-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompizconfig-python-devel.copyright
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/compizconfig-python.pc=usr/lib/pkgconfig/compizconfig-python.pc 0644 root bin

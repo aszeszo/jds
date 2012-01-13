@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibexif.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibexif.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibexif.copyright
+d none lib 0755 root bin
+s none lib/libexif.so=libexif.so.12.3.1
+s none lib/libexif.so.12=libexif.so.12.3.1
+f none lib/libexif.so.12.3.1=usr/lib/libexif.so.12.3.1 0755 root bin

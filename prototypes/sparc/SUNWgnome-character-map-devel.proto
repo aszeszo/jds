@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-character-map-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-character-map-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-character-map-devel.copyright
+d none include 0755 root bin
+d none include/gucharmap-2 0755 root bin
+d none include/gucharmap-2/gucharmap 0755 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-block-chapters-model.h=usr/include/gucharmap-2/gucharmap/gucharmap-block-chapters-model.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-block-codepoint-list.h=usr/include/gucharmap-2/gucharmap/gucharmap-block-codepoint-list.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-chapters-model.h=usr/include/gucharmap-2/gucharmap/gucharmap-chapters-model.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-chapters-view.h=usr/include/gucharmap-2/gucharmap/gucharmap-chapters-view.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-charmap.h=usr/include/gucharmap-2/gucharmap/gucharmap-charmap.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-chartable.h=usr/include/gucharmap-2/gucharmap/gucharmap-chartable.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-codepoint-list.h=usr/include/gucharmap-2/gucharmap/gucharmap-codepoint-list.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-script-chapters-model.h=usr/include/gucharmap-2/gucharmap/gucharmap-script-chapters-model.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-script-codepoint-list.h=usr/include/gucharmap-2/gucharmap/gucharmap-script-codepoint-list.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-type-builtins.h=usr/include/gucharmap-2/gucharmap/gucharmap-type-builtins.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap-unicode-info.h=usr/include/gucharmap-2/gucharmap/gucharmap-unicode-info.h 0644 root bin
+f none include/gucharmap-2/gucharmap/gucharmap.h=usr/include/gucharmap-2/gucharmap/gucharmap.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gucharmap-2.pc=usr/lib/pkgconfig/gucharmap-2.pc 0644 root bin

@@ -1,0 +1,59 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-disk-analyzer.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-disk-analyzer.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-disk-analyzer.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-disk-analyzer.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-disk-analyzer.copyright
+d none bin 0755 root bin
+f none bin/baobab=usr/bin/baobab 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/baobab.desktop=usr/share/applications/baobab.desktop 0644 root bin
+d none share/baobab 0755 root bin
+f none share/baobab/baobab-dialog-scan-props.ui=usr/share/baobab/baobab-dialog-scan-props.ui 0644 root bin
+f none share/baobab/baobab-main-window.ui=usr/share/baobab/baobab-main-window.ui 0644 root bin
+d none share/baobab/pixmaps 0755 root bin
+f none share/baobab/pixmaps/shot.png=usr/share/baobab/pixmaps/shot.png 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-disk-analyzer 0755 root bin
+f none share/doc/SUNWgnome-disk-analyzer/AUTHORS=usr/share/doc/SUNWgnome-disk-analyzer/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-disk-analyzer/COPYING.bz2=usr/share/doc/SUNWgnome-disk-analyzer/COPYING.bz2 0644 root bin
+f none share/doc/SUNWgnome-disk-analyzer/ChangeLog.bz2=usr/share/doc/SUNWgnome-disk-analyzer/ChangeLog.bz2 0644 root bin
+f none share/doc/SUNWgnome-disk-analyzer/NEWS.bz2=usr/share/doc/SUNWgnome-disk-analyzer/NEWS.bz2 0644 root bin
+f none share/doc/SUNWgnome-disk-analyzer/README=usr/share/doc/SUNWgnome-disk-analyzer/README 0644 root bin
+d none share/doc/SUNWgnome-disk-analyzer/baobab 0755 root bin
+f none share/doc/SUNWgnome-disk-analyzer/baobab/AUTHORS=usr/share/doc/SUNWgnome-disk-analyzer/baobab/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-disk-analyzer/baobab/ChangeLog.bz2=usr/share/doc/SUNWgnome-disk-analyzer/baobab/ChangeLog.bz2 0644 root bin
+f none share/doc/SUNWgnome-disk-analyzer/baobab/README=usr/share/doc/SUNWgnome-disk-analyzer/baobab/README 0644 root bin
+d none share/doc/SUNWgnome-disk-analyzer/baobab/help 0755 root bin
+f none share/doc/SUNWgnome-disk-analyzer/baobab/help/ChangeLog.bz2=usr/share/doc/SUNWgnome-disk-analyzer/baobab/help/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-disk-analyzer/po 0755 root bin
+f none share/doc/SUNWgnome-disk-analyzer/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-disk-analyzer/po/ChangeLog.bz2 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/baobab 0755 root bin
+d none share/gnome/help/baobab/C 0755 root bin
+f none share/gnome/help/baobab/C/baobab.xml=usr/share/gnome/help/baobab/C/baobab.xml 0644 root bin
+d none share/gnome/help/baobab/C/figures 0755 root bin
+f none share/gnome/help/baobab/C/figures/baobab_fullscan.png=usr/share/gnome/help/baobab/C/figures/baobab_fullscan.png 0644 root bin
+f none share/gnome/help/baobab/C/figures/baobab_prefs.png=usr/share/gnome/help/baobab/C/figures/baobab_prefs.png 0644 root bin
+f none share/gnome/help/baobab/C/figures/baobab_remote.png=usr/share/gnome/help/baobab/C/figures/baobab_remote.png 0644 root bin
+f none share/gnome/help/baobab/C/figures/baobab_ringschart1.png=usr/share/gnome/help/baobab/C/figures/baobab_ringschart1.png 0644 root bin
+f none share/gnome/help/baobab/C/figures/baobab_ringschart2.png=usr/share/gnome/help/baobab/C/figures/baobab_ringschart2.png 0644 root bin
+f none share/gnome/help/baobab/C/figures/baobab_treemaps.png=usr/share/gnome/help/baobab/C/figures/baobab_treemaps.png 0644 root bin
+f none share/gnome/help/baobab/C/figures/baobab_window.png=usr/share/gnome/help/baobab/C/figures/baobab_window.png 0644 root bin
+f none share/gnome/help/baobab/C/legal.xml=usr/share/gnome/help/baobab/C/legal.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/baobab.png=usr/share/icons/hicolor/24x24/apps/baobab.png 0644 root bin
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/baobab.svg=usr/share/icons/hicolor/scalable/apps/baobab.svg 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/baobab.1=usr/share/man/man1/baobab.1 0644 root bin
+d none share/man/man4 0755 root bin
+d none share/omf 0755 root bin
+d none share/omf/baobab 0755 root bin
+f none share/omf/baobab/baobab-C.omf=usr/share/omf/baobab/baobab-C.omf 0644 root bin

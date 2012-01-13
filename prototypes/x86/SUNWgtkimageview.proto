@@ -1,0 +1,68 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtkimageview.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtkimageview.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtkimageview.copyright
+f none share/doc/SUNWgtkimageview/COPYING.bz2=usr/share/doc/SUNWgtkimageview/COPYING.bz2 0444 root bin
+d none include 0755 root bin
+d none include/gtkimageview 0755 root bin
+f none include/gtkimageview/cursors.h=usr/include/gtkimageview/cursors.h 0644 root bin
+f none include/gtkimageview/gdkpixbufdrawcache.h=usr/include/gtkimageview/gdkpixbufdrawcache.h 0644 root bin
+f none include/gtkimageview/gtkanimview.h=usr/include/gtkimageview/gtkanimview.h 0644 root bin
+f none include/gtkimageview/gtkiimagetool.h=usr/include/gtkimageview/gtkiimagetool.h 0644 root bin
+f none include/gtkimageview/gtkimagenav.h=usr/include/gtkimageview/gtkimagenav.h 0644 root bin
+f none include/gtkimageview/gtkimagescrollwin.h=usr/include/gtkimageview/gtkimagescrollwin.h 0644 root bin
+f none include/gtkimageview/gtkimagetooldragger.h=usr/include/gtkimageview/gtkimagetooldragger.h 0644 root bin
+f none include/gtkimageview/gtkimagetoolpainter.h=usr/include/gtkimageview/gtkimagetoolpainter.h 0644 root bin
+f none include/gtkimageview/gtkimagetoolselector.h=usr/include/gtkimageview/gtkimagetoolselector.h 0644 root bin
+f none include/gtkimageview/gtkimageview-typebuiltins.h=usr/include/gtkimageview/gtkimageview-typebuiltins.h 0644 root bin
+f none include/gtkimageview/gtkimageview.h=usr/include/gtkimageview/gtkimageview.h 0644 root bin
+f none include/gtkimageview/gtkzooms.h=usr/include/gtkimageview/gtkzooms.h 0644 root bin
+f none include/gtkimageview/mouse_handler.h=usr/include/gtkimageview/mouse_handler.h 0644 root bin
+f none include/gtkimageview/utils.h=usr/include/gtkimageview/utils.h 0644 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libgtkimageview.so=libgtkimageview.so.0.0.0
+s none lib/amd64/libgtkimageview.so.0=libgtkimageview.so.0.0.0
+f none lib/amd64/libgtkimageview.so.0.0.0=usr/lib/amd64/libgtkimageview.so.0.0.0 0755 root bin
+d none lib/amd64/pkgconfig 0755 root other
+f none lib/amd64/pkgconfig/gtkimageview.pc=usr/lib/amd64/pkgconfig/gtkimageview.pc 0644 root bin
+s none lib/libgtkimageview.so=libgtkimageview.so.0.0.0
+s none lib/libgtkimageview.so.0=libgtkimageview.so.0.0.0
+f none lib/libgtkimageview.so.0.0.0=usr/lib/libgtkimageview.so.0.0.0 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gtkimageview.pc=usr/lib/pkgconfig/gtkimageview.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgtkimageview 0755 root bin
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/gtkimageview 0755 root bin
+f none share/gtk-doc/html/gtkimageview/GtkAnimView.html=usr/share/gtk-doc/html/gtkimageview/GtkAnimView.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/GtkIImageTool.html=usr/share/gtk-doc/html/gtkimageview/GtkIImageTool.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/GtkImageNav.html=usr/share/gtk-doc/html/gtkimageview/GtkImageNav.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/GtkImageScrollWin.html=usr/share/gtk-doc/html/gtkimageview/GtkImageScrollWin.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/GtkImageToolDragger.html=usr/share/gtk-doc/html/gtkimageview/GtkImageToolDragger.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/GtkImageToolSelector.html=usr/share/gtk-doc/html/gtkimageview/GtkImageToolSelector.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/GtkImageView.html=usr/share/gtk-doc/html/gtkimageview/GtkImageView.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/acknowledgements.html=usr/share/gtk-doc/html/gtkimageview/acknowledgements.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/big-zoom-sel-bug.png=usr/share/gtk-doc/html/gtkimageview/big-zoom-sel-bug.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/compiling.html=usr/share/gtk-doc/html/gtkimageview/compiling.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/dirstructure.html=usr/share/gtk-doc/html/gtkimageview/dirstructure.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/ex-mini.png=usr/share/gtk-doc/html/gtkimageview/ex-mini.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/ex-monitor-selection.png=usr/share/gtk-doc/html/gtkimageview/ex-monitor-selection.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/gtkimageview-gdkpixbufdrawcache.html=usr/share/gtk-doc/html/gtkimageview/gtkimageview-gdkpixbufdrawcache.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/gtkimageview-gtkzooms.html=usr/share/gtk-doc/html/gtkimageview/gtkimageview-gtkzooms.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/gtkimageview-in-window.png=usr/share/gtk-doc/html/gtkimageview/gtkimageview-in-window.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/gtkimageview.devhelp=usr/share/gtk-doc/html/gtkimageview/gtkimageview.devhelp 0644 root bin
+f none share/gtk-doc/html/gtkimageview/gtkimageview.devhelp2=usr/share/gtk-doc/html/gtkimageview/gtkimageview.devhelp2 0644 root bin
+f none share/gtk-doc/html/gtkimageview/home.png=usr/share/gtk-doc/html/gtkimageview/home.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/index.html=usr/share/gtk-doc/html/gtkimageview/index.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/index.sgml=usr/share/gtk-doc/html/gtkimageview/index.sgml 0644 root bin
+f none share/gtk-doc/html/gtkimageview/left.png=usr/share/gtk-doc/html/gtkimageview/left.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/navwin-open.png=usr/share/gtk-doc/html/gtkimageview/navwin-open.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/overview.html=usr/share/gtk-doc/html/gtkimageview/overview.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/releasehistory.html=usr/share/gtk-doc/html/gtkimageview/releasehistory.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/right.png=usr/share/gtk-doc/html/gtkimageview/right.png 0644 root bin
+f none share/gtk-doc/html/gtkimageview/rn01.html=usr/share/gtk-doc/html/gtkimageview/rn01.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/sourcecode.html=usr/share/gtk-doc/html/gtkimageview/sourcecode.html 0644 root bin
+f none share/gtk-doc/html/gtkimageview/style.css=usr/share/gtk-doc/html/gtkimageview/style.css 0644 root bin
+f none share/gtk-doc/html/gtkimageview/up.png=usr/share/gtk-doc/html/gtkimageview/up.png 0644 root bin

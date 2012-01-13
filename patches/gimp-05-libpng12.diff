@@ -1,0 +1,11 @@
+--- gimp-2.6.10/configure.in.orig	2010-08-27 16:23:21.600378577 +0800
++++ gimp-2.6.10/configure.in	2010-08-27 16:21:00.511876535 +0800
+@@ -1115,7 +1115,7 @@
+ have_libpng=no
+ if test "x$with_libpng" != xno; then
+   have_libpng=yes
+-  PKG_CHECK_MODULES(PNG, libpng,
++  PKG_CHECK_MODULES(PNG, libpng12,
+     FILE_PNG='file-png$(EXEEXT)',
+     [have_libpng="no (libpng not found)"
+      AC_MSG_ERROR([

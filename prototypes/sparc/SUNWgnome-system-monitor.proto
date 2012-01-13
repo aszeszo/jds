@@ -1,0 +1,48 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-system-monitor.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-system-monitor.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-system-monitor.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-system-monitor.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-system-monitor.copyright
+f none share/doc/SUNWgnome-system-monitor/AUTHORS=usr/share/doc/SUNWgnome-system-monitor/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-system-monitor/COPYING.bz2=usr/share/doc/SUNWgnome-system-monitor/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-system-monitor/ChangeLog.bz2=usr/share/doc/SUNWgnome-system-monitor/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-system-monitor/NEWS.bz2=usr/share/doc/SUNWgnome-system-monitor/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-system-monitor/README=usr/share/doc/SUNWgnome-system-monitor/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gnome-system-monitor=usr/bin/gnome-system-monitor 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-system-monitor.desktop=usr/share/applications/gnome-system-monitor.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-system-monitor 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-system-monitor 0755 root bin
+d none share/gnome/help/gnome-system-monitor/C 0755 root bin
+d none share/gnome/help/gnome-system-monitor/C/figures 0755 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/addColumn.png=usr/share/gnome/help/gnome-system-monitor/C/figures/addColumn.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/changePriority.png=usr/share/gnome/help/gnome-system-monitor/C/figures/changePriority.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/colorPanel.png=usr/share/gnome/help/gnome-system-monitor/C/figures/colorPanel.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/columnContextMenu.png=usr/share/gnome/help/gnome-system-monitor/C/figures/columnContextMenu.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/gnome-system-monitor_window.png=usr/share/gnome/help/gnome-system-monitor/C/figures/gnome-system-monitor_window.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/memoryMaps.png=usr/share/gnome/help/gnome-system-monitor/C/figures/memoryMaps.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/moreInfo.png=usr/share/gnome/help/gnome-system-monitor/C/figures/moreInfo.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/processListing.png=usr/share/gnome/help/gnome-system-monitor/C/figures/processListing.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/sortButton.png=usr/share/gnome/help/gnome-system-monitor/C/figures/sortButton.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/sortMenu.png=usr/share/gnome/help/gnome-system-monitor/C/figures/sortMenu.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/sortMenu2.png=usr/share/gnome/help/gnome-system-monitor/C/figures/sortMenu2.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/systemMonitor.png=usr/share/gnome/help/gnome-system-monitor/C/figures/systemMonitor.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/figures/viewMenu.png=usr/share/gnome/help/gnome-system-monitor/C/figures/viewMenu.png 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/gnome-system-monitor.xml=usr/share/gnome/help/gnome-system-monitor/C/gnome-system-monitor.xml 0644 root bin
+f none share/gnome/help/gnome-system-monitor/C/legal.xml=usr/share/gnome/help/gnome-system-monitor/C/legal.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-system-monitor.1=usr/share/man/man1/gnome-system-monitor.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-system-monitor 0755 root bin
+f none share/omf/gnome-system-monitor/gnome-system-monitor-C.omf=usr/share/omf/gnome-system-monitor/gnome-system-monitor-C.omf 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/gnome-system-monitor 0755 root bin
+f none share/pixmaps/gnome-system-monitor/download.svg=usr/share/pixmaps/gnome-system-monitor/download.svg 0644 root bin
+f none share/pixmaps/gnome-system-monitor/side.png=usr/share/pixmaps/gnome-system-monitor/side.png 0644 root bin
+f none share/pixmaps/gnome-system-monitor/upload.svg=usr/share/pixmaps/gnome-system-monitor/upload.svg 0644 root bin

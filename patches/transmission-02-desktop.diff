@@ -1,0 +1,8 @@
+--- transmission-1.93/gtk/transmission.desktop.in-orig	2010-05-03 17:10:14.560933647 -0500
++++ transmission-1.93/gtk/transmission.desktop.in	2010-05-03 17:09:41.496998207 -0500
+@@ -9,4 +9,4 @@ Terminal=false
+ TryExec=transmission
+ Type=Application
+ MimeType=application/x-bittorrent;
+-Categories=Network;FileTransfer;P2P;GTK;
++Categories=Applications;Network;FileTransfer;P2P;GTK;

@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibproxy-gnome.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibproxy-gnome.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibproxy-gnome.copyright
+d none lib 0755 root bin
+d none lib/libproxy 0755 root bin
+d none lib/libproxy/0.3.1 0755 root bin
+d none lib/libproxy/0.3.1/modules 0755 root bin
+f none lib/libproxy/0.3.1/modules/config_gnome.so=usr/lib/libproxy/0.3.1/modules/config_gnome.so 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/libproxy 0755 root bin
+d none lib/sparcv9/libproxy/0.3.1 0755 root bin
+d none lib/sparcv9/libproxy/0.3.1/modules 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/config_gnome.so=usr/lib/sparcv9/libproxy/0.3.1/modules/config_gnome.so 0755 root bin

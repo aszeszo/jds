@@ -1,0 +1,195 @@
+--- gdm-2.30.7/gui/simple-greeter/gdm-languages.c.org	Tue Jul 12 13:40:00 2011
++++ gdm-2.30.7/gui/simple-greeter/gdm-languages.c	Tue Jul 12 15:48:26 2011
+@@ -27,6 +27,9 @@
+ #include <stdio.h>
+ #include <unistd.h>
+ #include <string.h>
++#if __sun
++#include <strings.h>
++#endif
+ #include <errno.h>
+ #include <dirent.h>
+ #include <locale.h>
+@@ -144,7 +147,7 @@
+ 
+         if (!g_regex_match (re, name, 0, &match_info) ||
+             g_match_info_is_partial_match (match_info)) {
+-                g_warning ("locale %s isn't valid\n", name);
++		 g_debug ("locale %s isn't valid\n", name);
+                 goto out;
+         }
+ 
+@@ -188,6 +191,12 @@
+                 }
+         }
+ 
++	/*
++	 * While Solaris now supports locale aliases but we still prefer
++	 * unnormalized, canonical locale names. Hence, we do not normalize
++	 * codeset part of locale names.
++	 */
++#ifndef __sun
+         if (codesetp != NULL && *codesetp != NULL) {
+                 normalized_codeset = normalize_codeset (*codesetp);
+                 normalized_name = construct_language_name (language_codep ? *language_codep : NULL,
+@@ -203,6 +212,7 @@
+                 }
+                 g_free (normalized_name);
+         }
++#endif
+ 
+  out:
+         g_match_info_free (match_info);
+@@ -350,9 +360,16 @@
+         return has_translations;
+ }
+ 
++#if __sun
+ static gboolean
+ add_locale (const char *language_name,
++            gboolean    utf8_only,
++	    gboolean    verify_locale)
++#else
++static gboolean
++add_locale (const char *language_name,
+             gboolean    utf8_only)
++#endif
+ {
+         GdmLocale *locale;
+         GdmLocale *old_locale;
+@@ -361,6 +378,13 @@
+ 
+         g_return_val_if_fail (language_name != NULL, FALSE);
+ 
++#if __sun
++	if (strstr(language_name, ".UTF-8") != NULL || !utf8_only) {
++		name = g_strdup (language_name);
++	} else {
++               return FALSE;
++       }
++#else
+         language_name_get_codeset_details (language_name, NULL, &is_utf8);
+ 
+         if (is_utf8) {
+@@ -376,12 +398,21 @@
+         } else {
+                 name = g_strdup (language_name);
+         }
++#endif
+ 
++#if __sun
++        if (verify_locale && !language_name_is_valid (name)) {
++                g_warning ("Your locale '%s' was failed by setlocale()", name);
++                g_free (name);
++                return FALSE;
++        }
++#else
+         if (!language_name_is_valid (name)) {
+                 g_warning ("Your locale '%s' was failed by setlocale()", name);
+                 g_free (name);
+                 return FALSE;
+         }
++#endif
+ 
+         locale = g_new0 (GdmLocale, 1);
+         gdm_parse_language_name (name,
+@@ -392,6 +423,13 @@
+         g_free (name);
+         name = NULL;
+ 
++#if __sun
++	if (locale->language_code == NULL) {
++		gdm_locale_free (locale);
++		return FALSE;
++	}
++#endif
++
+ #ifdef WITH_INCOMPLETE_LOCALES
+         if (utf8_only) {
+                 if (locale->territory_code == NULL || locale->modifier) {
+@@ -459,7 +497,7 @@
+         error = NULL;
+         mapped = g_mapped_file_new (ARCHIVE_FILE, FALSE, &error);
+         if (mapped == NULL) {
+-                g_warning ("Mapping failed for %s: %s", ARCHIVE_FILE, error->message);
++		 g_debug ("Mapping failed for %s: %s", ARCHIVE_FILE, error->message);
+                 g_error_free (error);
+                 return FALSE;
+         }
+@@ -488,7 +526,11 @@
+         }
+ 
+         for (cnt = 0; cnt < used; ++cnt) {
++#if __sun
++                add_locale (names[cnt].name, TRUE, TRUE);
++#else
+                 add_locale (names[cnt].name, TRUE);
++#endif
+         }
+ 
+         g_free (names);
+@@ -533,6 +575,19 @@
+ static void
+ collect_locales_from_directory (void)
+ {
++#if __sun
++	lclist_t *lclp;
++	int       count;
++	int       i;
++
++	count = localelist (&lclp, LCLIST_QUERY);
++
++	for (i = 0; i < count; i++) {
++		add_locale (lclp[i].locale, TRUE, FALSE);
++	}
++
++	localelistfree (lclp);
++#else
+         struct dirent **dirents;
+         int             ndirents;
+         int             cnt;
+@@ -546,6 +601,7 @@
+         if (ndirents > 0) {
+                 free (dirents);
+         }
++#endif
+ }
+ 
+ static void
+@@ -591,9 +647,15 @@
+ 
+                 lang = NULL;
+                 for (i = 0; lang_list[i] != NULL; i++) {
++#if __sun
++                        if (add_locale (lang_list[i], FALSE, TRUE)) {
++                                break;
++                        }
++#else
+                         if (add_locale (lang_list[i], FALSE)) {
+                                 break;
+                         }
++#endif
+                 }
+                 g_strfreev (lang_list);
+         }
+@@ -696,7 +758,7 @@
+                 }
+ 
+                 if (is_fallback_language (code)) {
+-                        name = g_strdup (_("Unspecified"));
++			name = g_strdup (code);
+                 } else {
+                         translated_name = dgettext ("iso_639", language);
+                         name = get_first_item_in_semicolon_list (translated_name);
+@@ -1059,6 +1121,11 @@
+ 
+         full_language = g_string_append (full_language, translated_language);
+ 
++	if (strcmp (translated_language, "C") == 0 ||
++	    strcmp (translated_language, "POSIX") == 0) {
++		goto out;
++	}
++
+         if (territory_code != NULL) {
+                 translated_territory = get_translated_territory (territory_code, locale);
+         }

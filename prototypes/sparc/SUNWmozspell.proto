@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmozspell.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmozspell.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWmozspell.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWmozspell.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmozspell.copyright
+d none sfw 0755 root bin
+d none sfw/lib 0755 root bin
+d none sfw/lib/mozilla 0755 root sys
+d none sfw/lib/mozilla/components 0755 root sys
+f none sfw/lib/mozilla/components/libmyspell.so=usr/sfw/lib/mozilla/components/libmyspell.so 0755 root sys
+f none sfw/lib/mozilla/components/libspellchecker.so=usr/sfw/lib/mozilla/components/libspellchecker.so 0755 root sys
+d none sfw/lib/mozilla/components/myspell 0755 root sys
+f none sfw/lib/mozilla/components/myspell/en-GB.aff=usr/sfw/lib/mozilla/components/myspell/en-GB.aff 0644 root sys
+f none sfw/lib/mozilla/components/myspell/en-GB.dic=usr/sfw/lib/mozilla/components/myspell/en-GB.dic 0644 root sys
+f none sfw/lib/mozilla/components/myspell/en-US.aff=usr/sfw/lib/mozilla/components/myspell/en-US.aff 0644 root sys
+f none sfw/lib/mozilla/components/myspell/en-US.dic=usr/sfw/lib/mozilla/components/myspell/en-US.dic 0644 root sys
+f none sfw/lib/mozilla/components/spellchecker.xpt=usr/sfw/lib/mozilla/components/spellchecker.xpt 0644 root sys

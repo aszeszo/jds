@@ -1,0 +1,745 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2009/432 ConsoleKit -->
+<!ENTITY cmd "console-kit-daemon">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2009 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<refentry id="console-kit-daemon-1m">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1m</manvolnum>
+<refmiscinfo class="date">24 Oct 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1m;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>
+&cmd;
+</primary></indexterm>
+<indexterm><primary>
+ConsoleKit daemon
+</primary></indexterm>
+<refnamediv id="console-kit-daemon-1m-name">
+<refname>&cmd;</refname>
+<refpurpose>
+ConsoleKit daemon
+</refpurpose></refnamediv>
+<refsynopsisdiv id="console-kit-daemon-1m-synp"><title>&synp-tt;</title>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-debug</option></arg>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-no-daemon</option></arg>
+<arg choice="opt"><option>-timed-exit</option></arg>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id="console-kit-daemon-1m-desc"><title>&desc-tt;</title>
+<para>
+<command>&cmd;</command> is a service for defining and tracking users, login
+sessions and seats.  It provides interfaces for managing switching sessions
+and session migration when using mechanisms such as Virtual Terminals (VT).
+ConsoleKit provides a number of interfaces to specify what displays are managed
+by the display manager, and how.
+</para>
+
+<para>
+ConsoleKit maintains a database of which users are logged into the system and
+a history of all user logins.  ConsoleKit groups sessions by seats which
+represent a set of hardware (usually a keyboard and mouse).  Other process
+communicate with ConsoleKit via D-Bus.
+</para>
+
+<para>
+One session leader process is responsible for asking <command>&cmd;</command>
+to open a new session.  In the typical case, the session leader would be a
+ConsoleKit enabled display manager, such as GDM.  This leader makes a
+connection to the D-Bus system bus and asks <command>&cmd;</command> to open a
+session when needed.
+</para>
+
+<para>
+If the operation succeeds, <command>&cmd;</command> will return a cookie to the
+session leader. The session leader should store this variable in the
+environment as XDG_SESSION_COOKIE so that it may be shared with its child
+processes.  The environment variable contains the UUID used to tie processes to
+a session. 
+</para>
+
+<para>
+At this point the session will be registered with ConsoleKit and a particular
+set of information about the session will be stored along with it. 
+</para>
+
+<para>
+The Session will remain open until the Session Leader disconnects from the
+D-Bus system bus. The session will be removed from its seat, and deregistered.
+</para>
+
+<para>
+Various other programs need to know information about running user sessions,
+such as the Fast User Switch Applet and other mechanisms for switching the
+console to use a different VT display.  Such programs make use of ConsoleKit
+interfaces to determine if user switching is supported and to manage the
+switching of different sessions on the same seat.
+</para>
+
+<para>
+On Solaris, the ConsoleKit service is managed by the
+<citerefentry><refentrytitle>smf</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry>
+service management facility under the service identifier
+<replaceable>svc:/system/consolekit</replaceable>.  On Solaris, it is
+recommended that you use the 
+<citerefentry><refentrytitle>svcadm</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry> utility to start and stop the
+ConsoleKit service.
+</para>
+
+<para>
+ConsoleKit provides a pam_ck_connector so that non-graphical logins (e.g.
+telnet, ssh, etc.) are registered with ConsoleKit.  This functionality works
+if this PAM module is enabled in the
+<citerefentry><refentrytitle>pam.conf</refentrytitle>
+<manvolnum>4</manvolnum></citerefentry> configuration.  Thus ConsoleKit can be
+used as a utmp/wtmp replacement since it stores a superset of the information
+as in the utmp/wtmp database.  
+</para>
+
+<para>
+The ConsoleKit database is stored in the file
+<filename>/var/run/ConsoleKit/database</filename>.  It stores information about
+active Seats, Sessions, and the current SessionLeader.
+</para>
+</refsect1>
+
+<refsect1 id="console-kit-daemon-1m-opts">
+<title>&opts-tt;</title>
+<para>
+The following options are supported:
+</para>
+
+<variablelist termlength="medium">
+<varlistentry>
+<term><option>-debug</option></term>
+<listitem><para>
+Enable debug output.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>h</option>, <option>-help</option></term>
+<listitem><para>
+Display detailed usage message.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-no-daemon</option></term>
+<listitem><para>
+Avoid starting <command>&cmd;</command> as a daemon.  Useful for debugging.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-timed-exit</option></term>
+<listitem><para>
+Exit after 30 seconds.	Useful for debugging.
+</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="pkg-config-1-envr"><title>&envr-tt;</title>
+<para>
+See
+<citerefentry><refentrytitle>environ</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry>
+for descriptions of environment variables.
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+
+<term><envar>DISPLAY</envar></term>
+<listitem><para>
+This environment variable corresponds to the Xserver display value associated
+with the ConsoleKit session.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>XDG_SESSION_COOKIE</envar></term>
+<listitem><para>
+ConsoleKit provides this environment variable to the session leader.  The
+session leader is expected to ensure this is set for the session process
+started.  It contains a UUID used to tie the processes to the session.  This is
+used to support user switching on displays that support it (currently only
+graphical VT displays on the console).
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+The following environment variables are set when <command>&cmd;</command>
+runs the <filename>run-session.d</filename> and <filename>run-seat.d</filename>
+scripts.  These values correspond to those values returned by the
+<citerefentry><refentrytitle>ck-list-session</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry> utility.
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><envar>CK_SESSION_SEAT_ID</envar></term>
+<listitem><para>
+The seat ID associated with the session.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_SEAT_UID</envar></term>
+<listitem><para>
+The user id associated with the session
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_DISPLAY_DEVICE</envar></term>
+<listitem><para>
+The display device associated with the session.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_DISPLAY_TYPE</envar></term>
+<listitem><para>
+The display configuration file associated with the session.  This is a file
+located in the <filename>/etc/ConsoleKit/displays.d</filename> directory.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_X11_DISPLAY_DEVICE</envar></term>
+<listitem><para>
+The value of the display device that the X11 display for the session is
+connected to.  If there is no x11-display set, then this value is undefined.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_X11_DISPLAY</envar></term>
+<listitem><para>
+The value of the X11 DISPLAY environment variable for this session if one is
+present.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_REMOTE_HOST_NAME</envar></term>
+<listitem><para>
+If the session is not local, the value is the host name associated with the
+session.  If the session is local, the value is empty.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_IS_ACTIVE</envar></term>
+<listitem><para>
+The value is &quot;TRUE&quot; if the session is active on the seat to which it
+is attached, and &quot;FALSE&quot; otherwise.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><envar>CK_SESSION_IS_LOCAL</envar></term>
+<listitem><para>
+The value is &quot;TRUE&quot; if the session is local, and &quot;FALSE&quot;
+if remote.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect1 id="console-kit-daemon-1m-exde"><title>&exde-tt;</title>
+<refsect2 id="console-kit-daemon-1m-exde-seatconfig">
+<title>ConsoleKit Seat Configuration</title>
+
+<para>
+ConsoleKit seat configuration files are located in the
+</filename>/etc/ConsoleKit/seats.d</filename> directory.  Each seat
+configuration file ends with the <filename>.seat</filename> suffix.  ConsoleKit
+provides a default seat file named <filename>00-primary.seat</filename>.
+Additional seat configuration files may be added.  These files are in standard
+INI format.
+</para>
+
+<para>
+The settings below are in
+&quot;group/key=<replaceable>default_value</replaceable>&quot; format, and show
+the default values of the <filename>00-primary.seat</filename> file.  For
+example, to specify a different &quot;Seat Entry/Name&quot; value, you would
+modify the this file so it contains these lines:
+</para>
+
+<screen>
+[Seat Entry]
+[...]
+Name=Customized seat name
+</screen>
+
+<para>
+The following keys are supported for configuring ConsoleKit seats:
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>Seat Entry/Version=1.0</term>
+<listitem><para>
+Version number of the seat file.  This specifies the version number of the
+configuration file format used.  Currently only the value &quot;1.0&quot; is
+supported.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Seat Entry/Name=Primary seat</term>
+<listitem><para>
+Name of the seat.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Seat Entry/ID=StaticSeat</term>
+<listitem><para>
+Specifies the unique ID of the seat.  If the value is NULL, then
+<command>&cmd;</command> will provide a value.  The ID may only contain the
+ASCII characters [A-Z][a=z][0-9]_".
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Seat Entry/Hidden=false</term>
+<listitem><para>
+If this value is set to &quot;false&quot;, then ConsoleKit will create this
+seat.  Otherwise, the seat will not be created.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Seat Entry/Devices</term>
+<listitem><para>
+This value is not currently supported.  In the future, it is planned that
+ConsoleKit will provide the ability to manage how device permissions are
+managed, and this key is a placeholder.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Seat Entry/Sessions=Local</term>
+<listitem><para>
+List of sessions to start on the seat, separated by the &quot;;&quot;
+character.  Each session must be defined in a ConsoleKit session configuration
+file named
+<filename>/etc/ConsoleKit/sessions.d/<replaceable>sessions</replaceable>.session</filename> where <replaceable>sessions</replaceable> is the value of this key.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect2 id="console-kit-daemon-1m-exde-dislayconfig">
+<title>ConsoleKit Display Configuration</title>
+
+<para>
+ConsoleKit display configuration files are located in the
+</filename>/etc/ConsoleKit/displays.d</filename> directory.  Each session
+configuration file ends with the <filename>.display</filename> suffix.
+Additional seat configuration files may be added.  These files are in standard
+INI format.
+</para>
+
+<para>
+The settings below are in
+&quot;group/key&quot; format, so to specify the &quot;X11/Display&quot;
+value, the file should contain these lines:
+</para>
+
+<screen>
+[X11]
+[...]
+Exec=/usr/X11/bin/Xserver $display -br -auth $auth $vt
+</screen>
+
+<para>
+The following keys are supported for configuring ConsoleKit displays:
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>Display/Type</term>
+<listitem><para>
+The type of the display.  Currently only the value &quot;X11&quot; is
+supported.  This indicates that the display will be managed by an Xserver
+that sends a SIGUSR1 signal to its parent pid when it is ready.  This is
+standard for all Xservers, such as the
+<citerefentry><refentrytitle>Xorg</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry> Xserver.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>X11/Exec</term>
+<listitem><para>
+The command to run to launch the session.  This command supports variables
+that start with the &quot;$&quot; character, like &quot;$display&quot;.
+The values to use for these variables can either be specified in the 
+ConsoleKit session configuration file in the &quot;[Local]&quot; section, or
+via the <citerefentry><refentrytitle>ck-seat-tool</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry> application.
+</para>
+<para>
+Administrator can customize the X11/Exec command as required. For example, to enable xkb and accessibility extensions for Xserver, edit <filename>/etc/ConsoleKit/displays.d/Local.display</filename>
+</para>
+<screen>
+[X11]
+[...]
+Exec=/usr/X11/bin/Xserver $display -br -auth $auth $vt +kb +accessx
+</screen>
+</listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect2 id="console-kit-daemon-1m-exde-sessionconfig">
+<title>ConsoleKit Session Configuration</title>
+
+<para>
+ConsoleKit session configuration files are located in the
+</filename>/etc/ConsoleKit/sessions.d</filename> directory.  Each session
+configuration file ends with the <filename>.session</filename> suffix.
+Additional seat configuration files may be added.  These files are in standard
+INI format.
+</para>
+
+<para>
+The settings below are in
+&quot;group/key&quot; format, so to specify the &quot;Session Entry/Name&quot;
+value, the file should contain these lines:
+</para>
+
+<screen>
+[Session Entry]
+[...]
+Name=Customized Session
+</screen>
+
+<para>
+The following keys are supported for configuring ConsoleKit sessions:
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>Session Entry/Name</term>
+<listitem><para>
+Unique name of the session.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Session Entry/Type</term>
+<listitem><para>
+Type of the session
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Session Entry/Description</term>
+<listitem><para>
+Description of the session.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Session Entry/DisplayTemplate</term>
+<listitem><para>
+This specifies the display type to be used with the session.  This corresponds
+to the file
+<filename>/etc/ConsoleKit/displays.d/<replaceable>display_template</replaceable>.display</filename>
+where <replaceable>display_template</replaceable> is the value of this key.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Local/<replaceable>variable</replaceable></term>
+<listitem><para>
+The ConsoleKit display configuration file associated with the
+&quot;Entry/DisplayTemplate&quot; key specifies the command to run to launch
+the display.  This command is defined in the ConsoleKit display configuration
+file in the key &quot;X11/Exec&quot;.  This command can include variables that
+begin with the &quot;$&quot; character, such as &quot;$display&quot;.  The
+values to be used for these variables can be defined in this section.  So if
+the session configuration file contains the value
+&quot;Local/display=:0&quot;, this will cause the variable used when launching
+the command to be replaced with the value &quot;:0&quot;.
+</para></listitem></varlistentry>
+</refsect2>
+
+<refsect2 id="console-kit-daemon-1m-exde-scripts">
+<title>ConsoleKit Session Script Interfaces</title>
+
+<para>
+The following interfaces are provided so that system administrators can
+configure that certain actions happen when ConsoleKit responds to certain
+events.
+</para>
+
+<para>
+When a ConsoleKit session is started or removed, then <command>&cmd;</command>
+will first run any scripts found in the
+<filename>/etc/ConsoleKit/run-session.d</filename> directory and then run any
+scripts in the
+<filename>/usr/lib/ConsoleKit/run-session.d</filename> directory.
+</para>
+
+<para>
+When certain seat events, such as &quot;seat_added&quot;,
+&quot;seat_removed&quot; or &quot;seat_active_session_changed&quot; occur,
+then <command>&cmd;</command> will first run any script in the
+<filename>/etc/ConsoleKit/run-seat.d</filename> directory and  then run any
+scripts in the
+<filename>/usr/lib/ConsoleKit/run-seat.d</filename> directory.
+</para>
+</refsect2>
+
+<refsect2 id="console-kit-daemon-1m-exde-system">
+<title>ConsoleKit System Restart and Stop</title>
+
+<para>
+<command>&cmd;</command> provides D-Bus interfaces that will restart or stop
+the system.  When <command>&cmd;</command> receives a D-Bus request to restart
+the system, it will run the 
+<filename>/usr/lib/ConsoleKit/scripts/ck-system-restart</filename> script if
+the user has privilege to do this operation.  When <command>&cmd;</command>
+receives a D-Bus request to stop the system, it will run the
+<filename>/usr/lib/ConsoleKit/scripts/ck-system-stop</filename> script if the
+user has privilege to do this operation.
+</para>
+</refsect2>
+</refsect1>
+
+<refsect1 id="ck-seat-tool-1m-exam"><title>&exam-tt;</title>
+<example role="example">
+<title>To start the ConsoleKit daemon</title>
+<para>
+<screen>
+example% <userinput>&cmd;</userinput>
+</screen>
+</para>
+</example>
+
+<example role="example">
+<title>To configure ConsoleKit to not start a seat</title>
+<para>
+To disable a seat, the administrator can set Hidden=true in the .seat file. 
+Edit the <filename>00-primary.seat</filename> file as follows to disable
+the default primary seat which normally runs on the system console.
+
+For example, disabling the primary seat on the console is useful if the 
+administrator wishes to run GDM in headless mode. This can be
+useful if the administrator wants GDM to accept XDMCP remote displays
+but the server does not actually have a console.
+</para>
+
+<screen>
+[Seat Entry]
+Version=1.0
+Name=Primary seat
+ID=StaticSeat1
+Description=start one static local display at :0
+Hidden=true
+Devices=
+Sessions=Local;
+</screen>
+</example>
+
+<example role="example">
+<title>To configure ConsoleKit to start multiple sessions on a single seat</title>
+<para>
+To start two local displays: DISPLAY &quot;:0&quot; on vt7 and DISPLAY
+&quot;:1&quot; on &quot;vt8&quot;,
+edit the <filename>00-primary.seat</filename> file as follows:
+</para>
+
+<screen>
+[Seat Entry]
+Version=1.0
+Name=Primary seat
+Description=start static displays :0 on vt7 and :1 on vt8
+Hidden=false
+Devices=
+Sessions=Local;Local2;
+</screen>
+
+<para>
+Then, in addition to the original
+<filename>/etc/ConsoleKit/sessions.d/Local.session</filename> file, add the
+following <filename>/etc/ConsoleKit/sessions.d/Local2.session</filename> file:
+</para>
+
+<screen>
+[Session Entry]
+Name=Local
+Type=LoginWindow
+Description=Local Login Screen
+DisplayTemplate=Local
+
+[Local]
+display=:1
+vt=vt8
+</screen>
+</example>
+
+<example role="example">
+<title>To configure ConsoleKit to start multiple seat</title>
+<para>
+To start two seats: a local session on DISPLAY &quot;:0&quot; using
+&quot;vt7&quot; and another seat using a VNC session on DISPLAY &quot;:64&quot,
+add a file <filename>/etc/ConsoleKit/seats.d/01-vnc.seat</filename> as 
+follows:
+</para>
+
+<screen>
+[Seat Entry]
+Version=1.0
+Name=VNC seat
+Description=start one VNC display on :64
+Hidden=false
+Devices=
+Sessions=LocalVNC;
+</screen>
+
+<para>
+Add the 
+<filename>/etc/ConsoleKit/sessions.d/LocalVNC.session</filename> file as
+follows:
+</para>
+
+<screen>
+[Session Entry]
+Name=LocalVNC
+Type=LoginWindow
+Description=Connect to local VNC server running on same machine
+DisplayTemplate=LocalVNC
+
+[LocalVNC]
+display=:64
+</screen>
+<para>
+Finally, add the 
+<filename>/etc/ConsoleKit/displays.d/LocalVNC.display</filename> file as
+follows:
+</para>
+
+<screen>
+[Display]
+Type=X11
+
+[X11]
+Exec=/usr/X11/bin/Xvnc $display -auth $auth -query localhost
+</screen>
+</example>
+</refsect1>
+
+<refsect1 id="console-kit-daemon-1m-file"><title>&file-tt;</title>
+<para>
+The following files are used by this application:
+</para>
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/usr/sbin/&cmd;</filename></term>
+<listitem><para>
+Executable for the ConsoleKit daemon.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/usr/lib/ConsoleKit/run-seat.d</filename></term>
+<listitem><para>
+Any scripts in this directory are run when a ConsoleKit seat event happens.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/usr/lib/ConsoleKit/run-session.d</filename></term>
+<listitem><para>
+Any scripts in this directory are run when a ConsoleKit session event happens.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/usr/lib/ConsoleKit/scripts/ck-system-restart</filename></term>
+<listitem><para>
+Script to run when ConsoleKit receives a D-Bus request to restart the system.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/usr/lib/ConsoleKit/scripts/ck-system-stop</filename></term>
+<listitem><para>
+Script to run when ConsoleKit receives a D-Bus request to stop the system.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/ConsoleKit/seats.d</filename></term>
+<listitem><para>
+ConsoleKit seat configuration files.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/ConsoleKit/session.d</filename></term>
+<listitem><para>
+ConsoleKit session configuration files.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/ConsoleKit/run-seat.d</filename></term>
+<listitem><para>
+Any scripts in this directory are run when a ConsoleKit seat event happens.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/ConsoleKit/run-session.d</filename></term>
+<listitem><para>
+Any scripts in this directory are run when a ConsoleKit seat event happens.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/var/run/ConsoleKit/database</filename></term>
+<listitem><para>
+ConsoleKit database.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>/var/log/ConsoleKit/history</filename></term>
+<listitem><para>
+ConsoleKit history database.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="console-kit-daemon-1m-attr"><title>&attr-tt;</title>
+<para>
+See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>library/xdg/consolekit</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="console-kit-daemon-1m-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+
+<para>
+More information can be found at:
+</para>
+<para>
+<literal>http://www.freedesktop.org/wiki/Software/ConsoleKit</literal>
+</para>
+
+<para>
+<citerefentry><refentrytitle>ck-history</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-launch-session</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-list-sessions</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>dbus-daemon</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-seat-tool</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>svcadm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>environ</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>smf</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="console-kit-daemon-1m-note"><title>&note-tt;</title>
+<para>
+Brian Cameron, Sun Microsystems Inc., 2009.
+Copyright (c) 2009 by Sun Microsystems, Inc.
+</para>
+<para>
+Some of the documentation in this manpage is from the ConsoleKit documentation
+written by William Jon McCann.
+</para>
+</refsect1>
+</refentry>

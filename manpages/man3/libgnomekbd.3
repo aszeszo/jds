@@ -1,0 +1,96 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!ENTITY cmd "libgnomekbd">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.">
+]>
+<?Pub UDT _bookmark _target>
+<?Pub Inc>
+<refentry id="libgnomekbd">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>3</manvolnum>
+<refmiscinfo class="date">06 Aug 2010</refmiscinfo>
+<refmiscinfo class="sectdesc">&man3;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>&cmd;</primary></indexterm>
+<indexterm><primary>GNOME kbd library</primary></indexterm>
+<refnamediv id="libgnomekbd-name"><refname>&cmd;</refname>
+<refpurpose>Utility library for GNOME kbd</refpurpose>
+</refnamediv>
+
+<refsect1 id="libgnomekbd-desc"><title>&desc-tt;</title>
+<para>
+libgnomekbd is the GNOME keyboard configuration library; it loads keyboard
+layout information available in the system from libxklavier library and
+interfaces with gconf and Xserver APIs to dynamically manipulate/load/unload
+keyboard configuration in the system.
+</para>
+</refsect1>
+
+<refsect1 id="libgnomekbd-file"><title>&file-tt;</title>
+<para>
+The following files are used by this application:
+</para>
+
+<variablelist termlength="wide">
+<varlistentry><term><filename>/usr/lib/&cmd;.so</filename></term><listitem>
+<para>A keyboard configuration library</para></listitem></varlistentry>
+</variablelist></refsect1> 
+
+<refsect1 id="libgnomekbd-attr"><title>&attr-tt;</title>
+<para>
+See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>SUNWgnome-libs</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="libgnomekbd-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>libgnomekbdui</refentrytitle><manvolnum>3</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>libxklavier</refentrytitle><manvolnum>3</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gnome-interfaces</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="libgnomekbd-note"><title>&note-tt;</title>
+<para>
+Written by Javier Acosta, Sun Microsystems Inc., 2010.
+</para>
+</refsect1>
+</refentry>

@@ -1,0 +1,1699 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  Spanish translation for avahi
+  Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+  This file is distributed under the same license as the avahi package.
+ 
+  Jorge González <jorgegonz@svn.gnome.org>, 2008.
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  translation of tracker.HEAD.po to Español
+  translation of tracker to spanish
+  Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+ 
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+ : ../src/libtracker-common/tracker-utils.c:262
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  translation of dia.HEAD.po to Español
+  Spanish translation for dia
+  Copyright © 2000-2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the Dia package.
+ 
+  Francisco Vila Doncel <fravd@wanadoo.es> (Revisión), 2003.
+  Ana María García Molina <ana_gm@eresmas.com>, 2001.
+  Juan Manuel García Molina <juanma_gm@wanadoo.es>, 2000-2002.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006.
+  Jorge Gonzalez <jorgegonz@svn.gnome.org>, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  translation of dasher.HEAD.po to Español
+  This file is distributed under the same license as the Dasher package.
+  Copyright (C) 2004 THE GNOME FOUNDATION.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  translation of gok.HEAD.po to Español
+  Spanish translation for gok.
+  Copyright © 2003, 2005, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gok package.
+ 
+  Alejandro Sáchez Acosta <asanchez@gnu.org>, 2002.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Claudio Saavedra <csaavedra@ælumnos.utalca.cl>, 2007 (QA).
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>,
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  translation of at-spi.HEAD.po to Spanish
+  Spanish Translation for AT-SPI.
+  Copyright (C) The Free Software Foundation
+  This file is distributed under the same license as the AT-SPI package.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2003.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+ 
+  Jorge González <jorgegonz@svn.gnome.org>, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  translation of mousetweaks.HEAD.po to Español
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+ 
+  Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  translation of orca.HEAD.po to Español
+  Traducción de Orca al Español
+  This file is distributed under the same license as the ORCA package.
+  Copyright (C) 2005 GNOME Foundation.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2006.
+  Maria Majadas <maria.majadas@hispalinux.es>, 2005.
+  Francisco Javier Dorado Martínez <javier@tiflolinux.org>, 2007, 2008.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  translation of es.po to Spanish
+  translation of quick-lounge-applet.HEAD.po to Spanish
+  translation of quick-lounge-applet.HEAD.es.po to Spanish
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) 2009 THE PACKAGE'S COPYRIGHT HOLDER.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  translation of gnome-netstatus.HEAD.po to Español
+  traducción de es.po al Spanish
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+ 
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  translation of file-roller.HEAD.po to Español
+  Miguel A. Arevalo <marevalo@marevalo.net>, 2002.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Rodrigo Marcos Fombellida <rodrifom@gmail.com>, 2007.
+  Spanish localization for File Roller.
+  Copyright © 2002, 2006, 2007, 2008 the Free Software Foundation, Inc.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  translation of gcalctool.HEAD.po to Español
+  Spanish translation of gcalctool
+  Copyright © 2002,2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gcalctool package.
+ 
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2003.
+  Francisco Javier F. Serrador <serrador@openshine.com>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  translation of gtkam-es.po to Español
+  Spanish message catalog for gtKam, a GTK+ front end for gphoto2
+  Copyright © 2000 Scott Fritzinger <scottf@unr.edu>
+  Philippe Marzouk <philm@users.sourceforge.net>, 2000.
+  Fabian Mandelbaum <fabman@mandrakesoft.com>, 2002-2003
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  translation of brasero.HEAD.po to Español
+  Spanish translation of brasero
+  Copyright (C) 2006 THE brasero'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the brasero package.
+ 
+  philippe Rouquier <brasero-app@wanadoo.fr>, 2005.
+  Sergio Rivadero <sergiorivadero@argentina.com>, 2006.
+  Rafael Bermúdez <rafaelbermudez@gmail.com>, 2006.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+  Miguel Angel Ruiz Manzano <mruiz@openminds.cl>, 2009.
+  Jorge González <jorgegonz@svn.gnome.org>, 2009.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  translation of sound-juicer.HEAD.po to Español
+  Spanish translation for Sound Juicer.
+  Copyright (C) 2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the sound-juicer package.
+ 
+  Enrique Rodriguez <krm@futurnet.es>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  Translation into spanish of libbonobo.
+  Copyright (C) 2001,2003, 2004 Free Software Foundation, Inc.
+  Diego Sevilla Ruiz <dsevilla@um.es>, 2000.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
+  Héctor García Álvarez <hector@scouts-es.org>, 2001.
+  Germán Poo-Caamaño <gpoo@ubiobio.cl>, 2002.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  translation of gconf-editor.HEAD.po to Español
+  translation of es.po to
+  Copyright © 2002 the Free Software Foundation
+  This file is distributed under the same license as the GConf Editor package.
+ 
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002.
+  Germán Poo Caamaño, <gpoo@ubiobio.cl>, 2002.  (Revisión).
+  Francisco Javier F. Serrador <serrador@openshine.com>, 2004-2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  translation of gconf.HEAD.po to Español
+  Copyright (C) 2001-2002,2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Héctor García Álvarez <hector@scouts-es.org>, 2001.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002.  (Revisión).
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  translation of bug-buddy.HEAD.po to Español
+  Copyright (C) 2000-2002,2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Jesús Bravo Álvarez <jba@pobox.com>, 2000.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
+  Héctor García Álvarez <hector@scouts-es.org>, 2001-2002.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002 (Revisor).
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Francisco Javier F. Serrador <serrador@tecknolabs.com>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  Spanish gDesklets translation.
+  Copyright (C) 2003 Martin Grimme <martin@pycage.de>
+  This file is distributed under the same license as the gDesklets package.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Miguel Cabrera <mfcabrera@gmail.com>, 2005.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007.
+  Juan Pablo Puerta <ews@madridwireless.net>
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  translation of gnome-control-center.HEAD.po to Español
+  Copyright © 1999-2002, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-control-center package.
+ 
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch>, 1998-2001.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
+  Héctor García Álvarez <hector@scouts-es.org>, 2001.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002 (Revisor).
+  Lucas Di Pentima <lucas@lunix.com.ar>, 2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002,2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Claudio Saavedra <csaavedra@alumnos.utalca.cl>, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  translation of gnome-settings-daemon.HEAD.po to Español
+  Copyright © 1999-2002, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-control-center package.
+ 
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch>, 1998-2001.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
+  Héctor García Álvarez <hector@scouts-es.org>, 2001.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002 (Revisor).
+  Lucas Di Pentima <lucas@lunix.com.ar>, 2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002,2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Claudio Saavedra <csaavedra@alumnos.utalca.cl>, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  translation of zenity.HEAD.po to Español
+  Spanish translation for Zenity.
+  Copyright © 2003, 2006, 2007, 2008 the Free Software Foundation, Inc.
+  This file is distributed under the same license as the zenity package.
+ 
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005.
+  Francisco Javier F. Serrador <serrador@tecknolabs.com>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  translation of gdm.gnome-2-20.po to Español
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch>, 1998-2000.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002.  (Revisión).
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Lucas Vieites Fariña <lucas@asixinformatica.com>, 2001-2005, 2006, 2007.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Lucas 'Basurero' Vieites <lucas@codexion.com>, 2007.
+  translation of es.po to
+  GDM2's Spanish translation
+  Copyright © 1998-2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gdm2 package.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  #-#-#-#-#  es.po (nautilus.HEAD)  #-#-#-#-#
+  translation of nautilus.HEAD.po to Español
+  translation of nautilus to Spanish
+  Copyright © 2000-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the nautilus package.
+ 
+  Jorge Carrasquilla Soares <jorge@conectiva.com.br>, 2000.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2000,2002.
+  Ismael Olea <ismael@olea.org>, 2001.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2000-2004.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  #-#-#-#-#  es.po (eel.HEAD.es)  #-#-#-#-#
+  translation of eel to Spanish
+  Copyright (C) 2000,2002, 2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+ 
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2000-2002.
+  Carlos Perelló Marín <carlos@hispalinux.es>, 2000.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+  Juanje Ojeda Croissier <jojeda@emergya.es>, 2009.
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  translation of es.po to Spanish
+  Spanish translation for GtkSourceView
+  Copyright (C) 2003, 2004, 2005, 2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtksourceview package.
+ 
+  Lucas 'Basurero' Vieites <basurero@jazzfree.com>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2005, 2006.
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  translation of gtksourceview.HEAD.po to Español
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+ 
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  translation of yelp.HEAD.po to Español
+  Spanish translation for yelp
+  Copyright (C) 2001,2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Juan Manuel García Molina <juanma_gm@wanadoo.es>, 2001, 2002, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  translation of ghex.HEAD.po to
+  Copyright © 2002, Free Software Foundation
+  This file is distributed under the same license as the ghex package.
+ 
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  QA por Carlos Perelló Marín <carlos@gnome-db.org>, 2002.
+  Lucas 'Basurero' Vieites <lucas@asixinformatica.com>, 2002,2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Pidgin (formerly known as Pidgin) Spanish translation
+  Copyright (C) March 2002, Amaya Rodrigo <amaya@debian.org>
+  Copyright (C) April 2002, Alejandro G Villar <alx5000@terra.es>
+  Copyright (C) November 2002-January 2003, Nicolás Lichtmaier <nick@technisys.com.ar>
+  Copyright (C) April 2003, JM Pérez Cáncer <jm@cocoloco.dyn.dhs.org>
+  Copyright (c) December 2003, Francisco Javier F. Serrador
+                <franciscojavier.fernandez.serrador@hispalinux.es>, 2003.
+  Copyright (C) June 2002, April 2003, January 2004, March 2004, September 2004,
+  	      January 2005, 2006-2008, July 2009
+  		Javier Fernández-Sanguino Peña  <jfs@debian.org>
+ 
+  Agradecemos la ayuda de revisión realizada por:
+  Nathaniel Case, Santiago Erquicia, Francisco Javier F. Serrador,
+  Rafael Bermudez, Eduardo Pérez
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Nota para los traductores:
+  - Un chat no es una conversación, es un chat. La analogía de "conversación"
+    no permite traducir las metáforas de "chat room". Sólo debería utilizarse
+    conversación con el hecho en sí de conversar, sino dificulta la comprensión
+    de qué es un chat (un servidor al que la gente se conecta y abre "salas"
+    o zonas distintas de discusión).
+ 
+  - Buddy = Amigo, no se debe cambiar por "amigos" (como en otros programas
+    de mensajería) porque los desarrolladores lo llaman así.
+ 
+  - IM = MI (Mensaje Instantáneo, o Mensajería Instantánea) si se pone
+    en siglas al traducir se preservan las siglas
+ 
+  - Al traducir frases con mayúsculas en todas las letras, mantener sólo
+    la primera mayúscula (no capitalizarlas todas)
+ 
+  Otros términos comunes y sus traducciones:
+ 
+  - Away: Ausente
+  - Idle: Inactivo
+  - Nickname o Nick: Apodo
+  - Smileys: emoticonos (no «caras gráficas»)
+  - Screenname: Nombre de usuario
+  - System Tray: Área de notificación del sistema
+  - Screen Name: Nombre de usuario (en pantalla)
+  - Plugin: Complemento
+  - Key Exchange: Intercambio de claves
+  - Key Agreement: Acuerdo de claves
+  - Plain text: «En claro» (refiriéndose a una autenticación que no está cifrada)
+  - Pounce: Aviso
+  - Smiley: Emoticono
+  - Tab: solapa (pestaña está descartado por los traductores de
+         GNOME desde la versión 2.6)
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  translation of gimp.gimp-2-6.po to Español
+  Copyright © 1998-2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gimp package.
+ 
+  Pablo G. del Campo <pablodc@bigfoot.com>, 2003, 2004.
+  Alonso Lara <keko@khor-ha.net>, 2005.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Francisco Vila <francisco.vila@hispalinux.es>, 2003, 2004, 2005, 2006, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Francisco Vila <francisco.vila@hispalinux.es>, 2003, 2004, 2005, 2006, 2007, 2008.
+  Rodrigo Sancho Senosiain <ruy_ikari@bigfoot.com>
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  Spanish translation of gthumb
+  Copyright © 2002-2003, 2006, 2007 the Free Software Foundation, Inc.
+  This file is distributed under the same license as the gthumb package.
+ 
+  Daniel Baeyens <danibens@terra.es>, 2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002-2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  translation of eog.HEAD.po to Español
+  Spanish translation of the Eye of Gnome
+  Copyright © 2000-2002, 2006, 2007, 2008 the Free Software Foundation, Inc.
+ 
+  Federico Mena-Quintero <federico@gimp.org>, 1999.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
+  Hector Garcia Alvarez <hector@scouts-es.org>, 2001.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002. (Revisión).
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006, 2007.
+  Claudio Saavedra <csaavedra@igalia.com>, 2007, 2008.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  translation of gnome-keyring.HEAD.po to Español
+  Translation of gnome-keyring to Spanish.
+  This file is distributed under the same license as the gnome-keyring package.
+  Copyright (C) 2006 The Free Software Foundation.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  translation of libgnome.HEAD.po to Español
+  Translation into spanish of libgnome.
+  Copyright © 2001-2002, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Héctor García Álvarez <hector@scouts-es.org>, 2001-2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002.
+  Q&A, Germán Poo-Caamaño <gpoo@ubiobio.cl>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  translation of libbonoboui.HEAD.po to Español
+  Héctor García Álvarez <hector@scouts-es.org>, 2001.
+  Juan Manuel García Molina <juanma_gm@wanadoo.es>, 2002.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2006.
+  traducción de es.po al Spanish
+  Translation into spanish of libbonoboui.
+  Copyright (C) 2001,2003, 2004, 2006, 2007, 2008 Free Software Foundation, Inc.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  translation of gnome-media.HEAD.po to Español
+  Copyright © 1998-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-media package.
+  Miguel de Icaza <miguel@metropolis.nuclecu.unam.mx> 1998.
+ 
+ 
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch>, 1998-2000.
+  Jesús Bravo Álvarez <jba@pobox.com>, 2000.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002  (Revisor).
+  Yelitza Louze <ylouze@redhat.com>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004.
+  Lucas Vieites <lucas@asixinformatica.com>, 2002-2004.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Lucas Vieites Fariña <lucas@asixinformatica.com>, 2005, 2006, 2007.
+  Claudio Saavedra <csaavedra@alumnos.utalca.cl> 2007 (QA).
+  Jorge González <jorgegonz@svn.gnome.org>, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  translation of gstreamer-0.10.24.2.po to Español
+  spanish translation for gstreamer
+  This file is put in the public domain.
+ 
+  Jorge González González <aloriel@gmail.com>, 2007, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  translation of gst-plugins-base-0.10.24.2.po to Español
+  spanish translation for gst-plugins-base
+  This file is put in the public domain.
+ 
+  Jorge González González <aloriel@gmail.com>, 2007, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  translation of gst-plugins-good-0.10.14.2.po to Español
+  spanish translation for gst-plugins-good
+  This file is put in the public domain.
+ 
+  Jorge González González <aloriel@gmail.com>, 2007, 2008, 2009.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gst-plugin-good package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  translation of totem.HEAD.po to Español
+  Translation of totem to Spanish
+  Copyright © 2002, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the totem package.
+ 
+  Ricardo Mones Lastra <mones@users.sourceforge.net>, 2002.
+  Baltasar Perez Diaz <baltasar.perez@hispalinux.es>, 2002.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Juanje Ojeda Croissier <jojeda@emergya.es>, 2008.
+  Jorge González <jorgegonz@svn.gnome.org>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  translation of rhythmbox.HEAD.po to Español
+  spanish translation for rhythmbox
+  Copyright © 2002-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the rhythmbox package.
+ 
+  Xan López <xan@dimensis.com>, 2002.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2003.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+  Carlos Perelló Marín <carlos@gnome.org>, 2003.
+  maria <maria.majadas@hispalinux.es>, 2006, 2007.
+  Francisco Javier F. Serrador <serrador@tecknolabs.com>, 2004, 2005, 2006.
+  Claudio Saavedra <csaavedra@alumnos.utalca.cl>, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  translation of alacarte.HEAD.po to Español
+  translation of alacarte to Spanish
+  This file is distributed under the same license as the Alacarte package.
+  Copyright (C) 2006 The Free Software Foundation.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
+  Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  translation of gnome-panel.HEAD.po to Español
+  translation of gnome-panel to Spanish
+  Copyright © 1998-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Miguel de Icaza,computo,622-4680 <miguel@metropolis.nuclecu.unam.mx> 1998.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002 (Revisor).
+  Pablo Gonzalo del Campo, 2003.
+  Juan Manuel García Molina <juanma_gm@wanadoo.es>, 2003.
+  Yelitza Louze <ylouze@redhat.com>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999-2000.
+  Javier Gómez <jgomsi@apolo.umh.es> 2000.
+  Juanjo Alvarez 2000.
+  Ismael Olea <olea@hispafuentes.com> 2000.
+  Manuel de Vega Barreiro <barreiro@arrakis.es> 2000.
+  Juan Manuel García Molina <juanma_gm@wanadoo.es> 2001-2002.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  translation of gnome-menus to spanish
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) 2005 Gnome Foundation, 2005.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+  Claudio Saavedra <csaavedra@alumnos.utalca.cl>, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  translation of gnome-desktop.HEAD.po to Español
+  translation of gnome-desktop to Spanish
+  Copyright © 1998-2002, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Miguel de Icaza,computo,622-4680 <miguel@metropolis.nuclecu.unam.mx> 1998.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999-2000
+  Javier Gómez <jgomsi@apolo.umh.es> 2000
+  Juanjo Alvarez	2000
+  Ismael Olea <olea@hispafuentes.com> 2000
+  Manuel de Vega Barreiro <barreiro@arrakis.es> 2000
+  Juan Manuel García Molina <juanma_gm@wanadoo.es> 2001-2003.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  translation of libwnck.HEAD.es.po to Spanish
+  Spanish translation of libwnck.
+  Copyright (C) 2001, 2002, 2003, 2005, 2006, 2007 Free Software Foundation, Inc
+  This file is distributed under the same license as the  libwnck package.
+ 
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+  Lucas Vieites <lucas@asixinformatica.com>, 2005.
+  Jorge González <jorgegonz@svn.gnome.org>, 200, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  translation of evince.HEAD.po to Español
+  Traducción de Evince al español.
+  Copyright (C) Spanish translation for Evince
+  This file is distributed under the same license as the Evince package.
+ 
+  Antonio Ognio <gnrfan@gnrfan.org, 2004, 2005.
+  Daniel Fernandez <dfdez@ya.com>, 2005.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Juanje Ojeda Croissier <jojeda@emergya.es>, 2008, 2009.
+  Jorge González <jorgegonz@svn.gnome.org>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  translation of gnome-pilot.HEAD.po to Español
+  translation of gnome-pilot to Spanish
+  Copyright 1998-2003 ©, the Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-pilot package.
+ 
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch>, 1998-2001.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  translation of gnome-power-manager.HEAD.po to Español
+  Translation of gnome-power-manager to Spanish
+  Copyright (C) 2005 Gnome Foundation
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  translation of vino.HEAD.po to Español
+  traducción de Vino al Español
+  This file is distributed under the same license as the Vino package.
+  Copyright (C) 2006 The Free Software Foundation.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2006.
+  maria <maria.majadas@hispalinux.es>, 2007.
+  Claudio Saavedra <csaavedra@alumnos.utalca.cl>, (QA) 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  translation of gnome-session.HEAD.po to Español
+  gnome-session Spanish translation.
+  Copyright © 1998-2003, 2006, 2007, 2008 the Free Software Foundation, Inc.
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999-2000
+  Javier Gómez <jgomsi@apolo.umh.es> 2000
+  Juanjo Alvarez	2000
+  Ismael Olea <olea@hispafuentes.com> 2000
+  Manuel de Vega Barreiro <barreiro@arrakis.es> 2000
+  Juan Manuel García Molina <juanma_gm@wanadoo.es> 2001-2002.
+ 
+  Miguel de Icaza,computo,622-4680 <miguel@metropolis.nuclecu.unam.mx> 1998.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+  Jorge González <jorge.gonzalez.gonzalez@hispalinux.es>, 2007.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  translation of gnome-system-monitor.HEAD.po to Español
+  translation of gnome-system-monitor to Spanish
+  Copyright © 2001,2002,2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-system-monitor package.
+ 
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
+  Héctor García Álvarez <hector@scouts-es.org>, 2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>,2002, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  translation of es.po to Spanish
+  translation of gnome-system-tools.HEAD.es.po to Spanish
+  GNOME System tools's Spanish translation
+  Copyright © 2001-2003 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-system-tools package.
+  Carlos Perelló Marín <carlos@hispalinux.es>, 2000,2001.
+  Arturo Espinosa <arturo@ximian.com>, 2001.
+  Héctor García Álvarez <hector@scouts-es.org>, 2001,2002.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2003.
+  Pablo del Campo <pablodc@bigfoot.com>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  translation of gnome-terminal.HEAD.po to Español
+  Spanish translation of es
+  translation of es.po to
+  traducción de es.po al Spanish
+  Spanish translation of gnome-terminal.
+  Copyright © 2002-2003, 2006, 2007, 2008 the Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-terminal package.
+ 
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002-2003.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+  Pablo del Campo <pablodc@bigfoot.com>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  translation of gedit.HEAD.po to Español
+  translation of gedit to spanish
+  Copyright © 1999-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gedit package.
+ 
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch>, 1999-2000.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2000-2001.
+  Chema Celorio <chema@celorio.com>, 2000.
+  QA by <asan@euskalnet.net>, 2001.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>,2002, 2003, 2004.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003 - 2006.
+  Francisco Javier F. Serrador <serrador@tecknolabs.com>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Juanje Ojeda Croissier <jojeda@emergya.es>, 2008.
+  Jorge González <jorgegonz@svn.gnome.org>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  traducción de es.po al Spanish
+  translation of es.po to Spanish
+  translation of gnome-icon-theme.HEAD.po to Spanish
+  Gnome Icon Theme Spanish Translation
+  Copyright (C) 2002 Gnome Software Foundation
+  This file is distributed under the same license as the Gnome-Icon-Theme package.
+ 
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007.
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  translation of gnome-themes.HEAD.po to Español
+  Copyright © 2002 The GNOME-Software Foundation
+  This file is distributed under the same license as the gnome-themes package.
+ 
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002,2003.
+  Francisco Javier F. Serrador <serrador@arrakis.es>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2008.
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  translation of gnome-backgrounds.HEAD.po to Español
+  traducción de es.po al Spanish
+  translation of es.po to
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER, 2004.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005.
+  Jorge González <jorgegonz@svn.gnome.org>, 2008.
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  translation of glade3.HEAD.po to Español
+  Spanish Translation for Glade3
+  Copyright (C) 1999-2001, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Raúl Alexis Betancort Santana <a2363@correo.dis.ulpgc.es>, 1999.
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2000-2001.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  translation of gnome-utils.HEAD.po to Español
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2001.
+  QA - Germán Poo Caamaño <gpoo@ubiobio.cl>, 2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>,2002-2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  gnome-utils translation into spanish
+  Copyright © 1998-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-utils package.
+  Miguel de Icaza <miguel@metropolis.nuclecu.unam.mx> 1998.
+  Pablo Saratxaga <srtxg@chanae.alphanet.ch> 1999.
+  Manuel de Vega Barreiro <barreiro@arrakis.es> 2000-2001.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  traducción de es.po al Spanish
+  translation of es.po to Spanish
+  translation of gnome-mime-data.HEAD to Spanish
+  GNOME-mime-data Spanish translation file.
+  Copyright © 2000,2002,2003 Free Software Foundation, Inc.
+  Manuel de Vega Barreiro <barreiro@arrakis.es>, 2000.
+  Mauricio Araya Polo <mauricio@eazel.com>, 2001.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>, 2002-2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  translation of shared-mime-info-0.51.po to Español
+  This file is distributed under the same license as the shared-mime-info package.
+  Copyright (C) 2004 freedesktop.org contributors
+ 
+  Quique <quique@sindominio.net>, 2004, 2006, 2007.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
+  Jorge González González <aloriel@gmail.com>, 2007, 2008.
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  translation of gnome-vfs.HEAD.po to Español
+  Copyright (C) 2000,2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Manuel de Vega Barreiro <barreiro@arrakis.es>, 2000.
+  Mauricio Araya Polo <mauricio@eazel.com>, 2001.
+  Juan Manuel García Molina <juanma_gm@wanadoo.es>, 2002, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003-2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  translation of metacity.HEAD.po to Español
+  Spanish trasnlation for Metacity
+  Copyright © 2001,2002,2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the metacity package.
+ 
+  Héctor García Álvarez <hector@scouts-es.org>, 2001.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>,2002,2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  translation of gtkspell-2.0.6-pre1.po to Spanish
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+  Víctor Alonso <vmalonso@telefonica.net>, 2004.
+ 
+-------------------------------------------------------------
+
+Copyright for libgsf.mo
+  translation of libgsf.master.po to Español
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+ 
+  Jorge González <jorgegonz@svn.gnome.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  translation of seahorse.HEAD.po to Español
+  José Carlos García Sogo <jsogo@debian.org>, 2002, 2003.
+  Q&A, Germán Poo-Caamaño <gpoo@ubiobio.cl>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+  Seahorse Spanish Translation
+  Copyright (C) 2002, 2003.
+  This file is distributed under the same license as the Seahorse package.
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  translation of xdg-user-dits to spanish
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+ 
+  Jorge González <jorgegonz@svn.gnome.org>, 2007.
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Spanish translation for xdg-user-dirs
+  Copyright (C) 2007 Free Software Foundation, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+  Domingo Becker <domingobecker@gmail.com>, 2007.
+ 
+  UTF-8
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  translation of evolution.HEAD.po to Español
+  Copyright © 2000-2002, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution package.
+ 
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2000-2001.
+  Héctor García Álvarez <hector@scouts-es.org>, 2000-2002.
+  Ismael Olea <ismael@olea.org>, 2001, (revisiones) 2003.
+  Eneko Lacunza <enlar@iname.com>, 2001-2002.
+  Héctor García Álvarez <hector@scouts-es.org>, 2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>,2003 (revisión).
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  translation of gtkhtml.HEAD.po to Español
+  Translations of gtkhtml into spanish.
+  This file is distributed under the same license as the gtkhtml package.
+  Copyright © 2000-2003, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Héctor García Álvarez <hector@scouts-es.org>, 2000-2001.
+  Juan Manuel García Molina <juanma_gm@wanadoo.es>, 2002.
+  Germán Poo Caamaño <gpoo@ubiobio.cl>, 2003.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2002, 2003, 2004, 2005, 2006.
+  QA: Carlos Perelló Marín <carlos@gnome-db.org>
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  translation of evolution-exchange.HEAD.po to Español
+  cyphra <cyphra@hal9000.eui.upm.es>, 2004.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008.
+  Spanish translation of Ximian Conector 1.4
+  Copyright (C) 2004 THE Ximian Conector'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the Ximian Conector package.
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  translation of evolution-data-server.HEAD.po to Español
+  translation of evolution-data-server es.po spanish
+  Copyright © 2000-2002, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution package.
+ 
+  Carlos Perelló Marín <carlos@gnome-db.org>, 2000-2001.
+  Ismael Olea <Ismael@olea.org>, 2001.
+  Eneko Lacunza <enlar@iname.com>, 2001-2002.
+  Héctor García Álvarez <hector@scouts-es.org>, 2000, 20001, 2002.
+  Pablo Gonzalo del Campo <pablodc@bigfoot.com>,2003 (revisión).
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2003, 2004, 2005, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  translation of evolution-jescs.HEAD.po to Español
+  spanish translation for evolution-jescs
+  This file is distributed under the same license as the evolution-jesc package.
+  Copyright (C) 2006 The Gnome Foundation.
+ 
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2006.
+  Jorge González <jorgegonz@svn.gnome.org>, 2007, 200, 2009.
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  translation of evolution-webcal.HEAD.po to Español
+  Spanish translation of es
+  translation of es.po to
+  traducción de es.po al Spanish
+  German evolution-webcal translation
+  Copyright (C) 2004  Rodney Dawes  <dobey@novell.com>
+  This file is distributed under the same license as the evolution-webcal package.
+ 
+  Christian Neumair <chris@gnome-de.org>, 2004.
+  Francisco Javier F. Serrador <serrador@cvs.gnome.org>, 2004, 2005.
+  Jorge González <jorgegonz@svn.gnome.org>, 2008.
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of es.po to Spanish
+  SOME DESCRIPTIVE TITLE HERE.
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+  Manuel Ospina <mospina@redhat.com>, 2006.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

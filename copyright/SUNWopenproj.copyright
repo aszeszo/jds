@@ -1,0 +1,25 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: Common Public Attribution License Version 1.0
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  index.html.bz2: CPAL
+  third-party/index.html.bz2: summary of all third party licenses
+  third-party/Apache-LICENSE-2.0.txt.bz2: Apache License Version 2.0
+  third-party/Jasper-LGPL.txt:  JasperReports License, Version 1.0
+  thrid-party/antlr.txt: ANTLR
+  third-party/bsd-generic.txt: BSD License
+  third-party/groovy.txt: Groovy
+  third-party/jgoodies-forms.txt: The BSD License for the JGoodies Forms
+  third-party/lgpl-2.1.txt: LGPL 2.1
+  third-party/sun.txt: Sun Microsystem
+  third-party/sun-jwsdp.txt: SUN-JWSDP
+
+ The sources of openproj-src-%{version} were downloaded
+ from %{SOURCE0.url}

@@ -1,0 +1,35 @@
+--- gnome-session-2.30.2/gnome-session/gsm-consolekit.c-orig	2011-03-29 04:45:28.512440056 -0500
++++ gnome-session-2.30.2/gnome-session/gsm-consolekit.c	2011-03-29 04:45:47.317121192 -0500
+@@ -763,7 +763,7 @@ seat_can_activate_sessions (DBusConnecti
+                                                            &local_error);
+         if (reply == NULL) {
+                 if (dbus_error_is_set (&local_error)) {
+-                        g_warning ("Unable to activate session: %s", local_error.message);
++                        g_debug ("Unable to activate session: %s", local_error.message);
+                         dbus_error_free (&local_error);
+                         goto out;
+                 }
+diff -urN gnome-session-2.30.2/gnome-session/gs-idle-monitor.c ../SUNWgnome-session-2.30.2.hacked/gnome-session-2.30.2/gnome-session/gs-idle-monitor.c
+--- gnome-session-2.30.2/gnome-session/gs-idle-monitor.c	2010-02-09 13:22:01.000000000 +0000
++++ ../SUNWgnome-session-2.30.2.hacked/gnome-session-2.30.2/gnome-session/gs-idle-monitor.c	2011-07-15 14:36:35.163221582 +0000
+@@ -274,7 +274,7 @@
+         XSyncFreeSystemCounterList (counters);
+ 
+         if (monitor->priv->counter == None) {
+-                g_warning ("GSIdleMonitor: IDLETIME counter not found");
++                g_debug ("GSIdleMonitor: IDLETIME counter not found");
+                 return FALSE;
+         }
+ 
+diff -urN gnome-session-2.30.2/gnome-session/gsm-xsmp-server.c ../SUNWgnome-session-2.30.2.hacked/gnome-session-2.30.2/gnome-session/gsm-xsmp-server.c
+--- gnome-session-2.30.2/gnome-session/gsm-xsmp-server.c	2011-07-15 14:32:44.915536193 +0000
++++ ../SUNWgnome-session-2.30.2.hacked/gnome-session-2.30.2/gnome-session/gsm-xsmp-server.c	2011-07-15 14:36:35.163333689 +0000
+@@ -626,7 +626,7 @@
+                  */
+                 network_id_list = IceComposeNetworkIdList (server->priv->num_xsmp_sockets - server->priv->num_local_xsmp_sockets,
+                                                            server->priv->xsmp_sockets + server->priv->num_local_xsmp_sockets);
+-                g_warning ("IceListenForConnections returned %d non-local listeners: %s",
++                g_debug ("IceListenForConnections returned %d non-local listeners: %s",
+                            server->priv->num_xsmp_sockets - server->priv->num_local_xsmp_sockets,
+                            network_id_list);
+                 free (network_id_list);

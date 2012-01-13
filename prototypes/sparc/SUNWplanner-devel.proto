@@ -1,0 +1,32 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWplanner-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWplanner-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWplanner-devel.copyright
+d none include 0755 root bin
+d none include/planner-1.0 0755 root bin
+d none include/planner-1.0/libplanner 0755 root bin
+f none include/planner-1.0/libplanner/mrp-application.h=usr/include/planner-1.0/libplanner/mrp-application.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-assignment.h=usr/include/planner-1.0/libplanner/mrp-assignment.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-calendar.h=usr/include/planner-1.0/libplanner/mrp-calendar.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-day.h=usr/include/planner-1.0/libplanner/mrp-day.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-error.h=usr/include/planner-1.0/libplanner/mrp-error.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-group.h=usr/include/planner-1.0/libplanner/mrp-group.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-object.h=usr/include/planner-1.0/libplanner/mrp-object.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-paths.h=usr/include/planner-1.0/libplanner/mrp-paths.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-project.h=usr/include/planner-1.0/libplanner/mrp-project.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-property.h=usr/include/planner-1.0/libplanner/mrp-property.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-relation.h=usr/include/planner-1.0/libplanner/mrp-relation.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-resource.h=usr/include/planner-1.0/libplanner/mrp-resource.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-storage-module.h=usr/include/planner-1.0/libplanner/mrp-storage-module.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-task.h=usr/include/planner-1.0/libplanner/mrp-task.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-time.h=usr/include/planner-1.0/libplanner/mrp-time.h 0644 root bin
+f none include/planner-1.0/libplanner/mrp-types.h=usr/include/planner-1.0/libplanner/mrp-types.h 0644 root bin
+f none include/planner-1.0/libplanner/planner.h=usr/include/planner-1.0/libplanner/planner.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libplanner-1.pc=usr/lib/pkgconfig/libplanner-1.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/planner 0755 root bin
+f none share/doc/planner/README.sql=usr/share/doc/planner/README.sql 0644 root bin
+f none share/doc/planner/kitchen.planner=usr/share/doc/planner/kitchen.planner 0644 root bin
+f none share/doc/planner/sample-1.planner=usr/share/doc/planner/sample-1.planner 0644 root bin

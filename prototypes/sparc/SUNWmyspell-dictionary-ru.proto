@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-ru.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-ru.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-ru.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/ru-RU.aff=../../../../usr/share/spell/myspell/ru_RU.aff
+s none lib/firefox/dictionaries/ru-RU.dic=../../../../usr/share/spell/myspell/ru_RU.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/ru-RU.aff=../../../../usr/share/spell/myspell/ru_RU.aff
+s none lib/thunderbird/dictionaries/ru-RU.dic=../../../../usr/share/spell/myspell/ru_RU.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/ru_RU 0755 root bin
+f none share/doc/myspell-dictionary/ru_RU/README_ru_RU.txt=usr/share/doc/myspell-dictionary/ru_RU/README_ru_RU.txt 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/ru_RU.aff=usr/share/spell/myspell/ru_RU.aff 0644 root other
+f none share/spell/myspell/ru_RU.dic=usr/share/spell/myspell/ru_RU.dic 0644 root other

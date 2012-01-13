@@ -1,0 +1,30 @@
+Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU Library General Public License Version 2
+ License: GNU General Public License Version 2
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING: statement for GObject Introspection license
+  COPYING.LGPL.bz2: GNU LGPL
+  COPYING.GPL.bz2: GNU GPL
+  AUTHORS: List of authors of GObject Introspection
+  NEWS.bz2: List of the most important changes in GObject Introspection
+  README: More information about GObject Introspection
+
+ The sources of GObject Introspection-%{gi.version} were downloaded
+ from %{gi.SOURCE0.url}
+

@@ -1,0 +1,16 @@
+--- a/Jokosher/Profiler.py.orig	2009-12-07 13:15:00.598570073 +0800
++++ b/Jokosher/Profiler.py	2009-12-07 13:16:47.693864438 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python2.6
+ 
+ #
+ #    THIS FILE IS PART OF THE JOKOSHER PROJECT AND LICENSED UNDER THE GPL. SEE
+--- a/Jokosher/JokosherApp.py.orig	2009-12-07 13:18:05.441490648 +0800
++++ b/Jokosher/JokosherApp.py	2009-12-07 13:18:12.719797181 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python2.6
+ #
+ #	THIS FILE IS PART OF THE JOKOSHER PROJECT AND LICENSED UNDER THE GPL. SEE
+ #	THE 'COPYING' FILE FOR DETAILS

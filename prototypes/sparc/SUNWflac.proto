@@ -1,0 +1,33 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWflac.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWflac.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWflac.copyright
+f none share/doc/SUNWflac/AUTHORS=usr/share/doc/SUNWflac/AUTHORS 0444 root bin
+f none share/doc/SUNWflac/COPYING.FDL.bz2=usr/share/doc/SUNWflac/COPYING.FDL.bz2 0444 root bin
+f none share/doc/SUNWflac/COPYING.GPL.bz2=usr/share/doc/SUNWflac/COPYING.GPL.bz2 0444 root bin
+f none share/doc/SUNWflac/COPYING.LGPL.bz2=usr/share/doc/SUNWflac/COPYING.LGPL.bz2 0444 root bin
+f none share/doc/SUNWflac/COPYING.Xiph.bz2=usr/share/doc/SUNWflac/COPYING.Xiph.bz2 0444 root bin
+f none share/doc/SUNWflac/README=usr/share/doc/SUNWflac/README 0444 root bin
+d none bin 0755 root bin
+l none bin/flac=../lib/isaexec
+l none bin/metaflac=../lib/isaexec
+d none bin/sparcv7 0755 root bin
+f none bin/sparcv7/flac=usr/bin/sparcv7/flac 0755 root bin
+f none bin/sparcv7/metaflac=usr/bin/sparcv7/metaflac 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/flac=usr/bin/sparcv9/flac 0755 root bin
+f none bin/sparcv9/metaflac=usr/bin/sparcv9/metaflac 0755 root bin
+d none lib 0755 root bin
+s none lib/libFLAC.so=libFLAC.so.8.2.0
+s none lib/libFLAC.so.8=libFLAC.so.8.2.0
+f none lib/libFLAC.so.8.2.0=usr/lib/libFLAC.so.8.2.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libFLAC.so=libFLAC.so.8.2.0
+s none lib/sparcv9/libFLAC.so.8=libFLAC.so.8.2.0
+f none lib/sparcv9/libFLAC.so.8.2.0=usr/lib/sparcv9/libFLAC.so.8.2.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWflac 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/flac.1=usr/share/man/man1/flac.1 0644 root bin
+f none share/man/man1/metaflac.1=usr/share/man/man1/metaflac.1 0644 root bin

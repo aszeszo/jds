@@ -1,0 +1,157 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-libs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-libs.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-libs.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-libs.copyright
+f none share/doc/SUNWgnome-libs/libbonoboui-2.24.3/COPYING.bz2=usr/share/doc/SUNWgnome-libs/libbonoboui-2.24.3/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libbonoboui-2.24.3/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-libs/libbonoboui-2.24.3/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libbonoboui-2.24.3/ChangeLog.bz2=usr/share/doc/SUNWgnome-libs/libbonoboui-2.24.3/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libbonoboui-2.24.3/MAINTAINERS=usr/share/doc/SUNWgnome-libs/libbonoboui-2.24.3/MAINTAINERS 0444 root bin
+f none share/doc/SUNWgnome-libs/libbonoboui-2.24.3/NEWS.bz2=usr/share/doc/SUNWgnome-libs/libbonoboui-2.24.3/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libbonoboui-2.24.3/README=usr/share/doc/SUNWgnome-libs/libbonoboui-2.24.3/README 0444 root bin
+f none share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/COPYING.bz2=usr/share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/ChangeLog.bz2=usr/share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/NEWS.bz2=usr/share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/README=usr/share/doc/SUNWgnome-libs/libexif-gtk-0.3.5/README 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnome-2.30.0/AUTHORS=usr/share/doc/SUNWgnome-libs/libgnome-2.30.0/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnome-2.30.0/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-libs/libgnome-2.30.0/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnome-2.30.0/ChangeLog.bz2=usr/share/doc/SUNWgnome-libs/libgnome-2.30.0/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnome-2.30.0/MAINTAINERS=usr/share/doc/SUNWgnome-libs/libgnome-2.30.0/MAINTAINERS 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnome-2.30.0/NEWS.bz2=usr/share/doc/SUNWgnome-libs/libgnome-2.30.0/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnome-2.30.0/README=usr/share/doc/SUNWgnome-libs/libgnome-2.30.0/README 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnomeui-2.24.3/AUTHORS=usr/share/doc/SUNWgnome-libs/libgnomeui-2.24.3/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnomeui-2.24.3/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-libs/libgnomeui-2.24.3/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnomeui-2.24.3/ChangeLog.bz2=usr/share/doc/SUNWgnome-libs/libgnomeui-2.24.3/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnomeui-2.24.3/MAINTAINERS=usr/share/doc/SUNWgnome-libs/libgnomeui-2.24.3/MAINTAINERS 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnomeui-2.24.3/NEWS.bz2=usr/share/doc/SUNWgnome-libs/libgnomeui-2.24.3/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgnomeui-2.24.3/README=usr/share/doc/SUNWgnome-libs/libgnomeui-2.24.3/README 0444 root bin
+f none share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/AUTHORS=usr/share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/ChangeLog.bz2=usr/share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/NEWS.bz2=usr/share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/README=usr/share/doc/SUNWgnome-libs/libgtkhtml-2.11.1/README 0444 root bin
+f none share/doc/SUNWgnome-libs/rarian-0.8.1/COPYING.bz2=usr/share/doc/SUNWgnome-libs/rarian-0.8.1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/rarian-0.8.1/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-libs/rarian-0.8.1/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/rarian-0.8.1/ChangeLog.bz2=usr/share/doc/SUNWgnome-libs/rarian-0.8.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/rarian-0.8.1/MAINTAINERS=usr/share/doc/SUNWgnome-libs/rarian-0.8.1/MAINTAINERS 0444 root bin
+f none share/doc/SUNWgnome-libs/rarian-0.8.1/NEWS.bz2=usr/share/doc/SUNWgnome-libs/rarian-0.8.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/rarian-0.8.1/README=usr/share/doc/SUNWgnome-libs/rarian-0.8.1/README 0444 root bin
+f none share/doc/SUNWgnome-libs/startup-notification-0.9/AUTHORS=usr/share/doc/SUNWgnome-libs/startup-notification-0.9/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-libs/startup-notification-0.9/COPYING.bz2=usr/share/doc/SUNWgnome-libs/startup-notification-0.9/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/startup-notification-0.9/ChangeLog.bz2=usr/share/doc/SUNWgnome-libs/startup-notification-0.9/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/startup-notification-0.9/NEWS.bz2=usr/share/doc/SUNWgnome-libs/startup-notification-0.9/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-libs/startup-notification-0.9/README=usr/share/doc/SUNWgnome-libs/startup-notification-0.9/README 0444 root bin
+d none bin 0755 root bin
+f none bin/bonobo-browser=usr/bin/bonobo-browser 0755 root bin
+f none bin/gnome-open=usr/bin/gnome-open 0755 root bin
+f none bin/rarian-example=usr/bin/rarian-example 0755 root bin
+f none bin/rarian-sk-config=usr/bin/rarian-sk-config 0755 root bin
+f none bin/rarian-sk-extract=usr/bin/rarian-sk-extract 0755 root bin
+f none bin/rarian-sk-gen-uuid=usr/bin/rarian-sk-gen-uuid 0755 root bin
+f none bin/rarian-sk-get-cl=usr/bin/rarian-sk-get-cl 0755 root bin
+f none bin/rarian-sk-get-content-list=usr/bin/rarian-sk-get-content-list 0755 root bin
+f none bin/rarian-sk-get-extended-content-list=usr/bin/rarian-sk-get-extended-content-list 0755 root bin
+f none bin/rarian-sk-get-scripts=usr/bin/rarian-sk-get-scripts 0755 root bin
+f none bin/rarian-sk-install=usr/bin/rarian-sk-install 0755 root bin
+f none bin/rarian-sk-migrate=usr/bin/rarian-sk-migrate 0755 root bin
+f none bin/rarian-sk-preinstall=usr/bin/rarian-sk-preinstall 0755 root bin
+f none bin/rarian-sk-rebuild=usr/bin/rarian-sk-rebuild 0755 root bin
+f none bin/rarian-sk-update=usr/bin/rarian-sk-update 0755 root bin
+s none bin/scrollkeeper-config=rarian-sk-config
+s none bin/scrollkeeper-get-cl=rarian-sk-get-cl
+s none bin/scrollkeeper-get-content-list=rarian-sk-get-content-list
+s none bin/scrollkeeper-get-extended-content-list=rarian-sk-get-extended-content-list
+s none bin/scrollkeeper-get-index-from-docpath=rarian-sk-get-scripts
+s none bin/scrollkeeper-get-toc-from-docpath=rarian-sk-get-scripts
+s none bin/scrollkeeper-get-toc-from-id=rarian-sk-get-scripts
+s none bin/scrollkeeper-install=rarian-sk-install
+s none bin/scrollkeeper-preinstall=rarian-sk-preinstall
+s none bin/scrollkeeper-rebuilddb=rarian-sk-rebuild
+s none bin/scrollkeeper-uninstall=rarian-sk-install
+s none bin/scrollkeeper-update=rarian-sk-update
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/monikers 0755 root bin
+f none lib/bonobo/monikers/libmoniker_extra_2.so=usr/lib/bonobo/monikers/libmoniker_extra_2.so 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/Bonobo_Sample_Controls.server=usr/lib/bonobo/servers/Bonobo_Sample_Controls.server 0644 root bin
+f none lib/bonobo/servers/CanvDemo.server=usr/lib/bonobo/servers/CanvDemo.server 0644 root bin
+f none lib/bonobo/servers/GNOME_Moniker_std.server=usr/lib/bonobo/servers/GNOME_Moniker_std.server 0644 root bin
+s none lib/libbonoboui-2.so=libbonoboui-2.so.0.0.0
+s none lib/libbonoboui-2.so.0=libbonoboui-2.so.0.0.0
+f none lib/libbonoboui-2.so.0.0.0=usr/lib/libbonoboui-2.so.0.0.0 0755 root bin
+s none lib/libexif-gtk.so=libexif-gtk.so.5.0.0
+s none lib/libexif-gtk.so.5=libexif-gtk.so.5.0.0
+f none lib/libexif-gtk.so.5.0.0=usr/lib/libexif-gtk.so.5.0.0 0755 root bin
+d none lib/libglade 0755 root bin
+d none lib/libglade/2.0 0755 root bin
+f none lib/libglade/2.0/libbonobo.so=usr/lib/libglade/2.0/libbonobo.so 0755 root bin
+f none lib/libglade/2.0/libgnome.so=usr/lib/libglade/2.0/libgnome.so 0755 root bin
+s none lib/libgnome-2.so=libgnome-2.so.0.3000.0
+s none lib/libgnome-2.so.0=libgnome-2.so.0.3000.0
+f none lib/libgnome-2.so.0.3000.0=usr/lib/libgnome-2.so.0.3000.0 0755 root bin
+s none lib/libgnomeui-2.so=libgnomeui-2.so.0.2400.3
+s none lib/libgnomeui-2.so.0=libgnomeui-2.so.0.2400.3
+f none lib/libgnomeui-2.so.0.2400.3=usr/lib/libgnomeui-2.so.0.2400.3 0755 root bin
+s none lib/libgtkhtml-2.so=libgtkhtml-2.so.0.0.0
+s none lib/libgtkhtml-2.so.0=libgtkhtml-2.so.0.0.0
+f none lib/libgtkhtml-2.so.0.0.0=usr/lib/libgtkhtml-2.so.0.0.0 0755 root bin
+s none lib/librarian.so=librarian.so.0.0.0
+s none lib/librarian.so.0=librarian.so.0.0.0
+f none lib/librarian.so.0.0.0=usr/lib/librarian.so.0.0.0 0755 root bin
+s none lib/libstartup-notification-1.so=libstartup-notification-1.so.0.0.0
+s none lib/libstartup-notification-1.so.0=libstartup-notification-1.so.0.0.0
+f none lib/libstartup-notification-1.so.0.0.0=usr/lib/libstartup-notification-1.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-libs 0755 root bin
+d none share/doc/SUNWgnome-libs/libbonoboui-2.24.3 0755 root bin
+d none share/doc/SUNWgnome-libs/libexif-gtk-0.3.5 0755 root bin
+d none share/doc/SUNWgnome-libs/libgnome-2.30.0 0755 root bin
+d none share/doc/SUNWgnome-libs/libgnomeui-2.24.3 0755 root bin
+d none share/doc/SUNWgnome-libs/libgtkhtml-2.11.1 0755 root bin
+d none share/doc/SUNWgnome-libs/rarian-0.8.1 0755 root bin
+d none share/doc/SUNWgnome-libs/startup-notification-0.9 0755 root bin
+d none share/gnome-2.0 0755 root bin
+d none share/gnome-2.0/ui 0755 root bin
+f none share/gnome-2.0/ui/Bonobo_Sample_Container-ui.xml=usr/share/gnome-2.0/ui/Bonobo_Sample_Container-ui.xml 0644 root bin
+f none share/gnome-2.0/ui/Bonobo_Sample_Hello.xml=usr/share/gnome-2.0/ui/Bonobo_Sample_Hello.xml 0644 root bin
+f none share/gnome-2.0/ui/bonobo-browser.xml=usr/share/gnome-2.0/ui/bonobo-browser.xml 0644 root bin
+d none share/gnome-background-properties 0755 root bin
+f none share/gnome-background-properties/gnome-default.xml=usr/share/gnome-background-properties/gnome-default.xml 0644 root bin
+d none share/help 0755 root bin
+f none share/help/rarian.document=usr/share/help/rarian.document 0644 root bin
+d none share/librarian 0755 root bin
+d none share/librarian/Templates 0755 root bin
+d none share/librarian/Templates/C 0755 root bin
+f none share/librarian/Templates/C/scrollkeeper_cl.xml=usr/share/librarian/Templates/C/scrollkeeper_cl.xml 0644 root bin
+d none share/librarian/manual 0755 root bin
+f none share/librarian/manual/help-spec-0.2.xml=usr/share/librarian/manual/help-spec-0.2.xml 0644 root bin
+f none share/librarian/manual/index.xhtml=usr/share/librarian/manual/index.xhtml 0644 root bin
+f none share/librarian/manual/rar-lib.xhtml=usr/share/librarian/manual/rar-lib.xhtml 0644 root bin
+f none share/librarian/manual/rar-mdf.xhtml=usr/share/librarian/manual/rar-mdf.xhtml 0644 root bin
+f none share/librarian/manual/rar-skcompat.xhtml=usr/share/librarian/manual/rar-skcompat.xhtml 0644 root bin
+f none share/librarian/rarian-sk-cl.xml=usr/share/librarian/rarian-sk-cl.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-open.1=usr/share/man/man1/gnome-open.1 0755 root bin
+f none share/man/man1/scrollkeeper-config.1=usr/share/man/man1/scrollkeeper-config.1 0755 root bin
+f none share/man/man1/scrollkeeper-devel.1=usr/share/man/man1/scrollkeeper-devel.1 0755 root bin
+f none share/man/man1/scrollkeeper-extract.1=usr/share/man/man1/scrollkeeper-extract.1 0755 root bin
+f none share/man/man1/scrollkeeper-gen-seriesid.1=usr/share/man/man1/scrollkeeper-gen-seriesid.1 0755 root bin
+f none share/man/man1/scrollkeeper-get-cl.1=usr/share/man/man1/scrollkeeper-get-cl.1 0755 root bin
+f none share/man/man1/scrollkeeper-get-content-list.1=usr/share/man/man1/scrollkeeper-get-content-list.1 0755 root bin
+f none share/man/man1/scrollkeeper-get-extended-content-list.1=usr/share/man/man1/scrollkeeper-get-extended-content-list.1 0755 root bin
+f none share/man/man1/scrollkeeper-get-index-from-docpath.1=usr/share/man/man1/scrollkeeper-get-index-from-docpath.1 0755 root bin
+f none share/man/man1/scrollkeeper-get-toc-from-docpath.1=usr/share/man/man1/scrollkeeper-get-toc-from-docpath.1 0755 root bin
+f none share/man/man1/scrollkeeper-get-toc-from-id.1=usr/share/man/man1/scrollkeeper-get-toc-from-id.1 0755 root bin
+f none share/man/man1/scrollkeeper-install.1=usr/share/man/man1/scrollkeeper-install.1 0755 root bin
+f none share/man/man1/scrollkeeper-preinstall.1=usr/share/man/man1/scrollkeeper-preinstall.1 0755 root bin
+f none share/man/man1/scrollkeeper-rebuilddb.1=usr/share/man/man1/scrollkeeper-rebuilddb.1 0755 root bin
+f none share/man/man1/scrollkeeper-uninstall.1=usr/share/man/man1/scrollkeeper-uninstall.1 0755 root bin
+f none share/man/man1/scrollkeeper-update.1=usr/share/man/man1/scrollkeeper-update.1 0755 root bin
+f none share/man/man1/scrollkeeper.1=usr/share/man/man1/scrollkeeper.1 0755 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/backgrounds 0755 root bin
+d none share/pixmaps/backgrounds/gnome 0755 root bin
+f none share/pixmaps/backgrounds/gnome/background-default.jpg=usr/share/pixmaps/backgrounds/gnome/background-default.jpg 0644 root bin
+f none share/pixmaps/gnome-about-logo.png=usr/share/pixmaps/gnome-about-logo.png 0644 root bin

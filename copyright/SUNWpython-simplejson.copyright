@@ -1,0 +1,11 @@
+Licensing and copyright information for %{name}:
+
+ License: MIT License
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  LICENSE.txt.bz2: MIT license
+
+ The sources of simplejson-%{simplejson.version} were downloaded
+ from %{simplejson.SOURCE0.url}

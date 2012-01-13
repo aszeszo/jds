@@ -1,0 +1,10 @@
+--- libgee-0.5.0/Makefile.am.old	2009-10-20 17:21:50.334231000 +0800
++++ libgee-0.5.0/Makefile.am	2009-10-20 17:22:24.309593000 +0800
+@@ -15,7 +15,6 @@
+ 
+ SUBDIRS = \
+ 	gee \
+-	tests \
+ 	$(DOC_SUBDIR) \
+ 	$(BENCHMARK_SUBDIR) \
+ 	$(NULL)

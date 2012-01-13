@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcairo-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcairo-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcairo-java.copyright
+d none lib 0755 root bin
+f none lib/libcairojni-1.0.so=usr/lib/libcairojni-1.0.so 0755 root bin
+s none lib/libcairojni.so=libcairojni-1.0.so
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/cairo-java.pc=usr/lib/pkgconfig/cairo-java.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/cairo-java-1.0.5 0755 root bin
+f none share/doc/cairo-java-1.0.5/AUTHORS=usr/share/doc/cairo-java-1.0.5/AUTHORS 0644 root bin
+f none share/doc/cairo-java-1.0.5/COPYING=usr/share/doc/cairo-java-1.0.5/COPYING 0644 root bin
+f none share/doc/cairo-java-1.0.5/INSTALL=usr/share/doc/cairo-java-1.0.5/INSTALL 0644 root bin
+f none share/doc/cairo-java-1.0.5/NEWS=usr/share/doc/cairo-java-1.0.5/NEWS 0644 root bin
+f none share/doc/cairo-java-1.0.5/README=usr/share/doc/cairo-java-1.0.5/README 0644 root bin
+d none share/java 0755 root bin
+f none share/java/cairo1.0-1.0.5.jar=usr/share/java/cairo1.0-1.0.5.jar 0644 root bin
+s none share/java/cairo1.0.jar=cairo1.0-1.0.5.jar

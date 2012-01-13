@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/apps-evolution-attachment-reminder.schemas=etc/gconf/schemas/apps-evolution-attachment-reminder.schemas 0644 root sys
+f none etc/gconf/schemas/apps-evolution-mail-notification.schemas=etc/gconf/schemas/apps-evolution-mail-notification.schemas 0644 root sys
+f none etc/gconf/schemas/apps-evolution-mail-prompts-checkdefault.schemas=etc/gconf/schemas/apps-evolution-mail-prompts-checkdefault.schemas 0644 root sys
+f none etc/gconf/schemas/apps-evolution-template-placeholders.schemas=etc/gconf/schemas/apps-evolution-template-placeholders.schemas 0644 root sys
+f none etc/gconf/schemas/apps_evolution_addressbook.schemas=etc/gconf/schemas/apps_evolution_addressbook.schemas 0644 root sys
+f none etc/gconf/schemas/apps_evolution_calendar.schemas=etc/gconf/schemas/apps_evolution_calendar.schemas 0644 root sys
+f none etc/gconf/schemas/apps_evolution_email_custom_header.schemas=etc/gconf/schemas/apps_evolution_email_custom_header.schemas 0644 root sys
+f none etc/gconf/schemas/apps_evolution_shell.schemas=etc/gconf/schemas/apps_evolution_shell.schemas 0644 root sys
+f none etc/gconf/schemas/evolution-mail.schemas=etc/gconf/schemas/evolution-mail.schemas 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/evolution-alarm-notify.desktop=etc/xdg/autostart/evolution-alarm-notify.desktop 0644 root sys

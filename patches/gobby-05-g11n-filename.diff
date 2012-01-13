@@ -1,0 +1,22 @@
+--- gobby-0.4.6/src/logview.cpp.orig	2008-11-28 18:01:02.908650000 +0900
++++ gobby-0.4.6/src/logview.cpp	2008-12-18 11:36:24.024115000 +0900
+@@ -119,7 +119,7 @@ void Gobby::LogView::log(const Glib::ust
+ 	char buf[0x7f];
+ 	std::strftime(buf, 0x7f, formatter, &given_time_tm);
+ 	obby::format_string str("[%0%] %1%");
+-	str << buf << ins_text.raw();
++	str << Glib::locale_to_utf8(buf).raw() << ins_text.raw();
+ 
+ 	if(!tag)
+ 	{
+--- gobby-0.4.6/src/window.cpp.orig	2008-09-24 00:39:20.052053000 +0900
++++ gobby-0.4.6/src/window.cpp	2008-09-24 13:45:12.300841000 +0900
+@@ -1441,7 +1441,7 @@ void Gobby::Window::open_local_file(cons
+ 		convert2unix(utf8_content);
+ 
+ 		m_buffer->document_create(
+-			Glib::path_get_basename(file), "UTF-8", utf8_content
++			Glib::filename_to_utf8(Glib::path_get_basename(file)), "UTF-8", utf8_content
+ 		);
+ 
+ 		// Clear local path

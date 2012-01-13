@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk2-print-cups.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk2-print-cups.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk2-print-cups.copyright
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/gtk-2.0 0755 root bin
+d none lib/amd64/gtk-2.0/2.10.0 0755 root bin
+d none lib/amd64/gtk-2.0/2.10.0/printbackends 0755 root bin
+f none lib/amd64/gtk-2.0/2.10.0/printbackends/libprintbackend-cups.so=usr/lib/amd64/gtk-2.0/2.10.0/printbackends/libprintbackend-cups.so 0755 root bin
+d none lib/gtk-2.0 0755 root bin
+d none lib/gtk-2.0/2.10.0 0755 root bin
+d none lib/gtk-2.0/2.10.0/printbackends 0755 root bin
+f none lib/gtk-2.0/2.10.0/printbackends/libprintbackend-cups.so=usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-cups.so 0755 root bin

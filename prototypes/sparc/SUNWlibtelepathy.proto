@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibtelepathy.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibtelepathy.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibtelepathy.copyright
+f none share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/AUTHORS=usr/share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/AUTHORS 0444 root bin
+f none share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/COPYING.bz2=usr/share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/ChangeLog.bz2=usr/share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/NEWS.bz2=usr/share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/README=usr/share/doc/SUNWlibtelepathy/libtelepathy-0.3.3/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libtelepathy.so=libtelepathy.so.2.7.1
+s none lib/libtelepathy.so.2=libtelepathy.so.2.7.1
+f none lib/libtelepathy.so.2.7.1=usr/lib/libtelepathy.so.2.7.1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibtelepathy 0755 root bin
+d none share/doc/SUNWlibtelepathy/libtelepathy-0.3.3 0755 root bin

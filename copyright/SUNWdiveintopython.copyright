@@ -1,0 +1,17 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU Free Documentation License, Version 1.1
+          Python License
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  fdl*.html: GNU Free Documentation License
+  LICENSE.TXT: Python License (for sample Python code)
+
+ The sources of diveintopython-%{version} were downloaded
+ from %{SOURCE0.url}

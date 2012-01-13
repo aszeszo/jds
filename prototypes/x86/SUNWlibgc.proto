@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgc.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgc.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgc.copyright
+f none share/doc/SUNWlibgc/ChangeLog.bz2=usr/share/doc/SUNWlibgc/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibgc/README.QUICK=usr/share/doc/SUNWlibgc/README.QUICK 0444 root bin
+f none share/doc/SUNWlibgc/doc/README=usr/share/doc/SUNWlibgc/doc/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libbgc.so=libbgc.so.1.0.3
+s none lib/libbgc.so.1=libbgc.so.1.0.3
+f none lib/libbgc.so.1.0.3=usr/lib/libbgc.so.1.0.3 0755 root bin
+s none lib/libcord.so=libcord.so.1.0.3
+s none lib/libcord.so.1=libcord.so.1.0.3
+f none lib/libcord.so.1.0.3=usr/lib/libcord.so.1.0.3 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibgc 0755 root bin
+d none share/doc/SUNWlibgc/doc 0755 root bin

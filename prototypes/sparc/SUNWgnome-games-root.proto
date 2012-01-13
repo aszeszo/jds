@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-games-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-games-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-games-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/glchess.schemas=etc/gconf/schemas/glchess.schemas 0644 root sys
+f none etc/gconf/schemas/glines.schemas=etc/gconf/schemas/glines.schemas 0644 root sys
+f none etc/gconf/schemas/gnect.schemas=etc/gconf/schemas/gnect.schemas 0644 root sys
+f none etc/gconf/schemas/gnibbles.schemas=etc/gconf/schemas/gnibbles.schemas 0644 root sys
+f none etc/gconf/schemas/gnobots2.schemas=etc/gconf/schemas/gnobots2.schemas 0644 root sys
+f none etc/gconf/schemas/gnome-sudoku.schemas=etc/gconf/schemas/gnome-sudoku.schemas 0644 root sys
+f none etc/gconf/schemas/gnomine.schemas=etc/gconf/schemas/gnomine.schemas 0644 root sys
+f none etc/gconf/schemas/gnotravex.schemas=etc/gconf/schemas/gnotravex.schemas 0644 root sys
+f none etc/gconf/schemas/gnotski.schemas=etc/gconf/schemas/gnotski.schemas 0644 root sys
+f none etc/gconf/schemas/gtali.schemas=etc/gconf/schemas/gtali.schemas 0644 root sys
+f none etc/gconf/schemas/iagno.schemas=etc/gconf/schemas/iagno.schemas 0644 root sys
+f none etc/gconf/schemas/lightsoff.schemas=etc/gconf/schemas/lightsoff.schemas 0644 root sys
+f none etc/gconf/schemas/mahjongg.schemas=etc/gconf/schemas/mahjongg.schemas 0644 root sys
+f none etc/gconf/schemas/swell-foop.schemas=etc/gconf/schemas/swell-foop.schemas 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/menus 0755 root sys
+d none etc/xdg/menus/applications-merged 0755 root sys
+f none etc/xdg/menus/applications-merged/ggz.merge.menu=etc/xdg/menus/applications-merged/ggz.merge.menu 0644 root sys
+f none etc/xdg/menus/ggz.menu=etc/xdg/menus/ggz.menu 0644 root sys

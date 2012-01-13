@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgnome-keyring.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgnome-keyring.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWlibgnome-keyring.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgnome-keyring.copyright
+f none share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/AUTHORS=usr/share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/AUTHORS 0444 root bin
+f none share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/COPYING.bz2=usr/share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/ChangeLog.bz2=usr/share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/NEWS.bz2=usr/share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/README=usr/share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libgnome-keyring.so=libgnome-keyring.so.0.1.1
+s none lib/libgnome-keyring.so.0=libgnome-keyring.so.0.1.1
+f none lib/libgnome-keyring.so.0.1.1=usr/lib/libgnome-keyring.so.0.1.1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibgnome-keyring 0755 root bin
+d none share/doc/SUNWlibgnome-keyring/libgnome-keyring-2.30.1 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgnome-keyring.3=usr/share/man/man3/libgnome-keyring.3 0644 root bin

@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpangomm.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpangomm.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpangomm.copyright
+d none lib 0755 root bin
+s none lib/libpangomm-1.4.so=libpangomm-1.4.so.1.0.30
+s none lib/libpangomm-1.4.so.1=libpangomm-1.4.so.1.0.30
+f none lib/libpangomm-1.4.so.1.0.30=usr/lib/libpangomm-1.4.so.1.0.30 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libpangomm-1.4.3=usr/share/man/man3/libpangomm-1.4.3 0644 root bin

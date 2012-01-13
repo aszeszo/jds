@@ -1,0 +1,35 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWnano.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWnano.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWnano.copyright
+d none bin 0755 root bin
+f none bin/nano=usr/bin/nano 0755 root bin
+s none bin/rnano=nano
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/fr 0755 root bin
+d none share/man/fr/man1 0755 root bin
+f none share/man/fr/man1/nano.1=usr/share/man/fr/man1/nano.1 0644 root bin
+f none share/man/fr/man1/rnano.1=usr/share/man/fr/man1/rnano.1 0644 root bin
+d none share/man/fr/man5 0755 root bin
+f none share/man/fr/man5/nanorc.5=usr/share/man/fr/man5/nanorc.5 0644 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/nano.1=usr/share/man/man1/nano.1 0644 root bin
+f none share/man/man1/rnano.1=usr/share/man/man1/rnano.1 0644 root bin
+d none share/man/man5 0755 root bin
+f none share/man/man5/nanorc.5=usr/share/man/man5/nanorc.5 0644 root bin
+d none share/nano 0755 root sys
+f none share/nano/asm.nanorc=usr/share/nano/asm.nanorc 0644 root bin
+f none share/nano/c.nanorc=usr/share/nano/c.nanorc 0644 root bin
+f none share/nano/groff.nanorc=usr/share/nano/groff.nanorc 0644 root bin
+f none share/nano/html.nanorc=usr/share/nano/html.nanorc 0644 root bin
+f none share/nano/java.nanorc=usr/share/nano/java.nanorc 0644 root bin
+f none share/nano/man.nanorc=usr/share/nano/man.nanorc 0644 root bin
+f none share/nano/mutt.nanorc=usr/share/nano/mutt.nanorc 0644 root bin
+f none share/nano/nanorc.nanorc=usr/share/nano/nanorc.nanorc 0644 root bin
+f none share/nano/patch.nanorc=usr/share/nano/patch.nanorc 0644 root bin
+f none share/nano/perl.nanorc=usr/share/nano/perl.nanorc 0644 root bin
+f none share/nano/pov.nanorc=usr/share/nano/pov.nanorc 0644 root bin
+f none share/nano/python.nanorc=usr/share/nano/python.nanorc 0644 root bin
+f none share/nano/ruby.nanorc=usr/share/nano/ruby.nanorc 0644 root bin
+f none share/nano/sh.nanorc=usr/share/nano/sh.nanorc 0644 root bin
+f none share/nano/tex.nanorc=usr/share/nano/tex.nanorc 0644 root bin

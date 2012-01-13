@@ -1,0 +1,35 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibical.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibical.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibical.copyright
+f none share/doc/SUNWlibical/COPYING.bz2=usr/share/doc/SUNWlibical/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibical/LICENSE.bz2=usr/share/doc/SUNWlibical/LICENSE.bz2 0444 root bin
+f none share/doc/SUNWlibical/README.bz2=usr/share/doc/SUNWlibical/README.bz2 0444 root bin
+f none share/doc/SUNWlibical/THANKS.bz2=usr/share/doc/SUNWlibical/THANKS.bz2 0444 root bin
+d none lib 0755 root bin
+s none lib/libical.so=libical.so.0
+s none lib/libical.so.0=libical.so.0.44.0
+f none lib/libical.so.0.44.0=usr/lib/libical.so.0.44.0 0755 root bin
+s none lib/libicalss.so=libicalss.so.0
+s none lib/libicalss.so.0=libicalss.so.0.44.0
+f none lib/libicalss.so.0.44.0=usr/lib/libicalss.so.0.44.0 0755 root bin
+s none lib/libicalvcal.so=libicalvcal.so.0
+s none lib/libicalvcal.so.0=libicalvcal.so.0.44.0
+f none lib/libicalvcal.so.0.44.0=usr/lib/libicalvcal.so.0.44.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libical.so=libical.so.0
+s none lib/sparcv9/libical.so.0=libical.so.0.44.0
+f none lib/sparcv9/libical.so.0.44.0=usr/lib/sparcv9/libical.so.0.44.0 0755 root bin
+s none lib/sparcv9/libicalss.so=libicalss.so.0
+s none lib/sparcv9/libicalss.so.0=libicalss.so.0.44.0
+f none lib/sparcv9/libicalss.so.0.44.0=usr/lib/sparcv9/libicalss.so.0.44.0 0755 root bin
+s none lib/sparcv9/libicalvcal.so=libicalvcal.so.0
+s none lib/sparcv9/libicalvcal.so.0=libicalvcal.so.0.44.0
+f none lib/sparcv9/libicalvcal.so.0.44.0=usr/lib/sparcv9/libicalvcal.so.0.44.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibical 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libical.3=usr/share/man/man3/libical.3 0644 root bin
+f none share/man/man3/libicalss.3=usr/share/man/man3/libicalss.3 0644 root bin
+f none share/man/man3/libicalvcal.3=usr/share/man/man3/libicalvcal.3 0644 root bin

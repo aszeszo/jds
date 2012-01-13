@@ -1,0 +1,2350 @@
+diff -r 964f130e4a78 help/clock/ca/clock.xml
+--- a/help/clock/ca/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/ca/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Projecte de documentació del GNOME</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Manual de la miniaplicació Rellotge v2.5</revnumber> 
+ 		  <date>Febrer del 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecte de documentació del GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Manual de la miniaplicació Rellotge v2.4</revnumber> 
+ 		  <date>Setembre del 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecte de documentació del GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Manual de la miniaplicació Rellotge v2.3</revnumber> 
+ 		  <date>Gener del 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecte de documentació del GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Manual de la miniaplicació Rellotge v2.2</revnumber> 
+ 		  <date>Agost del 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecte de documentació del GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Manual de la miniaplicació Rellotge v2.1</revnumber> 
+ 		  <date>Juny del 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecte de documentació del GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Manual de la miniaplicació Rellotge v2.0</revnumber> 
+ 		  <date>Març del 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecte de documentació del GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/cs/clock.xml
+--- a/help/clock/cs/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/cs/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Dokumentační projekt GNOME</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Příručka V2.5 k appletu hodin</revnumber> 
+ 		  <date>Únor 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentační projekt GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Příručka V2.4 k appletu hodin</revnumber> 
+ 		  <date>Září 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentační projekt GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Příručka V2.3 k appletu hodin</revnumber> 
+ 		  <date>Leden 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentační projekt GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Příručka V2.2 k appletu hodin</revnumber> 
+ 		  <date>Srpen 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentační projekt GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Příručka V2.1 k appletu hodin</revnumber> 
+ 		  <date>Červen 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentační projekt GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Příručka V2.0 k appletu hodin</revnumber> 
+ 		  <date>Březen 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentační projekt GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/da/clock.xml
+--- a/help/clock/da/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/da/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME-dokumentationsprojekt</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Manual til urpanelprogram version 2.5</revnumber> 
+ 		  <date>Februar 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Manual til urpanelprogram version 2.4</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Manual til urpanelprogram version 2.3</revnumber> 
+ 		  <date>Januar 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Manual til urpanelprogram version 2.2</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Manual til urpanelprogram version 2.1</revnumber> 
+ 		  <date>Juni 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Manual til urpanelprogram version 2.0</revnumber> 
+ 		  <date>Marts 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/de/clock.xml
+--- a/help/clock/de/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/de/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME-Dokumentationsprojekt</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Uhr-Applet-Handbuch V2.5</revnumber> 
+ 		  <date>Februar 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Uhr-Applet-Handbuch V2.4</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Uhr-Applet-Handbuch V2.3</revnumber> 
+ 		  <date>Januar 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Clock Applet-Handbuch V2.2</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Uhr-Applet-Handbuch V2.1</revnumber> 
+ 		  <date>Juni 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Uhr-Applet-Handbuch V2.0</revnumber> 
+ 		  <date>März 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/el/clock.xml
+--- a/help/clock/el/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/el/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Έργο Τεκμηρίωσης GNOME</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.5</revnumber> 
+ 		  <date>Φεβρουάριος 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.4</revnumber> 
+ 		  <date>Σεπτέμβριος 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.3</revnumber> 
+ 		  <date>Ιανουάριος 2005</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.2</revnumber> 
+ 		  <date>Αύγουστος 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.1</revnumber> 
+ 		  <date>Ιούνιος 2005</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Εγχειρίδιο μικροεφαρμογής ρολογιού έκδοση 2.0</revnumber> 
+ 		  <date>Μάρτιος 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Έργο Τεκμηρίωσης GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/en_GB/clock.xml
+--- a/help/clock/en_GB/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/en_GB/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME Documentation Project</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Clock Applet Manual V2.5</revnumber> 
+ 		  <date>February 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Clock Applet Manual V2.4</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Clock Applet Manual V2.3</revnumber> 
+ 		  <date>January 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Clock Applet Manual V2.2</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Clock Applet Manual V2.1</revnumber> 
+ 		  <date>June 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Clock Applet Manual V2.0</revnumber> 
+ 		  <date>March 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/es/clock.xml
+--- a/help/clock/es/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/es/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Proyecto de documentación de Gnome</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Manual de la miniaplicación Reloj V2.5</revnumber> 
+ 		  <date>Febrero de 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Manual de la miniaplicación Reloj V2.4</revnumber> 
+ 		  <date>Septiembre de 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Manual de la miniaplicación Reloj V2.3</revnumber> 
+ 		  <date>Enero de 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Manual de la miniaplicación Reloj V2.2</revnumber> 
+ 		  <date>Agosto de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Manual de la miniaplicación Reloj V2.1</revnumber> 
+ 		  <date>Junio de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Manual de la miniaplicación Reloj V2.0</revnumber> 
+ 		  <date>Marzo de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Proyecto de documentación de Gnome</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/eu/clock.xml
+--- a/help/clock/eu/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/eu/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOMEren dokumentazio-proiektua</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Erlojuaren miniaplikazioaren eskuliburua, 2.5 bertsioa</revnumber> 
+ 		  <date>2004ko otsaila</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOMEren dokumentazio-proiektua</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Erlojuaren miniaplikazioaren eskuliburua, 2.4 bertsioa</revnumber> 
+ 		  <date>2003ko iraila</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOMEren dokumentazio-proiektua</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Erlojuaren miniaplikazioaren eskuliburua, 2.3 bertsioa</revnumber> 
+ 		  <date>2003ko urtarrila</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOMEren dokumentazio-proiektua</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Erlojuaren miniaplikazioaren eskuliburua, 2.2 bertsioa</revnumber> 
+ 		  <date>2002ko abuztua</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOMEren dokumentazio-proiektua</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Erlojuaren miniaplikazioaren eskuliburua, 2.1 bertsioa</revnumber> 
+ 		  <date>2002ko ekaina</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOMEren dokumentazio-proiektua</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Erlojuaren miniaplikazioaren eskuliburua, 2.0 bertsioa</revnumber> 
+ 		  <date>2002ko martxoa</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOMEren dokumentazio-proiektua</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/fi/clock.xml
+--- a/help/clock/fi/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/fi/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Gnomen dokumentointiprojekti</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Kellosovelman ohjekirja v2.5</revnumber> 
+ 		  <date>Helmikuu 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Kellosovelman ohjekirja v2.4</revnumber> 
+ 		  <date>Syyskuu 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Kellosovelman ohjekirja v2.3</revnumber> 
+ 		  <date>Tammikuu 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Kellosovelman ohjekirja v2.2</revnumber> 
+ 		  <date>Elokuu 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Kellosovelman ohjekirja v2.1</revnumber> 
+ 		  <date>Kesäkuu 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Kellosovelman ohjekirja v2.0</revnumber> 
+ 		  <date>Maaliskuu 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Gnomen dokumentointiprojekti</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/fr/clock.xml
+--- a/help/clock/fr/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/fr/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Projet de documentation GNOME</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Manuel de l'applet Horloge V2.5</revnumber> 
+ 		  <date>Février 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projet de documentation GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Manuel de l'applet Horloge V2.4</revnumber> 
+ 		  <date>Septembre 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projet de documentation GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Manuel de l'applet Horloge V2.3</revnumber> 
+ 		  <date>Janvier 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projet de documentation GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Manuel de l'applet Horloge V2.2</revnumber> 
+ 		  <date>Août 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projet de documentation GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Manuel de l'applet Horloge V2.1</revnumber> 
+ 		  <date>Juin 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projet de documentation GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Manuel de l'applet Horloge V2.0</revnumber> 
+ 		  <date>Mars 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projet de documentation GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/it/clock.xml
+--- a/help/clock/it/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/it/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME Documentation Project</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Manuale dell'applet Orologio V2.5</revnumber> 
+ 		  <date>Febbraio 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Manuale dell'applet Orologio V2.4</revnumber> 
+ 		  <date>Settembre 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Manuale dell'applet Orologio V2.3</revnumber> 
+ 		  <date>Gennaio 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Manuale dell'applet Orologio V2.2</revnumber> 
+ 		  <date>Agosto 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Manuale dell'applet Orologio V2.1</revnumber> 
+ 		  <date>Giugno 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Manuale dell'applet Orologio V2.0</revnumber> 
+ 		  <date>Marzo 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/ja/clock.xml
+--- a/help/clock/ja/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/ja/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -110,8 +110,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOMEドキュメンテーションプロジェクト</orgname> 
+ 			 <address/> 
+diff -r 964f130e4a78 help/clock/ko/clock.xml
+--- a/help/clock/ko/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/ko/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,12 +29,14 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+ 		<holder>Dan Mueth</holder> 
+-	 </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++	 </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+ <!-- translators: uncomment this:
+ 
+   <copyright>
+@@ -79,8 +81,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>그놈 문서 프로젝트</orgname> 
+ 			 <address/> 
+@@ -133,7 +135,7 @@
+ 		  <revnumber>시계 애플릿 설명서 V2.2</revnumber> 
+ 		  <date>2004년 2월</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">그놈 문서 프로젝트</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +143,7 @@
+ 		  <revnumber>시계 애플릿 설명서 V2.4</revnumber> 
+ 		  <date>2003년 9월</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">그놈 문서 프로젝트</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +151,7 @@
+ 		  <revnumber>시계 애플릿 설명서 V2.3</revnumber> 
+ 		  <date>2003년 1월</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">그놈 문서 프로젝트</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +159,7 @@
+ 		  <revnumber>시계 애플릿 설명서 V2.2</revnumber> 
+ 		  <date>2002년 8월</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">그놈 문서 프로젝트</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +167,7 @@
+ 		  <revnumber>시계 애플릿 설명서 V2.1</revnumber> 
+ 		  <date>2002년 6월</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">그놈 문서 프로젝트</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +175,7 @@
+ 		  <revnumber>시계 애플릿 설명서 V2.0</revnumber> 
+ 		  <date>2002년 3월</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">그놈 문서 프로젝트</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/nl/clock.xml
+--- a/help/clock/nl/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/nl/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -92,8 +93,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME Documentatie Project</orgname> 
+ 			 <address/> 
+@@ -146,7 +147,7 @@
+ 		  <revnumber>Handleiding voor Klok V2.5</revnumber> 
+ 		  <date>Februari 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentatie Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -154,7 +155,7 @@
+ 		  <revnumber>Handleiding voor Klok V2.4</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentatie Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -162,7 +163,7 @@
+ 		  <revnumber>Handleiding voor Klok V2.3</revnumber> 
+ 		  <date>Augustus 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentatie Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -170,7 +171,7 @@
+ 		  <revnumber>Handleiding voor Klok V2.2</revnumber> 
+ 		  <date>Augustus 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentatie Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -178,7 +179,7 @@
+ 		  <revnumber>Handleiding voor Klok V2.1</revnumber> 
+ 		  <date>© 2002 GNOME</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentatie Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -186,7 +187,7 @@
+ 		  <revnumber>Handleiding voor Klok V2.0</revnumber> 
+ 		  <date>Maart 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentatie Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/oc/clock.xml
+--- a/help/clock/oc/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/oc/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -129,8 +130,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Projècte de documentacion de GNOME</orgname> 
+ 			 <address/> 
+@@ -183,7 +184,7 @@
+ 		  <revnumber>Clock Applet Manual V2.5</revnumber> 
+ 		  <date>Febrièr de 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projècte de documentacion de GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -191,7 +192,7 @@
+ 		  <revnumber>Clock Applet Manual V2.4</revnumber> 
+ 		  <date>Setembre de 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projècte de documentacion de GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -199,7 +200,7 @@
+ 		  <revnumber>Clock Applet Manual V2.3</revnumber> 
+ 		  <date>Genièr de 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projècte de documentacion de GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -207,7 +208,7 @@
+ 		  <revnumber>Clock Applet Manual V2.2</revnumber> 
+ 		  <date>Agost de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projècte de documentacion de GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -215,7 +216,7 @@
+ 		  <revnumber>Clock Applet Manual V2.1</revnumber> 
+ 		  <date>Junh de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projècte de documentacion de GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -223,7 +224,7 @@
+ 		  <revnumber>Clock Applet Manual V2.0</revnumber> 
+ 		  <date>Març de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projècte de documentacion de GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/pt/clock.xml
+--- a/help/clock/pt/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/pt/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -110,8 +111,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Projecto de Documentação do GNOME</orgname> 
+ 			 <address/> 
+@@ -164,7 +165,7 @@
+ 		  <revnumber>Manual da Applet do Relógio V2.5</revnumber> 
+ 		  <date>Fevereiro 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -172,7 +173,7 @@
+ 		  <revnumber>Manual da Applet do Relógio V2.4</revnumber> 
+ 		  <date>Setembro 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -180,7 +181,7 @@
+ 		  <revnumber>Manual da Applet do Relógio V2.3</revnumber> 
+ 		  <date>Janeiro 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -188,7 +189,7 @@
+ 		  <revnumber>Manual da Applet do Relógio V2.2</revnumber> 
+ 		  <date>Agosto 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -196,7 +197,7 @@
+ 		  <revnumber>Manual da Applet do Relógio V2.1</revnumber> 
+ 		  <date>Junho 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -204,7 +205,7 @@
+ 		  <revnumber>Manual da Applet do Relógio V2.0</revnumber> 
+ 		  <date>Março 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projecto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/pt_BR/clock.xml
+--- a/help/clock/pt_BR/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/pt_BR/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Projeto de Documentação do GNOME</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Manual do Miniaplicativo Relógio V2.5</revnumber> 
+ 		  <date>February 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Manual do Miniaplicativo Relógio V2.4</revnumber> 
+ 		  <date>Setembro de 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Manual do Miniaplicativo Relógio V2.3</revnumber> 
+ 		  <date>Janeiro de 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Manual do Miniaplicativo Relógio V2.2</revnumber> 
+ 		  <date>Agosto de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Manual do Miniaplicativo Relógio V2.1</revnumber> 
+ 		  <date>Junho de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Manual do Miniaplicativo Relógio V2.0</revnumber> 
+ 		  <date>Março de 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Projeto de Documentação do GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/ru/clock.xml
+--- a/help/clock/ru/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/ru/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -129,8 +130,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Проект документирования GNOME</orgname> 
+ 			 <address/> 
+@@ -183,7 +184,7 @@
+ 		  <revnumber>Руководство версии 2.5 по апплету Часы</revnumber> 
+ 		  <date>February 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документирования GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -191,7 +192,7 @@
+ 		  <revnumber>Руководство версии 2.4 по апплету Часы</revnumber> 
+ 		  <date>Сентябрь 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документирования GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -199,7 +200,7 @@
+ 		  <revnumber>Руководство версии 2.3 по апплету Часы</revnumber> 
+ 		  <date>Январь 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документирования GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -207,7 +208,7 @@
+ 		  <revnumber>Руководство версии 2.2 по апплету Часы</revnumber> 
+ 		  <date>Август 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документирования GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -215,7 +216,7 @@
+ 		  <revnumber>Руководство версии 2.1 по апплету Часы</revnumber> 
+ 		  <date>Июнь 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документирования GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -223,7 +224,7 @@
+ 		  <revnumber>Руководство версии 2.0 по апплету Часы</revnumber> 
+ 		  <date>Март 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документирования GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/sr/clock.xml
+--- a/help/clock/sr/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/sr/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -79,8 +79,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Подухват документовања Гнома</orgname> 
+ 			 <address/> 
+diff -r 964f130e4a78 help/clock/sv/clock.xml
+--- a/help/clock/sv/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/sv/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Dokumentationsprojekt för GNOME</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Handbok för panelprogrammet Klocka, version 2.5</revnumber> 
+ 		  <date>Februari 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Handbok för panelprogrammet Klocka, version 2.4</revnumber> 
+ 		  <date>September 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Handbok för panelprogrammet Klocka, version 2.3</revnumber> 
+ 		  <date>Januari 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Handbok för panelprogrammet Klocka, version 2.2</revnumber> 
+ 		  <date>Augusti 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Handbok för panelprogrammet Klocka, version 2.1</revnumber> 
+ 		  <date>Juni 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Handbok för panelprogrammet Klocka, version 2.0</revnumber> 
+ 		  <date>Mars 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Dokumentationsprojekt för GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/uk/clock.xml
+--- a/help/clock/uk/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/uk/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>Проект документування GNOME</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>Посібник з аплету Годинник версії 2.5</revnumber> 
+ 		  <date>Лютий 2004</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документування GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>Посібник з аплету Годинник версії 2.4</revnumber> 
+ 		  <date>Вересень 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документування GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>Посібник з аплету Годинник версії 2.3</revnumber> 
+ 		  <date>Січень 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документування GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Посібник з аплету Годинник версії 2.2</revnumber> 
+ 		  <date>Серпень 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документування GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Посібник з аплету Годинник версії 2.1</revnumber> 
+ 		  <date>Червень 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документування GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Посібник з аплету Годинник версії 2.0</revnumber> 
+ 		  <date>Березень 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">Проект документування GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/zh_CN/clock.xml
+--- a/help/clock/zh_CN/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/zh_CN/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME 文档项目</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>时钟小程序手册 V2.5</revnumber> 
+ 		  <date>2004年2月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>时钟小程序手册 V2.4</revnumber> 
+ 		  <date>2003年9月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>时钟小程序手册 V2.3</revnumber> 
+ 		  <date>2003年1月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>时钟小程序手册 V2.2</revnumber> 
+ 		  <date>2002年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>时钟小程序手册 V2.1</revnumber> 
+ 		  <date>2002年6月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>时钟小程序手册 V2.0</revnumber> 
+ 		  <date>2002年3月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/zh_HK/clock.xml
+--- a/help/clock/zh_HK/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/zh_HK/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME 文件專案</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+ 		  <date>2004年2月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+ 		  <date>2003年9月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+ 		  <date>2003年1月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Clock Applet 手冊 V2.2</revnumber> 
+ 		  <date>2002年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Clock Applet 手冊 V2.1</revnumber> 
+ 		  <date>2002 年 6 月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Clock Applet 手冊 V2.0</revnumber> 
+ 		  <date>2002 年 3 月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/clock/zh_TW/clock.xml
+--- a/help/clock/zh_TW/clock.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/clock/zh_TW/clock.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -79,8 +80,8 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		   
+ 		  <affiliation> 
+ 			 <orgname>GNOME 文件專案</orgname> 
+ 			 <address/> 
+@@ -133,7 +134,7 @@
+ 		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+ 		  <date>2004年2月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -141,7 +142,7 @@
+ 		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+ 		  <date>2003年9月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -149,7 +150,7 @@
+ 		  <revnumber>時鐘 手冊 V2.2</revnumber> 
+ 		  <date>2003年1月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -157,7 +158,7 @@
+ 		  <revnumber>Clock Applet 手冊 V2.2</revnumber> 
+ 		  <date>2002年8月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -165,7 +166,7 @@
+ 		  <revnumber>Clock Applet 手冊 V2.1</revnumber> 
+ 		  <date>2002 年 6 月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -173,7 +174,7 @@
+ 		  <revnumber>Clock Applet 手冊 V2.0</revnumber> 
+ 		  <date>2002 年 3 月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun Microsystems</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME 文件專案</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/fish/ca/fish.xml
+--- a/help/fish/ca/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/ca/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Equip de documentació del GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/cs/fish.xml
+--- a/help/fish/cs/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/cs/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Dokumentační tým GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/de/fish.xml
+--- a/help/fish/de/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/de/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME-Dokumentationsteam</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -110,7 +111,7 @@
+ 		  <revnumber>Fisch-Applet-Handbuch V2.5</revnumber> 
+ 		  <date>Juni 2009</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Dokumentations-Team</para> 
++			 <para role="author">Oracle Solaris Desktop Dokumentations-Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>	 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Fisch-Applet-Handbuch V2.4</revnumber> 
+ 		  <date>Juni 2009</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Dokumentations-Team</para> 
++			 <para role="author">Oracle Solaris Desktop Dokumentations-Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Fisch-Applet-Handbuch V2.2</revnumber> 
+ 		  <date>Januar 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Dokumentations-Team</para> 
++			 <para role="author">Oracle Solaris Desktop Dokumentations-Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Fisch-Applet-Handbuch V2.1</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Dokumentations-Team</para> 
++			 <para role="author">Oracle Solaris Desktop Dokumentations-Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Fisch-Applet-Handbuch V2.0</revnumber> 
+ 		  <date>Mai 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Dokumentations-Team</para> 
++			 <para role="author">Oracle Solaris Desktop Dokumentations-Team</para> 
+ 			 <para role="publisher">GNOME-Dokumentationsprojekt</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/fish/el/fish.xml
+--- a/help/fish/el/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/el/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Ομάδα Τεκμηρίωσης GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/en_GB/fish.xml
+--- a/help/fish/en_GB/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/en_GB/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME Documentation Team</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -110,7 +111,7 @@
+ 		  <revnumber>Fish Applet Manual V2.5</revnumber> 
+ 		  <date>June 2009</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>	 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Fish Applet Manual V2.4</revnumber> 
+ 		  <date>June 2009</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Fish Applet Manual V2.2</revnumber> 
+ 		  <date>January 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Fish Applet Manual V2.1</revnumber> 
+ 		  <date>August 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Fish Applet Manual V2.0</revnumber> 
+ 		  <date>May 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team</para> 
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/fish/es/fish.xml
+--- a/help/fish/es/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/es/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Equipo de documentación de GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/eu/fish.xml
+--- a/help/fish/eu/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/eu/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOMEren dokumentazio-taldea</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/fi/fish.xml
+--- a/help/fish/fi/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/fi/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Gnomen dokumentaatiotiimi</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/fr/fish.xml
+--- a/help/fish/fr/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/fr/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Équipe de documentation GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/it/fish.xml
+--- a/help/fish/it/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/it/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Team di documentazione GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -110,7 +111,7 @@
+ 		  <revnumber>Manuale applet Pesce V2.5</revnumber> 
+ 		  <date>Giugno 2009</date> 
+ 		  <revdescription> 
+-			 <para role="author">Team di documentazione Sun GNOME</para> 
++			 <para role="author">Team di documentazione Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Progetto di documentazione GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>	 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>Manuale applet Pesce V2.4</revnumber> 
+ 		  <date>Giugno 2009</date> 
+ 		  <revdescription> 
+-			 <para role="author">Team di documentazione Sun GNOME</para> 
++			 <para role="author">Team di documentazione Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Progetto di documentazione GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>Manuale applet Pesce V2.2</revnumber> 
+ 		  <date>Gennaio 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Team di documentazione Sun GNOME</para> 
++			 <para role="author">Team di documentazione Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Progetto di documentazione GNOME</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>Manuale applet Pesce V2.1</revnumber> 
+ 		  <date>Agosto 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Team di documentazione Sun GNOME</para> 
++			 <para role="author">Team di documentazione Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Progetto di documentazione GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -142,7 +143,7 @@
+ 		  <revnumber>Manuale applet Pesce V2.0</revnumber> 
+ 		  <date>Maggio 2002</date> 
+ 		  <revdescription> 
+-			 <para role="author">Team di documentazione Sun GNOME</para> 
++			 <para role="author">Team di documentazione Oracle Solaris Desktop</para> 
+ 			 <para role="publisher">Progetto di documentazione GNOME</para> 
+ 		  </revdescription> 
+ 		</revision> 
+diff -r 964f130e4a78 help/fish/ko/fish.xml
+--- a/help/fish/ko/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/ko/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,12 +26,14 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+ 		<holder>Telsa Gwynne</holder> 
+-	 </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
++	 </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007.</year><holder>류창우 (cwryu@debian.org)</holder></copyright>
+ <!-- translators: uncomment this:
+ 
+   <copyright>
+@@ -73,10 +75,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>그놈 문서 팀</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/oc/fish.xml
+--- a/help/fish/oc/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/oc/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -132,10 +133,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Còla de documentacion de GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/ru/fish.xml
+--- a/help/fish/ru/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/ru/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Команда документирования GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/sv/fish.xml
+--- a/help/fish/sv/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/sv/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -76,7 +77,7 @@
+ 		  <firstname>Suns</firstname> 
+ 		  <surname>GNOME-dokumentationsteam</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/uk/fish.xml
+--- a/help/fish/uk/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/uk/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>Команда документування GNOME</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+diff -r 964f130e4a78 help/fish/zh_CN/fish.xml
+--- a/help/fish/zh_CN/fish.xml	Fri Jul 08 15:09:53 2011 +0800
++++ b/help/fish/zh_CN/fish.xml	Fri Jul 08 16:40:22 2011 +0800
+@@ -26,7 +26,8 @@
+ 	 <copyright> 
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -73,10 +74,10 @@
+ 		  </affiliation> 
+ 		</author>	 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
++		  <firstname>Oracle Solaris</firstname> 
+ 		  <surname>GNOME 文档团队</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address/> 
+ 		  </affiliation> 
+ 		</author> 
+@@ -110,7 +111,7 @@
+ 		  <revnumber>小鱼小程序手册 2.5 版</revnumber> 
+ 		  <date>2009年6月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文档团队</para> 
++			 <para role="author">Oracle Solaris Desktop 文档团队</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>	 
+@@ -118,7 +119,7 @@
+ 		  <revnumber>小鱼小程序手册 2.4 版</revnumber> 
+ 		  <date>2009年6月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文档团队</para> 
++			 <para role="author">Oracle Solaris Desktop 文档团队</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -126,7 +127,7 @@
+ 		  <revnumber>小鱼小程序手册 2.2 版</revnumber> 
+ 		  <date>2003 年 1 月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文档团队</para> 
++			 <para role="author">Oracle Solaris Desktop 文档团队</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision>
+@@ -134,7 +135,7 @@
+ 		  <revnumber>小鱼小程序手册 2.1 版</revnumber> 
+ 		  <date>2002年 8 月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文档团队</para> 
++			 <para role="author">Oracle Solaris Desktop 文档团队</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 
+@@ -142,7 +143,7 @@
+ 		  <revnumber>小鱼小程序手册 2.0 版</revnumber> 
+ 		  <date>2002 年 5 月</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME 文档团队</para> 
++			 <para role="author">Oracle Solaris Desktop 文档团队</para> 
+ 			 <para role="publisher">GNOME 文档项目</para> 
+ 		  </revdescription> 
+ 		</revision> 

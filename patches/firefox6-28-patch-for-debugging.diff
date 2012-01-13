@@ -1,0 +1,157 @@
+diff --git a/js/src/jsexn.cpp b/js/src/jsexn.cpp
+index 10edf66..e7e054a 100644
+--- a/js/src/jsexn.cpp
++++ b/js/src/jsexn.cpp
+@@ -855,7 +855,10 @@ static JSBool
+ exn_toSource(JSContext *cx, uintN argc, Value *vp)
+ {
+     JSString *name, *message, *filename, *lineno_as_str, *result;
+-    jsval localroots[3] = {JSVAL_NULL, JSVAL_NULL, JSVAL_NULL};
++    jsval localroots[3];
++    localroots[0] = JSVAL_NULL;
++    localroots[1] = JSVAL_NULL;
++    localroots[2] = JSVAL_NULL;
+     size_t lineno_length, name_length, message_length, filename_length, length;
+     jschar *chars, *cp;
+ 
+diff --git a/js/src/jsxml.cpp b/js/src/jsxml.cpp
+index 7fa3bc1..648ca10 100644
+--- a/js/src/jsxml.cpp
++++ b/js/src/jsxml.cpp
+@@ -3777,7 +3777,9 @@ GetProperty(JSContext *cx, JSObject *obj, jsid id, jsval *vp)
+     if (!JSID_IS_VOID(funid))
+         return GetXMLFunction(cx, obj, funid, vp);
+ 
+-    jsval roots[2] = { OBJECT_TO_JSVAL(nameqn), JSVAL_NULL };
++    jsval roots[2];
++    roots[0] = OBJECT_TO_JSVAL(nameqn);
++    roots[1] = JSVAL_NULL;
+     AutoArrayRooter tvr(cx, JS_ARRAY_LENGTH(roots), Valueify(roots));
+ 
+     listobj = js_NewXMLObject(cx, JSXML_CLASS_LIST);
+diff --git a/js/src/shell/jsworkers.cpp b/js/src/shell/jsworkers.cpp
+index 684a9d1..da02ede 100644
+--- a/js/src/shell/jsworkers.cpp
++++ b/js/src/shell/jsworkers.cpp
+@@ -344,7 +344,9 @@ class Event
+             return fail;
+ 
+         // Call event handler.
+-        jsval argv[1] = { OBJECT_TO_JSVAL(obj) };
++        jsval argv[1]; 
++        argv[0] = OBJECT_TO_JSVAL(obj);
++
+         jsval rval = JSVAL_VOID;
+         return Result(JS_CallFunctionName(cx, thisobj, methodName, 1, argv, &rval));
+     }
+diff --git a/js/src/xpconnect/src/xpccomponents.cpp b/js/src/xpconnect/src/xpccomponents.cpp
+index 1c141f9..a4dc9d9 100644
+--- a/js/src/xpconnect/src/xpccomponents.cpp
++++ b/js/src/xpconnect/src/xpccomponents.cpp
+@@ -2255,7 +2255,8 @@ nsXPCConstructor::CallOrConstruct(nsIXPConnectWrappedNative *wrapper,
+         return ThrowAndFail(NS_ERROR_XPC_CANT_CREATE_WN, cx, _retval);
+     }
+ 
+-    jsval ctorArgs[1] = {OBJECT_TO_JSVAL(iidObj)};
++    jsval ctorArgs[1];
++    ctorArgs[0] = OBJECT_TO_JSVAL(iidObj);
+     jsval val;
+ 
+     if(!JS_CallFunctionName(cx, cidObj, "createInstance", 1, ctorArgs, &val) ||
+diff --git a/js/src/xpconnect/src/xpcquickstubs.cpp b/js/src/xpconnect/src/xpcquickstubs.cpp
+index 09ad639..d9b55a1 100644
+--- a/js/src/xpconnect/src/xpcquickstubs.cpp
++++ b/js/src/xpconnect/src/xpcquickstubs.cpp
+@@ -218,7 +218,9 @@ ReifyPropertyOps(JSContext *cx, JSObject *obj, jsid id,
+                  JSObject **getterobjp, JSObject **setterobjp)
+ {
+     // Generate both getter and setter and stash them in the prototype.
+-    jsval roots[2] = { JSVAL_NULL, JSVAL_NULL };
++    jsval roots[2];
++    roots[0] = JSVAL_NULL;
++    roots[1] = JSVAL_NULL;
+     js::AutoArrayRooter tvr(cx, JS_ARRAY_LENGTH(roots), roots);
+ 
+     uintN attrs = JSPROP_SHARED;
+diff --git a/js/src/xpconnect/src/xpcwrappedjsclass.cpp b/js/src/xpconnect/src/xpcwrappedjsclass.cpp
+index 3906478..f544b7e 100644
+--- a/js/src/xpconnect/src/xpcwrappedjsclass.cpp
++++ b/js/src/xpconnect/src/xpcwrappedjsclass.cpp
+@@ -310,7 +310,8 @@ nsXPCWrappedJSClass::CallQueryInterfaceOnJSObject(XPCCallContext& ccx,
+         uint32 oldOpts =
+           JS_SetOptions(cx, JS_GetOptions(cx) | JSOPTION_DONT_REPORT_UNCAUGHT);
+ 
+-        jsval args[1] = {OBJECT_TO_JSVAL(id)};
++        jsval args[1];
++        args[0] = OBJECT_TO_JSVAL(id);
+         success = JS_CallFunctionValue(cx, jsobj, fun, 1, args, &retval);
+ 
+         JS_SetOptions(cx, oldOpts);
+diff --git a/dom/plugins/base/nsNPAPIPlugin.cpp b/dom/plugins/base/nsNPAPIPlugin.cpp
+index 17773fd..84ba0e0 100644
+--- a/dom/plugins/base/nsNPAPIPlugin.cpp
++++ b/dom/plugins/base/nsNPAPIPlugin.cpp
+@@ -1635,7 +1635,10 @@ _evaluate(NPP npp, NPObject* npobj, NPString *script, NPVariant *result)
+   OBJ_TO_INNER_OBJECT(cx, obj);
+ 
+   // Root obj and the rval (below).
+-  jsval vec[] = { OBJECT_TO_JSVAL(obj), JSVAL_NULL };
++  jsval vec[2] ;
++  vec[0] = OBJECT_TO_JSVAL(obj);
++  vec[1] = JSVAL_NULL;
++
+   js::AutoArrayRooter tvr(cx, NS_ARRAY_LENGTH(vec), vec);
+   jsval *rval = &vec[1];
+ 
+diff --git a/ipc/testshell/TestShellParent.cpp b/ipc/testshell/TestShellParent.cpp
+index 2b5a03a..beefcb8 100644
+--- a/ipc/testshell/TestShellParent.cpp
++++ b/ipc/testshell/TestShellParent.cpp
+@@ -131,7 +131,8 @@ TestShellCommandParent::RunCallback(const nsString& aResponse)
+   JSString* str = JS_NewUCStringCopyN(mCx, aResponse.get(), aResponse.Length());
+   NS_ENSURE_TRUE(str, JS_FALSE);
+ 
+-  jsval argv[] = { STRING_TO_JSVAL(str) };
++  jsval argv[1];
++  argv[0] = STRING_TO_JSVAL(str);
+   int argc = NS_ARRAY_LENGTH(argv);
+ 
+   jsval rval;
+diff --git a/xpcom/build/Makefile.in b/xpcom/build/Makefile.in
+index 52a110b..2ff9f82 100644
+--- a/xpcom/build/Makefile.in
++++ b/xpcom/build/Makefile.in
+@@ -186,5 +186,9 @@
+ endif
+ endif # WINNT
+ 
++ifdef SOLARIS_SUNPRO_CXX
++SSE.$(OBJ_SUFFIX): CXXFLAGS += -xO4
++endif
++
+ export:: $(XPCOM_GLUE_SRC_CSRCS) $(XPCOM_GLUE_SRC_CPPSRCS) $(XPCOM_GLUENS_SRC_CPPSRCS)
+ 	$(INSTALL) $^ .
+diff --git a/xpcom/glue/Makefile.in b/xpcom/glue/Makefile.in
+index 3768712..116f8cd 100644
+--- a/xpcom/glue/Makefile.in
++++ b/xpcom/glue/Makefile.in
+@@ -170,3 +170,7 @@ endif
+ ifdef TARGET_XPCOM_ABI
+ DEFINES += -DTARGET_XPCOM_ABI=\"$(TARGET_XPCOM_ABI)\"
+ endif
++
++ifdef SOLARIS_SUNPRO_CXX
++SSE.$(OBJ_SUFFIX): CXXFLAGS += -xO4
++endif
+diff --git a/xpcom/glue/nomozalloc/Makefile.in b/xpcom/glue/nomozalloc/Makefile.in
+index 0838cf1..1a4d362 100644
+--- a/xpcom/glue/nomozalloc/Makefile.in
++++ b/xpcom/glue/nomozalloc/Makefile.in
+@@ -103,3 +103,7 @@ DEFINES += -DTARGET_XPCOM_ABI=\"$(TARGET_XPCOM_ABI)\"
+ endif
+ 
+ DEFINES += -DMOZ_NO_MOZALLOC
++
++ifdef SOLARIS_SUNPRO_CXX
++SSE.$(OBJ_SUFFIX): CXXFLAGS += -xO4
++endif

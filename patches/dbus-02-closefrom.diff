@@ -1,0 +1,31 @@
+--- /usr/tmp/clean/dbus-1.2.24/configure.in	2010-03-23 19:10:49.000000000 +0000
++++ dbus-1.2.24/configure.in	2010-08-11 15:16:52.830669037 +0100
+@@ -430,7 +430,7 @@
+ AC_SEARCH_LIBS(socket,[socket network])
+ AC_CHECK_FUNC(gethostbyname,,[AC_CHECK_LIB(nsl,gethostbyname)])
+ 
+-AC_CHECK_FUNCS(vsnprintf vasprintf nanosleep usleep setenv clearenv unsetenv socketpair getgrouplist fpathconf setrlimit poll)
++AC_CHECK_FUNCS(vsnprintf vasprintf nanosleep usleep setenv clearenv unsetenv socketpair getgrouplist fpathconf setrlimit poll closefrom)
+ 
+ #### Check for broken poll; taken from Glib's configure
+ 
+--- /usr/tmp/clean/dbus-1.2.24/dbus/dbus-sysdeps-unix.c	2010-03-23 19:01:27.000000000 +0000
++++ dbus-1.2.24/dbus/dbus-sysdeps-unix.c	2010-08-12 07:57:32.613009883 +0100
+@@ -2986,6 +2986,9 @@
+       if (dup2 (errors_pipe[WRITE_END], 2) == -1)
+         _exit (1);
+ 
++#if HAVE_CLOSEFROM
++      closefrom(3);
++#else
+       maxfds = sysconf (_SC_OPEN_MAX);
+       /* Pick something reasonable if for some reason sysconf
+        * says unlimited.
+@@ -2995,6 +2998,7 @@
+       /* close all inherited fds */
+       for (i = 3; i < maxfds; i++)
+         close (i);
++#endif
+ 
+       sigprocmask (SIG_SETMASK, &old_set, NULL);
+ 

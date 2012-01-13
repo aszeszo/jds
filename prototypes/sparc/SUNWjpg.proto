@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWjpg.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWjpg.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWjpg.copyright
+d none bin 0755 root bin
+f none bin/cjpeg=usr/bin/cjpeg 0755 root bin
+f none bin/djpeg=usr/bin/djpeg 0755 root bin
+f none bin/jpegtran=usr/bin/jpegtran 0755 root bin
+f none bin/rdjpgcom=usr/bin/rdjpgcom 0755 root bin
+f none bin/wrjpgcom=usr/bin/wrjpgcom 0755 root bin
+d none lib 0755 root bin
+s none lib/libjpeg.so=libjpeg.so.62.0.0
+s none lib/libjpeg.so.62=libjpeg.so.62.0.0
+f none lib/libjpeg.so.62.0.0=usr/lib/libjpeg.so.62.0.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libjpeg.so=libjpeg.so.62.0.0
+s none lib/sparcv9/libjpeg.so.62=libjpeg.so.62.0.0
+f none lib/sparcv9/libjpeg.so.62.0.0=usr/lib/sparcv9/libjpeg.so.62.0.0 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/cjpeg.1=usr/share/man/man1/cjpeg.1 0644 root bin
+f none share/man/man1/djpeg.1=usr/share/man/man1/djpeg.1 0644 root bin
+f none share/man/man1/jpegtran.1=usr/share/man/man1/jpegtran.1 0644 root bin
+f none share/man/man1/rdjpgcom.1=usr/share/man/man1/rdjpgcom.1 0644 root bin
+f none share/man/man1/wrjpgcom.1=usr/share/man/man1/wrjpgcom.1 0644 root bin

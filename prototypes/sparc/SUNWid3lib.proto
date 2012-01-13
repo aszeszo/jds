@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWid3lib.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWid3lib.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWid3lib.copyright
+d none bin 0755 root bin
+f none bin/id3convert=usr/bin/id3convert 0755 root bin
+f none bin/id3cp=usr/bin/id3cp 0755 root bin
+f none bin/id3info=usr/bin/id3info 0755 root bin
+f none bin/id3tag=usr/bin/id3tag 0755 root bin
+d none lib 0755 root bin
+s none lib/libid3-3.8.so.3=libid3-3.8.so.3.0.0
+f none lib/libid3-3.8.so.3.0.0=usr/lib/libid3-3.8.so.3.0.0 0755 root bin
+s none lib/libid3.so=libid3-3.8.so.3.0.0

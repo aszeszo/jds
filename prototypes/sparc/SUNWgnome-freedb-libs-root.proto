@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-freedb-libs-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-freedb-libs-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-freedb-libs-root.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-freedb-libs-root.preremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-freedb-libs-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/CDDB-Slave2.schemas=etc/gconf/schemas/CDDB-Slave2.schemas 0644 root sys

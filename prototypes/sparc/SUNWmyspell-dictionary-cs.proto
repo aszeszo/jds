@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-cs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-cs.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-cs.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/cs-CZ.aff=../../../../usr/share/spell/myspell/cs_CZ.aff
+s none lib/firefox/dictionaries/cs-CZ.dic=../../../../usr/share/spell/myspell/cs_CZ.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/cs-CZ.aff=../../../../usr/share/spell/myspell/cs_CZ.aff
+s none lib/thunderbird/dictionaries/cs-CZ.dic=../../../../usr/share/spell/myspell/cs_CZ.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/cs_CZ 0755 root bin
+f none share/doc/myspell-dictionary/cs_CZ/README_cs_CZ.txt=usr/share/doc/myspell-dictionary/cs_CZ/README_cs_CZ.txt 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/cs_CZ.aff=usr/share/spell/myspell/cs_CZ.aff 0644 root other
+f none share/spell/myspell/cs_CZ.dic=usr/share/spell/myspell/cs_CZ.dic 0644 root other

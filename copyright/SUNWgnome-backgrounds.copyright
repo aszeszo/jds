@@ -1,0 +1,27 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+
+Licensing and copyright information for %{gnome-backgrounds.name}-%{backgrounds.version}:
+
+ License: GNU General Public License Version 2
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/%{gnome-backgrounds.name}-%{backgrounds.version}
+
+  COPYING.bz2: GNU GPL
+  AUTHORS: list of authors of %{backgrounds.name}
+  NEWS.bz2: list of the most important changes in %{backgrounds.name}
+  ChangeLog.bz2: list of all changes and authors of %{backgrounds.name}
+  po/ChangeLog.bz2: list of all changes and authors of %{backgrounds.name}
+  README: more information about %{backgrounds.name}
+
+ The sources of %{gnome-backgrounds.name}-%{backgrounds.version} were downloaded
+ from %{backgrounds.SOURCE0.url}

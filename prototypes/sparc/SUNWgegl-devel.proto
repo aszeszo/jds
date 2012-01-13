@@ -1,0 +1,46 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgegl-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgegl-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgegl-devel.copyright
+d none include 0755 root bin
+d none include/gegl-0.1 0755 root bin
+f none include/gegl-0.1/gegl-buffer.h=usr/include/gegl-0.1/gegl-buffer.h 0644 root bin
+f none include/gegl-0.1/gegl-chant.h=usr/include/gegl-0.1/gegl-chant.h 0644 root bin
+f none include/gegl-0.1/gegl-color.h=usr/include/gegl-0.1/gegl-color.h 0644 root bin
+f none include/gegl-0.1/gegl-curve.h=usr/include/gegl-0.1/gegl-curve.h 0644 root bin
+f none include/gegl-0.1/gegl-lookup.h=usr/include/gegl-0.1/gegl-lookup.h 0644 root bin
+f none include/gegl-0.1/gegl-matrix.h=usr/include/gegl-0.1/gegl-matrix.h 0644 root bin
+f none include/gegl-0.1/gegl-paramspecs.h=usr/include/gegl-0.1/gegl-paramspecs.h 0644 root bin
+f none include/gegl-0.1/gegl-path.h=usr/include/gegl-0.1/gegl-path.h 0644 root bin
+f none include/gegl-0.1/gegl-plugin.h=usr/include/gegl-0.1/gegl-plugin.h 0644 root bin
+f none include/gegl-0.1/gegl-simd.h=usr/include/gegl-0.1/gegl-simd.h 0644 root bin
+f none include/gegl-0.1/gegl-types.h=usr/include/gegl-0.1/gegl-types.h 0644 root bin
+f none include/gegl-0.1/gegl-utils.h=usr/include/gegl-0.1/gegl-utils.h 0644 root bin
+f none include/gegl-0.1/gegl-version.h=usr/include/gegl-0.1/gegl-version.h 0644 root bin
+f none include/gegl-0.1/gegl.h=usr/include/gegl-0.1/gegl.h 0644 root bin
+d none include/gegl-0.1/operation 0755 root bin
+f none include/gegl-0.1/operation/gegl-operation-area-filter.h=usr/include/gegl-0.1/operation/gegl-operation-area-filter.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-composer.h=usr/include/gegl-0.1/operation/gegl-operation-composer.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-composer3.h=usr/include/gegl-0.1/operation/gegl-operation-composer3.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-filter.h=usr/include/gegl-0.1/operation/gegl-operation-filter.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-meta.h=usr/include/gegl-0.1/operation/gegl-operation-meta.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-point-composer.h=usr/include/gegl-0.1/operation/gegl-operation-point-composer.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-point-composer3.h=usr/include/gegl-0.1/operation/gegl-operation-point-composer3.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-point-filter.h=usr/include/gegl-0.1/operation/gegl-operation-point-filter.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-point-render.h=usr/include/gegl-0.1/operation/gegl-operation-point-render.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-sink.h=usr/include/gegl-0.1/operation/gegl-operation-sink.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-source.h=usr/include/gegl-0.1/operation/gegl-operation-source.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation-temporal.h=usr/include/gegl-0.1/operation/gegl-operation-temporal.h 0644 root bin
+f none include/gegl-0.1/operation/gegl-operation.h=usr/include/gegl-0.1/operation/gegl-operation.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gegl.pc=usr/lib/pkgconfig/gegl.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/gegl.pc=usr/lib/sparcv9/pkgconfig/gegl.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/gegl 0755 root bin
+f none share/gtk-doc/html/gegl/gegl.css=usr/share/gtk-doc/html/gegl/gegl.css 0755 root bin
+f none share/gtk-doc/html/gegl/gegl.devhelp=usr/share/gtk-doc/html/gegl/gegl.devhelp 0755 root bin
+f none share/gtk-doc/html/gegl/operations.html=usr/share/gtk-doc/html/gegl/operations.html 0755 root bin

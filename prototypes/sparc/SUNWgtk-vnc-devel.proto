@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk-vnc-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk-vnc-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk-vnc-devel.copyright
+d none include 0755 root bin
+d none include/gtk-vnc-1.0 0755 root bin
+f none include/gtk-vnc-1.0/vncdisplay.h=usr/include/gtk-vnc-1.0/vncdisplay.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gtk-vnc-1.0.pc=usr/lib/pkgconfig/gtk-vnc-1.0.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/gtk-vnc-1.0.pc=usr/lib/sparcv9/pkgconfig/gtk-vnc-1.0.pc 0644 root bin

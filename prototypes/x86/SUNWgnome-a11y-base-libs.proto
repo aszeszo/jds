@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-base-libs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-base-libs.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-base-libs.copyright
+d none lib 0755 root bin
+f none lib/SUNWgnome-a11y-base-libs.so=usr/lib/SUNWgnome-a11y-base-libs.so 0644 root bin

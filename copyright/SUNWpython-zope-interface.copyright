@@ -1,0 +1,19 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: Zope Public License v2.1
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    CHANGES.txt.bz2: Change information about zope.interface
+    PKG-INFO.bz2: Package information about zope.interface
+    README.txt: More informaiton about zope.interface
+    src/zope/interface/README.txt.bz2: More information
+                    about zope.interface
+
+  The sources of zope.interface-%{pzi.version} were downloaded
+  from %{pzi.SOURCE0.url}

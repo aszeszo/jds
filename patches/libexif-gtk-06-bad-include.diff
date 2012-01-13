@@ -1,0 +1,25 @@
+diff -ruN libexif-gtk-0.3.5.orig/libexif-gtk/gtk-exif-content-list.h libexif-gtk-0.3.5/libexif-gtk/gtk-exif-content-li
+st.h
+--- libexif-gtk-0.3.5.orig/libexif-gtk/gtk-exif-content-list.h  2009-07-15 15:50:19.152650800 +0100
++++ libexif-gtk-0.3.5/libexif-gtk/gtk-exif-content-list.h       2009-07-15 15:50:46.653015800 +0100
+@@ -21,7 +21,7 @@
+ #ifndef __GTK_EXIF_CONTENT_LIST_H__
+ #define __GTK_EXIF_CONTENT_LIST_H__
+
+-#include <gtk/gtktreeview.h>
++#include <gtk/gtk.h>
+ #include <libexif/exif-data.h>
+
+ #define GTK_EXIF_TYPE_CONTENT_LIST     (gtk_exif_content_list_get_type())
+diff -ruN libexif-gtk-0.3.5.orig/libexif-gtk/gtk-exif-entry.h libexif-gtk-0.3.5/libexif-gtk/gtk-exif-entry.h
+--- libexif-gtk-0.3.5.orig/libexif-gtk/gtk-exif-entry.h 2009-07-15 15:50:19.151747500 +0100
++++ libexif-gtk-0.3.5/libexif-gtk/gtk-exif-entry.h      2009-07-15 15:50:34.828470900 +0100
+@@ -21,7 +21,7 @@
+ #ifndef __GTK_EXIF_ENTRY_H__
+ #define __GTK_EXIF_ENTRY_H__
+
+-#include <gtk/gtkvbox.h>
++#include <gtk/gtk.h>
+ #include <libexif/exif-entry.h>
+
+ #define GTK_EXIF_TYPE_ENTRY     (gtk_exif_entry_get_type())

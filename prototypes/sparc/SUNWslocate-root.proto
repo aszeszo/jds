@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWslocate-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWslocate-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWslocate-root.copyright
+d none etc 0755 root sys
+f none etc/updatedb.conf=etc/updatedb.conf 0644 root root
+d none var 0755 root sys
+d none var/lib 0755 root other
+d none var/lib/slocate 0750 root slocate

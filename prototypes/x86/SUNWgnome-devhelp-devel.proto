@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-devhelp-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-devhelp-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-devhelp-devel.copyright
+d none include 0755 root bin
+d none include/devhelp-1.0 0755 root bin
+d none include/devhelp-1.0/devhelp 0755 root bin
+f none include/devhelp-1.0/devhelp/dh-base.h=usr/include/devhelp-1.0/devhelp/dh-base.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-book-tree.h=usr/include/devhelp-1.0/devhelp/dh-book-tree.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-error.h=usr/include/devhelp-1.0/devhelp/dh-error.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-html.h=usr/include/devhelp-1.0/devhelp/dh-html.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-keyword-model.h=usr/include/devhelp-1.0/devhelp/dh-keyword-model.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-link.h=usr/include/devhelp-1.0/devhelp/dh-link.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-parser.h=usr/include/devhelp-1.0/devhelp/dh-parser.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-preferences.h=usr/include/devhelp-1.0/devhelp/dh-preferences.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-search.h=usr/include/devhelp-1.0/devhelp/dh-search.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-util.h=usr/include/devhelp-1.0/devhelp/dh-util.h 0644 root bin
+f none include/devhelp-1.0/devhelp/dh-window.h=usr/include/devhelp-1.0/devhelp/dh-window.h 0644 root bin
+f none include/devhelp-1.0/devhelp/eggfindbar.h=usr/include/devhelp-1.0/devhelp/eggfindbar.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libdevhelp-1.0.pc=usr/lib/pkgconfig/libdevhelp-1.0.pc 0644 root bin

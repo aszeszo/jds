@@ -1,0 +1,10 @@
+--- babl-0.1.2/tests/Makefile.am-orig	2010-06-02 17:13:50.557293584 -0500
++++ babl-0.1.2/tests/Makefile.am	2010-06-02 17:13:57.523121930 -0500
+@@ -12,7 +12,6 @@ TESTS =				\
+ TESTS_ENVIRONMENT = BABL_PATH=$(top_builddir)/extensions/.libs
+ 
+ AM_CPPFLAGS = -I$(top_srcdir) -I$(top_srcdir)/babl
+-AM_LDFLAGS  = -pthread
+ 
+ LDADD = $(top_builddir)/babl/libbabl-@BABL_API_VERSION@.la \
+ 	$(MATH_LIB)

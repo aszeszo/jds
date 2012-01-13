@@ -1,0 +1,398 @@
+diff -r ada6dace49f7 help/bg/glade.xml
+--- a/help/bg/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/bg/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,7 +23,7 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+       <holder>„Сън Майкросистемс“</holder> 
+     </copyright> 
+diff -r ada6dace49f7 help/de/glade.xml
+--- a/help/de/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/de/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>GNOME-Dokumentationsteam</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+@@ -90,7 +90,7 @@
+                 <revnumber>Glade-Handbuch 2.1;</revnumber> 
+                 <date>17. Juni 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME-Dokumentationsteam</para>
++                        <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+                         <para role="publisher">GNOME-Dokumentationsprojekt</para>
+                 </revdescription> 
+         </revision>
+@@ -98,7 +98,7 @@
+                 <revnumber>Glade-Benutzerhandbuch 2.0</revnumber> 
+                 <date>25. Februar 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME-Dokumentationsteam</para>
++                        <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+                         <para role="publisher">GNOME-Dokumentationsprojekt</para>
+                 </revdescription> 
+         </revision>             
+@@ -106,7 +106,7 @@
+                 <revnumber>Glade-Benutzerhandbuch 1.2</revnumber> 
+                 <date>10. Februar 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME-Dokumentationsteam</para>
++                        <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+                         <para role="publisher">GNOME-Dokumentationsprojekt</para>
+                 </revdescription> 
+         </revision>  
+diff -r ada6dace49f7 help/el/glade.xml
+--- a/help/el/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/el/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>Ομάδα τεκμηρίωσης GNOME</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+@@ -90,7 +90,7 @@
+                 <revnumber>Εγχειρίδιο Glade, έκδοση 2.1</revnumber> 
+                 <date>17 Ιουνίου 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME Documentation Team</para>
++                        <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                         <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+                 </revdescription> 
+         </revision>
+@@ -98,7 +98,7 @@
+                 <revnumber>Εγχειρίδιο Glade, έκδοση 2.0</revnumber> 
+                 <date>25 Φεβρουαρίου 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME Documentation Team</para>
++                        <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                         <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+                 </revdescription> 
+         </revision>             
+@@ -106,7 +106,7 @@
+                 <revnumber>Εγχειρίδιο Glade, έκδοση 1.2</revnumber> 
+                 <date>10 Φεβρουαρίου 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME Documentation Team</para>
++                        <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                         <para role="publisher">Έργο τεκμηρίωσης GNOME</para>
+                 </revdescription> 
+         </revision>  
+diff -r ada6dace49f7 help/en_GB/glade.xml
+--- a/help/en_GB/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/en_GB/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
+-        <surname>GNOME Documentation Team</surname> 
++        <firstname>Oracle Solaris</firstname> 
++        <surname>Desktop Documentation Team</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+@@ -90,7 +90,7 @@
+                 <revnumber>Glade Manual 2.1;</revnumber> 
+                 <date>17 June 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME Documentation Team</para>
++                        <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                         <para role="publisher">GNOME Documentation Project</para>
+                 </revdescription> 
+         </revision>
+@@ -98,7 +98,7 @@
+                 <revnumber>Glade User Manual 2.0</revnumber> 
+                 <date>25 February 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME Documentation Team</para>
++                        <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                         <para role="publisher">GNOME Documentation Project</para>
+                 </revdescription> 
+         </revision>             
+@@ -106,7 +106,7 @@
+                 <revnumber>Glade User Manual 1.2</revnumber> 
+                 <date>10 Feb 2004</date> 
+                 <revdescription> 
+-                        <para role="author">Sun GNOME Documentation Team</para>
++                        <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                         <para role="publisher">GNOME Documentation Project</para>
+                 </revdescription> 
+         </revision>  
+diff -r ada6dace49f7 help/es/glade.xml
+--- a/help/es/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/es/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>Equipo de documentación de GNOME</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+diff -r ada6dace49f7 help/eu/glade.xml
+--- a/help/eu/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/eu/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>GNOMEren dokumentazio-taldea</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+diff -r ada6dace49f7 help/fr/glade.xml
+--- a/help/fr/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/fr/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>Équipe de documentation GNOME</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+diff -r ada6dace49f7 help/it/glade.xml
+--- a/help/it/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/it/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>Squadra di documentazione di GNOME</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+diff -r ada6dace49f7 help/oc/glade.xml
+--- a/help/oc/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/oc/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -24,9 +24,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -49,10 +49,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>Còla de documentacion de GNOME</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+diff -r ada6dace49f7 help/pt_BR/glade.xml
+--- a/help/pt_BR/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/pt_BR/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>Time de Documentação do GNOME</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+diff -r ada6dace49f7 help/ru/glade.xml
+--- a/help/ru/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/ru/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -48,10 +48,10 @@
+ 	</affiliation>
+       </author> 
+       <author> 
+-        <firstname>Sun</firstname> 
++        <firstname>Oracle Solaris</firstname> 
+         <surname>Команда документирования GNOME</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 
+diff -r ada6dace49f7 help/sv/glade.xml
+--- a/help/sv/glade.xml	Fri Jul 08 14:40:22 2011 +0800
++++ b/help/sv/glade.xml	Fri Jul 08 16:38:38 2011 +0800
+@@ -23,9 +23,9 @@
+       <holder>Vincent Geddes</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2004</year>
++      <year>2011</year>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2002</year><year>2000</year> 
+@@ -51,7 +51,7 @@
+         <firstname>Suns</firstname> 
+         <surname>GNOME-dokumentationsteam</surname> 
+         <affiliation> 
+-          <orgname>Sun Microsystems</orgname> 
++          <orgname>Oracle Corporation</orgname> 
+         </affiliation> 
+        </author> 
+        <author> 

@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsun-backgrounds-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsun-backgrounds-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsun-backgrounds-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other

@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWfirefox-apoc-adapter.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWfirefox-apoc-adapter.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWfirefox-apoc-adapter.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWfirefox-apoc-adapter.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWfirefox-apoc-adapter.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/components 0755 root bin
+f none lib/firefox/components/libmozapoc.so=usr/lib/firefox/components/libmozapoc.so 0755 root bin

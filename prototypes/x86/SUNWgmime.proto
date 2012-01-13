@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgmime.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgmime.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgmime.copyright
+d none lib 0755 root bin
+s none lib/libgmime-2.0.so=libgmime-2.0.so.2.2.17
+s none lib/libgmime-2.0.so.2=libgmime-2.0.so.2.2.17
+f none lib/libgmime-2.0.so.2.2.17=usr/lib/libgmime-2.0.so.2.2.17 0755 root bin

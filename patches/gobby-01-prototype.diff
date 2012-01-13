@@ -1,0 +1,10 @@
+--- gobby-0.4.6.orig/src/main.cpp	2007年  6月 15日 五 17:52:32
++++ gobby-0.4.6/src/main.cpp	2007年  8月 17日 五 22:07:41
+@@ -17,6 +17,7 @@
+  */
+ 
+ #include <iostream>
++#include <locale.h>
+ #include <gtkmm/main.h>
+ #include <gtkmm/messagedialog.h>
+ #include <glibmm/optionentry.h>

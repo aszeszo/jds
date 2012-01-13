@@ -1,0 +1,1842 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  Brazilian Portuguese translation of Avahi.
+  This file is distributed under the same license as the avahi package.
+ 
+  Lucas Saboya <lucas@cefetce.br>, 2008.
+  Igor Pires Soares <igor@projetofedora.org>, 2008.
+  Taylon Silmer <taylonsilva@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  Brazilian Portuguese translation of Tracker.
+  Copyright (C) 2007-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the tracker package.
+  Luiz Armesto <luiz.armesto@gmail.com>, 2007, 2008.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2008.
+  Henrique P Machado <zehrique@gmail.com>, 2008.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  Brazilian Portuguese translation of Dia.
+  Copyright (C) 2000-2008 Free Software Foundation, Inc.
+  Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>, 2000.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003, 2006.
+  Gustavo Maciel Dias Vieira <gdvieira@zaz.com.br>, 2003.
+  Everson Santos Araujo <nobios@por.com.br>, 2004.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2004, 2005.
+  Igor Pires Soares <igor@projetofedora.org>, 2008.
+  Og Maciel <ogmaciel@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  Brazilian Portuguese translation of dasher.
+  Copyright (C) 2004-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the dasher package.
+  Rodrigo Lima <rdlima@terra.com.br>, 2004.
+  Goedson Teixeira Paixao <goedson@debian.org>, 2004-2006.
+  Og Maciel <ogmaciel@ubuntu.com>, 2006-2007, 2009.
+  Vladimir Melo <vladimirmelo@foresightlinux.org>, 2007.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Fabricio Godoy <skarllot@gmail.com>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  Brazilian Portuguese translation of gok.
+  Copyright (C) 2003-2005, 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gok package.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.
+  Maurício de Lemos Rodrigues Collares Neto <mauricioc@myrealbox.com>, 2003-2004.
+  Afonso Celso Medina <medina@maua.br>, 2004.
+  Goedson Teixeira Paixao <goedson@debian.org>, 2004-2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007, 2008.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007-2008.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+  Jonh Wendell <jwendell@gnome.org>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  Brazilian Portuguese Translation for AT-SPI
+  Copyright (C) 2003, 2008 Gnome Foundation
+  This file is distributed under the same license as the at-spi package.
+  Gustavo Noronha Silva <kov@debian.org>, 2003.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.
+  Og Maciel <ogmaciel@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  Brazilian Portuguese translation of Mousetweaks.
+  Copyright (C) 1999-2009 the Mousetweaks authors.
+  This file is distributed under the same license as the mousetweaks package.
+  Luiz Armesto <luiz.armesto@gmail.com>, 2008.
+  Enrico Nicoletto <liverig@gmail.com>, 2008.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  Brazilian Portuguese translation of Orca.
+  Copyright (C) 2004-2009 the Orca authors.
+  This file is distributed under the same license as the orca package.
+  Raphael Higino <In Memoriam>, 2004-2005.
+  Jonh Wendell <jwendell@gnome.org>, 2007.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2007.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2009.
+  Og Maciel <ogmaciel@gnome.org>, 2007, 2009.
+  Djavan Fagundes <dnoway@gmail.com>, 2007.
+  Tiago Melo Casal <tiagocasal@yahoo.com.br>, 2007-2009.
+  Michel Recondo <mrecondo@gmail.com>, 2008.
+  André Gondim <andregondim@ubuntu.com> 2009.
+  Jonh Wendell <jwendell@gnome.org>, 2009.
+  Marco de Freitas <marcodefreitas@gmail.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  Brazilian Portuguese translation of quick-lounge-applet.
+  Copyright (C) 2004 Free Software Foundation, Inc.
+  This file is distributed under the same license as the quick-lounge-applet package.
+  Raphael Higino (In Memoriam), 2004.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  Brazilian Portuguese translation of gnome-netstatus
+  This file is distributed under the same license as the gnome-netstatus package.
+  Copyright (C) 2004, 2005, 2007 Free Software Foundation, Inc.
+  Estêvão Samuel Procópio <tevaum@ig.com.br>, 2004.
+  Everson Santos Araujo <nobios@por.com.br>, 2004.
+  Guilherme de S. Pastore <gpastore@colband.com.br>, 2005.
+  César Veiga <tombs@linuxmail.org>, 2009.
+  Henrique P. Machado <zehrique@gmail.com>, 2009.
+  Djavan Fagundes <dnoway@gmail.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  Brazilian Portuguese translation of file-roller.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Marcus Brito <pazu@animegaiden.com.br>, 2002.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Gustavo Noronha Silva <kov@debian.org>, 2004.
+  Goedson Teixeira Paixão <goedson@debian.org>, 2004.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2008.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007-2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2009.
+  Krix Apolinário <krixapolinario@gmail.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  Brazilian Portuguese translation of the GNOME Calculator.
+  Copyright (C) 2003-2009 the GNOME Calculator authors.
+  This file is distributed under the same license as the gcalctool package.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.
+  Joao Emanuel <deathbird1981@yahoo.com.br>, 2003.
+  Estêvão Samuel Procópio <tevaum@gmail.com>, 2004.
+  Raphael Higino <phhigino@gmail.com>, 2004.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2009.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007-2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Rodrigo L. M. Flores <rodrigomarquesflores@gmail.com>, 2009.
+  Daniel S. Koda <danielskoda@gmail.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  Brazilian Portuguese Translation.
+  Copyright © 2002 Free Software Foundation, Inc.
+  Marcelo Toledo <rw@locked.org>, 2002.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  Brazilian Portuguese translation of Brasero
+  Copyright (C) 2007-2009 Brasero's COPYRIGHT HOLDER
+  This file is distributed under the same license as the Brasero package.
+  Vladimir Melo <vmelo@gnome.org>, 2007, 2009.
+  Og Maciel <ogmaciel@gnome.org>, 2007, 2009.
+  Raphael Higino <In Memorian>, 2007.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  Lucas Hermann Negri <kkndrox@gmail.com>, 2008.
+  Carlos Eduardo Moreira dos Santos <cems@cemshost.com.br>, 2008.
+  César Veiga <tombs@linuxmail.org>, 2008, 2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  Brazilian Portuguese translation of sound-juicer.
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the sound-juicer package.
+  Raphael Higino <In memoriam>, 2004-2005.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2005.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br, 2006.
+  Og Maciel <ogmaciel@gnome.org>, 2006-2009.
+  Vladimir Melo <vladimirmelo.psi@gmail.com>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009.
+  Enrico Nicoletto <liverig@gmail.com>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  Brazilian Portuguese translation of libbonobo.
+  Copyright (C) 2000-2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the libbonobo package.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002, 2004, 2005.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com.br>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  Brazilian Portuguese translation for GConf-Editor.
+  Copyright (C) 2002-2007 Free Software Foundation, Inc.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2003.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Goedson Teixeira Paixao <goedson@debian.org>, 2004.
+  Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2009.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+  Confiram as traduções de "set", "unset", "get" e "listener" no gconf.
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  Brazilian Portuguese translation of gconf.
+  Copyright (C) 1999-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gconf package.
+  Alexandre Hautequest <hquest@fesppr.br>, 1999.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2004-2006.
+  Vladimir Melo <vmelo@gnome.org>, 2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Henrique P. Machado <zehrique@gmail.com>, 2008.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+  listener → atendente
+       get → obter
+       set → definir
+     unset → limpar
+ 
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  Brazilian Portuguese translation of bug-buddy.
+  Copyright (C) 2000-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the bug-buddy package.
+  Juan Carlos Castro y Castro <jcastro@vialink.com.br>, 2000, 2001.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2005, 2006.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2006.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2007-2008.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007.
+  Vladimir Melo <vladimirmelo.psi@gmail.com>, 2008.
+  Michel Recondo <mrecondo@gmail.com>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  Brazilian Portuguese translation of gdesklets.
+  Copyright (C) 2003-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gdesklets package.
+  Tiago Cardoso Menezes <zion@via-rs.net>, 2003.
+  Raphael Higino <phhigino@gmail.com>, 2004.
+  Luiz Fernando da Silva Armesto <luiz.armesto@gmail.com>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  Brazilian Portuguese translation of GNOME Control Center.
+  Copyright (C) 1999-2008 The GNOME Control Center authors.
+  This file is distributed under the same license as the gnome-control-center package.
+  Ivan Passos <ivan@cyclades.com>, 1999.
+  Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
+  Tiago Cardoso Menezes <zion@via-rs.net>, 2003.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2004, 2006.
+  Alex Camacho Castilho <gnomebr@uol.com.br>, 2004.
+  Guilherme de S. Pastore <gpastore@colband.com.br>, 2004-2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2008.
+  Luiz Armesto <luiz.armesto@gmail.com>, 2007-2008.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007, 2009.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Jonh Wendell <wendell@bani.com.br>, 2008, 2009
+  Henrique P Machado <zehrique@gmail.com>, 2008-2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+  Krix Apolinário <krixapolinario@gmail.com>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  Brazilian Portuguese translation of gnome-control-center.
+  Copyright (C) 1999-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-control-center package.
+  Ivan Passos <ivan@cyclades.com>, 1999.
+  Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
+  Tiago Cardoso Menezes <zion@via-rs.net>, 2003.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2004, 2006.
+  Alex Camacho Castilho <gnomebr@uol.com.br>, 2004.
+  Guilherme de S. Pastore <gpastore@colband.com.br>, 2004, 2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2008.
+  Luiz Fernando S. Armesto <luiz.armesto@gmail.com>, 2007.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  Jonh Wendell <jwendell@gnome.org>, 2009.
+  Krix Apolinário <krixapolinario@gmail.com>, 2009.
+  Vladimir Melo <vmelo@gnome.org>, 2009.
+  Henrique P. Machado <zehrique@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  Brazilian Portuguese translation of zenity.
+  Copyright (C) 2003-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the zenity package.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2004, 2006.
+  Og Maciel <ogmaciel@gnome.org>, 2007.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2007-2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  Brazilian Portuguese translation of gdm2.
+  Copyright (C) 2001-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gdm2 package.
+  Jorge Godoy <godoy@conectiva.com.br>
+  E. A. Tacão <tacao@conectiva.com.br>
+  Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>
+  Gustavo Noronha Silva <kov@debian.org>, 2003, 2004.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2004.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2004, 2005.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003, 2005-2006.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2006.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Rafael Sfair <rsfair@gmail.com>, 2007.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2007-2008.
+  Luiz Armesto <luiz.armesto@gmail.com>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  Brazilian Portuguese translation of nautilus.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the nautilus package.
+  Gustavo Maciel Dias Vieira <gdvieira@zaz.com.br>, 2000-2001.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2003, 2006.
+  Gustavo Noronha Silva <kov@debian.org>, 2002-2003.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.
+  Goedson Teixeira Paixao <goedson@debian.org>, 2004.
+  Raphael Higino <In memoriam>, 2004-2005.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2006.
+  Leonardo Fereira Fontenelle <leonardof@gnome.org>, 2006-2008.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2009.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Vladimir Melo <vmelo@gnome.org>, 2008-2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2008-2009.
+  Jonh Wendell <jwendell@gnome.org>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+  Krix Apolinário <krixapolinario@gmail.com>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  Brazilian Portuguese translation of gtksourceview
+  This file is distributed under the same license as the gtksourceview package.
+  Fabio Rafael da Rosa <f2r@users.sourceforge.net>, 2003.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007, 2008, 2009.
+  Washington Ferreira Lins Neto <washington-lins@uol.com.br>, 2007.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+  Enrico Nicoletto <liverig@gmail.com>, 2008.
+  Taylon Silmer <taylonsilva@gmail.com>, 2009.
+  Henrique P Machado <zehrique@gmail.com>, 2009.
+  Fábio Nogueira <fnogueira@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  Brazilian Portuguese translation of gtksourceview
+  This file is distributed under the same license as the gtksourceview package.
+  Fabio Rafael da Rosa <f2r@users.sourceforge.net>, 2003.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2005.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2007.
+  Washington Ferreira Lins Neto <washington-lins@uol.com.br>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  Brazilian Portuguese translation of yelp.
+  Copyright (C) 2002-2007 Free Software Foundation, Inc.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002.
+  Estêvão Samuel Procópio <tevaum@gmail.com>, 2003-2005.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006.
+  Vladimir Melo <vladimirmelo@foresightlinux.org>, 2007.
+  Og Maciel <ogmaciel@gnome.org>, 2007.
+  Jonh Wendell <wendell@bani.com.br>, 2008
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  Brazilian Portuguese translation of ghex
+  Copyright (C) 2004 Free Software Foundation, Inc.
+  This file is distributed under the same license as the ghex package.
+  Edson A. Tacão <tacao@conectiva.com.br>, 2000.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2002-2003.
+  Raphael Higino <In memoriam>, 2004.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Pidgin Portuguese (Brazilian) translation
+  Copyright (C) 2003-2007, Maurício de Lemos Rodrigues Collares Neto <mauricioc@gmail.com>
+  Copyright (C) 2008-2009, Rodrigo Luiz Marques Flores <mail@rodrigoflores.org>
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  Brazilian Poruguese translation of the GIMP.
+  Copyright (C) 1999-2003, 2004, 2006, 2007, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gimp package.
+ 
+  Cyro Mendes de Moraes Neto <neto@conectiva.com.br>, 1999.
+  Marcia Norie Nakaza <norie@conectiva.com.br>, 2000.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2002-2003.
+  Joao S. O. Bueno <gwidion@mpc.com.br>, 2004, 2006, 2007, 2008.
+  Og Maciel <ogmaciel@gnome.org>,2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  Brazilian Portuguese translation of gthumb.
+  Copyright (C) 2001-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gthumb package.
+  Gustavo Noronha Silva <kov@debian.org>, 2001-2003.
+  Joao Paulo Gomes Vanzuita <joaopaulo99@terra.com.br>, 2004.
+  Viviani Ap. dos Santos <vivi_olivetti@brfree.com.br>, 2004.
+  Raphael Higino <phhigino@gmail.com>, 2004-2006.
+  Igor Pires Soares <igor@projetofedora.org>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  Brazilian Portuguese translation of eog.
+  Copyright (C) 2000-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the eog package.
+  Eduardo Belloti <ebelloti@terra.com.br>, 2000.
+  Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>, 2001.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002, 2006.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Gustavo Noronha Silva <kov@debian.org>, 2003.
+  Goedson Teixeira Paixão <goedson@debian.org>, 2004.
+  Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2009.
+  Og Maciel <ogmaciel@gnome.org>, 2007.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Hugo Doria <hugodoria@gmail.com>, 2008.
+  Vladimir Melo <vmelo@gnome.org>, 2008, 2009.
+  César Veiga <tombs@linuxmail.org>, 2009.
+  Krix Apolinário <krixapolinario@gmail.com>, 2009.
+  Wancharle Sebastião Quirino <wancharle@gmail.com>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  Brazilian Portuguese translation for libbonoboui.
+  Copyright (C) 2002, 2005-2007 Free Software Foundation, Inc.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006-2007.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  Brazilian Portuguese translation of GNOME Keyring.
+  Copyright (C) 2004-2009 the GNOME Keyring authors.
+  This file is distributed under the same license as the gnome-keyring package.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2004-2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2008, 2009.
+  Vladimir Melo <vmelo@gnome.org>, 2007.
+  Hugo Doria <hugodoria@gmail.com>, 2007-2008.
+  Enrico Nicoletto <liverig@gmail.com>, 2008.
+  Daniel S. Koda <danielskoda@gmail.com>, 2009.
+  Michel Recondo <mrecondo@gmail.com>, 2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  Brazilian Portuguese translation of libgnome.
+  Copyright (C) 1999-2005 Free Software Foundation, Inc.
+  Alexandre Hautequest <hquest@fesppr.br>, 1999.
+  Gustavo Maciel Dias Vieira <gdvieira@zaz.com.br>, 2000-2002.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2004, 2006.
+  Raphael Higino <in memoriam>, 2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2008.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+  Henrique P Machado <zehrique@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  Brazilian Portuguese translation of GNOME Media.
+  Copyright (C) 2001-2009 the GNOME Media authors.
+  This file is distributed under the same license as the gnome-media package.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2001.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2003.
+  Raphael Higino <In Memoriam>, 2004-2005.
+  Licio Fernando Nascimento da Fonseca <liciofernando@gmail.com>, 2006.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2008, 2009.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2006.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  Jonh Wendell <jwendell@gnome.org>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+  Henrique P Machado <zehrique@gmail.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Brazilian Portuguese translation of gst-plugins-good.
+  This file is distributed under the same license as the gst-plugins-good package.
+  Copyright (C) 2008-2009 Free Software Foundation, Inc.
+  Fabrício Godoy <skarllot@gmail.com>, 2008-2009.
+ 
+  data flow -> fluxo de dados
+  streaming -> fluxo contínuo
+  clock -> temporizador
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gst-plugin-good package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Brazilian Portuguese translation of gst-plugins-base.
+  Copyright (C) 2008-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gst-plugins-base package.
+  Fabrício Godoy <skarllot@gmail.com>, 2008-2009.
+ 
+  PCM -> PCM
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Brazilian Portuguese translation of GStreamer.
+  Copyright (C) 2008-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the GStreamer package.
+  Fabrício Godoy <skarllot@gmail.com>, 2008-2009.
+ 
+  pipeline -> fila de processamento
+  sink -> consumidor
+  flow -> fluxo
+  stream -> fluxo
+  preroll -> preparar
+  clock -> temporizador
+  sources + sinks = pad
+  element + element + ... = bin
+  description of media formats = caps
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  Brazilian Portuguese translation of Totem.
+  Copyright (C) 2002-2009 Bastien Nocera.
+  This file is distributed under the same license as the totem package.
+  Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2005.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2005
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2006.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2002-2003, 2006.
+  Raphael Higino <In memoriam>, 2004-2005, 2007.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+  Vladimir Melo <vmelo@gnome.org>, 2007, 2009.
+  Djavan Fagundes <dnoway@gmail.com>, 2008, 2009.
+  Taylon Silmer <taylonsilva@gmail.com>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  Brazilian Portuguese translation of rhythmbox.
+  Copyright (C) 2003-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the rhythmbox package.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2003.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2005, 2006.
+  Raphael Higino <In memoriam>, 2004, 2005, 2006.
+  Vinicius Pinheiro <vinnie.gp@gmail.com>, 2006.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2006.
+  Lucas Mazzardo Veloso <lmveloso@gmail.com>, 2007.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Vladimir Melo <vmelo@gnome.org>, 2007, 2008, 2009.
+  Og Maciel <ogmaciel@gnome.org>, 2006-2009.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2008-2009.
+  Enrico Nicoletto <liverig@gmail.com>, 2008.
+  Howard Zheng <howard.zheng@hisoft.com>, 2009.
+  César Veiga <tombs@linuxmail.org>, 2009.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  Alacarte Menu Editor.
+  Copyright (C) 2006 Travis Watkins
+  This file is distributed under the same license as the Alacarte package.
+  Licio Fonseca <licio@ubuntu.com>, 2006.
+  Og Maciel <ogmaciel@ubuntu.com>, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  Brazilian Portuguese translation of libwnck.
+  Copyright (C) 2002-2007 Free Software Foundation, Inc.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2005, 2006.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006.
+  Og Maciel <ogmaciel@gnome.org>, 2006-2007.
+  Jonh Wendell <wendell@bani.com.br>, 2008.
+ 
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  Brazilian Portuguese translation of GNOME Menus.
+  Copyright (C) 2004-2008 the GNOME Menu authors.
+  This file is distributed under the same license as the gnome-menus package.
+  Raphael Higino <In Memoriam>, 2004-2005.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2005.
+  Og Maciel <ogmaciel@ubuntu.com>, 2006-2007.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007, 2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2008
+  Krix Apolinário <krixapolinario@gmail.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  Brazilian Portuguese translation of gnome-panel.
+  Copyright (C) 1999-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-panel package.
+  Elvis Pfützenreuter <epx@netville.com.br>
+  Sandro Nunes Henrique <sandro@conectiva.com.br>
+  Rodrigo Stulzer Lopes <rodrigo@conectiva.com.br>
+  Ricardo Soares Guimarães <ricardo@conectiva.com.br>
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2002.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2003, 2006.
+  Gustavo Noronha Silva <kov@debian.org>, 2003.
+  Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
+  Raphael Higino <In Memoriam>, 2004-2005.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2007.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2009.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2008.
+  Vladimir Melo <vmelo@gnome.org>, 2008, 2009.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  Brazilian Portuguese translation of gnome-desktop.
+  Copyright (C) 1999-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-desktop package.
+  Elvis Pfützenreuter <epx@netville.com.br>, 1999.
+  Sandro Nunes Henrique <sandro@conectiva.com.br>, 1999.
+  Rodrigo Stulzer Lopes <rodrigo@conectiva.com.br>, 1999.
+  Ricardo Soares Guimarães <ricardo@conectiva.com.br>, 1999.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2003-2005.
+  Licio Fernando Nascimento da Fonseca <liciofernando@gmail.com>, 2006.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006.
+  Andre Noel <andrenoel@ubuntu.com>, 2007.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007.
+  Hugo Doria <hugodoria@gmail.com>, 2007.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  Brazilian Portuguese translation of Evince.
+  Copyright (C) 2004-2009 the Evince authors.
+  This file is distributed under the same license as the evince package.
+  Raphael Higino <In Memoriam>, 2004-2005, 2007.
+  Licio Fernando <liciofernando@gmail.com>, ?.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2008.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Hugo Doria <hugodoria@gmail.com>, 2007-2008.
+  Vladimir Melo <vmelo@gnome.org>, 2008, 2009.
+  Taylon Silmer <taylonsilva@gmail.com>, 2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+  Og Maciel <ogmaciel@gnome.org>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  Brazilian Portuguese Translation of Gnome Pilot
+  Copyright (C) 2000-2001 Free Software Foundation, Inc.
+  Derived from pt_PT translation of Carlos Morgado <chbm@chbm.nu>
+  Gustavo Maciel Dias Vieira <gdvieira@zaz.com.br>, 2000-2001.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006.
+  Henrique P Machado <zehrique@gmail.com>, 2008.
+  A terminologia usada na tradução procura manter consistência com a
+  documentação oficial em português do Palm V. Os dois termos mais
+  importantes são: cradle == berço e conduit == canal.
+ 
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  Brazilian Portuguese translation of gnome-power-manager.
+  Copyright (C) 2004-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-power-manager package.
+  Raphael Higino <In Memoriam>, 2004-2005.
+  Licio Fernando <liciofernando@gmail.com>, 2005.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2006-2008.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  Brazilian Portuguese translation of vino.
+  Copyright (C) 2004-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the vino package.
+  Raphael Higino <In Memoriam>, 2004-2006.
+  Igor Pires Soares <igor@projetofedora.org>, 2007.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2007.
+  Jonh Wendell <wendell@bani.com.br>, 2007,2009.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+  Vladimir Melo <vladimirmelo.psi@gmail.com>, 2008.
+  Enrico Nicoletto <liverig@gmail.com>, 2008.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  Brazilian Portuguese translation of gnome-session.
+  Copyright (C) 1999-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-session package.
+  Elvis Pfützenreuter <epx@netville.com.br>
+  Sandro Nunes Henrique <sandro@conectiva.com.br>
+  Rodrigo Stulzer Lopes <rodrigo@conectiva.com.br>
+  Ricardo Soares Guimarães <ricardo@conectiva.com.br>
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002-2005.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007-2009.
+  Vladimir Melo <vmelo@gnome.org>, 2008.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  Brazilian Portuguese translation of gnome-system-monitor.
+  Copyright (C) 2002-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-system-monitor package.
+  Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>, 2002.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002, 2006.
+  Afonso Celso Medina <medina@maua.br>, 2004.
+  Raphael Higino <phhigino@gmail.com>, 2005.
+  Vinicius Pinheiro <vinnie.gp@gmail.com>, 2006.
+  Og Maciel <ogmaciel@ubuntu.com>, 2007, 2009.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Vladimir Melo <vladimirmelo@foresightlinux.org>, 2007.
+  Hugo Doria <hugodoria@gmail.com>, 2007-2008.
+  Thiago Lima Demétrio <thiago@omegasul.com.br>, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  Portuguese Brazilian translation of gnome-system-tools.
+  Copyright (C) 2000-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-system-tools package.
+  Francisco Petrúcio Cavalcante Junior <fpetrucio@mat.ufal.br>, 2000.
+  Roberto Janny Teixeira Junior <krivilli@ajato.com.br>, 2000.
+  Bernardo Silveira <bernardojts@ig.com.br>, 2003.
+  Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
+  Raphael Higino <raphaelh@uai.com.br>, 2004, 2005.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2005.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  Brazilian Portuguese translation of the GNOME Terminal.
+  Copyright (C) 2002-2008 the GNOME Terminal authors.
+  This file is distributed under the same license as the gnome-terminal package.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002, 2003.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.
+  Gustavo Noronha Silva <kov@debian.org>, 2004, 2005.
+  Goedson Teixeira Paixão <goedson@debian.org>, 2005?.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2008.
+  Hugo Doria <hugodoria@gmail.com>, 2008.
+  Rodrigo Luiz Marques Flores <rodrigomarquesflores@gmail.com>, 2008.
+  Og Maciel <ogmaciel@gnome.org>, 2008.
+  Enrico Nicoletto <liverig@gmail.com>, 2009.
+  Fabrício Godoy <skarllot@gmail.com>, 2009.
+  César Veiga <tombs@linuxmail.org>, 2009.
+  Henrique P Machado <zehrique@gmail.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  Brazilian Portuguese translation of gedit.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gedit package.
+  Frederic L. W. Meunier <linux@urbi.com.br>, 1999.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2000.
+  Francisco Petrucio Cavalcante Junior <fpcj@impa.br>, 2002.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Gustavo Noronha Silva <kov@debian.org>, 2004.
+  João Emanuel <deathbird1981@yahoo.com.br>, 2004.
+  João Paulo Gomes Vanzuita <joaopaulo99@terra.com.br>, 2004.
+  Raphael Higino <In Memoriam>, 2004-2005.
+  Everson Santos Araujo <everson@por.com.br>, 2005-2006.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006-2008.
+  Jonh Wendell <wendell@bani.com.br>, 2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Og Maciel <ogmaciel@gnome.org>, 2007, 2009.
+  César Veiga <tombs@linuxmail.org>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009.
+  Jader Henrique da Silva <vovozito@gmail.com>, 2009.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008, 2009.
+  Carlos José Pereira <carlao2005@gmail.com>, 2009
+ 
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  Brazilian Portuguese translation of gnome-icon-theme.
+  Copyright (C) 2002-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-icon-theme
+  package.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002, 2003.
+  Tiago Cardoso Menezes <zion@via-rs.net>, 2003.
+  Raphael Higino <In Memoriam>, 2004-2005.
+  Djavan Fagundes <dnoway@gmail.com>, 2007
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  Brazilian Portuguese translation of gnome-backgrounds.
+  Copyright (C) 2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-backgrounds package.
+  Raphael Higino <raphaelh@uai.com.br>, 2005.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2006.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2006.
+  Og Maciel <ogmaciel@gnome.org>, 2008
+ 
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  Brazilian Portuguese translation of gnome-themes.
+  Copyright (C) 2004-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-themes package.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003,2005.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2004.
+  Og Maciel <ogmaciel@ubuntu.com>, 2006-2007.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  Brazilian Portuguese translation of glade3.
+  Copyright (C) 2002-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the glade3 package.
+  Gustavo Noronha Silva <kov@debian.org>, 2002, 2004.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2003.
+  Afonso Celso Medina <medina@maua.br>, 2004.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Igor Pires Soares <igor@projetofedora>, 2007,2008,2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  Brazilian Portuguese translation of GNOME Utils.
+  Copyright (C) 1999-2008 the GNOME Utils authors.
+  This file is distributed under the same license as the gnome-utils package.
+  Alexandre Hautequest <hquest@fesppr.br>, 1999.
+  Ariel Bressan da Silva <ariel@conectiva.com.br>, 2000.
+  Francisco Petrúcio Cavalcante Junior <fpcj@impa.br>, 2001.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002.
+  Welther José O. Esteves <weltherjoe@yahoo.com.br>, 2004.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Guilherme de S. Pastore <gpastore@colband.com.br>, 2005-2006.
+  Luiz Fernando S. Armesto <luiz.armesto@gmail.com>, 2007.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007-2009.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Hugo Doria <hugodoria@gmail.com>, 2007, 2008.
+  Djavan Fagundes <dnoway@gmail.com>, 2008, 2009.
+  Krix Apolinário <krixapolinario@gmail.com>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  Brazilian Portuguese translation of gnome-vfs.
+  Copyright (C) 1999-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-vfs package.
+  Alexandre Hautequest <hquest@fesppr.br>, 1999.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2001.
+  David Barzilay <barzilay@redhat.com>, 2003.
+  Everson Santos Araujo <nobios@por.com.br>, 2004.
+  Raphael Higino <phhigino@gmail.com>, 2004-2005, 2007.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2006.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2006, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Brazilian Portuguese translation of shared-mime-info.
+  Copyright (C) 2004-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the shared-mime-info package.
+  Raphael Higino <In memorian>, 2004-2007.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  translation of gnome-mime-data.HEAD.pt_BR.po to Portuguese
+  GNOME vfs translation for Brazilian Portuguese.
+  Copyright (C) 1999-2001,2003 Free Software Foundation, Inc.
+  Alexandre Hautequest <hquest@fesppr.br>, 1999.
+  Gustavo Maciel Dias Vieira <gdvieira@zaz.com.br>, 2000-2001.
+  David Barzilay <barzilay@redhat.com>, 2003
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  Brazilian Portuguese translation of metacity.
+  Copyright (C) 2002-2007 Free Software Foundation, Inc.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Evandro Fernandes Giovanini <evandrofg@ig.com.br>, 2002, 2003, 2006.
+  Gustavo Noronha Silva <kov@debian.org>, 2004.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2005.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007, 2008.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Og Maciel <ogmaciel@gnome.org>, 2007-2008.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Djavan Fagundes <dnoway@gmail.com>, 2008, 2009.
+  Vladimir Melo <vmelo@gnome.org>, 2009.
+  Henrique P Machado <zehrique@gmail.com>, 2009.
+  Fábio Nogueira <fnogueira@gnome.org>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  translation of gtkspell-2.0.6-pre1.po to Brazilian Portuguese
+  This file is distributed under the same license as the gtkspell-2.0.6-pre1 package.
+  Copyright (C) 2005 THE gtkspell-2.0.6-pre1'S COPYRIGHT HOLDER.
+  Renan Mathias Fernandes <RenanFernandes@gmail.com>, 2005.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for libgsf.mo
+  Brazilian Portuguese translation for libgsf.
+  Copyright (C) 2009 libgsf's COPYRIGHT HOLDER
+  This file is distributed under the same license as the libgsf package.
+  Djavan Fagundes <dnoway@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  Brazilian Portuguese translation of Seahorse.
+  Copyright (C) 2000-2008 the Seahorse authors.
+  This file is distributed under the same license as the seahorse package.
+  Fábio Rafael da Rosa <f2r@users.sourceforge.net>, 2003.
+  Max Reinhold Jahnke <jahnke@brfree.com.br>, 2004.
+  Luiz Armesto <luiz.armesto@gmail.com>, 2007.
+  Raphael Higino <In memoriam>, 2004, 2007.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008-2009.
+  Henrique P. Machado <zehrique@gmail.com>, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009
+  Carlos José Pereira <carlao2005@gmail.com>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  Brazilian Portuguse translation of xdg-user-dirs-gtk.
+  Copyright (C) 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the xdg-user-dirs-gtk package.
+  Raphael Higino <In Memoriam>, 2007.
+  Fábio Nogueira <deb-user-ba@ubuntu.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Brazilian Portuguese translation for xdg-user-dirs
+  Copyright © 2007 xdg-user-dirs
+  This file is distributed under the same license as the xdg-user-dirs package.
+  based on the Portuguese translation by:
+  Duarte Loreto <happyguy_pt@hotmail.com>
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  Brazilian Portuguese translation of evolution.
+  Copyright (C) 2000-2008 Free Software Foundation, Inc.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000-2004.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2004, 2005.
+  Washington Lins <washington-lins@uol.com.br>, 2007, 2008.
+  Guilherme de S. Pastore <gpastore@gnome.org>, 2007.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Vladimir Melo <vladimirmelo.psi@gmail.com>, 2008
+  Fabrício Godoy <skarllot@gmail.com>, 2008
+  Og Maciel <ogmaciel@gnome.org>, 2008.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008, 2009.
+  André Gondim <andregondim@ubuntu.com>, 2009
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  Brazilian Portuguese translation of gtkhtml
+  Copyright (C) 2000-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtkhtml package.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2000, 2004.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2002-2003.
+  Afonso Celso Medina <medina@maua.br>, 2005.
+  Leonardo Ferreira Fontenelle <leo.fontenelle@gmail.com>, 2007.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Vladimir Melo <vladimirmelo.psi@gmail.com>, 2008.
+  Lucas Hermann Negri <kkndrox@gmail.com>, 2008.
+  Og Maciel <ogmaciel@gnome.org>, 2008.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2008.
+  Andre Gondim <andregondim@ubuntu.com>, 2009.
+  Daniel S. Koda <danielskoda@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  Copyright (C) 2004-2007 Free Software Foundation, Inc.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2004.
+  Bruno Guimarães de Faria e Silva <melkor.faria@gmail.com>, 2004.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2005.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Rodrigo Flores <rodrigomarquesflores@gmail.com>, 2007.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2008, 2009.
+  Djavan Fagundes <dnoway@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  Brazilian Portuguese translation of evolution-data-server.
+  Copyright (C) 2003-2007 Free Software Foundation, Inc.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2003,2004.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2005.
+  Alexandre Folle de Menezes <afmenez@terra.com.br>, 2006.
+  Raul Pereira <contato@raulpereira.com>, 2007.
+  Leonardo Ferreira Fontenelle <leonardof@gnome.org>, 2007, 2008.
+  Washington Lins <washington-lins@uol.com.br>, 2007, 2008.
+  Fabrício Godoy <skarllot@gmail.com>, 2008.
+  Vladimir Melo <vmelo@gnome.org>, 2008, 2009.
+  Andre Gondim <andregondim@ubuntu.com>, 2009.
+  Djavan Fagundes <dnoway@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+  
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  Brazilian Portuguese translation of evolution-webcal.
+  Copyright (C) 2004,2005,2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution-webcal package.
+  Raphael Higino <phhigino@gmail.com>, 2004.
+  Gustavo Maciel Dias Vieira <gustavo@sagui.org>, 2004.
+  Afonso Celso Medina <afmedina@uol.com.br>, 2005.
+  Washington Lins <washington-lins@uol.com.br>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of virt-manager to Brazilian Portuguese
+  This file is distributed under the same license as the virt-manager package.
+  Copyright (C) 2006 THE pt_BR'S COPYRIGHT HOLDER.
+  Diego Búrigo Zacarão <diegobz@gmail.com>, 2006.
+  Valnir Ferreira Jr. <vferreir@redhat.com>, 2006.
+  Igor Pires Soares <igor@projetofedora.org>, 2006,2007,2008.
+  Taylon Silmer <taylonsilva@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

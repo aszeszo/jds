@@ -1,0 +1,44 @@
+--- ./compiz	2011-02-04 14:36:55.643536843 +0100
++++ compiz.modified	2011-02-04 14:30:28.087826861 +0100
+@@ -9,6 +9,7 @@
+ METACITY="/usr/bin/metacity --replace --sm-client-id=default0"
+ GREP="/usr/xpg4/bin/grep"
+ XDPYINFO="/usr/openwin/bin/xdpyinfo"
++GLXINFO="/usr/bin/glxinfo"
+ XPROP="/usr/openwin/bin/xprop"
+ SED="/usr/bin/sed"
+ GCONFTOOL="/usr/bin/gconftool-2"
+@@ -93,6 +94,21 @@
+   fi
+ }
+ 
++# Check whether we're running under vnc
++check_vnc()
++{
++  verbose "Checking for VNC"
++  HAZ_VNC=$(LC_ALL=C $GLXINFO | $GREP "Software Rasterizer")
++  if [ -n "$HAZ_VNC" ] ; then
++    verbose "Running under vnc"
++    return 1
++  else
++    verbose "Running without vnc"
++    return 0
++  fi
++}
++
++
+ # Check which card is present and add the right 
+ # environment variables
+ set_env_variables ()
+@@ -142,6 +157,11 @@
+   abort_with_metacity 
+ fi
+ 
++check_vnc
++if [ $? -eq 1 ] ; then
++  abort_with_metacity
++fi
++
+ set_env_variables
+ 
+ # get number of screens 

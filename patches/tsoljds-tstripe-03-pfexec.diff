@@ -1,0 +1,24 @@
+--- tsoljds-tstripe-0.6.8/src/xagent-proxy.c-orig	2011-03-02 20:41:31.039905623 -0600
++++ tsoljds-tstripe-0.6.8/src/xagent-proxy.c	2011-03-02 20:47:38.725845760 -0600
+@@ -566,15 +566,16 @@ spawn_xagent (int argc, char **argv)
+ 		chdir (pwd.pw_dir);
+ 
+ 		if (role) {
+-			execl ("/usr/bin/tsoljds-xagent", "tsoljds-xagent",
++			execl ("/usr/bin/pfexec", "/usr/bin/pfexec", "/usr/bin/tsoljds-xagent",
+ 			       "--defaultsession", 0);
+ 		} else {
+ 			if (zoneid == 0) {
+-				execl ("/usr/bin/tsoljds-xagent", 
+-				       "tsoljds-xagent", "--nosession", 0);
++				execl ("/usr/bin/pfexec", "/usr/bin/pfexec",
++				       "/usr/bin/tsoljds-xagent", 
++				       "--nosession", 0);
+ 			} else {
+-				execl ("/usr/bin/tsoljds-xagent", 
+-				       "tsoljds-xagent", 0);
++				execl ("/usr/bin/pfexec", "/usr/bin/pfexec",
++				       "/usr/bin/tsoljds-xagent", 0);
+ 			}
+ 		}
+ 	} else if (pid > 0) { /* in the parent */

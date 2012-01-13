@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-log-viewer-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-log-viewer-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-log-viewer-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/logview.schemas=etc/gconf/schemas/logview.schemas 0644 root sys

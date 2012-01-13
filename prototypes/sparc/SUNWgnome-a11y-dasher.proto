@@ -1,0 +1,453 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-dasher.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-dasher.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-dasher.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-dasher.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-dasher.copyright
+f none share/doc/SUNWgnome-a11y-dasher/AUTHORS=usr/share/doc/SUNWgnome-a11y-dasher/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-a11y-dasher/COPYING.bz2=usr/share/doc/SUNWgnome-a11y-dasher/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-dasher/ChangeLog.bz2=usr/share/doc/SUNWgnome-a11y-dasher/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-dasher/Data/Help/Gnome/ChangeLog.bz2=usr/share/doc/SUNWgnome-a11y-dasher/Data/Help/Gnome/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-dasher/NEWS.bz2=usr/share/doc/SUNWgnome-a11y-dasher/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-dasher/README=usr/share/doc/SUNWgnome-a11y-dasher/README 0444 root bin
+f none share/doc/SUNWgnome-a11y-dasher/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-a11y-dasher/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/dasher=usr/bin/dasher 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/dasher.desktop=usr/share/applications/dasher.desktop 0644 root bin
+d none share/dasher 0755 root bin
+f none share/dasher/Makefile.am=usr/share/dasher/Makefile.am 0644 root bin
+f none share/dasher/alphabet.AfaanOromo.xml=usr/share/dasher/alphabet.AfaanOromo.xml 0644 root bin
+f none share/dasher/alphabet.Armenian.xml=usr/share/dasher/alphabet.Armenian.xml 0644 root bin
+f none share/dasher/alphabet.Assamese.xml=usr/share/dasher/alphabet.Assamese.xml 0644 root bin
+f none share/dasher/alphabet.Austen.xml=usr/share/dasher/alphabet.Austen.xml 0644 root bin
+f none share/dasher/alphabet.Azerbaijani.xml=usr/share/dasher/alphabet.Azerbaijani.xml 0644 root bin
+f none share/dasher/alphabet.Belarusian.xml=usr/share/dasher/alphabet.Belarusian.xml 0644 root bin
+f none share/dasher/alphabet.Bulgarian.xml=usr/share/dasher/alphabet.Bulgarian.xml 0644 root bin
+f none share/dasher/alphabet.Esperanto.xml=usr/share/dasher/alphabet.Esperanto.xml 0644 root bin
+f none share/dasher/alphabet.Estonian.xml=usr/share/dasher/alphabet.Estonian.xml 0644 root bin
+f none share/dasher/alphabet.Filipino.xml=usr/share/dasher/alphabet.Filipino.xml 0644 root bin
+f none share/dasher/alphabet.Greek.xml=usr/share/dasher/alphabet.Greek.xml 0644 root bin
+f none share/dasher/alphabet.Gujarati.xml=usr/share/dasher/alphabet.Gujarati.xml 0644 root bin
+f none share/dasher/alphabet.Hawaiian.xml=usr/share/dasher/alphabet.Hawaiian.xml 0644 root bin
+f none share/dasher/alphabet.Hebrew.xml=usr/share/dasher/alphabet.Hebrew.xml 0644 root bin
+f none share/dasher/alphabet.Hindi.xml=usr/share/dasher/alphabet.Hindi.xml 0644 root bin
+f none share/dasher/alphabet.Icelandic.xml=usr/share/dasher/alphabet.Icelandic.xml 0644 root bin
+f none share/dasher/alphabet.Igbo.xml=usr/share/dasher/alphabet.Igbo.xml 0644 root bin
+f none share/dasher/alphabet.Indonesian.xml=usr/share/dasher/alphabet.Indonesian.xml 0644 root bin
+f none share/dasher/alphabet.IrishGaelic.xml=usr/share/dasher/alphabet.IrishGaelic.xml 0644 root bin
+f none share/dasher/alphabet.Kannada.xml=usr/share/dasher/alphabet.Kannada.xml 0644 root bin
+f none share/dasher/alphabet.Katakana.xml=usr/share/dasher/alphabet.Katakana.xml 0644 root bin
+f none share/dasher/alphabet.Malay.xml=usr/share/dasher/alphabet.Malay.xml 0644 root bin
+f none share/dasher/alphabet.Malayalam.xml=usr/share/dasher/alphabet.Malayalam.xml 0644 root bin
+f none share/dasher/alphabet.Marathi.xml=usr/share/dasher/alphabet.Marathi.xml 0644 root bin
+f none share/dasher/alphabet.Moldavian.xml=usr/share/dasher/alphabet.Moldavian.xml 0644 root bin
+f none share/dasher/alphabet.Ndebele.xml=usr/share/dasher/alphabet.Ndebele.xml 0644 root bin
+f none share/dasher/alphabet.Oriya.xml=usr/share/dasher/alphabet.Oriya.xml 0644 root bin
+f none share/dasher/alphabet.Punjabi.xml=usr/share/dasher/alphabet.Punjabi.xml 0644 root bin
+f none share/dasher/alphabet.Romanian.xml=usr/share/dasher/alphabet.Romanian.xml 0644 root bin
+f none share/dasher/alphabet.Sami.xml=usr/share/dasher/alphabet.Sami.xml 0644 root bin
+f none share/dasher/alphabet.ScotsGaelic.xml=usr/share/dasher/alphabet.ScotsGaelic.xml 0644 root bin
+f none share/dasher/alphabet.Sepedi.xml=usr/share/dasher/alphabet.Sepedi.xml 0644 root bin
+f none share/dasher/alphabet.Sesotho.xml=usr/share/dasher/alphabet.Sesotho.xml 0644 root bin
+f none share/dasher/alphabet.Sinhala.xml=usr/share/dasher/alphabet.Sinhala.xml 0644 root bin
+f none share/dasher/alphabet.Slovak.xml=usr/share/dasher/alphabet.Slovak.xml 0644 root bin
+f none share/dasher/alphabet.Slovenian.xml=usr/share/dasher/alphabet.Slovenian.xml 0644 root bin
+f none share/dasher/alphabet.Swati.xml=usr/share/dasher/alphabet.Swati.xml 0644 root bin
+f none share/dasher/alphabet.Tajik.xml=usr/share/dasher/alphabet.Tajik.xml 0644 root bin
+f none share/dasher/alphabet.Tamil.xml=usr/share/dasher/alphabet.Tamil.xml 0644 root bin
+f none share/dasher/alphabet.Telugu.xml=usr/share/dasher/alphabet.Telugu.xml 0644 root bin
+f none share/dasher/alphabet.Thai.xml=usr/share/dasher/alphabet.Thai.xml 0644 root bin
+f none share/dasher/alphabet.Thai2.xml=usr/share/dasher/alphabet.Thai2.xml 0644 root bin
+f none share/dasher/alphabet.Tsonga.xml=usr/share/dasher/alphabet.Tsonga.xml 0644 root bin
+f none share/dasher/alphabet.Tswana.xml=usr/share/dasher/alphabet.Tswana.xml 0644 root bin
+f none share/dasher/alphabet.Turkish.xml=usr/share/dasher/alphabet.Turkish.xml 0644 root bin
+f none share/dasher/alphabet.Urdu.xml=usr/share/dasher/alphabet.Urdu.xml 0644 root bin
+f none share/dasher/alphabet.Vietnamese.xml=usr/share/dasher/alphabet.Vietnamese.xml 0644 root bin
+f none share/dasher/alphabet.Xhosa.xml=usr/share/dasher/alphabet.Xhosa.xml 0644 root bin
+f none share/dasher/alphabet.Yoruba.xml=usr/share/dasher/alphabet.Yoruba.xml 0644 root bin
+f none share/dasher/alphabet.Zulu.xml=usr/share/dasher/alphabet.Zulu.xml 0644 root bin
+f none share/dasher/alphabet.abc.xml=usr/share/dasher/alphabet.abc.xml 0644 root bin
+f none share/dasher/alphabet.adangbe.xml=usr/share/dasher/alphabet.adangbe.xml 0644 root bin
+f none share/dasher/alphabet.afrikaans.xml=usr/share/dasher/alphabet.afrikaans.xml 0644 root bin
+f none share/dasher/alphabet.akan.xml=usr/share/dasher/alphabet.akan.xml 0644 root bin
+f none share/dasher/alphabet.albanian.xml=usr/share/dasher/alphabet.albanian.xml 0644 root bin
+f none share/dasher/alphabet.amharic.xml=usr/share/dasher/alphabet.amharic.xml 0644 root bin
+f none share/dasher/alphabet.arabic.xml=usr/share/dasher/alphabet.arabic.xml 0644 root bin
+f none share/dasher/alphabet.basque.xml=usr/share/dasher/alphabet.basque.xml 0644 root bin
+f none share/dasher/alphabet.bengali.xml=usr/share/dasher/alphabet.bengali.xml 0644 root bin
+f none share/dasher/alphabet.bopomofo.xml=usr/share/dasher/alphabet.bopomofo.xml 0644 root bin
+f none share/dasher/alphabet.bosnian.xml=usr/share/dasher/alphabet.bosnian.xml 0644 root bin
+f none share/dasher/alphabet.breton.xml=usr/share/dasher/alphabet.breton.xml 0644 root bin
+f none share/dasher/alphabet.catalan.xml=usr/share/dasher/alphabet.catalan.xml 0644 root bin
+f none share/dasher/alphabet.cherokee.xml=usr/share/dasher/alphabet.cherokee.xml 0644 root bin
+f none share/dasher/alphabet.chinese.xml=usr/share/dasher/alphabet.chinese.xml 0644 root bin
+f none share/dasher/alphabet.chineseRuby.xml=usr/share/dasher/alphabet.chineseRuby.xml 0644 root bin
+f none share/dasher/alphabet.corsican.xml=usr/share/dasher/alphabet.corsican.xml 0644 root bin
+f none share/dasher/alphabet.croatian.xml=usr/share/dasher/alphabet.croatian.xml 0644 root bin
+f none share/dasher/alphabet.czech.xml=usr/share/dasher/alphabet.czech.xml 0644 root bin
+f none share/dasher/alphabet.danish.xml=usr/share/dasher/alphabet.danish.xml 0644 root bin
+f none share/dasher/alphabet.dtd=usr/share/dasher/alphabet.dtd 0644 root bin
+f none share/dasher/alphabet.dutch.xml=usr/share/dasher/alphabet.dutch.xml 0644 root bin
+f none share/dasher/alphabet.english.xml=usr/share/dasher/alphabet.english.xml 0644 root bin
+f none share/dasher/alphabet.englishC.xml=usr/share/dasher/alphabet.englishC.xml 0644 root bin
+f none share/dasher/alphabet.ethiopic.xml=usr/share/dasher/alphabet.ethiopic.xml 0644 root bin
+f none share/dasher/alphabet.ewe.xml=usr/share/dasher/alphabet.ewe.xml 0644 root bin
+f none share/dasher/alphabet.faroese.xml=usr/share/dasher/alphabet.faroese.xml 0644 root bin
+f none share/dasher/alphabet.finnish.xml=usr/share/dasher/alphabet.finnish.xml 0644 root bin
+f none share/dasher/alphabet.finnish2.xml=usr/share/dasher/alphabet.finnish2.xml 0644 root bin
+f none share/dasher/alphabet.french.xml=usr/share/dasher/alphabet.french.xml 0644 root bin
+f none share/dasher/alphabet.ga.xml=usr/share/dasher/alphabet.ga.xml 0644 root bin
+f none share/dasher/alphabet.galician.xml=usr/share/dasher/alphabet.galician.xml 0644 root bin
+f none share/dasher/alphabet.georgian.xml=usr/share/dasher/alphabet.georgian.xml 0644 root bin
+f none share/dasher/alphabet.german.xml=usr/share/dasher/alphabet.german.xml 0644 root bin
+f none share/dasher/alphabet.hausa.xml=usr/share/dasher/alphabet.hausa.xml 0644 root bin
+f none share/dasher/alphabet.hiragana.xml=usr/share/dasher/alphabet.hiragana.xml 0644 root bin
+f none share/dasher/alphabet.hiragana2.xml=usr/share/dasher/alphabet.hiragana2.xml 0644 root bin
+f none share/dasher/alphabet.hungarian.xml=usr/share/dasher/alphabet.hungarian.xml 0644 root bin
+f none share/dasher/alphabet.ipa.xml=usr/share/dasher/alphabet.ipa.xml 0644 root bin
+f none share/dasher/alphabet.italian.xml=usr/share/dasher/alphabet.italian.xml 0644 root bin
+f none share/dasher/alphabet.japanese.canna.xml=usr/share/dasher/alphabet.japanese.canna.xml 0644 root bin
+f none share/dasher/alphabet.kazakh.xml=usr/share/dasher/alphabet.kazakh.xml 0644 root bin
+f none share/dasher/alphabet.kirghiz.xml=usr/share/dasher/alphabet.kirghiz.xml 0644 root bin
+f none share/dasher/alphabet.kirundi.xml=usr/share/dasher/alphabet.kirundi.xml 0644 root bin
+f none share/dasher/alphabet.klingon.xml=usr/share/dasher/alphabet.klingon.xml 0644 root bin
+f none share/dasher/alphabet.korean.xml=usr/share/dasher/alphabet.korean.xml 0644 root bin
+f none share/dasher/alphabet.koreanNested.xml=usr/share/dasher/alphabet.koreanNested.xml 0644 root bin
+f none share/dasher/alphabet.kurdish.xml=usr/share/dasher/alphabet.kurdish.xml 0644 root bin
+f none share/dasher/alphabet.lao.xml=usr/share/dasher/alphabet.lao.xml 0644 root bin
+f none share/dasher/alphabet.latex.xml=usr/share/dasher/alphabet.latex.xml 0644 root bin
+f none share/dasher/alphabet.latin.xml=usr/share/dasher/alphabet.latin.xml 0644 root bin
+f none share/dasher/alphabet.latvian.xml=usr/share/dasher/alphabet.latvian.xml 0644 root bin
+f none share/dasher/alphabet.lithuanian.xml=usr/share/dasher/alphabet.lithuanian.xml 0644 root bin
+f none share/dasher/alphabet.luxembourgish.xml=usr/share/dasher/alphabet.luxembourgish.xml 0644 root bin
+f none share/dasher/alphabet.macedonian.xml=usr/share/dasher/alphabet.macedonian.xml 0644 root bin
+f none share/dasher/alphabet.maltese.xml=usr/share/dasher/alphabet.maltese.xml 0644 root bin
+f none share/dasher/alphabet.mongolian.xml=usr/share/dasher/alphabet.mongolian.xml 0644 root bin
+f none share/dasher/alphabet.myanmar.xml=usr/share/dasher/alphabet.myanmar.xml 0644 root bin
+f none share/dasher/alphabet.nepali.xml=usr/share/dasher/alphabet.nepali.xml 0644 root bin
+f none share/dasher/alphabet.norwegian.xml=usr/share/dasher/alphabet.norwegian.xml 0644 root bin
+f none share/dasher/alphabet.occitan.xml=usr/share/dasher/alphabet.occitan.xml 0644 root bin
+f none share/dasher/alphabet.ogham.xml=usr/share/dasher/alphabet.ogham.xml 0644 root bin
+f none share/dasher/alphabet.pashto.xml=usr/share/dasher/alphabet.pashto.xml 0644 root bin
+f none share/dasher/alphabet.perl.xml=usr/share/dasher/alphabet.perl.xml 0644 root bin
+f none share/dasher/alphabet.persian.xml=usr/share/dasher/alphabet.persian.xml 0644 root bin
+f none share/dasher/alphabet.pinyin.xml=usr/share/dasher/alphabet.pinyin.xml 0644 root bin
+f none share/dasher/alphabet.pinyin2.xml=usr/share/dasher/alphabet.pinyin2.xml 0644 root bin
+f none share/dasher/alphabet.polish.xml=usr/share/dasher/alphabet.polish.xml 0644 root bin
+f none share/dasher/alphabet.portuguese.xml=usr/share/dasher/alphabet.portuguese.xml 0644 root bin
+f none share/dasher/alphabet.romansch.xml=usr/share/dasher/alphabet.romansch.xml 0644 root bin
+f none share/dasher/alphabet.runic.xml=usr/share/dasher/alphabet.runic.xml 0644 root bin
+f none share/dasher/alphabet.russian.xml=usr/share/dasher/alphabet.russian.xml 0644 root bin
+f none share/dasher/alphabet.sanskrit.xml=usr/share/dasher/alphabet.sanskrit.xml 0644 root bin
+f none share/dasher/alphabet.serbian.xml=usr/share/dasher/alphabet.serbian.xml 0644 root bin
+f none share/dasher/alphabet.somali.xml=usr/share/dasher/alphabet.somali.xml 0644 root bin
+f none share/dasher/alphabet.spanish.xml=usr/share/dasher/alphabet.spanish.xml 0644 root bin
+f none share/dasher/alphabet.spyDict.xml=usr/share/dasher/alphabet.spyDict.xml 0644 root bin
+f none share/dasher/alphabet.swahili.xml=usr/share/dasher/alphabet.swahili.xml 0644 root bin
+f none share/dasher/alphabet.swedish.xml=usr/share/dasher/alphabet.swedish.xml 0644 root bin
+f none share/dasher/alphabet.thaana.xml=usr/share/dasher/alphabet.thaana.xml 0644 root bin
+f none share/dasher/alphabet.tigrinya.xml=usr/share/dasher/alphabet.tigrinya.xml 0644 root bin
+f none share/dasher/alphabet.turkmen.xml=usr/share/dasher/alphabet.turkmen.xml 0644 root bin
+f none share/dasher/alphabet.ukrainian.xml=usr/share/dasher/alphabet.ukrainian.xml 0644 root bin
+f none share/dasher/alphabet.uzbek.xml=usr/share/dasher/alphabet.uzbek.xml 0644 root bin
+f none share/dasher/alphabet.venda.xml=usr/share/dasher/alphabet.venda.xml 0644 root bin
+f none share/dasher/alphabet.welsh.xml=usr/share/dasher/alphabet.welsh.xml 0644 root bin
+f none share/dasher/alphabet.xsl=usr/share/dasher/alphabet.xsl 0644 root bin
+f none share/dasher/colour.blue.xml=usr/share/dasher/colour.blue.xml 0644 root bin
+f none share/dasher/colour.dtd=usr/share/dasher/colour.dtd 0644 root bin
+f none share/dasher/colour.euroasian.xml=usr/share/dasher/colour.euroasian.xml 0644 root bin
+f none share/dasher/colour.euroasian2.xml=usr/share/dasher/colour.euroasian2.xml 0644 root bin
+f none share/dasher/colour.euroasian3.xml=usr/share/dasher/colour.euroasian3.xml 0644 root bin
+f none share/dasher/colour.jamie.xml=usr/share/dasher/colour.jamie.xml 0644 root bin
+f none share/dasher/colour.rainbow.xml=usr/share/dasher/colour.rainbow.xml 0644 root bin
+f none share/dasher/colour.thai.xml=usr/share/dasher/colour.thai.xml 0644 root bin
+f none share/dasher/colour.vowels.xml=usr/share/dasher/colour.vowels.xml 0644 root bin
+f none share/dasher/colour.vowels2.xml=usr/share/dasher/colour.vowels2.xml 0644 root bin
+f none share/dasher/colour.xml=usr/share/dasher/colour.xml 0644 root bin
+f none share/dasher/controllabels.dtd=usr/share/dasher/controllabels.dtd 0644 root bin
+f none share/dasher/controllabels.xml=usr/share/dasher/controllabels.xml 0644 root bin
+f none share/dasher/dasher.compose.ui=usr/share/dasher/dasher.compose.ui 0644 root bin
+f none share/dasher/dasher.direct.ui=usr/share/dasher/dasher.direct.ui 0644 root bin
+f none share/dasher/dasher.fullscreen.ui=usr/share/dasher/dasher.fullscreen.ui 0644 root bin
+f none share/dasher/dasher.gameWIP.ui=usr/share/dasher/dasher.gameWIP.ui 0644 root bin
+f none share/dasher/dasher.preferences.ui=usr/share/dasher/dasher.preferences.ui 0644 root bin
+f none share/dasher/dasher.traditional.ui=usr/share/dasher/dasher.traditional.ui 0644 root bin
+f none share/dasher/dashermaemo.preferences.ui=usr/share/dasher/dashermaemo.preferences.ui 0644 root bin
+f none share/dasher/dashermaemo.ui=usr/share/dasher/dashermaemo.ui 0644 root bin
+f none share/dasher/dashermaemofullscreen.ui=usr/share/dasher/dashermaemofullscreen.ui 0644 root bin
+f none share/dasher/training_albanian_SQ.txt=usr/share/dasher/training_albanian_SQ.txt 0644 root bin
+f none share/dasher/training_basque_ES.txt=usr/share/dasher/training_basque_ES.txt 0644 root bin
+f none share/dasher/training_bengali_BD.txt=usr/share/dasher/training_bengali_BD.txt 0644 root bin
+f none share/dasher/training_canna_JP.txt=usr/share/dasher/training_canna_JP.txt 0644 root bin
+f none share/dasher/training_czechC_CS.txt=usr/share/dasher/training_czechC_CS.txt 0644 root bin
+f none share/dasher/training_czech_CS.txt=usr/share/dasher/training_czech_CS.txt 0644 root bin
+f none share/dasher/training_danish_DK.txt=usr/share/dasher/training_danish_DK.txt 0644 root bin
+f none share/dasher/training_dutch_NL.txt=usr/share/dasher/training_dutch_NL.txt 0644 root bin
+f none share/dasher/training_englishLC_GB.txt=usr/share/dasher/training_englishLC_GB.txt 0644 root bin
+f none share/dasher/training_english_GB.txt=usr/share/dasher/training_english_GB.txt 0644 root bin
+f none share/dasher/training_finnish_FI.txt=usr/share/dasher/training_finnish_FI.txt 0644 root bin
+f none share/dasher/training_frenchC_FR.txt=usr/share/dasher/training_frenchC_FR.txt 0644 root bin
+f none share/dasher/training_french_FR.txt=usr/share/dasher/training_french_FR.txt 0644 root bin
+f none share/dasher/training_german_DE.txt=usr/share/dasher/training_german_DE.txt 0644 root bin
+f none share/dasher/training_greek_GR.txt=usr/share/dasher/training_greek_GR.txt 0644 root bin
+f none share/dasher/training_hebrew_IL.txt=usr/share/dasher/training_hebrew_IL.txt 0644 root bin
+f none share/dasher/training_hiragana60_JP.txt=usr/share/dasher/training_hiragana60_JP.txt 0644 root bin
+f none share/dasher/training_hiragana83_JP.txt=usr/share/dasher/training_hiragana83_JP.txt 0644 root bin
+f none share/dasher/training_hungarian_HU.txt=usr/share/dasher/training_hungarian_HU.txt 0644 root bin
+f none share/dasher/training_italianC_IT.txt=usr/share/dasher/training_italianC_IT.txt 0644 root bin
+f none share/dasher/training_italian_IT.txt=usr/share/dasher/training_italian_IT.txt 0644 root bin
+f none share/dasher/training_mongolian_MN.txt=usr/share/dasher/training_mongolian_MN.txt 0644 root bin
+f none share/dasher/training_persian_IR.txt=usr/share/dasher/training_persian_IR.txt 0644 root bin
+f none share/dasher/training_polish_PL.txt=usr/share/dasher/training_polish_PL.txt 0644 root bin
+f none share/dasher/training_portugueseC_BR.txt=usr/share/dasher/training_portugueseC_BR.txt 0644 root bin
+f none share/dasher/training_portuguese_BR.txt=usr/share/dasher/training_portuguese_BR.txt 0644 root bin
+f none share/dasher/training_russian_RU.txt=usr/share/dasher/training_russian_RU.txt 0644 root bin
+f none share/dasher/training_spanishC_ES.txt=usr/share/dasher/training_spanishC_ES.txt 0644 root bin
+f none share/dasher/training_spanish_ES.txt=usr/share/dasher/training_spanish_ES.txt 0644 root bin
+f none share/dasher/training_spyDict.txt=usr/share/dasher/training_spyDict.txt 0644 root bin
+f none share/dasher/training_swahili_KE.txt=usr/share/dasher/training_swahili_KE.txt 0644 root bin
+f none share/dasher/training_swedish_SE.txt=usr/share/dasher/training_swedish_SE.txt 0644 root bin
+f none share/dasher/training_turkish_TR.txt=usr/share/dasher/training_turkish_TR.txt 0644 root bin
+f none share/dasher/training_welsh_GB.txt=usr/share/dasher/training_welsh_GB.txt 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-a11y-dasher 0755 root bin
+d none share/doc/SUNWgnome-a11y-dasher/Data 0755 root bin
+d none share/doc/SUNWgnome-a11y-dasher/Data/Help 0755 root bin
+d none share/doc/SUNWgnome-a11y-dasher/Data/Help/Gnome 0755 root bin
+d none share/doc/SUNWgnome-a11y-dasher/po 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/dasher 0755 root bin
+d none share/gnome/help/dasher/C 0755 root bin
+f none share/gnome/help/dasher/C/dasher.xml=usr/share/gnome/help/dasher/C/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/C/figures 0755 root bin
+f none share/gnome/help/dasher/C/figures/a-z.gif=usr/share/gnome/help/dasher/C/figures/a-z.gif 0644 root bin
+f none share/gnome/help/dasher/C/figures/aa-az.gif=usr/share/gnome/help/dasher/C/figures/aa-az.gif 0644 root bin
+f none share/gnome/help/dasher/C/figures/ala-alz.gif=usr/share/gnome/help/dasher/C/figures/ala-alz.gif 0644 root bin
+f none share/gnome/help/dasher/C/figures/exampleHad2.png=usr/share/gnome/help/dasher/C/figures/exampleHad2.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/exampleHad2a.png=usr/share/gnome/help/dasher/C/figures/exampleHad2a.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/exampleHad3a.png=usr/share/gnome/help/dasher/C/figures/exampleHad3a.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/exampleHad4.png=usr/share/gnome/help/dasher/C/figures/exampleHad4.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/figure2.png=usr/share/gnome/help/dasher/C/figures/figure2.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/main.png=usr/share/gnome/help/dasher/C/figures/main.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/object.gif=usr/share/gnome/help/dasher/C/figures/object.gif 0644 root bin
+f none share/gnome/help/dasher/C/figures/prefs1.png=usr/share/gnome/help/dasher/C/figures/prefs1.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/prefs2.png=usr/share/gnome/help/dasher/C/figures/prefs2.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/prefs3.png=usr/share/gnome/help/dasher/C/figures/prefs3.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/prefs4.png=usr/share/gnome/help/dasher/C/figures/prefs4.png 0644 root bin
+f none share/gnome/help/dasher/C/figures/prefs5.png=usr/share/gnome/help/dasher/C/figures/prefs5.png 0644 root bin
+d none share/gnome/help/dasher/ca 0755 root bin
+f none share/gnome/help/dasher/ca/dasher.help.copyright=usr/share/gnome/help/dasher/ca/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/ca/dasher.xml=usr/share/gnome/help/dasher/ca/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/ca/figures 0755 root bin
+s none share/gnome/help/dasher/ca/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/ca/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/ca/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+f none share/gnome/help/dasher/ca/figures/exampleHad2.png=usr/share/gnome/help/dasher/ca/figures/exampleHad2.png 0644 root bin
+f none share/gnome/help/dasher/ca/figures/exampleHad2a.png=usr/share/gnome/help/dasher/ca/figures/exampleHad2a.png 0644 root bin
+f none share/gnome/help/dasher/ca/figures/exampleHad3a.png=usr/share/gnome/help/dasher/ca/figures/exampleHad3a.png 0644 root bin
+f none share/gnome/help/dasher/ca/figures/exampleHad4.png=usr/share/gnome/help/dasher/ca/figures/exampleHad4.png 0644 root bin
+s none share/gnome/help/dasher/ca/figures/figure2.png=../../C/figures/figure2.png
+s none share/gnome/help/dasher/ca/figures/main.png=../../C/figures/main.png
+f none share/gnome/help/dasher/ca/figures/object.gif=usr/share/gnome/help/dasher/ca/figures/object.gif 0644 root bin
+s none share/gnome/help/dasher/ca/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/ca/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/ca/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/ca/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/ca/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/de 0755 root bin
+f none share/gnome/help/dasher/de/dasher.help.copyright=usr/share/gnome/help/dasher/de/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/de/dasher.xml=usr/share/gnome/help/dasher/de/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/de/figures 0755 root bin
+s none share/gnome/help/dasher/de/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/de/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/de/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+s none share/gnome/help/dasher/de/figures/exampleHad2.png=../../C/figures/exampleHad2.png
+s none share/gnome/help/dasher/de/figures/exampleHad2a.png=../../C/figures/exampleHad2a.png
+s none share/gnome/help/dasher/de/figures/exampleHad3a.png=../../C/figures/exampleHad3a.png
+s none share/gnome/help/dasher/de/figures/exampleHad4.png=../../C/figures/exampleHad4.png
+s none share/gnome/help/dasher/de/figures/figure2.png=../../C/figures/figure2.png
+s none share/gnome/help/dasher/de/figures/main.png=../../C/figures/main.png
+s none share/gnome/help/dasher/de/figures/object.gif=../../C/figures/object.gif
+s none share/gnome/help/dasher/de/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/de/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/de/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/de/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/de/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/el 0755 root bin
+f none share/gnome/help/dasher/el/dasher.help.copyright=usr/share/gnome/help/dasher/el/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/el/dasher.xml=usr/share/gnome/help/dasher/el/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/el/figures 0755 root bin
+s none share/gnome/help/dasher/el/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/el/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/el/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+s none share/gnome/help/dasher/el/figures/exampleHad2.png=../../C/figures/exampleHad2.png
+s none share/gnome/help/dasher/el/figures/exampleHad2a.png=../../C/figures/exampleHad2a.png
+s none share/gnome/help/dasher/el/figures/exampleHad3a.png=../../C/figures/exampleHad3a.png
+s none share/gnome/help/dasher/el/figures/exampleHad4.png=../../C/figures/exampleHad4.png
+s none share/gnome/help/dasher/el/figures/figure2.png=../../C/figures/figure2.png
+s none share/gnome/help/dasher/el/figures/main.png=../../C/figures/main.png
+s none share/gnome/help/dasher/el/figures/object.gif=../../C/figures/object.gif
+s none share/gnome/help/dasher/el/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/el/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/el/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/el/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/el/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/en_GB 0755 root bin
+f none share/gnome/help/dasher/en_GB/dasher.help.copyright=usr/share/gnome/help/dasher/en_GB/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/en_GB/dasher.xml=usr/share/gnome/help/dasher/en_GB/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/en_GB/figures 0755 root bin
+s none share/gnome/help/dasher/en_GB/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/en_GB/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/en_GB/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+s none share/gnome/help/dasher/en_GB/figures/exampleHad2.png=../../C/figures/exampleHad2.png
+s none share/gnome/help/dasher/en_GB/figures/exampleHad2a.png=../../C/figures/exampleHad2a.png
+s none share/gnome/help/dasher/en_GB/figures/exampleHad3a.png=../../C/figures/exampleHad3a.png
+s none share/gnome/help/dasher/en_GB/figures/exampleHad4.png=../../C/figures/exampleHad4.png
+s none share/gnome/help/dasher/en_GB/figures/figure2.png=../../C/figures/figure2.png
+s none share/gnome/help/dasher/en_GB/figures/main.png=../../C/figures/main.png
+s none share/gnome/help/dasher/en_GB/figures/object.gif=../../C/figures/object.gif
+s none share/gnome/help/dasher/en_GB/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/en_GB/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/en_GB/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/en_GB/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/en_GB/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/es 0755 root bin
+f none share/gnome/help/dasher/es/dasher.help.copyright=usr/share/gnome/help/dasher/es/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/es/dasher.xml=usr/share/gnome/help/dasher/es/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/es/figures 0755 root bin
+s none share/gnome/help/dasher/es/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/es/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/es/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+f none share/gnome/help/dasher/es/figures/exampleHad2.png=usr/share/gnome/help/dasher/es/figures/exampleHad2.png 0644 root bin
+f none share/gnome/help/dasher/es/figures/exampleHad2a.png=usr/share/gnome/help/dasher/es/figures/exampleHad2a.png 0644 root bin
+f none share/gnome/help/dasher/es/figures/exampleHad3a.png=usr/share/gnome/help/dasher/es/figures/exampleHad3a.png 0644 root bin
+f none share/gnome/help/dasher/es/figures/exampleHad4.png=usr/share/gnome/help/dasher/es/figures/exampleHad4.png 0644 root bin
+f none share/gnome/help/dasher/es/figures/figure2.png=usr/share/gnome/help/dasher/es/figures/figure2.png 0644 root bin
+f none share/gnome/help/dasher/es/figures/main.png=usr/share/gnome/help/dasher/es/figures/main.png 0644 root bin
+f none share/gnome/help/dasher/es/figures/object.gif=usr/share/gnome/help/dasher/es/figures/object.gif 0644 root bin
+f none share/gnome/help/dasher/es/figures/prefs1.png=usr/share/gnome/help/dasher/es/figures/prefs1.png 0644 root bin
+f none share/gnome/help/dasher/es/figures/prefs2.png=usr/share/gnome/help/dasher/es/figures/prefs2.png 0644 root bin
+s none share/gnome/help/dasher/es/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/es/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/es/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/eu 0755 root bin
+f none share/gnome/help/dasher/eu/dasher.help.copyright=usr/share/gnome/help/dasher/eu/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/eu/dasher.xml=usr/share/gnome/help/dasher/eu/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/eu/figures 0755 root bin
+s none share/gnome/help/dasher/eu/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/eu/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/eu/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+s none share/gnome/help/dasher/eu/figures/exampleHad2.png=../../C/figures/exampleHad2.png
+s none share/gnome/help/dasher/eu/figures/exampleHad2a.png=../../C/figures/exampleHad2a.png
+s none share/gnome/help/dasher/eu/figures/exampleHad3a.png=../../C/figures/exampleHad3a.png
+s none share/gnome/help/dasher/eu/figures/exampleHad4.png=../../C/figures/exampleHad4.png
+f none share/gnome/help/dasher/eu/figures/figure2.png=usr/share/gnome/help/dasher/eu/figures/figure2.png 0644 root bin
+f none share/gnome/help/dasher/eu/figures/main.png=usr/share/gnome/help/dasher/eu/figures/main.png 0644 root bin
+s none share/gnome/help/dasher/eu/figures/object.gif=../../C/figures/object.gif
+f none share/gnome/help/dasher/eu/figures/prefs1.png=usr/share/gnome/help/dasher/eu/figures/prefs1.png 0644 root bin
+f none share/gnome/help/dasher/eu/figures/prefs2.png=usr/share/gnome/help/dasher/eu/figures/prefs2.png 0644 root bin
+f none share/gnome/help/dasher/eu/figures/prefs3.png=usr/share/gnome/help/dasher/eu/figures/prefs3.png 0644 root bin
+f none share/gnome/help/dasher/eu/figures/prefs4.png=usr/share/gnome/help/dasher/eu/figures/prefs4.png 0644 root bin
+f none share/gnome/help/dasher/eu/figures/prefs5.png=usr/share/gnome/help/dasher/eu/figures/prefs5.png 0644 root bin
+d none share/gnome/help/dasher/fr 0755 root bin
+f none share/gnome/help/dasher/fr/dasher.help.copyright=usr/share/gnome/help/dasher/fr/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/fr/dasher.xml=usr/share/gnome/help/dasher/fr/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/fr/figures 0755 root bin
+s none share/gnome/help/dasher/fr/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/fr/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/fr/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+f none share/gnome/help/dasher/fr/figures/exampleHad2.png=usr/share/gnome/help/dasher/fr/figures/exampleHad2.png 0644 root bin
+f none share/gnome/help/dasher/fr/figures/exampleHad2a.png=usr/share/gnome/help/dasher/fr/figures/exampleHad2a.png 0644 root bin
+f none share/gnome/help/dasher/fr/figures/exampleHad3a.png=usr/share/gnome/help/dasher/fr/figures/exampleHad3a.png 0644 root bin
+f none share/gnome/help/dasher/fr/figures/exampleHad4.png=usr/share/gnome/help/dasher/fr/figures/exampleHad4.png 0644 root bin
+s none share/gnome/help/dasher/fr/figures/figure2.png=../../C/figures/figure2.png
+s none share/gnome/help/dasher/fr/figures/main.png=../../C/figures/main.png
+f none share/gnome/help/dasher/fr/figures/object.gif=usr/share/gnome/help/dasher/fr/figures/object.gif 0644 root bin
+s none share/gnome/help/dasher/fr/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/fr/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/fr/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/fr/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/fr/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/oc 0755 root bin
+f none share/gnome/help/dasher/oc/dasher.help.copyright=usr/share/gnome/help/dasher/oc/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/oc/dasher.xml=usr/share/gnome/help/dasher/oc/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/oc/figures 0755 root bin
+s none share/gnome/help/dasher/oc/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/oc/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/oc/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+s none share/gnome/help/dasher/oc/figures/exampleHad2.png=../../C/figures/exampleHad2.png
+s none share/gnome/help/dasher/oc/figures/exampleHad2a.png=../../C/figures/exampleHad2a.png
+s none share/gnome/help/dasher/oc/figures/exampleHad3a.png=../../C/figures/exampleHad3a.png
+s none share/gnome/help/dasher/oc/figures/exampleHad4.png=../../C/figures/exampleHad4.png
+s none share/gnome/help/dasher/oc/figures/figure2.png=../../C/figures/figure2.png
+s none share/gnome/help/dasher/oc/figures/main.png=../../C/figures/main.png
+s none share/gnome/help/dasher/oc/figures/object.gif=../../C/figures/object.gif
+s none share/gnome/help/dasher/oc/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/oc/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/oc/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/oc/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/oc/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/ru 0755 root bin
+f none share/gnome/help/dasher/ru/dasher.help.copyright=usr/share/gnome/help/dasher/ru/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/ru/dasher.xml=usr/share/gnome/help/dasher/ru/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/ru/figures 0755 root bin
+s none share/gnome/help/dasher/ru/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/ru/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/ru/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+s none share/gnome/help/dasher/ru/figures/exampleHad2.png=../../C/figures/exampleHad2.png
+s none share/gnome/help/dasher/ru/figures/exampleHad2a.png=../../C/figures/exampleHad2a.png
+s none share/gnome/help/dasher/ru/figures/exampleHad3a.png=../../C/figures/exampleHad3a.png
+s none share/gnome/help/dasher/ru/figures/exampleHad4.png=../../C/figures/exampleHad4.png
+s none share/gnome/help/dasher/ru/figures/figure2.png=../../C/figures/figure2.png
+s none share/gnome/help/dasher/ru/figures/main.png=../../C/figures/main.png
+s none share/gnome/help/dasher/ru/figures/object.gif=../../C/figures/object.gif
+s none share/gnome/help/dasher/ru/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/ru/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/ru/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/ru/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/ru/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/gnome/help/dasher/sv 0755 root bin
+f none share/gnome/help/dasher/sv/dasher.help.copyright=usr/share/gnome/help/dasher/sv/dasher.help.copyright 0644 root bin
+f none share/gnome/help/dasher/sv/dasher.xml=usr/share/gnome/help/dasher/sv/dasher.xml 0644 root bin
+d none share/gnome/help/dasher/sv/figures 0755 root bin
+s none share/gnome/help/dasher/sv/figures/a-z.gif=../../C/figures/a-z.gif
+s none share/gnome/help/dasher/sv/figures/aa-az.gif=../../C/figures/aa-az.gif
+s none share/gnome/help/dasher/sv/figures/ala-alz.gif=../../C/figures/ala-alz.gif
+s none share/gnome/help/dasher/sv/figures/exampleHad2.png=../../C/figures/exampleHad2.png
+s none share/gnome/help/dasher/sv/figures/exampleHad2a.png=../../C/figures/exampleHad2a.png
+s none share/gnome/help/dasher/sv/figures/exampleHad3a.png=../../C/figures/exampleHad3a.png
+s none share/gnome/help/dasher/sv/figures/exampleHad4.png=../../C/figures/exampleHad4.png
+s none share/gnome/help/dasher/sv/figures/figure2.png=../../C/figures/figure2.png
+f none share/gnome/help/dasher/sv/figures/main.png=usr/share/gnome/help/dasher/sv/figures/main.png 0644 root bin
+s none share/gnome/help/dasher/sv/figures/object.gif=../../C/figures/object.gif
+s none share/gnome/help/dasher/sv/figures/prefs1.png=../../C/figures/prefs1.png
+s none share/gnome/help/dasher/sv/figures/prefs2.png=../../C/figures/prefs2.png
+s none share/gnome/help/dasher/sv/figures/prefs3.png=../../C/figures/prefs3.png
+s none share/gnome/help/dasher/sv/figures/prefs4.png=../../C/figures/prefs4.png
+s none share/gnome/help/dasher/sv/figures/prefs5.png=../../C/figures/prefs5.png
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/dasher.png=usr/share/icons/hicolor/48x48/apps/dasher.png 0644 root other
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/dasher.svg=usr/share/icons/hicolor/scalable/apps/dasher.svg 0644 root other
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/dasher.1=usr/share/man/man1/dasher.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/dasher 0755 root bin
+f none share/omf/dasher/dasher-C.omf=usr/share/omf/dasher/dasher-C.omf 0644 root bin
+f none share/omf/dasher/dasher-ca.omf=usr/share/omf/dasher/dasher-ca.omf 0644 root bin
+f none share/omf/dasher/dasher-de.omf=usr/share/omf/dasher/dasher-de.omf 0644 root bin
+f none share/omf/dasher/dasher-el.omf=usr/share/omf/dasher/dasher-el.omf 0644 root bin
+f none share/omf/dasher/dasher-en_GB.omf=usr/share/omf/dasher/dasher-en_GB.omf 0644 root bin
+f none share/omf/dasher/dasher-es.omf=usr/share/omf/dasher/dasher-es.omf 0644 root bin
+f none share/omf/dasher/dasher-eu.omf=usr/share/omf/dasher/dasher-eu.omf 0644 root bin
+f none share/omf/dasher/dasher-fr.omf=usr/share/omf/dasher/dasher-fr.omf 0644 root bin
+f none share/omf/dasher/dasher-oc.omf=usr/share/omf/dasher/dasher-oc.omf 0644 root bin
+f none share/omf/dasher/dasher-ru.omf=usr/share/omf/dasher/dasher-ru.omf 0644 root bin
+f none share/omf/dasher/dasher-sv.omf=usr/share/omf/dasher/dasher-sv.omf 0644 root bin

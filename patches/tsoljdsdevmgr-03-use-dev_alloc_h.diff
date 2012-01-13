@@ -1,0 +1,12 @@
+Index: src/devmgr-dialog.c
+===================================================================
+--- src/devmgr-dialog.c	(revision 12)
++++ src/devmgr-dialog.c	(working copy)
+@@ -27,7 +27,7 @@
+ #include <strings.h>
+ #include <stdio.h>
+ #include <deflt.h>
+-#include <bsm/devices.h>
++#include <dev_alloc.h>
+ #include <auth_attr.h>
+ #include <secdb.h>

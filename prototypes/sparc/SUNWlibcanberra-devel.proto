@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibcanberra-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibcanberra-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibcanberra-devel.copyright
+d none include 0755 root bin
+f none include/canberra-gtk.h=usr/include/canberra-gtk.h 0644 root bin
+f none include/canberra.h=usr/include/canberra.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libcanberra-gtk.pc=usr/lib/pkgconfig/libcanberra-gtk.pc 0644 root bin
+f none lib/pkgconfig/libcanberra.pc=usr/lib/pkgconfig/libcanberra.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/libcanberra-gtk.pc=usr/lib/sparcv9/pkgconfig/libcanberra-gtk.pc 0644 root bin
+f none lib/sparcv9/pkgconfig/libcanberra.pc=usr/lib/sparcv9/pkgconfig/libcanberra.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/libcanberra 0755 root other
+f none share/doc/libcanberra/README=usr/share/doc/libcanberra/README 0644 root bin
+d none share/gnome 0755 root other

@@ -1,0 +1,47 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:42+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n>1);\n"
+
+# SUN_BRANDING
+#: ../gnome-session/gsm-logout-dialog.c:382
+msgid "S_kip boot menu on restart"
+msgstr "P_ular menu de inicialização ao reiniciar"
+
+# SUN_BRANDING
+#: ../gnome-session/gsm-logout-dialog.c:424
+msgid ""
+"<span style=\"italic\" size=\"smaller\">Options apply only after Restart, "
+"not after Shut Down</span>"
+msgstr "<span style=\"italic\" size=\"smaller\">As opções se aplicam somente depois de reiniciar, não depois de desligar</span>"
+
+# SUN_BRANDING
+#: ../gnome-session/gsm-logout-dialog.c:446
+msgid "_Default boot environment at next restart:"
+msgstr "Ambiente _de inicialização no próximo reiniciar:"
+
+# SUN_BRANDING
+#: ../gnome-session/gsm-logout-dialog.c:518
+msgid "_More Options"
+msgstr "_Mais opções"
+
+# SUN_BRANDING
+#: ../gnome-session/main.c:485
+msgid "Completing post install setup..."
+msgstr "Finalizando configuração de instalação posterior..."
+
+# SUN_BRANDING
+#: ../gnome-session/main.c:525
+msgid "Used for Trusted Multi-Label Session"
+msgstr "Usado em sessão de multirrótulo confiável"
+
+# SUN_BRANDING
+#: ../gnome-session/trusted.c:108
+msgid ""
+"Unable to login to Trusted Session. Required X server security extension not "
+"loaded."
+msgstr "Não foi possível efetuar login na sessão Trusted. Extensão de segurança requerida para X server não carregada."

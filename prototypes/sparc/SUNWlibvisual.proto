@@ -1,0 +1,63 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibvisual.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibvisual.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibvisual.copyright
+f none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/AUTHORS=usr/share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/AUTHORS 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/COPYING.bz2=usr/share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/ChangeLog.bz2=usr/share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/NEWS.bz2=usr/share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/README=usr/share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/README 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/po/ChangeLog.bz2=usr/share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/po/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/AUTHORS=usr/share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/AUTHORS 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/COPYING.bz2=usr/share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/ChangeLog.bz2=usr/share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/NEWS=usr/share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/NEWS 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/README=usr/share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/README 0444 root bin
+f none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/po/ChangeLog=usr/share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/po/ChangeLog 0444 root bin
+d none lib 0755 root bin
+d none lib/libvisual-0.4 0755 root bin
+s none lib/libvisual-0.4.so=libvisual-0.4.so.0.0.0
+s none lib/libvisual-0.4.so.0=libvisual-0.4.so.0.0.0
+f none lib/libvisual-0.4.so.0.0.0=usr/lib/libvisual-0.4.so.0.0.0 0755 root bin
+d none lib/libvisual-0.4/actor 0755 root bin
+f none lib/libvisual-0.4/actor/actor_JESS.so=usr/lib/libvisual-0.4/actor/actor_JESS.so 0755 root bin
+f none lib/libvisual-0.4/actor/actor_bumpscope.so=usr/lib/libvisual-0.4/actor/actor_bumpscope.so 0755 root bin
+f none lib/libvisual-0.4/actor/actor_gdkpixbuf.so=usr/lib/libvisual-0.4/actor/actor_gdkpixbuf.so 0755 root bin
+f none lib/libvisual-0.4/actor/actor_infinite.so=usr/lib/libvisual-0.4/actor/actor_infinite.so 0755 root bin
+f none lib/libvisual-0.4/actor/actor_jakdaw.so=usr/lib/libvisual-0.4/actor/actor_jakdaw.so 0755 root bin
+f none lib/libvisual-0.4/actor/actor_lv_scope.so=usr/lib/libvisual-0.4/actor/actor_lv_scope.so 0755 root bin
+f none lib/libvisual-0.4/actor/actor_oinksie.so=usr/lib/libvisual-0.4/actor/actor_oinksie.so 0755 root bin
+d none lib/libvisual-0.4/input 0755 root bin
+f none lib/libvisual-0.4/input/input_mplayer.so=usr/lib/libvisual-0.4/input/input_mplayer.so 0755 root bin
+d none lib/libvisual-0.4/morph 0755 root bin
+f none lib/libvisual-0.4/morph/morph_alphablend.so=usr/lib/libvisual-0.4/morph/morph_alphablend.so 0755 root bin
+f none lib/libvisual-0.4/morph/morph_flash.so=usr/lib/libvisual-0.4/morph/morph_flash.so 0755 root bin
+f none lib/libvisual-0.4/morph/morph_slide.so=usr/lib/libvisual-0.4/morph/morph_slide.so 0755 root bin
+f none lib/libvisual-0.4/morph/morph_tentacle.so=usr/lib/libvisual-0.4/morph/morph_tentacle.so 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/libvisual-0.4 0755 root bin
+s none lib/sparcv9/libvisual-0.4.so=libvisual-0.4.so.0.0.0
+s none lib/sparcv9/libvisual-0.4.so.0=libvisual-0.4.so.0.0.0
+f none lib/sparcv9/libvisual-0.4.so.0.0.0=usr/lib/sparcv9/libvisual-0.4.so.0.0.0 0755 root bin
+d none lib/sparcv9/libvisual-0.4/actor 0755 root bin
+f none lib/sparcv9/libvisual-0.4/actor/actor_JESS.so=usr/lib/sparcv9/libvisual-0.4/actor/actor_JESS.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/actor/actor_bumpscope.so=usr/lib/sparcv9/libvisual-0.4/actor/actor_bumpscope.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/actor/actor_gdkpixbuf.so=usr/lib/sparcv9/libvisual-0.4/actor/actor_gdkpixbuf.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/actor/actor_infinite.so=usr/lib/sparcv9/libvisual-0.4/actor/actor_infinite.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/actor/actor_jakdaw.so=usr/lib/sparcv9/libvisual-0.4/actor/actor_jakdaw.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/actor/actor_lv_scope.so=usr/lib/sparcv9/libvisual-0.4/actor/actor_lv_scope.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/actor/actor_oinksie.so=usr/lib/sparcv9/libvisual-0.4/actor/actor_oinksie.so 0755 root bin
+d none lib/sparcv9/libvisual-0.4/input 0755 root bin
+f none lib/sparcv9/libvisual-0.4/input/input_mplayer.so=usr/lib/sparcv9/libvisual-0.4/input/input_mplayer.so 0755 root bin
+d none lib/sparcv9/libvisual-0.4/morph 0755 root bin
+f none lib/sparcv9/libvisual-0.4/morph/morph_alphablend.so=usr/lib/sparcv9/libvisual-0.4/morph/morph_alphablend.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/morph/morph_flash.so=usr/lib/sparcv9/libvisual-0.4/morph/morph_flash.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/morph/morph_slide.so=usr/lib/sparcv9/libvisual-0.4/morph/morph_slide.so 0755 root bin
+f none lib/sparcv9/libvisual-0.4/morph/morph_tentacle.so=usr/lib/sparcv9/libvisual-0.4/morph/morph_tentacle.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibvisual 0755 root other
+d none share/doc/SUNWlibvisual/sparc 0755 root other
+d none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0 0755 root other
+d none share/doc/SUNWlibvisual/sparc/libvisual-0.4.0/po 0755 root other
+d none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0 0755 root other
+d none share/doc/SUNWlibvisual/sparc/libvisual-plugins-0.4.0/po 0755 root other

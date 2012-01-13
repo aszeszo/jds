@@ -1,0 +1,73 @@
+--- gdm-2.30.6/daemon/gdm-session-worker.c-orig	2011-05-19 19:15:23.380543852 -0500
++++ gdm-2.30.6/daemon/gdm-session-worker.c	2011-05-19 19:22:36.793718077 -0500
+@@ -696,6 +696,10 @@ send_dbus_void_method (DBusConnection *c
+         return TRUE;
+ }
+ 
++/*
++ * This function is called with username set to NULL to update the
++ * auditor username value.
++ */
+ static gboolean
+ gdm_session_worker_get_username (GdmSessionWorker  *worker,
+                                  char             **username)
+@@ -714,6 +718,11 @@ gdm_session_worker_get_username (GdmSess
+                         g_debug ("GdmSessionWorker: username is '%s'",
+                                  *username != NULL ? *username : "<unset>");
+                 }
++
++                if (worker->priv->auditor != NULL) {
++                        gdm_session_auditor_set_username (worker->priv->auditor, (char *)item);
++                }
++
+                 return TRUE;
+         }
+ 
+@@ -1345,6 +1354,8 @@ gdm_session_worker_uninitialize_pam (Gdm
+         if (worker->priv->pam_handle == NULL)
+                 return;
+ 
++        gdm_session_worker_get_username (worker, NULL);
++
+         if (worker->priv->state >= GDM_SESSION_WORKER_STATE_SESSION_OPENED) {
+                 pid_t pid;
+ 
+@@ -1366,12 +1377,6 @@ gdm_session_worker_uninitialize_pam (Gdm
+                 pam_close_session (worker->priv->pam_handle, 0);
+                 gdm_session_auditor_report_logout (worker->priv->auditor);
+         } else {
+-                const void *p;
+-
+-                if ((pam_get_item (worker->priv->pam_handle, PAM_USER, &p)) == PAM_SUCCESS) {
+-                        gdm_session_auditor_set_username (worker->priv->auditor, (const char *)p);
+-                }
+-
+                 gdm_session_auditor_report_login_failure (worker->priv->auditor,
+                                                           status,
+                                                           pam_strerror (worker->priv->pam_handle, status));
+@@ -1661,6 +1666,8 @@ gdm_session_worker_authorize_user (GdmSe
+ 
+                 error_code = pam_chauthtok (worker->priv->pam_handle, PAM_CHANGE_EXPIRED_AUTHTOK);
+ 
++                gdm_session_worker_get_username (worker, NULL);
++
+                 if (error_code != PAM_SUCCESS) {
+                         gdm_session_auditor_report_password_change_failure (worker->priv->auditor);
+                 } else {
+@@ -2069,6 +2076,8 @@ gdm_session_worker_accredit_user (GdmSes
+         if (ret) {
+                 g_debug ("GdmSessionWorker: state ACCREDITED");
+                 ret = TRUE;
++
++                gdm_session_worker_get_username (worker, NULL);
+                 gdm_session_auditor_report_user_accredited (worker->priv->auditor);
+                 worker->priv->state = GDM_SESSION_WORKER_STATE_ACCREDITED;
+         } else {
+@@ -2458,6 +2467,7 @@ gdm_session_worker_open_user_session (Gd
+                 return FALSE;
+         }
+ 
++        gdm_session_worker_get_username (worker, NULL);
+         gdm_session_auditor_report_login (worker->priv->auditor);
+ 
+         return TRUE;

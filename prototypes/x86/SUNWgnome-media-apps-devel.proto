@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-media-apps-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-media-apps-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-media-apps-devel.copyright
+d none include 0755 root bin
+d none include/gnome-media 0755 root bin
+d none include/gnome-media/profiles 0755 root bin
+f none include/gnome-media/profiles/audio-profile-choose.h=usr/include/gnome-media/profiles/audio-profile-choose.h 0644 root bin
+f none include/gnome-media/profiles/audio-profile-edit.h=usr/include/gnome-media/profiles/audio-profile-edit.h 0644 root bin
+f none include/gnome-media/profiles/audio-profile.h=usr/include/gnome-media/profiles/audio-profile.h 0644 root bin
+f none include/gnome-media/profiles/audio-profiles-edit.h=usr/include/gnome-media/profiles/audio-profiles-edit.h 0644 root bin
+f none include/gnome-media/profiles/gnome-media-profiles.h=usr/include/gnome-media/profiles/gnome-media-profiles.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-media-profiles.pc=usr/lib/pkgconfig/gnome-media-profiles.pc 0644 root bin
+d none share 0755 root sys

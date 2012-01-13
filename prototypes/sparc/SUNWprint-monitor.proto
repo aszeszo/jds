@@ -1,0 +1,85 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWprint-monitor.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWprint-monitor.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWprint-monitor.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWprint-monitor.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWprint-monitor.copyright
+f none share/doc/SUNWprint-monitor/AUTHORS=usr/share/doc/SUNWprint-monitor/AUTHORS 0444 root bin
+f none share/doc/SUNWprint-monitor/COPYING.bz2=usr/share/doc/SUNWprint-monitor/COPYING.bz2 0444 root bin
+f none share/doc/SUNWprint-monitor/ChangeLog.bz2=usr/share/doc/SUNWprint-monitor/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWprint-monitor/po/ChangeLog.bz2=usr/share/doc/SUNWprint-monitor/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/ospm-pm=usr/bin/ospm-pm 0755 root bin
+f none bin/ospm-preferences=usr/bin/ospm-preferences 0755 root bin
+d none lib 0755 root bin
+d none lib/ospm 0755 root bin
+s none lib/ospm/libospm-preference-dialog.so=libospm-preference-dialog.so.0.0.0
+s none lib/ospm/libospm-preference-dialog.so.0=libospm-preference-dialog.so.0.0.0
+f none lib/ospm/libospm-preference-dialog.so.0.0.0=usr/lib/ospm/libospm-preference-dialog.so.0.0.0 0755 root bin
+s none lib/ospm/libospm-prefs.so=libospm-prefs.so.0.0.0
+s none lib/ospm/libospm-prefs.so.0=libospm-prefs.so.0.0.0
+f none lib/ospm/libospm-prefs.so.0.0.0=usr/lib/ospm/libospm-prefs.so.0.0.0 0755 root bin
+s none lib/ospm/libospm-utils.so=libospm-utils.so.0.0.0
+s none lib/ospm/libospm-utils.so.0=libospm-utils.so.0.0.0
+f none lib/ospm/libospm-utils.so.0.0.0=usr/lib/ospm/libospm-utils.so.0.0.0 0755 root bin
+f none lib/ospm/lp-queue-exists-by-serial.sh=usr/lib/ospm/lp-queue-exists-by-serial.sh 0755 root bin
+f none lib/ospm/lp-queue-helper=usr/lib/ospm/lp-queue-helper 0755 root bin
+f none lib/ospm/ospm-applet=usr/lib/ospm/ospm-applet 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWprint-monitor 0755 root bin
+d none share/doc/SUNWprint-monitor/po 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/ospm-pm 0755 root bin
+d none share/gnome/help/ospm-pm/C 0755 root bin
+f none share/gnome/help/ospm-pm/C/ospm-pm.xml=usr/share/gnome/help/ospm-pm/C/ospm-pm.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/ospm-pm.1=usr/share/man/man1/ospm-pm.1 0644 root bin
+f none share/man/man1/ospm-preferences.1=usr/share/man/man1/ospm-preferences.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/ospm-pm 0755 root bin
+f none share/omf/ospm-pm/ospm-pm-C.omf=usr/share/omf/ospm-pm/ospm-pm-C.omf 0644 root bin
+d none share/ospm 0755 root bin
+f none share/ospm/applet-ui.xml=usr/share/ospm/applet-ui.xml 0644 root bin
+d none share/ospm/glade 0755 root bin
+f none share/ospm/glade/ospm-advanced-search.glade=usr/share/ospm/glade/ospm-advanced-search.glade 0644 root bin
+f none share/ospm/glade/ospm-manual-add-printer.glade=usr/share/ospm/glade/ospm-manual-add-printer.glade 0644 root bin
+f none share/ospm/glade/ospm-preferences.glade=usr/share/ospm/glade/ospm-preferences.glade 0644 root bin
+f none share/ospm/glade/ospm-window.glade=usr/share/ospm/glade/ospm-window.glade 0644 root bin
+f none share/ospm/glade/queue-property-dialog.glade=usr/share/ospm/glade/queue-property-dialog.glade 0644 root bin
+d none share/ospm/icons 0755 root bin
+d none share/ospm/icons/hicolor 0755 root bin
+d none share/ospm/icons/hicolor/16x16 0755 root bin
+d none share/ospm/icons/hicolor/16x16/devices 0755 root bin
+f none share/ospm/icons/hicolor/16x16/devices/printer-default.png=usr/share/ospm/icons/hicolor/16x16/devices/printer-default.png 0644 root bin
+f none share/ospm/icons/hicolor/16x16/devices/printer-remote-default.png=usr/share/ospm/icons/hicolor/16x16/devices/printer-remote-default.png 0644 root bin
+f none share/ospm/icons/hicolor/16x16/devices/printer-remote.png=usr/share/ospm/icons/hicolor/16x16/devices/printer-remote.png 0644 root bin
+d none share/ospm/icons/hicolor/16x16/emblems 0755 root bin
+f none share/ospm/icons/hicolor/16x16/emblems/printer-error.png=usr/share/ospm/icons/hicolor/16x16/emblems/printer-error.png 0644 root bin
+f none share/ospm/icons/hicolor/16x16/emblems/printer-paused.png=usr/share/ospm/icons/hicolor/16x16/emblems/printer-paused.png 0644 root bin
+f none share/ospm/icons/hicolor/16x16/emblems/printer-status-unknown.png=usr/share/ospm/icons/hicolor/16x16/emblems/printer-status-unknown.png 0644 root bin
+d none share/ospm/icons/hicolor/16x16/places 0755 root bin
+d none share/ospm/icons/hicolor/24x24 0755 root bin
+d none share/ospm/icons/hicolor/24x24/places 0755 root bin
+f none share/ospm/icons/hicolor/24x24/places/pm-window-toggle.png=usr/share/ospm/icons/hicolor/24x24/places/pm-window-toggle.png 0644 root bin
+f none share/ospm/icons/hicolor/24x24/places/printer-group-favorites.png=usr/share/ospm/icons/hicolor/24x24/places/printer-group-favorites.png 0644 root bin
+f none share/ospm/icons/hicolor/24x24/places/printer-group-new.png=usr/share/ospm/icons/hicolor/24x24/places/printer-group-new.png 0644 root bin
+f none share/ospm/icons/hicolor/24x24/places/printer-group.png=usr/share/ospm/icons/hicolor/24x24/places/printer-group.png 0644 root bin
+f none share/ospm/icons/hicolor/24x24/places/printer-new.png=usr/share/ospm/icons/hicolor/24x24/places/printer-new.png 0644 root bin
+f none share/ospm/icons/hicolor/24x24/places/printer-search-group-new.png=usr/share/ospm/icons/hicolor/24x24/places/printer-search-group-new.png 0644 root bin
+f none share/ospm/icons/hicolor/24x24/places/printer-search-group.png=usr/share/ospm/icons/hicolor/24x24/places/printer-search-group.png 0644 root bin
+d none share/ospm/icons/hicolor/32x32 0755 root bin
+d none share/ospm/icons/hicolor/32x32/places 0755 root bin
+d none share/ospm/icons/hicolor/48x48 0755 root bin
+d none share/ospm/icons/hicolor/48x48/devices 0755 root bin
+f none share/ospm/icons/hicolor/48x48/devices/printer-default.png=usr/share/ospm/icons/hicolor/48x48/devices/printer-default.png 0644 root bin
+f none share/ospm/icons/hicolor/48x48/devices/printer-remote-default.png=usr/share/ospm/icons/hicolor/48x48/devices/printer-remote-default.png 0644 root bin
+f none share/ospm/icons/hicolor/48x48/devices/printer-remote.png=usr/share/ospm/icons/hicolor/48x48/devices/printer-remote.png 0644 root bin
+d none share/ospm/icons/hicolor/48x48/emblems 0755 root bin
+f none share/ospm/icons/hicolor/48x48/emblems/printer-error.png=usr/share/ospm/icons/hicolor/48x48/emblems/printer-error.png 0644 root bin
+f none share/ospm/icons/hicolor/48x48/emblems/printer-paused.png=usr/share/ospm/icons/hicolor/48x48/emblems/printer-paused.png 0644 root bin
+f none share/ospm/icons/hicolor/48x48/emblems/printer-status-unknown.png=usr/share/ospm/icons/hicolor/48x48/emblems/printer-status-unknown.png 0644 root bin
+d none share/ospm/icons/hicolor/48x48/places 0755 root bin
+f none share/ospm/testpage-a4.eps=usr/share/ospm/testpage-a4.eps 0644 root bin
+f none share/ospm/testpage-letter.eps=usr/share/ospm/testpage-letter.eps 0644 root bin

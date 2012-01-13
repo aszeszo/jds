@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-audio-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-audio-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-audio-root.copyright
+d none etc 0755 root sys
+f none etc/esd.conf=etc/esd.conf 0644 root sys

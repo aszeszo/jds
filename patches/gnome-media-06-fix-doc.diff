@@ -1,0 +1,26 @@
+--- gnome-media-2.30.0/gst-mixer/doc/C/gnome-volume-control.xml.orig	2011-05-11 09:50:56.783023047 +0100
++++ gnome-media-2.30.0/gst-mixer/doc/C/gnome-volume-control.xml	2011-05-11 09:51:08.958616268 +0100
+@@ -23,8 +23,8 @@
+    <title>&appname; Manual V&manrevision;</title>
+ 
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+    <copyright>
+@@ -67,9 +67,9 @@
+   <authorgroup>
+ 
+       <author role="maintainer">
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+ 
+     <author>

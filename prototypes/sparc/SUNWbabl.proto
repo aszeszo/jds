@@ -1,0 +1,39 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWbabl.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWbabl.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWbabl.copyright
+f none share/doc/SUNWbabl/babl-0.1.2/AUTHORS=usr/share/doc/SUNWbabl/babl-0.1.2/AUTHORS 0444 root bin
+f none share/doc/SUNWbabl/babl-0.1.2/COPYING.bz2=usr/share/doc/SUNWbabl/babl-0.1.2/COPYING.bz2 0444 root bin
+f none share/doc/SUNWbabl/babl-0.1.2/ChangeLog.bz2=usr/share/doc/SUNWbabl/babl-0.1.2/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWbabl/babl-0.1.2/NEWS.bz2=usr/share/doc/SUNWbabl/babl-0.1.2/NEWS.bz2 0444 root bin
+f none share/doc/SUNWbabl/babl-0.1.2/README=usr/share/doc/SUNWbabl/babl-0.1.2/README 0444 root bin
+d none lib 0755 root bin
+d none lib/babl-0.1 0755 root bin
+f none lib/babl-0.1/CIE.so=usr/lib/babl-0.1/CIE.so 0755 root bin
+f none lib/babl-0.1/gegl-fixups.so=usr/lib/babl-0.1/gegl-fixups.so 0755 root bin
+f none lib/babl-0.1/gggl-lies.so=usr/lib/babl-0.1/gggl-lies.so 0755 root bin
+f none lib/babl-0.1/gggl.so=usr/lib/babl-0.1/gggl.so 0755 root bin
+f none lib/babl-0.1/gimp-8bit.so=usr/lib/babl-0.1/gimp-8bit.so 0755 root bin
+f none lib/babl-0.1/naive-CMYK.so=usr/lib/babl-0.1/naive-CMYK.so 0755 root bin
+f none lib/babl-0.1/sse-fixups.so=usr/lib/babl-0.1/sse-fixups.so 0755 root bin
+s none lib/libbabl-0.1.so=libbabl-0.1.so.0.101.1
+s none lib/libbabl-0.1.so.0=libbabl-0.1.so.0.101.1
+f none lib/libbabl-0.1.so.0.101.1=usr/lib/libbabl-0.1.so.0.101.1 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/babl-0.1 0755 root bin
+f none lib/sparcv9/babl-0.1/CIE.so=usr/lib/sparcv9/babl-0.1/CIE.so 0755 root bin
+f none lib/sparcv9/babl-0.1/gegl-fixups.so=usr/lib/sparcv9/babl-0.1/gegl-fixups.so 0755 root bin
+f none lib/sparcv9/babl-0.1/gggl-lies.so=usr/lib/sparcv9/babl-0.1/gggl-lies.so 0755 root bin
+f none lib/sparcv9/babl-0.1/gggl.so=usr/lib/sparcv9/babl-0.1/gggl.so 0755 root bin
+f none lib/sparcv9/babl-0.1/gimp-8bit.so=usr/lib/sparcv9/babl-0.1/gimp-8bit.so 0755 root bin
+f none lib/sparcv9/babl-0.1/naive-CMYK.so=usr/lib/sparcv9/babl-0.1/naive-CMYK.so 0755 root bin
+f none lib/sparcv9/babl-0.1/sse-fixups.so=usr/lib/sparcv9/babl-0.1/sse-fixups.so 0755 root bin
+s none lib/sparcv9/libbabl-0.1.so=libbabl-0.1.so.0.101.1
+s none lib/sparcv9/libbabl-0.1.so.0=libbabl-0.1.so.0.101.1
+f none lib/sparcv9/libbabl-0.1.so.0.101.1=usr/lib/sparcv9/libbabl-0.1.so.0.101.1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWbabl 0755 root bin
+d none share/doc/SUNWbabl/babl-0.1.2 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libbabl-0.0.3=usr/share/man/man3/libbabl-0.0.3 0644 root bin

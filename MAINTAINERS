@@ -1,0 +1,10 @@
+If you are interested in contributing to JDS development, please log bugs
+in http://bugs.opensolaris.org/ and send patches to desktop-discuss@opensolaris.org.
+
+Each spec file is currently maintained separately by a series of component 
+owners as indicated by the 'Owner:' field. They are responsible for the 
+general well being of the module, making sure that all patches apply 
+cleanly, extra sources are needed, and the spec file conforms to the 
+various review guidelines that have been set. If you are interested in
+co-owning some of these spec files, contact the appropriate existing
+owners.

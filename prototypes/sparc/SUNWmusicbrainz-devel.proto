@@ -1,0 +1,35 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmusicbrainz-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmusicbrainz-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmusicbrainz-devel.copyright
+d none include 0755 root bin
+d none include/musicbrainz3 0755 root bin
+f none include/musicbrainz3/artist.h=usr/include/musicbrainz3/artist.h 0644 root bin
+f none include/musicbrainz3/artistalias.h=usr/include/musicbrainz3/artistalias.h 0644 root bin
+f none include/musicbrainz3/defines.h=usr/include/musicbrainz3/defines.h 0644 root bin
+f none include/musicbrainz3/disc.h=usr/include/musicbrainz3/disc.h 0644 root bin
+f none include/musicbrainz3/entity.h=usr/include/musicbrainz3/entity.h 0644 root bin
+f none include/musicbrainz3/factory.h=usr/include/musicbrainz3/factory.h 0644 root bin
+f none include/musicbrainz3/filters.h=usr/include/musicbrainz3/filters.h 0644 root bin
+f none include/musicbrainz3/includes.h=usr/include/musicbrainz3/includes.h 0644 root bin
+f none include/musicbrainz3/iwebservice.h=usr/include/musicbrainz3/iwebservice.h 0644 root bin
+f none include/musicbrainz3/label.h=usr/include/musicbrainz3/label.h 0644 root bin
+f none include/musicbrainz3/labelalias.h=usr/include/musicbrainz3/labelalias.h 0644 root bin
+f none include/musicbrainz3/lists.h=usr/include/musicbrainz3/lists.h 0644 root bin
+f none include/musicbrainz3/mb_c.h=usr/include/musicbrainz3/mb_c.h 0644 root bin
+f none include/musicbrainz3/mbxmlparser.h=usr/include/musicbrainz3/mbxmlparser.h 0644 root bin
+f none include/musicbrainz3/metadata.h=usr/include/musicbrainz3/metadata.h 0644 root bin
+f none include/musicbrainz3/model.h=usr/include/musicbrainz3/model.h 0644 root bin
+f none include/musicbrainz3/musicbrainz.h=usr/include/musicbrainz3/musicbrainz.h 0644 root bin
+f none include/musicbrainz3/query.h=usr/include/musicbrainz3/query.h 0644 root bin
+f none include/musicbrainz3/relation.h=usr/include/musicbrainz3/relation.h 0644 root bin
+f none include/musicbrainz3/release.h=usr/include/musicbrainz3/release.h 0644 root bin
+f none include/musicbrainz3/releaseevent.h=usr/include/musicbrainz3/releaseevent.h 0644 root bin
+f none include/musicbrainz3/results.h=usr/include/musicbrainz3/results.h 0644 root bin
+f none include/musicbrainz3/tag.h=usr/include/musicbrainz3/tag.h 0644 root bin
+f none include/musicbrainz3/track.h=usr/include/musicbrainz3/track.h 0644 root bin
+f none include/musicbrainz3/user.h=usr/include/musicbrainz3/user.h 0644 root bin
+f none include/musicbrainz3/utils.h=usr/include/musicbrainz3/utils.h 0644 root bin
+f none include/musicbrainz3/webservice.h=usr/include/musicbrainz3/webservice.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libmusicbrainz3.pc=usr/lib/pkgconfig/libmusicbrainz3.pc 0644 root bin

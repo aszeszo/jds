@@ -1,0 +1,11 @@
+--- ptlib-2.6.7/include/ptlib/unix/ptlib/pmachdep.h.bld	2011-06-10 21:33:28.415537140 +1200
++++ ptlib-2.6.7/include/ptlib/unix/ptlib/pmachdep.h	2011-06-10 21:33:37.787148247 +1200
+@@ -199,7 +199,7 @@
+ 
+ int ftime (struct timeb *);
+ pid_t wait3(int *status, int options, struct rusage *rusage);
+-int gethostname(char *, int);
++//int gethostname(char *, int);
+ 
+ };
+ #endif

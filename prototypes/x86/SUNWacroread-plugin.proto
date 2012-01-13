@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWacroread-plugin.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWacroread-plugin.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWacroread-plugin.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/plugins 0755 root bin
+s none lib/firefox/plugins/nppdf.so=../../AdobeReader/Adobe/Reader9/Browser/intelsolaris/nppdf.so

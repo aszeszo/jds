@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-ps-viewer.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-ps-viewer.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-ps-viewer.copyright
+d none bin 0755 root bin
+s none bin/ggv=evince

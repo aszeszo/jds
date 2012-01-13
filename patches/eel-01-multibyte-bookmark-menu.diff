@@ -1,0 +1,100 @@
+--- eel-2.10.1/eel/eel-string.c	2002-03-19 03:05:08.000000000 +0530
++++ eel-2.10.1-new/eel/eel-string.c	2005-05-13 15:09:48.219632000 +0530
+@@ -29,6 +29,8 @@
+ #include <locale.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <ctype.h>
++#include <glib.h>
+ 
+ #if !defined (EEL_OMIT_SELF_CHECK)
+ #include "eel-lib-self-check-functions.h"
+@@ -326,9 +326,10 @@
+ 			 guint truncate_length)
+ {
+ 	char *truncated;
+-	guint length;
++	guint length, i;
+ 	guint num_left_chars;
+ 	guint num_right_chars;
++	gboolean is_ascii = TRUE, valid_utf8 =  TRUE;
+ 
+ 	const char delimter[] = "...";
+ 	const guint delimter_length = strlen (delimter);
+@@ -353,10 +354,41 @@
+ 		return g_strdup (string);
+ 	}
+ 
++	for (i=0; i<length; i++) {
++		if (!isascii (string[i])) {
++			is_ascii = FALSE;
++			break;
++		}
++	}
++
++	if (!is_ascii && g_utf8_validate (string, -1, NULL)) {
++		valid_utf8 = TRUE;
++	}
++
+ 	/* Find the 'middle' where the truncation will occur. */
+ 	num_left_chars = (truncate_length - delimter_length) / 2;
++
++	if (valid_utf8 && !g_utf8_validate (string + num_left_chars, -1, NULL)) {
++	gchar *tc;
++	tc = g_utf8_find_next_char (string + num_left_chars, NULL);
++		if (tc) {
++			num_left_chars = (gint) (tc - string);
++		}
++	}
++
+ 	num_right_chars = truncate_length - num_left_chars - delimter_length;
+ 
++	if (valid_utf8 && !g_utf8_validate (string + length - num_right_chars +1, -1, NULL)) {
++		gchar *tc;
++		tc = g_utf8_find_prev_char (string, string + length - num_right_chars + 1);
++		if (tc) {
++			num_right_chars = strlen (tc) + 1;
++		}
++	}
++
++	if (valid_utf8)
++		truncate_length = num_left_chars + num_right_chars + delimter_length;
++
+ 	truncated = g_new (char, strlen (string) + 1);
+ 
+ 	g_utf8_strncpy (truncated, string, num_left_chars);
+diff -ruN eel-2.26.0.orig/eel/eel-background.c eel-2.26.0/eel/eel-background.c
+--- eel-2.26.0.orig/eel/eel-background.c	2010-02-01 21:50:54.619020341 +0000
++++ eel-2.26.0/eel/eel-background.c	2010-02-01 21:51:12.253255236 +0000
+@@ -1000,7 +1000,7 @@
+ gboolean
+ eel_background_is_dark (EelBackground *background)
+ {
+-	return gnome_bg_is_dark (background->details->bg);
++	return gnome_bg_is_dark (background->details->bg, NULL, NULL);
+ }
+    
+ /* handle dropped colors */
+diff -ruN eel-2.26.0.orig/eel/eel-background.c eel-2.26.0/eel/eel-background.c
+--- eel-2.26.0.orig/eel/eel-background.c	2010-02-01 22:50:43.603262566 +0000
++++ eel-2.26.0/eel/eel-background.c	2010-02-01 22:51:24.969133823 +0000
+@@ -368,7 +368,7 @@
+ 
+ 	set_image_properties (background);
+ 
+-	background->details->background_changes_with_size = gnome_bg_changes_with_size (background->details->bg);
++	//background->details->background_changes_with_size = gnome_bg_changes_with_size (background->details->bg);
+ 	background->details->background_pixmap = gnome_bg_create_pixmap (background->details->bg,
+ 									 window,
+ 									 entire_width, entire_height,
+@@ -746,8 +746,8 @@
+ 	}
+         }
+ 	
+-	background->details->background_changes_with_size =
+-		gnome_bg_changes_with_size (background->details->bg);
++	//background->details->background_changes_with_size =
++	//	gnome_bg_changes_with_size (background->details->bg);
+ 	
+ 	if (background->details->is_desktop && !in_fade) {
+ 		set_root_pixmap (background, window);

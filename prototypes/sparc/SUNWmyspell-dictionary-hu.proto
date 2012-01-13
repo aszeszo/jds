@@ -1,0 +1,27 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-hu.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-hu.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-hu.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/hu-HU.aff=../../../../usr/share/spell/myspell/hu_HU.aff
+s none lib/firefox/dictionaries/hu-HU.dic=../../../../usr/share/spell/myspell/hu_HU.dic
+s none lib/firefox/dictionaries/hu-HU_u8.aff=../../../../usr/share/spell/myspell/hu_HU_u8.aff
+s none lib/firefox/dictionaries/hu-HU_u8.dic=../../../../usr/share/spell/myspell/hu_HU_u8.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/hu-HU.aff=../../../../usr/share/spell/myspell/hu_HU.aff
+s none lib/thunderbird/dictionaries/hu-HU.dic=../../../../usr/share/spell/myspell/hu_HU.dic
+s none lib/thunderbird/dictionaries/hu-HU_u8.aff=../../../../usr/share/spell/myspell/hu_HU_u8.aff
+s none lib/thunderbird/dictionaries/hu-HU_u8.dic=../../../../usr/share/spell/myspell/hu_HU_u8.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/hu_HU 0755 root bin
+f none share/doc/myspell-dictionary/hu_HU/README_hu_HU.txt=usr/share/doc/myspell-dictionary/hu_HU/README_hu_HU.txt 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/hu_HU.aff=usr/share/spell/myspell/hu_HU.aff 0644 root other
+f none share/spell/myspell/hu_HU.dic=usr/share/spell/myspell/hu_HU.dic 0644 root other
+f none share/spell/myspell/hu_HU_u8.aff=usr/share/spell/myspell/hu_HU_u8.aff 0644 root other
+f none share/spell/myspell/hu_HU_u8.dic=usr/share/spell/myspell/hu_HU_u8.dic 0644 root other

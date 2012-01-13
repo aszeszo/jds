@@ -1,0 +1,156 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk2.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk2.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgtk2.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk2.copyright
+f none share/doc/SUNWgtk2/gtk+-2.20.0/AUTHORS=usr/share/doc/SUNWgtk2/gtk+-2.20.0/AUTHORS 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/COPYING.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.gtk-async-file-chooser.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.gtk-async-file-chooser.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.gtk-printing.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.gtk-printing.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-1-0.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-1-0.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-1-2.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-1-2.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-0.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-0.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-10.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-10.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-2.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-2.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-4.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-4.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-6.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-6.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-8.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/ChangeLog.pre-2-8.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/NEWS.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/README=usr/share/doc/SUNWgtk2/gtk+-2.20.0/README 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/gdk-pixbuf/ChangeLog.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/gdk-pixbuf/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/po-properties/ChangeLog.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/po-properties/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgtk2/gtk+-2.20.0/po/ChangeLog.bz2=usr/share/doc/SUNWgtk2/gtk+-2.20.0/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/gdk-pixbuf-query-loaders=usr/bin/gdk-pixbuf-query-loaders 0755 root bin
+f none bin/gtk-builder-convert=usr/bin/gtk-builder-convert 0755 root bin
+f none bin/gtk-query-immodules-2.0=usr/bin/gtk-query-immodules-2.0 0755 root bin
+f none bin/gtk-update-icon-cache=usr/bin/gtk-update-icon-cache 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/gdk-pixbuf-query-loaders=usr/bin/sparcv9/gdk-pixbuf-query-loaders 0755 root bin
+f none bin/sparcv9/gtk-builder-convert=usr/bin/sparcv9/gtk-builder-convert 0755 root bin
+f none bin/sparcv9/gtk-query-immodules-2.0=usr/bin/sparcv9/gtk-query-immodules-2.0 0755 root bin
+d none lib 0755 root bin
+d none lib/girepository-1.0 0755 root bin
+f none lib/girepository-1.0/Gdk-2.0.typelib=usr/lib/girepository-1.0/Gdk-2.0.typelib 0644 root bin
+f none lib/girepository-1.0/GdkPixbuf-2.0.typelib=usr/lib/girepository-1.0/GdkPixbuf-2.0.typelib 0644 root bin
+f none lib/girepository-1.0/Gtk-2.0.typelib=usr/lib/girepository-1.0/Gtk-2.0.typelib 0644 root bin
+d none lib/gtk-2.0 0755 root bin
+d none lib/gtk-2.0/2.10.0 0755 root bin
+d none lib/gtk-2.0/2.10.0/engines 0755 root bin
+f none lib/gtk-2.0/2.10.0/engines/libpixmap.so=usr/lib/gtk-2.0/2.10.0/engines/libpixmap.so 0755 root bin
+d none lib/gtk-2.0/2.10.0/immodules 0755 root bin
+f none lib/gtk-2.0/2.10.0/immodules/im-xim.so=usr/lib/gtk-2.0/2.10.0/immodules/im-xim.so 0755 root bin
+d none lib/gtk-2.0/2.10.0/loaders 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ani.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ani.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-bmp.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-bmp.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-gif.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-gif.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-icns.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-icns.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ico.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ico.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-jpeg.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-jpeg.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pcx.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pcx.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-png.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-png.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pnm.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-pnm.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-qtif.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-qtif.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ras.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-ras.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tga.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tga.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tiff.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-tiff.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-wbmp.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-wbmp.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xbm.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xbm.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xpm.so=usr/lib/gtk-2.0/2.10.0/loaders/libpixbufloader-xpm.so 0755 root bin
+d none lib/gtk-2.0/2.10.0/printbackends 0755 root bin
+f none lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.so=usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-file.so 0755 root bin
+f none lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.so=usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.so 0755 root bin
+d none lib/gtk-2.0/modules 0755 root bin
+f none lib/gtk-2.0/modules/libferret.so=usr/lib/gtk-2.0/modules/libferret.so 0755 root bin
+f none lib/gtk-2.0/modules/libgail.so=usr/lib/gtk-2.0/modules/libgail.so 0755 root bin
+s none lib/libgailutil.so=libgailutil.so.18.0.1
+s none lib/libgailutil.so.18=libgailutil.so.18.0.1
+f none lib/libgailutil.so.18.0.1=usr/lib/libgailutil.so.18.0.1 0755 root bin
+s none lib/libgdk-x11-2.0.so=libgdk-x11-2.0.so.0.2000.0
+s none lib/libgdk-x11-2.0.so.0=libgdk-x11-2.0.so.0.2000.0
+f none lib/libgdk-x11-2.0.so.0.2000.0=usr/lib/libgdk-x11-2.0.so.0.2000.0 0755 root bin
+s none lib/libgdk_pixbuf-2.0.so=libgdk_pixbuf-2.0.so.0.2000.0
+s none lib/libgdk_pixbuf-2.0.so.0=libgdk_pixbuf-2.0.so.0.2000.0
+f none lib/libgdk_pixbuf-2.0.so.0.2000.0=usr/lib/libgdk_pixbuf-2.0.so.0.2000.0 0755 root bin
+s none lib/libgdk_pixbuf_xlib-2.0.so=libgdk_pixbuf_xlib-2.0.so.0.2000.0
+s none lib/libgdk_pixbuf_xlib-2.0.so.0=libgdk_pixbuf_xlib-2.0.so.0.2000.0
+f none lib/libgdk_pixbuf_xlib-2.0.so.0.2000.0=usr/lib/libgdk_pixbuf_xlib-2.0.so.0.2000.0 0755 root bin
+s none lib/libgtk-x11-2.0.so=libgtk-x11-2.0.so.0.2000.0
+s none lib/libgtk-x11-2.0.so.0=libgtk-x11-2.0.so.0.2000.0
+f none lib/libgtk-x11-2.0.so.0.2000.0=usr/lib/libgtk-x11-2.0.so.0.2000.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/girepository-1.0 0755 root bin
+f none lib/sparcv9/girepository-1.0/Gdk-2.0.typelib=usr/lib/sparcv9/girepository-1.0/Gdk-2.0.typelib 0644 root bin
+f none lib/sparcv9/girepository-1.0/GdkPixbuf-2.0.typelib=usr/lib/sparcv9/girepository-1.0/GdkPixbuf-2.0.typelib 0644 root bin
+f none lib/sparcv9/girepository-1.0/Gtk-2.0.typelib=usr/lib/sparcv9/girepository-1.0/Gtk-2.0.typelib 0644 root bin
+d none lib/sparcv9/gtk-2.0 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0/engines 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/engines/libpixmap.so=usr/lib/sparcv9/gtk-2.0/2.10.0/engines/libpixmap.so 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0/immodules 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/immodules/im-xim.so=usr/lib/sparcv9/gtk-2.0/2.10.0/immodules/im-xim.so 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0/loaders 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-ani.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-ani.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-bmp.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-bmp.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-gif.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-gif.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-icns.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-icns.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-ico.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-ico.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-jpeg.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-jpeg.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-pcx.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-pcx.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-png.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-png.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-pnm.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-pnm.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-qtif.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-qtif.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-ras.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-ras.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-tga.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-tga.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-tiff.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-tiff.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-wbmp.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-wbmp.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-xbm.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-xbm.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-xpm.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/libpixbufloader-xpm.so 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0/printbackends 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/printbackends/libprintbackend-file.so=usr/lib/sparcv9/gtk-2.0/2.10.0/printbackends/libprintbackend-file.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.so=usr/lib/sparcv9/gtk-2.0/2.10.0/printbackends/libprintbackend-lpr.so 0755 root bin
+d none lib/sparcv9/gtk-2.0/modules 0755 root bin
+f none lib/sparcv9/gtk-2.0/modules/libferret.so=usr/lib/sparcv9/gtk-2.0/modules/libferret.so 0755 root bin
+f none lib/sparcv9/gtk-2.0/modules/libgail.so=usr/lib/sparcv9/gtk-2.0/modules/libgail.so 0755 root bin
+s none lib/sparcv9/libgailutil.so=libgailutil.so.18.0.1
+s none lib/sparcv9/libgailutil.so.18=libgailutil.so.18.0.1
+f none lib/sparcv9/libgailutil.so.18.0.1=usr/lib/sparcv9/libgailutil.so.18.0.1 0755 root bin
+s none lib/sparcv9/libgdk-x11-2.0.so=libgdk-x11-2.0.so.0.2000.0
+s none lib/sparcv9/libgdk-x11-2.0.so.0=libgdk-x11-2.0.so.0.2000.0
+f none lib/sparcv9/libgdk-x11-2.0.so.0.2000.0=usr/lib/sparcv9/libgdk-x11-2.0.so.0.2000.0 0755 root bin
+s none lib/sparcv9/libgdk_pixbuf-2.0.so=libgdk_pixbuf-2.0.so.0.2000.0
+s none lib/sparcv9/libgdk_pixbuf-2.0.so.0=libgdk_pixbuf-2.0.so.0.2000.0
+f none lib/sparcv9/libgdk_pixbuf-2.0.so.0.2000.0=usr/lib/sparcv9/libgdk_pixbuf-2.0.so.0.2000.0 0755 root bin
+s none lib/sparcv9/libgdk_pixbuf_xlib-2.0.so=libgdk_pixbuf_xlib-2.0.so.0.2000.0
+s none lib/sparcv9/libgdk_pixbuf_xlib-2.0.so.0=libgdk_pixbuf_xlib-2.0.so.0.2000.0
+f none lib/sparcv9/libgdk_pixbuf_xlib-2.0.so.0.2000.0=usr/lib/sparcv9/libgdk_pixbuf_xlib-2.0.so.0.2000.0 0755 root bin
+s none lib/sparcv9/libgtk-x11-2.0.so=libgtk-x11-2.0.so.0.2000.0
+s none lib/sparcv9/libgtk-x11-2.0.so.0=libgtk-x11-2.0.so.0.2000.0
+f none lib/sparcv9/libgtk-x11-2.0.so.0.2000.0=usr/lib/sparcv9/libgtk-x11-2.0.so.0.2000.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgtk2 0755 root bin
+d none share/doc/SUNWgtk2/gtk+-2.20.0 0755 root bin
+d none share/doc/SUNWgtk2/gtk+-2.20.0/gdk-pixbuf 0755 root bin
+d none share/doc/SUNWgtk2/gtk+-2.20.0/po 0755 root bin
+d none share/doc/SUNWgtk2/gtk+-2.20.0/po-properties 0755 root bin
+d none share/gir-1.0 0755 root bin
+f none share/gir-1.0/Gdk-2.0.gir=usr/share/gir-1.0/Gdk-2.0.gir 0644 root bin
+f none share/gir-1.0/GdkPixbuf-2.0.gir=usr/share/gir-1.0/GdkPixbuf-2.0.gir 0644 root bin
+f none share/gir-1.0/Gtk-2.0.gir=usr/share/gir-1.0/Gtk-2.0.gir 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gdk-pixbuf-query-loaders.1=usr/share/man/man1/gdk-pixbuf-query-loaders.1 0644 root bin
+f none share/man/man1/gtk-builder-convert.1=usr/share/man/man1/gtk-builder-convert.1 0644 root bin
+f none share/man/man1/gtk-query-immodules-2.0.1=usr/share/man/man1/gtk-query-immodules-2.0.1 0644 root bin
+f none share/man/man1/gtk-update-icon-cache.1=usr/share/man/man1/gtk-update-icon-cache.1 0644 root bin
+d none share/themes 0755 root bin
+d none share/themes/Default 0755 root bin
+d none share/themes/Default/gtk-2.0-key 0755 root bin
+f none share/themes/Default/gtk-2.0-key/gtkrc=usr/share/themes/Default/gtk-2.0-key/gtkrc 0644 root bin
+d none share/themes/Emacs 0755 root bin
+d none share/themes/Emacs/gtk-2.0-key 0755 root bin
+f none share/themes/Emacs/gtk-2.0-key/gtkrc=usr/share/themes/Emacs/gtk-2.0-key/gtkrc 0644 root bin
+d none share/themes/Raleigh 0755 root bin
+d none share/themes/Raleigh/gtk-2.0 0755 root bin
+f none share/themes/Raleigh/gtk-2.0/gtkrc=usr/share/themes/Raleigh/gtk-2.0/gtkrc 0644 root bin

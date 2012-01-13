@@ -1,0 +1,55 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: MIT
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    LICENSE.bz2: License information for Twisted
+    README: More informaiton about Twisted
+    NEWS.bz2: List of the most important changes to Twisted
+    twisted/copyright.py.bz2: Copyright information for Twisted
+    twisted/topfiles/CREDITS: List of credits of Twisted
+    twisted/topfiles/ChangeLog.Old.bz2: List of all old changes and authors of
+                    Twisted
+    twisted/topfiles/NEWS.bz2: List of the most important changes to Twisted
+                    Core
+    twisted/conch/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted Conch
+    twisted/lore/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted Lore
+    twisted/mail/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted Mail
+    twisted/names/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted Names
+    twisted/news/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted News
+    twisted/pair/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted pair
+    twisted/runner/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted Runner
+    twisted/web/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted Web
+    twisted/words/topfiles/NEWS.bz2: List of the most important changes to
+                    Twisted Words
+    twisted/topfiles/README: More information about Twisted Core
+    twisted/conch/topfiles/README: More information about Twisted Conch
+    twisted/lore/topfiles/README: More information about Twisted Lore
+    twisted/mail/topfiles/README: More information about Twisted Mail
+    twisted/names/topfiles/README: More information about Twisted Names
+    twisted/news/topfiles/README: More information about Twisted News
+    twisted/pair/topfiles/README: More information about Twisted Pair
+    twisted/python/zsh/README: More information about Twisted Zsh
+    twisted/runner/topfiles/README: More information about Twisted Runner
+    twisted/web/topfiles/README: More information about Twisted Web
+    twisted/words/topfiles/README: More information about Twisted Words
+    doc/conch/benchmarks/README: More information about TwistedConch benchmarks
+    doc/core/examples/threadedselect/README: More information about
+                    threadselect core examples.
+
+  The sources of Twisted-%{pt.version} were downloaded
+  from %{pt.SOURCE0.url}

@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapmcg.pkginfo
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapmcg.copyright
+d none etc 0755 root sys
+d none etc/opt 0755 root sys
+d none etc/opt/SUNWapmcg 0755 noaccess noaccess

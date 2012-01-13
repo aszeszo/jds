@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-config-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-config-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-config-java.copyright
+d none lib 0755 root bin
+f none lib/libgconfjni-2.12.so=usr/lib/libgconfjni-2.12.so 0755 root bin
+s none lib/libgconfjni.so=libgconfjni-2.12.so
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/java 0755 root sys
+f none share/lib/java/gconf2.12-2.12.6.jar=usr/share/lib/java/gconf2.12-2.12.6.jar 0644 root bin
+s none share/lib/java/gconf2.12.jar=gconf2.12-2.12.6.jar

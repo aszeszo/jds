@@ -1,0 +1,235 @@
+Common subdirectories: slocate-3.1.orig/debian and slocate-3.1/debian
+Common subdirectories: slocate-3.1.orig/doc and slocate-3.1/doc
+Common subdirectories: slocate-3.1.orig/src and slocate-3.1/src
+diff -ur slocate-3.1.orig/src/cmds.c slocate-3.1/src/cmds.c
+--- slocate-3.1.orig/src/cmds.c	Wed Mar  8 12:40:11 2006
++++ slocate-3.1/src/cmds.c	Fri May  8 15:16:16 2009
+@@ -585,9 +585,9 @@
+ 	head_ptr = fbuf;
+ 	while (head_ptr) {
+ 		/* find filesystem type */
+-		if ((head_ptr = strchr(head_ptr,' '))) {
++		if ((head_ptr = strchr(head_ptr,'\t'))) {
+ 			head_ptr += 1;
+-			head_ptr = strchr(head_ptr,' ');
++			head_ptr = strchr(head_ptr,'\t');
+ 		}
+ 		
+ 		if (!head_ptr)
+@@ -595,7 +595,7 @@
+ 		
+ 		head_ptr += 1;
+ 		
+-		tail_ptr = strchr(head_ptr,' ');
++		tail_ptr = strchr(head_ptr,'\t');
+ 		if (!tail_ptr) {
+ 			head_ptr = NULL;
+ 			continue;
+@@ -614,7 +614,7 @@
+ 			    matched = 1;
+ 		}
+ 		
+-		*tail_ptr = ' ';
++		*tail_ptr = '\t';
+ 		
+ 		if (matched) {
+ 			/* go backwards a bit so that we can get the
+@@ -621,7 +621,7 @@
+ 			 * mount point of the filesystem */
+ 			head_ptr -= 2;
+ 			
+-			while (*head_ptr != ' ' && head_ptr != fbuf)
++			while (*head_ptr != '\t' && head_ptr != fbuf)
+ 			    head_ptr -= 1;
+ 			
+ 			if (head_ptr == fbuf) {
+@@ -631,7 +631,7 @@
+ 			
+ 			head_ptr += 1;
+ 			
+-			if (!(tail_ptr = strchr(head_ptr,' '))) {
++			if (!(tail_ptr = strchr(head_ptr,'\t'))) {
+ 				report_error(g_data, FATAL, "parse_fs_exclude: File System Exclude: (2) corrupt mtab file: %s\n", MTAB_FILE);
+ 				goto EXIT;
+ 			}
+@@ -648,7 +648,7 @@
+ 			    strcat(exclude_str, ",");
+ 			strcat(exclude_str, head_ptr);
+ 			
+-			*tail_ptr = ' ';
++			*tail_ptr = '\t';
+ 		}
+ 
+ 
+@@ -707,7 +707,7 @@
+ 	if (strcmp(g_data->progname, "updatedb") == 0)
+ 	    cmd_data->updatedb = TRUE;
+ 
+-	while ((ch = getopt(argc,argv,"VvuhqU:r:o:e:l:d:-:n:f:c:i")) != EOF) {
++	while ((ch = getopt(argc,argv,":VvuhqU:r:o:e:l:d:-:n:f:c:i")) != EOF) {
+ 		switch(ch) {
+ 			/* Help */
+ 		 case 'h':
+@@ -823,6 +823,20 @@
+ 				goto EXIT;
+ 			}
+ 			break;
++                 case '?':
++                        if ( optopt == '-' ) {
++                        	char *tmp_optarg;
++                        	tmp_optarg = argv[optind-1] + 2;
++
++                                dash_ret = parse_dash(g_data, tmp_optarg);
++                        	if (!dash_ret)
++                                    goto EXIT;
++                        	else if (dash_ret == 2) {
++                        		cmd_data->exit_but_nice = 1;
++                        		goto EXIT;
++                        	}
++                        }
++                        break;
+ 		 default:
+ 			break;
+ 		}
+diff -ur slocate-3.1.orig/src/cmds.h slocate-3.1/src/cmds.h
+--- slocate-3.1.orig/src/cmds.h	Sat Jan  7 02:30:38 2006
++++ slocate-3.1/src/cmds.h	Fri May  8 15:06:31 2009
+@@ -30,4 +30,24 @@
+ int parse_fs_exclude(struct g_data_s *g_data, char *data_str);
+ int parse_exclude(struct g_data_s *g_data, char *estr);
+ 
++#ifdef getopt
++#undef getopt
++#endif
++
++#ifdef optarg
++#undef optarg
++#endif
++
++#ifdef optind
++#undef optind
++#endif
++
++#ifdef opterr
++#undef opterr
++#endif
++
++#ifdef optopt
++#undef optopt
++#endif
++
+ #endif
+diff -ur slocate-3.1.orig/src/conf.c slocate-3.1/src/conf.c
+--- slocate-3.1.orig/src/conf.c	Tue Dec 20 14:30:39 2005
++++ slocate-3.1/src/conf.c	Fri May  8 15:03:01 2009
+@@ -25,8 +25,8 @@
+ #include "slocate.h"
+ #include "utils.h"
+ #include "cmds.h"
++char *strndup ( const char *s, size_t n);
+ 
+-
+ char * get_next_char(char ch, char *ptr)
+ {
+ 	while (*ptr && *ptr != ch && *ptr != '\n')
+@@ -239,4 +239,23 @@
+ 	}
+ 
+ 	return res;
++}
++
++char *strndup ( const char *s, size_t n)
++{
++        size_t nAvail;
++        char *p;
++
++        if ( !s )
++                return 0;
++
++        if ( strlen(s) > n )
++                nAvail = n + 1;
++        else
++                nAvail = strlen(s) + 1;
++        p = malloc ( nAvail );
++        memcpy ( p, s, nAvail );
++	 p[nAvail - 1] = '\0';
++
++	 return p;
+ }
+diff -ur slocate-3.1.orig/src/slocate.c slocate-3.1/src/slocate.c
+--- slocate-3.1.orig/src/slocate.c	Wed Mar  8 12:40:11 2006
++++ slocate-3.1/src/slocate.c	Fri May  8 15:03:01 2009
+@@ -347,7 +347,7 @@
+ 			if (!encode(g_data, fd, file->fts_path, &enc_data))
+ 			    goto EXIT;
+ 		} else if (matched != -1) {
+-			fts_set(dir, file, FTS_SKIP);
++			fts_set(NULL, file, FTS_SKIP);
+ 		} else {
+ 			goto EXIT;
+ 		}
+diff -ur slocate-3.1.orig/src/slocate.h slocate-3.1/src/slocate.h
+--- slocate-3.1.orig/src/slocate.h	Wed Mar  8 12:40:11 2006
++++ slocate-3.1/src/slocate.h	Fri May  8 15:03:01 2009
+@@ -32,7 +32,7 @@
+ /* Printable version of WARN_SECONDS.  */
+ #define WARN_MESSAGE "8 days"
+ 
+-#define MTAB_FILE "/etc/mtab"
++#define MTAB_FILE "/etc/mnttab"
+ #define UPDATEDB_FILE "/etc/updatedb.conf"
+ 
+ /* More fitting paths for FreeBSD -matt */
+diff -ur slocate-3.1.orig/src/utils.c slocate-3.1/src/utils.c
+--- slocate-3.1.orig/src/utils.c	Fri Jan  6 08:16:19 2006
++++ slocate-3.1/src/utils.c	Fri May  8 15:03:01 2009
+@@ -34,6 +34,7 @@
+ #endif
+ 
+ #define RAND_MAX 9999
++char* strcasestr( char *, char *);
+ 
+ /* Duplicate string and make all characters lowercase */
+ char * tolower_strdup(char *str)
+@@ -59,7 +60,7 @@
+ 	int ret = 0;
+ 	int nmatch = 32;
+ 	regmatch_t pmatch[32];
+-#ifndef FNM_CASEFOLD
++#ifdef FNM_CASEFOLD
+ 	char *nocase_str = NULL;
+ 	char *nocase_path = NULL;
+ #endif
+@@ -129,9 +130,14 @@
+ 				goto EXIT;
+ 			}
+ 			
+-		} else
+-		    foundit = (strcasestr(search_str, search_str) != NULL);
++		} else {
+ 
++			if (strcasestr(full_path, search_str) != NULL)
++				foundit = 1;
++			else
++				foundit = 0;
++		}
++
+ #endif /* FNM_CASEFOLD */
+ 	} 
+ 
+@@ -544,3 +550,15 @@
+ EXIT:
+ 	return ret;
+ }
++
++char *strcasestr(char *a, char *b) {
++	size_t l;
++	char f[3];
++
++	snprintf(f, sizeof(f), "%c%c", tolower(*b), toupper(*b));
++	for (l = strcspn(a, f); l != strlen(a); l += strcspn(a + l + 1, f) + 1)
++		if (strncasecmp(a + l, b, strlen(b)) == 0)
++			return(a + l);
++	return(NULL);
++}
++

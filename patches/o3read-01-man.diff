@@ -1,0 +1,84 @@
+/jds/bin/diff -uprN o3read-0.0.4.old/o3tohtml.1 o3read-0.0.4/o3tohtml.1
+--- o3read-0.0.4.old/o3tohtml.1	2009-02-20 18:34:48.896525000 +0000
++++ o3read-0.0.4/o3tohtml.1	2009-02-20 18:41:16.303858000 +0000
+@@ -1 +1,2 @@
+ .so man1/o3read.1
++...\" LSARC 2008/471 o3read for OpenSolaris
+/jds/bin/diff -uprN o3read-0.0.4.old/o3totxt.1 o3read-0.0.4/o3totxt.1
+--- o3read-0.0.4.old/o3totxt.1	2009-02-20 18:34:48.898384000 +0000
++++ o3read-0.0.4/o3totxt.1	2009-02-20 18:41:32.680370000 +0000
+@@ -1 +1,2 @@
+ .so man1/o3read.1
++...\" LSARC 2008/471 o3read for OpenSolaris
+/jds/bin/diff -uprN o3read-0.0.4.old/o3read.1 o3read-0.0.4/o3read.1
+--- o3read-0.0.4.old/o3read.1	2009-02-20 18:34:48.898691000 +0000
++++ o3read-0.0.4/o3read.1	2009-02-20 18:44:50.537420000 +0000
+@@ -1,4 +1,6 @@
++'\" te
+ .TH O3READ 1 LOCAL
++...\" LSARC 2008/471 o3read for OpenSolaris
+ 
+ .SH NAME
+ o3read, o3tohtml, o3totxt \- convert files in OpenOffice.org format.
+@@ -21,6 +23,25 @@ into other formats such as html or plain
+ .SH EXAMPLE
+ unzip -p file.sxw content.xml | o3tohtml | utf8tolatin1 > file.html
+ 
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) box;
++cw(2.75i) |cw(2.75i)
++lw(2.75i) |lw(2.75i)
++.
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++_
++Availability^SUNWo3read
++_
++Interface stability^Volatile
++
++.TE
++.sp
++
+ .SH SEE ALSO
+ utf8tolatin1
+ 
+/jds/bin/diff -uprN o3read-0.0.4.old/utf8tolatin1.1 o3read-0.0.4/utf8tolatin1.1
+--- o3read-0.0.4.old/utf8tolatin1.1	2009-02-20 18:34:48.897291000 +0000
++++ o3read-0.0.4/utf8tolatin1.1	2009-02-20 18:45:11.742410000 +0000
+@@ -1,4 +1,6 @@
++'\" te
+ .TH UTF8TOLATIN1 1 LOCAL
++...\" LSARC 2008/471 o3read for OpenSolaris
+ 
+ .SH NAME
+ utf8tolatin1
+@@ -12,6 +14,25 @@ utf8tolatin1
+ reads utf-8 encoded text on stdin and writes latin1 (iso8859-1) encoded
+ text on stdout.
+ 
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab(^G) box;
++cw(2.75i) |cw(2.75i)
++lw(2.75i) |lw(2.75i)
++.
++ATTRIBUTE TYPE^ATTRIBUTE VALUE
++_
++Availability^SUNWo3read
++_
++Interface stability^Volatile
++
++.TE
++.sp
++
+ .SH AUTHOR
+ Copyright (C) 2002 Ulric Eriksson
+ 

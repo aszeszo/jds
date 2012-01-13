@@ -1,0 +1,4 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWfirefox-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWfirefox-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWfirefox-root.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWfirefox-root.copyright

@@ -1,0 +1,36 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmysql-python26.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmysql-python26.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmysql-python26.copyright
+f none share/doc/SUNWmysql-python26/ChangeLog.bz2=usr/share/doc/SUNWmysql-python26/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWmysql-python26/GPL.bz2=usr/share/doc/SUNWmysql-python26/GPL.bz2 0444 root bin
+f none share/doc/SUNWmysql-python26/HISTORY.bz2=usr/share/doc/SUNWmysql-python26/HISTORY.bz2 0444 root bin
+f none share/doc/SUNWmysql-python26/PKG-INFO=usr/share/doc/SUNWmysql-python26/PKG-INFO 0444 root bin
+f none share/doc/SUNWmysql-python26/README.bz2=usr/share/doc/SUNWmysql-python26/README.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info 0755 root bin
+f none lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/PKG-INFO=usr/lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/PKG-INFO 0644 root bin
+f none lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/SOURCES.txt=usr/lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/SOURCES.txt 0644 root bin
+f none lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/dependency_links.txt=usr/lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/dependency_links.txt 0644 root bin
+f none lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/top_level.txt=usr/lib/python2.6/vendor-packages/MySQL_python-1.2.2-py2.6.egg-info/top_level.txt 0644 root bin
+d none lib/python2.6/vendor-packages/MySQLdb 0755 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/__init__.py=usr/lib/python2.6/vendor-packages/MySQLdb/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/connections.py=usr/lib/python2.6/vendor-packages/MySQLdb/connections.py 0644 root bin
+d none lib/python2.6/vendor-packages/MySQLdb/constants 0755 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/constants/CLIENT.py=usr/lib/python2.6/vendor-packages/MySQLdb/constants/CLIENT.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/constants/CR.py=usr/lib/python2.6/vendor-packages/MySQLdb/constants/CR.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/constants/ER.py=usr/lib/python2.6/vendor-packages/MySQLdb/constants/ER.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/constants/FIELD_TYPE.py=usr/lib/python2.6/vendor-packages/MySQLdb/constants/FIELD_TYPE.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/constants/FLAG.py=usr/lib/python2.6/vendor-packages/MySQLdb/constants/FLAG.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/constants/REFRESH.py=usr/lib/python2.6/vendor-packages/MySQLdb/constants/REFRESH.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/constants/__init__.py=usr/lib/python2.6/vendor-packages/MySQLdb/constants/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/converters.py=usr/lib/python2.6/vendor-packages/MySQLdb/converters.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/cursors.py=usr/lib/python2.6/vendor-packages/MySQLdb/cursors.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/release.py=usr/lib/python2.6/vendor-packages/MySQLdb/release.py 0644 root bin
+f none lib/python2.6/vendor-packages/MySQLdb/times.py=usr/lib/python2.6/vendor-packages/MySQLdb/times.py 0644 root bin
+f none lib/python2.6/vendor-packages/_mysql.so=usr/lib/python2.6/vendor-packages/_mysql.so 0755 root bin
+f none lib/python2.6/vendor-packages/_mysql_exceptions.py=usr/lib/python2.6/vendor-packages/_mysql_exceptions.py 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWmysql-python26 0755 root bin

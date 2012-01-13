@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWseahorse-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWseahorse-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWseahorse-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/seahorse.schemas=etc/gconf/schemas/seahorse.schemas 0644 root sys

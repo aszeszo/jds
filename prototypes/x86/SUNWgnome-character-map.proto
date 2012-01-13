@@ -1,0 +1,43 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-character-map.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-character-map.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-character-map.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-character-map.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-character-map.copyright
+f none share/doc/SUNWgnome-character-map/AUTHORS=usr/share/doc/SUNWgnome-character-map/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-character-map/COPYING.bz2=usr/share/doc/SUNWgnome-character-map/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-character-map/COPYING.UNICODE=usr/share/doc/SUNWgnome-character-map/COPYING.UNICODE 0444 root bin
+f none share/doc/SUNWgnome-character-map/ChangeLog.bz2=usr/share/doc/SUNWgnome-character-map/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-character-map/ChangeLog.README=usr/share/doc/SUNWgnome-character-map/ChangeLog.README 0444 root bin
+f none share/doc/SUNWgnome-character-map/ChangeLog.pre-2-23.bz2=usr/share/doc/SUNWgnome-character-map/ChangeLog.pre-2-23.bz2 0444 root bin
+f none share/doc/SUNWgnome-character-map/NEWS=usr/share/doc/SUNWgnome-character-map/NEWS 0444 root bin
+f none share/doc/SUNWgnome-character-map/README=usr/share/doc/SUNWgnome-character-map/README 0444 root bin
+d none bin 0755 root bin
+s none bin/charmap=gucharmap
+s none bin/gnome-character-map=gucharmap
+f none bin/gucharmap=usr/bin/gucharmap 0755 root bin
+d none lib 0755 root bin
+s none lib/libgucharmap.so=libgucharmap.so.7.0.0
+s none lib/libgucharmap.so.7=libgucharmap.so.7.0.0
+f none lib/libgucharmap.so.7.0.0=usr/lib/libgucharmap.so.7.0.0 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gucharmap.desktop=usr/share/applications/gucharmap.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-character-map 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gucharmap 0755 root bin
+d none share/gnome/help/gucharmap/C 0755 root bin
+d none share/gnome/help/gucharmap/C/figures 0755 root bin
+f none share/gnome/help/gucharmap/C/figures/gucharmap_start_window.png=usr/share/gnome/help/gucharmap/C/figures/gucharmap_start_window.png 0644 root bin
+f none share/gnome/help/gucharmap/C/figures/gucharmap_window.png=usr/share/gnome/help/gucharmap/C/figures/gucharmap_window.png 0644 root bin
+f none share/gnome/help/gucharmap/C/gucharmap.xml=usr/share/gnome/help/gucharmap/C/gucharmap.xml 0644 root bin
+f none share/gnome/help/gucharmap/C/legal.xml=usr/share/gnome/help/gucharmap/C/legal.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/charmap.1=usr/share/man/man1/charmap.1 0644 root bin
+f none share/man/man1/gnome-character-map.1=usr/share/man/man1/gnome-character-map.1 0644 root bin
+f none share/man/man1/gucharmap.1=usr/share/man/man1/gucharmap.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gucharmap 0755 root bin
+f none share/omf/gucharmap/gucharmap-C.omf=usr/share/omf/gucharmap/gucharmap-C.omf 0644 root bin

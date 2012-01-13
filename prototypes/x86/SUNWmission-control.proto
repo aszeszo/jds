@@ -1,0 +1,73 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmission-control.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmission-control.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmission-control.copyright
+f none share/doc/SUNWmission-control/telepathy-mission-control-4.67/AUTHORS=usr/share/doc/SUNWmission-control/telepathy-mission-control-4.67/AUTHORS 0444 root bin
+f none share/doc/SUNWmission-control/telepathy-mission-control-4.67/COPYING.bz2=usr/share/doc/SUNWmission-control/telepathy-mission-control-4.67/COPYING.bz2 0444 root bin
+f none share/doc/SUNWmission-control/telepathy-mission-control-4.67/ChangeLog.bz2=usr/share/doc/SUNWmission-control/telepathy-mission-control-4.67/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWmission-control/telepathy-mission-control-4.67/NEWS.bz2=usr/share/doc/SUNWmission-control/telepathy-mission-control-4.67/NEWS.bz2 0444 root bin
+f none share/doc/SUNWmission-control/telepathy-mission-control-4.67/README=usr/share/doc/SUNWmission-control/telepathy-mission-control-4.67/README 0444 root bin
+d none bin 0755 root bin
+f none bin/mc-account=usr/bin/mc-account 0755 root bin
+d none lib 0755 root bin
+s none lib/libmcclient.so=libmcclient.so.5.0.0
+s none lib/libmcclient.so.5=libmcclient.so.5.0.0
+f none lib/libmcclient.so.5.0.0=usr/lib/libmcclient.so.5.0.0 0755 root bin
+s none lib/libmissioncontrol-client.so=libmissioncontrol-client.so.0.4.3
+s none lib/libmissioncontrol-client.so.0=libmissioncontrol-client.so.0.4.3
+f none lib/libmissioncontrol-client.so.0.4.3=usr/lib/libmissioncontrol-client.so.0.4.3 0755 root bin
+s none lib/libmissioncontrol-server.so=libmissioncontrol-server.so.1.3.1
+s none lib/libmissioncontrol-server.so.1=libmissioncontrol-server.so.1.3.1
+f none lib/libmissioncontrol-server.so.1.3.1=usr/lib/libmissioncontrol-server.so.1.3.1 0755 root bin
+f none lib/mission-control=usr/lib/mission-control 0755 root bin
+d none share 0755 root sys
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+f none share/dbus-1/services/org.freedesktop.Telepathy.MissionControl.service=usr/share/dbus-1/services/org.freedesktop.Telepathy.MissionControl.service 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWmission-control 0755 root bin
+d none share/doc/SUNWmission-control/telepathy-mission-control-4.67 0755 root bin
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/libmissioncontrol 0755 root bin
+d none share/gtk-doc/html/libmissioncontrol-server 0755 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdChannel.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdChannel.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdController.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdController.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdDispatcher.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdDispatcher.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdManager.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdManager.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdMaster.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdMaster.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdMission.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdMission.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdOperation.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdOperation.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdPresenceFrame.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdPresenceFrame.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdProxy.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdProxy.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/McdService.html=usr/share/gtk-doc/html/libmissioncontrol-server/McdService.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/ch01.html=usr/share/gtk-doc/html/libmissioncontrol-server/ch01.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/home.png=usr/share/gtk-doc/html/libmissioncontrol-server/home.png 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/index.html=usr/share/gtk-doc/html/libmissioncontrol-server/index.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/index.sgml=usr/share/gtk-doc/html/libmissioncontrol-server/index.sgml 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/left.png=usr/share/gtk-doc/html/libmissioncontrol-server/left.png 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-chan-handler.html=usr/share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-chan-handler.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-connection.html=usr/share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-connection.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-debug.html=usr/share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-debug.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-dispatcher-context.html=usr/share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-dispatcher-context.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-enum-types.html=usr/share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server-mcd-enum-types.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server.devhelp=usr/share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server.devhelp 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server.devhelp2=usr/share/gtk-doc/html/libmissioncontrol-server/libmissioncontrol-server.devhelp2 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/right.png=usr/share/gtk-doc/html/libmissioncontrol-server/right.png 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/style.css=usr/share/gtk-doc/html/libmissioncontrol-server/style.css 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol-server/up.png=usr/share/gtk-doc/html/libmissioncontrol-server/up.png 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/McAccount.html=usr/share/gtk-doc/html/libmissioncontrol/McAccount.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/McAccountMonitor.html=usr/share/gtk-doc/html/libmissioncontrol/McAccountMonitor.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/McManager.html=usr/share/gtk-doc/html/libmissioncontrol/McManager.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/McProfile.html=usr/share/gtk-doc/html/libmissioncontrol/McProfile.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/McProtocol.html=usr/share/gtk-doc/html/libmissioncontrol/McProtocol.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/ch01.html=usr/share/gtk-doc/html/libmissioncontrol/ch01.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/home.png=usr/share/gtk-doc/html/libmissioncontrol/home.png 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/index.html=usr/share/gtk-doc/html/libmissioncontrol/index.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/index.sgml=usr/share/gtk-doc/html/libmissioncontrol/index.sgml 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/left.png=usr/share/gtk-doc/html/libmissioncontrol/left.png 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/libmissioncontrol-mission-control.html=usr/share/gtk-doc/html/libmissioncontrol/libmissioncontrol-mission-control.html 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/libmissioncontrol.devhelp=usr/share/gtk-doc/html/libmissioncontrol/libmissioncontrol.devhelp 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/libmissioncontrol.devhelp2=usr/share/gtk-doc/html/libmissioncontrol/libmissioncontrol.devhelp2 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/right.png=usr/share/gtk-doc/html/libmissioncontrol/right.png 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/style.css=usr/share/gtk-doc/html/libmissioncontrol/style.css 0644 root bin
+f none share/gtk-doc/html/libmissioncontrol/up.png=usr/share/gtk-doc/html/libmissioncontrol/up.png 0644 root bin

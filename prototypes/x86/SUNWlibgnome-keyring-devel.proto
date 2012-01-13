@@ -1,0 +1,36 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgnome-keyring-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgnome-keyring-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgnome-keyring-devel.copyright
+d none include 0755 root bin
+d none include/gnome-keyring-1 0755 root bin
+f none include/gnome-keyring-1/gnome-keyring-memory.h=usr/include/gnome-keyring-1/gnome-keyring-memory.h 0644 root bin
+f none include/gnome-keyring-1/gnome-keyring-result.h=usr/include/gnome-keyring-1/gnome-keyring-result.h 0644 root bin
+f none include/gnome-keyring-1/gnome-keyring.h=usr/include/gnome-keyring-1/gnome-keyring.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-keyring-1.pc=usr/lib/pkgconfig/gnome-keyring-1.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/gnome-keyring 0755 root bin
+f none share/gtk-doc/html/gnome-keyring/ch01.html=usr/share/gtk-doc/html/gnome-keyring/ch01.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Callbacks.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Callbacks.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Item-ACLs.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Item-ACLs.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Item-Attributes.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Item-Attributes.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Item-Information.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Item-Information.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Keyring-Info.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Keyring-Info.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Keyring-Items.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Keyring-Items.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Keyrings.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Keyrings.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Network-Passwords.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Network-Passwords.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Non-pageable-Memory.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Non-pageable-Memory.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Result-Codes.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Result-Codes.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring-Search-Functionality.html=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring-Search-Functionality.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring.devhelp=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring.devhelp 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/gnome-keyring.devhelp2=usr/share/gtk-doc/html/gnome-keyring/gnome-keyring.devhelp2 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/home.png=usr/share/gtk-doc/html/gnome-keyring/home.png 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/index.html=usr/share/gtk-doc/html/gnome-keyring/index.html 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/index.sgml=usr/share/gtk-doc/html/gnome-keyring/index.sgml 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/left.png=usr/share/gtk-doc/html/gnome-keyring/left.png 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/right.png=usr/share/gtk-doc/html/gnome-keyring/right.png 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/style.css=usr/share/gtk-doc/html/gnome-keyring/style.css 0644 root bin
+f none share/gtk-doc/html/gnome-keyring/up.png=usr/share/gtk-doc/html/gnome-keyring/up.png 0644 root bin

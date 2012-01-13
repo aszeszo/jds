@@ -1,0 +1,24 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibunique.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibunique.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibunique.copyright
+f none share/doc/SUNWlibunique/AUTHORS=usr/share/doc/SUNWlibunique/AUTHORS 0444 root bin
+f none share/doc/SUNWlibunique/COPYING.bz2=usr/share/doc/SUNWlibunique/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibunique/ChangeLog.bz2=usr/share/doc/SUNWlibunique/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibunique/NEWS=usr/share/doc/SUNWlibunique/NEWS 0444 root bin
+f none share/doc/SUNWlibunique/README=usr/share/doc/SUNWlibunique/README 0444 root bin
+f none share/doc/SUNWlibunique/po/ChangeLog.bz2=usr/share/doc/SUNWlibunique/po/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libunique-1.0.so=libunique-1.0.so.0.100.6
+s none lib/amd64/libunique-1.0.so.0=libunique-1.0.so.0.100.6
+f none lib/amd64/libunique-1.0.so.0.100.6=usr/lib/amd64/libunique-1.0.so.0.100.6 0755 root bin
+s none lib/libunique-1.0.so=libunique-1.0.so.0.100.6
+s none lib/libunique-1.0.so.0=libunique-1.0.so.0.100.6
+f none lib/libunique-1.0.so.0.100.6=usr/lib/libunique-1.0.so.0.100.6 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibunique 0755 root bin
+d none share/doc/SUNWlibunique/po 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libunique-1.0.3=usr/share/man/man3/libunique-1.0.3 0644 root bin

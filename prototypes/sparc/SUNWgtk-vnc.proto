@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk-vnc.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk-vnc.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk-vnc.copyright
+f none share/doc/SUNWgtk-vnc/AUTHORS=usr/share/doc/SUNWgtk-vnc/AUTHORS 0444 root bin
+f none share/doc/SUNWgtk-vnc/COPYING.LIB.bz2=usr/share/doc/SUNWgtk-vnc/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgtk-vnc/ChangeLog.bz2=usr/share/doc/SUNWgtk-vnc/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgtk-vnc/NEWS.bz2=usr/share/doc/SUNWgtk-vnc/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgtk-vnc/README=usr/share/doc/SUNWgtk-vnc/README 0444 root bin
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/plugins 0755 root bin
+f none lib/firefox/plugins/gtk-vnc-plugin.so=usr/lib/firefox/plugins/gtk-vnc-plugin.so 0755 root bin
+s none lib/libgtk-vnc-1.0.so=libgtk-vnc-1.0.so.0.0.1
+s none lib/libgtk-vnc-1.0.so.0=libgtk-vnc-1.0.so.0.0.1
+f none lib/libgtk-vnc-1.0.so.0.0.1=usr/lib/libgtk-vnc-1.0.so.0.0.1 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libgtk-vnc-1.0.so=libgtk-vnc-1.0.so.0.0.1
+s none lib/sparcv9/libgtk-vnc-1.0.so.0=libgtk-vnc-1.0.so.0.0.1
+f none lib/sparcv9/libgtk-vnc-1.0.so.0.0.1=usr/lib/sparcv9/libgtk-vnc-1.0.so.0.0.1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgtk-vnc 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgtk-vnc-1.0.3=usr/share/man/man3/libgtk-vnc-1.0.3 0644 root bin

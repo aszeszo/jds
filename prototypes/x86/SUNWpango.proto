@@ -1,0 +1,97 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpango.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpango.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpango.copyright
+f none share/doc/SUNWpango/pango-1.28.0/AUTHORS=usr/share/doc/SUNWpango/pango-1.28.0/AUTHORS 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-0.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-0.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-10.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-10.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-12.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-12.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-14.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-14.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-16.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-16.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-18.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-18.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-2.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-2.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-20.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-20.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-4.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-4.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-6.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-6.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-8.bz2=usr/share/doc/SUNWpango/pango-1.28.0/ChangeLog.pre-1-8.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/NEWS.bz2=usr/share/doc/SUNWpango/pango-1.28.0/NEWS.bz2 0444 root bin
+f none share/doc/SUNWpango/pango-1.28.0/README=usr/share/doc/SUNWpango/pango-1.28.0/README 0444 root bin
+d none bin 0755 root bin
+d none bin/amd64 0755 root bin
+f none bin/amd64/pango-querymodules=usr/bin/amd64/pango-querymodules 0755 root bin
+f none bin/pango-querymodules=usr/bin/pango-querymodules 0755 root bin
+f none bin/pango-view=usr/bin/pango-view 0755 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libpango-1.0.so=libpango-1.0.so.0.2800.0
+s none lib/amd64/libpango-1.0.so.0=libpango-1.0.so.0.2800.0
+f none lib/amd64/libpango-1.0.so.0.2800.0=usr/lib/amd64/libpango-1.0.so.0.2800.0 0755 root bin
+s none lib/amd64/libpangocairo-1.0.so=libpangocairo-1.0.so.0.2800.0
+s none lib/amd64/libpangocairo-1.0.so.0=libpangocairo-1.0.so.0.2800.0
+f none lib/amd64/libpangocairo-1.0.so.0.2800.0=usr/lib/amd64/libpangocairo-1.0.so.0.2800.0 0755 root bin
+s none lib/amd64/libpangoft2-1.0.so=libpangoft2-1.0.so.0.2800.0
+s none lib/amd64/libpangoft2-1.0.so.0=libpangoft2-1.0.so.0.2800.0
+f none lib/amd64/libpangoft2-1.0.so.0.2800.0=usr/lib/amd64/libpangoft2-1.0.so.0.2800.0 0755 root bin
+s none lib/amd64/libpangox-1.0.so=libpangox-1.0.so.0.2800.0
+s none lib/amd64/libpangox-1.0.so.0=libpangox-1.0.so.0.2800.0
+f none lib/amd64/libpangox-1.0.so.0.2800.0=usr/lib/amd64/libpangox-1.0.so.0.2800.0 0755 root bin
+s none lib/amd64/libpangoxft-1.0.so=libpangoxft-1.0.so.0.2800.0
+s none lib/amd64/libpangoxft-1.0.so.0=libpangoxft-1.0.so.0.2800.0
+f none lib/amd64/libpangoxft-1.0.so.0.2800.0=usr/lib/amd64/libpangoxft-1.0.so.0.2800.0 0755 root bin
+d none lib/amd64/pango 0755 root bin
+d none lib/amd64/pango/1.6.0 0755 root bin
+d none lib/amd64/pango/1.6.0/modules 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-arabic-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-arabic-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-arabic-lang.so=usr/lib/amd64/pango/1.6.0/modules/pango-arabic-lang.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-basic-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-basic-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-basic-x.so=usr/lib/amd64/pango/1.6.0/modules/pango-basic-x.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-hangul-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-hangul-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-hebrew-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-hebrew-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-indic-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-indic-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-indic-lang.so=usr/lib/amd64/pango/1.6.0/modules/pango-indic-lang.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-khmer-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-khmer-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-syriac-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-syriac-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-thai-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-thai-fc.so 0755 root bin
+f none lib/amd64/pango/1.6.0/modules/pango-tibetan-fc.so=usr/lib/amd64/pango/1.6.0/modules/pango-tibetan-fc.so 0755 root bin
+s none lib/libpango-1.0.so=libpango-1.0.so.0.2800.0
+s none lib/libpango-1.0.so.0=libpango-1.0.so.0.2800.0
+f none lib/libpango-1.0.so.0.2800.0=usr/lib/libpango-1.0.so.0.2800.0 0755 root bin
+s none lib/libpangocairo-1.0.so=libpangocairo-1.0.so.0.2800.0
+s none lib/libpangocairo-1.0.so.0=libpangocairo-1.0.so.0.2800.0
+f none lib/libpangocairo-1.0.so.0.2800.0=usr/lib/libpangocairo-1.0.so.0.2800.0 0755 root bin
+s none lib/libpangoft2-1.0.so=libpangoft2-1.0.so.0.2800.0
+s none lib/libpangoft2-1.0.so.0=libpangoft2-1.0.so.0.2800.0
+f none lib/libpangoft2-1.0.so.0.2800.0=usr/lib/libpangoft2-1.0.so.0.2800.0 0755 root bin
+s none lib/libpangox-1.0.so=libpangox-1.0.so.0.2800.0
+s none lib/libpangox-1.0.so.0=libpangox-1.0.so.0.2800.0
+f none lib/libpangox-1.0.so.0.2800.0=usr/lib/libpangox-1.0.so.0.2800.0 0755 root bin
+s none lib/libpangoxft-1.0.so=libpangoxft-1.0.so.0.2800.0
+s none lib/libpangoxft-1.0.so.0=libpangoxft-1.0.so.0.2800.0
+f none lib/libpangoxft-1.0.so.0.2800.0=usr/lib/libpangoxft-1.0.so.0.2800.0 0755 root bin
+d none lib/pango 0755 root bin
+d none lib/pango/1.6.0 0755 root bin
+d none lib/pango/1.6.0/modules 0755 root bin
+f none lib/pango/1.6.0/modules/pango-arabic-fc.so=usr/lib/pango/1.6.0/modules/pango-arabic-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-arabic-lang.so=usr/lib/pango/1.6.0/modules/pango-arabic-lang.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-basic-fc.so=usr/lib/pango/1.6.0/modules/pango-basic-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-basic-x.so=usr/lib/pango/1.6.0/modules/pango-basic-x.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-hangul-fc.so=usr/lib/pango/1.6.0/modules/pango-hangul-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-hebrew-fc.so=usr/lib/pango/1.6.0/modules/pango-hebrew-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-indic-fc.so=usr/lib/pango/1.6.0/modules/pango-indic-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-indic-lang.so=usr/lib/pango/1.6.0/modules/pango-indic-lang.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-khmer-fc.so=usr/lib/pango/1.6.0/modules/pango-khmer-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-syriac-fc.so=usr/lib/pango/1.6.0/modules/pango-syriac-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-thai-fc.so=usr/lib/pango/1.6.0/modules/pango-thai-fc.so 0755 root bin
+f none lib/pango/1.6.0/modules/pango-tibetan-fc.so=usr/lib/pango/1.6.0/modules/pango-tibetan-fc.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWpango 0755 root bin
+d none share/doc/SUNWpango/pango-1.28.0 0755 root bin
+d none share/gir-1.0 0755 root bin
+f none share/gir-1.0/Pango-1.0.gir=usr/share/gir-1.0/Pango-1.0.gir 0644 root bin
+f none share/gir-1.0/PangoCairo-1.0.gir=usr/share/gir-1.0/PangoCairo-1.0.gir 0644 root bin
+f none share/gir-1.0/PangoFT2-1.0.gir=usr/share/gir-1.0/PangoFT2-1.0.gir 0644 root bin
+f none share/gir-1.0/PangoXft-1.0.gir=usr/share/gir-1.0/PangoXft-1.0.gir 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/pango-querymodules.1=usr/share/man/man1/pango-querymodules.1 0644 root bin

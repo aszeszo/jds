@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-file-mgr-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-file-mgr-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-file-mgr-devel.copyright
+d none include 0755 root bin
+d none include/nautilus 0755 root bin
+d none include/nautilus/libnautilus-extension 0755 root bin
+f none include/nautilus/libnautilus-extension/nautilus-column-provider.h=usr/include/nautilus/libnautilus-extension/nautilus-column-provider.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-column.h=usr/include/nautilus/libnautilus-extension/nautilus-column.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-extension-types.h=usr/include/nautilus/libnautilus-extension/nautilus-extension-types.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-file-info.h=usr/include/nautilus/libnautilus-extension/nautilus-file-info.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-info-provider.h=usr/include/nautilus/libnautilus-extension/nautilus-info-provider.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-location-widget-provider.h=usr/include/nautilus/libnautilus-extension/nautilus-location-widget-provider.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-menu-item.h=usr/include/nautilus/libnautilus-extension/nautilus-menu-item.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-menu-provider.h=usr/include/nautilus/libnautilus-extension/nautilus-menu-provider.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-menu.h=usr/include/nautilus/libnautilus-extension/nautilus-menu.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-property-page-provider.h=usr/include/nautilus/libnautilus-extension/nautilus-property-page-provider.h 0644 root bin
+f none include/nautilus/libnautilus-extension/nautilus-property-page.h=usr/include/nautilus/libnautilus-extension/nautilus-property-page.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-mount.pc=usr/lib/pkgconfig/gnome-mount.pc 0644 root bin
+f none lib/pkgconfig/libnautilus-extension.pc=usr/lib/pkgconfig/libnautilus-extension.pc 0644 root bin

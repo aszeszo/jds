@@ -1,0 +1,64 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWTiff.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWTiff.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWTiff.copyright
+d none bin 0755 root bin
+f none bin/bmp2tiff=usr/bin/bmp2tiff 0755 root bin
+f none bin/fax2ps=usr/bin/fax2ps 0755 root bin
+f none bin/fax2tiff=usr/bin/fax2tiff 0755 root bin
+f none bin/gif2tiff=usr/bin/gif2tiff 0755 root bin
+f none bin/pal2rgb=usr/bin/pal2rgb 0755 root bin
+f none bin/ppm2tiff=usr/bin/ppm2tiff 0755 root bin
+f none bin/ras2tiff=usr/bin/ras2tiff 0755 root bin
+f none bin/raw2tiff=usr/bin/raw2tiff 0755 root bin
+f none bin/rgb2ycbcr=usr/bin/rgb2ycbcr 0755 root bin
+f none bin/thumbnail=usr/bin/thumbnail 0755 root bin
+f none bin/tiff2bw=usr/bin/tiff2bw 0755 root bin
+f none bin/tiff2pdf=usr/bin/tiff2pdf 0755 root bin
+f none bin/tiff2ps=usr/bin/tiff2ps 0755 root bin
+f none bin/tiff2rgba=usr/bin/tiff2rgba 0755 root bin
+f none bin/tiffcmp=usr/bin/tiffcmp 0755 root bin
+f none bin/tiffcp=usr/bin/tiffcp 0755 root bin
+f none bin/tiffcrop=usr/bin/tiffcrop 0755 root bin
+f none bin/tiffdither=usr/bin/tiffdither 0755 root bin
+f none bin/tiffdump=usr/bin/tiffdump 0755 root bin
+f none bin/tiffinfo=usr/bin/tiffinfo 0755 root bin
+f none bin/tiffmedian=usr/bin/tiffmedian 0755 root bin
+f none bin/tiffset=usr/bin/tiffset 0755 root bin
+f none bin/tiffsplit=usr/bin/tiffsplit 0755 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libtiff.so=libtiff.so.3.9.4
+s none lib/amd64/libtiff.so.3=libtiff.so.3.9.4
+f none lib/amd64/libtiff.so.3.9.4=usr/lib/amd64/libtiff.so.3.9.4 0755 root bin
+s none lib/libtiff.so=libtiff.so.3.9.4
+s none lib/libtiff.so.3=libtiff.so.3.9.4
+f none lib/libtiff.so.3.9.4=usr/lib/libtiff.so.3.9.4 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/bmp2tiff.1=usr/share/man/man1/bmp2tiff.1 0644 root bin
+f none share/man/man1/fax2ps.1=usr/share/man/man1/fax2ps.1 0644 root bin
+f none share/man/man1/fax2tiff.1=usr/share/man/man1/fax2tiff.1 0644 root bin
+f none share/man/man1/gif2tiff.1=usr/share/man/man1/gif2tiff.1 0644 root bin
+f none share/man/man1/pal2rgb.1=usr/share/man/man1/pal2rgb.1 0644 root bin
+f none share/man/man1/ppm2tiff.1=usr/share/man/man1/ppm2tiff.1 0644 root bin
+f none share/man/man1/ras2tiff.1=usr/share/man/man1/ras2tiff.1 0644 root bin
+f none share/man/man1/raw2tiff.1=usr/share/man/man1/raw2tiff.1 0644 root bin
+f none share/man/man1/rgb2ycbcr.1=usr/share/man/man1/rgb2ycbcr.1 0644 root bin
+f none share/man/man1/sgi2tiff.1=usr/share/man/man1/sgi2tiff.1 0644 root bin
+f none share/man/man1/thumbnail.1=usr/share/man/man1/thumbnail.1 0644 root bin
+f none share/man/man1/tiff2bw.1=usr/share/man/man1/tiff2bw.1 0644 root bin
+f none share/man/man1/tiff2pdf.1=usr/share/man/man1/tiff2pdf.1 0644 root bin
+f none share/man/man1/tiff2ps.1=usr/share/man/man1/tiff2ps.1 0644 root bin
+f none share/man/man1/tiff2rgba.1=usr/share/man/man1/tiff2rgba.1 0644 root bin
+f none share/man/man1/tiffcmp.1=usr/share/man/man1/tiffcmp.1 0644 root bin
+f none share/man/man1/tiffcp.1=usr/share/man/man1/tiffcp.1 0644 root bin
+f none share/man/man1/tiffcrop.1=usr/share/man/man1/tiffcrop.1 0644 root bin
+f none share/man/man1/tiffdither.1=usr/share/man/man1/tiffdither.1 0644 root bin
+f none share/man/man1/tiffdump.1=usr/share/man/man1/tiffdump.1 0644 root bin
+f none share/man/man1/tiffgt.1=usr/share/man/man1/tiffgt.1 0644 root bin
+f none share/man/man1/tiffinfo.1=usr/share/man/man1/tiffinfo.1 0644 root bin
+f none share/man/man1/tiffmedian.1=usr/share/man/man1/tiffmedian.1 0644 root bin
+f none share/man/man1/tiffset.1=usr/share/man/man1/tiffset.1 0644 root bin
+f none share/man/man1/tiffsplit.1=usr/share/man/man1/tiffsplit.1 0644 root bin
+f none share/man/man1/tiffsv.1=usr/share/man/man1/tiffsv.1 0644 root bin
