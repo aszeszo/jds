@@ -1,0 +1,668 @@
+diff -r 990ead266079 help/bg/file-roller.xml
+--- a/help/bg/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/bg/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -91,7 +91,7 @@
+          <firstname>Екип на Sun</firstname>
+          <surname>за документация на GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/ca/file-roller.xml
+--- a/help/ca/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/ca/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Equip de documentació del GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/cs/file-roller.xml
+--- a/help/cs/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/cs/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Dokumentační tým GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/de/file-roller.xml
+--- a/help/de/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/de/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>GNOME-Dokumentationsteam</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+@@ -155,7 +155,7 @@
+                   <revnumber>File Roller-Handbuch V2.5</revnumber>
+                   <date>März 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Dokumentationsteam</para>
++                         <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+                          <para role="publisher">GNOME-Dokumentationsprojekt</para>
+                   </revdescription>
+                 </revision>
+@@ -163,7 +163,7 @@
+                   <revnumber>File Roller-Handbuch V2.4</revnumber>
+                   <date>Februar 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Dokumentationsteam</para>
++                         <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+                          <para role="publisher">GNOME-Dokumentationsprojekt</para>
+                   </revdescription>
+                 </revision>
+@@ -171,7 +171,7 @@
+                   <revnumber>File Roller-Handbuch V2.3</revnumber>
+                   <date>August 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Dokumentationsteam</para>
++                         <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+                          <para role="publisher">GNOME-Dokumentationsprojekt</para>
+                   </revdescription>
+                 </revision>
+@@ -179,7 +179,7 @@
+                   <revnumber>File Roller-Handbuch V2.2</revnumber>
+                   <date>Juni 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Dokumentationsteam</para>
++                         <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+                          <para role="publisher">GNOME-Dokumentationsprojekt</para>
+                   </revdescription>
+                 </revision>
+diff -r 990ead266079 help/el/file-roller.xml
+--- a/help/el/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/el/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Ομάδα τεκμηρίωσης του GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/en_GB/file-roller.xml
+--- a/help/en_GB/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/en_GB/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
+-         <surname>GNOME Documentation Team</surname>
++         <firstname>Oracle Solaris</firstname>
++         <surname>Desktop Documentation Team</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+@@ -155,7 +155,7 @@
+                   <revnumber>File Roller Manual V2.5</revnumber>
+                   <date>March 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+@@ -163,7 +163,7 @@
+                   <revnumber>File Roller Manual V2.4</revnumber>
+                   <date>February 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+@@ -171,7 +171,7 @@
+                   <revnumber>File Roller Manual V2.3</revnumber>
+                   <date>August 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+@@ -179,7 +179,7 @@
+                   <revnumber>File Roller Manual V2.2</revnumber>
+                   <date>June 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+diff -r 990ead266079 help/es/file-roller.xml
+--- a/help/es/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/es/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Equipo de documentación de Gnome</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/fi/file-roller.xml
+--- a/help/fi/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/fi/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>GNOMEn Dokumentointitiimi</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+@@ -155,7 +155,7 @@
+                   <revnumber>Tiedostokäärimen käyttöopas V2.5</revnumber>
+                   <date>Maaliskuu 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOMEn dokumentointiryhmä</para>
++                         <para role="author">Oracle Solaris Desktopn dokumentointiryhmä</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+@@ -163,7 +163,7 @@
+                   <revnumber>Tiedostokäärimen käyttöopas V2.4</revnumber>
+                   <date>Helmikuu 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOMEn dokumentointiryhmä</para>
++                         <para role="author">Oracle Solaris Desktopn dokumentointiryhmä</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+@@ -171,7 +171,7 @@
+                   <revnumber>Tiedostokäärimen käyttöopas V2.3</revnumber>
+                   <date>Elokuu 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOMEn dokumentointiryhmä</para>
++                         <para role="author">Oracle Solaris Desktopn dokumentointiryhmä</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+@@ -179,7 +179,7 @@
+                   <revnumber>Tiedostokäärimen käyttöopas V2.2</revnumber>
+                   <date>Kesäkuu 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOMEn dokumentointiryhmä</para>
++                         <para role="author">Oracle Solaris Desktopn dokumentointiryhmä</para>
+                          <para role="publisher">GNOME Documentation Project</para>
+                   </revdescription>
+                 </revision>
+diff -r 990ead266079 help/fr/file-roller.xml
+--- a/help/fr/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/fr/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>L'équipe de documentation GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/it/file-roller.xml
+--- a/help/it/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/it/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Team di documentazione di GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+@@ -155,7 +155,7 @@
+                   <revnumber>Manuale di File Roller 2.5</revnumber>
+                   <date>Marzo 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">Progetto di documentazione GNOME</para>
+                   </revdescription>
+                 </revision>
+@@ -163,7 +163,7 @@
+                   <revnumber>Manuale di File Roller 2.4</revnumber>
+                   <date>Febbraio 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">Progetto di documentazione GNOME</para>
+                   </revdescription>
+                 </revision>
+@@ -171,7 +171,7 @@
+                   <revnumber>Manuale di File Roller 2.3</revnumber>
+                   <date>Agosto 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">Progetto di documentazione GNOME</para>
+                   </revdescription>
+                 </revision>
+@@ -179,7 +179,7 @@
+                   <revnumber>Manuale di File Roller 2.2</revnumber>
+                   <date>Giugno 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentation Team</para>
++                         <para role="author">Oracle Solaris Desktop Documentation Team</para>
+                          <para role="publisher">Progetto di documentazione GNOME</para>
+                   </revdescription>
+                 </revision>
+diff -r 990ead266079 help/nl/file-roller.xml
+--- a/help/nl/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/nl/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -147,10 +147,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>GNOME Documentatieteam</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+@@ -214,7 +214,7 @@
+                   <revnumber>File-roller handleiding v2.5</revnumber>
+                   <date>Maart 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentatieteam</para>
++                         <para role="author">Oracle Solaris Desktop Documentatieteam</para>
+                          <para role="publisher">GNOME Documentatieproject</para>
+                   </revdescription>
+                 </revision>
+@@ -222,7 +222,7 @@
+                   <revnumber>File-roller handleiding v2.4</revnumber>
+                   <date>Februari 2004</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentatieteam</para>
++                         <para role="author">Oracle Solaris Desktop Documentatieteam</para>
+                          <para role="publisher">GNOME Documentatieproject</para>
+                   </revdescription>
+                 </revision>
+@@ -230,7 +230,7 @@
+                   <revnumber>File-roller handleiding v2.3</revnumber>
+                   <date>Augustus 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentatieteam</para>
++                         <para role="author">Oracle Solaris Desktop Documentatieteam</para>
+                          <para role="publisher">GNOME Documentatieproject</para>
+                   </revdescription>
+                 </revision>
+@@ -238,7 +238,7 @@
+                   <revnumber>File-roller handleiding v2.2</revnumber>
+                   <date>Juni 2003</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME Documentatieteam</para>
++                         <para role="author">Oracle Solaris Desktop Documentatieteam</para>
+                          <para role="publisher">GNOME Documentatieproject</para>
+                   </revdescription>
+                 </revision>
+diff -r 990ead266079 help/oc/file-roller.xml
+--- a/help/oc/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/oc/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -147,10 +147,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Còla de documentacion de GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/ru/file-roller.xml
+--- a/help/ru/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/ru/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Команда документирования GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/sv/file-roller.xml
+--- a/help/sv/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/sv/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -91,7 +91,7 @@
+          <firstname>Suns</firstname>
+          <surname>GNOME-dokumentationsteam</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/uk/file-roller.xml
+--- a/help/uk/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/uk/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Команда документування GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/vi/file-roller.xml
+--- a/help/vi/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/vi/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>Nhóm biên soạn Tài liệu GNOME</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+diff -r 990ead266079 help/zh_CN/file-roller.xml
+--- a/help/zh_CN/file-roller.xml	Fri Jul 08 14:32:35 2011 +0800
++++ b/help/zh_CN/file-roller.xml	Fri Jul 08 16:36:48 2011 +0800
+@@ -39,8 +39,8 @@
+     </copyright> 
+      <copyright>
+         <year>2003</year>
+-        <year>2004</year>
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -88,10 +88,10 @@
+ 
+     <authorgroup> 
+        <author> 
+-         <firstname>Sun</firstname>
++         <firstname>Oracle Solaris</firstname>
+          <surname>GNOME 文档团队</surname>
+          <affiliation> 
+-            <orgname>Sun Microsystems</orgname>
++            <orgname>Oracle Corporation</orgname>
+         </affiliation>
+       </author>
+       <author> 
+@@ -155,7 +155,7 @@
+                   <revnumber>文件滚动器手册 2.5 版</revnumber>
+                   <date>2004年3月</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME 文档团队</para>
++                         <para role="author">Oracle Solaris Desktop 文档团队</para>
+                          <para role="publisher">GNOME 文档项目</para>
+                   </revdescription>
+                 </revision>
+@@ -163,7 +163,7 @@
+                   <revnumber>文件滚动器手册 2.4 版</revnumber>
+                   <date>2004年2月</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME 文档团队</para>
++                         <para role="author">Oracle Solaris Desktop 文档团队</para>
+                          <para role="publisher">GNOME 文档项目</para>
+                   </revdescription>
+                 </revision>
+@@ -171,7 +171,7 @@
+                   <revnumber>文件滚动器手册 2.3 版</revnumber>
+                   <date>2003年8月</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME 文档团队</para>
++                         <para role="author">Oracle Solaris Desktop 文档团队</para>
+                          <para role="publisher">GNOME 文档项目</para>
+                   </revdescription>
+                 </revision>
+@@ -179,7 +179,7 @@
+                   <revnumber>文件滚动器手册 2.2 版</revnumber>
+                   <date>2003年6月</date>
+                   <revdescription>
+-                         <para role="author">Sun GNOME 文档团队</para>
++                         <para role="author">Oracle Solaris Desktop 文档团队</para>
+                          <para role="publisher">GNOME 文档项目</para>
+                   </revdescription>
+                 </revision>

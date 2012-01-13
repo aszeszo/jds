@@ -1,0 +1,51 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-calculator.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-calculator.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-calculator.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-calculator.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-calculator.copyright
+d none bin 0755 root bin
+f none bin/gcalccmd=usr/bin/gcalccmd 0755 root bin
+f none bin/gcalctool=usr/bin/gcalctool 0755 root bin
+s none bin/gnome-calculator=gcalctool
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gcalctool.desktop=usr/share/applications/gcalctool.desktop 0644 root bin
+d none share/gcalctool 0755 root bin
+f none share/gcalctool/financial.ui=usr/share/gcalctool/financial.ui 0644 root bin
+f none share/gcalctool/gcalctool.ui=usr/share/gcalctool/gcalctool.ui 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gcalctool 0755 root bin
+d none share/gnome/help/gcalctool/C 0755 root bin
+f none share/gnome/help/gcalctool/C/absolute.page=usr/share/gnome/help/gcalctool/C/absolute.page 0644 root bin
+f none share/gnome/help/gcalctool/C/base.page=usr/share/gnome/help/gcalctool/C/base.page 0644 root bin
+f none share/gnome/help/gcalctool/C/boolean.page=usr/share/gnome/help/gcalctool/C/boolean.page 0644 root bin
+f none share/gnome/help/gcalctool/C/complex.page=usr/share/gnome/help/gcalctool/C/complex.page 0644 root bin
+f none share/gnome/help/gcalctool/C/conv-base.page=usr/share/gnome/help/gcalctool/C/conv-base.page 0644 root bin
+f none share/gnome/help/gcalctool/C/conv-character.page=usr/share/gnome/help/gcalctool/C/conv-character.page 0644 root bin
+f none share/gnome/help/gcalctool/C/conv-currency.page=usr/share/gnome/help/gcalctool/C/conv-currency.page 0644 root bin
+f none share/gnome/help/gcalctool/C/conv-length.page=usr/share/gnome/help/gcalctool/C/conv-length.page 0644 root bin
+f none share/gnome/help/gcalctool/C/conv-time.page=usr/share/gnome/help/gcalctool/C/conv-time.page 0644 root bin
+f none share/gnome/help/gcalctool/C/conv-weight.page=usr/share/gnome/help/gcalctool/C/conv-weight.page 0644 root bin
+f none share/gnome/help/gcalctool/C/equation.page=usr/share/gnome/help/gcalctool/C/equation.page 0644 root bin
+f none share/gnome/help/gcalctool/C/factorial.page=usr/share/gnome/help/gcalctool/C/factorial.page 0644 root bin
+f none share/gnome/help/gcalctool/C/factorize.page=usr/share/gnome/help/gcalctool/C/factorize.page 0644 root bin
+f none share/gnome/help/gcalctool/C/financial.page=usr/share/gnome/help/gcalctool/C/financial.page 0644 root bin
+f none share/gnome/help/gcalctool/C/functions.page=usr/share/gnome/help/gcalctool/C/functions.page 0644 root bin
+f none share/gnome/help/gcalctool/C/index.page=usr/share/gnome/help/gcalctool/C/index.page 0644 root bin
+f none share/gnome/help/gcalctool/C/keyboard.page=usr/share/gnome/help/gcalctool/C/keyboard.page 0644 root bin
+f none share/gnome/help/gcalctool/C/legal.xml=usr/share/gnome/help/gcalctool/C/legal.xml 0644 root bin
+f none share/gnome/help/gcalctool/C/logarithm.page=usr/share/gnome/help/gcalctool/C/logarithm.page 0644 root bin
+f none share/gnome/help/gcalctool/C/modulus.page=usr/share/gnome/help/gcalctool/C/modulus.page 0644 root bin
+f none share/gnome/help/gcalctool/C/mouse.page=usr/share/gnome/help/gcalctool/C/mouse.page 0644 root bin
+f none share/gnome/help/gcalctool/C/number-display.page=usr/share/gnome/help/gcalctool/C/number-display.page 0644 root bin
+f none share/gnome/help/gcalctool/C/percentage.page=usr/share/gnome/help/gcalctool/C/percentage.page 0644 root bin
+f none share/gnome/help/gcalctool/C/power.page=usr/share/gnome/help/gcalctool/C/power.page 0644 root bin
+f none share/gnome/help/gcalctool/C/scientific.page=usr/share/gnome/help/gcalctool/C/scientific.page 0644 root bin
+f none share/gnome/help/gcalctool/C/superscript.page=usr/share/gnome/help/gcalctool/C/superscript.page 0644 root bin
+f none share/gnome/help/gcalctool/C/trigonometry.page=usr/share/gnome/help/gcalctool/C/trigonometry.page 0644 root bin
+f none share/gnome/help/gcalctool/C/variables.page=usr/share/gnome/help/gcalctool/C/variables.page 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gcalctool.1=usr/share/man/man1/gcalctool.1 0644 root bin
+f none share/man/man1/gnome-calculator.1=usr/share/man/man1/gnome-calculator.1 0644 root bin

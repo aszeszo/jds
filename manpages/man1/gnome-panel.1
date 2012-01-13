@@ -1,0 +1,280 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2001/348 GNOME Panel-->
+<!ENTITY cmd "gnome-panel">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2003, 2011 Oracle and/or its affiliates. All Rights Reserved.">
+]>
+<refentry id="gnome-panel-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>gnome-panel</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">10 Mar 2011</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>gnome-panel</primary></indexterm>
+<indexterm><primary>display the GNOME panel</primary></indexterm>
+
+<refnamediv id="gnome-panel-1-name">
+<refname>gnome-panel</refname>
+<refpurpose>display the GNOME panel</refpurpose>
+</refnamediv>
+
+<refsynopsisdiv id="gnome-panel-1-synp">
+<title>&synp-tt;</title>
+<cmdsynopsis>
+<command>&cmd;</command>
+<arg><option role="nodash"><replaceable>gnome-std-options</replaceable></option></arg>
+</cmdsynopsis></refsynopsisdiv>
+
+<refsect1 id="gnome-panel-1-desc"><title>&desc-tt;</title>
+<para>
+The GNOME Panel displays an area on your screen, which acts as a repository
+for the main menu, application launchers, and applets.  
+</para>
+
+<para>
+The main menu items are specified by desktop files that are located in the
+<filename>/usr/share/applications</filename> directory.  Applets are
+specified by bonobo server files located in the
+<filename>/usr/lib/bonobo/servers</filename> directory.
+
+<para>
+On Solaris, the GNOME Panel is integrated with RBAC to determine which menu
+items, launchers, and applets are presented to the user and how they are
+executed.  The GNOME Panel will only make available menu items, launchers and
+applets that the user can run based on RBAC configuration.
+</para>
+
+<para>
+RBAC can be configured so that programs are associated with rights profiles.
+When a program is associated with a rights profile, the GNOME Panel verifies
+that the user has access to the profile and will filter out any programs the
+user cannot run.
+</para>
+
+<para>
+When using Trusted Extensions, different RBAC roles can be associated with each
+workspace by using the trusted stripe.  So, the GNOME Panel automatically
+reloads the menu items, launchers and applets whenever the workspace switches
+or whenever the user changes to a different role in the trusted stripe.
+</para>
+
+<para>
+RBAC can be configured to allow users access to a rights profile.  If a program
+can be run with a rights profile associated with the user, then the program is
+made available to the user and is run by the GNOME Panel with
+<citerefentry><refentrytitle>pfexec</refentrytitle><manvolnum>1</manvolnum></citerefentry>.
+RBAC can be configured to allow users access to a role.  If not using Trusted
+Extensions and if a program can be run with a user or role that the user can
+assume, then the program is made available to the user and is run by the GNOME
+Panel with
+<citerefentry><refentrytitle>gksu</refentrytitle><manvolnum>1</manvolnum></citerefentry>.
+Programs that are not explicitly assigned security attributes in Rights
+Profiles are not filtered by the GNOME panel.  If using Trusted Extensions or
+if the user's shell is a
+<citerefentry><refentrytitle>pfexec</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+enabled shell like
+<citerefentry><refentrytitle>pfsh</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+or
+<citerefentry><refentrytitle>pfbash</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+then the panel runs all programs not explicitly assigned security attributes in
+rights profiles with
+<citerefentry><refentrytitle>pfexec</refentrytitle><manvolnum>1</manvolnum></citerefentry>.
+Running with
+<citerefentry><refentrytitle>pfexec</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+ensures that the user's profile assignments apply to all
+child processes, as well.  Users can be prevented from running programs by
+configuring their rights in RBAC.  For example, the "Stop" profile is one way
+to limit users' access to programs.
+</para>
+
+<para>
+When processing GNOME Panel menu and launchers, the GNOME Panel determines the
+executable by checking the associated application or launcher desktop file.
+The GNOME Panel checks the executables associated with the Exec and TryExec
+keys of the desktop file to see if they are associated with a profile.  If both
+are associated with a profile, the GNOME Panel uses the profile associated with
+the Exec key.  When processing applets, the GNOME Panel determines the
+executable by checking the applet factory's bonobo server file and uses the
+value specified in the "location" element of the factory's bonobo server
+configuration file to see if it is associated with a profile.
+</para>
+
+<para>
+Some programs that display by default in the GNOME Panel on Oracle Solaris are
+controlled by rights profiles.  Users or roles that are not assigned these
+rights profiles do not see these programs.  These programs include: 
+</para>
+
+<itemizedlist>
+<listitem>brasero uses the "Desktop Removable Media User" profile.</listitem>
+<listitem>sound-juicer uses the "Desktop Removable Media User" profile.</listitem>
+<listitem>users-admin uses the "User Management" profile.</listitem>
+<listitem>nwam-manager-properties uses the "Network Autoconf Admin" profile.</listitem>
+<listitem>The "Network Monitor" applet uses the "Network Autoconf User" profile.</listitem>
+</itemizedlist>
+
+<para>
+The "Desktop Administration" profile includes all of the above profiles, and
+can be used to make them all available to a user.  When not using Trusted
+Extensions, you can configure the GNOME Panel so that a role password is
+required.  You set up a role with a password, assign the rights profile (such
+as the "Desktop Administration" profile) to the role, and then assign the role
+to the user.  The user must assume the role to gain access to the applets.
+RBAC can be configured to support these various configurations with the 
+<citerefentry><refentrytitle>profiles</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>roleadd</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+and
+<citerefentry><refentrytitle>usermod</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+commands.
+</para>
+
+<para>
+New packages that contain a program that requires privilege to run should add
+the program to a rights profile.  Alternatively, a new rights profile can be
+created by using the
+<citerefentry><refentrytitle>profiles</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+command. The use of the program can then be controlled by specifying which
+users or roles are assigned the profile. 
+</para>
+
+<para>
+Note that the GNOME Panel monitors the <filename>/etc/user_attr</filename>,
+<filename>/etc/security/exec_attr</filename>, and
+<filename>/etc/security/prof_attr</filename> files.  If any of these files
+are modified, the GNOME Panel reloads the menu items, launchers, and applets.
+So any changes made to the RBAC configuration by the system administrator or
+by using any editor will take effect immediately.
+</para>
+</refsect1>
+
+<refsect1 id="gnome-panel-1-opts"><title>&opts-tt;</title>
+<para>The following options are supported:</para>
+<variablelist termlength="medium">
+<varlistentry><term><option role="nodash"><replaceable>gnome-std-options</replaceable></option></term>
+<listitem><para>Standard options available for use with most GNOME applications.
+See <citerefentry><refentrytitle>gnome-std-options</refentrytitle><manvolnum>
+5</manvolnum></citerefentry>.</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="gnome-panel-1-exam"><title>&exam-tt;</title>
+<example role="example">
+<title>Launching the GNOME Panel</title>
+<para><screen>example% <userinput>&cmd;</userinput></screen></para>
+</example>
+<example role="example">
+<title>Associating a <replaceable>user</replaceable> with the "Desktop
+Administration" profile</title>
+<para><screen>example% <userinput>usermod -P "Desktop Administration" <replaceable>user</replaceable></userinput></screen></para>
+</example>
+</refsect1>
+
+<refsect1 id="gnome-panel-1-exit"><title>&exit-tt;</title>
+<para>The following exit values are returned:</para>
+<variablelist termlength="xtranarrow"><varlistentry><term><returnvalue>0</returnvalue></term>
+<listitem><para>Application exited successfully</para>
+</listitem></varlistentry>
+<varlistentry><term><returnvalue>>0</returnvalue></term><listitem><para>Application
+exited with failure</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="gnome-panel-1-file"><title>&file-tt;</title>
+<para>The following files are used by this application:</para>
+
+<variablelist termlength="wide">
+<varlistentry>
+<term><filename>/usr/bin/&cmd;</filename></term>
+<listitem><para>
+Executable for GNOME panel
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><filename>/usr/lib/bonobo/servers</filename></term>
+<listitem><para>
+Location of Bonobo Servers files.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><filename>/usr/share/applications</filename></term>
+<listitem><para>
+Location of GNOME Panel Desktop files.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="gnome-panel-1-attr"><title>&attr-tt;</title>
+<para>See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>gnome/gnome-panel</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="gnome-panel-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citetitle>Working with Panels Manual</citetitle>
+</para>
+
+<para>
+Latest version of the <citetitle>GNOME Desktop User Guide</citetitle> for your
+platform.
+</para>
+
+<para>
+<citerefentry><refentrytitle>gksu</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gnome-panel-screenshot</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gnome-desktop-item-edit</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>pfexec</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>profiles</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>roleadd</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>usermod</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>libbonobo-2</refentrytitle><manvolnum>3</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>libgnome-destkop-2</refentrytitle><manvolnum>3</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>libpanel-applet-2</refentrytitle><manvolnum>3</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>libwnck-1</refentrytitle><manvolnum>3</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gnome-std-options</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="gnome-panel-1-note"><title>&note-tt;</title>
+<para>
+Written by Mark McLoughlin, Sun Microsystems Inc., 2003, 2006.  Updated by
+Brian Cameron, Oracle and/or its affiliates, 2011.
+</para>
+</refsect1>
+</refentry>

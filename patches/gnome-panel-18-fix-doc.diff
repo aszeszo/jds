@@ -1,0 +1,107 @@
+diff -urN gnome-panel-2.30.2/applets/notification_area/main.c ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/notification_area/main.c
+--- gnome-panel-2.30.2/applets/notification_area/main.c	2011-06-21 15:43:40.777243796 +0000
++++ ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/notification_area/main.c	2011-06-21 16:00:43.579324541 +0000
+@@ -132,7 +132,7 @@
+     NULL
+   };
+   const char *documenters [] = {
+-    "Sun GNOME Documentation Team <gdocteam@sun.com>",
++    "Oracle GNOME Documentation Team",
+     NULL
+   };
+ 
+diff -urN gnome-panel-2.30.2/applets/wncklet/showdesktop.c ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/showdesktop.c
+--- gnome-panel-2.30.2/applets/wncklet/showdesktop.c	2010-06-22 17:27:02.000000000 +0000
++++ ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/showdesktop.c	2011-06-21 16:01:20.367825317 +0000
+@@ -523,7 +523,7 @@
+                 NULL
+         };
+         static const char *documenters[] = {
+-                "Sun GNOME Documentation Team <gdocteam@sun.com>",
++		"Oracle GNOME Documentation Team",
+                 NULL
+         };
+ 
+diff -urN gnome-panel-2.30.2/applets/wncklet/window-list.c ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/window-list.c
+--- gnome-panel-2.30.2/applets/wncklet/window-list.c	2010-06-22 17:27:02.000000000 +0000
++++ ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/window-list.c	2011-06-21 16:02:16.028501854 +0000
+@@ -600,7 +600,7 @@
+ 		NULL
+ 	};
+ 	const char *documenters [] = {
+-		"Sun GNOME Documentation Team <gdocteam@sun.com>",
++	    	"Oracle GNOME Documentation Team",
+ 		NULL
+ 	};
+ 	const char *translator_credits = _("translator-credits");
+diff -urN gnome-panel-2.30.2/applets/wncklet/window-menu.c ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/window-menu.c
+--- gnome-panel-2.30.2/applets/wncklet/window-menu.c	2010-06-22 17:27:02.000000000 +0000
++++ ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/window-menu.c	2011-06-21 16:05:02.970318544 +0000
+@@ -1,6 +1,6 @@
+ /* window-menu.c: Window Selector applet
+  *
+- * Copyright (C) 2003 Sun Microsystems, Inc.
++ * Copyright (C) 2003, 2011 Oracle and/or its affiliates. All rights reserved.
+  * Copyright (C) 2001 Free Software Foundation, Inc.
+  * Copyright (C) 2000 Helix Code, Inc.
+  *
+@@ -73,14 +73,14 @@
+ 		NULL
+ 	};
+ 	const char *documenters [] = { 
+-                "Sun GNOME Documentation Team <gdocteam@sun.com>",
++		"Oracle GNOME Documentation Team",
+                 NULL 
+         };
+ 	const char *translator_credits = _("translator-credits");
+ 
+ 	wncklet_display_about (window_menu->applet, &window_menu->about_dialog,
+ 			       _("Window Selector"),
+-			       "Copyright \xc2\xa9 2003 Sun Microsystems, Inc.\n"
++			       "Copyright \xc2\xa9 2003, 2011, Oracle and/or its affiliates. All rights reserved.\n"
+ 			       "Copyright \xc2\xa9 2001 Free Software Foundation, Inc.\n"
+ 			       "Copyright \xc2\xa9 2000 Helix Code, Inc.",
+ 			       _("The Window Selector shows a list of all windows in a menu and lets you browse them."),
+diff -urN gnome-panel-2.30.2/applets/wncklet/workspace-switcher.c ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/workspace-switcher.c
+--- gnome-panel-2.30.2/applets/wncklet/workspace-switcher.c	2011-06-21 15:43:40.789545498 +0000
++++ ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/applets/wncklet/workspace-switcher.c	2011-06-21 16:01:52.948334005 +0000
+@@ -686,7 +686,7 @@
+ 	};
+ 	const char *documenters [] = {
+                 "John Fleck <jfleck@inkstain.net>",
+-                "Sun GNOME Documentation Team <gdocteam@sun.com>",
++ 		"Oracle GNOME Documentation Team",
+                 NULL
+ 	};
+ 	const char *translator_credits = _("translator-credits");
+diff -urN gnome-panel-2.30.2/help/clock/C/clock.xml ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/help/clock/C/clock.xml
+--- gnome-panel-2.30.2/help/clock/C/clock.xml	2010-06-22 17:32:22.000000000 +0000
++++ ../SUNWgnome-panel-2.30.2.hacked/gnome-panel-2.30.2/help/clock/C/clock.xml	2011-06-21 15:58:48.850137421 +0000
+@@ -30,7 +30,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>  
+ 		<year>2004</year>  
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year>
++                <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -51,7 +52,6 @@
+ 		<publishername> GNOME Documentation Project </publishername> 
+ 	 </publisher> 
+ 
+-&legal;
+ <!-- This file  contains link to license for the documentation (GNU FDL), and 
+      other legal stuff such as "NO WARRANTY" statement. Please do not change 
+      any of this. -->
+@@ -66,8 +66,7 @@
+ 		  </affiliation> 
+ 		</author> 
+ 		<author> 
+-		  <firstname>Sun </firstname> 
+-		  <surname>Microsystems</surname> 
++		  <firstname>Oracle Corporation</firstname> 
+ 		  <affiliation> 
+ 			 <orgname>GNOME Documentation Project</orgname> 
+ 			 <address></address> 

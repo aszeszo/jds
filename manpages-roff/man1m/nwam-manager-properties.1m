@@ -1,0 +1,127 @@
+'\" te
+.TH nwam-manager-properties 1m "1 Mar 2009" "SunOS 5.11" "Maintenance Commands"
+.SH "NAME"
+nwam-manager-properties \- GNOME UI for Configuring Network Auto-Magic (NWAM)
+.SH "SYNOPSIS"
+.PP
+\fBnwam-manager-properties\fR [-\fB-net-pref-dialog\fR] [-\fB-net-conf-view\fR] [-\fB-nm-pref-dialog\fR] [-\fB-wireless-chooser\fR] [-\fB-location-dialog\fR] [\fB\fIgnome-std-options\fR\fR]
+.SH "DESCRIPTION"
+.PP
+\fBnwam-manager-properties\fR provides a mechanism for users to configure the Network Auto-Magic daemon (NWAM) \fBnwamd\fR(1m) and provides a GUI alternative to the CLI tools \fBnwamadm\fR(1m) and \fBnwamcfg\fR(1m)\&. 
+.PP
+\fBnwam-manager-properties\fR can be launched from the NWAM Manager icon in the notification area, or from the Launch menu\&.
+.PP
+In \fBnwam-manager-properties\fR, the user may edit the configuration setting of the Network Auto-Magic daemon (NWAM) and apply them to the system such that NWAM may then know how to configure the system to meed the user\&'s needs\&. You can also use this to monitor the current configuration using the Configuration Status Panel\&.
+.PP
+Detailed information is available in the on-line help system (by pressing F1) to get context sensitive help on how to configure specific elements\&.
+.SH "OPTIONS"
+.PP
+The following options are supported:
+.sp
+.ne 2
+.mk
+\fB -\fB-net-pref-dialog\fR \fR
+.in +16n
+.rt
+.sp
+Show \&'Network Preferences\&' Dialog
+.sp
+.sp 1
+.in -16n
+.sp
+.ne 2
+.mk
+\fB -\fB-net-conf-view\fR \fR
+.in +16n
+.rt
+.sp
+Show \&'Network Configuration\&' Dialog
+.sp
+.sp 1
+.in -16n
+.sp
+.ne 2
+.mk
+\fB -\fB-nm-pref-dialog\fR \fR
+.in +16n
+.rt
+.sp
+Show \&'Network Modifier Preferences\&' Dialog
+.sp
+.sp 1
+.in -16n
+.sp
+.ne 2
+.mk
+\fB -\fB-wireless-chooser\fR \fR
+.in +16n
+.rt
+.sp
+Show \&'Wireless Network Chooser\&' Dialog
+.sp
+.sp 1
+.in -16n
+.sp
+.ne 2
+.mk
+\fB -\fB-location-dialog\fR \fR
+.in +16n
+.rt
+.sp
+Show \&'Location\&' Dialog
+.sp
+.sp 1
+.in -16n
+.sp
+.ne 2
+.mk
+\fB\fB\fIgnome-std-options\fR\fR\fR
+.in +16n
+.rt
+.sp
+Standard options available for use with most GNOME applications\&.  See \fBgnome-std-options\fR( 5) for more information\&.
+.sp
+.sp 1
+.in -16n
+.SH "EXTENDED DESCRIPTION"
+.SH "FILES"
+.PP
+The following files are used by this application:
+.sp
+.ne 2
+.mk
+\fB\fB/usr/bin/nwam-manager-properties\fR\fR
+.sp .6
+.in +4
+Executable for NWAM Manager Properties
+.sp
+.sp 1
+.in -4
+.SH "ATTRIBUTES"
+.PP
+See \fBattributes\fR(5) for descriptions of the following attributes:
+.sp
+.TS
+tab() allbox;
+cw(2.750000i)| cw(2.750000i)
+lw(2.750000i)| lw(2.750000i).
+ATTRIBUTE TYPEATTRIBUTE VALUE
+Availability
+Interface stabilityUncommitted
+.TE
+.sp
+.SH "SEE ALSO"
+.PP
+Latest version of the \fIGNOME Desktop User Guide\fR
+for your platform\&.
+.PP
+\fBnwam-manager\fR(1m),
+\fBnwamadm\fR(1m),
+\fBnwamcfg\fR(1m),
+\fBnwamd\fR(1m),
+\fBgnome-std-options\fR(5)
+.SH "NOTES"
+.PP
+Written by Darren Kenny, Sun Microsystems Inc\&., 2009\&.
+...\" created by instant / solbook-to-man, Fri 26 Feb 2010, 18:03
+.\" PSARC 2010/049  NWAM Phase 1 Updates part 2

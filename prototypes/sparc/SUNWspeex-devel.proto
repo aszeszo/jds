@@ -1,0 +1,35 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWspeex-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWspeex-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWspeex-devel.copyright
+d none include 0755 root bin
+d none include/speex 0755 root bin
+f none include/speex/speex.h=usr/include/speex/speex.h 0644 root bin
+f none include/speex/speex_bits.h=usr/include/speex/speex_bits.h 0644 root bin
+f none include/speex/speex_buffer.h=usr/include/speex/speex_buffer.h 0644 root bin
+f none include/speex/speex_callbacks.h=usr/include/speex/speex_callbacks.h 0644 root bin
+f none include/speex/speex_config_types.h=usr/include/speex/speex_config_types.h 0644 root bin
+f none include/speex/speex_echo.h=usr/include/speex/speex_echo.h 0644 root bin
+f none include/speex/speex_header.h=usr/include/speex/speex_header.h 0644 root bin
+f none include/speex/speex_jitter.h=usr/include/speex/speex_jitter.h 0644 root bin
+f none include/speex/speex_preprocess.h=usr/include/speex/speex_preprocess.h 0644 root bin
+f none include/speex/speex_resampler.h=usr/include/speex/speex_resampler.h 0644 root bin
+f none include/speex/speex_stereo.h=usr/include/speex/speex_stereo.h 0644 root bin
+f none include/speex/speex_types.h=usr/include/speex/speex_types.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/speex.pc=usr/lib/pkgconfig/speex.pc 0644 root bin
+f none lib/pkgconfig/speexdsp.pc=usr/lib/pkgconfig/speexdsp.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/speex.pc=usr/lib/sparcv9/pkgconfig/speex.pc 0644 root bin
+f none lib/sparcv9/pkgconfig/speexdsp.pc=usr/lib/sparcv9/pkgconfig/speexdsp.pc 0644 root bin
+d none share 0755 root sys
+d none share/aclocal 0755 root other
+f none share/aclocal/speex.m4=usr/share/aclocal/speex.m4 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/speex 0755 root other
+f none share/doc/speex/manual.pdf=usr/share/doc/speex/manual.pdf 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libspeex.3=usr/share/man/man3/libspeex.3 0755 root bin
+f none share/man/man3/libspeexdsp.3=usr/share/man/man3/libspeexdsp.3 0755 root bin

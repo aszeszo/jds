@@ -1,0 +1,22 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgobject-introspection-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgobject-introspection-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgobject-introspection-devel.copyright
+d none include 0755 root bin
+d none include/gobject-introspection-1.0 0755 root bin
+f none include/gobject-introspection-1.0/gibaseinfo.h=usr/include/gobject-introspection-1.0/gibaseinfo.h 0644 root bin
+f none include/gobject-introspection-1.0/gifunctioninfo.h=usr/include/gobject-introspection-1.0/gifunctioninfo.h 0644 root bin
+f none include/gobject-introspection-1.0/girepository.h=usr/include/gobject-introspection-1.0/girepository.h 0644 root bin
+f none include/gobject-introspection-1.0/girffi.h=usr/include/gobject-introspection-1.0/girffi.h 0644 root bin
+f none include/gobject-introspection-1.0/gitypelib.h=usr/include/gobject-introspection-1.0/gitypelib.h 0644 root bin
+f none include/gobject-introspection-1.0/gitypes.h=usr/include/gobject-introspection-1.0/gitypes.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gobject-introspection-1.0.pc=usr/lib/pkgconfig/gobject-introspection-1.0.pc 0644 root bin
+f none lib/pkgconfig/gobject-introspection-no-export-1.0.pc=usr/lib/pkgconfig/gobject-introspection-no-export-1.0.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/gobject-introspection-1.0.pc=usr/lib/sparcv9/pkgconfig/gobject-introspection-1.0.pc 0644 root bin
+f none lib/sparcv9/pkgconfig/gobject-introspection-no-export-1.0.pc=usr/lib/sparcv9/pkgconfig/gobject-introspection-no-export-1.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/aclocal 0755 root other
+f none share/aclocal/introspection.m4=usr/share/aclocal/introspection.m4 0644 root bin

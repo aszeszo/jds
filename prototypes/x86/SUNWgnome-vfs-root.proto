@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-vfs-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-vfs-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-vfs-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/desktop_default_applications.schemas=etc/gconf/schemas/desktop_default_applications.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_url_handlers.schemas=etc/gconf/schemas/desktop_gnome_url_handlers.schemas 0644 root sys
+f none etc/gconf/schemas/system_dns_sd.schemas=etc/gconf/schemas/system_dns_sd.schemas 0644 root sys
+f none etc/gconf/schemas/system_http_proxy.schemas=etc/gconf/schemas/system_http_proxy.schemas 0644 root sys
+f none etc/gconf/schemas/system_smb.schemas=etc/gconf/schemas/system_smb.schemas 0644 root sys
+d none etc/gnome-vfs-2.0 0755 root sys
+d none etc/gnome-vfs-2.0/modules 0755 root sys
+f none etc/gnome-vfs-2.0/modules/default-modules.conf=etc/gnome-vfs-2.0/modules/default-modules.conf 0644 root sys
+f none etc/gnome-vfs-2.0/modules/smb-module.conf=etc/gnome-vfs-2.0/modules/smb-module.conf 0644 root sys
+f none etc/gnome-vfs-2.0/modules/ssl-modules.conf=etc/gnome-vfs-2.0/modules/ssl-modules.conf 0644 root sys
+v none etc/gnome-vfs-mime-magic=etc/gnome-vfs-mime-magic 0644 root sys

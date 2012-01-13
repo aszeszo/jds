@@ -1,0 +1,12 @@
+diff -urN gthumb-2.12.0/configure.ac ../SUNWgnome-img-organizer-2.12.0.hacked/gthumb-2.12.0/configure.ac
+--- gthumb-2.12.0/configure.ac	2011-02-23 14:59:41.812299693 +0000
++++ ../SUNWgnome-img-organizer-2.12.0.hacked/gthumb-2.12.0/configure.ac	2011-02-23 15:00:57.614966924 +0000
+@@ -137,7 +137,7 @@
+ 	gtk+-2.0 		>= $GTK_REQUIRED
+ 	gconf-2.0 		>= $GCONF_REQUIRED
+ 	unique-1.0		>= $UNIQUE_REQUIRED
+-	libpng
++	libpng12
+ ])
+ AC_SUBST(GTHUMB_LIBS)
+ AC_SUBST(GTHUMB_CFLAGS)

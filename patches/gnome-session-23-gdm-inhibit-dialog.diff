@@ -1,0 +1,114 @@
+--- gnome-session-2.30.2/gnome-session/main.c-orig	2011-02-21 20:48:38.822655206 -0600
++++ gnome-session-2.30.2/gnome-session/main.c	2011-02-21 20:50:18.797611944 -0600
+@@ -314,6 +314,18 @@ load_standard_apps (GsmManager *manager,
+         g_strfreev (autostart_dirs);
+ }
+ 
++static gboolean
++check_gdm_greeter_session (GsmManager *manager,
++                    char      **override_autostart_dirs)
++{
++        int i;
++        for (i = 0; override_autostart_dirs[i]; i++) {
++               if (strstr (override_autostart_dirs[i], "/gdm/autostart/LoginWindow") != NULL)
++                       return TRUE;
++        }
++        return FALSE;
++}
++
+ static void
+ load_override_apps (GsmManager *manager,
+                     char      **override_autostart_dirs)
+@@ -595,8 +607,12 @@ main (int argc, char **argv)
+         gdm_signal_handler_add (signal_handler, SIGTERM, signal_cb, manager);
+         gdm_signal_handler_add (signal_handler, SIGINT, signal_cb, manager);
+         gdm_signal_handler_set_fatal_func (signal_handler, shutdown_cb, manager);
++        gsm_manager_set_inhibit_dialog_display (manager, TRUE);
+ 
+         if (override_autostart_dirs != NULL) {
++                if (check_gdm_greeter_session (manager, override_autostart_dirs))
++                        gsm_manager_set_inhibit_dialog_display (manager, FALSE);
++
+                 load_override_apps (manager, override_autostart_dirs);
+         } else {
+                 if (! IS_STRING_EMPTY (default_session_key)) {
+--- gnome-session-2.30.2/gnome-session/gsm-manager.h-orig	2011-02-21 20:48:30.431626073 -0600
++++ gnome-session-2.30.2/gnome-session/gsm-manager.h	2011-02-21 20:48:57.397005390 -0600
+@@ -184,6 +184,9 @@ gboolean            gsm_manager_is_autos
+ gboolean            gsm_manager_set_phase                      (GsmManager     *manager,
+                                                                 GsmManagerPhase phase);
+ 
++void                gsm_manager_set_inhibit_dialog_display     (GsmManager *manager,
++                                                                gboolean inhibit_dialog_display);
++
+ G_END_DECLS
+ 
+ #endif /* __GSM_MANAGER_H */
+--- gnome-session-2.30.2/gnome-session/gsm-manager.c-orig	2011-02-21 20:43:54.155366644 -0600
++++ gnome-session-2.30.2/gnome-session/gsm-manager.c	2011-02-21 20:47:23.878324582 -0600
+@@ -121,6 +121,7 @@ struct GsmManagerPrivate
+         GsmManagerLogoutType    logout_type;
+ 
+         GtkWidget              *inhibit_dialog;
++        gboolean                inhibit_dialog_display;
+ 
+         /* List of clients which were disconnected due to disabled condition
+          * and shouldn't be automatically restarted */
+@@ -162,6 +163,9 @@ static void     gsm_manager_finalize    
+ static gboolean auto_save_is_enabled (GsmManager *manager);
+ static void     maybe_save_session   (GsmManager *manager);
+ 
++static void on_store_inhibitor_added (GsmStore   *store, const char *id, GsmManager *manager);
++static void on_store_inhibitor_removed (GsmStore   *store, const char *id, GsmManager *manager);
++
+ static gpointer manager_object = NULL;
+ 
+ G_DEFINE_TYPE (GsmManager, gsm_manager, G_TYPE_OBJECT)
+@@ -1071,6 +1075,22 @@ inhibit_dialog_response (GsmInhibitDialo
+ }
+ 
+ static void
++gsm_manager_inhibitors_dispose (GsmManager *manager)
++{
++        if (manager->priv->inhibitors != NULL) {
++                g_signal_handlers_disconnect_by_func (manager->priv->inhibitors,
++                                                      on_store_inhibitor_added,
++                                                      manager);
++                g_signal_handlers_disconnect_by_func (manager->priv->inhibitors,
++                                                      on_store_inhibitor_removed,
++                                                      manager);
++
++                g_object_unref (manager->priv->inhibitors);
++                manager->priv->inhibitors = NULL;
++        }
++}
++
++static void
+ query_end_session_complete (GsmManager *manager)
+ {
+         GsmLogoutAction action;
+@@ -1089,6 +1109,12 @@ query_end_session_complete (GsmManager *
+                 return;
+         }
+ 
++        if (! manager->priv->inhibit_dialog_display) {
++                gsm_manager_inhibitors_dispose (manager);
++                end_phase (manager);
++                return;
++        }
++
+         if (manager->priv->inhibit_dialog != NULL) {
+                 g_debug ("GsmManager: inhibit dialog already up");
+                 gtk_window_present (GTK_WINDOW (manager->priv->inhibit_dialog));
+@@ -3514,3 +3540,11 @@ gsm_manager_add_autostart_apps_from_dir 
+ 
+         return TRUE;
+ }
++
++void
++gsm_manager_set_inhibit_dialog_display (GsmManager *manager, gboolean inhibit_dialog_display)
++{
++        g_return_if_fail (GSM_IS_MANAGER (manager));
++        manager->priv->inhibit_dialog_display = inhibit_dialog_display;
++}
++

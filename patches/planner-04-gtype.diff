@@ -1,0 +1,26 @@
+--- planner-0.14.2/libegg/recent-files/egg-recent-view.c.ori	2008-09-23 09:51:25.867527874 +0100
++++ planner-0.14.2/libegg/recent-files/egg-recent-view.c	2008-09-23 09:52:48.920716486 +0100
+@@ -28,10 +28,10 @@
+ #include "egg-recent-view.h"
+ 
+ 
+-GtkType
++GType
+ egg_recent_view_get_type (void)
+ {
+-	static GtkType view_type = 0;
++	static GType view_type = 0;
+ 
+ 	if (!view_type)
+ 	{
+--- planner-0.14.2/libegg/recent-files/egg-recent-view.h.ori	2008-09-23 10:01:39.549866979 +0100
++++ planner-0.14.2/libegg/recent-files/egg-recent-view.h	2008-09-23 10:01:52.834805019 +0100
+@@ -30,7 +30,7 @@
+ 	EggRecentModel * (* do_get_model)	(EggRecentView *view);
+ };
+ 
+-GtkType	egg_recent_view_get_type		(void) G_GNUC_CONST;
++GType	egg_recent_view_get_type		(void) G_GNUC_CONST;
+ void	egg_recent_view_set_list		(EggRecentView *view,
+ 						 GSList *list);
+ void	egg_recent_view_clear			(EggRecentView *view);

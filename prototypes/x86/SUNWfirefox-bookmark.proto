@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWfirefox-bookmark.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWfirefox-bookmark.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWfirefox-bookmark.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/defaults 0755 root bin
+d none lib/firefox/defaults/profile 0755 root bin
+f none lib/firefox/defaults/profile/bookmarks.html=usr/lib/firefox/defaults/profile/bookmarks.html 0644 root bin

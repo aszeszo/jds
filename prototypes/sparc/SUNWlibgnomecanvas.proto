@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgnomecanvas.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgnomecanvas.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgnomecanvas.copyright
+f none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/AUTHORS=usr/share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/AUTHORS 0444 root bin
+f none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/COPYING.LIB.bz2=usr/share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/ChangeLog.bz2=usr/share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/NEWS.bz2=usr/share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/README=usr/share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/README 0444 root bin
+f none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/po/ChangeLog.bz2=usr/share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/po/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/libglade 0755 root bin
+d none lib/libglade/2.0 0755 root bin
+s none lib/libgnomecanvas-2.so=libgnomecanvas-2.so.0.3000.1
+s none lib/libgnomecanvas-2.so.0=libgnomecanvas-2.so.0.3000.1
+f none lib/libgnomecanvas-2.so.0.3000.1=usr/lib/libgnomecanvas-2.so.0.3000.1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibgnomecanvas 0755 root bin
+d none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1 0755 root bin
+d none share/doc/SUNWlibgnomecanvas/libgnomecanvas-2.30.1/po 0755 root bin

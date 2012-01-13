@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpango-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpango-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpango-root.copyright
+d none etc 0755 root sys
+d none etc/amd64 0755 root sys
+d none etc/amd64/pango 0755 root sys
+v none etc/amd64/pango/pango.modules=etc/amd64/pango/pango.modules 0644 root sys
+v none etc/amd64/pango/pangox.aliases=etc/amd64/pango/pangox.aliases 0644 root sys
+d none etc/pango 0755 root sys
+v none etc/pango/pango.modules=etc/pango/pango.modules 0644 root sys
+v none etc/pango/pangox.aliases=etc/pango/pangox.aliases 0644 root sys

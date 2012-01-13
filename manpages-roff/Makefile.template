@@ -1,0 +1,9 @@
+MANDIR=/usr/share/man
+MANPAGES=$(wildcard *.*)
+
+install:
+	for mp in $(MANPAGES); do \
+		section=`expr "$$mp" : '.*\.\([^./]*\)$$'`; \
+		test -d $$section || install -d $(DESTDIR)$(MANDIR)/man$$section; \
+		install --mode=0644 $$mp $(DESTDIR)$(MANDIR)/man$$section; \
+	done

@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxdg-user-dirs-gtk-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxdg-user-dirs-gtk-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxdg-user-dirs-gtk-root.copyright
+d none etc 0755 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/user-dirs-update-gtk.desktop=etc/xdg/autostart/user-dirs-update-gtk.desktop 0644 root sys

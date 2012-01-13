@@ -1,0 +1,19 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: ../src/libtracker-common/tracker-utils.c:262
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:44+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=2; plural=(n!=1);\n"
+
+# SUN_BRANDING
+#: ../src/tracker-preferences/tracker-preferences.desktop.in.in.h:2
+msgid "Choose how files are indexed for searching"
+msgstr "Auswählen, wie Dateien für die Suche indiziert werden"
+
+# SUN_BRANDING
+#: ../src/tracker-preferences/tracker-preferences.desktop.in.in.h:4
+msgid "File Indexing"
+msgstr "Dateiindizierung"

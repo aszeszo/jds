@@ -1,0 +1,33 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWw3m.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWw3m.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWw3m.copyright
+f none share/doc/SUNWw3m/ChangeLog=usr/share/doc/SUNWw3m/ChangeLog 0444 root bin
+f none share/doc/SUNWw3m/NEWS=usr/share/doc/SUNWw3m/NEWS 0444 root bin
+f none share/doc/SUNWw3m/README=usr/share/doc/SUNWw3m/README 0444 root bin
+d none bin 0755 root bin
+f none bin/w3m=usr/bin/w3m 0755 root bin
+f none bin/w3mman=usr/bin/w3mman 0755 root bin
+d none lib 0755 root bin
+d none lib/w3m 0755 root bin
+d none lib/w3m/cgi-bin 0755 root bin
+f none lib/w3m/cgi-bin/dirlist.cgi=usr/lib/w3m/cgi-bin/dirlist.cgi 0755 root bin
+f none lib/w3m/cgi-bin/multipart.cgi=usr/lib/w3m/cgi-bin/multipart.cgi 0755 root bin
+f none lib/w3m/cgi-bin/w3mbookmark=usr/lib/w3m/cgi-bin/w3mbookmark 0755 root bin
+f none lib/w3m/cgi-bin/w3mhelp.cgi=usr/lib/w3m/cgi-bin/w3mhelp.cgi 0755 root bin
+f none lib/w3m/cgi-bin/w3mhelperpanel=usr/lib/w3m/cgi-bin/w3mhelperpanel 0755 root bin
+f none lib/w3m/cgi-bin/w3mmail.cgi=usr/lib/w3m/cgi-bin/w3mmail.cgi 0755 root bin
+f none lib/w3m/cgi-bin/w3mman2html.cgi=usr/lib/w3m/cgi-bin/w3mman2html.cgi 0755 root bin
+f none lib/w3m/inflate=usr/lib/w3m/inflate 0755 root bin
+f none lib/w3m/w3mimgdisplay=usr/lib/w3m/w3mimgdisplay 0755 root bin
+f none lib/w3m/xface2xpm=usr/lib/w3m/xface2xpm 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWw3m 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/w3m.1=usr/share/man/man1/w3m.1 0644 root bin
+f none share/man/man1/w3mman.1=usr/share/man/man1/w3mman.1 0644 root bin
+d none share/w3m 0755 root bin
+f none share/w3m/w3mhelp-funcdesc.en.pl=usr/share/w3m/w3mhelp-funcdesc.en.pl 0644 root bin
+f none share/w3m/w3mhelp-funcname.pl=usr/share/w3m/w3mhelp-funcname.pl 0644 root bin
+f none share/w3m/w3mhelp.html=usr/share/w3m/w3mhelp.html 0644 root bin

@@ -1,0 +1,4 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-orca-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-orca-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-orca-l10n.copyright
+d none share 0755 root sys

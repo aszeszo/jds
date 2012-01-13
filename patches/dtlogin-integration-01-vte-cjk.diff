@@ -1,0 +1,16 @@
+--- dtlogin-integration-0.36/config/Xinitrc.in.orig	2008-09-11 23:25:49.125681000 +0900
++++ dtlogin-integration-0.36/config/Xinitrc.in	2008-09-11 23:26:33.420998000 +0900
+@@ -26,7 +26,12 @@ fi
+ export G_FILENAME_ENCODING=@locale,UTF-8
+ export G_BROKEN_FILENAMES=yes
+ # Fixes 6583891
+-export VTE_CJK_WIDTH=1
++case $LANG in
++ja*) export VTE_CJK_WIDTH=1;;
++ko*) export VTE_CJK_WIDTH=1;;
++zh*) export VTE_CJK_WIDTH=1;;
++*) ;;
++esac
+ 
+ /usr/openwin/bin/xrdb -merge << EOF
+ ! Default CDE resources

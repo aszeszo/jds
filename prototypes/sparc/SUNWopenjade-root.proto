@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopenjade-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopenjade-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopenjade-root.copyright
+d none var 0755 root sys
+d none var/lib 0755 root other
+d none var/lib/sgml 0755 root sys
+s none var/lib/sgml/CATALOG.jade_dsl=CATALOG.openjade
+f none var/lib/sgml/CATALOG.openjade=var/lib/sgml/CATALOG.openjade 0644 root sys

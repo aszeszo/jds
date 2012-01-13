@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:42+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\nPlural-Forms: nplurals=1; plural=0;\n"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:498 ../src/netstatus-icon.c:512
+#: ../src/netstatus-icon.c:524 ../src/netstatus-icon.c:532
+#, c-format
+msgid "<b>%-20s</b>: %s"
+msgstr "<b>%-20s</b>: %s"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:500
+msgid "Wireless Network"
+msgstr "무선 네트워크"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:505
+#, c-format
+msgid "<b>%-20s</b>: %d%%"
+msgstr "<b>%-20s</b>: %d%%"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:507
+msgid "Signal Strength"
+msgstr "신호 감도"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:514
+msgid "Operational Mode"
+msgstr "작동 모드"
+
+# SUN_BRANDING
+#: ../src/netstatus-icon.c:526
+msgid "IP Address (v4)"
+msgstr "IP 주소(v4)"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:240
+msgid "Track Active Interface"
+msgstr "활성 인터페이스 추적"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:242
+msgid "Whether to track the system's active interface"
+msgstr "시스템의 활성 인터페이스를 추적할지 여부"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:250
+msgid "ESSID"
+msgstr "ESSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:252
+msgid "Wireless ESSID"
+msgstr "무선 ESSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:260
+msgid "BSSID"
+msgstr "BSSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:262
+msgid "Wireless BSSID"
+msgstr "무선 BSSID"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:270
+msgid "BSS_MODE"
+msgstr "BSS_MODE"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:272
+msgid "Wireless BSS_Mode"
+msgstr "무선 BSS_Mode"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:280
+msgid "Wireless CONNECTED"
+msgstr "무선 연결됨"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:282
+msgid "Whether the interface is connected"
+msgstr "인터페이스가 연결되어 있는지 여부"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:290
+msgid "MODE"
+msgstr "모드"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:292
+msgid "Wireless MODE"
+msgstr "무선 모드"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:300
+msgid "SECURITY"
+msgstr "보안"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:302
+msgid "Wireless SECURITY"
+msgstr "무선 보안"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:310
+msgid "AUTH_MODE"
+msgstr "AUTH_MODE"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:312
+msgid "Wireless AUTH_MODE"
+msgstr "무선 AUTH_MODE"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:588
+msgid "Infrastructure"
+msgstr "인프라"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:593
+msgid "Computer-to-Computer (Ad Hoc)"
+msgstr "컴퓨터 대 컴퓨터(임시)"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:597
+msgid "Any"
+msgstr "임의"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:625
+msgid "None"
+msgstr "없음"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:655
+msgid "Open"
+msgstr "열기"
+
+# SUN_BRANDING
+#: ../src/netstatus-iface.c:660
+msgid "Shared"
+msgstr "공유"

@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWjpg-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWjpg-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWjpg-devel.copyright
+d none include 0755 root bin
+f none include/jconfig.h=usr/include/jconfig.h 0644 root bin
+f none include/jerror.h=usr/include/jerror.h 0644 root bin
+f none include/jmorecfg.h=usr/include/jmorecfg.h 0644 root bin
+f none include/jpeglib.h=usr/include/jpeglib.h 0644 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libjpeg.3=usr/share/man/man3/libjpeg.3 0644 root bin

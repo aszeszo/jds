@@ -1,0 +1,23 @@
+--- GConf-2.31.1/gconf-2.0.pc.in-orig	2010-04-28 20:58:42.331252962 -0500
++++ GConf-2.31.1/gconf-2.0.pc.in	2010-04-28 21:01:09.731981994 -0500
+@@ -3,7 +3,7 @@ exec_prefix=@exec_prefix@
+ libdir=@libdir@
+ includedir=@includedir@
+ gconf_serverdir=@libexecdir@
+-
++gconf_defaultpath=@gconfdefaultpath@
+ 
+ Name: gconf
+ Description: GNOME Config System.
+--- GConf-2.31.1/configure.in-orig	2010-04-28 20:58:31.074078024 -0500
++++ GConf-2.31.1/configure.in	2010-04-28 21:02:51.588922513 -0500
+@@ -110,7 +110,9 @@ if test "x${with_sysconfsubdir}" != "x";
+ else
+   sysgconfdir='${sysconfdir}'
+ fi
++gconfdefaultpath="$sysconfdir/$with_sysconfsubdir/$MAJOR_VERSION/path"
+ AC_SUBST(sysgconfdir)
++AC_SUBST(gconfdefaultpath)
+ 
+ dnl Save flags to aclocal
+ ACLOCAL="$ACLOCAL $ACLOCAL_FLAGS"

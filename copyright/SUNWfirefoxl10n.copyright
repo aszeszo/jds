@@ -1,0 +1,2746 @@
+Copyright 2009, 2010, Oracle and/or it's affiliates. All rights reserved.
+Use is subject to license terms.
+
+Version: MPL 1.1/GPL 2.0/LGPL 2.1
+
+The contents of this file are subject to the Mozilla Public License Version
+1.1 (the "License"); you may not use this file except in compliance with
+the License. You may obtain a copy of the License at
+http://www.mozilla.org/MPL/
+
+Software distributed under the License is distributed on an "AS IS" basis,
+WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+for the specific language governing rights and limitations under the
+License.
+
+The Initial Developer of the Original Code is Sun Microsystems, Inc.
+Portions created by Sun Microsystems are Copyright (C) 2002 Sun
+Microsystems, Inc. All Rights Reserved.
+
+The Original Code is the MacOS MIMEInfo Implementation.
+
+The Initial Developer of the Original Code is
+Christian Biesinger <cbiesinger@web.de>.
+Portions created by the Initial Developer are Copyright (C) 2004
+the Initial Developer. All Rights Reserved.
+
+The Original Code is Mozilla Communicator client code.
+The Original Code is the MacOS MIMEInfo Implementation.
+
+The Original Code is lineterm.
+
+The Initial Developer of the Original Code is
+Ramalingam Saravanan.
+Portions created by the Initial Developer are Copyright (C) 1999
+the Initial Developer. All Rights Reserved.
+
+
+The Initial Developer of the Original Code is Simon Wilkinson.
+
+Portions created by the Initial Developer are Copyright (C) 2005
+the Initial Developer. All Rights Reserved.
+
+The Original Code is the Netscape security libraries.
+
+The Initial Developer of the Original Code is
+Red Hat, Inc
+Portions created by the Initial Developer are Copyright (C) 2005
+the Initial Developer. All Rights Reserved.
+
+The Original Code is the Python XPCOM language bindings.
+
+The Initial Developer of the Original Code is
+ActiveState Tool Corp.
+Portions created by the Initial Developer are Copyright (C) 2000, 2001
+the Initial Developer. All Rights Reserved.
+
+The Original Code is Mozilla SVG Project code.
+
+The Initial Developer of the Original Code is
+Bradley Baetz.
+Portions created by the Initial Developer are Copyright (C) 2001
+
+ The Original Code is the mozilla zlib configuration.
+
+The Original Code is nsICSSStyleRuleDOMWrapper.h.
+
+The Initial Developer of the Original Code is L. David Baron.
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is Places.
+
+The Initial Developer of the Original Code is
+ Google Inc.
+ Portions created by the Initial Developer are Copyright (C) 2004-2006
+ the Initial Developer. All Rights Reserved.the Initial Developer. All Rights Reserved.
+
+ The Original Code is Google Safe Browsing.
+
+The Original Code is the Metrics extension.
+
+The Initial Developer of the Original Code is Doug Turner <dougt@meer.net>
+The Original Code is TransforMiiX XSLT processor code.
+
+The Initial Developer of the Original Code is
+Axel Hecht.
+Portions created by the Initial Developer are Copyright (C) 2001
+the Initial Developer. All Rights Reserved.
+
+The Original Code is the cairo graphics library.
+ The Initial Developer of the Original Code is Calum Robinson
+ The Original Code is TransforMiiX XSLT processor code.
+
+The Initial Developer of the Original Code is
+ The MITRE Corporation.
+ Portions created by the Initial Developer are Copyright (C) 1999
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the MPI Arbitrary Precision Integer Arithmetic library.
+
+The Initial Developer of the Original Code is
+ Michael J. Fromberger.
+ Portions created by the Initial Developer are Copyright (C) 1998
+ the Initial Developer. All Rights Reserved.
+
+ This Original Code has been modified by IBM Corporation. Modifications made by IBM
+ described herein are Copyright (c) International Business Machines Corporation, 2000.
+ Modifications to Mozilla code or documentation identified per MPL Section 3.3
+
+The Original Code is the mozilla.org LDAP XPCOM SDK.
+
+ The Original Code is TransforMiiX XSLT processor code.
+
+The Original Code is the MPI Arbitrary Precision Integer Arithmetic library.
+ The Original Code is Mozilla MathML Project.
+
+ The Original Code is the MPI Arbitrary Precision Integer Arithmetic library.
+
+
+The Initial Developer of the Original Code is
+ The University Of Queensland.
+ Portions created by the Initial Developer are Copyright (C) 1999
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is XMLterm.
+
+
+ The Original Code is the Mozilla XTF project.
+
+The Initial Developer of the Original Code is
+ Alex Fritze.
+ Portions created by the Initial Developer are Copyright (C) 2002-2005
+ the Initial Developer. All Rights Reserved.
+
+
+ The Original Code is the MRJ Carbon OJI Plugin.
+
+ The Initial Developer of the Original Code is
+ Brian Ryner.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is Mozilla XForms support.
+
+ The Initial Developer of the Original Code is
+ Michael J. Fromberger.<sting@linguist.dartmouth.edu>.
+ Portions created by the Initial Developer are Copyright (C) 1997-2000
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+   Vladimir Vukicevic <vladimir@pobox.com>
+ Portions created by the Initial Developer are Copyright (C) 2004-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is Mozilla.
+
+ The Initial Developer of the Original Code is
+ Netscape Communications.
+ Portions created by the Initial Developer are Copyright (C) 1998-2003
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is Netscape
+ Communications Corporation.  Portions created by Netscape are
+ Copyright (C) 1996-2002 Netscape Communications Corporation. All
+ Rights Reserve.
+
+ The Original Code is Netscape.com code.
+
+ The Original Code is Shell Service.
+
+ The Initial Developer of the Original Code is Ben Goodger.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is Ben Goodger.
+
+ The Initial Developer of the Original Code is
+ Jonas Sicking.
+ Portions created by the Initial Developer are Copyright (C) 2001-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Benjamin Smedberg <benjamin@smedbergs.us> and 
+ Roland Mainz <roland.mainz@informatik.med.uni-giessen.de>.
+
+ The Original Code is the Mozilla browser.
+ The Original Code is the Mozilla OS/2 libraries.
+
+ The Initial Developer of the Original Code is
+ John Fairhurst, <john_fairhurst@iname.com>.
+ Portions created by the Initial Developer are Copyright (C) 1998-1999
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla SVG project.
+
+ The Initial Developer of the Original Code is
+ Crocodile Clips Ltd..
+ Portions created by the Initial Developer are Copyright (C) 2001-2004
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+          Shy Shalom <shooshX@gmail.com>
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is a cache for services in a category.
+
+The Initial Developer of the Original Code is
+ Christian Biesinger <cbiesinger@web.de>.
+ Portions created by the Initial Developer are Copyright (C) 2001-2005
+ the Initial Developer. All Rights Reserved.
+
+The Original Code is the cairo graphics library.
+
+ The Initial Developer of the Original Code is Red Hat, Inc.
+
+ The Initial Developer of the Original Code is
+ Makoto Kato <m_kato@ga2.so-net.ne.jp>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is mozilla.org Code.
+
+ The Initial Developer of the Original Code is
+ Marco Pesenti Gritti <marco@gnome.org>
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Metrics extension.
+
+ The Initial Developer of the Original Code is
+ Christopher Blizzard <blizzard@mozilla.org>.
+ Portions created by the Initial Developer are Copyright (C) 1994-2002
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Plugin Finder Service.
+ The Original Code is Oracle Corporation code.
+
+ The Initial Developer of the Original Code is
+  Oracle Corporation
+ Portions created by the Initial Developer are Copyright (C) 2004-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the prefs module contractid listing file.
+
+ The Initial Developer of the Original Code is
+ David Einstein.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla Text to HTML converter code.
+
+ The Initial Developer of the Original Code is
+ Ben Bucksch <http://www.bucksch.org>.
+ Portions created by the Initial Developer are Copyright (C) 1999-2004
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ Boris Zbarsky <bzbarsky@mit.edu>.
+ Portions created by the Initial Developer are Copyright (C) 2001-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is mozilla embedding code.
+
+ The Initial Developer of the Original Code is
+ mozilla.org
+ Portions created by the Initial Developer are Copyright (C) 2004-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is String Enumerator.
+
+ The Initial Developer of the Original Code is
+ Kenneth Herron <kherron@fastmail.us>.
+ Portions created by the Initial Developer are Copyright (C) 2003-2004
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla toolkit.
+
+ The Initial Developer of the Original Code is
+ Zero-Knowledge Systems, Inc.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Owen Taylor <otaylor@redhat.com> and Christopher Blizzard
+ <blizzard@redhat.com>.
+ Portions created by the Initial Developer are Copyright (C) 1999
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Mozilla Corporation.
+ Portions created by the Initial Developer are Copyright (C) 2006
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla SVG GDI+ Renderer project.
+
+The Original Code is written by Juan Lang.
+ The Initial Developer of the Original Code is
+ Juan Lang.
+ Portions created by the Initial Developer are Copyright (C) 2003,2006
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ ActiveState Tool Corp.
+ Portions created by the Initial Developer are Copyright (C) 2000, 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla XBM Decoder.
+
+ The Original Code is Places.
+
+ The Original Code is mozilla.org HTML Sanitizer code.
+
+ The Initial Developer of the Original Code is Keith Packard
+
+ The Initial Developer of the Original Code is Neil Deakin
+ The Original Code is the Mozilla browser.
+ The Original Code is the elliptic curve math library for binary polynomial field curves.
+ The Original Code is the elliptic curve math library.
+
+ The Initial Developer of the Original Code is Jungshik Shin
+ <jshin@i18nl10n.com>.  Portions created by the Initial Developer
+ are Copyright (C) 2003-2006 the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Peter Van der Beken.
+ Portions created by the Initial Developer are Copyright (C) 1999-2006
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is Chimera code.
+The Original Code is nsCacheMetaData.h, released
+ February 22, 2001.
+
+ The Original Code is C++ hashtable templates.
+
+The Initial Developer of the Original Code is Mozilla Foundation
+ Portions created by the Initial Developer are Copyright (C) 2004-2007
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is editor atom table.
+
+ The Original Code is cairo_unicode.c as distributed with the
+   cairo graphics library.
+ The Initial Developer of the Original Code is Tom Tromey.
+  and Red Hat, Inc.
+
+ The Initial Developer of the Original Code is
+ Nelson B. Bolyard, nelsonb@iname.com.
+ Portions created by the Initial Developer are Copyright (C) 1990
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla Communicator client code.
+ The Original Code is the SSPI NegotiateAuth Module.
+ The Original Code is the DES-150 library.
+ The Initial Developer of the Original Code is
+ Roland Mainz.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Andreas Otte.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla SVG Cairo Renderer project.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is inline spellchecker code.
+
+ The Initial Developer of the Original Code is
+ Novell, Inc.
+ Portions created by the Initial Developer are Copyright (C) 2004-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is text services atom table.
+
+The Initial Developer of the Original Code is
+ Tim Copperfield. Portions created by Tim Copperfield are Copyright (C) Tim Copperfield. All Rights Reserved.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+ The Initial Developer of the Original Code is
+ James L. Nance.
+ Portions created by the Initial Developer are Copyright (C) 1999
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Lixto GmbH.
+ Portions created by Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ Cyrus Patel <cyp@fb14.uni-mainz.de>.
+ Portions created by the Initial Developer are Copyright (C) 2002
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Red Hat, Inc.
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ Christopher Blizzard and Jamie Zawinski.
+ Portions created by the Initial Developer are Copyright (C) 1994-2000
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+  Zack Rusin <zack@kde.org>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+
+ The Original Code is layout debugging code.
+
+The Initial Developer of the Original Code is
+ Stuart Parmenter.
+ Portions created by the Initial Developer are Copyright (C) 1998-2000
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ Rajiv Dayal <rdayal@netscape.com>
+ Portions created by the Initial Developer are Copyright (C) 2002
+ the Initial Developer. All Rights Reserved.
+ The Original Code is the Platform for Privacy Preferences.
+
+ The Initial Developer of the Original Code is
+ Mike Pinkerton (pinkerton@netscape.com).
+ Portions created by the Initial Developer are Copyright (C) 2001-2006
+ the Initial Developer. All Rights Reserved.
+
+
+ The Original Code is supposed to avoid exccessive QuickDraw flushes.
+ The Initial Developer of the Original Code is
+ Mark Mentovai <mark@moxienet.com>.
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is nsOSHelperAppService.cpp.
+
+ The Initial Developer of the Original Code is
+ Paul Ashford.
+ Portions created by the Initial Developer are Copyright (C) 2001-2002
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Christopher A. Aillon <christopher@aillon.com>
+ Portions created by the Initial Developer are Copyright (C) 2002
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is Multiple Precision Integer optimization code for
+ the Compaq Alpha processor.
+ The Initial Developer of the Original Code is
+ Richard C. Swift.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Gopher protocol code.
+ The Initial Developer of the Original Code is
+ Bradley Baetz.
+ Portions created by the Initial Developer are Copyright (C) 2000-2001
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is Url Classifier code
+ The Original Code is a trivial PKCS#11 test program.
+
+ The Original Code is SHA 180-1 Reference Implementation (Optimized).
+ The Original Code is SHA 180-1 Reference Implementation (Compact version).
+ The Original Code is SHA 180-1 Header File.
+
+ The Initial Developer of the Original Code is
+ Paul Kocher of Cryptography Research.
+ Portions created by the Initial Developer are Copyright (C) 1995-9
+ the Initial Developer. All Rights Reserved.
+
+
+ The Original Code is the Mozilla.org code.
+ The Initial Developer of the Original Code is
+ InnoTek Systemberatung GmbH.
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+
+ The Original Code is The Browser Profile Migrator.
+ The Initial Developer of the Original Code is L. David Baron.
+ Portions created by the Initial Developer are Copyright (C) 2001-2004
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+   Scott MacGregor <mscott@mozilla.org>.
+ Portions created by the Initial Developer are Copyright (C) 2006
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the web services module code.
+
+ The Initial Developer of the Original Code is
+ Scooter Morris <scootermorris@comcast.net>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Mozilla GTK2 File Chooser.
+ The Original Code is the Java Runtime Interface.
+
+ The Initial Developer of the Original Code is
+ Brian Stell <bstell@netscape.com>.
+ Portions created by the Initial Developer are Copyright (C) 2001-2002
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ Douglas F. Turner II  <dougt@meer.net>
+ Portions created by the Initial Developer are Copyright (C) 2004-2006
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Mark Hammond.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Jonathan Watt.
+ Portions created by the Initial Developer are Copyright (C) 2004-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Elika J. Etemad ("fantasai") <fantasai@inkedblade.net>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Activestate Tool Corp.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Dantifer Dang <dantifer.dang@sun.com>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+
+ The Original Code is PNG Encoding code
+ The Initial Developer of the Original Code is
+ Olli Pettay.
+ Portions created by the Initial Developer are Copyright (C) 2004-2005
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ David Bienvenu.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Michiel van Leeuwen <mvl@exedo.nl>.
+ Portions created by the Initial Developer are Copyright (C) 2003-2004
+ the Initial Developer. All Rights Reserved.
+
+
+ The Original Code is SPARC optimized Montgomery multiply functions.
+ The Original Code is the Mozilla XTF project.
+
+The Initial Developer of the Original Code is
+ Simon Fraser.
+ Portions created by the Initial Developer are Copyright (C) 2002
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ Aaron Leventhal (aaronleventhal@moonset.net)
+ Portions created by the Initial Developer are Copyright (C) 2001-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Keith Visco.
+ Portions created by the Initial Developer are Copyright (C) 1999
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is Jan Varga
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+The Original Code is Network Security Services (NSS).
+ The Initial Developer of the Original Code is
+ Red Hat, Inc.
+ Portions created by the Initial Developer are Copyright (C) 2005-2006
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Doug Turner <dougt@meer.net>.
+ Portions created by the Initial Developer are Copyright (C) 2002-2005
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ John B. Keiser
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is Daniel Kouril.
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is Darin Fisher.
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the Elliptic Curve Cryptography library.
+
+ The Initial Developer of the Original Code is
+ David Bradley.
+ Portions created by the Initial Developer are Copyright (C) 2002
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ Axel Hecht.
+ Portions created by the Initial Developer are Copyright (C) 2001-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ International Business Machines Corporation.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is Kipp E.B. Hickman.
+ Portions created by the Initial Developer are Copyright (C) 1999
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is University of Southern
+ California.
+
+The Initial Developer of the Original Code is Andrew Thompson.
+ Portions created by the Andrew Thompson are Copyright (C) 2004
+ Andrew Thompson. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Ken Herron <kherron@fastmail.us>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Paul Sandoz <paul.sandoz@sun.com> Sun Microsystems, Inc.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+
+The Initial Developer of the Original Code is
+ Mike Shaver.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ David Hyatt (hyatt@netscape.com).
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is Mozdev Group, Inc.
+ Portions created by the Initial Developer are Copyright (C) 2004 
+ the Initial Developer. All Rights Reserved.
+
+
+The Initial Developer of the Original Code is University of Southern
+ California.
+
+ The Initial Developer of the Original Code is
+ Conrad Carlen <ccarlen@mac.com>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Dainis Jonitis, <Dainis_Jonitis@swh-t.lv>.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is from xterm-122 source XFree86
+
+ The Initial Developer of the Original Code is
+ Markus G. Kuhn <mkuhn@acm.org> and Richard Verhoeven <river@win.tue.nl>.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is the IDispatch implementation for XPConnect.
+ The Initial Developer of the Original Code is
+ Daniel Witte.
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is Akkana Peck.
+ Portions created by the Initial Developer are Copyright (C) 2002
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ The University of Queensland.
+ Portions created by the Initial Developer are Copyright (C) 1999-2001
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ Tomas M~Zller.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ RSA Security, Inc.
+ Portions created by the Initial Developer are Copyright (C) 1994-2000
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+   Steve Swanson <steve.swanson@mackichan.com>
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is Simon Wilkinson
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+ The Initial Developer of the Original Code is Brian Bober <netdemonz@yahoo.com>
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ Seth Spitzer <sspitzer@mozilla.org>.
+ Portions created by the Initial Developer are Copyright (C) 2004
+ the Initial Developer. All Rights Reserved.
+
+
+
+ The Initial Developer of the Original Code is
+ Seth Spitzer <sspitzer@mozilla.org>.
+ Portions created by the Initial Developer are Copyright (C) 2003-2004
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+          Simon Montagu <smontagu@smontagu.org>
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ mozilla.org.
+ Portions created by the Initial Developer are Copyright (C) 2004-2005
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Christopher Seawood <cls@seawood.org>.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ John C. Griggs <johng@corel.com>.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is Robert Sayre.
+ Portions created by the Initial Developer are Copyright (C) 2005-2006
+ the Initial Developer. All Rights Reserved.
+ 
+
+ The Initial Developer of the Original Code is
+ Alexander Surkov.
+ Portions created by the Initial Developer are Copyright (C) 2006
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ Igor Bukanov.
+ Portions created by the Initial Developer are Copyright (C) 2005-2006
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is XMLterm.
+ The Initial Developer of the Original Code is
+ Ramalingam Saravanan.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Michal Ceresna.
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+
+The Original Code is from xterm-122 source XFree86:
+  xc/programs/xterm/keysym2ucs.h,v 1.1 1999/06/12 15:37:18 dawes Exp.
+
+The Initial Developer of the Original Code is
+ Gervase Markham. 
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Richard L. Walsh <dragtext@e-vertise.com>
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+   Peter Annema <jaggernaut@netscape.com>.
+ Portions created by the Initial Developer are Copyright (C) 2002
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Fredrik Holmqvist <thesuckiestemail@yahoo.se>.
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ Tim Rowley.
+ Portions created by the Initial Developer are Copyright (C) 2003
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is John Wolfe
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is Golden Hills Computer Services code.
+
+ The Initial Developer of the Original Code is Peter Hartshorn.
+ Portions created by the Initial Developer are Copyright (C) 2000
+ the Initial Developer. All Rights Reserved.
+
+ The Original Code is from xterm-122 source XFree86:
+ xc/programs/xterm/keysym2ucs.h,v 1.1 1999/06/12 15:37:18 dawes Exp.
+
+ The Initial Developer of the Original Code is
+ i-DNS.net International.
+ Portions created by the Initial Developer are Copyright (C) 2001
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developer of the Original Code is
+ Brian Ryner.
+ Portions created by the Initial Developer are Copyright (C) 2000-2004
+ the Initial Developer. All Rights Reserved.
+
+The Initial Developers of the Original Code are
+ Benjamin Smedberg <bsmedberg@covad.net> and
+ Roland Mainz <roland.mainz@informatik.med.uni-giessen.de>.
+ Portions created by the Initial Developer are Copyright (C) 2003-2004
+ the Initial Developer. All Rights Reserved.
+
+ The Initial Developer of the Original Code is
+ The MITRE Corporation.
+ Portions created by the Initial Developer are Copyright (C) 1999
+ the Initial Developer. All Rights Reserved.
+
+
+ The Initial Developer of the Original Code is
+ Robert Strong <robert.bugzilla@gmail.com>
+ Portions created by the Initial Developer are Copyright (C) 2005
+ the Mozilla Foundation <http://www.mozilla.org/>. All Rights Reserved.
+
+
+Contributors:
+   Aaron Kaluszka <ask@swva.net>
+   Aaron Leventhal (aaronleventhal@moonset.net)
+   Aaron Reed <aaronr@us.ibm.com>
+   Aaron Spangler <aaron@spangler.ods.org>
+   Achim Hasenmueller <achimha@innotek.de>
+   Adam D. Moss <adam@gimp.org>
+   Adam Lock <adamlock@netscape.com>
+   Adrian Havill <havill@redhat.com>
+   Adrian Mardare <amardare@qnx.com>
+   Afonso Costa <afonso.costa@indt.org.br>
+   Akkana Peck <akkana@netscape.com>
+   Alec Flett <alecf@netscape.com>
+   Alexander Larsson <alla@lysator.liu.se>
+   Alexander Surkov <surkov.alexander@gmail.com>
+   Alexey Chernyak <alexeyc@bigfoot.com>
+   Alex Fritze <alex@croczilla.com>
+   Alfred Kayser <alfredkayser@nl.ibm.com>
+   Alfred Peng <alfred.peng@sun.com>
+   Allan Beaufour <abeaufour@novell.com>
+   An-Cheng Huang <pach@cs.cmu.edu>
+   Andreas M. Schneider <clarence@clarence.de>
+   Andreas Otte <andreas.otte@debitel.net>
+   Andrei Volkov <av@netscape.com>
+   Andre Pedralho    <andre.pedralho@indt.org.br>
+   Andrew Wellington <proton@wiretapped.net>
+   Andy Hakim <ahakim@netscape.com>
+   Annie Sullivan <annie.sullivan@gmail.com>
+   Antonio Gomes     <antonio.gomes@indt.org.br>
+   AOF<freier@netscape.com>
+   Arron Mogge <paper@animecity.nu>
+   Asaf Romano <mozilla.mano@sent.com>
+   Ashish Bhatt <ashishbhatt@netscape.com>
+   Asko Tontti <atontti@cc.hut.fi>
+   Axel Hecht <axel@pike.org>
+   Bastiaan Jacques <baafie@planet.nl>
+   Ben Bucksch <mozilla@bucksch.org>
+   Ben Goodger <ben@bengoodger.com> 
+   Benjamin Smedberg <benjamin@smedbergs.us>
+   Ben Turner <mozilla@songbirdnest.com>
+   Bhuvan Racham <racham@netscape.com>
+   Bill Law		<law@netscape.com>
+   B.J. Rossiter <bj@igelaus.com.au>
+   Blake Kaplan <mrbkap@gmail.com>
+   Blake Ross <blake@blakeross.com>
+   bob meader <bob@guiduck.com> 
+   Bob Miller <kbob@oblix.com>
+   Bob Relyea (rrelyea@redhat.com)
+   Bodo Moeller <moeller@cdc.informatik.tu-darmstadt.de>,
+   Bolian Yin (bolian.yin@sun.com)
+   Boris Zbarsky <bzbarsky@mit.edu>
+   Bradley Baetz <bbaetz@acm.org>
+   Brendan Eich <brendan@mozilla.org>
+   Brett Wilson <brettw@gmail.com>
+   Brian Bober <netdemonz@yahoo.com>
+   Brian Edmond <briane@qnx.com>
+   Brian Lu <brian.lu@sun.com>
+   Brian Nesse <bnesse@netscape.com>
+   briano@netscape.com
+   Brian Ryner <bryner@brianryner.com>
+   Brian Stell <bstell@ix.netcom.com>
+   Brodie Thiesfield <brofield@jellycan.com>
+   Bruce Mitchener <bruce@cybersight.com>
+   bstell@netscape.com
+   Calum Robinson <calumr@mac.com>
+   Carl D. Worth <cworth@cworth.org>
+   Caspian Maclean <caspian@igelaus.com.au>
+   Chak Nanga <chak@netscape.com>
+   Charles Manske   <cmanske@netscape.com>
+   Chase Phillips <cmp@mozilla.org>
+   Chase Tingley <tingley@sundell.net>
+   Chip Clark  <chipc@netscape.com>
+   Chris <fltk@functionalfuture.com>
+   chrisk@netscape.com
+   Chris Mcafee <mcafee@netscape.com>
+   Chris Saari <saari@netscape.com>
+   Chris Sears <cbsears_sf@yahoo.com>
+   Chris Seawood <cls@seawood.org>
+   Christian Biesinger <cbiesinger@web.de>.
+   Christian M Hoffman <chrmhoffmann@web.de>
+   Christopher A. Aillon <caillon@redhat.com>
+   Christopher Blizzard <blizzard@mozilla.org>
+   Christopher Nebergall <cneberg@sandia.gov>
+   Christopher Seawood <cls@seawood.org>
+   Chris Waterson <waterson@netscape.com
+   Colin Blake <colin@theblakes.com>
+   Conrad Carlen <ccarlen@mac.com>.
+   Csaba Borbola  <csaba.borbola@sun.com>
+   Curt Patrick <curt@netscape.com>
+   Cyrille Moureaux <Cyrille.Moureaux@sun.com>
+   Cyrus Patel <cyp@fb14.uni-mainz.de>.
+   Dale.Stansberry@Nexwarecorop.com
+   Daniel Bratell <bratell@lysator.liu.se>
+   Daniele Nicolodi <daniele@grinta.net>
+   Daniel Glazman <glazman@netscape.com>
+   Daniel Kouril <kouril@ics.muni.cz> (original author)
+   Daniel Matejka <danm@netscape.com>
+   Daniel Veditz <dveditz@netscape.com>
+   Daniel Witte (dwitte@stanford.edu)
+   Dan Matejka <danm@netscape.com>
+   Dan Mosedale <dan.mosedale@oracle.com>
+   Dan Rosen <dr@netscape.com>
+   Dantifer Dang <dantifer.dang@sun.com>.
+   Darin Fisher <darin@meer.net>
+   Dave Hyatt <hyatt@mozilla.org> (Original Author)
+   Dave Liebreich <davel@mozilla.com>
+   David Bienvenu <bienvenu@nventure.com>
+   David Drinan <ddrinan@netscape.com>
+   Davide Bresolin <davide@teamos2.it>
+   David Einstein <Deinst@world.std.com>
+   david.gardiner@unisa.edu.au
+   David Hyatt (hyatt@netscape.com)
+   davidm@netscape.com
+   David Reveman <davidr@novell.com>
+   David W. Hyatt (hyatt@netscape.com)
+   David Williams, djw@netscape.com
+   Dean Tessman <dean_tessman@hotmail.com>
+   Denis Issoupov <denis@macadamian.com>
+   Dharma Sirnapalli <dsirnapalli@netscape.com>
+   Diego Gonzalez    <diego.gonzalez@indt.org.br>
+   Don Bragg <dbragg@netscape.com>
+   Don Cone <dcone@netscape.com>
+   Doodle <doodle@scenergy.dfmk.hu>
+   Doron Rosenberg <doronr@us.ibm.com>
+   Douglas Stebila <douglas@stebila.ca>
+   Douglas Turner <dougt@netscape.com>
+   Doug Turner <dougt@meer.net>
+   dp <dp@netscape.com>
+   Dr Stephen Henson <stephen.henson@gemplus.com>
+   Dr Vipul Gupta <vipul.gupta@sun.com>, Sun Microsystems Laboratories
+   Duncan Wilcox <duncan@be.com>
+   Edward Kandrot <kandrot@netscape.com>
+   Elika J. Etemad ("fantasai") <fantasai@inkedblade.net>.
+   emk <VYV03354@nifty.ne.jp>
+   Ere Maijala <ere@atp.fi>
+   Eric J. Burley (ericb@neoplanet.com)
+   Eric Vaughan (evaughan@netscape.com)
+   Ervin Yan <Ervin.Yan@sun.com>
+   Esben Mose Hansen <esben@despammed.com>
+   Evan Yan <evan.yan@sun.com>
+   Frank Mitchell (frank.mitchell@sun.com)
+   Frank Tang <ftang@netsape.com>
+   Frank Yung-Fong Tang <ftang@netscape.com>
+   Franz.Sirl-kernel@lauterbach.com (Franz Sirl)
+   Fredrik Holmqvist <thesuckiestemail@yahoo.se>
+   Fritz Schneider <fritz@google.com>
+   fur@netscape.com
+   Gagan Saksena <gagan@netscape.com>
+   Gary van der Merwe <garyvdm@gmail.com>
+   Gervase Markham <gerv@gerv.net>
+   Gilbert Fang (gilbert.fang@sun.com)
+   Ginn Chen <ginn.chen@sun.com>
+   Giorgio Maone <g.maone@informaction.com>
+   Glen Nakamura <glen@imodulo.com>
+   Gordon Sheridan <gordon@netscape.com>
+   Graham Dennis <u3952328@anu.edu.au>
+   Graydon Hoare <graydon@redhat.com>
+   Gus Verdun <gustavoverdun@aol.com>
+   gzip@prep.ai.mit.edu
+   madler@alumni.caltech.edu
+   Håkan Waara (hwaara@chello.se)
+   Hans-Andreas Engel <engel@physics.harvard.edu>
+   Hans-J. Boehm (boehm@parc.xerox.com)
+   Harish Dhurvasula <harishd@netscape.com>
+   Harshal Pradhan <hpradhan@hotpop.com>
+   Heikki Toivonen <heiki@citec.fi>
+   Henrik Gemal <mozilla@gemal.dk>
+   Henry Jia <Henry.Jia@sun.com>
+   Henry Sobotka <sobotka@axess.com>
+   Howard Chu <hyc@highlandsun.com>
+   Ian McGreer <mcgreer@netscape.com>
+   Ilias Biris       <ext-ilias.biris@indt.org.br> - Coordinator
+   Ilya Konstantinov <future@galanet.net>
+   Jacek Piskozub <piskozub@iopan.gda.pl>
+   James L. Nance <jim_nance@yahoo.com>
+   James Ross      <silver@warwickcompsocc.o.uk>
+   Jamie Zawinski <jwz@mozilla.org>
+   Jan Varga <varga@ku.sk>
+   Jason Eager            <jce2@po.cwru.edu>
+   Javier Delgadillo <javi@netscape.com>
+   Javier Pedemonte (jhpedemonte@gmail.com)
+   Javier Pedemonte <pedemont@us.ibm.com>
+   jce2@po.cwru.edu <Jason Eager>
+   Jean Claude Batista <jcb@macadamian.com>
+   Jean-Francois Ducarroz <ducarroz@netscape.com>
+   Jean-Jacques Enser (jj@netscape.com)
+   Jeff Tsai <jefft@netscape.com>
+   Jeff Walden <jwalden+code@mit.edu>
+   Jens Bannmann <jens.b@web.de>
+   Jeremy Morton  <jez9999@runbox.com>
+   Jeroen Dobbelaere <jeroen.dobbelaere@acunia.com>
+   Jerry.Kirk@Nexwarecorp.com
+   Jesse Burris	<jburris@mmxi.com>
+   Jessica Blanco <jblanco@us.ibm.com>
+   Jim Nance <jim_nance@yahoo.com>
+   jim_nance@yahoo.com
+   jloup@gzip.org          madler@alumni.caltech.edu
+   Joe Elwell     <jelwell@netscape.com>
+   Joe Hewitt <hewitt@netscape.com>
+   Joe Hughes <joe@retrovirus.com>
+   John Bandhauer <jband@netscape.com> (original author)
+   John C. Griggs <jcgriggs@sympatico.ca>
+   John Fairhurst <john_fairhurst@iname.com>
+   John Gardiner Myers <jgmyers@speakeasy.net>
+   John Gaunt <jgaunt@netscape.com>
+   John G Myers   <jgmyers@netscape.com>
+   John L. Clark <jlc6@po.cwru.edu>
+   Johnny Stenback <jst@mozilla.com>
+   John Sun (john.sun@sun.com)
+   John Wolfe <wolfe@lobo.us>
+   Jonas Sicking <jonas@sicking.cc>
+   Jonathan Granrose (granrose@netscape.com)
+   Jonathan Watt <jonathan.watt@strath.ac.uk>
+   Jon Baumgartner <jon@bergenstreetsoftware.com>
+   Josh Aas <josh@mozilla.com>
+   Josh MacDonald       <jmacd@xcf.berkeley.edu>
+   Joshua Xia <joshua.xia@sun.com>
+   jseward@bzip.org
+   Judson Valeski <valeski@netscape.com>
+   Julien Lafon <julien.lafon@gmail.com>
+   Jungshik Shin <jshin@i18nl10n.com>
+   Justin Bradford <jab@atdot.org>
+   Kai Engert <kaie@netscape.com>
+   kan Waara <hwaara@chello.se>
+   Karsten Düsterloh <mnyromyr@tprac.de>
+   Kathleen Brade <brade@netscape.com>
+   Keith R. Packard <keithp@keithp.com>
+   Keith Visco <kvisco@ziplink.net>
+   Ken Faulkner <faulkner@igelaus.com.au>
+   Ken Herron <kherron@fastmail.us>
+   Ken Key <key+mozilla@ksquared.net>
+   Kenneth Herron <kherron@fastmail.us>.
+   Kevin Hendricks <kevin.hendricks@sympatico.ca>
+   Kevin McCluskey  <kmcclusk@netscape.com>
+   Kin Blas <kin@netscape.com>
+   Kipp Hickman <kipp@netscape.com>
+   Krishna Mohan Khandrika <kkhandrika@netscape.com>
+   Kristian Høgsberg <krh@redhat.com>
+   Kyle Yuan (kyle.yuan@sun.com)
+   Larry Fitzpatick, OpenText <lef@opentext.com>
+   Lars Knoll <knoll@kde.org>
+   Laurent Jouanneau <laurent@xulfr.org>
+   L. David Baron <dbaron@dbaron.org>
+   Leaf Nunes <leaf@mozilla.org>
+   Leif Hedstrom <leif@netscape.com>
+   Leon Sha <leon.sha@sun.com>
+   Lidong <lidong520@263.net>
+   Lina Kemmel <lkemmel@il.ibm.com>
+   Lorenzo Colitti <lorenzo@colitti.com>
+   Louie Zhao <louie.zhao@sun.com>
+   Maha Abou El Rous <mahar@eg.ibm.com>
+   Makoto hamanaka <VYA04230@nifty.com>
+   Makoto Kato  <m_kato@ga2.so-net.ne.jp>
+   Malcolm Smith <malsmith@cs.rmit.edu.au>
+   Manish Singh         <manish@gtk.org>
+   Marco Pesenti Gritti <marco@gnome.org>
+   Mark Banner <bugzilla@standard8.demon.co.uk>
+   Mark Hammond <mhammond@skippinet.com.au>
+   Mark Mentovai <mark@moxienet.com>
+   Mark Smith <mcs@netscape.com>
+   Markus G. Kuhn <mkuhn@acm.org>
+   Marria Nazif <marria@gmail.com>
+   Martin v. Loewis <martin@v.loewis.de>
+   Mats Palmgren <mats.palmgren@bredband.net>
+   Matthias Neeracher <neeri@iis.ee.ethz.ch> 
+   Max Feil <mfeil@qnx.com>
+   mcmullen@netscape.com (original author)
+   Merle Sterling <msterlin@us.ibm.com>
+   Michael Allen (michael.allen@sun.com)
+   Michael Ang <mang@subcarrier.org>
+   Michael Hein <mhein@sun.com>
+   Michael J. Fromberger <sting@linguist.dartmouth.edu>.
+   Michael Judge  <mjudge@netscape.com>
+   Michael.Kedl@Nexwarecorp.com
+   Michael Lowe <michael.lowe@bigfoot.com>
+   Michal Ceresna <ceresna@amos.sturak.sk>
+   Michiel van Leeuwen <mvl@exedo.nl>
+   Mike Judge <mjudge@netscape.com>
+   Mike Kaply <mkaply@us.ibm.com>
+   Mike McCabe <mccabe@netscape.com>
+   Mike Pinkerton (pinkerton@netscape.com)
+   Mike Shaver <shaver@mozilla.org>
+   Mitch Stoltz <mstoltz@netsape.com>
+   Mitesh Shah <mitesh@netscape.com>
+   mon <atremon@elansoftware.com>
+   Morten Nilsen <morten@nilsen.com>
+   Myk Melez <myk@mozilla.org>
+   Naoki Hotta <nhotta@netscape.com> (original author)
+   Nate Nielsen <nielsen@memberwebs.com>
+   Navin Gupta <naving@netscape.com> (Original Author)
+   Ned Konz <ned@squeakland.org>
+   Neil Cronin (neil@rackle.com)
+   Neil Deakin <enndeakin@sympatico.ca>
+   Neil Deakin <neil@mozdevgroup.com>
+   Neil Hodgson <nhodgson@bigpond.net.au>
+   Neil Rashbrook <neil@parkwaycc.co.uk>
+   Nelson B. Bolyard, nelsonb@iname.com.
+   Nicholas Miell (nmiell@gmail.com)
+   Nils Larsch <nla@trustcenter.de>, and
+   Norris Boyd  <nboyd@atg.com>
+   norris@netscape.com
+   Olivier Gerardin <ogerardin@vo.lu> (Original Author)
+   Olli Pettay <Olli.Pettay@helsinki.fi>
+   Owen Taylor <otaylor@redhat.com>
+   Patrick C. Beard <beard@netscape.com>
+   Paul Ashford <arougthopher@lizardland.net>
+   Paul Oswald <paul.oswald@isinet.com>
+   Paul Sandoz <paul.sandoz@sun.com>
+   Paul Sandoz   <paul.sandoz@sun.com>
+   Pete Collins <petejc@collab.net>
+   Peter Annema <disttsc@bart.nl>
+   Peter Bajusz <hyp-x@inf.bme.hu>
+   Peter Hartshorn <peter@igelaus.com.au>
+   Peter Lubczynski <peterl@netscape.com>
+   Peter Mattis         <petm@xcf.berkeley.edu>
+   Peter Naulls <peter@chocky.org>
+   Peter Van der Beken <peter@propagandism.org>
+   Peter Weilbacher <mozilla@weilbacher.org>
+   Pete Zha (pete.zha@sun.com)
+   philip zhao <philip.zhao@sun.com>
+   Pierre Chanial <p_ch@verizon.net>
+   Pierre Phaneuf <pp@ludusdesign.com>
+   <pollmann@netscape.com>
+   Prabhat Hegde <prabhat.hegde@sun.com>
+   Quy Tonthat <quy@igelaus.com.au>
+   Radha Kulkarni <radha@netscape.com>
+   Rajiv Dayal <rdayal@netscape.com>
+   Ramanathan Guha <guha@netscape.com>
+   Ramiro Estrugo <ramiro@eazel.com>
+   Randell Jesup <rjesup@wgate.com>
+   Raoni Novellino   <raoni.novellino@indt.org.br>
+   Raph Levien <raph@acm.org>
+   Rene Pronk <r.pronk@its.tudelft.nl>
+   rhp@netscape.com
+   Richard C. Swift	(swift@netscape.com)
+   Richard D. Worth <richard@theworths.org> 
+   Richard Henderson <rth@twiddle.net>
+   Richard Verhoeven <river@win.tue.nl>
+   Rich Pizzarro (rhp@netscape.com)
+   Rick Gessner <rickg@netscape.com>
+   rickg@netscape.com
+   Rick Potts <rpotts@netscape.com>
+   Robert Churchill <rjc@netscape.com>
+   Robert Ginda <rginda@netscape.com>
+   Robert John Churchill <rjc@netscape.com>
+   Robert O'Callahan <rocallahan@novell.com>
+   Robert Relyea <rrelyea@redhat.com>
+   Robert Sayre <sayrer@gmail.com>
+   Robert Strong  robert.bugzilla@gmail.com
+   Robin Lu <robin.lu@sun.com>
+   Rodney Brown <rbrown64@csc.com.au>
+   Rod Spears <rods@netscape.com>
+   Roger B. Sidje <rbs@maths.uq.edu.au>
+   Roland Mainz <roland.mainz@informatik.med.uni-giessen.de>
+   Roozbeh Pournader <roozbeh@sharif.edu>
+   Roy Yokoyama <yokoyama@netscape.com>
+   Russell King  <rmk@arm.linux.org.uk>
+   Rusty Lynch <rusty.lynch@intel.com>
+   Samir Gehani <sgehani@netscape.com>
+   Scooter Morris <scootermorris@comcast.net>
+   Scott Collins <scc@mozilla.org>
+   Scott MacGregor <mscott@netscape.com>
+   Scott Putterman <putterman@netscape.com>
+   Sean Echevarria <sean@beatnik.com>
+   Sean Su <ssu@netscape.com>
+   Sergei Dolgov <sergei_d@fi.fi.tartu.ee>
+   Seth Spitzer <sspitzer@netscape.com>
+   Shawn T. Amundson    <amundson@gtk.org>
+   Sheueling Chang Shantz <sheueling.chang@sun.com>,
+   Shoshannah Forbes <xslf@xslf.com>
+   Shyjan Mahamud <mahamud@cs.cmu.edu>
+   Shy Shalom <shooshX@gmail.com>
+   Silvia Zhao (silvia.zhao@sun.com)
+   Simon Bünzli <zeniko@gmail.com>
+   Simon Fraser   <sfraser@netscape.com>
+   Simon Montagu <smontagu@netscape.com>
+   Simon Taylor <simontaylor2@gawab.com>
+   Simon Wilkinson <simon@sxw.org.uk> (original author)
+   Søren Sandmann (sandmann@redhat.com)
+   Spencer Kimball      <spencer@xcf.berkeley.edu>
+   Spencer Murray <spence@netscape.com>
+   Srilatha Moturi <srilatha@netscape.com>
+   Stephane Saux <ssaux@netscape.com>
+   Stephen Fung <fungstep@hotmail.com>
+   Stephen Lamm <slamm@netscape.com>
+   Stephen Mak <smak@sun.com>
+   Steve Chaplin <stevech1097@yahoo.com.au>
+   steve clark <buster@netscape.com>
+   Steve Dagley <sdagley@netscape.com>
+   Steve Meredith <smeredith@netscape.com>
+   Steve Streeter <Stephen.Streeter@Compaq.com> 
+   Steve Swanson <steve.swanson@mackichan.com>
+   Stuart Parmenter <pavlov@netscape.com>
+   Suresh Duddi <dp@netscape.com>
+   Syd Logan <syd@netscape.com>
+   Takayuki Tei   <taka@netscape.com>
+   Takeshi Ichimaru <ayakawa.m@gmail.com>
+   tenthumbs@cybernex.net
+   Terry Hayes <thayes@netscape.com>
+   thayes@netscape.com
+   tim copperfield <timecop@japan.co.jp>
+   Tim Hill (tim@prismelite.com)
+   Tim Janik            <timj@gtk.org>
+   Timothy Watt <riceman+moz@mail.rit.edu>
+   Tim Rowley <tor@cs.brown.edu>
+   Tim Watt <riceman+bmo@mail.rit.edu> 
+   Tomi Leppikangas <tomi.leppikangas@oulu.fi>
+   Tom Kneeland <tomk@mitre.org> (Original Author)
+   Tom St Denis, tomstdenis@iahu.ca
+   Tony Chang <tc@google.com>
+   Tony Tsui <tony@igelaus.com.au>
+   Travis Bogard <travis@netscape.com>
+   Troy Chevalier <troy@netscape.com>
+   Valia Vaneeva <fattie@altlinux.ru>
+   Vidur Apparao <vidur@netscape.com>
+   Vilya Harvey <vilya@nag.co.uk>
+   Vino Fernando Crescini <vino@igelaus.com.au>
+   Vipul Gupta <vipul.gupta@sun.com>
+   Viswanath Ramachandran <vishy@netscape.com>
+   Vladimir Vukicevic <vladimir@pobox.com>
+   Warren Harris <warren@netscape.com>
+   waterson@netscape.com (Chris Waterson)
+   Wyllys Ingersoll <wyllys.ingersoll@sun.com>
+   Xiaobin Lu <Xiaobin.Lu@eng.Sun.com>
+   Yannick Koehler <koehler@mythrium.com>
+   Zack Rusin <zack@kde.org>
+ Alternatively, the contents of this file may be used under the terms of
+ either of the GNU General Public License Version 2 or later (the "GPL"),
+ or the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the MPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the MPL, the GPL or the LGPL.
+
+ Copyright (c) 2002, 2003, 2004 by Ian Hickson
+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+
+ This program is distributed in the hope that it will be useful, but
+ WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+
+ Thanks to bryner and bsmedberg for suggestions.
+ Thanks to jon rekai for a patch to not require File::Spec 0.8.
+
+
+ Copyright 1992 Network Computing Devices, Inc.
+ 
+ Permission to use, copy, modify, and distribute this software and its
+ documentation for any purpose and without fee is hereby granted, provided
+ that the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of Network Computing Devices may not be
+ used in advertising or publicity pertaining to distribution of the software
+ without specific, written prior permission.  Network Computing Devices makes
+ no representations about the suitability of this software for any purpose.
+ It is provided ``as is'' without express or implied warranty.
+ 
+ NETWORK COMPUTING DEVICES DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+ SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS,
+ IN NO EVENT SHALL NETWORK COMPUTING DEVICES BE LIABLE FOR ANY SPECIAL,
+ INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
+ LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE
+ OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
+ 
+ Author:  Jim Fulton
+          Network Computing Devices, Inc.
+
+
+Copyright (c) 1993, 1994  X Consortium
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of the X Consortium shall not be
+used in advertising or otherwise to promote the sale, use or other dealings
+in this Software without prior written authorization from the X Consortium.
+
+
+Copyright (c) 1993, 1994, 1998 The Open Group.
+
+Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided that
+the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation.
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of The Open Group shall not be
+used in advertising or otherwise to promote the sale, use or other dealings
+in this Software without prior written authorization from The Open Group.
+************************************************************************
+This software is part of a public domain IronDoc source code distribution,
+and is provided on an "AS IS" basis, with all risks borne by the consumers
+or users of the IronDoc software.  There are no warranties, guarantees, or
+promises about quality of any kind; and no remedies for failure exist. 
+
+Permission is hereby granted to use this IronDoc software for any purpose
+at all, without need for written agreements, without royalty or license
+fees, and without fees or obligations of any other kind.  Anyone can use,
+copy, change and distribute this software for any purpose, and nothing is
+required, implicitly or otherwise, in exchange for this usage.
+
+You cannot apply your own copyright to this software, but otherwise you
+are encouraged to enjoy the use of this software in any way you see fit.
+However, it would be rude to remove names of developers from the code.
+(IronDoc is also known by the short name "Fe" and a longer name "Ferrum",
+which are used interchangeably with the name IronDoc in the sources.)
+
+ Copied directly from public domain IronDoc, with minor naming tweaks:
+ Designed and written by David McCusker, but all this code is public domain.
+ There are no warranties, no guarantees, no promises, and no remedies.
+
+
+ Copyright (c) 1992, 1993
+  The Regents of the University of California.  All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+ 
+ Copyright (c) 1990, 1993, 1994
+	The Regents of the University of California.  All rights reserved.
+
+ This code is derived from software contributed to Berkeley by
+ Margo Seltzer.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. ***REMOVED*** - see 
+    ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change
+
+
+ ***** BEGIN LICENSE BLOCK *****
+ Version: NPL 1.1/GPL 2.0/LGPL 2.1
+
+ The contents of this file are subject to the Netscape Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/NPL/
+
+ Software distributed under the License is distributed on an "AS IS" basis,
+ WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ for the specific language governing rights and limitations under the
+ License.
+
+ The Original Code is mozilla.org code.
+
+ The Initial Developer of the Original Code is 
+ Netscape Communications Corporation.
+ Portions created by the Initial Developer are Copyright (C) 1998
+ the Initial Developer. All Rights Reserved.
+
+ Contributor(s):
+
+
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the NPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the NPL, the GPL or the LGPL.
+
+ * ***** END LICENSE BLOCK ***** 
+
+
+ Copyright (c) 1990, 1991, 1993, 1994
+	The Regents of the University of California.  All rights reserved.
+
+ This code is derived from software contributed to Berkeley by
+ Berkeley Software Design, Inc.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+	This product includes software developed by the University of
+	California, Berkeley and its contributors.
+
+ Copyright (c) 1987, 1988, 1991, 1993, 1994
+	The Regents of the University of California.  All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. ***REMOVED*** - see 
+    ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change
+ 4. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+ Copyright (c) 1990, 1993, 1994
+	The Regents of the University of California.  All rights reserved.
+
+ This code is derived from software contributed to Berkeley by
+ Margo Seltzer.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. ***REMOVED*** - see 
+    ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change
+
+
+ ***** BEGIN LICENSE BLOCK *****
+ Version: NPL 1.1/GPL 2.0/LGPL 2.1
+
+ The contents of this file are subject to the Netscape Public License
+ Version 1.1 (the "License"); you may not use this file except in
+ compliance with the License. You may obtain a copy of the License at
+ http://www.mozilla.org/NPL/
+
+ Software distributed under the License is distributed on an "AS IS" basis,
+ WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ for the specific language governing rights and limitations under the
+ License.
+
+ The Original Code is mozilla.org code.
+
+ The Initial Developer of the Original Code is 
+ Netscape Communications Corporation.
+ Portions created by the Initial Developer are Copyright (C) 1998
+ the Initial Developer. All Rights Reserved.
+
+ Contributor(s):
+
+
+ Alternatively, the contents of this file may be used under the terms of
+ either the GNU General Public License Version 2 or later (the "GPL"), or
+ the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+ in which case the provisions of the GPL or the LGPL are applicable instead
+ of those above. If you wish to allow use of your version of this file only
+ under the terms of either the GPL or the LGPL, and not to allow others to
+ use your version of this file under the terms of the NPL, indicate your
+ decision by deleting the provisions above and replace them with the notice
+ and other provisions required by the GPL or the LGPL. If you do not delete
+ the provisions above, a recipient may use your version of this file under
+ the terms of any one of the NPL, the GPL or the LGPL.
+
+ * ***** END LICENSE BLOCK ***** 
+
+
+ Copyright (c) 1990, 1991, 1993, 1994
+	The Regents of the University of California.  All rights reserved.
+
+ This code is derived from software contributed to Berkeley by
+ Berkeley Software Design, Inc.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. All advertising materials mentioning features or use of this software
+    must display the following acknowledgement:
+	This product includes software developed by the University of
+	California, Berkeley and its contributors.
+
+ Copyright (c) 1987, 1988, 1991, 1993, 1994
+	The Regents of the University of California.  All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. ***REMOVED*** - see 
+    ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change
+ 4. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+ created 17 October 2001 by Mark Smith <mcs@netscape.com>
+
+ Copyright (c) 1987 Regents of the University of California.
+ All rights reserved.  The Berkeley software License Agreement
+ specifies the terms and conditions for redistribution.
+ Copyright (c) 1990-96 Regents of the University of Michigan.
+ All rights reserved.
+
+ Redistribution and use in source and binary forms are permitted
+ provided that this notice is preserved and that due credit is given
+ to the University of Michigan at Ann Arbor. The name of the University
+ may not be used to endorse or promote products derived from this
+ software without specific prior written permission. This software
+ is provided ``as is'' without express or implied warranty.
+ 
+
+ Copyright (c) 1987, 1990 Regents of the University of Michigan.
+ All rights reserved.
+ 
+ Redistribution and use in source and binary forms are permitted
+ provided that this notice is preserved and that due credit is given
+ to the University of Michigan at Ann Arbor. The name of the University
+ may not be used to endorse or promote products derived from this
+ software without specific prior written permission. This software
+ is provided ``as is'' without express or implied warranty.
+ 
+ Redistribution and use in source and binary forms are permitted
+ provided that: (1) source distributions retain this entire copyright
+ notice and comment, and (2) distributions including binaries display
+ the following acknowledgement:  ``This product includes software
+ developed by the University of California, Berkeley and its contributors''
+ in the documentation or other materials provided with the distribution
+ and in all advertising materials mentioning features or use of this
+ software. Neither the name of the University nor the names of its
+ contributors may be used to endorse or promote products derived
+ from this software without specific prior written permission.
+ THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+	Appearance_DebugHeaders.pch++	1995-1998 Metrowerks Inc. All rights reserved.
+
+    (c) Copyright 2002 Apple Computer, Inc.  All rights reserved.
+    
+    IMPORTANT: This Apple software is supplied to you by Apple Computer,
+    Inc. ("Apple") in consideration of your agreement to the following
+    terms, and your use, installation, modification or redistribution of
+    this Apple software constitutes acceptance of these terms.  If you do
+    not agree with these terms, please do not use, install, modify or
+    redistribute this Apple software.
+    
+    In consideration of your agreement to abide by the following terms, and
+    subject to these terms, Apple grants you a personal, non-exclusive
+    license, under Apple's copyrights in this original Apple software (the
+    "Apple Software"), to use, reproduce, modify and redistribute the Apple
+    Software, with or without modifications, in source and/or binary forms;
+    provided that if you redistribute the Apple Software in its entirety and
+    without modifications, you must retain this notice and the following
+    text and disclaimers in all such redistributions of the Apple Software.
+    Neither the name, trademarks, service marks or logos of Apple Computer,
+    Inc. may be used to endorse or promote products derived from the Apple
+    Software without specific prior written permission from Apple.  Except
+    as expressly stated in this notice, no other rights or licenses, express
+    or implied, are granted by Apple herein, including but not limited to
+    any patent rights that may be infringed by your derivative works or by
+    other works in which the Apple Software may be incorporated.
+    
+    The Apple Software is provided by Apple on an "AS IS" basis. APPLE MAKES
+    NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE
+    IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR
+    A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND
+    OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+    
+    IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL
+    OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+    SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+    INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION,
+    MODIFICATION AND/OR DISTRIBUTION OF THE APPLE SOFTWARE, HOWEVER CAUSED
+    AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE),
+    STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE
+    POSSIBILITY OF SUCH DAMAGE.
+
+ Copyright 1988, 1989 Hans-J. Boehm, Alan J. Demers
+ Copyright (c) 1991-1996 by Xerox Corporation.  All rights reserved.
+ Copyright (c) 1996-1997 by Silicon Graphics.  All rights reserved.
+ Copyright (c) 1998 by Fergus Henderson.  All rights reserved.
+
+ THIS MATERIAL IS PROVIDED AS IS, WITH ABSOLUTELY NO WARRANTY EXPRESSED
+ OR IMPLIED.  ANY USE IS AT YOUR OWN RISK.
+
+ Permission is hereby granted to use or copy this program
+ for any purpose,  provided the above notices are retained on all copies.
+ Permission to modify the code and to distribute modified code is granted,
+ provided the above notices are retained, and a notice that the code was
+ modified is included with the above copyright notice.
+ 
+Last modified on Sat Nov 19 19:31:14 PST 1994 by ellis
+              on Sat Jun  8 15:10:00 PST 1994 by boehm
+Authors: John R. Ellis and Jesse Hull
+ Original author: Bill Janssen
+ Heavily modified by Hans Boehm and others
+Last modified on Mon Jul 10 21:06:03 PDT 1995 by ellis
+     modified on December 20, 1994 7:27 pm PST by boehm
+ Author: Hans-J. Boehm (boehm@parc.xerox.com)
+
+	MetroNubUserInterface.h		1996-1998 Metrowerks Inc. All rights reserved.
+	MetroNubUtils.h				1996-1998 Metrowerks Inc. All rights reserved.
+	MetroNubUtils.c				1996-1998 Metrowerks Inc. All rights reserved.
+
+ by Anthony Fok <anthony@thizlinux.com>, ThizLinux Laboratory Ltd., 2002/11/27
+ License: GNU General Public License, version 2 or newer
+ 
+Copyright (c) 1999 Samphan Raruenrom <samphan@thai.com>
+Permission to use, copy, modify, distribute and sell this software
+and its documentation for any purpose is hereby granted without fee,
+provided that the above copyright notice appear in all copies and
+that both that copyright notice and this permission notice appear
+in supporting documentation.  Samphan Raruenrom makes no
+representations about the suitability of this software for any
+purpose.  It is provided "as is" without express or implied warranty.
+
+ Copyright 1996, 1997, 1998 Computing Research Labs,
+ New Mexico State University
+
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL
+ THE COMPUTING RESEARCH LAB OR NEW MEXICO STATE UNIVERSITY BE LIABLE FOR ANY
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+ OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR
+ THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+  Author (of the original Perl script):
+      Anthony Fok <anthony@thizlinux.com> <foka@debian.org>
+  Copyright (C) 2001, 2002 ThizLinux Laboratory Ltd.
+  License: GNU General Public License, v2 or later.
+
+ This Original Code has been modified by IBM Corporation.
+ Modifications made by IBM described herein are
+ Copyright (c) International Business Machines
+ Corporation, 1999
+ 
+ Modifications to Mozilla code or documentation
+ identified per MPL Section 3.3
+
+ Copyright (c) 2000,2002 Japan Network Information Center.
+ All rights reserved.
+  
+ By using this file, you agree to the terms and conditions set forth bellow.
+ 
+ 			LICENSE TERMS AND CONDITIONS 
+ 
+ The following License Terms and Conditions apply, unless a different
+ license is obtained from Japan Network Information Center ("JPNIC"),
+ a Japanese association, Kokusai-Kougyou-Kanda Bldg 6F, 2-3-4 Uchi-Kanda,
+ Chiyoda-ku, Tokyo 101-0047, Japan.
+ 
+ 1. Use, Modification and Redistribution (including distribution of any
+    modified or derived work) in source and/or binary forms is permitted
+    under this License Terms and Conditions.
+ 
+ 2. Redistribution of source code must retain the copyright notices as they
+    appear in each source code file, this License Terms and Conditions.
+ 
+ 3. Redistribution in binary form must reproduce the Copyright Notice,
+    this License Terms and Conditions, in the documentation and/or other
+    materials provided with the distribution.  For the purposes of binary
+    distribution the "Copyright Notice" refers to the following language:
+    "Copyright (c) 2000-2002 Japan Network Information Center.  All rights reserved."
+ 
+ 4. The name of JPNIC may not be used to endorse or promote products
+    derived from this Software without specific prior written approval of
+    JPNIC.
+ 
+ 5. Disclaimer/Limitation of Liability: THIS SOFTWARE IS PROVIDED BY JPNIC
+    "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+    PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL JPNIC BE LIABLE
+    FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+    CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+    SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+    BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+    WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR
+    OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+    ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+The authors make NO WARRANTY or representation, either express or implied,
+with respect to this software, its quality, accuracy, merchantability, or
+fitness for a particular purpose.  This software is provided "AS IS", and you,
+its user, assume the entire risk as to its quality and accuracy.
+
+This software is copyright (C) 1991-1998, Thomas G. Lane.
+All Rights Reserved except as specified below.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+software (or portions thereof) for any purpose, without fee, subject to these
+conditions:
+(1) If any part of the source code for this software is distributed, then this
+README file must be included, with this copyright and no-warranty notice
+unaltered; and any additions, deletions, or changes to the original files
+must be clearly indicated in accompanying documentation.
+(2) If only executable code is distributed, then the accompanying
+documentation must state that "this software is based in part on the work of
+the Independent JPEG Group".
+(3) Permission for use of this software is granted only if the user accepts
+full responsibility for any undesirable consequences; the authors accept
+NO LIABILITY for damages of any kind.
+
+These conditions apply to any software derived from or based on the IJG code,
+not just to the unmodified library.  If you use our work, you ought to
+acknowledge us.
+
+Permission is NOT granted for the use of any IJG author's name or company name
+in advertising or publicity relating to this software or products derived from
+it.  This software may be referred to only as "the Independent JPEG Group's
+software".
+
+We specifically permit and encourage the use of this software as the basis of
+commercial products, provided that all warranty or liability claims are
+assumed by the product vendor.
+
+ansi2knr.c is included in this distribution by permission of L. Peter Deutsch,
+sole proprietor of its copyright holder, Aladdin Enterprises of Menlo Park, CA.
+ansi2knr.c is NOT covered by the above copyright and conditions, but instead
+by the usual distribution terms of the Free Software Foundation; principally,
+that you must include source code if you redistribute it.  (See the file
+ansi2knr.c for full details.)  However, since ansi2knr.c is not needed as part
+of any program generated from the IJG code, this does not limit you more than
+the foregoing paragraphs do.
+
+The Unix configuration script "configure" was produced with GNU Autoconf.
+It is copyright by the Free Software Foundation but is freely distributable.
+The same holds for its supporting scripts (config.guess, config.sub,
+ltconfig, ltmain.sh).  Another support script, install-sh, is copyright
+by M.I.T. but is also freely distributable.
+
+It appears that the arithmetic coding option of the JPEG spec is covered by
+patents owned by IBM, AT&T, and Mitsubishi.  Hence arithmetic coding cannot
+legally be used without obtaining one or more licenses.  For this reason,
+support for arithmetic coding has been removed from the free JPEG software.
+(Since arithmetic coding provides only a marginal gain over the unpatented
+Huffman mode, it is unlikely that very many implementations will support it.)
+So far as we are aware, there are no patent restrictions on the remaining
+code.
+
+The IJG distribution formerly included code to read and write GIF files.
+To avoid entanglement with the Unisys LZW patent, GIF reading support has
+been removed altogether, and the GIF writer has been simplified to produce
+"uncompressed GIFs".  This technique does not use the LZW algorithm; the
+resulting GIF files are larger than usual, but are readable by all standard
+GIF decoders.
+
+We are required to state that
+    "The Graphics Interchange Format(c) is the Copyright property of
+    CompuServe Incorporated.  GIF(sm) is a Service Mark property of
+    CompuServe Incorporated."
+
+The Graphics Interchange Format(c) is the copyright property of CompuServe
+Incorporated. Only CompuServe Incorporated is authorized to define, redefine,
+enhance, alter, modify or change in any way the definition of the format.
+
+CompuServe Incorporated hereby grants a limited, non-exclusive, royalty-free
+license for the use of the Graphics Interchange Format(sm) in computer
+software; computer software utilizing GIF(sm) must acknowledge ownership of the
+Graphics Interchange Format and its Service Mark by CompuServe Incorporated, in
+User and Technical Documentation. Computer software utilizing GIF, which is
+distributed or may be distributed without User or Technical Documentation must
+display to the screen or printer a message acknowledging ownership of the
+Graphics Interchange Format and the Service Mark by CompuServe Incorporated; in
+this case, the acknowledgement may be displayed in an opening screen or leading
+banner, or a closing screen or trailing banner. A message such as the following
+may be used:
+
+    "The Graphics Interchange Format(c) is the Copyright property of
+    CompuServe Incorporated. GIF(sm) is a Service Mark property of
+    CompuServe Incorporated."
+
+For further information, please contact :
+
+    CompuServe Incorporated
+    Graphics Technology Department
+    5000 Arlington Center Boulevard
+    Columbus, Ohio  43220
+    U. S. A.
+
+CompuServe Incorporated maintains a mailing list with all those individuals and
+organizations who wish to receive copies of this document when it is corrected
+or revised. This service is offered free of charge; please provide us with your
+mailing address.
+
+(C) Copyright 1996 Apple Computer, Inc., AT&T Corp., International             
+Business Machines Corporation and Siemens Rolm Communications Inc.             
+ 
+For purposes of this license notice, the term Licensors shall mean,            
+collectively, Apple Computer, Inc., AT&T Corp., International                  
+Business Machines Corporation and Siemens Rolm Communications Inc.             
+The term Licensor shall mean any of the Licensors.                             
+ 
+Subject to acceptance of the following conditions, permission is hereby        
+granted by Licensors without the need for written agreement and without        
+license or royalty fees, to use, copy, modify and distribute this              
+software for any purpose.                                                      
+ 
+The above copyright notice and the following four paragraphs must be           
+reproduced in all copies of this software and any software including           
+this software.                                                                 
+ 
+THIS SOFTWARE IS PROVIDED ON AN "AS IS" BASIS AND NO LICENSOR SHALL HAVE
+ANY OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, UPDATES, ENHANCEMENTS OR
+MODIFICATIONS.
+
+IN NO EVENT SHALL ANY LICENSOR BE LIABLE TO ANY PARTY FOR DIRECT,
+INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES OR LOST PROFITS ARISING OUT
+OF THE USE OF THIS SOFTWARE EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+DAMAGE.
+ 
+EACH LICENSOR SPECIFICALLY DISCLAIMS ANY WARRANTIES, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO ANY WARRANTY OF NONINFRINGEMENT OR THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.
+
+The software is provided with RESTRICTED RIGHTS.  Use, duplication, or
+disclosure by the government are subject to restrictions set forth in
+DFARS 252.227-7013 or 48 CFR 52.227-19, as applicable.
+
+Copyright 1996 Netscape Communications Corporation, all rights reserved.
+Created: Jamie Zawinski <jwz@netscape.com>, 15-May-96.
+
+This Original Code has been modified by IBM Corporation. Modifications made by IBM
+described herein are Copyright (c) International Business Machines Corporation, 2000.
+Modifications to Mozilla code or documentation identified per MPL Section 3.3
+
+Jason Eager <jce2@po.cwru.edu>
+
+  version 1.2.3, July 18th, 2005
+
+  Copyright (C) 1995-2005 Jean-loup Gailly and Mark Adler
+
+  This software is provided 'as-is', without any express or implied
+  warranty.  In no event will the authors be held liable for any damages
+  arising from the use of this software.
+
+  Permission is granted to anyone to use this software for any purpose,
+  including commercial applications, and to alter it and redistribute it
+  freely, subject to the following restrictions:
+
+  1. The origin of this software must not be misrepresented; you must not
+     claim that you wrote the original software. If you use this software
+     in a product, an acknowledgment in the product documentation would be
+     appreciated but is not required.
+  2. Altered source versions must be plainly marked as such, and must not be
+     misrepresented as being the original software.
+  3. This notice may not be removed or altered from any source distribution.
+
+  Jean-loup Gailly        Mark Adler
+  jloup@gzip.org          madler@alumni.caltech.edu
+
+  The data format used by the zlib library is described by RFCs (Request for
+  Comments) 1950 to 1952 in the files http://www.ietf.org/rfc/rfc1950.txt
+  (zlib format), rfc1951.txt (deflate format) and rfc1952.txt (gzip format).
+
+This program, "bzip2", the associated library "libbzip2", and all
+documentation, are copyright (C) 1996-2005 Julian R Seward.  All
+rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+1. Redistributions of source code must retain the above copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. The origin of this software must not be misrepresented; you must 
+   not claim that you wrote the original software.  If you use this 
+   software in a product, an acknowledgment in the product 
+   documentation would be appreciated but is not required.
+
+3. Altered source versions must be plainly marked as such, and must
+   not be misrepresented as being the original software.
+
+4. The name of the author may not be used to endorse or promote 
+   products derived from this software without specific prior written 
+   permission.
+
+THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS
+OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Julian Seward, Cambridge, UK.
+jseward@acm.org
+bzip2/libbzip2 version 1.0.3 of 15 February 2005
+
+
+This copy of the libpng notices is provided for your convenience.  In case of
+any discrepancy between this copy and the notices in the file png.h that is
+included in the libpng distribution, the latter shall prevail.
+
+COPYRIGHT NOTICE, DISCLAIMER, and LICENSE:
+
+If you modify libpng you may insert additional notices immediately following
+this sentence.
+
+libpng version 1.2.6, September 12, 2004, is
+Copyright (c) 2004 Glenn Randers-Pehrson, and is
+distributed according to the same disclaimer and license as libpng-1.2.5
+with the following individual added to the list of Contributing Authors
+
+   Cosmin Truta
+
+libpng versions 1.0.7, July 1, 2000, through 1.2.5 - October 3, 2002, are
+Copyright (c) 2000-2002 Glenn Randers-Pehrson, and are
+distributed according to the same disclaimer and license as libpng-1.0.6
+with the following individuals added to the list of Contributing Authors
+
+   Simon-Pierre Cadieux
+   Eric S. Raymond
+   Gilles Vollant
+
+and with the following additions to the disclaimer:
+
+   There is no warranty against interference with your enjoyment of the
+   library or against infringement.  There is no warranty that our
+   efforts or the library will fulfill any of your particular purposes
+   or needs.  This library is provided with all faults, and the entire
+   risk of satisfactory quality, performance, accuracy, and effort is with
+   the user.
+
+libpng versions 0.97, January 1998, through 1.0.6, March 20, 2000, are
+Copyright (c) 1998, 1999 Glenn Randers-Pehrson, and are
+distributed according to the same disclaimer and license as libpng-0.96,
+with the following individuals added to the list of Contributing Authors:
+
+   Tom Lane
+   Glenn Randers-Pehrson
+   Willem van Schaik
+
+libpng versions 0.89, June 1996, through 0.96, May 1997, are
+Copyright (c) 1996, 1997 Andreas Dilger
+Distributed according to the same disclaimer and license as libpng-0.88,
+with the following individuals added to the list of Contributing Authors:
+
+   John Bowler
+   Kevin Bracey
+   Sam Bushell
+   Magnus Holmgren
+   Greg Roelofs
+   Tom Tanner
+
+libpng versions 0.5, May 1995, through 0.88, January 1996, are
+Copyright (c) 1995, 1996 Guy Eric Schalnat, Group 42, Inc.
+
+For the purposes of this copyright and license, "Contributing Authors"
+is defined as the following set of individuals:
+
+   Andreas Dilger
+   Dave Martindale
+   Guy Eric Schalnat
+   Paul Schmidt
+   Tim Wegner
+
+The PNG Reference Library is supplied "AS IS".  The Contributing Authors
+and Group 42, Inc. disclaim all warranties, expressed or implied,
+including, without limitation, the warranties of merchantability and of
+fitness for any purpose.  The Contributing Authors and Group 42, Inc.
+assume no liability for direct, indirect, incidental, special, exemplary,
+or consequential damages, which may result from the use of the PNG
+Reference Library, even if advised of the possibility of such damage.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+source code, or portions hereof, for any purpose, without fee, subject
+to the following restrictions:
+
+1. The origin of this source code must not be misrepresented.
+
+2. Altered versions must be plainly marked as such and must not
+   be misrepresented as being the original source.
+
+3. This Copyright notice may not be removed or altered from any
+   source or altered source distribution.
+
+The Contributing Authors and Group 42, Inc. specifically permit, without
+fee, and encourage the use of this source code as a component to
+supporting the PNG file format in commercial products.  If you use this
+source code in a product, acknowledgment is not required but would be
+appreciated.
+
+
+A "png_get_copyright" function is available, for convenient use in "about"
+boxes and the like:
+
+   printf("%s",png_get_copyright(NULL));
+
+Also, the PNG logo (in PNG format, of course) is supplied in the
+files "pngbar.png" and "pngbar.jpg (88x31) and "pngnow.png" (98x31).
+
+Libpng is OSI Certified Open Source Software.  OSI Certified Open Source is a
+certification mark of the Open Source Initiative.
+
+Glenn Randers-Pehrson
+glennrp@users.sourceforge.net
+September 12, 2004
+
+
+ Copyright � 2004, Apple Computer, Inc. and The Mozilla Foundation. 
+ All rights reserved.
+ 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are
+ met:
+ 
+ 1. Redistributions of source code must retain the above copyright
+ notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+ notice, this list of conditions and the following disclaimer in the
+ documentation and/or other materials provided with the distribution.
+ 3. Neither the names of Apple Computer, Inc. ("Apple") or The Mozilla
+ Foundation ("Mozilla") nor the names of their contributors may be used
+ to endorse or promote products derived from this software without
+ specific prior written permission.
+ 
+ THIS SOFTWARE IS PROVIDED BY APPLE, MOZILLA AND THEIR CONTRIBUTORS "AS
+ IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+ TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+ PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL APPLE, MOZILLA OR
+ THEIR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+ Revision 1 (March 4, 2004):
+ Initial proposal.
+
+ Revision 2 (March 10, 2004):
+ All calls into script were made asynchronous.  Results are
+ provided via the NPScriptResultFunctionPtr callback.
+
+ Revision 3 (March 10, 2004):
+ Corrected comments to not refer to class retain/release FunctionPtrs.
+
+ Revision 4 (March 11, 2004):
+ Added additional convenience NPN_SetExceptionWithUTF8().
+ Changed NPHasPropertyFunctionPtr and NPHasMethodFunctionPtr to take NPClass
+ pointers instead of NPObject pointers.
+ Added NPIsValidIdentifier().
+
+ Revision 5 (March 17, 2004):
+ Added context parameter to result callbacks from ScriptObject functions.
+
+ Revision 6 (March 29, 2004):
+ Renamed functions implemented by user agent to NPN_*.  Removed _ from
+ type names.
+ Renamed "JavaScript" types to "Script".
+
+ Revision 7 (April 21, 2004):
+ NPIdentifier becomes a void*, was int32_t
+ Remove NP_IsValidIdentifier, renamed NP_IdentifierFromUTF8 to NP_GetIdentifier
+ Added NPVariant and modified functions to use this new type.
+
+ Revision 8 (July 9, 2004):
+ Updated to joint Apple-Mozilla license.
+
+Copyright 1987, 1988 by the Student Information Processing Board
+	of the Massachusetts Institute of Technology
+
+Permission to use, copy, modify, and distribute this software
+and its documentation for any purpose and without fee is
+hereby granted, provided that the above copyright notice
+appear in all copies and that both that copyright notice and
+this permission notice appear in supporting documentation,
+and that the names of M.I.T. and the M.I.T. S.I.P.B. not be
+used in advertising or publicity pertaining to distribution
+of the software without specific, written prior permission.
+M.I.T. and the M.I.T. S.I.P.B. make no representations about
+the suitability of this software for any purpose.  It is
+provided "as is" without express or implied warranty.
+
+Copyright � Apple Computer, Inc. 1989-1998
+All rights reserved.
+
+ Copyright 2003,2004 Colin Percival
+ All rights reserved
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted providing that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+ Changelog:
+ 2005-04-26 - Define the header as a C structure, add a CRC32 checksum to
+              the header, and make all the types 32-bit.
+                --Benjamin Smedberg <benjamin@smedbergs.us>
+
+ The contents of this file are subject to the Mozilla Public
+ License Version 1.1 (the "License"); you may not use this file
+ except in compliance with the License. You may obtain a copy of
+ the License at http://www.mozilla.org/MPL/
+ 
+ Software distributed under the License is distributed on an "AS
+ IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
+ implied. See the License for the specific language governing
+ rights and limitations under the License.
+ 
+ The Original Code is mozilla.org code.
+ 
+ The Initial Developer of the Original Code is Christopher Blizzard.
+ Portions created by Christopher Blizzard are Copyright (C)
+ Christopher Blizzard.  All Rights Reserved.
+ 
+ Contributor(s):
+   Adrian Mardare <amardare@qnx.com>
+   Max Feil <mfeil@qnx.com>
+ 
+	Copyright:	� 1992-2002 by Apple Computer, Inc., all rights reserved.
+
+	Disclaimer:	IMPORTANT:  This Apple software is supplied to you by Apple Computer, Inc.
+				("Apple") in consideration of your agreement to the following terms, and your
+				use, installation, modification or redistribution of this Apple software
+				constitutes acceptance of these terms.  If you do not agree with these terms,
+				please do not use, install, modify or redistribute this Apple software.
+
+				In consideration of your agreement to abide by the following terms, and subject
+				to these terms, Apple grants you a personal, non-exclusive license, under Apple�s
+				copyrights in this original Apple software (the "Apple Software"), to use,
+				reproduce, modify and redistribute the Apple Software, with or without
+				modifications, in source and/or binary forms; provided that if you redistribute
+				the Apple Software in its entirety and without modifications, you must retain
+				this notice and the following text and disclaimers in all such redistributions of
+				the Apple Software.  Neither the name, trademarks, service marks or logos of
+				Apple Computer, Inc. may be used to endorse or promote products derived from the
+				Apple Software without specific prior written permission from Apple.  Except as
+				expressly stated in this notice, no other rights or licenses, express or implied,
+				are granted by Apple herein, including but not limited to any patent rights that
+				may be infringed by your derivative works or by other works in which the Apple
+				Software may be incorporated.
+
+				The Apple Software is provided by Apple on an "AS IS" basis.  APPLE MAKES NO
+				WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED
+				WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+				PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN
+				COMBINATION WITH YOUR PRODUCTS.
+
+				IN NO EVENT SHALL APPLE BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR
+				CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+				GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+				ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR DISTRIBUTION
+				OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF CONTRACT, TORT
+				(INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN
+				ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+	File Ownership:
+
+		DRI:				Apple Macintosh Developer Technical Support
+
+		Other Contact:		For bug reports, consult the following page on
+							the World Wide Web:
+								http://developer.apple.com/bugreporter/
+
+		Technology:			DTS Sample Code
+
+	Writers:
+
+		(JL)	Jim Luther
+
+
+ Copyright (c) 1980, 1982, 1983, 1985-91, 1993, 1994
+	The Regents of the University of California.  All rights reserved.
+ (c) UNIX System Laboratories, Inc.
+ All or some portions of this file are derived from material licensed
+ to the University of California by American Telephone and Telegraph
+ Co. or Unix System Laboratories, Inc. and are reproduced herein with
+ the permission of UNIX System Laboratories, Inc.
+
+ This code is derived from software contributed to Berkeley by
+ Berkeley Software Design, Inc.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ [�3 Deleted as of 22Jul99, see
+     ftp://ftp.cs.berkeley.edu/pub/4bsd/README.Impt.License.Change
+	   for details]
+ 4. Neither the name of the University nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+ Copyright 1993 by OpenVision Technologies, Inc.
+ 
+ Permission to use, copy, modify, distribute, and sell this software
+ and its documentation for any purpose is hereby granted without fee,
+ provided that the above copyright notice appears in all copies and
+ that both that copyright notice and this permission notice appear in
+ supporting documentation, and that the name of OpenVision not be used
+ in advertising or publicity pertaining to distribution of the software
+ without specific, written prior permission. OpenVision makes no
+ representations about the suitability of this software for any
+ purpose.  It is provided "as is" without express or implied warranty.
+ 
+ OPENVISION DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+ EVENT SHALL OPENVISION BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+ USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
+ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
+
+ Copyright 2002 Kevin B. Hendricks, Stratford, Ontario, Canada
+ And Contributors.  All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+ 3. All modifications to the source code must be clearly marked as
+    such.  Binary redistributions based on modified source code
+    must be clearly marked as modified versions in the documentation
+    and/or other materials provided with the distribution.
+
+ THIS SOFTWARE IS PROVIDED BY KEVIN B. HENDRICKS AND CONTRIBUTORS 
+ ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT 
+ LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS 
+ FOR A PARTICULAR PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL 
+ KEVIN B. HENDRICKS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, 
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, 
+ BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; 
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ SUCH DAMAGE.
+
+Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
+                               and Clark Cooper
+Copyright (c) 2001, 2002 Expat maintainers.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ Copyright © 2004 David Reveman
+
+ Copyright © 2005 Red Hat, Inc.
+
+ Permission to use, copy, modify, distribute, and sell this software
+ and its documentation for any purpose is hereby granted without
+ fee, provided that the above copyright notice appear in all copies
+ and that both that copyright notice and this permission notice
+ appear in supporting documentation, and that the name of David
+ Reveman not be used in advertising or publicity pertaining to
+ distribution of the software without specific, written prior
+ permission. David Reveman makes no representations about the
+ suitability of this software for any purpose.  It is provided "as
+ is" without express or implied warranty.
+
+ DAVID REVEMAN DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS
+ SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS, IN NO EVENT SHALL DAVID REVEMAN BE LIABLE FOR ANY SPECIAL,
+ INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER
+ RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+ OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR
+ IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+ Author: David Reveman <davidr@novell.com>
+
+ Copyright © 2003 Carl Worth
+
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of Carl Worth not be used in
+ advertising or publicity pertaining to distribution of the software without
+ specific, written prior permission.  Carl Worth makes no
+ representations about the suitability of this software for any purpose.  It
+ is provided "as is" without express or implied warranty.
+
+ CARL WORTH DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+ EVENT SHALL CARL WORTH BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+ DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
+ 
+Copyright 1987-89, 1998  The Open Group
+
+Permission to use, copy, modify, distribute, and sell this software and its
+documentation for any purpose is hereby granted without fee, provided that
+the above copyright notice appear in all copies and that both that
+copyright notice and this permission notice appear in supporting
+documentation.
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+OPEN GROUP BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Except as contained in this notice, the name of The Open Group shall not be
+used in advertising or otherwise to promote the sale, use or other dealings
+in this Software without prior written authorization from The Open Group.
+ 
+
+Copyright 1987, 1988, 1989 by 
+Digital Equipment Corporation, Maynard, Massachusetts. 
+
+Copyright 1987 by Digital Equipment Corporation, Maynard, Massachusetts.
+
+                        All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and its 
+documentation for any purpose and without fee is hereby granted, 
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in 
+supporting documentation, and that the name of Digital not be
+used in advertising or publicity pertaining to distribution of the
+software without specific, written prior permission.  
+
+DIGITAL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL
+DIGITAL BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR
+ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+SOFTWARE.
+
+ Copyright © 2003 Richard Henderson
+
+ Permission to use, copy, modify, distribute, and sell this software
+ and its documentation for any purpose is hereby granted without
+ fee, provided that the above copyright notice appear in all copies
+ and that both that copyright notice and this permission notice
+ appear in supporting documentation, and that the name of Richard Henderson
+ not be used in advertising or publicity pertaining to distribution
+ of the software without specific, written prior permission.
+ Richard Henderson makes no representations about the suitability of this
+ software for any purpose.  It is provided "as is" without express
+ or implied warranty.
+ 
+ RICHARD HENDERSON DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN
+ NO EVENT SHALL RICHARD HENDERSON BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+ OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+ NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+ Author: Richard Henderson <rth@twiddle.net>
+ 
+ Copyright © 2003 USC, Information Sciences Institute
+
+ Permission to use, copy, modify, distribute, and sell this software
+ and its documentation for any purpose is hereby granted without
+ fee, provided that the above copyright notice appear in all copies
+ and that both that copyright notice and this permission notice
+ appear in supporting documentation, and that the name of the
+ University of Southern California not be used in advertising or
+ publicity pertaining to distribution of the software without
+ specific, written prior permission. The University of Southern
+ California makes no representations about the suitability of this
+ software for any purpose.  It is provided "as is" without express
+ or implied warranty.
+
+ THE UNIVERSITY OF SOUTHERN CALIFORNIA DISCLAIMS ALL WARRANTIES WITH
+ REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL THE UNIVERSITY OF
+ SOUTHERN CALIFORNIA BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+ OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+ NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+ Author: Carl D. Worth <cworth@cworth.org>
+ 
+ Copyright © 2000 SuSE, Inc.
+
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of SuSE not be used in advertising or
+ publicity pertaining to distribution of the software without specific,
+ written prior permission.  SuSE makes no representations about the
+ suitability of this software for any purpose.  It is provided "as is"
+ without express or implied warranty.
+
+ SuSE DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL SuSE
+ BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION
+ OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+ Author:  Keith Packard, SuSE, Inc.
+ 
+ Copyright © 2004 Red Hat, Inc.
+ Copyright © 2000 Keith Packard, member of The XFree86 Project, Inc.
+ Copyright © 2000 Keith Packard
+             2005 Lars Knoll & Zack Rusin, Trolltech
+
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of Keith Packard not be used in
+ advertising or publicity pertaining to distribution of the software without
+ specific, written prior permission.  Keith Packard makes no
+ representations about the suitability of this software for any purpose.  It
+ is provided "as is" without express or implied warranty.
+
+ Copyright © 2004 Red Hat, Inc.
+ Copyright © 2004 Nicholas Miell
+ Copyright © 2005 Trolltech AS
+
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of Red Hat not be used in advertising or
+ publicity pertaining to distribution of the software without specific,
+ written prior permission.  Red Hat makes no representations about the
+ suitability of this software for any purpose.  It is provided "as is"
+ without express or implied warranty.
+
+ THE COPYRIGHT HOLDERS DISCLAIM ALL WARRANTIES WITH REGARD TO THIS
+ SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ FITNESS, IN NO EVENT SHALL THE COPYRIGHT HOLDERS BE LIABLE FOR ANY
+ SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN
+ AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+ OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+ SOFTWARE.
+
+ Author:  Søren Sandmann (sandmann@redhat.com)
+          Lars Knoll (lars@trolltech.com)
+ Author: Owen Taylor <otaylor@redhat.com>
+ Author: Carl D. Worth <cworth@cworth.org>
+ 
+ Copyright © 2004 Richard D. Worth
+
+ Permission to use, copy, modify, distribute, and sell this software
+ and its documentation for any purpose is hereby granted without
+ fee, provided that the above copyright notice appear in all copies
+ and that both that copyright notice and this permission notice
+ appear in supporting documentation, and that the name of Richard Worth
+ not be used in advertising or publicity pertaining to distribution
+ of the software without specific, written prior permission.
+ Richard Worth makes no representations about the suitability of this
+ software for any purpose.  It is provided "as is" without express
+ or implied warranty.
+ 
+ RICHARD WORTH DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN
+ NO EVENT SHALL RICHARD WORTH BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS
+ OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+ NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+ CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+ * Author: Richard D. Worth <richard@theworths.org> 
+
+
+ Copyright © 2004, 2005 Red Hat Inc.
+ Copyright © 2004 Calum Robinson
+ Copyright © 2002, 2003 University of Southern California
+ Copyright © 2000, 2002, 2004 Keith Packard
+ Copyright © 1999 Tom Tromey
+
+ This library is free software; you can redistribute it and/or
+ modify it either under the terms of the GNU Lesser General Public
+ License version 2.1 as published by the Free Software Foundation
+ (the "LGPL") or, at your option, under the terms of the Mozilla
+ Public License Version 1.1 (the "MPL"). If you do not alter this
+ notice, a recipient may use your version of this file under either
+ the MPL or the LGPL.
+
+ You should have received a copy of the LGPL along with this library
+ in the file COPYING-LGPL-2.1; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
+ You should have received a copy of the MPL along with this library
+ in the file COPYING-MPL-1.1
+ 
+ Copyright © 1998, 2000, 2004 Keith Packard
+
+ Permission to use, copy, modify, distribute, and sell this software and its
+ documentation for any purpose is hereby granted without fee, provided that
+ the above copyright notice appear in all copies and that both that
+ copyright notice and this permission notice appear in supporting
+ documentation, and that the name of Keith Packard not be used in
+ advertising or publicity pertaining to distribution of the software without
+ specific, written prior permission.  Keith Packard makes no
+ representations about the suitability of this software for any purpose.  It
+ is provided "as is" without express or implied warranty.
+
+ KEITH PACKARD DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE,
+ INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO
+ EVENT SHALL KEITH PACKARD BE LIABLE FOR ANY SPECIAL, INDIRECT OR
+ CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+ DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+ TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+ PERFORMANCE OF THIS SOFTWARE.
+
+Copyright 1987 by Digital Equipment Corporation, Maynard, Massachusetts,
+and the Massachusetts Institute of Technology, Cambridge, Massachusetts.
+
+                        All Rights Reserved
+
+Permission to use, copy, modify, and distribute this software and its 
+documentation for any purpose and without fee is hereby granted, 
+provided that the above copyright notice appear in all copies and that
+both that copyright notice and this permission notice appear in 
+supporting documentation, and that the names of Digital or MIT not be
+used in advertising or publicity pertaining to distribution of the
+software without specific, written prior permission.  
+
+DIGITAL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL
+DIGITAL BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR
+ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS,
+WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
+ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+SOFTWARE.
+
+ This code is derived from GdkRgb.
+ For more information on GdkRgb, see http://www.levien.com/gdkrgb/
+ Raph Levien <raph@acm.org>
+ 
+
+ Ported by Christopher Blizzard to Xlib.  With permission from the
+ original authors of this file, the contents of this file are also
+ redistributable under the terms of the Mozilla Public license.  For
+ information about the Mozilla Public License, please see the
+ license information at http://www.mozilla.org/MPL/
+

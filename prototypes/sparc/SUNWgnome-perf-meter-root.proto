@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-perf-meter-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-perf-meter-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-perf-meter-root.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-perf-meter-root.preremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-perf-meter-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gperfmeter.schemas=etc/gconf/schemas/gperfmeter.schemas 0644 root sys

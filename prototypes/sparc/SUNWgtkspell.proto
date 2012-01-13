@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtkspell.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtkspell.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtkspell.copyright
+f none share/doc/SUNWgtkspell/AUTHORS=usr/share/doc/SUNWgtkspell/AUTHORS 0444 root bin
+f none share/doc/SUNWgtkspell/COPYING.bz2=usr/share/doc/SUNWgtkspell/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgtkspell/ChangeLog.bz2=usr/share/doc/SUNWgtkspell/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgtkspell/README=usr/share/doc/SUNWgtkspell/README 0444 root bin
+f none share/doc/SUNWgtkspell/po/ChangeLog.bz2=usr/share/doc/SUNWgtkspell/po/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+s none lib/libgtkspell.so=libgtkspell.so.0.0.0
+s none lib/libgtkspell.so.0=libgtkspell.so.0.0.0
+f none lib/libgtkspell.so.0.0.0=usr/lib/libgtkspell.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgtkspell 0755 root bin
+d none share/doc/SUNWgtkspell/po 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgtkspell.3=usr/share/man/man3/libgtkspell.3 0644 root bin

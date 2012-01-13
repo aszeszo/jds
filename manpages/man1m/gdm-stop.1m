@@ -1,0 +1,128 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2003/261 gdm2 - Gnome Display Manager -->
+<!--ARC : LSARC 2005/417 GDM2 as default Solaris Display Manager -->
+<!--ARC : LSARC 2008/207 GNOME 2.22 -->
+<!--ARC : LSARC 2008/662 GDM system user home directory -->
+<!--ARC : LSARC 2009/433 GDM 2.28 -->
+<!ENTITY cmd "gdm-stop">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2004,2006,2009 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<refentry id="gdm-stop-1m">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1m</manvolnum>
+<refmiscinfo class="date">20 Oct 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1m;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>
+&cmd;
+</primary></indexterm>
+<indexterm><primary>
+Stop the GDM daemon process
+</primary></indexterm>
+<refnamediv id="gdm-stop-1m-name">
+<refname>&cmd;</refname>
+<refpurpose>
+Stop the GDM daemon process
+</refpurpose></refnamediv>
+<refsynopsisdiv id="gdm-stop-1m-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd;</command></cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id="gdm-stop-1m-desc"><title>&desc-tt;</title>
+<para>
+<command>&cmd;</command> stops the GDM daemon process by sending a TERM signal
+to the GDM daemon. This command immediately terminates all sessions and logs
+out users currently logged in with GDM.
+</para>
+
+<para>
+On Solaris, the GDM service is managed by the
+<citerefentry><refentrytitle>smf</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry>
+service management facility under the service identifier
+<replaceable>svc:/application/graphical-login/gdm</replaceable>.
+On Solaris, it is recommended that you use the
+<citerefentry><refentrytitle>svcadm</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry> utility to start and stop the GDM
+service instead of using
+<citerefentry><refentrytitle>gdm-stop</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry>.
+</para>
+
+</refsect1>
+
+<refsect1 id="gdm-stop-1m-file"><title>&file-tt;</title>
+<para>The following files are used by this application:</para>
+<variablelist termlength="wide">
+<varlistentry>
+<term><filename>/usr/bin/&cmd;</filename></term>
+<listitem><para>
+Executable for Stop the GDM daemon process.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="gdm-stop-1m-attr"><title>&attr-tt;</title>
+<para>
+See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>system/display-manager/gdm</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="gdm-stop-1m-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+Latest version of the <citetitle>GNOME Desktop User Guide</citetitle>
+for your platform.
+</para>
+<para>
+<citerefentry><refentrytitle>gdmdynamic</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdmflexiserver</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm-screenshot</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>svcadm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>smf</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="gdm-stop-1m-note"><title>&note-tt;</title>
+<para>
+Written by Brian Cameron, Sun Microsystems Inc., 2004, 2006, 2009.
+</para>
+</refsect1>
+</refentry>

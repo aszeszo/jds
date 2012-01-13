@@ -1,0 +1,11 @@
+--- espeak-1.44.05-source/src/wave_sada.cpp-orig	2010-10-27 23:38:38.475656462 -0500
++++ espeak-1.44.05-source/src/wave_sada.cpp	2010-10-27 23:40:35.828458218 -0500
+@@ -63,6 +63,8 @@ static uint32_t total_samples_skipped;
+ //
+ static uint32_t last_play_position=0;
+ 
++static int wave_samplerate;
++
+ //>
+ // wave_init 
+ //

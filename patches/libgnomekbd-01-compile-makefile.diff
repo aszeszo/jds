@@ -1,0 +1,70 @@
+--- libgnomekbd-2.30.0.orig/capplet/Makefile.in	2010-06-01 16:14:43.107404556 +0200
++++ libgnomekbd-2.30.0/capplet/Makefile.in	2010-06-01 16:16:29.413792077 +0200
+@@ -293,7 +293,7 @@
+ Desktop_in_files = gkbd-indicator-plugins-capplet.desktop.in
+ desktop_DATA = $(Desktop_in_files:.desktop.in=.desktop)
+ gkbd_indicator_plugins_capplet_CFLAGS = \
+-	-I$(top_srcdir)	-Wall 				\
++	-I$(top_srcdir)					\
+ 	$(GCONF_CFLAGS)					\
+ 	$(GTK_CFLAGS)				\
+ 	$(LIBXKLAVIER_CFLAGS)				\
+
+--- libgnomekbd-2.30.0.orig/test/Makefile.am	2010-06-01 16:14:43.105370363 +0200
++++ libgnomekbd-2.30.0/test/Makefile.am	2010-06-01 16:15:42.029053923 +0200
+@@ -2,7 +2,7 @@
+                   gkbd-keyboard-drawing-test \
+                   gkbd-status-test
+ 
+-common_CFLAGS = $(WARN_CFLAGS) -I$(top_srcdir) -Wall \
++common_CFLAGS = $(WARN_CFLAGS) -I$(top_srcdir) \
+ 	$(GTK_CFLAGS) \
+ 	$(LIBXKLAVIER_CFLAGS) \
+ 	-DGNOMELOCALEDIR="\"$(datadir)/locale\""
+
+--- libgnomekbd-2.30.0.orig/test/Makefile.in	2010-06-01 16:14:43.105582043 +0200
++++ libgnomekbd-2.30.0/test/Makefile.in	2010-06-01 16:15:54.942334599 +0200
+@@ -272,7 +272,7 @@
+ top_build_prefix = @top_build_prefix@
+ top_builddir = @top_builddir@
+ top_srcdir = @top_srcdir@
+-common_CFLAGS = $(WARN_CFLAGS) -I$(top_srcdir) -Wall \
++common_CFLAGS = $(WARN_CFLAGS) -I$(top_srcdir) \
+ 	$(GTK_CFLAGS) \
+ 	$(LIBXKLAVIER_CFLAGS) \
+ 	-DGNOMELOCALEDIR="\"$(datadir)/locale\""
+
+--- libgnomekbd-2.30.0.orig/libgnomekbd/Makefile.am	2010-06-01 16:14:43.110968793 +0200
++++ libgnomekbd-2.30.0/libgnomekbd/Makefile.am	2010-06-01 16:19:52.544342184 +0200
+@@ -1,7 +1,7 @@
+ lib_LTLIBRARIES = libgnomekbd.la libgnomekbdui.la
+ 
+ common_CFLAGS = \
+-	-I$(top_srcdir) -Wall 			\
++	-I$(top_srcdir) 			\
+ 	$(GDK_CFLAGS)					\
+ 	$(GCONF_CFLAGS)					\
+ 	$(LIBXKLAVIER_CFLAGS)				\
+
+--- libgnomekbd-2.30.0.orig/libgnomekbd/Makefile.in	2010-06-01 16:14:43.111658202 +0200
++++ libgnomekbd-2.30.0/libgnomekbd/Makefile.in	2010-06-01 16:20:07.033360370 +0200
+@@ -302,7 +302,7 @@
+ top_srcdir = @top_srcdir@
+ lib_LTLIBRARIES = libgnomekbd.la libgnomekbdui.la
+ common_CFLAGS = \
+-	-I$(top_srcdir) -Wall 			\
++	-I$(top_srcdir) 			\
+ 	$(GDK_CFLAGS)					\
+ 	$(GCONF_CFLAGS)					\
+ 	$(LIBXKLAVIER_CFLAGS)				\
+--- libgnomekbd-2.30.0.orig/capplet/Makefile.am	2010-06-01 16:24:30.143914128 +0200
++++ libgnomekbd-2.30.0/capplet/Makefile.am	2010-06-01 16:24:47.602735765 +0200
+@@ -11,7 +11,7 @@
+ desktop_DATA = $(Desktop_in_files:.desktop.in=.desktop)
+ 
+ gkbd_indicator_plugins_capplet_CFLAGS = \
+-	-I$(top_srcdir)	-Wall 				\
++	-I$(top_srcdir)					\
+ 	$(GCONF_CFLAGS)					\
+ 	$(GTK_CFLAGS)				\
+ 	$(LIBXKLAVIER_CFLAGS)				\

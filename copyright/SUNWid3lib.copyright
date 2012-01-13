@@ -1,0 +1,96 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+ Copyright (C) 1995-2002 Jean-loup Gailly <jloup@gzip.org> and Mark Adler <madler@alumni.caltech.edu>
+
+This software is provided 'as-is', without any express or implied
+warranty.  In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+
+--------------------------------------------------------------------
+
+ Copyright (C) 1988 Eleftherios Gkioulekas <lf@amath.washington.edu>
+  
+This file is free software; as a special exception the author gives
+unlimited permission to copy and/or distribute it, with or without 
+modifications, as long as this notice is preserved.
+ 
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY, to the extent permitted by law; without even the
+implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+--------------------------------------------------------------------
+
+ Copyright 1999, 2000 Scott Thomas Haug <scott@id3.org>
+ Copyright (C) 1987, 88, 89, 90, 91, 92, 1993 Free Software Foundation, Inc.
+ Copyright (c) 2000 John Adcock.  All rights reserved.
+ Copyright 2002 Thijmen Klok (thijmen@id3lib.org)
+ Copyright 1999, 2000 Scott Thomas Haug
+
+Author: Scott Wheeler (scott@slackorama.net)
+  
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+  
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+  
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.
+
+--------------------------------------------------------------------
+
+ Author: John Adcock, 2000
+ Author: Philip Oldaker, 2000
+
+This file is subject to the terms of the GNU General Public License as
+published by the Free Software Foundation.  A copy of this license is
+included with this software distribution in the file COPYING.  If you
+do not have a copy, you may obtain a copy by writing to the Free
+Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+
+This software is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details
+
+--------------------------------------------------------------------
+
+The authors have released ID3Lib as Public Domain (PD) and claim no
+copyright, patent or other intellectual property protection in this work.
+This means that it may be modified, redistributed and used in commercial
+and non-commercial software and hardware without restrictions.  ID3Lib is
+distributed on an "AS IS" basis, WITHOUT WARRANTY OF ANY KIND, either
+express or implied.
+  
+The ID3Lib authors encourage improvements and optimisations to be sent to
+the ID3Lib coordinator, currently Dirk Mahoney (dirk@id3.org).  Approved
+submissions may be altered, and will be included and released under these
+terms.
+  

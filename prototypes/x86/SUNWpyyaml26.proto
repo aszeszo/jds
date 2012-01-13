@@ -1,0 +1,47 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpyyaml26.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpyyaml26.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpyyaml26.copyright
+f none share/doc/SUNWpyyaml26/LICENSE=usr/share/doc/SUNWpyyaml26/LICENSE 0444 root bin
+f none share/doc/SUNWpyyaml26/README=usr/share/doc/SUNWpyyaml26/README 0444 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+f none lib/python2.6/vendor-packages/PyYAML-3.09-py2.6.egg-info=usr/lib/python2.6/vendor-packages/PyYAML-3.09-py2.6.egg-info 0644 root bin
+d none lib/python2.6/vendor-packages/yaml 0755 root bin
+f none lib/python2.6/vendor-packages/yaml/__init__.py=usr/lib/python2.6/vendor-packages/yaml/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/__init__.pyc=usr/lib/python2.6/vendor-packages/yaml/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/composer.py=usr/lib/python2.6/vendor-packages/yaml/composer.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/composer.pyc=usr/lib/python2.6/vendor-packages/yaml/composer.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/constructor.py=usr/lib/python2.6/vendor-packages/yaml/constructor.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/constructor.pyc=usr/lib/python2.6/vendor-packages/yaml/constructor.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/cyaml.py=usr/lib/python2.6/vendor-packages/yaml/cyaml.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/cyaml.pyc=usr/lib/python2.6/vendor-packages/yaml/cyaml.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/dumper.py=usr/lib/python2.6/vendor-packages/yaml/dumper.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/dumper.pyc=usr/lib/python2.6/vendor-packages/yaml/dumper.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/emitter.py=usr/lib/python2.6/vendor-packages/yaml/emitter.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/emitter.pyc=usr/lib/python2.6/vendor-packages/yaml/emitter.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/error.py=usr/lib/python2.6/vendor-packages/yaml/error.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/error.pyc=usr/lib/python2.6/vendor-packages/yaml/error.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/events.py=usr/lib/python2.6/vendor-packages/yaml/events.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/events.pyc=usr/lib/python2.6/vendor-packages/yaml/events.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/loader.py=usr/lib/python2.6/vendor-packages/yaml/loader.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/loader.pyc=usr/lib/python2.6/vendor-packages/yaml/loader.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/nodes.py=usr/lib/python2.6/vendor-packages/yaml/nodes.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/nodes.pyc=usr/lib/python2.6/vendor-packages/yaml/nodes.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/parser.py=usr/lib/python2.6/vendor-packages/yaml/parser.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/parser.pyc=usr/lib/python2.6/vendor-packages/yaml/parser.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/reader.py=usr/lib/python2.6/vendor-packages/yaml/reader.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/reader.pyc=usr/lib/python2.6/vendor-packages/yaml/reader.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/representer.py=usr/lib/python2.6/vendor-packages/yaml/representer.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/representer.pyc=usr/lib/python2.6/vendor-packages/yaml/representer.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/resolver.py=usr/lib/python2.6/vendor-packages/yaml/resolver.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/resolver.pyc=usr/lib/python2.6/vendor-packages/yaml/resolver.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/scanner.py=usr/lib/python2.6/vendor-packages/yaml/scanner.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/scanner.pyc=usr/lib/python2.6/vendor-packages/yaml/scanner.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/serializer.py=usr/lib/python2.6/vendor-packages/yaml/serializer.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/serializer.pyc=usr/lib/python2.6/vendor-packages/yaml/serializer.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/tokens.py=usr/lib/python2.6/vendor-packages/yaml/tokens.py 0644 root bin
+f none lib/python2.6/vendor-packages/yaml/tokens.pyc=usr/lib/python2.6/vendor-packages/yaml/tokens.pyc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWpyyaml26 0755 root bin

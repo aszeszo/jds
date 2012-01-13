@@ -1,0 +1,13 @@
+Index: trunk/configure.in
+===================================================================
+--- trunk/configure.in	(revision 68)
++++ trunk/configure.in	(working copy)
+@@ -33,7 +33,7 @@
+ AC_MSG_CHECKING(if debug messages are enabled)
+ if test "$set_debug" != "no"; then
+         AC_MSG_RESULT(yes)
+-        CFLAGS="-DTSCLIENT_DEBUG -g -O0"
++        CFLAGS="-DTSCLIENT_DEBUG -g"
+ else
+         AC_MSG_RESULT(no)
+ fi

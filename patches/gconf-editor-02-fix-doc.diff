@@ -1,0 +1,68 @@
+diff -urN gconf-editor-2.30.0/docs/C/gconf-editor.xml ../SUNWgnome-config-editor-2.30.0.hacked/gconf-editor-2.30.0/docs/C/gconf-editor.xml
+--- gconf-editor-2.30.0/docs/C/gconf-editor.xml	2010-03-30 12:28:25.000000000 +0000
++++ ../SUNWgnome-config-editor-2.30.0.hacked/gconf-editor-2.30.0/docs/C/gconf-editor.xml	2011-06-21 15:39:27.708716212 +0000
+@@ -22,7 +22,8 @@
+     <title>Configuration Editor Manual</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -35,16 +36,15 @@
+       <publishername>GNOME Documentation Project</publishername> 
+     </publisher> 
+ 
+-    &legal;
+     <!-- This file  contains link to license for the documentation (GNU FDL), and 
+          other legal stuff such as "NO WARRANTY" statement. Please do not change 
+          any of this. -->
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+@@ -89,7 +89,7 @@
+         <revnumber>Version 2.1</revnumber> 
+         <date>August 2004</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription> 
+       </revision>
+@@ -97,7 +97,7 @@
+         <revnumber>Version 2.0.1</revnumber> 
+         <date>January 2004</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription> 
+       </revision>
+diff -urN gconf-editor-2.30.0/docs/gconf-editor.omf.in ../SUNWgnome-config-editor-2.30.0.hacked/gconf-editor-2.30.0/docs/gconf-editor.omf.in
+--- gconf-editor-2.30.0/docs/gconf-editor.omf.in	2010-03-30 12:28:26.000000000 +0000
++++ ../SUNWgnome-config-editor-2.30.0.hacked/gconf-editor-2.30.0/docs/gconf-editor.omf.in	2011-06-21 14:34:25.677847693 +0000
+@@ -1,11 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <omf>
+   <resource>
+-    <subject category="GNOME|Applications|System Tools"/>
++    <subject category="GNOME|System"/>
+     <type>
+       user's guide
+     </type>
+     <relation seriesid="4c3c5a00-46e8-11d8-9c2e-d5a048d58649"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates"/>
+   </resource>        
+ </omf>

@@ -1,0 +1,9 @@
+prefix=BASEDIR
+exec_prefix=BASEDIR
+libdir=LIBDIR/NAME
+includedir=INCLUDEDIR/NAME
+
+Name: Mozilla Plug-In API
+Description: Mozilla Plug-In API
+Version: 9.0
+Cflags: -DXP_UNIX -I${includedir}

@@ -1,0 +1,119 @@
+diff -ur tracker-0.6.90-orig/src/libtracker-common/tracker-file-utils.c tracker-0.6.90/src/libtracker-common/tracker-file-utils.c
+--- tracker-0.6.90-orig/src/libtracker-common/tracker-file-utils.c	2009-02-24 13:33:44.919238000 +0800
++++ tracker-0.6.90/src/libtracker-common/tracker-file-utils.c	2009-02-24 13:35:28.945355000 +0800
+@@ -834,7 +834,6 @@
+ 	user_data_dir = g_getenv ("XDG_DATA_HOME");
+ 
+ 	/* Check the default XDG_DATA_HOME location */
+-	g_message ("  XDG_DATA_HOME is '%s'", user_data_dir);
+ 
+ 	if (user_data_dir && path_has_write_access_or_was_created (user_data_dir)) {
+ 		return TRUE;
+
+diff -ur tracker-0.6.90-orig/src/tracker-indexer/Makefile.am tracker-0.6.90/src/tracker-indexer/Makefile.am
+--- tracker-0.6.90-orig/src/tracker-indexer/Makefile.am	2009-02-24 13:33:44.966292000 +0800
++++ tracker-0.6.90/src/tracker-indexer/Makefile.am	2009-02-24 13:35:56.192634000 +0800
+@@ -3,7 +3,7 @@
+ SUBDIRS = modules
+ 
+ INCLUDES =								\
+-	-Wall								\
++	-w 								\
+ 	-DSHAREDIR=\""$(datadir)"\"					\
+ 	-DLIBDIR=\""$(libdir)"\"					\
+ 	-DLOCALEDIR=\""$(localedir)"\" 					\
+
+--- tracker-0.6.91/src/libtracker-common/tracker-config.c.old	Sun Mar 22 11:14:46 2009
++++ tracker-0.6.91/src/libtracker-common/tracker-config.c	Sun Mar 22 11:19:08 2009
+@@ -762,6 +762,9 @@
+ 	const gchar  *watch_directory_roots[2] = { NULL, NULL };
+ 	const gchar  *empty_string_list[] = { NULL };
+ 
++        /* disable evolution index till we fix it */
++	const gchar  *disabled_modules_list[] = { "evolution" , NULL };
++
+ 	/* Get default values */
+ 	language = tracker_language_get_default_code ();
+ 
+@@ -872,7 +875,7 @@
+ 
+ 	if (overwrite || !g_key_file_has_key (key_file, GROUP_INDEXING, KEY_DISABLED_MODULES, NULL)) {
+ 		g_key_file_set_string_list (key_file, GROUP_INDEXING, KEY_DISABLED_MODULES,
+-					    empty_string_list, 0);
++					    disabled_modules_list, 1);
+ 		g_key_file_set_comment (key_file, GROUP_INDEXING, KEY_DISABLED_MODULES,
+ 					" List of disabled modules (separator=;)\n"
+ 					" The modules that are indexed are kept in $prefix/lib/tracker/indexer-modules",
+diff -ur tracker-0.6.95-orig/src/libtracker-common/tracker-hal.c tracker-0.6.95/src/libtracker-common/tracker-hal.c
+--- tracker-0.6.95-orig/src/libtracker-common/tracker-hal.c	2009-06-03 13:26:39.554044000 +0800
++++ tracker-0.6.95/src/libtracker-common/tracker-hal.c	2009-06-03 13:28:11.252100000 +0800
+@@ -401,7 +401,7 @@
+ 		if (!volume) {
+ 			continue;
+ 		}
+-
++/*
+ 		g_debug ("HAL device:'%s' found:",
+ 			   libhal_volume_get_device_file (volume));
+ 		g_debug ("  UDI	 : %s",
+@@ -416,6 +416,7 @@
+ 			   libhal_volume_get_fstype (volume));
+ 		g_debug ("  Label	 : %s",
+ 			   libhal_volume_get_label (volume));
++*/
+ 
+ 		hal_device_add (hal, volume);
+ 		libhal_volume_free (volume);
+@@ -589,8 +589,6 @@
+ 		return "LIBHAL_DRIVE_TYPE_JAZ";
+ 	case LIBHAL_DRIVE_TYPE_FLASHKEY:
+ 		return "LIBHAL_DRIVE_TYPE_FLASHKEY";
+-	case LIBHAL_DRIVE_TYPE_MO:
+-		return "LIBHAL_DRIVE_TYPE_MO";
+ 	default:
+ 		return "";
+ 	}
+@@ -945,7 +946,7 @@
+ 			/* Not a device with a volume */
+ 			return;
+ 		}
+-
++/*
+ 		g_message ("HAL device:'%s' added:",
+ 			   libhal_volume_get_device_file (volume));
+ 		g_message ("  UDI	 : %s",
+@@ -960,7 +961,7 @@
+ 			   libhal_volume_get_fstype (volume));
+ 		g_message ("  Label	 : %s",
+ 			   libhal_volume_get_label (volume));
+-
++*/
+ 		hal_device_add (hal, volume);
+ 		libhal_volume_free (volume);
+ 	}
+--- tracker-0.6.95/Makefile.am.old	Thu Aug 20 16:24:06 2009
++++ tracker-0.6.95/Makefile.am	Thu Aug 20 16:24:52 2009
+@@ -42,16 +42,16 @@
+ 
+ if OLD_EXEC_REMOVE_ALL
+ install-exec-hook:
+-	rm -Rf $(DESTDIR)$(bindir)/trackerd
+-	rm -Rf $(DESTDIR)$(bindir)/tracker-indexer
+-	rm -Rf $(DESTDIR)$(bindir)/tracker-thumbnailer
+-	rm -Rf $(DESTDIR)$(bindir)/tracker-extract
++#	rm -Rf $(DESTDIR)$(bindir)/trackerd
++#	rm -Rf $(DESTDIR)$(bindir)/tracker-indexer
++#	rm -Rf $(DESTDIR)$(bindir)/tracker-thumbnailer
++#	rm -Rf $(DESTDIR)$(bindir)/tracker-extract
+ endif
+ 
+ if OLD_DATA_REMOVE_ALL
+ install-data-hook:
+-	rm -Rf $(DESTDIR)$(DBUS_SERVICES_DIR)/tracker.service
+-	rm -Rf $(DESTDIR)$(datadir)/tracker/sqlite-service-stored-procs.sql
+-	rm -Rf $(DESTDIR)$(datadir)/tracker/tracker-introspect.xml
++#	rm -Rf $(DESTDIR)$(DBUS_SERVICES_DIR)/tracker.service
++#	rm -Rf $(DESTDIR)$(datadir)/tracker/sqlite-service-stored-procs.sql
++#	rm -Rf $(DESTDIR)$(datadir)/tracker/tracker-introspect.xml
+ endif	
+ 

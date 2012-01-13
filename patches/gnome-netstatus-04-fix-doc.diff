@@ -1,0 +1,44 @@
+diff -urN gnome-netstatus-2.28.2/help/C/gnome-netstatus.xml ../SUNWgnome-applets-2.30.0.hacked/gnome-netstatus-2.28.2/help/C/gnome-netstatus.xml
+--- gnome-netstatus-2.28.2/help/C/gnome-netstatus.xml	2010-09-28 09:44:31.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0.hacked/gnome-netstatus-2.28.2/help/C/gnome-netstatus.xml	2011-06-23 08:56:46.492022904 +0000
+@@ -23,7 +23,8 @@
+     <title>&appname; Manual</title>       
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ <!-- translators: uncomment this:
+ 
+@@ -37,16 +38,15 @@
+       <publishername>GNOME Documentation Project</publishername> 
+     </publisher> 
+ 
+-   &legal;
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+ 	any of this. -->
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+ <!-- This is appropriate place for other contributors: translators,
+       maintainers,  etc. Commented out by default.
+diff -urN gnome-netstatus-2.28.2/help/gnome-netstatus.omf.in ../SUNWgnome-applets-2.30.0.hacked/gnome-netstatus-2.28.2/help/gnome-netstatus.omf.in
+--- gnome-netstatus-2.28.2/help/gnome-netstatus.omf.in	2010-09-28 09:44:32.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0.hacked/gnome-netstatus-2.28.2/help/gnome-netstatus.omf.in	2011-06-23 08:55:21.682291009 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Internet"/>
+     <type>user's guide</type>
+     <relation seriesid="5ce2819c-2422-11d8-855f-bb98965120a1"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>        
+ </omf>

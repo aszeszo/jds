@@ -1,0 +1,22 @@
+--- a/configure	2011-10-25 22:20:52.695607762 +0800
++++ b/configure	2011-10-25 22:21:20.096899216 +0800
+@@ -13896,7 +13896,7 @@
+ if test -n "$MOZ_NATIVE_FFI"; then
+     # Vanilla libffi 3.0.9 needs a few patches from upcoming version 3.0.10
+     # for non-GCC compilers.
+-    if test -z "$GNU_CC"; then
++    if test -z "$GNU_CC" -a -z "$SOLARIS_SUNPRO_CC"; then
+         succeeded=no
+ 
+   if test -z "$PKG_CONFIG"; then
+--- a/js/src/configure	2011-10-25 22:15:38.317650766 +0800
++++ b/js/src/configure	2011-10-25 22:22:22.684688894 +0800
+@@ -13896,7 +13896,7 @@
+ if test -n "$MOZ_NATIVE_FFI"; then
+     # Vanilla libffi 3.0.9 needs a few patches from upcoming version 3.0.10
+     # for non-GCC compilers.
+-    if test -z "$GNU_CC"; then
++    if test -z "$GNU_CC" -a -z "$SOLARIS_SUNPRO_CC"; then
+         succeeded=no
+ 
+   if test -z "$PKG_CONFIG"; then

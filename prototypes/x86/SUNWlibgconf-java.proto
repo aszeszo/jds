@@ -1,0 +1,22 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgconf-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgconf-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgconf-java.copyright
+d none lib 0755 root bin
+f none lib/libgconfjni-2.12.so=usr/lib/libgconfjni-2.12.so 0755 root bin
+s none lib/libgconfjni.so=libgconfjni-2.12.so
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gconf-java.pc=usr/lib/pkgconfig/gconf-java.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/libgconf-java-2.12.4 0755 root bin
+f none share/doc/libgconf-java-2.12.4/AUTHORS=usr/share/doc/libgconf-java-2.12.4/AUTHORS 0644 root bin
+f none share/doc/libgconf-java-2.12.4/COPYING=usr/share/doc/libgconf-java-2.12.4/COPYING 0644 root bin
+f none share/doc/libgconf-java-2.12.4/NEWS=usr/share/doc/libgconf-java-2.12.4/NEWS 0644 root bin
+f none share/doc/libgconf-java-2.12.4/README=usr/share/doc/libgconf-java-2.12.4/README 0644 root bin
+d none share/doc/libgconf-java-2.12.4/examples 0755 root bin
+d none share/doc/libgconf-java-2.12.4/examples/gconf 0755 root bin
+f none share/doc/libgconf-java-2.12.4/examples/gconf/BasicGConfApp.java=usr/share/doc/libgconf-java-2.12.4/examples/gconf/BasicGConfApp.java 0644 root bin
+f none share/doc/libgconf-java-2.12.4/examples/runExample.sh=usr/share/doc/libgconf-java-2.12.4/examples/runExample.sh 0755 root bin
+d none share/java 0755 root bin
+f none share/java/gconf2.12-2.12.4.jar=usr/share/java/gconf2.12-2.12.4.jar 0644 root bin
+s none share/java/gconf2.12.jar=gconf2.12-2.12.4.jar

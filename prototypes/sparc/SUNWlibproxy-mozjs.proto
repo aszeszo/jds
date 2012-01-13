@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibproxy-mozjs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibproxy-mozjs.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibproxy-mozjs.copyright
+d none lib 0755 root bin
+d none lib/libproxy 0755 root bin
+d none lib/libproxy/0.3.1 0755 root bin
+d none lib/libproxy/0.3.1/modules 0755 root bin
+f none lib/libproxy/0.3.1/modules/pacrunner_mozjs.so=usr/lib/libproxy/0.3.1/modules/pacrunner_mozjs.so 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/libproxy 0755 root bin
+d none lib/sparcv9/libproxy/0.3.1 0755 root bin
+d none lib/sparcv9/libproxy/0.3.1/modules 0755 root bin

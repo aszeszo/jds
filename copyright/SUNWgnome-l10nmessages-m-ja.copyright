@@ -1,0 +1,1514 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  tracker ja.po.
+  Copyright (C) 2008, Free Software Foundation, Inc
+  This file is distributed under the same license as the tracker package.
+  Takao Fujiwara <takao.fujiwara@sun.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  dia ja.po.
+  Copyright (C) 1999-2007,2009 Free Software Foundation, Inc.
+  Yukihiro Nakai <nakai@FreeBSD.org>, 1999,2000.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001,2002.
+  Ryoichi INAGAKI <ryo1@bc.wakwak.com>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2004,2006,2007,2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006
+ 
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  dasher ja.po.
+  Copyright (C) 2004-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the dasher package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2004-2008.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  gok ja.po.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gok package.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2004-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  at-spi ja.po
+  Copyright (C) 2003,2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the at-spi package.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  mousetweaks ja.po.
+  Copyright (c) 2007-2009 Rosetta Contributors and Canonical Ltd 2007
+  This file is distributed under the same license as the mousetweaks package.
+  keblo <keblo1@gmail.com>, 2007, 2008.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2008,2009.
+ 
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  orca ja.po.
+  Copyright (C) 2006-2009 THE Orca'S COPYRIGHT HOLDER.
+  This file is distributed under the same license as the orca package.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006-2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  quick-lounge-applet ja.po.
+  Copyright (C) 2003 Free Software Foundation, Inc.
+  This file is distributed under the same license as the quick-lounge-applet package.
+  Takeshi AIHANA <aihana@gnome.gr.jp>, 2003.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  gnome-netstatus ja.po.
+  Copyright (C) 2003-2005,2007,2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-netstatus package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2005,2007,2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  file-roller ja.po.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2001-2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  gcalctool ja.po.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gcalctool package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  gtkam ja.po.
+  Copyright (C) 2001-2004 Free Software Foundation, Inc.
+  Takeshi Aihana <aihana@gnome.gr.jp>, 2001-2002.
+  AMANO Kazuhiro <haa13142@jnb.odn.ne.jp>, 2002.
+  Tadashi Jokagi <elf2000@users.sourceforge.net>, 2004-2005.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  brasero ja.po.
+  Copyright (C) 2005-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the brasero package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005-2009.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  sound-juicer ja.po.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the sound-juicer package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2004, 2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2004, 2006.
+ 
+  *訳語の凡例*
+  (since 2005-11-24):
+  Audio: 音楽 or オーディオ
+  Music: 楽曲
+  (since 2007-03-11):
+  Extractor: 取り込み
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  libbonobo ja.po
+  Copyright (C) 1999-2007 Free Software Foundation, Inc.
+  Yukihiro Nakai <nacai@iname.com>, 1999.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 1999-2002.
+  Takeshi Aihana <takeshi.aihana@gmail.com>, 2000,2003-2007.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  gconf-editor ja.po.
+  Copyright (C) 2002-2004,2006,2007,2009 Free Software Foundation, Inc.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2004,2006,2007,2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  GConf ja.po.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2000-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003
+  Satoru SATOH <ss@gnome.gr.jp>, 2006
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  bug-buddy ja.po.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Akira TAGOH <at@ff.iij4u.or.jp>, 2000-2001.
+  Yukihiro Nakai <ynakai@gnome.gr.jp>, 2001.
+  Kin Taishin <taishin@imap.cc>, 2002.
+  Takeshi AIHANA <takeshi.aihana@gmailcom>, 2003-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  gDesklets ja.po.
+  Copyright (C) 2003-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gDesklets package.
+  Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2005.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  gnome-control-center ja.po.
+  Copyright (C) 1998-2008 Free Software Foundation, Inc.
+  Yukihiro Nakai <Nakai@abricot.co.jp>, 1998
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000, 2009.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2008.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  gnome-settings-daemon ja.po.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Yukihiro Nakai <Nakai@abricot.co.jp>, 1998
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000, 2009.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  zenity ja.po.
+  Copyright (C) 2003-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the zenity package.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2008.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Yasumichi Akahoshi <yasumichi@vinelinux.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  gdm/gdm2 ja.po.
+  Copyright (C) 1999-2008 Free Software Foundation, Inc.
+  Yukihiro Nakai <nacai@iname.com>, 1999.
+  ITANI Eiichiro <emu@ceres.dti.ne.jp>, 1999.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000.
+  Yukihior Nakai <nakai@gnome.gr.jp>, 2000-2002.
+  Taku YASUI <tach@debian.or.jp>, 2001.
+  SATO Satoru <ss@gnome.gr.jp>, 2001, 2006.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2004-2008.
+  Ryoichi INAGAKI <ryo1@bc.wakwak.com>, 2004.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mount.mo
+  gnome-mount ja.po.
+  Copyright (C) 2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the 'gnome-mount' package.
+  Takeshi AIHANA <aihana@gnome.gr.jp>, 2006
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  nautilus ja.po.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2000-2002.
+  Takuo Kitame <kitame@debian.org>, 2001.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2001.
+  Satoru Sato <ss@gnome.gr.jp>, 2001, 2006.
+  James Hashida <khashida@redhat.com>, 2002
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+  * Merged eel since v2.25.2.
+  Copyright (C) 2000-2005,2007,2008 Free Software Foundation, Inc.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  gtksourceview ja.po.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtksourceview package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  gtksourceview ja.po.
+  Copyright (C) 2003-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtksourceview package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2007.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  Yelp ja.po.
+  Copyright (C) 2002-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the Yelp package.
+  Satoru SATOH <ss@gnome.gr.jp>, 2005, 2006
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2002-2008.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  ghex ja.po.
+  Copyright (C) 1998-2004,2007 Free Software Foundation, Inc.
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
+  Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+  Takeshi Aihana <takeshi.aihana@gmail.com>, 2003-2004,2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  pidgin ja.po.
+  Copyright (C) 2002, Ryosuke Kutsuna <ryosuke@cool.email.ne.jp>
+  Copyright (C) 2002, Taku YASUI <tach@debian.or.jp>
+  Copyright (C) 2003, Junichi Uekawa <dancer@debian.org>
+  Copyright (C) 2003-2007, Takeshi AIHANA <takeshi.aihana@gmail.com>
+ 
+  This file is distributed under the same license as the 'pidgin' package.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  Japanese message table for GIMP 2.0
+  Copyright (C) 1998-2005,2008 Free Software Foundation, Inc.
+  SHIRASAKI Yasuhiro <yasuhiro@gnome.gr.jp>, 1998-2001, 2004.
+  Ryoichi INAGAKI <ryo1@bc.wakwak.com>, 2003, 2004.
+  Tadashi Jokagi <elf2000@users.sourceforge.net>, 2005.
+  OKANO Takayoshi <kano@na.rim.or.jp>, 2005.
+  Nishibori Kiyotaka <ml.nishibori.kiyotaka@gmail.com>, 2008
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  gthumb ja.po.
+  Copyright (C) 2001-2007 Free Software Foundation, Inc.
+  Takeshi Aihana <takeshi.aihana@gmail.com>, 2001-2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  eog ja.po.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 1999-2002.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2002-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  libbonoboui ja.po.
+  Copyright (C) 1999-2003,2005-2008 Free Software Foundation, Inc.
+  Yukihiro Nakai <nacai@iname.com>, 1999.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 1999, 2000, 2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003,2005-2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  gnome-keyring ja.po.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-keyring package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  libgnome ja.po.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Yukihiro Nakai <Nakai@abricot.co.jp>, 1998,2001.
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 1999-2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  gnome-media ja.po.
+  Copyright (C) 1998-2000, 2002-2009 Free Software Foundation, Inc.
+  Mitsuru Oka <95i44@is.kochi-u.ac.jp>, 1998.
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2000.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2002, 2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Satoru SATOH <aihana@gnome.gr.jp>, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Japanese translation file for gstreamer
+  This file is put in the public domain.
+ 
+  Makoto Kato <makoto.kt@gmail.com>, 2008.
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Japanese translation of gst-plugins-base
+  This file is put in the public domain.
+ 
+  Makoto Kato <makoto.kt@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Japanese translation for gst-plugins-good.
+  This file is put in the public domain.
+ 
+  Takao Fujiwara <takao.fujiwara@sun.com>, 2006.
+  Makoto Kato <makoto.kt@gmail.com>, 2009.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gst-plugin-good package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  totem ja.po.
+  This file is distributed under the same license as the totem package.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  James Hashida <khashida@redhat.com>, 2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2004, 2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2005, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  rhythmbox ja.po.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  Norihiro UMEDA <norihiro@users.sourceforge.jp>, 2002-2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Mitsuya Shibata <mty.shibata@gmail.com>, 2009.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  Japanese message catalog for Alacarte, a simple menu editor for GNOME.
+  Copyright (C) 2006,2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the 'alacarte' package.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006,2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  ja.po for gnome-menus.
+  Copyright (C) 2004-2007 THE gnome-menus' COPYRIGHT HOLDER
+  This file is distributed under the same license as the gnome-menus package.
+  Satoru SATOH <ss@gnome.gr.jp>, 2004.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005-2007.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  gnome-desktop ja.po.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Yukihiro Nakai <Nakai@abricot.co.jp>, 1998.
+  Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp>, 1999.
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 1999-2002, 2009.
+  Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
+  Shingo Akagaki <dora@kondara.org>, 2000.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+  Takehsi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  gnome-panel ja.po.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Yukihiro Nakai <Nakai@abricot.co.jp>, 1998.
+  Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp>, 1999.
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 1999-2003, 2009.
+  Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
+  Shingo Akagaki <dora@kondara.org>, 2000.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  libwnck ja.po.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2001-2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  Japanese messages catalogue for evince - PS/PDF viewer for GNOME
+  Copyright (C) 2005-2009 THE evince'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the evince package.
+  Satoru SATOH <ss@gnome.gr.jp>, 2005, 2006.
+  Takeshi AIHANA <takshi.aihana@gmail.com>, 2005-2009.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+  Shushi Kurose <md81bird@hitaki.net>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  gnome-pilot ja.po.
+  Copyright (C) 1999-2005 Free Software Foundation, Inc.
+  Yuusuke Tahara <tahara@gnome.gr.jp>, 1999-2000.
+  Takeshi Aihana <aihana@gnome.g.rjp>, 2001-2005.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  ja.po for gnome-power-manager.
+  Copyright (C) 2005-2008 Richard Hughes <richard @ hughsie.com>
+  This file is distributed under the same license as the 'gnome-power-manager' package.
+  Satoru SATOH <ss @ gnome.gr.jp>, 2005-2006.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006-2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  Japanese messsage catalogue for vino
+  Copyright (C) 2004-2009 THE vino'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the vino package.
+  Satoru SATOH <ss@gnome.gr.jp>, 2004-2006.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2006-2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  gnome-session ja.po.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Yukihiro Nakai <Nakai@abricot.co.jp>, 1998.
+  Yasuyuki Furukawa <yasu@on.cs.keio.ac.jp>, 1999.
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1999.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 1999-2002, 2009.
+  Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
+  Shingo Akagaki <dora@kondara.org>, 2000.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2001.
+  Ryoichi INAGAKI <ryo1@bc.wakwak.com>, 2002.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  gnome-system-monitor (procman) ja.po.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  Takeshi Aihana <takeshi.aihana@gmail.com>, 2001-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOh <ss@gnome.gr.jp>, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  Japanese translation of gnome-system-tools (a.k.a. ximian-setup-tools).
+  Copyright (C) 2001-2006 Free Software Foundation, Inc.
+  Taku YASUI <tach@debian.or.jp>, 2001.
+  Ryoichi INAGAKI <ryo1@bc.wakwak.com>, 2003.
+  Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2006.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  gnome-terminal ja.po.
+  Copyright (C) 2002-2008 Free Software Foundation, Inc.
+  James Hashida <khashida@redhat.com>, 2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2008.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  gedit ja.po.
+  Copyright (C) 1999,2000,2002-2009 Free Software Foundation, Inc.
+  Akira Higuchi <a-higuti@math.sci.hokudai.ac.jp>, 1999
+  Yuusuke Tahara <tahara@gnome.gr.jp>
+  Yukihiro Nakai <nakai@gnome.gr.jp>
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  gnome-icon-theme ja.po.
+  Copyright (C) 2003-2005,2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as
+  the gnome-icon-theme package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2005,2007.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  gnome-themes ja.po.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-themes package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  gnome-backgrounds ja.po.
+  Copyright (C) 2005,2006,2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-backgrounds package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2005, 2008.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  glade3 ja.po.
+  Copyright (C) 1999-2004,2005-2009 Free Software Foundation, Inc.
+  大河 雄一 <kuri@makino.cc.tohoku.ac.jp>, 1999-2001.
+  竹田 寛郁 <takepin@turbolinux.co.jp>, 2000.
+  栗原 守 <storm@din.or.jp>, 1999.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2004-2009.
+ 
+  GLOSSARIES:
+  * "Column と Row" (翻訳が難しい単語の一つで、ウィジェットの種類によって訳語が異なる)
+     GtkTable: 列と行
+     GtkTree*: 項目 (横方向に並べるデータ) と ノード (縦方向に並べるデータ)
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  gnome-utils ja.po.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  Eiichiro ITANI <emu@ceres.dti.ne.jp>, 1998.
+  Yuusuke Tahara <tahara@gnome.gr.jp>, 2000.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2000.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000-2002, 2009.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2009.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Japanese translation for shared-mime-info
+  Copyright (C) 2004 THE shared-mime-info'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the shared-mime-info package.
+  Satoru SATOH <ss@gnome.gr.jp>, 2004.
+  Makoto Kato <makoto.kt@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  gnome-vfs ja.po.
+  Copyright (C) 2000-2007 Free Software Foundation, Inc.
+  Akira TAGOH <at@ff.iij4u.or.jp>, 2000.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2007.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  gnome-mime-data ja.po.
+  Copyright (C) 2000-2004 Free Software Foundation, Inc.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2000-2001.
+  Takeshi AIHANA <aihana@gnome.gr.jp>, 2003-2004.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  metacity ja.po.
+  Copyright (C) 2002-2008 Free Software Foundation, Inc.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2002.
+  KAMAGASAKO Masatoshi <emerald@gnome.gr.jp>, 2003.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2003-2008.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2003.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  Japanese transaltion for gtkspell.
+  Copyright (C) 2002-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtkspell package.
+  Daichi Kawahata <daichik@users.sourceforge.net>, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  Seahorse ja.po.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  Anthony Mulcahy <anthony@kcn.ne.jp>, 1999, 2000.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2000-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for w3m.mo
+  Japanese translations for w3m package
+  w3m �ѥå��������Ф������.
+  Copyright (C) 2003 THE w3m'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the w3m package.
+  Fumitoshi UKAI <ukai@debian.or.jp>, 2003.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  xdg-user-dirs-gtk ja.po.
+  Copyright (C) 2007,2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the xdg-user-dirs-gtk package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2007,2008.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Japanese translation of xdg-user-dirs.
+  Copyright (C) 2007 Google, Inc.
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  evolution ja.po.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2000-2001.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2001.
+  Takuo KITAME <kitame@debian.org>, 2001.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2001-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  gkthtml ja.po.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2000.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2000, 2003.
+  Takuo KITAME <kitame@debian.org>, 2001.
+  Takeshi Aihana <takeshi.aihana@gmail.com>, 2000-2009.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  The Japanese message catalogue for evolution-exchange
+  Copyright (C) 2004-2009 THE evolution-exchange'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the evolution-exchange package.
+  SATOH, Satoru <ss@gnome.gr.jp>, 2004, 2005.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2007-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  evolution-data-server ja.po.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  Akira TAGOH <tagoh@gnome.gr.jp>, 2000-2001.
+  Yukihiro Nakai <nakai@gnome.gr.jp>, 2001.
+  Takuo KITAME <kitame@debian.org>, 2001.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2001-2009.
+  Satoru SATOH <ss@gnome.gr.jp>, 2006.
+  Takayuki KUSANO <AE5T-KSN@asahi-net.or.jp>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+  SUN LING UNREVIEWED
+  SUN TECH UNREVIEWED
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  evolution-webcal ja.po.
+  Copyright (C) 2004,2005,2007  Free Software Foundation, Inc.
+  This file is distributed under the same license as the 'evolution-webcal' package.
+  Takeshi AIHANA <takeshi.aihana@gmail.com>, 2004,2005,2007.
+ 
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of virt-manager.tip.ja.po to Japanese
+  translation of ja.po to
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+ 
+  Noriko Mizumoto <noriko@redhat.com>, 2006, 2007.
+  kiyoto james hashida <khashida@brisbane.redhat.com>, 2007.
+  Hyu_gabaru Ryu_ichi <hyu_gabaru@yahoo.co.jp>, 2007.
+  Kiyoto Hashida <khashida@redhat.com>, 2008.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

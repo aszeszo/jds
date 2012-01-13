@@ -1,0 +1,64 @@
+diff -urN tsoljdslabel.orig/Makefile.am tsoljdslabel.new/Makefile.am
+--- tsoljdslabel.orig/Makefile.am	2010-03-29 10:34:15.940032551 +0100
++++ tsoljdslabel.new/Makefile.am	2010-03-29 10:39:15.934977946 +0100
+@@ -3,7 +3,7 @@
+ AUTOMAKE_OPTIONS = dist-bzip2
+ 
+ desktopdir = $(datadir)/xsessions/multilabel
+-desktop_in_files = tgnome.desktop.in
++desktop_in_files = tgnome.desktop.in txfailsafe.desktop.in
+ desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+ @INTLTOOL_DESKTOP_RULE@
+ 
+diff -urN tsoljdslabel.orig/src/Makefile.am tsoljdslabel.new/src/Makefile.am
+--- tsoljdslabel.orig/src/Makefile.am	2010-03-29 10:34:15.928211196 +0100
++++ tsoljdslabel.new/src/Makefile.am	2010-03-29 10:39:15.935811510 +0100
+@@ -6,6 +6,7 @@
+ 	$(TSOLJDSLABEL_CFLAGS)				
+ 
+ bin_PROGRAMS = tsoljdslabel tsoljdslabel-ui
++bin_SCRIPTS = txfailsafe
+ 
+ tsoljdslabel_SOURCES = suidwrapper.c
+ 
+diff -urN tsoljdslabel.orig/src/txfailsafe tsoljdslabel.new/src/txfailsafe
+--- tsoljdslabel.orig/src/txfailsafe	1970-01-01 01:00:00.000000000 +0100
++++ tsoljdslabel.new/src/txfailsafe	2010-03-29 10:39:24.414532333 +0100
+@@ -0,0 +1,24 @@
++#!/usr/bin/bash
++
++trap exit SIGINT
++
++rootrole=$(roles | grep -c root)
++if [[ $rootrole == 1 ]] ; then
++	echo "This is the failsafe xterm session.  You must provide the root"
++	echo "password to continue.  If you cannot log in any other way please"
++	echo "type Control-C and contact your system administrator."
++	echo ""
++	echo "Please enter the root password"
++	su	 
++	while [[ $? == 1 ]] ; do 
++		su 
++	done
++else 
++	echo "The failsafe session is restricted to users who have been"
++	echo "assigned the root role.  If you cannot log in any other way"
++	echo "please contact your system administrator."
++	echo ""
++	echo "Press the return key to return to the login screen"
++	read line
++fi
++
+diff -urN tsoljdslabel.orig/txfailsafe.desktop.in tsoljdslabel.new/txfailsafe.desktop.in
+--- tsoljdslabel.orig/txfailsafe.desktop.in	1970-01-01 01:00:00.000000000 +0100
++++ tsoljdslabel.new/txfailsafe.desktop.in	2010-03-29 10:39:15.937161162 +0100
+@@ -0,0 +1,9 @@
++[Desktop Entry]
++Encoding=UTF-8
++Name=Solaris Trusted Extension Failsafe
++Comment=This session logs you into a Trusted Extensions failsafe xterm
++Exec=/usr/X11/bin/xterm -e /usr/bin/txfailsafe
++# no icon yet, only the top three are currently used
++Icon=
++Type=Application
++X-GDM-BypassXsession=true

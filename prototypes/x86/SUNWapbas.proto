@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapbas.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapbas.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapbas.copyright
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/apoc 0755 root bin
+f none share/lib/apoc/ldapjdk.jar=usr/share/lib/apoc/ldapjdk.jar 0644 root bin
+f none share/lib/apoc/policymgr.jar=usr/share/lib/apoc/policymgr.jar 0644 root bin
+f none share/lib/apoc/spi.jar=usr/share/lib/apoc/spi.jar 0644 root bin

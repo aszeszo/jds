@@ -1,0 +1,139 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2008/450 Transmission for OpenSolaris-->
+<!ENTITY cmd "transmission-daemon">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2008, Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<?Pub UDT _bookmark _target>
+<?Pub Inc>
+<refentry id="transmission-daemon-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">17 Jul 2008</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>&cmd;</primary></indexterm><indexterm><primary>a daemon-based BitTorrent client</primary></indexterm>
+
+<refnamediv id="transmission-daemon-1-name"><refname>&cmd;</refname><refpurpose>a daemon-based BitTorrent client</refpurpose></refnamediv>
+
+<refsynopsisdiv id="tranmission-1-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-help</option></arg>
+</cmdsynopsis>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-acl <replaceable>list</replaceable></option></arg>
+<arg choice="opt"><option>-blocklist</option>|<option>-no-blocklist</option></arg>
+<arg choice="opt"><option>-foreground</option></arg>
+<arg choice="opt"><option>-conf-dir <replaceable>directory</replaceable></option></arg>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-port <replaceable>port</replaceable></option></arg>
+<arg choice="opt"><option>-auth</option>|<option>-no-auth</option></arg>
+<arg choice="opt"><option>-username <replaceable>username</replaceable></option></arg>
+<arg choice="opt"><option>-password <replaceable>password</replaceable></option></arg>
+<arg choice="opt"><option>-download-dir <replaceable>directory</replaceable></option></arg>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id="transmission-daemon-1-desc"><title>&desc-tt;</title>
+<para><command>&cmd;</command> is a daemon-based transmission session
+that can be controlled via RPC commands from transmission's web interface or <citerefentry><refentrytitle>transmission-remote</refentrytitle><manvolnum>1</manvolnum></citerefentry>.
+</para></refsect1>
+
+<refsect1 id="transmission-daemon-1-opts"><title>&opts-tt;</title>
+<para>The following options are supported:</para>
+<variablelist termlength="wholeline">
+
+
+<varlistentry><term><option role="nodash">-a</option>, <option>-acl <replaceable>list</replaceable></option></term><listitem><para>Specify access control list (ACL) to control which hosts may submit RPC requests. The ACL <replaceable>list</replaceable> is constructed as (+|-)x.x.x.x[/x],... which is a comma separated list of IP subnets, each subnet is prepended by '-' or '+' sign. Plus means allow, minus means deny. If subnet mask is omitted, like "-1.2.3.4", then it means that single IP address. Masks may vary from 0 to 32 inclusive. The default <replaceable>list</replaceable> is +127.0.0.1.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-b</option>, <option>-blocklist</option></term><listitem><para>Enable peer blocklists. Transmission understands the bluetack blocklist file format. Bluetack blocklists are text files that applications can load in order to block access. Bluetack blocklists are available on <literal>http://www.bluetack.co.uk/<literal>. New blocklists can be added by copying them into the config-dir's "blocklists" subdirectory.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-B</option>, <option>-no-blocklist</option></term><listitem><para>Disable peer blocklists. </para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-f</option>, <option>-foreground</option></term><listitem><para>Run in the foreground and print errors to stderr.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-g</option>, <option>-conf-dir <replaceable>directory</replaceable></option></term><listitem><para>Where to look for .torrent and conf files on startup.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-h</option>, <option>-help</option></term><listitem><para>Print command-line option descriptions.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-p</option>, <option>-port <replaceable>port</replaceable></option></term><listitem><para><replaceable>port</replaceable> to open and listen for RPC requests on. The default <replaceable>port</replaceable> is 9091.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-t</option>, <option>-auth</option></term><listitem><para>Require clients to authenticate themselves. This doesn't do much good unless username and password are also set.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-T</option>, <option>-no-auth</option></term><listitem><para>Don't require authentication from clients.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-u</option>, <option>-username <replaceable>username</replaceable></option></term><listitem><para>Used for client authentication.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-v</option>, <option>-password <replaceable>password</replaceable></option></term><listitem><para>Used for client authentication.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-w</option>, <option>-download-dir</option></term><listitem><para>Where to store downloaded data.</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="transmission-daemon-1-envr"><title>&envr-tt;</title>
+<para><command>&cmd;</command> uses the following environment variables:</para>
+<variablelist><varlistentry><term>TRANSMISSION_HOME</term><listitem><para>Sets the default conf-dir.</para>
+</listitem></varlistentry></variablelist></refsect1
+
+<refsect1 id="transmission-daemon-1-file"><title>&file-tt;</title>
+<para>The following files are used by this application:</para>
+<variablelist termlength="wholeline">
+<varlistentry><term><filename>/usr/bin/&cmd;</filename>
+</term><listitem><para>
+The executable for <application>&cmd;</application>
+</para></listitem></varlistentry>
+<varlistentry><term><filename>$HOME/.config/transmission-daemon</filename>
+</term><listitem><para>
+The config-dir used when neither TRANSMISSION_HOME nor -g is specified.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="transmission-damon-1-exit"><title>&exit-tt;</title>
+<para>The following exit values are returned:</para>
+<variablelist termlength="xtranarrow">
+<varlistentry><term><returnvalue>0</returnvalue></term><listitem><para>Application
+exited successfully.</para>
+</listitem></varlistentry>
+<varlistentry><term><returnvalue>>0</returnvalue></term><listitem><para>Application 
+exited with failure.</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="transmission-daemon-1-attr"><title>&attr-tt;</title>
+<para>See <olink targetdocent="REFMAN5" localinfo="attributes-5"><citerefentry>
+<refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1"><colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row><entry align="center" valign="middle">ATTRIBUTE TYPE</entry><entry align="center"
+valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row><entry><para>Availability</para></entry><entry><para>SUNWtransmission</para></entry>
+</row>
+<row><entry colname="COLSPEC0"><para>Interface stability</para></entry><entry
+colname="COLSPEC1"><para>Volatile</para></entry></row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="transmission-daemon-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>transmission</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>transmissioncli</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>transmission-remote</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+<para>Transmission community site - <literal>http://www.transmissionbt.org/</literal></para>
+</refsect1>
+<refsect1 id="tranmission-1-note"><title>&note-tt;</title>
+<parm><command>&cmd;</command> program was written by Charles Kerr
+‚î¨charles@rebelbase.com‚î¬, Josh Elsasser ‚î¨josh@elsasser.org‚î¬, Eric Petit
+‚î¨titer@m0k.org‚î¬, and Mitchell Livingston ‚î¨livings124@gmail.com‚î¬.<para>
+<para>The man page updated by Elaine Xiong, Sun Microsystems Inc., 2008.</para>
+</refsect1>
+</refentry>

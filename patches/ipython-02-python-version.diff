@@ -1,0 +1,324 @@
+diff -u -r ipython-0.10/IPython/Extensions/ipy_gnuglobal.py ipython-0.10-mod/IPython/Extensions/ipy_gnuglobal.py
+--- ipython-0.10/IPython/Extensions/ipy_gnuglobal.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/Extensions/ipy_gnuglobal.py	2009-12-03 18:20:38.880459000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ 
+ 
+ """
+diff -u -r ipython-0.10/IPython/Extensions/ipy_render.py ipython-0.10-mod/IPython/Extensions/ipy_render.py
+--- ipython-0.10/IPython/Extensions/ipy_render.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/Extensions/ipy_render.py	2009-12-03 18:20:51.158114000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ 
+ """ IPython extension: Render templates from variables and paste to clipbard """
+ 
+diff -u -r ipython-0.10/IPython/Extensions/ipy_workdir.py ipython-0.10-mod/IPython/Extensions/ipy_workdir.py
+--- ipython-0.10/IPython/Extensions/ipy_workdir.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/Extensions/ipy_workdir.py	2009-12-03 18:21:10.082806000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ 
+ import IPython.ipapi
+ ip = IPython.ipapi.get()
+diff -u -r ipython-0.10/IPython/Extensions/pickleshare.py ipython-0.10-mod/IPython/Extensions/pickleshare.py
+--- ipython-0.10/IPython/Extensions/pickleshare.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/Extensions/pickleshare.py	2009-12-03 18:21:21.147371000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ 
+ """ PickleShare - a small 'shelve' like datastore with concurrency support
+ 
+diff -u -r ipython-0.10/IPython/external/guid.py ipython-0.10-mod/IPython/external/guid.py
+--- ipython-0.10/IPython/external/guid.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/external/guid.py	2009-12-03 18:21:36.703943000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ # GUID.py
+diff -u -r ipython-0.10/IPython/external/mglob.py ipython-0.10-mod/IPython/external/mglob.py
+--- ipython-0.10/IPython/external/mglob.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/external/mglob.py	2009-12-03 18:21:53.144675000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ 
+ r""" mglob - enhanced file list expansion module
+ 
+diff -u -r ipython-0.10/IPython/gui/wx/ipshell_nonblocking.py ipython-0.10-mod/IPython/gui/wx/ipshell_nonblocking.py
+--- ipython-0.10/IPython/gui/wx/ipshell_nonblocking.py	2009-08-05 07:26:20.000000000 +0800
++++ ipython-0.10-mod/IPython/gui/wx/ipshell_nonblocking.py	2009-12-03 17:20:28.337476000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python2.6
+ # -*- coding: iso-8859-15 -*-
+ '''
+ Provides IPython remote instance.
+diff -u -r ipython-0.10/IPython/gui/wx/ipython_history.py ipython-0.10-mod/IPython/gui/wx/ipython_history.py
+--- ipython-0.10/IPython/gui/wx/ipython_history.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/gui/wx/ipython_history.py	2009-12-03 17:20:39.533998000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python2.6
+ # -*- coding: iso-8859-15 -*-
+ import wx
+ import wx.stc  as  stc
+diff -u -r ipython-0.10/IPython/gui/wx/ipython_view.py ipython-0.10-mod/IPython/gui/wx/ipython_view.py
+--- ipython-0.10/IPython/gui/wx/ipython_view.py	2009-08-05 07:26:20.000000000 +0800
++++ ipython-0.10-mod/IPython/gui/wx/ipython_view.py	2009-12-03 17:20:46.877974000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python2.6
+ # -*- coding: utf-8 -*-
+ '''
+ Provides IPython WX console widgets.
+diff -u -r ipython-0.10/IPython/gui/wx/wxIPython.py ipython-0.10-mod/IPython/gui/wx/wxIPython.py
+--- ipython-0.10/IPython/gui/wx/wxIPython.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/gui/wx/wxIPython.py	2009-12-03 17:20:55.390569000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/python
++#!/usr/bin/python2.6
+ # -*- coding: iso-8859-15 -*-
+ 
+ import wx.aui
+diff -u -r ipython-0.10/IPython/irunner.py ipython-0.10-mod/IPython/irunner.py
+--- ipython-0.10/IPython/irunner.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/irunner.py	2009-12-03 18:22:08.221310000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """Module for interactively running scripts.
+ 
+ This module implements classes for interactively running scripts written for
+diff -u -r ipython-0.10/IPython/kernel/scripts/ipcluster.py ipython-0.10-mod/IPython/kernel/scripts/ipcluster.py
+--- ipython-0.10/IPython/kernel/scripts/ipcluster.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/scripts/ipcluster.py	2009-12-03 18:22:42.874864000 +0800
+@@ -1,4 +1,4 @@
+- #!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ """Start an IPython cluster = (controller + engines)."""
+diff -u -r ipython-0.10/IPython/kernel/scripts/ipcontroller.py ipython-0.10-mod/IPython/kernel/scripts/ipcontroller.py
+--- ipython-0.10/IPython/kernel/scripts/ipcontroller.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/scripts/ipcontroller.py	2009-12-03 18:22:54.607200000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ """The IPython controller."""
+diff -u -r ipython-0.10/IPython/kernel/scripts/ipengine.py ipython-0.10-mod/IPython/kernel/scripts/ipengine.py
+--- ipython-0.10/IPython/kernel/scripts/ipengine.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/scripts/ipengine.py	2009-12-03 18:23:08.051740000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ """Start the IPython Engine."""
+diff -u -r ipython-0.10/IPython/kernel/tests/tasktest.py ipython-0.10-mod/IPython/kernel/tests/tasktest.py
+--- ipython-0.10/IPython/kernel/tests/tasktest.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/tests/tasktest.py	2009-12-03 18:23:41.773115000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ __docformat__ = "restructuredtext en"
+diff -u -r ipython-0.10/IPython/kernel/tests/test_multienginefc.py ipython-0.10-mod/IPython/kernel/tests/test_multienginefc.py
+--- ipython-0.10/IPython/kernel/tests/test_multienginefc.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/tests/test_multienginefc.py	2009-12-03 18:23:56.041823000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ __docformat__ = "restructuredtext en"
+diff -u -r ipython-0.10/IPython/kernel/tests/test_pendingdeferred.py ipython-0.10-mod/IPython/kernel/tests/test_pendingdeferred.py
+--- ipython-0.10/IPython/kernel/tests/test_pendingdeferred.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/tests/test_pendingdeferred.py	2009-12-03 18:24:07.694115000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ """Tests for pendingdeferred.py"""
+diff -u -r ipython-0.10/IPython/kernel/tests/test_taskfc.py ipython-0.10-mod/IPython/kernel/tests/test_taskfc.py
+--- ipython-0.10/IPython/kernel/tests/test_taskfc.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/tests/test_taskfc.py	2009-12-03 18:24:20.102827000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ __docformat__ = "restructuredtext en"
+diff -u -r ipython-0.10/IPython/kernel/tests/test_twistedutil.py ipython-0.10-mod/IPython/kernel/tests/test_twistedutil.py
+--- ipython-0.10/IPython/kernel/tests/test_twistedutil.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/tests/test_twistedutil.py	2009-12-03 18:24:32.170143000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ #-----------------------------------------------------------------------------
+diff -u -r ipython-0.10/IPython/kernel/twistedutil.py ipython-0.10-mod/IPython/kernel/twistedutil.py
+--- ipython-0.10/IPython/kernel/twistedutil.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/kernel/twistedutil.py	2009-12-03 18:24:45.051707000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ """Things directly related to all of twisted."""
+diff -u -r ipython-0.10/IPython/testing/mkdoctests.py ipython-0.10-mod/IPython/testing/mkdoctests.py
+--- ipython-0.10/IPython/testing/mkdoctests.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/testing/mkdoctests.py	2009-12-03 18:24:56.944150000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """Utility for making a doctest file out of Python or IPython input.
+ 
+   %prog [options] input_file [output_file]
+diff -u -r ipython-0.10/IPython/testing/plugin/iptest.py ipython-0.10-mod/IPython/testing/plugin/iptest.py
+--- ipython-0.10/IPython/testing/plugin/iptest.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/testing/plugin/iptest.py	2009-12-03 18:25:09.060578000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """Nose-based test runner.
+ """
+ 
+diff -u -r ipython-0.10/IPython/testing/plugin/setup.py ipython-0.10-mod/IPython/testing/plugin/setup.py
+--- ipython-0.10/IPython/testing/plugin/setup.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/testing/plugin/setup.py	2009-12-03 18:25:25.724270000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """A Nose plugin to support IPython doctests.
+ """
+ 
+diff -u -r ipython-0.10/IPython/testing/tests/test_tools.py ipython-0.10-mod/IPython/testing/tests/test_tools.py
+--- ipython-0.10/IPython/testing/tests/test_tools.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/testing/tests/test_tools.py	2009-12-03 18:25:42.885276000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ """
+ Tests for testing.tools
+diff -u -r ipython-0.10/IPython/tests/test_platutils.py ipython-0.10-mod/IPython/tests/test_platutils.py
+--- ipython-0.10/IPython/tests/test_platutils.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/IPython/tests/test_platutils.py	2009-12-03 18:26:07.405976000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ """
+ Tests for platutils.py
+diff -u -r ipython-0.10/IPython/tools/growl.py ipython-0.10-mod/IPython/tools/growl.py
+--- ipython-0.10/IPython/tools/growl.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/tools/growl.py	2009-12-03 18:26:19.443542000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ 
+diff -u -r ipython-0.10/IPython/upgrade_dir.py ipython-0.10-mod/IPython/upgrade_dir.py
+--- ipython-0.10/IPython/upgrade_dir.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/IPython/upgrade_dir.py	2009-12-03 18:26:31.592030000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """ A script/util to upgrade all files in a directory
+ 
+ This is rather conservative in its approach, only copying/overwriting
+diff -u -r ipython-0.10/docs/examples/core/example-embed.py ipython-0.10-mod/docs/examples/core/example-embed.py
+--- ipython-0.10/docs/examples/core/example-embed.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/core/example-embed.py	2009-12-03 18:28:58.464911000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ 
+ """An example of how to embed an IPython shell into a running program.
+ 
+diff -u -r ipython-0.10/docs/examples/core/example-gnuplot.py ipython-0.10-mod/docs/examples/core/example-gnuplot.py
+--- ipython-0.10/docs/examples/core/example-gnuplot.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/core/example-gnuplot.py	2009-12-03 18:29:24.456668000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """
+ Example code showing how to use Gnuplot and an embedded IPython shell.
+ """
+diff -u -r ipython-0.10/docs/examples/kernel/asyncmultiengine1.py ipython-0.10-mod/docs/examples/kernel/asyncmultiengine1.py
+--- ipython-0.10/docs/examples/kernel/asyncmultiengine1.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/kernel/asyncmultiengine1.py	2009-12-03 18:34:59.696800000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ # A super simple example showing how to use all of this in a fully
+diff -u -r ipython-0.10/docs/examples/kernel/mcdriver.py ipython-0.10-mod/docs/examples/kernel/mcdriver.py
+--- ipython-0.10/docs/examples/kernel/mcdriver.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/kernel/mcdriver.py	2009-12-03 18:30:02.916678000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ """Run a Monte-Carlo options pricer in parallel."""
+ 
+diff -u -r ipython-0.10/docs/examples/kernel/pwordfreq.py ipython-0.10-mod/docs/examples/kernel/pwordfreq.py
+--- ipython-0.10/docs/examples/kernel/pwordfreq.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/kernel/pwordfreq.py	2009-12-03 18:30:18.821296000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """Parallel word frequency counter."""
+ 
+ 
+diff -u -r ipython-0.10/docs/examples/kernel/pwordfreq_skel.py ipython-0.10-mod/docs/examples/kernel/pwordfreq_skel.py
+--- ipython-0.10/docs/examples/kernel/pwordfreq_skel.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/kernel/pwordfreq_skel.py	2009-12-03 18:30:25.857571000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """Parallel word frequency counter."""
+ 
+ 
+diff -u -r ipython-0.10/docs/examples/kernel/task2.py ipython-0.10-mod/docs/examples/kernel/task2.py
+--- ipython-0.10/docs/examples/kernel/task2.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/kernel/task2.py	2009-12-03 18:30:39.458089000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ from IPython.kernel import client
+diff -u -r ipython-0.10/docs/examples/kernel/task_profiler.py ipython-0.10-mod/docs/examples/kernel/task_profiler.py
+--- ipython-0.10/docs/examples/kernel/task_profiler.py	2009-04-16 08:58:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/kernel/task_profiler.py	2009-12-03 18:30:49.306568000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ """Test the performance of the task farming system.
+ 
+ This script submits a set of tasks to the TaskClient.  The tasks
+diff -u -r ipython-0.10/docs/examples/kernel/taskreject.py ipython-0.10-mod/docs/examples/kernel/taskreject.py
+--- ipython-0.10/docs/examples/kernel/taskreject.py	2009-07-31 09:20:05.000000000 +0800
++++ ipython-0.10-mod/docs/examples/kernel/taskreject.py	2009-12-03 18:31:00.062992000 +0800
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ # encoding: utf-8
+ 
+ """

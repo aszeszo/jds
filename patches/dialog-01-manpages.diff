@@ -1,0 +1,32 @@
+--- dialog-1.1-20080819.orig/dialog.1	2008-07-28 06:49:40.000000000 +0800
++++ dialog-1.1-20080819/dialog.1	2009-02-24 13:29:14.820759000 +0800
+@@ -29,6 +29,7 @@
+ .RE
+ ..
+ .
++...\" LSARC 2008/446 dialog for OpenSolaris
+ .TH DIALOG 1 "" "$Date: 2010/01/18 10:19:07 $"
+ .SH NAME
+ dialog \- display dialog boxes from shell scripts
+@@ -1218,6 +1219,21 @@
+ .TE
+ .RE
+ .\" ************************************************************************
++.SH "ATTRIBUTES"
++.PP
++See \fBattributes\fR(5)
++for descriptions of the following attributes:
++.sp
++.TS
++tab() allbox;
++cw(2.750000i)| cw(2.750000i)
++lw(2.750000i)| lw(2.750000i).
++ATTRIBUTE TYPEATTRIBUTE VALUE
++AvailabilitySUNWdialog
++Interface stabilityUncommitted
++.TE
++.sp
++
+ .SH BUGS
+ Perhaps.
+ .SH AUTHOR

@@ -1,0 +1,28 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtkspell-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtkspell-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtkspell-devel.copyright
+d none include 0755 root bin
+d none include/gtkspell-2.0 0755 root bin
+d none include/gtkspell-2.0/gtkspell 0755 root bin
+f none include/gtkspell-2.0/gtkspell/gtkspell.h=usr/include/gtkspell-2.0/gtkspell/gtkspell.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gtkspell-2.0.pc=usr/lib/pkgconfig/gtkspell-2.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/gtkspell 0755 root bin
+f none share/gtk-doc/html/gtkspell/chapter-tutorial.html=usr/share/gtk-doc/html/gtkspell/chapter-tutorial.html 0644 root bin
+f none share/gtk-doc/html/gtkspell/gtkspell-gtkspell.html=usr/share/gtk-doc/html/gtkspell/gtkspell-gtkspell.html 0644 root bin
+f none share/gtk-doc/html/gtkspell/gtkspell.devhelp=usr/share/gtk-doc/html/gtkspell/gtkspell.devhelp 0644 root bin
+f none share/gtk-doc/html/gtkspell/gtkspell.devhelp2=usr/share/gtk-doc/html/gtkspell/gtkspell.devhelp2 0644 root bin
+f none share/gtk-doc/html/gtkspell/home.png=usr/share/gtk-doc/html/gtkspell/home.png 0644 root bin
+f none share/gtk-doc/html/gtkspell/index.html=usr/share/gtk-doc/html/gtkspell/index.html 0644 root bin
+f none share/gtk-doc/html/gtkspell/index.sgml=usr/share/gtk-doc/html/gtkspell/index.sgml 0644 root bin
+f none share/gtk-doc/html/gtkspell/left.png=usr/share/gtk-doc/html/gtkspell/left.png 0644 root bin
+f none share/gtk-doc/html/gtkspell/reference.html=usr/share/gtk-doc/html/gtkspell/reference.html 0644 root bin
+f none share/gtk-doc/html/gtkspell/right.png=usr/share/gtk-doc/html/gtkspell/right.png 0644 root bin
+f none share/gtk-doc/html/gtkspell/style.css=usr/share/gtk-doc/html/gtkspell/style.css 0644 root bin
+f none share/gtk-doc/html/gtkspell/tutorial-building.html=usr/share/gtk-doc/html/gtkspell/tutorial-building.html 0644 root bin
+f none share/gtk-doc/html/gtkspell/tutorial.html=usr/share/gtk-doc/html/gtkspell/tutorial.html 0644 root bin
+f none share/gtk-doc/html/gtkspell/up.png=usr/share/gtk-doc/html/gtkspell/up.png 0644 root bin

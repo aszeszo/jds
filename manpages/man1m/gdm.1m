@@ -1,0 +1,1393 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2003/261 gdm2 - Gnome Display Manager -->
+<!--ARC : LSARC 2005/417 GDM2 as default Solaris Display Manager -->
+<!--ARC : LSARC 2008/207 GNOME 2.22 -->
+<!--ARC : LSARC 2008/662 GDM system user home directory -->
+<!--ARC : LSARC 2009/433 GDM 2.28 -->
+<!ENTITY cmd "gdm">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2004,2006,2009 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<refentry id="gdm-1m">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>gdm</refentrytitle><manvolnum>1m</manvolnum>
+<refmiscinfo class="date">28 Dec 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1m;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>gdm</primary></indexterm>
+<indexterm><primary>
+GDM (GNOME Display Manager)
+</primary></indexterm>
+<refnamediv id="gdm-1m-name">
+<refname>gdm</refname>
+<refname>gdm-binary</refname>
+<refpurpose>
+GDM (GNOME Display Manager)
+</refpurpose></refnamediv>
+<refsynopsisdiv id="gdm-1m-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd; | gdm-binary</command>
+<arg choice="opt"><option>-fatal-warnings</option></arg>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-timed-exit</option></arg>
+<arg choice="opt"><option>-version</option></arg>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id="gdm-1m-desc"><title>&desc-tt;</title>
+<para>
+GDM is the GNOME Display Manager, a program used for login session management.
+GDM supports managing the console display, other attached displays, XDMCP
+displays, and flexible (or on-demand) displays.  Flexible displays make use of
+the Virtual Terminals (VT) interfaces to allow user switching, so that multiple
+users can run simultaneous sessions sharing the same console.  GDM uses
+ConsoleKit to manage what sessions are active on the system.  GDM supports a
+number of configuration interfaces which are described in later sections of
+this manpage.
+</para>
+
+<para>
+The <command>gdm-binary</command> program is the actual program which manages
+the displays on the system, while <command>&cmd;</command> is a wrapper script
+that launches the <command>gdm-binary</command> program and passes along any
+options.  Before launching <command>gdm-binary</command>, the
+<command>&cmd;</command> wrapper script sources the system
+<citerefentry><refentrytitle>profile</refentrytitle>
+<manvolnum>4</manvolnum></citerefentry>
+file to set standard system environment variables, and sets the LANG and
+LC_MESSAGES environment variables to support internationalization.
+</para>
+
+<para>
+For each display that GDM is configured to manage, the
+<command>gdm-binary</command> program will launch a slave daemon which does the
+work to actually manage the display.  The slave daemon will start the login
+greeter GUI program, the program that the user interacts with.  Refer the the
+&quot;Login Greeter GUI&quot; section below for more information about how the
+user interface works.
+</para>
+
+<para>
+If Virtual Terminals are supported on your system, you can start a flexible
+display via the &quot;User Switcher&quot; panel applet.  You may need to add
+this applet to your panel to make use of it.  You can also use the 
+<citerefentry><refentrytitle>gdmflexiserver</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+command to start flexible displays from the command line.
+</para>
+
+<para>
+If you wish to stop the GDM service, you can either send a TERM signal to the
+main GDM daemon, or run the 
+<citerefentry><refentrytitle>gdm-stop</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry>
+command.  On Solaris, the GDM service is managed by the 
+<citerefentry><refentrytitle>smf</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry>
+service management facility under the service identifier
+<replaceable>svc:/application/graphical-login/gdm</replaceable>.
+On Solaris, it is recommended that you use the
+<citerefentry><refentrytitle>svcadm</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry> utility to enable and disable the
+&quot;gdm&quot; service instead of using the
+<citerefentry><refentrytitle>gdm-stop</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry> command.
+</para>
+
+<para>
+GDM supports libaudit and Solaris auditing.  Refer to the 
+&quot;System Administration Guide: Security Services&quot; and the
+<citerefentry><refentrytitle>audit</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry> manpage for more information.
+On Solaris, GDM also uses
+<citerefentry><refentrytitle>logindevperm</refentrytitle>
+<manvolnum>4</manvolnum></citerefentry>
+to ensure that device permissions are set properly for the user on login.
+</para>
+</refsect1>
+
+<refsect1 id="gdm-1m-opts">
+<title>&opts-tt;</title>
+<para>
+The following options are supported by <command>&cmd;</command> and
+<command>gdm-binary</command>:
+</para>
+
+<variablelist termlength="medium">
+<varlistentry>
+<term><option>-fatal-warnings</option></term>
+<listitem>
+<para>
+Make all warnings fatal.  Useful for debugging.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><option>-help</option></term>
+<listitem><para>
+Display detailed usage message.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><option>-timed-exit</option></term>
+<listitem><para>
+Exit after 30 seconds.  Useful for debugging.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><option>-version</option></term>
+<listitem><para>
+Display the GDM version.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="pkg-config-1-envr"><title>&envr-tt;</title>
+<para>
+See
+<citerefentry><refentrytitle>environ</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry>
+for descriptions of environment variables.
+</para>
+
+<para>
+When the following description refers to &quot;scripts&quot;, these are
+referring to the GDM <filename>Init</filename>, <filename>PostLogin</filename>,
+<filename>PreSession</filename>, and <filename>PostSession</filename> scripts.
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><envar>DESKTOP_SESSION</envar></term>
+<listitem><para>
+For any user session started by GDM, this environment variable is set to the
+session name the user has chosen in the login GUI, such as &quot;gnome&quot; to
+indicate that the <filename>/usr/share/xsession/gnome.desktop</filename>
+session file was used to launch the session. 
+</para></listitem></varlistentry>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><envar>DISPLAY</envar></term>
+<listitem><para>
+When running scripts and for any user session started by GDM, this environment
+variable is set to the Xserver display value associated with the session.
+</para></listitem></varlistentry>
+<variablelist termlength="wholeline">
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><envar>DESKTOP_SESSION</envar></term>
+<listitem><para>
+For any user session started by GDM, this environment variable is set to the
+keyboard layout that the user has chosen in the login GUI.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>HOME</envar></term>
+<listitem><para>
+When running scripts and for any user session started by GDM, this environment
+variable is set to the home directory associated with the user.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>LANG</envar></term>
+<listitem><para>
+For any user session started by GDM, this environment variable is set to the
+langauge choice selected when the user logged in.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>REMOTE_HOST</envar></term>
+<listitem><para>
+When running scripts, this environment variable is set to the hostname if the
+session is non-local (e.g. XDMCP).
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>RUNNING_UNDER_GDM</envar></term>
+<listitem><para>
+When running scripts, this environment variable is set to &quot;true&quot, so
+that they can identify when they are executed by the GDM process.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>SHELL</envar></term>
+<listitem><para>
+When running scripts and for any user session started by GDM, this environment
+variable is set to the shell associated with the session.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>USER</envar></term>
+<listitem><para>
+When running scripts and for any user session started by GDM, this environment
+variable is set to the username associated with the session.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>USERNAME</envar></term>
+<listitem><para>
+When running scripts and for any user session started by GDM, this environment
+variable is set to the username associated with the session.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>XAUTHORITY</envar></term>
+<listitem><para>
+When running scripts and for any user session started by GDM, this environment
+variable is set to the Xserver Xauthority file being used by the session.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><envar>XDG_SESSION_COOKIE</envar></term>
+<listitem><para>
+This environment variable is provided by ConsoleKit, and this value is set
+for any user session started by GDM so that ConsoleKit can properly identify
+the session.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="gdm-1m-exde"><title>&exde-tt;</title>
+<refsect2 id="gdm-1m-exde-greeter">
+<title>Login Greeter GUI</title>
+
+<para>
+The login greeter GUI allows the user to specify how their user session should
+be started and ensures that the user authenticates before gaining access to
+their user session.  Authentication can be disabled if desired.
+</para>
+
+<para>
+GDM makes use of
+<citerefentry><refentrytitle>pam</refentrytitle>
+<manvolnum>3PAM</manvolnum></citerefentry>
+to manage how the user authenticates (for example, by entering a username and
+password, via a SmartCard, fingerprint reader, etc.).  If authentication is
+not desired, then GDM provides two configuration options which can be used
+to bypass it: &quot;Automatic Login&quot; and &quot;Timed Login&quot;.  These
+are not enabled by default, but can be turned on if desired.
+</para>
+
+<para>
+The Automatic Login feature will cause GDM to bypass the login greeter GUI
+entirely and immediately start a session for the user specified in the GDM
+configuration.  The Timed Login feature will display the login greeter GUI for
+a number of seconds specified in the GDM configuration.  If no user logs in
+before the timeout, then GDM will automatically start the user session for the
+user specified in the GDM configuration.  Timed Login is useful if you wish to
+have the opportunity to login as a different user on some occasions.  Obviously
+neither Automatic Login or Timed Login are secure, and they should only be used
+on systems where the security provided by authentication is not needed.
+</para>
+
+<para>
+GDM normally uses a PAM stack named &quot;gdm&quot;.  When Automatic Login or
+Timed Login is enabled, then GDM instead uses a PAM stack named
+&quot;gdm-autologin&quot;.  Note that Automatic Login and Timed Login will not
+work properly if the &quot;gdm-autologin&quot; PAM stack is not defined in your
+PAM configuration.
+</para>
+
+<para>
+The login greeter GUI provides two mechanisms for specifying which user is
+logging into the system.  Either the &quot;Face Browser&quot; can be used,
+or GDM can prompt the user with the requests specified by the system PAM
+configuration.  By default, this means entering both the username and password
+by hand.
+</para>
+
+<para>
+The Face Browser is designed to work when PAM is configured to allow users to
+select their username, so it is not useful with certain PAM configurations
+(such as when the username is identified via a SmartCard or fingerprint).  The
+Face Browser obviously exposes usernames to anyone with access to the machine,
+so users may wish to disable it if this is considered a security issue.
+</para>
+
+<para>
+When the Face Browser is enabled, a list of users will appear in the login
+greeter GUI.  An icon for each user is shown, and users can specify what icon
+is associated with their user.  If the user has an image file named
+<filename>~/.face</filename>, then GDM will associate this image with the user.
+If the user does not have such an image file, a default icon is displayed.
+Image files must be no larger than 64K in size, or they are ignored by GDM.
+</para>
+
+<para>
+The login greeter GUI can be configured to provide &quot;Shutdown&quot;,
+&quot;Restart&quot;, and &quot;Suspend&quot; buttons which allow the user to
+shutdown, restart, or suspend the system if desired.  On Solaris, the buttons
+will only be available if the "solaris.system.shutdown" authorization name is
+specified for the &quot;gdm&quot; user in the
+<filename>/etc/user_attr</filename> file.  For example, the
+<filename>/etc/user_attr</filename> file should include the following line to
+make these buttons available from the GDM login GUI screen.
+</para>
+
+<screen>
+gdm::::type=normal;auths=solaris.system.shutdown
+</screen>
+
+<para>
+While the login greeter GUI is displayed, a panel is provided at the bottom
+of the screen which provides useful information, interfaces that allow the
+user to specify how their session should be started, and interfaces to help
+the user navigate the login screen.  These include:
+</para>
+
+<itemizedlist>
+<listitem>
+A clock, showing the date and time.
+</listitem>
+<listitem>
+What type of session to run.
+</listitem>
+<listitem>
+An alternative language to use.
+</listitem>
+<listitem>
+An alternative keyboard layout (if supported).
+</listitem>
+<listitem>
+The ability to launch assistive technology programs if desired.
+</listitem>
+<listitem><para>
+The ability to monitor the system battery (if using a system with a battery).
+</para></listitem>
+</itemizedlist>
+
+<para>
+The login greeter GUI also allows the user to take a screenshot.  If the
+user presses the keybindng associated with printing the screen, then the
+<command>gdm-screenshot</command> is run to take the screenshot.
+</para>
+
+<refsect2 id="gdm-1m-exde-accessibility">
+<title>Accessibility</title>
+<para>
+GDM supports accessibility.  Users can click on the accessibility icon on
+the panel to specify which assistive programs should be launched with the
+login GUI programs.  It is also possible to configure a system so that 
+needed assistive programs should always be launched.
+</para>
+<para>
+Note that accessibility support requires that the Xserver supports the XKB
+extension.  If the accessibility icon does not appear in the panel, then this
+is likely the problem.  Enabling the XKB extension in the Xserver, if
+possible, should correct this problem.
+</para>
+</refsect2>
+
+<refsect2 id="gdm-1m-exde-security">
+<title>Security</title>
+<para>
+The GDM login GUI programs are run with a dedicated user id and group id.
+By default &quot;gdm&quot; is used for both the user id and group id, but these
+values are configurable.  The reason for using this special user and group is
+to make sure that the GDM user interfaces run as a user without unnecessary
+privileges, so that in the unlikely case that someone finds a weakness in the
+GUI, they will not gain access to a privileged account on the machine.
+</para>
+
+<para>
+Note that the GDM user and group do have some privileges beyond what a normal
+user has.  This user and group has access to the Xserver authorization
+directory which contains all of the Xserver authorization files and other
+private information.  This means that someone who gains the GDM user/group
+privileges can then connect to any running Xserver session.  Do not, under any
+circumstances, make the GDM user/group a user/group that might be easy to get
+access to, such as the user &quot;<literal>nobody</literal>&quot;.
+</para>
+
+<para>
+File permissions are set on the authorization files so that only the user
+has read and write access to ensure that users are unable to access the 
+authorization files belonging to other users.
+</para>
+</refsect2>
+
+<refsect2 id="gdm-1m-exde-xdmcp">
+<title>XDMCP</title>
+<para>
+XDMCP (X Display Manager Control Protocol) displays the login screen and
+resulting session on a remote machine over the network interface.  By default,
+XDMCP is disabled in GDM.  However, GDM can be configured to enable XDMCP so
+that users can log into the system from remote hosts.  By default, GDM listens
+to UDP port 177, although this can be configured.  GDM responds to QUERY and
+BROADCAST_QUERY requests by sending a WILLING packet to the originator.
+</para>
+
+<para>
+GDM provides configuration options that make GDM more resistant to
+denial-of-service attacks on the XDMCP service.  The default values should work
+for most systems, but several protocol parameters, handshaking timeouts, and so
+on can be fine-tuned to make it more secure.  It is not recommended that you
+modify the XDMCP configuration unless you know what you are doing.
+</para>
+
+<para>
+GDM grants access to the hosts specified in the GDM service section of your TCP
+Wrappers configuration file.  Refer to the 
+<citerefentry><refentrytitle>libwrap</refentrytitle>
+<manvolnum>3</manvolnum></citerefentry>
+manpage for more information.  GDM does not support remote display access
+control on systems without TCP Wrapper support.
+</para>
+
+<para>
+GDM can also be configured to honor INDIRECT queries and present a host
+chooser to the remote display. GDM remembers the user's choice and forwards
+subsequent requests to the chosen manager. GDM also supports an extension
+to the protocol which makes GDM forget the redirection once the user's
+connection succeeds.  This extension is only supported if both daemons are GDM.
+This extension is transparent and is ignored by XDM or other daemons that
+implement XDMCP.
+</para>
+
+<para>
+GDM only supports the MIT-MAGIC-COOKIE-1 authentication system. Because of
+this, the cookies are transmitted as clear text. Therefore, you should be
+careful about the network where you use this. That is, be careful about where
+your XDMCP connection is going. Note that if snooping is possible, an attacker
+could snoop your password as you log in, so a better XDMCP authentication would
+not help you much anyway. If snooping is possible and undesirable, you should
+use
+<citerefentry><refentrytitle>ssh</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+for tunneling an X connection, rather then using GDM's XDMCP. Think of XDMCP as a sort of graphical telnet, with the same security issues.
+</para>
+</refsect2>
+
+<refsect2 id="gdm-1m-configuration">
+<title>GDM Configuration</title>
+
+<para>
+ConsoleKit interfaces are used to configure how GDM should manage displays
+in a multiseat environment, so to configure multiseat please refer to the
+<citerefentry><refentrytitle>console-kit-daemon</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry>
+manpage.
+</para>
+
+<para>
+GDM also provides a number of configuration interfaces which allow the user to
+specify how GDM should operate.  The configuration available for the GDM
+daemon and the GDM login greeter GUI are described below.  GDM also provides
+scripting interfaces and other interfaces to configure how sessions are started
+which are described in the &quot;GDM Login Scripts and Session Files&quot;
+section of this manpage.
+</para>
+
+<para>
+The default system configuration for the GDM daemon is stored in the file
+<filename>/etc/gdm/gdm.schemas</filename>, and accessed by GDM via GConf.
+Users are not recommended to modify this file since it may be overwritten on
+upgrade.  Instead users should override these settings by specifying values in
+the <filename>/etc/gdm/custom.conf</filename> file, which is in standard INI
+format.
+</para>
+
+<para>
+The settings below are in
+&quot;group/key=<replaceable>default_value</replaceable>
+<replaceable>type</replaceable>&quot; format.  The type can be
+<replaceable>string</replaceable>, <replaceable>integer</replaceable>,
+or <replaceable>boolean</replaceable>.  To override the
+&quot;xdmcp/Enable&quot; value, you would modify the
+<filename>/etc/gdm/custom.conf</filename> so it contains these lines:
+</para>
+
+<screen>
+[xdmcp]
+Enable=true
+</screen>
+
+<para> 
+The following keys are supported for configuring the GDM daemon:
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>chooser/Multicast=false (boolean)</term>
+<listitem><para>
+If true and IPv6 is enabled, the chooser will send a multicast query to the
+local network and collect responses from the hosts who have joined multicast
+group. 
+</para></listitem></varlistentry>
+<varlistentry>
+<term>chooser/MulticastAddr=ff02::1 (string)</term>
+<listitem>
+<para>
+This is the Link-local Multicast address.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>daemon/TimedLoginEnable=false (boolean)</term>
+<listitem><para>
+If the user given in TimedLogin should be logged in after a number of seconds
+(set with TimedLoginDelay) of inactivity on the login screen. This is useful
+for public access terminals or perhaps even home use. If the user uses the
+keyboard or browses the menus, the timeout will be reset to TimedLoginDelay or
+30 seconds, whichever is higher. If the user does not enter a username but just
+hits the ENTER key while the login program is requesting the username, then GDM
+will assume the user wants to login immediately as the timed user. Note that no
+password will be asked for this user so you should be careful, although if
+using PAM it can be configured to require password entry before allowing login.
+</para></listitem>
+<varlistentry>
+<term>daemon/TimedLogin= (string)</term>
+<listitem><para>
+This is the user that should be logged in after a specified number of seconds
+of inactivity.  If the value ends with a vertical bar | (the pipe symbol), then
+GDM will execute the program specified and use whatever value is returned on
+standard out from the program as the user. The program is run with the DISPLAY
+environment variable set so that it is possible to specify the user in a
+per-display fashion. For example if the value is
+&quot;/usr/bin/getloginuser|&quot;, then the program
+<command>/usr/bin/getloginuser</command> will be run to get the user value. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>daemon/TimedLoginDelay=30 (integer)</term>
+<listitem><para>
+Delay in seconds before the TimedLogin  user will be logged in.
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>daemon/AutomaticLoginEnable=false (boolean)</term>
+<listitem><para>
+If true, the user given in AutomaticLogin  should be logged in immediately.
+This feature is like timed login with a delay of 0 seconds.
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>daemon/AutomaticLogin= (string)</term>
+<listitem><para>
+This is the user that should be logged in immediately if AutomaticLoginEnable
+is true.  If the value ends with a vertical bar | (the pipe symbol), then GDM
+will execute the program specified and use whatever value is returned on
+standard out from the program as the user. The program is run with the DISPLAY
+environment variable set so that it is possible to specify the user in a
+per-display fashion. For example if the value is
+&quot;/usr/bin/getloginuser|&quot;, then the program
+<command>/usr/bin/getloginuser</command> will be run to get the user value. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>daemon/User=gdm (string)</term>
+<listitem><para>
+The username under which the greeter and other GUI programs are run.
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>daemon/Group=gdm (string)</term>
+<listitem><para>
+The group id used to run the login GUI programs
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>debug/Enable=false (boolean)</term>
+<listitem><para>
+If true, then GDM will provide debug output in the system log, which is
+either <filename>/var/log/messages</filename> or
+<filename>/var/adm/messages</filename> depending on your system.
+</para></listitem></varlistentry>
+</varlistentry>
+
+<varlistentry>
+<term>greeter/IncludeAll=false (boolean)</term>
+<listitem>
+<para>
+If true, then the face browser will show all users on the local machine. If
+false, the face browser will only show users who have recently logged in.
+</para>
+<para>
+When this key is true, GDM will call fgetpwent() to get a list of local users
+on the system.  Anyusers with a user id less than 500 (or 100 if running on
+Solaris) are filtered out.  The Face Browser also will display any users that
+have previously logged in on the system (for example NIS/LDAP users). It gets
+this list via calling the
+<citerefentry><refentrytitle>ck-history</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+ConsoleKit interface. It will also filter out any users which do not have a
+valid shell (valid shells are any shell that getusershell() returns -
+<filename>/sbin/nologin</filename> or <filename>/bin/false</filename> are
+considered invalid shells even if getusershell() returns them).
+</para>
+<para>
+If false, then GDM more simply only displays users that have previously logged
+in on the system (local or NIS/LDAP users) by calling the
+<citerefentry><refentrytitle>ck-history</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+ConsoleKit interface.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>greeter/Include= (string)</term>
+<listitem>
+<para>
+Set to a list of users to always include in the Face Browser.  This value
+is set to a list of users separated by commas.  By default, the value is
+empty.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>greeter/Exclude=bin,root,daemon,adm,lp,sync,shutdown,halt,mail,news,uucp,operator,nobody,nobody4,noaccess,postgres,pvm,rpm,nfsnobody,pcap (string)</term>
+<listitem>
+<para>
+Set to a list of users to always exclude in the Face Browser.  This value
+is set to a list of users separated by commas.  Note that the setting in the
+<filename>custom.conf</filename> overrides the default value, so if you wish
+to add additional users to the list, then you need to set the value to the
+default value with additional users appended to the list.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>greeter/ShowLast=false (boolean)</term>
+<listitem>
+<para>
+If true, then the session, language and layout dialogs in the login greeter GUI
+will show the option &quot;Last&quot; by default.  The users default settings
+in their <filename>~/.dmrc</filename> file will be used.  If no settings exist
+in this file, then the system defaults will be used.  Note that GDM normally
+caches the user's <filename>~/.dmrc</filename> in the
+<filename>/var/cache/gdm</filename> directory.  Turning on this feature causes
+GDM to avoid using the cache, and instead accesses the user's configuration
+settings from their <filename>~/.dmrc</filename> file after
+<citerefentry><refentrytitle>pam_setcred</refentrytitle>
+<manvolnum>3PAM</manvolnum></citerefentry></olink> is called.
+This feature is useful in situations where users might log into multiple
+servers and the system administrator wants to avoid situations where the
+user's cached settings might become inconsistant across different servers.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>security/DisallowTCP=false (boolean)</term>
+<listitem><para>
+If true, then always append &quot;<option>nolisten</option> tcp&quot; to the
+Xserver command line when starting attached Xservers, thus disallowing TCP
+connection.  This is a more secure configuration if you are not using remote
+connections.  Note that on Solaris, the
+<literal>options/tcp_listen</literal> property of the 
+<literal>x11-server</literal> service also controls whether this option is
+appended to the Xserver command line.  The GDM configuration value is set to
+&quot;false&quot; by default on Solaris to defer control of this feature to
+this <literal>x11-server</literal> property.  Refer to the
+<citerefentry><refentrytitle>Xserver</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+manpage for more information.
+</para></listitem></varlistentry>
+</varlistentry>
+
+<varlistentry>
+<term>xdmcp/DisplaysPerHost=1 (integer)</term>
+<listitem><para>
+To prevent attackers from filling up the pending queue, GDM will only allow one
+connection for each remote computer. If you want to provide display services to
+computers with more than one screen, you should increase this value.  Note that
+the number of attached DISPLAYS allowed is not limited. Only remote connections
+via XDMCP are limited by this configuration option. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/Enable=false (boolean)</term>
+<listitem><para>
+Setting this to true enables XDMCP support allowing remote displays/X terminals
+to be managed by GDM.  If GDM is compiled to support it, access from remote
+displays can be controlled using the TCP Wrappers library.
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/HonorIndirect=true (boolean)</term>
+<listitem><para>
+Enables XDMCP INDIRECT choosing for X-terminals which do not supply their own
+display browser. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/MaxPending=4 (integer)</term>
+<listitem><para>
+To avoid denial of service attacks, GDM has fixed size queue of pending
+connections. Only MaxPending displays can start at the same time.  Please note
+that this parameter does not limit the number of remote displays which can be
+managed. It only limits the number of displays initiating a connection
+simultaneously. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/MaxSessions=16 (integer)</term>
+<listitem><para>
+Determines the maximum number of remote display connections which will be
+managed simultaneously. I.e. the total number of remote displays that can use
+your host. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/MaxWait=30 (integer)</term>
+<listitem><para>
+When GDM is ready to manage a display an ACCEPT packet is sent to it containing
+a unique session id which will be used in future XDMCP conversations.  GDM will
+then place the session id in the pending queue waiting for the display to
+respond with a MANAGE request.  If no response is received within MaxWait
+seconds, GDM will declare the display dead and erase it from the pending queue
+freeing up the slot for other displays. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/MaxWaitIndirect=30 (integer)</term>
+<listitem><para>
+The MaxWaitIndirect parameter determines the maximum number of seconds between
+the time where a user chooses a host and the subsequent indirect query where
+the user is connected to the host. When the timeout is exceeded, the
+information about the chosen host is forgotten and the indirect slot freed up
+for other displays. The information may be forgotten earlier if there are more
+hosts trying to send indirect queries then MaxPendingIndirect. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/PingIntervalSeconds=15 (integer)</term>
+<listitem><para>
+Interval in which to ping the Xserver in seconds. If the Xserver does not
+respond before the next time we ping it, the connection is stopped and the
+session ended. This is a combination of the XDM PingInterval and PingTimeout,
+but in seconds. 
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/Port=177 (integer)</term>
+<listitem><para>
+The UDP port number gdm should listen to for XDMCP requests.
+</para></listitem></varlistentry>
+</varlistentry>
+<varlistentry>
+<term>xdmcp/Willing=/etc/gdm/Willing (string)</term>
+<listitem><para>
+When the machine sends a WILLING packet back after a QUERY it sends a string
+that gives the current status of this server. The default message is the system
+ID, but it is possible to create a script that displays customized message.  If
+this script does not exist or this key is empty the default message is sent.
+If this script succeeds and produces some output, the first line of it's output
+is sent (and only the first line). It runs at most once every 3 seconds to
+prevent possible denial of service by flooding the machine with QUERY packets. 
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+The default system configuration for the GDM login greeter GUI is stored in
+the system GConf schemas directory in the file
+<filename>gdm-simple-greeter.schemas</filename>, and accessed by GDM via
+GConf.  Users are not recommended to modify this file file since it may be
+overwritten on upgrade.  Instead users should override these settings by
+modifying the GConf configuration for the GDM user (the user specified in the
+Daemon/User configuration key above), normally the &quot;gdm&quot; user.
+Users can use the 
+<citerefentry><refentrytitle>gconftool-2</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+or
+<citerefentry><refentrytitle>gconf-editor</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+programs to set these values, if desired.  Refer to the EXAMPLES section of
+this manpage for more information about how to use these tools to change
+common settings.
+</para>
+
+<para>
+GDM will use the GCONF_DEFAULT_SOURCE_PATH environment variable to ensure that each display uses it's own GConf configuration.  This way changes in GConf will only affect the greeter in a per-seat manner.
+</para>
+
+<para> 
+The following keys are supported for configuring the GDM login greeter GUI and
+are in
+&quot;GConf key=<replaceable>default_value</replaceable>
+(<replaceable>gconf_data_type</replaceable>)&quot;
+format:
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>/apps/gdm/simple-greeter/banner_message_enable=false (boolean)</term>
+<listitem><para>
+Controls whether the banner message text is displayed. 
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/apps/gdm/simple-greeter/banner_message_text=NULL (string)</term>
+<listitem><para>
+Specifies the text banner message to show on the greeter window.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/apps/gdm/simple-greeter/disable_restart_buttons=false (boolean)</term>
+<listitem><para>
+Controls whether to show the restart buttons in the login window.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/apps/gdm/simple-greeter/disable_user_list=true (boolean)</term>
+<listitem><para>
+If true, then the face browser with known users is not shown in the login
+window. 
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/apps/gdm/simple-greeter/logo_icon_name=computer (string)</term>
+<listitem><para>
+Set to the themed icon name to use for the greeter logo.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/apps/gdm/simple-greeter/wm_use_compiz=false (boolean)</term>
+<listitem><para>
+Controls whether compiz is used as the window manager instead of metacity.
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/desktop/gnome/interface/accessibility=true (boolean)</term>
+<listitem><para>
+Controls whether the Accessibility infrastructure will be started with the GDM
+GUI. This is needed for many accessibility technology programs to work. 
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/desktop/gnome/applications/at/screen_magnifier_enabled=false (boolean)</term>
+<listitem><para>
+If set, then the assistive tools linked to this GConf key will be started with
+the GDM GUI program. By default this is a screen magnifier application. 
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/desktop/gnome/applications/at/screen_keyboard_enabled=false (boolean)</term>
+<listitem><para>
+If set, then the assistive tools linked to this GConf key will be started with
+the GDM GUI program. By default this is an on-screen keyboard application. 
+</para></listitem></varlistentry>
+<varlistentry>
+<term>/desktop/gnome/applications/at/screen_reader_enabled=false (boolean)</term>
+<listitem><para>
+If set, then the assistive tools linked to this GConf key will be started with
+the GDM GUI program. By default this is a screen reader application. 
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+On Solaris, GDM also supports the CONSOLE, PASSREQ, PATH, and SUPATH
+configuration options in <filename>/etc/default/login</filename>.  Refer to the
+<citerefentry><refentrytitle>login</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry> manpage for details.
+</para>
+</refsect2>
+
+<refsect2 id="gdm-1m-exde-logging">
+<title>Logging</title>
+<para>
+GDM logs error and debug information to the system syslog file.
+</para>
+<para>
+Output from the Xservers started by GDM is stored in the GDM log directory,
+<filename>/var/log/gdm</filename>.  The Xserver output for each display is
+saved in a file <filename><replaceable>display</replaceable>.log</filename>,
+where <replaceable>display</replaceable> is the DISPLAY value for the
+associated display.
+</para>
+
+<para>
+Output from the GDM login greeter GUI is saved in a file
+<filename><replaceable>display</replaceable>-greeter.log</filename> and
+output from the GDM slave daemon is saved in a file
+<filename><replaceable>display</replaceable>-slave.log</filename>.  Again,
+the <replaceable>display</replaceable> is the DISPLAY value for the
+associated display.
+</para>
+
+<para>
+Four older versions of each file are also stored, by appending 1 through 4 to
+the filename. These files are rotated, as new sessions on that display are
+started.
+</para>
+
+<para>
+The output from the user session is saved in a file
+<filename>~/.xsession-errors</filename>.  The user session output is 
+redirected before the <filename>PreSession</filename> script is started.
+</para>
+
+<para>
+Note that if the session is a failsafe session, or if GDM cannot open this file
+for some reason, a fallback file is created named
+<filename>/tmp/xses-<replaceable>user</replaceable>.XXXXXX</filename>,
+where XXXXXX are random characters.
+</para>
+
+<para>
+If you run a system with quotas set, consider using the PostSession script to
+delete the <filename>~/.xsession-errors</filename> file, so that this log file
+is not stored unnecessarily.
+</para>
+</refsect2>
+</refsect1>
+
+<refsect1 id="gdm-1m-exam"><title>&exam-tt;</title>
+
+<para>
+Note that the user should change user to the &quot;gdm&quot; user before
+running the following
+<citerefentry><refentrytitle>gconftool-2</refentrytitle><manvolnum>1</manvolnum></citerefentry> commands.  For example, the
+ <citerefentry><refentrytitle>su</refentrytitle><manvolnum>1m</manvolnum></citerefentry>
+command could be used.  Configuration changes will only take effect if they
+apply to the &quot;gdm&quot; user.
+</para>
+
+<example role="example">
+<title>To Enable Face Browser for all GDM login greeter GUI</title>
+<para><screen><userinput>example% gconftool-2 --direct --config-source xml:readwrite:/var/lib/gdm/.gconf.mandatory -t bool -s /apps/gdm/simple-greeter/disable_user_list false
+</userinput></screen></para>
+</example>
+
+<example role="example">
+<title>To Change the Background Image to <filename>stream.jpg</filename> for the GDM login greeter GUI</title>
+<para><screen><userinput>example% gconftool-2 --direct --config-source xml:readwrite:/var/lib/gdm/.gconf.mandatory -t string -s /desktop/gnome/background/picture_filename /usr/share/pixmaps/backgrounds/opensolaris/stream.jpg
+</userinput></screen></para>
+</example>
+
+<example role="example">
+<title>To Disable Face Browser for StaticSeat1 GDM login greeter GUI</title>
+<para><screen><userinput>example% gconftool-2 --direct --config-source xml:readwrite:/var/lib/gdm/StaticSeat1/.gconf -t bool -s /apps/gdm/simple-greeter/disable_user_list true
+</userinput></screen></para>
+</example>
+</refsect1>
+
+<refsect1 id="gdm-1m-exit"><title>&exit-tt;</title>
+<para>
+The following exit values are returned:
+</para>
+
+<variablelist termlength="xtranarrow">
+<varlistentry>
+<term><returnvalue>0</returnvalue></term>
+<listitem><para>
+Application exited successfully
+</para></listitem></varlistentry>
+<varlistentry>
+<term><returnvalue>>0</returnvalue></term>
+<listitem><para>
+Application exited with failure
+</para>
+</listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="gdm-1m-file"><title>&file-tt;</title>
+
+<para>
+The following files are used by this application:
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/usr/sbin/&cmd;</filename></term>
+<listitem><para>
+Wrapper script that launches GNOME Display Manager
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/usr/sbin/gdm-binary</filename></term>
+<listitem><para>
+Executable for GNOME Display Manager.
+</para></listitem></varlistentry>
+</variablelist>
+
+<refsect2 id="gdm-1m-file-login">
+<title>GDM Login Scripts and Session Files</title>
+
+<para>
+The following GDM login integration interfaces are discussed below:
+</para>
+
+<itemizedlist>
+<listitem><filename>/etc/gdm/Init/Default</filename></listitem>
+<listitem><filename>/etc/gdm/Init/<replaceable>display</replaceable></filename></listitem>
+<listitem><filename>/etc/gdm/PostLogin/Default</filename></listitem>
+<listitem><filename>/etc/gdm/PostLogin/<replaceable>display</replaceable></filename></listitem>
+<listitem><filename>/etc/gdm/PreSession/Default</filename></listitem>
+<listitem><filename>/etc/gdm/PreSession/<replaceable>display</replaceable></filename></listitem>
+<listitem><filename>/etc/gdm/Xsession</filename></listitem>
+<listitem><filename>/etc/X11/xinit/xinitrc.d</filename></listitem>
+<listitem><filename>/etc/profile</filename></listitem>
+<listitem><filename>~/profile</filename></listitem>
+<listitem><filename>/etc/X11/xinit/xinitrc.d</filename></listitem>
+<listitem><filename>/etc/gdm/PostSession/Default</filename></listitem>
+<listitem><filename>/etc/gdm/PostSession/<replaceable>display</replaceable></filename></listitem>
+</itemizedlist>
+
+<para>
+The following session files are also discussed below:
+</para>
+
+<itemizedlist>
+<listitem><filename>/usr/share/gdm/autostart/LoginWindow/*.desktop</filename></listitem>
+<listitem><filename>/usr/share/xsessions/*.desktop</filename></listitem>
+<listitem><filename>~/.dmrc</filename> (default user session)</listitem>
+</itemizedlist>
+
+<para>
+The <filename>Init</filename>, <filename>PostLogin</filename>,
+<filename>PreSession</filename>, and <filename>PostSession</filename> scripts
+all work as described below. 
+</para>
+
+<para>
+For each type of script, the default one which will be executed is called
+&quot;Default&quot; and is stored in a directory associated with the script
+type. So the default <filename>Init</filename> script is
+<filename>/etc/gdm/Init/Default</filename>.  A per-display script can be
+provided, and if it exists it will be run instead of the default script. Such
+scripts are stored in the same directory as the default script and have the
+same name as the Xserver DISPLAY value for that display. For example, if the
+</filename>/etc/gdm/Init/:0</filename>  script exists, it will be run for
+DISPLAY &quot;:0&quot;.
+</para>
+
+<para>
+All of these scripts are run with root privilege and return 0 if run
+successfully, and a non-zero return code if there was any failure that should
+cause the login session to be aborted. Also note that GDM will block until the
+scripts finish, so if any of these scripts hang, this will cause the login
+process to also hang.
+</para>
+
+<para>
+When the Xserver for the login GUI has been successfully started, but before
+the login GUI is actually displayed, GDM will run the <filename>Init</filename>
+script. This script is useful for starting programs that should be run while
+the login screen is showing, or for doing any special initialization if
+required.
+</para>
+
+<para>
+After the user has been successfully authenticated GDM will run the
+<filename>PostLogin</filename> script. This is done before any session setup
+has been done, including before the 
+<citerefentry><refentrytitle>pam_open_session</refentrytitle>
+<manvolnum>3PAM</manvolnum></citerefentry>
+call. This script is useful for doing any session initialization that needs to
+happen before the session starts. For example, you might setup the user's
+$HOME directory if needed.
+</para>
+
+<para>
+After the user session has been initialized, GDM will run the
+<filename>PreSession</filename> script. This script is useful for doing any
+session initialization that needs to happen after the session has been
+initialized. It can be used for session management or accounting, for example.
+</para>
+
+<para>
+When a user terminates their session, GDM will run the
+<filename>PostSession</filename> script. Note that the Xserver will have been
+stopped by the time this script is run, so it should not be accessed.
+</para>
+
+<para>
+Note that the <filename>PostSession</filename> script will be run even when the
+display fails to respond due to an I/O error or similar. Thus, there is no
+guarantee that X applications will work during script execution.
+</para>
+
+<para>
+All of the above scripts will set the RUNNING_UNDER_GDM environment variable
+to &quot;yes&quot;. If the scripts are also shared with other display managers,
+this allows you to identify when GDM is calling these scripts, so you can run
+specific code when GDM is used. 
+</para>
+
+<para>
+The <filename>/usr/share/gdm/autostart/LoginWindow</filename> directory
+contains <filename>.desktop</filename> files.  Any
+<filename>.desktop</filename> files in this directory will cause the
+associated program to automatically start with the login GUI greeter. By
+default, GDM is shipped with files which will autostart the gdm-simple-greeter
+login GUI greeter itself, the <command>gnome-power-manager</command>
+application, the <command>gnome-settings-daemon</command>, and the
+<command>metacity</command> window manager. These programs are needed for the
+greeter program to work. In addition, desktop files are provided for starting
+various AT programs if the associated accessibility configuration GConf keys
+are set.
+</para>
+
+<para>The administrator can customize .desktop files. For example, an <filename>xterm.desktop</filename> file can be useful when debugging the GDM login greeter. A .desktop file to launch <citerefentry><refentrytitle>xterm</refentrytitle><manvolnum>1</manvolnum></citerefentry> would look as follows: 
+<screen>
+[Desktop Entry] 
+Name=Xterm 
+Comment=Xterm 
+Exec=/usr/X11/bin/xterm 
+OnlyShowIn=GNOME; 
+Terminal=false 
+Type=Application 
+X-GNOME-Autostart-Phase=Applications 
+X-GNOME-AutoRestart=true 
+</screen>
+</para>
+
+<para>
+The user's default session and language choices are stored in the
+<filename>~/.dmrc</filename> file. When a user logs in for the first time, this
+file is created with the user's initial choices. The user can change these
+default values by simply changing to a different value when logging in. GDM
+will remember this change for subsequent logins. 
+</para>
+
+<para>
+The session types which are available in the GDM login greeter GUI are
+specified by <filename>.desktop</filename> files.  These desktop files are in
+standard INI format and the executable that will be run to start the session
+is specified by the &quot;Exec&quot; key in the file.  Desktop files are
+normally stored in the <filename>/usr/share/xsessions</filename> directory.
+However, GDM will search for desktop files in the following directories in this
+order: <filename>/etc/X11/sessions/</filename>,
+<filename>/etc/dm/Sessions</filename>,
+<filename>/usr/share/xsessions</filename>, and
+<filename>/usr/share/gdm/BuiltInSessions</filename>.
+</para>
+
+<para>
+The <filename>/etc/gdm/Xsession</filename> script is called between the
+<filename>PreSession</filename> and the <filename>PostSession</filename>
+scripts. This script does not support per-display like the other scripts. This
+script is used for actually starting the user session. This script is run as
+the user, and it will run whatever session was specified by the Desktop session
+file the user selected to start.  The <filename>/etc/gdm/Xsession</filename>
+script will source <filename>/etc/profile</filename>,
+<filename>~/.profile</filename>, and all scripts in the
+<filename>/etc/X11/xinit/xinitrc.d</filename> directory before starting the
+user session.  Refer to the
+<citerefentry><refentrytitle>profile</refentrytitle>
+<manvolnum>4</manvolnum></citerefentry>
+manpage for more information.
+</para>
+</refsect2>
+
+<refsect2 id="gdm-1m-file-config">
+<title>Configuration Files</title>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/etc/gdm/gdm.schemas</filename></term>
+<listitem><para>
+GDM default daemon configuration.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/gdm/custom.conf</filename></term>
+<listitem><para>
+GDM daemon configuration customization.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/gconf/schemas/gdm-simple-greeter.schemas</filename></term>
+<listitem><para>
+GDM default login greeter GUI configuration.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/default/login</filename></term>
+<listitem><para>
+On Solaris, GDM supports the CONSOLE, PASSREQ, PATH, and SUPATH configuration
+options.  Refer to the
+<citerefentry><refentrytitle>login</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+manpage for details.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>~gdm/.gconf.mandatory</filename></term>
+<listitem><para>
+The GDM user's mandatory GConf settings.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>~gdm/.gconf</filename></term>
+<listitem><para>
+The GDM user's GConf settings.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>~gdm/<replaceable>seat</replaceable>/.gconf</filename></term>
+<listitem><para>
+The per-seat GDM user's GConf settings.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>~gdm/.gconf.path</filename></term>
+<listitem><para>
+This file specifies the GDM user's mandatory GConf settings directory.
+</para>
+</listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect2 id="gdm-1m-file-logging">
+<title>Logging</title>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/var/log/gdm/<replaceable>display</replaceable>.log</filename></term>
+<listitem><para>
+Xserver output for each <replaceable>display</replaceable>.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>/var/log/gdm/<replaceable>display</replaceable>-greeter.log</filename></term>
+<listitem><para>
+GDM login greeter GUI output for each <replaceable>display</replaceable>.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>/var/log/gdm/<replaceable>display</replaceable>-slave.log</filename></term>
+<listitem><para>
+GDM slave daemon output for each <replaceable>display</replaceable>.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term><filename>~/.xsession-errors</filename></term>
+<listitem><para>
+Output from the user session.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect2 id="gdm-1m-file-xauth">
+<title>GDM Xauthority files</title>
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/var/run/gdm</filename></term>
+<listitem><para>
+Stores the Xserver authentication files for each managed session.
+</para>
+</listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect2 id="gdm-1m-file-face">
+<title>Face Browser</title>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/usr/share/pixmaps/faces</filename></term>
+<listitem><para>
+Global directory for face images.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>~/.face</filename></term>
+<listitem><para>
+User-defined icon to be used by GDM face browser.
+</para>
+</listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect2 id="gdm-1m-file-cache">
+<title>GDM user cache</title>
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/var/cache/gdm</filename></term>
+<listitem><para>
+GDM copies the user's <filename>~/.dmrc</filenam> and
+<filename>~/.face</filename> files to
+<filename>/var/cache/gdm/<replaceable>username</replaceable></filename>, so
+that they can be accessed on subsequent logins without accessing the user's
+$HOME directory before 
+<citerefentry><refentrytitle>pam_setcred</refentrytitle>
+<manvolnum>3PAM</manvolnum></citerefentry></olink> is called.
+</para>
+</listitem></varlistentry>
+</variablelist>
+</refsect2>
+
+<refsect1 id="gdm-1m-attr"><title>&attr-tt;</title>
+<para>
+See <olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>system/display-manager/gdm</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>/etc/X11/gdm/custom.conf</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>~gdm/.gconf.mandatory</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>~gdm/.gconf</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="gdm-1m-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+More information can be found at:
+</para>
+<para>
+<literal>http://library.gnome.org/admin/gdm</literal>
+</para>
+
+<para>
+Latest version of the <citetitle>GNOME Desktop User Guide</citetitle> for your
+platform.
+</para>
+
+<para>
+<citerefentry><refentrytitle>gdmdynamic</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdmflexiserver</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm-screenshot</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gconftool-2</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gconf-editor</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>login</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ssh</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>Xorg</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>Xserver</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>audit</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>console-kit-daemon</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm-stop</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>svcadm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>libwrap</refentrytitle><manvolnum>3</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>pam</refentrytitle><manvolnum>3PAM</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>logindevperm</refentrytitle><manvolnum>4</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>pam.conf</refentrytitle><manvolnum>4</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>profile</refentrytitle><manvolnum>4</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>user_attr</refentrytitle><manvolnum>4</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>environ</refentrytitle><manvolnum>5</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>smf</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="gdm-1-note"><title>&note-tt;</title>
+<para>
+This man page written by Martin K. Petersen &lt;mkp@mkp.net>, George Lebl
+&lt;jirka@5z.com&gt;, and Brian Cameron &lt;brian.cameron@sun.com&gt;.
+Copyright (c) 1998, 1999 by Martin K. Petersen.
+Copyright (c) 2001, 2003, 2004 by George Lebl.
+Copyright (c) 2003 by Red Hat, Inc.
+Copyright (c) 2006, 2009 by Sun Microsystems, Inc.
+</para>
+</refsect1>
+</refentry>
+

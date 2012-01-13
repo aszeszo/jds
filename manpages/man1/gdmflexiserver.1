@@ -1,0 +1,246 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2003/261 gdm2 - Gnome Display Manager -->
+<!--ARC : LSARC 2005/417 GDM2 as default Solaris Display Manager -->
+<!--ARC : LSARC 2008/207 GNOME 2.22 -->
+<!--ARC : LSARC 2008/662 GDM system user home directory -->
+<!--ARC : LSARC 2009/433 GDM 2.28 -->
+<!ENTITY cmd "gdmflexiserver">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2004,2006,2009 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<refentry id="gdmflexiserver-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">20 Oct 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>&cmd;</primary></indexterm>
+<indexterm><primary>
+Runs flexible (on demand) X servers
+</primary></indexterm>
+<refnamediv id="gdmflexiserver-1-name"><refname>&cmd;</refname>
+<refpurpose>
+Runs flexible (on demand) X servers
+</refpurpose></refnamediv>
+<refsynopsisdiv id="gdmflexiserver-1-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-authenticate</option></arg>
+<arg choice="opt"><option>-command=<replaceable>command</replaceable></option></arg>
+<arg choice="opt"><option>-debug</option></arg>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-monte-carlo-pi</option></arg>
+<arg choice="opt"><option>-no-lock</option></arg>
+<arg choice="opt"><option>-version</option></arg>
+<arg choice="opt"><option>-xnest</option></arg>
+</cmdsynopsis></refsynopsisdiv>
+
+<refsect1 id="gdmflexiserver-1-desc"><title>&desc-tt;</title>
+<para>
+<command>&cmd;</command> is primarily used to run flexible (on demand) X
+servers via the virtual terminal interface.  <command>&cmd;</command> allows a
+user to log in once and then quits.  This is useful if you are logged in as
+user A, and user B wants to log in quickly but user A does not wish to log out.
+The X server ensures that the virtual terminal switching works transparently.
+</para>
+
+<para>
+In GDM 2.20 and earlier, <command>&cmd;</command> was the primary interface
+for starting flexible X server sessions.  In the current version of GDM, the
+&quot;User Switcher&quot; panel applet is more typically used for this
+purpose when using the GNOME desktop.  The <command>&cmd;</command> interface
+is provided for backwards compatibility purposes, and to provide an interface
+for starting flexible X server sessions when not using the GNOME desktop.
+</para>
+
+<para>
+Many of the <command>&cmd;</command> options are no longer supported in GDM
+and are ignored if used.  For example, GDM 2.20 and earlier made use of the
+<option>-command</option> option to query information from the GDM daemon and
+to control its behavior.  Current versions of GDM use D\-Bus for this purpose
+and gdmflexiserver now only supports the &quot;VERSION&quot; command.
+</para>
+</refsect1>
+
+<refsect1 id="gdmflexiserver-1-opts">
+<title>&opts-tt;</title>
+<para>The following options are supported:</para>
+<variablelist termlength="medium">
+
+<varlistentry>
+<term><option>a</option>, <option>-authenticate</option></term>
+<listitem><para>
+Ignored.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><option>c</option>, <option>-command=<replaceable>command</replaceable></option></term>
+<listitem><para>
+Run the specified command.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>d</option>, <option>-debug</option></term>
+<listitem><para>
+Enable debugging output.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>h</option>, <option>-help</option></term>
+<listitem><para>
+Display detailed usage message.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><option>-monte-carlo-pi</option></term>
+<listitem><para>
+Easter egg.  Determine the value of pi using a Monte Carlo simulation.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><option>l</option>, <option>-no-lock</option></term>
+<listitem><para>
+Ignored.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><option>-version</option></term>
+<listitem><para>
+Display GDM version number.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><option>n</option>, <option>-xnest</option></term>
+<listitem><para>
+Ignored.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="gdmflexiserver-1-exde"><title>&exde-tt;</title>
+<para>
+<command>&cmd;</command> accepts the following with the
+<option>-command</option> option:
+</para>
+<itemizedlist>
+<listitem><command>VERSION</command></listitem>
+</itemizedlist>
+<para>
+Each is described in detail in the following section:
+</para>
+
+<refsect2 id="gdmflexiserver-1-exde-VERSION">
+<title>VERSION</title>
+<variablelist>
+<varlistentry>
+<term>Description:</term>
+<listitem><para>
+Query GDM version
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Supported since:</term>
+<listitem><para>
+2.2.4.0
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Arguments:</term>
+<listitem><para>
+None
+</para></listitem></varlistentry>
+<varlistentry>
+<term>Answers:</term>
+<listitem><para>
+GDM <replaceable>gdm-version</replaceable>
+</para></listitem></varlistentry>
+</variablelist>
+</refsect2>
+</refsect1>
+
+<refsect1 id="gdmflexiserver-1-exam"><title>&exam-tt;</title>
+<example role="example">
+<title>To see the GDM version</title>
+<para>
+<screen>
+example% <userinput>&cmd; <option>-command</option>=VERSION</userinput>
+<computeroutput>GDM  2.28.1</computeroutput>
+</screen></para>
+</example>
+</refsect1>
+
+<refsect1 id="gdmflexiserver-1-file"><title>&file-tt;</title>
+<para>
+The following files are used by this application:
+</para>
+<variablelist termlength="wide">
+<varlistentry>
+<term><filename>/usr/bin/&cmd;</filename></term>
+<listitem><para>
+Executable for Run flexible (on demand) X servers.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="gdmflexiserver-1-attr"><title>&attr-tt;</title>
+<para>See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry>
+</row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>system/display-manager/gdm </para></entry></row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="gdmflexiserver-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>Latest version of the <citetitle>GNOME Desktop User Guide</citetitle>
+for your platform.</para>
+<para>
+<citerefentry><refentrytitle>gdmdynamic</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm-screenshot</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm-stop</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="gdmflexiserver-1-note"><title>&note-tt;</title>
+<para>
+Original man page written by Martin K. Petersen &lt;mkp@mkp.net&gt;, George
+Lebl &lt;jirka@5z.com&gt;. Copyright (c) 1998, 1999 by Martin K.  Petersen.
+Copyright (c) 2001, 2003, 2004 by George Lebl. Copyright (c) 2003 by Red Hat,
+Inc.
+</para>
+<para>
+Updated by Brian Cameron, Sun Microsystems Inc., 2004, 2006, 2009.
+</para>
+</refsect1>
+</refentry>

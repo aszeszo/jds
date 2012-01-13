@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-xml-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-xml-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-xml-root.copyright
+d none etc 0755 root sys
+d none etc/sgml 0755 root sys
+v none etc/sgml/catalog=etc/sgml/catalog 0644 root sys
+v none etc/sgml/sgml.conf=etc/sgml/sgml.conf 0644 root sys
+d none etc/xml 0755 root sys
+v none etc/xml/catalog=etc/xml/catalog 0644 root sys
+v none etc/xml/docbook-xmlcatalog=etc/xml/docbook-xmlcatalog 0644 root sys
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/method 0755 root bin
+f none lib/svc/method/docbook-catalog-update.sh=lib/svc/method/docbook-catalog-update.sh 0555 root bin
+d none var 0755 root sys
+d none var/svc 0755 root sys
+d manifest var/svc/manifest 0755 root sys
+d manifest var/svc/manifest/application 0755 root sys
+d manifest var/svc/manifest/application/desktop-cache 0755 root sys
+f manifest var/svc/manifest/application/desktop-cache/docbook-catalog-update.xml=var/svc/manifest/application/desktop-cache/docbook-catalog-update.xml 0444 root sys

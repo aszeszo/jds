@@ -1,0 +1,44 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWfsexam.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWfsexam.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWfsexam.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWfsexam.copyright
+f none share/doc/SUNWfsexam/AUTHORS=usr/share/doc/SUNWfsexam/AUTHORS 0444 root bin
+f none share/doc/SUNWfsexam/COPYING=usr/share/doc/SUNWfsexam/COPYING 0444 root bin
+f none share/doc/SUNWfsexam/ChangeLog=usr/share/doc/SUNWfsexam/ChangeLog 0444 root bin
+f none share/doc/SUNWfsexam/NEWS=usr/share/doc/SUNWfsexam/NEWS 0444 root bin
+f none share/doc/SUNWfsexam/README=usr/share/doc/SUNWfsexam/README 0444 root bin
+d none bin 0755 root bin
+f none bin/fsexam=usr/bin/fsexam 0755 root bin
+s none bin/fsexamc=fsexam
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_Fsexam.server=usr/lib/bonobo/servers/GNOME_Fsexam.server 0644 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/fsexam.desktop=usr/share/applications/fsexam.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWfsexam 0755 root bin
+d none share/fsexam 0755 root other
+d none share/fsexam/glade 0755 root bin
+f none share/fsexam/glade/fsexam.glade2=usr/share/fsexam/glade/fsexam.glade2 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/fsexam 0755 root bin
+d none share/gnome/help/fsexam/C 0755 root bin
+d none share/gnome/help/fsexam/C/figures 0755 root bin
+f none share/gnome/help/fsexam/C/figures/fsexam-pref.png=usr/share/gnome/help/fsexam/C/figures/fsexam-pref.png 0644 root bin
+f none share/gnome/help/fsexam/C/figures/fsexam.png=usr/share/gnome/help/fsexam/C/figures/fsexam.png 0644 root bin
+f none share/gnome/help/fsexam/C/fsexam.xml=usr/share/gnome/help/fsexam/C/fsexam.xml 0644 root bin
+d none share/idl 0755 root bin
+f none share/idl/GNOME_Fsexam.idl=usr/share/idl/GNOME_Fsexam.idl 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/fsexam.1=usr/share/man/man1/fsexam.1 0644 root bin
+d none share/man/man4 0755 root bin
+f none share/man/man4/fsexam.4=usr/share/man/man4/fsexam.4 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/fsexam 0755 root bin
+f none share/omf/fsexam/fsexam-C.omf=usr/share/omf/fsexam/fsexam-C.omf 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/fsexam-icon.png=usr/share/pixmaps/fsexam-icon.png 0644 root bin

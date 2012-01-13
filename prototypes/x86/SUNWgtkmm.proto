@@ -1,0 +1,26 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtkmm.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtkmm.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtkmm.copyright
+f none share/doc/SUNWgtkmm/AUTHORS=usr/share/doc/SUNWgtkmm/AUTHORS 0444 root bin
+f none share/doc/SUNWgtkmm/COPYING.bz2=usr/share/doc/SUNWgtkmm/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgtkmm/ChangeLog.bz2=usr/share/doc/SUNWgtkmm/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgtkmm/NEWS.bz2=usr/share/doc/SUNWgtkmm/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgtkmm/README=usr/share/doc/SUNWgtkmm/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libatkmm-1.6.so=libatkmm-1.6.so.1.1.0
+s none lib/libatkmm-1.6.so.1=libatkmm-1.6.so.1.1.0
+f none lib/libatkmm-1.6.so.1.1.0=usr/lib/libatkmm-1.6.so.1.1.0 0755 root bin
+s none lib/libgdkmm-2.4.so=libgdkmm-2.4.so.1.1.0
+s none lib/libgdkmm-2.4.so.1=libgdkmm-2.4.so.1.1.0
+f none lib/libgdkmm-2.4.so.1.1.0=usr/lib/libgdkmm-2.4.so.1.1.0 0755 root bin
+s none lib/libgtkmm-2.4.so=libgtkmm-2.4.so.1.1.0
+s none lib/libgtkmm-2.4.so.1=libgtkmm-2.4.so.1.1.0
+f none lib/libgtkmm-2.4.so.1.1.0=usr/lib/libgtkmm-2.4.so.1.1.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgtkmm 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libatkmm-1.6.3=usr/share/man/man3/libatkmm-1.6.3 0644 root bin
+f none share/man/man3/libgdkmm-2.4.3=usr/share/man/man3/libgdkmm-2.4.3 0644 root bin
+f none share/man/man3/libgtkmm-2.4.3=usr/share/man/man3/libgtkmm-2.4.3 0644 root bin

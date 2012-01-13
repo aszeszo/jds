@@ -1,0 +1,1498 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  Russian translation for avahi
+  Copyright (c) 2008 Rosetta Contributors and Canonical Ltd 2008
+  This file is distributed under the same license as the avahi package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  translation of ru.po to Russian
+  Copyright (C) 2006, Free Software Foundation
+  This file is distributed under the same license as the tracker package.
+ 
+  Vasiliy Faronov <qvvx@yandex.ru>, 2007.
+  Alexandre Rostovtsev <tetromino@gmail.com>, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  Valek Filippov <frob@df.ru>, 1999.
+  Vitaly Lipatov <lav@altlinux.ru>, 2002, 2003, 2004.
+  Kvyato Sergey <kvantos@plotinka.ru>, 2005, 2006.
+  Aleksandr Sokolov <saanchos@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  Russian translation of Dasher.
+  This file is distributed under the same license as the Dasher package.
+ 
+  Alex Ziranov <estyler@yandex.ru>, 2004.
+  Leonid Kanter <leon@asplinux.ru>, 2004.
+  Alexander Sigachov <alexander.sigachov@gmail.com>, 2006.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2006.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  translation of gok to Russian
+  Copyright (C) 2005 GNOME Accessibility Team
+  This file is distributed under the same license as the gok package.
+ 
+  Leonid Kanter <leon@asplinux.ru>, 2006.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  translation of ru.po to Russian
+  at-spi Russian translation.
+  Copyright (C) 2003, 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the at-spi package.
+ 
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2009.
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  translation of ru.po to Russian
+  Russian translation of mousetweaks
+  Copyright (C) 2008 Free Software Foundation
+  This file is distributed under the same license as the mousetweaks package
+ 
+ 
+  Yuriy Penkin <yura.penkin@gmail.com>, 2008.
+  Leonid Kanter <leon@asplinux.ru>, 2009.
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  Translation of orca to Russian
+ 
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2006, 2008.
+  Anatoly Kamynin <anatoly@tiflocomp.ru>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  translation of quick-lounge-applet to russian
+  This file is distributed under the same license as the quick-lounge-applet package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+  Yuri N. Sedunov <aris@altlinux.ru>, 2003.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2004/
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  Russian translation for gnome-netstatus
+  Copyright (C) 2003-2009 Free Software foundation
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Valek Filippov <frob@df.ru>, 2003.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2003-2004.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  translation of ru.po to Russian
+  translation of file-roller to Russian
+  File Roller translation into Russian
+  Copyright (C) 2001-2003, 2004, 2005, 2006, 2008, 2009 Free Software Foundation, Inc.
+ 
+  Sergei Acht <sergei@dgap.mipt.ru>, 2001.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2009.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+  Vyacheslav Dikonov <sdiconov@mail.ru> 2002
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  translation of gcalctool to Russian
+  Copyright (c) 1987-2003 Sun Microsystems, Inc.
+ 
+  Немного о переводе:
+ 
+  НЕЖЕЛАТЕЛЬНО переводить надписи на кнопках -- у
+  нас слишком много не-русских калькуляторов в ходу, и пользователи
+  привыкли к их надписям (например, что такое 'ВТ' думать, я полагаю,
+  будут долго, но до 'ВыТереть' не додумаются, а вот под 'CE' распознают
+  'ClEar' мгновенно).
+ 
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2005, 2006.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  Russian translations for gtkam.
+  Copyright (C) 2008 Lutz Müller and others
+  This file is distributed under the same license as the PACKAGE package.
+ 
+  Valek Filippov <frob@df.ru>, 2000.
+  Вячеслав Диконов (Vyacheslav Dikonov) <sdiconov@mail.ru>, 2004.
+  Evgenii Terechkov <evg@altlinux.org>, 2008.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  Russian translation of Brasero
+  Copyright 2008 Free Software Foundation.
+  This file is distributed under the same license as the Brasero package.
+ 
+  Aleksey Klimov <aleksey@alfey.net>, 2007
+  Yuri Myasoedov <omerta13@yandex.ru>, 2008
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  translation of sound-juicer to Russian
+  This file is distributed under the same license as the sound-juicer package.
+ 
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  translation of ru.po to
+  translation of libbonobo.HEAD.po to
+  Copyright (C) 2001-2002, 2005, 2006, 2007 Free Software Foundation, Inc.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>
+ 
+  Valek Filippov <frob@df.ru>, 2001-2002.
+  Dmitry Mastrukov <dmitry@taurussoft.org>, 2002.
+  Leonid Kanter <leon@asplinux.ru>, 2005, 2006, 2007.
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  translation of gconf-editor to Russian
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  Russian translation for GConf
+  Copyright (C) 2000-2002, 2005, 2006, 2008 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2005, 2006.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  Russian translation of bug-buddy
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000-2001.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+  Alexander Sigachov <alexander.sigachov@gmail.com>, 2006.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  Russian gDesklets translation.
+  Copyright (C) 2003, 2004 Sergey N. Belinsky
+  This file is distributed under the same license as the gDesklets package.
+  Sergey N. Belinsky <sergey_be@mail.ru>, 2003, 2004.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  translation of ru.po to Russian
+  Copyright 1998-2009, Free Software Foundation Inc.
+ 
+  Max Valianskiy <maxcom@vinchi.ru> 1998-99
+  Sergey Panov <sipan@mit.edu> 1999
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2006, 2007, 2008.
+  Maxim Popov <ravemax@hotbox.ru>, 2006, 2009.
+  Diesel <diesel594@gmail.com>, 2009.
+  Andrew Grigorev <andrew@ei-grad.ru>, 2009.
+  Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  translation of ru.po to Russian
+  translation of gnome-control-center to Russian
+ 
+  Max Valianskiy <maxcom@vinchi.ru>, 1998-99.
+  Sergey Panov <sipan@mit.edu>, 1999.
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2006, 2007, 2009.
+  Maxim Popov <ravemax@hotbox.ru>, 2006.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+  Valery Inozemtsev <inozemtsev@gmail.com>, 2009.
+  Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  translation of zenity.HEAD.po to
+  Copyright (C) 2003 zenity COPYRIGHT HOLDER
+  This file is distributed under the same license as the zenity package.
+ 
+  Shaynurov Ildar <shir80@mail.ru>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  Russian translation of gdm
+  Copyright (C) 1999,2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Sergey Panov <sipan@mit.edu>, 1999.
+  Valek Filippov  <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2006, 2007.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  translation of nautilus.gnome-2-28.po to Russian
+  translation of nautilus to Russian
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+ 
+ 
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2006, 2007, 2009.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008.
+  Alexander Sigachov <alexander.sigachov@gmail.com>, 2006.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  translation of gtksourceview to Russian
+  Copyright (C) 2003 Free Software Foundation
+  This file is distributed under the same license as the gtksourceview package.
+ 
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2003-2004.
+  Mikhail Zabaluev <mhz@altlinux.org>, 2004.
+  Leonid Kanter <leon@asplinux.ru>, 2005, 2006.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+  Lebedev Roman <roman@lebedev.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  translation of gtksourceview to Russian
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2003-2004.
+  Mikhail Zabaluev <mhz@altlinux.org>, 2004.
+  Leonid Kanter <leon@asplinux.ru>, 2005, 2006.
+  Translation of gtksourceview.
+  Copyright (C) 2003 Free Software Foundation
+  This file is distributed under the same license as the gtksourceview package.
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  Russian translation of yelp
+  Copyright (C) 2002, 2004, 2005, 2006, 2008 Free Software Foundation, Inc.
+ 
+  Igor Androsov <blace@mail.ru>, 2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  Russian translation of ghex
+  Copyright (C) 1999-2006 Free Software Foundation, Inc.
+ 
+  Valek Filppov <frob@df.ru>, 1999-2003, 2006
+  Sergey Panov <sipan@mit.edu>, 1999,2000.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  translation of ru.po to Russian
+  Copyright (C) 2001, 2003-2008 Free Software Foundation, Inc.
+  Sergey Volozhanin <svo@asplinux.ru>, 2001.
+  Alexandre Prokoudine <avp@altlinux.ru>, 2003, 2004.
+  Dmitry Beloglazov <dmaa@users.sf.net>, 2004-2008.
+  Антон Самохвалов <samant.ua@mail.ru>, 2008-2009.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  translation of gimp.po to Russian
+  Copyright (C) 1999-2002,2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 1999-2002.
+  Anatoly A. Yakushin <jaa@altlinux.ru>, 2003, 2004.
+  Roxana Kolosova <mavka@justos.org>, 2003-2006.
+  Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2005, 2006, 2007.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  Russian translation of gthumb
+ 
+  Диконов Вячеслав (Vyacheslav Dikonov) <sdiconov@mail.ru>, 2003.
+  Sergey Volozhanin <svo@asplinux.ru>, 2002.
+  Yuri N. Sedunov <aris@altlinux.ru>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2006.
+  Anton Shestakov <engored@ya.ru>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  translation of ru.po to Russian
+  Russian translation for Eye of GNOME.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+ 
+ 
+  Evgeny Bulgakov <bgav@netvision.net.il>, 1999.
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2007, 2009.
+  Alexander Sigachov <alexander.sigachov@gmail.com>, 2006.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2007.
+  Anisimov Victor <vicanis@gmail.com>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  translation of gnome-keyring to Russian
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+ 
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2004.
+  Leonid Kanter <leon@asplinux.ru>, 2006.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2006.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+  Lebedev Roman <roman@lebedev.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  translation of libgnome to Russian
+ 
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2001-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Leonid Kanter <leon@asplinux.ru>, 2005, 2006, 2007.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  translation of libbonoboui to Russian
+  Copyright (C) 2001-2003, 2004, 2005, 2006 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2001-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  Russian translation of gnome-media
+  Copyright (C) 1998-2008 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+  Max Valianskiy <maxcom@vinchi.ru> 1998-99
+  Sergey Panov <sipan@mit.edu> 1999
+  Valery Inozemtsev <inozemtsev@gmail.com>, 2009.
+  Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Translation of gstreamer messages to Russian
+  This file is put in the public domain.
+  Peter Astakhov <astakhovp@mail.ru>, 2005.
+  Артём Попов <artfwo@gmail.com>, 2009.
+  Pavel Maryanov <acid_jack@ukr.net>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Translation for gst-plugins-base messages to Russian
+  This file is put in the public domain.
+  Артём Попов <artfwo@gmail.com>, 2009.
+  Pavel Maryanov <acid_jack@ukr.net>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Translation for gst-plugins-good messages to Russian
+  This file is put in the public domain.
+  Артём Попов <artfwo@gmail.com>, 2009.
+  Pavel Maryanov <acid_jack@ukr.net>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  Copyright (C) 2004 Free Software Foundation
+ 
+  This file is distributed under the same license as the rhythmbox package.
+ 
+  Nail Abdrahmanov <nail@gella.com.ru>, 2002.
+  Dan Korostelev <dan@ats.energo.ru>, 2004.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2004.
+  Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  translation of ru.po to Russian
+  Russian translation of totem
+  This file is distributed under the same license as the totem package.
+ 
+  Nail Abdrahmanov <nail@gella.com.ru>, 2002.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2006, 2007, 2009.
+  Tuchinsky Artem <tuchinsky@gmail.com, 2006.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+  Alexander Saprykin <xelfium@gmail.com>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  Russian translation of alacarte
+  Copyright (C) Free Software Foundation
+  This file is distributed under the same license as the alacarte package.
+ 
+  Leonid Kanter <leon@asplinux.ru>, 2006, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  translation of gnome-menus to Russian
+  Copyright (C) 1998-2003, 2005, 2006, 2007 Free Software Foundation, Inc.
+ 
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2004.
+  Leonid Kanter <leon@asplinux.ru>, 2005, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  translation of gnome-panel to Russian
+  Copyright (C) 1998-2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+ 
+  Max Valianskiy <maxcom@vinchi.ru>, 1998-1999.
+  Sergey Panov <sipan@mit.edu>, 1999.
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2006, 2007.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  translation of libwnck to Russian
+  Copyright (C) 2002, 2005, 2006 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002.
+  Leonid Kanter <leon@asplinux.ru>, 2005.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  translation of ru.po to Russian
+  translation of gnome-desktop to Russian
+  Copyright (C) 1998-2002, 2005, 2006, 2007, 2009 Free Software Foundation, Inc.
+ 
+  Max Valianskiy <maxcom@vinchi.ru>, 1998-1999.
+  Sergey Panov <sipan@mit.edu>, 1999.
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2005, 2006, 2007, 2009.
+  Zhovner Pavel <zhovner@ukr.net>, 2007.
+  Alexander Saprykin <xelfium@gmail.com>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  Russian translation of evince.
+  Copyright (C) 2005-2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the evince package.
+ 
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2005.
+  Yuriy Penkin <yuriy.penkin@gmail.com>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  Copyright (C) 2000 Free Software Foundation, Inc.
+  Valek Filippov <frob@df.ru>, 2000.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  translation of gnome-power-manager to Russian
+ 
+  Copyright (C) 2005, 2006, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Leonid Kanter <leon@asplinux.ru>, 2006.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  translation of vino.po to Russian
+  This file is distributed under the same license as the vino package.
+  Copyright (C) Free Software Foundation, Inc.
+ 
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  translation of gnome-session to Russian
+  Copyright (C) 1998-2002, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Max Valianskiy <maxcom@vinchi.ru>, 1998-1999.
+  Sergey Panov <sipan@mit.edu>, 1999.
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2007, 2008.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  translation of gnome-system-monitor to Russian
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+ 
+  Sergey Volozhanin <svo@asplinux.ru>, 2001.
+  Valek Filippov  <frob@df.ru>, 2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+  Alexander Sigachov <ajvol2@gmail.com>, 2007.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  translation of gnome-system-tools.HEAD.po to Russian
+  Copyright (C) 2000, 2006 Free Software Foundation, Inc.
+  Valek Filippov <frob@df.ru>, 2000, 2001.
+  Alexander Bokovoy <ab@altlinux.ru>, 2001.
+  Valek Filippov <frob@df.ru>, 2004.
+  Zarubin Pavel aka Gnome <gnome_bin@mail.ru>, 2004.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  translation of ru.po to Russian
+  Copyright (C) 2002,2003, 2004, 2005, 2006, 2009 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Kir Kolyshkin <kir@sacred.ru>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2009.
+  Tuchinsky Artem <tuchinsky@gmail.com>, 2006.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  translation of gedit to Russian
+  Copyright (C) 1999-2003, 2004, 2005, 2006, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000-2002, 2003.
+  Sergey Panov <sipan@mit.edu>, 1999-2000.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2003, 2004, 2005, 2006.
+  Maxim Popov <ravemax@hotbox.ru>, 2006.
+  Alexandre Prokoudine <alexandre.prokoudine@gmail.com>, 2007.
+  Nickolay V. Shmyrev <nshmyrev@yandex.ru>, 2007.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  translation of gnome-backgrounds.po to Russian
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+  Leonid Kanter <leon@asplinux.ru>, 2005.
+  Alexander Sigachov <alexander.sigachov@gmail.com>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  translation of gnome-icon-theme.HEAD.po to Russian
+  Copyright (C) 2003, 2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-icon-theme package.
+ 
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2003-2004.
+  Leonid Kanter <leon@asplinux.ru>, 2005.
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  Russian translation for gnome-themes.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-themes package.
+ 
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2006.
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  translation of glade3 to Russian
+  Copyright (C) 2001 Free Software Foundation
+ 
+  Valek Filippov <frob@df.ru>, 2001.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  translation of ru.po to Russian
+  translation of gnome-utils to Russian
+  Copyright (C) 1999-2002, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+ 
+ 
+  Valek Filppov <frob@df.ru>, 1999-2002.
+  Sergey Panov <sipan@mit.edu>, 1999,2000.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2007, 2009.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008.
+  Anisimov Victor <vicanis@gmail.com>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Translation of shared-mime-info messages to Russian
+  This file is distributed under the same license as the shared-mime-info package.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  Peter Astakhov <astakhovp@mail.ru>, 2005.
+  Peter Astakhov <astakhovp@mail.ru>, 2008.
+  Anton Shestakov <engored@ya.ru>, 2008.
+  Pavel Maryanov <acid_jack@ukr.net>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  translation of gnome-vfs.pot to Russian
+  Copyright (C) 2000-2002, 2004, 2005, 2006 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2004.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  Copyright (C) 2000-2002 Free Software Foundation, Inc.
+  Valek Filippov <frob@df.ru>, 2000-2002.
+  Dmitry Mastrukov <dmitry@taurussoft.org>, 2002-2003
+  Andrew W. Nosenko <awn@bcs.zp.ua>, 2003
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  translation of metacity to Russian
+  Copyright (C) 2001, 2005, 2006 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2001.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Dmitry G. Mastrukov <dmitry@taurussoft.org>, 2002-2003.
+  Andrew w. Nosenko <awn@bcs.zp.ua>, 2003.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  Russian translation file.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the gtkspell package.
+  Basil Shubin <bashu@surgut.ru>, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  translation of seahorse to Russian
+  Copyright (C) 2000-2003, 2008 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000-2003.
+  Yuri Kozlov <kozlov.y@gmail.com>, 2008.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008.
+  Anisimov Victor <vicanis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  Russian translation for xdg-user-dirs
+  Copyright (C) 2007 Google, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  translation of ru.po to Russian
+  translation of evolution to Russian
+  Copyright (C) 2000,2002,2003, 2004, 2005, 2006, 2007, 2008, 2009 Free Software Foundation, Inc.
+ 
+ : ../shell/main.c:631
+  Valek Filippov <frob@df.ru>, 2000.
+  Dmitry Mastrukov  <dmitry@taurussoft.org>, 2001-2003.
+  Leonid Kanter <leon@asplinux.ru>, 2001-2003, 2004, 2005, 2006, 2007, 2008, 2009.
+  Michael Yakhontov <mvy@asplinux.ru>, 2003, 2005.
+  Anatol Kamynin <anatol@tiflocomp.ru>, 2008.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  translation of gtkhtml to Russian
+  Copyright (C) 2000-2008 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000.
+  Dmitry Mastrukov <dmitry@taurussoft.org>, 2001-2003.
+  Leonid Kanter <leon@asplinux.ru>, 2002-2004, 2005, 2006.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2007
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  translation of evolution-exchange to Russian
+  Copyright (C) 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution-exchange package.
+ 
+  Maxim Dziumanenko <mvd@mylinux.com.ua>, 2004.
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2006, 2007.
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  Russian translation of evolution-data-server
+  Copyright (C) 2000,2002,2003, 2004, 2005, 2006, 2007 Free Software Foundation, Inc.
+ 
+  Valek Filippov <frob@df.ru>, 2000.
+  Dmitry Mastrukov  <dmitry@taurussoft.org>, 2001-2003.
+  Leonid Kanter <leon@asplinux.ru.com>, 2004-2006, 2007.
+  Michael Yakhontov <mvy@asplinux.ru>, 2003.
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  translation of ru.po to
+  Russian translation of evolution-webcal
+  This file is distributed under the same license as the evolution-webcal package.
+  Dan Korostelev <dan@ats.energo.ru>
+ 
+  Leonid Kanter <leon@asplinux.ru>, 2004, 2005, 2007.
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of ru.po to
+  translation of ru.po to
+  translation of ru.po to
+  translation of ru.po to
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER.
+  Gregory Sapunkov <sapunidze@yandex.ru>, 2006.
+  Yulia Poyarkova <ypoyarko@redhat.com>, 2006, 2007.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

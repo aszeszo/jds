@@ -1,0 +1,39 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-python26-desktop.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-python26-desktop.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-python26-desktop.copyright
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/braseroburn.so=usr/lib/python2.6/vendor-packages/gtk-2.0/braseroburn.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/braseromedia.so=usr/lib/python2.6/vendor-packages/gtk-2.0/braseromedia.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/bugbuddy.py=usr/lib/python2.6/vendor-packages/gtk-2.0/bugbuddy.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/bugbuddy.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/bugbuddy.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/evince.so=usr/lib/python2.6/vendor-packages/gtk-2.0/evince.so 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/evolution 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/evolution/__init__.py=usr/lib/python2.6/vendor-packages/gtk-2.0/evolution/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/evolution/ebook.so=usr/lib/python2.6/vendor-packages/gtk-2.0/evolution/ebook.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/evolution/ecal.so=usr/lib/python2.6/vendor-packages/gtk-2.0/evolution/ecal.so 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/gnome 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnome/applet.py=usr/lib/python2.6/vendor-packages/gtk-2.0/gnome/applet.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnome/applet.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/gnome/applet.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomeapplet.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomeapplet.so 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/gnomedesktop 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomedesktop/__init__.py=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomedesktop/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomedesktop/__init__.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomedesktop/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomedesktop/_gnomedesktop.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomedesktop/_gnomedesktop.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomekeyring.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomekeyring.so 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/gnomeprint 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/__init__.py=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/__init__.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/_print.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/_print.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/ui.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gnomeprint/ui.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gtksourceview.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gtksourceview.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gtop.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gtop.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/mediaprofiles.so=usr/lib/python2.6/vendor-packages/gtk-2.0/mediaprofiles.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/rsvg.so=usr/lib/python2.6/vendor-packages/gtk-2.0/rsvg.so 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/totem 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/totem/__init__.py=usr/lib/python2.6/vendor-packages/gtk-2.0/totem/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/totem/__init__.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/totem/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/totem/plparser.so=usr/lib/python2.6/vendor-packages/gtk-2.0/totem/plparser.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/wnck.so=usr/lib/python2.6/vendor-packages/gtk-2.0/wnck.so 0755 root bin

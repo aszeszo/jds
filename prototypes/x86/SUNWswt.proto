@@ -1,0 +1,23 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWswt.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWswt.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWswt.copyright
+f none share/doc/SUNWswt/about.html.bz2=usr/share/doc/SUNWswt/about.html.bz2 0444 root bin
+f none share/doc/SUNWswt/about_files/IJG_README.bz2=usr/share/doc/SUNWswt/about_files/IJG_README.bz2 0444 root bin
+f none share/doc/SUNWswt/about_files/lgpl-v21.txt.bz2=usr/share/doc/SUNWswt/about_files/lgpl-v21.txt.bz2 0444 root bin
+f none share/doc/SUNWswt/about_files/mpl-v11.txt.bz2=usr/share/doc/SUNWswt/about_files/mpl-v11.txt.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/swt 0755 root sys
+f none lib/swt/libswt-atk-gtk-3349.so=usr/lib/swt/libswt-atk-gtk-3349.so 0755 root bin
+f none lib/swt/libswt-awt-gtk-3349.so=usr/lib/swt/libswt-awt-gtk-3349.so 0755 root bin
+f none lib/swt/libswt-cairo-gtk-3349.so=usr/lib/swt/libswt-cairo-gtk-3349.so 0755 root bin
+f none lib/swt/libswt-gnome-gtk-3349.so=usr/lib/swt/libswt-gnome-gtk-3349.so 0755 root bin
+f none lib/swt/libswt-gtk-3349.so=usr/lib/swt/libswt-gtk-3349.so 0755 root bin
+f none lib/swt/libswt-pi-gtk-3349.so=usr/lib/swt/libswt-pi-gtk-3349.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWswt 0755 root bin
+d none share/doc/SUNWswt/about_files 0755 root bin
+d none share/lib 0755 root sys
+d none share/lib/java 0755 root sys
+f none share/lib/java/swt-debug.jar=usr/share/lib/java/swt-debug.jar 0644 root bin
+f none share/lib/java/swt.jar=usr/share/lib/java/swt.jar 0644 root bin

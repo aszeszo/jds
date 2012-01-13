@@ -1,0 +1,105 @@
+'\" te
+.TH seahorse-tool 1 "Nov 11, 2009" "seahorse" "GNOME" 
+
+.SH NAME
+seahorse-tool \- PGP/GnuPG file encryption for the GNOME Desktop
+
+.SH SYNOPSIS
+\fBseahorse-tool\fR
+[\fB\-\-help\fR] [\fB\-\-usage\fR] [\fB\-\-import \fIfile\fR] [\fB\-\-encrypt \fIfile\fR] [\fB\-\-sign \fIfile\fR] [\fB\-\-decrypt \fIfile\fR] [\fB\-\-verify \fIfile\fR] [\fB\-\-uri\-list\fR] [\fB\-\-version\fR]
+
+.SH "DESCRIPTION"
+.PP
+Seahorse is a GNOME application for managing encryption keys. 
+\fBseahorse-tool\fR allows you to encrypt, decrypt or sign files. It is integrated into the nautilus right-click menu, but can also be used from the command line.
+
+.SH "OPTIONS"
+
+.TP
+\fB\-?, \-\-help\fR
+Show summary of all options and exit.
+.TP
+\fB\-\-usage\fR
+Display brief usage message and exit.
+.TP
+\fB\-i \fR\fIfile\fR, \fB\-\-import \fR\fIfile\fR
+Import keys from the \fR\fIfile\fR.
+.TP
+\fB\-e \fR\fIfile\fR, \fB\-\-encrypt \fR\fIfile\fR
+Encrypt \fR\fIfile\fR.
+.TP
+\fB\-s \fR\fIfile\fR, \fB\-\-sign \fR\fIfile\fR
+Sign \fR\fIfile\fR with default key.
+.TP
+\fB\-d \fR\fIfile\fR, \fB\-\-decrypt \fR\fIfile\fR
+Decrypt encrypted \fR\fIfile\fR.
+.TP
+\fB\-v \fR\fIfile\fR, \fB\-\-verify \fIfile\fR
+Verify signature \fR\fIfile\fR.
+.TP
+\fB\-T, \-\-uri\-list\fR
+Read list of URIs on standard in.
+.TP
+\fB\-\-version\fR
+Show version information and exit.
+.\" End List
+
+.SH "BUGS"
+.PP
+If you find a bug, please report it at 
+ \fIhttp://bugzilla.gnome.org/enter_bug.cgi?product=seahorse\fR.
+
+.SH "AUTHORS"
+.PP
+Jacob
+Perkins
+<jap1@users.sourceforge.net>
+.PP
+Stef
+Walter
+<stef@memberwebs.com>
+.PP
+Adam
+Schreiber
+<sadam@clemson.edu>
+.PP
+This man page was originally written by
+Michael
+Mende
+<debian@menole.net>
+for the Debian system.
+
+.SH "COPYRIGHT"
+.PP
+.br
+Copyright (C) 2001, 2002 Jose Carlos Garcia Sogo
+.br
+Copyright (C) 2002, 2003 Jacob Perkins
+.br
+Copyright (C) 2004, 2006 Stef Walter, Adam Schreiber
+
+.SH "LICENSE"
+.PP
+.br
+You are free to distribute this software under the terms of the GNU General Public License.
+.br
+Documentation and help files are covered by GFDL license.
+
+.SH "ATTRIBUTES"
+.PP
+See \fBattributes\fR(5)
+for descriptions of the following attributes:
+.TS
+tab(^G) allbox;
+cw(2.750000i)| cw(2.750000i)
+lw(2.750000i)| lw(2.750000i).
+ATTRIBUTE TYPE^ATTRIBUTE VALUE
+Availability^SUNWseahorse-plugins
+Interface stability^Volatile
+.TE
+
+.SH "SEE ALSO"
+.PP
+\fBseahorse(1)\fR
+\fBseahorse\-daemon(1)\fR
+\fBseahorse\-agent(1)\fR

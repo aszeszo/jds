@@ -1,0 +1,11 @@
+--- gthumb-2.12.0/configure.ac-orig	2010-10-27 19:40:36.206293788 -0500
++++ gthumb-2.12.0/configure.ac	2010-10-27 19:40:46.990364327 -0500
+@@ -2,6 +2,8 @@ AC_PREREQ(2.63)
+ AC_INIT([gthumb],[2.12.0],[http://bugzilla.gnome.org/enter_bug.cgi?product=gthumb])
+ AM_INIT_AUTOMAKE([1.9 foreign])
+ 
++AC_PROG_LIBTOOL
++
+ AC_CONFIG_HEADERS([config.h])
+ AC_CONFIG_MACRO_DIR([m4])
+ AC_CONFIG_SRCDIR([configure.ac])

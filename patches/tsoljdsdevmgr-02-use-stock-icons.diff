@@ -1,0 +1,44 @@
+Index: src/devmgr-props-dialog.c
+===================================================================
+--- src/devmgr-props-dialog.c	(revision 12)
++++ src/devmgr-props-dialog.c	(working copy)
+@@ -47,8 +47,6 @@
+ #define MAJOR_LEFT_JUSTIFY	5
+ #define MINOR_LEFT_JUSTIFY	15
+ #define YSPACING		5
+-#define DIRECTORY_IMAGE		"/usr/share/icons/blueprint/stock/16x16/stock_open_16.png"
+-#define UNDO_IMAGE		"/usr/share/icons/blueprint/stock/16x16/stock_undo_16.png"
+ #define UNDO_IMAGE_HEIGHT	20
+ 
+ enum {
+@@ -1274,20 +1272,7 @@
+ 				"use-underline",	TRUE,
+ 				NULL);
+ 
+-	tmp = gdk_pixbuf_new_from_file(UNDO_IMAGE, NULL);
+-	image_height = UNDO_IMAGE_HEIGHT + 2;
+-	scaled_w = (gdk_pixbuf_get_width (tmp) * image_height)/ gdk_pixbuf_get_height (tmp);
+-	ws_scaled = gdk_pixbuf_new (GDK_COLORSPACE_RGB, 
+-			      TRUE,
+-			      8, scaled_w, 
+-			      image_height);
+-	gdk_pixbuf_scale (tmp, ws_scaled,  0, 0,
+-		    scaled_w, image_height, 0, 0,
+-		    (double) image_height/ gdk_pixbuf_get_height (tmp),
+-		    (double) image_height/ gdk_pixbuf_get_height (tmp),
+-		    GDK_INTERP_HYPER);
+-	image = gtk_image_new();
+-	g_object_set(image, "pixbuf", ws_scaled, NULL);
++	image = gtk_image_new_from_stock(GTK_STOCK_UNDO, GTK_ICON_SIZE_BUTTON);
+ 
+ 	bbox = gtk_hbox_new(FALSE, 0);
+ 	gtk_container_set_border_width(GTK_CONTAINER(bbox), 2);
+@@ -1416,7 +1401,7 @@
+ 		GTK_EXPAND | GTK_FILL, GTK_FILL | GTK_SHRINK, 0, 0);
+ 	button = g_object_new(GTK_TYPE_BUTTON, NULL);
+ 	bbox = gtk_hbox_new(FALSE, 0);
+-	image = gtk_image_new_from_file(DIRECTORY_IMAGE);
++	image = gtk_image_new_from_stock(GTK_STOCK_DIRECTORY, GTK_ICON_SIZE_BUTTON);
+ 	gtk_box_pack_start(GTK_BOX(bbox), image, FALSE, FALSE, 0);
+ 	gtk_container_add(GTK_CONTAINER(button), bbox);
+ 	g_signal_connect (G_OBJECT(button), "clicked", G_CALLBACK(find_clean_program), (gpointer)clean_entry);

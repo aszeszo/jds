@@ -1,0 +1,49 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopenjade.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopenjade.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopenjade.copyright
+d none bin 0755 root bin
+s none bin/jade=openjade
+f none bin/openjade=usr/bin/openjade 0755 root bin
+d none lib 0755 root bin
+s none lib/libogrove=libogrove.0.0.1
+s none lib/libogrove.0=libogrove.0.0.1
+f none lib/libogrove.0.0.1=usr/lib/libogrove.0.0.1 0755 root bin
+s none lib/libospgrove=libospgrove.0.0.1
+s none lib/libospgrove.0=libospgrove.0.0.1
+f none lib/libospgrove.0.0.1=usr/lib/libospgrove.0.0.1 0755 root bin
+s none lib/libostyle=libostyle.0.0.1
+s none lib/libostyle.0=libostyle.0.0.1
+f none lib/libostyle.0.0.1=usr/lib/libostyle.0.0.1 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/jade.1=usr/share/man/man1/jade.1 0644 root bin
+f none share/man/man1/openjade.1=usr/share/man/man1/openjade.1 0644 root bin
+d none share/sgml 0755 root bin
+s none share/sgml/CATALOG.jade_dsl=../../../../var/lib/sgml/CATALOG.openjade
+s none share/sgml/CATALOG.openjade=../../../../var/lib/sgml/CATALOG.openjade
+d none share/sgml/ISO_IEC_10179:1996 0755 root bin
+d none share/sgml/ISO_IEC_10179:1996/dtd 0755 root bin
+s none share/sgml/ISO_IEC_10179:1996/dtd/DSSSL_Architecture=../../openjade/dsssl.dtd
+d none share/sgml/James_Clark 0755 root bin
+d none share/sgml/James_Clark/dtd 0755 root bin
+s none share/sgml/James_Clark/dtd/DSSSL_Flow_Object_Tree=../../openjade/fot.dtd
+s none share/sgml/James_Clark/dtd/DSSSL_Style_Sheet=../../openjade/jade_style-sheet.dtd
+d none share/sgml/OpenJade 0755 root bin
+d none share/sgml/OpenJade/dtd 0755 root bin
+s none share/sgml/OpenJade/dtd/DSSSL_Style_Sheet=../../openjade/style-sheet.dtd
+d none share/sgml/openjade 0755 root bin
+f none share/sgml/openjade/builtins.dsl=usr/share/sgml/openjade/builtins.dsl 0644 root bin
+f none share/sgml/openjade/catalog=usr/share/sgml/openjade/catalog 0644 root bin
+f none share/sgml/openjade/dsssl.dtd=usr/share/sgml/openjade/dsssl.dtd 0644 root bin
+f none share/sgml/openjade/extensions.dsl=usr/share/sgml/openjade/extensions.dsl 0644 root bin
+f none share/sgml/openjade/fot.dtd=usr/share/sgml/openjade/fot.dtd 0644 root bin
+f none share/sgml/openjade/jade_style-sheet.dtd=usr/share/sgml/openjade/jade_style-sheet.dtd 0644 root bin
+s none share/sgml/openjade/japan.dcl=../opensp/japan.dcl
+s none share/sgml/openjade/japan.decl=japan.dcl
+s none share/sgml/openjade/sp_implied.dcl=../opensp/opensp-implied.dcl
+s none share/sgml/openjade/sp_implied.decl=sp_implied.dcl
+f none share/sgml/openjade/style-sheet.dtd=usr/share/sgml/openjade/style-sheet.dtd 0644 root bin
+s none share/sgml/openjade/xml.dcl=../opensp/xml.dcl
+s none share/sgml/openjade/xml.decl=xml.dcl
+s none share/sgml/openjade/xml.soc=../opensp/xml.soc

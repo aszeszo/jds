@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpython26-notify.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpython26-notify.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpython26-notify.copyright
+f none share/doc/SUNWpython26-notify/AUTHORS=usr/share/doc/SUNWpython26-notify/AUTHORS 0444 root bin
+f none share/doc/SUNWpython26-notify/COPYING.bz2=usr/share/doc/SUNWpython26-notify/COPYING.bz2 0444 root bin
+f none share/doc/SUNWpython26-notify/ChangeLog.bz2=usr/share/doc/SUNWpython26-notify/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/pynotify 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/pynotify/__init__.py=usr/lib/python2.6/vendor-packages/gtk-2.0/pynotify/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/pynotify/__init__.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/pynotify/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/pynotify/_pynotify.so=usr/lib/python2.6/vendor-packages/gtk-2.0/pynotify/_pynotify.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWpython26-notify 0755 root bin
+d none share/pygtk 0755 root bin
+d none share/pygtk/2.0 0755 root bin
+d none share/pygtk/2.0/defs 0755 root bin
+f none share/pygtk/2.0/defs/pynotify.defs=usr/share/pygtk/2.0/defs/pynotify.defs 0644 root bin

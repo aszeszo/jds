@@ -1,0 +1,36 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibglade-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibglade-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibglade-java.copyright
+d none lib 0755 root bin
+f none lib/libgladejni-2.12.so=usr/lib/libgladejni-2.12.so 0755 root bin
+s none lib/libgladejni.so=libgladejni-2.12.so
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/glade-java.pc=usr/lib/pkgconfig/glade-java.pc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/libglade-java-2.12.5 0755 root bin
+f none share/doc/libglade-java-2.12.5/AUTHORS=usr/share/doc/libglade-java-2.12.5/AUTHORS 0644 root bin
+f none share/doc/libglade-java-2.12.5/COPYING=usr/share/doc/libglade-java-2.12.5/COPYING 0644 root bin
+f none share/doc/libglade-java-2.12.5/NEWS=usr/share/doc/libglade-java-2.12.5/NEWS 0644 root bin
+f none share/doc/libglade-java-2.12.5/README=usr/share/doc/libglade-java-2.12.5/README 0644 root bin
+d none share/doc/libglade-java-2.12.5/examples 0755 root bin
+d none share/doc/libglade-java-2.12.5/examples/glade 0755 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/Example1.java=usr/share/doc/libglade-java-2.12.5/examples/glade/Example1.java 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/LibGladeTest.java=usr/share/doc/libglade-java-2.12.5/examples/glade/LibGladeTest.java 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/Test.java=usr/share/doc/libglade-java-2.12.5/examples/glade/Test.java 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/custom.glade=usr/share/doc/libglade-java-2.12.5/examples/glade/custom.glade 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/example1.glade=usr/share/doc/libglade-java-2.12.5/examples/glade/example1.glade 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/gtk.glade=usr/share/doc/libglade-java-2.12.5/examples/glade/gtk.glade 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/simple.glade=usr/share/doc/libglade-java-2.12.5/examples/glade/simple.glade 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/glade/test.glade=usr/share/doc/libglade-java-2.12.5/examples/glade/test.glade 0644 root bin
+d none share/doc/libglade-java-2.12.5/examples/gladegnome 0755 root bin
+f none share/doc/libglade-java-2.12.5/examples/gladegnome/LibGladeGnomeTest.java=usr/share/doc/libglade-java-2.12.5/examples/gladegnome/LibGladeGnomeTest.java 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/gladegnome/gnome-druid.glade=usr/share/doc/libglade-java-2.12.5/examples/gladegnome/gnome-druid.glade 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/gladegnome/gnome-propertybox.glade=usr/share/doc/libglade-java-2.12.5/examples/gladegnome/gnome-propertybox.glade 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/gladegnome/gnome-widgets.glade=usr/share/doc/libglade-java-2.12.5/examples/gladegnome/gnome-widgets.glade 0644 root bin
+d none share/doc/libglade-java-2.12.5/examples/overholt 0755 root bin
+f none share/doc/libglade-java-2.12.5/examples/overholt/Simple.java=usr/share/doc/libglade-java-2.12.5/examples/overholt/Simple.java 0644 root bin
+f none share/doc/libglade-java-2.12.5/examples/overholt/simple.glade=usr/share/doc/libglade-java-2.12.5/examples/overholt/simple.glade 0644 root bin
+d none share/java 0755 root bin
+f none share/java/glade2.12-2.12.5.jar=usr/share/java/glade2.12-2.12.5.jar 0644 root bin
+s none share/java/glade2.12.jar=glade2.12-2.12.5.jar

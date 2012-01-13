@@ -1,0 +1,1116 @@
+diff -r 8e82e30ad3d0 help/bg/gnome-terminal.xml
+--- a/help/bg/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/bg/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -16,10 +16,8 @@
+   <articleinfo> 
+      <title>Ръководство на Терминал на GNOME, версия 2.8</title> 
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -38,10 +36,10 @@
+      </publisher> &legal; 
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Екипът за превод на GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/ca/gnome-terminal.xml
+--- a/help/ca/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/ca/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -23,10 +23,8 @@
+        </para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -69,10 +67,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Equip de documentació del GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/cs/gnome-terminal.xml
+--- a/help/cs/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/cs/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>Terminál dává uživateli do rukou mocný nástroj na komunikaci se svým systémem pomocí textových příkazů v shellu (jako je například Bash).</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Dokumentační tým GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/da/gnome-terminal.xml
+--- a/help/da/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/da/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>Terminalen giver brugere muligheden for at kommunikere med deres system ved brug af tekstbaserede kommandoer gennem en skal såsom Bash.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>GNOME-dokumentationsholdet</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -120,7 +118,7 @@
+           <revnumber>Manual til GNOME-terminal V2.7</revnumber> 
+           <date>November 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision>
+@@ -128,7 +126,7 @@
+           <revnumber>Manual til GNOME-terminal V2.6</revnumber> 
+           <date>September 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision>
+@@ -136,7 +134,7 @@
+           <revnumber>Manual til GNOME-terminal V2.5</revnumber> 
+           <date>Maj 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision>
+@@ -144,7 +142,7 @@
+           <revnumber>Manual til GNOME-terminal V2.4</revnumber> 
+           <date>Januar 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision>
+@@ -152,7 +150,7 @@
+           <revnumber>Manual til GNOME-terminal V2.3</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision>
+@@ -160,7 +158,7 @@
+           <revnumber>Manual til GNOME-terminal V2.2</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision>
+@@ -168,7 +166,7 @@
+           <revnumber>Manual til GNOME-terminal V2.1</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision>
+@@ -176,7 +174,7 @@
+           <revnumber>Manual til GNOME-terminal V2.0</revnumber> 
+           <date>April 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-dokumentationsholdet</para>
++             <para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+              <para role="publisher">GNOME-dokumentationsprojektet</para>
+           </revdescription> 
+         </revision> 
+diff -r 8e82e30ad3d0 help/de/gnome-terminal.xml
+--- a/help/de/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/de/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>Das Terminal verleiht Benutzern die Macht, unter Verwendung textbasierter Befehle in einer Shell, wie beispielsweise der Bash, mit ihrem System zu kommunizieren.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>GNOME-Dokumentationsteam</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -120,7 +118,7 @@
+           <revnumber>GNOME-Terminal-Handbuch V2.7</revnumber> 
+           <date>November 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision>
+@@ -128,7 +126,7 @@
+           <revnumber>GNOME-Terminal-Handbuch V2.6</revnumber> 
+           <date>September 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision>
+@@ -136,7 +134,7 @@
+           <revnumber>GNOME-Terminal-Handbuch V2.5</revnumber> 
+           <date>Mai 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision>
+@@ -144,7 +142,7 @@
+           <revnumber>GNOME-Terminal-Handbuch V2.4</revnumber> 
+           <date>Januar 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision>
+@@ -152,7 +150,7 @@
+           <revnumber>GNOME-Terminal-Handbuch V2.3</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision>
+@@ -160,7 +158,7 @@
+           <revnumber>GNOME-Terminal-Handbuch Version 2.2</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision>
+@@ -168,7 +166,7 @@
+           <revnumber>GNOME-Terminal-Handbuch Version 2.1</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision>
+@@ -176,7 +174,7 @@
+           <revnumber>GNOME-Terminal-Handbuch Version 2.0</revnumber> 
+           <date>April 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME-Dokumentationsteam</para>
++             <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+              <para role="publisher">GNOME-Dokumentationsprojekt</para>
+           </revdescription> 
+         </revision> 
+diff -r 8e82e30ad3d0 help/el/gnome-terminal.xml
+--- a/help/el/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/el/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>Το Τερματικό επιτρέπει στους χρήστες να επικοινωνούν με το σύστημά τους χρησιμοποιώντας εντολές κειμένου και ένα κέλυφος όπως το Bash.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Ομάδα τεκμηρίωσης GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/en_GB/gnome-terminal.xml
+--- a/help/en_GB/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/en_GB/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>The Terminal gives users the power to communicate with their system using text-based commands through a shell such as Bash.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
+-          <surname>GNOME Documentation Team</surname> 
++          <firstname>Oracle Solaris</firstname> 
++          <surname>Desktop Documentation Team</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -120,7 +118,7 @@
+           <revnumber>GNOME Terminal Manual V2.7</revnumber> 
+           <date>November 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -128,7 +126,7 @@
+           <revnumber>GNOME Terminal Manual V2.6</revnumber> 
+           <date>September 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -136,7 +134,7 @@
+           <revnumber>GNOME Terminal Manual V2.5</revnumber> 
+           <date>May 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -144,7 +142,7 @@
+           <revnumber>GNOME Terminal Manual V2.4</revnumber> 
+           <date>January 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -152,7 +150,7 @@
+           <revnumber>GNOME Terminal Manual V2.3</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -160,7 +158,7 @@
+           <revnumber>GNOME Terminal Manual V2.2</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -168,7 +166,7 @@
+           <revnumber>GNOME Terminal Manual V2.1</revnumber> 
+           <date>August 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -176,7 +174,7 @@
+           <revnumber>GNOME Terminal Manual V2.0</revnumber> 
+           <date>April 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision> 
+diff -r 8e82e30ad3d0 help/es/gnome-terminal.xml
+--- a/help/es/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/es/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>El Terminal da a los usuarios la capacidad para comunicarse con su sistema usando comandos basados en texto a través de una «shell» como Bash.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Proyecto de Documentación de GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/fr/gnome-terminal.xml
+--- a/help/fr/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/fr/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>Le Terminal donne aux utilisateurs la possibilité de communiquer avec leur système en utilisant des commandes en mode texte au travers d'un shell tel que Bash.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Équipe de documentation GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/it/gnome-terminal.xml
+--- a/help/it/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/it/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>Il terminale fornisce agli utenti la possibilità di comandare il sistema sistema utilizzando un'interfaccia testuale attraverso una shell come Bash.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
+-          <surname>GNOME Documentation Team</surname> 
++          <firstname>Oracle Solaris</firstname> 
++          <surname>Desktop Documentation Team</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -121,7 +119,7 @@
+           <revnumber>Manuale del Terminale GNOME V2.7</revnumber> 
+           <date>Novembre 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -129,7 +127,7 @@
+           <revnumber>Manuale del Terminale GNOME V2.6</revnumber> 
+           <date>Settembre 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -137,7 +135,7 @@
+           <revnumber>Manuale del Terminale GNOME V2.5</revnumber> 
+           <date>Maggio 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -145,7 +143,7 @@
+           <revnumber>Manuale del Terminale GNOME V2.4</revnumber> 
+           <date>Gennaio 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -153,7 +151,7 @@
+           <revnumber>Manuale del Terminale GNOME V2.3</revnumber> 
+           <date>Agosto 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -161,7 +159,7 @@
+           <revnumber>Manuale del terminale GNOME V2.2</revnumber> 
+           <date>Agosto 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -169,7 +167,7 @@
+           <revnumber>Manuale del terminale GNOME V2.1</revnumber> 
+           <date>Agosto 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision>
+@@ -177,7 +175,7 @@
+           <revnumber>Manuale del terminale GNOME V2.0</revnumber> 
+           <date>Aprile 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">GNOME Documentation Project</para>
+           </revdescription> 
+         </revision> 
+diff -r 8e82e30ad3d0 help/ja/gnome-terminal.xml
+--- a/help/ja/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/ja/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -28,10 +28,10 @@
+      </publisher> &legal; 
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>GNOME ドキュメンテーションチーム</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -62,7 +62,7 @@
+           <date>2002 年 8 月</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME ドキュメンテーションチーム
++                Oracle Solaris Desktop ドキュメンテーションチーム
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">
+@@ -74,7 +74,7 @@
+           <date>2002 年 8 月</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME ドキュメンテーションチーム
++                Oracle Solaris Desktop ドキュメンテーションチーム
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">
+@@ -87,7 +87,7 @@
+           <date>2002 年 8 月</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME ドキュメンテーションチーム
++                Oracle Solaris Desktop ドキュメンテーションチーム
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">
+@@ -100,7 +100,7 @@
+           <date>2002 年 4 月</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME ドキュメンテーションチーム
++                Oracle Solaris Desktop ドキュメンテーションチーム
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">
+diff -r 8e82e30ad3d0 help/ko/gnome-terminal.xml
+--- a/help/ko/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/ko/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -23,10 +23,8 @@
+        </para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -69,10 +67,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>그놈 문서 팀</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/oc/gnome-terminal.xml
+--- a/help/oc/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/oc/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -23,10 +23,8 @@
+        </para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -128,10 +126,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Còla de documentacion de GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/pt_BR/gnome-terminal.xml
+--- a/help/pt_BR/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/pt_BR/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>O Terminal dá aos usuários o poder de comunicarem-se com seu sistema usando comandos baseados em texto através de um shell como o Bash.</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
+-          <surname>GNOME Documentation Team</surname> 
++          <firstname>Oracle Solaris</firstname> 
++          <surname>Desktop Documentation Team</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -121,7 +119,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.7</revnumber> 
+           <date>Novembro de 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -129,7 +127,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.6</revnumber> 
+           <date>Setembro de 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -137,7 +135,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.5</revnumber> 
+           <date>Maio de 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -145,7 +143,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.4</revnumber> 
+           <date>Janeiro de 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -153,7 +151,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.3</revnumber> 
+           <date>Agosto de 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -161,7 +159,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.2</revnumber> 
+           <date>Agosto de 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -169,7 +167,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.1</revnumber> 
+           <date>Agosto de 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -177,7 +175,7 @@
+           <revnumber>Manual do Terminal do GNOME V2.0</revnumber> 
+           <date>Abril de 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Projeto de Documentação do GNOME</para>
+           </revdescription> 
+         </revision> 
+diff -r 8e82e30ad3d0 help/ro/gnome-terminal.xml
+--- a/help/ro/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/ro/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -34,7 +34,7 @@
+           <firstname></firstname>
+           <surname>Echipa Sun pentru Documentaţii GNOME</surname>
+           <affiliation>
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/ru/gnome-terminal.xml
+--- a/help/ru/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/ru/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -23,10 +23,8 @@
+        </para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -69,10 +67,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Команда документирования GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -124,7 +122,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.7</revnumber> 
+           <date>Ноябрь 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -132,7 +130,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.6</revnumber> 
+           <date>Сентябрь 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -140,7 +138,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.5</revnumber> 
+           <date>Май 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -148,7 +146,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.4</revnumber> 
+           <date>Январь 2003</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -156,7 +154,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.3</revnumber> 
+           <date>Август 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -164,7 +162,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.2</revnumber> 
+           <date>Август 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -172,7 +170,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.1</revnumber> 
+           <date>Август 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision>
+@@ -180,7 +178,7 @@
+           <revnumber>Руководство терминала среды GNOME, вер. 2.0</revnumber> 
+           <date>Апрель 2002</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME Documentation Team</para>
++             <para role="author">Oracle Solaris Desktop Documentation Team</para>
+              <para role="publisher">Проект документации GNOME</para>
+           </revdescription> 
+         </revision> 
+diff -r 8e82e30ad3d0 help/sv/gnome-terminal.xml
+--- a/help/sv/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/sv/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -23,10 +23,8 @@
+        </para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -69,10 +67,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>GNOME-dokumentationsteam</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/uk/gnome-terminal.xml
+--- a/help/uk/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/uk/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -23,10 +23,8 @@
+        </para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -69,10 +67,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>Команда документування GNOME</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+diff -r 8e82e30ad3d0 help/zh_CN/gnome-terminal.xml
+--- a/help/zh_CN/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/zh_CN/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -20,10 +20,8 @@
+        <para>终端给用户使用基于文本的命令(例如 Bash)和系统交互的能力。</para>
+      </abstract>
+      <copyright> 
+-        <year>2002</year> 
+-        <year>2003</year> 
+-        <year>2004</year> 
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+      </copyright> 
+      <copyright> 
+         <year>2000</year> 
+@@ -66,10 +64,10 @@
+   
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>GNOME 文档团队</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -121,7 +119,7 @@
+           <revnumber>GNOME 终端手册 2.7 版</revnumber> 
+           <date>2003年11月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision>
+@@ -129,7 +127,7 @@
+           <revnumber>GNOME 终端手册 2.6 版</revnumber> 
+           <date>2003年9月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision>
+@@ -137,7 +135,7 @@
+           <revnumber>GNOME 终端手册 2.5 版</revnumber> 
+           <date>2003年5月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision>
+@@ -145,7 +143,7 @@
+           <revnumber>GNOME 终端手册 2.4 版</revnumber> 
+           <date>2003年1月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision>
+@@ -153,7 +151,7 @@
+           <revnumber>GNOME 终端手册 2.3 版</revnumber> 
+           <date>2002年8月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision>
+@@ -161,7 +159,7 @@
+           <revnumber>GNOME 终端手册 2.2 版</revnumber> 
+           <date>2002年8月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision>
+@@ -169,7 +167,7 @@
+           <revnumber>GNOME 终端手册 2.1 版</revnumber> 
+           <date>2002年8月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision>
+@@ -177,7 +175,7 @@
+           <revnumber>GNOME 终端手册 2.0 版</revnumber> 
+           <date>2002年4月</date> 
+           <revdescription> 
+-             <para role="author">Sun GNOME 文档团队</para>
++             <para role="author">Oracle Solaris Desktop 文档团队</para>
+              <para role="publisher">GNOME 文档项目</para>
+           </revdescription> 
+         </revision> 
+diff -r 8e82e30ad3d0 help/zh_TW/gnome-terminal.xml
+--- a/help/zh_TW/gnome-terminal.xml	Fri Jul 08 15:27:19 2011 +0800
++++ b/help/zh_TW/gnome-terminal.xml	Fri Jul 08 16:41:13 2011 +0800
+@@ -28,10 +28,10 @@
+      </publisher> &legal; 
+      <authorgroup> 
+         <author> 
+-          <firstname>Sun</firstname> 
++          <firstname>Oracle Solaris</firstname> 
+           <surname>GNOME 文件小組</surname> 
+           <affiliation> 
+-             <orgname>Sun Microsystems</orgname> 
++             <orgname>Oracle Corporation</orgname> 
+           </affiliation> 
+         </author> 
+         <author> 
+@@ -62,7 +62,7 @@
+           <date>&date;</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME 文件小組
++                Oracle Solaris Desktop 文件小組
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">
+@@ -75,7 +75,7 @@
+           <date>2002 年 8 月</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME 文件小組
++                Oracle Solaris Desktop 文件小組
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">
+@@ -88,7 +88,7 @@
+           <date>2002 年 8 月</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME 文件小組
++                Oracle Solaris Desktop 文件小組
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">
+@@ -101,7 +101,7 @@
+           <date>2002 年 4 月</date> 
+           <revdescription> 
+              <para role="author">
+-                Sun GNOME 文件小組
++                Oracle Solaris Desktop 文件小組
+                 <email>gdocteam@sun.com</email> 
+              </para>
+              <para role="publisher">

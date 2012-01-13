@@ -1,0 +1,49 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-screensaver.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-screensaver.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-screensaver.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-screensaver.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-screensaver.copyright
+d none bin 0755 root bin
+f none bin/gnome-screensaver=usr/bin/gnome-screensaver 0755 root bin
+f none bin/gnome-screensaver-command=usr/bin/gnome-screensaver-command 0755 root bin
+f none bin/gnome-screensaver-preferences=usr/bin/gnome-screensaver-preferences 0755 root bin
+d none lib 0755 root bin
+d none lib/gnome-screensaver 0755 root bin
+f none lib/gnome-screensaver-dialog=usr/lib/gnome-screensaver-dialog 0755 root bin
+f none lib/gnome-screensaver-gl-helper=usr/lib/gnome-screensaver-gl-helper 0755 root bin
+f none lib/gnome-screensaver/floaters=usr/lib/gnome-screensaver/floaters 0755 root bin
+f none lib/gnome-screensaver/popsquares=usr/lib/gnome-screensaver/popsquares 0755 root bin
+f none lib/gnome-screensaver/slideshow=usr/lib/gnome-screensaver/slideshow 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-screensaver.pc=usr/lib/pkgconfig/gnome-screensaver.pc 0644 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-screensaver-preferences.desktop=usr/share/applications/gnome-screensaver-preferences.desktop 0644 root bin
+d none share/applications/screensavers 0755 root bin
+f none share/applications/screensavers/cosmos-slideshow.desktop=usr/share/applications/screensavers/cosmos-slideshow.desktop 0644 root bin
+f none share/applications/screensavers/footlogo-floaters.desktop=usr/share/applications/screensavers/footlogo-floaters.desktop 0644 root bin
+f none share/applications/screensavers/personal-slideshow.desktop=usr/share/applications/screensavers/personal-slideshow.desktop 0644 root bin
+f none share/applications/screensavers/popsquares.desktop=usr/share/applications/screensavers/popsquares.desktop 0644 root bin
+d none share/desktop-directories 0755 root bin
+f none share/desktop-directories/gnome-screensaver.directory=usr/share/desktop-directories/gnome-screensaver.directory 0644 root bin
+d none share/gnome-screensaver 0755 root bin
+f none share/gnome-screensaver/gnome-screensaver-preferences.glade=usr/share/gnome-screensaver/gnome-screensaver-preferences.glade 0644 root bin
+f none share/gnome-screensaver/lock-dialog-default.glade=usr/share/gnome-screensaver/lock-dialog-default.glade 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-screensaver-command.1=usr/share/man/man1/gnome-screensaver-command.1 0644 root bin
+f none share/man/man1/gnome-screensaver-preferences.1=usr/share/man/man1/gnome-screensaver-preferences.1 0644 root bin
+f none share/man/man1/gnome-screensaver.1=usr/share/man/man1/gnome-screensaver.1 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/backgrounds 0755 root bin
+d none share/pixmaps/backgrounds/cosmos 0755 root bin
+f none share/pixmaps/backgrounds/cosmos/cloud.jpg=usr/share/pixmaps/backgrounds/cosmos/cloud.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/comet.jpg=usr/share/pixmaps/backgrounds/cosmos/comet.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/earth-horizon.jpg=usr/share/pixmaps/backgrounds/cosmos/earth-horizon.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/earthrise.jpg=usr/share/pixmaps/backgrounds/cosmos/earthrise.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/galaxy-ngc3370.jpg=usr/share/pixmaps/backgrounds/cosmos/galaxy-ngc3370.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/helix-nebula.jpg=usr/share/pixmaps/backgrounds/cosmos/helix-nebula.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/jupiter.jpg=usr/share/pixmaps/backgrounds/cosmos/jupiter.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/sombrero.jpg=usr/share/pixmaps/backgrounds/cosmos/sombrero.jpg 0644 root bin
+f none share/pixmaps/backgrounds/cosmos/whirlpool.jpg=usr/share/pixmaps/backgrounds/cosmos/whirlpool.jpg 0644 root bin
+f none share/pixmaps/gnome-logo-white.svg=usr/share/pixmaps/gnome-logo-white.svg 0644 root bin

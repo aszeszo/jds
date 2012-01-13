@@ -1,0 +1,14 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-removable-media.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-removable-media.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-removable-media.copyright
+d none bin 0755 root bin
+f none bin/gnome-volcheck=usr/bin/gnome-volcheck 0755 root bin
+d none lib 0755 root bin
+f none lib/gmedia_format=usr/lib/gmedia_format 0755 root bin
+f none lib/gmedia_prop=usr/lib/gmedia_prop 0755 root bin
+f none lib/gmedia_prot=usr/lib/gmedia_prot 0755 root bin
+f none lib/gmedia_slice=usr/lib/gmedia_slice 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/sman1 0755 root bin
+f none share/man/sman1/gnome-volcheck.1=usr/share/man/sman1/gnome-volcheck.1 0755 root bin

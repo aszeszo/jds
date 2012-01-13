@@ -1,0 +1,44 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-display-mgr-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-display-mgr-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-display-mgr-root.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-display-mgr-root.copyright
+d none etc 0755 root sys
+d none etc/X11 0755 root sys
+d none etc/X11/xinit 0755 root sys
+d none etc/X11/xinit/xinitrc.d 0755 root sys
+d none etc/dbus-1 0755 root bin
+d none etc/dbus-1/system.d 0755 root bin
+f none etc/dbus-1/system.d/gdm.conf=etc/dbus-1/system.d/gdm.conf 0644 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gdm-simple-greeter.schemas=etc/gconf/schemas/gdm-simple-greeter.schemas 0644 root sys
+d none etc/gdm 0755 root sys
+d none etc/gdm/Init 0755 root sys
+f none etc/gdm/Init/Default=etc/gdm/Init/Default 0755 root sys
+d none etc/gdm/PostLogin 0755 root sys
+f none etc/gdm/PostLogin/Default.sample=etc/gdm/PostLogin/Default.sample 0755 root sys
+d none etc/gdm/PostSession 0755 root sys
+f none etc/gdm/PostSession/Default=etc/gdm/PostSession/Default 0755 root sys
+d none etc/gdm/PreSession 0755 root sys
+f none etc/gdm/PreSession/Default=etc/gdm/PreSession/Default 0755 root sys
+f none etc/gdm/Xsession=etc/gdm/Xsession 0755 root sys
+e preserve etc/gdm/custom.conf=etc/gdm/custom.conf 0644 root sys
+f none etc/gdm/gdm.schemas=etc/gdm/gdm.schemas 0644 root sys
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/manifest 0755 root sys
+d none lib/svc/manifest/application 0755 root sys
+d none lib/svc/manifest/application/graphical-login 0755 root sys
+f none lib/svc/manifest/application/graphical-login/gdm.xml=lib/svc/manifest/application/graphical-login/gdm.xml 0444 root sys
+d none lib/svc/method 0755 root bin
+f none lib/svc/method/svc-gdm=lib/svc/method/svc-gdm 0555 root bin
+d none var 0755 root sys
+d none var/cache 0755 root bin
+d none var/cache/gdm 0755 root gdm
+d none var/lib 0755 root other
+d none var/lib/gdm 1770 root gdm
+d none var/lib/gdm/.gconf.mandatory 0770 root gdm
+f none var/lib/gdm/.gconf.mandatory/%gconf-tree.xml=var/lib/gdm/.gconf.mandatory/%gconf-tree.xml 1640 root gdm
+f none var/lib/gdm/.gconf.path=var/lib/gdm/.gconf.path 1640 root gdm
+d none var/log 0755 root sys
+d none var/log/gdm 1770 root gdm

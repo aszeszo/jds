@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsqlite3.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsqlite3.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsqlite3.copyright
+d none bin 0755 root bin
+f none bin/sqlite3=usr/bin/sqlite3 0755 root bin
+d none lib 0755 root bin
+s none lib/libsqlite3.so=libsqlite3.so.0.8.6
+s none lib/libsqlite3.so.0=libsqlite3.so.0.8.6
+f none lib/libsqlite3.so.0.8.6=usr/lib/libsqlite3.so.0.8.6 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libsqlite3.so=libsqlite3.so.0.8.6
+s none lib/sparcv9/libsqlite3.so.0=libsqlite3.so.0.8.6
+f none lib/sparcv9/libsqlite3.so.0.8.6=usr/lib/sparcv9/libsqlite3.so.0.8.6 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/sqlite3.1=usr/share/man/man1/sqlite3.1 0644 root bin

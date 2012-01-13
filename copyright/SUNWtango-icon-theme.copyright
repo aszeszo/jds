@@ -1,0 +1,27 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+
+Licensing and copyright information for %{tango.name}-%{tango.version}:
+
+ License: Creative Commons Attribution-ShareAlike 2.5
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/%{tango.name}-%{tango.version}
+
+  COPYING.bz2: Creative Commons Attribution-ShareAlike 2.5
+  AUTHORS: list of authors of tango-icon-theme
+  NEWS.bz2: list of the most important changes in tango-icon-theme
+  ChangeLog.bz2: list of all changes and authors of tango-icon-theme
+  po/ChangeLog.bz2: list of all changes and authors of tango-icon-theme
+  README: more information about tango-icon-theme
+
+ The sources of %{tango.name}-%{tango.version} were downloaded
+ from %{tango.SOURCE0.url}

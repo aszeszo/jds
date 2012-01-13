@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWnet6.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWnet6.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWnet6.copyright
+f none share/doc/SUNWnet6/AUTHORS=usr/share/doc/SUNWnet6/AUTHORS 0444 root bin
+f none share/doc/SUNWnet6/COPYING=usr/share/doc/SUNWnet6/COPYING 0444 root bin
+f none share/doc/SUNWnet6/ChangeLog=usr/share/doc/SUNWnet6/ChangeLog 0444 root bin
+f none share/doc/SUNWnet6/NEWS=usr/share/doc/SUNWnet6/NEWS 0444 root bin
+f none share/doc/SUNWnet6/README=usr/share/doc/SUNWnet6/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libnet6-1.3.so.0=libnet6-1.3.so.0.0.0
+f none lib/libnet6-1.3.so.0.0.0=usr/lib/libnet6-1.3.so.0.0.0 0755 root bin
+s none lib/libnet6.so=libnet6-1.3.so.0.0.0
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWnet6 0755 root bin

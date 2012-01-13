@@ -1,0 +1,150 @@
+diff -ru time-slider-0.2.10/Makefile time-slider-0.2.10-new/Makefile
+--- time-slider-0.2.10/Makefile	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/Makefile	2009-12-09 13:25:32.907961168 +1100
+@@ -8,9 +8,9 @@
+ RM = /usr/bin/rm -f
+ RMRF = /usr/bin/rm -Rf
+ RMDIR = /usr/bin/rmdir
+-# Use python 2.4 if PYTHON environent is not set
++# Use python 2.6 if PYTHON environent is not set
+ ifeq ($(strip $(PYTHON)),)
+-PYTHON = /usr/bin/python2.4
++PYTHON = /usr/bin/python2.6
+ endif
+ 
+ SUBDIRS = po data
+diff -ru time-slider-0.2.10/usr/bin/time-slider-setup time-slider-0.2.10-new/usr/bin/time-slider-setup
+--- time-slider-0.2.10/usr/bin/time-slider-setup	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/bin/time-slider-setup	2009-12-09 13:31:15.989769030 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6 -Wignore::DeprecationWarning
+ 
+ import sys
+ from os.path import dirname, join, pardir, abspath
+diff -ru time-slider-0.2.10/usr/lib/time-slider-cleanup time-slider-0.2.10-new/usr/lib/time-slider-cleanup
+--- time-slider-0.2.10/usr/lib/time-slider-cleanup	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/lib/time-slider-cleanup	2009-12-09 13:31:30.101792142 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6 -Wignore::DeprecationWarning
+ import sys
+ from os.path import dirname, join, pardir, abspath
+ sys.path.insert(0, join(dirname(__file__), pardir, 'share',
+diff -ru time-slider-0.2.10/usr/lib/time-slider-delete time-slider-0.2.10-new/usr/lib/time-slider-delete
+--- time-slider-0.2.10/usr/lib/time-slider-delete	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/lib/time-slider-delete	2009-12-09 13:31:40.501785411 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6 -Wignore::DeprecationWarning
+ 
+ import sys
+ from os.path import dirname, join, pardir, abspath
+diff -ru time-slider-0.2.10/usr/lib/time-slider-notify time-slider-0.2.10-new/usr/lib/time-slider-notify
+--- time-slider-0.2.10/usr/lib/time-slider-notify	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/lib/time-slider-notify	2009-12-09 13:31:52.981512557 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6 -Wignore::DeprecationWarning
+ import sys
+ from os.path import dirname, join, pardir, abspath
+ sys.path.insert(0, join(dirname(__file__), pardir, 'share',
+diff -ru time-slider-0.2.10/usr/lib/time-slider-snapshot time-slider-0.2.10-new/usr/lib/time-slider-snapshot
+--- time-slider-0.2.10/usr/lib/time-slider-snapshot	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/lib/time-slider-snapshot	2009-12-09 13:32:03.341925438 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6 -Wignore::DeprecationWarning
+ 
+ import sys
+ from os.path import dirname, join, pardir, abspath
+diff -ru time-slider-0.2.10/usr/lib/time-slider-version time-slider-0.2.10-new/usr/lib/time-slider-version
+--- time-slider-0.2.10/usr/lib/time-slider-version	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/lib/time-slider-version	2009-12-09 13:32:14.454253497 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6 -Wignore::DeprecationWarning
+ 
+ import sys
+ from os.path import dirname, join, pardir, abspath
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/cleanupmanager.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/cleanupmanager.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/cleanupmanager.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/cleanupmanager.py	2009-12-09 13:27:15.388459392 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/deletegui.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/deletegui.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/deletegui.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/deletegui.py	2009-12-09 13:27:42.164531361 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/fileversion.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/fileversion.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/fileversion.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/fileversion.py	2009-12-09 13:27:52.076952783 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/notification.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/notification.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/notification.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/notification.py	2009-12-09 13:28:06.604638050 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/rbac.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/rbac.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/rbac.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/rbac.py	2009-12-09 13:29:27.204834616 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/setupgui.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/setupgui.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/setupgui.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/setupgui.py	2009-12-09 13:29:38.757130038 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/smfmanager.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/smfmanager.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/smfmanager.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/smfmanager.py	2009-12-09 13:29:55.717277870 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/snapnowui.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/snapnowui.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/snapnowui.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/snapnowui.py	2009-12-09 13:30:13.565061959 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #
+diff -ru time-slider-0.2.10/usr/share/time-slider/lib/time_slider/zfs.py time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/zfs.py
+--- time-slider-0.2.10/usr/share/time-slider/lib/time_slider/zfs.py	2009-07-09 10:33:37.000000000 +1000
++++ time-slider-0.2.10-new/usr/share/time-slider/lib/time_slider/zfs.py	2009-12-09 13:30:24.052927153 +1100
+@@ -1,4 +1,4 @@
+-#!/usr/bin/env python
++#!/usr/bin/python2.6
+ #
+ # CDDL HEADER START
+ #

@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-bdb-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-bdb-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-bdb-devel.copyright
+d none include 0755 root bin
+f none include/db.h=usr/include/db.h 0444 root bin
+f none include/db_cxx.h=usr/include/db_cxx.h 0444 root bin
+d none lib 0755 root bin
+s none lib/libdb.so=libdb.so.5

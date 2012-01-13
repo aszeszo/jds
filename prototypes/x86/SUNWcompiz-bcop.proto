@@ -1,0 +1,14 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompiz-bcop.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompiz-bcop.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompiz-bcop.copyright
+f none share/doc/SUNWcompiz-bcop/COPYING.bz2=usr/share/doc/SUNWcompiz-bcop/COPYING.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/bcop=usr/bin/bcop 0755 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/bcop.pc=usr/lib/pkgconfig/bcop.pc 0644 root bin
+d none share 0755 root sys
+d none share/bcop 0755 root bin
+f none share/bcop/bcop.xslt=usr/share/bcop/bcop.xslt 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWcompiz-bcop 0755 root bin

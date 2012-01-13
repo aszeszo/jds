@@ -1,0 +1,14 @@
+diff -r 0ed13ec93074 time-slider-0.2.96/usr/share/time-slider/lib/plugin/rsync/backup.py
+--- time-slider-0.2.96/usr/share/time-slider/lib/plugin/rsync/backup.py	Fri Jun 04 09:32:13 2010 +1000
++++ time-slider-0.2.96.new/usr/share/time-slider/lib/plugin/rsync/backup.py	Wed Jun 16 11:18:31 2010 +1000
+@@ -1007,10 +1007,6 @@
+             keep = tempSchedule[3] # [schedule,interval,period,keep]
+             schedBackups = [d for d in os.listdir(targetDir) if 
+                             d.find(label) == 0]
+-            
+-
+-            schedBackups = [d for d in dirList if 
+-                            d.find(label) == 0]
+             # The minimum that can be kept around is one:
+             # keeping zero is stupid since it might trigger
+             # a total replication rather than an incremental

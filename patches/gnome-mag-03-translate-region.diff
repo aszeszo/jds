@@ -1,0 +1,22 @@
+--- gnome-mag-0.16.1/magnifier/x11/gmag-compositor.c	2010-04-01 00:53:08.000000000 +0800
++++ gnome-mag-0.16.1-mod/magnifier/x11/gmag-compositor.c	2010-10-09 16:04:56.950947449 +0800
+@@ -156,15 +156,15 @@
+ 		XFixesIntersectRegion (dpy, final_clip, region,
+ 				       pgmag_win->clip);
+ 		XFixesSetPictureClipRegion (dpy, pgmag_win->pic,
+-					    -(pgmag_win->attr.x),
+-					    -(pgmag_win->attr.y), final_clip);
++					    0,
++					    0, final_clip);
+ 
+ 		rectlist = XFixesFetchRegion (dpy, final_clip, &howmany);
+ 	} else {
+ 		XFixesSetPictureClipRegion (dpy,
+ 					    pgmag_win->pic,
+-					    -(pgmag_win->attr.x),
+-					    -(pgmag_win->attr.y),
++					    0,
++					    0,
+ 					    pgmag_win->clip);
+ 		rectlist = XFixesFetchRegion (dpy, pgmag_win->clip, &howmany);
+ 	}

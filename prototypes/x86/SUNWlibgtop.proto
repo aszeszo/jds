@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgtop.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgtop.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgtop.copyright
+f none share/doc/SUNWlibgtop/AUTHORS=usr/share/doc/SUNWlibgtop/AUTHORS 0444 root bin
+f none share/doc/SUNWlibgtop/COPYING.bz2=usr/share/doc/SUNWlibgtop/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibgtop/ChangeLog.bz2=usr/share/doc/SUNWlibgtop/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibgtop/NEWS.bz2=usr/share/doc/SUNWlibgtop/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibgtop/README=usr/share/doc/SUNWlibgtop/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libgtop-2.0.so=libgtop-2.0.so.7.2.0
+s none lib/libgtop-2.0.so.7=libgtop-2.0.so.7.2.0
+f none lib/libgtop-2.0.so.7.2.0=usr/lib/libgtop-2.0.so.7.2.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibgtop 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgtop-2.0.3=usr/share/man/man3/libgtop-2.0.3 0644 root bin

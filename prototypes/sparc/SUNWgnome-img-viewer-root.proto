@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-img-viewer-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-img-viewer-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-img-viewer-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/eog.schemas=etc/gconf/schemas/eog.schemas 0644 root sys

@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-mm-applets.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-mm-applets.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-mm-applets.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-mm-applets.copyright
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_CDPlayerApplet.server=usr/lib/bonobo/servers/GNOME_CDPlayerApplet.server 0644 root bin
+f none lib/bonobo/servers/GNOME_MixerApplet.server=usr/lib/bonobo/servers/GNOME_MixerApplet.server 0644 root bin
+f none lib/mixer_applet2=usr/lib/mixer_applet2 0755 root bin
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome-2.0 0755 root bin
+d none share/gnome-2.0/ui 0755 root bin
+f none share/gnome-2.0/ui/GNOME_MixerApplet.xml=usr/share/gnome-2.0/ui/GNOME_MixerApplet.xml 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/mixer_applet2 0755 root bin
+d none share/gnome/help/mixer_applet2/C 0755 root bin
+d none share/gnome/help/mixer_applet2/C/figures 0755 root bin
+f none share/gnome/help/mixer_applet2/C/figures/volumecontrol_applet.png=usr/share/gnome/help/mixer_applet2/C/figures/volumecontrol_applet.png 0644 root bin
+f none share/gnome/help/mixer_applet2/C/legal.xml=usr/share/gnome/help/mixer_applet2/C/legal.xml 0644 root bin
+f none share/gnome/help/mixer_applet2/C/mixer_applet2.xml=usr/share/gnome/help/mixer_applet2/C/mixer_applet2.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/mixer_applet2 0755 root bin
+f none share/omf/mixer_applet2/mixer_applet2-C.omf=usr/share/omf/mixer_applet2/mixer_applet2-C.omf 0644 root bin

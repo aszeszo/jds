@@ -1,0 +1,12 @@
+diff -urN selmgr.orig/src/selmgr.c selmgr.new/src/selmgr.c
+--- selmgr.orig/src/selmgr.c	2011-07-19 13:36:00.381529409 +0100
++++ selmgr.new/src/selmgr.c	2011-07-19 13:36:14.236549065 +0100
+@@ -387,7 +387,7 @@
+ 			au_write (rd, au_to_text ("Not Viewed"));
+ 		}
+ 
+-		au_close (rd, AU_TO_WRITE, AUE_sel_mgr_xfer);
++		au_close (rd, AU_TO_WRITE, AUE_sel_mgr_xfer, 2);
+ 	}
+ }
+ 

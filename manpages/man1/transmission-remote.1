@@ -1,0 +1,173 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2008/450 Transmission for OpenSolaris-->
+<!ENTITY cmd "transmission-remote">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2008, Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<?Pub UDT _bookmark _target>
+<?Pub Inc>
+<refentry id="transmission-remote-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">17 Jul 2008</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>&cmd;</primary></indexterm><indexterm><primary>control Transmission remotely</primary></indexterm>
+<refnamediv id="transmission-remote-1-name"><refname>&cmd;</refname><refpurpose>control Transmission remotely</refpurpose></refnamediv>
+<refsynopsisdiv id="tranmission-1-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-help</option></arg>
+</cmdsynopsis>
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option role="nodash"><replaceable>host:port|host|port</replaceable></arg>
+<arg choice="opt"><option>-add </option><replaceable>torrent-files</replaceable></arg>
+<arg choice="opt"><option>-debug</replaceable></arg>
+<arg choice="opt"><option>-downlimit </option><replaceable>speed</replaceable>|<option>-no-downlimit </option></arg>
+<arg choice="opt"><option>-encryption-required</option>|<option>-encryption-preferred</option>|<option>-encryption-tolerated</option></arg>
+<arg choice="opt"><option>-files</option></arg>
+<arg choice="opt"><option>-get <replaceable>all|file-index|files</replaceable></option></arg>
+<arg choice="opt"><option>-no-get <replaceable>all|file-index|files</replaceable></option></arg>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-info <replaceable>id|torrent-hash</replaceable></option></arg>
+<arg choice="opt"><option>-list</option></arg>
+<arg choice="opt"><option>-portmap</option>|<option>-no-portmap</option></arg>
+<arg choice="opt"><option>-auth <replaceable>username:password</replaceable></option></arg>
+<arg choice="opt"><option>-port <replaceable>port</replaceable></option></arg>
+<arg choice="opt"><option>-priority-normal <replaceable>all|file-index|files</replaceable></option></arg>
+<arg choice="opt"><option>-priority-high <replaceable>all|file-index|files</replaceable></option></arg>
+<arg choice="opt"><option>-priority-low <replaceable>all|file-index|files</replaceable></option></arg>
+<arg choice="opt"><option>-remove</option></arg>
+<arg choice="opt"><option>-start</option>|<option>-stop</option></arg>
+<arg choice="opt"><option>-torrent <replaceable>all|id|torrent-hash</option></arg>
+<arg choice="opt"><option>-uplimit <replaceable>speed</option>|<option>-no-limit</option></arg>
+<arg choice="opt"><option>-verify</option></arg>
+<arg choice="opt"><option>-download-dir <replaceable>directory</option></arg>
+<arg choice="opt"><option>-pex</option>|<option>-no-pex</option></arg>
+</cmdsynopsis>
+
+<refsect1 id="transmission-remote-1-desc"><title>&desc-tt;</title>
+<para><command>&cmd;</command> is a remote control utility for
+<citerefentry><refentrytitle>transmission-daemon</refentrytitle><manvolnum>1</manvolnum>
+</citerefentry> and <citerefentry><refentrytitle>transmission</refentrytitle><manvolnum>1</manvolnum></citerefentry>.
+</para><para>By default, <command>&cmd;</command> connects to the transmission session at localhost:9091. Other sessions can be controlled by specifying a different host and/or port.</para>
+</refsect1>
+ 
+<refsect1 id="transmission-remote-1-opts"><title>&opts-tt;</title>
+<para>The following options are supported:</para>
+<variablelist termlength="wholeline">
+
+<varlistentry><term><option role="nodash">-a</option>, <option>-add <replaceable>torrent-files</replaceable></option></term><listitem><para>Add single or multiple <replaceable>torrent-files</replaceable>, separated by a space, into transmission.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-b</option>, <option>-debug</option></term><listitem><para>Enable debugging mode.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-d</option>, <option>-downlimit <replaceable>speed</replaceable></option></term><listitem><para>Set the maximum download speed in KB/s, which defaults to no limit.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-D</option>, <option>-no-downlimit</option></term><listitem><para>Do not limit the download speed.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-er</option>, <option>-encryption-required</option></term><listitem><para>Encrypt all peer connections.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-ep</option>, <option>-encryption-preferred</option></term><listitem><para>Prefer encrypted peer connections.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-et</option>, <option>-encryption-tolerated</option></term><listitem><para>Prefer unencrypted peer connections.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-f</option>, <option>-files</option></term><listitem><para>Get a file list for the current torrents.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-g</option>, <option>-get <replaceable>all|file-index|files</replaceable></option></term><listitem><para>Mark files for downloading. <replaceable>all</replaceable> marks all of the torrent's files for downloading, <replaceable>file-index</replaceable> adds a single file to the download list, and <replaceable>files</replaceable> adds multiple files to the download list, such as "-g 1,3-5" to add files #1, #3, #4, and #5 to the download list.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-G</option>, <option>-no-get <replaceable>all|file-index|files</replaceable></option></term><listitem><para>Mark files for not downloading.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-h</option>, <option>-help</option></term><listitem><para>Print command-line option descriptions.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-i</option>, <option>-info <replaceable>id|torrent-hash</replaceable></option></term><listitem><para>Show details of the current torrents.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-l</option>, <option>-list</option></term><listitem><para>List all the torrents.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-m</option>, <option>-portmap</option></term><listitem><para>Enable portmapping via NAT-PMP or UPnP.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-M</option>, <option>-no-portmap</option></term><listitem><para>Disable portmapping.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-n</option>, <option>-auth <replaceable>username:password</replaceable></option></term><listitem><para>Set the <replaceable>username</replaceable> and <replaceable>password</replaceable> for authentication.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-p</option>, <option>-port<replaceable></replaceable></option></term><listitem><para>Set the port for user when listening for incoming peer connections.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-pn</option>, <option>-priority-normal <replaceable>all|file-index|files</replaceable></option></term><listitem><para>Mark files as normal priority. <replaceable>all</replaceable> marks all of the torrent's files as normal priority, <replaceable>file-index</replaceable> sets a single file's priority as normal, and <replaceable>files</replaceable> sets multiple files' priorities as normal, such as "-pn 1,3-5" to normalize files #1, #3, #4, and #5.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-ph</option>, <option>-priority-high <replaceable>all|file-index|files</replaceable></option></term><listitem><para>Mark files as high priority.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-pl</option>, <option>-priority-low <replaceable>all|file-index|files</replaceable></option></term><listitem><para>Mark files as low priority.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-r</option>, <option>-remove</option></term><listitem><para>Remove the current torrents. This does not delete the downloaded data.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-s</option>, <option>-start</option></term><listitem><para>Start the current torrents.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-S</option>, <option>-stop</option></term><listitem><para>Stop the current torrents from downloading or seeding.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-t</option>, <option>-torrent <replaceable>all|id|torrent-hash</replaceable></option></term><listitem><para>Set the current torrents for use by subsequent options. <replaceable>all</replaceable> will apply the following requests to all torrents, while specific torrents can be chosen by <replaceable>id</replaceable> or <replaceable>torrent-hash</replaceable>. To set more than one current torrent, join their ids or hashes together in a list, such as "-t 2,4,6-8" to operate on the torrents whose IDs are 2, 4, 6, 7, and 8.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-u</option>, <option>-uplimit <replaceable>speed</replaceable></option></term><listitem><para>Set the maximum upload speed, Which defaults to 20KB/s.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-U</option>, <option>-no-uplimit</option></term><listitem><para>Do not limit the upload speed.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-v</option>, <option>-verify</option></term><listitem><para>Verify the torrent's downloaded data.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-w</option>, <option>-download-dir <replaceable>directory</replaceable></option></term><listitem><para>Where to save download data.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-x</option>, <option>-pex</option></term><listitem><para>Enable peer exchange(PEX). Peer exchange is a feature of the BitTorrent peer-to-peer protocol, which can be utilized to gather peers. Using peer exchange, an existing peer is used to trade the information required to find and connect to additional peers.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-X</option>, <option>-no-pex</option></term><listitem><para>disable peer exchange(PEX).</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="transmission-remote-1-file"><title>&file-tt;</title>
+<para>The following files are used by this application:</para>
+<variablelist termlength="wholeline">
+<varlistentry><term><filename>/usr/bin/&cmd;</filename>
+</term><listitem><para>
+The executable for <application>&cmd;</application>
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="transmission-remote-exam"><title>&exam-tt;</title>
+<example role="example">
+<title>Set download and upload limits to 100 KB/s and 20 KB/s:</title><para><screen>example% <userinput>&cmd; -d 100 -u 20</screen></para><para><screen>example% <userinput>&cmd; -downlimit 100 -uplimit 20</screen></para>
+<title>List all torrents' IDs and states:</title><para><screen>example% <userinput>&cmd; --list</screen></para>
+<title>List all torrents from a remote session that requires authentication:</title><para><screen>example% <userinput>&cmd; host:9091 --auth=username:password -l</screen></para>
+<title>Start all the torrents</title><para><screen>example% <userinput>&cmd; -t all --start</screen></para>
+<title>Add two torrents</title><para><screen>example% <userinput>&cmd; -a one.torrent two.torrent</screen></para>
+<title>Add all torrents in $HOME/Desktop:</title><para><screen>example% <userinput>&cmd; -a ~/Desktop/*torrent</screen></para>
+<title>Get detailed information on the torrent whose ID is "1":</title><para><screen>example% <userinput>&cmd; -t 1 -i</screen></para>
+<title>Get a list of a torrent's files:</title><para><screen>example% <userinput>&cmd; -t 1 -l</screen></para>
+<title>Download only its second and fourth files:</title><para><screen>example% <userinput>&cmd; -t 1 -G all -g 2,4"</screen></para>
+<title>Set all torrents' first two files' priorities to high:</title><para><screen>example% <userinput>&cmd; -t all -ph 1,2</screen></para>
+<title>Set all torrents' files' priorities to normal:</title><para><screen>example% <userinput>&cmd; -t all -pn all</screen></para>
+</example>
+</refsect1>
+
+<refsect1 id="transmission-remote-1-exit"><title>&exit-tt;</title>
+<para>The following exit values are returned:</para>
+<variablelist termlength="xtranarrow">
+<varlistentry><term><returnvalue>0</returnvalue></term><listitem><para>Application
+exited successfully.</para>
+</listitem></varlistentry>
+<varlistentry><term><returnvalue>>0</returnvalue></term><listitem><para>Application 
+exited with failure.</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="transmission-remote-1-attr"><title>&attr-tt;</title>
+<para>See <olink targetdocent="REFMAN5" localinfo="attributes-5"><citerefentry>
+<refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1"><colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row><entry align="center" valign="middle">ATTRIBUTE TYPE</entry><entry align="center"
+valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row><entry><para>Availability</para></entry><entry><para>SUNWtransmission</para></entry>
+</row>
+<row><entry colname="COLSPEC0"><para>Interface stability</para></entry><entry
+colname="COLSPEC1"><para>Volatile</para></entry></row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="transmission-remote-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>transmission</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>transmissioncli</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>transmission-daemon</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+<para>Transmission community site - <literal>http://www.transmissionbt.org/</literal></para>
+</refsect1>
+<refsect1 id="tranmission-1-note"><title>&note-tt;</title>
+<parm><command>&cmd;</command> program was written by Charles Kerr
+‚î¨charles@rebelbase.com‚î¬, Josh Elsasser ‚î¨josh@elsasser.org‚î¬, Eric Petit
+‚î¨titer@m0k.org‚î¬, and Mitchell Livingston ‚î¨livings124@gmail.com‚î¬.<para>
+<para>The man page updated by Elaine Xiong, Sun Microsystems Inc., 2008.</para>
+</refsect1>
+</refentry>

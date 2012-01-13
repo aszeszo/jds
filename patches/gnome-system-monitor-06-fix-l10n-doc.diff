@@ -1,0 +1,402 @@
+diff -r 120c716e310d help/ar/gnome-system-monitor.xml
+--- a/help/ar/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/ar/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
++      <year>2004</year> <year>2011</year>
+       <holder>صن مايكروسيستيمز</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>بيل داي</holder> 
+     </copyright> 
+ 
+diff -r 120c716e310d help/bg/gnome-system-monitor.xml
+--- a/help/bg/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/bg/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2005</year><holder>Rostislav Raykov (zbrox@i-space.org)</holder></copyright> 
+ 
+@@ -71,7 +71,7 @@
+     <author>
+       <firstname>Екип на Sun</firstname>
+       <surname>за документация на GNOME</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/ca/gnome-system-monitor.xml
+--- a/help/ca/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/ca/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2007, 2008</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Equip de documentació del GNOME</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/cs/gnome-system-monitor.xml
+--- a/help/cs/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/cs/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2009</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Dokumentační tým GNOME</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/da/gnome-system-monitor.xml
+--- a/help/da/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/da/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>GNOME-dokumentationsholdet</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/de/gnome-system-monitor.xml
+--- a/help/de/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/de/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>GNOME-Dokumentationsteam</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+@@ -119,7 +119,7 @@
+ 	<revnumber>Systemüberwachung-Handbuch V2.1</revnumber>
+ 	<date>Februar 2004</date>
+ 	<revdescription>
+-	  <para role="author">Sun GNOME-Dokumentationsteam</para>
++	  <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  <para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 	</revdescription>
+       </revision>
+diff -r 120c716e310d help/el/gnome-system-monitor.xml
+--- a/help/el/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/el/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2009</year><holder>Στέργιος Προσινικλής (steriosprosiniklis@gmail.com)</holder></copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Ομάδα τεκμηρίωσης GNOME</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/es/gnome-system-monitor.xml
+--- a/help/es/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/es/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2007-2009</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Equipo de documentación de GNOME</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/fr/gnome-system-monitor.xml
+--- a/help/fr/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/fr/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2007-2009.</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright><copyright><year>2008.</year><holder>Bruno Brouard (annoa.b@gmail.com)</holder></copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Équipe de documentation GNOME</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/oc/gnome-system-monitor.xml
+--- a/help/oc/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/oc/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright> 
+ 
+@@ -128,9 +128,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>Còla de documentacion de GNOME</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/pa/gnome-system-monitor.xml
+--- a/help/pa/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/pa/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
++      <year>2004</year> <year>2011</year>
+       <holder>ਸਨ ਮਾਈਕਰੋਸਿਸਟਮ</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>ਬਿਲ ਡੇਅ</holder> 
+     </copyright> 
+ 
+diff -r 120c716e310d help/sv/gnome-system-monitor.xml
+--- a/help/sv/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/sv/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2007, 2009</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright> 
+ 
+@@ -71,7 +71,7 @@
+     <author>
+       <firstname>Suns</firstname>
+       <surname>GNOME-dokumentationsteam</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -r 120c716e310d help/zh_CN/gnome-system-monitor.xml
+--- a/help/zh_CN/gnome-system-monitor.xml	Fri Jul 08 15:22:17 2011 +0800
++++ b/help/zh_CN/gnome-system-monitor.xml	Fri Jul 08 16:40:45 2011 +0800
+@@ -25,13 +25,13 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+       <year>2002</year> 
+-      <year>2004</year> 
++      <year>2004</year> <year>2011</year> 
+       <holder>Bill Day</holder> 
+     </copyright><copyright><year>2009</year><holder>arccos (L.Q) (boyermoore@gmail.com)</holder></copyright><copyright><year>2010</year><holder>TeliuTe (teliute@163.com)</holder></copyright> 
+ 
+@@ -69,9 +69,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
++      <firstname>Oracle Solaris</firstname>
+       <surname>GNOME 文档小组</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+@@ -119,7 +119,7 @@
+ 	<revnumber>系统监视器手册 V2.1</revnumber>
+ 	<date>2004年02月</date>
+ 	<revdescription>
+-	  <para role="author">Sun GNOME 文档小组</para>
++	  <para role="author">Oracle Solaris Desktop 文档小组</para>
+ 	  <para role="publisher">GNOME 文档项目</para>
+ 	</revdescription>
+       </revision>

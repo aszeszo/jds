@@ -1,0 +1,12 @@
+diff -x '*.out' -x '*.*~' -x '*.orig' -x '*.rej' -rup ../compiz-0.8.4/src/Makefile.am compiz-0.8.4/src/Makefile.am
+--- ../compiz-0.8.4/src/Makefile.am	2009-10-14 16:11:12.799512239 +0200
++++ compiz-0.8.4/src/Makefile.am	2009-10-14 16:11:23.928621430 +0200
+@@ -10,7 +10,7 @@ INCLUDES =			     \
+ bin_PROGRAMS = compiz
+ 
+ compiz_LDADD = @COMPIZ_LIBS@ @GL_LIBS@ -lm
+-compiz_LDFLAGS = -export-dynamic -pthread
++compiz_LDFLAGS = -export-dynamic 
+ compiz_SOURCES =   \
+ 	main.c	   \
+ 	privates.c \

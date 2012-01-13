@@ -1,0 +1,27 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlcms.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlcms.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlcms.copyright
+d none bin 0755 root bin
+f none bin/icc2ps=usr/bin/icc2ps 0755 root bin
+f none bin/icclink=usr/bin/icclink 0755 root bin
+f none bin/icctrans=usr/bin/icctrans 0755 root bin
+f none bin/jpegicc=usr/bin/jpegicc 0755 root bin
+f none bin/tiffdiff=usr/bin/tiffdiff 0755 root bin
+f none bin/tifficc=usr/bin/tifficc 0755 root bin
+f none bin/wtpt=usr/bin/wtpt 0755 root bin
+d none lib 0755 root bin
+s none lib/liblcms.so=liblcms.so.1.0.16
+s none lib/liblcms.so.1=liblcms.so.1.0.16
+f none lib/liblcms.so.1.0.16=usr/lib/liblcms.so.1.0.16 0755 root bin
+d none lib/python2.4 0755 root bin
+d none lib/python2.4/vendor-packages 0755 root bin
+f none lib/python2.4/vendor-packages/_lcms.so=usr/lib/python2.4/vendor-packages/_lcms.so 0755 root bin
+f none lib/python2.4/vendor-packages/lcms.py=usr/lib/python2.4/vendor-packages/lcms.py 0644 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/icc2ps.1=usr/share/man/man1/icc2ps.1 0644 root bin
+f none share/man/man1/icclink.1=usr/share/man/man1/icclink.1 0644 root bin
+f none share/man/man1/jpegicc.1=usr/share/man/man1/jpegicc.1 0644 root bin
+f none share/man/man1/tifficc.1=usr/share/man/man1/tifficc.1 0644 root bin
+f none share/man/man1/wtpt.1=usr/share/man/man1/wtpt.1 0644 root bin

@@ -1,0 +1,44 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk-vnc-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk-vnc-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk-vnc-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/de 0755 root other
+d none share/locale/de/LC_MESSAGES 0755 root other
+f none share/locale/de/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/de/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/el 0755 root other
+d none share/locale/el/LC_MESSAGES 0755 root other
+f none share/locale/el/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/el/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/en_GB 0755 root other
+d none share/locale/en_GB/LC_MESSAGES 0755 root other
+f none share/locale/en_GB/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/en_GB/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/es 0755 root other
+d none share/locale/es/LC_MESSAGES 0755 root other
+f none share/locale/es/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/es/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/eu 0755 root other
+d none share/locale/eu/LC_MESSAGES 0755 root other
+f none share/locale/eu/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/eu/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/fr 0755 root other
+d none share/locale/fr/LC_MESSAGES 0755 root other
+f none share/locale/fr/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/fr/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/gl 0755 root other
+d none share/locale/gl/LC_MESSAGES 0755 root other
+f none share/locale/gl/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/gl/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/hu 0755 root other
+d none share/locale/hu/LC_MESSAGES 0755 root other
+f none share/locale/hu/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/hu/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/it 0755 root other
+d none share/locale/it/LC_MESSAGES 0755 root other
+f none share/locale/it/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/it/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/pl 0755 root other
+d none share/locale/pl/LC_MESSAGES 0755 root other
+f none share/locale/pl/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/pl/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/pt 0755 root other
+d none share/locale/pt/LC_MESSAGES 0755 root other
+f none share/locale/pt/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/pt/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/pt_BR 0755 root other
+d none share/locale/pt_BR/LC_MESSAGES 0755 root other
+f none share/locale/pt_BR/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/pt_BR/LC_MESSAGES/gtk-vnc.mo 0644 root other
+d none share/locale/sv 0755 root other
+d none share/locale/sv/LC_MESSAGES 0755 root other
+f none share/locale/sv/LC_MESSAGES/gtk-vnc.mo=usr/share/locale/sv/LC_MESSAGES/gtk-vnc.mo 0644 root other

@@ -1,0 +1,45 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsun-backgrounds.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsun-backgrounds.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsun-backgrounds.copyright
+f none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/AUTHORS=usr/share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/AUTHORS 0444 root bin
+f none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/COPYING.bz2=usr/share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/ChangeLog.bz2=usr/share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/NEWS.bz2=usr/share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/README=usr/share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/README 0444 root bin
+f none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/po/ChangeLog.bz2=usr/share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/po/ChangeLog.bz2 0444 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWsun-backgrounds 0755 root bin
+d none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1 0755 root bin
+d none share/doc/SUNWsun-backgrounds/sun-backgrounds-0.1/po 0755 root bin
+d none share/gnome-background-properties 0755 root bin
+f none share/gnome-background-properties/sun-backgrounds.xml=usr/share/gnome-background-properties/sun-backgrounds.xml 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/backgrounds 0755 root bin
+d none share/pixmaps/backgrounds/sun 0755 root bin
+f none share/pixmaps/backgrounds/sun/bubbles.jpg=usr/share/pixmaps/backgrounds/sun/bubbles.jpg 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-elliptical-blue.png=usr/share/pixmaps/backgrounds/sun/di-elliptical-blue.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-elliptical-dark_gray.png=usr/share/pixmaps/backgrounds/sun/di-elliptical-dark_gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-elliptical-gray.png=usr/share/pixmaps/backgrounds/sun/di-elliptical-gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-elliptical-green.png=usr/share/pixmaps/backgrounds/sun/di-elliptical-green.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-elliptical-yellow.png=usr/share/pixmaps/backgrounds/sun/di-elliptical-yellow.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-sails-blue.png=usr/share/pixmaps/backgrounds/sun/di-sails-blue.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-sails-dark_gray.png=usr/share/pixmaps/backgrounds/sun/di-sails-dark_gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-sails-gray.png=usr/share/pixmaps/backgrounds/sun/di-sails-gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-sails-green.png=usr/share/pixmaps/backgrounds/sun/di-sails-green.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-sails-orange.png=usr/share/pixmaps/backgrounds/sun/di-sails-orange.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-sails-yellow.png=usr/share/pixmaps/backgrounds/sun/di-sails-yellow.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-scurve-blue.png=usr/share/pixmaps/backgrounds/sun/di-scurve-blue.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-scurve-gray.png=usr/share/pixmaps/backgrounds/sun/di-scurve-gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-scurve-green.png=usr/share/pixmaps/backgrounds/sun/di-scurve-green.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-scurve-orange.png=usr/share/pixmaps/backgrounds/sun/di-scurve-orange.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-scurve-yellow.png=usr/share/pixmaps/backgrounds/sun/di-scurve-yellow.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-shell-blue.png=usr/share/pixmaps/backgrounds/sun/di-shell-blue.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-shell-gray.png=usr/share/pixmaps/backgrounds/sun/di-shell-gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-shell-green.png=usr/share/pixmaps/backgrounds/sun/di-shell-green.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-shell-orange.png=usr/share/pixmaps/backgrounds/sun/di-shell-orange.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-shell-yellow.png=usr/share/pixmaps/backgrounds/sun/di-shell-yellow.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/lakeview.jpg=usr/share/pixmaps/backgrounds/sun/lakeview.jpg 0644 root bin
+f none share/pixmaps/backgrounds/sun/raindrop.jpg=usr/share/pixmaps/backgrounds/sun/raindrop.jpg 0644 root bin
+f none share/pixmaps/backgrounds/sun/slopes.jpg=usr/share/pixmaps/backgrounds/sun/slopes.jpg 0644 root bin
+f none share/pixmaps/backgrounds/sun/winter.jpg=usr/share/pixmaps/backgrounds/sun/winter.jpg 0644 root bin

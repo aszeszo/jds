@@ -1,0 +1,13 @@
+--- nwam-manager-1.164.0/help/C/nwam-manager.xml.orig	2011-05-11 13:13:53.986711631 +0100
++++ nwam-manager-1.164.0/help/C/nwam-manager.xml	2011-05-11 13:14:15.370270638 +0100
+@@ -7,8 +7,8 @@
+    <!ENTITY appname "nwam-manager"> 
+ ]>
+ <book id="osnetautomagoh" label="fcs" lang="en"><title>Network Auto-Magic Online Help</title>
+-<bookinfo><authorgroup><author><firstname>Shubha</firstname>
+-<surname>Girish</surname>
++<bookinfo><authorgroup><author><firstname>Oracle Solaris</firstname>
++<surname>Desktop Documentation Team</surname>
+ </author>
+ </authorgroup>
+ <pubsnumber>820-7604-10</pubsnumber>

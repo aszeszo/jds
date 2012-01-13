@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-speech-festival.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-speech-festival.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-speech-festival.copyright
+d none bin 0755 root bin
+f none bin/festival-synthesis-driver=usr/bin/festival-synthesis-driver 0755 root bin
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Festival.server=usr/lib/bonobo/servers/GNOME_Speech_SynthesisDriver_Festival.server 0644 root bin

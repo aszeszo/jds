@@ -1,0 +1,42 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-search-tool.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-search-tool.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-search-tool.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-search-tool.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-search-tool.copyright
+d none bin 0755 root bin
+f none bin/gnome-search-tool=usr/bin/gnome-search-tool 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-search-tool.desktop=usr/share/applications/gnome-search-tool.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-search-tool 0755 root bin
+f none share/doc/SUNWgnome-search-tool/AUTHORS=usr/share/doc/SUNWgnome-search-tool/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-search-tool/COPYING.bz2=usr/share/doc/SUNWgnome-search-tool/COPYING.bz2 0644 root bin
+f none share/doc/SUNWgnome-search-tool/ChangeLog.bz2=usr/share/doc/SUNWgnome-search-tool/ChangeLog.bz2 0644 root bin
+f none share/doc/SUNWgnome-search-tool/NEWS.bz2=usr/share/doc/SUNWgnome-search-tool/NEWS.bz2 0644 root bin
+f none share/doc/SUNWgnome-search-tool/README=usr/share/doc/SUNWgnome-search-tool/README 0644 root bin
+d none share/doc/SUNWgnome-search-tool/gsearchtool 0755 root bin
+f none share/doc/SUNWgnome-search-tool/gsearchtool/AUTHORS=usr/share/doc/SUNWgnome-search-tool/gsearchtool/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-search-tool/gsearchtool/ChangeLog.bz2=usr/share/doc/SUNWgnome-search-tool/gsearchtool/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-search-tool/gsearchtool/help 0755 root bin
+f none share/doc/SUNWgnome-search-tool/gsearchtool/help/ChangeLog.bz2=usr/share/doc/SUNWgnome-search-tool/gsearchtool/help/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-search-tool/po 0755 root bin
+f none share/doc/SUNWgnome-search-tool/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-search-tool/po/ChangeLog.bz2 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-search-tool 0755 root bin
+d none share/gnome/help/gnome-search-tool/C 0755 root bin
+d none share/gnome/help/gnome-search-tool/C/figures 0755 root bin
+f none share/gnome/help/gnome-search-tool/C/figures/gnome-search-tool_window.png=usr/share/gnome/help/gnome-search-tool/C/figures/gnome-search-tool_window.png 0644 root bin
+f none share/gnome/help/gnome-search-tool/C/gnome-search-tool.xml=usr/share/gnome/help/gnome-search-tool/C/gnome-search-tool.xml 0644 root bin
+f none share/gnome/help/gnome-search-tool/C/legal.xml=usr/share/gnome/help/gnome-search-tool/C/legal.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-search-tool.1=usr/share/man/man1/gnome-search-tool.1 0644 root bin
+d none share/man/man4 0755 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-search-tool 0755 root bin
+f none share/omf/gnome-search-tool/gnome-search-tool-C.omf=usr/share/omf/gnome-search-tool/gnome-search-tool-C.omf 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/gsearchtool 0755 root bin
+f none share/pixmaps/gsearchtool/thumbnail_frame.png=usr/share/pixmaps/gsearchtool/thumbnail_frame.png 0644 root bin

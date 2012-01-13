@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapdc-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapdc-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapdc-root.copyright
+d none etc 0755 root sys
+d none etc/X11 0755 root sys
+d none etc/X11/sysconfig 0755 root sys
+f none etc/X11/sysconfig/apoc.desktop=etc/X11/sysconfig/apoc.desktop 0644 root sys

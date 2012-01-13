@@ -1,0 +1,11 @@
+diff -urN gnome-session-2.29.92/compat/Makefile.am ../SUNWgnome-session-2.29.92.hacked/gnome-session-2.29.92/compat/Makefile.am
+--- gnome-session-2.29.92/compat/Makefile.am	2009-12-01 14:39:09.000000000 +0000
++++ ../SUNWgnome-session-2.29.92.hacked/gnome-session-2.29.92/compat/Makefile.am	2010-03-19 17:56:58.218006200 +0000
+@@ -10,6 +10,7 @@
+ LDADD =						\
+ 	$(COMPAT_LIBS)
+ 
++pkglibexecdir = $(libexecdir)/gnome-session
+ helperdir = $(pkglibexecdir)/helpers
+ helper_PROGRAMS =				\
+ 	gnome-settings-daemon-helper

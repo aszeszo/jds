@@ -1,0 +1,62 @@
+# Copyright (C) 2009 Sun Microsystems, Inc
+# This file is distributed under the same license as the gtk2 package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: gtk2 HEAD\n"
+       "Report-Msgid-Bugs-To: \n"
+       "POT-Creation-Date: 2009-12-07 18:42+0900\n"
+       "PO-Revision-Date: 2010-01-20 20:31+0100\n"
+       "Last-Translator: Kristyna Kitzbergerova\n"
+       "Language-Team: Czech language team <i18n-discuss@opensolaris.org>\n"
+       "MIME-Version: 1.0\n"
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+# SUN_BRANDING
+#. trusted path restriction label
+#: ../gtk/gtkfilechooserdefault.c:5437
+msgid "You do not have sufficient clearance to use this file chooser"
+msgstr "Nemáte dostatečnou důvěryhodnost pro výběr tohoto souboru "
+
+# SUN_BRANDING
+#: ../gtk/gtkfilesel.c:723
+msgid "_Documents"
+msgstr "_Dokumenty"
+
+# SUN_BRANDING
+#: ../gtk/gtkfilesel.c:746
+msgid "D_esktop"
+msgstr "P_locha"
+
+# SUN_BRANDING
+#: ../gtk/gtkfilesel.c:769
+msgid "_Home"
+msgstr "_Domů"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:828
+msgid "printer offline"
+msgstr "tiskárna odpojena"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:846
+msgid "ready to print"
+msgstr "připraven k tisku"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:849
+msgid "processing job"
+msgstr "zpracovávám zakázku"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:853
+msgid "paused"
+msgstr "zastaveno"
+
+# SUN_BRANDING
+#: ../modules/printbackends/papi/gtkprintbackendpapi.c:856
+msgid "unknown"
+msgstr "neznámý"

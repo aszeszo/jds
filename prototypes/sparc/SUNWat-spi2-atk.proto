@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWat-spi2-atk.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWat-spi2-atk.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWat-spi2-atk.copyright
+d none lib 0755 root bin
+d none lib/gtk-2.0 0755 root bin
+d none lib/gtk-2.0/modules 0755 root bin
+d none lib/gtk-2.0/modules/at-spi-dbus 0755 root bin
+d none lib/gtk-2.0/modules/at-spi-dbus/modules 0755 root bin
+f none lib/gtk-2.0/modules/at-spi-dbus/modules/libatk-bridge.so=usr/lib/gtk-2.0/modules/at-spi-dbus/modules/libatk-bridge.so 0755 root bin
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/autostart 0755 root bin
+f none share/gnome/autostart/atk-bridge.desktop=usr/share/gnome/autostart/atk-bridge.desktop 0644 root bin

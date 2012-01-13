@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnugetopt.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnugetopt.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnugetopt.copyright
+f none gnu/share/doc/SUNWgnugetopt/COPYING.bz2=usr/gnu/share/doc/SUNWgnugetopt/COPYING.bz2 0444 root bin
+f none gnu/share/doc/SUNWgnugetopt/Changelog=usr/gnu/share/doc/SUNWgnugetopt/Changelog 0444 root bin
+f none gnu/share/doc/SUNWgnugetopt/README=usr/gnu/share/doc/SUNWgnugetopt/README 0444 root bin
+d none gnu 0755 root bin
+d none gnu/bin 0755 root bin
+f none gnu/bin/getopt=usr/gnu/bin/getopt 0755 root bin
+d none gnu/share 0755 root sys
+d none gnu/share/doc 0755 root other
+d none gnu/share/doc/SUNWgnugetopt 0755 root bin
+d none gnu/share/man 0755 root bin
+d none gnu/share/man/man1 0755 root bin
+f none gnu/share/man/man1/getopt.1=usr/gnu/share/man/man1/getopt.1 0644 root bin

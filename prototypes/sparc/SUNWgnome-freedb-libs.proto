@@ -1,0 +1,22 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-freedb-libs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-freedb-libs.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-freedb-libs.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-freedb-libs.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-freedb-libs.copyright
+d none bin 0755 root bin
+f none bin/cddb-slave2-properties=usr/bin/cddb-slave2-properties 0755 root bin
+d none lib 0755 root bin
+f none lib/CDDBSlave2=usr/lib/CDDBSlave2 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_Media_CDDBSlave2.server=usr/lib/bonobo/servers/GNOME_Media_CDDBSlave2.server 0644 root bin
+f none lib/cddb-track-editor=usr/lib/cddb-track-editor 0755 root bin
+s none lib/libcddb-slave2.so=libcddb-slave2.so.0.0.0
+s none lib/libcddb-slave2.so.0=libcddb-slave2.so.0.0.0
+f none lib/libcddb-slave2.so.0.0.0=usr/lib/libcddb-slave2.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/cddb-slave.desktop=usr/share/applications/cddb-slave.desktop 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/cddb-slave2-properties.1=usr/share/man/man1/cddb-slave2-properties.1 0755 root bin

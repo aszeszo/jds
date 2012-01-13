@@ -1,0 +1,1033 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-media-player-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-media-player-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-media-player-l10n.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/rhythmbox 0755 root bin
+d none share/gnome/help/rhythmbox/cs 0755 root bin
+d none share/gnome/help/rhythmbox/cs/figures 0755 root bin
+s none share/gnome/help/rhythmbox/cs/figures/rb-iradio-main.png=../../C/figures/rb-iradio-main.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-notification-area-menu.png=../../C/figures/rb-notification-area-menu.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-toolbar-prevplaynext.png=../../C/figures/rb-toolbar-prevplaynext.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-toolbar.png=../../C/figures/rb-toolbar.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-window-small.png=../../C/figures/rb-window-small.png
+s none share/gnome/help/rhythmbox/cs/figures/rb-window.png=../../C/figures/rb-window.png
+f none share/gnome/help/rhythmbox/cs/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/cs/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/cs/rhythmbox.xml=usr/share/gnome/help/rhythmbox/cs/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/da 0755 root bin
+d none share/gnome/help/rhythmbox/da/figures 0755 root bin
+s none share/gnome/help/rhythmbox/da/figures/rb-iradio-main.png=../../C/figures/rb-iradio-main.png
+s none share/gnome/help/rhythmbox/da/figures/rb-notification-area-menu.png=../../C/figures/rb-notification-area-menu.png
+s none share/gnome/help/rhythmbox/da/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+s none share/gnome/help/rhythmbox/da/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/da/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/da/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+s none share/gnome/help/rhythmbox/da/figures/rb-toolbar-prevplaynext.png=../../C/figures/rb-toolbar-prevplaynext.png
+s none share/gnome/help/rhythmbox/da/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/da/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+s none share/gnome/help/rhythmbox/da/figures/rb-toolbar.png=../../C/figures/rb-toolbar.png
+s none share/gnome/help/rhythmbox/da/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+s none share/gnome/help/rhythmbox/da/figures/rb-window-small.png=../../C/figures/rb-window-small.png
+s none share/gnome/help/rhythmbox/da/figures/rb-window.png=../../C/figures/rb-window.png
+f none share/gnome/help/rhythmbox/da/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/da/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/da/rhythmbox.xml=usr/share/gnome/help/rhythmbox/da/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/de 0755 root bin
+d none share/gnome/help/rhythmbox/de/figures 0755 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-iradio-main.png=usr/share/gnome/help/rhythmbox/de/figures/rb-iradio-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-notification-area-menu.png=usr/share/gnome/help/rhythmbox/de/figures/rb-notification-area-menu.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-notification-window.png=usr/share/gnome/help/rhythmbox/de/figures/rb-notification-window.png 0644 root bin
+s none share/gnome/help/rhythmbox/de/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+f none share/gnome/help/rhythmbox/de/figures/rb-podcast-main.png=usr/share/gnome/help/rhythmbox/de/figures/rb-podcast-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-statusbar.png=usr/share/gnome/help/rhythmbox/de/figures/rb-statusbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-toolbar-prevplaynext.png=usr/share/gnome/help/rhythmbox/de/figures/rb-toolbar-prevplaynext.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-toolbar-repeat.png=usr/share/gnome/help/rhythmbox/de/figures/rb-toolbar-repeat.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-toolbar-shuffle.png=usr/share/gnome/help/rhythmbox/de/figures/rb-toolbar-shuffle.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-toolbar.png=usr/share/gnome/help/rhythmbox/de/figures/rb-toolbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-volume-changer.png=usr/share/gnome/help/rhythmbox/de/figures/rb-volume-changer.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-window-small.png=usr/share/gnome/help/rhythmbox/de/figures/rb-window-small.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/figures/rb-window.png=usr/share/gnome/help/rhythmbox/de/figures/rb-window.png 0644 root bin
+f none share/gnome/help/rhythmbox/de/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/de/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/de/rhythmbox.xml=usr/share/gnome/help/rhythmbox/de/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/el 0755 root bin
+d none share/gnome/help/rhythmbox/el/figures 0755 root bin
+s none share/gnome/help/rhythmbox/el/figures/rb-iradio-main.png=../../C/figures/rb-iradio-main.png
+s none share/gnome/help/rhythmbox/el/figures/rb-notification-area-menu.png=../../C/figures/rb-notification-area-menu.png
+s none share/gnome/help/rhythmbox/el/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+s none share/gnome/help/rhythmbox/el/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/el/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/el/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+s none share/gnome/help/rhythmbox/el/figures/rb-toolbar-prevplaynext.png=../../C/figures/rb-toolbar-prevplaynext.png
+s none share/gnome/help/rhythmbox/el/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/el/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+s none share/gnome/help/rhythmbox/el/figures/rb-toolbar.png=../../C/figures/rb-toolbar.png
+s none share/gnome/help/rhythmbox/el/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+s none share/gnome/help/rhythmbox/el/figures/rb-window-small.png=../../C/figures/rb-window-small.png
+s none share/gnome/help/rhythmbox/el/figures/rb-window.png=../../C/figures/rb-window.png
+f none share/gnome/help/rhythmbox/el/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/el/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/el/rhythmbox.xml=usr/share/gnome/help/rhythmbox/el/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/es 0755 root bin
+d none share/gnome/help/rhythmbox/es/figures 0755 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-iradio-main.png=usr/share/gnome/help/rhythmbox/es/figures/rb-iradio-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-notification-area-menu.png=usr/share/gnome/help/rhythmbox/es/figures/rb-notification-area-menu.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-notification-window.png=usr/share/gnome/help/rhythmbox/es/figures/rb-notification-window.png 0644 root bin
+s none share/gnome/help/rhythmbox/es/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+f none share/gnome/help/rhythmbox/es/figures/rb-podcast-main.png=usr/share/gnome/help/rhythmbox/es/figures/rb-podcast-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-statusbar.png=usr/share/gnome/help/rhythmbox/es/figures/rb-statusbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-toolbar-prevplaynext.png=usr/share/gnome/help/rhythmbox/es/figures/rb-toolbar-prevplaynext.png 0644 root bin
+s none share/gnome/help/rhythmbox/es/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/es/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+f none share/gnome/help/rhythmbox/es/figures/rb-toolbar.png=usr/share/gnome/help/rhythmbox/es/figures/rb-toolbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-volume-changer.png=usr/share/gnome/help/rhythmbox/es/figures/rb-volume-changer.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-window-small.png=usr/share/gnome/help/rhythmbox/es/figures/rb-window-small.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/figures/rb-window.png=usr/share/gnome/help/rhythmbox/es/figures/rb-window.png 0644 root bin
+f none share/gnome/help/rhythmbox/es/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/es/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/es/rhythmbox.xml=usr/share/gnome/help/rhythmbox/es/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/fr 0755 root bin
+d none share/gnome/help/rhythmbox/fr/figures 0755 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-iradio-main.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-iradio-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-notification-area-menu.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-notification-area-menu.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-notification-window.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-notification-window.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-notification-zone.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-notification-zone.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-podcast-main.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-podcast-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-statusbar.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-statusbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-toolbar-prevplaynext.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-toolbar-prevplaynext.png 0644 root bin
+s none share/gnome/help/rhythmbox/fr/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/fr/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+f none share/gnome/help/rhythmbox/fr/figures/rb-toolbar.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-toolbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-volume-changer.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-volume-changer.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-window-small.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-window-small.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/figures/rb-window.png=usr/share/gnome/help/rhythmbox/fr/figures/rb-window.png 0644 root bin
+f none share/gnome/help/rhythmbox/fr/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/fr/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/fr/rhythmbox.xml=usr/share/gnome/help/rhythmbox/fr/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/it 0755 root bin
+d none share/gnome/help/rhythmbox/it/figures 0755 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-iradio-main.png=usr/share/gnome/help/rhythmbox/it/figures/rb-iradio-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-notification-area-menu.png=usr/share/gnome/help/rhythmbox/it/figures/rb-notification-area-menu.png 0644 root bin
+s none share/gnome/help/rhythmbox/it/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+f none share/gnome/help/rhythmbox/it/figures/rb-notification-zone.png=usr/share/gnome/help/rhythmbox/it/figures/rb-notification-zone.png 0644 root bin
+s none share/gnome/help/rhythmbox/it/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/it/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+f none share/gnome/help/rhythmbox/it/figures/rb-toolbar-prevplaynext.png=usr/share/gnome/help/rhythmbox/it/figures/rb-toolbar-prevplaynext.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-toolbar-repeat.png=usr/share/gnome/help/rhythmbox/it/figures/rb-toolbar-repeat.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-toolbar-shuffle.png=usr/share/gnome/help/rhythmbox/it/figures/rb-toolbar-shuffle.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-toolbar.png=usr/share/gnome/help/rhythmbox/it/figures/rb-toolbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-volume-changer.png=usr/share/gnome/help/rhythmbox/it/figures/rb-volume-changer.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-window-small.png=usr/share/gnome/help/rhythmbox/it/figures/rb-window-small.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/figures/rb-window.png=usr/share/gnome/help/rhythmbox/it/figures/rb-window.png 0644 root bin
+f none share/gnome/help/rhythmbox/it/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/it/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/it/rhythmbox.xml=usr/share/gnome/help/rhythmbox/it/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/oc 0755 root bin
+d none share/gnome/help/rhythmbox/oc/figures 0755 root bin
+s none share/gnome/help/rhythmbox/oc/figures/rb-iradio-main.png=../../C/figures/rb-iradio-main.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-notification-area-menu.png=../../C/figures/rb-notification-area-menu.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-toolbar-prevplaynext.png=../../C/figures/rb-toolbar-prevplaynext.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-toolbar.png=../../C/figures/rb-toolbar.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-window-small.png=../../C/figures/rb-window-small.png
+s none share/gnome/help/rhythmbox/oc/figures/rb-window.png=../../C/figures/rb-window.png
+f none share/gnome/help/rhythmbox/oc/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/oc/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/oc/rhythmbox.xml=usr/share/gnome/help/rhythmbox/oc/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/pt 0755 root bin
+d none share/gnome/help/rhythmbox/pt/figures 0755 root bin
+s none share/gnome/help/rhythmbox/pt/figures/rb-iradio-main.png=../../C/figures/rb-iradio-main.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-notification-area-menu.png=../../C/figures/rb-notification-area-menu.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-toolbar-prevplaynext.png=../../C/figures/rb-toolbar-prevplaynext.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-toolbar.png=../../C/figures/rb-toolbar.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-window-small.png=../../C/figures/rb-window-small.png
+s none share/gnome/help/rhythmbox/pt/figures/rb-window.png=../../C/figures/rb-window.png
+f none share/gnome/help/rhythmbox/pt/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/pt/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/pt/rhythmbox.xml=usr/share/gnome/help/rhythmbox/pt/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/ru 0755 root bin
+d none share/gnome/help/rhythmbox/ru/figures 0755 root bin
+s none share/gnome/help/rhythmbox/ru/figures/rb-iradio-main.png=../../C/figures/rb-iradio-main.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-notification-area-menu.png=../../C/figures/rb-notification-area-menu.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-toolbar-prevplaynext.png=../../C/figures/rb-toolbar-prevplaynext.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-toolbar.png=../../C/figures/rb-toolbar.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-window-small.png=../../C/figures/rb-window-small.png
+s none share/gnome/help/rhythmbox/ru/figures/rb-window.png=../../C/figures/rb-window.png
+f none share/gnome/help/rhythmbox/ru/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/ru/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/ru/rhythmbox.xml=usr/share/gnome/help/rhythmbox/ru/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/sv 0755 root bin
+d none share/gnome/help/rhythmbox/sv/figures 0755 root bin
+f none share/gnome/help/rhythmbox/sv/figures/rb-iradio-main.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-iradio-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/sv/figures/rb-notification-area-menu.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-notification-area-menu.png 0644 root bin
+f none share/gnome/help/rhythmbox/sv/figures/rb-notification-window.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-notification-window.png 0644 root bin
+s none share/gnome/help/rhythmbox/sv/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+f none share/gnome/help/rhythmbox/sv/figures/rb-podcast-main.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-podcast-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/sv/figures/rb-statusbar.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-statusbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/sv/figures/rb-toolbar-prevplaynext.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-toolbar-prevplaynext.png 0644 root bin
+s none share/gnome/help/rhythmbox/sv/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/sv/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+f none share/gnome/help/rhythmbox/sv/figures/rb-toolbar.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-toolbar.png 0644 root bin
+s none share/gnome/help/rhythmbox/sv/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+f none share/gnome/help/rhythmbox/sv/figures/rb-window-small.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-window-small.png 0644 root bin
+f none share/gnome/help/rhythmbox/sv/figures/rb-window.png=usr/share/gnome/help/rhythmbox/sv/figures/rb-window.png 0644 root bin
+f none share/gnome/help/rhythmbox/sv/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/sv/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/sv/rhythmbox.xml=usr/share/gnome/help/rhythmbox/sv/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/uk 0755 root bin
+d none share/gnome/help/rhythmbox/uk/figures 0755 root bin
+s none share/gnome/help/rhythmbox/uk/figures/rb-iradio-main.png=../../C/figures/rb-iradio-main.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-notification-area-menu.png=../../C/figures/rb-notification-area-menu.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-notification-window.png=../../C/figures/rb-notification-window.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-statusbar.png=../../C/figures/rb-statusbar.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-toolbar-prevplaynext.png=../../C/figures/rb-toolbar-prevplaynext.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-toolbar-repeat.png=../../C/figures/rb-toolbar-repeat.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-toolbar-shuffle.png=../../C/figures/rb-toolbar-shuffle.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-toolbar.png=../../C/figures/rb-toolbar.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-volume-changer.png=../../C/figures/rb-volume-changer.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-window-small.png=../../C/figures/rb-window-small.png
+s none share/gnome/help/rhythmbox/uk/figures/rb-window.png=../../C/figures/rb-window.png
+f none share/gnome/help/rhythmbox/uk/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/uk/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/uk/rhythmbox.xml=usr/share/gnome/help/rhythmbox/uk/rhythmbox.xml 0644 root bin
+d none share/gnome/help/rhythmbox/zh_CN 0755 root bin
+d none share/gnome/help/rhythmbox/zh_CN/figures 0755 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-iradio-main.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-iradio-main.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-notification-area-menu.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-notification-area-menu.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-notification-window.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-notification-window.png 0644 root bin
+s none share/gnome/help/rhythmbox/zh_CN/figures/rb-notification-zone.png=../../C/figures/rb-notification-zone.png
+s none share/gnome/help/rhythmbox/zh_CN/figures/rb-podcast-main.png=../../C/figures/rb-podcast-main.png
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-statusbar.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-statusbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar-prevplaynext.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar-prevplaynext.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar-repeat.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar-repeat.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar-shuffle.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar-shuffle.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-toolbar.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-volume-changer.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-volume-changer.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-window-small.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-window-small.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/figures/rb-window.png=usr/share/gnome/help/rhythmbox/zh_CN/figures/rb-window.png 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/rhythmbox.help.copyright=usr/share/gnome/help/rhythmbox/zh_CN/rhythmbox.help.copyright 0644 root bin
+f none share/gnome/help/rhythmbox/zh_CN/rhythmbox.xml=usr/share/gnome/help/rhythmbox/zh_CN/rhythmbox.xml 0644 root bin
+d none share/gnome/help/totem 0755 root bin
+d none share/gnome/help/totem/bg 0755 root bin
+d none share/gnome/help/totem/bg/figures 0755 root bin
+s none share/gnome/help/totem/bg/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/bg/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/bg/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/bg/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/bg/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/bg/figures/totem_start_window.png=usr/share/gnome/help/totem/bg/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/bg/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/bg/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/bg/totem.help.copyright=usr/share/gnome/help/totem/bg/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/bg/totem.xml=usr/share/gnome/help/totem/bg/totem.xml 0644 root bin
+d none share/gnome/help/totem/ca 0755 root bin
+d none share/gnome/help/totem/ca/figures 0755 root bin
+s none share/gnome/help/totem/ca/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/ca/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/ca/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/ca/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/ca/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/ca/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/ca/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/ca/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/ca/totem.help.copyright=usr/share/gnome/help/totem/ca/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/ca/totem.xml=usr/share/gnome/help/totem/ca/totem.xml 0644 root bin
+d none share/gnome/help/totem/cs 0755 root bin
+d none share/gnome/help/totem/cs/figures 0755 root bin
+s none share/gnome/help/totem/cs/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/cs/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/cs/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/cs/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/cs/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/cs/figures/totem_start_window.png=usr/share/gnome/help/totem/cs/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/cs/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/cs/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/cs/totem.help.copyright=usr/share/gnome/help/totem/cs/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/cs/totem.xml=usr/share/gnome/help/totem/cs/totem.xml 0644 root bin
+d none share/gnome/help/totem/da 0755 root bin
+d none share/gnome/help/totem/da/figures 0755 root bin
+s none share/gnome/help/totem/da/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/da/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/da/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/da/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/da/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/da/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/da/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/da/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/da/totem.help.copyright=usr/share/gnome/help/totem/da/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/da/totem.xml=usr/share/gnome/help/totem/da/totem.xml 0644 root bin
+d none share/gnome/help/totem/de 0755 root bin
+d none share/gnome/help/totem/de/figures 0755 root bin
+s none share/gnome/help/totem/de/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/de/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/de/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/de/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/de/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/de/figures/totem_start_window.png=usr/share/gnome/help/totem/de/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/de/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/de/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/de/totem.help.copyright=usr/share/gnome/help/totem/de/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/de/totem.xml=usr/share/gnome/help/totem/de/totem.xml 0644 root bin
+d none share/gnome/help/totem/el 0755 root bin
+d none share/gnome/help/totem/el/figures 0755 root bin
+s none share/gnome/help/totem/el/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/el/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/el/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/el/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/el/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/el/figures/totem_start_window.png=usr/share/gnome/help/totem/el/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/el/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/el/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/el/totem.help.copyright=usr/share/gnome/help/totem/el/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/el/totem.xml=usr/share/gnome/help/totem/el/totem.xml 0644 root bin
+d none share/gnome/help/totem/en_GB 0755 root bin
+d none share/gnome/help/totem/en_GB/figures 0755 root bin
+s none share/gnome/help/totem/en_GB/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/en_GB/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/en_GB/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/en_GB/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/en_GB/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/en_GB/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/en_GB/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/en_GB/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/en_GB/totem.help.copyright=usr/share/gnome/help/totem/en_GB/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/en_GB/totem.xml=usr/share/gnome/help/totem/en_GB/totem.xml 0644 root bin
+d none share/gnome/help/totem/es 0755 root bin
+d none share/gnome/help/totem/es/figures 0755 root bin
+s none share/gnome/help/totem/es/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/es/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/es/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/es/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/es/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/es/figures/totem_start_window.png=usr/share/gnome/help/totem/es/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/es/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/es/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/es/totem.help.copyright=usr/share/gnome/help/totem/es/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/es/totem.xml=usr/share/gnome/help/totem/es/totem.xml 0644 root bin
+d none share/gnome/help/totem/eu 0755 root bin
+d none share/gnome/help/totem/eu/figures 0755 root bin
+s none share/gnome/help/totem/eu/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/eu/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/eu/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/eu/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/eu/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/eu/figures/totem_start_window.png=usr/share/gnome/help/totem/eu/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/eu/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/eu/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/eu/totem.help.copyright=usr/share/gnome/help/totem/eu/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/eu/totem.xml=usr/share/gnome/help/totem/eu/totem.xml 0644 root bin
+d none share/gnome/help/totem/fi 0755 root bin
+d none share/gnome/help/totem/fi/figures 0755 root bin
+s none share/gnome/help/totem/fi/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/fi/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/fi/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/fi/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/fi/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/fi/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/fi/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/fi/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/fi/totem.help.copyright=usr/share/gnome/help/totem/fi/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/fi/totem.xml=usr/share/gnome/help/totem/fi/totem.xml 0644 root bin
+d none share/gnome/help/totem/fr 0755 root bin
+d none share/gnome/help/totem/fr/figures 0755 root bin
+f none share/gnome/help/totem/fr/figures/totem_next_button.png=usr/share/gnome/help/totem/fr/figures/totem_next_button.png 0644 root bin
+f none share/gnome/help/totem/fr/figures/totem_pause_button.png=usr/share/gnome/help/totem/fr/figures/totem_pause_button.png 0644 root bin
+f none share/gnome/help/totem/fr/figures/totem_play_button.png=usr/share/gnome/help/totem/fr/figures/totem_play_button.png 0644 root bin
+f none share/gnome/help/totem/fr/figures/totem_previous_button.png=usr/share/gnome/help/totem/fr/figures/totem_previous_button.png 0644 root bin
+s none share/gnome/help/totem/fr/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/fr/figures/totem_start_window.png=usr/share/gnome/help/totem/fr/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/fr/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/fr/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/fr/totem.help.copyright=usr/share/gnome/help/totem/fr/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/fr/totem.xml=usr/share/gnome/help/totem/fr/totem.xml 0644 root bin
+d none share/gnome/help/totem/it 0755 root bin
+d none share/gnome/help/totem/it/figures 0755 root bin
+s none share/gnome/help/totem/it/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/it/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/it/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/it/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/it/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/it/figures/totem_start_window.png=usr/share/gnome/help/totem/it/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/it/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/it/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/it/totem.help.copyright=usr/share/gnome/help/totem/it/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/it/totem.xml=usr/share/gnome/help/totem/it/totem.xml 0644 root bin
+d none share/gnome/help/totem/ja 0755 root bin
+d none share/gnome/help/totem/ja/figures 0755 root bin
+s none share/gnome/help/totem/ja/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/ja/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/ja/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/ja/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/ja/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/ja/figures/totem_start_window.png=usr/share/gnome/help/totem/ja/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/ja/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/ja/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/ja/totem.help.copyright=usr/share/gnome/help/totem/ja/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/ja/totem.xml=usr/share/gnome/help/totem/ja/totem.xml 0644 root bin
+d none share/gnome/help/totem/oc 0755 root bin
+d none share/gnome/help/totem/oc/figures 0755 root bin
+s none share/gnome/help/totem/oc/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/oc/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/oc/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/oc/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/oc/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/oc/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/oc/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/oc/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/oc/totem.help.copyright=usr/share/gnome/help/totem/oc/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/oc/totem.xml=usr/share/gnome/help/totem/oc/totem.xml 0644 root bin
+d none share/gnome/help/totem/pa 0755 root bin
+d none share/gnome/help/totem/pa/figures 0755 root bin
+s none share/gnome/help/totem/pa/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/pa/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/pa/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/pa/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/pa/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/pa/figures/totem_start_window.png=usr/share/gnome/help/totem/pa/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/pa/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/pa/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/pa/totem.help.copyright=usr/share/gnome/help/totem/pa/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/pa/totem.xml=usr/share/gnome/help/totem/pa/totem.xml 0644 root bin
+d none share/gnome/help/totem/pl 0755 root bin
+d none share/gnome/help/totem/pl/figures 0755 root bin
+s none share/gnome/help/totem/pl/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/pl/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/pl/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/pl/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+f none share/gnome/help/totem/pl/figures/totem_show_playlist_button.png=usr/share/gnome/help/totem/pl/figures/totem_show_playlist_button.png 0644 root bin
+f none share/gnome/help/totem/pl/figures/totem_start_window.png=usr/share/gnome/help/totem/pl/figures/totem_start_window.png 0644 root bin
+f none share/gnome/help/totem/pl/figures/totem_volume_maximum_button.png=usr/share/gnome/help/totem/pl/figures/totem_volume_maximum_button.png 0644 root bin
+f none share/gnome/help/totem/pl/figures/totem_volume_mute_button.png=usr/share/gnome/help/totem/pl/figures/totem_volume_mute_button.png 0644 root bin
+f none share/gnome/help/totem/pl/totem.help.copyright=usr/share/gnome/help/totem/pl/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/pl/totem.xml=usr/share/gnome/help/totem/pl/totem.xml 0644 root bin
+d none share/gnome/help/totem/pt_BR 0755 root bin
+d none share/gnome/help/totem/pt_BR/figures 0755 root bin
+s none share/gnome/help/totem/pt_BR/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/pt_BR/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/pt_BR/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/pt_BR/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/pt_BR/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/pt_BR/figures/totem_start_window.png=usr/share/gnome/help/totem/pt_BR/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/pt_BR/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/pt_BR/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/pt_BR/totem.help.copyright=usr/share/gnome/help/totem/pt_BR/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/pt_BR/totem.xml=usr/share/gnome/help/totem/pt_BR/totem.xml 0644 root bin
+d none share/gnome/help/totem/ru 0755 root bin
+d none share/gnome/help/totem/ru/figures 0755 root bin
+s none share/gnome/help/totem/ru/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/ru/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/ru/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/ru/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/ru/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/ru/figures/totem_start_window.png=usr/share/gnome/help/totem/ru/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/ru/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/ru/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/ru/totem.help.copyright=usr/share/gnome/help/totem/ru/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/ru/totem.xml=usr/share/gnome/help/totem/ru/totem.xml 0644 root bin
+d none share/gnome/help/totem/sv 0755 root bin
+d none share/gnome/help/totem/sv/figures 0755 root bin
+s none share/gnome/help/totem/sv/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/sv/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/sv/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/sv/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/sv/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/sv/figures/totem_start_window.png=usr/share/gnome/help/totem/sv/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/sv/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/sv/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/sv/totem.help.copyright=usr/share/gnome/help/totem/sv/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/sv/totem.xml=usr/share/gnome/help/totem/sv/totem.xml 0644 root bin
+d none share/gnome/help/totem/uk 0755 root bin
+d none share/gnome/help/totem/uk/figures 0755 root bin
+s none share/gnome/help/totem/uk/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/uk/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/uk/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/uk/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/uk/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+f none share/gnome/help/totem/uk/figures/totem_start_window.png=usr/share/gnome/help/totem/uk/figures/totem_start_window.png 0644 root bin
+s none share/gnome/help/totem/uk/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/uk/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/uk/totem.help.copyright=usr/share/gnome/help/totem/uk/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/uk/totem.xml=usr/share/gnome/help/totem/uk/totem.xml 0644 root bin
+d none share/gnome/help/totem/zh_CN 0755 root bin
+d none share/gnome/help/totem/zh_CN/figures 0755 root bin
+s none share/gnome/help/totem/zh_CN/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/zh_CN/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/zh_CN/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/zh_CN/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/zh_CN/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/zh_CN/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/zh_CN/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/zh_CN/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/zh_CN/totem.help.copyright=usr/share/gnome/help/totem/zh_CN/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/zh_CN/totem.xml=usr/share/gnome/help/totem/zh_CN/totem.xml 0644 root bin
+d none share/gnome/help/totem/zh_HK 0755 root bin
+d none share/gnome/help/totem/zh_HK/figures 0755 root bin
+s none share/gnome/help/totem/zh_HK/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/zh_HK/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/zh_HK/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/zh_HK/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/zh_HK/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/zh_HK/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/zh_HK/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/zh_HK/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/zh_HK/totem.help.copyright=usr/share/gnome/help/totem/zh_HK/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/zh_HK/totem.xml=usr/share/gnome/help/totem/zh_HK/totem.xml 0644 root bin
+d none share/gnome/help/totem/zh_TW 0755 root bin
+d none share/gnome/help/totem/zh_TW/figures 0755 root bin
+s none share/gnome/help/totem/zh_TW/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/zh_TW/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/zh_TW/totem.help.copyright=usr/share/gnome/help/totem/zh_TW/totem.help.copyright 0644 root bin
+f none share/gnome/help/totem/zh_TW/totem.xml=usr/share/gnome/help/totem/zh_TW/totem.xml 0644 root bin
+d none share/locale 0755 root other
+d none share/locale/af 0755 root other
+d none share/locale/af/LC_MESSAGES 0755 root other
+f none share/locale/af/LC_MESSAGES/rhythmbox.mo=usr/share/locale/af/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/af/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/af/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+d none share/locale/am 0755 root other
+d none share/locale/am/LC_MESSAGES 0755 root other
+f none share/locale/am/LC_MESSAGES/rhythmbox.mo=usr/share/locale/am/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/am/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/am/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/am/LC_MESSAGES/totem.mo=usr/share/locale/am/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/am/LC_MESSAGES/totem.ui.copyright=usr/share/locale/am/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ar 0755 root other
+d none share/locale/ar/LC_MESSAGES 0755 root other
+f none share/locale/ar/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ar/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ar/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ar/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ar/LC_MESSAGES/totem.mo=usr/share/locale/ar/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ar/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ar/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/as 0755 root other
+d none share/locale/as/LC_MESSAGES 0755 root other
+f none share/locale/as/LC_MESSAGES/rhythmbox.mo=usr/share/locale/as/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/as/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/as/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/as/LC_MESSAGES/totem.mo=usr/share/locale/as/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/as/LC_MESSAGES/totem.ui.copyright=usr/share/locale/as/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ast 0755 root other
+d none share/locale/ast/LC_MESSAGES 0755 root other
+f none share/locale/ast/LC_MESSAGES/totem.mo=usr/share/locale/ast/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ast/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ast/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/az 0755 root other
+d none share/locale/az/LC_MESSAGES 0755 root other
+f none share/locale/az/LC_MESSAGES/rhythmbox.mo=usr/share/locale/az/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/az/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/az/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/az/LC_MESSAGES/totem.mo=usr/share/locale/az/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/az/LC_MESSAGES/totem.ui.copyright=usr/share/locale/az/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/be 0755 root other
+d none share/locale/be/LC_MESSAGES 0755 root other
+f none share/locale/be/LC_MESSAGES/rhythmbox.mo=usr/share/locale/be/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/be/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/be/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/be/LC_MESSAGES/totem.mo=usr/share/locale/be/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/be/LC_MESSAGES/totem.ui.copyright=usr/share/locale/be/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/be@latin 0755 root other
+d none share/locale/be@latin/LC_MESSAGES 0755 root other
+f none share/locale/be@latin/LC_MESSAGES/rhythmbox.mo=usr/share/locale/be@latin/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/be@latin/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/be@latin/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/be@latin/LC_MESSAGES/totem.mo=usr/share/locale/be@latin/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/be@latin/LC_MESSAGES/totem.ui.copyright=usr/share/locale/be@latin/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/bg 0755 root other
+d none share/locale/bg/LC_MESSAGES 0755 root other
+f none share/locale/bg/LC_MESSAGES/rhythmbox.mo=usr/share/locale/bg/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/bg/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/bg/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/bg/LC_MESSAGES/totem.mo=usr/share/locale/bg/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/bg/LC_MESSAGES/totem.ui.copyright=usr/share/locale/bg/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/bn 0755 root other
+d none share/locale/bn/LC_MESSAGES 0755 root other
+f none share/locale/bn/LC_MESSAGES/totem.mo=usr/share/locale/bn/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/bn/LC_MESSAGES/totem.ui.copyright=usr/share/locale/bn/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/bn_IN 0755 root other
+d none share/locale/bn_IN/LC_MESSAGES 0755 root other
+f none share/locale/bn_IN/LC_MESSAGES/rhythmbox.mo=usr/share/locale/bn_IN/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/bn_IN/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/bn_IN/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/bn_IN/LC_MESSAGES/totem.mo=usr/share/locale/bn_IN/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/bn_IN/LC_MESSAGES/totem.ui.copyright=usr/share/locale/bn_IN/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/br 0755 root other
+d none share/locale/br/LC_MESSAGES 0755 root other
+f none share/locale/br/LC_MESSAGES/rhythmbox.mo=usr/share/locale/br/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/br/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/br/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/br/LC_MESSAGES/totem.mo=usr/share/locale/br/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/br/LC_MESSAGES/totem.ui.copyright=usr/share/locale/br/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ca 0755 root other
+d none share/locale/ca/LC_MESSAGES 0755 root other
+f none share/locale/ca/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ca/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ca/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ca/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ca/LC_MESSAGES/totem.mo=usr/share/locale/ca/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ca/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ca/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ca@valencia 0755 root other
+d none share/locale/ca@valencia/LC_MESSAGES 0755 root other
+f none share/locale/ca@valencia/LC_MESSAGES/totem.mo=usr/share/locale/ca@valencia/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ca@valencia/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ca@valencia/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/crh 0755 root other
+d none share/locale/crh/LC_MESSAGES 0755 root other
+f none share/locale/crh/LC_MESSAGES/totem.mo=usr/share/locale/crh/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/crh/LC_MESSAGES/totem.ui.copyright=usr/share/locale/crh/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/cs 0755 root other
+d none share/locale/cs/LC_MESSAGES 0755 root other
+f none share/locale/cs/LC_MESSAGES/rhythmbox.mo=usr/share/locale/cs/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/cs/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/cs/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/cs/LC_MESSAGES/totem.mo=usr/share/locale/cs/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/cs/LC_MESSAGES/totem.ui.copyright=usr/share/locale/cs/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/cy 0755 root other
+d none share/locale/cy/LC_MESSAGES 0755 root other
+f none share/locale/cy/LC_MESSAGES/rhythmbox.mo=usr/share/locale/cy/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/cy/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/cy/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/cy/LC_MESSAGES/totem.mo=usr/share/locale/cy/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/cy/LC_MESSAGES/totem.ui.copyright=usr/share/locale/cy/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/da 0755 root other
+d none share/locale/da/LC_MESSAGES 0755 root other
+f none share/locale/da/LC_MESSAGES/rhythmbox.mo=usr/share/locale/da/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/da/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/da/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/da/LC_MESSAGES/totem.mo=usr/share/locale/da/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/da/LC_MESSAGES/totem.ui.copyright=usr/share/locale/da/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/de 0755 root other
+d none share/locale/de/LC_MESSAGES 0755 root other
+f none share/locale/de/LC_MESSAGES/rhythmbox.mo=usr/share/locale/de/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/de/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/de/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/de/LC_MESSAGES/totem.mo=usr/share/locale/de/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/de/LC_MESSAGES/totem.ui.copyright=usr/share/locale/de/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/dz 0755 root other
+d none share/locale/dz/LC_MESSAGES 0755 root other
+f none share/locale/dz/LC_MESSAGES/rhythmbox.mo=usr/share/locale/dz/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/dz/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/dz/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/dz/LC_MESSAGES/totem.mo=usr/share/locale/dz/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/dz/LC_MESSAGES/totem.ui.copyright=usr/share/locale/dz/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/el 0755 root other
+d none share/locale/el/LC_MESSAGES 0755 root other
+f none share/locale/el/LC_MESSAGES/rhythmbox.mo=usr/share/locale/el/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/el/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/el/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/el/LC_MESSAGES/totem.mo=usr/share/locale/el/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/el/LC_MESSAGES/totem.ui.copyright=usr/share/locale/el/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/en@shaw 0755 root other
+d none share/locale/en@shaw/LC_MESSAGES 0755 root other
+f none share/locale/en@shaw/LC_MESSAGES/totem.mo=usr/share/locale/en@shaw/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/en@shaw/LC_MESSAGES/totem.ui.copyright=usr/share/locale/en@shaw/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/en_CA 0755 root other
+d none share/locale/en_CA/LC_MESSAGES 0755 root other
+f none share/locale/en_CA/LC_MESSAGES/rhythmbox.mo=usr/share/locale/en_CA/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/en_CA/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/en_CA/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/en_CA/LC_MESSAGES/totem.mo=usr/share/locale/en_CA/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/en_CA/LC_MESSAGES/totem.ui.copyright=usr/share/locale/en_CA/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/en_GB 0755 root other
+d none share/locale/en_GB/LC_MESSAGES 0755 root other
+f none share/locale/en_GB/LC_MESSAGES/rhythmbox.mo=usr/share/locale/en_GB/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/en_GB/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/en_GB/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/en_GB/LC_MESSAGES/totem.mo=usr/share/locale/en_GB/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/en_GB/LC_MESSAGES/totem.ui.copyright=usr/share/locale/en_GB/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/es 0755 root other
+d none share/locale/es/LC_MESSAGES 0755 root other
+f none share/locale/es/LC_MESSAGES/rhythmbox.mo=usr/share/locale/es/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/es/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/es/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/es/LC_MESSAGES/totem.mo=usr/share/locale/es/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/es/LC_MESSAGES/totem.ui.copyright=usr/share/locale/es/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/et 0755 root other
+d none share/locale/et/LC_MESSAGES 0755 root other
+f none share/locale/et/LC_MESSAGES/rhythmbox.mo=usr/share/locale/et/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/et/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/et/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/et/LC_MESSAGES/totem.mo=usr/share/locale/et/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/et/LC_MESSAGES/totem.ui.copyright=usr/share/locale/et/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/eu 0755 root other
+d none share/locale/eu/LC_MESSAGES 0755 root other
+f none share/locale/eu/LC_MESSAGES/rhythmbox.mo=usr/share/locale/eu/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/eu/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/eu/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/eu/LC_MESSAGES/totem.mo=usr/share/locale/eu/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/eu/LC_MESSAGES/totem.ui.copyright=usr/share/locale/eu/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/fa 0755 root other
+d none share/locale/fa/LC_MESSAGES 0755 root other
+f none share/locale/fa/LC_MESSAGES/totem.mo=usr/share/locale/fa/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/fa/LC_MESSAGES/totem.ui.copyright=usr/share/locale/fa/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/fi 0755 root other
+d none share/locale/fi/LC_MESSAGES 0755 root other
+f none share/locale/fi/LC_MESSAGES/rhythmbox.mo=usr/share/locale/fi/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/fi/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/fi/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/fi/LC_MESSAGES/totem.mo=usr/share/locale/fi/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/fi/LC_MESSAGES/totem.ui.copyright=usr/share/locale/fi/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/fr 0755 root other
+d none share/locale/fr/LC_MESSAGES 0755 root other
+f none share/locale/fr/LC_MESSAGES/rhythmbox.mo=usr/share/locale/fr/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/fr/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/fr/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/fr/LC_MESSAGES/totem.mo=usr/share/locale/fr/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/fr/LC_MESSAGES/totem.ui.copyright=usr/share/locale/fr/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ga 0755 root other
+d none share/locale/ga/LC_MESSAGES 0755 root other
+f none share/locale/ga/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ga/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ga/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ga/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ga/LC_MESSAGES/totem.mo=usr/share/locale/ga/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ga/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ga/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/gl 0755 root other
+d none share/locale/gl/LC_MESSAGES 0755 root other
+f none share/locale/gl/LC_MESSAGES/rhythmbox.mo=usr/share/locale/gl/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/gl/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/gl/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/gl/LC_MESSAGES/totem.mo=usr/share/locale/gl/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/gl/LC_MESSAGES/totem.ui.copyright=usr/share/locale/gl/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/gu 0755 root other
+d none share/locale/gu/LC_MESSAGES 0755 root other
+f none share/locale/gu/LC_MESSAGES/rhythmbox.mo=usr/share/locale/gu/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/gu/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/gu/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/gu/LC_MESSAGES/totem.mo=usr/share/locale/gu/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/gu/LC_MESSAGES/totem.ui.copyright=usr/share/locale/gu/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/he 0755 root other
+d none share/locale/he/LC_MESSAGES 0755 root other
+f none share/locale/he/LC_MESSAGES/rhythmbox.mo=usr/share/locale/he/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/he/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/he/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/he/LC_MESSAGES/totem.mo=usr/share/locale/he/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/he/LC_MESSAGES/totem.ui.copyright=usr/share/locale/he/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/hi 0755 root other
+d none share/locale/hi/LC_MESSAGES 0755 root other
+f none share/locale/hi/LC_MESSAGES/rhythmbox.mo=usr/share/locale/hi/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/hi/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/hi/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/hi/LC_MESSAGES/totem.mo=usr/share/locale/hi/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/hi/LC_MESSAGES/totem.ui.copyright=usr/share/locale/hi/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/hr 0755 root other
+d none share/locale/hr/LC_MESSAGES 0755 root other
+f none share/locale/hr/LC_MESSAGES/rhythmbox.mo=usr/share/locale/hr/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/hr/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/hr/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/hr/LC_MESSAGES/totem.mo=usr/share/locale/hr/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/hr/LC_MESSAGES/totem.ui.copyright=usr/share/locale/hr/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/hu 0755 root other
+d none share/locale/hu/LC_MESSAGES 0755 root other
+f none share/locale/hu/LC_MESSAGES/rhythmbox.mo=usr/share/locale/hu/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/hu/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/hu/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/hu/LC_MESSAGES/totem.mo=usr/share/locale/hu/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/hu/LC_MESSAGES/totem.ui.copyright=usr/share/locale/hu/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/id 0755 root other
+d none share/locale/id/LC_MESSAGES 0755 root other
+f none share/locale/id/LC_MESSAGES/rhythmbox.mo=usr/share/locale/id/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/id/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/id/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/id/LC_MESSAGES/totem.mo=usr/share/locale/id/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/id/LC_MESSAGES/totem.ui.copyright=usr/share/locale/id/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/is 0755 root other
+d none share/locale/is/LC_MESSAGES 0755 root other
+f none share/locale/is/LC_MESSAGES/rhythmbox.mo=usr/share/locale/is/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/is/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/is/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/is/LC_MESSAGES/totem.mo=usr/share/locale/is/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/is/LC_MESSAGES/totem.ui.copyright=usr/share/locale/is/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/it 0755 root other
+d none share/locale/it/LC_MESSAGES 0755 root other
+f none share/locale/it/LC_MESSAGES/rhythmbox.mo=usr/share/locale/it/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/it/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/it/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/it/LC_MESSAGES/totem.mo=usr/share/locale/it/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/it/LC_MESSAGES/totem.ui.copyright=usr/share/locale/it/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ja 0755 root other
+d none share/locale/ja/LC_MESSAGES 0755 root other
+f none share/locale/ja/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ja/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ja/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ja/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ja/LC_MESSAGES/totem.mo=usr/share/locale/ja/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ja/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ja/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ka 0755 root other
+d none share/locale/ka/LC_MESSAGES 0755 root other
+f none share/locale/ka/LC_MESSAGES/totem.mo=usr/share/locale/ka/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ka/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ka/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/kn 0755 root other
+d none share/locale/kn/LC_MESSAGES 0755 root other
+f none share/locale/kn/LC_MESSAGES/rhythmbox.mo=usr/share/locale/kn/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/kn/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/kn/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/kn/LC_MESSAGES/totem.mo=usr/share/locale/kn/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/kn/LC_MESSAGES/totem.ui.copyright=usr/share/locale/kn/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ko 0755 root other
+d none share/locale/ko/LC_MESSAGES 0755 root other
+f none share/locale/ko/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ko/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ko/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ko/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ko/LC_MESSAGES/totem.mo=usr/share/locale/ko/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ko/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ko/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ku 0755 root other
+d none share/locale/ku/LC_MESSAGES 0755 root other
+f none share/locale/ku/LC_MESSAGES/totem.mo=usr/share/locale/ku/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ku/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ku/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/lt 0755 root other
+d none share/locale/lt/LC_MESSAGES 0755 root other
+f none share/locale/lt/LC_MESSAGES/rhythmbox.mo=usr/share/locale/lt/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/lt/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/lt/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/lt/LC_MESSAGES/totem.mo=usr/share/locale/lt/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/lt/LC_MESSAGES/totem.ui.copyright=usr/share/locale/lt/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/lv 0755 root other
+d none share/locale/lv/LC_MESSAGES 0755 root other
+f none share/locale/lv/LC_MESSAGES/rhythmbox.mo=usr/share/locale/lv/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/lv/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/lv/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/lv/LC_MESSAGES/totem.mo=usr/share/locale/lv/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/lv/LC_MESSAGES/totem.ui.copyright=usr/share/locale/lv/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/mai 0755 root other
+d none share/locale/mai/LC_MESSAGES 0755 root other
+f none share/locale/mai/LC_MESSAGES/totem.mo=usr/share/locale/mai/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/mai/LC_MESSAGES/totem.ui.copyright=usr/share/locale/mai/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/mg 0755 root other
+d none share/locale/mg/LC_MESSAGES 0755 root other
+f none share/locale/mg/LC_MESSAGES/totem.mo=usr/share/locale/mg/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/mg/LC_MESSAGES/totem.ui.copyright=usr/share/locale/mg/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/mk 0755 root other
+d none share/locale/mk/LC_MESSAGES 0755 root other
+f none share/locale/mk/LC_MESSAGES/rhythmbox.mo=usr/share/locale/mk/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/mk/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/mk/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/mk/LC_MESSAGES/totem.mo=usr/share/locale/mk/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/mk/LC_MESSAGES/totem.ui.copyright=usr/share/locale/mk/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ml 0755 root other
+d none share/locale/ml/LC_MESSAGES 0755 root other
+f none share/locale/ml/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ml/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ml/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ml/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ml/LC_MESSAGES/totem.mo=usr/share/locale/ml/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ml/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ml/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/mn 0755 root other
+d none share/locale/mn/LC_MESSAGES 0755 root other
+f none share/locale/mn/LC_MESSAGES/rhythmbox.mo=usr/share/locale/mn/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/mn/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/mn/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+d none share/locale/mr 0755 root other
+d none share/locale/mr/LC_MESSAGES 0755 root other
+f none share/locale/mr/LC_MESSAGES/rhythmbox.mo=usr/share/locale/mr/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/mr/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/mr/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/mr/LC_MESSAGES/totem.mo=usr/share/locale/mr/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/mr/LC_MESSAGES/totem.ui.copyright=usr/share/locale/mr/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ms 0755 root other
+d none share/locale/ms/LC_MESSAGES 0755 root other
+f none share/locale/ms/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ms/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ms/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ms/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ms/LC_MESSAGES/totem.mo=usr/share/locale/ms/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ms/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ms/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/nb 0755 root other
+d none share/locale/nb/LC_MESSAGES 0755 root other
+f none share/locale/nb/LC_MESSAGES/rhythmbox.mo=usr/share/locale/nb/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/nb/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/nb/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/nb/LC_MESSAGES/totem.mo=usr/share/locale/nb/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/nb/LC_MESSAGES/totem.ui.copyright=usr/share/locale/nb/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/nds 0755 root other
+d none share/locale/nds/LC_MESSAGES 0755 root other
+f none share/locale/nds/LC_MESSAGES/rhythmbox.mo=usr/share/locale/nds/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/nds/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/nds/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+d none share/locale/ne 0755 root other
+d none share/locale/ne/LC_MESSAGES 0755 root other
+f none share/locale/ne/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ne/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ne/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ne/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ne/LC_MESSAGES/totem.mo=usr/share/locale/ne/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ne/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ne/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/nl 0755 root other
+d none share/locale/nl/LC_MESSAGES 0755 root other
+f none share/locale/nl/LC_MESSAGES/rhythmbox.mo=usr/share/locale/nl/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/nl/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/nl/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/nl/LC_MESSAGES/totem.mo=usr/share/locale/nl/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/nl/LC_MESSAGES/totem.ui.copyright=usr/share/locale/nl/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/nn 0755 root other
+d none share/locale/nn/LC_MESSAGES 0755 root other
+f none share/locale/nn/LC_MESSAGES/totem.mo=usr/share/locale/nn/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/nn/LC_MESSAGES/totem.ui.copyright=usr/share/locale/nn/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/oc 0755 root other
+d none share/locale/oc/LC_MESSAGES 0755 root other
+f none share/locale/oc/LC_MESSAGES/rhythmbox.mo=usr/share/locale/oc/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/oc/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/oc/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/oc/LC_MESSAGES/totem.mo=usr/share/locale/oc/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/oc/LC_MESSAGES/totem.ui.copyright=usr/share/locale/oc/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/or 0755 root other
+d none share/locale/or/LC_MESSAGES 0755 root other
+f none share/locale/or/LC_MESSAGES/rhythmbox.mo=usr/share/locale/or/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/or/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/or/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/or/LC_MESSAGES/totem.mo=usr/share/locale/or/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/or/LC_MESSAGES/totem.ui.copyright=usr/share/locale/or/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/pa 0755 root other
+d none share/locale/pa/LC_MESSAGES 0755 root other
+f none share/locale/pa/LC_MESSAGES/rhythmbox.mo=usr/share/locale/pa/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/pa/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/pa/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/pa/LC_MESSAGES/totem.mo=usr/share/locale/pa/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/pa/LC_MESSAGES/totem.ui.copyright=usr/share/locale/pa/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/pl 0755 root other
+d none share/locale/pl/LC_MESSAGES 0755 root other
+f none share/locale/pl/LC_MESSAGES/rhythmbox.mo=usr/share/locale/pl/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/pl/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/pl/LC_MESSAGES/totem.mo=usr/share/locale/pl/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/totem.ui.copyright=usr/share/locale/pl/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ps 0755 root other
+d none share/locale/ps/LC_MESSAGES 0755 root other
+f none share/locale/ps/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ps/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ps/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ps/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+d none share/locale/pt 0755 root other
+d none share/locale/pt/LC_MESSAGES 0755 root other
+f none share/locale/pt/LC_MESSAGES/rhythmbox.mo=usr/share/locale/pt/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/pt/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/pt/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/pt/LC_MESSAGES/totem.mo=usr/share/locale/pt/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/pt/LC_MESSAGES/totem.ui.copyright=usr/share/locale/pt/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/pt_BR 0755 root other
+d none share/locale/pt_BR/LC_MESSAGES 0755 root other
+f none share/locale/pt_BR/LC_MESSAGES/rhythmbox.mo=usr/share/locale/pt_BR/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/pt_BR/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/pt_BR/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/pt_BR/LC_MESSAGES/totem.mo=usr/share/locale/pt_BR/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/pt_BR/LC_MESSAGES/totem.ui.copyright=usr/share/locale/pt_BR/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ro 0755 root other
+d none share/locale/ro/LC_MESSAGES 0755 root other
+f none share/locale/ro/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ro/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ro/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ro/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ro/LC_MESSAGES/totem.mo=usr/share/locale/ro/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ro/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ro/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ru 0755 root other
+d none share/locale/ru/LC_MESSAGES 0755 root other
+f none share/locale/ru/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ru/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ru/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ru/LC_MESSAGES/totem.mo=usr/share/locale/ru/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ru/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/rw 0755 root other
+d none share/locale/rw/LC_MESSAGES 0755 root other
+f none share/locale/rw/LC_MESSAGES/rhythmbox.mo=usr/share/locale/rw/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/rw/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/rw/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/rw/LC_MESSAGES/totem.mo=usr/share/locale/rw/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/rw/LC_MESSAGES/totem.ui.copyright=usr/share/locale/rw/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/si 0755 root other
+d none share/locale/si/LC_MESSAGES 0755 root other
+f none share/locale/si/LC_MESSAGES/totem.mo=usr/share/locale/si/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/si/LC_MESSAGES/totem.ui.copyright=usr/share/locale/si/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/sk 0755 root other
+d none share/locale/sk/LC_MESSAGES 0755 root other
+f none share/locale/sk/LC_MESSAGES/rhythmbox.mo=usr/share/locale/sk/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/sk/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/sk/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/sk/LC_MESSAGES/totem.mo=usr/share/locale/sk/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/sk/LC_MESSAGES/totem.ui.copyright=usr/share/locale/sk/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/sl 0755 root other
+d none share/locale/sl/LC_MESSAGES 0755 root other
+f none share/locale/sl/LC_MESSAGES/rhythmbox.mo=usr/share/locale/sl/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/sl/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/sl/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/sl/LC_MESSAGES/totem.mo=usr/share/locale/sl/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/sl/LC_MESSAGES/totem.ui.copyright=usr/share/locale/sl/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/sq 0755 root other
+d none share/locale/sq/LC_MESSAGES 0755 root other
+f none share/locale/sq/LC_MESSAGES/totem.mo=usr/share/locale/sq/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/sq/LC_MESSAGES/totem.ui.copyright=usr/share/locale/sq/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/sr 0755 root other
+d none share/locale/sr/LC_MESSAGES 0755 root other
+f none share/locale/sr/LC_MESSAGES/rhythmbox.mo=usr/share/locale/sr/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/sr/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/sr/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/sr/LC_MESSAGES/totem.mo=usr/share/locale/sr/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/sr/LC_MESSAGES/totem.ui.copyright=usr/share/locale/sr/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/sr@latin 0755 root other
+d none share/locale/sr@latin/LC_MESSAGES 0755 root other
+f none share/locale/sr@latin/LC_MESSAGES/rhythmbox.mo=usr/share/locale/sr@latin/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/sr@latin/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/sr@latin/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/sr@latin/LC_MESSAGES/totem.mo=usr/share/locale/sr@latin/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/sr@latin/LC_MESSAGES/totem.ui.copyright=usr/share/locale/sr@latin/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/sv 0755 root other
+d none share/locale/sv/LC_MESSAGES 0755 root other
+f none share/locale/sv/LC_MESSAGES/rhythmbox.mo=usr/share/locale/sv/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/sv/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/sv/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/sv/LC_MESSAGES/totem.mo=usr/share/locale/sv/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/sv/LC_MESSAGES/totem.ui.copyright=usr/share/locale/sv/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ta 0755 root other
+d none share/locale/ta/LC_MESSAGES 0755 root other
+f none share/locale/ta/LC_MESSAGES/rhythmbox.mo=usr/share/locale/ta/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/ta/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/ta/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/ta/LC_MESSAGES/totem.mo=usr/share/locale/ta/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ta/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ta/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/te 0755 root other
+d none share/locale/te/LC_MESSAGES 0755 root other
+f none share/locale/te/LC_MESSAGES/rhythmbox.mo=usr/share/locale/te/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/te/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/te/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/te/LC_MESSAGES/totem.mo=usr/share/locale/te/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/te/LC_MESSAGES/totem.ui.copyright=usr/share/locale/te/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/th 0755 root other
+d none share/locale/th/LC_MESSAGES 0755 root other
+f none share/locale/th/LC_MESSAGES/rhythmbox.mo=usr/share/locale/th/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/th/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/th/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/th/LC_MESSAGES/totem.mo=usr/share/locale/th/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/th/LC_MESSAGES/totem.ui.copyright=usr/share/locale/th/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/tr 0755 root other
+d none share/locale/tr/LC_MESSAGES 0755 root other
+f none share/locale/tr/LC_MESSAGES/rhythmbox.mo=usr/share/locale/tr/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/tr/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/tr/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/tr/LC_MESSAGES/totem.mo=usr/share/locale/tr/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/tr/LC_MESSAGES/totem.ui.copyright=usr/share/locale/tr/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/ug 0755 root other
+d none share/locale/ug/LC_MESSAGES 0755 root other
+f none share/locale/ug/LC_MESSAGES/totem.mo=usr/share/locale/ug/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/ug/LC_MESSAGES/totem.ui.copyright=usr/share/locale/ug/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/uk 0755 root other
+d none share/locale/uk/LC_MESSAGES 0755 root other
+f none share/locale/uk/LC_MESSAGES/rhythmbox.mo=usr/share/locale/uk/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/uk/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/uk/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/uk/LC_MESSAGES/totem.mo=usr/share/locale/uk/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/uk/LC_MESSAGES/totem.ui.copyright=usr/share/locale/uk/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/vi 0755 root other
+d none share/locale/vi/LC_MESSAGES 0755 root other
+f none share/locale/vi/LC_MESSAGES/rhythmbox.mo=usr/share/locale/vi/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/vi/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/vi/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/vi/LC_MESSAGES/totem.mo=usr/share/locale/vi/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/vi/LC_MESSAGES/totem.ui.copyright=usr/share/locale/vi/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/wa 0755 root other
+d none share/locale/wa/LC_MESSAGES 0755 root other
+f none share/locale/wa/LC_MESSAGES/totem.mo=usr/share/locale/wa/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/wa/LC_MESSAGES/totem.ui.copyright=usr/share/locale/wa/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/xh 0755 root other
+d none share/locale/xh/LC_MESSAGES 0755 root other
+f none share/locale/xh/LC_MESSAGES/totem.mo=usr/share/locale/xh/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/xh/LC_MESSAGES/totem.ui.copyright=usr/share/locale/xh/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/zh_CN 0755 root other
+d none share/locale/zh_CN/LC_MESSAGES 0755 root other
+f none share/locale/zh_CN/LC_MESSAGES/rhythmbox.mo=usr/share/locale/zh_CN/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/zh_CN/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/zh_CN/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/zh_CN/LC_MESSAGES/totem.mo=usr/share/locale/zh_CN/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/zh_CN/LC_MESSAGES/totem.ui.copyright=usr/share/locale/zh_CN/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/zh_HK 0755 root other
+d none share/locale/zh_HK/LC_MESSAGES 0755 root other
+f none share/locale/zh_HK/LC_MESSAGES/rhythmbox.mo=usr/share/locale/zh_HK/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/zh_HK/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/zh_HK/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/zh_HK/LC_MESSAGES/totem.mo=usr/share/locale/zh_HK/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/zh_HK/LC_MESSAGES/totem.ui.copyright=usr/share/locale/zh_HK/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/locale/zh_TW 0755 root other
+d none share/locale/zh_TW/LC_MESSAGES 0755 root other
+f none share/locale/zh_TW/LC_MESSAGES/rhythmbox.mo=usr/share/locale/zh_TW/LC_MESSAGES/rhythmbox.mo 0644 root other
+f none share/locale/zh_TW/LC_MESSAGES/rhythmbox.ui.copyright=usr/share/locale/zh_TW/LC_MESSAGES/rhythmbox.ui.copyright 0644 root other
+f none share/locale/zh_TW/LC_MESSAGES/totem.mo=usr/share/locale/zh_TW/LC_MESSAGES/totem.mo 0644 root other
+f none share/locale/zh_TW/LC_MESSAGES/totem.ui.copyright=usr/share/locale/zh_TW/LC_MESSAGES/totem.ui.copyright 0644 root other
+d none share/omf 0755 root bin
+d none share/omf/rhythmbox 0755 root bin
+f none share/omf/rhythmbox/rhythmbox-cs.omf=usr/share/omf/rhythmbox/rhythmbox-cs.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-da.omf=usr/share/omf/rhythmbox/rhythmbox-da.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-de.omf=usr/share/omf/rhythmbox/rhythmbox-de.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-el.omf=usr/share/omf/rhythmbox/rhythmbox-el.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-es.omf=usr/share/omf/rhythmbox/rhythmbox-es.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-fr.omf=usr/share/omf/rhythmbox/rhythmbox-fr.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-it.omf=usr/share/omf/rhythmbox/rhythmbox-it.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-oc.omf=usr/share/omf/rhythmbox/rhythmbox-oc.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-pt.omf=usr/share/omf/rhythmbox/rhythmbox-pt.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-ru.omf=usr/share/omf/rhythmbox/rhythmbox-ru.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-sv.omf=usr/share/omf/rhythmbox/rhythmbox-sv.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-uk.omf=usr/share/omf/rhythmbox/rhythmbox-uk.omf 0644 root bin
+f none share/omf/rhythmbox/rhythmbox-zh_CN.omf=usr/share/omf/rhythmbox/rhythmbox-zh_CN.omf 0644 root bin
+d none share/omf/totem 0755 root bin
+f none share/omf/totem/totem-bg.omf=usr/share/omf/totem/totem-bg.omf 0644 root bin
+f none share/omf/totem/totem-ca.omf=usr/share/omf/totem/totem-ca.omf 0644 root bin
+f none share/omf/totem/totem-cs.omf=usr/share/omf/totem/totem-cs.omf 0644 root bin
+f none share/omf/totem/totem-da.omf=usr/share/omf/totem/totem-da.omf 0644 root bin
+f none share/omf/totem/totem-de.omf=usr/share/omf/totem/totem-de.omf 0644 root bin
+f none share/omf/totem/totem-el.omf=usr/share/omf/totem/totem-el.omf 0644 root bin
+f none share/omf/totem/totem-en_GB.omf=usr/share/omf/totem/totem-en_GB.omf 0644 root bin
+f none share/omf/totem/totem-es.omf=usr/share/omf/totem/totem-es.omf 0644 root bin
+f none share/omf/totem/totem-eu.omf=usr/share/omf/totem/totem-eu.omf 0644 root bin
+f none share/omf/totem/totem-fi.omf=usr/share/omf/totem/totem-fi.omf 0644 root bin
+f none share/omf/totem/totem-fr.omf=usr/share/omf/totem/totem-fr.omf 0644 root bin
+f none share/omf/totem/totem-it.omf=usr/share/omf/totem/totem-it.omf 0644 root bin
+f none share/omf/totem/totem-ja.omf=usr/share/omf/totem/totem-ja.omf 0644 root bin
+f none share/omf/totem/totem-oc.omf=usr/share/omf/totem/totem-oc.omf 0644 root bin
+f none share/omf/totem/totem-pa.omf=usr/share/omf/totem/totem-pa.omf 0644 root bin
+f none share/omf/totem/totem-pl.omf=usr/share/omf/totem/totem-pl.omf 0644 root bin
+f none share/omf/totem/totem-pt_BR.omf=usr/share/omf/totem/totem-pt_BR.omf 0644 root bin
+f none share/omf/totem/totem-ru.omf=usr/share/omf/totem/totem-ru.omf 0644 root bin
+f none share/omf/totem/totem-sv.omf=usr/share/omf/totem/totem-sv.omf 0644 root bin
+f none share/omf/totem/totem-uk.omf=usr/share/omf/totem/totem-uk.omf 0644 root bin
+f none share/omf/totem/totem-zh_CN.omf=usr/share/omf/totem/totem-zh_CN.omf 0644 root bin
+f none share/omf/totem/totem-zh_HK.omf=usr/share/omf/totem/totem-zh_HK.omf 0644 root bin
+f none share/omf/totem/totem-zh_TW.omf=usr/share/omf/totem/totem-zh_TW.omf 0644 root bin

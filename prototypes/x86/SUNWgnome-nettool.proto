@@ -1,0 +1,58 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-nettool.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-nettool.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-nettool.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-nettool.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-nettool.copyright
+f none share/doc/SUNWgnome-nettool/AUTHORS=usr/share/doc/SUNWgnome-nettool/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-nettool/COPYING.bz2=usr/share/doc/SUNWgnome-nettool/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-nettool/ChangeLog.bz2=usr/share/doc/SUNWgnome-nettool/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-nettool/NEWS.bz2=usr/share/doc/SUNWgnome-nettool/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-nettool/README=usr/share/doc/SUNWgnome-nettool/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gnome-nettool=usr/bin/gnome-nettool 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-nettool.desktop=usr/share/applications/gnome-nettool.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-nettool 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome-nettool 0755 root other
+d none share/gnome-nettool/dialogs 0755 root other
+f none share/gnome-nettool/dialogs/gnome-nettool.ui=usr/share/gnome-nettool/dialogs/gnome-nettool.ui 0644 root bin
+d none share/gnome-nettool/pixmaps 0755 root other
+f none share/gnome-nettool/pixmaps/16_ethernet.xpm=usr/share/gnome-nettool/pixmaps/16_ethernet.xpm 0644 root bin
+f none share/gnome-nettool/pixmaps/16_loopback.xpm=usr/share/gnome-nettool/pixmaps/16_loopback.xpm 0644 root bin
+f none share/gnome-nettool/pixmaps/16_plip.xpm=usr/share/gnome-nettool/pixmaps/16_plip.xpm 0644 root bin
+f none share/gnome-nettool/pixmaps/16_ppp.xpm=usr/share/gnome-nettool/pixmaps/16_ppp.xpm 0644 root bin
+f none share/gnome-nettool/pixmaps/gnome-nettool.png=usr/share/gnome-nettool/pixmaps/gnome-nettool.png 0644 root bin
+f none share/gnome-nettool/pixmaps/irda-16.png=usr/share/gnome-nettool/pixmaps/irda-16.png 0644 root bin
+f none share/gnome-nettool/pixmaps/network.png=usr/share/gnome-nettool/pixmaps/network.png 0644 root bin
+f none share/gnome-nettool/pixmaps/wavelan-16.png=usr/share/gnome-nettool/pixmaps/wavelan-16.png 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-nettool 0755 root bin
+d none share/gnome/help/gnome-nettool/C 0755 root bin
+f none share/gnome/help/gnome-nettool/C/gnome-nettool.xml=usr/share/gnome/help/gnome-nettool/C/gnome-nettool.xml 0644 root bin
+f none share/gnome/help/gnome-nettool/C/legal.xml=usr/share/gnome/help/gnome-nettool/C/legal.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/gnome-nettool.png=usr/share/icons/hicolor/16x16/apps/gnome-nettool.png 0644 root bin
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/gnome-nettool.png=usr/share/icons/hicolor/22x22/apps/gnome-nettool.png 0644 root bin
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/gnome-nettool.png=usr/share/icons/hicolor/24x24/apps/gnome-nettool.png 0644 root bin
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/gnome-nettool.png=usr/share/icons/hicolor/32x32/apps/gnome-nettool.png 0644 root bin
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/gnome-nettool.svg=usr/share/icons/hicolor/scalable/apps/gnome-nettool.svg 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-nettool.1=usr/share/man/man1/gnome-nettool.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-nettool 0755 root bin
+f none share/omf/gnome-nettool/gnome-nettool-C.omf=usr/share/omf/gnome-nettool/gnome-nettool-C.omf 0644 root bin

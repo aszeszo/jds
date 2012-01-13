@@ -1,0 +1,42 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-solaris-branding.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-solaris-branding.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-solaris-branding.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-solaris-branding.copyright
+d none share 0755 root sys
+d none share/gdm 0755 root bin
+d none share/gdm/themes 0755 root bin
+d none share/gdm/themes/Sun-Nimbus 0755 root bin
+f none share/gdm/themes/Sun-Nimbus/box-sun-branded.png=usr/share/gdm/themes/Sun-Nimbus/box-sun-branded.png 0644 root bin
+f none share/gdm/themes/Sun-Nimbus/sun-logo.png=usr/share/gdm/themes/Sun-Nimbus/sun-logo.png 0644 root bin
+d none share/gnome-background-properties 0755 root bin
+f none share/gnome-background-properties/sun-branded.xml=usr/share/gnome-background-properties/sun-branded.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/sun-start-here.png=usr/share/icons/hicolor/32x32/apps/sun-start-here.png 0644 root other
+d none share/pixmaps 0755 root other
+d none share/pixmaps/backgrounds 0755 root bin
+d none share/pixmaps/backgrounds/sun 0755 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-java-blue.png=usr/share/pixmaps/backgrounds/sun/di-logo-java-blue.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-java-dark_gray.png=usr/share/pixmaps/backgrounds/sun/di-logo-java-dark_gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-java-gray.png=usr/share/pixmaps/backgrounds/sun/di-logo-java-gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-java-orange.png=usr/share/pixmaps/backgrounds/sun/di-logo-java-orange.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-solaris-blue.png=usr/share/pixmaps/backgrounds/sun/di-logo-solaris-blue.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-solaris-gray.png=usr/share/pixmaps/backgrounds/sun/di-logo-solaris-gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-solaris-orange.png=usr/share/pixmaps/backgrounds/sun/di-logo-solaris-orange.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-solaris-reflected-b.png=usr/share/pixmaps/backgrounds/sun/di-logo-solaris-reflected-b.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-solaris-reflected-d.png=usr/share/pixmaps/backgrounds/sun/di-logo-solaris-reflected-d.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-solaris-reflected-o.png=usr/share/pixmaps/backgrounds/sun/di-logo-solaris-reflected-o.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-sun-blue.png=usr/share/pixmaps/backgrounds/sun/di-logo-sun-blue.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-sun-dark_gray.png=usr/share/pixmaps/backgrounds/sun/di-logo-sun-dark_gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-sun-gray.png=usr/share/pixmaps/backgrounds/sun/di-logo-sun-gray.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-sun-green.png=usr/share/pixmaps/backgrounds/sun/di-logo-sun-green.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-sun-orange.png=usr/share/pixmaps/backgrounds/sun/di-logo-sun-orange.png 0644 root bin
+f none share/pixmaps/backgrounds/sun/di-logo-sun-yellow.png=usr/share/pixmaps/backgrounds/sun/di-logo-sun-yellow.png 0644 root bin
+d none share/pixmaps/splash 0755 root bin
+f none share/pixmaps/splash/adobe-sun.png=usr/share/pixmaps/splash/adobe-sun.png 0644 root bin
+f none share/pixmaps/splash/flash.png=usr/share/pixmaps/splash/flash.png 0644 root bin
+f none share/pixmaps/splash/java-logo.png=usr/share/pixmaps/splash/java-logo.png 0644 root bin
+f none share/pixmaps/splash/sun-logo.png=usr/share/pixmaps/splash/sun-logo.png 0644 root bin
+f none share/pixmaps/splash/sun-splash.png=usr/share/pixmaps/splash/sun-splash.png 0644 root bin

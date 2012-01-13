@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWfsexam-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWfsexam-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWfsexam-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/fsexam.schemas=etc/gconf/schemas/fsexam.schemas 0755 root sys

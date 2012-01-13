@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-img-organizer-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-img-organizer-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-img-organizer-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gthumb-comments.schemas=etc/gconf/schemas/gthumb-comments.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb-gstreamer.schemas=etc/gconf/schemas/gthumb-gstreamer.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb-image-viewer.schemas=etc/gconf/schemas/gthumb-image-viewer.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb-importer.schemas=etc/gconf/schemas/gthumb-importer.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb-picasaweb.schemas=etc/gconf/schemas/gthumb-picasaweb.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb-pixbuf-savers.schemas=etc/gconf/schemas/gthumb-pixbuf-savers.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb-slideshow.schemas=etc/gconf/schemas/gthumb-slideshow.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb.schemas=etc/gconf/schemas/gthumb.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb_convert_format.schemas=etc/gconf/schemas/gthumb_convert_format.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb_image_print.schemas=etc/gconf/schemas/gthumb_image_print.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb_photo_importer.schemas=etc/gconf/schemas/gthumb_photo_importer.schemas 0644 root sys
+f none etc/gconf/schemas/gthumb_resize_images.schemas=etc/gconf/schemas/gthumb_resize_images.schemas 0644 root sys

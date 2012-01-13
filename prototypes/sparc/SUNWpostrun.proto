@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpostrun.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpostrun.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpostrun.copyright
+d none lib 0755 root bin
+f none lib/postrun=usr/lib/postrun 0755 root bin
+f none lib/postrun-query=usr/lib/postrun-query 0755 root bin

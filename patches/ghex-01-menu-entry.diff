@@ -1,0 +1,13 @@
+--- ghex-2.24.0/ghex.desktop.in.orig	Mon Jul 20 18:44:43 2009
++++ ghex-2.24.0/ghex.desktop.in	Mon Jul 20 18:45:30 2009
+@@ -1,6 +1,8 @@
+ [Desktop Entry]
+-_Name=Hex Editor
+-_Comment=GNOME Hexadecimal Editor
++# SUN_BRANDING
++_Name=GHex Binary File Editor
++# SUN_BRANDING
++_Comment=Inspect and edit the contents of binary files
+ Exec=ghex2 %F
+ Terminal=false
+ Type=Application

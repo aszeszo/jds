@@ -1,0 +1,18 @@
+--- a/security/nss/lib/softoken/fipstokn.c	2011-07-04 12:54:14.437480106 +0800
++++ b/security/nss/lib/softoken/fipstokn.c	2011-07-04 12:59:20.801117512 +0800
+@@ -456,13 +456,13 @@
+ 
+         /* write the audit tokens to the audit record */
+         if (au_write(rd, au_to_text(message))) {
+-            (void)au_close(rd, AU_TO_NO_WRITE, AUE_FIPS_AUDIT);
++            (void)au_close(rd, AU_TO_NO_WRITE, AUE_FIPS_AUDIT, 0);
+             PR_smprintf_free(message);
+             return;
+         }
+ 
+         /* close the record and send it to the audit trail */
+-        (void)au_close(rd, AU_TO_WRITE, AUE_FIPS_AUDIT);
++        (void)au_close(rd, AU_TO_WRITE, AUE_FIPS_AUDIT, 0);
+ 
+         PR_smprintf_free(message);
+     }

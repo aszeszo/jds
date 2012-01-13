@@ -1,0 +1,11 @@
+--- ./Lib.orig/perl5/perlhead.swg	Thu Jul 24 14:02:06 2008
++++ ./Lib/perl5/perlhead.swg	Thu Jul 24 14:15:29 2008
+@@ -2,6 +2,8 @@
+ /* Needed on some windows machines---since MS plays funny games with the header files under C++ */
+ #include <math.h>
+ #include <stdlib.h>
++/* Needed on Solaris - otherwise any simple C++ file will fail */
++#include <sys/vnode.h>
+ extern "C" {
+ #endif
+ #include "EXTERN.h"

@@ -1,0 +1,23 @@
+Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License:
+   scripts: GNU General Public License Version 3
+   documentation: GNU Free Documentation License 1.1
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU GPLv3
+  COPYING-DOCS.bz2: GNU GPLv3
+  MAINTAINERS: list of %{name} maintainers
+  NEWS.bz2: list of the most important changes and contributors
+  ChangeLog.bz2: list of all changes and authors of %{name}
+  README: more information about %{name}
+
+ The sources of gtk-doc-%{gtkdoc.version} were downloaded
+ from %{gtkdoc.SOURCE0.url}
+

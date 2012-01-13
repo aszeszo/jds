@@ -1,0 +1,37 @@
+diff -urN GConf-2.31.1/configure.in ../../SUNWgnome-config-2.31.1.hacked/i386/GConf-2.31.1/configure.in
+--- GConf-2.31.1/configure.in	2011-03-10 16:01:09.193252830 +0000
++++ ../../SUNWgnome-config-2.31.1.hacked/i386/GConf-2.31.1/configure.in	2011-03-11 14:48:35.264352716 +0000
+@@ -142,11 +142,13 @@
+     [Enable GTK+ support (for gconf-sanity-check) @<:@default=auto@:>@]),
+   , enable_gtk=auto)
+ 
++PKGCONFIG_MODULES_GCONF='glib-2.0 > 2.14.0 gmodule-2.0 >= 2.7.0 gobject-2.0 >= 2.7.0 ORBit-2.0 >= 2.4.0 dbus-1 >= 1.0.0'
+ PKGCONFIG_MODULES='glib-2.0 > 2.14.0 gthread-2.0 gmodule-2.0 >= 2.7.0 gobject-2.0 >= 2.7.0 ORBit-2.0 >= 2.4.0 dbus-1 >= 1.0.0 dbus-glib-1 >= 0.74'
+ PKGCONFIG_MODULES_WITH_XML="$PKGCONFIG_MODULES libxml-2.0"
+ PKGCONFIG_MODULES_WITH_GTK=" $PKGCONFIG_MODULES gtk+-2.0 >= 2.14.0"
+ PKGCONFIG_MODULES_WITH_XML_AND_GTK=" $PKGCONFIG_MODULES gtk+-2.0 libxml-2.0"
+ 
++PKG_CHECK_MODULES(DEPENDENT_GCONF, $PKGCONFIG_MODULES_GCONF)
+ PKG_CHECK_MODULES(DEPENDENT, $PKGCONFIG_MODULES)
+ PKG_CHECK_MODULES(DEPENDENT_WITH_XML, $PKGCONFIG_MODULES_WITH_XML)
+ 
+@@ -167,6 +169,7 @@
+ 
+ AM_CONDITIONAL(GTK, [test "x$HAVE_GTK" != "xno"])
+ 
++AC_SUBST(DEPENDENT_GCONF_LIBS)
+ AC_SUBST(DEPENDENT_LIBS)
+ AC_SUBST(DEPENDENT_CFLAGS)
+ AC_SUBST(DEPENDENT_WITH_XML_LIBS)
+diff -urN GConf-2.31.1/gconf/Makefile.am ../../SUNWgnome-config-2.31.1.hacked/i386/GConf-2.31.1/gconf/Makefile.am
+--- GConf-2.31.1/gconf/Makefile.am	2010-04-17 00:33:26.000000000 +0100
++++ ../../SUNWgnome-config-2.31.1.hacked/i386/GConf-2.31.1/gconf/Makefile.am	2011-03-11 14:49:05.626381743 +0000
+@@ -118,7 +118,7 @@
+ 
+ libgconf_2_la_LDFLAGS = -version-info $(GCONF_CURRENT):$(GCONF_REVISION):$(GCONF_AGE) -no-undefined
+ 
+-libgconf_2_la_LIBADD = $(INTLLIBS) $(DEPENDENT_LIBS)
++libgconf_2_la_LIBADD = $(INTLLIBS) $(DEPENDENT_GCONF_LIBS)
+ 
+ -include $(INTROSPECTION_MAKEFILE)
+ INTROSPECTION_GIRS =

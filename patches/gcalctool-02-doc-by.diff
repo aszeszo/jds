@@ -1,0 +1,20 @@
+diff -urN gcalctool-5.30.2/src/gtk.c ../SUNWgnome-calculator-5.30.2.hacked/gcalctool-5.30.2/src/gtk.c
+--- gcalctool-5.30.2/src/gtk.c	2010-04-26 01:14:22.000000000 +0000
++++ ../SUNWgnome-calculator-5.30.2.hacked/gcalctool-5.30.2/src/gtk.c	2011-06-16 15:01:32.591677875 +0000
+@@ -1,6 +1,5 @@
+-/*  Copyright (c) 1987-2008 Sun Microsystems, Inc. All Rights Reserved.
++/*  Copyright (c) 1987-2011 Oracle and/or its affiliates. All rights reserved.
+  *  Copyright (c) 2008-2009 Robert Ancell
+- *
+  *  This program is free software; you can redistribute it and/or modify
+  *  it under the terms of the GNU General Public License as published by
+  *  the Free Software Foundation; either version 2, or (at your option)
+@@ -549,7 +548,7 @@
+         NULL
+     };
+     const gchar *documenters[] = {
+-        "Sun Microsystems",
++        "Oracle Corporation",
+         NULL
+     };
+ 

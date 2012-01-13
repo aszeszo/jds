@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-startup.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-startup.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-startup.copyright
+d none bin 0755 root bin
+f none bin/dtstart=usr/bin/dtstart 0755 root bin

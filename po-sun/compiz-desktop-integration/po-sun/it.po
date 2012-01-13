@@ -1,0 +1,145 @@
+# Copyright (C) 2009 Sun Microsystems, Inc
+# This file is distributed under the same license as the compiz-desktop-integration package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: compiz-desktop-integration HEAD\n"
+       "Report-Msgid-Bugs-To: \n"
+       "POT-Creation-Date: 2009-04-03 12:28+0900\n"
+       "PO-Revision-Date: 2009-04-03 11:09+0100\n"
+       "Last-Translator: desktop-discuss@opensolaris.org\n"
+       "Language-Team: desktop-discuss@opensolaris.org\n"
+       "MIME-Version: 1.0\n"
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+#: ../compiz-config.glade.h:1
+msgid "<b>Status</b>"
+msgstr "<b>Stato</b>"
+
+#: ../compiz-config.glade.h:2
+msgid "<b>System Compatibility checks</b>"
+msgstr "<b>Verifiche compatibilità sistema</b>"
+
+#: ../compiz-config.glade.h:3
+msgid "Architecture"
+msgstr "Architettura"
+
+#: ../compiz-config.glade.h:4
+msgid "Session Type"
+msgstr "Tipo sessione"
+
+#: ../compiz-config.glade.h:5
+msgid "Video Card"
+msgstr "Scheda video"
+
+#: ../compiz-config.glade.h:6
+msgid "Video Card Driver"
+msgstr "Driver scheda video"
+
+#: ../compiz-config.glade.h:7
+msgid "Visual Effect System Checks"
+msgstr "Verifiche sistema effetti visivi"
+
+#: ../compiz-config.glade.h:8
+msgid "Xserver Configuration"
+msgstr "Configurazione Xserver"
+
+#: ../compiz-config.glade.h:9
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../compiz-config.glade.h:10
+msgid "modify configuration"
+msgstr "modifica configurazione"
+
+#: ../compiz-config.glade.h:11
+msgid "undefined"
+msgstr "non definito"
+
+#: ../compiz-config.glade.h:12
+msgid "unknown"
+msgstr "sconosciuto"
+
+#: ../compiz-configure.in:113
+msgid "support 3D acceleration"
+msgstr "supporto accelerazione 3D"
+
+#: ../compiz-configure.in:115
+#, c-format
+msgid ""
+"no supported driver for card of type (%s) : Compiz will not run on this "
+"system"
+msgstr ""
+       "nessun driver supportato per la scheda del tipo (%s): Compiz non verrà eseguito in questo sistema"
+
+#: ../compiz-configure.in:116
+msgid "no 3D acceleration"
+msgstr "nessuna accelerazione 3D"
+
+#: ../compiz-configure.in:131
+msgid "Trusted Session detected : Compiz will not run in this configuration"
+msgstr "Sessione attendibile rilevata: Compiz non verrà eseguito in questa configurazione"
+
+#: ../compiz-configure.in:132
+msgid "Trusted Session"
+msgstr "Sessione attendibile"
+
+#: ../compiz-configure.in:142
+msgid "Sunray Session detected : Compiz will not run in this configuration"
+msgstr "Sessione Sunray rilevata: Compiz non verrà eseguito in questa configurazione"
+
+#: ../compiz-configure.in:143
+msgid "Sunray Session"
+msgstr "Sessione Sunray"
+
+#: ../compiz-configure.in:145
+msgid "Regular Session"
+msgstr "Sessione standard"
+
+#: ../compiz-configure.in:190 ../compiz-configure.in:241
+msgid "configured"
+msgstr "configurato"
+
+#: ../compiz-configure.in:192 ../compiz-configure.in:243
+msgid "Xorg configuration file is not configured to run the visual effects"
+msgstr "Il file di configurazione Xorg non è configurato per l'esecuzione di effetti visivi"
+
+#: ../compiz-configure.in:193 ../compiz-configure.in:244
+msgid "not configured"
+msgstr "non configurato"
+
+#: ../compiz-configure.in:344
+msgid "This system can run the visual effects"
+msgstr "Questo sistema è in grado di eseguire gli effetti visivi"
+
+#: ../compiz-configure.in:346
+msgid ""
+"This system can run the visual effects but is not configured to do so. Click "
+"on the modify button to configure it."
+msgstr ""
+       "Questo sistema è in grado di eseguire gli effetti visivi ma non è configurato per farlo. Per configurarlo, fare clic sul pulsante di modifica."
+
+#: ../compiz-configure.in:349
+msgid ""
+"This system cannot run the visual effects as it is not running a regular "
+"session"
+msgstr ""
+       "Questo sistema non è in grado di eseguire gli effetti visivi poiché non è in esecuzione una sessione standard"
+
+#: ../compiz-configure.in:353
+msgid ""
+"This system can run the visual effects but the current graphics driver does "
+"not support 3D acceleration. Refer to http://opensolaris.org/os/project/dri/ "
+"for more information about the supported cards"
+msgstr ""
+       "Questo sistema è in grado di eseguire gli effetti visivi ma l'attuale driver della grafica non supporta l'accelerazione 3D. Per ulteriori informazioni sulle schede supportate, consultare http://opensolaris.org/os/project/dri/"
+
+#: ../compiz-configure.in:356
+msgid ""
+"This system cannot run the visual effects due to the lack of supported 3D "
+"Video Card Driver"
+msgstr ""
+       "Questo sistema non è in grado di eseguire gli effetti visivi a causa della mancanza di un driver per scheda video 3D supportato"

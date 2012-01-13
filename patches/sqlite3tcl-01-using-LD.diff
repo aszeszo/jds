@@ -1,0 +1,11 @@
+--- sqlite-tea-3070400/configure.orig	2011-01-31 12:22:49.223643590 +0800
++++ sqlite-tea-3070400/configure	2011-01-31 12:22:56.056100052 +0800
+@@ -9889,7 +9889,7 @@
+ 		case $system in
+ 		    SunOS-5.[1-9][0-9]*)
+ 			# TEA specific: use LDFLAGS_DEFAULT instead of LDFLAGS
+-			SHLIB_LD='${CC} -G -z text ${LDFLAGS_DEFAULT}';;
++			SHLIB_LD='${LD} -G -z text ${LDFLAGS_DEFAULT}';;
+ 		    *)
+ 			SHLIB_LD='/usr/ccs/bin/ld -G -z text';;
+ 		esac

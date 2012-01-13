@@ -1,0 +1,1526 @@
+diff --git a/js/src/nanojit/NativeSparc.h b/js/src/nanojit/NativeSparc.h
+index 2a69caa..462ffc8 100644
+--- a/js/src/nanojit/NativeSparc.h
++++ b/js/src/nanojit/NativeSparc.h
+@@ -71,7 +71,7 @@
+ {
+     const int NJ_MAX_REGISTERS = 30; // L0 - L7, I0 - I5, F2 - F14
+ 
+-    const int LARGEST_UNDERRUN_PROT = 32;  // largest value passed to underrunProtect
++    const int LARGEST_UNDERRUN_PROT = 72;  // largest value passed to underrunProtect
+ 
+ #define NJ_MAX_STACK_ENTRY              8192
+ #define NJ_MAX_PARAMETERS               1
+@@ -203,16 +203,18 @@
+ #define DECLARE_PLATFORM_REGALLOC()
+ 
+ #define DECLARE_PLATFORM_ASSEMBLER()    \
++     friend class SafeUnderrunProtect; \
+      const static Register argRegs[6], retRegs[1]; \
+      void nativePageReset(); \
+      void nativePageSetup(); \
+      void underrunProtect(int bytes); \
+      bool hardenNopInsertion(const Config& /*c*/) { return false; } \
+      void asm_align_code(); \
+-     void asm_cmp(LIns *cond); \
+-     void asm_cmpd(LIns *cond); \
++     void asm_cmp(LIns* cond); \
++     void asm_cmpd(LIns* cond); \
+      NIns* asm_branchd(bool, LIns*, NIns*); \
+      void IMM32(int32_t i) { \
++         underrunProtect(4); \
+          --_nIns; \
+          *((int32_t*)_nIns) = i; \
+      } \
+@@ -294,16 +296,16 @@
+     void Format_4_5(Register rd, int32_t op3, int32_t cond, int32_t opf_cc, int32_t opf_low, Register rs2) { \
+         Format_3A(2, rd, op3, (cond & 0xF) << 14 | (opf_cc & 0x7) << 11 | (opf_low & 0x3F) << 5 | _reg_(rs2)); \
+     } \
+-    void IntegerOperation(Register rs1, Register rs2, Register rd, int32_t op3, const char *opcode); \
+-    void IntegerOperationI(Register rs1, int32_t simm13, Register rd, int32_t op3, const char *opcode); \
+-    void FloatOperation(Register rs1, Register rs2, Register rd, int32_t op3, const char *opcode); \
+-    void Bicc(int32_t a, int32_t dsp22, int32_t cond, const char *opcode); \
+-    void FBfcc(int32_t a, int32_t dsp22, int32_t cond, const char *opcode); \
++    void IntegerOperation(Register rs1, Register rs2, Register rd, int32_t op3, const char* opcode); \
++    void IntegerOperationI(Register rs1, int32_t simm13, Register rd, int32_t op3, const char* opcode); \
++    void FloatOperation(Register rs1, Register rs2, Register rd, int32_t op3, const char* opcode); \
++    void Bicc(int32_t a, int32_t dsp22, int32_t cond, const char* opcode); \
++    void FBfcc(int32_t a, int32_t dsp22, int32_t cond, const char* opcode); \
+     void LoadOperation(Register rs1, Register rs2, Register rd, int32_t op3, const char* opcode); \
+     void LoadOperationI(Register rs1, int32_t simm13, Register rd, int32_t op3, const char* opcode); \
+-    void MOVcc(Register rs, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char *opcode); \
+-    void MOVccI(int32_t simm11, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char *opcode); \
+-    void FMOVDcc(Register rs, int32_t opt_cc, Register rd, int32_t cond, const char *opcode); \
++    void MOVcc(Register rs, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char* opcode); \
++    void MOVccI(int32_t simm11, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char* opcode); \
++    void FMOVDcc(Register rs, int32_t opt_cc, Register rd, int32_t cond, const char* opcode); \
+     void ShiftOperation(Register rs1, Register rs2, Register rd, int32_t op3, const char* opcode); \
+     void ShiftOperationI(Register rs1, int32_t shcnt32, Register rd, int32_t op3, const char* opcode); \
+     void Store(Register rd, Register rs1, Register rs2, int32_t op3, const char* opcode); \
+@@ -442,14 +444,13 @@
+     void STB(Register rd, Register rs1, Register rs2); \
+     void STBI(Register rd, int32_t simm13, Register rs1); \
+     void STB32(Register rd, int32_t immI, Register rs1); \
+-    bool isIMM13(int32_t imm) { return (imm) <= 0xfff && (imm) >= -0x1000; } \
+-    bool isIMM19(int32_t imm) { return (imm) <= 0x3ffff && (imm) >= -0x40000; } \
+-    bool isIMM22(int32_t imm) { return (imm) <= 0x1fffff && (imm) >= -0x200000; } \
+-    void JMP_long_nocheck(int32_t t); \
++    static bool isIMM13(int32_t imm) { return (imm) <= 0xfff && (imm) >= -0x1000; } \
++    static bool isIMM19(int32_t imm) { return (imm) <= 0x3ffff && (imm) >= -0x40000; } \
++    static bool isIMM22(int32_t imm) { return (imm) <= 0x1fffff && (imm) >= -0x200000; } \
+     void JMP_long(int32_t t); \
+     void JMP_long_placeholder(); \
+-    int32_t JCC(void *t); \
+-    void JMP(void *t); \
++    int32_t JCC(void* t); \
++    void JMP(void* t); \
+     void MR(Register rd, Register rs);
+ }
+ #endif // __nanojit_NativeSparc__
+--- a/js/src/jsapi.cpp	2011-06-22 22:05:28.108252350 +0800
++++ b/js/src/jsapi.cpp	2011-06-22 22:06:13.458823300 +0800
+@@ -2763,6 +2763,12 @@
+ JS_PUBLIC_API(void)
+ JS_SetNativeStackQuota(JSContext *cx, size_t stackSize)
+ {
++#ifdef JS_CPU_SPARC
++    stackSize = JS_MIN(stackSize * 8, 7 * 1024 * 1024); // more stack is required on SPARC
++#else
++    // stackSize = stackSize * 2; // PGO needs more stack, why?
++#endif
++
+ #ifdef JS_THREADSAFE
+     JS_ASSERT(cx->thread());
+ #endif
+diff --git a/js/src/nanojit/NativeSparc.cpp b/js/src/nanojit/NativeSparc.cpp
+index 029a22a..a73be3d 100644
+--- a/js/src/nanojit/NativeSparc.cpp
++++ b/js/src/nanojit/NativeSparc.cpp
+@@ -47,9 +47,33 @@
+ namespace nanojit
+ {
+ #ifdef FEATURE_NANOJIT
++    class SafeUnderrunProtect
++    {
++        public:
++            SafeUnderrunProtect(Assembler* assembler, int n)
++            {
++                _nprotect = n;
++                _assembler = assembler;
++                _assembler->underrunProtect(n);
++                _priorIns = _assembler->_nIns;
++                _priorStart = _assembler->codeStart;
++            };
+ 
++            ~SafeUnderrunProtect()
++            {
++                NanoAssert(_priorStart == _assembler->codeStart);
++                NanoAssert((intptr_t)_priorIns - (intptr_t)_assembler->_nIns <= _nprotect);
++            };
++
++        private:
++            int _nprotect;
++            Assembler* _assembler;
++            NIns* _priorIns;
++            NIns* _priorStart;
++    };
++
+ #ifdef NJ_VERBOSE
+-    const char *regNames[] = {
++    const char* regNames[] = {
+         "%g0", "%g1", "%g2", "%g3", "%g4", "%g5", "%g6", "%g7",
+         "%o0", "%o1", "%o2", "%o3", "%o4", "%o5", "%sp", "%o7",
+         "%l0", "%l1", "%l2", "%l3", "%l4", "%l5", "%l6", "%l7",
+@@ -79,13 +103,13 @@
+     }
+ 
+     inline void Assembler::IntegerOperation
+-        (Register rs1, Register rs2, Register rd, int32_t op3, const char *opcode) {
++        (Register rs1, Register rs2, Register rd, int32_t op3, const char* opcode) {
+         Format_3_1(2, rd, op3, rs1, 0, rs2);
+         asm_output("%s %s, %s, %s", opcode, gpn(rs1), gpn(rs2), gpn(rd));
+     }
+ 
+     inline void Assembler::IntegerOperationI
+-        (Register rs1, int32_t simm13, Register rd, int32_t op3, const char *opcode) {
++        (Register rs1, int32_t simm13, Register rd, int32_t op3, const char* opcode) {
+         Format_3_1I(2, rd, op3, rs1, simm13);
+         asm_output("%s %s, %d, %s", opcode, gpn(rs1), simm13, gpn(rd));
+     }
+@@ -127,9 +151,9 @@
+         IntegerOperation(rs1, rs2, rd, 0x3, "xor");
+     }
+ 
+-    inline void Assembler::Bicc(int32_t a, int32_t dsp22, int32_t cond, const char *opcode) {
++    inline void Assembler::Bicc(int32_t a, int32_t dsp22, int32_t cond, const char* opcode) {
+         Format_2_2(a, cond, 0x2, dsp22);
+-        asm_output("%s 0x%x", opcode, _nIns + dsp22 - 1);
++        asm_output("%s 0x%x", opcode, _nIns + dsp22);
+     }
+ 
+     inline void Assembler::BA  (int32_t a, int32_t dsp22) { Bicc(a, dsp22, 0x8, "ba");   }
+@@ -156,7 +180,7 @@
+         asm_output("faddd %s, %s, %s", gpn(rs1), gpn(rs2), gpn(rd));
+     }
+ 
+-    inline void Assembler::FBfcc(int32_t a, int32_t dsp22, int32_t cond, const char *opcode) {
++    inline void Assembler::FBfcc(int32_t a, int32_t dsp22, int32_t cond, const char* opcode) {
+         Format_2_2(a, cond, 0x6, dsp22);
+         asm_output("%s 0x%x", opcode, _nIns + dsp22 - 1);
+     }
+@@ -179,7 +203,7 @@
+     }
+ 
+     inline void Assembler::FloatOperation
+-        (Register rs1, Register rs2, Register rd, int32_t opf, const char *opcode) {
++        (Register rs1, Register rs2, Register rd, int32_t opf, const char* opcode) {
+         Format_3_8(2, rd, 0x34, rs1, opf, rs2);
+         if (rs1 != G0) {
+           asm_output("%s %s, %s, %s", opcode, gpn(rs1), gpn(rs2), gpn(rd));
+@@ -347,13 +371,13 @@
+     }
+ 
+     inline void Assembler::MOVcc
+-        (Register rs, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char *opcode) {
++        (Register rs, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char* opcode) {
+         Format_4_2(rd, 0x2c, cc2, cond, cc1, cc0, rs);
+         asm_output("%s %s, %s", opcode, gpn(rs), gpn(rd));
+     }
+ 
+     inline void Assembler::MOVccI
+-        (int32_t simm11, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char *opcode) {
++        (int32_t simm11, int32_t cc2, int32_t cc1, int32_t cc0, Register rd, int32_t cond, const char* opcode) {
+         Format_4_2I(rd, 0x2c, cc2, cond, cc1, cc0, simm11);
+         asm_output("%s 0x%x, %s", opcode, simm11, gpn(rd));
+     }
+@@ -386,7 +410,7 @@
+     inline void Assembler::MOVFGI (int32_t simm11, Register rd) { MOVccI(simm11, 0, 0, 0, rd, 0x6, "movfg");  }
+     inline void Assembler::MOVFGEI(int32_t simm11, Register rd) { MOVccI(simm11, 0, 0, 0, rd, 0xb, "movfge"); }
+ 
+-    inline void Assembler::FMOVDcc(Register rs, int32_t opt_cc, Register rd, int32_t cond, const char *opcode) {
++    inline void Assembler::FMOVDcc(Register rs, int32_t opt_cc, Register rd, int32_t cond, const char* opcode) {
+         Format_4_5(rd, 0x35, cond, opt_cc, 0x2, rs);
+         asm_output("%s %s, %s", opcode, gpn(rs), gpn(rd));
+     }
+@@ -556,7 +580,19 @@
+     }
+ 
+     // general Assemble
+-    inline void Assembler::JMP_long_nocheck(int32_t t) {
++    inline void Assembler::JMP_long(int32_t t) {
++        SafeUnderrunProtect protect(this, 16);
++    /*    if (t) {
++            int32_t tt = ((intptr_t)t - (intptr_t)_nIns + 16) >> 2;
++            if (isIMM22(tt)) {
++                NOP();
++                NOP();
++                NOP();
++                BA(0,tt);
++                return;
++            }
++        }
++*/
+         NOP();
+         JMPL(G0, G2, G0);
+         ORI(G2, t & 0x3FF, G2);
+@@ -563,17 +599,12 @@
+         SETHI(t, G2);
+     }
+ 
+-    inline void Assembler::JMP_long(int32_t t) {
+-        underrunProtect(16);
+-        JMP_long_nocheck(t);
+-    }
+-
+     inline void Assembler::JMP_long_placeholder() {
+         JMP_long(0);
+     }
+ 
+-    inline int32_t Assembler::JCC(void *t) {
+-        underrunProtect(32);
++    inline int32_t Assembler::JCC(void* t) {
++        SafeUnderrunProtect protect(this, 32);
+         int32_t tt = ((intptr_t)t - (intptr_t)_nIns + 8) >> 2;
+         if( !(isIMM22(tt)) ) {
+             NOP();
+@@ -587,7 +618,7 @@
+         return tt;
+     }
+ 
+-    void Assembler::JMP(void *t) {
++    void Assembler::JMP(void* t) {
+         if (!t) {
+             JMP_long_placeholder();
+         } else {
+@@ -597,7 +628,6 @@
+     }
+ 
+     void Assembler::MR(Register rd, Register rs) {
+-        underrunProtect(4);
+         ORI(rs, 0, rd);
+     }
+ 
+@@ -612,7 +642,7 @@
+         /**
+          * Prologue
+          */
+-        underrunProtect(16);
++        SafeUnderrunProtect protect(this, 28);
+         uint32_t stackNeeded = STACK_GRANULARITY * _activation.stackSlotsNeeded();
+         uint32_t frameSize = stackNeeded + kcalleeAreaSize + kLinkageAreaSize;
+         frameSize = BIT_ROUND_UP(frameSize, 8);
+@@ -630,7 +660,7 @@
+             outputf("        0x%x:",_nIns);
+             outputf("        patch entry:");
+         })
+-        NIns *patchEntry = _nIns;
++        NIns* patchEntry = _nIns;
+ 
+         // The frame size in SAVE is faked. We will still re-caculate SP later.
+         // We can use 0 here but it is not good for debuggers.
+@@ -642,7 +672,8 @@
+         return patchEntry;
+     }
+ 
+-    void Assembler::asm_align_code() {
++    void Assembler::asm_align_code()
++    {
+         while(uintptr_t(_nIns) & 15) {
+             NOP();
+         }
+@@ -651,30 +682,27 @@
+     void Assembler::nFragExit(LIns* guard)
+     {
+         SideExit* exit = guard->record()->exit;
+-        Fragment *frag = exit->target;
+-        GuardRecord *lr;
+-        if (frag && frag->fragEntry)
+-            {
+-                JMP(frag->fragEntry);
+-                lr = 0;
+-            }
+-        else
+-            {
+-                // Target doesn't exit yet. Emit jump to epilog, and set up to patch later.
+-                if (!_epilogue)
+-                    _epilogue = genEpilogue();
+-                lr = guard->record();
+-                JMP_long((intptr_t)_epilogue);
+-                lr->jmp = _nIns;
+-            }
++        Fragment* frag = exit->target;
++        GuardRecord* lr;
++        if (frag && frag->fragEntry) {
++            JMP(frag->fragEntry);
++            lr = 0;
++        } else {
++            // Target doesn't exit yet. Emit jump to epilog, and set up to patch later.
++            if (!_epilogue)
++                _epilogue = genEpilogue();
++            lr = guard->record();
++            JMP_long((intptr_t)_epilogue);
++            lr->jmp = _nIns;
++        }
+ 
+         // return value is GuardRecord*
+         SET32(int(lr), O0);
+     }
+ 
+-    NIns *Assembler::genEpilogue()
++    NIns* Assembler::genEpilogue()
+     {
+-        underrunProtect(12);
++        SafeUnderrunProtect protect(this, 12);
+         RESTORE(G0, G0, G0); //restore
+         JMPLI(I7, 8, G0); //ret
+         ORI(O0, 0, I0);
+@@ -684,19 +712,15 @@
+     void Assembler::asm_call(LIns* ins)
+     {
+         if (!ins->isop(LIR_callv)) {
+-            Register retReg = ( ins->isop(LIR_calld) ? F0 : retRegs[0] );
+-            deprecated_prepResultReg(ins, rmask(retReg));
++            Register retReg = (ins->isop(LIR_calld) ? F0 : retRegs[0]);
++            prepareResultReg(ins, rmask(retReg));
++            evictScratchRegsExcept(rmask(retReg));
++        } else {
++            evictScratchRegsExcept(0);
+         }
+ 
+-        // Do this after we've handled the call result, so we don't
+-        // force the call result to be spilled unnecessarily.
+-        evictScratchRegsExcept(0);
+-
+         const CallInfo* ci = ins->callInfo();
+ 
+-        underrunProtect(8);
+-        NOP();
+-
+         ArgType argTypes[MAXARGS];
+         uint32_t argc = ci->getArgTypes(argTypes);
+ 
+@@ -704,53 +728,59 @@
+                    ins->isop(LIR_calld));
+         verbose_only(if (_logc->lcbits & LC_Native)
+                      outputf("        0x%x:", _nIns);
+-                     )
++                    )
+         bool indirect = ci->isIndirect();
+-        if (!indirect) {
+-            CALL(ci);
++
++        {
++            SafeUnderrunProtect protect(this, 8);
++            NOP();
++            if (!indirect) {
++                CALL(ci);
++            }
++            else {
++                argc--;
++                Register r = findSpecificRegFor(ins->arg(argc), I0);
++                JMPL(G0, I0, O7);
++            }
+         }
+-        else {
+-            argc--;
+-            Register r = findSpecificRegFor(ins->arg(argc), I0);
+-            JMPL(G0, I0, O7);
+-        }
+ 
++        freeResourcesOf(ins);
++
+         Register GPRIndex = O0;
+         uint32_t offset = kLinkageAreaSize; // start of parameters stack postion.
+ 
+-        for(int i=0; i<argc; i++)
+-            {
+-                uint32_t j = argc-i-1;
+-                ArgType ty = argTypes[j];
+-                if (ty == ARGTYPE_D) {
+-                    Register r = findRegFor(ins->arg(j), FpRegs);
++        for (int i = 0; i < argc; i++) {
++            uint32_t j = argc-i-1;
++            ArgType ty = argTypes[j];
++            if (ty == ARGTYPE_D) {
++                Register r = findRegFor(ins->arg(j), FpRegs);
+ 
+-                    underrunProtect(48);
+-                    // We might be calling a varargs function.
+-                    // So, make sure the GPR's are also loaded with
+-                    // the value, or the stack contains it.
+-                    if (GPRIndex <= O5) {
+-                        LDSW32(SP, offset, GPRIndex);
+-                    }
+-                    GPRIndex = GPRIndex + 1;
+-                    if (GPRIndex <= O5) {
+-                        LDSW32(SP, offset+4, GPRIndex);
+-                    }
+-                    GPRIndex = GPRIndex + 1;
+-                    STDF32(r, offset, SP);
+-                    offset += 8;
++                SafeUnderrunProtect protect(this, 48);
++                // We might be calling a varargs function.
++                // So, make sure the GPR's are also loaded with
++                // the value, or the stack contains it.
++                if (GPRIndex <= O5) {
++                    LDSW32(SP, offset, GPRIndex);
++                }
++                GPRIndex = GPRIndex + 1;
++                if (GPRIndex <= O5) {
++                    LDSW32(SP, offset+4, GPRIndex);
++                }
++                GPRIndex = GPRIndex + 1;
++                STDF32(r, offset, SP);
++                offset += 8;
++            } else {
++                if (GPRIndex > O5) {
++                    SafeUnderrunProtect protect(this, 12);
++                    Register r = findRegFor(ins->arg(j), GpRegs);
++                    STW32(r, offset, SP);
+                 } else {
+-                    if (GPRIndex > O5) {
+-                        underrunProtect(12);
+-                        Register r = findRegFor(ins->arg(j), GpRegs);
+-                        STW32(r, offset, SP);
+-                    } else {
+-                        Register r = findSpecificRegFor(ins->arg(j), GPRIndex);
+-                    }
+-                    GPRIndex = GPRIndex + 1;
+-                    offset += 4;
++                    Register r = findSpecificRegFor(ins->arg(j), GPRIndex);
+                 }
++                GPRIndex = GPRIndex + 1;
++                offset += 4;
+             }
++        }
+     }
+ 
+     Register Assembler::nRegisterAllocFromSet(RegisterMask set)
+@@ -771,10 +801,16 @@
+ 
+     void Assembler::nPatchBranch(NIns* branch, NIns* location)
+     {
+-        *(uint32_t*)&branch[0] &= 0xFFC00000;
+-        *(uint32_t*)&branch[0] |= ((intptr_t)location >> 10) & 0x3FFFFF;
+-        *(uint32_t*)&branch[1] &= 0xFFFFFC00;
+-        *(uint32_t*)&branch[1] |= (intptr_t)location & 0x3FF;
++        intptr_t addr_diff = ((intptr_t)location - (intptr_t)branch) >> 2;
++        if ( !isIMM22(addr_diff)) {
++            *(uint32_t*)&branch[0] = 0x05000000 | ((intptr_t)location >> 10) & 0x3FFFFF; // sethi ..., %g2
++            *(uint32_t*)&branch[1] = 0x8410a000 | (intptr_t)location & 0x3FF; // bset ..., %g2
++            *(uint32_t*)&branch[2] = 0x81c00002; // jmp %g2
++        } else {
++            *(uint32_t*)&branch[0] = 0x10800000 | (addr_diff & 0x3FFFFF); // ba
++            *(uint32_t*)&branch[1] = 0x01000000; // nop
++            *(uint32_t*)&branch[2] = 0x01000000; // nop
++        }
+     }
+ 
+     RegisterMask Assembler::nHint(LIns* ins)
+@@ -791,10 +827,10 @@
+ 
+     void Assembler::asm_restore(LIns* i, Register r)
+     {
+-        underrunProtect(24);
++        SafeUnderrunProtect protect(this, 24);
+         if (i->isop(LIR_allocp)) {
+             ADD(FP, L2, r);
+-            int32_t d = deprecated_disp(i);
++            int32_t d = arDisp(i);
+             SET32(d, L2);
+         }
+         else if (i->isImmI()) {
+@@ -810,7 +846,7 @@
+         }
+     }
+ 
+-    void Assembler::asm_store32(LOpcode op, LIns *value, int dr, LIns *base)
++    void Assembler::asm_store32(LOpcode op, LIns* value, int dr, LIns* base)
+     {
+         switch (op) {
+             case LIR_sti:
+@@ -823,53 +859,38 @@
+                 return;
+         }
+ 
+-        underrunProtect(20);
+-        if (value->isImmI())
+-            {
+-                Register rb = getBaseReg(base, dr, GpRegs);
+-                int c = value->immI();
+-                switch (op) {
+-                case LIR_sti:
+-                    STW32(L2, dr, rb);
+-                    break;
+-                case LIR_sti2c:
+-                    STB32(L2, dr, rb);
+-                    break;
+-                case LIR_sti2s:
+-                    STH32(L2, dr, rb);
+-                    break;
+-                }
+-                SET32(c, L2);
++        SafeUnderrunProtect protect(this, 20);
++        if (value->isImmI()) {
++            Register rb = getBaseReg(base, dr, GpRegs);
++            int c = value->immI();
++            switch (op) {
++                case LIR_sti:   STW32(L2, dr, rb); break;
++                case LIR_sti2c: STB32(L2, dr, rb); break;
++                case LIR_sti2s: STH32(L2, dr, rb); break;
+             }
+-        else
+-            {
+-                // make sure what is in a register
+-                Register ra, rb;
+-                if (base->isImmI()) {
+-                    // absolute address
+-                    dr += base->immI();
+-                    ra = findRegFor(value, GpRegs);
+-                    rb = G0;
+-                } else {
+-                    getBaseReg2(GpRegs, value, ra, GpRegs, base, rb, dr);
+-                }
+-                switch (op) {
+-                case LIR_sti:
+-                    STW32(ra, dr, rb);
+-                    break;
+-                case LIR_sti2c:
+-                    STB32(ra, dr, rb);
+-                    break;
+-                case LIR_sti2s:
+-                    STH32(ra, dr, rb);
+-                    break;
+-                }
++            SET32(c, L2);
++        } else {
++            // make sure what is in a register
++            Register ra, rb;
++            if (base->isImmI()) {
++                // absolute address
++                dr += base->immI();
++                ra = findRegFor(value, GpRegs);
++                rb = G0;
++            } else {
++                getBaseReg2(GpRegs, value, ra, GpRegs, base, rb, dr);
+             }
++            switch (op) {
++                case LIR_sti:   STW32(ra, dr, rb); break;
++                case LIR_sti2c: STB32(ra, dr, rb); break;
++                case LIR_sti2s: STH32(ra, dr, rb); break;
++            }
++        }
+     }
+ 
+     void Assembler::asm_spill(Register rr, int d, bool quad)
+     {
+-        underrunProtect(24);
++        SafeUnderrunProtect protect(this, 24);
+         (void)quad;
+         NanoAssert(d);
+         if (rmask(rr) & FpRegs) {
+@@ -891,7 +912,7 @@
+                 return;
+         }
+ 
+-        underrunProtect(48);
++        SafeUnderrunProtect protect(this, 48);
+         LIns* base = ins->oprnd1();
+         int db = ins->disp();
+         Register rb = getBaseReg(base, db, GpRegs);
+@@ -936,7 +957,7 @@
+                 return;
+         }
+ 
+-        underrunProtect(48);
++        SafeUnderrunProtect protect(this, 48);
+         Register rb = getBaseReg(base, dr, GpRegs);
+         if (op == LIR_std2f) {
+             Register rv = ( !value->isInReg()
+@@ -948,32 +969,30 @@
+             return;
+         }
+ 
+-        if (value->isImmD())
+-            {
+-                // if a constant 64-bit value just store it now rather than
+-                // generating a pointless store/load/store sequence
+-                STW32(L2, dr+4, rb);
+-                SET32(value->immDlo(), L2);
+-                STW32(L2, dr, rb);
+-                SET32(value->immDhi(), L2);
+-                return;
+-            }
++        if (value->isImmD()) {
++            // if a constant 64-bit value just store it now rather than
++            // generating a pointless store/load/store sequence
++            STW32(L2, dr+4, rb);
++            SET32(value->immDlo(), L2);
++            STW32(L2, dr, rb);
++            SET32(value->immDhi(), L2);
++            return;
++        }
+ 
+-        if (value->isop(LIR_ldd))
+-            {
+-                // value is 64bit struct or int64_t, or maybe a double.
+-                // it may be live in an FPU reg.  Either way, don't
+-                // put it in an FPU reg just to load & store it.
++        if (value->isop(LIR_ldd)) {
++            // value is 64bit struct or int64_t, or maybe a double.
++            // it may be live in an FPU reg.  Either way, don't
++            // put it in an FPU reg just to load & store it.
+ 
+-                // a) if we know it's not a double, this is right.
+-                // b) if we guarded that its a double, this store could be on
+-                // the side exit, copying a non-double.
+-                // c) maybe its a double just being stored.  oh well.
++            // a) if we know it's not a double, this is right.
++            // b) if we guarded that its a double, this store could be on
++            // the side exit, copying a non-double.
++            // c) maybe its a double just being stored.  oh well.
+ 
+-                int da = findMemFor(value);
+-                asm_mmq(rb, dr, FP, da);
+-                return;
+-            }
++            int da = findMemFor(value);
++             asm_mmq(rb, dr, FP, da);
++             return;
++        }
+ 
+         // if value already in a reg, use that, otherwise
+         // get it into FPU regs.
+@@ -1004,66 +1023,56 @@
+         NIns* at = 0;
+         LOpcode condop = cond->opcode();
+         NanoAssert(cond->isCmp());
+-        if (isCmpDOpcode(condop))
+-            {
+-                return Branches(asm_branchd(branchOnFalse, cond, targ));
+-            }
++        if (isCmpDOpcode(condop)) {
++            return Branches(asm_branchd(branchOnFalse, cond, targ));
++        }
+ 
+-        underrunProtect(32);
+-        intptr_t tt = ((intptr_t)targ - (intptr_t)_nIns + 8) >> 2;
+-        // !targ means that it needs patch.
+-        if( !(isIMM22((int32_t)tt)) || !targ ) {
+-            JMP_long_nocheck((intptr_t)targ);
+-            at = _nIns;
++        {
++            SafeUnderrunProtect protect(this, 32);
++            intptr_t tt = ((intptr_t)targ - (intptr_t)_nIns + 8) >> 2;
++            // !targ means that it needs patch.
++            if( !(isIMM22((int32_t)tt)) || !targ ) {
++                JMP_long((intptr_t)targ);
++                at = _nIns;
++                NOP();
++                BA(0, 5);
++                tt = 4;
++            }
+             NOP();
+-            BA(0, 5);
+-            tt = 4;
+-        }
+-        NOP();
+ 
+-        // produce the branch
+-        if (branchOnFalse)
+-            {
+-                if (condop == LIR_eqi)
+-                    BNE(0, tt);
+-                else if (condop == LIR_lti)
+-                    BGE(0, tt);
+-                else if (condop == LIR_lei)
+-                    BG(0, tt);
+-                else if (condop == LIR_gti)
+-                    BLE(0, tt);
+-                else if (condop == LIR_gei)
+-                    BL(0, tt);
+-                else if (condop == LIR_ltui)
+-                    BCC(0, tt);
+-                else if (condop == LIR_leui)
+-                    BGU(0, tt);
+-                else if (condop == LIR_gtui)
+-                    BLEU(0, tt);
+-                else //if (condop == LIR_geui)
+-                    BCS(0, tt);
++            // produce the branch
++            if (branchOnFalse) {
++                switch (condop) {
++                    case LIR_eqi : BNE (0, tt); break;
++                    case LIR_lti : BGE (0, tt); break;
++                    case LIR_lei : BG  (0, tt); break;
++                    case LIR_gti : BLE (0, tt); break;
++                    case LIR_gei : BL  (0, tt); break;
++                    case LIR_ltui: BCC (0, tt); break;
++                    case LIR_leui: BGU (0, tt); break;
++                    case LIR_gtui: BLEU(0, tt); break;
++                    case LIR_geui: BCS (0, tt); break;
++                    default:
++                        NanoAssertMsg(0, "asm_branch should never receive this cond opcode");
++                        return;
++                }
++            } else {// op == LIR_xt
++                switch (condop) {
++                    case LIR_eqi : BE  (0, tt); break;
++                    case LIR_lti : BL  (0, tt); break;
++                    case LIR_lei : BLE (0, tt); break;
++                    case LIR_gti : BG  (0, tt); break;
++                    case LIR_gei : BGE (0, tt); break;
++                    case LIR_ltui: BCS (0, tt); break;
++                    case LIR_leui: BLEU(0, tt); break;
++                    case LIR_gtui: BGU (0, tt); break;
++                    case LIR_geui: BCC (0, tt); break;
++                    default:
++                        NanoAssertMsg(0, "asm_branch should never receive this cond opcode");
++                        return;
++                }
+             }
+-        else // op == LIR_xt
+-            {
+-                if (condop == LIR_eqi)
+-                    BE(0, tt);
+-                else if (condop == LIR_lti)
+-                    BL(0, tt);
+-                else if (condop == LIR_lei)
+-                    BLE(0, tt);
+-                else if (condop == LIR_gti)
+-                    BG(0, tt);
+-                else if (condop == LIR_gei)
+-                    BGE(0, tt);
+-                else if (condop == LIR_ltui)
+-                    BCS(0, tt);
+-                else if (condop == LIR_leui)
+-                    BLEU(0, tt);
+-                else if (condop == LIR_gtui)
+-                    BGU(0, tt);
+-                else //if (condop == LIR_geui)
+-                    BCC(0, tt);
+-            }
++        }
+         asm_cmp(cond);
+         return Branches(at);
+     }
+@@ -1071,11 +1080,11 @@
+     NIns* Assembler::asm_branch_ov(LOpcode op, NIns* targ)
+     {
+         NIns* at = 0;
+-        underrunProtect(32);
++        SafeUnderrunProtect protect(this, 32);
+         intptr_t tt = ((intptr_t)targ - (intptr_t)_nIns + 8) >> 2;
+         // !targ means that it needs patch.
+-        if( !(isIMM22((int32_t)tt)) || !targ ) {
+-            JMP_long_nocheck((intptr_t)targ);
++        if (!(isIMM22((int32_t)tt)) || !targ) {
++            JMP_long((intptr_t)targ);
+             at = _nIns;
+             NOP();
+             BA(0, 5);
+@@ -1083,7 +1092,7 @@
+         }
+         NOP();
+ 
+-        if( op == LIR_mulxovi || op == LIR_muljovi )
++        if (op == LIR_mulxovi || op == LIR_muljovi)
+             BNE(0, tt);
+         else
+             BVS(0, tt);
+@@ -1090,10 +1099,8 @@
+         return at;
+     }
+ 
+-    void Assembler::asm_cmp(LIns *cond)
++    void Assembler::asm_cmp(LIns* cond)
+     {
+-        underrunProtect(12);
+-
+         LIns* lhs = cond->oprnd1();
+         LIns* rhs = cond->oprnd2();
+ 
+@@ -1100,182 +1107,205 @@
+         NanoAssert(lhs->isI() && rhs->isI());
+ 
+         // ready to issue the compare
+-        if (rhs->isImmI())
+-            {
+-                int c = rhs->immI();
+-                Register r = findRegFor(lhs, GpRegs);
+-                if (c == 0 && cond->isop(LIR_eqi)) {
+-                    ANDCC(r, r, G0);
+-                }
+-                else {
+-                    SUBCC(r, L2, G0);
+-                    SET32(c, L2);
+-                }
++        if (rhs->isImmI()) {
++            int c = rhs->immI();
++            Register r = findRegFor(lhs, GpRegs);
++            SafeUnderrunProtect protect(this, 12);
++            if (c == 0 && cond->isop(LIR_eqi)) {
++                ANDCC(r, r, G0);
++            } else {
++                SUBCC(r, L2, G0);
++                SET32(c, L2);
+             }
+-        else
+-            {
+-                Register ra, rb;
+-                findRegFor2(GpRegs, lhs, ra, GpRegs, rhs, rb);
+-                SUBCC(ra, rb, G0);
+-            }
++        } else {
++            Register ra, rb;
++            findRegFor2(GpRegs, lhs, ra, GpRegs, rhs, rb);
++            SUBCC(ra, rb, G0);
++        }
+     }
+ 
+     void Assembler::asm_condd(LIns* ins)
+     {
+         // only want certain regs
+-        Register r = deprecated_prepResultReg(ins, AllowableFlagRegs);
+-        underrunProtect(8);
++        Register r = prepareResultReg(ins, AllowableFlagRegs);
++        SafeUnderrunProtect protect(this, 12);
+         LOpcode condop = ins->opcode();
+         NanoAssert(isCmpDOpcode(condop));
+-        if (condop == LIR_eqd)
+-            MOVFEI(1, r);
+-        else if (condop == LIR_led)
+-            MOVFLEI(1, r);
+-        else if (condop == LIR_ltd)
+-            MOVFLI(1, r);
+-        else if (condop == LIR_ged)
+-            MOVFGEI(1, r);
+-        else // if (condop == LIR_gtd)
+-            MOVFGI(1, r);
++        switch (condop) {
++            case LIR_eqd: MOVFEI (1, r); break;
++            case LIR_led: MOVFLEI(1, r); break;
++            case LIR_ltd: MOVFLI (1, r); break;
++            case LIR_ged: MOVFGEI(1, r); break;
++            case LIR_gtd: MOVFGI (1, r); break;
++            default:
++                NanoAssertMsg(0, "asm_condd should never receive this cond opcode");
++                return;
++        }
+         ORI(G0, 0, r);
++        freeResourcesOf(ins);
+         asm_cmpd(ins);
+     }
+ 
+     void Assembler::asm_cond(LIns* ins)
+     {
+-        underrunProtect(8);
+         // only want certain regs
+-        LOpcode op = ins->opcode();
+-        Register r = deprecated_prepResultReg(ins, AllowableFlagRegs);
++        LOpcode condop = ins->opcode();
++        Register r = prepareResultReg(ins, AllowableFlagRegs);
++        SafeUnderrunProtect protect(this, 20);
+ 
+-        if (op == LIR_eqi)
+-            MOVEI(1, r);
+-        else if (op == LIR_lti)
+-            MOVLI(1, r);
+-        else if (op == LIR_lei)
+-            MOVLEI(1, r);
+-        else if (op == LIR_gti)
+-            MOVGI(1, r);
+-        else if (op == LIR_gei)
+-            MOVGEI(1, r);
+-        else if (op == LIR_ltui)
+-            MOVCSI(1, r);
+-        else if (op == LIR_leui)
+-            MOVLEUI(1, r);
+-        else if (op == LIR_gtui)
+-            MOVGUI(1, r);
+-        else // if (op == LIR_geui)
+-            MOVCCI(1, r);
++        switch (condop) {
++            case LIR_eqi : MOVEI  (1, r); break;
++            case LIR_lti : MOVLI  (1, r); break;
++            case LIR_lei : MOVLEI (1, r); break;
++            case LIR_gti : MOVGI  (1, r); break;
++            case LIR_gei : MOVGEI (1, r); break;
++            case LIR_ltui: MOVCSI (1, r); break;
++            case LIR_leui: MOVLEUI(1, r); break;
++            case LIR_gtui: MOVGUI (1, r); break;
++            case LIR_geui: MOVCCI (1, r); break;
++            default:
++                NanoAssertMsg(0, "asm_cond should never receive this cond opcode");
++                return;
++        }
+         ORI(G0, 0, r);
++        freeResourcesOf(ins);
+         asm_cmp(ins);
+     }
+ 
+     void Assembler::asm_arith(LIns* ins)
+     {
+-        underrunProtect(28);
++        SafeUnderrunProtect protect(this, 28);
+         LOpcode op = ins->opcode();
+         LIns* lhs = ins->oprnd1();
+         LIns* rhs = ins->oprnd2();
+ 
+-        Register rb = deprecated_UnknownReg;
++        Register rb;
+         RegisterMask allow = GpRegs;
+         bool forceReg = (op == LIR_muli || op == LIR_mulxovi || op == LIR_muljovi || !rhs->isImmI());
+ 
+-        if (lhs != rhs && forceReg)
+-            {
+-                if ((rb = asm_binop_rhs_reg(ins)) == deprecated_UnknownReg) {
+-                    rb = findRegFor(rhs, allow);
+-                }
+-                allow &= ~rmask(rb);
+-            }
+-        else if ((op == LIR_addi || op == LIR_addxovi || op == LIR_addjovi) && lhs->isop(LIR_allocp) && rhs->isImmI()) {
++        if (lhs != rhs && forceReg) {
++            rb = findRegFor(rhs, allow);
++            allow &= ~rmask(rb);
++        } else if ((op == LIR_addi || op == LIR_addxovi || op == LIR_addjovi) && lhs->isop(LIR_allocp) && rhs->isImmI()) {
+             // add alloc+const, use lea
+-            Register rr = deprecated_prepResultReg(ins, allow);
++            Register rr = prepareResultReg(ins, allow);
+             int d = findMemFor(lhs) + rhs->immI();
++            SafeUnderrunProtect protect(this, 12);
+             ADD(FP, L2, rr);
+             SET32(d, L2);
++            freeResourcesOf(ins);
+             return;
+         }
+ 
+-        Register rr = deprecated_prepResultReg(ins, allow);
+-        // if this is last use of lhs in reg, we can re-use result reg
+-        // else, lhs already has a register assigned.
+-        Register ra = ( !lhs->isInReg()
+-                      ? findSpecificRegFor(lhs, rr)
+-                      : lhs->deprecated_getReg() );
++        Register rr = prepareResultReg(ins, allow);
+ 
+-        if (forceReg)
+-            {
+-                if (lhs == rhs)
+-                    rb = ra;
++        // If 'lhs' isn't in a register, it can be clobbered by 'ins'.
++        Register ra = lhs->isInReg() ? lhs->getReg() : rr;
+ 
+-                if (op == LIR_addi || op == LIR_addxovi || op == LIR_addjovi)
++        if (forceReg) {
++            if (lhs == rhs)
++                rb = ra;
++
++            switch (op) {
++                case LIR_addi:
++                case LIR_addxovi:
++                case LIR_addjovi:
+                     ADDCC(rr, rb, rr);
+-                else if (op == LIR_subi || op == LIR_subxovi || op == LIR_subjovi)
++                    break;
++                case LIR_subi:
++                case LIR_subxovi:
++                case LIR_subjovi:
+                     SUBCC(rr, rb, rr);
+-                else if (op == LIR_muli)
++                    break;
++                case LIR_muli:
+                     SMULCC(rr, rb, rr);
+-                else if (op == LIR_mulxovi || op == LIR_muljovi) {
++                    break;
++                case LIR_mulxovi:
++                case LIR_muljovi:
+                     SUBCC(L4, L6, L4);
+                     SRAI(rr, 31, L6);
+                     RDY(L4);
+                     SMULCC(rr, rb, rr);
+-                }
+-                else if (op == LIR_andi)
++                    break;
++                case LIR_andi:
+                     AND(rr, rb, rr);
+-                else if (op == LIR_ori)
++                    break;
++                case LIR_ori:
+                     OR(rr, rb, rr);
+-                else if (op == LIR_xori)
++                    break;
++                case LIR_xori:
+                     XOR(rr, rb, rr);
+-                else if (op == LIR_lshi)
++                    break;
++                case LIR_lshi:
+                     SLL(rr, rb, rr);
+-                else if (op == LIR_rshi)
++                    break;
++                case LIR_rshi:
+                     SRA(rr, rb, rr);
+-                else if (op == LIR_rshui)
++                    break;
++                case LIR_rshui:
+                     SRL(rr, rb, rr);
+-                else
++                    break;
++                default:
+                     NanoAssertMsg(0, "Unsupported");
++                    return;
+             }
+-        else
+-            {
+-                int c = rhs->immI();
+-                if (op == LIR_addi || op == LIR_addxovi || op == LIR_addjovi)
++        } else {
++            int c = rhs->immI();
++            switch (op) {
++                case LIR_addi:
++                case LIR_addxovi:
++                case LIR_addjovi:
+                     ADDCC(rr, L2, rr);
+-                else if (op == LIR_subi || op == LIR_subxovi || op == LIR_subjovi)
++                    break;
++                case LIR_subi:
++                case LIR_subxovi:
++                case LIR_subjovi:
+                     SUBCC(rr, L2, rr);
+-                else if (op == LIR_andi)
++                    break;
++                case LIR_andi:
+                     AND(rr, L2, rr);
+-                else if (op == LIR_ori)
++                    break;
++                case LIR_ori:
+                     OR(rr, L2, rr);
+-                else if (op == LIR_xori)
++                    break;
++                case LIR_xori:
+                     XOR(rr, L2, rr);
+-                else if (op == LIR_lshi)
++                    break;
++                case LIR_lshi:
+                     SLL(rr, L2, rr);
+-                else if (op == LIR_rshi)
++                    break;
++                case LIR_rshi:
+                     SRA(rr, L2, rr);
+-                else if (op == LIR_rshui)
++                    break;
++                case LIR_rshui:
+                     SRL(rr, L2, rr);
+-                else
++                    break;
++                default:
+                     NanoAssertMsg(0, "Unsupported");
+-                SET32(c, L2);
++                    return;
+             }
++            SET32(c, L2);
++        }
+ 
+-        if ( rr != ra )
++        if (rr != ra)
+             ORI(ra, 0, rr);
++
++        freeResourcesOf(ins);
++        if (!lhs->isInReg()) {
++            NanoAssert(ra == rr);
++            findSpecificRegForUnallocated(lhs, ra);
++        }
+     }
+ 
+     void Assembler::asm_neg_not(LIns* ins)
+     {
+-        underrunProtect(8);
+         LOpcode op = ins->opcode();
+-        Register rr = deprecated_prepResultReg(ins, GpRegs);
++        Register rr = prepareResultReg(ins, GpRegs);
+ 
++        SafeUnderrunProtect protect(this, 16);
+         LIns* lhs = ins->oprnd1();
+-        // if this is last use of lhs in reg, we can re-use result reg
+-        // else, lhs already has a register assigned.
+-        Register ra = ( !lhs->isInReg()
+-                      ? findSpecificRegFor(lhs, rr)
+-                      : lhs->deprecated_getReg() );
++        // If 'lhs' isn't in a register, it can be clobbered by 'ins'.
++        Register ra = lhs->isInReg() ? lhs->getReg() : rr;
+ 
+         if (op == LIR_noti)
+             ORN(G0, rr, rr);
+@@ -1282,43 +1312,44 @@
+         else
+             SUB(G0, rr, rr);
+ 
+-        if ( rr != ra )
++        if (rr != ra)
+             ORI(ra, 0, rr);
++
++        freeResourcesOf(ins);
++        if (!lhs->isInReg()) {
++            NanoAssert(ra == rr);
++            findSpecificRegForUnallocated(lhs, ra);
++        }
+     }
+ 
+     void Assembler::asm_load32(LIns* ins)
+     {
+-        underrunProtect(12);
+         LOpcode op = ins->opcode();
+         LIns* base = ins->oprnd1();
+         int d = ins->disp();
+-        Register rr = deprecated_prepResultReg(ins, GpRegs);
++        Register rr = prepareResultReg(ins, GpRegs);
+         Register ra = getBaseReg(base, d, GpRegs);
++
++        SafeUnderrunProtect protect(this, 12);
+         switch(op) {
+-            case LIR_lduc2ui:
+-                LDUB32(ra, d, rr);
+-                break;
+-            case LIR_ldus2ui:
+-                LDUH32(ra, d, rr);
+-                break;
+-            case LIR_ldi:
+-                LDSW32(ra, d, rr);
+-                break;
+-            case LIR_ldc2i:
+-                LDSB32(ra, d, rr);
+-                break;
+-            case LIR_lds2i:
+-                LDSH32(ra, d, rr);
+-                break;
++            case LIR_lduc2ui: LDUB32(ra, d, rr); break;
++            case LIR_ldus2ui: LDUH32(ra, d, rr); break;
++            case LIR_ldi    : LDSW32(ra, d, rr); break;
++            case LIR_ldc2i  : LDSB32(ra, d, rr); break;
++            case LIR_lds2i  : LDSH32(ra, d, rr); break;
+             default:
+                 NanoAssertMsg(0, "asm_load32 should never receive this LIR opcode");
+                 return;
+         }
++        freeResourcesOf(ins);
++        if (!base->isop(LIR_allocp) && !base->isInReg()) {
++            NanoAssert(ra == rr);
++            findSpecificRegForUnallocated(base, ra);
++        }
+     }
+ 
+     void Assembler::asm_cmov(LIns* ins)
+     {
+-        underrunProtect(4);
+         LOpcode op = ins->opcode();
+         LIns* condval = ins->oprnd1();
+         LIns* iftrue  = ins->oprnd2();
+@@ -1329,7 +1360,7 @@
+                   (op == LIR_cmovd && iftrue->isD() && iffalse->isD()));
+ 
+         RegisterMask rm = (op == LIR_cmovi) ? GpRegs : FpRegs;
+-        const Register rr = deprecated_prepResultReg(ins, rm);
++        const Register rr = prepareResultReg(ins, rm);
+         const Register iffalsereg = findRegFor(iffalse, rm & ~rmask(rr));
+         bool isIcc = true;
+ 
+@@ -1345,7 +1376,9 @@
+                 case LIR_leui: MOVGU (iffalsereg, rr); break;
+                 case LIR_gtui: MOVLEU(iffalsereg, rr); break;
+                 case LIR_geui: MOVCS (iffalsereg, rr); break;
+-                debug_only( default: NanoAssert(0); break; )
++                default:
++                    NanoAssertMsg(0, "asm_comv should never receive this cond opcode");
++                    return;
+             }
+         } else {
+             switch (condval->opcode()) {
+@@ -1364,10 +1397,13 @@
+                 case LIR_ltd:  FMOVDFUGE(iffalsereg, rr); isIcc = false; break;
+                 case LIR_ged:  FMOVDFUL (iffalsereg, rr); isIcc = false; break;
+                 case LIR_gtd:  FMOVDFULE(iffalsereg, rr); isIcc = false; break;
+-                debug_only( default: NanoAssert(0); break; )
++                default:
++                    NanoAssertMsg(0, "asm_comv should never receive this cond opcode");
++                    return;
+             }
+         }
+ 
++        freeResourcesOf(ins);
+         /*const Register iftruereg =*/ findSpecificRegFor(iftrue, rr);
+         if (isIcc)
+             asm_cmp(condval);
+@@ -1378,16 +1414,16 @@
+ 
+     void Assembler::asm_param(LIns* ins)
+     {
+-        underrunProtect(12);
+         uint32_t a = ins->paramArg();
+         NanoAssertMsg(ins->paramKind() == 0, "savedRegs are not used on SPARC");
+ 
+-        if (a < sizeof(argRegs)/sizeof(argRegs[0])) { // i0 - i5
++        if (a < sizeof(argRegs) / sizeof(argRegs[0])) { // i0 - i5
+             prepareResultReg(ins, rmask(argRegs[a]));
+         } else {
+             // Incoming arg is on stack
+             Register r = prepareResultReg(ins, GpRegs);
+             int32_t d = a * sizeof (intptr_t) + kLinkageAreaSize;
++            SafeUnderrunProtect protect(this, 12);
+             LDSW32(FP, d, r);
+         }
+         freeResourcesOf(ins);
+@@ -1395,100 +1431,102 @@
+ 
+     void Assembler::asm_immi(LIns* ins)
+     {
+-        underrunProtect(8);
+-        Register rr = deprecated_prepResultReg(ins, GpRegs);
++        Register rr = prepareResultReg(ins, GpRegs);
++        SafeUnderrunProtect protect(this, 12);
+         int32_t val = ins->immI();
+         if (val == 0)
+             XOR(rr, rr, rr);
+         else
+             SET32(val, rr);
++        freeResourcesOf(ins);
+     }
+ 
+     void Assembler::asm_immd(LIns* ins)
+     {
+-        underrunProtect(64);
+-        Register rr = ins->deprecated_getReg();
+-        if (rr != deprecated_UnknownReg)
+-            {
+-                // @todo -- add special-cases for 0 and 1
+-                _allocator.retire(rr);
+-                ins->clearReg();
+-                NanoAssert((rmask(rr) & FpRegs) != 0);
+-                findMemFor(ins);
+-                int d = deprecated_disp(ins);
+-                LDDF32(FP, d, rr);
+-            }
++        SafeUnderrunProtect protect(this, 64);
++        if (ins->isInReg()) {
++            Register rr = ins->getReg();
++            // @todo -- add special-cases for 0 and 1
++            _allocator.retire(rr);
++            ins->clearReg();
++            NanoAssert((rmask(rr) & FpRegs) != 0);
++            findMemFor(ins);
++            int d = arDisp(ins);
++            LDDF32(FP, d, rr);
++        }
+ 
+         // @todo, if we used xor, ldsd, fldz, etc above, we don't need mem here
+-        int d = deprecated_disp(ins);
+-        deprecated_freeRsrcOf(ins);
+-        if (d)
+-            {
+-                STW32(L2, d+4, FP);
+-                SET32(ins->immDlo(), L2);
+-                STW32(L2, d, FP);
+-                SET32(ins->immDhi(), L2);
+-            }
++        int d = arDisp(ins);
++        if (d) {
++            STW32(L2, d+4, FP);
++            SET32(ins->immDlo(), L2);
++            STW32(L2, d, FP);
++            SET32(ins->immDhi(), L2);
++        }
++        freeResourcesOf(ins);
+     }
+ 
+     void Assembler::asm_fneg(LIns* ins)
+     {
+-        underrunProtect(4);
+-        Register rr = deprecated_prepResultReg(ins, FpRegs);
++        Register rr = prepareResultReg(ins, FpRegs);
+         LIns* lhs = ins->oprnd1();
+ 
+-        // lhs into reg, prefer same reg as result
+-        // if this is last use of lhs in reg, we can re-use result reg
+-        // else, lhs already has a different reg assigned
+-        Register ra = ( !lhs->isInReg()
+-                      ? findSpecificRegFor(lhs, rr)
+-                      : findRegFor(lhs, FpRegs) );
++        // If 'lhs' isn't in a register, it can be clobbered by 'ins'.
++        Register ra = lhs->isInReg() ? lhs->getReg() : rr;
+ 
+         FNEGD(ra, rr);
++
++        freeResourcesOf(ins);
++        if (!lhs->isInReg()) {
++            NanoAssert(ra == rr);
++            findSpecificRegForUnallocated(lhs, ra);
++        }
+     }
+ 
+     void Assembler::asm_fop(LIns* ins)
+     {
+-        underrunProtect(4);
+         LOpcode op = ins->opcode();
+-        LIns *lhs = ins->oprnd1();
+-        LIns *rhs = ins->oprnd2();
++        LIns* lhs = ins->oprnd1();
++        LIns* rhs = ins->oprnd2();
+ 
+         RegisterMask allow = FpRegs;
+         Register ra, rb;
+         findRegFor2(allow, lhs, ra, allow, rhs, rb);
+-        Register rr = deprecated_prepResultReg(ins, allow);
++        Register rr = prepareResultReg(ins, allow);
+ 
+-        if (op == LIR_addd)
+-            FADDD(ra, rb, rr);
+-        else if (op == LIR_subd)
+-            FSUBD(ra, rb, rr);
+-        else if (op == LIR_muld)
+-            FMULD(ra, rb, rr);
+-        else //if (op == LIR_divd)
+-            FDIVD(ra, rb, rr);
++        switch (op) {
++            case LIR_addd: FADDD(ra, rb, rr); break;
++            case LIR_subd: FSUBD(ra, rb, rr); break;
++            case LIR_muld: FMULD(ra, rb, rr); break;
++            case LIR_divd: FDIVD(ra, rb, rr); break;
++            default:
++                NanoAssertMsg(0, "asm_fop should never receive this opcode");
++                return;
++        }
+ 
++        freeResourcesOf(ins);
+     }
+ 
+     void Assembler::asm_i2d(LIns* ins)
+     {
+-        underrunProtect(32);
+         // where our result goes
+-        Register rr = deprecated_prepResultReg(ins, FpRegs);
++        Register rr = prepareResultReg(ins, FpRegs);
++        SafeUnderrunProtect protect(this, 32);
+         int d = findMemFor(ins->oprnd1());
+         FITOD(rr, rr);
+         LDDF32(FP, d, rr);
++        freeResourcesOf(ins);
+     }
+ 
+     void Assembler::asm_ui2d(LIns* ins)
+     {
+-        underrunProtect(72);
+         // where our result goes
+-        Register rr = deprecated_prepResultReg(ins, FpRegs);
++        Register rr = prepareResultReg(ins, FpRegs);
+         Register rt = registerAllocTmp(FpRegs & ~(rmask(rr)));
+         Register gr = findRegFor(ins->oprnd1(), GpRegs);
+         int disp = -8;
+ 
++        SafeUnderrunProtect protect(this, 72);
+         FABSS(rr, rr);
+         FSUBD(rt, rr, rr);
+         LDDF32(SP, disp, rr);
+@@ -1497,37 +1535,37 @@
+         STWI(gr, disp+4, SP);
+         STWI(G1, disp, SP);
+         SETHI(0x43300000, G1);
++        freeResourcesOf(ins);
+     }
+ 
+     void Assembler::asm_d2i(LIns* ins) {
+-        underrunProtect(28);
+-        LIns *lhs = ins->oprnd1();
++        LIns* lhs = ins->oprnd1();
+         Register rr = prepareResultReg(ins, GpRegs);
+         Register ra = findRegFor(lhs, FpRegs);
+         int d = findMemFor(ins);
++        SafeUnderrunProtect protect(this, 28);
+         LDSW32(FP, d, rr);
+-        STF32(ra, d, FP);
+-        FDTOI(ra, ra);
++        STF32(F28, d, FP);
++        FDTOI(ra, F28);
+         freeResourcesOf(ins);
+     }
+ 
+     void Assembler::asm_nongp_copy(Register r, Register s)
+     {
+-        underrunProtect(4);
+         NanoAssert((rmask(r) & FpRegs) && (rmask(s) & FpRegs));
+         FMOVD(s, r);
+     }
+ 
+-    NIns * Assembler::asm_branchd(bool branchOnFalse, LIns *cond, NIns *targ)
++    NIns* Assembler::asm_branchd(bool branchOnFalse, LIns* cond, NIns* targ)
+     {
+-        NIns *at = 0;
++        NIns* at = 0;
+         LOpcode condop = cond->opcode();
+         NanoAssert(isCmpDOpcode(condop));
+-        underrunProtect(32);
++        SafeUnderrunProtect protect(this, 32);
+         intptr_t tt = ((intptr_t)targ - (intptr_t)_nIns + 8) >> 2;
+         // !targ means that it needs patch.
+         if( !(isIMM22((int32_t)tt)) || !targ ) {
+-            JMP_long_nocheck((intptr_t)targ);
++            JMP_long((intptr_t)targ);
+             at = _nIns;
+             NOP();
+             BA(0, 5);
+@@ -1536,39 +1574,35 @@
+         NOP();
+ 
+         // produce the branch
+-        if (branchOnFalse)
+-            {
+-                if (condop == LIR_eqd)
+-                    FBNE(0, tt);
+-                else if (condop == LIR_led)
+-                    FBUG(0, tt);
+-                else if (condop == LIR_ltd)
+-                    FBUGE(0, tt);
+-                else if (condop == LIR_ged)
+-                    FBUL(0, tt);
+-                else //if (condop == LIR_gtd)
+-                    FBULE(0, tt);
++        if (branchOnFalse) {
++            switch (condop) {
++                case LIR_eqd: FBNE (0, tt); break;
++                case LIR_led: FBUG (0, tt); break;
++                case LIR_ltd: FBUGE(0, tt); break;
++                case LIR_ged: FBUL (0, tt); break;
++                case LIR_gtd: FBULE(0, tt); break;
++                default:
++                    NanoAssertMsg(0, "asm_branchd should never receive this cond opcode");
++                    return;
+             }
+-        else // op == LIR_xt
+-            {
+-                if (condop == LIR_eqd)
+-                    FBE(0, tt);
+-                else if (condop == LIR_led)
+-                    FBLE(0, tt);
+-                else if (condop == LIR_ltd)
+-                    FBL(0, tt);
+-                else if (condop == LIR_ged)
+-                    FBGE(0, tt);
+-                else //if (condop == LIR_gtd)
+-                    FBG(0, tt);
++        } else { // op == LIR_xt
++            switch (condop) {
++                case LIR_eqd: FBE (0, tt); break;
++                case LIR_led: FBLE(0, tt); break;
++                case LIR_ltd: FBL (0, tt); break;
++                case LIR_ged: FBGE(0, tt); break;
++                case LIR_gtd: FBG (0, tt); break;
++                default:
++                    NanoAssertMsg(0, "asm_branchd should never receive this cond opcode");
++                    return;
+             }
++        }
+         asm_cmpd(cond);
+         return at;
+     }
+ 
+-    void Assembler::asm_cmpd(LIns *cond)
++    void Assembler::asm_cmpd(LIns* cond)
+     {
+-        underrunProtect(4);
+         LIns* lhs = cond->oprnd1();
+         LIns* rhs = cond->oprnd2();
+ 
+@@ -1582,11 +1616,6 @@
+     {
+     }
+ 
+-    Register Assembler::asm_binop_rhs_reg(LIns* ins)
+-    {
+-        return deprecated_UnknownReg;
+-    }
+-
+     void Assembler::nativePageSetup()
+     {
+         NanoAssert(!_inExit);
+@@ -1606,11 +1635,12 @@
+     void
+     Assembler::underrunProtect(int n)
+     {
+-        NIns *eip = _nIns;
++        NIns* eip = _nIns;
++        NanoAssertMsg(n <= LARGEST_UNDERRUN_PROT, "constant LARGEST_UNDERRUN_PROT is too small %d");
+         // This may be in a normal code chunk or an exit code chunk.
+-        if (eip - n < codeStart) {
++        if ((intptr_t)eip - n < (intptr_t)codeStart) {
+             codeAlloc(codeStart, codeEnd, _nIns verbose_only(, codeBytes));
+-            JMP_long_nocheck((intptr_t)eip);
++            JMP_long((intptr_t)eip);
+         }
+     }
+ 
+@@ -1619,7 +1649,7 @@
+         genEpilogue();
+         releaseRegisters();
+         assignSavedRegs();
+-        LIns *val = ins->oprnd1();
++        LIns* val = ins->oprnd1();
+         if (ins->isop(LIR_reti)) {
+             findSpecificRegFor(val, retRegs[0]);
+         } else {

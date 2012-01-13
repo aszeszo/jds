@@ -1,0 +1,224 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2009/432 ConsoleKit -->
+<!ENTITY cmd "ck-history">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2009 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<refentry id="ck-history-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">22 Oct 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>
+&cmd;
+</primary></indexterm>
+<indexterm><primary>
+ConsoleKit history
+</primary></indexterm>
+<refnamediv id="ck-history-1-name">
+<refname>&cmd;</refname>
+<refpurpose>
+ConsoleKit history
+</refpurpose></refnamediv>
+<refsynopsisdiv id="ck-history-1-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-frequent</option></arg>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-last</option></arg>
+<arg choice="opt"><option>-last-compat</option></arg>
+<arg choice="opt"><option>-log</option></arg>
+<arg choice="opt"><option>-seat=<replaceable>seat</replaceable></option></arg>
+<arg choice="opt"><option>-session-type=<replaceable>type</replaceable></option></arg>
+<arg choice="opt"><option>-user=<replaceable>user</replaceable></option></arg>
+<arg choice="opt"><option>-version</option></arg>
+</cmdsynopsis></refsynopsisdiv>
+
+<refsect1 id="ck-history-1-desc"><title>&desc-tt;</title>
+<para>
+<command>&cmd;</command> is a utility that provides information from the
+ConsoleKit database about what users have logged into the system.  It supports
+options to specify whether to provide information about users who have logged
+in most frequently or most recently.
+</para>
+
+<para>
+The <command>&cmd;</command> utility is used by 
+<citerefentry><refentrytitle>gdm</refentrytitle>
+<manvolnum>1m</manvolnum></citerefentry>
+when the GDM Face Browser is enabled to display users in the order of
+frequency.
+</para>
+</refsect1>
+
+<refsect1 id="ck-history-1-opts">
+<title>&opts-tt;</title>
+<para>
+The following options are supported:
+</para>
+<variablelist termlength="wide">
+
+<varlistentry>
+<term><option>-frequent</option></term>
+<listitem><para>
+Show listing of logged-in users in the most frequent order.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>h</option>, <option>-help</option></term>
+<listitem><para>
+Display detailed usage message.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-last</option></term>
+<listitem><para>
+Show listing of all user logins since ConsoleKit began logging, in the most
+recent order.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-last-compat</option></term>
+<listitem><para>
+Show listing of logged-in users in the most-recent order.  The output is
+displayed in
+<citerefentry><refentrytitle>last</refentrytitle>
+<manvolnum>1</manvolnum></citerefentry>
+compatible format.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>-log</option></term>
+<listitem><para>
+Show full ConsoleKit event log.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>s</option>, <option>-seat=<replaceable>seat</replaceable></option></term>
+<listitem><para>
+Show entries for the specified <replaceable>seat</replaceable>.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>t</option>, <option>-session-type=<replaceable>type</replaceable></option></term>
+<listitem><para>
+Show entries for the specified session <replaceable>type</replaceable>.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>u</option>, <option>-user=<replaceable>user</replaceable></option></term>
+<listitem><para>
+Show entries for the specified <replaceable>user</replaceable>.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>V</option>, <option>-version</option></term>
+<listitem><para>
+Display the version of the <command>&cmd;</command> application.
+</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="ck-history-1-exam"><title>&exam-tt;</title>
+<example role="example">
+<title>Show most frequently logged in users</title>
+<para>
+<screen>
+example% <userinput>&cmd; <option>-frequent</option></userinput>
+</screen>
+</para>
+</example>
+<example role="example">
+<title>Show the entire ConsoleKit log.</title>
+<para>
+<screen>
+example% <userinput>&cmd; <option>-log</option></userinput>
+</screen>
+</para>
+</example>
+</refsect1>
+
+<refsect1 id="ck-history-1-file"><title>&file-tt;</title>
+<para>
+The following files are used by this application:
+</para>
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/usr/bin/&cmd;</filename></term>
+<listitem><para>
+Executable for ConsoleKit history.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/var/log/ConsoleKit/history</filename></term>
+<listitem><para>
+ConsoleKit history database.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="ck-history-1-attr"><title>&attr-tt;</title>
+<para>
+See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>library/xdg/consolekit</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="ck-history-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>ck-launch-session</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-list-sessions</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-seat-tool</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>console-kit-daemon</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="ck-history-1-note"><title>&note-tt;</title>
+<para>
+Written by Brian Cameron, Sun Microsystems Inc., 2009.
+Copyright (c) 2009 by Sun Microsystems, Inc.
+</para>
+</refsect1>
+</refentry>

@@ -1,0 +1,39 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompiz-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompiz-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompiz-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/compiz-annotate.schemas=etc/gconf/schemas/compiz-annotate.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-blur.schemas=etc/gconf/schemas/compiz-blur.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-clone.schemas=etc/gconf/schemas/compiz-clone.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-commands.schemas=etc/gconf/schemas/compiz-commands.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-core.schemas=etc/gconf/schemas/compiz-core.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-cube.schemas=etc/gconf/schemas/compiz-cube.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-dbus.schemas=etc/gconf/schemas/compiz-dbus.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-decoration.schemas=etc/gconf/schemas/compiz-decoration.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-fade.schemas=etc/gconf/schemas/compiz-fade.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-fs.schemas=etc/gconf/schemas/compiz-fs.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-gconf.schemas=etc/gconf/schemas/compiz-gconf.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-glib.schemas=etc/gconf/schemas/compiz-glib.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-gnomecompat.schemas=etc/gconf/schemas/compiz-gnomecompat.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-ini.schemas=etc/gconf/schemas/compiz-ini.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-inotify.schemas=etc/gconf/schemas/compiz-inotify.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-kconfig.schemas=etc/gconf/schemas/compiz-kconfig.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-minimize.schemas=etc/gconf/schemas/compiz-minimize.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-move.schemas=etc/gconf/schemas/compiz-move.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-obs.schemas=etc/gconf/schemas/compiz-obs.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-place.schemas=etc/gconf/schemas/compiz-place.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-png.schemas=etc/gconf/schemas/compiz-png.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-regex.schemas=etc/gconf/schemas/compiz-regex.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-resize.schemas=etc/gconf/schemas/compiz-resize.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-rotate.schemas=etc/gconf/schemas/compiz-rotate.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-scale.schemas=etc/gconf/schemas/compiz-scale.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-screenshot.schemas=etc/gconf/schemas/compiz-screenshot.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-svg.schemas=etc/gconf/schemas/compiz-svg.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-switcher.schemas=etc/gconf/schemas/compiz-switcher.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-video.schemas=etc/gconf/schemas/compiz-video.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-water.schemas=etc/gconf/schemas/compiz-water.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-wobbly.schemas=etc/gconf/schemas/compiz-wobbly.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-zoom.schemas=etc/gconf/schemas/compiz-zoom.schemas 0755 root sys
+f none etc/gconf/schemas/gwd.schemas=etc/gconf/schemas/gwd.schemas 0755 root sys

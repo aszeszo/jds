@@ -1,0 +1,24 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-pilot-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-pilot-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-pilot-devel.copyright
+d none include 0755 root bin
+d none include/gpilotd 0755 root bin
+f none include/gpilotd/gnome-pilot-client.h=usr/include/gpilotd/gnome-pilot-client.h 0644 root bin
+f none include/gpilotd/gnome-pilot-conduit-backup.h=usr/include/gpilotd/gnome-pilot-conduit-backup.h 0644 root bin
+f none include/gpilotd/gnome-pilot-conduit-file.h=usr/include/gpilotd/gnome-pilot-conduit-file.h 0644 root bin
+f none include/gpilotd/gnome-pilot-conduit-standard-abs.h=usr/include/gpilotd/gnome-pilot-conduit-standard-abs.h 0644 root bin
+f none include/gpilotd/gnome-pilot-conduit-standard.h=usr/include/gpilotd/gnome-pilot-conduit-standard.h 0644 root bin
+f none include/gpilotd/gnome-pilot-conduit-sync-abs.h=usr/include/gpilotd/gnome-pilot-conduit-sync-abs.h 0644 root bin
+f none include/gpilotd/gnome-pilot-conduit.h=usr/include/gpilotd/gnome-pilot-conduit.h 0644 root bin
+f none include/gpilotd/gnome-pilot-dbinfo.h=usr/include/gpilotd/gnome-pilot-dbinfo.h 0644 root bin
+f none include/gpilotd/gnome-pilot-structures.h=usr/include/gpilotd/gnome-pilot-structures.h 0644 root bin
+f none include/gpilotd/gnome-pilot.h=usr/include/gpilotd/gnome-pilot.h 0644 root bin
+d none include/libgpilotdCM 0755 root bin
+f none include/libgpilotdCM/gnome-pilot-conduit-config.h=usr/include/libgpilotdCM/gnome-pilot-conduit-config.h 0644 root bin
+f none include/libgpilotdCM/gnome-pilot-conduit-management.h=usr/include/libgpilotdCM/gnome-pilot-conduit-management.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-pilot-2.0.pc=usr/lib/pkgconfig/gnome-pilot-2.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/idl 0755 root bin
+f none share/idl/gnome-pilot.idl=usr/share/idl/gnome-pilot.idl 0644 root bin

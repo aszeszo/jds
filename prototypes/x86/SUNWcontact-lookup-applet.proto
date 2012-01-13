@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcontact-lookup-applet.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcontact-lookup-applet.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcontact-lookup-applet.copyright
+f none share/doc/SUNWcontact-lookup-applet/AUTHORS=usr/share/doc/SUNWcontact-lookup-applet/AUTHORS 0444 root bin
+f none share/doc/SUNWcontact-lookup-applet/COPYING.bz2=usr/share/doc/SUNWcontact-lookup-applet/COPYING.bz2 0444 root bin
+f none share/doc/SUNWcontact-lookup-applet/ChangeLog.bz2=usr/share/doc/SUNWcontact-lookup-applet/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_ContactLookupApplet.server=usr/lib/bonobo/servers/GNOME_ContactLookupApplet.server 0644 root bin
+f none lib/contact-lookup-applet=usr/lib/contact-lookup-applet 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWcontact-lookup-applet 0755 root bin
+d none share/lookup-applet 0755 root bin
+f none share/lookup-applet/GNOME_ContactLookupApplet.xml=usr/share/lookup-applet/GNOME_ContactLookupApplet.xml 0644 root bin
+f none share/lookup-applet/contact-lookup-applet.glade=usr/share/lookup-applet/contact-lookup-applet.glade 0644 root bin

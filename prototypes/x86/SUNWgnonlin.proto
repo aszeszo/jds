@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnonlin.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnonlin.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnonlin.copyright
+f none share/doc/SUNWgnonlin/AUTHORS=usr/share/doc/SUNWgnonlin/AUTHORS 0444 root bin
+f none share/doc/SUNWgnonlin/COPYING.bz2=usr/share/doc/SUNWgnonlin/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnonlin/COPYING.LIB.bz2=usr/share/doc/SUNWgnonlin/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnonlin/ChangeLog.bz2=usr/share/doc/SUNWgnonlin/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnonlin/NEWS.bz2=usr/share/doc/SUNWgnonlin/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnonlin/README=usr/share/doc/SUNWgnonlin/README 0444 root bin
+f none share/doc/SUNWgnonlin/common/ChangeLog.bz2=usr/share/doc/SUNWgnonlin/common/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/gstreamer-0.10 0755 root bin
+f none lib/gstreamer-0.10/libgnl.so=usr/lib/gstreamer-0.10/libgnl.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnonlin 0755 root bin
+d none share/doc/SUNWgnonlin/common 0755 root bin

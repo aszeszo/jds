@@ -1,0 +1,26 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopenproj-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopenproj-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopenproj-l10n.copyright
+d none share 0755 root sys
+d none share/openproj 0755 root sys
+d none share/openproj/lib 0755 root sys
+f none share/openproj/lib/openproj_ca.jar=usr/share/openproj/lib/openproj_ca.jar 0755 root bin
+f none share/openproj/lib/openproj_cs.jar=usr/share/openproj/lib/openproj_cs.jar 0755 root bin
+f none share/openproj/lib/openproj_de.jar=usr/share/openproj/lib/openproj_de.jar 0755 root bin
+f none share/openproj/lib/openproj_es.jar=usr/share/openproj/lib/openproj_es.jar 0755 root bin
+f none share/openproj/lib/openproj_fa.jar=usr/share/openproj/lib/openproj_fa.jar 0755 root bin
+f none share/openproj/lib/openproj_fi.jar=usr/share/openproj/lib/openproj_fi.jar 0755 root bin
+f none share/openproj/lib/openproj_fr.jar=usr/share/openproj/lib/openproj_fr.jar 0755 root bin
+f none share/openproj/lib/openproj_gl.jar=usr/share/openproj/lib/openproj_gl.jar 0755 root bin
+f none share/openproj/lib/openproj_it.jar=usr/share/openproj/lib/openproj_it.jar 0755 root bin
+f none share/openproj/lib/openproj_ja.jar=usr/share/openproj/lib/openproj_ja.jar 0755 root bin
+f none share/openproj/lib/openproj_ko.jar=usr/share/openproj/lib/openproj_ko.jar 0755 root bin
+f none share/openproj/lib/openproj_nl.jar=usr/share/openproj/lib/openproj_nl.jar 0755 root bin
+f none share/openproj/lib/openproj_pt.jar=usr/share/openproj/lib/openproj_pt.jar 0755 root bin
+f none share/openproj/lib/openproj_pt_BR.jar=usr/share/openproj/lib/openproj_pt_BR.jar 0755 root bin
+f none share/openproj/lib/openproj_ro.jar=usr/share/openproj/lib/openproj_ro.jar 0755 root bin
+f none share/openproj/lib/openproj_ru.jar=usr/share/openproj/lib/openproj_ru.jar 0755 root bin
+f none share/openproj/lib/openproj_sk.jar=usr/share/openproj/lib/openproj_sk.jar 0755 root bin
+f none share/openproj/lib/openproj_sv.jar=usr/share/openproj/lib/openproj_sv.jar 0755 root bin
+f none share/openproj/lib/openproj_uk.jar=usr/share/openproj/lib/openproj_uk.jar 0755 root bin
+f none share/openproj/lib/openproj_zh_CN.jar=usr/share/openproj/lib/openproj_zh_CN.jar 0755 root bin

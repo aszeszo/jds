@@ -1,0 +1,562 @@
+diff -r 8811a0bba4c2 help/bg/gucharmap.xml
+--- a/help/bg/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/bg/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -26,7 +26,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -68,9 +69,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>за документация на GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/ca/gucharmap.xml
+--- a/help/ca/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/ca/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equip de documentació del GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/cs/gucharmap.xml
+--- a/help/cs/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/cs/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Dokumentační tým GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -114,7 +115,7 @@
+ 	<date>26.2.2004</date>
+ 	<revdescription> 
+ 	  <para>Aktualizováno pro GNOME 2.6, verzi programu 1.3.0</para>
+-          <para role="author">Dokumentační tým Sun GNOME</para>
++          <para role="author">Dokumentační tým Oracle Solaris Desktop</para>
+           <para role="publisher">Dokumentační projekt GNOME</para>
+         </revdescription> 
+       </revision> 
+diff -r 8811a0bba4c2 help/de/gucharmap.xml
+--- a/help/de/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/de/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME Dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -114,7 +115,7 @@
+ 	<date>26. Februar 2004</date>
+ 	<revdescription> 
+ 	  <para>Aktualisiert für GNOME 2.6, Anwendungsversion 1.3.0</para>
+-          <para role="author">Sun GNOME Dokumentationsteam</para>
++          <para role="author">Oracle Solaris Desktop Dokumentationsteam</para>
+           <para role="publisher">GNOME-Dokumentationsprojekt</para>
+         </revdescription> 
+       </revision> 
+diff -r 8811a0bba4c2 help/el/gucharmap.xml
+--- a/help/el/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/el/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Ομάδα Τεκμηρίωσης GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/en_GB/gucharmap.xml
+--- a/help/en_GB/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/en_GB/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -114,7 +115,7 @@
+ 	<date>2004-02-26</date>
+ 	<revdescription> 
+ 	  <para>Updated for GNOME 2.6, program version 1.3.0.</para>
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription> 
+       </revision> 
+diff -r 8811a0bba4c2 help/es/gucharmap.xml
+--- a/help/es/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/es/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equipo de documentación de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/fi/gucharmap.xml
+--- a/help/fi/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/fi/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Gnome Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/fr/gucharmap.xml
+--- a/help/fr/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/fr/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>L'équipe de documentation GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/it/gucharmap.xml
+--- a/help/it/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/it/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     <title>Manuale della Mappa caratteri unicode V&manrevision;</title>
+     <copyright>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -49,9 +50,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -93,7 +94,7 @@
+ 	<revnumber>Manuale della Mappa caratteri unicode V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription>
+       </revision>
+diff -r 8811a0bba4c2 help/ja/gucharmap.xml
+--- a/help/ja/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/ja/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     <title>Unicode Character Map のマニュアル V&manrevision;</title>
+     <copyright>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -49,9 +50,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME ドキュメンテーションチーム</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -93,7 +94,7 @@
+ 	<revnumber>Unicode Character Map のマニュアル V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME ドキュメンテーションチーム</para>
++          <para role="author">Oracle Solaris Desktop ドキュメンテーションチーム</para>
+           <para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+         </revdescription>
+       </revision>
+diff -r 8811a0bba4c2 help/ko/gucharmap.xml
+--- a/help/ko/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/ko/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,13 +24,15 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+       <year>2004</year>
+       <holder>Chee Bin HOH</holder> 
+-    </copyright><copyright><year>2002.</year><holder>Sun Microsystems</holder></copyright><copyright><year>2007, 2008.</year><holder>Changwoo Ryu (cwryu@debian.org)</holder></copyright> 
++    </copyright><copyright><year>2002.</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2007, 2008.</year><holder>Changwoo Ryu (cwryu@debian.org)</holder></copyright> 
+ 
+ <!-- translators: uncomment this:
+     <copyright>
+@@ -66,9 +68,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>그놈 문서 팀</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/oc/gucharmap.xml
+--- a/help/oc/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/oc/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -26,7 +26,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -127,9 +128,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Còla de documentacion de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/pt_BR/gucharmap.xml
+--- a/help/pt_BR/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/pt_BR/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equipe de Documentação do GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/ru/gucharmap.xml
+--- a/help/ru/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/ru/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -114,7 +115,7 @@
+ 	<date>26 февраля 2004</date>
+ 	<revdescription> 
+ 	  <para>Обновлено для GNOME 2.6, версия программы 1.3.0.</para>
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">Проект документирования GNOME</para>
+         </revdescription> 
+       </revision> 
+diff -r 8811a0bba4c2 help/sv/gucharmap.xml
+--- a/help/sv/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/sv/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -68,7 +69,7 @@
+       <author>
+         <firstname>Suns</firstname>
+         <surname>GNOME-dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+diff -r 8811a0bba4c2 help/vi/gucharmap.xml
+--- a/help/vi/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/vi/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     </abstract>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -66,9 +67,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Nhóm biên soạn tài liệu GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -114,7 +115,7 @@
+ 	<date>2004-02-26</date>
+ 	<revdescription> 
+ 	  <para>Được cập nhật cho GNOME 2.6, phiên bản 1.3.0.</para>
+-          <para role="author">Nhóm biên soạn tài liệu Sun GNOME</para>
++          <para role="author">Nhóm biên soạn tài liệu Oracle Solaris Desktop</para>
+           <para role="publisher">Dự án biên soạn tài liệu GNOME</para>
+         </revdescription> 
+       </revision> 
+diff -r 8811a0bba4c2 help/zh_CN/gucharmap.xml
+--- a/help/zh_CN/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/zh_CN/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -24,7 +24,8 @@
+     <title>Unicode 字符映射手册 V&manrevision;</title>
+     <copyright>
+       <year>2003</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2003</year> 
+@@ -49,9 +50,9 @@
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+         <firstname>Chee Bin</firstname> 
+@@ -93,7 +94,7 @@
+ 	<revnumber>Unicode 字符映射手册 V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription>
+       </revision>
+diff -r 8811a0bba4c2 help/zh_TW/gucharmap.xml
+--- a/help/zh_TW/gucharmap.xml	Fri Jul 08 15:43:43 2011 +0800
++++ b/help/zh_TW/gucharmap.xml	Fri Jul 08 16:42:41 2011 +0800
+@@ -22,7 +22,8 @@
+ <!-- appropriate code -->
+   <articleinfo>
+ <title>統一碼字元對映手冊 V&manrevision;</title>
+-    <copyright><year>2003</year><holder>Sun Microsystems</holder></copyright><copyright><year>2003</year> <holder>Chee Bin HOH</holder></copyright><!-- translators: uncomment this:
++    <copyright><year>2003</year><year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder></copyright><copyright><year>2003</year> <holder>Chee Bin HOH</holder></copyright><!-- translators: uncomment this:
+     <copyright>
+       <year>2002</year>
+       <holder>ME-THE-TRANSLATOR (Latin translation)</holder>
+@@ -31,7 +32,7 @@
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+ 	any of this. -->
+ 
+-    <authorgroup><author><firstname>Sun</firstname><surname>GNOME 文件小組</surname><affiliation><orgname>Sun Microsystems</orgname></affiliation> </author><author><firstname>Chee Bin</firstname><surname>HOH</surname> <affiliation> <orgname>GNOME 文件專案</orgname> 
++    <authorgroup><author><firstname>Oracle Solaris</firstname><surname>GNOME 文件小組</surname><affiliation><orgname>Oracle Corporation</orgname></affiliation> </author><author><firstname>Chee Bin</firstname><surname>HOH</surname> <affiliation> <orgname>GNOME 文件專案</orgname> 
+           <address><email>cbhoh@gnome.org</email> </address>
+         </affiliation>
+       </author>
+@@ -64,7 +65,7 @@
+ 
+     <revhistory>
+       <revision><revnumber>統一碼字元對映手冊 V&manrevision;</revnumber> <date>&date;</date> <revdescription> 
+-          <para role="author">Sun GNOME 文件小組</para>
++          <para role="author">Oracle Solaris Desktop 文件小組</para>
+           <para role="publisher">GNOME 文件專案</para>
+         </revdescription>
+       </revision>

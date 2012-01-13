@@ -1,0 +1,38 @@
+/jds/bin/diff -uprN gnome-panel-2.26.3.old/gnome-panel/panel-menu-button.c gnome-panel-2.26.3/gnome-panel/panel-menu-button.c
+--- gnome-panel-2.26.3.old/gnome-panel/panel-menu-button.c	2009-07-01 19:05:59.893447000 +0100
++++ gnome-panel-2.26.3/gnome-panel/panel-menu-button.c	2009-07-01 19:12:26.734444000 +0100
+@@ -649,7 +649,7 @@ panel_menu_button_load (const char  *men
+ 			       "tooltip", tooltip,
+ 			       "use-menu-path", use_menu_path,
+ 			       "use-custom-icon", use_custom_icon,
+-			       "has-arrow", TRUE,
++			       "has-arrow", FALSE,
+ 			       NULL);
+ 
+ 	info = panel_applet_register (GTK_WIDGET (button), NULL, NULL,
+@@ -715,8 +715,23 @@ panel_menu_button_get_icon (PanelMenuBut
+ 			retval = g_strdup (gmenu_tree_directory_get_icon (directory));
+ 	}
+ 
+-	if (!retval)
+-		retval = g_strdup (PANEL_ICON_MAIN_MENU);
++	if (!retval) {
++		static gboolean inited = FALSE;
++		static gboolean has_sun_branding = FALSE;
++
++		if (!inited) {
++			GtkIconTheme *theme = gtk_icon_theme_get_default ();
++
++			if (gtk_icon_theme_has_icon (theme, "sun-start-here"))
++				has_sun_branding = TRUE;
++				inited = TRUE;
++			}
++
++			if (has_sun_branding)
++				retval = g_strdup ("sun-start-here");
++			else
++				retval = g_strdup (PANEL_ICON_MAIN_MENU);
++	}
+ 
+ 	return retval;
+ }

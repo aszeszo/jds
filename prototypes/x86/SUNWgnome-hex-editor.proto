@@ -1,0 +1,56 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-hex-editor.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-hex-editor.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-hex-editor.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-hex-editor.copyright
+f none share/doc/SUNWgnome-hex-editor/AUTHORS=usr/share/doc/SUNWgnome-hex-editor/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-hex-editor/COPYING.bz2=usr/share/doc/SUNWgnome-hex-editor/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-hex-editor/COPYING-DOCS.bz2=usr/share/doc/SUNWgnome-hex-editor/COPYING-DOCS.bz2 0444 root bin
+f none share/doc/SUNWgnome-hex-editor/ChangeLog=usr/share/doc/SUNWgnome-hex-editor/ChangeLog 0444 root bin
+f none share/doc/SUNWgnome-hex-editor/NEWS=usr/share/doc/SUNWgnome-hex-editor/NEWS 0444 root bin
+f none share/doc/SUNWgnome-hex-editor/README=usr/share/doc/SUNWgnome-hex-editor/README 0444 root bin
+d none bin 0755 root bin
+f none bin/ghex2=usr/bin/ghex2 0755 root bin
+d none lib 0755 root bin
+s none lib/libgtkhex.so=libgtkhex.so.0.0.0
+s none lib/libgtkhex.so.0=libgtkhex.so.0.0.0
+f none lib/libgtkhex.so.0.0.0=usr/lib/libgtkhex.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/ghex.desktop=usr/share/applications/ghex.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-hex-editor 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome-2.0 0755 root bin
+d none share/gnome-2.0/ui 0755 root bin
+f none share/gnome-2.0/ui/ghex-ui.xml=usr/share/gnome-2.0/ui/ghex-ui.xml 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/ghex2 0755 root bin
+d none share/gnome/help/ghex2/C 0755 root bin
+d none share/gnome/help/ghex2/C/figures 0755 root bin
+f none share/gnome/help/ghex2/C/figures/ghex_window_empty.png=usr/share/gnome/help/ghex2/C/figures/ghex_window_empty.png 0644 root bin
+f none share/gnome/help/ghex2/C/figures/ghex_window_open.png=usr/share/gnome/help/ghex2/C/figures/ghex_window_open.png 0644 root bin
+f none share/gnome/help/ghex2/C/ghex2.xml=usr/share/gnome/help/ghex2/C/ghex2.xml 0644 root bin
+f none share/gnome/help/ghex2/C/legal.xml=usr/share/gnome/help/ghex2/C/legal.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/ghex.png=usr/share/icons/hicolor/16x16/apps/ghex.png 0644 root bin
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/ghex.png=usr/share/icons/hicolor/22x22/apps/ghex.png 0644 root bin
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/ghex.png=usr/share/icons/hicolor/24x24/apps/ghex.png 0644 root bin
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/ghex.png=usr/share/icons/hicolor/32x32/apps/ghex.png 0644 root bin
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/ghex.png=usr/share/icons/hicolor/48x48/apps/ghex.png 0644 root bin
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/ghex.svg=usr/share/icons/hicolor/scalable/apps/ghex.svg 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/ghex2.1=usr/share/man/man1/ghex2.1 0644 root bin

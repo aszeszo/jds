@@ -1,0 +1,27 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibtasn1.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibtasn1.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibtasn1.copyright
+f none share/doc/SUNWlibtasn1/AUTHORS=usr/share/doc/SUNWlibtasn1/AUTHORS 0444 root bin
+f none share/doc/SUNWlibtasn1/COPYING.bz2=usr/share/doc/SUNWlibtasn1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibtasn1/COPYING.LIB.bz2=usr/share/doc/SUNWlibtasn1/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWlibtasn1/ChangeLog.bz2=usr/share/doc/SUNWlibtasn1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibtasn1/NEWS.bz2=usr/share/doc/SUNWlibtasn1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibtasn1/README=usr/share/doc/SUNWlibtasn1/README 0444 root bin
+d none bin 0755 root bin
+f none bin/asn1Coding=usr/bin/asn1Coding 0755 root bin
+f none bin/asn1Decoding=usr/bin/asn1Decoding 0755 root bin
+f none bin/asn1Parser=usr/bin/asn1Parser 0755 root bin
+d none lib 0755 root bin
+s none lib/libtasn1.so=libtasn1.so.3.1.9
+s none lib/libtasn1.so.3=libtasn1.so.3.1.9
+f none lib/libtasn1.so.3.1.9=usr/lib/libtasn1.so.3.1.9 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibtasn1 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/asn1Coding.1=usr/share/man/man1/asn1Coding.1 0644 root bin
+f none share/man/man1/asn1Decoding.1=usr/share/man/man1/asn1Decoding.1 0644 root bin
+f none share/man/man1/asn1Parser.1=usr/share/man/man1/asn1Parser.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libtasn1.3=usr/share/man/man3/libtasn1.3 0644 root bin

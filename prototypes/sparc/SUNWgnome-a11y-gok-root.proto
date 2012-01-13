@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-gok-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-gok-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-gok-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gok.schemas=etc/gconf/schemas/gok.schemas 0644 root sys

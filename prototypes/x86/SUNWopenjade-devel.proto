@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopenjade-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopenjade-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopenjade-devel.copyright
+d none include 0755 root bin
+d none include/openjade 0755 root bin
+f none include/openjade/DssslApp.h=usr/include/openjade/DssslApp.h 0644 root bin
+f none include/openjade/EventGenerator.h=usr/include/openjade/EventGenerator.h 0644 root bin
+f none include/openjade/FOTBuilder.h=usr/include/openjade/FOTBuilder.h 0644 root bin
+f none include/openjade/GroveApp.h=usr/include/openjade/GroveApp.h 0644 root bin
+f none include/openjade/GroveBuilder.h=usr/include/openjade/GroveBuilder.h 0644 root bin
+f none include/openjade/GroveManager.h=usr/include/openjade/GroveManager.h 0644 root bin
+f none include/openjade/Node.h=usr/include/openjade/Node.h 0644 root bin
+f none include/openjade/ParserEventGeneratorKit.h=usr/include/openjade/ParserEventGeneratorKit.h 0644 root bin
+f none include/openjade/SGMLApplication.h=usr/include/openjade/SGMLApplication.h 0644 root bin
+f none include/openjade/dsssl_ns.h=usr/include/openjade/dsssl_ns.h 0644 root bin

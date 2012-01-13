@@ -1,0 +1,21 @@
+diff -urN stripe.orig/src/xagent-proxy.c stripe.new/src/xagent-proxy.c
+--- stripe.orig/src/xagent-proxy.c	2011-01-13 10:19:44.376843304 +0000
++++ stripe.new/src/xagent-proxy.c	2011-01-13 10:20:10.316757627 +0000
+@@ -553,17 +553,6 @@
+ 		g_setenv ("MAIL", tmp, TRUE);
+ 		g_free (tmp);
+ 
+-		/* Reset the display*/
+-		if ((display_name = getenv ("DISPLAY")) == NULL) {
+-			display_name = ":0";
+-		}
+-		/* Setting the env must be done after zone_enter */
+-		if (display_name[0] == ':') {
+-			strcpy (display_env, "DISPLAY=");
+-			strcat (display_env, uname_ent.nodename);
+-			strcat (display_env, display_name);
+-			putenv (display_env);
+-		}
+ 		putenv ("GTK2_RC_FILES=/usr/share/gnome/gtkrc.tjds");
+ 
+ 		if (role || zoneid != 0) {

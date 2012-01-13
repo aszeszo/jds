@@ -1,0 +1,234 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgraphviz.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgraphviz.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgraphviz.copyright
+f none share/doc/SUNWgraphviz/AUTHORS=usr/share/doc/SUNWgraphviz/AUTHORS 0444 root bin
+f none share/doc/SUNWgraphviz/COPYING.bz2=usr/share/doc/SUNWgraphviz/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgraphviz/ChangeLog.bz2=usr/share/doc/SUNWgraphviz/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgraphviz/NEWS=usr/share/doc/SUNWgraphviz/NEWS 0444 root bin
+d none bin 0755 root bin
+f none bin/acyclic=usr/bin/acyclic 0755 root bin
+f none bin/bcomps=usr/bin/bcomps 0755 root bin
+f none bin/ccomps=usr/bin/ccomps 0755 root bin
+s none bin/circo=dot
+f none bin/diffimg=usr/bin/diffimg 0755 root bin
+f none bin/dijkstra=usr/bin/dijkstra 0755 root bin
+f none bin/dot=usr/bin/dot 0755 root bin
+s none bin/dot2gxl=gxl2gv
+f none bin/dotty=usr/bin/dotty 0755 root bin
+s none bin/fdp=dot
+f none bin/gc=usr/bin/gc 0755 root bin
+s none bin/gv2gxl=gxl2gv
+f none bin/gvcolor=usr/bin/gvcolor 0755 root bin
+f none bin/gvgen=usr/bin/gvgen 0755 root bin
+f none bin/gvpack=usr/bin/gvpack 0755 root bin
+f none bin/gvpr=usr/bin/gvpr 0755 root bin
+s none bin/gxl2dot=gxl2gv
+f none bin/gxl2gv=usr/bin/gxl2gv 0755 root bin
+f none bin/lefty=usr/bin/lefty 0755 root bin
+f none bin/lneato=usr/bin/lneato 0755 root bin
+f none bin/mm2gv=usr/bin/mm2gv 0755 root bin
+s none bin/neato=dot
+f none bin/nop=usr/bin/nop 0755 root bin
+s none bin/osage=dot
+f none bin/prune=usr/bin/prune 0755 root bin
+f none bin/sccmap=usr/bin/sccmap 0755 root bin
+f none bin/tred=usr/bin/tred 0755 root bin
+s none bin/twopi=dot
+f none bin/unflatten=usr/bin/unflatten 0755 root bin
+f none bin/vimdot=usr/bin/vimdot 0755 root bin
+d none lib 0755 root bin
+d none lib/graphviz 0755 root bin
+f none lib/graphviz/config6=usr/lib/graphviz/config6 0644 root bin
+s none lib/graphviz/libgvplugin_core.so=libgvplugin_core.so.6.0.0
+s none lib/graphviz/libgvplugin_core.so.6=libgvplugin_core.so.6.0.0
+f none lib/graphviz/libgvplugin_core.so.6.0.0=usr/lib/graphviz/libgvplugin_core.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_dot_layout.so=libgvplugin_dot_layout.so.6.0.0
+s none lib/graphviz/libgvplugin_dot_layout.so.6=libgvplugin_dot_layout.so.6.0.0
+f none lib/graphviz/libgvplugin_dot_layout.so.6.0.0=usr/lib/graphviz/libgvplugin_dot_layout.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_gd.so=libgvplugin_gd.so.6.0.0
+s none lib/graphviz/libgvplugin_gd.so.6=libgvplugin_gd.so.6.0.0
+f none lib/graphviz/libgvplugin_gd.so.6.0.0=usr/lib/graphviz/libgvplugin_gd.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_gdk_pixbuf.so=libgvplugin_gdk_pixbuf.so.6.0.0
+s none lib/graphviz/libgvplugin_gdk_pixbuf.so.6=libgvplugin_gdk_pixbuf.so.6.0.0
+f none lib/graphviz/libgvplugin_gdk_pixbuf.so.6.0.0=usr/lib/graphviz/libgvplugin_gdk_pixbuf.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_gs.so=libgvplugin_gs.so.6.0.0
+s none lib/graphviz/libgvplugin_gs.so.6=libgvplugin_gs.so.6.0.0
+f none lib/graphviz/libgvplugin_gs.so.6.0.0=usr/lib/graphviz/libgvplugin_gs.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_gtk.so=libgvplugin_gtk.so.6.0.0
+s none lib/graphviz/libgvplugin_gtk.so.6=libgvplugin_gtk.so.6.0.0
+f none lib/graphviz/libgvplugin_gtk.so.6.0.0=usr/lib/graphviz/libgvplugin_gtk.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_neato_layout.so=libgvplugin_neato_layout.so.6.0.0
+s none lib/graphviz/libgvplugin_neato_layout.so.6=libgvplugin_neato_layout.so.6.0.0
+f none lib/graphviz/libgvplugin_neato_layout.so.6.0.0=usr/lib/graphviz/libgvplugin_neato_layout.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_pango.so=libgvplugin_pango.so.6.0.0
+s none lib/graphviz/libgvplugin_pango.so.6=libgvplugin_pango.so.6.0.0
+f none lib/graphviz/libgvplugin_pango.so.6.0.0=usr/lib/graphviz/libgvplugin_pango.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_rsvg.so=libgvplugin_rsvg.so.6.0.0
+s none lib/graphviz/libgvplugin_rsvg.so.6=libgvplugin_rsvg.so.6.0.0
+f none lib/graphviz/libgvplugin_rsvg.so.6.0.0=usr/lib/graphviz/libgvplugin_rsvg.so.6.0.0 0755 root bin
+s none lib/graphviz/libgvplugin_xlib.so=libgvplugin_xlib.so.6.0.0
+s none lib/graphviz/libgvplugin_xlib.so.6=libgvplugin_xlib.so.6.0.0
+f none lib/graphviz/libgvplugin_xlib.so.6.0.0=usr/lib/graphviz/libgvplugin_xlib.so.6.0.0 0755 root bin
+d none lib/graphviz/perl 0755 root bin
+f none lib/graphviz/perl/gv.pm=usr/lib/graphviz/perl/gv.pm 0644 root bin
+s none lib/graphviz/perl/gv.so=libgv_perl.so
+f none lib/graphviz/perl/libgv_perl.so=usr/lib/graphviz/perl/libgv_perl.so 0755 root bin
+d none lib/graphviz/python 0755 root bin
+s none lib/graphviz/python/_gv.so=libgv_python.so
+f none lib/graphviz/python/gv.py=usr/lib/graphviz/python/gv.py 0644 root bin
+f none lib/graphviz/python/libgv_python.so=usr/lib/graphviz/python/libgv_python.so 0755 root bin
+d none lib/graphviz/python26 0755 root bin
+d none lib/graphviz/tcl 0755 root bin
+s none lib/graphviz/tcl/libgdtclft.so=libgdtclft.so.0.0.0
+s none lib/graphviz/tcl/libgdtclft.so.0=libgdtclft.so.0.0.0
+f none lib/graphviz/tcl/libgdtclft.so.0.0.0=usr/lib/graphviz/tcl/libgdtclft.so.0.0.0 0755 root bin
+f none lib/graphviz/tcl/libgv_tcl.so=usr/lib/graphviz/tcl/libgv_tcl.so 0755 root bin
+s none lib/graphviz/tcl/libtcldot.so=libtcldot.so.0.0.0
+s none lib/graphviz/tcl/libtcldot.so.0=libtcldot.so.0.0.0
+f none lib/graphviz/tcl/libtcldot.so.0.0.0=usr/lib/graphviz/tcl/libtcldot.so.0.0.0 0755 root bin
+s none lib/graphviz/tcl/libtcldot_builtin.so=libtcldot_builtin.so.0.0.0
+s none lib/graphviz/tcl/libtcldot_builtin.so.0=libtcldot_builtin.so.0.0.0
+f none lib/graphviz/tcl/libtcldot_builtin.so.0.0.0=usr/lib/graphviz/tcl/libtcldot_builtin.so.0.0.0 0755 root bin
+s none lib/graphviz/tcl/libtclplan.so=libtclplan.so.0.0.0
+s none lib/graphviz/tcl/libtclplan.so.0=libtclplan.so.0.0.0
+f none lib/graphviz/tcl/libtclplan.so.0.0.0=usr/lib/graphviz/tcl/libtclplan.so.0.0.0 0755 root bin
+s none lib/graphviz/tcl/libtkspline.so=libtkspline.so.0.0.0
+s none lib/graphviz/tcl/libtkspline.so.0=libtkspline.so.0.0.0
+f none lib/graphviz/tcl/libtkspline.so.0.0.0=usr/lib/graphviz/tcl/libtkspline.so.0.0.0 0755 root bin
+f none lib/graphviz/tcl/pkgIndex.tcl=usr/lib/graphviz/tcl/pkgIndex.tcl 0644 root bin
+s none lib/libcdt.so=libcdt.so.4.0.0
+s none lib/libcdt.so.4=libcdt.so.4.0.0
+f none lib/libcdt.so.4.0.0=usr/lib/libcdt.so.4.0.0 0755 root bin
+s none lib/libcgraph.so=libcgraph.so.4.0.0
+s none lib/libcgraph.so.4=libcgraph.so.4.0.0
+f none lib/libcgraph.so.4.0.0=usr/lib/libcgraph.so.4.0.0 0755 root bin
+s none lib/libgraph.so=libgraph.so.4.0.0
+s none lib/libgraph.so.4=libgraph.so.4.0.0
+f none lib/libgraph.so.4.0.0=usr/lib/libgraph.so.4.0.0 0755 root bin
+s none lib/libgvc.so=libgvc.so.5.0.0
+s none lib/libgvc.so.5=libgvc.so.5.0.0
+f none lib/libgvc.so.5.0.0=usr/lib/libgvc.so.5.0.0 0755 root bin
+s none lib/libpathplan.so=libpathplan.so.4.0.0
+s none lib/libpathplan.so.4=libpathplan.so.4.0.0
+f none lib/libpathplan.so.4.0.0=usr/lib/libpathplan.so.4.0.0 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/site-packages 0755 root bin
+s none lib/python2.6/site-packages/_gv.so=/usr/lib/graphviz/python/libgv_python.so
+s none lib/python2.6/site-packages/gv.py=/usr/lib/graphviz/python/gv.py
+d none lib/tcl8.4 0755 root bin
+s none lib/tcl8.4/graphviz=../graphviz/tcl
+d none perl5 0755 root bin
+d none perl5/vendor_perl 0755 root bin
+d none perl5/vendor_perl/5.8.4 0755 root bin
+d none perl5/vendor_perl/5.8.4/sun4-solaris-64int 0755 root bin
+s none perl5/vendor_perl/5.8.4/sun4-solaris-64int/gv.pm=../../../../lib/graphviz/perl/gv.pm
+s none perl5/vendor_perl/5.8.4/sun4-solaris-64int/gv.so=../../../../lib/graphviz/perl/libgv_perl.so
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgraphviz 0755 root bin
+d none share/graphviz 0755 root bin
+d none share/graphviz/graphs 0755 root bin
+d none share/graphviz/graphs/directed 0755 root bin
+f none share/graphviz/graphs/directed/KW91.gv=usr/share/graphviz/graphs/directed/KW91.gv 0644 root bin
+f none share/graphviz/graphs/directed/Latin1.gv=usr/share/graphviz/graphs/directed/Latin1.gv 0644 root bin
+f none share/graphviz/graphs/directed/NaN.gv=usr/share/graphviz/graphs/directed/NaN.gv 0644 root bin
+f none share/graphviz/graphs/directed/abstract.gv=usr/share/graphviz/graphs/directed/abstract.gv 0644 root bin
+f none share/graphviz/graphs/directed/alf.gv=usr/share/graphviz/graphs/directed/alf.gv 0644 root bin
+f none share/graphviz/graphs/directed/arrows.gv=usr/share/graphviz/graphs/directed/arrows.gv 0644 root bin
+f none share/graphviz/graphs/directed/awilliams.gv=usr/share/graphviz/graphs/directed/awilliams.gv 0644 root bin
+f none share/graphviz/graphs/directed/clust.gv=usr/share/graphviz/graphs/directed/clust.gv 0644 root bin
+f none share/graphviz/graphs/directed/clust1.gv=usr/share/graphviz/graphs/directed/clust1.gv 0644 root bin
+f none share/graphviz/graphs/directed/clust2.gv=usr/share/graphviz/graphs/directed/clust2.gv 0644 root bin
+f none share/graphviz/graphs/directed/clust3.gv=usr/share/graphviz/graphs/directed/clust3.gv 0644 root bin
+f none share/graphviz/graphs/directed/clust4.gv=usr/share/graphviz/graphs/directed/clust4.gv 0644 root bin
+f none share/graphviz/graphs/directed/clust5.gv=usr/share/graphviz/graphs/directed/clust5.gv 0644 root bin
+f none share/graphviz/graphs/directed/crazy.gv=usr/share/graphviz/graphs/directed/crazy.gv 0644 root bin
+f none share/graphviz/graphs/directed/ctext.gv=usr/share/graphviz/graphs/directed/ctext.gv 0644 root bin
+f none share/graphviz/graphs/directed/dfa.gv=usr/share/graphviz/graphs/directed/dfa.gv 0644 root bin
+f none share/graphviz/graphs/directed/fig6.gv=usr/share/graphviz/graphs/directed/fig6.gv 0644 root bin
+f none share/graphviz/graphs/directed/fsm.gv=usr/share/graphviz/graphs/directed/fsm.gv 0644 root bin
+f none share/graphviz/graphs/directed/grammar.gv=usr/share/graphviz/graphs/directed/grammar.gv 0644 root bin
+f none share/graphviz/graphs/directed/hashtable.gv=usr/share/graphviz/graphs/directed/hashtable.gv 0644 root bin
+f none share/graphviz/graphs/directed/honda-tokoro.gv=usr/share/graphviz/graphs/directed/honda-tokoro.gv 0644 root bin
+f none share/graphviz/graphs/directed/jcctree.gv=usr/share/graphviz/graphs/directed/jcctree.gv 0644 root bin
+f none share/graphviz/graphs/directed/jsort.gv=usr/share/graphviz/graphs/directed/jsort.gv 0644 root bin
+f none share/graphviz/graphs/directed/ldbxtried.gv=usr/share/graphviz/graphs/directed/ldbxtried.gv 0644 root bin
+f none share/graphviz/graphs/directed/longflat.gv=usr/share/graphviz/graphs/directed/longflat.gv 0644 root bin
+f none share/graphviz/graphs/directed/mike.gv=usr/share/graphviz/graphs/directed/mike.gv 0644 root bin
+f none share/graphviz/graphs/directed/nhg.gv=usr/share/graphviz/graphs/directed/nhg.gv 0644 root bin
+f none share/graphviz/graphs/directed/oldarrows.gv=usr/share/graphviz/graphs/directed/oldarrows.gv 0644 root bin
+f none share/graphviz/graphs/directed/pgram.gv=usr/share/graphviz/graphs/directed/pgram.gv 0644 root bin
+f none share/graphviz/graphs/directed/pm2way.gv=usr/share/graphviz/graphs/directed/pm2way.gv 0644 root bin
+f none share/graphviz/graphs/directed/pmpipe.gv=usr/share/graphviz/graphs/directed/pmpipe.gv 0644 root bin
+f none share/graphviz/graphs/directed/polypoly.gv=usr/share/graphviz/graphs/directed/polypoly.gv 0644 root bin
+f none share/graphviz/graphs/directed/proc3d.gv=usr/share/graphviz/graphs/directed/proc3d.gv 0644 root bin
+f none share/graphviz/graphs/directed/psfonttest.gv=usr/share/graphviz/graphs/directed/psfonttest.gv 0644 root bin
+f none share/graphviz/graphs/directed/record2.gv=usr/share/graphviz/graphs/directed/record2.gv 0644 root bin
+f none share/graphviz/graphs/directed/records.gv=usr/share/graphviz/graphs/directed/records.gv 0644 root bin
+f none share/graphviz/graphs/directed/rowe.gv=usr/share/graphviz/graphs/directed/rowe.gv 0644 root bin
+f none share/graphviz/graphs/directed/russian.gv=usr/share/graphviz/graphs/directed/russian.gv 0644 root bin
+f none share/graphviz/graphs/directed/sdh.gv=usr/share/graphviz/graphs/directed/sdh.gv 0644 root bin
+f none share/graphviz/graphs/directed/shells.gv=usr/share/graphviz/graphs/directed/shells.gv 0644 root bin
+f none share/graphviz/graphs/directed/states.gv=usr/share/graphviz/graphs/directed/states.gv 0644 root bin
+f none share/graphviz/graphs/directed/structs.gv=usr/share/graphviz/graphs/directed/structs.gv 0644 root bin
+f none share/graphviz/graphs/directed/switch.gv=usr/share/graphviz/graphs/directed/switch.gv 0644 root bin
+f none share/graphviz/graphs/directed/table.gv=usr/share/graphviz/graphs/directed/table.gv 0644 root bin
+f none share/graphviz/graphs/directed/train11.gv=usr/share/graphviz/graphs/directed/train11.gv 0644 root bin
+f none share/graphviz/graphs/directed/trapeziumlr.gv=usr/share/graphviz/graphs/directed/trapeziumlr.gv 0644 root bin
+f none share/graphviz/graphs/directed/tree.gv=usr/share/graphviz/graphs/directed/tree.gv 0644 root bin
+f none share/graphviz/graphs/directed/triedds.gv=usr/share/graphviz/graphs/directed/triedds.gv 0644 root bin
+f none share/graphviz/graphs/directed/try.gv=usr/share/graphviz/graphs/directed/try.gv 0644 root bin
+f none share/graphviz/graphs/directed/unix.gv=usr/share/graphviz/graphs/directed/unix.gv 0644 root bin
+f none share/graphviz/graphs/directed/unix2.gv=usr/share/graphviz/graphs/directed/unix2.gv 0644 root bin
+f none share/graphviz/graphs/directed/viewfile.gv=usr/share/graphviz/graphs/directed/viewfile.gv 0644 root bin
+f none share/graphviz/graphs/directed/world.gv=usr/share/graphviz/graphs/directed/world.gv 0644 root bin
+d none share/graphviz/graphs/undirected 0755 root bin
+f none share/graphviz/graphs/undirected/ER.gv=usr/share/graphviz/graphs/undirected/ER.gv 0644 root bin
+f none share/graphviz/graphs/undirected/Heawood.gv=usr/share/graphviz/graphs/undirected/Heawood.gv 0644 root bin
+f none share/graphviz/graphs/undirected/Petersen.gv=usr/share/graphviz/graphs/undirected/Petersen.gv 0644 root bin
+f none share/graphviz/graphs/undirected/ngk10_4.gv=usr/share/graphviz/graphs/undirected/ngk10_4.gv 0644 root bin
+f none share/graphviz/graphs/undirected/process.gv=usr/share/graphviz/graphs/undirected/process.gv 0644 root bin
+d none share/graphviz/lefty 0755 root bin
+f none share/graphviz/lefty/box.lefty=usr/share/graphviz/lefty/box.lefty 0644 root bin
+f none share/graphviz/lefty/def.lefty=usr/share/graphviz/lefty/def.lefty 0644 root bin
+f none share/graphviz/lefty/dotty.lefty=usr/share/graphviz/lefty/dotty.lefty 0644 root bin
+f none share/graphviz/lefty/dotty_draw.lefty=usr/share/graphviz/lefty/dotty_draw.lefty 0644 root bin
+f none share/graphviz/lefty/dotty_edit.lefty=usr/share/graphviz/lefty/dotty_edit.lefty 0644 root bin
+f none share/graphviz/lefty/dotty_layout.lefty=usr/share/graphviz/lefty/dotty_layout.lefty 0644 root bin
+f none share/graphviz/lefty/dotty_ui.lefty=usr/share/graphviz/lefty/dotty_ui.lefty 0644 root bin
+f none share/graphviz/lefty/fractal.lefty=usr/share/graphviz/lefty/fractal.lefty 0644 root bin
+f none share/graphviz/lefty/fractal2.lefty=usr/share/graphviz/lefty/fractal2.lefty 0644 root bin
+f none share/graphviz/lefty/lefty.psp=usr/share/graphviz/lefty/lefty.psp 0644 root bin
+f none share/graphviz/lefty/slides.lefty=usr/share/graphviz/lefty/slides.lefty 0644 root bin
+f none share/graphviz/lefty/tree.lefty=usr/share/graphviz/lefty/tree.lefty 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/acyclic.1=usr/share/man/man1/acyclic.1 0644 root bin
+f none share/man/man1/bcomps.1=usr/share/man/man1/bcomps.1 0644 root bin
+f none share/man/man1/ccomps.1=usr/share/man/man1/ccomps.1 0644 root bin
+f none share/man/man1/circo.1=usr/share/man/man1/circo.1 0644 root bin
+f none share/man/man1/diffimg.1=usr/share/man/man1/diffimg.1 0644 root bin
+f none share/man/man1/dijkstra.1=usr/share/man/man1/dijkstra.1 0644 root bin
+f none share/man/man1/dot.1=usr/share/man/man1/dot.1 0644 root bin
+f none share/man/man1/dotty.1=usr/share/man/man1/dotty.1 0644 root bin
+f none share/man/man1/fdp.1=usr/share/man/man1/fdp.1 0644 root bin
+f none share/man/man1/gc.1=usr/share/man/man1/gc.1 0644 root bin
+f none share/man/man1/gv2gxl.1=usr/share/man/man1/gv2gxl.1 0644 root bin
+f none share/man/man1/gvcolor.1=usr/share/man/man1/gvcolor.1 0644 root bin
+f none share/man/man1/gvgen.1=usr/share/man/man1/gvgen.1 0644 root bin
+f none share/man/man1/gvpack.1=usr/share/man/man1/gvpack.1 0644 root bin
+f none share/man/man1/gvpr.1=usr/share/man/man1/gvpr.1 0644 root bin
+f none share/man/man1/gxl2gv.1=usr/share/man/man1/gxl2gv.1 0644 root bin
+f none share/man/man1/lefty.1=usr/share/man/man1/lefty.1 0644 root bin
+f none share/man/man1/lneato.1=usr/share/man/man1/lneato.1 0644 root bin
+f none share/man/man1/mm2gv.1=usr/share/man/man1/mm2gv.1 0644 root bin
+f none share/man/man1/neato.1=usr/share/man/man1/neato.1 0644 root bin
+f none share/man/man1/nop.1=usr/share/man/man1/nop.1 0644 root bin
+f none share/man/man1/osage.1=usr/share/man/man1/osage.1 0644 root bin
+f none share/man/man1/prune.1=usr/share/man/man1/prune.1 0644 root bin
+f none share/man/man1/sccmap.1=usr/share/man/man1/sccmap.1 0644 root bin
+f none share/man/man1/tred.1=usr/share/man/man1/tred.1 0644 root bin
+f none share/man/man1/twopi.1=usr/share/man/man1/twopi.1 0644 root bin
+f none share/man/man1/unflatten.1=usr/share/man/man1/unflatten.1 0644 root bin
+d none share/man/man5 0755 root bin
+f none share/man/man5/graphviz.5=usr/share/man/man5/graphviz.5 0644 root bin

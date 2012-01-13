@@ -1,0 +1,57 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-config.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-config.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-config.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-config.copyright
+f none share/doc/SUNWgnome-config/COPYING.bz2=usr/share/doc/SUNWgnome-config/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-config/ChangeLog.bz2=usr/share/doc/SUNWgnome-config/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-config/NEWS.bz2=usr/share/doc/SUNWgnome-config/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-config/README=usr/share/doc/SUNWgnome-config/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gconftool-2=usr/bin/gconftool-2 0755 root bin
+f none bin/gsettings-data-convert=usr/bin/gsettings-data-convert 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/gconf-merge-tree=usr/bin/sparcv9/gconf-merge-tree 0755 root bin
+f none bin/sparcv9/gconftool-2=usr/bin/sparcv9/gconftool-2 0755 root bin
+f none bin/sparcv9/gsettings-data-convert=usr/bin/sparcv9/gsettings-data-convert 0755 root bin
+d none lib 0755 root bin
+d none lib/GConf 0755 root bin
+d none lib/GConf/2 0755 root bin
+f none lib/GConf/2/libgconfbackend-oldxml.so=usr/lib/GConf/2/libgconfbackend-oldxml.so 0755 root bin
+f none lib/GConf/2/libgconfbackend-xml.so=usr/lib/GConf/2/libgconfbackend-xml.so 0755 root bin
+f none lib/gconf-sanity-check-2=usr/lib/gconf-sanity-check-2 0755 root bin
+f none lib/gconfd-2=usr/lib/gconfd-2 0755 root bin
+d none lib/gio 0755 root bin
+d none lib/gio/modules 0755 root bin
+f none lib/gio/modules/libgsettingsgconfbackend.so=usr/lib/gio/modules/libgsettingsgconfbackend.so 0755 root bin
+d none lib/girepository-1.0 0755 root bin
+f none lib/girepository-1.0/GConf-2.0.typelib=usr/lib/girepository-1.0/GConf-2.0.typelib 0644 root bin
+s none lib/libgconf-2.so=libgconf-2.so.4.1.5
+s none lib/libgconf-2.so.4=libgconf-2.so.4.1.5
+f none lib/libgconf-2.so.4.1.5=usr/lib/libgconf-2.so.4.1.5 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/GConf 0755 root bin
+d none lib/sparcv9/GConf/2 0755 root bin
+f none lib/sparcv9/GConf/2/libgconfbackend-oldxml.so=usr/lib/sparcv9/GConf/2/libgconfbackend-oldxml.so 0755 root bin
+f none lib/sparcv9/GConf/2/libgconfbackend-xml.so=usr/lib/sparcv9/GConf/2/libgconfbackend-xml.so 0755 root bin
+d none lib/sparcv9/gio 0755 root bin
+d none lib/sparcv9/gio/modules 0755 root bin
+f none lib/sparcv9/gio/modules/libgsettingsgconfbackend.so=usr/lib/sparcv9/gio/modules/libgsettingsgconfbackend.so 0755 root bin
+d none lib/sparcv9/girepository-1.0 0755 root bin
+f none lib/sparcv9/girepository-1.0/GConf-2.0.typelib=usr/lib/sparcv9/girepository-1.0/GConf-2.0.typelib 0644 root bin
+s none lib/sparcv9/libgconf-2.so=libgconf-2.so.4.1.5
+s none lib/sparcv9/libgconf-2.so.4=libgconf-2.so.4.1.5
+f none lib/sparcv9/libgconf-2.so.4.1.5=usr/lib/sparcv9/libgconf-2.so.4.1.5 0755 root bin
+d none share 0755 root sys
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+f none share/dbus-1/services/org.gnome.GConf.service=usr/share/dbus-1/services/org.gnome.GConf.service 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-config 0755 root bin
+d none share/gir-1.0 0755 root bin
+f none share/gir-1.0/GConf-2.0.gir=usr/share/gir-1.0/GConf-2.0.gir 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gconftool-2.1=usr/share/man/man1/gconftool-2.1 0644 root bin
+d none share/sgml 0755 root bin
+d none share/sgml/gconf 0755 root bin
+f none share/sgml/gconf/gconf-1.0.dtd=usr/share/sgml/gconf/gconf-1.0.dtd 0644 root bin

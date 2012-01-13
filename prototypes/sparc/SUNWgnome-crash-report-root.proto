@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-crash-report-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-crash-report-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-crash-report-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/bug-buddy.schemas=etc/gconf/schemas/bug-buddy.schemas 0644 root sys

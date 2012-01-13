@@ -1,0 +1,41 @@
+Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  -at-spi2-core-%{version}
+  
+Licensing and copyright information for at-spi2-core-%{version}:
+
+ License: GNU Library General Public License Version 2
+ License: MIT/X license
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/at-spi2-core-%{version}
+
+  COPYING: GNU LGPL
+  AUTHORS: list of authors of at-spi2-core
+  README: more information about at-spi2-core
+
+ Some source files in at-spi2-core-%{version} have the following 
+ MIT/X license:
+
+  --- 
+
+  This is free software. You are permitted to copy, distribute, or modify
+  it under the terms of the MIT/X license 
+
+  --- 
+
+ The sources of at-spi2-core-%{version} were downloaded
+ from %{SOURCE0.url}
+

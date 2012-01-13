@@ -1,0 +1,105 @@
+diff -r be7de1a5bbf1 js/src/jsprvtd.h
+--- a/js/src/jsprvtd.h	Thu Sep 29 15:20:29 2011 -0700
++++ b/js/src/jsprvtd.h	Tue Oct 04 14:44:28 2011 +0800
+@@ -54,6 +54,10 @@
+  * make dependency induced by this file should not prove painful.
+  */
+ 
++#ifdef __cplusplus
++#include "jshashtable.h"
++#endif
++
+ #include "jsapi.h"
+ #include "jsstaticcheck.h"
+ #include "jsutil.h"
+diff -r 182abf9ec7db jsapi.h
+--- a/js/src/jsapi.h	Tue Nov 15 16:22:47 2011 +0800
++++ b/js/src/jsapi.h	Tue Nov 15 16:27:01 2011 +0800
+@@ -681,8 +681,8 @@
+         JS_STATIC_ASSERT(sizeof(Value) == 8);
+     }
+ 
+-    friend jsval_layout (::JSVAL_TO_IMPL)(Value);
+-    friend Value (::IMPL_TO_JSVAL)(jsval_layout l);
++    friend jsval_layout JSVAL_TO_IMPL(Value);
++    friend Value IMPL_TO_JSVAL(jsval_layout l);
+ } JSVAL_ALIGNMENT;
+ 
+ /************************************************************************/
+diff -r 182abf9ec7db jsstr.cpp
+--- a/js/src/jsstr.cpp	Tue Nov 15 16:22:47 2011 +0800
++++ b/js/src/jsstr.cpp	Tue Nov 15 16:27:01 2011 +0800
+@@ -1421,6 +1421,9 @@
+         }
+         JS_ASSERT(patstr);
+ 
++        if (!cx)
++            return NULL;
++
+         AlreadyIncRefed<RegExp> re = RegExp::createFlagged(cx, patstr, opt, NULL);
+         if (!re)
+             return NULL;
+diff -r 182abf9ec7db methodjit/FastBuiltins.cpp
+--- a/js/src/methodjit/FastBuiltins.cpp	Tue Nov 15 16:22:47 2011 +0800
++++ b/js/src/methodjit/FastBuiltins.cpp	Tue Nov 15 16:27:01 2011 +0800
+@@ -48,7 +48,7 @@
+ 
+ using namespace js;
+ using namespace js::mjit;
+-using namespace JSC;
++// using namespace JSC;
+ 
+ typedef JSC::MacroAssembler::FPRegisterID FPRegisterID;
+ 
+diff --git a/js/src/jsobj.cpp b/js/src/jsobj.cpp
+--- a/js/src/jsobj.cpp
++++ b/js/src/jsobj.cpp
+@@ -2384,24 +2384,24 @@ DefinePropertyOnObject(JSContext *cx, JS
+         if (desc.hasSet)
+             changed |= JSPROP_SETTER | JSPROP_SHARED;
+ 
+         attrs = (desc.attrs & changed) | (shape->attributes() & ~changed);
+         if (desc.hasGet) {
+             getter = desc.getter();
+         } else {
+             getter = (shape->isMethod() || (shape->hasDefaultGetter() && !shape->hasGetterValue()))
+-                     ? JS_PropertyStub
++                     ? (JSPropertyOp)JS_PropertyStub
+                      : shape->getter();
+         }
+         if (desc.hasSet) {
+             setter = desc.setter();
+         } else {
+             setter = (shape->hasDefaultSetter() && !shape->hasSetterValue())
+-                     ? JS_StrictPropertyStub
++                     ? (JSStrictPropertyOp)JS_StrictPropertyStub
+                      : shape->setter();
+         }
+     }
+ 
+     *rval = true;
+ 
+     /*
+      * Since "data" properties implemented using native C functions may rely on
+diff --git a/js/src/methodjit/RematInfo.h b/js/src/methodjit/RematInfo.h
+--- a/js/src/methodjit/RematInfo.h
++++ b/js/src/methodjit/RematInfo.h
+@@ -119,17 +119,17 @@ struct ValueRemat {
+         struct {
+             union {
+                 int32       typeRemat_;
+                 JSValueType knownType_;
+             } type;
+             int32   dataRemat_   : MIN_STATE_REMAT_BITS;
+             bool    isTypeKnown_ : 1;
+         } s;
+-        jsval v_;
++        Value v_;
+         FPRegisterID fpreg_;
+     } u;
+     bool isConstant_    : 1;
+     bool isFPRegister_  : 1;
+     bool isDataSynced   : 1;
+     bool isTypeSynced   : 1;
+ 
+     static ValueRemat FromConstant(const Value &v) {

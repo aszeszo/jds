@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxdg-user-dirs-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxdg-user-dirs-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxdg-user-dirs-root.copyright
+d none etc 0755 root sys
+d none etc/xdg 0755 root sys
+f none etc/xdg/user-dirs.conf=etc/xdg/user-dirs.conf 0644 root sys
+f none etc/xdg/user-dirs.defaults=etc/xdg/user-dirs.defaults 0644 root sys

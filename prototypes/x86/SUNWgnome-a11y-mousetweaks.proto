@@ -1,0 +1,273 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-mousetweaks.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-mousetweaks.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-mousetweaks.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-mousetweaks.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-mousetweaks.copyright
+f none share/doc/SUNWgnome-a11y-mousetweaks/AUTHORS=usr/share/doc/SUNWgnome-a11y-mousetweaks/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-a11y-mousetweaks/COPYING.FDL.bz2=usr/share/doc/SUNWgnome-a11y-mousetweaks/COPYING.FDL.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-mousetweaks/COPYING.GPL.bz2=usr/share/doc/SUNWgnome-a11y-mousetweaks/COPYING.GPL.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-mousetweaks/ChangeLog.bz2=usr/share/doc/SUNWgnome-a11y-mousetweaks/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-mousetweaks/NEWS.bz2=usr/share/doc/SUNWgnome-a11y-mousetweaks/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-mousetweaks/README=usr/share/doc/SUNWgnome-a11y-mousetweaks/README 0444 root bin
+f none share/doc/SUNWgnome-a11y-mousetweaks/src/mt-pidfile.c.bz2=usr/share/doc/SUNWgnome-a11y-mousetweaks/src/mt-pidfile.c.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/dwell-click-applet=usr/bin/dwell-click-applet 0755 root bin
+f none bin/mousetweaks=usr/bin/mousetweaks 0755 root bin
+f none bin/pointer-capture-applet=usr/bin/pointer-capture-applet 0755 root bin
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/DwellClick_Factory.server=usr/lib/bonobo/servers/DwellClick_Factory.server 0644 root bin
+f none lib/bonobo/servers/PointerCapture_Factory.server=usr/lib/bonobo/servers/PointerCapture_Factory.server 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-a11y-mousetweaks 0755 root bin
+d none share/doc/SUNWgnome-a11y-mousetweaks/src 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/mousetweaks 0755 root bin
+d none share/gnome/help/mousetweaks/C 0755 root bin
+d none share/gnome/help/mousetweaks/C/figures 0755 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-checkbox.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-click-type-applet.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-click-type-applet.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-click-type-window.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-click-type-window.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-ctw-checkbox.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-ctw-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-delay-slider.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-gesture-mapping.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-gesture-mapping.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-mode-choice.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-mode-choice.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-motion-treshold.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-dwell-motion-treshold.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-pointer-capture-context-menu.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-pointer-capture-context-menu.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-pointer-capture-locked.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-pointer-capture-locked.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-pointer-capture-preferences.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-pointer-capture-preferences.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-ssc-checkbox.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-ssc-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-ssc-delay-slider.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-ssc-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/C/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/C/legal.xml=usr/share/gnome/help/mousetweaks/C/legal.xml 0644 root bin
+f none share/gnome/help/mousetweaks/C/mousetweaks.xml=usr/share/gnome/help/mousetweaks/C/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/ca 0755 root bin
+d none share/gnome/help/mousetweaks/ca/figures 0755 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-checkbox.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-click-type-applet.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-click-type-applet.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-click-type-window.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-click-type-window.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-ctw-checkbox.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-ctw-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-delay-slider.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-gesture-mapping.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-gesture-mapping.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-mode-choice.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-mode-choice.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-motion-treshold.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-dwell-motion-treshold.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-pointer-capture-context-menu.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-pointer-capture-context-menu.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-pointer-capture-locked.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-pointer-capture-locked.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-pointer-capture-preferences.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-pointer-capture-preferences.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-ssc-checkbox.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-ssc-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-ssc-delay-slider.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-ssc-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/ca/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/ca/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/ca/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/ca/mousetweaks.xml=usr/share/gnome/help/mousetweaks/ca/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/cs 0755 root bin
+d none share/gnome/help/mousetweaks/cs/figures 0755 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-checkbox.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-click-type-applet.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-click-type-applet.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-click-type-window.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-click-type-window.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-ctw-checkbox.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-ctw-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-delay-slider.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-gesture-mapping.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-gesture-mapping.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-mode-choice.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-mode-choice.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-motion-treshold.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-dwell-motion-treshold.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-pointer-capture-context-menu.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-pointer-capture-context-menu.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-pointer-capture-locked.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-pointer-capture-locked.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-pointer-capture-preferences.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-pointer-capture-preferences.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-ssc-checkbox.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-ssc-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-ssc-delay-slider.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-ssc-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/cs/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/cs/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/cs/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/cs/mousetweaks.xml=usr/share/gnome/help/mousetweaks/cs/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/de 0755 root bin
+d none share/gnome/help/mousetweaks/de/figures 0755 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-checkbox.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-click-type-applet.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-click-type-applet.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-click-type-window.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-click-type-window.png 0644 root bin
+s none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-ctw-checkbox.png=../../C/figures/mouse-a11y-dwell-ctw-checkbox.png
+s none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-delay-slider.png=../../C/figures/mouse-a11y-dwell-delay-slider.png
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-gesture-mapping.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-gesture-mapping.png 0644 root bin
+s none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-mode-choice.png=../../C/figures/mouse-a11y-dwell-mode-choice.png
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-motion-treshold.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-dwell-motion-treshold.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-pointer-capture-context-menu.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-pointer-capture-context-menu.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-pointer-capture-locked.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-pointer-capture-locked.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-pointer-capture-preferences.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-pointer-capture-preferences.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-ssc-checkbox.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-ssc-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-ssc-delay-slider.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-ssc-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/de/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/de/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/de/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/de/mousetweaks.xml=usr/share/gnome/help/mousetweaks/de/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/el 0755 root bin
+d none share/gnome/help/mousetweaks/el/figures 0755 root bin
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-checkbox.png=../../C/figures/mouse-a11y-dwell-checkbox.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-click-type-applet.png=../../C/figures/mouse-a11y-dwell-click-type-applet.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-click-type-window.png=../../C/figures/mouse-a11y-dwell-click-type-window.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-ctw-checkbox.png=../../C/figures/mouse-a11y-dwell-ctw-checkbox.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-delay-slider.png=../../C/figures/mouse-a11y-dwell-delay-slider.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-gesture-mapping.png=../../C/figures/mouse-a11y-dwell-gesture-mapping.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-mode-choice.png=../../C/figures/mouse-a11y-dwell-mode-choice.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-dwell-motion-treshold.png=../../C/figures/mouse-a11y-dwell-motion-treshold.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-pointer-capture-context-menu.png=../../C/figures/mouse-a11y-pointer-capture-context-menu.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-pointer-capture-locked.png=../../C/figures/mouse-a11y-pointer-capture-locked.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-pointer-capture-preferences.png=../../C/figures/mouse-a11y-pointer-capture-preferences.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-ssc-checkbox.png=../../C/figures/mouse-a11y-ssc-checkbox.png
+s none share/gnome/help/mousetweaks/el/figures/mouse-a11y-ssc-delay-slider.png=../../C/figures/mouse-a11y-ssc-delay-slider.png
+f none share/gnome/help/mousetweaks/el/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/el/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/el/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/el/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/el/mousetweaks.xml=usr/share/gnome/help/mousetweaks/el/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/en_GB 0755 root bin
+d none share/gnome/help/mousetweaks/en_GB/figures 0755 root bin
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-checkbox.png=../../C/figures/mouse-a11y-dwell-checkbox.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-click-type-applet.png=../../C/figures/mouse-a11y-dwell-click-type-applet.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-click-type-window.png=../../C/figures/mouse-a11y-dwell-click-type-window.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-ctw-checkbox.png=../../C/figures/mouse-a11y-dwell-ctw-checkbox.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-delay-slider.png=../../C/figures/mouse-a11y-dwell-delay-slider.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-gesture-mapping.png=../../C/figures/mouse-a11y-dwell-gesture-mapping.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-mode-choice.png=../../C/figures/mouse-a11y-dwell-mode-choice.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-dwell-motion-treshold.png=../../C/figures/mouse-a11y-dwell-motion-treshold.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-pointer-capture-context-menu.png=../../C/figures/mouse-a11y-pointer-capture-context-menu.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-pointer-capture-locked.png=../../C/figures/mouse-a11y-pointer-capture-locked.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-pointer-capture-preferences.png=../../C/figures/mouse-a11y-pointer-capture-preferences.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-ssc-checkbox.png=../../C/figures/mouse-a11y-ssc-checkbox.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-ssc-delay-slider.png=../../C/figures/mouse-a11y-ssc-delay-slider.png
+s none share/gnome/help/mousetweaks/en_GB/figures/mouse-a11y-tab.png=../../C/figures/mouse-a11y-tab.png
+f none share/gnome/help/mousetweaks/en_GB/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/en_GB/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/en_GB/mousetweaks.xml=usr/share/gnome/help/mousetweaks/en_GB/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/es 0755 root bin
+d none share/gnome/help/mousetweaks/es/figures 0755 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-checkbox.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-click-type-applet.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-click-type-applet.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-click-type-window.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-click-type-window.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-ctw-checkbox.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-ctw-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-delay-slider.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-gesture-mapping.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-gesture-mapping.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-mode-choice.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-mode-choice.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-motion-treshold.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-dwell-motion-treshold.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-pointer-capture-context-menu.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-pointer-capture-context-menu.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-pointer-capture-locked.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-pointer-capture-locked.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-pointer-capture-preferences.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-pointer-capture-preferences.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-ssc-checkbox.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-ssc-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-ssc-delay-slider.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-ssc-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/es/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/es/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/es/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/es/mousetweaks.xml=usr/share/gnome/help/mousetweaks/es/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/fr 0755 root bin
+d none share/gnome/help/mousetweaks/fr/figures 0755 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-checkbox.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-click-type-applet.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-click-type-applet.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-click-type-window.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-click-type-window.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-ctw-checkbox.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-ctw-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-delay-slider.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-gesture-mapping.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-gesture-mapping.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-mode-choice.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-mode-choice.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-motion-treshold.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-dwell-motion-treshold.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-pointer-capture-context-menu.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-pointer-capture-context-menu.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-pointer-capture-locked.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-pointer-capture-locked.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-pointer-capture-preferences.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-pointer-capture-preferences.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-ssc-checkbox.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-ssc-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-ssc-delay-slider.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-ssc-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/fr/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/fr/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/fr/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/fr/mousetweaks.xml=usr/share/gnome/help/mousetweaks/fr/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/it 0755 root bin
+d none share/gnome/help/mousetweaks/it/figures 0755 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-checkbox.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-click-type-applet.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-click-type-applet.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-click-type-window.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-click-type-window.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-ctw-checkbox.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-ctw-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-delay-slider.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-gesture-mapping.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-gesture-mapping.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-mode-choice.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-mode-choice.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-motion-treshold.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-dwell-motion-treshold.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-pointer-capture-context-menu.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-pointer-capture-context-menu.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-pointer-capture-locked.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-pointer-capture-locked.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-pointer-capture-preferences.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-pointer-capture-preferences.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-ssc-checkbox.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-ssc-checkbox.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-ssc-delay-slider.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-ssc-delay-slider.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/figures/mouse-a11y-tab.png=usr/share/gnome/help/mousetweaks/it/figures/mouse-a11y-tab.png 0644 root bin
+f none share/gnome/help/mousetweaks/it/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/it/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/it/mousetweaks.xml=usr/share/gnome/help/mousetweaks/it/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/oc 0755 root bin
+d none share/gnome/help/mousetweaks/oc/figures 0755 root bin
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-checkbox.png=../../C/figures/mouse-a11y-dwell-checkbox.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-click-type-applet.png=../../C/figures/mouse-a11y-dwell-click-type-applet.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-click-type-window.png=../../C/figures/mouse-a11y-dwell-click-type-window.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-ctw-checkbox.png=../../C/figures/mouse-a11y-dwell-ctw-checkbox.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-delay-slider.png=../../C/figures/mouse-a11y-dwell-delay-slider.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-gesture-mapping.png=../../C/figures/mouse-a11y-dwell-gesture-mapping.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-mode-choice.png=../../C/figures/mouse-a11y-dwell-mode-choice.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-dwell-motion-treshold.png=../../C/figures/mouse-a11y-dwell-motion-treshold.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-pointer-capture-context-menu.png=../../C/figures/mouse-a11y-pointer-capture-context-menu.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-pointer-capture-locked.png=../../C/figures/mouse-a11y-pointer-capture-locked.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-pointer-capture-preferences.png=../../C/figures/mouse-a11y-pointer-capture-preferences.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-ssc-checkbox.png=../../C/figures/mouse-a11y-ssc-checkbox.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-ssc-delay-slider.png=../../C/figures/mouse-a11y-ssc-delay-slider.png
+s none share/gnome/help/mousetweaks/oc/figures/mouse-a11y-tab.png=../../C/figures/mouse-a11y-tab.png
+f none share/gnome/help/mousetweaks/oc/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/oc/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/oc/mousetweaks.xml=usr/share/gnome/help/mousetweaks/oc/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/sv 0755 root bin
+d none share/gnome/help/mousetweaks/sv/figures 0755 root bin
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-checkbox.png=../../C/figures/mouse-a11y-dwell-checkbox.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-click-type-applet.png=../../C/figures/mouse-a11y-dwell-click-type-applet.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-click-type-window.png=../../C/figures/mouse-a11y-dwell-click-type-window.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-ctw-checkbox.png=../../C/figures/mouse-a11y-dwell-ctw-checkbox.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-delay-slider.png=../../C/figures/mouse-a11y-dwell-delay-slider.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-gesture-mapping.png=../../C/figures/mouse-a11y-dwell-gesture-mapping.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-mode-choice.png=../../C/figures/mouse-a11y-dwell-mode-choice.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-dwell-motion-treshold.png=../../C/figures/mouse-a11y-dwell-motion-treshold.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-pointer-capture-context-menu.png=../../C/figures/mouse-a11y-pointer-capture-context-menu.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-pointer-capture-locked.png=../../C/figures/mouse-a11y-pointer-capture-locked.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-pointer-capture-preferences.png=../../C/figures/mouse-a11y-pointer-capture-preferences.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-ssc-checkbox.png=../../C/figures/mouse-a11y-ssc-checkbox.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-ssc-delay-slider.png=../../C/figures/mouse-a11y-ssc-delay-slider.png
+s none share/gnome/help/mousetweaks/sv/figures/mouse-a11y-tab.png=../../C/figures/mouse-a11y-tab.png
+f none share/gnome/help/mousetweaks/sv/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/sv/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/sv/mousetweaks.xml=usr/share/gnome/help/mousetweaks/sv/mousetweaks.xml 0644 root bin
+d none share/gnome/help/mousetweaks/zh_CN 0755 root bin
+d none share/gnome/help/mousetweaks/zh_CN/figures 0755 root bin
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-checkbox.png=../../C/figures/mouse-a11y-dwell-checkbox.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-click-type-applet.png=../../C/figures/mouse-a11y-dwell-click-type-applet.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-click-type-window.png=../../C/figures/mouse-a11y-dwell-click-type-window.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-ctw-checkbox.png=../../C/figures/mouse-a11y-dwell-ctw-checkbox.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-delay-slider.png=../../C/figures/mouse-a11y-dwell-delay-slider.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-gesture-mapping.png=../../C/figures/mouse-a11y-dwell-gesture-mapping.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-mode-choice.png=../../C/figures/mouse-a11y-dwell-mode-choice.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-dwell-motion-treshold.png=../../C/figures/mouse-a11y-dwell-motion-treshold.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-pointer-capture-context-menu.png=../../C/figures/mouse-a11y-pointer-capture-context-menu.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-pointer-capture-locked.png=../../C/figures/mouse-a11y-pointer-capture-locked.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-pointer-capture-preferences.png=../../C/figures/mouse-a11y-pointer-capture-preferences.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-ssc-checkbox.png=../../C/figures/mouse-a11y-ssc-checkbox.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-ssc-delay-slider.png=../../C/figures/mouse-a11y-ssc-delay-slider.png
+s none share/gnome/help/mousetweaks/zh_CN/figures/mouse-a11y-tab.png=../../C/figures/mouse-a11y-tab.png
+f none share/gnome/help/mousetweaks/zh_CN/mousetweaks.help.copyright=usr/share/gnome/help/mousetweaks/zh_CN/mousetweaks.help.copyright 0644 root bin
+f none share/gnome/help/mousetweaks/zh_CN/mousetweaks.xml=usr/share/gnome/help/mousetweaks/zh_CN/mousetweaks.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/dwell-click-applet.1=usr/share/man/man1/dwell-click-applet.1 0644 root bin
+f none share/man/man1/mousetweaks.1=usr/share/man/man1/mousetweaks.1 0644 root bin
+f none share/man/man1/pointer-capture-applet.1=usr/share/man/man1/pointer-capture-applet.1 0644 root bin
+d none share/mousetweaks 0755 root bin
+f none share/mousetweaks/DwellClick.xml=usr/share/mousetweaks/DwellClick.xml 0644 root bin
+f none share/mousetweaks/PointerCapture.xml=usr/share/mousetweaks/PointerCapture.xml 0644 root bin
+f none share/mousetweaks/double-click.png=usr/share/mousetweaks/double-click.png 0644 root bin
+f none share/mousetweaks/drag-click.png=usr/share/mousetweaks/drag-click.png 0644 root bin
+f none share/mousetweaks/dwell-click-applet.ui=usr/share/mousetweaks/dwell-click-applet.ui 0644 root bin
+f none share/mousetweaks/mousetweaks.ui=usr/share/mousetweaks/mousetweaks.ui 0644 root bin
+f none share/mousetweaks/pointer-capture-applet.ui=usr/share/mousetweaks/pointer-capture-applet.ui 0644 root bin
+f none share/mousetweaks/right-click.png=usr/share/mousetweaks/right-click.png 0644 root bin
+f none share/mousetweaks/single-click.png=usr/share/mousetweaks/single-click.png 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/mousetweaks 0755 root bin
+f none share/omf/mousetweaks/mousetweaks-C.omf=usr/share/omf/mousetweaks/mousetweaks-C.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-ca.omf=usr/share/omf/mousetweaks/mousetweaks-ca.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-cs.omf=usr/share/omf/mousetweaks/mousetweaks-cs.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-de.omf=usr/share/omf/mousetweaks/mousetweaks-de.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-el.omf=usr/share/omf/mousetweaks/mousetweaks-el.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-en_GB.omf=usr/share/omf/mousetweaks/mousetweaks-en_GB.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-es.omf=usr/share/omf/mousetweaks/mousetweaks-es.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-fr.omf=usr/share/omf/mousetweaks/mousetweaks-fr.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-it.omf=usr/share/omf/mousetweaks/mousetweaks-it.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-oc.omf=usr/share/omf/mousetweaks/mousetweaks-oc.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-sv.omf=usr/share/omf/mousetweaks/mousetweaks-sv.omf 0644 root bin
+f none share/omf/mousetweaks/mousetweaks-zh_CN.omf=usr/share/omf/mousetweaks/mousetweaks-zh_CN.omf 0644 root bin
