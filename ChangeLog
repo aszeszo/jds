@@ -1,3 +1,7 @@
+2012-01-13 Adam Paul <adam.paul@oracle.com>
+
+        ==== S11U1 build 08 ====
+
 2012-01-10  Lin Ma  <lin.ma@oracle.com>
 
 	* patches/firefox6-27-methoidjit-sparc.diff: Omit this one in the
