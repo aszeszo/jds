@@ -3,7 +3,7 @@
 #
 # includes module(s): glib2
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,14 +33,19 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibms
-Requires: SUNWPython26
+Requires: system/library/math
+Requires: library/zlib
+Requires: runtime/python-26
 BuildRequires: runtime/perl-512
-BuildRequires: SUNWlibm
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWgnome-xml-share
+BuildRequires: system/library/math/header-math
+BuildRequires: runtime/python-26
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: developer/gnome/gettext
+BuildRequires: data/sgml-common
+BuildRequires: data/xml-common
+BuildRequires: data/docbook/docbook-style-dsssl
+BuildRequires: data/docbook/docbook-style-xsl
+BuildRequires: data/docbook/docbook-dtds
 %if %option_with_svr4
 %else
 # required for including X11/extensions/Xtsol.h in gio-rbac.diff
@@ -56,11 +61,11 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWglib2
+Requires: library/glib2
 
 %package l10n
 Summary:                 %{summary} - l10n content
-Requires: SUNWglib2
+Requires: library/glib2
 
 %prep
 rm -rf %name-%version

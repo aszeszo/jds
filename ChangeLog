@@ -1,3 +1,10 @@
+2012-01-19  Ghee Teo  <ghee.teo@oracle.com>
+
+        CR 7026871 glib2, dbus, dbus-glib linked in additional libraries
+        which are not used. webrti:358583.
+        * base-specs/glib2.spec:
+        * specs/SUNWglib2.spec:
+
 2012-01-19  Li Yuan  <lee.yuan@oracle.com>
 
 	* copyright/SUNWliblouis.copyright:

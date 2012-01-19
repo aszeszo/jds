@@ -1,7 +1,7 @@
 #
 # spec file for package glib2 
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012 Oracle and/or its affiliates. All Rights Reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -117,7 +117,7 @@ automake -a -c -f
 chmod a+x mkinstalldirs
 autoconf
 export CFLAGS="%optflags"
-export LDFLAGS="%_ldflags -lsocket -lsecdb -lnsl"
+export LDFLAGS="%_ldflags"
 ./configure --prefix=%{_prefix} \
             --mandir=%{_mandir} \
             --datadir=%{_datadir} \
