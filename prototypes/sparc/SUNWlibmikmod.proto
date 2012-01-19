@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibmikmod.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibmikmod.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibmikmod.copyright
+d none lib 0755 root bin
+s none lib/libmikmod.so=libmikmod.so.3.0.0
+s none lib/libmikmod.so.3=libmikmod.so.3.0.0
+f none lib/libmikmod.so.3.0.0=usr/lib/libmikmod.so.3.0.0 0755 root bin

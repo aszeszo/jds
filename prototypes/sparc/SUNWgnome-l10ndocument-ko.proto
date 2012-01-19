@@ -1,0 +1,343 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-l10ndocument-ko.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-l10ndocument-ko.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-ko.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-ko.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-l10ndocument-ko.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/accessx-status 0755 root bin
+d none share/gnome/help/accessx-status/ko 0755 root bin
+f none share/gnome/help/accessx-status/ko/accessx-status.xml=usr/share/gnome/help/accessx-status/ko/accessx-status.xml 0644 root bin
+d none share/gnome/help/accessx-status/ko/figures 0755 root bin
+s none share/gnome/help/accessx-status/ko/figures/accessx-status-applet.png=../../C/figures/accessx-status-applet.png
+s none share/gnome/help/accessx-status/ko/figures/accessx-status-disabled.png=../../C/figures/accessx-status-disabled.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_bounce-keys.png=../../C/figures/accessx_bounce-keys.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_mouse-keys.png=../../C/figures/accessx_mouse-keys.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_slow-keys.png=../../C/figures/accessx_slow-keys.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_sticky-altGr-key.png=../../C/figures/accessx_sticky-altGr-key.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_sticky-ctrl-key.png=../../C/figures/accessx_sticky-ctrl-key.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_sticky-keys.png=../../C/figures/accessx_sticky-keys.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_sticky-meta-key.png=../../C/figures/accessx_sticky-meta-key.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_sticky-shift-key.png=../../C/figures/accessx_sticky-shift-key.png
+s none share/gnome/help/accessx-status/ko/figures/accessx_sticky-windows-key.png=../../C/figures/accessx_sticky-windows-key.png
+d none share/gnome/help/battstat 0755 root bin
+d none share/gnome/help/battstat/ko 0755 root bin
+f none share/gnome/help/battstat/ko/battstat.xml=usr/share/gnome/help/battstat/ko/battstat.xml 0644 root bin
+d none share/gnome/help/battstat/ko/figures 0755 root bin
+s none share/gnome/help/battstat/ko/figures/battstat-applet-expanded.png=../../C/figures/battstat-applet-expanded.png
+s none share/gnome/help/battstat/ko/figures/battstat-applet.png=../../C/figures/battstat-applet.png
+s none share/gnome/help/battstat/ko/figures/battstat-credits-hal.png=../../C/figures/battstat-credits-hal.png
+s none share/gnome/help/battstat/ko/figures/battstat-preferences.png=../../C/figures/battstat-preferences.png
+s none share/gnome/help/battstat/ko/figures/context-menu.png=../../C/figures/context-menu.png
+d none share/gnome/help/char-palette 0755 root bin
+d none share/gnome/help/char-palette/ko 0755 root bin
+f none share/gnome/help/char-palette/ko/char-palette.xml=usr/share/gnome/help/char-palette/ko/char-palette.xml 0644 root bin
+d none share/gnome/help/char-palette/ko/figures 0755 root bin
+s none share/gnome/help/char-palette/ko/figures/charpalette_applet.png=../../C/figures/charpalette_applet.png
+s none share/gnome/help/char-palette/ko/figures/charpalette_chargroup.png=../../C/figures/charpalette_chargroup.png
+s none share/gnome/help/char-palette/ko/figures/charpick-preferences.png=../../C/figures/charpick-preferences.png
+s none share/gnome/help/char-palette/ko/figures/charpick_characters.png=../../C/figures/charpick_characters.png
+d none share/gnome/help/clock 0755 root bin
+d none share/gnome/help/clock/ko 0755 root bin
+f none share/gnome/help/clock/ko/clock.xml=usr/share/gnome/help/clock/ko/clock.xml 0644 root bin
+d none share/gnome/help/clock/ko/figures 0755 root bin
+f none share/gnome/help/clock/ko/figures/clock_applet.png=usr/share/gnome/help/clock/ko/figures/clock_applet.png 0644 root bin
+f none share/gnome/help/clock/ko/legal.xml=usr/share/gnome/help/clock/ko/legal.xml 0644 root bin
+d none share/gnome/help/copyright 0755 root bin
+d none share/gnome/help/copyright/ko 0755 root bin
+f none share/gnome/help/copyright/ko/COPYING.gnome.gz=usr/share/gnome/help/copyright/ko/COPYING.gnome.gz 0644 root bin
+d none share/gnome/help/eog 0755 root bin
+d none share/gnome/help/eog/ko 0755 root bin
+f none share/gnome/help/eog/ko/eog.xml=usr/share/gnome/help/eog/ko/eog.xml 0644 root bin
+d none share/gnome/help/eog/ko/figures 0755 root bin
+f none share/gnome/help/eog/ko/figures/eog_save_as_window.png=usr/share/gnome/help/eog/ko/figures/eog_save_as_window.png 0644 root bin
+f none share/gnome/help/eog/ko/figures/eog_start_window.png=usr/share/gnome/help/eog/ko/figures/eog_start_window.png 0644 root bin
+f none share/gnome/help/eog/ko/figures/eog_toolbar_editor_window.png=usr/share/gnome/help/eog/ko/figures/eog_toolbar_editor_window.png 0644 root bin
+d none share/gnome/help/fdl 0755 root bin
+d none share/gnome/help/fdl/ko 0755 root bin
+f none share/gnome/help/fdl/ko/fdl.xml=usr/share/gnome/help/fdl/ko/fdl.xml 0644 root bin
+d none share/gnome/help/fsexam 0755 root bin
+d none share/gnome/help/fsexam/ko 0755 root bin
+d none share/gnome/help/fsexam/ko/figures 0755 root bin
+f none share/gnome/help/fsexam/ko/figures/fsexam-pref.png=usr/share/gnome/help/fsexam/ko/figures/fsexam-pref.png 0644 root bin
+f none share/gnome/help/fsexam/ko/figures/fsexam.png=usr/share/gnome/help/fsexam/ko/figures/fsexam.png 0644 root bin
+f none share/gnome/help/fsexam/ko/fsexam.xml=usr/share/gnome/help/fsexam/ko/fsexam.xml 0644 root bin
+d none share/gnome/help/gcalctool 0755 root bin
+d none share/gnome/help/gcalctool/ko 0755 root bin
+f none share/gnome/help/gcalctool/ko/absolute.page=usr/share/gnome/help/gcalctool/ko/absolute.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/base.page=usr/share/gnome/help/gcalctool/ko/base.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/boolean.page=usr/share/gnome/help/gcalctool/ko/boolean.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/complex.page=usr/share/gnome/help/gcalctool/ko/complex.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/conv-base.page=usr/share/gnome/help/gcalctool/ko/conv-base.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/conv-character.page=usr/share/gnome/help/gcalctool/ko/conv-character.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/conv-currency.page=usr/share/gnome/help/gcalctool/ko/conv-currency.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/conv-length.page=usr/share/gnome/help/gcalctool/ko/conv-length.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/conv-time.page=usr/share/gnome/help/gcalctool/ko/conv-time.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/conv-weight.page=usr/share/gnome/help/gcalctool/ko/conv-weight.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/equation.page=usr/share/gnome/help/gcalctool/ko/equation.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/factorial.page=usr/share/gnome/help/gcalctool/ko/factorial.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/factorize.page=usr/share/gnome/help/gcalctool/ko/factorize.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/financial.page=usr/share/gnome/help/gcalctool/ko/financial.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/functions.page=usr/share/gnome/help/gcalctool/ko/functions.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/index.page=usr/share/gnome/help/gcalctool/ko/index.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/keyboard.page=usr/share/gnome/help/gcalctool/ko/keyboard.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/legal.xml=usr/share/gnome/help/gcalctool/ko/legal.xml 0644 root bin
+f none share/gnome/help/gcalctool/ko/logarithm.page=usr/share/gnome/help/gcalctool/ko/logarithm.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/modulus.page=usr/share/gnome/help/gcalctool/ko/modulus.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/mouse.page=usr/share/gnome/help/gcalctool/ko/mouse.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/number-display.page=usr/share/gnome/help/gcalctool/ko/number-display.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/percentage.page=usr/share/gnome/help/gcalctool/ko/percentage.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/power.page=usr/share/gnome/help/gcalctool/ko/power.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/scientific.page=usr/share/gnome/help/gcalctool/ko/scientific.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/superscript.page=usr/share/gnome/help/gcalctool/ko/superscript.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/trigonometry.page=usr/share/gnome/help/gcalctool/ko/trigonometry.page 0644 root bin
+f none share/gnome/help/gcalctool/ko/variables.page=usr/share/gnome/help/gcalctool/ko/variables.page 0644 root bin
+d none share/gnome/help/gdm 0755 root bin
+d none share/gnome/help/gdm/ko 0755 root bin
+f none share/gnome/help/gdm/ko/gdm.xml=usr/share/gnome/help/gdm/ko/gdm.xml 0644 root bin
+d none share/gnome/help/gedit 0755 root bin
+d none share/gnome/help/gedit/ko 0755 root bin
+d none share/gnome/help/gedit/ko/figures 0755 root bin
+s none share/gnome/help/gedit/ko/figures/gedit_format_bold.png=../../C/figures/gedit_format_bold.png
+s none share/gnome/help/gedit/ko/figures/gedit_format_italic.png=../../C/figures/gedit_format_italic.png
+s none share/gnome/help/gedit/ko/figures/gedit_format_strikethrough.png=../../C/figures/gedit_format_strikethrough.png
+s none share/gnome/help/gedit/ko/figures/gedit_format_underline.png=../../C/figures/gedit_format_underline.png
+s none share/gnome/help/gedit/ko/figures/gedit_recent_files_menu_icon.png=../../C/figures/gedit_recent_files_menu_icon.png
+f none share/gnome/help/gedit/ko/figures/gedit_window.png=usr/share/gnome/help/gedit/ko/figures/gedit_window.png 0644 root bin
+f none share/gnome/help/gedit/ko/gedit.xml=usr/share/gnome/help/gedit/ko/gedit.xml 0644 root bin
+f none share/gnome/help/gedit/ko/legal.xml=usr/share/gnome/help/gedit/ko/legal.xml 0644 root bin
+d none share/gnome/help/geyes 0755 root bin
+d none share/gnome/help/geyes/ko 0755 root bin
+d none share/gnome/help/geyes/ko/figures 0755 root bin
+s none share/gnome/help/geyes/ko/figures/geyes_applet.png=../../C/figures/geyes_applet.png
+f none share/gnome/help/geyes/ko/geyes.xml=usr/share/gnome/help/geyes/ko/geyes.xml 0644 root bin
+d none share/gnome/help/ghex2 0755 root bin
+d none share/gnome/help/ghex2/ko 0755 root bin
+d none share/gnome/help/ghex2/ko/figures 0755 root bin
+f none share/gnome/help/ghex2/ko/figures/ghex_window_empty.png=usr/share/gnome/help/ghex2/ko/figures/ghex_window_empty.png 0644 root bin
+f none share/gnome/help/ghex2/ko/figures/ghex_window_open.png=usr/share/gnome/help/ghex2/ko/figures/ghex_window_open.png 0644 root bin
+f none share/gnome/help/ghex2/ko/ghex2.xml=usr/share/gnome/help/ghex2/ko/ghex2.xml 0644 root bin
+d none share/gnome/help/gnome-netstatus 0755 root bin
+d none share/gnome/help/gnome-netstatus/ko 0755 root bin
+d none share/gnome/help/gnome-netstatus/ko/figures 0755 root bin
+s none share/gnome/help/gnome-netstatus/ko/figures/gnome-netstatus-disconn.png=../../C/figures/gnome-netstatus-disconn.png
+s none share/gnome/help/gnome-netstatus/ko/figures/gnome-netstatus-error.png=../../C/figures/gnome-netstatus-error.png
+s none share/gnome/help/gnome-netstatus/ko/figures/gnome-netstatus-idle.png=../../C/figures/gnome-netstatus-idle.png
+s none share/gnome/help/gnome-netstatus/ko/figures/gnome-netstatus-rx.png=../../C/figures/gnome-netstatus-rx.png
+s none share/gnome/help/gnome-netstatus/ko/figures/gnome-netstatus-tx.png=../../C/figures/gnome-netstatus-tx.png
+s none share/gnome/help/gnome-netstatus/ko/figures/gnome-netstatus-txrx.png=../../C/figures/gnome-netstatus-txrx.png
+f none share/gnome/help/gnome-netstatus/ko/gnome-netstatus.xml=usr/share/gnome/help/gnome-netstatus/ko/gnome-netstatus.xml 0644 root bin
+f none share/gnome/help/gnome-netstatus/ko/legal.xml=usr/share/gnome/help/gnome-netstatus/ko/legal.xml 0644 root bin
+d none share/gnome/help/gnome-printinfo 0755 root bin
+d none share/gnome/help/gnome-printinfo/ko 0755 root bin
+d none share/gnome/help/gnome-printinfo/ko/figures 0755 root bin
+f none share/gnome/help/gnome-printinfo/ko/figures/main-window.png=usr/share/gnome/help/gnome-printinfo/ko/figures/main-window.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/ko/figures/per-printer-prefs.png=usr/share/gnome/help/gnome-printinfo/ko/figures/per-printer-prefs.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/ko/figures/search.png=usr/share/gnome/help/gnome-printinfo/ko/figures/search.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/ko/gnome-print-manager.xml=usr/share/gnome/help/gnome-printinfo/ko/gnome-print-manager.xml 0644 root bin
+f none share/gnome/help/gnome-printinfo/ko/legal.xml=usr/share/gnome/help/gnome-printinfo/ko/legal.xml 0644 root bin
+d none share/gnome/help/gnome-search-tool 0755 root bin
+d none share/gnome/help/gnome-search-tool/ko 0755 root bin
+d none share/gnome/help/gnome-search-tool/ko/figures 0755 root bin
+f none share/gnome/help/gnome-search-tool/ko/figures/gnome-search-tool_window.png=usr/share/gnome/help/gnome-search-tool/ko/figures/gnome-search-tool_window.png 0644 root bin
+f none share/gnome/help/gnome-search-tool/ko/gnome-search-tool.xml=usr/share/gnome/help/gnome-search-tool/ko/gnome-search-tool.xml 0644 root bin
+d none share/gnome/help/gnome-system-log 0755 root bin
+d none share/gnome/help/gnome-system-log/ko 0755 root bin
+d none share/gnome/help/gnome-system-log/ko/figures 0755 root bin
+f none share/gnome/help/gnome-system-log/ko/figures/syslog_window.png=usr/share/gnome/help/gnome-system-log/ko/figures/syslog_window.png 0644 root bin
+f none share/gnome/help/gnome-system-log/ko/gnome-system-log.xml=usr/share/gnome/help/gnome-system-log/ko/gnome-system-log.xml 0644 root bin
+d none share/gnome/help/gnome-terminal 0755 root bin
+d none share/gnome/help/gnome-terminal/ko 0755 root bin
+d none share/gnome/help/gnome-terminal/ko/figures 0755 root bin
+f none share/gnome/help/gnome-terminal/ko/figures/gnome-terminal-default.png=usr/share/gnome/help/gnome-terminal/ko/figures/gnome-terminal-default.png 0644 root bin
+f none share/gnome/help/gnome-terminal/ko/figures/gnome-terminal-tabbed.png=usr/share/gnome/help/gnome-terminal/ko/figures/gnome-terminal-tabbed.png 0644 root bin
+f none share/gnome/help/gnome-terminal/ko/gnome-terminal.xml=usr/share/gnome/help/gnome-terminal/ko/gnome-terminal.xml 0644 root bin
+d none share/gnome/help/gpl 0755 root bin
+d none share/gnome/help/gpl/ko 0755 root bin
+f none share/gnome/help/gpl/ko/gpl.xml=usr/share/gnome/help/gpl/ko/gpl.xml 0644 root bin
+d none share/gnome/help/gucharmap 0755 root bin
+d none share/gnome/help/gucharmap/ko 0755 root bin
+d none share/gnome/help/gucharmap/ko/figures 0755 root bin
+s none share/gnome/help/gucharmap/ko/figures/gucharmap_start_window.png=../../C/figures/gucharmap_start_window.png
+f none share/gnome/help/gucharmap/ko/figures/gucharmap_window.png=usr/share/gnome/help/gucharmap/ko/figures/gucharmap_window.png 0644 root bin
+f none share/gnome/help/gucharmap/ko/gucharmap.xml=usr/share/gnome/help/gucharmap/ko/gucharmap.xml 0644 root bin
+d none share/gnome/help/gweather 0755 root bin
+d none share/gnome/help/gweather/ko 0755 root bin
+d none share/gnome/help/gweather/ko/figures 0755 root bin
+s none share/gnome/help/gweather/ko/figures/gweather-details.png=../../C/figures/gweather-details.png
+s none share/gnome/help/gweather/ko/figures/gweather-menu-prefs.png=../../C/figures/gweather-menu-prefs.png
+s none share/gnome/help/gweather/ko/figures/gweather-prefs-general.png=../../C/figures/gweather-prefs-general.png
+s none share/gnome/help/gweather/ko/figures/gweather-prefs-locations.png=../../C/figures/gweather-prefs-locations.png
+s none share/gnome/help/gweather/ko/figures/gweather_applet.png=../../C/figures/gweather_applet.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-cloudy.png=../../C/figures/stock_weather-cloudy.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-few-clouds.png=../../C/figures/stock_weather-few-clouds.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-fog.png=../../C/figures/stock_weather-fog.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-night-clear.png=../../C/figures/stock_weather-night-clear.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-night-few-clouds.png=../../C/figures/stock_weather-night-few-clouds.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-showers.png=../../C/figures/stock_weather-showers.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-snow.png=../../C/figures/stock_weather-snow.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-storm.png=../../C/figures/stock_weather-storm.png
+s none share/gnome/help/gweather/ko/figures/stock_weather-sunny.png=../../C/figures/stock_weather-sunny.png
+f none share/gnome/help/gweather/ko/gweather.xml=usr/share/gnome/help/gweather/ko/gweather.xml 0644 root bin
+d none share/gnome/help/lgpl 0755 root bin
+d none share/gnome/help/lgpl/ko 0755 root bin
+f none share/gnome/help/lgpl/ko/lgpl.xml=usr/share/gnome/help/lgpl/ko/lgpl.xml 0644 root bin
+d none share/gnome/help/mixer_applet2 0755 root bin
+d none share/gnome/help/mixer_applet2/ko 0755 root bin
+d none share/gnome/help/mixer_applet2/ko/figures 0755 root bin
+s none share/gnome/help/mixer_applet2/ko/figures/volumecontrol_applet.png=../../C/figures/volumecontrol_applet.png
+f none share/gnome/help/mixer_applet2/ko/mixer_applet2.xml=usr/share/gnome/help/mixer_applet2/ko/mixer_applet2.xml 0644 root bin
+d none share/gnome/help/multiload 0755 root bin
+d none share/gnome/help/multiload/ko 0755 root bin
+d none share/gnome/help/multiload/ko/figures 0755 root bin
+f none share/gnome/help/multiload/ko/figures/multiload-preferences.png=usr/share/gnome/help/multiload/ko/figures/multiload-preferences.png 0644 root bin
+s none share/gnome/help/multiload/ko/figures/system-monitor-applet_window.png=../../C/figures/system-monitor-applet_window.png
+s none share/gnome/help/multiload/ko/figures/system_monitor.png=../../C/figures/system_monitor.png
+f none share/gnome/help/multiload/ko/multiload.xml=usr/share/gnome/help/multiload/ko/multiload.xml 0644 root bin
+d none share/gnome/help/ospm-pm 0755 root bin
+d none share/gnome/help/ospm-pm/ko 0755 root bin
+f none share/gnome/help/ospm-pm/ko/ospm-pm.xml=usr/share/gnome/help/ospm-pm/ko/ospm-pm.xml 0644 root bin
+d none share/gnome/help/stickynotes_applet 0755 root bin
+d none share/gnome/help/stickynotes_applet/ko 0755 root bin
+d none share/gnome/help/stickynotes_applet/ko/figures 0755 root bin
+s none share/gnome/help/stickynotes_applet/ko/figures/stickynote-right-menu-lock.png=../../C/figures/stickynote-right-menu-lock.png
+s none share/gnome/help/stickynotes_applet/ko/figures/stickynote-right-menu-new.png=../../C/figures/stickynote-right-menu-new.png
+s none share/gnome/help/stickynotes_applet/ko/figures/stickynotes-note-prefs.png=../../C/figures/stickynotes-note-prefs.png
+s none share/gnome/help/stickynotes_applet/ko/figures/stickynotes-prefs.png=../../C/figures/stickynotes-prefs.png
+s none share/gnome/help/stickynotes_applet/ko/figures/stickynotes_applet.png=../../C/figures/stickynotes_applet.png
+f none share/gnome/help/stickynotes_applet/ko/stickynotes_applet.xml=usr/share/gnome/help/stickynotes_applet/ko/stickynotes_applet.xml 0644 root bin
+d none share/gnome/help/system-admin-guide 0755 root bin
+d none share/gnome/help/system-admin-guide/ko 0755 root bin
+f none share/gnome/help/system-admin-guide/ko/system-admin-guide.xml=usr/share/gnome/help/system-admin-guide/ko/system-admin-guide.xml 0644 root bin
+d none share/gnome/help/user-guide 0755 root bin
+d none share/gnome/help/user-guide/ko 0755 root bin
+d none share/gnome/help/user-guide/ko/figures 0755 root bin
+s none share/gnome/help/user-guide/ko/figures/ask_pointer.png=../../C/figures/ask_pointer.png
+s none share/gnome/help/user-guide/ko/figures/busy_pointer.png=../../C/figures/busy_pointer.png
+s none share/gnome/help/user-guide/ko/figures/com_file_manager_menu.png=../../C/figures/com_file_manager_menu.png
+s none share/gnome/help/user-guide/ko/figures/copy_pointer.png=../../C/figures/copy_pointer.png
+s none share/gnome/help/user-guide/ko/figures/force_quit.png=../../C/figures/force_quit.png
+s none share/gnome/help/user-guide/ko/figures/four_hide_button.png=../../C/figures/four_hide_button.png
+s none share/gnome/help/user-guide/ko/figures/gedit_window.png=../../C/figures/gedit_window.png
+s none share/gnome/help/user-guide/ko/figures/gnome_panel.png=../../C/figures/gnome_panel.png
+s none share/gnome/help/user-guide/ko/figures/hyperlink_pointer.png=../../C/figures/hyperlink_pointer.png
+s none share/gnome/help/user-guide/ko/figures/ibeam_pointer.png=../../C/figures/ibeam_pointer.png
+s none share/gnome/help/user-guide/ko/figures/link_pointer.png=../../C/figures/link_pointer.png
+s none share/gnome/help/user-guide/ko/figures/lockscreen_icon.png=../../C/figures/lockscreen_icon.png
+s none share/gnome/help/user-guide/ko/figures/logout_icon.png=../../C/figures/logout_icon.png
+f none share/gnome/help/user-guide/ko/figures/menu_bar_applet.png=usr/share/gnome/help/user-guide/ko/figures/menu_bar_applet.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/menu_panel.png=../../C/figures/menu_panel.png
+s none share/gnome/help/user-guide/ko/figures/move_panel_object_pointer.png=../../C/figures/move_panel_object_pointer.png
+s none share/gnome/help/user-guide/ko/figures/move_pointer.png=../../C/figures/move_pointer.png
+s none share/gnome/help/user-guide/ko/figures/movewindow_pointer.png=../../C/figures/movewindow_pointer.png
+f none share/gnome/help/user-guide/ko/figures/naut_browser_mode.png=usr/share/gnome/help/user-guide/ko/figures/naut_browser_mode.png 0644 root bin
+f none share/gnome/help/user-guide/ko/figures/naut_button_bar.png=usr/share/gnome/help/user-guide/ko/figures/naut_button_bar.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/naut_computer_launcher.png=../../C/figures/naut_computer_launcher.png
+f none share/gnome/help/user-guide/ko/figures/naut_emblem.png=usr/share/gnome/help/user-guide/ko/figures/naut_emblem.png 0644 root bin
+f none share/gnome/help/user-guide/ko/figures/naut_go_to_location.png=usr/share/gnome/help/user-guide/ko/figures/naut_go_to_location.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/naut_link_emblem.png=../../C/figures/naut_link_emblem.png
+s none share/gnome/help/user-guide/ko/figures/naut_noread_emblem.png=../../C/figures/naut_noread_emblem.png
+s none share/gnome/help/user-guide/ko/figures/naut_normal_size_button.png=../../C/figures/naut_normal_size_button.png
+s none share/gnome/help/user-guide/ko/figures/naut_nowrite_emblem.png=../../C/figures/naut_nowrite_emblem.png
+f none share/gnome/help/user-guide/ko/figures/naut_refine_search.png=usr/share/gnome/help/user-guide/ko/figures/naut_refine_search.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/naut_sampleemblem1_icon.png=../../C/figures/naut_sampleemblem1_icon.png
+s none share/gnome/help/user-guide/ko/figures/naut_sampleemblem2_icon.png=../../C/figures/naut_sampleemblem2_icon.png
+s none share/gnome/help/user-guide/ko/figures/naut_sampleemblem3_icon.png=../../C/figures/naut_sampleemblem3_icon.png
+s none share/gnome/help/user-guide/ko/figures/naut_sampleemblem_icon.png=../../C/figures/naut_sampleemblem_icon.png
+s none share/gnome/help/user-guide/ko/figures/naut_samplesymlink_icon.png=../../C/figures/naut_samplesymlink_icon.png
+f none share/gnome/help/user-guide/ko/figures/naut_search_bar.png=usr/share/gnome/help/user-guide/ko/figures/naut_search_bar.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/naut_search_results.png=../../C/figures/naut_search_results.png
+s none share/gnome/help/user-guide/ko/figures/naut_spatial_icon_view.png=../../C/figures/naut_spatial_icon_view.png
+s none share/gnome/help/user-guide/ko/figures/naut_spatial_list_view.png=../../C/figures/naut_spatial_list_view.png
+f none share/gnome/help/user-guide/ko/figures/naut_spatial_mode.png=usr/share/gnome/help/user-guide/ko/figures/naut_spatial_mode.png 0644 root bin
+f none share/gnome/help/user-guide/ko/figures/naut_spatial_view.png=usr/share/gnome/help/user-guide/ko/figures/naut_spatial_view.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/naut_starthere_launcher.png=../../C/figures/naut_starthere_launcher.png
+f none share/gnome/help/user-guide/ko/figures/naut_trash_launcher.png=usr/share/gnome/help/user-guide/ko/figures/naut_trash_launcher.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/naut_zoom_in_button.png=../../C/figures/naut_zoom_in_button.png
+s none share/gnome/help/user-guide/ko/figures/naut_zoom_out_button.png=../../C/figures/naut_zoom_out_button.png
+s none share/gnome/help/user-guide/ko/figures/nautilus_restore_saved_search.png=../../C/figures/nautilus_restore_saved_search.png
+s none share/gnome/help/user-guide/ko/figures/normal_pointer.png=../../C/figures/normal_pointer.png
+s none share/gnome/help/user-guide/ko/figures/not_available_pointer.png=../../C/figures/not_available_pointer.png
+s none share/gnome/help/user-guide/ko/figures/notification_area_icon.png=../../C/figures/notification_area_icon.png
+s none share/gnome/help/user-guide/ko/figures/open_drawer.png=../../C/figures/open_drawer.png
+f none share/gnome/help/user-guide/ko/figures/openwindows_menu.png=usr/share/gnome/help/user-guide/ko/figures/openwindows_menu.png 0644 root bin
+f none share/gnome/help/user-guide/ko/figures/panel_object_popup_menu.png=usr/share/gnome/help/user-guide/ko/figures/panel_object_popup_menu.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/resize_pointer.png=../../C/figures/resize_pointer.png
+s none share/gnome/help/user-guide/ko/figures/run_button.png=../../C/figures/run_button.png
+s none share/gnome/help/user-guide/ko/figures/sample_applet.png=../../C/figures/sample_applet.png
+s none share/gnome/help/user-guide/ko/figures/screenshot_button.png=../../C/figures/screenshot_button.png
+s none share/gnome/help/user-guide/ko/figures/searchtool_button.png=../../C/figures/searchtool_button.png
+s none share/gnome/help/user-guide/ko/figures/show_desktop_button.png=../../C/figures/show_desktop_button.png
+s none share/gnome/help/user-guide/ko/figures/titlebar_anno_window.png=../../C/figures/titlebar_anno_window.png
+f none share/gnome/help/user-guide/ko/figures/titlebar_window.png=usr/share/gnome/help/user-guide/ko/figures/titlebar_window.png 0644 root bin
+s none share/gnome/help/user-guide/ko/figures/typical_menu.png=../../C/figures/typical_menu.png
+s none share/gnome/help/user-guide/ko/figures/window_list_applet.png=../../C/figures/window_list_applet.png
+s none share/gnome/help/user-guide/ko/figures/window_list_group_applet.png=../../C/figures/window_list_group_applet.png
+s none share/gnome/help/user-guide/ko/figures/workspace_switcher_applet.png=../../C/figures/workspace_switcher_applet.png
+f none share/gnome/help/user-guide/ko/figures/yelp_add_bookmark.png=usr/share/gnome/help/user-guide/ko/figures/yelp_add_bookmark.png 0644 root bin
+f none share/gnome/help/user-guide/ko/figures/yelp_edit_bookmarks.png=usr/share/gnome/help/user-guide/ko/figures/yelp_edit_bookmarks.png 0644 root bin
+f none share/gnome/help/user-guide/ko/figures/yelp_preferences.png=usr/share/gnome/help/user-guide/ko/figures/yelp_preferences.png 0644 root bin
+f none share/gnome/help/user-guide/ko/figures/yelp_window.png=usr/share/gnome/help/user-guide/ko/figures/yelp_window.png 0644 root bin
+f none share/gnome/help/user-guide/ko/glossary.xml=usr/share/gnome/help/user-guide/ko/glossary.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/gosbasic.xml=usr/share/gnome/help/user-guide/ko/gosbasic.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/goscustdesk.xml=usr/share/gnome/help/user-guide/ko/goscustdesk.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/goseditmainmenu.xml=usr/share/gnome/help/user-guide/ko/goseditmainmenu.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/gosfeedback.xml=usr/share/gnome/help/user-guide/ko/gosfeedback.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/gosnautilus.xml=usr/share/gnome/help/user-guide/ko/gosnautilus.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/gosoverview.xml=usr/share/gnome/help/user-guide/ko/gosoverview.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/gospanel.xml=usr/share/gnome/help/user-guide/ko/gospanel.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/gosstartsession.xml=usr/share/gnome/help/user-guide/ko/gosstartsession.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/gostools.xml=usr/share/gnome/help/user-guide/ko/gostools.xml 0644 root bin
+f none share/gnome/help/user-guide/ko/user-guide.xml=usr/share/gnome/help/user-guide/ko/user-guide.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/accessx-status 0755 root bin
+f none share/omf/accessx-status/accessx-status-ko.omf=usr/share/omf/accessx-status/accessx-status-ko.omf 0644 root bin
+d none share/omf/battstat 0755 root bin
+f none share/omf/battstat/battstat-ko.omf=usr/share/omf/battstat/battstat-ko.omf 0644 root bin
+d none share/omf/char-palette 0755 root bin
+f none share/omf/char-palette/char-palette-ko.omf=usr/share/omf/char-palette/char-palette-ko.omf 0644 root bin
+d none share/omf/clock 0755 root bin
+f none share/omf/clock/clock-ko.omf=usr/share/omf/clock/clock-ko.omf 0644 root bin
+d none share/omf/eog 0755 root bin
+f none share/omf/eog/eog-ko.omf=usr/share/omf/eog/eog-ko.omf 0644 root bin
+d none share/omf/fdl 0755 root bin
+f none share/omf/fdl/fdl-ko.omf=usr/share/omf/fdl/fdl-ko.omf 0644 root bin
+d none share/omf/fsexam 0755 root bin
+f none share/omf/fsexam/fsexam-ko.omf=usr/share/omf/fsexam/fsexam-ko.omf 0644 root bin
+d none share/omf/gdm 0755 root bin
+f none share/omf/gdm/gdm-ko.omf=usr/share/omf/gdm/gdm-ko.omf 0644 root bin
+d none share/omf/gedit 0755 root bin
+f none share/omf/gedit/gedit-ko.omf=usr/share/omf/gedit/gedit-ko.omf 0644 root bin
+d none share/omf/geyes 0755 root bin
+f none share/omf/geyes/geyes-ko.omf=usr/share/omf/geyes/geyes-ko.omf 0644 root bin
+d none share/omf/gnome-netstatus 0755 root bin
+f none share/omf/gnome-netstatus/gnome-netstatus-ko.omf=usr/share/omf/gnome-netstatus/gnome-netstatus-ko.omf 0644 root bin
+d none share/omf/gnome-search-tool 0755 root bin
+f none share/omf/gnome-search-tool/gnome-search-tool-ko.omf=usr/share/omf/gnome-search-tool/gnome-search-tool-ko.omf 0644 root bin
+d none share/omf/gnome-system-log 0755 root bin
+f none share/omf/gnome-system-log/gnome-system-log-ko.omf=usr/share/omf/gnome-system-log/gnome-system-log-ko.omf 0644 root bin
+d none share/omf/gnome-terminal 0755 root bin
+f none share/omf/gnome-terminal/gnome-terminal-ko.omf=usr/share/omf/gnome-terminal/gnome-terminal-ko.omf 0644 root bin
+d none share/omf/gpl 0755 root bin
+f none share/omf/gpl/gpl-ko.omf=usr/share/omf/gpl/gpl-ko.omf 0644 root bin
+d none share/omf/gucharmap 0755 root bin
+f none share/omf/gucharmap/gucharmap-ko.omf=usr/share/omf/gucharmap/gucharmap-ko.omf 0644 root bin
+d none share/omf/gweather 0755 root bin
+f none share/omf/gweather/gweather-ko.omf=usr/share/omf/gweather/gweather-ko.omf 0644 root bin
+d none share/omf/lgpl 0755 root bin
+f none share/omf/lgpl/lgpl-ko.omf=usr/share/omf/lgpl/lgpl-ko.omf 0644 root bin
+d none share/omf/mixer_applet2 0755 root bin
+f none share/omf/mixer_applet2/mixer_applet2-ko.omf=usr/share/omf/mixer_applet2/mixer_applet2-ko.omf 0644 root bin
+d none share/omf/multiload 0755 root bin
+f none share/omf/multiload/multiload-ko.omf=usr/share/omf/multiload/multiload-ko.omf 0644 root bin
+d none share/omf/ospm-pm 0755 root bin
+f none share/omf/ospm-pm/ospm-pm-ko.omf=usr/share/omf/ospm-pm/ospm-pm-ko.omf 0644 root bin
+d none share/omf/printman 0755 root bin
+f none share/omf/printman/gnome-print-manager-ko.omf=usr/share/omf/printman/gnome-print-manager-ko.omf 0644 root bin
+d none share/omf/stickynotes_applet 0755 root bin
+f none share/omf/stickynotes_applet/stickynotes_applet-ko.omf=usr/share/omf/stickynotes_applet/stickynotes_applet-ko.omf 0644 root bin
+d none share/omf/system-admin-guide 0755 root bin
+f none share/omf/system-admin-guide/system-admin-guide-ko.omf=usr/share/omf/system-admin-guide/system-admin-guide-ko.omf 0644 root bin
+d none share/omf/user-guide 0755 root bin
+f none share/omf/user-guide/user-guide-ko.omf=usr/share/omf/user-guide/user-guide-ko.omf 0644 root bin

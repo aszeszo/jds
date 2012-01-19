@@ -1,0 +1,12 @@
+diff -urN dbus-1.2.26/configure.in ../../SUNWdbus-1.2.26.hacked/i386/dbus-1.2.26/configure.in
+--- dbus-1.2.26/configure.in	2011-03-10 16:03:15.794842233 +0000
++++ ../../SUNWdbus-1.2.26.hacked/i386/dbus-1.2.26/configure.in	2011-03-11 14:06:34.397545146 +0000
+@@ -428,7 +428,7 @@
+ 
+ #### Various functions
+ AC_SEARCH_LIBS(socket,[socket network])
+-AC_CHECK_FUNC(gethostbyname,,[AC_CHECK_LIB(nsl,gethostbyname)])
++#AC_CHECK_FUNC(gethostbyname,,[AC_CHECK_LIB(nsl,gethostbyname)])
+ 
+ AC_CHECK_FUNCS(vsnprintf vasprintf nanosleep usleep setenv clearenv unsetenv socketpair getgrouplist fpathconf setrlimit poll closefrom)
+ 

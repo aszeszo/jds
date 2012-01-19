@@ -1,0 +1,140 @@
+# Copyright (C) 2009 Sun Microsystems, Inc
+# This file is distributed under the same license as the compiz-desktop-integration package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: compiz-desktop-integration HEAD\n"
+       "Report-Msgid-Bugs-To: \n"
+       "POT-Creation-Date: 2009-04-03 12:28+0900\n"
+       "PO-Revision-Date: 2009-04-03 11:09+0100\n"
+       "Last-Translator: desktop-discuss@opensolaris.org\n"
+       "Language-Team: desktop-discuss@opensolaris.org\n"
+       "MIME-Version: 1.0\n"
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+#: ../compiz-config.glade.h:1
+msgid "<b>Status</b>"
+msgstr "<b>状態</b>"
+
+#: ../compiz-config.glade.h:2
+msgid "<b>System Compatibility checks</b>"
+msgstr "<b>システム互換性チェック</b>"
+
+#: ../compiz-config.glade.h:3
+msgid "Architecture"
+msgstr "アーキテクチャー"
+
+#: ../compiz-config.glade.h:4
+msgid "Session Type"
+msgstr "セッションの種類"
+
+#: ../compiz-config.glade.h:5
+msgid "Video Card"
+msgstr "ビデオカード"
+
+#: ../compiz-config.glade.h:6
+msgid "Video Card Driver"
+msgstr "ビデオカードドライバ"
+
+#: ../compiz-config.glade.h:7
+msgid "Visual Effect System Checks"
+msgstr "視覚効果システムチェック"
+
+#: ../compiz-config.glade.h:8
+msgid "Xserver Configuration"
+msgstr "Xserver 構成"
+
+#: ../compiz-config.glade.h:9
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../compiz-config.glade.h:10
+msgid "modify configuration"
+msgstr "設定変更"
+
+#: ../compiz-config.glade.h:11
+msgid "undefined"
+msgstr "未定義"
+
+#: ../compiz-config.glade.h:12
+msgid "unknown"
+msgstr "未知"
+
+#: ../compiz-configure.in:113
+msgid "support 3D acceleration"
+msgstr "3D アクセラレーションのサポート"
+
+#: ../compiz-configure.in:115
+#, c-format
+msgid ""
+"no supported driver for card of type (%s) : Compiz will not run on this "
+"system"
+msgstr "この種類のカード (%s) はサポートしているドライバがありません: Compiz はこのシステムでは動作しません"
+
+#: ../compiz-configure.in:116
+msgid "no 3D acceleration"
+msgstr "3D アクセラレーションがありません"
+
+#: ../compiz-configure.in:131
+msgid "Trusted Session detected : Compiz will not run in this configuration"
+msgstr "トラステッドセッションが検知されました: Compiz はこの設定では動作しません"
+
+#: ../compiz-configure.in:132
+msgid "Trusted Session"
+msgstr "トラステッドセッション"
+
+#: ../compiz-configure.in:142
+msgid "Sunray Session detected : Compiz will not run in this configuration"
+msgstr "Sun Ray セッションが検知されました: Compiz はこの設定では動作しません"
+
+#: ../compiz-configure.in:143
+msgid "Sunray Session"
+msgstr "Sun Ray セッション"
+
+#: ../compiz-configure.in:145
+msgid "Regular Session"
+msgstr "通常セッション"
+
+#: ../compiz-configure.in:190 ../compiz-configure.in:241
+msgid "configured"
+msgstr "構成済み"
+
+#: ../compiz-configure.in:192 ../compiz-configure.in:243
+msgid "Xorg configuration file is not configured to run the visual effects"
+msgstr "Xorg 設定ファイルが視覚効果を実行するように構成されていません"
+
+#: ../compiz-configure.in:193 ../compiz-configure.in:244
+msgid "not configured"
+msgstr "構成されていません"
+
+#: ../compiz-configure.in:344
+msgid "This system can run the visual effects"
+msgstr "このシステムは視覚効果を実行できます"
+
+#: ../compiz-configure.in:346
+msgid ""
+"This system can run the visual effects but is not configured to do so. Click "
+"on the modify button to configure it."
+msgstr "このシステムは視覚効果を実行できますが、そのように構成されていません。「変更」ボタンをクリックして構成してください。"
+
+#: ../compiz-configure.in:349
+msgid ""
+"This system cannot run the visual effects as it is not running a regular "
+"session"
+msgstr "このシステムは通常セッションを実行していないので視覚効果を実行することはできません"
+
+#: ../compiz-configure.in:353
+msgid ""
+"This system can run the visual effects but the current graphics driver does "
+"not support 3D acceleration. Refer to http://opensolaris.org/os/project/dri/ "
+"for more information about the supported cards"
+msgstr "このシステムは視覚効果を実行できますが、現在使用しているグラフィックドライバは 3D アクセラレーションをサポートしていません。サポートされているカードの詳細については、http://opensolaris.org/os/project/dri/ を参照してください"
+
+#: ../compiz-configure.in:356
+msgid ""
+"This system cannot run the visual effects due to the lack of supported 3D "
+"Video Card Driver"
+msgstr "このシステムはサポートされている 3D ビデオカードドライバがないために視覚効果を実行できません"

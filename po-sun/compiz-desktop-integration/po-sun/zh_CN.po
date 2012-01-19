@@ -1,0 +1,151 @@
+# Copyright (C) 2009 Sun Microsystems, Inc
+# This file is distributed under the same license as the compiz-desktop-integration package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: compiz-desktop-integration HEAD\n"
+       "Report-Msgid-Bugs-To: \n"
+       "POT-Creation-Date: 2009-12-03 10:19+0800\n"
+       "PO-Revision-Date: 2010-01-28 13:19+0800\n"
+       "Last-Translator: desktop-discuss@opensolaris.org\n"
+       "Language-Team: desktop-discuss@opensolaris.org\n"
+       "MIME-Version: 1.0\n"
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+#: ../compiz-config.glade.h:1
+msgid "<b>Status</b>"
+msgstr "<b>状态</b>"
+
+#: ../compiz-config.glade.h:2
+msgid "<b>System Compatibility checks</b>"
+msgstr "<b>系统兼容性检查</b>"
+
+#: ../compiz-config.glade.h:3
+msgid "Architecture"
+msgstr "体系结构"
+
+#: ../compiz-config.glade.h:4
+msgid "Session Type"
+msgstr "会话类型"
+
+#: ../compiz-config.glade.h:5
+msgid "Video Card"
+msgstr "视频卡"
+
+#: ../compiz-config.glade.h:6
+msgid "Video Card Driver"
+msgstr "视频卡驱动程序"
+
+#: ../compiz-config.glade.h:7
+msgid "Visual Effect System Checks"
+msgstr "可视效果系统检查"
+
+#: ../compiz-config.glade.h:8
+msgid "Xserver Configuration"
+msgstr "Xserver 配置"
+
+#: ../compiz-config.glade.h:9
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../compiz-config.glade.h:10
+msgid "modify configuration"
+msgstr "修改配置"
+
+#: ../compiz-config.glade.h:11
+msgid "undefined"
+msgstr "未定义"
+
+#: ../compiz-config.glade.h:12
+msgid "unknown"
+msgstr "未知"
+
+#: ../compiz-configure.in:113
+msgid "support 3D acceleration"
+msgstr "支持 3D 加速"
+
+#: ../compiz-configure.in:115
+#, c-format
+msgid ""
+"no supported driver for card of type (%s) : Compiz will not run on this "
+"system"
+msgstr ""
+       "类型为 (%s) 的卡没有支持的驱动程序：Compiz 将不会在该"
+       "系统上运行"
+
+#: ../compiz-configure.in:116
+msgid "no 3D acceleration"
+msgstr "没有 3D 加速"
+
+#: ../compiz-configure.in:131
+msgid "Trusted Session detected : Compiz will not run in this configuration"
+msgstr "检测到可信会话：Compiz 将不会在该配置中运行"
+
+#: ../compiz-configure.in:132
+msgid "Trusted Session"
+msgstr "可信会话"
+
+#: ../compiz-configure.in:142
+msgid "Sunray Session detected : Compiz will not run in this configuration"
+msgstr "检测到 Sunray 会话：Compiz 将不会在该配置中运行"
+
+#: ../compiz-configure.in:143
+msgid "Sunray Session"
+msgstr "Sunray 会话"
+
+#: ../compiz-configure.in:145
+msgid "Regular Session"
+msgstr "常规会话"
+
+#: ../compiz-configure.in:190 ../compiz-configure.in:241
+msgid "configured"
+msgstr "已配置"
+
+#: ../compiz-configure.in:192 ../compiz-configure.in:243
+msgid "Xorg configuration file is not configured to run the visual effects"
+msgstr "未对 Xorg 配置文件进行配置以运行可视效果"
+
+#: ../compiz-configure.in:193 ../compiz-configure.in:244
+msgid "not configured"
+msgstr "未配置"
+
+#: ../compiz-configure.in:344
+msgid "This system can run the visual effects"
+msgstr "该系统可以运行可视效果"
+
+#: ../compiz-configure.in:346
+msgid ""
+"This system can run the visual effects but is not configured to do so. Click "
+"on the modify button to configure it."
+msgstr ""
+       "该系统可以运行可视效果，但是尚未就此进行配置。单击"
+       "“修改”按钮可对其进行配置。"
+
+#: ../compiz-configure.in:349
+msgid ""
+"This system cannot run the visual effects as it is not running a regular "
+"session"
+msgstr ""
+       "该系统无法运行可视效果，因为它未在运行常规"
+       "会话"
+
+#: ../compiz-configure.in:353
+msgid ""
+"This system can run the visual effects but the current graphics driver does "
+"not support 3D acceleration. Refer to http://opensolaris.org/os/project/dri/ "
+"for more information about the supported cards"
+msgstr ""
+       "该系统可以运行可视效果，但是当前图形驱动程序不支"
+       "持 3D 加速。请参阅 http://opensolaris.org/os/project/dri/ "
+       "以获取有关支持的卡的更多信息"
+
+#: ../compiz-configure.in:356
+msgid ""
+"This system cannot run the visual effects due to the lack of supported 3D "
+"Video Card Driver"
+msgstr ""
+       "该系统无法运行可视效果，因为缺少支持的 3D "
+       "视频卡驱动程序"

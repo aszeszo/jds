@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdbus-libs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdbus-libs.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdbus-libs.copyright
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libdbus-1.so=libdbus-1.so.3.4.0
+s none lib/amd64/libdbus-1.so.3=libdbus-1.so.3.4.0
+f none lib/amd64/libdbus-1.so.3.4.0=usr/lib/amd64/libdbus-1.so.3.4.0 0755 root bin
+s none lib/libdbus-1.so=libdbus-1.so.3.4.0
+s none lib/libdbus-1.so.3=libdbus-1.so.3.4.0
+f none lib/libdbus-1.so.3.4.0=usr/lib/libdbus-1.so.3.4.0 0755 root bin

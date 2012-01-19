@@ -1,0 +1,61 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-cd.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-cd.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-cd.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-cd.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-cd.copyright
+f none share/doc/SUNWgnome-cd/AUTHORS=usr/share/doc/SUNWgnome-cd/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-cd/COPYING.bz2=usr/share/doc/SUNWgnome-cd/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-cd/ChangeLog.bz2=usr/share/doc/SUNWgnome-cd/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-cd/NEWS.bz2=usr/share/doc/SUNWgnome-cd/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-cd/README=usr/share/doc/SUNWgnome-cd/README 0444 root bin
+f none share/doc/SUNWgnome-cd/help/sound-juicer/ChangeLog.bz2=usr/share/doc/SUNWgnome-cd/help/sound-juicer/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-cd/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-cd/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+s none bin/gnome-cd=sound-juicer
+f none bin/sound-juicer=usr/bin/sound-juicer 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/sound-juicer.desktop=usr/share/applications/sound-juicer.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-cd 0755 root bin
+d none share/doc/SUNWgnome-cd/help 0755 root bin
+d none share/doc/SUNWgnome-cd/help/sound-juicer 0755 root bin
+d none share/doc/SUNWgnome-cd/po 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/sound-juicer 0755 root bin
+d none share/gnome/help/sound-juicer/C 0755 root bin
+d none share/gnome/help/sound-juicer/C/figures 0755 root bin
+f none share/gnome/help/sound-juicer/C/figures/prefs.png=usr/share/gnome/help/sound-juicer/C/figures/prefs.png 0644 root bin
+f none share/gnome/help/sound-juicer/C/figures/startup.png=usr/share/gnome/help/sound-juicer/C/figures/startup.png 0644 root bin
+f none share/gnome/help/sound-juicer/C/legal.xml=usr/share/gnome/help/sound-juicer/C/legal.xml 0644 root bin
+f none share/gnome/help/sound-juicer/C/sound-juicer.xml=usr/share/gnome/help/sound-juicer/C/sound-juicer.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/sound-juicer.png=usr/share/icons/hicolor/16x16/apps/sound-juicer.png 0644 root other
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/sound-juicer.png=usr/share/icons/hicolor/22x22/apps/sound-juicer.png 0644 root other
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/sound-juicer.png=usr/share/icons/hicolor/24x24/apps/sound-juicer.png 0644 root other
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/sound-juicer.png=usr/share/icons/hicolor/32x32/apps/sound-juicer.png 0644 root other
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/sound-juicer.png=usr/share/icons/hicolor/48x48/apps/sound-juicer.png 0644 root other
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/sound-juicer.svg=usr/share/icons/hicolor/scalable/apps/sound-juicer.svg 0644 root other
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-cd.1=usr/share/man/man1/gnome-cd.1 0644 root bin
+f none share/man/man1/sound-juicer.1=usr/share/man/man1/sound-juicer.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/sound-juicer 0755 root bin
+f none share/omf/sound-juicer/sound-juicer-C.omf=usr/share/omf/sound-juicer/sound-juicer-C.omf 0644 root bin
+d none share/sound-juicer 0755 root bin
+f none share/sound-juicer/sound-juicer.glade=usr/share/sound-juicer/sound-juicer.glade 0644 root bin

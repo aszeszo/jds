@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-en.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-en.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-en.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/en-US.aff=../../../../usr/share/spell/myspell/en_US.aff
+s none lib/firefox/dictionaries/en-US.dic=../../../../usr/share/spell/myspell/en_US.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/en-US.aff=../../../../usr/share/spell/myspell/en_US.aff
+s none lib/thunderbird/dictionaries/en-US.dic=../../../../usr/share/spell/myspell/en_US.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/en_US 0755 root bin
+f none share/doc/myspell-dictionary/en_US/README_en_US.txt=usr/share/doc/myspell-dictionary/en_US/README_en_US.txt 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/en_US.aff=usr/share/spell/myspell/en_US.aff 0644 root other
+f none share/spell/myspell/en_US.dic=usr/share/spell/myspell/en_US.dic 0644 root other

@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWo3read.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWo3read.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWo3read.copyright
+f none share/doc/SUNWo3read/COPYING.bz2=usr/share/doc/SUNWo3read/COPYING.bz2 0444 root bin
+f none share/doc/SUNWo3read/ChangeLog.bz2=usr/share/doc/SUNWo3read/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWo3read/README=usr/share/doc/SUNWo3read/README 0444 root bin
+d none bin 0755 root bin
+f none bin/o3read=usr/bin/o3read 0755 root bin
+f none bin/o3tohtml=usr/bin/o3tohtml 0755 root bin
+f none bin/o3totxt=usr/bin/o3totxt 0755 root bin
+f none bin/utf8tolatin1=usr/bin/utf8tolatin1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWo3read 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/o3read.1=usr/share/man/man1/o3read.1 0644 root bin
+f none share/man/man1/o3tohtml.1=usr/share/man/man1/o3tohtml.1 0644 root bin
+f none share/man/man1/o3totxt.1=usr/share/man/man1/o3totxt.1 0644 root bin
+f none share/man/man1/utf8tolatin1.1=usr/share/man/man1/utf8tolatin1.1 0644 root bin

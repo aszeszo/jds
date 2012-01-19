@@ -1,0 +1,117 @@
+--- gnome-menus-2.23.1.old/layout/settings.menu	2008-04-21 20:49:29.000000000 +0100
++++ gnome-menus-2.23.1/layout/settings.menu	2008-05-29 13:31:18.112354000 +0100
+@@ -3,8 +3,8 @@
+ 
+ <Menu>
+ 
+-  <Name>Desktop</Name>
+-  <Directory>X-GNOME-Menu-System.directory</Directory>
++  <Name>Administration</Name>
++  <Directory>System-Settings.directory</Directory>
+ 
+   <!-- Read standard .directory and .desktop file locations -->
+   <DefaultAppDirs/>
+@@ -15,43 +15,9 @@
+ 
+   <!-- Add a link to the control center -->
+   <Include>
+-    <Filename>gnomecc.desktop</Filename>
++    <And>
++      <Category>Settings</Category>
++      <Category>System</Category>
++    </And>
+   </Include>
+-
+-  <!-- Merge in these other files as submenus -->
+-  <Menu>
+-    <Name>Preferences</Name>
+-    <Directory>Settings.directory</Directory>
+-    <Include>
+-      <And>
+-        <Category>Settings</Category>
+-        <Not>
+-          <Or>
+-            <Category>System</Category>
+-            <Filename>gnomecc.desktop</Filename>
+-          </Or>
+-        </Not>
+-      </And>
+-    </Include>
+-  </Menu>
+-
+-  <!-- System Settings -->
+-  <Menu>
+-    <Name>Administration</Name>
+-    <Directory>Settings-System.directory</Directory>
+-    <Include>
+-      <And>
+-        <Category>Settings</Category>
+-        <Category>System</Category>
+-      </And>
+-    </Include>
+-  </Menu>     <!-- End System Settings -->
+-
+-  <Layout>
+-    <Menuname>Preferences</Menuname>
+-    <Menuname>Administration</Menuname>
+-    <Merge type="menus"/>
+-    <Merge type="files"/>
+-  </Layout>
+-
+ </Menu> <!-- End Settings -->
+--- gnome-menus-2.23.6.old/layout/preferences.menu	1970-01-01 01:00:00.000000000 +0100
++++ gnome-menus-2.23.6/layout/preferences.menu	2008-08-08 16:35:03.172935000 +0100
+@@ -0,0 +1,41 @@
++<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
++ "http://www.freedesktop.org/standards/menu-spec/1.0/menu.dtd">
++
++<Menu>
++  <Name>Preferences</Name>
++  <Directory>Preferences.directory</Directory>
++
++  <!-- Read standard .directory and .desktop file locations -->
++  <DefaultAppDirs/>
++  <DefaultDirectoryDirs/>
++
++  <!-- Read in overrides and child menus from preferences-merged/ -->
++  <DefaultMergeDirs/>
++
++  <!-- Stuff in the toplevel -->
++  <Include>
++    <And>
++      <Category>Settings</Category>
++      <Not>
++        <Or>
++          <Category>System</Category>
++          <Category>Accessibility</Category>
++	  <Filename>gnomecc.desktop</Filename>
++        </Or>
++      </Not>
++    </And>
++  </Include>
++
++  <!-- Accessibility -->
++  <Menu>
++    <Name>Universal Access</Name>
++    <Directory>Settings-Accessibility.directory</Directory>
++    <Include>
++      <And>
++        <Category>Settings</Category>
++        <Category>Accessibility</Category>
++      </And>
++    </Include>
++  </Menu>
++
++</Menu>     <!-- End Prefs -->
+--- gnome-menus-2.23.6/layout/Makefile.am-orig	2010-11-12 19:13:19.708152710 -0600
++++ gnome-menus-2.23.6/layout/Makefile.am	2010-11-12 19:13:33.338534589 -0600
+@@ -3,7 +3,8 @@ menudir = $(sysconfdir)/xdg/menus
+ menu_DATA =			\
+ 	applications.menu	\
+ 	settings.menu		\
+-	quickstart.menu
++	quickstart.menu		\
++	preferences.menu
+ 
+ EXTRA_DIST= $(menu_DATA)
+ 

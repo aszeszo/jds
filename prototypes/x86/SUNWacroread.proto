@@ -1,0 +1,824 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWacroread.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWacroread.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWacroread.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWacroread.preremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWacroread.copyright
+d none bin 0755 root bin
+s none bin/acroread=../lib/AdobeReader/Adobe/Reader9/bin/acroread
+d none lib 0755 root bin
+d none lib/AdobeReader 0755 root bin
+d none lib/AdobeReader/Adobe 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Browser 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Browser/HowTo 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/DEU/Browser_Plugin_HowTo.txt=usr/lib/AdobeReader/Adobe/Reader9/Browser/HowTo/DEU/Browser_Plugin_HowTo.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/ENU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/ENU/Browser_Plugin_HowTo.txt=usr/lib/AdobeReader/Adobe/Reader9/Browser/HowTo/ENU/Browser_Plugin_HowTo.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/FRA/Browser_Plugin_HowTo.txt=usr/lib/AdobeReader/Adobe/Reader9/Browser/HowTo/FRA/Browser_Plugin_HowTo.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Browser/HowTo/JPN/Browser_Plugin_HowTo.txt=usr/lib/AdobeReader/Adobe/Reader9/Browser/HowTo/JPN/Browser_Plugin_HowTo.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Browser/install_browser_plugin=usr/lib/AdobeReader/Adobe/Reader9/Browser/install_browser_plugin 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Browser/intelsolaris 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Browser/intelsolaris/nppdf.so=usr/lib/AdobeReader/Adobe/Reader9/Browser/intelsolaris/nppdf.so 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/AcroVersion=usr/lib/AdobeReader/Adobe/Reader9/Reader/AcroVersion 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Cert 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Cert/curl-ca-bundle.crt=usr/lib/AdobeReader/Adobe/Reader9/Reader/Cert/curl-ca-bundle.crt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/GlobalPrefs 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/GlobalPrefs/reader_prefs=usr/lib/AdobeReader/Adobe/Reader9/Reader/GlobalPrefs/reader_prefs 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/DEU/AdobeID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/DEU/AdobeID.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/DEU/DefaultID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/DEU/DefaultID.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/ENU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/ENU/AdobeID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/ENU/AdobeID.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/ENU/DefaultID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/ENU/DefaultID.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/FRA/AdobeID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/FRA/AdobeID.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/FRA/DefaultID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/FRA/DefaultID.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/JPN/AdobeID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/JPN/AdobeID.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/JPN/DefaultID.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/IDTemplates/JPN/DefaultID.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/JavaScripts 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/JavaScripts/JSByteCodeLin.bin=usr/lib/AdobeReader/Adobe/Reader9/Reader/JavaScripts/JSByteCodeLin.bin 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Legal 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Legal/de_DE 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Legal/de_DE/License.txt=usr/lib/AdobeReader/Adobe/Reader9/Reader/Legal/de_DE/License.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Legal/en_US 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Legal/en_US/LGPL.html=usr/lib/AdobeReader/Adobe/Reader9/Reader/Legal/en_US/LGPL.html 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Legal/en_US/LGPL.txt=usr/lib/AdobeReader/Adobe/Reader9/Reader/Legal/en_US/LGPL.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Legal/en_US/License.txt=usr/lib/AdobeReader/Adobe/Reader9/Reader/Legal/en_US/License.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Legal/fr_FR 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Legal/fr_FR/License.txt=usr/lib/AdobeReader/Adobe/Reader9/Reader/Legal/fr_FR/License.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Legal/ja_JP 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Legal/ja_JP/License.txt=usr/lib/AdobeReader/Adobe/Reader9/Reader/Legal/ja_JP/License.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Messages 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Messages/DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Messages/DEU/RdrMsgDEU.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/Messages/DEU/RdrMsgDEU.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Messages/ENU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Messages/ENU/RdrMsgENU.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/Messages/ENU/RdrMsgENU.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Messages/FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Messages/FRA/RdrMsgFRA.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/Messages/FRA/RdrMsgFRA.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Messages/JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Messages/JPN/RdrMsgJPN.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/Messages/JPN/RdrMsgJPN.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/PDFSigQFormalRep.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/PDFSigQFormalRep.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/Tracker 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/add_reviewer.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/add_reviewer.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/bl.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/bl.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/br.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/br.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/create_form.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/create_form.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/distribute_form.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/distribute_form.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/email_all.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/email_all.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/email_initiator.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/email_initiator.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/end_review.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/end_review.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/ended_review_or_form.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/ended_review_or_form.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/form_responses.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/form_responses.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/forms_distributed.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/forms_distributed.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/forms_received.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/forms_received.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/forms_super.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/forms_super.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/info.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/info.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/main.css=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/main.css 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/open_original_form.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/open_original_form.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/pdf.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/pdf.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_browser.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_browser.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_email.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_email.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_same_reviewers.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_same_reviewers.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_shared.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/review_shared.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviewers.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviewers.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviews_joined.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviews_joined.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviews_sent.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviews_sent.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviews_super.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/reviews_super.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/rss.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/rss.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/server_issue.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/server_issue.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/server_lg.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/server_lg.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/server_ok.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/server_ok.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/stop_collection_data.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/stop_collection_data.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/submission_history.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/submission_history.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/tl.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/tl.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/tr.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/tr.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/trash.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/trash.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOffNotificationInAcrobat.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOffNotificationInAcrobat.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOffNotificationInTray.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOffNotificationInTray.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOnNotificationInAcrobat.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOnNotificationInAcrobat.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOnNotificationInTray.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/turnOnNotificationInTray.gif 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/Tracker/warning.gif=usr/lib/AdobeReader/Adobe/Reader9/Reader/Tracker/warning.gif 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/help 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/help/DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/help/DEU/ReadMe.htm=usr/lib/AdobeReader/Adobe/Reader9/Reader/help/DEU/ReadMe.htm 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/help/ENU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/help/ENU/ReadMe.htm=usr/lib/AdobeReader/Adobe/Reader9/Reader/help/ENU/ReadMe.htm 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/help/FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/help/FRA/ReadMe.htm=usr/lib/AdobeReader/Adobe/Reader9/Reader/help/FRA/ReadMe.htm 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/help/JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/help/JPN/ReadMe.htm=usr/lib/AdobeReader/Adobe/Reader9/Reader/help/JPN/ReadMe.htm 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/SPPlugins 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/SPPlugins/ADMPlugin.apl=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/SPPlugins/ADMPlugin.apl 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/SynchronizerApp=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/SynchronizerApp 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/SynchronizerApp-binary=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/SynchronizerApp-binary 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/acroread=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/acroread 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-desktop-icon=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-desktop-icon 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-desktop-menu=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-desktop-menu 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-email=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-email 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-icon-resource=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-icon-resource 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-mime=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-mime 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-open=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/bin/xdg-open 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libACE.so=libACE.so.2.13
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libACE.so.2.13=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libACE.so.2.13 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAGM.so=libAGM.so.4.18
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAGM.so.4.18=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAGM.so.4.18 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAXE8SharedExpat.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAXE8SharedExpat.so 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAXSLE.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAXSLE.so 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAdobeXMP.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libAdobeXMP.so 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libBIB.so=libBIB.so.1.2
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libBIB.so.1.2=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libBIB.so.1.2 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libBIBUtils.so=libBIBUtils.so.1.1
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libBIBUtils.so.1.1=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libBIBUtils.so.1.1 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libCoolType.so=libCoolType.so.5.05
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libCoolType.so.5.05=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libCoolType.so.5.05 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libJP2K.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libJP2K.so 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libResAccess.so=libResAccess.so.0.1
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libResAccess.so.0.1=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libResAccess.so.0.1 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libWRServices.so=libWRServices.so.3.1
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libWRServices.so.3.1=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libWRServices.so.3.1 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libadobelinguistic.so=libadobelinguistic.so.3.2.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libadobelinguistic.so.3.2.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libadobelinguistic.so.3.2.0 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libahclient.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libahclient.so 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libauthplay.so=libauthplay.so.0.0.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libauthplay.so.0.0.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libauthplay.so.0.0.0 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcrypto.so=libcrypto.so.0
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcrypto.so.0=libcrypto.so.0.9.8
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcrypto.so.0.9.8=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcrypto.so.0.9.8 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcurl.so=libcurl.so.3
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcurl.so.3=libcurl.so.3.0.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcurl.so.3.0.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libcurl.so.3.0.0 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libeggtrayicon.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libeggtrayicon.so 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libextendscript.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libextendscript.so 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libflashsupport.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libflashsupport.so 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libgcc_s.so=libgcc_s.so.1
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libgcc_s.so.1=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libgcc_s.so.1 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libiconv.so.2=libiconv.so.2.4.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libiconv.so.2.4.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libiconv.so.2.4.0 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicucnv.so=libicucnv.so.36
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicucnv.so.36=libicucnv.so.36.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicucnv.so.36.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicucnv.so.36.0 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicudata.so=libicudata.so.36
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicudata.so.36=libicudata.so.36.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicudata.so.36.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicudata.so.36.0 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicui18n.so=libicui18n.so.36
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicui18n.so.36=libicui18n.so.36.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicui18n.so.36.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicui18n.so.36.0 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicuuc.so=libicuuc.so.36
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicuuc.so.36=libicuuc.so.36.0
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicuuc.so.36.0=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libicuuc.so.36.0 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/librt3d.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/librt3d.so 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libsccore.so=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libsccore.so 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libssl.so=libssl.so.0
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libssl.so.0=libssl.so.0.9.8
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libssl.so.0.9.8=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libssl.so.0.9.8 0755 root bin
+s none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libstdc++.so.6=libstdc++.so.6.0.7
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libstdc++.so.6.0.7=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/lib/libstdc++.so.6.0.7 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/mozilla 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/mozilla/prefs.js=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/mozilla/prefs.js 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Accessibility.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Accessibility.api 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm.api 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/PMP 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/PMP/libdatamatrixpmp.pmp=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/PMP/libdatamatrixpmp.pmp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/PMP/libpdf417pmp.pmp=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/PMP/libpdf417pmp.pmp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/PMP/libqrcodepmp.pmp=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/PMP/libqrcodepmp.pmp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/adobepdf.xdc=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/AcroForm/adobepdf.xdc 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/DEU/Dynamic.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/DEU/Dynamic.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/DEU/SignHere.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/DEU/SignHere.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/DEU/StandardBusiness.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/DEU/StandardBusiness.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/ENU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/ENU/Dynamic.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/ENU/Dynamic.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/ENU/SignHere.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/ENU/SignHere.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/ENU/StandardBusiness.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/ENU/StandardBusiness.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/FRA/Dynamic.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/FRA/Dynamic.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/FRA/SignHere.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/FRA/SignHere.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/FRA/StandardBusiness.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/FRA/StandardBusiness.pdf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/Dynamic.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/Dynamic.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/Hanko.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/Hanko.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/SignHere.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/SignHere.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/StandardBusiness.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/JPN/StandardBusiness.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/Words.pdf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annotations/Stamps/Words.pdf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annots.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Annots.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/DVA.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/DVA.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/DigSig.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/DigSig.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/EFS.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/EFS.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/EScript.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/EScript.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/HLS.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/HLS.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/MakeAccessible.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/MakeAccessible.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/PDDom.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/PDDom.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/PPKLite.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/PPKLite.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/ReadOutLoud.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/ReadOutLoud.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Reflow.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Reflow.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/SaveAsRTF.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/SaveAsRTF.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/SearchFind.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/SearchFind.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/SendMail.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/SendMail.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Spelling.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/Spelling.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/checkers.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/checkers.api 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/wwwlink.api=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins/wwwlink.api 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/2d.x3d=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/2d.x3d 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/3difr.x3d=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/3difr.x3d 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/drvOpenGL.x3d=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/drvOpenGL.x3d 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/drvSOFT.x3d=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/drvSOFT.x3d 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/prc 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/prc/MyriadCAD.otf=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/prc/MyriadCAD.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/prcr.x3d=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/prcr.x3d 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/tesselate.x3d=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/plug_ins3d/tesselate.x3d 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Accessibility.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Accessibility.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Accessibility.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Accessibility.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Accessibility.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Accessibility.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/AcroForm.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/AcroForm.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/AcroForm.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/AcroForm.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/AcroForm.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/AcroForm.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Annots.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Annots.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Annots.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Annots.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Annots.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Annots.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DVA.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DVA.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DVA.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DVA.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DVA.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DVA.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DigSig.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DigSig.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DigSig.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DigSig.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DigSig.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/DigSig.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EFS.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EFS.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EFS.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EFS.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EFS.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EFS.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EScript.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EScript.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EScript.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EScript.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EScript.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/EScript.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/HLS.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/HLS.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/HLS.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/HLS.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/HLS.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/HLS.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/MakeAccessible.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/MakeAccessible.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/MakeAccessible.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/MakeAccessible.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/MakeAccessible.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/MakeAccessible.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PDDom.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PDDom.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PDDom.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PDDom.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PDDom.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PDDom.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PPKLite.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PPKLite.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PPKLite.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PPKLite.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PPKLite.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/PPKLite.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/RdLang32.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/RdLang32.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/RdLang32.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/RdLang32.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/RdLang32.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/RdLang32.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/ReadOutLoud.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/ReadOutLoud.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/ReadOutLoud.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/ReadOutLoud.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/ReadOutLoud.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/ReadOutLoud.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Reflow.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Reflow.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Reflow.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Reflow.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Reflow.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Reflow.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SaveAsRTF.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SaveAsRTF.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SaveAsRTF.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SaveAsRTF.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SaveAsRTF.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SaveAsRTF.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SearchFind.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SearchFind.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SearchFind.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SearchFind.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SearchFind.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SearchFind.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SendMail.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SendMail.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SendMail.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SendMail.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SendMail.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SendMail.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Spelling.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Spelling.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Spelling.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Spelling.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Spelling.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/Spelling.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SynchronizerApp.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SynchronizerApp.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SynchronizerApp.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SynchronizerApp.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SynchronizerApp.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/SynchronizerApp.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/checkers.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/checkers.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/checkers.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/checkers.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/checkers.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/checkers.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/wwwlink.DEU=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/wwwlink.DEU 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/wwwlink.FRA=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/wwwlink.FRA 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/wwwlink.JPN=usr/lib/AdobeReader/Adobe/Reader9/Reader/intelsolaris/sidecars/wwwlink.JPN 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Reader/pmd.cer=usr/lib/AdobeReader/Adobe/Reader9/Reader/pmd.cer 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/CIDFont 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeHeitiStd-Regular.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeHeitiStd-Regular.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeMingStd-Light.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeMingStd-Light.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeMyungjoStd-Medium.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeMyungjoStd-Medium.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeSongStd-Light.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/AdobeSongStd-Light.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/KozMinPr6N-Regular.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/CIDFont/KozMinPr6N-Regular.otf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/CMap 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/83pv-RKSJ-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/83pv-RKSJ-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90ms-RKSJ-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90ms-RKSJ-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90ms-RKSJ-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90ms-RKSJ-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90ms-RKSJ-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90ms-RKSJ-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90msp-RKSJ-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90msp-RKSJ-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90msp-RKSJ-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90msp-RKSJ-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90pv-RKSJ-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90pv-RKSJ-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90pv-RKSJ-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90pv-RKSJ-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/90pv-RKSJ-UCS2C=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/90pv-RKSJ-UCS2C 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Add-RKSJ-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Add-RKSJ-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Add-RKSJ-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Add-RKSJ-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-B5pc=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-B5pc 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-ETen-B5=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-ETen-B5 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-H-CID=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-H-CID 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-H-Host=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-H-Host 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-H-Mac=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-H-Mac 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-CNS1-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-GBK-EUC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-GBK-EUC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-GBpc-EUC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-GBpc-EUC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-H-CID=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-H-CID 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-H-Host=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-H-Host 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-H-Mac=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-H-Mac 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-GB1-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-90ms-RKSJ=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-90ms-RKSJ 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-90pv-RKSJ=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-90pv-RKSJ 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-H-CID=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-H-CID 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-H-Host=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-H-Host 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-H-Mac=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-H-Mac 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-PS-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-PS-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-PS-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-PS-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Japan1-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-H-CID=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-H-CID 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-H-Host=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-H-Host 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-H-Mac=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-H-Mac 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-KSCms-UHC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-KSCms-UHC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-KSCpc-EUC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-KSCpc-EUC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Adobe-Korea1-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-UCS2C=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-UCS2C 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/B5pc-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/CNS-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/CNS-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/CNS-EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/CNS-EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETHK-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETHK-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETHK-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETHK-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETen-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETen-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETen-B5-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETen-B5-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETen-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETen-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETenms-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETenms-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETenms-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/ETenms-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Ext-RKSJ-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Ext-RKSJ-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Ext-RKSJ-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Ext-RKSJ-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GB-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GB-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GB-EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GB-EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK-EUC-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK-EUC-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK-EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK-EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK2K-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK2K-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK2K-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBK2K-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBKp-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBKp-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBKp-EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBKp-EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBT-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBT-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBT-EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBT-EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-UCS2C=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-UCS2C 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/GBpc-EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdla-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdla-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdla-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdla-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdlb-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdlb-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdlb-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKdlb-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKgccs-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKgccs-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKgccs-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKgccs-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm314-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm314-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm314-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm314-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm471-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm471-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm471-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKm471-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKscs-B5-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKscs-B5-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKscs-B5-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/HKscs-B5-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Identity-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Identity-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/Identity-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/Identity-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSC-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSC-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSC-EUC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSC-EUC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-HW-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-HW-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-HW-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-HW-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCms-UHC-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCpc-EUC-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCpc-EUC-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCpc-EUC-UCS2=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCpc-EUC-UCS2 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCpc-EUC-UCS2C=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/KSCpc-EUC-UCS2C 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-90ms-RKSJ=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-90ms-RKSJ 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-90pv-RKSJ=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-90pv-RKSJ 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-B5pc=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-B5pc 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-ETen-B5=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-ETen-B5 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-GBK-EUC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-GBK-EUC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-GBpc-EUC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-GBpc-EUC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-KSCms-UHC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-KSCms-UHC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-KSCpc-EUC=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UCS2-KSCpc-EUC 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UCS2-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UCS2-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UCS2-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UCS2-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UTF16-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UTF16-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UTF16-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniCNS-UTF16-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UCS2-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UCS2-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UCS2-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UCS2-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UTF16-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UTF16-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UTF16-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniGB-UTF16-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-HW-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-HW-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-HW-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-HW-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UCS2-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UTF16-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UTF16-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UTF16-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniJIS-UTF16-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UCS2-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UCS2-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UCS2-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UCS2-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UTF16-H=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UTF16-H 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UTF16-V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/UniKS-UTF16-V 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/CMap/V=usr/lib/AdobeReader/Adobe/Reader9/Resource/CMap/V 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Font 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/AdobePiStd.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/AdobePiStd.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd-Bold.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd-Bold.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd-BoldOblique.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd-BoldOblique.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd-Oblique.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd-Oblique.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/CourierStd.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-Bold.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-Bold.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-BoldIt.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-BoldIt.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-It.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-It.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-Regular.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MinionPro-Regular.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-Bold.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-Bold.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-BoldIt.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-BoldIt.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-It.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-It.otf 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-Regular.otf=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/MyriadPro-Regular.otf 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Font/PFM 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/PFM/SY______.PFM=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/PFM/SY______.PFM 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/PFM/zx______.pfm=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/PFM/zx______.pfm 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/PFM/zy______.pfm=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/PFM/zy______.pfm 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/SY______.PFB=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/SY______.PFB 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/ZX______.PFB=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/ZX______.PFB 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Font/ZY______.PFB=usr/lib/AdobeReader/Adobe/Reader9/Resource/Font/ZY______.PFB 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/AdobeReader9.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/AdobeReader9.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/adobe.pdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/adobe.pdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.pdx.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.pdx.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xdp+xml.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xdp+xml.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xfdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xfdf.png 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.fdf.png=usr/lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.fdf.png 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.de_CH.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.de_CH.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.de_DE.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.de_DE.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.de_DE_PREEURO.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.de_DE_PREEURO.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_CA.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_CA.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_GB.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_GB.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_GB_EURO.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_GB_EURO.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_US.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_US.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_US_POSIX.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.en_US_POSIX.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.fr_CA.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.fr_CA.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.fr_FR.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.fr_FR.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.fr_FR_PREEURO.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.fr_FR_PREEURO.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.ja.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.ja.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.ja_JP.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.ja_JP.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.ja_JP_TRADITIONAL.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/LanguageNames2/DisplayLanguageNames.ja_JP_TRADITIONAL.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt.fca=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt.fca 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt.hyp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt04.hsp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt04.hsp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt32.clx=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt32.clx 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt55.ths=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/brt55.ths 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can.fca=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can.fca 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can.hyp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can03.ths=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can03.ths 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can129.hsp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can129.hsp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can32.clx=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/can32.clx 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr.fca=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr.fca 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr.hyp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr32.clx=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr32.clx 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr68.hsp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr68.hsp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr95.ths=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/cfr95.ths 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/eng.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/eng.hyp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/eng32.clx=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/eng32.clx 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/engphon.env=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/engphon.env 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn.fca=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn.fca 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn.hyp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn21.hsp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn21.hsp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn32.clx=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn32.clx 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn93.ths=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/frn93.ths 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm.fca=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm.fca 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm.hyp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm104.hsp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm104.hsp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm32.clx=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm32.clx 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm92.ths=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/grm92.ths 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr.fca=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr.fca 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr.hyp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr105.hsp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr105.hsp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr32.clx=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr32.clx 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr96.ths=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/sgr96.ths 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa.fca=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa.fca 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa03.hsp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa03.hsp 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa03.ths=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa03.ths 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa37.hyp=usr/lib/AdobeReader/Adobe/Reader9/Resource/Linguistics/Providers/Proximity/11.00/usa37.hyp 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Shell 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Shell/acroread.1=usr/lib/AdobeReader/Adobe/Reader9/Resource/Shell/acroread.1 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Shell/acroread_tab=usr/lib/AdobeReader/Adobe/Reader9/Resource/Shell/acroread_tab 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/Support 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Support/AdobeReader.desktop=usr/lib/AdobeReader/Adobe/Reader9/Resource/Support/AdobeReader.desktop 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Support/AdobeReader.xml=usr/lib/AdobeReader/Adobe/Reader9/Resource/Support/AdobeReader.xml 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.adobe.pdx.desktop=usr/lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.adobe.pdx.desktop 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.adobe.xdp+xml.desktop=usr/lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.adobe.xdp+xml.desktop 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.adobe.xfdf.desktop=usr/lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.adobe.xfdf.desktop 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.fdf.desktop=usr/lib/AdobeReader/Adobe/Reader9/Resource/Support/vnd.fdf.desktop 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/ctb_gb18030.cnv=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/ctb_gb18030.cnv 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/ctl_gb18030.cnv=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/ctl_gb18030.cnv 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/icudt26b.dat=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/icudt26b.dat 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/icudt26l.dat=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/icu/icudt26l.dat 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings 0755 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/HKSCS.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/HKSCS.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/JISX0208.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/JISX0208.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/JISX0213.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/JISX0213.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/Japanese83pv.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/Japanese83pv.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/readme.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/readme.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/stdenc.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/stdenc.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/symbol.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/symbol.txt 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/zdingbat.txt=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/adobe/zdingbat.txt 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ARABIC.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ARABIC.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CENTEURO.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CENTEURO.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CHINSIMP.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CHINSIMP.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CHINTRAD.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CHINTRAD.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CORPCHAR.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CORPCHAR.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CROATIAN.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CROATIAN.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CYRILLIC.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/CYRILLIC.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/FARSI.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/FARSI.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/GREEK.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/GREEK.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/HEBREW.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/HEBREW.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ICELAND.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ICELAND.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/JAPANESE.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/JAPANESE.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/KOREAN.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/KOREAN.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ROMAN.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ROMAN.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ROMANIAN.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/ROMANIAN.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/SYMBOL.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/SYMBOL.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/THAI.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/THAI.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/TURKISH.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/TURKISH.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/UKRAINE.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/mac/UKRAINE.TXT 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1250.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1250.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1251.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1251.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1252.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1252.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1253.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1253.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1254.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1254.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1255.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1255.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1256.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1256.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1257.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1257.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1258.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP1258.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP874.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP874.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP932.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP932.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP936.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP936.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP949.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP949.TXT 0644 root bin
+f none lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP950.TXT=usr/lib/AdobeReader/Adobe/Reader9/Resource/TypeSupport/Unicode/mappings/win/CP950.TXT 0644 root bin
+d none lib/AdobeReader/Adobe/Reader9/bin 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/bin/UNINSTALL=usr/lib/AdobeReader/Adobe/Reader9/bin/UNINSTALL 0755 root bin
+f none lib/AdobeReader/Adobe/Reader9/bin/acroread=usr/lib/AdobeReader/Adobe/Reader9/bin/acroread 0755 root bin
+d none lib/AdobeReader/doc 0755 root bin
+d none lib/AdobeReader/doc/acroread 0755 root bin
+f none lib/AdobeReader/doc/acroread/License.txt=usr/lib/AdobeReader/doc/acroread/License.txt 0644 root bin
+f none lib/AdobeReader/doc/acroread/ReadMe.htm=usr/lib/AdobeReader/doc/acroread/ReadMe.htm 0644 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+s none share/applications/acroread.desktop=../../lib/AdobeReader/Adobe/Reader9/Resource/Support/AdobeReader.desktop
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/128x128 0755 root other
+d none share/icons/hicolor/128x128/apps 0755 root other
+s none share/icons/hicolor/128x128/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/AdobeReader9.png
+s none share/icons/hicolor/128x128/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/adobe.pdf.png
+s none share/icons/hicolor/128x128/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.pdx.png
+s none share/icons/hicolor/128x128/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/128x128/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xfdf.png
+s none share/icons/hicolor/128x128/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.fdf.png
+d none share/icons/hicolor/128x128/mimetypes 0755 root other
+s none share/icons/hicolor/128x128/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.fdf.png
+s none share/icons/hicolor/128x128/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/adobe.pdf.png
+s none share/icons/hicolor/128x128/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.pdx.png
+s none share/icons/hicolor/128x128/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/128x128/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/128x128/vnd.adobe.xfdf.png
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+s none share/icons/hicolor/16x16/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/AdobeReader9.png
+s none share/icons/hicolor/16x16/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/adobe.pdf.png
+s none share/icons/hicolor/16x16/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.pdx.png
+s none share/icons/hicolor/16x16/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/16x16/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xfdf.png
+s none share/icons/hicolor/16x16/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.fdf.png
+d none share/icons/hicolor/16x16/mimetypes 0755 root other
+s none share/icons/hicolor/16x16/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.fdf.png
+s none share/icons/hicolor/16x16/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/adobe.pdf.png
+s none share/icons/hicolor/16x16/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.pdx.png
+s none share/icons/hicolor/16x16/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/16x16/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/16x16/vnd.adobe.xfdf.png
+d none share/icons/hicolor/192x192 0755 root other
+d none share/icons/hicolor/192x192/apps 0755 root other
+s none share/icons/hicolor/192x192/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/AdobeReader9.png
+s none share/icons/hicolor/192x192/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/adobe.pdf.png
+s none share/icons/hicolor/192x192/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.pdx.png
+s none share/icons/hicolor/192x192/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/192x192/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xfdf.png
+s none share/icons/hicolor/192x192/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.fdf.png
+d none share/icons/hicolor/192x192/mimetypes 0755 root other
+s none share/icons/hicolor/192x192/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.fdf.png
+s none share/icons/hicolor/192x192/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/adobe.pdf.png
+s none share/icons/hicolor/192x192/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.pdx.png
+s none share/icons/hicolor/192x192/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/192x192/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/192x192/vnd.adobe.xfdf.png
+d none share/icons/hicolor/20x20 0755 root other
+d none share/icons/hicolor/20x20/apps 0755 root other
+s none share/icons/hicolor/20x20/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/AdobeReader9.png
+s none share/icons/hicolor/20x20/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/adobe.pdf.png
+s none share/icons/hicolor/20x20/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.pdx.png
+s none share/icons/hicolor/20x20/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/20x20/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xfdf.png
+s none share/icons/hicolor/20x20/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.fdf.png
+d none share/icons/hicolor/20x20/mimetypes 0755 root other
+s none share/icons/hicolor/20x20/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.fdf.png
+s none share/icons/hicolor/20x20/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/adobe.pdf.png
+s none share/icons/hicolor/20x20/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.pdx.png
+s none share/icons/hicolor/20x20/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/20x20/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/20x20/vnd.adobe.xfdf.png
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+s none share/icons/hicolor/22x22/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/AdobeReader9.png
+s none share/icons/hicolor/22x22/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/adobe.pdf.png
+s none share/icons/hicolor/22x22/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.pdx.png
+s none share/icons/hicolor/22x22/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/22x22/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xfdf.png
+s none share/icons/hicolor/22x22/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.fdf.png
+d none share/icons/hicolor/22x22/mimetypes 0755 root other
+s none share/icons/hicolor/22x22/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.fdf.png
+s none share/icons/hicolor/22x22/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/adobe.pdf.png
+s none share/icons/hicolor/22x22/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.pdx.png
+s none share/icons/hicolor/22x22/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/22x22/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/22x22/vnd.adobe.xfdf.png
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+s none share/icons/hicolor/24x24/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/AdobeReader9.png
+s none share/icons/hicolor/24x24/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/adobe.pdf.png
+s none share/icons/hicolor/24x24/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.pdx.png
+s none share/icons/hicolor/24x24/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/24x24/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xfdf.png
+s none share/icons/hicolor/24x24/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.fdf.png
+d none share/icons/hicolor/24x24/mimetypes 0755 root other
+s none share/icons/hicolor/24x24/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.fdf.png
+s none share/icons/hicolor/24x24/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/adobe.pdf.png
+s none share/icons/hicolor/24x24/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.pdx.png
+s none share/icons/hicolor/24x24/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/24x24/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/24x24/vnd.adobe.xfdf.png
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+s none share/icons/hicolor/32x32/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/AdobeReader9.png
+s none share/icons/hicolor/32x32/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/adobe.pdf.png
+s none share/icons/hicolor/32x32/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.pdx.png
+s none share/icons/hicolor/32x32/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/32x32/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xfdf.png
+s none share/icons/hicolor/32x32/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.fdf.png
+d none share/icons/hicolor/32x32/mimetypes 0755 root other
+s none share/icons/hicolor/32x32/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.fdf.png
+s none share/icons/hicolor/32x32/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/adobe.pdf.png
+s none share/icons/hicolor/32x32/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.pdx.png
+s none share/icons/hicolor/32x32/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/32x32/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/32x32/vnd.adobe.xfdf.png
+d none share/icons/hicolor/36x36 0755 root other
+d none share/icons/hicolor/36x36/apps 0755 root other
+s none share/icons/hicolor/36x36/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/AdobeReader9.png
+s none share/icons/hicolor/36x36/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/adobe.pdf.png
+s none share/icons/hicolor/36x36/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.pdx.png
+s none share/icons/hicolor/36x36/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/36x36/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xfdf.png
+s none share/icons/hicolor/36x36/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.fdf.png
+d none share/icons/hicolor/36x36/mimetypes 0755 root other
+s none share/icons/hicolor/36x36/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.fdf.png
+s none share/icons/hicolor/36x36/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/adobe.pdf.png
+s none share/icons/hicolor/36x36/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.pdx.png
+s none share/icons/hicolor/36x36/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/36x36/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/36x36/vnd.adobe.xfdf.png
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+s none share/icons/hicolor/48x48/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/AdobeReader9.png
+s none share/icons/hicolor/48x48/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/adobe.pdf.png
+s none share/icons/hicolor/48x48/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.pdx.png
+s none share/icons/hicolor/48x48/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/48x48/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xfdf.png
+s none share/icons/hicolor/48x48/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.fdf.png
+d none share/icons/hicolor/48x48/mimetypes 0755 root other
+s none share/icons/hicolor/48x48/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.fdf.png
+s none share/icons/hicolor/48x48/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/adobe.pdf.png
+s none share/icons/hicolor/48x48/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.pdx.png
+s none share/icons/hicolor/48x48/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/48x48/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/48x48/vnd.adobe.xfdf.png
+d none share/icons/hicolor/64x64 0755 root other
+d none share/icons/hicolor/64x64/apps 0755 root other
+s none share/icons/hicolor/64x64/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/AdobeReader9.png
+s none share/icons/hicolor/64x64/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/adobe.pdf.png
+s none share/icons/hicolor/64x64/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.pdx.png
+s none share/icons/hicolor/64x64/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/64x64/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xfdf.png
+s none share/icons/hicolor/64x64/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.fdf.png
+d none share/icons/hicolor/64x64/mimetypes 0755 root other
+s none share/icons/hicolor/64x64/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.fdf.png
+s none share/icons/hicolor/64x64/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/adobe.pdf.png
+s none share/icons/hicolor/64x64/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.pdx.png
+s none share/icons/hicolor/64x64/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/64x64/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/64x64/vnd.adobe.xfdf.png
+d none share/icons/hicolor/96x96 0755 root other
+d none share/icons/hicolor/96x96/apps 0755 root other
+s none share/icons/hicolor/96x96/apps/AdobeReader9.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/AdobeReader9.png
+s none share/icons/hicolor/96x96/apps/adobe.pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/adobe.pdf.png
+s none share/icons/hicolor/96x96/apps/vnd.adobe.pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.pdx.png
+s none share/icons/hicolor/96x96/apps/vnd.adobe.xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/96x96/apps/vnd.adobe.xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xfdf.png
+s none share/icons/hicolor/96x96/apps/vnd.fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.fdf.png
+d none share/icons/hicolor/96x96/mimetypes 0755 root other
+s none share/icons/hicolor/96x96/mimetypes/application-fdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.fdf.png
+s none share/icons/hicolor/96x96/mimetypes/application-pdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/adobe.pdf.png
+s none share/icons/hicolor/96x96/mimetypes/application-pdx.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.pdx.png
+s none share/icons/hicolor/96x96/mimetypes/application-xdp+xml.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xdp+xml.png
+s none share/icons/hicolor/96x96/mimetypes/application-xfdf.png=../../../../../lib/AdobeReader/Adobe/Reader9/Resource/Icons/96x96/vnd.adobe.xfdf.png
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+s none share/man/man1/acroread.1=../../../lib/AdobeReader/Adobe/Reader9/Resource/Shell/acroread.1
+d none share/mime 0755 root root
+d none share/mime/packages 0755 root root
+s none share/mime/packages/acroread.xml=../../../lib/AdobeReader/Adobe/Reader9/Resource/Support/AdobeReader.xml

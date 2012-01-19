@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-games-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-games-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-games-devel.copyright
+d none include 0755 root bin
+f none include/ggz.h=usr/include/ggz.h 0644 root bin
+f none include/ggz_common.h=usr/include/ggz_common.h 0644 root bin
+f none include/ggz_dio.h=usr/include/ggz_dio.h 0644 root bin
+f none include/ggzcore.h=usr/include/ggzcore.h 0644 root bin
+f none include/ggzmod.h=usr/include/ggzmod.h 0644 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/ggz.h.3=usr/share/man/man3/ggz.h.3 0644 root bin
+f none share/man/man3/ggzcore_h.3=usr/share/man/man3/ggzcore_h.3 0644 root bin
+f none share/man/man3/ggzmod_h.3=usr/share/man/man3/ggzmod_h.3 0644 root bin
+f none share/man/man3/libggz.3=usr/share/man/man3/libggz.3 0644 root bin
+f none share/man/man3/libggzcore.3=usr/share/man/man3/libggzcore.3 0644 root bin
+f none share/man/man3/libggzmod.3=usr/share/man/man3/libggzmod.3 0644 root bin

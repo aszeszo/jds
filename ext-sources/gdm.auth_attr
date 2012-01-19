@@ -1,0 +1,7 @@
+#
+# Copyright (c) 2006, Oracle and/or its affiliates. All rights reserved.
+#
+# authorization attributes. see auth_attr(4)
+#
+solaris.smf.manage.dt.:::Manage Desktop Service States::help=ManageDtHeader.html
+solaris.smf.manage.dt.login:::Manage Desktop Login Service States::help=ManageDtLogin.html

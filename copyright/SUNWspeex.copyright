@@ -1,0 +1,18 @@
+Licensing and copyright information for %{name}:
+
+ License: Xiph.org BSD-style License
+ License: GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: Xiph.org BSD-style license
+  AUTHORS: List of authors of %{speex.name}
+  NEWS.bz2: List of the most important changes in %{speex.name}
+  ChangeLog.bz2: List of all changes and authors of %{speex.name}
+  README: More information about %{speex.name}
+
+ The speex binaries use some code which is licensed with the LGPL v2 license.
+
+ The sources of speex-%{speex.version} were downloaded
+ from %{speex.SOURCE0.url}

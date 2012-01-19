@@ -1,0 +1,62 @@
+diff -ur pidgin-2.9.0/libpurple/protocols/irc/msgs.c pidgin-2.9.0_new/libpurple/protocols/irc/msgs.c
+--- pidgin-2.9.0/libpurple/protocols/irc/msgs.c	2011-06-22 15:32:28.000000000 +0800
++++ pidgin-2.9.0_new/libpurple/protocols/irc/msgs.c	2011-07-25 19:51:13.212828250 +0800
+@@ -409,15 +409,22 @@
+ 		PurpleConvChat *chat;
+ 		PurpleConvChatBuddy *cb;
+ 		
+-		char *userhost, *realname;
++		char *cur, *userhost, *realname;
+ 		
+ 		PurpleConvChatBuddyFlags flags;
+ 		GList *keys = NULL, *values = NULL;
+-		
++	
++		if (!args || !args[0] || !args[1] || !args[2] || !args[3]
++		    || !args[4] || !args[5] || !args[6] || !args[7]) {
++			purple_debug(PURPLE_DEBUG_ERROR, "irc",
++				     "Got a WHO response with not enough arguments\n");
++			return;
++		}
++	
+ 		conv = purple_find_conversation_with_account(PURPLE_CONV_TYPE_CHAT, args[1], irc->account);
+ 		if (!conv) {
+-			purple_debug(PURPLE_DEBUG_ERROR, "irc", "Got a WHO response for %s, which doesn't exist\n", args[1]);
+-			return;
++			purple_debug(PURPLE_DEBUG_ERROR, "irc","Got a WHO response for %s, which doesn't exist\n", args[1]);
++                        return;
+ 		}
+ 
+ 		cb = purple_conv_chat_cb_find(PURPLE_CONV_CHAT(conv), args[5]);
+@@ -429,9 +436,17 @@
+ 		chat = PURPLE_CONV_CHAT(conv);
+ 		
+ 		userhost = g_strdup_printf("%s@%s", args[2], args[3]);
+-		realname = g_strdup(args[8]);
++		/* The final argument is a :-argument, but annoyingly
++		 * contains two "words", the hop count and real name. */
++		for (cur = args[7]; *cur; cur++) {
++			if (*cur == ' ') {
++				cur++;
++				break;
++			}
++		}
++		realname = g_strdup(cur);	
+ 		
+-		keys = g_list_prepend(keys, "userhost");
++                keys = g_list_prepend(keys, "userhost");
+ 		values = g_list_prepend(values, userhost);
+ 		
+ 		keys = g_list_prepend(keys, "realname");
+diff -ur pidgin-2.9.0/libpurple/protocols/irc/parse.c pidgin-2.9.0_new/libpurple/protocols/irc/parse.c
+--- pidgin-2.9.0/libpurple/protocols/irc/parse.c	2011-06-22 15:32:28.000000000 +0800
++++ pidgin-2.9.0_new/libpurple/protocols/irc/parse.c	2011-07-25 19:51:48.557552680 +0800
+@@ -74,7 +74,7 @@
+ 	{ "331", "nc:",	irc_msg_topic },	/* No channel topic		*/
+ 	{ "332", "nc:", irc_msg_topic },	/* Channel topic		*/
+ 	{ "333", "*", irc_msg_ignore },		/* Topic setter stuff		*/
+-	{ "352", "nvcvnvvv:", irc_msg_who },/* Channel WHO			*/
++ 	{ "352", "ncvvvnv:", irc_msg_who },	/* Channel WHO			*/
+ 	{ "353", "nvc:", irc_msg_names },	/* Names list			*/
+ 	{ "366", "nc:", irc_msg_names },	/* End of names			*/
+ 	{ "367", "ncnnv", irc_msg_ban },	/* Ban list			*/

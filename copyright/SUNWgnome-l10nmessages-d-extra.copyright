@@ -1,0 +1,1094 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool
+-------------------------------------------------------------
+
+Copyright for zenity
+ 
+-------------------------------------------------------------
+
+Copyright for evince
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor
+  Bulgarian translation for procman doc.
+  Copyright (C) 2002 Free Software Foundation, Inc.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus
+  Traducció del gnome-netstatus de l'equip de Softcatalà.
+  Copyright © 2007-2009 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2007-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller
+  Traducció del file-roller de l'equip de Softcatalà.
+  Copyright © 2008 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool
+  Traducció del gcalctool de l'equip de Softcatalà.
+  Copyright © 2008 Free Software Foundation, Inc.
+ 
+  Joan Duran <jodufi@gmail.com>, 2008, 2009.
+-------------------------------------------------------------
+
+Copyright for sound-juicer
+  Traducció del sound-juicer de l'equip de Softcatalà.
+  Copyright © 2008 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor
+  Traducció del gconf-editor de l'equip de Softcatalà.
+  Copyright © 2008, 2009 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for control-center
+-------------------------------------------------------------
+
+Copyright for eog
+  Traducció del eog de l'equip de Softcatalà.
+  Copyright © 2008, 2009 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for totem
+-------------------------------------------------------------
+
+Copyright for fdl
+  Traducció de la FDL de l'equip de Softcatalà.
+  Copyright © 2009 Free Software Foundation, Inc.
+ 
+  http://www.softcatala.org/wiki/Llicència_de_documentació_lliure_de_GNU
+ 
+-------------------------------------------------------------
+
+Copyright for gpl
+-------------------------------------------------------------
+
+Copyright for clock
+-------------------------------------------------------------
+
+Copyright for evince
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager
+  Traducció del gnome-system-monitor de l'equip de Softcatalà.
+  Copyright © 2008 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2007, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor
+-------------------------------------------------------------
+
+Copyright for gnome-terminal
+  Traducció del gnome-terminal de l'equip de Softcatalà.
+  Copyright © 2007-2009 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2007-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit
+  Traducció del gedit de l'equip de Softcatalà.
+  Copyright © 2009 Free Software Foundation, Inc.
+  Joan Duran <jodufi@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for baobab
+-------------------------------------------------------------
+
+Copyright for gnome-dictionary
+-------------------------------------------------------------
+
+Copyright for gnome-search-tool
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for zenity
+  Danish translation for zenity.
+  Copyright (C) 2009 Free Software Foundation
+  This file is distributed under the same license as the zenity package.
+ 
+  Ask Hjorth Larsen <asklarsen@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for eog
+  GNOME Eye of GNOME Manual. Danish translation.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the eog package.
+ 
+  M.P. Rommedahl <Lhademmor@gmail.com>, 2008
+  Ask Hjorth Larsen <asklarsen@gmail.com>, 2009
+ 
+  Display area -> billedområde
+ 
+-------------------------------------------------------------
+
+Copyright for totem
+  Documentation for Totem.  Danish translation.
+ 
+  Copyright (C) 2009, Free Software Foundation, Inc.
+  This file is distributed under the same license as the totem package.
+ 
+  Ask Hjorth Larsen <asklarsen@gmail.com>, 2009.
+ 
+  Konventioner
+  ------------
+ 
+  <application>Totem Movie Player</..> -> (filmafspilleren) <..>Totem</..>
+  display area -> fremvisningsområde
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox
+  Danish translation of rhythmbox documentation.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the rhythmbox package.
+  Peter Bach <bach.peter@gmail.com>, 2008.
+ 
+  Husk at tilføje dig i credit-listen (besked id "translator_credits")
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor
+  Danish translation of documentation for gnome-system-monitor.
+  Copyright (C) 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-system-monitor package.
+ 
+  Ask Hjorth Larsen <asklarsen@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal
+  Danish translation of manual for gnome-terminal.
+  Copyright (C) 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-terminal package.
+ 
+  Ask Hjorth Larsen <asklarsen@gmail.com>, 2009
+-------------------------------------------------------------
+
+Copyright for gedit
+  Danish translation of gedit Manual
+ 
+  M.P. Rommedahl <Lhademmor@gmail.com>, 2008
+  Ask Hjorth Larsen <asklarsen@gmail.com>, 2008, 09
+ 
+  Konventioner:
+ 
+    display area -> visningsområde
+ 
+  Husk at tilføje dig i credit-listen
+       (besked id "translator-credits")
+ 
+  NB.  Farveskemaer som henvises til nedenfor kommer fra gtksourceview
+-------------------------------------------------------------
+
+Copyright for baobab
+  Danish translation of the documentation for baobab.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+ 
+  Ask Hjorth Larsen <asklarsen@gmail.com>, 2008
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus
+  translation of help.HEAD.po to
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for file-roller
+  Greek translation of File Roller Documentation
+  Copyright (C) 2001 - 2009 Free Software Foundation, Inc.
+-------------------------------------------------------------
+
+Copyright for gcalctool
+  translation of gcalctool-gnome-2-26-help-el-191897_.merged.po to Greek
+  Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for sound-juicer
+ 
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for gconf-editor
+  translation of gconf-editor-help.HEAD.po to Greek
+  Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for control-center
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for zenity
+  translation of zenity-help.HEAD.po to Ελληνικά
+  Sterios Prosiniklis <steriosprosiniklis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for eog
+  Translation of Eye of GNOME Documentation in Greek
+  Fotis Tsamis <ftsamis@gmail.com>, 2009.
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for totem
+  Greek translation of Totem Documentation
+  Nikos Paraschou <niparasc@gmail.com>, 2008.
+  Fotis Tsamis <ftsamis@gmail.com>, 2009.
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for rhythmbox
+  Translation of rythmbox-help.el.po to Greek.
+  Giannis Katsampirhs <juankatsampirhs@gmail.com>, 2008.
+-------------------------------------------------------------
+
+Copyright for fdl
+  translation of desktop-fdl.master.po to Greek
+  Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for lgpl
+  translation of desktop-lgpl.HEAD.po to Greek
+  Fotis Tsamis <ftsamis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gpl
+  translation of desktop-gpl.HEAD.po to Greek
+  Fotis Tsamis <ftsamis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for clock
+  Greek translation of clock.
+  This file is distributed under the same license as the PACKAGE package.
+  Copyright (C) 2007 THE PACKAGE'S COPYRIGHT HOLDER.
+ 
+  Dimitrios Typaldos <dtfedora@yahoo.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for evince
+  Stylianos Papanastasiou <stelios@dcs.gla.ac.uk>, 2005.
+ 
+ 
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor
+  translation of gnome-system-monitor-help.HEAD.po to Ελληνικά
+  Sterios Prosiniklis <steriosprosiniklis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-terminal
+  translation of gnome-terminal-HEAD-help-el-5250.po to Greek
+  Jennie Petoumenou <epetoumenou@gmail.com>, 2009.
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for gedit
+  Greek translation of Gedit Documentation
+  Copyright (C) 2009, Free Software Foundation, Inc.
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+Copyright for baobab
+  Greek translation of baobab
+  This file is distributed under the same license as the totem package.
+  Copyright (C) Free Software Foundation Inc, 2009
+-------------------------------------------------------------
+
+Copyright for gnome-dictionary
+ 
+  Fotis Tsamis <ftsamis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-search-tool
+  translation of gsearchtool.gnome-2-26.po to Ελληνικά
+  Sterios Prosiniklis <steriosprosiniklis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+  translation of logview.HEAD.po to
+  Fotis Tsamis <ftsamis@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+  translation of logview.HEAD.po to
+-------------------------------------------------------------
+
+Copyright for evolution
+  Greek translation of Evolution User Guide
+  Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for file-roller
+  Finnish help for file-roller package.
+  Copyright (C) 2008 Valto Wirkola.
+  This file is distributed under the same license as the package.
+  Valto Wirkola <valto [dot] wirkola [at] yahoo [dot] com>, 2008.
+  Harri Pitkänen <hatapitk [at] iki [dot] fi>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for zenity
+  Finnish translations for Zenity package.
+  Copyright © 2008 Tommi Vainikainen.
+  This file is distributed under the same license as the zenity package.
+-------------------------------------------------------------
+
+Copyright for lgpl
+  Finnish translation for GNU Lesser General Public License.
+  Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2005.
+  Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
+ 
+  This translation is adapted from
+  http://www.turre.com/licenses/gpl_fi.php and gnome-desktop/gpl.
+ 
+-------------------------------------------------------------
+
+Copyright for gpl
+  Finnish translation for GNU General Public License.
+  Tommi Vainikainen <Tommi.Vainikainen@iki.fi>, 2005.
+  Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
+ 
+  This translation is copied from
+  http://www.turre.com/licenses/gpl_fi.php .
+ 
+-------------------------------------------------------------
+
+Copyright for clock
+  Finnish (fi) translation of clock
+ 
+  Timo Jyrinki <timo.jyrinki@iki.fi, 2008.
+  license portions from evince translation:
+  Copyright © Tommi Vainikainen, 2006.
+  Copyright © Flammie Pirinen, 2006. (merged from gucharmap translation)
+ 
+-------------------------------------------------------------
+
+Copyright for evince
+  Finnish translation of Evince manual.
+ 
+  Copyright © Tommi Vainikainen, 2006.
+  Copyright © Flammie Pirinen, 2006. (merged from gucharmap translation)
+  Copyright © Timo Jyrinki, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit
+  gedit finnish help
+  Copyright (C) 2008 Valto Wirkola.
+ 
+  Valto Wirkola <valto.wirkola@yahoo.com>, 2008.
+  Timo Jyrinki <timo.jyrinki@iki.fi>, 2008.
+  Harri Pitkänen <hatapitk [at] iki [dot] fi>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for baobab
+  baobab's Finnish translation.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  Jukka Heikkilä <jutsco@gmail.com>, 2008.
+  Tommi Vainikainen <thv@iki.fi> (Legal Notices), 2006.
+  <jutsco@gmail.com>, 2008.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-dictionary
+  gnome-dictionary's Finnish translation.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  Jukka Heikkilä <jutsco@gmail.com>, 2008.
+  Tommi Vainikainen <thv@iki.fi> (Legal Notices), 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-search-tool
+  gsearchtool's Finnish translation.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  Jukka Heikkilä <jutsco@gmail.com>, 2008.
+  Tommi Vainikainen <thv@iki.fi> (Legal Notices), 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+  logview's Finnish translation.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  Jukka Heikkilä <jutsco@gmail.com>, 2009.
+  Tommi Vainikainen <thv@iki.fi> (Legal Notices), 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+  logview's Finnish translation.
+  Copyright (C) 2008 Free Software Foundation, Inc.
+  Jukka Heikkilä <jutsco@gmail.com>, 2008.
+  Tommi Vainikainen <thv@iki.fi> (Legal Notices), 2006.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for evolution
+  translation of mk.po to Macedonian
+  Arangel Angov <arangel@linux.net.mk>, 2008.
+  Arangel Angov <ufo@linux.net.mk>, 2008.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus
+-------------------------------------------------------------
+
+Copyright for file-roller
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer
+-------------------------------------------------------------
+
+Copyright for clock
+-------------------------------------------------------------
+
+Copyright for evince
+  Nederlandse vertaling van Evince-documentatie
+ 
+  Reinout van Schouwen <reinout@cs.vu.nl>, 2006
+  Wouter Bolsterlee <uws+gnome@xs4all.nl>, 2006.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus
+  Russian translation for gnome-netstatus
+  Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+  This file is distributed under the same license as the gnome-netstatus package.
+  Pavel Shylenok <uriel@tut.by>, 2006
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller
+-------------------------------------------------------------
+
+Copyright for gcalctool
+  Russian translation for gcalctool help
+  Copyright (c) Free Software Foundation Inc., 2008
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer
+  Translation of sound-juicer help into Russian.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008
+-------------------------------------------------------------
+
+Copyright for gconf-editor
+  Russian translation for gconf-editor help
+  Copyright 2008 Free Software Foundation Inc.
+-------------------------------------------------------------
+
+Copyright for control-center
+  Russian translation for control-center
+  Copyright (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+  This file is distributed under the same license as the control-center package.
+  Alexey Dunaev <keir.ru@gmail.com>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for zenity
+-------------------------------------------------------------
+
+Copyright for eog
+-------------------------------------------------------------
+
+Copyright for totem
+  translation of totem help into Russian
+  Timur Salikhov <Tima-S@yandex.ru>
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008.
+  Alexander Saprykin <xelfium@gmail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for rhythmbox
+  Vasiliy Faronov <qvvx@land.ru>, 2007.
+  Yuri Myasoedov <omerta13@yandex.ru>, 2008.
+-------------------------------------------------------------
+
+Copyright for clock
+ 
+-------------------------------------------------------------
+
+Copyright for evince
+  Russian translation for Evince documentation.
+ 
+  Copyright 2008, Free Software Foundation Inc.
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager
+  Russian translation for gnome-power-manager
+  Copyright (c) (c) 2006 Canonical Ltd, and Rosetta Contributors 2006
+  Copyright Pavel Shylenok <uriel@tut.by, 2006
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal
+ 
+-------------------------------------------------------------
+
+Copyright for gedit
+  Russian translation of GEdit help
+  Copyright 2008 Free Software Foundation Inc.
+-------------------------------------------------------------
+
+Copyright for baobab
+  Translation of baobab help into Russian.
+  Yuri Myasoedov <omerta13@yandex.ru>, 2008.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2008.
+-------------------------------------------------------------
+
+Copyright for gnome-dictionary
+  gnome-dictionary help file translation
+-------------------------------------------------------------
+
+Copyright for gnome-search-tool
+  Translation of gsearchtool help into Russian.
+  Vasiliy Faronov <qvvx@yandex.ru>, 2006, 2008.
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-log
+ 
+-------------------------------------------------------------
+
+Copyright for evolution
+  translation of help.HEAD.po to russian
+ 
+  Sergey V. Mironov <sergo@bk.ru>, 2007, 2008.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+
+Copyright for clock
+-------------------------------------------------------------
+
+Copyright for evince
+  Serbian translation of nautilus
+  Courtesy of Prevod.org team (http://prevod.org/) -- 2005.
+ 
+  This file is distributed under the same license as the nautilus package.
+ 
+  Maintainer: Данило Шеган <danilo@gnome.org>
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

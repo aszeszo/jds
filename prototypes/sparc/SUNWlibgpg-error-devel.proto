@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgpg-error-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgpg-error-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgpg-error-devel.copyright
+d none bin 0755 root bin
+f none bin/gpg-error=usr/bin/gpg-error 0755 root bin
+f none bin/gpg-error-config=usr/bin/gpg-error-config 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/gpg-error=usr/bin/sparcv9/gpg-error 0755 root bin
+f none bin/sparcv9/gpg-error-config=usr/bin/sparcv9/gpg-error-config 0755 root bin
+d none include 0755 root bin
+f none include/gpg-error.h=usr/include/gpg-error.h 0644 root bin
+d none share 0755 root sys
+d none share/aclocal 0755 root other
+f none share/aclocal/gpg-error.m4=usr/share/aclocal/gpg-error.m4 0644 root bin
+d none share/common-lisp 0755 root bin
+d none share/common-lisp/source 0755 root bin
+d none share/common-lisp/source/gpg-error 0755 root bin
+f none share/common-lisp/source/gpg-error/gpg-error-codes.lisp=usr/share/common-lisp/source/gpg-error/gpg-error-codes.lisp 0644 root bin
+f none share/common-lisp/source/gpg-error/gpg-error-package.lisp=usr/share/common-lisp/source/gpg-error/gpg-error-package.lisp 0644 root bin
+f none share/common-lisp/source/gpg-error/gpg-error.asd=usr/share/common-lisp/source/gpg-error/gpg-error.asd 0644 root bin
+f none share/common-lisp/source/gpg-error/gpg-error.lisp=usr/share/common-lisp/source/gpg-error/gpg-error.lisp 0644 root bin

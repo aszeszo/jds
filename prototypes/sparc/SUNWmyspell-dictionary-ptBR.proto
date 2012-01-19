@@ -1,0 +1,21 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-ptBR.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-ptBR.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-ptBR.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/pt-BR.aff=../../../../usr/share/spell/myspell/pt_BR.aff
+s none lib/firefox/dictionaries/pt-BR.dic=../../../../usr/share/spell/myspell/pt_BR.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/pt-BR.aff=../../../../usr/share/spell/myspell/pt_BR.aff
+s none lib/thunderbird/dictionaries/pt-BR.dic=../../../../usr/share/spell/myspell/pt_BR.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/pt_BR 0755 root bin
+f none share/doc/myspell-dictionary/pt_BR/Leia-me.pdf=usr/share/doc/myspell-dictionary/pt_BR/Leia-me.pdf 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/pt_BR.aff=usr/share/spell/myspell/pt_BR.aff 0644 root other
+f none share/spell/myspell/pt_BR.dic=usr/share/spell/myspell/pt_BR.dic 0644 root other

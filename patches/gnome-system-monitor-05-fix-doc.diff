@@ -1,0 +1,38 @@
+--- gnome-system-monitor-2.28.2/help/C/gnome-system-monitor.xml.orig	2011-05-10 14:03:39.803560481 +0100
++++ gnome-system-monitor-2.28.2/help/C/gnome-system-monitor.xml	2011-05-10 14:04:35.477016045 +0100
+@@ -27,8 +27,8 @@
+       <holder>Paul Cutler</holder>
+     </copyright>
+     <copyright>
+-      <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2004</year> <year>2011</year> 
++	<holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2001</year>
+@@ -55,9 +55,9 @@
+ 
+   <authorgroup> 
+     <author>
+-      <firstname>Sun</firstname>
+-      <surname>GNOME Documentation Team</surname>
+-      <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++      <firstname>Oracle Solaris	</firstname>
++      <surname>Desktop Documentation Team</surname>
++      <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+     </author>
+     <author> 
+       <firstname>Bill</firstname> 
+diff -urN gsm.orig/src/callbacks.cpp gsm.new/src/callbacks.cpp
+--- gsm.orig/src/callbacks.cpp	2011-06-27 15:10:26.586053655 +0100
++++ gsm.new/src/callbacks.cpp	2011-06-27 15:11:36.589870317 +0100
+@@ -143,7 +143,7 @@
+ 
+ 	const gchar * const documenters[] = {
+ 		"Bill Day",
+-		"Sun Microsystems",
++		"Oracle Corporation",
+ 		NULL
+ 	};
+ 

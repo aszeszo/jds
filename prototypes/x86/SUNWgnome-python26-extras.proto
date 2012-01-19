@@ -1,0 +1,36 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-python26-extras.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-python26-extras.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-python26-extras.copyright
+f none share/doc/SUNWgnome-python26-extras/AUTHORS=usr/share/doc/SUNWgnome-python26-extras/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-python26-extras/COPYING=usr/share/doc/SUNWgnome-python26-extras/COPYING 0444 root bin
+f none share/doc/SUNWgnome-python26-extras/COPYING.GPL.bz2=usr/share/doc/SUNWgnome-python26-extras/COPYING.GPL.bz2 0444 root bin
+f none share/doc/SUNWgnome-python26-extras/COPYING.LGPL.bz2=usr/share/doc/SUNWgnome-python26-extras/COPYING.LGPL.bz2 0444 root bin
+f none share/doc/SUNWgnome-python26-extras/ChangeLog.bz2=usr/share/doc/SUNWgnome-python26-extras/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-python26-extras/NEWS.bz2=usr/share/doc/SUNWgnome-python26-extras/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-python26-extras/README=usr/share/doc/SUNWgnome-python26-extras/README 0444 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/egg 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/egg/__init__.py=usr/lib/python2.6/vendor-packages/gtk-2.0/egg/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/egg/__init__.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/egg/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/egg/recent.so=usr/lib/python2.6/vendor-packages/gtk-2.0/egg/recent.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/egg/trayicon.so=usr/lib/python2.6/vendor-packages/gtk-2.0/egg/trayicon.so 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0/gksu 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gksu/__init__.py=usr/lib/python2.6/vendor-packages/gtk-2.0/gksu/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gksu/__init__.pyc=usr/lib/python2.6/vendor-packages/gtk-2.0/gksu/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gksu/_gksu.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gksu/_gksu.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gksu/ui.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gksu/ui.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gtkhtml2.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gtkhtml2.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gtkmozembed.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gtkmozembed.so 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/gtkspell.so=usr/lib/python2.6/vendor-packages/gtk-2.0/gtkspell.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-python26-extras 0755 root bin
+d none share/pygtk 0755 root bin
+d none share/pygtk/2.0 0755 root bin
+d none share/pygtk/2.0/defs 0755 root bin
+f none share/pygtk/2.0/defs/gtkhtml2.defs=usr/share/pygtk/2.0/defs/gtkhtml2.defs 0644 root bin
+f none share/pygtk/2.0/defs/gtkmozembed.defs=usr/share/pygtk/2.0/defs/gtkmozembed.defs 0644 root bin
+f none share/pygtk/2.0/defs/trayicon.defs=usr/share/pygtk/2.0/defs/trayicon.defs 0644 root bin

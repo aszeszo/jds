@@ -1,0 +1,34 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-themes-only.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-themes-only.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-themes-only.copyright
+f none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/AUTHORS=usr/share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/COPYING.bz2=usr/share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/ChangeLog.bz2=usr/share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/NEWS.bz2=usr/share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/README=usr/share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/README 0444 root bin
+f none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/po/ChangeLog.bz2 0444 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-themes-only 0755 root bin
+d none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2 0755 root bin
+d none share/doc/SUNWgnome-themes-only/gnome-themes-2.30.2/po 0755 root bin
+d none share/icons 0755 root other
+d none share/icons/HighContrast 0755 root other
+d none share/themes 0755 root bin
+d none share/themes/Clearlooks 0755 root bin
+f none share/themes/Clearlooks/index.theme=usr/share/themes/Clearlooks/index.theme 0644 root bin
+d none share/themes/Clearlooks/metacity-1 0755 root bin
+f none share/themes/Clearlooks/metacity-1/metacity-theme-1.xml=usr/share/themes/Clearlooks/metacity-1/metacity-theme-1.xml 0644 root bin
+d none share/themes/HighContrast 0755 root bin
+d none share/themes/HighContrast/gtk-2.0 0755 root bin
+f none share/themes/HighContrast/gtk-2.0/gtkrc=usr/share/themes/HighContrast/gtk-2.0/gtkrc 0644 root bin
+f none share/themes/HighContrast/index.theme=usr/share/themes/HighContrast/index.theme 0644 root bin
+d none share/themes/Inverted 0755 root bin
+d none share/themes/Inverted/gtk-2.0 0755 root bin
+f none share/themes/Inverted/gtk-2.0/gtkrc=usr/share/themes/Inverted/gtk-2.0/gtkrc 0644 root bin
+d none share/themes/Inverted/metacity-1 0755 root bin
+f none share/themes/Inverted/metacity-1/metacity-theme-1.xml=usr/share/themes/Inverted/metacity-1/metacity-theme-1.xml 0644 root bin
+d none share/themes/LargePrint 0755 root bin
+d none share/themes/LargePrint/gtk-2.0 0755 root bin
+f none share/themes/LargePrint/gtk-2.0/gtkrc=usr/share/themes/LargePrint/gtk-2.0/gtkrc 0644 root bin
+f none share/themes/LargePrint/index.theme=usr/share/themes/LargePrint/index.theme 0644 root bin

@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-webcal.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-webcal.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWevolution-webcal.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-webcal.copyright
+f none share/doc/SUNWevolution-webcal/AUTHORS=usr/share/doc/SUNWevolution-webcal/AUTHORS 0444 root bin
+f none share/doc/SUNWevolution-webcal/COPYING.bz2=usr/share/doc/SUNWevolution-webcal/COPYING.bz2 0444 root bin
+f none share/doc/SUNWevolution-webcal/ChangeLog.bz2=usr/share/doc/SUNWevolution-webcal/ChangeLog.bz2 0444 root bin
+d none lib 0755 root bin
+f none lib/evolution-webcal=usr/lib/evolution-webcal 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWevolution-webcal 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/evolution-webcal.1=usr/share/man/man1/evolution-webcal.1 0644 root bin

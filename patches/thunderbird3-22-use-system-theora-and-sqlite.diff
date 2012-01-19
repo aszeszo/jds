@@ -1,0 +1,87 @@
+--- comm-1.9.2/mozilla/layout/build/Makefile.in.old6	2010-09-08 13:35:41.025368649 +0800
++++ comm-1.9.2/mozilla/layout/build/Makefile.in	2010-09-08 13:37:08.067027107 +0800
+@@ -152,11 +152,8 @@
+ ifdef MOZ_OGG
+ SHARED_LIBRARY_LIBS 	+= \
+ 	$(DEPTH)/media/libfishsound/src/libfishsound/$(LIB_PREFIX)fishsound.$(LIB_SUFFIX) \
+-	$(DEPTH)/media/libogg/src/$(LIB_PREFIX)ogg.$(LIB_SUFFIX) \
+ 	$(DEPTH)/media/liboggplay/src/liboggplay/$(LIB_PREFIX)oggplay.$(LIB_SUFFIX) \
+ 	$(DEPTH)/media/liboggz/src/liboggz/$(LIB_PREFIX)oggz.$(LIB_SUFFIX) \
+-	$(DEPTH)/media/libtheora/lib/$(LIB_PREFIX)theora.$(LIB_SUFFIX) \
+-	$(DEPTH)/media/libvorbis/lib/$(LIB_PREFIX)vorbis.$(LIB_SUFFIX) \
+ 	$(DEPTH)/content/media/ogg/$(LIB_PREFIX)gkconogg_s.$(LIB_SUFFIX) \
+ 	$(NULL)
+ endif
+--- comm-1.9.2/mozilla/toolkit/toolkit-tiers.mk.old6	2010-09-08 13:36:35.506386081 +0800
++++ comm-1.9.2/mozilla/toolkit/toolkit-tiers.mk	2010-09-08 13:37:08.067673746 +0800
+@@ -93,9 +93,9 @@
+ 
+ ifdef BUILD_CTYPES
+ ifndef _MSC_VER
+-tier_gecko_staticdirs += \
+-		js/ctypes/libffi \
+-		$(NULL)
++#tier_gecko_staticdirs += \
++#		js/ctypes/libffi \
++#		$(NULL)
+ endif
+ endif
+ 
+@@ -133,11 +133,8 @@
+ ifdef MOZ_OGG
+ tier_gecko_dirs += \
+ 		media/libfishsound \
+-		media/libogg \
+ 		media/liboggplay \
+ 		media/liboggz \
+-		media/libtheora \
+-		media/libvorbis \
+ 		$(NULL)
+ endif
+ 
+--- comm-1.9.2/mozilla/toolkit/library/Makefile.in.old6	2010-09-08 13:36:03.633681086 +0800
++++ comm-1.9.2/mozilla/toolkit/library/Makefile.in	2010-09-08 13:37:08.067395922 +0800
+@@ -253,7 +253,7 @@
+ endif
+ 
+ ifeq ($(OS_ARCH),SunOS)
+-EXTRA_DSO_LDOPTS += -lelf -ldemangle -lCstd
++EXTRA_DSO_LDOPTS += -lvorbis -ltheora -logg -lelf -ldemangle -lCstd `pkg-config --libs libffi`
+ endif
+ 
+ ifeq ($(OS_ARCH),AIX)
+--- comm-1.9.2/mail/app/Makefile.in.old6	2010-09-08 13:35:10.566993576 +0800
++++ comm-1.9.2/mail/app/Makefile.in	2010-09-08 13:37:08.066732720 +0800
+@@ -130,7 +130,18 @@
+ 	$(STATIC_COMPONENTS_LINKER_PATH) \
+ 	$(MOZ_JS_LIBS) \
+ 	$(EXTRA_DSO_LIBS) \
+-	$(APP_XPCOM_LIBS) \
++	$(APP_XPCOM_LIBS) 
++
++ifdef BUILD_STATIC_LIBS
++ifdef MOZ_STORAGE
++ifeq ($(OS_ARCH),SunOS)
++LIBS += \
++    $(SQLITE_LIBS)
++endif
++endif
++endif
++
++LIBS += \
+ 	$(NSPR_LIBS) \
+ 	$(TK_LIBS) \
+ 	$(NULL)
+@@ -212,6 +223,12 @@
+ endif
+ endif
+ 
++ifeq ($(OS_ARCH),SunOS)
++ifdef BUILD_STATIC_LIBS
++OS_LIBS += -lvorbis -ltheora -logg -lpixman-1 `pkg-config --libs libffi`
++endif
++endif
++
+ ifeq ($(OS_ARCH),BeOS)
+ ifdef BUILD_STATIC_LIBS
+ OS_LIBS += -ltracker -lgame

@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-startup-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-startup-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-startup-root.copyright
+d none etc 0755 root sys
+d none etc/X11 0755 root sys
+d none etc/X11/xinit 0755 root sys
+d none etc/X11/xinit/xinitrc.d 0755 root sys
+f none etc/X11/xinit/xinitrc.d/0011.env=etc/X11/xinit/xinitrc.d/0011.env 0755 root sys
+f none etc/X11/xinit/xinitrc.d/0020.pre-localization=etc/X11/xinit/xinitrc.d/0020.pre-localization 0755 root sys
+f none etc/X11/xinit/xinitrc.d/0060.sockets=etc/X11/xinit/xinitrc.d/0060.sockets 0755 root sys
+f none etc/X11/xinit/xinitrc.d/0110.fonts=etc/X11/xinit/xinitrc.d/0110.fonts 0755 root sys
+f none etc/X11/xinit/xinitrc.d/0120.xrdb=etc/X11/xinit/xinitrc.d/0120.xrdb 0755 root sys
+f none etc/X11/xinit/xinitrc.d/0210.im=etc/X11/xinit/xinitrc.d/0210.im 0755 root sys

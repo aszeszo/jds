@@ -1,0 +1,53 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-menu-editor.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-menu-editor.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-menu-editor.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-menu-editor.copyright
+f none share/doc/SUNWgnome-menu-editor/AUTHORS=usr/share/doc/SUNWgnome-menu-editor/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-menu-editor/COPYING.bz2=usr/share/doc/SUNWgnome-menu-editor/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-menu-editor/ChangeLog.bz2=usr/share/doc/SUNWgnome-menu-editor/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/alacarte=usr/bin/alacarte 0755 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/Alacarte 0755 root bin
+f none lib/python2.6/vendor-packages/Alacarte/MainWindow.py=usr/lib/python2.6/vendor-packages/Alacarte/MainWindow.py 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/MainWindow.pyc=usr/lib/python2.6/vendor-packages/Alacarte/MainWindow.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/MenuEditor.py=usr/lib/python2.6/vendor-packages/Alacarte/MenuEditor.py 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/MenuEditor.pyc=usr/lib/python2.6/vendor-packages/Alacarte/MenuEditor.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/__init__.py=usr/lib/python2.6/vendor-packages/Alacarte/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/__init__.pyc=usr/lib/python2.6/vendor-packages/Alacarte/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/config.py=usr/lib/python2.6/vendor-packages/Alacarte/config.py 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/config.pyc=usr/lib/python2.6/vendor-packages/Alacarte/config.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/util.py=usr/lib/python2.6/vendor-packages/Alacarte/util.py 0644 root bin
+f none lib/python2.6/vendor-packages/Alacarte/util.pyc=usr/lib/python2.6/vendor-packages/Alacarte/util.pyc 0644 root bin
+d none share 0755 root sys
+d none share/alacarte 0755 root bin
+f none share/alacarte/alacarte.ui=usr/share/alacarte/alacarte.ui 0644 root bin
+d none share/applications 0755 root other
+f none share/applications/alacarte.desktop=usr/share/applications/alacarte.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-menu-editor 0755 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/alacarte.png=usr/share/icons/hicolor/16x16/apps/alacarte.png 0644 root other
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/alacarte.png=usr/share/icons/hicolor/22x22/apps/alacarte.png 0644 root other
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/alacarte.png=usr/share/icons/hicolor/24x24/apps/alacarte.png 0644 root other
+d none share/icons/hicolor/256x256 0755 root other
+d none share/icons/hicolor/256x256/apps 0755 root other
+f none share/icons/hicolor/256x256/apps/alacarte.png=usr/share/icons/hicolor/256x256/apps/alacarte.png 0644 root other
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/alacarte.png=usr/share/icons/hicolor/32x32/apps/alacarte.png 0644 root other
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/alacarte.png=usr/share/icons/hicolor/48x48/apps/alacarte.png 0644 root other
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/alacarte.1=usr/share/man/man1/alacarte.1 0644 root bin

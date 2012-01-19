@@ -1,0 +1,110 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-component.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-component.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-component.copyright
+f none share/doc/SUNWgnome-component/ORBit2-2.14.18/AUTHORS=usr/share/doc/SUNWgnome-component/ORBit2-2.14.18/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-component/ORBit2-2.14.18/COPYING.bz2=usr/share/doc/SUNWgnome-component/ORBit2-2.14.18/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/ORBit2-2.14.18/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-component/ORBit2-2.14.18/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/ORBit2-2.14.18/ChangeLog.bz2=usr/share/doc/SUNWgnome-component/ORBit2-2.14.18/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/ORBit2-2.14.18/NEWS.bz2=usr/share/doc/SUNWgnome-component/ORBit2-2.14.18/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/ORBit2-2.14.18/README=usr/share/doc/SUNWgnome-component/ORBit2-2.14.18/README 0444 root bin
+f none share/doc/SUNWgnome-component/libIDL-0.8.14/AUTHORS=usr/share/doc/SUNWgnome-component/libIDL-0.8.14/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-component/libIDL-0.8.14/COPYING.bz2=usr/share/doc/SUNWgnome-component/libIDL-0.8.14/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/libIDL-0.8.14/ChangeLog.bz2=usr/share/doc/SUNWgnome-component/libIDL-0.8.14/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/libIDL-0.8.14/NEWS.bz2=usr/share/doc/SUNWgnome-component/libIDL-0.8.14/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/libIDL-0.8.14/README=usr/share/doc/SUNWgnome-component/libIDL-0.8.14/README 0444 root bin
+f none share/doc/SUNWgnome-component/libbonobo-2.24.3/AUTHORS=usr/share/doc/SUNWgnome-component/libbonobo-2.24.3/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-component/libbonobo-2.24.3/COPYING.bz2=usr/share/doc/SUNWgnome-component/libbonobo-2.24.3/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/libbonobo-2.24.3/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-component/libbonobo-2.24.3/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/libbonobo-2.24.3/ChangeLog.bz2=usr/share/doc/SUNWgnome-component/libbonobo-2.24.3/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/libbonobo-2.24.3/NEWS.bz2=usr/share/doc/SUNWgnome-component/libbonobo-2.24.3/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-component/libbonobo-2.24.3/README=usr/share/doc/SUNWgnome-component/libbonobo-2.24.3/README 0444 root bin
+d none bin 0755 root bin
+f none bin/activation-client=usr/bin/activation-client 0755 root bin
+d none bin/amd64 0755 root bin
+f none bin/amd64/activation-client=usr/bin/amd64/activation-client 0755 root bin
+f none bin/amd64/bonobo-activation-run-query=usr/bin/amd64/bonobo-activation-run-query 0755 root bin
+f none bin/amd64/echo-client-2=usr/bin/amd64/echo-client-2 0755 root bin
+f none bin/amd64/ior-decode-2=usr/bin/amd64/ior-decode-2 0755 root bin
+f none bin/amd64/linc-cleanup-sockets=usr/bin/amd64/linc-cleanup-sockets 0755 root bin
+f none bin/amd64/typelib-dump=usr/bin/amd64/typelib-dump 0755 root bin
+f none bin/bonobo-activation-run-query=usr/bin/bonobo-activation-run-query 0755 root bin
+f none bin/bonobo-slay=usr/bin/bonobo-slay 0755 root bin
+f none bin/echo-client-2=usr/bin/echo-client-2 0755 root bin
+f none bin/ior-decode-2=usr/bin/ior-decode-2 0755 root bin
+f none bin/linc-cleanup-sockets=usr/bin/linc-cleanup-sockets 0755 root bin
+f none bin/typelib-dump=usr/bin/typelib-dump 0755 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/bonobo 0755 root bin
+d none lib/amd64/bonobo-2.0 0755 root bin
+d none lib/amd64/bonobo-2.0/samples 0755 root bin
+f none lib/amd64/bonobo-2.0/samples/bonobo-echo-2=usr/lib/amd64/bonobo-2.0/samples/bonobo-echo-2 0755 root bin
+d none lib/amd64/bonobo/monikers 0755 root bin
+f none lib/amd64/bonobo/monikers/libmoniker_std_2.so=usr/lib/amd64/bonobo/monikers/libmoniker_std_2.so 0755 root bin
+d none lib/amd64/bonobo/servers 0755 root bin
+f none lib/amd64/bonobo/servers/Bonobo_CosNaming_NamingContext.server=usr/lib/amd64/bonobo/servers/Bonobo_CosNaming_NamingContext.server 0644 root bin
+f none lib/amd64/bonobo/servers/Bonobo_Moniker_std.server=usr/lib/amd64/bonobo/servers/Bonobo_Moniker_std.server 0644 root bin
+f none lib/amd64/bonobo/servers/Bonobo_Sample_Echo.server=usr/lib/amd64/bonobo/servers/Bonobo_Sample_Echo.server 0644 root bin
+s none lib/amd64/libIDL-2.so=libIDL-2.so.0.0.0
+s none lib/amd64/libIDL-2.so.0=libIDL-2.so.0.0.0
+f none lib/amd64/libIDL-2.so.0.0.0=usr/lib/amd64/libIDL-2.so.0.0.0 0755 root bin
+s none lib/amd64/libORBit-2.so=libORBit-2.so.0.1.0
+s none lib/amd64/libORBit-2.so.0=libORBit-2.so.0.1.0
+f none lib/amd64/libORBit-2.so.0.1.0=usr/lib/amd64/libORBit-2.so.0.1.0 0755 root bin
+s none lib/amd64/libORBit-imodule-2.so=libORBit-imodule-2.so.0.0.0
+s none lib/amd64/libORBit-imodule-2.so.0=libORBit-imodule-2.so.0.0.0
+f none lib/amd64/libORBit-imodule-2.so.0.0.0=usr/lib/amd64/libORBit-imodule-2.so.0.0.0 0755 root bin
+s none lib/amd64/libORBitCosNaming-2.so=libORBitCosNaming-2.so.0.1.0
+s none lib/amd64/libORBitCosNaming-2.so.0=libORBitCosNaming-2.so.0.1.0
+f none lib/amd64/libORBitCosNaming-2.so.0.1.0=usr/lib/amd64/libORBitCosNaming-2.so.0.1.0 0755 root bin
+s none lib/amd64/libbonobo-2.so=libbonobo-2.so.0.0.0
+s none lib/amd64/libbonobo-2.so.0=libbonobo-2.so.0.0.0
+f none lib/amd64/libbonobo-2.so.0.0.0=usr/lib/amd64/libbonobo-2.so.0.0.0 0755 root bin
+s none lib/amd64/libbonobo-activation.so=libbonobo-activation.so.4.0.0
+s none lib/amd64/libbonobo-activation.so.4=libbonobo-activation.so.4.0.0
+f none lib/amd64/libbonobo-activation.so.4.0.0=usr/lib/amd64/libbonobo-activation.so.4.0.0 0755 root bin
+d none lib/amd64/orbit-2.0 0755 root bin
+f none lib/amd64/orbit-2.0/Bonobo_module.so=usr/lib/amd64/orbit-2.0/Bonobo_module.so 0755 root bin
+f none lib/amd64/orbit-2.0/Everything_module.so=usr/lib/amd64/orbit-2.0/Everything_module.so 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo-2.0 0755 root bin
+d none lib/bonobo-2.0/samples 0755 root bin
+f none lib/bonobo-2.0/samples/bonobo-echo-2=usr/lib/bonobo-2.0/samples/bonobo-echo-2 0755 root bin
+f none lib/bonobo-activation-server=usr/lib/bonobo-activation-server 0755 root bin
+d none lib/bonobo/monikers 0755 root bin
+f none lib/bonobo/monikers/libmoniker_std_2.so=usr/lib/bonobo/monikers/libmoniker_std_2.so 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/Bonobo_CosNaming_NamingContext.server=usr/lib/bonobo/servers/Bonobo_CosNaming_NamingContext.server 0644 root bin
+f none lib/bonobo/servers/Bonobo_Moniker_std.server=usr/lib/bonobo/servers/Bonobo_Moniker_std.server 0644 root bin
+f none lib/bonobo/servers/Bonobo_Sample_Echo.server=usr/lib/bonobo/servers/Bonobo_Sample_Echo.server 0644 root bin
+s none lib/libIDL-2.so=libIDL-2.so.0.0.0
+s none lib/libIDL-2.so.0=libIDL-2.so.0.0.0
+f none lib/libIDL-2.so.0.0.0=usr/lib/libIDL-2.so.0.0.0 0755 root bin
+s none lib/libORBit-2.so=libORBit-2.so.0.1.0
+s none lib/libORBit-2.so.0=libORBit-2.so.0.1.0
+f none lib/libORBit-2.so.0.1.0=usr/lib/libORBit-2.so.0.1.0 0755 root bin
+s none lib/libORBit-imodule-2.so=libORBit-imodule-2.so.0.0.0
+s none lib/libORBit-imodule-2.so.0=libORBit-imodule-2.so.0.0.0
+f none lib/libORBit-imodule-2.so.0.0.0=usr/lib/libORBit-imodule-2.so.0.0.0 0755 root bin
+s none lib/libORBitCosNaming-2.so=libORBitCosNaming-2.so.0.1.0
+s none lib/libORBitCosNaming-2.so.0=libORBitCosNaming-2.so.0.1.0
+f none lib/libORBitCosNaming-2.so.0.1.0=usr/lib/libORBitCosNaming-2.so.0.1.0 0755 root bin
+s none lib/libbonobo-2.so=libbonobo-2.so.0.0.0
+s none lib/libbonobo-2.so.0=libbonobo-2.so.0.0.0
+f none lib/libbonobo-2.so.0.0.0=usr/lib/libbonobo-2.so.0.0.0 0755 root bin
+s none lib/libbonobo-activation.so=libbonobo-activation.so.4.0.0
+s none lib/libbonobo-activation.so.4=libbonobo-activation.so.4.0.0
+f none lib/libbonobo-activation.so.4.0.0=usr/lib/libbonobo-activation.so.4.0.0 0755 root bin
+d none lib/orbit-2.0 0755 root bin
+f none lib/orbit-2.0/Bonobo_module.so=usr/lib/orbit-2.0/Bonobo_module.so 0755 root bin
+f none lib/orbit-2.0/Everything_module.so=usr/lib/orbit-2.0/Everything_module.so 0755 root bin
+d none sbin 0755 root bin
+d none sbin/amd64 0755 root bin
+f none sbin/amd64/bonobo-activation-sysconf=usr/sbin/amd64/bonobo-activation-sysconf 0755 root bin
+f none sbin/bonobo-activation-sysconf=usr/sbin/bonobo-activation-sysconf 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-component 0755 root bin
+d none share/doc/SUNWgnome-component/ORBit2-2.14.18 0755 root bin
+d none share/doc/SUNWgnome-component/libIDL-0.8.14 0755 root bin
+d none share/doc/SUNWgnome-component/libbonobo-2.24.3 0755 root bin

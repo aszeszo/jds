@@ -1,0 +1,26 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpilot-link.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpilot-link.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpilot-link.copyright
+f none share/doc/SUNWpilot-link/COPYING.bz2=usr/share/doc/SUNWpilot-link/COPYING.bz2 0444 root bin
+f none share/doc/SUNWpilot-link/COPYING.LIB.bz2=usr/share/doc/SUNWpilot-link/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWpilot-link/ChangeLog.bz2=usr/share/doc/SUNWpilot-link/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWpilot-link/NEWS.bz2=usr/share/doc/SUNWpilot-link/NEWS.bz2 0444 root bin
+f none share/doc/SUNWpilot-link/README.bz2=usr/share/doc/SUNWpilot-link/README.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/pilot-xfer=usr/bin/pilot-xfer 0755 root bin
+d none lib 0755 root bin
+s none lib/libpisock.so=libpisock.so.9.0.2
+s none lib/libpisock.so.9=libpisock.so.9.0.2
+f none lib/libpisock.so.9.0.2=usr/lib/libpisock.so.9.0.2 0755 root bin
+s none lib/libpisync.so=libpisync.so.1.0.3
+s none lib/libpisync.so.1=libpisync.so.1.0.3
+f none lib/libpisync.so.1.0.3=usr/lib/libpisync.so.1.0.3 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWpilot-link 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/pilot-xfer.1=usr/share/man/man1/pilot-xfer.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libpisock.3=usr/share/man/man3/libpisock.3 0644 root bin
+f none share/man/man3/libpisync.3=usr/share/man/man3/libpisync.3 0644 root bin

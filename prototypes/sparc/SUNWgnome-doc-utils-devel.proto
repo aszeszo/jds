@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-doc-utils-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-doc-utils-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-doc-utils-devel.copyright
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-doc-utils.pc=usr/lib/pkgconfig/gnome-doc-utils.pc 0644 root bin
+f none lib/pkgconfig/xml2po.pc=usr/lib/pkgconfig/xml2po.pc 0644 root bin
+d none share 0755 root sys
+d none share/aclocal 0755 root other
+f none share/aclocal/gnome-doc-utils.m4=usr/share/aclocal/gnome-doc-utils.m4 0644 root bin

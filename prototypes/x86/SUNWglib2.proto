@@ -1,0 +1,82 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWglib2.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWglib2.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWglib2.copyright
+f none share/doc/SUNWglib2/glib-2.25.1/AUTHORS=usr/share/doc/SUNWglib2/glib-2.25.1/AUTHORS 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/COPYING.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-1-2.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-1-2.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-0.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-0.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-10.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-10.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-12.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-12.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-14.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-14.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-2.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-2.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-4.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-4.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-6.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-6.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-8.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/ChangeLog.pre-2-8.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/NEWS.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/README=usr/share/doc/SUNWglib2/glib-2.25.1/README 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/gio/ChangeLog.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/gio/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/gmodule/ChangeLog.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/gmodule/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/gobject/ChangeLog.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/gobject/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/gthread/ChangeLog.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/gthread/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWglib2/glib-2.25.1/po/ChangeLog.bz2=usr/share/doc/SUNWglib2/glib-2.25.1/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+d none bin/amd64 0755 root bin
+f none bin/amd64/gio-querymodules=usr/bin/amd64/gio-querymodules 0755 root bin
+f none bin/amd64/gschema-compile=usr/bin/amd64/gschema-compile 0755 root bin
+f none bin/amd64/gsettings-schema-convert=usr/bin/amd64/gsettings-schema-convert 0755 root bin
+f none bin/amd64/gtester=usr/bin/amd64/gtester 0755 root bin
+f none bin/amd64/gtester-report=usr/bin/amd64/gtester-report 0644 root bin
+f none bin/gio-querymodules=usr/bin/gio-querymodules 0755 root bin
+f none bin/gschema-compile=usr/bin/gschema-compile 0755 root bin
+f none bin/gsettings-schema-convert=usr/bin/gsettings-schema-convert 0755 root bin
+f none bin/gtester=usr/bin/gtester 0755 root bin
+f none bin/gtester-report=usr/bin/gtester-report 0644 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+f none lib/amd64/charset.alias=usr/lib/amd64/charset.alias 0644 root bin
+s none lib/amd64/libgio-2.0.so=libgio-2.0.so.0.2501.0
+s none lib/amd64/libgio-2.0.so.0=libgio-2.0.so.0.2501.0
+f none lib/amd64/libgio-2.0.so.0.2501.0=usr/lib/amd64/libgio-2.0.so.0.2501.0 0755 root bin
+s none lib/amd64/libglib-2.0.so=libglib-2.0.so.0.2501.0
+s none lib/amd64/libglib-2.0.so.0=libglib-2.0.so.0.2501.0
+f none lib/amd64/libglib-2.0.so.0.2501.0=usr/lib/amd64/libglib-2.0.so.0.2501.0 0755 root bin
+s none lib/amd64/libgmodule-2.0.so=libgmodule-2.0.so.0.2501.0
+s none lib/amd64/libgmodule-2.0.so.0=libgmodule-2.0.so.0.2501.0
+f none lib/amd64/libgmodule-2.0.so.0.2501.0=usr/lib/amd64/libgmodule-2.0.so.0.2501.0 0755 root bin
+s none lib/amd64/libgobject-2.0.so=libgobject-2.0.so.0.2501.0
+s none lib/amd64/libgobject-2.0.so.0=libgobject-2.0.so.0.2501.0
+f none lib/amd64/libgobject-2.0.so.0.2501.0=usr/lib/amd64/libgobject-2.0.so.0.2501.0 0755 root bin
+s none lib/amd64/libgthread-2.0.so=libgthread-2.0.so.0.2501.0
+s none lib/amd64/libgthread-2.0.so.0=libgthread-2.0.so.0.2501.0
+f none lib/amd64/libgthread-2.0.so.0.2501.0=usr/lib/amd64/libgthread-2.0.so.0.2501.0 0755 root bin
+f none lib/charset.alias=usr/lib/charset.alias 0644 root bin
+s none lib/libgio-2.0.so=libgio-2.0.so.0.2501.0
+s none lib/libgio-2.0.so.0=libgio-2.0.so.0.2501.0
+f none lib/libgio-2.0.so.0.2501.0=usr/lib/libgio-2.0.so.0.2501.0 0755 root bin
+s none lib/libglib-2.0.so=libglib-2.0.so.0.2501.0
+s none lib/libglib-2.0.so.0=libglib-2.0.so.0.2501.0
+f none lib/libglib-2.0.so.0.2501.0=usr/lib/libglib-2.0.so.0.2501.0 0755 root bin
+s none lib/libgmodule-2.0.so=libgmodule-2.0.so.0.2501.0
+s none lib/libgmodule-2.0.so.0=libgmodule-2.0.so.0.2501.0
+f none lib/libgmodule-2.0.so.0.2501.0=usr/lib/libgmodule-2.0.so.0.2501.0 0755 root bin
+s none lib/libgobject-2.0.so=libgobject-2.0.so.0.2501.0
+s none lib/libgobject-2.0.so.0=libgobject-2.0.so.0.2501.0
+f none lib/libgobject-2.0.so.0.2501.0=usr/lib/libgobject-2.0.so.0.2501.0 0755 root bin
+s none lib/libgthread-2.0.so=libgthread-2.0.so.0.2501.0
+s none lib/libgthread-2.0.so.0=libgthread-2.0.so.0.2501.0
+f none lib/libgthread-2.0.so.0.2501.0=usr/lib/libgthread-2.0.so.0.2501.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWglib2 0755 root bin
+d none share/doc/SUNWglib2/glib-2.25.1 0755 root bin
+d none share/doc/SUNWglib2/glib-2.25.1/gio 0755 root bin
+d none share/doc/SUNWglib2/glib-2.25.1/gmodule 0755 root bin
+d none share/doc/SUNWglib2/glib-2.25.1/gobject 0755 root bin
+d none share/doc/SUNWglib2/glib-2.25.1/gthread 0755 root bin
+d none share/doc/SUNWglib2/glib-2.25.1/po 0755 root bin
+d none share/man 0755 root bin
+d none share/man/entities 0755 root bin
+f none share/man/entities/gnomecommon.ent=usr/share/man/entities/gnomecommon.ent 0644 root bin
+d none share/man/man5 0755 root bin
+f none share/man/man5/gnome-interfaces.5=usr/share/man/man5/gnome-interfaces.5 0644 root bin

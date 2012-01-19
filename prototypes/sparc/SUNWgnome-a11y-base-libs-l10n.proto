@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-base-libs-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-base-libs-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-base-libs-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other

@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-sound-recorder-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-sound-recorder-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-sound-recorder-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gnome-sound-recorder.schemas=etc/gconf/schemas/gnome-sound-recorder.schemas 0644 root sys

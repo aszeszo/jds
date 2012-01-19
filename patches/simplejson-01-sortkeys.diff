@@ -1,0 +1,146 @@
+# HG changeset patch
+# User Antoine Pitrou <solipsis@pitrou.net>
+# Date 1288889688 -3600
+# Branch trunk
+# Node ID ac61b03c19573cf0ebc27859ec48eddd276a7219
+# Parent  2cbf5e82b45ed5b95b2075c6bd7fe813bb306974
+Support the sort_keys option in C encoding speedups.
+It is a backport of CPython 3.x from SVN r72963, r72964, r86169.
+
+diff -r 2cbf5e82b45e -r ac61b03c1957 simplejson/_speedups.c
+--- a/simplejson/_speedups.c	Mon Nov 01 10:35:26 2010 +0100
++++ b/simplejson/_speedups.c	Thu Nov 04 17:54:48 2010 +0100
+@@ -2185,9 +2185,9 @@
+     static PyObject *iteritems = NULL;
+     PyObject *kstr = NULL;
+     PyObject *ident = NULL;
+-    PyObject *key, *value;
+     PyObject *iter = NULL;
+     PyObject *item = NULL;
++    PyObject *items = NULL;
+     PyObject *encoded = NULL;
+     int skipkeys;
+     Py_ssize_t idx;
+@@ -2232,22 +2232,61 @@
+         */
+     }
+ 
+-    /* TODO: C speedup not implemented for sort_keys */
++    if (PyObject_IsTrue(s->sort_keys)) {
++        /* First sort the keys then replace them with (key, value) tuples. */
++        Py_ssize_t i, nitems;
++        if (PyDict_CheckExact(dct))
++            items = PyDict_Keys(dct);
++        else
++            items = PyMapping_Keys(dct);
++        if (items == NULL)
++            goto bail;
++        if (!PyList_Check(items)) {
++            PyErr_SetString(PyExc_ValueError, "keys must return list");
++            goto bail;
++        }
++        if (PyList_Sort(items) < 0)
++            goto bail;
++        nitems = PyList_GET_SIZE(items);
++        for (i = 0; i < nitems; i++) {
++            PyObject *key, *value;
++            key = PyList_GET_ITEM(items, i);
++            value = PyDict_GetItem(dct, key);
++            item = PyTuple_Pack(2, key, value);
++            if (item == NULL)
++                goto bail;
++            PyList_SET_ITEM(items, i, item);
++            Py_DECREF(key);
++        }
++    }
++    else {
++        if (PyDict_CheckExact(dct))
++            items = PyDict_Items(dct);
++        else
++            items = PyMapping_Items(dct);
++    }
++    if (items == NULL)
++        goto bail;
++    iter = PyObject_GetIter(items);
++    Py_DECREF(items);
++    if (iter == NULL)
++        goto bail;
+ 
+     skipkeys = PyObject_IsTrue(s->skipkeys);
+     idx = 0;
+-    iter = PyObject_CallMethodObjArgs(dct, iteritems, NULL);
+-    if (iter == NULL)
+-        goto bail;
+     while ((item = PyIter_Next(iter))) {
+-
+-        key = PyTuple_GetItem(item, 0);
++        PyObject *encoded, *key, *value;
++        if (!PyTuple_Check(item) || Py_SIZE(item) != 2) {
++            PyErr_SetString(PyExc_ValueError, "items must return 2-tuples");
++            goto bail;
++        }
++        key = PyTuple_GET_ITEM(item, 0);
+         if (key == NULL)
+             goto bail;
+-        value = PyTuple_GetItem(item, 1);
++        value = PyTuple_GET_ITEM(item, 1);
+         if (value == NULL)
+             goto bail;
+-        
++
+         encoded = PyDict_GetItem(s->key_memo, key);
+         if (encoded != NULL) {
+             Py_INCREF(encoded);
+@@ -2261,13 +2300,15 @@
+             if (kstr == NULL)
+                 goto bail;
+         }
+-        else if (PyInt_Check(key) || PyLong_Check(key)) {
+-            kstr = PyObject_Str(key);
++        else if (key == Py_True || key == Py_False || key == Py_None) {
++            /* This must come before the PyInt_Check because
++               True and False are also 1 and 0.*/
++            kstr = _encoded_const(key);
+             if (kstr == NULL)
+                 goto bail;
+         }
+-        else if (key == Py_True || key == Py_False || key == Py_None) {
+-            kstr = _encoded_const(key);
++        else if (PyInt_Check(key) || PyLong_Check(key)) {
++            kstr = PyObject_Str(key);
+             if (kstr == NULL)
+                 goto bail;
+         }
+@@ -2326,7 +2367,7 @@
+ 
+ bail:
+     Py_XDECREF(encoded);
+-    Py_XDECREF(item);
++    Py_XDECREF(items);
+     Py_XDECREF(iter);
+     Py_XDECREF(kstr);
+     Py_XDECREF(ident);
+diff -r 2cbf5e82b45e -r ac61b03c1957 simplejson/encoder.py
+--- a/simplejson/encoder.py	Mon Nov 01 10:35:26 2010 +0100
++++ b/simplejson/encoder.py	Thu Nov 04 17:54:48 2010 +0100
+@@ -268,7 +268,7 @@
+ 
+         key_memo = {}
+         if (_one_shot and c_make_encoder is not None
+-                and self.indent is None and not self.sort_keys):
++                and self.indent is None):
+             _iterencode = c_make_encoder(
+                 markers, self.default, _encoder, self.indent,
+                 self.key_separator, self.item_separator, self.sort_keys,
+diff -r 2cbf5e82b45e -r ac61b03c1957 simplejson/tests/test_encode_basestring_ascii.py
+--- a/simplejson/tests/test_encode_basestring_ascii.py	Mon Nov 01 10:35:26 2010 +0100
++++ b/simplejson/tests/test_encode_basestring_ascii.py	Thu Nov 04 17:54:48 2010 +0100
+@@ -39,3 +39,8 @@
+             #        result, expect, fname, input_string))
+             self.assertEquals(result, expect,
+                 '%r != %r for %s(%r)' % (result, expect, fname, input_string))
++
++    def test_sorted_dict(self):
++        items = [('one', 1), ('two', 2), ('three', 3), ('four', 4), ('five', 5)]
++        s = simplejson.dumps(dict(items), sort_keys=True)
++        self.assertEqual(s, '{"five": 5, "four": 4, "one": 1, "three": 3, "two": 2}')

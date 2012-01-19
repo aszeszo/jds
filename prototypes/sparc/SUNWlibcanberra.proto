@@ -1,0 +1,80 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibcanberra.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibcanberra.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWlibcanberra.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibcanberra.copyright
+f none share/doc/SUNWlibcanberra/libcanberra-0.25/LGPL.bz2=usr/share/doc/SUNWlibcanberra/libcanberra-0.25/LGPL.bz2 0444 root bin
+f none share/doc/SUNWlibcanberra/libcanberra-0.25/README=usr/share/doc/SUNWlibcanberra/libcanberra-0.25/README 0444 root bin
+f none share/doc/SUNWlibcanberra/libcanberra-0.25/doc/README=usr/share/doc/SUNWlibcanberra/libcanberra-0.25/doc/README 0444 root bin
+d none bin 0755 root bin
+f none bin/canberra-gtk-play=usr/bin/canberra-gtk-play 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/canberra-gtk-play=usr/bin/sparcv9/canberra-gtk-play 0755 root bin
+d none lib 0755 root bin
+d none lib/gtk-2.0 0755 root bin
+d none lib/gtk-2.0/modules 0755 root bin
+f none lib/gtk-2.0/modules/libcanberra-gtk-module.so=usr/lib/gtk-2.0/modules/libcanberra-gtk-module.so 0755 root bin
+d none lib/libcanberra-0.25 0755 root bin
+f none lib/libcanberra-0.25/libcanberra-gstreamer.so=usr/lib/libcanberra-0.25/libcanberra-gstreamer.so 0755 root bin
+f none lib/libcanberra-0.25/libcanberra-multi.so=usr/lib/libcanberra-0.25/libcanberra-multi.so 0755 root bin
+f none lib/libcanberra-0.25/libcanberra-null.so=usr/lib/libcanberra-0.25/libcanberra-null.so 0755 root bin
+f none lib/libcanberra-0.25/libcanberra-oss.so=usr/lib/libcanberra-0.25/libcanberra-oss.so 0755 root bin
+s none lib/libcanberra-gtk.so=libcanberra-gtk.so.0.1.6
+s none lib/libcanberra-gtk.so.0=libcanberra-gtk.so.0.1.6
+f none lib/libcanberra-gtk.so.0.1.6=usr/lib/libcanberra-gtk.so.0.1.6 0755 root bin
+s none lib/libcanberra.so=libcanberra.so.0.2.4
+s none lib/libcanberra.so.0=libcanberra.so.0.2.4
+f none lib/libcanberra.so.0.2.4=usr/lib/libcanberra.so.0.2.4 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/gtk-2.0 0755 root bin
+d none lib/sparcv9/gtk-2.0/modules 0755 root bin
+f none lib/sparcv9/gtk-2.0/modules/libcanberra-gtk-module.so=usr/lib/sparcv9/gtk-2.0/modules/libcanberra-gtk-module.so 0755 root bin
+d none lib/sparcv9/libcanberra-0.25 0755 root bin
+f none lib/sparcv9/libcanberra-0.25/libcanberra-gstreamer.so=usr/lib/sparcv9/libcanberra-0.25/libcanberra-gstreamer.so 0755 root bin
+f none lib/sparcv9/libcanberra-0.25/libcanberra-multi.so=usr/lib/sparcv9/libcanberra-0.25/libcanberra-multi.so 0755 root bin
+f none lib/sparcv9/libcanberra-0.25/libcanberra-null.so=usr/lib/sparcv9/libcanberra-0.25/libcanberra-null.so 0755 root bin
+f none lib/sparcv9/libcanberra-0.25/libcanberra-oss.so=usr/lib/sparcv9/libcanberra-0.25/libcanberra-oss.so 0755 root bin
+s none lib/sparcv9/libcanberra-gtk.so=libcanberra-gtk.so.0.1.6
+s none lib/sparcv9/libcanberra-gtk.so.0=libcanberra-gtk.so.0.1.6
+f none lib/sparcv9/libcanberra-gtk.so.0.1.6=usr/lib/sparcv9/libcanberra-gtk.so.0.1.6 0755 root bin
+s none lib/sparcv9/libcanberra.so=libcanberra.so.0.2.4
+s none lib/sparcv9/libcanberra.so.0=libcanberra.so.0.2.4
+f none lib/sparcv9/libcanberra.so.0.2.4=usr/lib/sparcv9/libcanberra.so.0.2.4 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibcanberra 0755 root bin
+d none share/doc/SUNWlibcanberra/libcanberra-0.25 0755 root bin
+d none share/doc/SUNWlibcanberra/libcanberra-0.25/doc 0755 root bin
+d none share/gdm 0755 root bin
+d none share/gdm/autostart 0755 root bin
+d none share/gdm/autostart/LoginWindow 0755 root bin
+f none share/gdm/autostart/LoginWindow/libcanberra-ready-sound.desktop=usr/share/gdm/autostart/LoginWindow/libcanberra-ready-sound.desktop 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/autostart 0755 root bin
+f none share/gnome/autostart/libcanberra-login-sound.desktop=usr/share/gnome/autostart/libcanberra-login-sound.desktop 0644 root bin
+d none share/gnome/shutdown 0755 root bin
+f none share/gnome/shutdown/libcanberra-logout-sound.sh=usr/share/gnome/shutdown/libcanberra-logout-sound.sh 0755 root bin
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/libcanberra 0755 root bin
+f none share/gtk-doc/html/libcanberra/ch01.html=usr/share/gtk-doc/html/libcanberra/ch01.html 0644 root bin
+f none share/gtk-doc/html/libcanberra/home.png=usr/share/gtk-doc/html/libcanberra/home.png 0644 root bin
+f none share/gtk-doc/html/libcanberra/index.html=usr/share/gtk-doc/html/libcanberra/index.html 0644 root bin
+f none share/gtk-doc/html/libcanberra/index.sgml=usr/share/gtk-doc/html/libcanberra/index.sgml 0644 root bin
+f none share/gtk-doc/html/libcanberra/left.png=usr/share/gtk-doc/html/libcanberra/left.png 0644 root bin
+f none share/gtk-doc/html/libcanberra/libcanberra-canberra-gtk.html=usr/share/gtk-doc/html/libcanberra/libcanberra-canberra-gtk.html 0644 root bin
+f none share/gtk-doc/html/libcanberra/libcanberra-canberra.html=usr/share/gtk-doc/html/libcanberra/libcanberra-canberra.html 0644 root bin
+f none share/gtk-doc/html/libcanberra/libcanberra.devhelp=usr/share/gtk-doc/html/libcanberra/libcanberra.devhelp 0644 root bin
+f none share/gtk-doc/html/libcanberra/libcanberra.devhelp2=usr/share/gtk-doc/html/libcanberra/libcanberra.devhelp2 0644 root bin
+f none share/gtk-doc/html/libcanberra/right.png=usr/share/gtk-doc/html/libcanberra/right.png 0644 root bin
+f none share/gtk-doc/html/libcanberra/style.css=usr/share/gtk-doc/html/libcanberra/style.css 0644 root bin
+f none share/gtk-doc/html/libcanberra/up.png=usr/share/gtk-doc/html/libcanberra/up.png 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/canberra-gtk-play.1=usr/share/man/man1/canberra-gtk-play.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libcanberra-gtk.3=usr/share/man/man3/libcanberra-gtk.3 0644 root bin
+f none share/man/man3/libcanberra.3=usr/share/man/man3/libcanberra.3 0644 root bin
+d none share/vala 0755 root bin
+d none share/vala/vapi 0755 root bin
+f none share/vala/vapi/libcanberra-gtk.vapi=usr/share/vala/vapi/libcanberra-gtk.vapi 0644 root bin
+f none share/vala/vapi/libcanberra.vapi=usr/share/vala/vapi/libcanberra.vapi 0644 root bin

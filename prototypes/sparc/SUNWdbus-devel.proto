@@ -1,0 +1,36 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdbus-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdbus-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdbus-devel.copyright
+d none include 0755 root bin
+d none include/dbus-1.0 0755 root bin
+d none include/dbus-1.0/dbus 0755 root bin
+f none include/dbus-1.0/dbus/dbus-address.h=usr/include/dbus-1.0/dbus/dbus-address.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-bus.h=usr/include/dbus-1.0/dbus/dbus-bus.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-connection.h=usr/include/dbus-1.0/dbus/dbus-connection.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-errors.h=usr/include/dbus-1.0/dbus/dbus-errors.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-macros.h=usr/include/dbus-1.0/dbus/dbus-macros.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-memory.h=usr/include/dbus-1.0/dbus/dbus-memory.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-message.h=usr/include/dbus-1.0/dbus/dbus-message.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-misc.h=usr/include/dbus-1.0/dbus/dbus-misc.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-pending-call.h=usr/include/dbus-1.0/dbus/dbus-pending-call.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-protocol.h=usr/include/dbus-1.0/dbus/dbus-protocol.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-server.h=usr/include/dbus-1.0/dbus/dbus-server.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-shared.h=usr/include/dbus-1.0/dbus/dbus-shared.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-signature.h=usr/include/dbus-1.0/dbus/dbus-signature.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-threads.h=usr/include/dbus-1.0/dbus/dbus-threads.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus-types.h=usr/include/dbus-1.0/dbus/dbus-types.h 0644 root bin
+f none include/dbus-1.0/dbus/dbus.h=usr/include/dbus-1.0/dbus/dbus.h 0644 root bin
+d none lib 0755 root bin
+d none lib/dbus-1.0 0755 root bin
+d none lib/dbus-1.0/include 0755 root bin
+d none lib/dbus-1.0/include/dbus 0755 root bin
+f none lib/dbus-1.0/include/dbus/dbus-arch-deps.h=usr/lib/dbus-1.0/include/dbus/dbus-arch-deps.h 0644 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/dbus-1.pc=usr/lib/pkgconfig/dbus-1.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/dbus-1.0 0755 root bin
+d none lib/sparcv9/dbus-1.0/include 0755 root bin
+d none lib/sparcv9/dbus-1.0/include/dbus 0755 root bin
+f none lib/sparcv9/dbus-1.0/include/dbus/dbus-arch-deps.h=usr/lib/sparcv9/dbus-1.0/include/dbus/dbus-arch-deps.h 0644 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/dbus-1.pc=usr/lib/sparcv9/pkgconfig/dbus-1.pc 0644 root bin

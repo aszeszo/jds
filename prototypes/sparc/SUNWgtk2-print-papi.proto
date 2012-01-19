@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk2-print-papi.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk2-print-papi.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk2-print-papi.copyright
+d none lib 0755 root bin
+d none lib/gtk-2.0 0755 root bin
+d none lib/gtk-2.0/2.10.0 0755 root bin
+d none lib/gtk-2.0/2.10.0/printbackends 0755 root bin
+f none lib/gtk-2.0/2.10.0/printbackends/libprintbackend-papi.so=usr/lib/gtk-2.0/2.10.0/printbackends/libprintbackend-papi.so 0755 root bin

@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdcraw.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdcraw.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdcraw.copyright
+d none bin 0755 root bin
+f none bin/dcraw=usr/bin/dcraw 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/dcraw.1=usr/share/man/man1/dcraw.1 0444 root bin

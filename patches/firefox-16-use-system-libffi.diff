@@ -1,0 +1,87 @@
+diff --git a/js/src/Makefile.in b/js/src/Makefile.in
+index b719c30..410ec63 100644
+--- a/js/src/Makefile.in
++++ b/js/src/Makefile.in
+@@ -463,7 +463,7 @@
+     $(NULL)
+ 
+ LOCAL_INCLUDES = \
+-    -Ictypes/libffi/include \
++    `pkg-config --cflags libffi` \
+     -I. \
+     $(NULL)
+ 
+@@ -472,9 +472,7 @@
+     ctypes/libffi/.libs/ffi.a \
+     $(NULL)
+ else
+-SHARED_LIBRARY_LIBS += \
+-    ctypes/libffi/.libs/libffi.$(LIB_SUFFIX) \
+-    $(NULL)
++OS_LIBS += `pkg-config --libs libffi`
+ endif
+ 
+ endif # JS_HAS_CTYPES
+@@ -557,11 +555,11 @@
+ ifdef JS_HAS_CTYPES
+ # Build libffi proper as part of the 'exports' target, so things get built
+ # in the right order.
+-export::
+-		$(call SUBMAKE,,ctypes/libffi)
++# export::
++#		$(call SUBMAKE,,ctypes/libffi)
+ 
+-distclean clean::
+-		$(call SUBMAKE,$@,ctypes/libffi)
++# distclean clean::
++#		$(call SUBMAKE,$@,ctypes/libffi)
+ endif
+ 
+ # Because the SpiderMonkey can be distributed and built independently
+diff --git a/js/src/configure b/js/src/configure
+index 03fe471..0e98daf 100755
+--- a/js/src/configure
++++ b/js/src/configure
+@@ -16243,6 +16243,8 @@ fi
+ echo "$ac_t""invoking make to create js-config script" 1>&6
+ $GMAKE js-config
+ 
++# Build against system libffi
++if test false = true ; then
+ # Build jsctypes if it's enabled.
+ if test "$JS_HAS_CTYPES"; then
+   # Run the libffi 'configure' script.
+@@ -16423,4 +16425,4 @@ fi
+   ac_configure_args="$_SUBDIR_CONFIG_ARGS"
+   CONFIG_FILES=$old_config_files
+ fi
+-
++fi
+diff --git a/toolkit/library/Makefile.in b/toolkit/library/Makefile.in
+index 420cb20..afdcb02 100644
+--- a/toolkit/library/Makefile.in
++++ b/toolkit/library/Makefile.in
+@@ -221,6 +221,10 @@
+ endif
+ endif
+ 
++ifeq ($(OS_ARCH),SunOS)
++EXTRA_DSO_LDOPTS += `pkg-config --libs libffi`
++endif
++
+ ifeq ($(OS_ARCH),WINNT)
+ OS_LIBS += $(call EXPAND_LIBNAME,shell32 ole32 uuid version winspool comdlg32 imm32 winmm wsock32 msimg32 shlwapi psapi ws2_32 dbghelp)
+ ifneq (,$(MOZ_DEBUG)$(NS_TRACE_MALLOC))
+diff --git a/js/src/shell/Makefile.in b/js/src/shell/Makefile.in
+index 058b3b2..d06e809 100644
+--- a/js/src/shell/Makefile.in
++++ b/js/src/shell/Makefile.in
+@@ -52,7 +52,7 @@ CPPSRCS		= \
+ 
+ DEFINES         += -DEXPORT_JS_API
+ 
+-LIBS      = $(NSPR_LIBS) $(EDITLINE_LIBS) $(DEPTH)/$(LIB_PREFIX)js_static.$(LIB_SUFFIX)
++LIBS      = $(NSPR_LIBS) $(EDITLINE_LIBS) $(DEPTH)/$(LIB_PREFIX)js_static.$(LIB_SUFFIX) `pkg-config --libs libffi`
+ 
+ LOCAL_INCLUDES += -I$(topsrcdir) -I..
+ 

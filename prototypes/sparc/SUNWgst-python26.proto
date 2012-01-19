@@ -1,0 +1,44 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgst-python26.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgst-python26.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgst-python26.copyright
+f none share/doc/SUNWgst-python26/AUTHORS=usr/share/doc/SUNWgst-python26/AUTHORS 0444 root bin
+f none share/doc/SUNWgst-python26/COPYING.bz2=usr/share/doc/SUNWgst-python26/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgst-python26/ChangeLog.bz2=usr/share/doc/SUNWgst-python26/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgst-python26/NEWS.bz2=usr/share/doc/SUNWgst-python26/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgst-python26/README=usr/share/doc/SUNWgst-python26/README 0444 root bin
+d none lib 0755 root bin
+d none lib/gstreamer-0.10 0755 root bin
+f none lib/gstreamer-0.10/libgstpython.so=usr/lib/gstreamer-0.10/libgstpython.so 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/gst-0.10 0755 root bin
+d none lib/python2.6/vendor-packages/gst-0.10/gst 0755 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/__init__.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/__init__.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/_gst.so=usr/lib/python2.6/vendor-packages/gst-0.10/gst/_gst.so 0755 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/audio.so=usr/lib/python2.6/vendor-packages/gst-0.10/gst/audio.so 0755 root bin
+d none lib/python2.6/vendor-packages/gst-0.10/gst/extend 0755 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/__init__.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/__init__.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/discoverer.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/discoverer.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/discoverer.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/discoverer.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/jukebox.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/jukebox.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/jukebox.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/jukebox.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/leveller.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/leveller.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/leveller.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/leveller.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/pygobject.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/pygobject.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/pygobject.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/pygobject.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/sources.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/sources.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/sources.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/sources.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/utils.py=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/utils.py 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/extend/utils.pyc=usr/lib/python2.6/vendor-packages/gst-0.10/gst/extend/utils.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/interfaces.so=usr/lib/python2.6/vendor-packages/gst-0.10/gst/interfaces.so 0755 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/pbutils.so=usr/lib/python2.6/vendor-packages/gst-0.10/gst/pbutils.so 0755 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/tag.so=usr/lib/python2.6/vendor-packages/gst-0.10/gst/tag.so 0755 root bin
+f none lib/python2.6/vendor-packages/gst-0.10/gst/video.so=usr/lib/python2.6/vendor-packages/gst-0.10/gst/video.so 0755 root bin
+f none lib/python2.6/vendor-packages/gstoption.so=usr/lib/python2.6/vendor-packages/gstoption.so 0755 root bin
+f none lib/python2.6/vendor-packages/pygst.pth=usr/lib/python2.6/vendor-packages/pygst.pth 0644 root bin
+f none lib/python2.6/vendor-packages/pygst.py=usr/lib/python2.6/vendor-packages/pygst.py 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgst-python26 0755 root bin

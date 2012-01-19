@@ -1,0 +1,194 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWimagick.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWimagick.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWimagick.copyright
+d none usr 0755 root sys
+d none usr/bin 0755 root bin
+f none usr/bin/animate=usr/bin/animate 0755 root bin
+f none usr/bin/compare=usr/bin/compare 0755 root bin
+f none usr/bin/composite=usr/bin/composite 0755 root bin
+f none usr/bin/conjure=usr/bin/conjure 0755 root bin
+f none usr/bin/convert=usr/bin/convert 0755 root bin
+f none usr/bin/display=usr/bin/display 0755 root bin
+f none usr/bin/identify=usr/bin/identify 0755 root bin
+f none usr/bin/import=usr/bin/import 0755 root bin
+f none usr/bin/mogrify=usr/bin/mogrify 0755 root bin
+f none usr/bin/montage=usr/bin/montage 0755 root bin
+f none usr/bin/stream=usr/bin/stream 0755 root bin
+d none usr/lib 0755 root bin
+d none usr/lib/ImageMagick-6.3.4 0755 root bin
+d none usr/lib/ImageMagick-6.3.4/config 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/config/colors.xml=usr/lib/ImageMagick-6.3.4/config/colors.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/configure.xml=usr/lib/ImageMagick-6.3.4/config/configure.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/delegates.xml=usr/lib/ImageMagick-6.3.4/config/delegates.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/english.xml=usr/lib/ImageMagick-6.3.4/config/english.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/locale.xml=usr/lib/ImageMagick-6.3.4/config/locale.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/type-ghostscript.xml=usr/lib/ImageMagick-6.3.4/config/type-ghostscript.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/type-solaris.xml=usr/lib/ImageMagick-6.3.4/config/type-solaris.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/type-windows.xml=usr/lib/ImageMagick-6.3.4/config/type-windows.xml 0644 root bin
+f none usr/lib/ImageMagick-6.3.4/config/type.xml=usr/lib/ImageMagick-6.3.4/config/type.xml 0644 root bin
+d none usr/lib/ImageMagick-6.3.4/modules-Q16 0755 root bin
+d none usr/lib/ImageMagick-6.3.4/modules-Q16/coders 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/art.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/art.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/avi.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/avi.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/avs.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/avs.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/bmp.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/bmp.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/caption.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/caption.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cin.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cin.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cip.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cip.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/clip.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/clip.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cmyk.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cmyk.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cut.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/cut.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dcm.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dcm.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dib.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dib.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dot.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dot.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dps.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dps.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dpx.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/dpx.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ept.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ept.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/exr.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/exr.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/fax.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/fax.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/fits.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/fits.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/gif.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/gif.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/gradient.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/gradient.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/gray.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/gray.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/histogram.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/histogram.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/html.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/html.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/icon.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/icon.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/info.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/info.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/jpeg.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/jpeg.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/label.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/label.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/magick.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/magick.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/map.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/map.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mat.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mat.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/matte.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/matte.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/meta.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/meta.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/miff.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/miff.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mono.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mono.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mpc.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mpc.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mpeg.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mpeg.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mpr.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mpr.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/msl.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/msl.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mtv.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mtv.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mvg.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/mvg.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/null.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/null.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/otb.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/otb.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/palm.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/palm.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pattern.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pattern.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pcd.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pcd.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pcl.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pcl.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pcx.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pcx.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pdb.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pdb.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pdf.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pdf.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pict.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pict.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pix.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pix.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/plasma.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/plasma.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/png.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/png.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pnm.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pnm.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/preview.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/preview.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ps.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ps.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ps2.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ps2.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ps3.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ps3.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/psd.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/psd.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pwp.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/pwp.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/raw.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/raw.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/rgb.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/rgb.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/rla.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/rla.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/rle.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/rle.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/scr.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/scr.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sct.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sct.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sfw.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sfw.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sgi.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sgi.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/stegano.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/stegano.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sun.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/sun.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/svg.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/svg.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tga.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tga.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/thumbnail.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/thumbnail.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tiff.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tiff.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tile.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tile.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tim.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/tim.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ttf.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ttf.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/txt.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/txt.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/uil.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/uil.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/url.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/url.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/uyvy.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/uyvy.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/vicar.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/vicar.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/vid.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/vid.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/viff.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/viff.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/wbmp.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/wbmp.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/wmf.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/wmf.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/wpg.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/wpg.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/x.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/x.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xbm.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xbm.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xc.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xc.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xcf.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xcf.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xpm.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xpm.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xwd.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/xwd.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ycbcr.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/ycbcr.so 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/coders/yuv.so=usr/lib/ImageMagick-6.3.4/modules-Q16/coders/yuv.so 0755 root bin
+d none usr/lib/ImageMagick-6.3.4/modules-Q16/filters 0755 root bin
+f none usr/lib/ImageMagick-6.3.4/modules-Q16/filters/analyze.so=usr/lib/ImageMagick-6.3.4/modules-Q16/filters/analyze.so 0755 root bin
+s none usr/lib/libMagick++.so=libMagick++.so.10.0.8
+s none usr/lib/libMagick++.so.10=libMagick++.so.10.0.8
+f none usr/lib/libMagick++.so.10.0.8=usr/lib/libMagick++.so.10.0.8 0755 root bin
+s none usr/lib/libMagick.so=libMagick.so.10.0.8
+s none usr/lib/libMagick.so.10=libMagick.so.10.0.8
+f none usr/lib/libMagick.so.10.0.8=usr/lib/libMagick.so.10.0.8 0755 root bin
+s none usr/lib/libWand.so=libWand.so.10.0.8
+s none usr/lib/libWand.so.10=libWand.so.10.0.8
+f none usr/lib/libWand.so.10.0.8=usr/lib/libWand.so.10.0.8 0755 root bin
+d none usr/perl5 0755 root bin
+d none usr/perl5/5.8.4 0755 root bin
+d none usr/perl5/5.8.4/man 0755 root bin
+d none usr/perl5/5.8.4/man/man3 0755 root bin
+f none usr/perl5/5.8.4/man/man3/Image::Magick.3=usr/perl5/5.8.4/man/man3/Image::Magick.3 0444 root bin
+d none usr/perl5/vendor_perl 0755 root bin
+d none usr/perl5/vendor_perl/5.8.4 0755 root bin
+d none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int 0755 root bin
+d none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Image 0755 root bin
+f none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Image/Magick.pm=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Image/Magick.pm 0444 root bin
+d none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto 0755 root bin
+d none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image 0755 root bin
+d none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick 0755 root bin
+f none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/.packlist=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/.packlist 0644 root bin
+f none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/Magick.bs=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/Magick.bs 0444 root bin
+f none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/Magick.so=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/Magick.so 0755 root bin
+f none usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/autosplit.ix=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Image/Magick/autosplit.ix 0444 root bin
+d none usr/sfw 0755 root bin
+d none usr/sfw/bin 0755 root bin
+s none usr/sfw/bin/animate=../../bin/animate
+s none usr/sfw/bin/composite=../../bin/composite
+s none usr/sfw/bin/conjure=../../bin/conjure
+s none usr/sfw/bin/convert=../../bin/convert
+s none usr/sfw/bin/display=../../bin/display
+s none usr/sfw/bin/identify=../../bin/identify
+s none usr/sfw/bin/import=../../bin/import
+s none usr/sfw/bin/mogrify=../../bin/mogrify
+s none usr/sfw/bin/motage=../../bin/motage
+d none usr/share 0755 root sys
+d none usr/share/ImageMagick-6.3.4 0755 root bin
+f none usr/share/ImageMagick-6.3.4/ChangeLog=usr/share/ImageMagick-6.3.4/ChangeLog 0644 root bin
+f none usr/share/ImageMagick-6.3.4/LICENSE=usr/share/ImageMagick-6.3.4/LICENSE 0644 root bin
+f none usr/share/ImageMagick-6.3.4/NEWS=usr/share/ImageMagick-6.3.4/NEWS 0644 root bin
+d none usr/share/ImageMagick-6.3.4/config 0755 root bin
+f none usr/share/ImageMagick-6.3.4/config/coder.xml=usr/share/ImageMagick-6.3.4/config/coder.xml 0644 root bin
+f none usr/share/ImageMagick-6.3.4/config/log.xml=usr/share/ImageMagick-6.3.4/config/log.xml 0644 root bin
+f none usr/share/ImageMagick-6.3.4/config/magic.xml=usr/share/ImageMagick-6.3.4/config/magic.xml 0644 root bin
+f none usr/share/ImageMagick-6.3.4/config/mime.xml=usr/share/ImageMagick-6.3.4/config/mime.xml 0644 root bin
+f none usr/share/ImageMagick-6.3.4/config/sRGB.icm=usr/share/ImageMagick-6.3.4/config/sRGB.icm 0644 root bin
+f none usr/share/ImageMagick-6.3.4/config/thresholds.xml=usr/share/ImageMagick-6.3.4/config/thresholds.xml 0644 root bin
+d none usr/share/man 0755 root bin
+d none usr/share/man/man1 0755 root bin
+f none usr/share/man/man1/ImageMagick.1=usr/share/man/man1/ImageMagick.1 0644 root bin
+f none usr/share/man/man1/Magick++-config.1=usr/share/man/man1/Magick++-config.1 0644 root bin
+f none usr/share/man/man1/Magick-config.1=usr/share/man/man1/Magick-config.1 0644 root bin
+f none usr/share/man/man1/Wand-config.1=usr/share/man/man1/Wand-config.1 0644 root bin
+f none usr/share/man/man1/animate.1=usr/share/man/man1/animate.1 0644 root bin
+f none usr/share/man/man1/compare.1=usr/share/man/man1/compare.1 0644 root bin
+f none usr/share/man/man1/composite.1=usr/share/man/man1/composite.1 0644 root bin
+f none usr/share/man/man1/conjure.1=usr/share/man/man1/conjure.1 0644 root bin
+f none usr/share/man/man1/convert.1=usr/share/man/man1/convert.1 0644 root bin
+f none usr/share/man/man1/display.1=usr/share/man/man1/display.1 0644 root bin
+f none usr/share/man/man1/identify.1=usr/share/man/man1/identify.1 0644 root bin
+f none usr/share/man/man1/import.1=usr/share/man/man1/import.1 0644 root bin
+f none usr/share/man/man1/mogrify.1=usr/share/man/man1/mogrify.1 0644 root bin
+f none usr/share/man/man1/montage.1=usr/share/man/man1/montage.1 0644 root bin
+f none usr/share/man/man1/stream.1=usr/share/man/man1/stream.1 0644 root bin

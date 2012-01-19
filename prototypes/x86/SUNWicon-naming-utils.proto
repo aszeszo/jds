@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWicon-naming-utils.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWicon-naming-utils.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWicon-naming-utils.copyright
+f none share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/AUTHORS=usr/share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/AUTHORS 0444 root bin
+f none share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/COPYING.bz2=usr/share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/COPYING.bz2 0444 root bin
+f none share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/ChangeLog.bz2=usr/share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/NEWS.bz2=usr/share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/NEWS.bz2 0444 root bin
+f none share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/README=usr/share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90/README 0444 root bin
+d none lib 0755 root bin
+f none lib/icon-name-mapping=usr/lib/icon-name-mapping 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWicon-naming-utils 0755 root bin
+d none share/doc/SUNWicon-naming-utils/icon-naming-utils-0.8.90 0755 root bin
+d none share/dtds 0755 root bin
+f none share/dtds/legacy-icon-mapping.dtd=usr/share/dtds/legacy-icon-mapping.dtd 0644 root bin
+d none share/icon-naming-utils 0755 root bin
+f none share/icon-naming-utils/legacy-icon-mapping.xml=usr/share/icon-naming-utils/legacy-icon-mapping.xml 0644 root bin
+d none share/pkgconfig 0755 root bin
+f none share/pkgconfig/icon-naming-utils.pc=usr/share/pkgconfig/icon-naming-utils.pc 0644 root bin

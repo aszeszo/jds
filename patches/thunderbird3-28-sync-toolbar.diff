@@ -1,0 +1,110 @@
+diff -r 77f7d8c11ea7 mail/base/content/mailCore.js
+--- a/mail/base/content/mailCore.js	Tue Dec 29 05:27:57 2009 +0100
++++ b/mail/base/content/mailCore.js	Thu Dec 31 13:07:59 2009 +0800
+@@ -137,16 +137,85 @@ function CustomizeMailToolbar(toolboxId,
+     wintype = wintype.replace(/:/g, "");
+ 
+     window.openDialog(customizeURL,
+                       "CustomizeToolbar"+wintype,
+                       "chrome,all,dependent", toolbox);
+   }
+ }
+ 
++var MailToolbarObserver = {
++   observe: function(subject,topic,data) {
++     if ( topic != "mail:updateToolbarItems")
++       return;
++
++     var current_toolbarset_ids,original_toolbarset_ids,item;
++
++     current_toolbarset_ids = this.toolbar.currentSet.split(",");
++     original_toolbarset_ids= this.original_toolbarset.split(",");
++
++
++     // Only need to update new toolbar items
++     for ( var i = 0; i< current_toolbarset_ids.length; i++)
++     {
++        for (var j = 0; j < original_toolbarset_ids.length; j++)
++           if (current_toolbarset_ids[i] == original_toolbarset_ids[j])
++             break;
++      
++        if ( j != original_toolbarset_ids.length)
++           continue;
++
++        // item is a toolbar item just added 
++        item = document.getElementById(current_toolbarset_ids[i]);
++        SyncWithObservers(item);
++     }
++
++     //Unregist 
++     var observerService = Components.classes["@mozilla.org/observer-service;1"]
++                     .getService(Components.interfaces.nsIObserverService);
++     observerService.removeObserver(this, "mail:updateToolbarItems" );
++   }
++}
++
++//if the root has an "observe" attribute,
++// its "disabled" attribute should be synced with the observed element.
++function SyncWithObservers(root)
++{
++  var observed_item_id, observed_item;
++  var children,disabled;
++
++  if (!root)
++    return;
++
++  observed_item_id = root.observes;
++  if (observed_item_id)
++  {
++    observed_item = document.getElementById(observed_item_id);
++    disabled = observed_item.getAttribute("disabled");
++    if (disabled)
++      root.disabled = true;
++    else 
++      root.disabled = false;
++  }
++
++  children = root.childNodes;
++  for ( var i = 0; i < children.length; i++)
++      SyncWithObservers(children[i]);
++}
++
++function MailToolboxCustomizeInitialized(aEvent)
++{
++  var observerService = Components.classes["@mozilla.org/observer-service;1"]
++                       .getService(Components.interfaces.nsIObserverService);
++  observerService.addObserver(MailToolbarObserver, "mail:updateToolbarItems", false);
++
++  MailToolbarObserver.toolbar = document.getElementById("mail-bar3");
++  MailToolbarObserver.original_toolbarset = MailToolbarObserver.toolbar.currentSet; 
++}
++
+ function MailToolboxCustomizeDone(aEvent, customizePopupId)
+ {
+   if (gCustomizeSheet) {
+     document.getElementById("customizeToolbarSheetIFrame").hidden = true;
+     document.getElementById("customizeToolbarSheetPopup").hidePopup();
+   }
+ 
+   // Update global UI elements that may have been added or removed
+diff -r 77f7d8c11ea7 mail/base/content/msgMail3PaneWindow.js
+--- a/mail/base/content/msgMail3PaneWindow.js	Tue Dec 29 05:27:57 2009 +0100
++++ b/mail/base/content/msgMail3PaneWindow.js	Thu Dec 31 13:07:59 2009 +0800
+@@ -395,16 +395,17 @@ function LoadPostAccountWizard()
+   OnLoadMsgHeaderPane();
+ 
+   //Set focus to the Thread Pane the first time the window is opened.
+   SetFocusThreadPane();
+ 
+   // initialize the customizeDone method on the customizeable toolbar
+   var toolbox = document.getElementById("mail-toolbox");
+   toolbox.customizeDone = function(aEvent) { MailToolboxCustomizeDone(aEvent, "CustomizeMailToolbar"); };
++  toolbox.customizeInitialized = function(aEvent) { MailToolboxCustomizeInitialized(aEvent); };
+ 
+   var toolbarset = document.getElementById('customToolbars');
+   toolbox.toolbarset = toolbarset;
+ 
+   // XXX Do not select the folder until the window displays or the threadpane
+   //  will be at minimum size.  We used to have
+   //  gFolderDisplay.ensureRowIsVisible use settimeout itself to defer that
+   //  calculation, but that was ugly.  Also, in theory we will open the window

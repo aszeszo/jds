@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompiz.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompiz.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompiz.copyright
+d none bin 0755 root bin
+f none bin/compiz=usr/bin/compiz 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/compiz.desktop=usr/share/applications/compiz.desktop 0644 root bin

@@ -1,0 +1,41 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+
+Licensing and copyright information for gtk-engines-%{engines.version}:
+
+ License: GNU Lesser General Public License Version 2.1
+          GNU General Public License Version 2
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk-engines-%{engines.version}
+
+  COPYING.bz2: ngeneral license file
+  COPYING.GPL.bz2: GNU GPL
+  COPYING.LGPL.bz2: GNU LGPL
+  NEWS.bz2: list of the most important changes in gtk2-engines
+  ChangeLog.bz2: list of all changes and authors of gtk2-engines
+  po/ChangeLog.bz2: list of all changes and authors of gtk2-engines globalizatio
+n
+  README: more information about gtk2-engines
+  AUTHORS: list of authors of gtk2-engines
+  engines/clearlooks/AUTHORS: list of authors of clearlooks theme
+  engines/crux/AUTHORS: list of authors of crux theme
+  engines/glide/AUTHORS: list of authors of glide theme
+  engines/hc/AUTHORS: list of authors of hc theme
+  engines/industrial/AUTHORS: list of authors of industrial theme
+  engines/lua/AUTHORS: list of authors of lua theme
+  engines/mist/AUTHORS: list of authors of mist theme
+  engines/redmond/AUTHORS: list of authors of redmond theme
+  engines/thinice/AUTHORS: list of authors of thinice theme
+
+ The sources of gtk-engines-%{engines.version} were downloaded
+ from %{engines.SOURCE0.url}
+

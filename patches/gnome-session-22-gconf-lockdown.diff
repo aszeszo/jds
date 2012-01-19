@@ -1,0 +1,248 @@
+--- gnome-session-2.30.2.original/gnome-session/gsm-autostart-app.h	2010-02-09 14:22:01.000000000 +0100
++++ gnome-session-2.30.2/gnome-session/gsm-autostart-app.h	2010-12-27 13:59:48.461969293 +0100
+@@ -69,6 +69,11 @@
+ #define GSM_AUTOSTART_APP_DBUS_ARGS_KEY   "X-GNOME-DBus-Start-Arguments"
+ #define GSM_AUTOSTART_APP_DISCARD_KEY     "X-GNOME-Autostart-discard-exec"
+ 
++#define SYSTEM_ADMINISTRATOR_PROF "System Administrator"
++#define ROOT_ROLE "root"
++#define DESKTOP_GNOME_LOCKDOWN_DIR   "/desktop/gnome/lockdown"
++#define ALLOWED_APPLICATIONS_KEY     DESKTOP_GNOME_LOCKDOWN_DIR "/allowed_applications"
++#define RESTRICT_APPLICATION_LAUNCHING_KEY     DESKTOP_GNOME_LOCKDOWN_DIR "/restrict_application_launching"
+ G_END_DECLS
+ 
+ #endif /* __GSM_AUTOSTART_APP_H__ */
+--- gnome-session-2.30.2.original/gnome-session/gsm-autostart-app.c	2010-12-27 14:00:34.695305276 +0100
++++ gnome-session-2.30.2/gnome-session/gsm-autostart-app.c	2010-12-27 13:59:48.467537730 +0100
+@@ -30,6 +30,11 @@
+ #include <gio/gio.h>
+ #include <gdk/gdkx.h>
+ 
++#include <exec_attr.h>
++#include <user_attr.h>
++#include <secdb.h>
++#include <pwd.h>
++
+ #include <gconf/gconf-client.h>
+ 
+ #include "gsm-autostart-app.h"
+@@ -100,6 +105,98 @@
+ }
+ 
+ static gboolean
++has_root_role (char *username)
++{
++        userattr_t *userattr = NULL;
++        gchar *rolelist = NULL;
++        gchar *rolename = NULL;
++        static gboolean ret_val = FALSE;
++        static gboolean cached_root = FALSE;
++
++        if (cached_root == FALSE && (userattr = getusernam(username)) != NULL)
++        {
++                rolelist = kva_match(userattr->attr, USERATTR_ROLES_KW);
++                rolename = strtok(rolelist, ",");
++                while (rolename != NULL) {
++                        if (strcmp (rolename, ROOT_ROLE) == 0) {
++                                ret_val = TRUE;
++                                break;
++                        }
++                        rolename = strtok(NULL, ",");
++                }
++             
++                free_userattr(userattr);
++                cached_root = TRUE;
++        }
++
++        return ret_val;
++}
++
++static gboolean
++has_admin_profile (char *username)
++{
++        execattr_t *execattr = NULL;
++        static gboolean ret_val = FALSE;
++        static gboolean cached_admin = FALSE;
++
++        if (cached_admin == FALSE && (execattr = getexecuser (username, NULL, NULL, GET_ALL)) != NULL)
++        {
++                while (execattr != NULL) {
++                        if (strcmp (execattr->name, SYSTEM_ADMINISTRATOR_PROF) == 0)
++                        {
++                                ret_val = TRUE;
++                                break;
++                        }
++                        execattr = execattr->next;
++                }
++		free_execattr (execattr);
++               cached_admin = TRUE;
++        }
++        return ret_val;
++}
++
++static gboolean
++is_user_authorized (void)
++{
++        uid_t uid = getuid();
++        struct passwd *pw;
++
++        if ((pw = getpwuid(uid)) == NULL)
++                return FALSE;
++
++        if (has_admin_profile (pw->pw_name))
++                return TRUE;
++
++        if (has_root_role (pw->pw_name))
++                return TRUE;
++
++        if (uid == 0)
++                return TRUE;
++
++        return FALSE;
++}
++
++static gboolean
++is_restrict_enabled (void)
++{
++        GConfClient *client;
++        gboolean restrict_enabled;
++
++        client = gconf_client_get_default ();
++        g_assert (GCONF_IS_CLIENT (client));
++
++        restrict_enabled = gconf_client_get_bool (client, 
++            RESTRICT_APPLICATION_LAUNCHING_KEY, NULL);
++
++        g_object_unref (client);
++
++        if (restrict_enabled) {
++                return TRUE;
++        }
++        return FALSE;
++} 
++
++static gboolean
+ is_sunray_client (void)
+ {
+         Atom          sunray_client_id;
+@@ -131,13 +226,108 @@
+ 		return FALSE;
+ }
+ 
++gchar *
++lockdown_get_stripped_exec (const gchar *full_exec)
++{
++        gchar *str1, *str2, *retval, *p;
++
++        str1 = g_strdup (full_exec);
++        p = strtok (str1, " ");
++
++        if (p != NULL)
++               str2 = g_strdup (p);
++        else
++                str2 = g_strdup (full_exec);
++
++        g_free (str1);
++
++        if (g_path_is_absolute (str2))
++                retval = g_strdup (str2);
++        else
++                retval = g_strdup (g_find_program_in_path ((const gchar *)str2));
++        g_free (str2);
++
++        return retval;
++}
++
++gboolean
++lockdown_is_allowed_application (const gchar *app)
++{
++        GConfClient *client;
++        GSList *allowed_applications, *head;
++        gboolean retval = FALSE;
++
++        client = gconf_client_get_default ();
++        g_assert (GCONF_IS_CLIENT (client));
++
++        head = allowed_applications = gconf_client_get_list (client,
++                                        ALLOWED_APPLICATIONS_KEY,
++                                        GCONF_VALUE_STRING,
++                                        NULL);
++        g_object_unref (client);
++
++
++        for (allowed_applications; allowed_applications;
++            allowed_applications = allowed_applications->next)
++                if (!strcmp (allowed_applications->data, app)) {
++                        retval = TRUE;
++                        break;
++                }
++
++        for (allowed_applications = head; allowed_applications; 
++            allowed_applications = allowed_applications->next) {
++                g_free (allowed_applications->data);
++        }
++
++        g_slist_free (allowed_applications);
++        allowed_applications = NULL;
++
++        return retval;
++}
++
+ static gboolean
+-is_disabled (GsmApp *app)
++lockdown_is_forbidden_launcher (GsmApp *app)
+ {
++        gchar *full_exec;
++        gchar *stripped_exec;
++        gboolean retval = FALSE;
++
++        if (!is_restrict_enabled() || is_user_authorized() ) {
++                return retval;
++        }
++
+         GsmAutostartAppPrivate *priv;
+ 
+         priv = GSM_AUTOSTART_APP (app)->priv;
+ 
++        if (egg_desktop_file_has_key (priv->desktop_file,
++            "Exec", NULL)) {
++                full_exec = egg_desktop_file_get_string (
++                                          priv->desktop_file,
++                                          "Exec", NULL);
++
++                if (full_exec != NULL) {
++                        stripped_exec = lockdown_get_stripped_exec (full_exec);
++			 // If exec is not found in path simply return False.
++			 if (stripped_exec == NULL)
++				return retval;
++                        retval = !lockdown_is_allowed_application (stripped_exec);
++                        if (retval == TRUE) {
++                                retval = !lockdown_is_allowed_application (full_exec);
++                        }
++                }
++                g_free (full_exec);
++                g_free (stripped_exec);
++        }
++        return retval;
++}
++
++static gboolean
++is_disabled (GsmApp *app)
++{
++        GsmAutostartAppPrivate *priv;
++
++        priv = GSM_AUTOSTART_APP (app)->priv;
+         /* GSM_AUTOSTART_APP_ENABLED_KEY key, used by old gnome-session */
+         if (egg_desktop_file_has_key (priv->desktop_file,
+                                       GSM_AUTOSTART_APP_ENABLED_KEY, NULL) &&
+@@ -167,6 +354,10 @@
+ 	if (is_disabled_for_sunray_client (app))
+ 		return TRUE;
+ 
++        /* Add additional check for Lockdown mode */
++        if (lockdown_is_forbidden_launcher (app))
++                return TRUE;
++
+         /* Do not check AutostartCondition - this method is only to determine
+          if the app is unconditionally disabled */
+ 

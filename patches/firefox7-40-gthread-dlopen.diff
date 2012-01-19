@@ -1,0 +1,22 @@
+diff --git a/xpcom/glue/standalone/nsGlueLinkingDlopen.cpp b/xpcom/glue/standalone/nsGlueLinkingDlopen.cpp
+--- a/xpcom/glue/standalone/nsGlueLinkingDlopen.cpp
++++ b/xpcom/glue/standalone/nsGlueLinkingDlopen.cpp
+@@ -250,16 +250,18 @@ XPCOMGlueLoad(const char *xpcomFile, Get
+ 
+     if (xpcomFile[0] != '.' || xpcomFile[1] != '\0') {
+         libHandle = dlopen(xpcomFile, RTLD_GLOBAL | RTLD_LAZY);
+         if (libHandle) {
+             AppendDependentLib(libHandle);
+         }
+     }
+ 
++    static void* gthreadso = dlopen("libgthread-2.0.so.0", RTLD_GLOBAL | RTLD_LAZY);
++
+     GetFrozenFunctionsFunc sym =
+         (GetFrozenFunctionsFunc) dlsym(libHandle,
+                                        LEADING_UNDERSCORE "NS_GetFrozenFunctions");
+ 
+     if (!sym) { // No symbol found.
+         XPCOMGlueUnload();
+         return NS_ERROR_NOT_AVAILABLE;
+     }

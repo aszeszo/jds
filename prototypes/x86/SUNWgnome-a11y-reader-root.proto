@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-reader-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-reader-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-reader-root.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-reader-root.preremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-reader-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/brlmonitor.schemas=etc/gconf/schemas/brlmonitor.schemas 0755 root sys
+f none etc/gconf/schemas/gnopernicus.schemas=etc/gconf/schemas/gnopernicus.schemas 0755 root sys
+f none etc/gconf/schemas/remote.schemas=etc/gconf/schemas/remote.schemas 0755 root sys
+d none etc/gnopernicus-1.0 0755 root sys
+d none etc/gnopernicus-1.0/translation_tables 0755 root sys
+f none etc/gnopernicus-1.0/translation_tables/de.a2b=etc/gnopernicus-1.0/translation_tables/de.a2b 0755 root sys
+f none etc/gnopernicus-1.0/translation_tables/en_US.a2b=etc/gnopernicus-1.0/translation_tables/en_US.a2b 0755 root sys
+f none etc/gnopernicus-1.0/translation_tables/es.a2b=etc/gnopernicus-1.0/translation_tables/es.a2b 0755 root sys
+f none etc/gnopernicus-1.0/translation_tables/fr.a2b=etc/gnopernicus-1.0/translation_tables/fr.a2b 0755 root sys
+f none etc/gnopernicus-1.0/translation_tables/sv.a2b=etc/gnopernicus-1.0/translation_tables/sv.a2b 0755 root sys

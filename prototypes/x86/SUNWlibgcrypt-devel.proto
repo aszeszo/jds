@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgcrypt-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgcrypt-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgcrypt-devel.copyright
+d none bin 0755 root bin
+d none bin/amd64 0755 root bin
+f none bin/amd64/dumpsexp=usr/bin/amd64/dumpsexp 0755 root bin
+f none bin/amd64/libgcrypt-config=usr/bin/amd64/libgcrypt-config 0755 root bin
+f none bin/dumpsexp=usr/bin/dumpsexp 0755 root bin
+f none bin/libgcrypt-config=usr/bin/libgcrypt-config 0755 root bin
+d none include 0755 root bin
+f none include/gcrypt-module.h=usr/include/gcrypt-module.h 0644 root bin
+f none include/gcrypt.h=usr/include/gcrypt.h 0644 root bin
+d none share 0755 root sys
+d none share/aclocal 0755 root other
+f none share/aclocal/libgcrypt.m4=usr/share/aclocal/libgcrypt.m4 0644 root bin

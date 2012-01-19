@@ -1,0 +1,33 @@
+diff -uprN libvisual-plugins-0.4.0/configure.ac libvisual-plugins-0.4.0-new/configure.ac
+--- libvisual-plugins-0.4.0/configure.ac	2006-03-17 00:50:41.000000000 +0800
++++ libvisual-plugins-0.4.0-new/configure.ac	2009-09-24 11:12:08.703111973 +0800
+@@ -160,15 +160,22 @@ AM_CONDITIONAL(HAVE_X, test "$have_x" = 
+ 
+ dnl OpenGL, GLX
+ HAVE_OPENGL=no
++AC_ARG_ENABLE([opengl],
++  AS_HELP_STRING([--disable-opengl],
++    [Do not build OpenGL plugin @<:@default=enabled@:>@]),
++  [ENABLE_OPENGL=$enableval],
++  [ENABLE_OPENGL=yes])
++
++if test "$ENABLE_OPENGL" = "yes"; then
++  if test "$have_x" = "yes" ; then
++    CPPFLAGS_SAVE=$CPPFLAGS
++    CPPFLAGS="$CPPFLAGS $X_CFLAGS"
+ 
+-if test "$have_x" = "yes" ; then
+-  CPPFLAGS_SAVE=$CPPFLAGS
+-  CPPFLAGS="$CPPFLAGS $X_CFLAGS"
++    AC_CHECK_HEADERS([GL/gl.h GL/glx.h],
++      [AC_CHECK_LIB([GL], [glBegin], [HAVE_OPENGL=yes], [], [$X_LIBS])])
+ 
+-  AC_CHECK_HEADERS([GL/gl.h GL/glx.h],
+-    [AC_CHECK_LIB([GL], [glBegin], [HAVE_OPENGL=yes], [], [$X_LIBS])])
+-
+-  CPPFLAGS=$CPPFLAGS_SAVE
++    CPPFLAGS=$CPPFLAGS_SAVE
++  fi
+ fi
+ 
+ AM_CONDITIONAL([HAVE_OPENGL], [test "$HAVE_OPENGL" = "yes"])

@@ -1,0 +1,44 @@
+--- glade3-3.6.7/gladeui/glade-widget.c.old	2011-02-15 17:00:23.890640887 +0800
++++ glade3-3.6.7/gladeui/glade-widget.c	2011-02-15 17:08:54.309559953 +0800
+@@ -1376,28 +1376,31 @@
+ 	g_return_val_if_fail (parent == NULL || GLADE_IS_WIDGET (parent), NULL);
+ 
+ 	/* Dont actually duplicate internal widgets, but recurse through them anyway. */
+-	if (template_widget->internal)
++	if (parent && template_widget->internal)
+ 	{
+ 		GObject *internal_object = NULL;
+ 
+-		if (parent && 
+-		    (get_internal = 
++		if ((get_internal = 
+ 		     glade_widget_get_internal_func (parent, &internal_parent)) != NULL)
+ 		{
+ 			/* We cant use "parent" here, we have to recurse up the hierarchy to find
+ 			 * the "parent" that has `get_internal_child' support (i.e. internal children
+ 			 * may have depth).
+ 			 */
+-			internal_object = get_internal (internal_parent->adaptor,
++			if ((internal_object = get_internal (internal_parent->adaptor,
+ 							internal_parent->object, 
+-							template_widget->internal);
+-			g_assert (internal_object);
+-			
+-			gwidget = glade_widget_get_from_gobject (internal_object);
+-			g_assert (gwidget);
++							template_widget->internal)) != NULL);
++                        {
++			   gwidget = glade_widget_get_from_gobject (internal_object);
++			   g_assert (gwidget);
++                        }
+ 		}
+ 	}
+-	else
++
++        /* If either it was not internal, or we failed to lookup the internal child
++        * in the copied hierarchy (this can happen when copying an internal vbox from
++        * a composite dialog for instance). */
++        if (gwidget == NULL)
+ 	{
+ 		gchar *name = g_strdup (template_widget->name);
+ 		gwidget = glade_widget_adaptor_create_widget

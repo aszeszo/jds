@@ -1,0 +1,11 @@
+--- clutter-gst-0.10.0.orig/clutter-gst/clutter-gst-video-sink.c	2010-02-17 19:56:22.419493086 +0000
++++ clutter-gst-0.10.0/clutter-gst/clutter-gst-video-sink.c	2010-02-17 19:58:22.623125631 +0000
+@@ -779,7 +779,7 @@
+   /* get the features */
+   gl_extensions = (const gchar*) glGetString (GL_EXTENSIONS);
+ 
+-  glGetIntegerv (CGL_MAX_COMBINED_TEXTURE_IMAGE_UNITS, &nb_texture_units);
++  //glGetIntegerv (CGL_MAX_COMBINED_TEXTURE_IMAGE_UNITS, &nb_texture_units);
+ 
+   if (nb_texture_units >= 3)
+     features |= CLUTTER_GST_MULTI_TEXTURE;

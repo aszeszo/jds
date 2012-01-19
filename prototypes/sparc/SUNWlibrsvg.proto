@@ -1,0 +1,43 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibrsvg.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibrsvg.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWlibrsvg.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWlibrsvg.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibrsvg.copyright
+f none share/doc/SUNWlibrsvg/COPYING.bz2=usr/share/doc/SUNWlibrsvg/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibrsvg/COPYING.LIB.bz2=usr/share/doc/SUNWlibrsvg/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWlibrsvg/ChangeLog.bz2=usr/share/doc/SUNWlibrsvg/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibrsvg/MAINTAINERS=usr/share/doc/SUNWlibrsvg/MAINTAINERS 0444 root bin
+f none share/doc/SUNWlibrsvg/NEWS.bz2=usr/share/doc/SUNWlibrsvg/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibrsvg/README=usr/share/doc/SUNWlibrsvg/README 0444 root bin
+d none bin 0755 root bin
+f none bin/rsvg=usr/bin/rsvg 0755 root bin
+f none bin/rsvg-convert=usr/bin/rsvg-convert 0755 root bin
+f none bin/rsvg-view=usr/bin/rsvg-view 0755 root bin
+d none lib 0755 root bin
+d none lib/gtk-2.0 0755 root bin
+d none lib/gtk-2.0/2.10.0 0755 root bin
+d none lib/gtk-2.0/2.10.0/engines 0755 root bin
+f none lib/gtk-2.0/2.10.0/engines/libsvg.so=usr/lib/gtk-2.0/2.10.0/engines/libsvg.so 0755 root bin
+d none lib/gtk-2.0/2.10.0/loaders 0755 root bin
+f none lib/gtk-2.0/2.10.0/loaders/svg_loader.so=usr/lib/gtk-2.0/2.10.0/loaders/svg_loader.so 0755 root bin
+s none lib/librsvg-2.so=librsvg-2.so.2.26.3
+s none lib/librsvg-2.so.2=librsvg-2.so.2.26.3
+f none lib/librsvg-2.so.2.26.3=usr/lib/librsvg-2.so.2.26.3 0755 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/gtk-2.0 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0/engines 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/engines/libsvg.so=usr/lib/sparcv9/gtk-2.0/2.10.0/engines/libsvg.so 0755 root bin
+d none lib/sparcv9/gtk-2.0/2.10.0/loaders 0755 root bin
+f none lib/sparcv9/gtk-2.0/2.10.0/loaders/svg_loader.so=usr/lib/sparcv9/gtk-2.0/2.10.0/loaders/svg_loader.so 0755 root bin
+s none lib/sparcv9/librsvg-2.so=librsvg-2.so.2.26.3
+s none lib/sparcv9/librsvg-2.so.2=librsvg-2.so.2.26.3
+f none lib/sparcv9/librsvg-2.so.2.26.3=usr/lib/sparcv9/librsvg-2.so.2.26.3 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibrsvg 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/rsvg.1=usr/share/man/man1/rsvg.1 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/svg-viewer.svg=usr/share/pixmaps/svg-viewer.svg 0644 root bin

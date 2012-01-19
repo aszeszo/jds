@@ -1,0 +1,512 @@
+--- glib-2.25.1/gio/gdesktopappinfo.c-orig	2011-01-27 17:06:29.353677027 -0600
++++ glib-2.25.1/gio/gdesktopappinfo.c	2011-02-01 20:06:34.199424966 -0600
+@@ -27,6 +27,17 @@
+ #include <string.h>
+ #include <unistd.h>
+ #include <sys/wait.h>
++#include <user_attr.h>
++#include <exec_attr.h>
++#include <stdlib.h>
++#include <secdb.h>
++#include <dlfcn.h>
++#include <pwd.h>
++
++#include <tsol/label.h>
++#include <sys/tsol/label_macro.h>
++#include <X11/Xlib.h>
++#include <X11/extensions/Xtsol.h>
+ 
+ #ifdef HAVE_CRT_EXTERNS_H
+ #include <crt_externs.h>
+@@ -724,6 +735,449 @@ expand_macro (char              macro, 
+   *uri_list = uris;
+ }
+ 
++/*
++ * Note that the following code is in three patches:
++ * - gnome-panel-XX-rbac.diff (filter_with_rbac)
++ * - gnome-menus-XX-rbac.diff (filter_with_rbac)
++ * - glib-XX-gio-rbac.diff    (get_gksu_role)
++ * - gnome-session-XX-rbac.diff (get_gksu_role)
++ *
++ * So if there is a need to fix this code, it is probably necessary to fix the
++ * code in these other two places as well.  Though the functions are a bit
++ * different.
++ */
++static
++void * dlopen_tsol (void)
++{
++   void  *handle = NULL;
++
++   /*
++    * No 64-bit version of libwnck so we can get away with hardcoding
++    * to a single path on this occasion
++    */
++   if ((handle = dlopen ("/usr/lib/libtsol.so.2", RTLD_LAZY)) != NULL)
++       return handle;
++
++   return handle;
++}
++
++static
++void * dlopen_xtsol (void)
++{
++   void  *handle = NULL;
++
++   if ((handle = dlopen ("/usr/lib/libXtsol.so.1", RTLD_LAZY)) != NULL)
++       return handle;
++   if ((handle = dlopen ("/usr/openwin/lib/libXtsol.so.1", RTLD_LAZY)) != NULL)
++       return handle;
++
++   return handle;
++}
++
++static
++void * dlopen_gnometsol (void)
++{
++   void  *handle = NULL;
++
++   if ((handle = dlopen ("/usr/lib/libgnometsol.so", RTLD_LAZY)) != NULL)
++       return handle;
++
++   return handle;
++}
++
++/* Libtsol functions */
++
++typedef int     (*tsol_blequal) (const m_label_t *label1, const m_label_t *label2);
++typedef int     (*tsol_label_to_str) (const m_label_t *label, char **string,
++                 const m_label_str_t conversion_type,
++                 uint_t flags);
++typedef int            (*tsol_str_to_label) (const char *string, m_label_t **label,
++                 const m_label_type_t label_type, uint_t flags,
++                 int *error);
++typedef void (*tsol_m_label_dup) (m_label_t **dst, const m_label_t *src);
++typedef void   (*tsol_m_label_free) (m_label_t *label);
++
++/* Other misc. libtsol functions that seem to be stable */
++typedef blrange_t*             (*tsol_getuserrange) (const char *username);
++typedef int                            (*tsol_blinrange) (const m_label_t *label,
++                         const blrange_t *range);
++typedef void                   (*tsol_blminimum) (m_label_t *minimum_label,
++                         const m_label_t *bounding_label);
++typedef void                   (*tsol_blmaximum) (m_label_t *maximum_label,
++                         const m_label_t *bounding_label);
++typedef m_label_t*             (*tsol_blabel_alloc) (void);
++typedef void                   (*tsol_blabel_free)  (m_label_t *label_p);
++typedef void                   (*tsol_bsllow)  (m_label_t *label);
++typedef void                   (*tsol_bslhigh) (m_label_t *label);
++
++/* libXtsol functions */
++typedef Status (*xtsol_XTSOLgetClientLabel) (Display *dpy, XID xid,
++                 bslabel_t *sl);
++typedef Bool   (*xtsol_XTSOLIsWindowTrusted) (Display *dpy, Window win);
++
++/* libgnometsol functions */
++typedef gpointer       (*gnometsol_gnome_label_builder_new) (char *msg,
++                        blevel_t *upper, blevel_t *lower, int mode);
++typedef GType          (*gnometsol_gnome_label_builder_get_type) (void);
++
++/* libtsol functions */
++tsol_blequal           libtsol_blequal;
++tsol_label_to_str      libtsol_label_to_str;
++tsol_str_to_label      libtsol_str_to_label;
++tsol_m_label_dup libtsol_m_label_dup;
++tsol_m_label_free      libtsol_m_label_free;
++/* Other misc. libtsol functions */
++tsol_blminimum         libtsol_blminimum;
++tsol_blmaximum         libtsol_blmaximum;
++tsol_blinrange      libtsol_blinrange;
++tsol_getuserrange      libtsol_getuserrange;
++tsol_blabel_alloc      libtsol_blabel_alloc;
++tsol_blabel_free       libtsol_blabel_free;
++tsol_bsllow                    libtsol_bsllow;
++tsol_bslhigh           libtsol_bslhigh;
++
++xtsol_XTSOLgetClientLabel      libxtsol_XTSOLgetClientLabel;
++xtsol_XTSOLIsWindowTrusted     libxtsol_XTSOLIsWindowTrusted;
++
++gnometsol_gnome_label_builder_new libgnometsol_gnome_label_builder_new;
++gnometsol_gnome_label_builder_get_type libgnometsol_gnome_label_builder_get_type;
++
++gboolean
++use_trusted_extensions (void)
++{
++  static int trusted = -1;
++
++  /*
++   * Sun Trusted Extensions (tm) for Solaris (tm) support. (Damn I should be a lawyer).
++   *
++   * It is necessary to use dlopen because the label aware extensions to libwnck work
++   * only on systems with the trusted extensions installed and with the SUN_TSOL
++   * xserver extension present
++   */
++
++    if (trusted < 0) {
++        static gpointer tsol_handle = NULL;
++        static gpointer xtsol_handle = NULL;
++        static gpointer gnometsol_handle = NULL;
++
++        if (getenv ("TRUSTED_SESSION") == NULL) {
++          trusted = 0;
++          return 0;
++        }
++
++        tsol_handle = dlopen_tsol ();
++        if (tsol_handle != NULL)
++            xtsol_handle = dlopen_xtsol ();
++        if (tsol_handle && xtsol_handle) {
++
++           /* libtsol functions */
++           libtsol_blequal = (tsol_blequal) dlsym (tsol_handle, "blequal");
++           libtsol_label_to_str = (tsol_label_to_str) dlsym (tsol_handle, "label_to_str");
++           libtsol_str_to_label = (tsol_str_to_label) dlsym (tsol_handle, "str_to_label");
++           libtsol_m_label_dup = (tsol_m_label_dup) dlsym (tsol_handle, "m_label_dup");
++           libtsol_m_label_free = (tsol_m_label_free) dlsym (tsol_handle, "m_label_free");
++
++
++           /* Other misc. libtsol functions */
++           libtsol_blminimum = (tsol_blminimum) dlsym (tsol_handle, "blminimum");
++           libtsol_blmaximum = (tsol_blmaximum) dlsym (tsol_handle, "blmaximum");
++           libtsol_blinrange = (tsol_blinrange) dlsym (tsol_handle, "blinrange");
++           libtsol_getuserrange = (tsol_getuserrange) dlsym (tsol_handle, "getuserrange");
++           libtsol_blabel_alloc = (tsol_blabel_alloc) dlsym (tsol_handle, "blabel_alloc");
++           libtsol_blabel_free  = (tsol_blabel_free)  dlsym (tsol_handle, "blabel_free");
++           libtsol_bsllow  = (tsol_bsllow)  dlsym (tsol_handle, "bsllow");
++           libtsol_bslhigh = (tsol_bslhigh) dlsym (tsol_handle, "bslhigh");
++
++           /* libXtsol functions */
++           libxtsol_XTSOLgetClientLabel = (xtsol_XTSOLgetClientLabel) dlsym (xtsol_handle,
++                                     "XTSOLgetClientLabel");
++           libxtsol_XTSOLIsWindowTrusted = (xtsol_XTSOLIsWindowTrusted) dlsym (xtsol_handle,
++                                      "XTSOLIsWindowTrusted");
++
++           if (libtsol_label_to_str == NULL ||
++               libtsol_str_to_label == NULL ||
++               libtsol_m_label_dup == NULL ||
++               libtsol_m_label_free == NULL ||
++               libtsol_blminimum == NULL ||
++               libtsol_blmaximum == NULL ||
++               libtsol_blinrange == NULL ||
++               libtsol_getuserrange == NULL ||
++               libtsol_blabel_alloc == NULL ||
++               libtsol_blabel_free  == NULL ||
++               libtsol_bsllow  == NULL ||
++               libtsol_bslhigh == NULL ||
++               libxtsol_XTSOLgetClientLabel == NULL ||
++               libxtsol_XTSOLIsWindowTrusted == NULL) {
++               dlclose (tsol_handle);
++               dlclose (xtsol_handle);
++               tsol_handle = NULL;
++               xtsol_handle = NULL;
++            }
++        }
++
++        gnometsol_handle = dlopen_gnometsol ();
++        if (gnometsol_handle != NULL) {
++               libgnometsol_gnome_label_builder_new =
++                               (gnometsol_gnome_label_builder_new) dlsym (gnometsol_handle,
++                               "gnome_label_builder_new");
++              libgnometsol_gnome_label_builder_get_type =
++                               (gnometsol_gnome_label_builder_get_type) dlsym (gnometsol_handle,
++                               "gnome_label_builder_get_type");
++              if (libgnometsol_gnome_label_builder_new == NULL ||
++                  libgnometsol_gnome_label_builder_get_type == NULL)
++                  gnometsol_handle = NULL;
++
++        }
++        trusted = ((tsol_handle != NULL) && (xtsol_handle != NULL) && (gnometsol_handle != NULL)) ? 1 : 0;
++    }
++    return trusted ? TRUE : FALSE;
++}
++
++static gchar *
++get_stripped_exec (const gchar *full_exec)
++{
++        gchar *str1, *str2, *retval, *p;
++
++        str1 = g_strdup (full_exec);
++        p = strtok (str1, " ");
++
++        if (p != NULL)
++                str2 = g_strdup (p);
++        else
++                str2 = g_strdup (full_exec);
++
++        g_free (str1);
++
++	if (g_path_is_absolute (str2)) {
++		retval = g_strdup (str2);
++	} else {
++		retval = g_strdup (g_find_program_in_path ((const gchar *)str2));
++	}
++        g_free (str2);
++
++        return retval;
++}
++
++static
++char * get_validated_stripped_exec (const char *command)
++{
++	const char *username = NULL;
++	char       *stripped_cmd;
++	char       *path;
++
++	username = g_get_user_name ();
++
++	/* Do not use pfexec for root */
++	if (strcmp (username, "root") == 0) {
++		return NULL;
++	}
++
++	stripped_cmd = get_stripped_exec (command);
++	if (stripped_cmd == NULL) {
++		return NULL;
++	}
++
++	path = g_find_program_in_path (g_strstrip (stripped_cmd));
++	if (path == NULL)
++		return NULL;
++
++	return stripped_cmd;
++}
++
++static gboolean
++command_has_profile (const char *command)
++{
++	execattr_t *exec = NULL;
++	gboolean    rc = FALSE;
++
++	/* Check if the program is in any profile. */
++	exec = getexecprof (NULL, KV_COMMAND, command, GET_ONE);
++	if (exec == NULL) {
++		return rc;
++	}
++
++	while (exec != NULL) {
++		if (strcmp (exec->id, "*") != 0) {
++			rc = TRUE;
++			break;
++		}
++		exec = exec->next;
++	}
++
++	free_execattr (exec);
++
++	return rc;
++}
++
++static gboolean
++use_pfexec (char *command)
++{
++	execattr_t *exec = NULL;
++	const char *username = NULL;
++	char       *stripped_cmd;
++	gboolean    trusted;
++	gboolean    has_profile;
++	gboolean    rc;
++
++	rc = FALSE;
++
++	/* Never use pfexec in Trusted mode */
++	trusted = use_trusted_extensions ();
++	if (trusted) {
++		goto out;
++	}
++
++	stripped_cmd = get_validated_stripped_exec (command);
++	if (stripped_cmd == NULL) {
++		goto out;
++	}
++
++	has_profile = command_has_profile (stripped_cmd);
++
++	username = g_get_user_name ();
++
++	/* Check if the user can run the command. */
++	exec = getexecuser (username, KV_COMMAND, stripped_cmd, GET_ONE);
++
++	/*
++	 * If the program is not associated with any profile, then do not
++	 * use pfexec.
++	 */
++	if (exec == NULL)
++		goto out;
++
++	/*
++	 * If getexecuser does not return NULL and the program is not
++	 * associated with any profile, then pfexec is not needed.
++	 */
++	if (has_profile == FALSE) {
++		goto out;
++	}
++
++	/*
++	 * Does the user have a profile that can run the command?
++	 */
++	while (exec != NULL) {
++		if (strcmp (exec->id, "*") != 0) {
++			rc = TRUE;
++			break;
++		}
++		exec = exec->next;
++	}
++out:
++	if (exec != NULL)
++		free_execattr (exec);
++
++	if (stripped_cmd)
++		g_free (stripped_cmd);
++
++	return rc;
++}
++
++/*
++ * Checks RBAC and if the user can run the command with gksu, the role is
++ * passed back, otherwise NULL.
++ */
++gchar *
++get_gksu_role (char *command)
++{
++	execattr_t *exec;
++	userattr_t *user;
++	const char *username = NULL;
++	char       *rc = NULL;
++	char       *stripped_cmd;
++	char       *path;
++	int         i;
++	gboolean    has_profile;
++	gboolean    trusted;
++
++	/* Never use gksu in Trusted mode */
++	trusted = use_trusted_extensions ();
++	if (trusted) {
++		goto out;
++	}
++
++	stripped_cmd = get_validated_stripped_exec (command);
++	if (stripped_cmd == NULL) {
++		goto out;
++	}
++
++	/* If pfexec should be used, then do not use gksu. */
++	if (use_pfexec (command) == TRUE) {
++		goto out;
++	}
++
++	has_profile = command_has_profile (stripped_cmd);
++	username    = g_get_user_name ();
++
++	/* Check if the user can run the command. */
++	exec = getexecuser (username, KV_COMMAND, stripped_cmd, GET_ONE);
++
++	/*
++	 * If the program is not associated with any profile, then do not
++	 * use gksu.
++	 */
++	if (exec == NULL)
++		goto out;
++
++	/*
++	 * If getexecuser does not return NULL and the program is not
++	 * associated with any profile, then gksu is not needed.
++	 */
++	if (has_profile == FALSE) {
++		goto out;
++	}
++
++	/* If no gksu is available, then do not try to use it */
++        path = g_find_program_in_path ("/usr/bin/gksu");
++	if (path == NULL)
++		goto out;
++
++	/* Check if the user is in a role that can run the command. */
++	/* If so, use gksu with that role */
++	if ((user = getusernam (username)) != NULL) {
++		const char *rolelist = NULL;
++		char **v = NULL;
++		char *role = NULL;
++
++		/* Use roles associated with the user. */
++		rolelist = kva_match (user->attr, USERATTR_ROLES_KW);
++
++		if (rolelist != NULL)
++			v = g_strsplit (rolelist, ",", -1);
++
++		for (i=0; v != NULL && v[i] != NULL; i++) {
++			role = g_strdup (v[i]);
++			g_strstrip (role);
++
++			exec = getexecuser (role, KV_COMMAND, stripped_cmd, GET_ONE);
++			while (exec != NULL) {
++				if ((strcmp (role, "root") == 0) ||
++				    (strcmp (exec->id, "*") != 0)) {
++					rc = g_strdup (role);
++					break;
++				}
++				exec = exec->next;
++			}
++
++			g_free (role);
++			free_execattr (exec);
++
++			if (rc != NULL) {
++				break;
++			}
++		}
++		if (v != NULL)
++			g_strfreev (v);
++	}
++
++out:
++	if (stripped_cmd)
++		g_free (stripped_cmd);
++
++	return (rc);
++}
++
+ static gboolean
+ expand_application_parameters (GDesktopAppInfo   *info,
+ 			       GList            **uris,
+@@ -735,6 +1189,9 @@ expand_application_parameters (GDesktopA
+   const char *p = info->exec;
+   GString *expanded_exec;
+   gboolean res;
++  char *gksu_role, *final_cmd;
++  struct passwd *pw;
++  uid_t uid;
+ 
+   if (info->exec == NULL)
+     {
+@@ -766,8 +1223,30 @@ expand_application_parameters (GDesktopA
+       expand_macro ('f', expanded_exec, info, uris);
+     }
+ 
+-  res = g_shell_parse_argv (expanded_exec->str, argc, argv, error);
++  /* Only use a prefix if not in Trusted mode */
++  gksu_role = NULL;
++  if (!use_trusted_extensions ())
++    gksu_role = get_gksu_role (expanded_exec->str);
++
++  uid = getuid ();
++  pw = getpwuid (uid);
++
++  if (gksu_role)
++    final_cmd = g_strdup_printf ("/usr/bin/gksu -u %s %s", gksu_role, expanded_exec->str);
++  else if (use_pfexec (expanded_exec->str) == TRUE ||
++           (pw != NULL && pw->pw_shell != NULL &&
++            strncmp (pw->pw_shell, "/usr/bin/pf", strlen ("/usr/bin/pf")) == 0))
++    final_cmd = g_strdup_printf ("/usr/bin/pfexec %s", expanded_exec->str);
++  else
++    final_cmd = g_strdup_printf ("%s", expanded_exec->str);
++
++  res = g_shell_parse_argv (final_cmd, argc, argv, error);
+   g_string_free (expanded_exec, TRUE);
++
++  if (gksu_role != NULL)
++    g_free (gksu_role);
++  g_free (final_cmd);
++
+   return res;
+ }
+ 

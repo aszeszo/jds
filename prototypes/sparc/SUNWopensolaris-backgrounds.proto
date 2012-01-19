@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopensolaris-backgrounds.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopensolaris-backgrounds.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopensolaris-backgrounds.copyright
+d none share 0755 root sys
+d none share/gnome-background-properties 0755 root bin
+f none share/gnome-background-properties/opensolaris-backgrounds.xml=usr/share/gnome-background-properties/opensolaris-backgrounds.xml 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/backgrounds 0755 root bin
+d none share/pixmaps/backgrounds/opensolaris 0755 root bin
+f none share/pixmaps/backgrounds/opensolaris/opensolaris-default.jpg=usr/share/pixmaps/backgrounds/opensolaris/opensolaris-default.jpg 0644 root bin

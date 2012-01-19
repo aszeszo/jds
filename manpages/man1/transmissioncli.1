@@ -1,0 +1,198 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2008/450 Transmission for OpenSolaris-->
+<!ENTITY cmd "transmissioncli">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2008, Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<?Pub UDT _bookmark _target>
+<?Pub Inc>
+<refentry id="transmissioncli-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">17 Jul 2008</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>&cmd;</primary></indexterm><indexterm><primary>a command-line BitTorrent client</primary></indexterm>
+
+<refnamediv id="transmissioncli-1-name"><refname>&cmd;</refname><refpurpose>a command-line BitTorrent client</refpurpose></refnamediv>
+
+<refsynopsisdiv id="tranmission-1-synp"><title>&synp-tt;</title>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="plain"><option>-help</option></arg>
+</cmdsynopsis>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="plain"><option>-info</option></arg>
+<arg choice="plain"><option role="nodash"><replaceable>torrent-file</replaceable></option></arg>
+</cmdsynopsis>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="plain"><option>-scrape</option></arg>
+<arg choice="plain"><option role="nodash"><replaceable>torrent-file</replaceable></option></arg>
+</cmdsynopsis>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="plain"><option>-new <replaceable>sourcefile</replaceable></option></arg>
+<arg choice="opt"><option>-announce <replaceable>url</replaceable></option></arg>
+<arg choice="opt"><option>-comment <replaceable>text</replaceable></option></arg>
+<arg choice="opt"><option>-private</option></arg>
+<arg choice="plain"><option role="nodash"><replaceable>new-torrent-file</replaceable></option></arg>
+</cmdsynopsis>
+
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-blocklist</option>|<option>-non-blocklist</option></arg>
+<arg choice="opt"><option>-downlimit </option><replaceable>speed</replaceable> | <option>-no-downlimit</options></arg>
+<arg choice="opt"><option>-encryption-required</option>|<option>-encryption-preferred</option>|<option>-encryption-tolerated</option></arg>
+<arg choice="opt"><option>-finish </option><replaceable>script</replaceable></arg>
+<arg choice="opt"><option>-config-dir </option><replaceable>directory</replaceable></arg>
+<arg choice="opt"><option>-help </option></arg>
+<arg choice="opt"><option>-portmap</option>|<option>-no-portmap</option></arg>
+<arg choice="opt"><option>-tos</option></arg>
+<arg choice="opt"><option>-uplimit </option><replaceable>speed</replaceable>|<option>-no-uplimit</option></arg>
+<arg choice="opt"><option>-verify</option></arg>
+<arg choice="opt"><option>-download-dir <replaceable>directory</replaceable></option></arg>
+<arg choice="plain"><option role="nodash"><replaceable>torrent-file</replaceable></option></arg>
+</cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id="transmissioncli-1-desc"><title>&desc-tt;</title>
+<para><command>&cmd;</command> is a lightweight, command-line BitTorrent client with scripting capabilities.
+</para></refsect1>
+
+<refsect1 id="transmissioncli-1-opts"><title>&opts-tt;</title>
+<para>The following options are supported:</para>
+<variablelist termlength="wholeline">
+
+<varlistentry><term><option role="nodash">-a</option>, <option>-announce <replaceable>url</replaceable></option></term>
+<listitem><para>When creating a new torrent, set its announce <replaceable>url</replaceable>.</para>
+</listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-b</option>, <option>-blocklist</option></term>
+<listitem><para>Enable peer blocklists. <command>&cmd;</command> understands the bluetack blocklist file format. Bluetack blocklists are text files that applications can load in order to block access. Bluetack blocklists are available on <literal>http://www.bluetack.co.uk/<literal>. New blocklists can be added by copying them into the config-dir's "blocklists" subdirectory.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-B</option>, <option>-no-blocklist</option></term>
+<listitem><para>disable peer blocklists. </para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-c</option>, <option>-comment <replaceable>text</replaceable></option></term><listitem><para>When creating a new torrent, set its comment field.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-d</option>, <option>-downlimit <replaceable>speed</replaceable></option></term><listitem>
+<para>
+Set the maximum download <replaceable>speed</replaceable> in KB/s, which
+defaults to no limit.
+</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-D</option>, <option>-no-downlimit</option></term><listitem><para>Do not limit the download speed.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-er</option>, <option>-encryption-required</option></term><listitem><para>Encrypt all peer connections.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-ep</option>, <option>-encryption-preferred</option></term><listitem><para>Prefer encrypted peer connections.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-et</option>, <option>-encryption-tolerated</option></term><listitem><para>Prefer unencrypted peer connections.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-f</option>, <option>-finish <replaceable>script</replaceable></option></term><listitem><para>Specify a script to run when the torrent finishes.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-g</option>, <option>-conf-dir <replaceable>directory</replaceable></option></term><listitem><para>Where to look for configuration files.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-h</option>, <option>-help</option></term><listitem><para>Print a short usage summary.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-i</option>, <option>-info</option></term><listitem><para>Show torrent details and exit.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-m</option>, <option>-portmap</option></term><listitem><para>Enable portmapping via NAT-PMP or uPnP.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-M</option>, <option>-no-portmap</option></term><listitem><para>Disable portmapping.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-n</option>, <option>-new <replaceable>sourcefile</replaceable></option></term><listitem><para>Create torrent from the specified file or directory.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-p</option>, <option>-port <replaceable>port</replaceable></option></term><listitem><para>Set the <replaceable>port</replaceable> to listen for incoming peers. The default <replaceable>port</replaceable> is 51413.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-r</option>, <option>-private</option></term><listitem><para>When creating a new torrent, set its "private" flag.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-s</option>, <option>-scrape</option></term><listitem><para>Print the current number of seeders and leechers for the specified torrent.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-t</option>, <option>-tos</option></term><listitem><para>Set the peer socket TOS for local router-based traffic shaping.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-u</option>, <option>-uplimit <replaceable>speed</replaceable></option></term><listitem><para>Set the maximum upload speed, Which defaults to 20KB/s.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-U</option>, <option>-no-uplimit</option></term><listitem><para>Do not limit the upload speed.</para></listitem></varlistentry>
+
+<varlistentry><term><option role="nodash">-v</option>, <option>-verify</option></term><listitem><para>Verify the torrent's downloaded data.</para></listitem></varlistentry>
+<varlistentry><term><option role="nodash">-w</option>, <option>-download-dir <replaceable>directory</replaceable></option></term><listitem><para>Where to save download data.</para></listitem></varlistentry>
+
+<para>In addition to these options, sending transmissioncli a SIGHUP signal will contact the tracker for more peers.</para>
+</variablelist></refsect1>
+
+<refsect1 id="transmissioncli-1-oper"><title>&oper-tt;</title>
+<para>The following operands are supported:</para>
+<variablelist termlength="medium">
+<varlistentry><term><option role="nodash"><replaceable>torrent-file</replaceable
+></option></term>
+<listitem><para>The name of the torrent file.</para>
+</listitem></varlistentry>
+<varlistentry><term><option role="nodash"><replaceable>sourcefile</replaceable>
+</option></term>
+<listitem><para>The name of the file or directory to create the <replaceable>new-torrent-file</replaceable>.</para>
+</listitem></varlistentry>
+<varlistentry><term><option role="nodash"><replaceable>new-torrent-file</replaceable>
+</option></term>
+<listitem><para>The name of the output file created from the <replaceable>sourcefile</replaceable>.</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+
+<refsect1 id="transmissioncli-1-file"><title>&file-tt;</title>
+<para>The following files are used by this application:</para>
+<variablelist termlength="wholeline">
+<varlistentry><term><filename>/usr/bin/&cmd;</filename>
+</term><listitem><para>
+The executable for <application>&cmd;</application>
+</para></listitem></varlistentry>
+<varlistentry><term><filename>$HOME/.config/transmission</filename>
+</term><listitem><para>
+Directory where <application>&cmd;</application> keeps torrent information for future seeding and resuming operations.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="transmissioncli-1-exit"><title>&exit-tt;</title>
+<para>The following exit values are returned:</para>
+<variablelist termlength="xtranarrow">
+<varlistentry><term><returnvalue>0</returnvalue></term><listitem><para>Application
+exited successfully.</para>
+</listitem></varlistentry>
+<varlistentry><term><returnvalue>>0</returnvalue></term><listitem><para>Application 
+exited with failure.</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="transmissioncli-1-attr"><title>&attr-tt;</title>
+<para>See <olink targetdocent="REFMAN5" localinfo="attributes-5"><citerefentry>
+<refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1"><colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row><entry align="center" valign="middle">ATTRIBUTE TYPE</entry><entry align="center"
+valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row><entry><para>Availability</para></entry><entry><para>SUNWtransmission</para></entry>
+</row>
+<row><entry colname="COLSPEC0"><para>Interface stability</para></entry><entry
+colname="COLSPEC1"><para>Volatile</para></entry></row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+<refsect1 id="transmissioncli-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>transmission</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>transmission-daemon</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>transmission-remote</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+<para>Transmission community site - <literal>http://www.transmissionbt.org/</literal></para>
+</refsect1>
+<refsect1 id="tranmission-1-note"><title>&note-tt;</title>
+<parm><command>&cmd;</command> program was written by Charles Kerr
+‚î¨charles@rebelbase.com‚î¬, Josh Elsasser ‚î¨josh@elsasser.org‚î¬, Eric Petit
+‚î¨titer@m0k.org‚î¬, and Mitchell Livingston ‚î¨livings124@gmail.com‚î¬.<para>
+<para>The man page updated by Elaine Xiong, Sun Microsystems Inc., 2008.</para>
+</refsect1>
+</refentry>

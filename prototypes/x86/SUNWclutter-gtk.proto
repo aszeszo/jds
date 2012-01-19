@@ -1,0 +1,22 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWclutter-gtk.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWclutter-gtk.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWclutter-gtk.copyright
+f none share/doc/SUNWclutter-gtk/AUTHORS=usr/share/doc/SUNWclutter-gtk/AUTHORS 0444 root bin
+f none share/doc/SUNWclutter-gtk/COPYING.bz2=usr/share/doc/SUNWclutter-gtk/COPYING.bz2 0444 root bin
+f none share/doc/SUNWclutter-gtk/ChangeLog.bz2=usr/share/doc/SUNWclutter-gtk/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWclutter-gtk/NEWS.bz2=usr/share/doc/SUNWclutter-gtk/NEWS.bz2 0444 root bin
+f none share/doc/SUNWclutter-gtk/README=usr/share/doc/SUNWclutter-gtk/README 0444 root bin
+d none lib 0755 root bin
+d none lib/girepository-1.0 0755 root bin
+f none lib/girepository-1.0/GtkClutter-0.10.typelib=usr/lib/girepository-1.0/GtkClutter-0.10.typelib 0644 root bin
+s none lib/libclutter-gtk-0.10.so=libclutter-gtk-0.10.so.0.0.0
+s none lib/libclutter-gtk-0.10.so.0=libclutter-gtk-0.10.so.0.0.0
+f none lib/libclutter-gtk-0.10.so.0.0.0=usr/lib/libclutter-gtk-0.10.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWclutter-gtk 0755 root bin
+d none share/gir-1.0 0755 root bin
+f none share/gir-1.0/GtkClutter-0.10.gir=usr/share/gir-1.0/GtkClutter-0.10.gir 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libclutter-gtk-0.10.3=usr/share/man/man3/libclutter-gtk-0.10.3 0644 root bin

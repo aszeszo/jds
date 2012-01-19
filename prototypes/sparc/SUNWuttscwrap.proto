@@ -1,0 +1,149 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWuttscwrap.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWuttscwrap.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWuttscwrap.copyright
+d none opt 0755 root sys
+d none opt/SUNWuttscwrap 0755 root bin
+d none opt/SUNWuttscwrap/bin 0755 root bin
+f none opt/SUNWuttscwrap/bin/uttscwrap=opt/SUNWuttscwrap/bin/uttscwrap 0755 root bin
+s none opt/SUNWuttscwrap/man=share/man
+d none opt/SUNWuttscwrap/share 0755 root bin
+d none opt/SUNWuttscwrap/share/locale 0755 root bin
+d none opt/SUNWuttscwrap/share/locale/de 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/de.ISO8859-15=de
+s none opt/SUNWuttscwrap/share/locale/de.UTF-8=de
+d none opt/SUNWuttscwrap/share/locale/de/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/de/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/de/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/de_AT=de
+s none opt/SUNWuttscwrap/share/locale/de_AT.ISO8859-1=de
+s none opt/SUNWuttscwrap/share/locale/de_AT.ISO8859-15=de
+s none opt/SUNWuttscwrap/share/locale/de_AT.UTF-8=de
+s none opt/SUNWuttscwrap/share/locale/de_CH=de
+s none opt/SUNWuttscwrap/share/locale/de_CH.ISO8859-1=de
+s none opt/SUNWuttscwrap/share/locale/de_CH.UTF-8=de
+s none opt/SUNWuttscwrap/share/locale/de_DE=de
+s none opt/SUNWuttscwrap/share/locale/de_DE.ISO8859-1=de
+s none opt/SUNWuttscwrap/share/locale/de_DE.ISO8859-15=de
+s none opt/SUNWuttscwrap/share/locale/de_DE.UTF-8=de
+s none opt/SUNWuttscwrap/share/locale/de_LU.UTF-8=de
+d none opt/SUNWuttscwrap/share/locale/es 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/es.ISO8859-15=es
+s none opt/SUNWuttscwrap/share/locale/es.UTF-8=es
+d none opt/SUNWuttscwrap/share/locale/es/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/es/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/es/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/es_AR=es
+s none opt/SUNWuttscwrap/share/locale/es_AR.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_AR.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_BO=es
+s none opt/SUNWuttscwrap/share/locale/es_BO.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_BO.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_CL=es
+s none opt/SUNWuttscwrap/share/locale/es_CL.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_CL.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_CO=es
+s none opt/SUNWuttscwrap/share/locale/es_CO.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_CO.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_CR=es
+s none opt/SUNWuttscwrap/share/locale/es_CR.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_CR.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_EC=es
+s none opt/SUNWuttscwrap/share/locale/es_EC.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_EC.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_ES.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_ES.ISO8859-15=es
+s none opt/SUNWuttscwrap/share/locale/es_ES.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_GT=es
+s none opt/SUNWuttscwrap/share/locale/es_GT.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_GT.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_MX.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_MX.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_NI=es
+s none opt/SUNWuttscwrap/share/locale/es_NI.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_NI.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_PA=es
+s none opt/SUNWuttscwrap/share/locale/es_PA.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_PA.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_PE=es
+s none opt/SUNWuttscwrap/share/locale/es_PE.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_PE.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_PY=es
+s none opt/SUNWuttscwrap/share/locale/es_PY.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_PY.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_SV.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_UY=es
+s none opt/SUNWuttscwrap/share/locale/es_UY.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_UY.UTF-8=es
+s none opt/SUNWuttscwrap/share/locale/es_VE=es
+s none opt/SUNWuttscwrap/share/locale/es_VE.ISO8859-1=es
+s none opt/SUNWuttscwrap/share/locale/es_VE.UTF-8=es
+d none opt/SUNWuttscwrap/share/locale/fr 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/fr.ISO8859-15=fr
+s none opt/SUNWuttscwrap/share/locale/fr.UTF-8=fr
+d none opt/SUNWuttscwrap/share/locale/fr/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/fr/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/fr/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/fr_BE=fr
+s none opt/SUNWuttscwrap/share/locale/fr_BE.ISO8859-1=fr
+s none opt/SUNWuttscwrap/share/locale/fr_BE.ISO8859-15=fr
+s none opt/SUNWuttscwrap/share/locale/fr_BE.UTF-8=fr
+s none opt/SUNWuttscwrap/share/locale/fr_CA=fr
+s none opt/SUNWuttscwrap/share/locale/fr_CA.ISO8859-1=fr
+s none opt/SUNWuttscwrap/share/locale/fr_CA.UTF-8=fr
+s none opt/SUNWuttscwrap/share/locale/fr_CH=fr
+s none opt/SUNWuttscwrap/share/locale/fr_CH.ISO8859-1=fr
+s none opt/SUNWuttscwrap/share/locale/fr_CH.UTF-8=fr
+s none opt/SUNWuttscwrap/share/locale/fr_FR=fr
+s none opt/SUNWuttscwrap/share/locale/fr_FR.ISO8859-1=fr
+s none opt/SUNWuttscwrap/share/locale/fr_FR.ISO8859-15=fr
+s none opt/SUNWuttscwrap/share/locale/fr_FR.UTF-8=fr
+s none opt/SUNWuttscwrap/share/locale/fr_LU.UTF-8=fr
+d none opt/SUNWuttscwrap/share/locale/it 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/it.ISO8859-15=it
+s none opt/SUNWuttscwrap/share/locale/it.UTF-8=it
+d none opt/SUNWuttscwrap/share/locale/it/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/it/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/it/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/it_IT=it
+s none opt/SUNWuttscwrap/share/locale/it_IT.ISO8859-1=it
+s none opt/SUNWuttscwrap/share/locale/it_IT.ISO8859-15=it
+s none opt/SUNWuttscwrap/share/locale/it_IT.UTF-8=it
+d none opt/SUNWuttscwrap/share/locale/ja 0755 root bin
+d none opt/SUNWuttscwrap/share/locale/ja/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/ja/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/ja/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/ja_JP.PCK=ja
+s none opt/SUNWuttscwrap/share/locale/ja_JP.UTF-8=ja
+s none opt/SUNWuttscwrap/share/locale/ja_JP.eucJP=ja
+d none opt/SUNWuttscwrap/share/locale/ko 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/ko.UTF-8=ko
+d none opt/SUNWuttscwrap/share/locale/ko/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/ko/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/ko/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/ko_KR.EUC=ko
+s none opt/SUNWuttscwrap/share/locale/ko_KR.UTF-8=ko
+d none opt/SUNWuttscwrap/share/locale/sv 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/sv.ISO8859-15=sv
+s none opt/SUNWuttscwrap/share/locale/sv.UTF-8=sv
+d none opt/SUNWuttscwrap/share/locale/sv/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/sv/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/sv/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/sv_SE=sv
+s none opt/SUNWuttscwrap/share/locale/sv_SE.ISO8859-1=sv
+s none opt/SUNWuttscwrap/share/locale/sv_SE.ISO8859-15=sv
+s none opt/SUNWuttscwrap/share/locale/sv_SE.UTF-8=sv
+s none opt/SUNWuttscwrap/share/locale/zh=zh_CN
+s none opt/SUNWuttscwrap/share/locale/zh.GBK=zh_CN
+s none opt/SUNWuttscwrap/share/locale/zh.UTF-8=zh_CN
+d none opt/SUNWuttscwrap/share/locale/zh_CN 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/zh_CN.EUC=zh_CN
+s none opt/SUNWuttscwrap/share/locale/zh_CN.GB18030=zh_CN
+s none opt/SUNWuttscwrap/share/locale/zh_CN.GBK=zh_CN
+s none opt/SUNWuttscwrap/share/locale/zh_CN.UTF-8=zh_CN
+d none opt/SUNWuttscwrap/share/locale/zh_CN/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/zh_CN/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/zh_CN/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/zh_HK=zh_TW
+s none opt/SUNWuttscwrap/share/locale/zh_HK.BIG5HK=zh_HK
+s none opt/SUNWuttscwrap/share/locale/zh_HK.UTF-8=zh_HK
+d none opt/SUNWuttscwrap/share/locale/zh_TW 0755 root bin
+s none opt/SUNWuttscwrap/share/locale/zh_TW.BIG5=zh_TW
+s none opt/SUNWuttscwrap/share/locale/zh_TW.EUC=zh_TW
+s none opt/SUNWuttscwrap/share/locale/zh_TW.UTF-8=zh_TW
+d none opt/SUNWuttscwrap/share/locale/zh_TW/LC_MESSAGES 0755 root bin
+f none opt/SUNWuttscwrap/share/locale/zh_TW/LC_MESSAGES/uttscwrap-1.0.mo=opt/SUNWuttscwrap/share/locale/zh_TW/LC_MESSAGES/uttscwrap-1.0.mo 0755 root bin
+d none opt/SUNWuttscwrap/share/man 0755 root bin
+d none opt/SUNWuttscwrap/share/man/man1 0755 root bin
+f none opt/SUNWuttscwrap/share/man/man1/uttscwrap.1=opt/SUNWuttscwrap/share/man/man1/uttscwrap.1 0755 root bin

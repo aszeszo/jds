@@ -1,0 +1,74 @@
+--- gobby-0.4.6/src/encoding.cpp.orig	2007-11-23 21:50:26.000000000 +0900
++++ gobby-0.4.6/src/encoding.cpp	2008-09-24 22:11:58.241855000 +0900
+@@ -41,23 +41,43 @@ Glib::ustring convert_to_utf8(const std:
+ 
+ const std::vector<std::string>& Gobby::Encoding::get_encodings()
+ {
+-	static const std::string encodings[] = {
+-		"UTF-8",
+-		"ISO-8859-1",
+-		"ISO-8859-15",
+-		"UTF-7",
+-		"UTF-16",
+-		"UCS-2",
+-		"UCS-4"
+-	};
+-
+-	static const std::size_t encoding_count =
+-		sizeof(encodings) / sizeof(encodings[0]);
+-
+-	static std::vector<std::string> encoding_vec(
+-		encodings,
+-		encodings + encoding_count
+-	);
++	static std::size_t encoding_count = 0;
++	static std::vector<std::string> encoding_vec(encoding_count);
++
++	if(encoding_count != 0)
++		return encoding_vec;
++
++	static const char *encoding_list =
++	/* Translators: the msgid should not be localized.
++	 * The msgstr is the list of encodings separated by bar. e.g.
++	 * msgstr "EUC-JP|SHIFT-JIS|ISO-2022-JP|UTF-8|UCS-2|UCS-4" */
++		N_("UTF-8|ISO-8859-1|ISO-8859-15|UTF-7|UTF-16|UCS-2|UCS-4");
++
++	static gchar **encodings = g_strsplit(_(encoding_list), "|", 0);
++
++	encoding_count = g_strv_length(encodings);
++
++	encoding_vec.resize(encoding_count);
++	for(int i = 0; i < encoding_count; i++)
++		encoding_vec[i] = encodings[i];
++
++	g_strfreev(encodings);
++
++	static const char* current_encoding = NULL;
++	if(!g_get_charset(&current_encoding))
++	{
++		int i;
++		for(i = 0; i < encoding_count; i++)
++		{
++			if(!strcmp(encoding_vec[i].c_str(), current_encoding))
++				break;
++		}
++		if(i == encoding_count)
++		{
++			encoding_vec.resize(++encoding_count);
++			encoding_vec[encoding_count - 1] = g_strdup(current_encoding);
++		}
++	}
+ 
+ 	return encoding_vec;
+ }
+--- gobby-0.4.6/inc/common.hpp.orig	2008-09-24 03:10:59.654015000 +0900
++++ gobby-0.4.6/inc/common.hpp	2008-09-24 13:10:23.015627000 +0900
+@@ -21,6 +21,8 @@
+ 
+ #include "net6/gettext_package.hpp"
+ 
++#define N_(String) (String)
++
+ namespace Gobby
+ {
+ 

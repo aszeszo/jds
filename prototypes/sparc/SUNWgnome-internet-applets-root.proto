@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-internet-applets-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-internet-applets-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-internet-applets-root.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-internet-applets-root.preremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-internet-applets-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gweather.schemas=etc/gconf/schemas/gweather.schemas 0644 root sys

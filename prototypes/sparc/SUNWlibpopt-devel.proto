@@ -1,0 +1,5 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibpopt-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibpopt-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibpopt-devel.copyright
+d none include 0755 root bin
+f none include/popt.h=usr/include/popt.h 0644 root bin

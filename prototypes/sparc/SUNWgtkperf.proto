@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtkperf.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtkperf.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtkperf.copyright
+d none bin 0755 root bin
+f none bin/gtkperf=usr/bin/gtkperf 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/gtkperf=usr/bin/sparcv9/gtkperf 0755 root bin
+d none share 0755 root sys
+d none share/pixmaps 0755 root other
+f none share/pixmaps/duck.png=usr/share/pixmaps/duck.png 0644 root bin

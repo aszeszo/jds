@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibcompizconfig.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibcompizconfig.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibcompizconfig.copyright
+f none share/doc/SUNWlibcompizconfig/COPYING.bz2=usr/share/doc/SUNWlibcompizconfig/COPYING.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/compiz 0755 root bin
+f none lib/compiz/libccp.so=usr/lib/compiz/libccp.so 0755 root bin
+d none lib/compizconfig 0755 root bin
+d none lib/compizconfig/backends 0755 root bin
+f none lib/compizconfig/backends/libini.so=usr/lib/compizconfig/backends/libini.so 0755 root bin
+s none lib/libcompizconfig.so=libcompizconfig.so.0.0.0
+s none lib/libcompizconfig.so.0=libcompizconfig.so.0.0.0
+f none lib/libcompizconfig.so.0.0.0=usr/lib/libcompizconfig.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/compiz 0755 root other
+f none share/compiz/ccp.xml=usr/share/compiz/ccp.xml 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWlibcompizconfig 0755 root bin

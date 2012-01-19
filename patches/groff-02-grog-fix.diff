@@ -1,0 +1,11 @@
+--- groff-1.19.2/src/roff/grog/grog.sh.orig	2011-06-27 14:54:40.858321788 +0100
++++ groff-1.19.2/src/roff/grog/grog.sh	2011-06-27 15:27:31.883042290 +0100
+@@ -35,7 +35,7 @@
+ .SO_END/' \
+ | $soelim \
+ | egrep '^\.(P|PS|[PLI]P|[pnil]p|sh|Dd|Tp|Dp|De|Cx|Cl|Oo|.* Oo|Oc|.* Oc|TS|EQ|TH|SH|\[|\]|R1|GS|G1|PH|SA|SO_START|SO_END)' \
+-| awk '
++| gawk '
+ /^\.SO_START$/ { so = 1 }
+ /^\.SO_END$/ { so = 0 }
+ /^\.TS/ { tbl++; if (so > 0) soelim++ }

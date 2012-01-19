@@ -1,0 +1,11 @@
+--- orca-2.30.2/src/orca/orca-setup.ui	2010-06-21 18:12:53.000000000 +0800
++++ orca-2.30.2/src/orca/orca-setup.ui.mod	2011-06-23 16:40:47.861942931 +0800
+@@ -2428,7 +2428,7 @@
+                                 <child type="label">
+                                   <object class="GtkLabel" id="label21">
+                                     <property name="visible">True</property>
+-                                    <property name="label" translatable="yes" context="Magnification" comments="Translators: This is a label in the Preferences dialog. It applies to a number of settings related to magnification. The Zoomer is what holds/displays the magnified version of the screen contents.">&lt;b&gt;Zoomer&lt;/b&gt;</property>
++                                    <property name="label" translatable="yes" context="Magnification" comments="SUN_BRANDING: Translators: This is a label in the Preferences dialog. It applies to a number of settings related to magnification. The Zoomer is what holds/displays the magnified version of the screen contents.">&lt;b&gt;Zoomer (Full Screen is only avaliable when Composite is avaliable)&lt;/b&gt;</property>
+                                     <property name="use_markup">True</property>
+                                   </object>
+                                 </child>

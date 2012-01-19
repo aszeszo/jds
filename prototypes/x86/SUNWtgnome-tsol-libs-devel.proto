@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-tsol-libs-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-tsol-libs-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-tsol-libs-devel.copyright
+d none include 0755 root bin
+d none include/libgnometsol 0755 root other
+f none include/libgnometsol/constraint-scaling.h=usr/include/libgnometsol/constraint-scaling.h 0644 root other
+f none include/libgnometsol/label_builder.h=usr/include/libgnometsol/label_builder.h 0644 root other
+f none include/libgnometsol/message_dialog.h=usr/include/libgnometsol/message_dialog.h 0644 root other
+f none include/libgnometsol/pam_conv.h=usr/include/libgnometsol/pam_conv.h 0644 root other
+f none include/libgnometsol/pam_dialog.h=usr/include/libgnometsol/pam_dialog.h 0644 root other
+f none include/libgnometsol/sel_config.h=usr/include/libgnometsol/sel_config.h 0644 root other
+f none include/libgnometsol/userattr.h=usr/include/libgnometsol/userattr.h 0644 root other
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libgnometsol.pc=usr/lib/pkgconfig/libgnometsol.pc 0644 root other

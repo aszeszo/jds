@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWhamster-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWhamster-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWhamster-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/hamster-applet.schemas=etc/gconf/schemas/hamster-applet.schemas 0644 root sys

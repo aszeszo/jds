@@ -1,0 +1,40 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-keyring-manager.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-keyring-manager.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-keyring-manager.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-keyring-manager.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-keyring-manager.copyright
+f none share/doc/SUNWgnome-keyring-manager/AUTHORS=usr/share/doc/SUNWgnome-keyring-manager/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-keyring-manager/COPYING.bz2=usr/share/doc/SUNWgnome-keyring-manager/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring-manager/ChangeLog.bz2=usr/share/doc/SUNWgnome-keyring-manager/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring-manager/NEWS.bz2=usr/share/doc/SUNWgnome-keyring-manager/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring-manager/README=usr/share/doc/SUNWgnome-keyring-manager/README 0444 root bin
+f none share/doc/SUNWgnome-keyring-manager/docs/ChangeLog.bz2=usr/share/doc/SUNWgnome-keyring-manager/docs/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-keyring-manager/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-keyring-manager/po/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/gnome-keyring-manager=usr/bin/gnome-keyring-manager 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-keyring-manager.desktop=usr/share/applications/gnome-keyring-manager.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-keyring-manager 0755 root bin
+d none share/doc/SUNWgnome-keyring-manager/docs 0755 root bin
+d none share/doc/SUNWgnome-keyring-manager/po 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome-keyring-manager 0755 root bin
+f none share/gnome-keyring-manager/gnome-keyring-manager-ui.xml=usr/share/gnome-keyring-manager/gnome-keyring-manager-ui.xml 0644 root bin
+f none share/gnome-keyring-manager/gnome-keyring-manager.glade=usr/share/gnome-keyring-manager/gnome-keyring-manager.glade 0644 root bin
+f none share/gnome-keyring-manager/stock_delete-key.png=usr/share/gnome-keyring-manager/stock_delete-key.png 0644 root bin
+f none share/gnome-keyring-manager/stock_delete-keyring.png=usr/share/gnome-keyring-manager/stock_delete-keyring.png 0644 root bin
+f none share/gnome-keyring-manager/stock_new-key.png=usr/share/gnome-keyring-manager/stock_new-key.png 0644 root bin
+f none share/gnome-keyring-manager/stock_new-keyring.png=usr/share/gnome-keyring-manager/stock_new-keyring.png 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-keyring-manager 0755 root bin
+d none share/gnome/help/gnome-keyring-manager/C 0755 root bin
+f none share/gnome/help/gnome-keyring-manager/C/gnome-keyring-manager.xml=usr/share/gnome/help/gnome-keyring-manager/C/gnome-keyring-manager.xml 0644 root bin
+f none share/gnome/help/gnome-keyring-manager/C/legal.xml=usr/share/gnome/help/gnome-keyring-manager/C/legal.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-keyring-manager.1=usr/share/man/man1/gnome-keyring-manager.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-keyring-manager 0755 root bin
+f none share/omf/gnome-keyring-manager/gnome-keyring-manager-C.omf=usr/share/omf/gnome-keyring-manager/gnome-keyring-manager-C.omf 0644 root bin

@@ -1,0 +1,199 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-l10ndocument-hu.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-l10ndocument-hu.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-hu.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-hu.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-l10ndocument-hu.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/copyright 0755 root bin
+d none share/gnome/help/copyright/hu 0755 root bin
+f none share/gnome/help/copyright/hu/COPYING.gnome.gz=usr/share/gnome/help/copyright/hu/COPYING.gnome.gz 0644 root bin
+d none share/gnome/help/fdl 0755 root bin
+d none share/gnome/help/fdl/hu 0755 root bin
+f none share/gnome/help/fdl/hu/fdl.xml=usr/share/gnome/help/fdl/hu/fdl.xml 0644 root bin
+d none share/gnome/help/gedit 0755 root bin
+d none share/gnome/help/gedit/hu 0755 root bin
+d none share/gnome/help/gedit/hu/figures 0755 root bin
+s none share/gnome/help/gedit/hu/figures/gedit_format_bold.png=../../C/figures/gedit_format_bold.png
+s none share/gnome/help/gedit/hu/figures/gedit_format_italic.png=../../C/figures/gedit_format_italic.png
+s none share/gnome/help/gedit/hu/figures/gedit_format_strikethrough.png=../../C/figures/gedit_format_strikethrough.png
+s none share/gnome/help/gedit/hu/figures/gedit_format_underline.png=../../C/figures/gedit_format_underline.png
+s none share/gnome/help/gedit/hu/figures/gedit_recent_files_menu_icon.png=../../C/figures/gedit_recent_files_menu_icon.png
+s none share/gnome/help/gedit/hu/figures/gedit_window.png=../../C/figures/gedit_window.png
+f none share/gnome/help/gedit/hu/gedit.xml=usr/share/gnome/help/gedit/hu/gedit.xml 0644 root bin
+f none share/gnome/help/gedit/hu/legal.xml=usr/share/gnome/help/gedit/hu/legal.xml 0644 root bin
+d none share/gnome/help/gnome-access-guide 0755 root bin
+d none share/gnome/help/gnome-access-guide/hu 0755 root bin
+d none share/gnome/help/gnome-access-guide/hu/figures 0755 root bin
+s none share/gnome/help/gnome-access-guide/hu/figures/Braille_Tab.png=../../C/figures/Braille_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/General_Tab.png=../../C/figures/General_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/KeyBindings_Tab.png=../../C/figures/KeyBindings_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/KeyBindings_Tab_Unbound.png=../../C/figures/KeyBindings_Tab_Unbound.png
+s none share/gnome/help/gnome-access-guide/hu/figures/KeyEcho_Tab.png=../../C/figures/KeyEcho_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/Magnifier_Advanced.png=../../C/figures/Magnifier_Advanced.png
+s none share/gnome/help/gnome-access-guide/hu/figures/Magnifier_Tab.png=../../C/figures/Magnifier_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/MainWindow.png=../../C/figures/MainWindow.png
+s none share/gnome/help/gnome-access-guide/hu/figures/Pronunciation_Tab.png=../../C/figures/Pronunciation_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/RPM_search_gnome_common.png=../../C/figures/RPM_search_gnome_common.png
+s none share/gnome/help/gnome-access-guide/hu/figures/Speech_Tab.png=../../C/figures/Speech_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/TextAttributes_Tab.png=../../C/figures/TextAttributes_Tab.png
+s none share/gnome/help/gnome-access-guide/hu/figures/accessx.png=../../C/figures/accessx.png
+s none share/gnome/help/gnome-access-guide/hu/figures/bouncekeys.png=../../C/figures/bouncekeys.png
+s none share/gnome/help/gnome-access-guide/hu/figures/button.png=../../C/figures/button.png
+s none share/gnome/help/gnome-access-guide/hu/figures/check_box.png=../../C/figures/check_box.png
+s none share/gnome/help/gnome-access-guide/hu/figures/dropdown_combination_box.png=../../C/figures/dropdown_combination_box.png
+s none share/gnome/help/gnome-access-guide/hu/figures/dropdown_list_box.png=../../C/figures/dropdown_list_box.png
+s none share/gnome/help/gnome-access-guide/hu/figures/mousekeys.png=../../C/figures/mousekeys.png
+s none share/gnome/help/gnome-access-guide/hu/figures/move_object_arrows.png=../../C/figures/move_object_arrows.png
+s none share/gnome/help/gnome-access-guide/hu/figures/move_object_before.png=../../C/figures/move_object_before.png
+s none share/gnome/help/gnome-access-guide/hu/figures/move_object_jump.png=../../C/figures/move_object_jump.png
+s none share/gnome/help/gnome-access-guide/hu/figures/move_object_push.png=../../C/figures/move_object_push.png
+s none share/gnome/help/gnome-access-guide/hu/figures/radio_button.png=../../C/figures/radio_button.png
+s none share/gnome/help/gnome-access-guide/hu/figures/slider.png=../../C/figures/slider.png
+s none share/gnome/help/gnome-access-guide/hu/figures/slowkeys.png=../../C/figures/slowkeys.png
+s none share/gnome/help/gnome-access-guide/hu/figures/spin_box.png=../../C/figures/spin_box.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickyaltlatch.png=../../C/figures/stickyaltlatch.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickyaltlock.png=../../C/figures/stickyaltlock.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickyctrllatch.png=../../C/figures/stickyctrllatch.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickyctrllock.png=../../C/figures/stickyctrllock.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickyshiftlatch.png=../../C/figures/stickyshiftlatch.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickyshiftlock.png=../../C/figures/stickyshiftlock.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickywindowlatch.png=../../C/figures/stickywindowlatch.png
+s none share/gnome/help/gnome-access-guide/hu/figures/stickywindowlock.png=../../C/figures/stickywindowlock.png
+s none share/gnome/help/gnome-access-guide/hu/figures/tabbed_section.png=../../C/figures/tabbed_section.png
+s none share/gnome/help/gnome-access-guide/hu/figures/text_box.png=../../C/figures/text_box.png
+s none share/gnome/help/gnome-access-guide/hu/figures/tree.png=../../C/figures/tree.png
+f none share/gnome/help/gnome-access-guide/hu/gnome-access-guide.xml=usr/share/gnome/help/gnome-access-guide/hu/gnome-access-guide.xml 0644 root bin
+d none share/gnome/help/gnome-power-manager 0755 root bin
+d none share/gnome/help/gnome-power-manager/hu 0755 root bin
+d none share/gnome/help/gnome-power-manager/hu/figures 0755 root bin
+s none share/gnome/help/gnome-power-manager/hu/figures/applet-brightness.png=../../C/figures/applet-brightness.png
+s none share/gnome/help/gnome-power-manager/hu/figures/applet-inhibit.png=../../C/figures/applet-inhibit.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-cell-capacity.png=../../C/figures/gpm-cell-capacity.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-charged.png=../../C/figures/gpm-charged.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-critical.png=../../C/figures/gpm-critical.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-low.png=../../C/figures/gpm-low.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-prefs-ac.png=../../C/figures/gpm-prefs-ac.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-prefs-battery.png=../../C/figures/gpm-prefs-battery.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-prefs-general.png=../../C/figures/gpm-prefs-general.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-stats-graph.png=../../C/figures/gpm-stats-graph.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-suspend-problem.png=../../C/figures/gpm-suspend-problem.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gpm-unplugged.png=../../C/figures/gpm-unplugged.png
+s none share/gnome/help/gnome-power-manager/hu/figures/gs-prefs.png=../../C/figures/gs-prefs.png
+f none share/gnome/help/gnome-power-manager/hu/gnome-power-manager.xml=usr/share/gnome/help/gnome-power-manager/hu/gnome-power-manager.xml 0644 root bin
+d none share/gnome/help/gpl 0755 root bin
+d none share/gnome/help/gpl/hu 0755 root bin
+f none share/gnome/help/gpl/hu/gpl.xml=usr/share/gnome/help/gpl/hu/gpl.xml 0644 root bin
+d none share/gnome/help/lgpl 0755 root bin
+d none share/gnome/help/lgpl/hu 0755 root bin
+f none share/gnome/help/lgpl/hu/lgpl.xml=usr/share/gnome/help/lgpl/hu/lgpl.xml 0644 root bin
+d none share/gnome/help/mixer_applet2 0755 root bin
+d none share/gnome/help/mixer_applet2/hu 0755 root bin
+d none share/gnome/help/mixer_applet2/hu/figures 0755 root bin
+s none share/gnome/help/mixer_applet2/hu/figures/volumecontrol_applet.png=../../C/figures/volumecontrol_applet.png
+f none share/gnome/help/mixer_applet2/hu/mixer_applet2.xml=usr/share/gnome/help/mixer_applet2/hu/mixer_applet2.xml 0644 root bin
+d none share/gnome/help/trashapplet 0755 root bin
+d none share/gnome/help/trashapplet/hu 0755 root bin
+d none share/gnome/help/trashapplet/hu/figures 0755 root bin
+s none share/gnome/help/trashapplet/hu/figures/trash-applet.png=../../C/figures/trash-applet.png
+f none share/gnome/help/trashapplet/hu/trashapplet.xml=usr/share/gnome/help/trashapplet/hu/trashapplet.xml 0644 root bin
+d none share/gnome/help/user-guide 0755 root bin
+d none share/gnome/help/user-guide/hu 0755 root bin
+d none share/gnome/help/user-guide/hu/figures 0755 root bin
+s none share/gnome/help/user-guide/hu/figures/ask_pointer.png=../../C/figures/ask_pointer.png
+s none share/gnome/help/user-guide/hu/figures/busy_pointer.png=../../C/figures/busy_pointer.png
+s none share/gnome/help/user-guide/hu/figures/com_file_manager_menu.png=../../C/figures/com_file_manager_menu.png
+s none share/gnome/help/user-guide/hu/figures/copy_pointer.png=../../C/figures/copy_pointer.png
+s none share/gnome/help/user-guide/hu/figures/force_quit.png=../../C/figures/force_quit.png
+s none share/gnome/help/user-guide/hu/figures/four_hide_button.png=../../C/figures/four_hide_button.png
+s none share/gnome/help/user-guide/hu/figures/gedit_window.png=../../C/figures/gedit_window.png
+s none share/gnome/help/user-guide/hu/figures/gnome_panel.png=../../C/figures/gnome_panel.png
+s none share/gnome/help/user-guide/hu/figures/hyperlink_pointer.png=../../C/figures/hyperlink_pointer.png
+s none share/gnome/help/user-guide/hu/figures/ibeam_pointer.png=../../C/figures/ibeam_pointer.png
+s none share/gnome/help/user-guide/hu/figures/link_pointer.png=../../C/figures/link_pointer.png
+s none share/gnome/help/user-guide/hu/figures/lockscreen_icon.png=../../C/figures/lockscreen_icon.png
+s none share/gnome/help/user-guide/hu/figures/logout_icon.png=../../C/figures/logout_icon.png
+s none share/gnome/help/user-guide/hu/figures/menu_bar_applet.png=../../C/figures/menu_bar_applet.png
+s none share/gnome/help/user-guide/hu/figures/menu_panel.png=../../C/figures/menu_panel.png
+s none share/gnome/help/user-guide/hu/figures/move_panel_object_pointer.png=../../C/figures/move_panel_object_pointer.png
+s none share/gnome/help/user-guide/hu/figures/move_pointer.png=../../C/figures/move_pointer.png
+s none share/gnome/help/user-guide/hu/figures/movewindow_pointer.png=../../C/figures/movewindow_pointer.png
+s none share/gnome/help/user-guide/hu/figures/naut_browser_mode.png=../../C/figures/naut_browser_mode.png
+s none share/gnome/help/user-guide/hu/figures/naut_button_bar.png=../../C/figures/naut_button_bar.png
+s none share/gnome/help/user-guide/hu/figures/naut_computer_launcher.png=../../C/figures/naut_computer_launcher.png
+s none share/gnome/help/user-guide/hu/figures/naut_emblem.png=../../C/figures/naut_emblem.png
+s none share/gnome/help/user-guide/hu/figures/naut_go_to_location.png=../../C/figures/naut_go_to_location.png
+s none share/gnome/help/user-guide/hu/figures/naut_link_emblem.png=../../C/figures/naut_link_emblem.png
+s none share/gnome/help/user-guide/hu/figures/naut_noread_emblem.png=../../C/figures/naut_noread_emblem.png
+s none share/gnome/help/user-guide/hu/figures/naut_normal_size_button.png=../../C/figures/naut_normal_size_button.png
+s none share/gnome/help/user-guide/hu/figures/naut_nowrite_emblem.png=../../C/figures/naut_nowrite_emblem.png
+s none share/gnome/help/user-guide/hu/figures/naut_refine_search.png=../../C/figures/naut_refine_search.png
+s none share/gnome/help/user-guide/hu/figures/naut_sampleemblem1_icon.png=../../C/figures/naut_sampleemblem1_icon.png
+s none share/gnome/help/user-guide/hu/figures/naut_sampleemblem2_icon.png=../../C/figures/naut_sampleemblem2_icon.png
+s none share/gnome/help/user-guide/hu/figures/naut_sampleemblem3_icon.png=../../C/figures/naut_sampleemblem3_icon.png
+s none share/gnome/help/user-guide/hu/figures/naut_sampleemblem_icon.png=../../C/figures/naut_sampleemblem_icon.png
+s none share/gnome/help/user-guide/hu/figures/naut_samplesymlink_icon.png=../../C/figures/naut_samplesymlink_icon.png
+s none share/gnome/help/user-guide/hu/figures/naut_search_bar.png=../../C/figures/naut_search_bar.png
+s none share/gnome/help/user-guide/hu/figures/naut_search_results.png=../../C/figures/naut_search_results.png
+s none share/gnome/help/user-guide/hu/figures/naut_spatial_icon_view.png=../../C/figures/naut_spatial_icon_view.png
+s none share/gnome/help/user-guide/hu/figures/naut_spatial_list_view.png=../../C/figures/naut_spatial_list_view.png
+s none share/gnome/help/user-guide/hu/figures/naut_spatial_mode.png=../../C/figures/naut_spatial_mode.png
+s none share/gnome/help/user-guide/hu/figures/naut_spatial_view.png=../../C/figures/naut_spatial_view.png
+s none share/gnome/help/user-guide/hu/figures/naut_starthere_launcher.png=../../C/figures/naut_starthere_launcher.png
+s none share/gnome/help/user-guide/hu/figures/naut_trash_launcher.png=../../C/figures/naut_trash_launcher.png
+s none share/gnome/help/user-guide/hu/figures/naut_zoom_in_button.png=../../C/figures/naut_zoom_in_button.png
+s none share/gnome/help/user-guide/hu/figures/naut_zoom_out_button.png=../../C/figures/naut_zoom_out_button.png
+s none share/gnome/help/user-guide/hu/figures/nautilus_restore_saved_search.png=../../C/figures/nautilus_restore_saved_search.png
+s none share/gnome/help/user-guide/hu/figures/normal_pointer.png=../../C/figures/normal_pointer.png
+s none share/gnome/help/user-guide/hu/figures/not_available_pointer.png=../../C/figures/not_available_pointer.png
+s none share/gnome/help/user-guide/hu/figures/notification_area_icon.png=../../C/figures/notification_area_icon.png
+s none share/gnome/help/user-guide/hu/figures/open_drawer.png=../../C/figures/open_drawer.png
+s none share/gnome/help/user-guide/hu/figures/openwindows_menu.png=../../C/figures/openwindows_menu.png
+s none share/gnome/help/user-guide/hu/figures/panel_object_popup_menu.png=../../C/figures/panel_object_popup_menu.png
+s none share/gnome/help/user-guide/hu/figures/resize_pointer.png=../../C/figures/resize_pointer.png
+s none share/gnome/help/user-guide/hu/figures/run_button.png=../../C/figures/run_button.png
+s none share/gnome/help/user-guide/hu/figures/sample_applet.png=../../C/figures/sample_applet.png
+s none share/gnome/help/user-guide/hu/figures/screenshot_button.png=../../C/figures/screenshot_button.png
+s none share/gnome/help/user-guide/hu/figures/searchtool_button.png=../../C/figures/searchtool_button.png
+s none share/gnome/help/user-guide/hu/figures/show_desktop_button.png=../../C/figures/show_desktop_button.png
+s none share/gnome/help/user-guide/hu/figures/titlebar_anno_window.png=../../C/figures/titlebar_anno_window.png
+s none share/gnome/help/user-guide/hu/figures/titlebar_window.png=../../C/figures/titlebar_window.png
+s none share/gnome/help/user-guide/hu/figures/typical_menu.png=../../C/figures/typical_menu.png
+s none share/gnome/help/user-guide/hu/figures/window_list_applet.png=../../C/figures/window_list_applet.png
+s none share/gnome/help/user-guide/hu/figures/window_list_group_applet.png=../../C/figures/window_list_group_applet.png
+s none share/gnome/help/user-guide/hu/figures/workspace_switcher_applet.png=../../C/figures/workspace_switcher_applet.png
+s none share/gnome/help/user-guide/hu/figures/yelp_add_bookmark.png=../../C/figures/yelp_add_bookmark.png
+s none share/gnome/help/user-guide/hu/figures/yelp_edit_bookmarks.png=../../C/figures/yelp_edit_bookmarks.png
+s none share/gnome/help/user-guide/hu/figures/yelp_preferences.png=../../C/figures/yelp_preferences.png
+s none share/gnome/help/user-guide/hu/figures/yelp_window.png=../../C/figures/yelp_window.png
+f none share/gnome/help/user-guide/hu/glossary.xml=usr/share/gnome/help/user-guide/hu/glossary.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/gosbasic.xml=usr/share/gnome/help/user-guide/hu/gosbasic.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/goscustdesk.xml=usr/share/gnome/help/user-guide/hu/goscustdesk.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/goseditmainmenu.xml=usr/share/gnome/help/user-guide/hu/goseditmainmenu.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/gosfeedback.xml=usr/share/gnome/help/user-guide/hu/gosfeedback.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/gosnautilus.xml=usr/share/gnome/help/user-guide/hu/gosnautilus.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/gosoverview.xml=usr/share/gnome/help/user-guide/hu/gosoverview.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/gospanel.xml=usr/share/gnome/help/user-guide/hu/gospanel.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/gosstartsession.xml=usr/share/gnome/help/user-guide/hu/gosstartsession.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/gostools.xml=usr/share/gnome/help/user-guide/hu/gostools.xml 0644 root bin
+f none share/gnome/help/user-guide/hu/user-guide.xml=usr/share/gnome/help/user-guide/hu/user-guide.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/fdl 0755 root bin
+f none share/omf/fdl/fdl-hu.omf=usr/share/omf/fdl/fdl-hu.omf 0644 root bin
+d none share/omf/gedit 0755 root bin
+f none share/omf/gedit/gedit-hu.omf=usr/share/omf/gedit/gedit-hu.omf 0644 root bin
+d none share/omf/gnome-access-guide 0755 root bin
+f none share/omf/gnome-access-guide/gnome-access-guide-hu.omf=usr/share/omf/gnome-access-guide/gnome-access-guide-hu.omf 0644 root bin
+d none share/omf/gnome-power-manager 0755 root bin
+f none share/omf/gnome-power-manager/gnome-power-manager-hu.omf=usr/share/omf/gnome-power-manager/gnome-power-manager-hu.omf 0644 root bin
+d none share/omf/gpl 0755 root bin
+f none share/omf/gpl/gpl-hu.omf=usr/share/omf/gpl/gpl-hu.omf 0644 root bin
+d none share/omf/lgpl 0755 root bin
+f none share/omf/lgpl/lgpl-hu.omf=usr/share/omf/lgpl/lgpl-hu.omf 0644 root bin
+d none share/omf/mixer_applet2 0755 root bin
+f none share/omf/mixer_applet2/mixer_applet2-hu.omf=usr/share/omf/mixer_applet2/mixer_applet2-hu.omf 0644 root bin
+d none share/omf/trashapplet 0755 root bin
+f none share/omf/trashapplet/trashapplet-hu.omf=usr/share/omf/trashapplet/trashapplet-hu.omf 0644 root bin
+d none share/omf/user-guide 0755 root bin
+f none share/omf/user-guide/user-guide-hu.omf=usr/share/omf/user-guide/user-guide-hu.omf 0644 root bin

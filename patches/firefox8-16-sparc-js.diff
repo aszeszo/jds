@@ -1,0 +1,71 @@
+diff -r 8e7da0684155 -r 9cea788e8c07 js/src/assembler/assembler/MacroAssemblerSparc.h
+--- a/js/src/assembler/assembler/MacroAssemblerSparc.h	Sun Aug 14 19:51:16 2011 -0700
++++ b/js/src/assembler/assembler/MacroAssemblerSparc.h	Mon Aug 15 01:38:34 2011 -0700
+@@ -1330,6 +1330,11 @@
+             m_assembler.fmuld_r(SparcRegisters::f30, dest, dest);
+         }
+ 
++        void absDouble(FPRegisterID src, FPRegisterID dest)
++        {
++            m_assembler.fabsd_r(src, dest);
++        }
++
+         void sqrtDouble(FPRegisterID src, FPRegisterID dest)
+         {
+             m_assembler.fsqrtd_r(src, dest);
+@@ -1448,7 +1453,7 @@
+ 
+         void zeroDouble(FPRegisterID srcDest)
+         {
+-            m_assembler.fsubd_r(srcDest, srcDest, srcDest);
++            fastLoadDouble(SparcRegisters::g0, SparcRegisters::g0, srcDest);
+         }
+ 
+     protected:
+diff -r 8e7da0684155 -r 9cea788e8c07 js/src/methodjit/FastOps.cpp
+--- a/js/src/methodjit/FastOps.cpp	Sun Aug 14 19:51:16 2011 -0700
++++ b/js/src/methodjit/FastOps.cpp	Mon Aug 15 01:38:34 2011 -0700
+@@ -2194,12 +2194,21 @@
+ 
+         /* Ignore the sign bit. */
+         masm.lshiftPtr(Imm32(1), treg);
+-#ifndef JS_CPU_X64
+-        static const int ShiftedCanonicalNaNType = 0x7FF80000 << 1;
+ #ifdef JS_CPU_SPARC
+         /* On Sparc the result 0/0 is 0x7FFFFFFF not 0x7FF80000 */
+-        masm.and32(Imm32(ShiftedCanonicalNaNType), treg);
+-#endif
++        static const int ShiftedCanonicalNaNType1 = 0x7FFFFFFF << 1;
++        static const int ShiftedCanonicalNaNType2 = 0x7FF80000 << 1;
++        RegisterID result1 = frame.allocReg();
++        masm.setPtr(oppositeCond, treg, Imm32(ShiftedCanonicalNaNType1), result1);
++        masm.setPtr(oppositeCond, treg, Imm32(ShiftedCanonicalNaNType2), result);
++        if(op == JSOP_STRICTEQ) {
++            masm.and32(result1, result);
++        } else {
++            masm.or32(result1, result);
++        }
++        frame.freeReg(result1);
++#elif !defined(JS_CPU_X64)
++        static const int ShiftedCanonicalNaNType = 0x7FF80000 << 1;
+         masm.setPtr(oppositeCond, treg, Imm32(ShiftedCanonicalNaNType), result);
+ #else
+         static const void *ShiftedCanonicalNaNType = (void *)(0x7FF8000000000000 << 1);
+diff -r 97b12b70bf26 js/src/assembler/assembler/SparcAssembler.h
+--- a/js/src/assembler/assembler/SparcAssembler.h	Fri Sep 30 09:51:17 2011 -0700
++++ b/js/src/assembler/assembler/SparcAssembler.h	Wed Oct 05 13:04:17 2011 +0800
+@@ -889,6 +889,14 @@
+             format_3_8(2, rd, 0x34, 0, 0x2a, rs2);
+         }
+ 
++        void fabsd_r(int rs2, int rd)
++        {
++            js::JaegerSpew(js::JSpew_Insns,
++                           IPFX "fabsd     %s, %s\n", MAYBE_PAD,
++                           nameFpReg(rs2), nameFpReg(rd));
++            format_3_8(2, rd, 0x34, 0, 0x0a, rs2);
++        }
++
+         void fnegd_r(int rs2, int rd)
+         {
+             js::JaegerSpew(js::JSpew_Insns,

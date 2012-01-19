@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibffi.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibffi.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibffi.copyright
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libffi.so=libffi.so.5.0.10
+s none lib/amd64/libffi.so.5=libffi.so.5.0.10
+f none lib/amd64/libffi.so.5.0.10=usr/lib/amd64/libffi.so.5.0.10 0755 root bin
+s none lib/libffi.so=libffi.so.5.0.10
+s none lib/libffi.so.5=libffi.so.5.0.10
+f none lib/libffi.so.5.0.10=usr/lib/libffi.so.5.0.10 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/ffi.3=usr/share/man/man3/ffi.3 0644 root bin
+f none share/man/man3/ffi_call.3=usr/share/man/man3/ffi_call.3 0644 root bin
+f none share/man/man3/ffi_prep_cif.3=usr/share/man/man3/ffi_prep_cif.3 0644 root bin

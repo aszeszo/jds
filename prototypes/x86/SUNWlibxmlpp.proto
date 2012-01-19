@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibxmlpp.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibxmlpp.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibxmlpp.copyright
+f none share/doc/SUNWlibxmlpp/AUTHORS=usr/share/doc/SUNWlibxmlpp/AUTHORS 0444 root bin
+f none share/doc/SUNWlibxmlpp/COPYING=usr/share/doc/SUNWlibxmlpp/COPYING 0444 root bin
+f none share/doc/SUNWlibxmlpp/ChangeLog=usr/share/doc/SUNWlibxmlpp/ChangeLog 0444 root bin
+f none share/doc/SUNWlibxmlpp/NEWS=usr/share/doc/SUNWlibxmlpp/NEWS 0444 root bin
+f none share/doc/SUNWlibxmlpp/README=usr/share/doc/SUNWlibxmlpp/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libxml++-2.6.so=libxml++-2.6.so.2.0.7
+s none lib/libxml++-2.6.so.2=libxml++-2.6.so.2.0.7
+f none lib/libxml++-2.6.so.2.0.7=usr/lib/libxml++-2.6.so.2.0.7 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibxmlpp 0755 root bin

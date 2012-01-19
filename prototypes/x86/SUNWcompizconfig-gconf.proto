@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompizconfig-gconf.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompizconfig-gconf.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompizconfig-gconf.copyright
+f none share/doc/SUNWcompizconfig-gconf/COPYING.bz2=usr/share/doc/SUNWcompizconfig-gconf/COPYING.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/compizconfig 0755 root bin
+d none lib/compizconfig/backends 0755 root bin
+f none lib/compizconfig/backends/libgconf.so=usr/lib/compizconfig/backends/libgconf.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWcompizconfig-gconf 0755 root bin

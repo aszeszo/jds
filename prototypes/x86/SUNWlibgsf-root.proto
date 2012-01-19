@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgsf-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgsf-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgsf-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gsf-office-thumbnailer.schemas=etc/gconf/schemas/gsf-office-thumbnailer.schemas 0644 root sys

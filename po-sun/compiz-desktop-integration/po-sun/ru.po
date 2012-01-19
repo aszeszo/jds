@@ -1,0 +1,147 @@
+# Copyright (C) 2010 Sun Microsystems, Inc
+# This file is distributed under the same license as the compiz-desktop-integration package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: libgksuui HEAD\n"
+       "Report-Msgid-Bugs-To: \n"
+       "POT-Creation-Date: 2009-12-03 10:19+0800\n"
+       "PO-Revision-Date: 2009-04-06 14:28+0900\n"
+       "Last-Translator: desktop-discuss@opensolaris.org\n"
+       "Language-Team: desktop-discuss@opensolaris.org\n"
+       "MIME-Version: 1.0\n"
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+#: ../compiz-config.glade.h:1
+msgid "<b>Status</b>"
+msgstr "<b>Статус</b>"
+
+#: ../compiz-config.glade.h:2
+msgid "<b>System Compatibility checks</b>"
+msgstr "<b>Проверка совместимости системы</b>"
+
+#: ../compiz-config.glade.h:3
+msgid "Architecture"
+msgstr "Архитектура"
+
+#: ../compiz-config.glade.h:4
+msgid "Session Type"
+msgstr "Тип сеанса"
+
+#: ../compiz-config.glade.h:5
+msgid "Video Card"
+msgstr "Видеоплата"
+
+#: ../compiz-config.glade.h:6
+msgid "Video Card Driver"
+msgstr "Драйвер видеоплаты"
+
+#: ../compiz-config.glade.h:7
+msgid "Visual Effect System Checks"
+msgstr "Проверка системы визуальных эффектов"
+
+#: ../compiz-config.glade.h:8
+msgid "Xserver Configuration"
+msgstr "Настройка Xserver"
+
+#: ../compiz-config.glade.h:9
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../compiz-config.glade.h:10
+msgid "modify configuration"
+msgstr "изменение настройки"
+
+#: ../compiz-config.glade.h:11
+msgid "undefined"
+msgstr "не определено"
+
+#: ../compiz-config.glade.h:12
+msgid "unknown"
+msgstr "неизвестно"
+
+#: ../compiz-configure.in:113
+msgid "support 3D acceleration"
+msgstr "поддержка ускорения трехмерной графики"
+
+#: ../compiz-configure.in:115
+#, c-format
+msgid ""
+"no supported driver for card of type (%s) : Compiz will not run on this "
+"system"
+msgstr ""
+       "отсутствует поддерживаемый драйвер для видеоплаты типа (%s): работа Compiz на этом компьютере невозможна"
+
+#: ../compiz-configure.in:116
+msgid "no 3D acceleration"
+msgstr "отсутствует ускорение трехмерной графики"
+
+#: ../compiz-configure.in:131
+msgid "Trusted Session detected : Compiz will not run in this configuration"
+msgstr "Обнаружен сеанс Trusted Session: работа Compiz в этой конфигурации невозможна"
+
+#: ../compiz-configure.in:132
+msgid "Trusted Session"
+msgstr "Trusted Session"
+
+#: ../compiz-configure.in:142
+msgid "Sunray Session detected : Compiz will not run in this configuration"
+msgstr "Обнаружен сеанс Sunray Session: работа Compiz в этой конфигурации невозможна"
+
+#: ../compiz-configure.in:143
+msgid "Sunray Session"
+msgstr "Sunray Session"
+
+#: ../compiz-configure.in:145
+msgid "Regular Session"
+msgstr "Обычный сеанс"
+
+#: ../compiz-configure.in:190 ../compiz-configure.in:241
+msgid "configured"
+msgstr "настроено"
+
+#: ../compiz-configure.in:192 ../compiz-configure.in:243
+msgid "Xorg configuration file is not configured to run the visual effects"
+msgstr "В файле настройки Xorg отсутствуют настройки, необходимые для запуска визуальных эффектов"
+
+#: ../compiz-configure.in:193 ../compiz-configure.in:244
+msgid "not configured"
+msgstr "не настроено"
+
+#: ../compiz-configure.in:344
+msgid "This system can run the visual effects"
+msgstr "На этом компьютере возможна работа визуальных эффектов"
+
+#: ../compiz-configure.in:346
+msgid ""
+"This system can run the visual effects but is not configured to do so. Click "
+"on the modify button to configure it."
+msgstr ""
+       "На этом компьютере возможна работа визуальных эффектов, но она не настроена. Нажмите кнопку изменения для настройки визуальных эффектов."
+
+#: ../compiz-configure.in:349
+msgid ""
+"This system cannot run the visual effects as it is not running a regular "
+"session"
+msgstr ""
+       "На этом компьютере невозможна работа визуальных эффектов, поскольку используется нестандартный "
+       "сеанс"
+
+#: ../compiz-configure.in:353
+msgid ""
+"This system can run the visual effects but the current graphics driver does "
+"not support 3D acceleration. Refer to http://opensolaris.org/os/project/dri/ "
+"for more information about the supported cards"
+msgstr ""
+       "На этом компьютере возможна работа визуальных эффектов, однако имеющийся драйвер видеоплаты не поддерживает"
+       "ускорение трехмерной графики. Для получения дополнительных сведениях о поддерживаемых видеоплатах перейдите по ссылке http://opensolaris.org/os/project/dri/ "
+
+#: ../compiz-configure.in:356
+msgid ""
+"This system cannot run the visual effects due to the lack of supported 3D "
+"Video Card Driver"
+msgstr ""
+       "На этом компьютере невозможна работа визуальных эффектов из-за отсутствия поддерживаемого драйвера видеоплаты с функциями трехмерной графики"

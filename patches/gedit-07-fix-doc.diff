@@ -1,0 +1,47 @@
+diff -urN gedit-2.30.4/help/C/gedit.xml ../SUNWgnome-text-editor-2.30.4.hacked/gedit-2.30.4/help/C/gedit.xml
+--- gedit-2.30.4/help/C/gedit.xml	2010-09-28 07:57:13.000000000 +0000
++++ ../SUNWgnome-text-editor-2.30.4.hacked/gedit-2.30.4/help/C/gedit.xml	2011-05-27 13:02:48.815613374 +0000
+@@ -28,7 +28,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder> </copyright>
++		<year>2011</year>
++		<holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+ 	 <copyright>
+ 		<year>2000</year>
+ 		<holder>Eric Baudais</holder> </copyright>
+@@ -65,10 +66,10 @@
+ 			<contrib>Added the Shortcut Keys Table</contrib>
+ 		</author>		
+ 		<author>
+-		  <firstname>Sun Java Desktop System Documentation Team</firstname>
++		  <firstname>Oracle Solaris Desktop Documentation Team</firstname>
+ 		  <surname></surname>
+ 		  <affiliation>
+-			 <orgname>Sun Microsystems</orgname>
++			 <orgname>Oracle Corporation</orgname>
+ 			 <address><email>gdocteam@sun.com</email></address>
+ 		  </affiliation>
+ 		</author>
+@@ -188,7 +189,7 @@
+ 		  <revnumber>&app; Manual V2.8</revnumber>
+ 		  <date>&date;</date>
+ 		  <revdescription>
+-			 <para role="author">Sun Java Desktop System Documentation Team</para>
++			 <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 			 <para role="publisher">GNOME Documentation Project</para>
+ 		  </revdescription>
+ 		</revision>
+diff -urN gedit.orig/gedit/gedit-commands-help.c gedit.new/gedit/gedit-commands-help.c
+--- gedit.orig/gedit/gedit-commands-help.c	2011-06-27 15:19:39.331901924 +0100
++++ gedit.new/gedit/gedit-commands-help.c	2011-06-27 15:20:21.256786800 +0100
+@@ -68,7 +68,7 @@
+ 	};
+ 
+ 	static const gchar * const documenters[] = {
+-		"Sun GNOME Documentation Team <gdocteam@sun.com>",
++		"Oracle Solaris Desktop Documentation Team",
+ 		"Eric Baudais <baudais@okstate.edu>",
+ 		NULL
+ 	};

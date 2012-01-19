@@ -1,0 +1,31 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-speech.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-speech.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-speech.copyright
+f none share/doc/SUNWgnome-a11y-speech/AUTHORS=usr/share/doc/SUNWgnome-a11y-speech/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-a11y-speech/COPYING.bz2=usr/share/doc/SUNWgnome-a11y-speech/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-speech/ChangeLog.bz2=usr/share/doc/SUNWgnome-a11y-speech/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-speech/NEWS.bz2=usr/share/doc/SUNWgnome-a11y-speech/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-speech/README=usr/share/doc/SUNWgnome-a11y-speech/README 0444 root bin
+d none bin 0755 root bin
+f none bin/test-speech=usr/bin/test-speech 0755 root bin
+d none lib 0755 root bin
+s none lib/libgnomespeech.so=libgnomespeech.so.7.0.1
+s none lib/libgnomespeech.so.7=libgnomespeech.so.7.0.1
+f none lib/libgnomespeech.so.7.0.1=usr/lib/libgnomespeech.so.7.0.1 0755 root bin
+d none lib/orbit-2.0 0755 root bin
+f none lib/orbit-2.0/GNOME_Speech_module.so=usr/lib/orbit-2.0/GNOME_Speech_module.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-a11y-speech 0755 root bin
+d none share/idl 0755 root bin
+d none share/idl/gnome-speech-1.0 0755 root bin
+f none share/idl/gnome-speech-1.0/GNOME_Speech.idl=usr/share/idl/gnome-speech-1.0/GNOME_Speech.idl 0644 root bin
+f none share/idl/gnome-speech-1.0/GNOME_Speech_Speaker.idl=usr/share/idl/gnome-speech-1.0/GNOME_Speech_Speaker.idl 0644 root bin
+f none share/idl/gnome-speech-1.0/GNOME_Speech_SpeechCallback.idl=usr/share/idl/gnome-speech-1.0/GNOME_Speech_SpeechCallback.idl 0644 root bin
+f none share/idl/gnome-speech-1.0/GNOME_Speech_SynthesisDriver.idl=usr/share/idl/gnome-speech-1.0/GNOME_Speech_SynthesisDriver.idl 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/espeak-synthesis-driver.1=usr/share/man/man1/espeak-synthesis-driver.1 0644 root bin
+f none share/man/man1/test-speech.1=usr/share/man/man1/test-speech.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgnomespeech.3=usr/share/man/man3/libgnomespeech.3 0644 root bin

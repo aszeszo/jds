@@ -1,0 +1,698 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: \nPOT-Creation-Date: 2011-06-29 10:44+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
+
+#: ../data/time-slider.desktop.in.h:1
+msgid "Configure the system to take automatic snapshots of your data"
+msgstr "將系統配置為自動對資料執行快照"
+
+#: ../data/time-slider.desktop.in.h:2
+#: ../usr/share/time-slider/lib/time_slider/applet.py:634
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:648
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:830
+msgid "Time Slider"
+msgstr "時空裝置"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:2
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:365
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:520
+#, no-c-format, python-format
+msgid "%d snapshots will be deleted."
+msgstr "將刪除 %d 個快照。"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:3
+msgid "<b>Summary</b>"
+msgstr "<b>摘要</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:4
+msgid "D_eselect All"
+msgstr "全部不選(D)"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:5
+msgid "Delete Snapshots"
+msgstr "刪除快照"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:6
+msgid "Deleting Snapshots"
+msgstr "正在刪除快照"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:7
+msgid "Deleting snapshots..."
+msgstr "正在刪除快照..."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:8
+msgid "Exit when done. "
+msgstr "完成後結束。 "
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:9
+msgid "File System:"
+msgstr "檔案系統："
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:10
+msgid "Name:"
+msgstr "名稱："
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:11
+msgid "Press Delete to continue."
+msgstr "請按下 [刪除] 繼續。"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:12
+msgid "Scanning snapshots..."
+msgstr "正在掃描快照..."
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:13
+msgid "Select ZFS snapshots to delete from the list below."
+msgstr "請從以下清單中選取要刪除的 ZFS 快照。"
+
+#: ../usr/share/time-slider/glade/time-slider-delete.glade.h:14
+msgid "Type:"
+msgstr "類型："
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:1
+msgid "<b>Enable Time Slider</b>"
+msgstr "<b>時空裝置啟動</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:2
+msgid "<b>External Back Up</b>"
+msgstr "<b>外部備份</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:3
+msgid "<b>File Systems To Back Up</b>"
+msgstr "<b>要備份的檔案系統</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:4
+msgid "Advanced Options"
+msgstr "進階選項"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:5
+msgid "Backup Device:"
+msgstr "備份裝置："
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:6
+msgid "C_ustom:"
+msgstr "自訂(_U)："
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:7
+msgid "Configuring Time Slider..."
+msgstr "設定時空裝置..."
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:8
+msgid "For advanced users"
+msgstr "適用於進階使用者"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:9
+msgid "Recommended for most users"
+msgstr "建議大多數使用者採用"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:10
+msgid "Reduce backups when storage space usage exceeds:"
+msgstr "當儲存空間使用量超過下列大小時減少備份："
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:11
+msgid "Replicate backups to an external drive"
+msgstr "將備份複寫至外部磁碟機"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:12
+msgid "Time Slider Manager"
+msgstr "時空裝置管理員"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:13
+msgid "Time Slider backs up data regularly by taking timed ZFS Snapshots"
+msgstr "時空裝置會透過擷取定時的 ZFS 快照，定期備份資料"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:14
+msgid "_All"
+msgstr "全部(_A)"
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:15
+msgid "_Delete Snapshots..."
+msgstr "刪除快照(_D)..."
+
+#: ../usr/share/time-slider/glade/time-slider-setup.glade.h:16
+msgid "of file system capacity"
+msgstr "檔案系統容量"
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:1
+msgid "Take a snapshot now"
+msgstr "立即擷取快照"
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:2
+msgid "Take a snapshot of "
+msgstr "擷取以下項目的快照 "
+
+#: ../usr/share/time-slider/glade/time-slider-snapshot.glade.h:3
+msgid "with the name :"
+msgstr "名稱為："
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:1
+msgid "10 Mo"
+msgstr "10 Mo(MB)"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:2
+msgid "19/01/09"
+msgstr "19/01/09"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:3
+msgid "<b>Current Version</b>"
+msgstr "<b>目前版本</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:4
+msgid "<b>Older Versions</b>"
+msgstr "<b>較舊版本</b>"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:5
+msgid "Double click to open the file"
+msgstr "連按兩下以開啟檔案"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:6
+msgid "Open the current version of the file"
+msgstr "開啟目前版本的檔案"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:7
+msgid "Scanning for older versions"
+msgstr "掃描較舊版本"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:8
+msgid "Time Slider File Version Explorer"
+msgstr "時空裝置檔案版本檔案總管"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:9
+msgid "compare"
+msgstr "對比"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:10
+msgid "filename"
+msgstr "檔案名稱"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:11
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:12
+msgid "last modified : "
+msgstr "上次修改時間： "
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:13
+msgid "name :"
+msgstr "名稱："
+
+#: ../usr/share/time-slider/glade/time-slider-version.glade.h:14
+msgid "size : "
+msgstr "大小： "
+
+#: ../usr/share/time-slider/lib/plugin/zfssend/zfssend.py:36
+msgid "Do I work?"
+msgstr "設定是否就緒？"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:138
+msgid "Update Backups Now"
+msgstr "立即更新備份"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:334
+msgid "Backup Started"
+msgstr "備份開始"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:335
+#, python-format
+msgid ""
+"Backing up snapshots to:\n"
+"<b>%s</b>\n"
+"Do not disconnect the backup device."
+msgstr "正在將快照備份至：\n<b>%s</b>\n請勿中斷備份裝置連線。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:345
+#, python-format
+msgid ""
+"Backing up: <b>'%s'\n"
+"%d</b> snapshots remaining.\n"
+"Do not disconnect the backup device."
+msgstr "正在備份：<b>'%s'\n剩餘 %d</b> 個快照。\n請勿中斷備份裝置連線。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:364
+msgid "Backup Complete"
+msgstr "備份完成"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:365
+#, python-format
+msgid ""
+"Your snapshots have been backed up to:\n"
+"<b>%s</b>"
+msgstr "您的快照已備份至：\n<b>%s</b>"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:376
+msgid "Your backups are up to date."
+msgstr "您的備份已經是最新的。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:380
+#, python-format
+msgid "%d snapshots are queued for backup."
+msgstr "有 %d 個快照排入備份佇列。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:457
+msgid "Time Slider: Low Space Warning"
+msgstr "時空裝置：低空間用量警告"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:468
+#, python-format
+msgid "Emergency: '%s' is full!"
+msgstr "緊急：「%s」已滿！"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:469
+#, python-format
+msgid "The file system: '%s', is over %s%% full."
+msgstr "檔案系統：'%s'，超過 %s%% 滿。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:471
+#, python-format
+msgid ""
+"The file system: '%s', is over %s%% full.\n"
+"As an emergency measure, Time Slider has destroyed all of its backups.\n"
+"To fix this problem, delete any unnecessary files on '%s', or add disk space "
+"(see ZFS documentation)."
+msgstr "檔案系統：「%s」已超過 %s%%。\n時空裝置所採取的緊急措施是銷毀其所有的備份。\n若要修正此問題，請刪除「%s」上所有不必要的檔案，或增加磁碟空間 (請參閱 ZFS 文件)。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:480
+#, python-format
+msgid "Emergency: '%s' is almost full!"
+msgstr "緊急：「%s」幾乎已滿！"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:481
+#: ../usr/share/time-slider/lib/time_slider/applet.py:496
+#: ../usr/share/time-slider/lib/time_slider/applet.py:511
+#, python-format
+msgid "The file system: '%s', exceeded %s%% of its total capacity"
+msgstr "檔案系統： '%s' ，超過全用量的： %s%%"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:484
+#, python-format
+msgid ""
+"The file system: '%s', exceeded %s%% of its total capacity. As an emerency "
+"measure, Time Slider has has destroyed most or all of its backups to prevent "
+"the disk becoming full. To prevent this from happening again, delete any "
+"unnecessary files on '%s', or add disk space (see ZFS documentation)."
+msgstr "檔案系統： '%s' ，超過全用量的： %s%% \n為了避免磁碟空間全滿的緊急措施，時空裝置已經摧毀大部分或是全部過去時間線的資料。\n請刪除 '%s' 上不必要的資料，以避免再次發生此種情況，或是增加硬碟空間(請參閱 ZFS 文件)。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:495
+#, python-format
+msgid "Urgent: '%s' is almost full!"
+msgstr "緊急狀況：「%s」幾乎已滿！"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:499
+#, python-format
+msgid ""
+"The file system: '%s', exceeded %s%% of its total capacity. As a remedial "
+"measure, Time Slider has destroyed some backups, and will destroy more, "
+"eventually all, as capacity continues to diminish.\n"
+"To prevent this from happening again, delete any unnecessary files on '%s', "
+"or add disk space (see ZFS documentation)."
+msgstr "檔案系統：「%s」超過了其總容量的 %s%%。時空裝置所採取的補救措施是摧毀部分過去時間線，並將會銷毀更多，而最終會銷毀所有過去時間線資料，因為容量一直不斷減少。\n若要避免再次發生這種情形，請刪除「%s」上所有不必要的檔案，或增加磁碟空間 (請參閱 ZFS 文件)。"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:510
+#, python-format
+msgid "Warning: '%s' is getting full"
+msgstr "警告：「%s」快要滿了"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:514
+#, python-format
+msgid ""
+"'%s' exceeded %s%% of its total capacity. To fix this, Time Slider has "
+"destroyed some recent backups, and will destroy more as capacity continues "
+"to diminish.\n"
+"To prevent this from happening again, delete any unnecessary files on '%s', "
+"or add disk space (see ZFS documentation).\n"
+msgstr "「%s」超過了其總容量的 %s%%。時空裝置所採取的補救措施是摧毀部分過去時間線，並將會銷毀更多，而最終會銷毀所有過去時間線資料，因為容量一直不斷減少。\n若要避免再次發生這種情形，請刪除「%s」上所有不必要的檔案，或增加磁碟空間 (請參閱 ZFS 文件)。\n"
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:530
+msgid "Details..."
+msgstr "詳細資訊..."
+
+#: ../usr/share/time-slider/lib/time_slider/applet.py:567
+msgid "Configure Time Slider..."
+msgstr "設定時空裝置..."
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:227
+msgid "Type"
+msgstr "類型"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:235
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:224
+msgid "Mount Point"
+msgstr "裝載點"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:243
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:227
+msgid "File System Name"
+msgstr "檔案系統名稱"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:251
+msgid "Snapshot Name"
+msgstr "快照名稱"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:260
+msgid "Creation Time"
+msgstr "建立時間"
+
+#. Note to developers.
+#. The second element is for internal matching and should not
+#. be i18ned under any circumstances.
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:272
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:287
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:300
+msgid "All"
+msgstr "全部"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:273
+msgid "Backups"
+msgstr "備份"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:274
+msgid "Snapshots"
+msgstr "快照"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:301
+msgid "Monthly"
+msgstr "每月"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:302
+msgid "Weekly"
+msgstr "每週"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:303
+msgid "Daily"
+msgstr "每天"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:304
+msgid "Hourly"
+msgstr "每小時"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:305
+msgid "1/4 Hourly"
+msgstr "每 1/4 小時"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:328
+msgid "Snapshot can not be deleted"
+msgstr "時空異常：無法刪除快照"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:329
+#, python-format
+msgid ""
+"%s has one or more dependent clones and will not be deleted. To delete this "
+"snapshot, first delete all datasets and snapshots cloned from this snapshot."
+msgstr "%s 具有一個或多個附屬複製，不會被刪除。要刪除此快照，請先刪除從此快照複製的所有資料集和快照。"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:355
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:510
+msgid "1 external backup will be deleted."
+msgstr "將刪除 1 個外部備份。"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:357
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:512
+#, python-format
+msgid "%d external backups will be deleted."
+msgstr "將刪除 %d 個外部備份。"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:363
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:518
+msgid "1 snapshot will be deleted."
+msgstr "將刪除 1 個快照。"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:451
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:178
+msgid "Legacy"
+msgstr "原來的"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:454
+msgid "Snapshot"
+msgstr "快照"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:470
+msgid "Backup"
+msgstr "備份"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:560
+msgid "Some snapshots could not be read"
+msgstr "時間線損毀：無法讀取某些快照"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:584
+msgid "Some snapshots could not be deleted"
+msgstr "時空異常：無法刪除某些快照"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:758
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:1320
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:215
+msgid "Insufficient Priviliges"
+msgstr "權限不足"
+
+#: ../usr/share/time-slider/lib/time_slider/deletegui.py:759
+msgid ""
+"Snapshot deletion requires administrative privileges to run. You have not "
+"been assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "需要具有管理權限才能執行 [快照刪除] 操作。沒有為您指定所需的管理權限。\n\n請諮詢系統管理員 "
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:246
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:247
+msgid "Hint"
+msgstr "提示"
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:248
+msgid ""
+"Installing the optional meld package will enhance the file comparison "
+"visualization"
+msgstr "安裝選擇性的混和套件將可增強檔案比較可見性。"
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:316
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:179
+msgid "Invalid arguments count."
+msgstr "引數計數無效。"
+
+#: ../usr/share/time-slider/lib/time_slider/fileversion.py:318
+msgid ""
+"Version explorer requires 2 arguments :\n"
+"- The path of the root snapshot directory.\n"
+"- The filename to explore."
+msgstr "版本檔案總管需要 2 個引數：\n- 快照根目錄的路徑。\n- 要瀏覽的檔案名稱。"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:218
+msgid "Select"
+msgstr "選取"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:222
+msgid "Replicate"
+msgstr "複寫"
+
+#. Indicates path is unset: ''
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:269
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:479
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:562
+msgid "(None)"
+msgstr "(無)"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:275
+msgid "Other..."
+msgstr "其他..."
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:319
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:357
+msgid "Snapshot manager service error"
+msgstr "快照管理員服務錯誤"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:320
+#, python-format
+msgid ""
+"The snapshot manager service does not appear to be installed on this "
+"system.\n"
+"\n"
+"See the svcs(1) man page for more information.\n"
+"\n"
+"Details:\n"
+"%s"
+msgstr "此系統上似乎未安裝快照管理員 服務。\n\n請參閱「svcs(1) 線上手冊」，以取得更多資訊。\n\n詳細資訊：\n%s"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:341
+msgid "Snapshot manager service dependency error"
+msgstr "快照管理員服務相依性錯誤"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:342
+#, python-format
+msgid ""
+"The snapshot manager service has been placed offline due to a dependency "
+"problem. The following dependency problems were found:\n"
+"\n"
+"%s\n"
+"\n"
+"Run \"svcs -xv\" from a command prompt for more information about these "
+"dependency problems."
+msgstr "由於相依性問題，已將快照管理員服務置為離線。發現以下相依性問題：\n\n%s\n\n請從指令提示符號下執行「svcs –xv」，以取得有關這些相依性問題的更多資訊。"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:358
+msgid ""
+"The snapshot manager service has encountered a problem and has been disabled "
+"until the problem is fixed.\n"
+"\n"
+"See the svcs(1) man page for more information."
+msgstr "快照管理員服務遇到了問題，而且在問題修正之前都處於停用狀態。\n\n請參閱「svcs(1) 線上手冊」，以取得更多資訊。"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:528
+msgid "Unsuitable Backup Location"
+msgstr "不適當的備份位置"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:594
+msgid "Select A Back Up Device"
+msgstr "選取備份裝置"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:637
+#, python-format
+msgid ""
+"Time Slider suggests a device with a capacity of at least <b>%s</b>.\n"
+"The device: '<b>%s</b>'\n"
+"only has <b>%s</b>\n"
+"Do you want to use it anyway?"
+msgstr "時空裝置建議使用至少具有 <b>%s</b> 容量的裝置。\n裝置：'<b>%s</b>'\n只有 <b>%s</b>\n仍然要使用它嗎？"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:679
+msgid ""
+"No backup device was selected.\n"
+"Please select an empty device."
+msgstr "未選取任何備份裝置。\n請選取一個空裝置。"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:704
+#, python-format
+msgid ""
+"'%s'\n"
+"is not writable. The backup device must be writable by the system "
+"administrator.\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\n無法被寫入。備份裝置必須可供系統 管理員寫入。\n\n請使用其他裝置。"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:720
+#, python-format
+msgid ""
+"'%s'\n"
+"contains an incompatible file system. The selected device must have a Unix "
+"style file system that supports file linking, such as UFS\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\n包含不相容的檔案系統。選取的裝置必須具有支援檔案連結 的 Unix 式檔案系統，例如 UFS\n\n請使用其他裝置。"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:755
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:784
+#, python-format
+msgid ""
+"'%s'\n"
+" is not an empty device.\n"
+"\n"
+"Please select an empty device."
+msgstr "'%s'\n 不是空裝置。\n\n請選取一個空裝置。"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:804
+#, python-format
+msgid ""
+"'%s'\n"
+"is a Time Slider external backup device that is already in use by another "
+"system. Backup devices may not be shared between systems.\n"
+"\n"
+"Please use a different device."
+msgstr "'%s'\n是另一個系統已在使用中的時空裝置外部備份 裝置。備份裝置不可供其他系統共用。\n\n請使用其他裝置。"
+
+#. Looks like a device that we previously used,
+#. but discontinued using in favour of some other
+#. device.
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:819
+#, python-format
+msgid ""
+"'<b>%s</b>' appears to be a a device previously configured for use by this "
+"system.\n"
+"\n"
+"Do you want resume use of this device for backups?"
+msgstr "'<b>%s</b>' 似乎是先前設定供此系統使用的 裝置。\n\n要繼續使用此裝置進行備份嗎？"
+
+#. Definitely can't use this since it's a
+#. snapshotted filesystem.
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:859
+#, python-format
+msgid ""
+"'%s'\n"
+"belongs to the ZFS filesystem '%s' which is already selected for regular ZFS "
+"snaphots.\n"
+"\n"
+"Please select a drive not already in use by Time Slider"
+msgstr "'%s'\n屬於 ZFS 檔案系統 '%s'，此檔案系統已被選取供正規 ZFS 快照使用。\n\n請選取一個沒有正被時空裝置使用的磁碟機"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:880
+#, python-format
+msgid ""
+"'%s'\n"
+"belongs to the ZFS pool '%s' which is already being used to store ZFS "
+"snaphots.\n"
+"\n"
+"Please select a drive not already in use by Time Slider"
+msgstr "'%s'\n屬於 ZFS 集區 '%s'，此集區已被用來儲存 ZFS 快照。\n\n請選取一個沒有正被時空裝置使用的磁碟機"
+
+#: ../usr/share/time-slider/lib/time_slider/setupgui.py:1321
+msgid ""
+"The snapshot manager service requires administrative privileges to run. You "
+"have not been assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "快照管理員服務需要有管理權限才能執行。您尚未被指定必要的管理權限。\n\n請洽詢您的系統管理員 "
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:116
+msgid "Invalid characters in snapshot name"
+msgstr "快照名稱中有無效字元"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:117
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:147
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:180
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:216
+msgid "Error"
+msgstr "錯誤"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:118
+msgid ""
+"Allowed characters for snapshot names are :\n"
+"[a-z][A-Z][0-9][-_.:\n"
+"All invalid characters will be removed\n"
+msgstr "允許用於快照名稱的字元如下：\n[a-z]、[A-Z]、[0-9]、[、-、_、.、:\n將移除所有無效字元\n"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:146
+msgid "Error occured while creating the snapshot"
+msgstr "時空崩塌：建立快照時發生錯誤"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:155
+msgid "Snapshot created successfully"
+msgstr "已成功建立快照"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:156
+msgid "Success"
+msgstr "成功"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:157
+#, python-format
+msgid ""
+"A snapshot of zfs filesystem %(zfs_fs)s\n"
+"named %(valid_name)s\n"
+"has been created.\n"
+msgstr "已建立一個名為 %(valid_name)s 的\n zfs 檔案系統 %(zfs_fs)s\n的快照。\n"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:181
+msgid ""
+"Snapshot Now requires 2 arguments :\n"
+"- The path of the directory to be snapshotted.\n"
+"- The zfs filesystem corresponding to this directory."
+msgstr "[立即擷取快照] 需要 2 個引數：\n- 要進行快照擷取的目錄的路徑。\n- 與此目錄對應的 zfs 檔案系統。"
+
+#: ../usr/share/time-slider/lib/time_slider/snapnowui.py:217
+msgid ""
+"Snapshot Now requires administrative privileges to run. You have not been "
+"assigned the necessaryadministrative priviliges.\n"
+"\n"
+"Consult your system administrator "
+msgstr "需要具有管理權限才能執行 [立即擷取快照] 操作。沒有為您指定所需的管理權限。\n\n請諮詢系統管理員 "

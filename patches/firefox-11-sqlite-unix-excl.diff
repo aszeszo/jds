@@ -1,0 +1,53 @@
+diff --git a/storage/src/mozStorageConnection.cpp b/storage/src/mozStorageConnection.cpp
+--- a/storage/src/mozStorageConnection.cpp
++++ b/storage/src/mozStorageConnection.cpp
+@@ -65,16 +65,20 @@
+ #include "mozStoragePrivateHelpers.h"
+ #include "mozStorageStatementData.h"
+ #include "StorageBaseStatementInternal.h"
+ #include "SQLCollations.h"
+ 
+ #include "prlog.h"
+ #include "prprf.h"
+ 
++#ifdef SOLARIS
++#include "nspr.h"
++#endif
++
+ #ifdef PR_LOGGING
+ PRLogModuleInfo* gStorageLog = nsnull;
+ #endif
+ 
+ namespace mozilla {
+ namespace storage {
+ 
+ namespace {
+@@ -469,16 +473,28 @@ Connection::getAsyncExecutionTarget()
+ 
+   return mAsyncExecutionThread;
+ }
+ 
+ nsresult
+ Connection::initialize(nsIFile *aDatabaseFile,
+                        const char* aVFSName)
+ {
++#ifdef SOLARIS
++  static PRBool checked = PR_FALSE;
++  static PRBool withUnixExcl = PR_TRUE;
++  if (!checked && PR_GetEnv("NO_UNIX_EXCL")) {
++    checked = PR_TRUE;
++    withUnixExcl = PR_FALSE;
++  }
++  if (!aVFSName && withUnixExcl) {
++    aVFSName = "unix-excl";
++  }
++#endif
++
+   NS_ASSERTION (!mDBConn, "Initialize called on already opened database!");
+ 
+   int srv;
+   nsresult rv;
+ 
+   mDatabaseFile = aDatabaseFile;
+ 
+   if (aDatabaseFile) {

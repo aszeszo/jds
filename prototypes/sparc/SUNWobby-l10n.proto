@@ -1,0 +1,29 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWobby-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWobby-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWobby-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/ca 0755 root other
+d none share/locale/ca/LC_MESSAGES 0755 root other
+f none share/locale/ca/LC_MESSAGES/obby.mo=usr/share/locale/ca/LC_MESSAGES/obby.mo 0644 root other
+d none share/locale/de 0755 root other
+d none share/locale/de/LC_MESSAGES 0755 root other
+f none share/locale/de/LC_MESSAGES/obby.mo=usr/share/locale/de/LC_MESSAGES/obby.mo 0644 root other
+d none share/locale/es 0755 root other
+d none share/locale/es/LC_MESSAGES 0755 root other
+f none share/locale/es/LC_MESSAGES/obby.mo=usr/share/locale/es/LC_MESSAGES/obby.mo 0644 root other
+d none share/locale/fr 0755 root other
+d none share/locale/fr/LC_MESSAGES 0755 root other
+f none share/locale/fr/LC_MESSAGES/obby.mo=usr/share/locale/fr/LC_MESSAGES/obby.mo 0644 root other
+d none share/locale/it 0755 root other
+d none share/locale/it/LC_MESSAGES 0755 root other
+f none share/locale/it/LC_MESSAGES/obby.mo=usr/share/locale/it/LC_MESSAGES/obby.mo 0644 root other
+d none share/locale/nl 0755 root other
+d none share/locale/nl/LC_MESSAGES 0755 root other
+f none share/locale/nl/LC_MESSAGES/obby.mo=usr/share/locale/nl/LC_MESSAGES/obby.mo 0644 root other
+d none share/locale/oc 0755 root other
+d none share/locale/oc/LC_MESSAGES 0755 root other
+f none share/locale/oc/LC_MESSAGES/obby.mo=usr/share/locale/oc/LC_MESSAGES/obby.mo 0644 root other
+d none share/locale/sv 0755 root other
+d none share/locale/sv/LC_MESSAGES 0755 root other
+f none share/locale/sv/LC_MESSAGES/obby.mo=usr/share/locale/sv/LC_MESSAGES/obby.mo 0644 root other

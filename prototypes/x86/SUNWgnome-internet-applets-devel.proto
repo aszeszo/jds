@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-internet-applets-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-internet-applets-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-internet-applets-devel.copyright
+d none include 0755 root bin
+d none include/libgweather 0755 root bin
+f none include/libgweather/gweather-gconf.h=usr/include/libgweather/gweather-gconf.h 0644 root bin
+f none include/libgweather/gweather-prefs.h=usr/include/libgweather/gweather-prefs.h 0644 root bin
+f none include/libgweather/weather.h=usr/include/libgweather/weather.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gweather.pc=usr/lib/pkgconfig/gweather.pc 0644 root bin

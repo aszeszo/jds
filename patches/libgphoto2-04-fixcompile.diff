@@ -1,0 +1,11 @@
+--- libgphoto2-2.4.10/camlibs/st2205/st2205_decode.c-orig	2010-10-27 19:13:20.631604228 -0500
++++ libgphoto2-2.4.10/camlibs/st2205/st2205_decode.c	2010-10-27 19:13:43.079590893 -0500
+@@ -421,7 +421,7 @@ st2205_rgb565_to_rgb24(CameraPrivateLibr
+ 
+ int
+ st2205_rgb24_to_rgb565(CameraPrivateLibrary *pl, int **src,
+-	unsigned char *dest);
++	unsigned char *dest)
+ {
+ 	return GP_ERROR_NOT_SUPPORTED;
+ }

@@ -1,0 +1,47 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibglade-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibglade-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibglade-devel.copyright
+d none bin 0755 root bin
+f none bin/libglade-convert=usr/bin/libglade-convert 0755 root bin
+d none include 0755 root bin
+d none include/libglade-2.0 0755 root bin
+d none include/libglade-2.0/glade 0755 root bin
+f none include/libglade-2.0/glade/glade-build.h=usr/include/libglade-2.0/glade/glade-build.h 0644 root bin
+f none include/libglade-2.0/glade/glade-init.h=usr/include/libglade-2.0/glade/glade-init.h 0644 root bin
+f none include/libglade-2.0/glade/glade-parser.h=usr/include/libglade-2.0/glade/glade-parser.h 0644 root bin
+f none include/libglade-2.0/glade/glade-xml.h=usr/include/libglade-2.0/glade/glade-xml.h 0644 root bin
+f none include/libglade-2.0/glade/glade.h=usr/include/libglade-2.0/glade/glade.h 0644 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/pkgconfig 0755 root other
+f none lib/amd64/pkgconfig/libglade-2.0.pc=usr/lib/amd64/pkgconfig/libglade-2.0.pc 0644 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libglade-2.0.pc=usr/lib/pkgconfig/libglade-2.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/libglade 0755 root bin
+f none share/gtk-doc/html/libglade/GladeXML.html=usr/share/gtk-doc/html/libglade/GladeXML.html 0644 root bin
+f none share/gtk-doc/html/libglade/home.png=usr/share/gtk-doc/html/libglade/home.png 0644 root bin
+f none share/gtk-doc/html/libglade/index.html=usr/share/gtk-doc/html/libglade/index.html 0644 root bin
+f none share/gtk-doc/html/libglade/index.sgml=usr/share/gtk-doc/html/libglade/index.sgml 0644 root bin
+f none share/gtk-doc/html/libglade/left.png=usr/share/gtk-doc/html/libglade/left.png 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-Libglade-Build.html=usr/share/gtk-doc/html/libglade/libglade-Libglade-Build.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-Libglade-Initialisation.html=usr/share/gtk-doc/html/libglade/libglade-Libglade-Initialisation.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-Libglade-SAX-Parser.html=usr/share/gtk-doc/html/libglade/libglade-Libglade-SAX-Parser.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-dtd-exceptions.html=usr/share/gtk-doc/html/libglade/libglade-dtd-exceptions.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-dtd.html=usr/share/gtk-doc/html/libglade/libglade-dtd.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-embedding.html=usr/share/gtk-doc/html/libglade/libglade-embedding.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-extending.html=usr/share/gtk-doc/html/libglade/libglade-extending.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-i18n.html=usr/share/gtk-doc/html/libglade/libglade-i18n.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-lib.html=usr/share/gtk-doc/html/libglade/libglade-lib.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-modules.html=usr/share/gtk-doc/html/libglade/libglade-modules.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade-notes.html=usr/share/gtk-doc/html/libglade/libglade-notes.html 0644 root bin
+f none share/gtk-doc/html/libglade/libglade.devhelp=usr/share/gtk-doc/html/libglade/libglade.devhelp 0644 root bin
+f none share/gtk-doc/html/libglade/libglade.devhelp2=usr/share/gtk-doc/html/libglade/libglade.devhelp2 0644 root bin
+f none share/gtk-doc/html/libglade/right.png=usr/share/gtk-doc/html/libglade/right.png 0644 root bin
+f none share/gtk-doc/html/libglade/style.css=usr/share/gtk-doc/html/libglade/style.css 0644 root bin
+f none share/gtk-doc/html/libglade/up.png=usr/share/gtk-doc/html/libglade/up.png 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libglade-2.0.3=usr/share/man/man3/libglade-2.0.3 0644 root bin

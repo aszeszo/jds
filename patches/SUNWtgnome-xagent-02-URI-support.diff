@@ -1,0 +1,91 @@
+diff -urN xagent.orig/gnome-session/xagent.c xagent.new/gnome-session/xagent.c
+--- xagent.orig/gnome-session/xagent.c	2010-02-18 15:48:09.702503615 +0000
++++ xagent.new/gnome-session/xagent.c	2010-02-25 11:58:53.341643955 +0000
+@@ -93,25 +93,33 @@
+   exit (2);
+ }
+ 
+-static void
+-parse_exec_string (char *exec, int *screen, char **command)
+-{
+-  gchar **tokens = g_strsplit (exec, ":", 2);
+-
+-  if (tokens[0]) {
+-	*screen = atoi (tokens[0]);
+-  } else {
+-	*screen = 0;
+-  }
++enum {
++  PIPE_MESSAGE_PARSE_ERROR = 0,
++  PIPE_MESSAGE_COMMAND,
++  PIPE_MESSAGE_URI,
++};
+ 
+-  if (tokens[1]) {
+-	*command = g_strdup (tokens[1]);
+-  } else {
+-	*command = g_strdup (exec);
+-  }
++static int
++parse_message_string (char *str, int *screen, char **message)
++{
++  gchar *p = NULL;
+ 
+-  g_strfreev (tokens);
++  if (!(p = strchr (str, ':')) || (p == str)) 
++    return PIPE_MESSAGE_PARSE_ERROR;
+ 
++  if (*(p+1) != '\0') 
++    *message = g_strdup (p+1);
++  else 
++    return PIPE_MESSAGE_PARSE_ERROR;
++
++  *p = '\0';
++  *screen = atoi (str); /* defaults to 0 on error */
++  *p = ':';
++
++  if (strncmp (*message, "[URI]", 5) == 0)
++	return PIPE_MESSAGE_URI;
++  else
++	return PIPE_MESSAGE_COMMAND;
+ }
+ 
+ static gboolean
+@@ -125,7 +133,8 @@
+   GError *error = NULL;
+   GIOStatus status=0;
+   int screen_num;
+-  gchar *real_cmd;
++  int message_type;
++  gchar *message = NULL;
+   GdkDisplay *gdk_dpy;
+ 
+   if (condition & G_IO_ERR) return FALSE;
+@@ -139,11 +148,23 @@
+     {
+ 	case G_IO_STATUS_NORMAL:
+ 	str[pos] = '\0';
+-        parse_exec_string (str, &screen_num, &real_cmd);
+         gdk_dpy = gdk_display_get_default ();
+-	gdk_spawn_command_line_on_screen (gdk_display_get_screen (gdk_dpy,
+-                                          screen_num), real_cmd, &error);
+-        g_free (real_cmd);
++        message_type = parse_message_string (str, &screen_num, &message);
++	switch (message_type) 
++	  {
++	    case PIPE_MESSAGE_URI:
++	      gtk_show_uri (gdk_display_get_screen (gdk_dpy, screen_num), 
++			message + 5, GDK_CURRENT_TIME, &error);
++	      break;
++	    case PIPE_MESSAGE_COMMAND:
++	      gdk_spawn_command_line_on_screen (gdk_display_get_screen (gdk_dpy,
++                                          screen_num), message, &error);
++	      break;
++	    case PIPE_MESSAGE_PARSE_ERROR:
++	    default:
++	      break;
++	    }
++        if (message) g_free (message);
+         return TRUE;
+ 	case G_IO_STATUS_AGAIN:
+ 	return FALSE;

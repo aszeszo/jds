@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsqlite-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsqlite-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsqlite-devel.copyright
+d none include 0755 root bin
+f none include/sqlite3.h=usr/include/sqlite3.h 0644 root bin
+f none include/sqlite3ext.h=usr/include/sqlite3ext.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/sqlite3.pc=usr/lib/pkgconfig/sqlite3.pc 0644 root bin

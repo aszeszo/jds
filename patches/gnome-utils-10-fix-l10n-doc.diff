@@ -1,0 +1,1343 @@
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/ca/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/ca/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/ca/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Equip de documentació del GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/cs/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/cs/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/cs/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Dokumentační tým GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/de/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/de/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/de/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOME-Dokumentationsteam</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/el/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/el/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/el/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Ομάδα τεκμηρίωσης GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/en_GB/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/en_GB/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/en_GB/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris</firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+@@ -138,7 +136,7 @@
+ 			<revnumber>Search for Files Manual V2.4</revnumber> 
+ 			<date>February 2004</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 			</revdescription> 
+  </revision>
+@@ -146,7 +144,7 @@
+ 			<revnumber>Search for Files Manual V2.3</revnumber> 
+ 			<date>September 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 			</revdescription> 
+  </revision>
+@@ -154,7 +152,7 @@
+ 			<revnumber>Search for Filesl Manual V2.2</revnumber> 
+ 			<date>August 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 			</revdescription> 
+  </revision> 
+@@ -162,7 +160,7 @@
+ 			<revnumber>Search for Files Manual V2.1</revnumber> 
+ 			<date>July 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 			</revdescription> 
+  </revision> 
+@@ -170,7 +168,7 @@
+ 			<revnumber>Search for Files Manual V2.0</revnumber> 
+ 			<date>May 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 			</revdescription> 
+  </revision> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/es/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/es/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/es/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Equipo de documentación de GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/eu/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/eu/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/eu/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -79,7 +79,7 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOMEren dokumentazio-taldea</surname> 
+ 	<affiliation> 
+ 	  <orgname>Sun Microsystems </orgname> 
+@@ -113,7 +113,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/fi/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/fi/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/fi/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Gnome dokumentointiryhmä</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/fr/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/fr/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/fr/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>L'équipe de documentation GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/it/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/it/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/it/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Squadra di documentazione di GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/ko/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/ko/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/ko/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -32,10 +32,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -81,10 +79,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>그놈 문서 팀</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -115,7 +113,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/oc/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/oc/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/oc/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -32,10 +32,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -140,10 +138,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Còla de documentacion de GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -174,7 +172,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/ru/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/ru/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/ru/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris</firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+@@ -138,7 +136,7 @@
+ 			<revnumber>Руководство по поиску файлов V2.4</revnumber> 
+ 			<date>Февраль 2004</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 			</revdescription> 
+  </revision>
+@@ -146,7 +144,7 @@
+ 			<revnumber>Руководство по поиску файлов V2.3</revnumber> 
+ 			<date>Сентябрь 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 			</revdescription> 
+  </revision>
+@@ -154,7 +152,7 @@
+ 			<revnumber>Руководство по поиску файлов V2.2</revnumber> 
+ 			<date>Август 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 			</revdescription> 
+  </revision> 
+@@ -162,7 +160,7 @@
+ 			<revnumber>Руководство по поиску файлов V2.1</revnumber> 
+ 			<date>Июль 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 			</revdescription> 
+  </revision> 
+@@ -170,7 +168,7 @@
+ 			<revnumber>Руководство по поиску файлов V2.0</revnumber> 
+ 			<date>Май 2002</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 			</revdescription> 
+  </revision> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/sv/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/sv/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/sv/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOME:s dokumentationsteam</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/uk/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/uk/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/uk/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Команда документування GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/gsearchtool/help/zh_CN/gnome-search-tool.xml
+--- a/gnome-utils-2.30.0/gsearchtool/help/zh_CN/gnome-search-tool.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/gsearchtool/help/zh_CN/gnome-search-tool.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -30,10 +30,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -79,10 +77,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOME 文档小组</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address/> 
+ 	</affiliation> 
+       </author> 
+@@ -113,7 +111,7 @@
+ 	<revnumber>&app; Manual V&manrevision;</revnumber> 
+ 	<date>&date;</date> 
+ 	<revdescription> 
+-	  <para role="author">Sun GNOME Documentation Team</para>
++	  <para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  <para role="publisher">GNOME Documentation Project</para>
+ 	</revdescription> 
+  </revision>
+@@ -138,7 +136,7 @@
+ 			<revnumber>文件搜索工具手册 V2.4</revnumber> 
+ 			<date>2004年2月</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 			</revdescription> 
+  </revision>
+@@ -146,7 +144,7 @@
+ 			<revnumber>文件搜索工具手册 V2.3</revnumber> 
+ 			<date>2002年9月</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 			</revdescription> 
+  </revision>
+@@ -154,7 +152,7 @@
+ 			<revnumber>文件搜索工具手册 V2.2</revnumber> 
+ 			<date>2002年8月</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 			</revdescription> 
+  </revision> 
+@@ -162,7 +160,7 @@
+ 			<revnumber>文件搜索工具手册 V2.1</revnumber> 
+ 			<date>2002年7月</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 			</revdescription> 
+  </revision> 
+@@ -170,7 +168,7 @@
+ 			<revnumber>文件搜索工具手册 V2.0</revnumber> 
+ 			<date>2002年5月</date> 
+ 			<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 			</revdescription> 
+  </revision> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/ca/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/ca/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/ca/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Equip de documentació del GNOME</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/cs/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/cs/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/cs/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Dokumentační tým GNOME</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/de/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/de/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/de/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>GNOME-Dokumentationsteam</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+@@ -134,7 +134,7 @@
+ 		<revnumber>Systemprotokollbetrachter-Handbuch V2.3</revnumber> 
+ 		<date>Oktober 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+       </revision>
+@@ -142,7 +142,7 @@
+ 		<revnumber>Systemprotokollbetrachter-Handbuch V2.2</revnumber> 
+ 		<date>August 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+       </revision>
+@@ -150,7 +150,7 @@
+ 		<revnumber>Systemprotokollbetrachter-Handbuch V2.1</revnumber> 
+ 		<date>Juli 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+       </revision>
+@@ -158,7 +158,7 @@
+ 		<revnumber>Systemprotokollbetrachter-Handbuch V2.0</revnumber> 
+ 		<date>Mai 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+       </revision> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/el/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/el/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/el/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -65,7 +65,7 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Ομάδα Τεκμηρίωσης GNOME</surname> 
+ 		<affiliation> 
+ 	  	<orgname>Sun Microsystems </orgname> 
+@@ -134,7 +134,7 @@
+ 		<revnumber>Παρακολούθηση καταγραφών συστήματος Οδηγός V2.3</revnumber> 
+ 		<date>Οκτώβριος 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+ 		</revdescription> 
+       </revision>
+@@ -142,7 +142,7 @@
+ 		<revnumber>Παρακολούθηση καταγραφών συστήματος Οδηγός V2.2</revnumber> 
+ 		<date>Αύγουστος 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+ 		</revdescription> 
+       </revision>
+@@ -150,7 +150,7 @@
+ 		<revnumber>Παρακολούθηση καταγραφών συστήματος Οδηγός V2.1</revnumber> 
+ 		<date>Ιούλιος 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+ 		</revdescription> 
+       </revision>
+@@ -158,7 +158,7 @@
+ 		<revnumber>Παρακολούθηση καταγραφών συστήματος Οδηγός V2.0</revnumber> 
+ 		<date>Μάιος 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Έργο Τεκμηρίωσης GNOME</para>
+ 		</revdescription> 
+       </revision> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/en_GB/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/en_GB/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/en_GB/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
+-		<surname>GNOME Documentation Team</surname> 
++		<firstname>Oracle Solaris</firstname> 
++		<surname>Desktop Documentation Team</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+@@ -136,7 +136,7 @@
+ 		<revnumber>System Log Viewer Manual V2.3</revnumber> 
+ 		<date>October 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+       </revision>
+@@ -144,7 +144,7 @@
+ 		<revnumber>System Log Viewer Manual V2.2</revnumber> 
+ 		<date>August 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+       </revision>
+@@ -152,7 +152,7 @@
+ 		<revnumber>System Log Viewer Manual V2.1</revnumber> 
+ 		<date>July 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+       </revision>
+@@ -160,7 +160,7 @@
+ 		<revnumber>System Log Viewer Manual V2.0</revnumber> 
+ 		<date>May 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+       </revision> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/es/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/es/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/es/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Equipo de documentación de GNOME</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/eu/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/eu/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/eu/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -66,7 +66,7 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>GNOMEren dokumentazio-taldea</surname> 
+ 		<affiliation> 
+ 	  	<orgname>Sun Microsystems </orgname> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/fi/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/fi/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/fi/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Gnome dokumentointiryhmä</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/fr/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/fr/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/fr/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>L'équipe de documentation GNOME</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/it/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/it/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/it/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Squadra di documentazione di GNOME</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/ko/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/ko/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/ko/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -27,8 +27,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -125,10 +125,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>그놈 문서 팀</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/oc/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/oc/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/oc/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -27,8 +27,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -125,10 +125,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Còla de documentacion de GNOME</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+@@ -198,7 +198,7 @@
+ 		<revnumber>System Log Viewer Manual V2.3</revnumber> 
+ 		<date>Octòre de 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team
++	  		<para role="author">Oracle Solaris Desktop Documentation Team
+ 	    		<email>gdocteam@sun.com</email>
+ 	  		</para>
+ 	  		<para role="publisher">Projècte de documentacion de GNOME</para>
+@@ -208,7 +208,7 @@
+ 		<revnumber>System Log Viewer Manual V2.2</revnumber> 
+ 		<date>Agost de 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team
++	  		<para role="author">Oracle Solaris Desktop Documentation Team
+ 	    		<email>gdocteam@sun.com</email>
+ 	  		</para>
+ 	  		<para role="publisher">Projècte de documentacion de GNOME</para>
+@@ -218,7 +218,7 @@
+ 		<revnumber>System Log Viewer Manual V2.1</revnumber> 
+ 		<date>Julhet de 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team
++	  		<para role="author">Oracle Solaris Desktop Documentation Team
+ 	    		<email>gdocteam@sun.com</email>
+ 	  		</para>
+ 	  		<para role="publisher">Projècte de documentacion de GNOME</para>
+@@ -228,7 +228,7 @@
+ 		<revnumber>System Log Viewer Manual V2.0</revnumber> 
+ 		<date>Mai de 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team
++	  		<para role="author">Oracle Solaris Desktop Documentation Team
+ 	    		<email>gdocteam@sun.com</email>
+ 	  		</para>
+ 	  		<para role="publisher">Projècte de documentacion de GNOME</para>
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/ru/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/ru/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/ru/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -27,8 +27,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -66,10 +66,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Команда по документированию Гнома</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+@@ -137,7 +137,7 @@
+ 		<revnumber>Руководство по Программе просмотра системных журналов вер. 2.3</revnumber> 
+ 		<date>Октябрь 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Проект документации Гнома</para>
+ 		</revdescription> 
+       </revision>
+@@ -145,7 +145,7 @@
+ 		<revnumber>Руководство по Программе просмотра системных журналов вер. 2.2</revnumber> 
+ 		<date>Август 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Проект документации Гнома</para>
+ 		</revdescription> 
+       </revision>
+@@ -153,7 +153,7 @@
+ 		<revnumber>Руководство по Программе просмотра системных журналов вер. 2.1</revnumber> 
+ 		<date>Июль 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Проект документации Гнома</para>
+ 		</revdescription> 
+       </revision>
+@@ -161,7 +161,7 @@
+ 		<revnumber>Руководство по Программе просмотра системных журналов вер. 2.0</revnumber> 
+ 		<date>Май 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">Проект документации Гнома</para>
+ 		</revdescription> 
+       </revision> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/sv/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/sv/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/sv/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -68,7 +68,7 @@
+ 		<firstname>Suns</firstname> 
+ 		<surname>GNOME-dokumentationsteam</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/uk/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/uk/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/uk/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -27,8 +27,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -66,10 +66,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>Команда документування GNOME</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -r 0e9b4d4a5bea gnome-utils-2.30.0/logview/help/zh_CN/gnome-system-log.xml
+--- a/gnome-utils-2.30.0/logview/help/zh_CN/gnome-system-log.xml	Fri Jul 08 17:28:58 2011 +0800
++++ b/gnome-utils-2.30.0/logview/help/zh_CN/gnome-system-log.xml	Fri Jul 08 17:32:01 2011 +0800
+@@ -26,8 +26,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -65,10 +65,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
++		<firstname>Oracle Solaris</firstname> 
+ 		<surname>GNOME 文档小组</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+@@ -136,7 +136,7 @@
+ 		<revnumber>系统日志查看器手册 V2.3</revnumber> 
+ 		<date>2002年10月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 		</revdescription> 
+       </revision>
+@@ -144,7 +144,7 @@
+ 		<revnumber>系统日志查看器手册 V2.2</revnumber> 
+ 		<date>2002年8月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 		</revdescription> 
+       </revision>
+@@ -152,7 +152,7 @@
+ 		<revnumber>系统日志查看器手册 V2.1</revnumber> 
+ 		<date>2002年7月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 		</revdescription> 
+       </revision>
+@@ -160,7 +160,7 @@
+ 		<revnumber>系统日志查看器手册 V2.0</revnumber> 
+ 		<date>2002年5月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team <email>gdocteam@sun.com</email></para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team <email>gdocteam@sun.com</email></para>
+ 	  		<para role="publisher">GNOME 文档项目</para>
+ 		</revdescription> 
+       </revision> 

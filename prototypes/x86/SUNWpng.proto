@@ -1,0 +1,33 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpng.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpng.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpng.copyright
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libpng.so=libpng14.so
+s none lib/amd64/libpng.so.2=libpng.so.2.54.0
+f none lib/amd64/libpng.so.2.54.0=usr/lib/amd64/libpng.so.2.54.0 0755 root bin
+s none lib/amd64/libpng.so.3=libpng.so.3.44.0
+f none lib/amd64/libpng.so.3.44.0=usr/lib/amd64/libpng.so.3.44.0 0755 root bin
+s none lib/amd64/libpng10.so=libpng10.so.0.54.0
+s none lib/amd64/libpng10.so.0=libpng10.so.0.54.0
+f none lib/amd64/libpng10.so.0.54.0=usr/lib/amd64/libpng10.so.0.54.0 0755 root bin
+s none lib/amd64/libpng12.so=libpng12.so.0.44.0
+s none lib/amd64/libpng12.so.0=libpng12.so.0.44.0
+f none lib/amd64/libpng12.so.0.44.0=usr/lib/amd64/libpng12.so.0.44.0 0755 root bin
+s none lib/amd64/libpng14.so=libpng14.so.14.3.0
+s none lib/amd64/libpng14.so.14=libpng14.so.14.3.0
+f none lib/amd64/libpng14.so.14.3.0=usr/lib/amd64/libpng14.so.14.3.0 0755 root bin
+s none lib/libpng.so=libpng14.so
+s none lib/libpng.so.2=libpng.so.2.54.0
+f none lib/libpng.so.2.54.0=usr/lib/libpng.so.2.54.0 0755 root bin
+s none lib/libpng.so.3=libpng.so.3.44.0
+f none lib/libpng.so.3.44.0=usr/lib/libpng.so.3.44.0 0755 root bin
+s none lib/libpng10.so=libpng10.so.0.54.0
+s none lib/libpng10.so.0=libpng10.so.0.54.0
+f none lib/libpng10.so.0.54.0=usr/lib/libpng10.so.0.54.0 0755 root bin
+s none lib/libpng12.so=libpng12.so.0.44.0
+s none lib/libpng12.so.0=libpng12.so.0.44.0
+f none lib/libpng12.so.0.44.0=usr/lib/libpng12.so.0.44.0 0755 root bin
+s none lib/libpng14.so=libpng14.so.14.3.0
+s none lib/libpng14.so.14=libpng14.so.14.3.0
+f none lib/libpng14.so.14.3.0=usr/lib/libpng14.so.14.3.0 0755 root bin

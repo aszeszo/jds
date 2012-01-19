@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopensp-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopensp-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopensp-root.copyright
+d none var 0755 root sys
+d none var/lib 0755 root other
+d none var/lib/sgml 0755 root sys
+f none var/lib/sgml/CATALOG.opensp=var/lib/sgml/CATALOG.opensp 0644 root sys

@@ -1,0 +1,35 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmm-common.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmm-common.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmm-common.copyright
+d none bin 0755 root bin
+f none bin/mm-common-prepare=usr/bin/mm-common-prepare 0755 root bin
+d none share 0755 root sys
+d none share/aclocal 0755 root other
+f none share/aclocal/mm-common.m4=usr/share/aclocal/mm-common.m4 0755 root other
+f none share/aclocal/mm-dietlib.m4=usr/share/aclocal/mm-dietlib.m4 0755 root other
+f none share/aclocal/mm-doc.m4=usr/share/aclocal/mm-doc.m4 0755 root other
+f none share/aclocal/mm-module.m4=usr/share/aclocal/mm-module.m4 0755 root other
+f none share/aclocal/mm-pkg.m4=usr/share/aclocal/mm-pkg.m4 0755 root other
+f none share/aclocal/mm-warnings.m4=usr/share/aclocal/mm-warnings.m4 0755 root other
+d none share/doc 0755 root other
+d none share/doc/mm-common 0755 root bin
+f none share/doc/mm-common/README=usr/share/doc/mm-common/README 0755 root other
+f none share/doc/mm-common/skeletonmm.tar.gz=usr/share/doc/mm-common/skeletonmm.tar.gz 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/mm-common-prepare.1=usr/share/man/man1/mm-common-prepare.1 0644 root bin
+d none share/mm-common 0755 root other
+d none share/mm-common/build 0755 root other
+f none share/mm-common/build/compile-binding.am=usr/share/mm-common/build/compile-binding.am 0755 root other
+f none share/mm-common/build/dist-changelog.am=usr/share/mm-common/build/dist-changelog.am 0755 root other
+f none share/mm-common/build/doc-reference.am=usr/share/mm-common/build/doc-reference.am 0755 root other
+f none share/mm-common/build/generate-binding.am=usr/share/mm-common/build/generate-binding.am 0755 root other
+d none share/mm-common/doctags 0755 root other
+f none share/mm-common/doctags/libstdc++.tag=usr/share/mm-common/doctags/libstdc++.tag 0755 root other
+d none share/mm-common/doctool 0755 root other
+f none share/mm-common/doctool/doc-install.pl=usr/share/mm-common/doctool/doc-install.pl 0755 root other
+f none share/mm-common/doctool/doc-postprocess.pl=usr/share/mm-common/doctool/doc-postprocess.pl 0755 root other
+f none share/mm-common/doctool/doxygen.css=usr/share/mm-common/doctool/doxygen.css 0755 root other
+f none share/mm-common/doctool/tagfile-to-devhelp2.xsl=usr/share/mm-common/doctool/tagfile-to-devhelp2.xsl 0755 root other
+d none share/pkgconfig 0755 root bin
+f none share/pkgconfig/mm-common-libstdc++.pc=usr/share/pkgconfig/mm-common-libstdc++.pc 0755 root bin

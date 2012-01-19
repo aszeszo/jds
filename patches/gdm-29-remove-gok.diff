@@ -1,0 +1,22 @@
+diff -urN gdm-2.30.5-orig/data/greeter-autostart/Makefile.am gdm-2.30.5/data/greeter-autostart/Makefile.am
+--- gdm-2.30.5-orig/data/greeter-autostart/Makefile.am	2011-03-29 16:07:12.488478598 +0800
++++ gdm-2.30.5/data/greeter-autostart/Makefile.am	2011-03-29 16:07:26.409005025 +0800
+@@ -18,7 +18,6 @@
+ 	gnome-mag.desktop.in			\
+ 	gnome-power-manager.desktop.in		\
+ 	gnome-settings-daemon.desktop.in	\
+-	gok.desktop.in				\
+ 	metacity.desktop.in			\
+ 	orca-screen-reader.desktop.in		\
+ 	polkit-gnome-authentication-agent-1.desktop.in	\
+diff -urN gdm-2.30.5-orig/data/greeter-autostart/Makefile.in gdm-2.30.5/data/greeter-autostart/Makefile.in
+--- gdm-2.30.5-orig/data/greeter-autostart/Makefile.in	2011-03-29 16:07:12.488175916 +0800
++++ gdm-2.30.5/data/greeter-autostart/Makefile.in	2011-03-29 16:07:36.676697564 +0800
+@@ -334,7 +334,6 @@
+ 	gnome-mag.desktop.in			\
+ 	gnome-power-manager.desktop.in		\
+ 	gnome-settings-daemon.desktop.in	\
+-	gok.desktop.in				\
+ 	metacity.desktop.in			\
+ 	orca-screen-reader.desktop.in		\
+ 	polkit-gnome-authentication-agent-1.desktop.in	\

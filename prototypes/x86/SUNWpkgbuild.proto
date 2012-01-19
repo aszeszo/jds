@@ -1,0 +1,39 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpkgbuild.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpkgbuild.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpkgbuild.copyright
+f none share/doc/pkgbuild/AUTHORS=usr/share/doc/pkgbuild/AUTHORS 0444 root bin
+f none share/doc/pkgbuild/COPYING=usr/share/doc/pkgbuild/COPYING 0444 root bin
+f none share/doc/pkgbuild/NEWS=usr/share/doc/pkgbuild/NEWS 0444 root bin
+d none bin 0755 root bin
+f none bin/pkgbuild=usr/bin/pkgbuild 0755 root bin
+f none bin/pkgtool=usr/bin/pkgtool 0755 root bin
+f none bin/spectool=usr/bin/spectool 0755 root bin
+d none lib 0755 root bin
+d none lib/pkgbuild-1.3.103 0755 root bin
+f none lib/pkgbuild-1.3.103/config.pm=usr/lib/pkgbuild-1.3.103/config.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/get_rpm_topdir=usr/lib/pkgbuild-1.3.103/get_rpm_topdir 0755 root bin
+f none lib/pkgbuild-1.3.103/ips_package.pm=usr/lib/pkgbuild-1.3.103/ips_package.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/ips_utils.pm=usr/lib/pkgbuild-1.3.103/ips_utils.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/macros=usr/lib/pkgbuild-1.3.103/macros 0755 root bin
+f none lib/pkgbuild-1.3.103/packagebase.pm=usr/lib/pkgbuild-1.3.103/packagebase.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/pkgbuild-postprocess=usr/lib/pkgbuild-1.3.103/pkgbuild-postprocess 0755 root bin
+f none lib/pkgbuild-1.3.103/pkgbuild.pl=usr/lib/pkgbuild-1.3.103/pkgbuild.pl 0755 root bin
+f none lib/pkgbuild-1.3.103/pkgdb.pm=usr/lib/pkgbuild-1.3.103/pkgdb.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/pkgdbgrep=usr/lib/pkgbuild-1.3.103/pkgdbgrep 0755 root bin
+f none lib/pkgbuild-1.3.103/pkgnames=usr/lib/pkgbuild-1.3.103/pkgnames 0755 root bin
+f none lib/pkgbuild-1.3.103/pkgtool.pl=usr/lib/pkgbuild-1.3.103/pkgtool.pl 0755 root bin
+f none lib/pkgbuild-1.3.103/rpm_file.pm=usr/lib/pkgbuild-1.3.103/rpm_file.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/rpm_package.pm=usr/lib/pkgbuild-1.3.103/rpm_package.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/rpm_spec.pm=usr/lib/pkgbuild-1.3.103/rpm_spec.pm 0755 root bin
+f none lib/pkgbuild-1.3.103/spectool.pl=usr/lib/pkgbuild-1.3.103/spectool.pl 0755 root bin
+f none lib/pkgbuild-1.3.103/version-file=usr/lib/pkgbuild-1.3.103/version-file 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/pkgbuild 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/pkgbuild.1=usr/share/man/man1/pkgbuild.1 0644 root bin
+f none share/man/man1/pkgtool.1=usr/share/man/man1/pkgtool.1 0644 root bin
+f none share/man/man1/spectool.1=usr/share/man/man1/spectool.1 0644 root bin
+d none share/pkgbuild 0755 root bin
+f none share/pkgbuild/spec-files.txt=usr/share/pkgbuild/spec-files.txt 0644 root bin

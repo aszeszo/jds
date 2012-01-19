@@ -1,0 +1,598 @@
+# Copyright (C) 2009 Sun Microsystems, Inc
+# This file is distributed under the same license as the gst-plugins-good package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: gst-plugins-good HEAD\n"
+       "Report-Msgid-Bugs-To: \n "
+       "POT-Creation-Date: 2009-04-08 12:29-0700\n "
+       "PO-Revision-Date: 2009-04-08 20:31+0100\n"
+       "Last-Translator: desktop-discuss@opensolaris.org\n"
+       "Language-Team: desktop-discuss@opensolaris.org\n"
+       "MIME-Version: 1.0\n "
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+# SUN_BRANDING
+#: ../sys/oss/gstossmixertrack.c:98 ../sys/ossv4/oss4-mixer.c:724
+#: ../sys/sunaudio/gstsunaudiomixertrack.c:69
+msgid "Volume"
+msgstr "Volume"
+
+# SUN_BRANDING
+#: ../sys/oss/gstossmixertrack.c:99 ../sys/ossv4/oss4-mixer.c:750
+msgid "Bass"
+msgstr "Basses"
+
+# SUN_BRANDING
+#: ../sys/oss/gstossmixertrack.c:100 ../sys/ossv4/oss4-mixer.c:752
+msgid "Treble"
+msgstr "Aiguës"
+
+# SUN_BRANDING
+#: ../sys/oss/gstossmixertrack.c:102 ../sys/ossv4/oss4-mixer.c:780
+msgid "PCM"
+msgstr "PCM"
+
+# SUN_BRANDING
+#. save off names for the record sources
+#: ../sys/oss/gstossmixertrack.c:105 ../sys/ossv4/oss4-mixer.c:762
+#: ../sys/sunaudio/gstsunaudiomixeroptions.c:120
+msgid "Microphone"
+msgstr "Microphone"
+
+# SUN_BRANDING
+#: ../sys/oss/gstossmixertrack.c:122 ../sys/ossv4/oss4-mixer.c:808
+#: ../sys/sunaudio/gstsunaudiomixertrack.c:71
+msgid "Monitor"
+msgstr "Moniteur"
+
+# SUN_BRANDING
+#: ../sys/oss/gstosssink.c:402 ../sys/ossv4/oss4-sink.c:377
+#: ../sys/ossv4/oss4-source.c:368
+msgid ""
+"Could not open audio device for playback. Device is being used by another "
+"application."
+msgstr ""
+       "Impossible d'ouvrir le périphérique audio pour la lecture. Le périphérique "
+       "est utilisé par une autre application."
+
+# SUN_BRANDING
+#: ../sys/oss/gstosssink.c:409 ../sys/ossv4/oss4-sink.c:388
+#: ../sys/ossv4/oss4-source.c:379
+msgid ""
+"Could not open audio device for playback. You don't have permission to open "
+"the device."
+msgstr ""
+       "Impossible d'ouvrir le périphérique audio pour la lecture. Vous n'êtes pas autorisé à ouvrir "
+       "le périphérique."
+
+# SUN_BRANDING
+#: ../sys/oss/gstosssink.c:417 ../sys/ossv4/oss4-sink.c:400
+#: ../sys/ossv4/oss4-source.c:391
+msgid "Could not open audio device for playback."
+msgstr "Impossible d'ouvrir le périphérique audio pour la lecture."
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:303
+msgid "Could not open audio device for mixer control handling."
+msgstr "Impossible d'ouvrir le périphérique audio pour la gestion du contrôle du mixeur."
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:318
+msgid ""
+"Could not open audio device for mixer control handling. This version of the "
+"Open Sound System is not supported by this element."
+msgstr ""
+       "Impossible d'ouvrir le périphérique audio pour la gestion du contrôle du mixeur. Cette version d'OSS (Open Sound System) n'est pas prise en charge par cet élément."
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:726
+msgid "Master"
+msgstr "Volume général"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:728
+msgid "Front"
+msgstr "Avant"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:730
+msgid "Rear"
+msgstr "Arrière"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:732
+msgid "Headphones"
+msgstr "Ecouteur"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:734
+msgid "Center"
+msgstr "Central"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:736
+msgid "LFE"
+msgstr "LFE"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:738
+msgid "Surround"
+msgstr "Pseudo-quadriphonie"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:740
+msgid "Side"
+msgstr "Côté"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:742 ../sys/sunaudio/gstsunaudiomixertrack.c:72
+msgid "Built-in Speaker"
+msgstr "Haut-parleur intégré"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:744 ../sys/sunaudio/gstsunaudiomixertrack.c:76
+msgid "AUX 1 Out"
+msgstr "Sortie AUX1"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:746 ../sys/sunaudio/gstsunaudiomixertrack.c:77
+msgid "AUX 2 Out"
+msgstr "Sortie AUX2"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:748
+msgid "AUX Out"
+msgstr "Sortie AUX"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:754
+msgid "3D Depth"
+msgstr "Profondeur 3D"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:756
+msgid "3D Center"
+msgstr "Centre 3D"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:758
+msgid "3D Enhance"
+msgstr "Amélioration 3D"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:760
+msgid "Telephone"
+msgstr "Téléphone"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:764 ../sys/sunaudio/gstsunaudiomixertrack.c:74
+msgid "Line Out"
+msgstr "Sortie ligne"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:766 ../sys/ossv4/oss4-mixer.c:768
+#: ../sys/sunaudio/gstsunaudiomixeroptions.c:121
+msgid "Line In"
+msgstr "Entrée ligne"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:770 ../sys/sunaudio/gstsunaudiomixeroptions.c:122
+msgid "Internal CD"
+msgstr "CD interne"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:772
+msgid "Video In"
+msgstr "Entrée vidéo"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:774 ../sys/sunaudio/gstsunaudiomixeroptions.c:124
+msgid "AUX 1 In"
+msgstr "Entrée AUX 1"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:776 ../sys/sunaudio/gstsunaudiomixeroptions.c:125
+msgid "AUX 2 In"
+msgstr "Entrée AUX 2"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:778
+msgid "AUX In"
+msgstr "Entrée AUX"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:782 ../sys/ossv4/oss4-mixer.c:784
+msgid "Record Gain"
+msgstr "Gain d'enregistrement"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:786
+msgid "Output Gain"
+msgstr "Gain sortie"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:788
+msgid "Microphone Boost"
+msgstr "Suramplificateur de microphone"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:790
+msgid "Loopback"
+msgstr "Bouclage"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:792
+msgid "Diagnostic"
+msgstr "Diagnostic"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:794
+msgid "Bass Boost"
+msgstr "Suramplificateur de basses"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:796
+msgid "Playback Ports"
+msgstr "Ports de lecture"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:798
+msgid "Input"
+msgstr "Entrée"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:800 ../sys/ossv4/oss4-mixer.c:802
+#: ../sys/sunaudio/gstsunaudiomixeroptions.c:109
+msgid "Record Source"
+msgstr "Enregistrer la source"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:804
+msgid "Monitor Source"
+msgstr "Contrôler la source"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:806
+msgid "Keyboard Beep"
+msgstr "Bip du clavier"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:810
+msgid "Simulate Stereo"
+msgstr "Simuler la stéréo"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:812 ../sys/ossv4/oss4-mixer.c:852
+msgid "Stereo"
+msgstr "Stéréo"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:814
+msgid "Surround Sound"
+msgstr "Pseudo-quadriphonie"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:816
+msgid "Microphone Gain"
+msgstr "Gain de microphone"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:818
+msgid "Speaker Source"
+msgstr "Source du haut-parleur"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:820
+msgid "Microphone Source"
+msgstr "Source du microphone"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:822
+msgid "Jack"
+msgstr "Connecteur femelle"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:824
+msgid "Center / LFE"
+msgstr "Centre/LFE"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:826
+msgid "Stereo Mix"
+msgstr "Mix stéréo"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:828
+msgid "Mono Mix"
+msgstr "Mix mono"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:830
+msgid "Input Mix"
+msgstr "Mix d'entrée"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:832 ../sys/sunaudio/gstsunaudiomixeroptions.c:123
+msgid "SPDIF In"
+msgstr "Entrée SPDIF"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:834 ../sys/sunaudio/gstsunaudiomixertrack.c:75
+msgid "SPDIF Out"
+msgstr "Sortie SPDIF"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:836
+msgid "Microphone 1"
+msgstr "Microphone 1"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:838
+msgid "Microphone 2"
+msgstr "Microphone 2"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:840
+msgid "Digital Out"
+msgstr "Sortie numérique"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:842
+msgid "Digital In"
+msgstr "Entrée numérique"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:844
+msgid "HDMI"
+msgstr "HDMI"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:846
+msgid "Modem"
+msgstr "Modem"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:848
+msgid "Handset"
+msgstr "Combiné"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:850
+msgid "Other"
+msgstr "Autre"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:854
+msgid "None"
+msgstr "Aucun"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:856
+msgid "On"
+msgstr "Activé"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:858
+msgid "Off"
+msgstr "Désactivé"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:860
+msgid "Mute"
+msgstr "Muet"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:862
+msgid "Fast"
+msgstr "Rapide"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:864
+msgid "Very Low"
+msgstr "Très bas"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:866
+msgid "Low"
+msgstr "Bas"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:868
+msgid "Medium"
+msgstr "Moyen"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:870
+msgid "High"
+msgstr "Haute"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:872 ../sys/ossv4/oss4-mixer.c:874
+msgid "Very High"
+msgstr "Très fort"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:876
+msgid "Production"
+msgstr "Production"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:878
+msgid "Front Panel Microphone"
+msgstr "Microphone du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:880
+msgid "Front Panel Line In"
+msgstr "Entrée de ligne du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:882
+msgid "Front Panel Headphones"
+msgstr "Ecouteurs du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:884
+msgid "Front Panel Line Out"
+msgstr "Sortie de ligne du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:886
+msgid "Green Connector"
+msgstr "Connecteur vert"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:888
+msgid "Pink Connector"
+msgstr "Connecteur rose"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:890
+msgid "Blue Connector"
+msgstr "Connecteur bleu"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:892
+msgid "White Connector"
+msgstr "Connecteur blanc"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:894
+msgid "Black Connector"
+msgstr "Connecteur noir"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:896
+msgid "Gray Connector"
+msgstr "Connecteur gris"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:898
+msgid "Orange Connector"
+msgstr "Connecteur orange"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:900
+msgid "Red Connector"
+msgstr "Connecteur rouge"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:902
+msgid "Yellow Connector"
+msgstr "Connecteur jaune"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:904
+msgid "Green Front Panel Connector"
+msgstr "Connecteur vert du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:906
+msgid "Pink Front Panel Connector"
+msgstr "Connecteur rose du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:908
+msgid "Blue Front Panel Connector"
+msgstr "Connecteur bleu du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:910
+msgid "White Front Panel Connector"
+msgstr "Connecteur blanc du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:912
+msgid "Black Front Panel Connector"
+msgstr "Connecteur noir du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:914
+msgid "Gray Front Panel Connector"
+msgstr "Connecteur gris du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:916
+msgid "Orange Front Panel Connector"
+msgstr "Connecteur orange du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:918
+msgid "Red Front Panel Connector"
+msgstr "Connecteur rouge du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:920
+msgid "Yellow Front Panel Connector"
+msgstr "Connecteur jaune du panneau frontal"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:922
+msgid "Spread Output"
+msgstr "Dispersion"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:924
+msgid "Downmix"
+msgstr "Mix abaisseur"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:975
+msgid "Virtual Mixer Input"
+msgstr "Entrée du mixeur virtuel"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:978
+msgid "Virtual Mixer Output"
+msgstr "Sortie du mixeur virtuel"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:981
+msgid "Virtual Mixer Channels"
+msgstr "Canaux du mixeur virtuel"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-mixer.c:998
+#, c-format
+msgid "%s Function"
+msgstr "Fonction %s"
+
+# SUN_BRANDING
+#. format appends a number to the base, but preserves any surrounding
+#. format
+#: ../sys/ossv4/oss4-mixer.c:1015
+#, c-format
+msgid "%s %d"
+msgstr "%s %d"
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-sink.c:410 ../sys/ossv4/oss4-source.c:402
+msgid ""
+"Could not open audio device for playback. This version of the Open Sound "
+"System is not supported by this element."
+msgstr ""
+       "Impossible d'ouvrir le périphérique audio pour la lecture. Cette version d'OSS (Open Sound System) n'est pas prise en charge par cet élément."
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-sink.c:531
+msgid "Playback is not supported by this audio device."
+msgstr "La lecture n'est pas prise en charge par ce périphérique audio."
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-sink.c:539
+msgid "Audio playback error."
+msgstr "Erreur de lecture audio."
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-source.c:525
+msgid "Recording is not supported by this audio device."
+msgstr "L'enregistrement n'est pas pris en charge par ce périphérique audio."
+
+# SUN_BRANDING
+#: ../sys/ossv4/oss4-source.c:533
+msgid "Error recording from audio device."
+msgstr "Une erreur d'enregistrement s'est produite sur le périphérique audio."

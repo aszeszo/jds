@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-btdownload-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-btdownload-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-btdownload-root.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-btdownload-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gnome-btdownload.schemas=etc/gconf/schemas/gnome-btdownload.schemas 0644 root sys

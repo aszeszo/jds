@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxwsvr.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxwsvr.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxwsvr.copyright
+d none openwin 0755 root bin
+d none openwin/bin 0755 root bin
+s none openwin/bin/xscreensaver=../../bin/xscreensaver
+s none openwin/bin/xscreensaver-command=../../bin/xscreensaver-command
+s none openwin/bin/xscreensaver-demo=../../bin/xscreensaver-demo
+d none openwin/lib 0755 root bin
+d none openwin/lib/app-defaults 0755 root bin
+s none openwin/lib/app-defaults/XScreenSaver=../../../X11/lib/X11/app-defaults/XScreenSaver
+s none openwin/lib/xscreensaver=../../lib/xscreensaver

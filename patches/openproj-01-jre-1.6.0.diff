@@ -1,0 +1,11 @@
+--- openproj-1.4-src/openproj_ui/src/com/projity/dialog/util/ComponentFactory.java.orig	Thu Nov 13 17:50:10 2008
++++ openproj-1.4-src/openproj_ui/src/com/projity/dialog/util/ComponentFactory.java	Thu Nov 13 17:51:16 2008
+@@ -160,7 +160,7 @@
+ 		} else if (component instanceof JComboBox)
+ 			((JComboBox)component).setSelectedItem(value);
+ 		else if (component instanceof JSpinner&&value!=null) {
+-			((JSpinner)component).setValue(value);
++			((JSpinner)component).setValue(Double.valueOf(value.toString()));
+ 			if (isMultipleValues) { // set editor to empty.  Unfortunately, this disables the spinner
+ 				getSpinnerTextField((JSpinner)component).setText("");
+ 			} else {

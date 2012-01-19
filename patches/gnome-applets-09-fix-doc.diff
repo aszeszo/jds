@@ -1,0 +1,500 @@
+diff -urN gnome-applets-2.30.0/accessx-status/applet.c ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/accessx-status/applet.c
+--- gnome-applets-2.30.0/accessx-status/applet.c	2011-06-23 08:53:54.052780836 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/accessx-status/applet.c	2011-06-23 10:08:53.959206172 +0000
+@@ -1,5 +1,5 @@
+ /* Keyboard Accessibility Status Applet
+- * Copyright 2003, 2004 Sun Microsystems Inc.
++ * Copyright 2003-2004, 2011 Oracle and/or its affiliates. All rights reserved.
+  *
+  * This library is free software; you can redistribute it and/or
+  * modify it under the terms of the GNU Library General Public
+@@ -128,7 +128,7 @@
+ 
+ 	const gchar *documenters[] = {
+ 	        "Bill Haneman <bill.haneman@sun.com>",
+-                "Sun GNOME Documentation Team <gdocteam@sun.com>",
++                "Oracle GNOME Documentation Team",
+ 		NULL
+ 	};
+ 	
+@@ -136,7 +136,7 @@
+ 		"version",	VERSION,
+ 		"comments",	_("Shows the state of AccessX features such "
+ 				  "as latched modifiers"),
+-		"copyright",	"\xC2\xA9 2003 Sun Microsystems",
++		"copyright",	"\xC2\xA9 2003, 2011 Oracle and/or its affiliates. All rights reserved.",
+ 		"authors",	authors,
+ 		"documenters",	documenters,
+ 		"translator-credits",	_("translator-credits"),
+diff -urN gnome-applets-2.30.0/accessx-status/docs/accessx-status.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/accessx-status/docs/accessx-status.omf.in
+--- gnome-applets-2.30.0/accessx-status/docs/accessx-status.omf.in	2010-03-28 06:29:43.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/accessx-status/docs/accessx-status.omf.in	2011-06-22 15:57:19.041135249 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Utility"/>
+     <type>user's guide</type>
+     <relation seriesid="df109296-40e7-11d6-935f-beaae1cfe4f9"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates"/>
+   </resource>        
+ </omf>
+diff -urN gnome-applets-2.30.0/accessx-status/docs/C/accessx-status.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/accessx-status/docs/C/accessx-status.xml
+--- gnome-applets-2.30.0/accessx-status/docs/C/accessx-status.xml	2010-03-28 06:29:43.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/accessx-status/docs/C/accessx-status.xml	2011-06-22 15:57:49.177156694 +0000
+@@ -28,7 +28,8 @@
+ 	 </copyright>
+ 	 <copyright>
+ 		<year>2003</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year> 
++		<holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ <!-- translators: uncomment this:
+ 
+@@ -57,10 +58,10 @@
+ 		  <email>davyd@madeley.id.au</email>
+ 		</author>
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>GNOME Documentation Team</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		  <surname>Desktop Documentation Team</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 		  </affiliation> 
+ 		</author> 
+       <!-- This is appropriate place for other contributors: translators,
+@@ -93,7 +94,7 @@
+ 		  <revnumber>&applet; Applet Manual V0.1</revnumber> 
+ 		  <date>March 2003</date> 
+ 		  <revdescription> 
+-			 <para role="author">Sun GNOME Documentation Team
++			 <para role="author">Oracle Solaris Desktop Documentation Team
+ 				</para> 
+ 			 <para role="publisher">GNOME Documentation Project</para> 
+ 		  </revdescription> 
+diff -urN gnome-applets-2.30.0/battstat/docs/battstat.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/battstat/docs/battstat.omf.in
+--- gnome-applets-2.30.0/battstat/docs/battstat.omf.in	2010-03-28 06:29:27.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/battstat/docs/battstat.omf.in	2011-06-22 16:00:03.177351213 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Utility"/>
+     <type>user's guide</type>
+     <relation seriesid="01c4d5f0-6f7c-11d6-9d2a-d9f4212120ec"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>
+ </omf>
+diff -urN gnome-applets-2.30.0/battstat/docs/C/battstat.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/battstat/docs/C/battstat.xml
+--- gnome-applets-2.30.0/battstat/docs/C/battstat.xml	2010-03-28 06:29:26.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/battstat/docs/C/battstat.xml	2011-06-22 16:03:12.755926473 +0000
+@@ -35,7 +35,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright>
+       <year>2002</year>
+@@ -59,16 +60,15 @@
+       <publishername> GNOME Documentation Project </publishername> 
+     </publisher> 
+   
+-    &legal;
+ <!-- This file  contains link to license for the documentation (GNU FDL), and 
+      other legal stuff such as "NO WARRANTY" statement. Please do not change 
+      any of this. -->
+ 
+     <authorgroup> 
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Trevor</firstname>
+diff -urN gnome-applets-2.30.0/charpick/charpick.c ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/charpick/charpick.c
+--- gnome-applets-2.30.0/charpick/charpick.c	2010-03-28 05:29:51.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/charpick/charpick.c	2011-06-22 16:28:09.339525378 +0000
+@@ -595,7 +595,7 @@
+ 
+   static const gchar * const documenters[] = {
+           "Dan Mueth <d-mueth@uchicago.edu>",
+-          "Sun GNOME Documentation Team <gdocteam@sun.com>",
++          "Oracle GNOME Documentation Team",
+ 	  NULL
+   };
+ 
+diff -urN gnome-applets-2.30.0/charpick/help/C/char-palette.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/charpick/help/C/char-palette.xml
+--- gnome-applets-2.30.0/charpick/help/C/char-palette.xml	2010-03-28 06:29:18.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/charpick/help/C/char-palette.xml	2011-06-22 16:09:12.272170169 +0000
+@@ -37,7 +37,8 @@
+     <year>2002</year>
+     <year>2003</year>
+     <year>2004</year>
+-  <holder>Sun Microsystems</holder> </copyright>
++    <year>2011</year>
++  <holder>Oracle and/or its affiliates. All rights reserved.</holder> </copyright>
+   <copyright> 
+     <year>2000</year>
+     <holder>Dan Mueth</holder>
+@@ -46,17 +47,15 @@
+     <publishername>GNOME Documentation Project</publishername>
+   </publisher>
+ 
+-  &legal;
+-
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+ 	any of this. -->
+    <authorgroup>
+      <author>
+-       <firstname>Sun</firstname>
+-       <surname>GNOME Documentation Team</surname>
++       <firstname>Oracle Solaris</firstname>
++       <surname>Desktop Documentation Team</surname>
+        <affiliation>
+-	 <orgname>Sun Microsystems</orgname>
++	 <orgname>Oracle Corporation</orgname>
+        </affiliation>
+      </author>
+      <author>
+diff -urN gnome-applets-2.30.0/charpick/help/char-palette.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/charpick/help/char-palette.omf.in
+--- gnome-applets-2.30.0/charpick/help/char-palette.omf.in	2010-03-28 06:29:19.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/charpick/help/char-palette.omf.in	2011-06-22 16:07:05.614263428 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Utility"/>
+     <type>user's guide</type>
+     <relation seriesid="698a37f6-262b-11d6-99fb-d5af965eddf1"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>
+ </omf>
+diff -urN gnome-applets-2.30.0/drivemount/help/C/drivemount.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/drivemount/help/C/drivemount.xml
+--- gnome-applets-2.30.0/drivemount/help/C/drivemount.xml	2010-03-28 06:29:17.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/drivemount/help/C/drivemount.xml	2011-06-22 16:12:33.962382521 +0000
+@@ -31,7 +31,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+@@ -53,7 +54,6 @@
+       <publishername> GNOME Documentation Project </publishername> 
+     </publisher> 
+ 
+-   &legal;
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+ 	any of this. -->
+@@ -69,9 +69,9 @@
+       </author>
+         
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surnameDesktopGNOME Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author> 
+ 	<firstname>John </firstname> 
+diff -urN gnome-applets-2.30.0/drivemount/help/drivemount.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/drivemount/help/drivemount.omf.in
+--- gnome-applets-2.30.0/drivemount/help/drivemount.omf.in	2010-03-28 06:29:18.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/drivemount/help/drivemount.omf.in	2011-06-22 16:11:15.345387002 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Utility"/>
+     <type>user's guide</type>
+     <relation seriesid="e9162e90-01bc-11d7-9b3b-c253a7006472"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>        
+ </omf>
+diff -urN gnome-applets-2.30.0/geyes/docs/C/geyes.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/geyes/docs/C/geyes.xml
+--- gnome-applets-2.30.0/geyes/docs/C/geyes.xml	2010-03-28 06:29:19.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/geyes/docs/C/geyes.xml	2011-06-22 16:14:50.723951585 +0000
+@@ -29,7 +29,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year> 
++		<holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright>  
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -51,14 +52,13 @@
+ 	 <publisher role="maintainer"> 
+ 		<publishername>GNOME Documentation Project</publishername> 
+ 	 </publisher> 
+-&legal;
+ 
+ 	 <authorgroup> 
+ 		<author> 
+-		  <firstname>Sun</firstname> 
+-		  <surname>GNOME Documentation Team</surname> 
++		  <firstname>Oracle Solaris</firstname> 
++		  <surname>Desktop Documentation Team</surname> 
+ 		  <affiliation> 
+-			 <orgname>Sun Microsystems</orgname> 
++			 <orgname>Oracle Corporation</orgname> 
+ 			 <address></address> 
+ 		  </affiliation> 
+ 		</author> 
+diff -urN gnome-applets-2.30.0/geyes/docs/geyes.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/geyes/docs/geyes.omf.in
+--- gnome-applets-2.30.0/geyes/docs/geyes.omf.in	2010-03-28 06:29:20.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/geyes/docs/geyes.omf.in	2011-06-22 16:13:19.418910784 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Amusement"/>
+     <type>user's guide</type>
+     <relation seriesid="22069bfa-40e7-11d6-916c-fee2e30f369"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>
+ </omf>
+diff -urN gnome-applets-2.30.0/geyes/geyes.c ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/geyes/geyes.c
+--- gnome-applets-2.30.0/geyes/geyes.c	2010-03-28 05:29:51.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/geyes/geyes.c	2011-06-22 16:26:21.562709993 +0000
+@@ -181,7 +181,7 @@
+ 	const gchar *documenters[] = {
+                 "Arjan Scherpenisse <acscherp@wins.uva.nl>",
+                 "Telsa Gwynne <hobbit@aloss.ukuu.org.uk>",
+-                "Sun GNOME Documentation Team <gdocteam@sun.com>",
++                "Oracle GNOME Documentation Team",
+ 		NULL
+ 	};
+ 
+diff -urN gnome-applets-2.30.0/gweather/docs/C/gweather.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/gweather/docs/C/gweather.xml
+--- gnome-applets-2.30.0/gweather/docs/C/gweather.xml	2010-03-28 06:29:41.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/gweather/docs/C/gweather.xml	2011-06-22 16:24:56.027179630 +0000
+@@ -39,7 +39,8 @@
+ 		<year>2002</year>
+ 		<year>2003</year>
+ 		<year>2004</year>
+-		<holder>Sun Microsystems</holder>    	 
++		<year>2011</year>
++		<holder>Oracle and/or its affiliates. All rights reserved.</holder>    	 
+       </copyright>
+       <copyright>
+ 		<year>1999</year>  		
+@@ -85,11 +86,11 @@
+ 	</author>
+            		
+ 	<author>
+-	<firstname>Sun </firstname>  		  
+-	<surname>GNOME Documentation Team</surname>            		  
++	<firstname>Oracle Solaris</firstname>  		  
++	<surname>Desktop Documentation Team</surname>            		  
+ 
+             <affiliation>
+-		<orgname>Sun Microsystems</orgname>  			 
++		<orgname>Oracle Corporation</orgname>  			 
+             </affiliation>
+               		
+         </author>
+diff -urN gnome-applets-2.30.0/gweather/docs/gweather.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/gweather/docs/gweather.omf.in
+--- gnome-applets-2.30.0/gweather/docs/gweather.omf.in	2010-03-28 06:29:42.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/gweather/docs/gweather.omf.in	2011-06-22 16:18:44.870645164 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Accessories"/>
+     <type>user's guide</type>
+     <relation seriesid="1feb430a-2d11-11d6-95c1-a543794e8a17"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>
+ </omf>
+diff -urN gnome-applets-2.30.0/gweather/gweather-about.c ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/gweather/gweather-about.c
+--- gnome-applets-2.30.0/gweather/gweather-about.c	2010-03-28 05:29:51.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/gweather/gweather-about.c	2011-06-22 16:18:04.662131782 +0000
+@@ -40,7 +40,7 @@
+     const gchar *documenters[] = {
+         "Dan Mueth <d-mueth@uchicago.edu>",
+         "Spiros Papadimitriou <spapadim+@cs.cmu.edu>",
+-	"Sun GNOME Documentation Team <gdocteam@sun.com>",
++	"Oracle GNOME Documentation Team",
+ 	"Davyd Madeley <davyd@madeley.id.au>",
+ 	NULL
+     };
+diff -urN gnome-applets-2.30.0/mini-commander/help/C/command-line.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mini-commander/help/C/command-line.xml
+--- gnome-applets-2.30.0/mini-commander/help/C/command-line.xml	2010-03-28 06:29:25.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mini-commander/help/C/command-line.xml	2011-06-23 08:34:34.667711357 +0000
+@@ -35,7 +35,8 @@
+     <year>2002</year>
+     <year>2003</year> 
+     <year>2004</year> 
+-    <holder>Sun Microsystems</holder> 
++    <year>2011</year> 
++    <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+   </copyright>    
+   <copyright> 
+     <year>1998</year> 
+@@ -55,14 +56,13 @@
+     <publishername>GNOME Documentation Project</publishername> 
+   </publisher>
+ 
+-  &legal;
+ 
+   <authorgroup>
+     <author>
+-      <firstname>Sun </firstname>
+-      <surname>GNOME Documentation Team</surname>
++      <firstname>Oracle Solaris</firstname>
++      <surname>Desktop Documentation Team</surname>
+       <affiliation>
+-        <orgname>Sun Microsystems</orgname>
++        <orgname>Oracle Corporation</orgname>
+       </affiliation>
+     </author>
+     <author>
+diff -urN gnome-applets-2.30.0/mini-commander/help/command-line.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mini-commander/help/command-line.omf.in
+--- gnome-applets-2.30.0/mini-commander/help/command-line.omf.in	2010-03-28 06:29:25.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mini-commander/help/command-line.omf.in	2011-06-23 08:32:02.313820259 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Utility"/>
+     <type>user's guide</type>
+     <relation seriesid="b841b79a-2615-11d6-95d8-de48cbc601b6"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>
+ </omf>
+diff -urN gnome-applets-2.30.0/mini-commander/src/about.c ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mini-commander/src/about.c
+--- gnome-applets-2.30.0/mini-commander/src/about.c	2010-03-28 05:29:51.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mini-commander/src/about.c	2011-06-22 16:28:20.715626867 +0000
+@@ -39,7 +39,7 @@
+ 	const gchar *documenters[] = {
+ 	        "Dan Mueth <d-mueth@uchicago.edu>",
+                 "Oliver Maruhn <oliver@maruhn.com>",
+-                "Sun GNOME Documentation Team <gdocteam@sun.com>",
++                "Oracle GNOME Documentation Team",
+ 		NULL
+ 	};
+ 
+diff -urN gnome-applets-2.30.0/mixer/docs/C/mixer_applet2.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mixer/docs/C/mixer_applet2.xml
+--- gnome-applets-2.30.0/mixer/docs/C/mixer_applet2.xml	2010-03-28 06:29:54.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mixer/docs/C/mixer_applet2.xml	2011-06-23 08:36:39.005368379 +0000
+@@ -31,7 +31,8 @@
+ 		<year>2002</year> 
+ 		<year>2003</year> 
+ 		<year>2004</year> 
+-		<holder>Sun Microsystems</holder> 
++		<year>2011</year> 
++		<holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+ 	 </copyright> 
+ 	 <copyright> 
+ 		<year>2000</year> 
+@@ -50,7 +51,6 @@
+ 		<publishername>GNOME Documentation Project</publishername> 
+ 	 </publisher> 
+ 
+-&legal;
+ 
+ 
+ 	 <authorgroup> 
+diff -urN gnome-applets-2.30.0/mixer/docs/mixer_applet2.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mixer/docs/mixer_applet2.omf.in
+--- gnome-applets-2.30.0/mixer/docs/mixer_applet2.omf.in	2010-03-28 06:29:54.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/mixer/docs/mixer_applet2.omf.in	2011-06-23 08:35:49.524353073 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Multimedia"/>
+     <type>user's guide</type>
+     <relation seriesid="df109296-40e7-11d6-935f-beaae1cfe4f8"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>        
+ </omf>
+diff -urN gnome-applets-2.30.0/multiload/docs/C/multiload.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/multiload/docs/C/multiload.xml
+--- gnome-applets-2.30.0/multiload/docs/C/multiload.xml	2010-03-28 06:29:33.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/multiload/docs/C/multiload.xml	2011-06-23 08:38:31.702869352 +0000
+@@ -31,7 +31,8 @@
+     </copyright>
+     <copyright>
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder>
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <copyright> 
+@@ -51,7 +52,6 @@
+       <publishername> GNOME Documentation Project </publishername> 
+     </publisher> 
+ 
+-    &legal;
+ <!-- This file  contains link to license for the documentation (GNU FDL), and 
+      other legal stuff such as "NO WARRANTY" statement. Please do not change 
+      any of this. -->
+diff -urN gnome-applets-2.30.0/multiload/docs/multiload.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/multiload/docs/multiload.omf.in
+--- gnome-applets-2.30.0/multiload/docs/multiload.omf.in	2010-03-28 06:29:34.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/multiload/docs/multiload.omf.in	2011-06-23 08:37:42.405687531 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Utility"/>
+     <type>user's guide</type>
+     <relation seriesid="9a0b5202-202f-11d8-872c-c12579848e68"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>        
+ </omf>
+diff -urN gnome-applets-2.30.0/multiload/main.c ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/multiload/main.c
+--- gnome-applets-2.30.0/multiload/main.c	2010-03-28 05:29:51.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/multiload/main.c	2011-06-22 16:27:58.535567747 +0000
+@@ -46,7 +46,7 @@
+     const gchar * const documenters[] =
+     {
+ 		"Chee Bin HOH <cbhoh@gnome.org>",
+-		"Sun GNOME Documentation Team <gdocteam@sun.com>",
++		"Oracle GNOME Documentation Team",
+ 		NULL
+     };
+ 
+diff -urN gnome-applets-2.30.0/stickynotes/docs/C/stickynotes_applet.xml ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/stickynotes/docs/C/stickynotes_applet.xml
+--- gnome-applets-2.30.0/stickynotes/docs/C/stickynotes_applet.xml	2010-03-28 06:29:43.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/stickynotes/docs/C/stickynotes_applet.xml	2011-06-23 08:39:56.879149634 +0000
+@@ -38,7 +38,8 @@
+       <copyright> 
+         <year>2003</year>  
+         <year>2004</year>  
+-        <holder>Sun Microsystems</holder> 
++        <year>2011</year>  
++        <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+       </copyright> 
+       <copyright> 
+         <year>2003</year>  
+@@ -56,7 +57,6 @@
+ 	    <publishername>GNOME Documentation Project</publishername> 
+ 	</publisher> 
+ 	
+-	&legal;
+ 
+ 	<authorgroup>
+           <author>
+diff -urN gnome-applets-2.30.0/stickynotes/docs/stickynotes_applet.omf.in ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/stickynotes/docs/stickynotes_applet.omf.in
+--- gnome-applets-2.30.0/stickynotes/docs/stickynotes_applet.omf.in	2010-03-28 06:29:44.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/stickynotes/docs/stickynotes_applet.omf.in	2011-06-23 08:39:21.982697468 +0000
+@@ -4,6 +4,6 @@
+     <subject category="GNOME|Applets|Accessories"/>
+     <type>user's guide</type>
+     <relation seriesid="b8128ac2-17d4-11d7-9998-e6a4bbe01510"/>
+-    <rights type="GNU FDL" license.version="1.1" holder="Sun Microsystems"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
+   </resource>        
+ </omf>
+diff -urN gnome-applets-2.30.0/stickynotes/stickynotes_applet_callbacks.c ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/stickynotes/stickynotes_applet_callbacks.c
+--- gnome-applets-2.30.0/stickynotes/stickynotes_applet_callbacks.c	2010-03-28 05:29:51.000000000 +0000
++++ ../SUNWgnome-applets-2.30.0-gnome-applet.hacked/gnome-applets-2.30.0/stickynotes/stickynotes_applet_callbacks.c	2011-06-22 16:26:39.700232077 +0000
+@@ -369,7 +369,7 @@
+ 
+ 	static const gchar *documenters[] = {
+ 		"Loban A Rahman <loban@earthling.net>",
+-		"Sun GNOME Documentation Team <gdocteam@sun.com>",
++		"Oracle GNOME Documentation Team",
+ 		NULL
+ 	};
+ 

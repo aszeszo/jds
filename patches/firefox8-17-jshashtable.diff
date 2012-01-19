@@ -1,0 +1,14 @@
+diff -r be7de1a5bbf1 js/src/jsprvtd.h
+--- a/js/src/jsprvtd.h	Thu Sep 29 15:20:29 2011 -0700
++++ b/js/src/jsprvtd.h	Tue Oct 04 14:44:28 2011 +0800
+@@ -54,6 +54,10 @@
+  * make dependency induced by this file should not prove painful.
+  */
+ 
++#ifdef __cplusplus
++#include "jshashtable.h"
++#endif
++
+ #include "jspubtd.h"
+ #include "jsstaticcheck.h"
+ #include "jsutil.h"

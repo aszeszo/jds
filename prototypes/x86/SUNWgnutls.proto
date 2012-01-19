@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnutls.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnutls.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnutls.copyright
+f none share/doc/SUNWgnutls/AUTHORS=usr/share/doc/SUNWgnutls/AUTHORS 0444 root bin
+f none share/doc/SUNWgnutls/ChangeLog.bz2=usr/share/doc/SUNWgnutls/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnutls/NEWS.bz2=usr/share/doc/SUNWgnutls/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnutls/README=usr/share/doc/SUNWgnutls/README 0444 root bin
+f none share/doc/SUNWgnutls/lib/COPYING.bz2=usr/share/doc/SUNWgnutls/lib/COPYING.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libgnutls.so=libgnutls.so.26.14.12
+s none lib/amd64/libgnutls.so.26=libgnutls.so.26.14.12
+f none lib/amd64/libgnutls.so.26.14.12=usr/lib/amd64/libgnutls.so.26.14.12 0755 root bin
+s none lib/amd64/libgnutlsxx.so=libgnutlsxx.so.26.14.12
+s none lib/amd64/libgnutlsxx.so.26=libgnutlsxx.so.26.14.12
+f none lib/amd64/libgnutlsxx.so.26.14.12=usr/lib/amd64/libgnutlsxx.so.26.14.12 0755 root bin
+s none lib/libgnutls.so=libgnutls.so.26.14.12
+s none lib/libgnutls.so.26=libgnutls.so.26.14.12
+f none lib/libgnutls.so.26.14.12=usr/lib/libgnutls.so.26.14.12 0755 root bin
+s none lib/libgnutlsxx.so=libgnutlsxx.so.26.14.12
+s none lib/libgnutlsxx.so.26=libgnutlsxx.so.26.14.12
+f none lib/libgnutlsxx.so.26.14.12=usr/lib/libgnutlsxx.so.26.14.12 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnutls 0755 root bin
+d none share/doc/SUNWgnutls/lib 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgnutls.3=usr/share/man/man3/libgnutls.3 0644 root bin
+f none share/man/man3/libgnutlsxx.3=usr/share/man/man3/libgnutlsxx.3 0644 root bin

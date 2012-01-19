@@ -1,0 +1,45 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpng-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpng-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpng-devel.copyright
+d none bin 0755 root bin
+d none bin/amd64 0755 root bin
+s none bin/amd64/libpng-config=libpng14-config
+f none bin/amd64/libpng10-config=usr/bin/amd64/libpng10-config 0755 root bin
+f none bin/amd64/libpng12-config=usr/bin/amd64/libpng12-config 0755 root bin
+f none bin/amd64/libpng14-config=usr/bin/amd64/libpng14-config 0755 root bin
+s none bin/libpng-config=libpng14-config
+f none bin/libpng10-config=usr/bin/libpng10-config 0755 root bin
+f none bin/libpng12-config=usr/bin/libpng12-config 0755 root bin
+f none bin/libpng14-config=usr/bin/libpng14-config 0755 root bin
+d none include 0755 root bin
+s none include/libpng=libpng14
+d none include/libpng10 0755 root bin
+f none include/libpng10/png.h=usr/include/libpng10/png.h 0644 root bin
+f none include/libpng10/pngconf.h=usr/include/libpng10/pngconf.h 0644 root bin
+d none include/libpng12 0755 root bin
+f none include/libpng12/png.h=usr/include/libpng12/png.h 0644 root bin
+f none include/libpng12/pngconf.h=usr/include/libpng12/pngconf.h 0644 root bin
+d none include/libpng14 0755 root bin
+f none include/libpng14/png.h=usr/include/libpng14/png.h 0644 root bin
+f none include/libpng14/pngconf.h=usr/include/libpng14/pngconf.h 0644 root bin
+s none include/png.h=libpng14/png.h
+s none include/pngconf.h=libpng14/pngconf.h
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/pkgconfig 0755 root other
+s none lib/amd64/pkgconfig/libpng.pc=libpng14.pc
+f none lib/amd64/pkgconfig/libpng10.pc=usr/lib/amd64/pkgconfig/libpng10.pc 0644 root bin
+f none lib/amd64/pkgconfig/libpng12.pc=usr/lib/amd64/pkgconfig/libpng12.pc 0644 root bin
+f none lib/amd64/pkgconfig/libpng14.pc=usr/lib/amd64/pkgconfig/libpng14.pc 0644 root bin
+d none lib/pkgconfig 0755 root other
+s none lib/pkgconfig/libpng.pc=libpng14.pc
+f none lib/pkgconfig/libpng10.pc=usr/lib/pkgconfig/libpng10.pc 0644 root bin
+f none lib/pkgconfig/libpng12.pc=usr/lib/pkgconfig/libpng12.pc 0644 root bin
+f none lib/pkgconfig/libpng14.pc=usr/lib/pkgconfig/libpng14.pc 0644 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libpng.3=usr/share/man/man3/libpng.3 0644 root bin
+f none share/man/man3/libpngpf.3=usr/share/man/man3/libpngpf.3 0644 root bin
+d none share/man/man4 0755 root bin
+f none share/man/man4/png.4=usr/share/man/man4/png.4 0644 root bin

@@ -1,0 +1,15 @@
+diff --git a/content/canvas/src/WebGLTexelConversions.h b/content/canvas/src/WebGLTexelConversions.h
+index c49f4ae..b64b859 100644
+--- a/content/canvas/src/WebGLTexelConversions.h
++++ b/content/canvas/src/WebGLTexelConversions.h
+@@ -39,6 +39,10 @@
+ #ifndef WEBGLTEXELCONVERSIONS_H_
+ #define WEBGLTEXELCONVERSIONS_H_
+ 
++#ifdef __SUNPRO_CC
++#define __restrict
++#endif
++
+ #include "WebGLContext.h"
+ 
+ namespace mozilla {

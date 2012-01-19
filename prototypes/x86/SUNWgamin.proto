@@ -1,0 +1,29 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgamin.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgamin.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgamin.copyright
+f none share/doc/SUNWgamin/AUTHORS=usr/share/doc/SUNWgamin/AUTHORS 0444 root bin
+f none share/doc/SUNWgamin/COPYING.bz2=usr/share/doc/SUNWgamin/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgamin/ChangeLog.bz2=usr/share/doc/SUNWgamin/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgamin/NEWS.bz2=usr/share/doc/SUNWgamin/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgamin/README=usr/share/doc/SUNWgamin/README 0444 root bin
+d none lib 0755 root bin
+f none lib/gam_server=usr/lib/gam_server 0755 root bin
+s none lib/libfam.so=libfam.so.0.0.0
+s none lib/libfam.so.0=libfam.so.0.0.0
+f none lib/libfam.so.0.0.0=usr/lib/libfam.so.0.0.0 0755 root bin
+s none lib/libgamin-1.so=libgamin-1.so.0.1.10
+s none lib/libgamin-1.so.0=libgamin-1.so.0.1.10
+f none lib/libgamin-1.so.0.1.10=usr/lib/libgamin-1.so.0.1.10 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+f none lib/python2.6/vendor-packages/_gamin.so=usr/lib/python2.6/vendor-packages/_gamin.so 0755 root bin
+f none lib/python2.6/vendor-packages/gamin.py=usr/lib/python2.6/vendor-packages/gamin.py 0644 root bin
+f none lib/python2.6/vendor-packages/gamin.pyc=usr/lib/python2.6/vendor-packages/gamin.pyc 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgamin 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gam_server.1=usr/share/man/man1/gam_server.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgamin-1.3=usr/share/man/man3/libgamin-1.3 0644 root bin

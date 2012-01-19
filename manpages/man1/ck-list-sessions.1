@@ -1,0 +1,328 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 1988-1999, v.4002-->
+<!--ARC : LSARC 2009/432 ConsoleKit -->
+<!ENTITY cmd "ck-list-sessions">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2009 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<refentry id="ck-list-sessions-1">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>&cmd;</refentrytitle><manvolnum>1</manvolnum>
+<refmiscinfo class="date">22 Oct 2009</refmiscinfo>
+<refmiscinfo class="sectdesc">&man1;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>
+&cmd;
+</primary></indexterm>
+<indexterm><primary>
+Show ConsoleKit Session Information
+</primary></indexterm>
+<refnamediv id="ck-list-sessions-1-name">
+<refname>&cmd;</refname>
+<refpurpose>
+Show ConsoleKit Session Information
+</refpurpose></refnamediv>
+<refsynopsisdiv id="ck-list-sessions-1-synp"><title>&synp-tt;</title>
+<cmdsynopsis><command>&cmd;</command>
+<arg choice="opt"><option>-all</option></arg>
+<arg choice="opt"><option>-format=<replaceable>format</replaceable></option></arg>
+<arg choice="opt"><option>-help</option></arg>
+<arg choice="opt"><option>-version</option></arg>
+</cmdsynopsis></refsynopsisdiv>
+
+<refsect1 id="ck-list-sessions-1-desc"><title>&desc-tt;</title>
+<para>
+<command>&cmd;</command> is a utility that displays information from the
+ConsoleKit database.  By default, only open sessions are shown.  The
+<option>-all</option> option can be used to display all existing sessions on
+the system.  <command>&cmd;</command> returns information about each ConsoleKit
+session.  Users can specify which properties to display via the
+<option>-format</option> option.
+</para>
+
+<para>
+The following properties can be displayed for each session:
+</para>
+</refsect1>
+
+<refsect1 id="ck-list-sessions-1-opts">
+<title>&opts-tt;</title>
+<para>
+The following options are supported:
+</para>
+
+<variablelist termlength="medium">
+<varlistentry>
+<term><option>a</option>, <option>-all</option></term>
+<listitem><para>
+Show all ConsoleKit sessions.  If this option is not provided, only open
+sessions are shown.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>f</option>, <option>-format=<replaceable>format</replaceable></option></term>
+<listitem><para>
+Display information using the specified <replaceable>format</replaceable>.  The
+<replaceable>format</replaceable> value is a list of properties to display
+separated by commas.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>h</option>, <option>-help</option></term>
+<listitem><para>
+Display detailed usage message.
+</para>
+</listitem></varlistentry>
+
+<varlistentry>
+<term><option>V</option>, <option>-version</option></term>
+<listitem><para>
+Display the version of the <command>&cmd;</command> application.
+</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="ck-list-sessions-1-exde"><title>&exde-tt;</title>
+<refsect2 id="ck-list-sessions-1-exde-standard">
+<title>ConsoleKit session properties</title>
+
+<para>
+For each session, the following session properties are displayed:
+</para>
+
+<variablelist termlength="medium">
+<varlistentry>
+<term>unix-user</term>
+<listitem><para>
+The user id value associated with the session.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>realname</term>
+<listitem><para>
+The name of the user associated with the session.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>seat</term>
+<listitem><para>
+The ID for the ConsoleKit Seat associated with the session.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>session-type</term>
+<listitem><para>
+The ConsoleKit session type.  This value is specified by the &quot;Type&quot;
+key in the ConsoleKit session configuration file associated with this session. 
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>display-type</term>
+<listitem><para>
+The ConsoleKit display type.  This value is specified by the
+&quot;DisplayTemplate&quot; key in the ConsoleKit session configuration file
+associated with this session. 
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>open</term>
+<listitem><para>
+The value is &quot;TRUE&quot; if the session is open, and &quot;FALSE&quot;
+otherwise.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>active</term>
+<listitem><para>
+The value is &quot;TRUE&quot; if the session is active on the seat to which it
+is attached, and &quot;FALSE&quot; otherwise.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>x11-display</term>
+<listitem><para>
+The value of the X11 DISPLAY environment variable for this session if one is
+present.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>x11-display-device</term>
+<listitem><para>
+The value of the display device that the X11 display for the session is
+connected to.  If there is no x11-display set, then this value is undefined.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>display-device</term>
+<listitem><para>
+The display device associated with the session.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>remote-host</term>
+<listitem><para>
+If the session is not local, the value is the host name associated with the
+session.  If the session is local, the value is empty.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>is-local</term>
+<listitem><para>
+The value is &quot;TRUE&quot; if the session is local, and &quot;FALSE&quot;
+if remote.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>on-since</term>
+<listitem><para>
+An ISO 8601 date-time string that corresponds to the time the session started.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>login-session-id</term>
+<listitem><para>
+The value of the login session ID that the underlying system uses to enforce
+session boundaries. If there is no login session ID set then this value is an
+empty string.
+</para>
+</listitem></varlistentry>
+<varlistentry>
+<term>idle-since-hint</term>
+<listitem><para>
+An ISO 8601 date-time string that corresponds to the time of the last change of
+the idle-hint.  This is a hint used to indicate that the session may be idle.
+For sessions with a x11-display set (ie. graphical sessions), it is up to each
+session to delegate the responsibility for updating this value. Typically, the
+screensaver will set this.
+</para>
+<para>
+However, for non-graphical sessions with a display-device set the Session
+object itself will periodically update this value based on the activity
+detected on the display-device itself.
+</para>
+<para>
+This should not be considered authoritative. 
+</para>
+</listitem></varlistentry>
+</refsect2>
+</refsect1>
+
+<refsect1 id="ck-list-sessions-1-exam"><title>&exam-tt;</title>
+<example role="example">
+<title>Show running sessions.</title>
+<para><screen>
+example% <userinput>&cmd;</option></userinput>
+</screen></para>
+<para>
+This command would generate output like the following for each session:
+</para>
+<para><screen>
+SessionSeat1Local:
+        unix-user = '50'
+        realname = 'GDM Reserved UID'
+        seat = 'Seat1'
+        session-type = 'LoginWindow'
+        display-type = 'Local'
+        open = 'TRUE'
+        active = 'TRUE'
+        x11-display = ':0'
+        x11-display-device = '/dev/console'
+        display-device = '/dev/console'
+        remote-host-name = ''
+        is-local = 'TRUE'
+        on-since = '2009-08-11T06:46:42.941134Z'
+        login-session-id = ''
+        idle-since-hint = ''
+</screen></para>
+</example>
+<example role="example">
+<title>Show only the session-id, unix-user, and display-type properties.</title>
+<para><screen>
+example% <userinput>&cmd; <option>-format=&quot;session-id,unix-user,display-type&quot;</option></userinput>
+</screen></para>
+<para>
+This command would generate output like the following for each session:
+</para>
+<para><screen>
+SessionSeat1Local       50      Local
+</screen></para>
+</example>
+</refsect1>
+
+<refsect1 id="ck-list-sessions-1-file"><title>&file-tt;</title>
+<para>
+The following files are used by this application:
+</para>
+<variablelist termlength="wholeline">
+<varlistentry>
+<term><filename>/usr/bin/&cmd;</filename></term>
+<listitem><para>
+Executable for Show ConsoleKit Session Information.
+</para></listitem></varlistentry>
+<varlistentry>
+<term><filename>/etc/ConsoleKit/session.d</filename></term>
+<listitem><para>
+ConsoleKit session configuration files.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="ck-list-sessions-1-attr"><title>&attr-tt;</title>
+<para>
+See
+<olink targetdocent="REFMAN5" localinfo="attributes-5">
+<citerefentry><refentrytitle>attributes</refentrytitle>
+<manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:
+</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1">
+<colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row>
+<entry align="center" valign="middle">ATTRIBUTE TYPE</entry>
+<entry align="center" valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row>
+<entry><para>Availability</para></entry>
+<entry><para>library/xdg/consolekit</para></entry>
+</row>
+<row>
+<entry colname="COLSPEC0"><para>Interface stability</para></entry>
+<entry colname="COLSPEC1"><para>Volatile</para></entry>
+</row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="ck-list-sessions-1-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>ck-history</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-launch-session</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>ck-seat-tool</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>console-kit-daemon</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>gdm</refentrytitle><manvolnum>1m</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+
+<refsect1 id="ck-list-sessions-1-note"><title>&note-tt;</title>
+<para>
+Written by Brian Cameron, Sun Microsystems Inc., 2009.
+Copyright (c) 2009 by Sun Microsystems, Inc.
+</para>
+</refsect1>
+</refentry>

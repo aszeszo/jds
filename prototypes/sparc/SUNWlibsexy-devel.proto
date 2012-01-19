@@ -1,0 +1,34 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibsexy-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibsexy-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibsexy-devel.copyright
+d none include 0755 root bin
+d none include/libsexy 0755 root bin
+f none include/libsexy/sexy-enum-types.h=usr/include/libsexy/sexy-enum-types.h 0644 root bin
+f none include/libsexy/sexy-icon-entry.h=usr/include/libsexy/sexy-icon-entry.h 0644 root bin
+f none include/libsexy/sexy-spell-entry.h=usr/include/libsexy/sexy-spell-entry.h 0644 root bin
+f none include/libsexy/sexy-tooltip.h=usr/include/libsexy/sexy-tooltip.h 0644 root bin
+f none include/libsexy/sexy-tree-view.h=usr/include/libsexy/sexy-tree-view.h 0644 root bin
+f none include/libsexy/sexy-url-label.h=usr/include/libsexy/sexy-url-label.h 0644 root bin
+f none include/libsexy/sexy.h=usr/include/libsexy/sexy.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libsexy.pc=usr/lib/pkgconfig/libsexy.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/libsexy 0755 root bin
+f none share/gtk-doc/html/libsexy/SexyIconEntry.html=usr/share/gtk-doc/html/libsexy/SexyIconEntry.html 0644 root bin
+f none share/gtk-doc/html/libsexy/SexySpellEntry.html=usr/share/gtk-doc/html/libsexy/SexySpellEntry.html 0644 root bin
+f none share/gtk-doc/html/libsexy/SexyTooltip.html=usr/share/gtk-doc/html/libsexy/SexyTooltip.html 0644 root bin
+f none share/gtk-doc/html/libsexy/SexyTreeView.html=usr/share/gtk-doc/html/libsexy/SexyTreeView.html 0644 root bin
+f none share/gtk-doc/html/libsexy/SexyUrlLabel.html=usr/share/gtk-doc/html/libsexy/SexyUrlLabel.html 0644 root bin
+f none share/gtk-doc/html/libsexy/ch01.html=usr/share/gtk-doc/html/libsexy/ch01.html 0644 root bin
+f none share/gtk-doc/html/libsexy/home.png=usr/share/gtk-doc/html/libsexy/home.png 0644 root bin
+f none share/gtk-doc/html/libsexy/index.html=usr/share/gtk-doc/html/libsexy/index.html 0644 root bin
+f none share/gtk-doc/html/libsexy/index.sgml=usr/share/gtk-doc/html/libsexy/index.sgml 0644 root bin
+f none share/gtk-doc/html/libsexy/left.png=usr/share/gtk-doc/html/libsexy/left.png 0644 root bin
+f none share/gtk-doc/html/libsexy/libsexy.devhelp=usr/share/gtk-doc/html/libsexy/libsexy.devhelp 0644 root bin
+f none share/gtk-doc/html/libsexy/libsexy.devhelp2=usr/share/gtk-doc/html/libsexy/libsexy.devhelp2 0644 root bin
+f none share/gtk-doc/html/libsexy/right.png=usr/share/gtk-doc/html/libsexy/right.png 0644 root bin
+f none share/gtk-doc/html/libsexy/style.css=usr/share/gtk-doc/html/libsexy/style.css 0644 root bin
+f none share/gtk-doc/html/libsexy/up.png=usr/share/gtk-doc/html/libsexy/up.png 0644 root bin

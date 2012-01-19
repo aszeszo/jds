@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWrealplayer-l10n-ptBR.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWrealplayer-l10n-ptBR.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWrealplayer-l10n-ptBR.copyright
+d none lib 0755 root bin
+d none lib/RealPlay 0755 root bin
+d none lib/RealPlay/share 0755 root bin
+d none lib/RealPlay/share/locale 0755 root bin
+d none lib/RealPlay/share/locale/pt_BR 0755 root bin
+f none lib/RealPlay/share/locale/pt_BR/LICENSE=usr/lib/RealPlay/share/locale/pt_BR/LICENSE 0644 root bin
+f none lib/RealPlay/share/locale/pt_BR/README=usr/lib/RealPlay/share/locale/pt_BR/README 0644 root bin
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/pt_BR 0755 root other
+d none share/locale/pt_BR/LC_MESSAGES 0755 root other
+f none share/locale/pt_BR/LC_MESSAGES/realplay.mo=usr/share/locale/pt_BR/LC_MESSAGES/realplay.mo 0755 root other

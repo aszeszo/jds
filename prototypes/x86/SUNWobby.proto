@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWobby.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWobby.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWobby.copyright
+f none share/doc/SUNWobby/AUTHORS=usr/share/doc/SUNWobby/AUTHORS 0444 root bin
+f none share/doc/SUNWobby/COPYING.bz2=usr/share/doc/SUNWobby/COPYING.bz2 0444 root bin
+f none share/doc/SUNWobby/ChangeLog.bz2=usr/share/doc/SUNWobby/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWobby/NEWS=usr/share/doc/SUNWobby/NEWS 0444 root bin
+f none share/doc/SUNWobby/README=usr/share/doc/SUNWobby/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libobby-0.4.so.1=libobby-0.4.so.1.0.0
+f none lib/libobby-0.4.so.1.0.0=usr/lib/libobby-0.4.so.1.0.0 0755 root bin
+s none lib/libobby.so=libobby-0.4.so.1.0.0
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWobby 0755 root bin

@@ -1,0 +1,43 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-de.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-de.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-de.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/de-AT.aff=../../../../usr/share/spell/myspell/de_AT.aff
+s none lib/firefox/dictionaries/de-AT.dic=../../../../usr/share/spell/myspell/de_AT.dic
+s none lib/firefox/dictionaries/de-CH.aff=../../../../usr/share/spell/myspell/de_CH.aff
+s none lib/firefox/dictionaries/de-CH.dic=../../../../usr/share/spell/myspell/de_CH.dic
+s none lib/firefox/dictionaries/de-DE.aff=../../../../usr/share/spell/myspell/de_DE.aff
+s none lib/firefox/dictionaries/de-DE.dic=../../../../usr/share/spell/myspell/de_DE.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/de-AT.aff=../../../../usr/share/spell/myspell/de_AT.aff
+s none lib/thunderbird/dictionaries/de-AT.dic=../../../../usr/share/spell/myspell/de_AT.dic
+s none lib/thunderbird/dictionaries/de-CH.aff=../../../../usr/share/spell/myspell/de_CH.aff
+s none lib/thunderbird/dictionaries/de-CH.dic=../../../../usr/share/spell/myspell/de_CH.dic
+s none lib/thunderbird/dictionaries/de-DE.aff=../../../../usr/share/spell/myspell/de_DE.aff
+s none lib/thunderbird/dictionaries/de-DE.dic=../../../../usr/share/spell/myspell/de_DE.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/de_CH 0755 root bin
+f none share/doc/myspell-dictionary/de_CH/COPYING=usr/share/doc/myspell-dictionary/de_CH/COPYING 0644 root other
+f none share/doc/myspell-dictionary/de_CH/COPYING_OASIS=usr/share/doc/myspell-dictionary/de_CH/COPYING_OASIS 0644 root other
+f none share/doc/myspell-dictionary/de_CH/README_de_CH_frami.txt=usr/share/doc/myspell-dictionary/de_CH/README_de_CH_frami.txt 0644 root other
+d none share/doc/myspell-dictionary/de_DE 0755 root bin
+f none share/doc/myspell-dictionary/de_DE/COPYING=usr/share/doc/myspell-dictionary/de_DE/COPYING 0644 root other
+f none share/doc/myspell-dictionary/de_DE/COPYING_OASIS=usr/share/doc/myspell-dictionary/de_DE/COPYING_OASIS 0644 root other
+f none share/doc/myspell-dictionary/de_DE/Copyright=usr/share/doc/myspell-dictionary/de_DE/Copyright 0644 root other
+f none share/doc/myspell-dictionary/de_DE/INSTALL_de.txt=usr/share/doc/myspell-dictionary/de_DE/INSTALL_de.txt 0644 root other
+f none share/doc/myspell-dictionary/de_DE/README_de_DE.txt=usr/share/doc/myspell-dictionary/de_DE/README_de_DE.txt 0644 root other
+f none share/doc/myspell-dictionary/de_DE/VERSION=usr/share/doc/myspell-dictionary/de_DE/VERSION 0644 root other
+f none share/doc/myspell-dictionary/de_DE/dictionary.lst.example=usr/share/doc/myspell-dictionary/de_DE/dictionary.lst.example 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/de_AT.aff=usr/share/spell/myspell/de_AT.aff 0644 root other
+f none share/spell/myspell/de_AT.dic=usr/share/spell/myspell/de_AT.dic 0644 root other
+f none share/spell/myspell/de_CH.aff=usr/share/spell/myspell/de_CH.aff 0644 root other
+f none share/spell/myspell/de_CH.dic=usr/share/spell/myspell/de_CH.dic 0644 root other
+f none share/spell/myspell/de_DE.aff=usr/share/spell/myspell/de_DE.aff 0644 root other
+f none share/spell/myspell/de_DE.dic=usr/share/spell/myspell/de_DE.dic 0644 root other

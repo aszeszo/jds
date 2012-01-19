@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-media-player-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-media-player-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-media-player-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/rhythmbox.schemas=etc/gconf/schemas/rhythmbox.schemas 0644 root sys
+f none etc/gconf/schemas/totem-handlers.schemas=etc/gconf/schemas/totem-handlers.schemas 0644 root sys
+f none etc/gconf/schemas/totem-video-thumbnail.schemas=etc/gconf/schemas/totem-video-thumbnail.schemas 0644 root sys
+f none etc/gconf/schemas/totem.schemas=etc/gconf/schemas/totem.schemas 0644 root sys

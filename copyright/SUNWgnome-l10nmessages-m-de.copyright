@@ -1,0 +1,1787 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  German translation of avahi
+  Copyright (C) 2008 Avahi
+  This file is distributed under the same license as the avahi package.
+  Fabian Affolter <fab@fedoraproject.org>, 2008-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  translation of de.po to German
+  German translation of Tracker
+  Copyright (C) 2006, 2007, 2008, Free Software Foundation, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+ 
+  Hendrik Richter <hendrikr@gnome.org>, 2006.
+  Michael Biebl <mbiebl@gmail.com>, 2007, 2008.
+  Marcus Fritzsch <m@fritschy.de>, 2007.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  German dia translation.
+  Copyright (C) 1999-2003 Free Software Foundation, Inc.
+  Karsten Weiss <knweiss@gmx.de>, 1999, 2000, 2002.
+  Daniel Egger <Daniel.Egger@suse.de>, 2000.
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2001.
+  Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002, 2003, 2004.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006.
+  Jens Seidel <jseidel@cvs.gnome.org>, 2006.
+  Hans Breuer <hans@breuer.org>, 2007, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  German dasher translation
+  Copyright (C) 2004 Free Software Foundation, Inc.
+  This file is distributed under the same license as the dasher package.
+  Christian Neumair <chris@gnome-de.org>, 2004.
+  Christian Kintner <mail@christian-kintner.de>, 2006.
+  Hendrik Richter <hendrikr@gnome.org>, 2006,
+  Thomas Gier <mail@thomasgier.de>, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  German GOK translation.
+  Copyright (C) 2002-2004 Free Software Foundation, Inc.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2009.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  German AT-SPI translation.
+  Copyright (C) 2003 Free Software Foundation, Inc.
+  This file is distributed under the same license as the AT-SPI package.
+  Christian Neumair <chris@gnome-de.org>, 2003.
+  Hendrik Richter <hendrikr@gnome.org>, 2008.
+  Philipp Kerling <k.philipp@gmail.com>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  German language file for mousetweaks.
+  Copyright (C) 2007 Gerd Kohlberger <lowfi@chello.at>
+  This file is distributed under the same license as the mousetweaks package.
+  Gerd Kohlberger <lowfi@chello.at>, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2008.
+  Hendrik Richter <hendrikr@gnome.org>, 2008.
+  Wolfgang Stoeggl <c72578@yahoo.de>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  German translation of orca.
+  Copyright (C) 2004 THE orca'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the orca package.
+ 
+  #
+  # Manche Übersetzung erscheint vielleicht ungewöhnlich, ist aber
+  # so wesentlich besser für die Sprachausgabe.
+  #
+  # Link  -  Link
+  #
+ 
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005, 2006.
+  Hendrik Richter <hendrikr@gnome.org>, 2006, 2007.
+  Jochen Skulj <jochen@jochenskulj.de>, 2007, 2008.
+  Simon Bienlein <simon@linux-fuer-blinde.de>, 2008, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  German gnome-netstatus translation.
+  Copyright (C) 2003, 2004 Mark McLoughlin <mark@skynet.ie>
+  This file is distributed under the same license as the gnome-netstatus
+  package.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005.
+  Andre Klapper <ak-47@gmx.net>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  German translation of Quick Lounge applet
+  Copyright (C) 2004 Paolo Bacchilega <paolo.bacch@tin.it>
+  This file is distributed under the same license as the Quick Lounge applet package.
+  Jan Arne Petersen <jpetersen@uni-bonn.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2003.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2004.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  German File Roller translation
+  Copyright (C) 2001-2004 Free Software Foundation, Inc.
+  Erik Vetters <j-o-n-e-s@web.de>
+  Stefan Furtmayr <sf@paf.net>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  German gcalctool translation.
+  Copyright (C) 1990-2005 Rich Burridge
+  This file is distributed under the same license as the gcalctool package.
+  Christian Neumair chrisatgnome-de.org, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Jochen Skulj <jochen@jochenskulj.de>
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+  #Vereinbarungen / Conventions:
+  Basic = Standard
+  Financial = Finanztechnisch
+  Programming = Programmierung
+  Display mode = Arbeitsmodus
+  Periodic Interest Rate = Periodischer Zinssatz
+  Gross Profit Margin = Bruttogewinnspanne
+  Straight-Line Depreciation = Lineare Abschreibung
+ 
+ 
+  Ich bin nicht sicher, in welchem Umfang man Knopfnamen bedenkenlos
+  übersetzen darf. Bitte CHECKen.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  translation of de.po to
+  translation of de.po to deutsch
+  German message catalog for gtKam, a GTK+ front end for gphoto2
+  Copyright © 2000-2002 Scott Fritzinger <scottf@unr.edu> et al.
+ 
+  [Please leave these here: öäüßÖÄÜ]
+  Colin Marquardt <colin@marquardt-home.de>, 2000-2002.
+  Marcus Meissner <marcus@jet.franken.de>, 2004, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  German translation of brasero.
+  Copyright (C) 2006 THE brasero'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the brasero package.
+  Georg Funke <schorsch.funke@freenet.de>, 2006.
+  Jochen Skulj <jochen@jochenskulj.de>, 2008, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
+  Wolfgang Stoeggl <c72578@yahoo.de>, 2009.
+  Hendrik Brandt <heb@gnome-de.org>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  German Sound Juicer translation.
+  Copyright (C) 2003-2004 Ross Burton.
+  This file is distributed under the same license as the sound-juicer package.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+  Philipp Kerling <k.philipp@gmail.com>, 2008.
+  Jochen Skulj <jochen@jochenskulj.de>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  German libbonobo translation
+  Copyright (C) 2002-2004 Free Software Foundation, Inc.
+  Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+  Christian Meyer <chrisime@gnome.org>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  German gconf-editor translation.
+  Copyright (C) 2002-2004 Free Software Foundation, Inc.
+  Christian Meyer <chrisime@gnome.org>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007.
+  Hendrik Brandt <heb@gnome-de.org>, 2004.
+  Andre Klapper <ak-47@gmx.net>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  German GConf translation
+  Copyright (C) 1999-2004 Free Software Foundation, Inc.
+  Matthias Warkus <mawa@iname.com>, 1999.
+  Kai Lahmann <kl@linuxfaqs.de>, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2000-2002.
+  Manuel Borchers <webmaster@matronix.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008, 2009.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  German bug-buddy translation
+  Christian Meyer <chrisime@gnome.org>, 2000.
+  Matthias Warkus  <mawa@iname.com>, 2000.
+  Karl Eichwalder <ke@suse.de>, 2000, 2001.
+  Benjamin Greiner <benjamin.greiner@gmx.net>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
+  Michael Kanis <mkanis@gmx.de>, 2006.
+  Andre Klapper <ak-47@gmx.net>, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  German gDesklets translation.
+  Copyright (C) 2005 Martin Grimme
+  This file is distributed under the same license as the gDesklets package.
+  Martin Grimme <martin@pycage.de>, 2003.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Christian Meyer <chrisime@gnome-de.org>, 2005.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2005.
+ 
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  German translation of gnome-settings-daemon
+  Copyright (C) 1998-2004 Free Software Foundation, Inc.
+  Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998.
+  Karsten Weiss <karsten@addx.au.s.shuttle.de>, 1999.
+  Matthias Warkus <mawa@iname.com>, 1999.
+  Karl Eichwalder <ke@suse.de>, 1999, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005, 2008.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Jens Seidel <jseidel@cvs.gnome.org>, 2005.
+  Christian Kintner <ckintner@gnome-de.org>, 2007.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  German gnome-control-center translation
+  Copyright (C) 1998-2004 Free Software Foundation, Inc.
+ 
+  Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998.
+  Karsten Weiss <karsten@addx.au.s.shuttle.de>, 1999.
+  Matthias Warkus <mawa@iname.com>, 1999.
+  Karl Eichwalder <ke@suse.de>, 1999, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008, 2009.
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Jens Seidel <jseidel@cvs.gnome.org>, 2005.
+  Christian Kintner <ckintner@gnome-de.org>, 2007.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Wolfgang Stöggl <c72578@yahoo.de>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  German Zenity translation.
+  Copyright (C) 2003, 2004 Sun Microsystems, Inc.
+  This file is distributed under the same license as the zenity package.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007.
+  Mario Blättermann <mario.blaettermann@t-online.de>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  German GDM translation.
+  Copyright (C) 1999-2004, 2007 Free Software Foundation, Inc.
+  Karsten Weiss <karsten@addx.au.s.shuttle.de>, 1999.
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2005.
+  Fabian Nowak <timystery@arcor.de>, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  #-#-#-#-#  de.po (de)  #-#-#-#-#
+  translation of de.po to
+  German Nautilus translation
+  Copyright (C) 2000-2004, 2007 Free Software Foundation, Inc.
+ 
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
+  Matthias Warkus <mawarkus@gnome.org>, 2000, 2001.
+  Christian Meyer <chrisime@gnome.org>, 2000-2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Jens Seidel <jseidel@cvs.gnome.org>, 2005.
+  PGP-KeyID: 0x037FD3CF <ttrinks@redhat.com>, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2007, 2008, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Jochen Skulj <jochen@jochenskulj.de>, 2009.
+ 
+  desktop    = Arbeitsfläche
+  item		= Objekt
+  home		= Persönlicher Ordner
+  selected	= (aus)gewählt
+  zoom		= vergrößern/verkleinern
+  trash		= Müll
+  location	= Ort
+  location bar	= Adressleiste
+  side bar	= Seitenleiste
+  tool bar	= Werkzeugleiste
+  status bar	= Statusleiste
+  history	= Chronik
+  date modified	= Änderungsdatum
+  date changed	= Änderungsdatum
+  sidebarpanel	= Seitenleistenkarte
+  Factory	= Fabrik
+  URL		= Adresse
+  (un)mount	= einbinden/aushängen
+  Volume	= Datenträger
+  Media		= Medium
+ 
+  Übersetzung der GPL wie unter http://www.gnu.de/gpl-ger.html gemäß
+  "Es ist jedermann gestattet, diese Lizenzurkunde zu vervielfältigen und
+   unveränderte Kopien zu verbreiten; Änderungen sind jedoch nicht erlaubt."
+ 
+  #-#-#-#-#  de.po (eel)  #-#-#-#-#
+  eel German translation file.
+  Copyright (C) 2000-2002 Free Software Foundation, Inc.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  German GtkSourceView translation.
+  Copyright (C) 2002-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the GtkSourceView package.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2007.
+  Philipp Kerling <k.philipp@gmail.com>, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Wolfgang Stöggl <c72578@yahoo.de>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  German GtkSourceView translation.
+  Copyright (C) 2002-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the GtkSourceView package.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
+  Hendrik Brandt <heb@gnome-de.org>, 2007.
+  Hendrik Richter <hendrikr@gnome.org>, 2007.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  German Yelp translation.
+  Copyright (C) 2001-2004 Free Software Foundation, Inc.
+  Christian Meyer <chrisime@gnome.org>, 2001, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Brandt <heb@gnome-de.org>, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2006, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2007.
+  Jochen Skulj <jochen@jochenskulj.de>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  German translation of GHex
+  Copyright (C) 2004 Jaka Močnik <jaka@gnu.org>
+  This file is distributed under the same license as the GHex package.
+  Eckehard Berns
+  Matthias Warkus <mawa@iname.com>, 1999.
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2001, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2004.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005.
+  Andre Klapper <ak-47@gmx.net>, 2007.
+  Mario Blättermann <mariobl@gnome.org>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  translation of de.po to Deutsch
+  Pidgin German translation
+  Copyright (C) 2001, Daniel Seifert <Pidgin-translation@dseifert.de>
+  Copyright (C) 2002, Karsten Weiss <knweiss@gmx.de>
+  Copyright (C) 2002-2009, Björn Voigt <bjoern@cs.tu-berlin.de>,
+                      Jochen Kemnade <jochenkemnade@web.de>
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  translation of de.po to Deutsch
+  German GIMP translation.
+  Copyright (C) 1998-2007 Free Software Foundation, Inc.
+  Daniel Egger <egger@suse.de>
+  Michael Natterer <mitch@gimp.org>
+  Sven Neumann <sven@gimp.org>
+  Christian Neumair <chris@gnome-de.org>
+  Roman Joost <roman@bromeco.de>
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005, 2007, 2008.
+  Sven Neumann <sven@gimp.org>, 2004-2008.
+  Roman Joost <romanofski@gimp.org>, 2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2005.
+  Jens Seidel <jseidel@cvs.gnome.org>, 2005.
+  Ulf-D. Ehlert <ulfehlert@svn.gnome.org>, 2008-2009.
+ 
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  German gThumb translation.
+  Copyright (C) 2002-2004 Paolo Bacch
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006.
+  Maren Reinecke <ma-reinecke@web.de>, 2008.
+  Jochen Skulj <jochen@jochenskulj.de>, 2008.
+ 
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2008, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  German translation for Eye of Gnome.
+  Copyright (C) 1999-2002, 2008 Free Software Foundation, Inc.
+  Matthias Warkus <mawa@iname.com>, 1999-2001.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+  Jens Finke <jens@gnome.org>, 2002-2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Benedikt Wicklein <benedikt.wicklein@googlemail.com>, 2007.
+  Philipp Kerling <k.philipp@gmail.com>, 2007, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2008, 2009.
+  Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Jochen Skulj <jochen@jochenskulj.de>, 2009.
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  German libbonoboui translation.
+  Copyright (C) 2002-2003 Free Software Foundation, Inc.
+  Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+  Christian Neumair <chris@gnome.de.org>, 2002, 2003.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  German gnome-keyring translation.
+  Copyright (C) 2003, 2004 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-keyring package.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2006.
+  Philipp Kerling <k.philipp@gmail.com>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2008, 2009.
+  Stefan Horning <stefan@hornings.de>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  German libgnome translation.
+  Benjamin Greiner <benjamin.greiner@gmx.net>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  German gnome-media translation
+  Copyright (C) 2000-2004 Free Software Foundation, Inc.
+  Matthias Warkus <mawa@iname.com>, 1999.
+  Karl Eichwalder <ke@suse.de>, 1999, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2000-2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2008, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  German translation for gstreamer 0.10.24.2
+  Copyright (C) 2004 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gstreamer package.
+ 
+  Roland Illig <roland.illig@gmx.de>, 2004.
+  Christian Kirbach <christian.kirbach@googlemail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  German messages for gst-plugins-base.
+  Copyright © 2006 Karl Eichwalder
+  This file is distributed under the same license as the gst-plugins-base package.
+  Karl Eichwalder <ke@suse.de>, 2006.
+  Christian Kirbach <christian.kirbach@googlemail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  German translations for gst-plugins-bad
+  Copyright (C) 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gst-plugins-good package.
+ 
+  PCM = PCM
+  Line-in = Line-Eingang
+  Line-out = Line-Ausgang
+  Pipeline = Weiterleitung
+  Stream = Strom
+ 
+  Christian Kirbach <christian.kirbach@googlemail.com>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gst-plugin-good package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  German Totem translation.
+  Copyright (C) 2002-2004 Bastien Nocera
+  This file is distributed under the same license as the totem package.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004-2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+  Denis Washington <dwashington@gmx.net>, 2008.
+  Mario Blättermann <mariobl@gnome.org>, 2008-2009.
+  Andre Klapper <ak-47@gmx.net>, 2009.
+  Wolfgang Stoeggl <c72578@yahoo.de>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  German translation of rhythmbox
+  Copyright (C) 2002-2003, 2006 Free Software Foundation, Inc.
+  arch-tag: German Rhythmbox translation
+  Benjamin Greiner <benjamin.greiner@gmx.net>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Daniel Schindler <daniel@logic-co.de>, 2006.
+  Hendrik Richter <hendrikr@gnome.org>, 2006, 2007, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2005 - 2007, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2007.
+  Jochen Skulj <jochen@jochenskulj.de>, 2008, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  translation of de.po to Deutsch
+  translation of alacarte.
+  Copyright (C) 2006 THE alacarte COPYRIGHT HOLDER
+  This file is distributed under the same license as the alacarte package.
+ 
+  Beni Goll <Beni.Goll@web.de>, 2006.
+  Hendrik Brandt <heb@gnome-de.org>, 2006.
+  Hendrik Richter <hendrikr@gnome.org>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  German libwnck translation.
+  Copyright (C) 2001-2004, 2007 Free Software Foundation, Inc.
+  Christian Meyer <chrisime@gnome.org>, 2001, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2006.
+  Andre Klapper <ak-47@gmx.net>, 2007, 2008, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  German GNOME Desktop translation.
+  Copyright (C) 1998-2003 Free Software Foundation, Inc.
+  Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998.
+  Matthias Warkus <mawa@iname.com>, 1999-2001.
+  Karl Eichwalder <ke@suse.de>, 2000, 2001.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
+  Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002, 2003.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for notification-daemon.mo
+  Dutch translation for notification-daemon
+  Copyright (C) 2006 Christian Hammond
+  This file is distributed under the same license as the notification-daemon package.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  German gnome-panel translation.
+  Copyright (C) 1998-2004 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-panel package.
+  Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998.
+  Matthias Warkus <mawa@iname.com>, 1999-2001.
+  Karl Eichwalder <ke@suse.de>, 2000, 2001.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
+  Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2009.
+  Christian Kintner <mail@christian-kintner.de>, 2006.
+  Philipp Kerling <k.philipp@gmail.com>, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2009.
+  Moritz Baumann <flamingmo@online.de>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  German translation of gnome-menus.
+  Copyright (C) 2004 THE gnome-menus'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the gnome-menus package.
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2006, 2007.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  Copyright (C) Martin Kretzschmar
+  This file is distributed under the same license as the Evince package.
+  Martin Kretzschmar <martink@gnome.org>, 2004.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006.
+  Hendrik Brandt <heb@gnome-de.org>, 2005.
+  Christian Kintner <ckintner@gnome-de.org>, 2007.
+  Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+  Based on German GPdf and GGv translations.
+ 
+  Copyright on GPdf and GGv translations is held by its translators.
+  Please keep in sync with GPdf and GGv translations.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  German translation for gnome-pilot.
+  Copyright (C) 2000-2002 Free Software Foundation, Inc.
+  Christian Meyer <chrisime@gnome.org>, 2000-2002.
+  Christian Neumair <chris@gnome-de.org>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2004.
+  Hendrik Brandt <heb@gnome-de.org>, 2005.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  German translation of gnome-power.
+  Copyright (C) 2005 THE gnome-power'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the gnome-power package.
+  Hendrik Brandt <heb@gnome-de.org>, 2005, 2006.
+  Hendrik Richter <hendrikr@gnome.org>, 2006, 2007, 2008.
+  Johannes Schmid <jhs@gnome.org>, 2006.
+  Tobias Wolf <towolf@gmx.net>, 2006.
+  Thomas Gier <mail@thomasgier.de>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+  Pascal.Kreyer <pascal.kreyer@sun.com>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  German vino translation.
+  Copyright (C) 2003, 2004, 2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the vino package.
+  Christian Neumair <chris@gnome-de.org>, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2009.
+  Andre Klapper <ak-47@gmx.net>, 2008, 2009.
+  Jochen Skulj <jochen@jochenskulj.de>, 2009.
+ 
+  FIXME
+  Manche der GConf-Schemabeschreibungen sind etwas abenteuerlich, sowohl im
+  Original, als auch in der Übersetzung
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  German translation file for gnome-session.
+  Copyright (C) 1998-2002, 2007 Free Software Foundation, Inc.
+  Carsten Schaar <nhadcasc@fs-maphy.uni-hannover.de>, 1998.
+  Matthias Warkus <mawa@iname.com>, 1999-2001.
+  Karl Eichwalder <ke@suse.de>, 2000, 2001.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
+  Jörgen Scheibengruber <mfcn@gmx.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008.
+  Jochen Skulj <jochen@jochenskulj.de>, 2006.
+  Andre Klapper <ak-47@gmx.net>, 2007.
+  Mario Blättermann <mario.blaettermann@t-online.de, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Wolfgang Stöggl <c72578@yahoo.de>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  German GNOME System Monitor translation.
+  Copyright (C) 2001-2003 Free Software Foundation, Inc.
+  Christian Meyer <chrisime@gnome.org>, 2001, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005, 2006.
+  Andre Klapper <ak-47@gmx.net>, 2007.
+  Hendrik Brandt <heb@gnome-de.org>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  German gnome-system-tools translation
+  Copyright (C) 2000-2004 Free Software Foundation, Inc.
+  Kai Lahmann <kl@linuxfaqs.de>, 2001.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2006.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  German translation file for gnome-terminal.
+  Copyright (C) 2002-2004 Free Software Foundation, Inc.
+  Christian Meyer <chrisime@gnome.org>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007.
+  Hendrik Brandt <heb@gnome-de.org>, 2006.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2008, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  German gedit translation.
+  Copyright (C) 1999-2005 Free Software Foundation, Inc.
+  Matthias Warkus <mawarkus@gnome.org>, 1999-2001.
+  Manuel Borchers <webmaster@matronix.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005, 2006.
+  Jochen Skulj <jochen@jochenskulj.de>, 2006, 2007, 2009.
+  Andre Klapper <ak-47@gmx.net>, 2008, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2008, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  German gnome-icon-theme translation.
+  Copyright (C) 2002-2004 Free Software Foundation, Inc.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2007.
+  Christian Kintner <mail@christian-kintner.de>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  German gnome-themes Translation.
+  Copyright (C) 2002-2003 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-themes package.
+  Christian Neumair <chris@gnome-de.org>, 2002, 2003.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008, 2009.
+ 
+  Manche Themennamen sind Eigennamen. Bitte nicht übersetzen.
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  German translation of gnome-backgrounds.
+  Copyright (C) 2004 THE gnome-backgrounds'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the gnome-backgrounds
+  package.
+ 
+  Hendrik Brandt <heb@gnome-de.org>, 2004.
+  Hendrik Richter <hendi@gnome-de.org>, 2006.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  German translation for Glade.
+  Copyright (C) 2004 Damon Chaplin <damon@gnome.org>
+  This file is distributed under the same license as the Glade package.
+  Christof Petig <christof.petig@wtal.de>, 1998.
+  Karsten Weiss <karsten@addx.au.s.shuttle.de>, 1999.
+  Matthias Warkus <mawa@iname.com>, 1999-2001.
+  Kai Lahmann <kl@linuxfaqs.de>, 2000.
+  Christian Neumair <chris@gnome-de.org>, 2002, 2003.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2007, 2008, 2009.
+  Hendrik Brandt <heb@gnome-de.org>, 2007.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2008.
+  Andre Klapper <ak-47@gmx.net>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  German gnome-utils translation
+  Copyright (C) 1999-2004, 2008 Free Software Foundation, Inc.
+  Matthias Warkus <mawarkus@gnome.org>, 1999.
+  Karl Eichwalder <ke@suse.de>, 2000.
+  Benedikt Roth <Benedikt.Roth@gmx.net>, 2000, 2001.
+  Christian Meyer <chrisime@gnome.org>, 2001, 2002.
+  Simon Westhues <westhues@muenster.de>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Brandt <heb@gnome-de.org>, 2004-2005.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Jochen Skulj <jochen@jochenskulj.de>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008, 2009.
+  Nathan-J. Hirschauer <nathanhirschauer@verfriemelt.org>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  German gnome-vfs translation.
+  Copyright (C) 1999-2004 Free Software Foundation, Inc.
+  Matthias Warkus <mawa@iname.com>, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2005.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+  TODO: Somebody who's familiar to CDE's terminology needs to sync the
+  CDE-specific strings up with CDE
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  German shared-mime-data translation
+  Copyright (C) 2003-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the shared-mime-data package.
+  Christian Neumair <cneumair@gnome.org>, 2003-2007
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  German translation for gnome-mime-data.
+  Copyright (C) 1999-2003 Free Software Foundation, Inc.
+  Matthias Warkus <mawa@iname.com>, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2001, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002, 2003.
+  Hendrik Richter <hendi@gnome-de.org>, 2005.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  German Metacity translation.
+  Copyright (C) 2002-2004 Free Software Foundation, Inc.
+ 
+  #
+  #window manager - Fensterverwaltung
+  #display - Anzeige
+  #parse - verarbeiten
+ 
+  Matthias Warkus <mawarkus@gnome.org>, 2002.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  German translation for gtkspell.
+  Copyright (C) 2004 Free software Foundation, Inc.
+  This file is distributed under the same license as the gtkspell package.
+  Roland Illig <roland.illig@gmx.de>, 2004.
+ 
+-------------------------------------------------------------
+
+Copyright for libgsf.mo
+  German translation for libgsf.
+  Copyright (C) 2009 libgsf's COPYRIGHT HOLDER
+  This file is distributed under the same license as the libgsf package.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  German translation of seahorse2.
+  Hendrik Richter <hendrikr@gnome.org>, 2005.
+  Tim Bordemann <t.bordemann@web.de>, 2007.
+  Henrik Kröger <henrikkroeger@googlemail.com>, 2007.
+  Philipp Kerling <k.philipp@gmail.com>, 2008.
+  Mario Blättermann <mariobl@gnome.org>, 2008, 2009.
+  Hendrik Richter <hendrikr@gnome.org>, 2008.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  German translation of xdg-user-dirs-gtk.
+  Copyright (C) 2007 THE xdg-user-dirs-gtk'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the xdg-user-dirs-gtk package.
+  Hendrik Brandt <heb@gnome-de.org>, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  xdg-user-dirs
+  Copyright (C) 2007 Red Hat, Inc
+  This file is distributed under the same license as the xgd-user-dirs package.
+  Hendrik Richter <hendrikr@gnome.org>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  German po for Evolution.
+  Copyright (C) 2005, 2007, 2008 Free Software Foundation, Inc.
+ 
+  Sprachregelungen:
+  task = Aufgabe (Auftrag klingt nach Buchhaltung)
+  mailbox = Postfach (dt. Mailbox ist die Übersetzung von "BBS")
+  cc = Kopie
+  bcc = Blindkopie
+  send options = Versandoptionen
+  inline  = eingebettet
+ 
+  Christian Neumair <chris@gnome-de.org>, 2002.
+  Manuel Borchers <webmaster@matronix.de>, 2002.
+  Kai Lahmann <kl@linuxfaqs.de>, 2000.
+  Matthias Warkus <mawa@iname.com>, 2000.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Christian Kintner <mail@christian-kintner.de>, 2006, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2007, 2008, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+ 
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  German translation for gtkhtml.
+  Copyright (C) 2000-2004 Free Software Foundation, Inc.
+ 
+  Kai Lahmann <kl@linuxfaqs.de>, 2000.
+  Christian Meyer <chrisime@gnome.org>, 2000, 2001.
+  Matthias Warkus <mawarkus@gnome.org>, 2000, 2001.
+  Christian Neumair <chris@gnome-de.org>, 2002-2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2005, 2006, 2007, 2008.
+  Hendrik Brandt <heb@gnome-de.org>, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2008.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+  Christian Kirbach <Christian.Kirbach@googlemail.com>, 2009.
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  German evolution-exchange translation.
+  Copyright (C) 2003 Ximian, Inc.
+  Copyright (C) 2004, 2005 Novell, Inc.
+  Ximian Inc., 2003.
+  Christian Neumair <chris@gnome-de.org>, 2004.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005, 2006.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
+  Andre Klapper <ak-47@gmx.net>, 2007, 2008, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  German evolution-data-server translation.
+  Copyright (C) 2003, 2004, 2007, 2008 Free Software Foundation, Inc.
+  Christian Neumair <chris@gnome-de.org>, 2003, 2004.
+  Frank Arnold <frank@scirocco-5v-turbo.de>, 2005.
+  Hendrik Richter <hendrikr@gnome.org>, 2005, 2006, 2007.
+  Christian Kintner <mail@christian-kintner.de>, 2006.
+  Andre Klapper <ak-47@gmx.net>, 2007, 2008, 2009.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+  Based on German Evolution translation.
+  Copyright on Evolution translation is held by its translators.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  German translation of evolution-jescs.
+  This file is distributed under the same license as the evolution-jescs package.
+  Hendrik Richter <hendrikr@gnome.org>, 2006.
+  Mario Blättermann <mariobl@gnome.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  German evolution-webcal translation
+  Copyright (C) 2004  Rodney Dawes  <dobey@novell.com>
+  This file is distributed under the same license as the evolution-webcal package.
+  Christian Neumair <chris@gnome-de.org>, 2004.
+  Hendrik Richter <hendrikr@gnome.org>, 2004, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  German translation of virt-manager
+  Copyright (C) 2006 Red Hat Inc.
+  This file is distributed under the same license as the virt-manager package.
+ 
+  Timo Trinks <ttrinks@redhat.com>, 2006, 2007.
+  Michael Schönitzer <michael@schoenitzer.de>, 2007.
+  Fabian Affolter <fab@fedoraproject.org>, 2008.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

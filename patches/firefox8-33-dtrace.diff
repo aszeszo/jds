@@ -1,0 +1,39 @@
+# HG changeset patch
+# User Steve Fink <sfink@mozilla.com>
+# Date 1313619292 25200
+# Node ID 713be47aa3f9fc9e5027645bfb3eebac281d586e
+# Parent  e57b659ee5dd47e38976ab1a200fe466fd539b30
+Bug 678954 - Add object files back into dtrace command line for Solaris dtrace support (r=khuey)
+
+Also the current version of systemtap on Linux does not need those object files any more (older versions did), they are accepted without complaint.
+
+diff --git a/config/rules.mk b/config/rules.mk
+--- a/config/rules.mk
++++ b/config/rules.mk
+@@ -1153,8 +1153,9 @@
+ ifndef XP_MACOSX
+ ifdef DTRACE_PROBE_OBJ
+ ifndef DTRACE_LIB_DEPENDENT
+-$(DTRACE_PROBE_OBJ):
+-	dtrace -G -C -s $(MOZILLA_DTRACE_SRC) -o $(DTRACE_PROBE_OBJ)
++NON_DTRACE_OBJS := $(filter-out $(DTRACE_PROBE_OBJ),$(OBJS))
++$(DTRACE_PROBE_OBJ): $(NON_DTRACE_OBJS)
++	dtrace -G -C -s $(MOZILLA_DTRACE_SRC) -o $(DTRACE_PROBE_OBJ) $(NON_DTRACE_OBJS)
+ endif
+ endif
+ endif
+diff --git a/js/src/config/rules.mk b/js/src/config/rules.mk
+--- a/js/src/config/rules.mk
++++ b/js/src/config/rules.mk
+@@ -1153,8 +1153,9 @@
+ ifndef XP_MACOSX
+ ifdef DTRACE_PROBE_OBJ
+ ifndef DTRACE_LIB_DEPENDENT
+-$(DTRACE_PROBE_OBJ):
+-	dtrace -G -C -s $(MOZILLA_DTRACE_SRC) -o $(DTRACE_PROBE_OBJ)
++NON_DTRACE_OBJS := $(filter-out $(DTRACE_PROBE_OBJ),$(OBJS))
++$(DTRACE_PROBE_OBJ): $(NON_DTRACE_OBJS)
++	dtrace -G -C -s $(MOZILLA_DTRACE_SRC) -o $(DTRACE_PROBE_OBJ) $(NON_DTRACE_OBJS)
+ endif
+ endif
+ endif

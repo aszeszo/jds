@@ -1,0 +1,41 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-search-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-search-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-search-devel.copyright
+d none include 0755 root bin
+d none include/libtracker-gtk 0755 root bin
+f none include/libtracker-gtk/tracker-gtk.h=usr/include/libtracker-gtk/tracker-gtk.h 0644 root bin
+f none include/libtracker-gtk/tracker-keyword-store.h=usr/include/libtracker-gtk/tracker-keyword-store.h 0644 root bin
+f none include/libtracker-gtk/tracker-metadata-tile.h=usr/include/libtracker-gtk/tracker-metadata-tile.h 0644 root bin
+f none include/libtracker-gtk/tracker-tag-bar.h=usr/include/libtracker-gtk/tracker-tag-bar.h 0644 root bin
+f none include/libtracker-gtk/tracker-ui.h=usr/include/libtracker-gtk/tracker-ui.h 0644 root bin
+f none include/libtracker-gtk/tracker-utils.h=usr/include/libtracker-gtk/tracker-utils.h 0644 root bin
+d none include/tracker-1.0 0755 root bin
+d none include/tracker-1.0/libtracker-common 0755 root bin
+f none include/tracker-1.0/libtracker-common/tracker-common.h=usr/include/tracker-1.0/libtracker-common/tracker-common.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-config.h=usr/include/tracker-1.0/libtracker-common/tracker-config.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-field.h=usr/include/tracker-1.0/libtracker-common/tracker-field.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-file-utils.h=usr/include/tracker-1.0/libtracker-common/tracker-file-utils.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-language.h=usr/include/tracker-1.0/libtracker-common/tracker-language.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-module-config.h=usr/include/tracker-1.0/libtracker-common/tracker-module-config.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-ontology.h=usr/include/tracker-1.0/libtracker-common/tracker-ontology.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-parser.h=usr/include/tracker-1.0/libtracker-common/tracker-parser.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-service.h=usr/include/tracker-1.0/libtracker-common/tracker-service.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-type-utils.h=usr/include/tracker-1.0/libtracker-common/tracker-type-utils.h 0644 root bin
+f none include/tracker-1.0/libtracker-common/tracker-utils.h=usr/include/tracker-1.0/libtracker-common/tracker-utils.h 0644 root bin
+d none include/tracker-1.0/libtracker-module 0755 root bin
+f none include/tracker-1.0/libtracker-module/tracker-module-file.h=usr/include/tracker-1.0/libtracker-module/tracker-module-file.h 0644 root bin
+f none include/tracker-1.0/libtracker-module/tracker-module-iteratable.h=usr/include/tracker-1.0/libtracker-module/tracker-module-iteratable.h 0644 root bin
+f none include/tracker-1.0/libtracker-module/tracker-module-metadata-utils.h=usr/include/tracker-1.0/libtracker-module/tracker-module-metadata-utils.h 0644 root bin
+f none include/tracker-1.0/libtracker-module/tracker-module-metadata.h=usr/include/tracker-1.0/libtracker-module/tracker-module-metadata.h 0644 root bin
+f none include/tracker-1.0/libtracker-module/tracker-module.h=usr/include/tracker-1.0/libtracker-module/tracker-module.h 0644 root bin
+f none include/tracker-daemon-glue.h=usr/include/tracker-daemon-glue.h 0644 root bin
+f none include/tracker-files-glue.h=usr/include/tracker-files-glue.h 0644 root bin
+f none include/tracker-keywords-glue.h=usr/include/tracker-keywords-glue.h 0644 root bin
+f none include/tracker-metadata-glue.h=usr/include/tracker-metadata-glue.h 0644 root bin
+f none include/tracker-search-glue.h=usr/include/tracker-search-glue.h 0644 root bin
+f none include/tracker.h=usr/include/tracker.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libtracker-gtk.pc=usr/lib/pkgconfig/libtracker-gtk.pc 0644 root bin
+f none lib/pkgconfig/tracker-module-1.0.pc=usr/lib/pkgconfig/tracker-module-1.0.pc 0644 root bin
+f none lib/pkgconfig/tracker.pc=usr/lib/pkgconfig/tracker.pc 0644 root bin

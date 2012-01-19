@@ -1,0 +1,14 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpython26-coherence-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpython26-coherence-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpython26-coherence-root.copyright
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/method 0755 root bin
+f none lib/svc/method/coherence=lib/svc/method/coherence 0555 root bin
+d none var 0755 root sys
+d none var/coherence 0755 upnp upnp
+f none var/coherence/coherence.conf=var/coherence/coherence.conf 0644 upnp upnp
+d none var/svc 0755 root sys
+d none var/svc/manifest 0755 root sys
+d none var/svc/manifest/application 0755 root sys
+f manifest var/svc/manifest/application/coherence.xml=var/svc/manifest/application/coherence.xml 0444 root sys

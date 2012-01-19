@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapcli.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapcli.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapcli.copyright
+d none bin 0755 root bin
+f none bin/pgtool=usr/bin/pgtool 0755 root root
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/apoc 0755 root bin
+f none share/lib/apoc/apoc_cli.jar=usr/share/lib/apoc/apoc_cli.jar 0644 root root
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/pgtool.1=usr/share/man/man1/pgtool.1 0444 root root

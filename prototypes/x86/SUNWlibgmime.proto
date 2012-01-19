@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgmime.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgmime.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgmime.copyright
+f none share/doc/SUNWlibgmime/AUTHORS=usr/share/doc/SUNWlibgmime/AUTHORS 0444 root bin
+f none share/doc/SUNWlibgmime/COPYING.bz2=usr/share/doc/SUNWlibgmime/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibgmime/ChangeLog.bz2=usr/share/doc/SUNWlibgmime/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibgmime/NEWS.bz2=usr/share/doc/SUNWlibgmime/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibgmime/README=usr/share/doc/SUNWlibgmime/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libgmime-2.6.so=libgmime-2.6.so.0.503.0
+s none lib/libgmime-2.6.so.0=libgmime-2.6.so.0.503.0
+f none lib/libgmime-2.6.so.0.503.0=usr/lib/libgmime-2.6.so.0.503.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibgmime 0755 root bin

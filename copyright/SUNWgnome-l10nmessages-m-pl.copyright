@@ -1,0 +1,1541 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  translation of pl.po to Polish
+  Piotr Drąg <piotrdrag@gmail.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  Polish translation of tracker.
+  Copyright (C) 2001-2008 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  This file is distributed under the same license as the tracker package.
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2007, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  Copyright (C) 2001-2002 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnome.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  translation of dasher to Polish
+  Artur Flinta <aflinta@gmail.com>, 2006.
+  Aviary.pl <gnomepl@aviary.pl>, 2008.
+  Copyright (C) 2001-2008 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  Polish translation of mousetweaks
+  Copyright (C) 2007 - 2009 Aviary.pl
+  This file is distributed under the same license as the mousetweaks package
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  Polish translation file for gtkam.
+  Copyright (C) 2005 Andrzej Zaborowski <balrog@zabor.org>.
+  This file is distributed under the same license as the gtkam package.
+  Andrzej Zaborowski <balrog@zabor.org>, 2005.
+  
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  translation of brasero.HEAD.pl.po to Polish
+  Aviary.pl <gnomepl@aviary.pl>, 2008, 2009
+  Joanna Mazgaj <jmazgaj@aviary.pl>, 2008.
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2006, 2007, 2009
+  Polish translation of brasero.
+  Copyright (C) 2006, 2007, 2008, 2009 Aviary.pl
+  This file is distributed under the same license as the brasero package.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  translation of libbonobo.HEAD.pl.po to Polish
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Copyright (C) 2001-2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
+  (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  translation of gconf-editor to Polish
+  Artur Flinta <aflinta@gmail.com>, 2006.
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008, 2009.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  Copyright (C) 2001-2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Piotr Zaryk <pzaryk@aviary.pl>, 2008.
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Wojciech Kapusta <wojciech@aviary.pl>, 2006.
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnome.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Krzysztof Luks <kluks@iq.pl>, 2003
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl <gnomepl@aviary.pl>, 2007, 2008, 2009
+  Tomasz Dominikowski <tdominikowski@aviary.pl, 2007, 2008, 2009
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  translation of zenity to Polish
+  Artur Flinta <aflinta@gmail.com>, 2006.
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2006 - 2008
+  Copyright (C) 2001-2008 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  translation of gdm2.gnome-2-16.po to
+  translation of gdm2.HEAD.pl.po to Polish
+  Copyright (C) 2001-2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Wojciech Kapusta <wojciech@aviary.pl>, 2006.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Review całości pliku: 23.07.2008 Wadim Dziedzic
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  translation of gtksourceview.HEAD.pl.po to Polish
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Copyright (C) 2001-2005, 2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
+  (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  translation of yelp.po to Polish
+  Copyright (C) 2002-2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
+  (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+  table of contents - spis treści
+  Bartosz Kosiorek <gang65@poczta.onet.pl>, 2005.
+  GNOME PL Team, 2006
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  Copyright (C) 2001-2002 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnome.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Polish translation of pidgin
+  Copyright (C) Przemysław Sułek <pbs@linux.net.pl> <psulek@plo.pl>, 2001.
+  Copyright (C) Krzysztof Foltman <kfoltman@onet.pl>, 2003.
+  Copyright (C) Artur Flinta <aflinta@at.kernel.pl>, 2004.
+  Copyright (C) Emil Nowak <emil5@go2.pl>, 2003-2007.
+  Copyright (C) Paweł Godlewski <pawel@endure.pl>, 2007.
+  Copyright (C) Tomasz Sałaciński <tsalacinski@gmail.com>, 2007.
+  -----------------------------------------------------------------
+  Piotr Makowski (Aviary.pl) <pmakowski@aviary.pl>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  translation of gimp.gimp-2-6.pl.po to Polish
+  Copyright (C) 2001-2008 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Terminy:
+   drawable    - obszar rysowania (warstwa, kanał, itp.)
+   segment
+               - segment (gradient)
+               - odcinek (ścieżka)
+   component   - składowa (koloru, ścieżki)
+   UTF-8       - system kodowania Unikodu.
+   zoom in     - powiekszenie
+   zoom out    - zmniejszenie (nie pomniejszenie)
+   colormap    - Paleta kolorów
+   preset      - ustawienia
+   Brushes, Patterns, Gradients -  Pędzle, desenie, gradienty
+ 
+  Bartosz Kosiorek <gang65@poczta.onet.pl>, 2005-2008.
+  Piotr Zaryk (Aviary.pl) <pzaryk@aviary.pl>, 2008.
+  Robert Gomulka <carramba@epf.pl>, 2008.
+  Paweł Dziekoński, 1999-2000.
+  TODO:
+  - rozmiar vs wymiary - sprawdzić wszystkie "rozmiary"
+  - nazwa "convolve", aktualnie "rozmywanie lub wyostrzanie"
+  - shrink/grow - zmniejsz/zwiększ -> zacieśnij/rozszerz
+  - może (niekoniecznie) selection outline - obwódka -> kontur
+  - Shear - Ścięcie? (jest już chyba gdzieś nowsze inaczej)
+  - "midpoint" w gradiencie = punkt pośredni - sprawdzić, czy tak już jest wszędzie
+  - named buffers = ??? nazwane bufory ???
+  TODO:
+  s/narzędziówka/przybornik/ ???
+  s/narzędzia/przybory/ ???
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  Copyright (C) 2001-2004 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnome.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  Polish translation of gnome-keyring
+  Artur Flinta <aflinta@gmail.com>, 2006.
+  Aviary.pl <gnomepl@aviary.pl>, 2007, 2008, 2009
+  Copyright (C) 2001-2003, 2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  translation of libbonoboui.HEAD.pl.po to Polish
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Artur Flinta <aflinta@gmail.com>, 2008.
+  Copyright (C) 2001-2005, 2006, 2008 Free Software Foundation, Inc.
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Polish translation for gst-plugins-base.
+  This file is distributed under the same license as the gst-plugins-base package.
+  Jakub Bogusz <qboosh@pld-linux.org>, 2007-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Polish translation for gst-plugins-good.
+  This file is distributed under the same license as the gst-plugins-good package.
+  Jakub Bogusz <qboosh@pld-linux.org>, 2007-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Polish translation for gstreamer.
+  This file is distributed under the same license as the gstreamer package.
+  Jakub Bogusz <qboosh@pld-linux.org>, 2007-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  review całości: 17.06.2008 (wd)
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  translation of alacarte to Polish
+  Copyright (C) 2008 Aviary.pl
+  This file is distributed under the same license as the alacarte package.
+ 
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for notification-daemon.mo
+  translation of pl.po to Polish
+  Piotr Drąg <piotrdrag@gmail.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  translation of gnome-desktop to Polish
+  Artur Flinta <aflinta@gmail.com>, 2006.
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008
+  Copyright (C) 2001-2005, 2006, 2008 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  Copyright (C) 2001-2003 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/home/cvs, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnome.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  Polish translation of gnome-power-manager.
+  This file is distributed under the same license as the gnome-power-manger package.
+  Copyright (C) 2008 Aviary.pl
+  Paweł Marciniak <pmarciniak@lodz.home.pl>, 2006
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Review całości Piotr Zaryk <pzaryk@aviary.pl>, 2008.
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  Polish translation of gnome-session.
+  Copyright (C) 2007, 2008 Aviary.pl
+  This file is distributed under the same license as the gnome-session package.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  Copyright (C) 2001-2005 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Review całości pliku: 16.06.2008 Tomasz Dominikowski
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  Copyright (C) 2001-2005 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
+  (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Review całości pliku: 22.02.2009 Joanna Mazgaj
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  Copyright (C) 2005-2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Piotr Zaryk <pzaryk@aviary.pl>, 2008.
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  Copyright (C) 2003-2008 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  translation of gnome-themes to Polish
+  Artur Flinta <aflinta@gmail.com>, 2006.
+  Tomasz Dominikowski <tdominikowski@aviary.pl>, 2008
+  Copyright (C) 2001-2008 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  translation of glade3 to Polish
+  Copyright (C) 2001-2002, 2007 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium
+  http://svn.aviary.pl/gnomepl/
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  gnome-l10n@lists.aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Andrzej Polatyński <andrzej@datatel.net.pl>, 2007.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Review całości pliku: 23.08.2008 Joanna Mazgaj
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Polish translation for shared-mime-info
+  Copyright (C) 2007 - 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the shared-mime-info package.
+  Artur Flinta <aflinta@gmail.com>, 2004
+  Tomasz Dominikowski <dominikowski@gmail.com>, 2009
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  Copyright (C) 2001-2003 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnome.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  translation of gnome-vfs.HEAD.pl.po to Polish
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Copyright (C) 2001-2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
+  (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Review całości pliku: 17.03.2009 Piotr Leszczyński
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  translation of gtkspell to Polish
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  Emilian Nowak <emil5@go2.pl>, 2004.
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  translation of pl.po to Polish
+  Piotr Drąg <raven@pmail.pl>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  translation of evolution.gnome-2-28.po to
+  Wojciech Kapusta <wkapusta@aviary.pl>, 2009.
+  translation of evolution.HEAD.po to
+  Copyright (C) 2001-2005 Free Software , Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  translation of evolution-exchange.HEAD.pl.po to Polish
+  Artur Flinta <aflinta@at.kernel.pl>, 2006.
+  Copyright (C) 2004-2006 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnomepl.org
+  (:pserver:anonymous@cvs.gnomepl.org:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aviary.pl
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas:
+  gnomepl@aviary.pl
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+  
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  Copyright (C) 2004-2005 Free Software Foundation, Inc.
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+  Aktualną wersję tego pliku możesz odnaleźć w repozytorium cvs.gnome.pl
+  (:pserver:anonymous@cvs.gnome.pl:/gnomepl, puste hasło)
+  Jeśli masz jakiekolwiek uwagi odnoszące się do tłumaczenia lub chcesz
+  pomóc w jego rozwijaniu i pielęgnowaniu, napisz do nas na adres:
+  translators@gnomepl.org
+  -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of pl.po to Polish
+  Piotr Drąg <piotrdrag@gmail.com>, 2006.
+ 
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

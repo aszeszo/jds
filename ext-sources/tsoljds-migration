@@ -1,0 +1,16 @@
+#!/bin/sh
+
+XINIT_DIR=/etc/X11/xinit/xinitrc.d
+
+FILES_LIST="0210.im"
+
+DTSTARTIMS=${DTSTARTIMS:-"True"}
+
+if [ -d $XINIT_DIR ]; then
+  for SCRIPT in $FILES_LIST; do
+    if [ -x $XINIT_DIR/$SCRIPT ]; then
+            . $XINIT_DIR/$SCRIPT -xagent
+    fi
+  done
+fi
+

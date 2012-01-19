@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWat-spi2-core.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWat-spi2-core.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWat-spi2-core.copyright
+d none lib 0755 root bin
+f none lib/at-spi2-registryd=usr/lib/at-spi2-registryd 0755 root bin
+d none share 0755 root sys
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+f none share/dbus-1/services/org.a11y.atspi.Registry.service=usr/share/dbus-1/services/org.a11y.atspi.Registry.service 0644 root bin

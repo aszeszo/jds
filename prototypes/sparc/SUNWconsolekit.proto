@@ -1,0 +1,45 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWconsolekit.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWconsolekit.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWconsolekit.copyright
+f none share/doc/SUNWconsolekit/AUTHORS=usr/share/doc/SUNWconsolekit/AUTHORS 0444 root bin
+f none share/doc/SUNWconsolekit/COPYING.bz2=usr/share/doc/SUNWconsolekit/COPYING.bz2 0444 root bin
+f none share/doc/SUNWconsolekit/NEWS.bz2=usr/share/doc/SUNWconsolekit/NEWS.bz2 0444 root bin
+f none share/doc/SUNWconsolekit/README=usr/share/doc/SUNWconsolekit/README 0444 root bin
+d none bin 0755 root bin
+f none bin/ck-history=usr/bin/ck-history 0755 root bin
+f none bin/ck-launch-session=usr/bin/ck-launch-session 0755 root bin
+f none bin/ck-list-sessions=usr/bin/ck-list-sessions 0755 root bin
+d none lib 0755 root bin
+d none lib/ConsoleKit 0755 root bin
+d none lib/ConsoleKit/run-seat.d 0755 root bin
+d none lib/ConsoleKit/run-session.d 0755 root bin
+d none lib/ConsoleKit/scripts 0755 root bin
+f none lib/ConsoleKit/scripts/ck-system-restart=usr/lib/ConsoleKit/scripts/ck-system-restart 0755 root bin
+f none lib/ConsoleKit/scripts/ck-system-stop=usr/lib/ConsoleKit/scripts/ck-system-stop 0755 root bin
+f none lib/ck-collect-session-info=usr/lib/ck-collect-session-info 0755 root bin
+f none lib/ck-get-x11-display-device=usr/lib/ck-get-x11-display-device 0755 root bin
+f none lib/ck-get-x11-server-pid=usr/lib/ck-get-x11-server-pid 0755 root bin
+s none lib/libck-connector.so=libck-connector.so.0.0.0
+s none lib/libck-connector.so.0=libck-connector.so.0.0.0
+f none lib/libck-connector.so.0.0.0=usr/lib/libck-connector.so.0.0.0 0755 root bin
+d none sbin 0755 root bin
+f none sbin/ck-seat-tool=usr/sbin/ck-seat-tool 0755 root bin
+f none sbin/console-kit-daemon=usr/sbin/console-kit-daemon 0755 root bin
+d none share 0755 root sys
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/interfaces 0755 root bin
+f none share/dbus-1/interfaces/org.freedesktop.ConsoleKit.Manager.xml=usr/share/dbus-1/interfaces/org.freedesktop.ConsoleKit.Manager.xml 0644 root bin
+f none share/dbus-1/interfaces/org.freedesktop.ConsoleKit.Seat.xml=usr/share/dbus-1/interfaces/org.freedesktop.ConsoleKit.Seat.xml 0644 root bin
+f none share/dbus-1/interfaces/org.freedesktop.ConsoleKit.Session.xml=usr/share/dbus-1/interfaces/org.freedesktop.ConsoleKit.Session.xml 0644 root bin
+d none share/dbus-1/system-services 0755 root bin
+f none share/dbus-1/system-services/org.freedesktop.ConsoleKit.service=usr/share/dbus-1/system-services/org.freedesktop.ConsoleKit.service 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWconsolekit 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/ck-history.1=usr/share/man/man1/ck-history.1 0644 root bin
+f none share/man/man1/ck-launch-session.1=usr/share/man/man1/ck-launch-session.1 0644 root bin
+f none share/man/man1/ck-list-sessions.1=usr/share/man/man1/ck-list-sessions.1 0644 root bin
+d none share/man/man1m 0755 root bin
+f none share/man/man1m/ck-seat-tool.1m=usr/share/man/man1m/ck-seat-tool.1m 0644 root bin
+f none share/man/man1m/console-kit-daemon.1m=usr/share/man/man1m/console-kit-daemon.1m 0644 root bin

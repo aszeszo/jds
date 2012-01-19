@@ -1,0 +1,14 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWseahorse-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWseahorse-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWseahorse-devel.copyright
+d none include 0755 root bin
+d none include/libcryptui 0755 root bin
+f none include/libcryptui/cryptui-key-chooser.h=usr/include/libcryptui/cryptui-key-chooser.h 0644 root bin
+f none include/libcryptui/cryptui-key-combo.h=usr/include/libcryptui/cryptui-key-combo.h 0644 root bin
+f none include/libcryptui/cryptui-key-list.h=usr/include/libcryptui/cryptui-key-list.h 0644 root bin
+f none include/libcryptui/cryptui-key-store.h=usr/include/libcryptui/cryptui-key-store.h 0644 root bin
+f none include/libcryptui/cryptui-keyset.h=usr/include/libcryptui/cryptui-keyset.h 0644 root bin
+f none include/libcryptui/cryptui.h=usr/include/libcryptui/cryptui.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/cryptui-0.0.pc=usr/lib/pkgconfig/cryptui-0.0.pc 0644 root bin

@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-libs-python26.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-libs-python26.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-libs-python26.copyright
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/pyatspi 0755 root bin
+f none lib/python2.6/vendor-packages/pyatspi/__init__.py=usr/lib/python2.6/vendor-packages/pyatspi/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/__init__.pyc=usr/lib/python2.6/vendor-packages/pyatspi/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/accessible.py=usr/lib/python2.6/vendor-packages/pyatspi/accessible.py 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/accessible.pyc=usr/lib/python2.6/vendor-packages/pyatspi/accessible.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/constants.py=usr/lib/python2.6/vendor-packages/pyatspi/constants.py 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/constants.pyc=usr/lib/python2.6/vendor-packages/pyatspi/constants.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/event.py=usr/lib/python2.6/vendor-packages/pyatspi/event.py 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/event.pyc=usr/lib/python2.6/vendor-packages/pyatspi/event.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/registry.py=usr/lib/python2.6/vendor-packages/pyatspi/registry.py 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/registry.pyc=usr/lib/python2.6/vendor-packages/pyatspi/registry.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/utils.py=usr/lib/python2.6/vendor-packages/pyatspi/utils.py 0644 root bin
+f none lib/python2.6/vendor-packages/pyatspi/utils.pyc=usr/lib/python2.6/vendor-packages/pyatspi/utils.pyc 0644 root bin

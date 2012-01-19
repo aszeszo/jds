@@ -1,0 +1,627 @@
+diff -ur stardict-3.0.1.orig/configure.in stardict-3.0.1/configure.in
+--- stardict-3.0.1.orig/configure.in	2007-11-01 15:37:15.000000000 +0800
++++ stardict-3.0.1/configure.in	2008-05-26 11:21:41.149842533 +0800
+@@ -372,7 +372,7 @@
+ 	STARDICT_CFLAGS="$STARDICT_CFLAGS -DG_DISABLE_DEPRECATED -DGDK_DISABLE_DEPRECATED -DGTK_DISABLE_DEPRECATED -DGDK_PIXBUF_DISABLE_DEPRECATED -DGNOME_DISABLE_DEPRECATED"
+ fi
+ 
+-STARDICT_CFLAGS="-Wall $STARDICT_CFLAGS"
++STARDICT_CFLAGS="$STARDICT_CFLAGS"
+ 
+ 
+ dnl
+@@ -428,7 +428,7 @@
+ fi
+ 
+ # Checks for libraries.
+-AC_CHECK_LIB([X11], [main], , [AC_MSG_ERROR([X11 lib not found])])
++AC_CHECK_LIB([X11], [XOpenDisplay], , [AC_MSG_ERROR([X11 lib not found])])
+ 
+ AC_SUBST(STARDICT_LIBS)
+ AC_SUBST(STARDICT_CFLAGS)
+diff -ur stardict-3.0.1.orig/src/conf.h stardict-3.0.1/src/conf.h
+--- stardict-3.0.1.orig/src/conf.h	2007-07-17 18:28:09.000000000 +0800
++++ stardict-3.0.1/src/conf.h	2008-05-26 15:04:40.581739429 +0800
+@@ -115,7 +115,7 @@
+ 	std::auto_ptr<config_file> cf;
+ 	cache_t cache;
+ 
+-#ifdef _WIN32
++#if defined(_WIN32) || defined(sun)
+ static void *memrchr(const void *mem, int c, size_t len) {
+ 	char *res;
+ 	char *cmem = (char *)mem;
+diff -ur stardict-3.0.1.orig/src/docklet.cpp stardict-3.0.1/src/docklet.cpp
+--- stardict-3.0.1.orig/src/docklet.cpp	2007-10-25 14:57:22.000000000 +0800
++++ stardict-3.0.1/src/docklet.cpp	2008-05-26 15:12:52.478749205 +0800
+@@ -8,6 +8,8 @@
+ 
+ #include "docklet.h"
+ 
++void m_gtk_widget_destroy (GtkWidget* p) {gtk_widget_destroy (p);}
++
+ DockLet::DockLet(GtkWidget *mainwin, bool is_scan_on,
+ 		 const AppSkin& skin) : TrayBase(mainwin, is_scan_on)
+ {
+diff -ur stardict-3.0.1.orig/src/docklet.h stardict-3.0.1/src/docklet.h
+--- stardict-3.0.1.orig/src/docklet.h	2007-10-25 14:53:06.000000000 +0800
++++ stardict-3.0.1/src/docklet.h	2008-05-26 15:12:18.558429684 +0800
+@@ -6,6 +6,8 @@
+ #include "eggtrayicon.h"
+ #include "utils.h"
+ 
++void m_gtk_widget_destroy (GtkWidget*);
++
+ class AppSkin;//forward declaration
+ 
+ class DockLet : public TrayBase {
+@@ -18,7 +20,7 @@
+ 	EggTrayIcon *docklet_;
+ 	GtkWidget *box_;
+ 	GtkWidget *image_; //icon image.
+-	typedef  ResourceWrapper<GtkWidget, GtkWidget, gtk_widget_destroy> GMenu;
++	typedef  ResourceWrapper<GtkWidget, GtkWidget, m_gtk_widget_destroy> GMenu;
+         GMenu menu_;
+ 	GtkWidget *scan_menuitem_;
+ 	bool embedded_;
+diff -ur stardict-3.0.1.orig/src/inifile.cpp stardict-3.0.1/src/inifile.cpp
+--- stardict-3.0.1.orig/src/inifile.cpp	2007-08-01 17:43:00.000000000 +0800
++++ stardict-3.0.1/src/inifile.cpp	2008-05-26 15:45:47.788673629 +0800
+@@ -37,7 +37,10 @@
+ static const guchar OLD_STRING_SEP = 0xFF;
+ static const gchar *myversion = "1.0";
+ 
+-typedef ResourceWrapper<GError, GError, g_error_free> MyGError;
++void m_g_error_free (GError* p) {g_error_free (p);}
++void m_g_free (void* p) {g_free (p);}
++
++typedef ResourceWrapper<GError, GError, m_g_error_free> MyGError;
+ 
+ void inifile::create_empty()
+ {
+diff -ur stardict-3.0.1.orig/src/lib/m_string.h stardict-3.0.1/src/lib/m_string.h
+--- stardict-3.0.1.orig/src/lib/m_string.h	2007-07-10 15:16:03.000000000 +0800
++++ stardict-3.0.1/src/lib/m_string.h	2008-05-26 11:18:59.057023698 +0800
+@@ -2,6 +2,7 @@
+ #define _m_string_h
+ 
+ #include <string.h>
++#include <strings.h>
+ 
+ #ifdef _WIN32
+ #define bzero(p, l) memset(p, 0, l)
+diff -ur stardict-3.0.1.orig/src/lib/sockets.cpp stardict-3.0.1/src/lib/sockets.cpp
+--- stardict-3.0.1.orig/src/lib/sockets.cpp	2007-09-12 17:11:41.000000000 +0800
++++ stardict-3.0.1/src/lib/sockets.cpp	2008-05-26 16:38:51.400623697 +0800
+@@ -26,6 +26,7 @@
+ # include <sys/types.h>
+ # include <sys/socket.h>
+ # include <netinet/in.h>
++# include <arpa/inet.h>
+ # include <netdb.h>
+ # include <cerrno>
+ # include <fcntl.h>
+@@ -158,7 +159,7 @@
+ {
+     DnsQueryData *query_data = (DnsQueryData *)data;
+     struct  hostent *phost;
+-#ifndef _WIN32    
++#if !defined(_WIN32) && !defined(sun)
+     struct  hostent hostinfo;
+     char buf[1024];
+     int ret;
+diff -ur stardict-3.0.1.orig/src/sigc++/signal.h stardict-3.0.1/src/sigc++/signal.h
+--- stardict-3.0.1.orig/src/sigc++/signal.h	2007-07-10 15:16:01.000000000 +0800
++++ stardict-3.0.1/src/sigc++/signal.h	2008-05-26 11:44:48.308184194 +0800
+@@ -18,7 +18,7 @@
+   //Compilers, such as older versions of SUN Forte C++, that do not allow this also often
+   //do not allow a typedef to have the same name as a class in the typedef's definition.
+   //For Sun Forte CC 5.7 (SUN Workshop 10), comment this out to fix the build.
+-  #define SIGC_TYPEDEF_REDEFINE_ALLOWED 1
++  //#define SIGC_TYPEDEF_REDEFINE_ALLOWED 1
+ #endif
+ 
+ namespace sigc {
+diff -ur stardict-3.0.1.orig/src/skin.cpp stardict-3.0.1/src/skin.cpp
+--- stardict-3.0.1.orig/src/skin.cpp	2007-07-10 15:16:04.000000000 +0800
++++ stardict-3.0.1/src/skin.cpp	2008-05-26 15:08:47.794321291 +0800
+@@ -29,6 +29,9 @@
+ 
+ #include "skin.h"
+ 
++void m_gdk_cursor_unref (GdkCursor* p) {gdk_cursor_unref (p);}
++void m_g_object_unref (void* p) {g_object_unref (p);}
++
+ void AppSkin::load()
+ {		
+ 	watch_cursor.reset(gdk_cursor_new(GDK_WATCH));
+diff -ur stardict-3.0.1.orig/src/skin.h stardict-3.0.1/src/skin.h
+--- stardict-3.0.1.orig/src/skin.h	2007-07-10 15:16:04.000000000 +0800
++++ stardict-3.0.1/src/skin.h	2008-05-26 15:11:45.626038404 +0800
+@@ -6,8 +6,11 @@
+ 
+ #include "utils.h"
+ 
+-typedef ResourceWrapper<GdkCursor, GdkCursor, gdk_cursor_unref> SkinCursor;
+-typedef ResourceWrapper<GdkPixbuf, void, g_object_unref> Skin_pixbuf_1;
++void m_gdk_cursor_unref (GdkCursor*);
++void m_g_object_unref (void*);
++
++typedef ResourceWrapper<GdkCursor, GdkCursor, m_gdk_cursor_unref> SkinCursor;
++typedef ResourceWrapper<GdkPixbuf, void, m_g_object_unref> Skin_pixbuf_1;
+ 
+ class AppSkin {
+ public:
+diff -ur stardict-3.0.1.orig/src/utils.cpp stardict-3.0.1/src/utils.cpp
+--- stardict-3.0.1.orig/src/utils.cpp	2007-10-22 10:25:02.000000000 +0800
++++ stardict-3.0.1/src/utils.cpp	2008-05-26 15:42:54.173151303 +0800
+@@ -36,6 +36,8 @@
+ 
+ #include "utils.h"
+ 
++void m_g_free (void* p) {g_free(p);}
++void m_g_error_free (GError* p) {g_error_free(p); }
+ 
+ void ProcessGtkEvent()
+ {
+diff -ur stardict-3.0.1.orig/src/utils.h stardict-3.0.1/src/utils.h
+--- stardict-3.0.1.orig/src/utils.h	2007-09-06 11:30:19.000000000 +0800
++++ stardict-3.0.1/src/utils.h	2008-05-26 15:42:43.780182458 +0800
+@@ -49,9 +49,12 @@
+         }
+ };
+ 
++void m_g_free (void*);
++void m_g_error_free (GError*);
++
+ namespace glib {
+-	typedef ResourceWrapper<gchar, void, g_free> CharStr;
+-	typedef ResourceWrapper<GError, GError, g_error_free> Error;
++	typedef ResourceWrapper<gchar, void, m_g_free> CharStr;
++	typedef ResourceWrapper<GError, GError, m_g_error_free> Error;
+ }
+ 
+ extern void ProcessGtkEvent();
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-advertisement-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-advertisement-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-advertisement-plugin/Makefile.am	2007-07-18 14:24:09.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-advertisement-plugin/Makefile.am	2008-05-26 15:28:04.327074322 +0800
+@@ -2,7 +2,7 @@
+ 
+ EXTRA_DIST = advertisement.v advertisement.dev
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=advertisement.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols advertisement.v"
+ 
+ noinst_HEADERS = advertisement.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-advertisement-plugin/advertisement.cpp stardict-3.0.1/stardict-plugins/stardict-advertisement-plugin/advertisement.cpp
+--- stardict-3.0.1.orig/stardict-plugins/stardict-advertisement-plugin/advertisement.cpp	2007-09-21 09:09:53.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-advertisement-plugin/advertisement.cpp	2008-05-26 15:37:00.443136591 +0800
+@@ -167,7 +167,7 @@
+ 				for (std::list<std::string>::iterator i = wordlist.begin(); i != wordlist.end(); ++i) {
+ 					dictentry.word = *i;
+ 					gchar *lower_str = g_utf8_strdown(dictentry.word.c_str(), dictentry.word.length());
+-					dict_map.insert(std::pair<std::string, DictEntry>(lower_str, dictentry));
++					dict_map.insert(std::pair<const std::string, DictEntry>(lower_str, dictentry));
+ 					g_free(lower_str);
+ 				}
+ 				step = 0;
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-dictdotcn-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-dictdotcn-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-dictdotcn-plugin/Makefile.am	2007-09-06 16:54:57.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-dictdotcn-plugin/Makefile.am	2008-05-26 15:28:52.746339566 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_dictdotcn.v dictdotcn.dev
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_dictdotcn.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_dictdotcn.v"
+ 
+ noinst_HEADERS = stardict_dictdotcn.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-espeak-tts-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-espeak-tts-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-espeak-tts-plugin/Makefile.am	2007-07-11 16:16:53.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-espeak-tts-plugin/Makefile.am	2008-05-26 15:29:21.984435743 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_espeak.v
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_espeak.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_espeak.v"
+ 
+ noinst_HEADERS = stardict_espeak.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-festival-tts-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-festival-tts-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-festival-tts-plugin/Makefile.am	2007-07-11 16:17:19.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-festival-tts-plugin/Makefile.am	2008-05-26 15:28:29.180255184 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_festival.v
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_festival.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_festival.v"
+ 
+ noinst_HEADERS = stardict_festival.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-gucharmap-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-gucharmap-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-gucharmap-plugin/Makefile.am	2007-07-11 16:17:42.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-gucharmap-plugin/Makefile.am	2008-05-26 15:27:30.550324726 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_gucharmap.v
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_gucharmap.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_gucharmap.v"
+ 
+ noinst_HEADERS = stardict_gucharmap.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-html-parsedata-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-html-parsedata-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-html-parsedata-plugin/Makefile.am	2007-07-18 14:26:15.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-html-parsedata-plugin/Makefile.am	2008-05-26 15:28:11.635000674 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_html_parsedata.v stardict_html_parsedata.dev
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_html_parsedata.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_html_parsedata.v"
+ 
+ noinst_HEADERS = stardict_html_parsedata.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-man-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-man-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-man-plugin/Makefile.am	2007-07-12 11:19:36.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-man-plugin/Makefile.am	2008-05-26 15:27:42.676256965 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_man.v
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_man.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_man.v"
+ 
+ noinst_HEADERS = stardict_man.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-powerword-parsedata-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-powerword-parsedata-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-powerword-parsedata-plugin/Makefile.am	2007-09-14 10:21:25.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-powerword-parsedata-plugin/Makefile.am	2008-05-26 15:27:51.807549166 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_powerword_parsedata.v stardict_powerword_parsedata.dev
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_powerword_parsedata.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_powerword_parsedata.v"
+ 
+ noinst_HEADERS = stardict_powerword_parsedata.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-qqwry-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-qqwry-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-qqwry-plugin/Makefile.am	2007-11-02 16:17:08.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-qqwry-plugin/Makefile.am	2008-05-26 15:28:44.676487966 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_qqwry.v stardict_qqwry.dev
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_qqwry.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_qqwry.v"
+ 
+ noinst_HEADERS = stardict_qqwry.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-spell-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-spell-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-spell-plugin/Makefile.am	2007-07-11 16:19:02.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-spell-plugin/Makefile.am	2008-05-26 15:29:10.408133901 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_spell.v
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_spell.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_spell.v"
+ 
+ noinst_HEADERS = stardict_spell.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-update-info-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-update-info-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-update-info-plugin/Makefile.am	2007-07-18 14:31:57.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-update-info-plugin/Makefile.am	2008-05-26 15:28:19.712670791 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_update_info.v stardict_update_info.dev
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_update_info.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_update_info.v"
+ 
+ noinst_HEADERS = stardict_update_info.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-wiki-parsedata-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-wiki-parsedata-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-wiki-parsedata-plugin/Makefile.am	2007-07-18 14:30:23.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-wiki-parsedata-plugin/Makefile.am	2008-05-26 15:28:36.394186905 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_wiki_parsedata.v stardict_wiki_parsedata.dev
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_wiki_parsedata.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_wiki_parsedata.v"
+ 
+ noinst_HEADERS = stardict_wiki_parsedata.h
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-wordnet-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-wordnet-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-wordnet-plugin/Makefile.am	2007-10-10 14:25:47.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-wordnet-plugin/Makefile.am	2008-05-26 15:37:43.516519401 +0800
+@@ -2,7 +2,7 @@
+ 		stardict_wordnet_parsedata.v stardict_wordnet_parsedata.dev
+ 
+ 
+-WORDNET_LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_wordnet.v"
++WORDNET_LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_wordnet.v"
+ 
+ stardict_wordnet_LTLIBRARIES = stardict_wordnet.la
+ 
+@@ -16,7 +16,7 @@
+ 					$(WORDNET_LD_VERSION_SCRIPT_OPTION)
+ 
+ 
+-WORDNET_PARSEDATA_LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_wordnet_parsedata.v"
++WORDNET_PARSEDATA_LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_wordnet_parsedata.v"
+ 
+ stardict_wordnet_parsedata_LTLIBRARIES = stardict_wordnet_parsedata.la
+ 
+diff -ur stardict-3.0.1.orig/stardict-plugins/stardict-xdxf-parsedata-plugin/Makefile.am stardict-3.0.1/stardict-plugins/stardict-xdxf-parsedata-plugin/Makefile.am
+--- stardict-3.0.1.orig/stardict-plugins/stardict-xdxf-parsedata-plugin/Makefile.am	2007-07-18 14:29:05.000000000 +0800
++++ stardict-3.0.1/stardict-plugins/stardict-xdxf-parsedata-plugin/Makefile.am	2008-05-26 15:27:17.097898747 +0800
+@@ -1,7 +1,7 @@
+ EXTRA_DIST = stardict_xdxf_parsedata.v stardict_xdxf_parsedata.dev
+ 
+ 
+-LD_VERSION_SCRIPT_OPTION="-Wl,--version-script=stardict_xdxf_parsedata.v"
++LD_VERSION_SCRIPT_OPTION="-export-symbols stardict_xdxf_parsedata.v"
+ 
+ noinst_HEADERS = stardict_xdxf_parsedata.h
+ 
+diff -ur stardict-3.0.1.orig/tests/t_fuzzy.cpp stardict-3.0.1/tests/t_fuzzy.cpp
+--- stardict-3.0.1.orig/tests/t_fuzzy.cpp	2007-07-10 15:16:04.000000000 +0800
++++ stardict-3.0.1/tests/t_fuzzy.cpp	2008-05-26 16:00:31.555165014 +0800
+@@ -48,11 +48,11 @@
+ 	if (time_arr.empty())
+ 		return 0.;
+ 	std::vector<double>::iterator it=
+-		max_element(time_arr.begin(), time_arr.end());
++		std::max_element(time_arr.begin(), time_arr.end());
+ 	time_arr.erase(it);
+ 	if (time_arr.empty())
+ 		return 0.;
+-	it=min_element(time_arr.begin(), time_arr.end());
++	it=std::min_element(time_arr.begin(), time_arr.end());
+ 	time_arr.erase(it);
+ 	if (time_arr.empty())
+ 		return 0.;
+diff -ur stardict-3.0.1.orig/tests/t_lookupdata.cpp stardict-3.0.1/tests/t_lookupdata.cpp
+--- stardict-3.0.1.orig/tests/t_lookupdata.cpp	2007-07-10 15:16:04.000000000 +0800
++++ stardict-3.0.1/tests/t_lookupdata.cpp	2008-05-26 16:39:56.834928090 +0800
+@@ -17,9 +17,10 @@
+ 	List dict_list;
+ 	libs.load(dict_list);
+ 	std::vector<InstantDictIndex> dictmask;
+-	std::vector<gchar *> reslist[dictmask.size()];
++	std::vector<gchar *> *reslist = new std::vector<gchar *>[dictmask.size()];
+ 	if (libs.LookupData("letter", reslist, NULL, NULL, NULL, dictmask)) 
+ 		return EXIT_SUCCESS;
+ 	else
+ 		return EXIT_FAILURE;
++	delete[] reslist;
+ }
+diff -urNp stardict-3.0.1.orig/src/desktop.cpp stardict-3.0.1/src/desktop.cpp
+--- stardict-3.0.1.orig/src/desktop.cpp	2010-11-04 15:18:48.628310664 +0800
++++ stardict-3.0.1/src/desktop.cpp	2010-11-04 15:01:46.631841021 +0800
+@@ -56,7 +56,7 @@ void play_wav_file(const std::string& fi
+ 	PlaySound(filename.c_str(), 0, SND_ASYNC | SND_FILENAME);
+ #endif
+ #elif defined(CONFIG_GNOME)
+-	gnome_sound_play(filename.c_str());
++	// gnome_sound_play(filename.c_str());
+ #else
+ 	const std::string &playcmd=
+ 		conf->get_string_at("dictionary/play_command");
+diff -urNp stardict-3.0.1.orig/src/docklet.cpp stardict-3.0.1/src/docklet.cpp
+--- stardict-3.0.1.orig/src/docklet.cpp	2010-11-04 15:18:48.601158687 +0800
++++ stardict-3.0.1/src/docklet.cpp	2010-11-04 15:01:46.540091047 +0800
+@@ -150,7 +150,7 @@ gboolean DockLet::on_btn_press(GtkWidget
+ 			dock->on_change_scan_.emit(!dock->is_scan_on());
+ 			return TRUE;
+ 		} else {
+-			if (GTK_WIDGET_VISIBLE(dock->mainwin_))
++			if (gtk_widget_get_visible(dock->mainwin_))
+ 				gtk_widget_hide(dock->mainwin_);
+ 			else {
+ 				dock->maximize_from_tray();
+diff -urNp stardict-3.0.1.orig/src/eggtrayicon.c stardict-3.0.1/src/eggtrayicon.c
+--- stardict-3.0.1.orig/src/eggtrayicon.c	2010-11-04 15:18:48.596625145 +0800
++++ stardict-3.0.1/src/eggtrayicon.c	2010-11-04 15:01:46.687265692 +0800
+@@ -341,7 +341,7 @@ egg_tray_icon_update_manager_window (Egg
+       
+       gdk_window_add_filter (gdkwin, egg_tray_icon_manager_filter, icon);
+ 
+-      if (dock_if_realized && GTK_WIDGET_REALIZED (icon))
++      if (dock_if_realized && gtk_widget_get_realized(icon))
+ 	egg_tray_icon_send_dock_request (icon);
+ 
+       egg_tray_icon_get_orientation_property (icon);
+diff -urNp stardict-3.0.1.orig/src/floatwin.cpp stardict-3.0.1/src/floatwin.cpp
+--- stardict-3.0.1.orig/src/floatwin.cpp	2010-11-04 15:18:48.600057646 +0800
++++ stardict-3.0.1/src/floatwin.cpp	2010-11-04 15:01:46.592258829 +0800
+@@ -632,7 +632,7 @@ void FloatWin::Popup(gboolean updatePosi
+     window_height = 2*(FLOATWIN_BORDER_WIDTH+2) + requisition.height;
+   }
+   
+-  gboolean button_hbox_visible = GTK_WIDGET_VISIBLE(button_hbox);
++  gboolean button_hbox_visible = gtk_widget_get_visible(button_hbox);
+   if (button_hbox_visible) {
+     window_height += (button_hbox->allocation).height;
+     if (window_width < (button_hbox->allocation).width + 2*(FLOATWIN_BORDER_WIDTH+2))
+@@ -650,7 +650,7 @@ void FloatWin::Popup(gboolean updatePosi
+   } else {
+     gint iCurrentX,iCurrentY;
+     GdkScreen *screen = gtk_window_get_screen(GTK_WINDOW(FloatWindow));
+-    if ((!GTK_WIDGET_VISIBLE(FloatWindow)) || updatePosition) {
++    if ((!gtk_widget_get_visible(FloatWindow)) || updatePosition) {
+       button_box_once_shown = false;
+       GdkDisplay *display = gdk_screen_get_display(screen);
+       
+@@ -727,7 +727,7 @@ gint FloatWin::vTimeOutCallback(gpointer
+ 	bool lock=
+ 		conf->get_bool_at("floating_window/lock");
+   if(!lock && !oFloatWin->ismoving && 
+-     GTK_WIDGET_VISIBLE(oFloatWin->FloatWindow)) {
++     gtk_widget_get_visible(oFloatWin->FloatWindow)) {
+     GdkScreen *screen = gtk_window_get_screen(GTK_WINDOW(oFloatWin->FloatWindow));
+     GdkDisplay *display = gdk_screen_get_display(screen);
+ 
+@@ -817,7 +817,7 @@ gboolean FloatWin::vEnterNotifyCallback 
+ #else
+ 	if ((event->detail==GDK_NOTIFY_NONLINEAR) || (event->detail==GDK_NOTIFY_NONLINEAR_VIRTUAL)) {
+ #endif
+-		if (!GTK_WIDGET_VISIBLE(oFloatWin->button_hbox)) {
++		if (!gtk_widget_get_visible(oFloatWin->button_hbox)) {
+ 			gtk_widget_show(oFloatWin->button_hbox);
+ 		
+ 			if (!oFloatWin->button_box_once_shown) {
+@@ -956,7 +956,7 @@ gboolean FloatWin::vButtonPressCallback 
+ 			g_signal_connect(G_OBJECT(menuitem), "activate", G_CALLBACK(on_menu_query_activate), oFloatWin);
+ 			gtk_menu_shell_append(GTK_MENU_SHELL(oFloatWin->menu), menuitem);
+ 
+-			if (GTK_WIDGET_SENSITIVE(oFloatWin->PronounceWordButton)) {
++			if (gtk_widget_get_sensitive(oFloatWin->PronounceWordButton)) {
+ 				menuitem = gtk_image_menu_item_new_with_mnemonic(_("_Play"));
+ 				image = gtk_image_new_from_stock(GTK_STOCK_EXECUTE, GTK_ICON_SIZE_MENU);
+ 				gtk_image_menu_item_set_image(GTK_IMAGE_MENU_ITEM(menuitem), image);
+diff -urNp stardict-3.0.1.orig/src/mainwin.cpp stardict-3.0.1/src/mainwin.cpp
+--- stardict-3.0.1.orig/src/mainwin.cpp	2010-11-04 15:18:48.597146605 +0800
++++ stardict-3.0.1/src/mainwin.cpp	2010-11-04 15:01:46.612390306 +0800
+@@ -303,7 +303,7 @@ void TopWin::do_back()
+   }
+   InsertHisList(get_text());
+   SetText(((BackListData *)(list->data))->word);
+-  if (GTK_WIDGET_HAS_FOCUS(GTK_WIDGET(GTK_BIN(WordCombo)->child)))
++  if (gtk_widget_has_focus(GTK_WIDGET(GTK_BIN(WordCombo)->child)))
+     gtk_editable_select_region(GTK_EDITABLE(GTK_BIN(WordCombo)->child),0,-1);
+   if (((BackListData *)(list->data))->adjustment_value != -1) {
+     ProcessGtkEvent(); // so all the definition text have been inserted.
+@@ -831,7 +831,7 @@ void ListWin::ReScroll()
+ 	GtkTreePath *path = gtk_tree_path_new_from_string ("0");
+ 	gtk_tree_view_scroll_to_cell(treeview_, path, NULL, FALSE, 0, 0);
+ 	gtk_tree_path_free(path);
+-	/*if (GTK_WIDGET_REALIZED(treeview))
++	/*if (gtk_widget_get_realized(treeview))
+ 		gtk_tree_view_scroll_to_point(GTK_TREE_VIEW(treeview),0,0);*/
+ }
+ 
+diff -urNp stardict-3.0.1.orig/src/mainwin.h stardict-3.0.1/src/mainwin.h
+--- stardict-3.0.1.orig/src/mainwin.h	2010-11-04 15:18:48.600234389 +0800
++++ stardict-3.0.1/src/mainwin.h	2010-11-04 15:01:46.603749237 +0800
+@@ -93,7 +93,7 @@ public:
+ 
+ 	gboolean TextSelected();
+ 	bool has_focus() {
+-		return GTK_WIDGET_HAS_FOCUS(GTK_BIN(WordCombo)->child);
++		return gtk_widget_has_focus(GTK_BIN(WordCombo)->child);
+ 	}
+ 	static void ClipboardReceivedCallback(GtkClipboard *clipboard, const gchar *text, gpointer data);
+ 
+@@ -140,7 +140,7 @@ public:
+ 	void MergeFuzzyList(std::list<char *> *wordlist);
+ 	void MergeWordList(std::list<char *> *wordlist);
+ 	bool treeview_has_focus() const {
+-		return GTK_WIDGET_HAS_FOCUS(GTK_WIDGET(treeview_));
++		return gtk_widget_has_focus(GTK_WIDGET(treeview_));
+ 	}
+ };
+ 
+@@ -246,7 +246,7 @@ public:
+   void Show(const struct STARDICT::LookupResponse::DictResponse *dict_response, STARDICT::LookupResponse::ListType list_type);
+   void Show(NetDictResponse *resp);
+   gboolean Find (const gchar *text, gboolean start);
+-	bool IsSearchPanelHasFocus() { return GTK_WIDGET_HAS_FOCUS(eSearch); } 
++	bool IsSearchPanelHasFocus() { return gtk_widget_has_focus((GtkWidget*)eSearch); } 
+ 
+ 	void ShowSearchPanel();
+ 
+@@ -280,7 +280,7 @@ public:
+ 	TransWin();
+ 	void Create(GtkWidget *notebook);
+ 	void SetText(const char *text, int len = -1);
+-	bool IsInputViewHasFocus() { return GTK_WIDGET_HAS_FOCUS(input_textview); }
++	bool IsInputViewHasFocus() { return gtk_widget_has_focus(input_textview); }
+ private:
+ 	GtkWidget *input_textview;
+ 	GtkWidget *result_textview;
+diff -urNp stardict-3.0.1.orig/src/pluginmanagedlg.cpp stardict-3.0.1/src/pluginmanagedlg.cpp
+--- stardict-3.0.1.orig/src/pluginmanagedlg.cpp	2010-11-04 15:18:48.621024877 +0800
++++ stardict-3.0.1/src/pluginmanagedlg.cpp	2010-11-04 15:01:46.535903753 +0800
+@@ -235,7 +235,7 @@ void PluginManageDlg::on_plugin_treeview
+ gboolean PluginManageDlg::on_treeview_button_press(GtkWidget * widget, GdkEventButton * event, PluginManageDlg *oPluginManageDlg)
+ {
+ 	if (event->type==GDK_2BUTTON_PRESS) {
+-		if (GTK_WIDGET_SENSITIVE(oPluginManageDlg->pref_button))
++		if (gtk_widget_get_sensitive(oPluginManageDlg->pref_button))
+ 			gtk_dialog_response(GTK_DIALOG(oPluginManageDlg->window), STARDICT_RESPONSE_CONFIGURE);
+ 		return true;
+ 	} else {
+diff -urNp stardict-3.0.1.orig/src/stardict.cpp stardict-3.0.1/src/stardict.cpp
+--- stardict-3.0.1.orig/src/stardict.cpp	2010-11-04 15:18:48.599338906 +0800
++++ stardict-3.0.1/src/stardict.cpp	2010-11-04 15:01:46.607214557 +0800
+@@ -136,17 +136,11 @@ AppCore::AppCore() :
+ 	dict_manage_dlg = NULL;
+ 	plugin_manage_dlg = NULL;
+ 	prefs_dlg = NULL;
+-#ifdef CONFIG_GNOME
+-	gnome_sound_init(NULL);
+-#endif
+ }
+ 
+ AppCore::~AppCore()
+ {
+ 	stop_word_change_timer();
+-#ifdef CONFIG_GNOME
+-	gnome_sound_shutdown();
+-#endif
+ 	delete dict_manage_dlg;
+ 	delete plugin_manage_dlg;
+ 	delete prefs_dlg;
+@@ -1585,7 +1579,7 @@ void AppCore::TopWinEnterWord()
+ 					oMidWin.oIndexWin.oListWin.treeview_, path, NULL, FALSE, 0, 0);
+ 				gtk_tree_path_free(path);
+ 			} else {
+-				if (GTK_WIDGET_SENSITIVE(GTK_WIDGET(oMidWin.oToolWin.PronounceWordMenuButton)))
++				if (gtk_widget_get_sensitive(GTK_WIDGET(oMidWin.oToolWin.PronounceWordMenuButton)))
+ 					oReadWord.read(oMidWin.oTextWin.pronounceWord.c_str(), oMidWin.oTextWin.readwordtype);
+ 			}
+ 			return;
+@@ -1752,7 +1746,7 @@ void AppCore::ListClick(const gchar *wor
+ void AppCore::on_stardict_client_error(const char *error_msg)
+ {
+ 	GtkWindow *parent;
+-	if (dict_manage_dlg && dict_manage_dlg->window && GTK_WIDGET_VISIBLE(dict_manage_dlg->window)) {
++	if (dict_manage_dlg && dict_manage_dlg->window && gtk_widget_get_visible(dict_manage_dlg->window)) {
+ 		parent = GTK_WINDOW(dict_manage_dlg->window);
+ 	} else if (prefs_dlg && prefs_dlg->window) {
+ 		parent = GTK_WINDOW(prefs_dlg->window);
+@@ -1854,7 +1848,7 @@ void AppCore::on_http_client_error(HttpC
+ 		http_client->callback_func_(NULL, 0, http_client->userdata);
+ 	} else {
+ 		GtkWindow *parent;
+-		if (dict_manage_dlg && dict_manage_dlg->window && GTK_WIDGET_VISIBLE(dict_manage_dlg->window)) {
++		if (dict_manage_dlg && dict_manage_dlg->window && gtk_widget_get_visible(dict_manage_dlg->window)) {
+ 			parent = GTK_WINDOW(dict_manage_dlg->window);
+ 		} else if (prefs_dlg && prefs_dlg->window) {
+ 			parent = GTK_WINDOW(prefs_dlg->window);
+@@ -2202,7 +2196,7 @@ void AppCore::on_dict_scan_select_change
+ 		gtk_toggle_button_set_active(GTK_TOGGLE_BUTTON(oBottomWin.ScanSelectionCheckButton), scan);
+ 
+ 	oDockLet->set_scan_mode(scan);
+-	if (GTK_WIDGET_VISIBLE(window))
++	if (gtk_widget_get_visible(window))
+ 		oDockLet->hide_state();
+ 	if (scan) {
+ 		bool lock=conf->get_bool_at("floating_window/lock");
+@@ -2366,7 +2360,7 @@ static gboolean save_yourself_cb (GnomeC
+     argv[0] = (gchar *)client_data;
+ 
+ 	if (gpAppFrame->window) {
+-		if (!GTK_WIDGET_VISIBLE(gpAppFrame->window))
++		if (!gtk_widget_get_visible(gpAppFrame->window))
+ 			argv[argc++] = "-h";
+ 	}
+ 

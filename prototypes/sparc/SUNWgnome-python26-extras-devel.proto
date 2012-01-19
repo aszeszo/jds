@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-python26-extras-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-python26-extras-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-python26-extras-devel.copyright
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gnome-python-extras-2.0.pc=usr/lib/pkgconfig/gnome-python-extras-2.0.pc 0644 root bin

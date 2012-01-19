@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-print-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-print-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-print-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gnome-print-manager.schemas=etc/gconf/schemas/gnome-print-manager.schemas 0644 root sys
+f none etc/gconf/schemas/gnome-print.schemas=etc/gconf/schemas/gnome-print.schemas 0644 root sys

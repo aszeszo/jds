@@ -1,0 +1,292 @@
+diff --git a/content/xbl/builtin/emacs/platformHTMLBindings.xml b/content/xbl/builtin/emacs/platformHTMLBindings.xml
+--- a/content/xbl/builtin/emacs/platformHTMLBindings.xml
++++ b/content/xbl/builtin/emacs/platformHTMLBindings.xml
+@@ -64,20 +64,16 @@
+     <handler event="keypress" keycode="VK_LEFT" modifiers="shift,control" 
+         command="cmd_selectWordPrevious"/>
+     <handler event="keypress" keycode="VK_RIGHT" modifiers="shift,control" 
+         command="cmd_selectWordNext"/>
+     <handler event="keypress" key="y" modifiers="accel"
+         command="cmd_redo"/>
+     <handler event="keypress" key="a" modifiers="alt"
+         command="cmd_selectAll"/>
+-    <handler event="keypress" keycode="VK_F20" command="cmd_cut" />
+-    <handler event="keypress" keycode="VK_F16" command="cmd_copy" />
+-    <handler event="keypress" keycode="VK_F18" command="cmd_paste" />
+-    <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+     </handlers>
+   </binding>
+ 
+   <binding id="textAreas">
+     <handlers>
+ #include ../textareas-base.inc
+     <!-- Emacsish single-line motion and delete keys -->
+     <handler event="keypress" key="a" modifiers="control"
+@@ -152,20 +148,16 @@
+     <handler event="keypress" keycode="VK_RIGHT" modifiers="shift,control" 
+         command="cmd_selectWordNext"/>
+     <handler event="keypress" keycode="VK_BACK" modifiers="control"
+         command="cmd_deleteWordBackward"/>
+     <handler event="keypress" key="y" modifiers="accel"
+         command="cmd_redo"/>
+     <handler event="keypress" key="a" modifiers="alt"
+         command="cmd_selectAll"/>
+-    <handler event="keypress" keycode="VK_F20" command="cmd_cut" />
+-    <handler event="keypress" keycode="VK_F16" command="cmd_copy" />
+-    <handler event="keypress" keycode="VK_F18" command="cmd_paste" />
+-    <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+     </handlers>
+   </binding>
+ 
+   <binding id="browser">
+     <handlers>
+ #include ../browser-base.inc
+       <handler event="keypress" keycode="VK_PAGE_UP" command="cmd_movePageUp"/>
+       <handler event="keypress" keycode="VK_PAGE_DOWN" command="cmd_movePageDown"/>
+@@ -177,20 +169,16 @@
+       <handler event="keypress" keycode="VK_INSERT" modifiers="control" command="cmd_copy" /> 
+       <handler event="keypress" keycode="VK_HOME" command="cmd_beginLine"/>
+       <handler event="keypress" keycode="VK_END" command="cmd_endLine"/>
+       <handler event="keypress" keycode="VK_HOME" modifiers="control" command="cmd_scrollTop"/>
+       <handler event="keypress" keycode="VK_END" modifiers="control" command="cmd_scrollBottom"/>
+       <handler event="keypress" keycode="VK_HOME" modifiers="shift,control" command="cmd_selectTop" /> 
+       <handler event="keypress" keycode="VK_END" modifiers="shift,control" command="cmd_selectBottom" /> 
+ 
+-      <handler event="keypress" keycode="VK_F20" command="cmd_cut" /> 
+-      <handler event="keypress" keycode="VK_F16" command="cmd_copy" /> 
+-      <handler event="keypress" keycode="VK_F18" command="cmd_paste" /> 
+-      <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+       <handler event="keypress" keycode="VK_LEFT" modifiers="control" command="cmd_wordPrevious" />
+       <handler event="keypress" keycode="VK_RIGHT" modifiers="control" command="cmd_wordNext" />
+       <handler event="keypress" keycode="VK_LEFT" modifiers="control,shift" command="cmd_selectWordPrevious" />
+       <handler event="keypress" keycode="VK_RIGHT" modifiers="control,shift" command="cmd_selectWordNext" />
+       <handler event="keypress" keycode="VK_LEFT" modifiers="shift" command="cmd_selectCharPrevious" />
+       <handler event="keypress" keycode="VK_RIGHT" modifiers="shift" command="cmd_selectCharNext" />
+       <handler event="keypress" keycode="VK_HOME" modifiers="shift" command="cmd_selectBeginLine" />
+       <handler event="keypress" keycode="VK_END" modifiers="shift" command="cmd_selectEndLine" />
+@@ -235,15 +223,11 @@
+       <handler event="keypress" keycode="VK_HOME" modifiers="shift,control" command="cmd_selectTop"/>
+       <handler event="keypress" keycode="VK_END" modifiers="shift,control" command="cmd_selectBottom"/>
+       <handler event="keypress" keycode="VK_HOME" modifiers="control" command="cmd_moveTop"/>
+       <handler event="keypress" keycode="VK_END" modifiers="control" command="cmd_moveBottom"/>
+       <handler event="keypress" keycode="VK_PAGE_UP" command="cmd_movePageUp"/>
+       <handler event="keypress" keycode="VK_PAGE_DOWN" command="cmd_movePageDown"/>
+       <handler event="keypress" keycode="VK_PAGE_UP" modifiers="shift" command="cmd_selectPageUp"/>
+       <handler event="keypress" keycode="VK_PAGE_DOWN" modifiers="shift" command="cmd_selectPageDown"/>
+-      <handler event="keypress" keycode="VK_F20" command="cmd_cut" />
+-      <handler event="keypress" keycode="VK_F16" command="cmd_copy" />
+-      <handler event="keypress" keycode="VK_F18" command="cmd_paste" />
+-      <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+     </handlers>
+   </binding>
+ </bindings>
+diff --git a/content/xbl/builtin/unix/platformHTMLBindings.xml b/content/xbl/builtin/unix/platformHTMLBindings.xml
+--- a/content/xbl/builtin/unix/platformHTMLBindings.xml
++++ b/content/xbl/builtin/unix/platformHTMLBindings.xml
+@@ -8,33 +8,28 @@
+     <handlers>
+ #include ../input-fields-base.inc
+     <handler event="keypress" key="a" modifiers="alt"
+         command="cmd_selectAll"/>
+     <handler event="keypress" key="y" modifiers="accel"
+         command="cmd_redo"/>
+     <handler event="keypress" key="z" modifiers="accel,shift" command="cmd_redo"/>
+     <handler event="keypress" key="z" modifiers="accel" command="cmd_undo"/>
+-    <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+     </handlers>
+   </binding>
+ 
+   <binding id="textAreas">
+     <handlers>
+ #include ../textareas-base.inc
+     <handler event="keypress" key="a" modifiers="alt"
+         command="cmd_selectAll"/>
+     <handler event="keypress" key="y" modifiers="accel"
+         command="cmd_redo"/>
+     <handler event="keypress" key="z" modifiers="accel" command="cmd_undo"/>
+     <handler event="keypress" key="z" modifiers="accel,shift" command="cmd_redo"/>
+-    <handler event="keypress" keycode="VK_F20" command="cmd_cut" />
+-    <handler event="keypress" keycode="VK_F16" command="cmd_copy" />
+-    <handler event="keypress" keycode="VK_F18" command="cmd_paste" />
+-    <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+     </handlers>
+   </binding>
+ 
+   <binding id="browser">
+     <handlers>
+ #include ../browser-base.inc
+       <handler event="keypress" keycode="VK_PAGE_UP" command="cmd_movePageUp"/>
+       <handler event="keypress" keycode="VK_PAGE_DOWN" command="cmd_movePageDown"/>
+@@ -46,20 +41,16 @@
+       <handler event="keypress" keycode="VK_INSERT" modifiers="control" command="cmd_copy" /> 
+       <handler event="keypress" keycode="VK_HOME" command="cmd_beginLine"/>
+       <handler event="keypress" keycode="VK_END" command="cmd_endLine"/>
+       <handler event="keypress" keycode="VK_HOME" modifiers="control" command="cmd_scrollTop"/>
+       <handler event="keypress" keycode="VK_END" modifiers="control" command="cmd_scrollBottom"/>
+       <handler event="keypress" keycode="VK_HOME" modifiers="shift,control" command="cmd_selectTop" /> 
+       <handler event="keypress" keycode="VK_END" modifiers="shift,control" command="cmd_selectBottom" /> 
+ 
+-      <handler event="keypress" keycode="VK_F20" command="cmd_cut" /> 
+-      <handler event="keypress" keycode="VK_F16" command="cmd_copy" /> 
+-      <handler event="keypress" keycode="VK_F18" command="cmd_paste" /> 
+-      <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+       <handler event="keypress" keycode="VK_LEFT" modifiers="control" command="cmd_wordPrevious" />
+       <handler event="keypress" keycode="VK_RIGHT" modifiers="control" command="cmd_wordNext" />
+       <handler event="keypress" keycode="VK_LEFT" modifiers="control,shift" command="cmd_selectWordPrevious" />
+       <handler event="keypress" keycode="VK_RIGHT" modifiers="control,shift" command="cmd_selectWordNext" />
+       <handler event="keypress" keycode="VK_LEFT" modifiers="shift" command="cmd_selectCharPrevious" />
+       <handler event="keypress" keycode="VK_RIGHT" modifiers="shift" command="cmd_selectCharNext" />
+       <handler event="keypress" keycode="VK_HOME" modifiers="shift" command="cmd_selectBeginLine" />
+       <handler event="keypress" keycode="VK_END" modifiers="shift" command="cmd_selectEndLine" />
+@@ -71,15 +62,11 @@
+ 
+   <binding id="editor">
+     <handlers>
+ #include ../editor-base.inc
+       <handler event="keypress" key="z" modifiers="accel" command="cmd_undo"/>
+       <handler event="keypress" key="z" modifiers="accel,shift" command="cmd_redo"/>
+       <handler event="keypress" key="y" modifiers="accel"   command="cmd_redo"/>
+       <handler event="keypress" key="a" modifiers="alt" command="cmd_selectAll"/>
+-      <handler event="keypress" keycode="VK_F20" command="cmd_cut" />
+-      <handler event="keypress" keycode="VK_F16" command="cmd_copy" />
+-      <handler event="keypress" keycode="VK_F18" command="cmd_paste" />
+-      <handler event="keypress" keycode="VK_F14" command="cmd_undo" />
+     </handlers>
+   </binding>
+ </bindings>
+diff --git a/widget/src/gtk2/nsWindow.h b/widget/src/gtk2/nsWindow.h
+--- a/widget/src/gtk2/nsWindow.h
++++ b/widget/src/gtk2/nsWindow.h
+@@ -377,16 +377,17 @@ private:
+     GtkWidget         *GetMozContainerWidget();
+     nsWindow          *GetContainerWindow();
+     void               SetUrgencyHint(GtkWidget *top_window, PRBool state);
+     void              *SetupPluginPort(void);
+     nsresult           SetWindowIconList(const nsTArray<nsCString> &aIconList);
+     void               SetDefaultIcon(void);
+     void               InitButtonEvent(nsMouseEvent &aEvent, GdkEventButton *aGdkEvent);
+     PRBool             DispatchCommandEvent(nsIAtom* aCommand);
++    PRBool             DispatchContentCommandEvent(PRInt32 aMsg);
+     void               SetWindowClipRegion(const nsTArray<nsIntRect>& aRects,
+                                            PRBool aIntersectWithExisting);
+     PRBool             GetDragInfo(nsMouseEvent* aMouseEvent,
+                                    GdkWindow** aWindow, gint* aButton,
+                                    gint* aRootX, gint* aRootY);
+     void               ClearCachedResources();
+ 
+     GtkWidget          *mShell;
+diff --git a/widget/src/gtk2/nsWindow.cpp b/widget/src/gtk2/nsWindow.cpp
+--- a/widget/src/gtk2/nsWindow.cpp
++++ b/widget/src/gtk2/nsWindow.cpp
+@@ -63,13 +63,6 @@
+ #include <X11/Xatom.h>
+ #include <X11/extensions/XShm.h>
+ #include <X11/extensions/shape.h>
+-
+-#ifdef AIX
+-#include <X11/keysym.h>
+-#else
+-#include <X11/XF86keysym.h>
+-#endif
+-
+ #include "gtk2xtbin.h"
+ #endif /* MOZ_X11 */
+ #include <gdk/gdkkeysyms.h>
+@@ -2992,6 +2985,15 @@
+     return TRUE;
+ }
+ 
++PRBool
++nsWindow::DispatchContentCommandEvent(PRInt32 aMsg)
++{
++  nsEventStatus status;
++  nsContentCommandEvent event(PR_TRUE, aMsg, this);
++  DispatchEvent(&event, status);
++  return TRUE;
++}
++
+ static PRUint32
+ GetCharCodeFor(const GdkEventKey *aEvent, guint aShiftState,
+                gint aGroup)
+@@ -3120,27 +3122,37 @@
+         return TRUE;
+     }
+ 
+-#ifdef MOZ_X11
+-#if ! defined AIX // no XFree86 on AIX 5L
+     // Look for specialized app-command keys
+     switch (aEvent->keyval) {
+-        case XF86XK_Back:
++        case GDK_Back:
+             return DispatchCommandEvent(nsWidgetAtoms::Back);
+-        case XF86XK_Forward:
++        case GDK_Forward:
+             return DispatchCommandEvent(nsWidgetAtoms::Forward);
+-        case XF86XK_Refresh:
++        case GDK_Refresh:
+             return DispatchCommandEvent(nsWidgetAtoms::Reload);
+-        case XF86XK_Stop:
++        case GDK_Stop:
+             return DispatchCommandEvent(nsWidgetAtoms::Stop);
+-        case XF86XK_Search:
++        case GDK_Search:
+             return DispatchCommandEvent(nsWidgetAtoms::Search);
+-        case XF86XK_Favorites:
++        case GDK_Favorites:
+             return DispatchCommandEvent(nsWidgetAtoms::Bookmarks);
+-        case XF86XK_HomePage:
++        case GDK_HomePage:
+             return DispatchCommandEvent(nsWidgetAtoms::Home);
++        case GDK_Copy:
++        case GDK_F16:  // F16, F20, F18, F14 are old keysyms for Copy Cut Paste Undo
++            return DispatchContentCommandEvent(NS_CONTENT_COMMAND_COPY);
++        case GDK_Cut:
++        case GDK_F20:
++            return DispatchContentCommandEvent(NS_CONTENT_COMMAND_CUT);
++        case GDK_Paste:
++        case GDK_F18:
++            return DispatchContentCommandEvent(NS_CONTENT_COMMAND_PASTE);
++        case GDK_Redo:
++            return DispatchContentCommandEvent(NS_CONTENT_COMMAND_REDO);
++        case GDK_Undo:
++        case GDK_F14:
++            return DispatchContentCommandEvent(NS_CONTENT_COMMAND_UNDO);
+     }
+-#endif /* ! AIX */
+-#endif /* MOZ_X11 */
+ 
+     nsKeyEvent event(PR_TRUE, NS_KEY_PRESS, this);
+     InitKeyEvent(event, aEvent);
+diff --git a/widget/src/gtk2/nsGtkKeyUtils.cpp b/widget/src/gtk2/nsGtkKeyUtils.cpp
+--- a/widget/src/gtk2/nsGtkKeyUtils.cpp
++++ b/widget/src/gtk2/nsGtkKeyUtils.cpp
+@@ -178,14 +178,11 @@
+     { NS_VK_EQUALS, GDK_plus }
+ };
+ 
+-#ifdef SOLARIS
+ // map Sun Keyboard special keysyms on to NS_VK keys
+ struct nsKeyConverter nsSunKeycodes[] = {
+-    {NS_VK_F1, GDK_Help }, //Mapping Help key to F1
+     {NS_VK_F11, 0x1005ff10 }, //Sun F11 key generates SunF36(0x1005ff10) keysym
+     {NS_VK_F12, 0x1005ff11 }  //Sun F12 key generates SunF37(0x1005ff11) keysym
+ };
+-#endif
+ 
+ int
+ GdkKeyCodeToDOMKeyCode(int aKeysym)
+@@ -211,14 +208,11 @@
+     if (aKeysym >= GDK_KP_0 && aKeysym <= GDK_KP_9)
+         return aKeysym - GDK_KP_0 + NS_VK_NUMPAD0;
+ 
+-#ifdef SOLARIS
+     // map Sun Keyboard special keysyms
+     for (i = 0; i < NS_ARRAY_LENGTH(nsSunKeycodes); i++) {
+         if (nsSunKeycodes[i].keysym == aKeysym)
+             return(nsSunKeycodes[i].vkCode);
+     }
+-#endif /* SOLARIS */
+-
+     // misc other things
+     for (i = 0; i < NS_ARRAY_LENGTH(nsKeycodes); i++) {
+         if (nsKeycodes[i].keysym == aKeysym)

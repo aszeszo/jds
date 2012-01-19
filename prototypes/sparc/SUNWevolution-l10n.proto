@@ -1,0 +1,1135 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-l10n.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/evolution 0755 root bin
+d none share/gnome/help/evolution/cs 0755 root bin
+f none share/gnome/help/evolution/cs/evolution.help.copyright=usr/share/gnome/help/evolution/cs/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/cs/evolution.xml=usr/share/gnome/help/evolution/cs/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/cs/figures 0755 root bin
+f none share/gnome/help/evolution/cs/figures/attach_reminder_a.png=usr/share/gnome/help/evolution/cs/figures/attach_reminder_a.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+f none share/gnome/help/evolution/cs/figures/categories_a.png=usr/share/gnome/help/evolution/cs/figures/categories_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/contacts_mainwindow_a.png=usr/share/gnome/help/evolution/cs/figures/contacts_mainwindow_a.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/delgt-add.png=../../C/figures/delgt-add.png
+f none share/gnome/help/evolution/cs/figures/evo_Wcal_prop_a.png=usr/share/gnome/help/evolution/cs/figures/evo_Wcal_prop_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_adv_search_a.png=usr/share/gnome/help/evolution/cs/figures/evo_adv_search_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_attachreminder_plugin.png=usr/share/gnome/help/evolution/cs/figures/evo_attachreminder_plugin.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_backup_prgsbar.png=usr/share/gnome/help/evolution/cs/figures/evo_backup_prgsbar.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_backup_warning.png=usr/share/gnome/help/evolution/cs/figures/evo_backup_warning.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/evo_blink.png=../../C/figures/evo_blink.png
+f none share/gnome/help/evolution/cs/figures/evo_cal_callout_a.png=usr/share/gnome/help/evolution/cs/figures/evo_cal_callout_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_calender_appointmnt.png=usr/share/gnome/help/evolution/cs/figures/evo_calender_appointmnt.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_calstatus_a.png=usr/share/gnome/help/evolution/cs/figures/evo_calstatus_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_caltasks_a.png=usr/share/gnome/help/evolution/cs/figures/evo_caltasks_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_contacteditor_a.png=usr/share/gnome/help/evolution/cs/figures/evo_contacteditor_a.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/cs/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/cs/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+f none share/gnome/help/evolution/cs/figures/evo_edit_search.png=usr/share/gnome/help/evolution/cs/figures/evo_edit_search.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+f none share/gnome/help/evolution/cs/figures/evo_flag_follow_up_a.png=usr/share/gnome/help/evolution/cs/figures/evo_flag_follow_up_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_gwreceive_a.png=usr/share/gnome/help/evolution/cs/figures/evo_gwreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_gwstatustrack.png=usr/share/gnome/help/evolution/cs/figures/evo_gwstatustrack.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_imapreceive_a.png=usr/share/gnome/help/evolution/cs/figures/evo_imapreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_junk_a.png=usr/share/gnome/help/evolution/cs/figures/evo_junk_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_label_a.png=usr/share/gnome/help/evolution/cs/figures/evo_label_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_labels_a.png=usr/share/gnome/help/evolution/cs/figures/evo_labels_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_mail_a.png=usr/share/gnome/help/evolution/cs/figures/evo_mail_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_mail_callout_a.png=usr/share/gnome/help/evolution/cs/figures/evo_mail_callout_a.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+f none share/gnome/help/evolution/cs/figures/evo_maildirreceive_a.png=usr/share/gnome/help/evolution/cs/figures/evo_maildirreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_mboxreceive_a.png=usr/share/gnome/help/evolution/cs/figures/evo_mboxreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_memo_a.png=usr/share/gnome/help/evolution/cs/figures/evo_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_mhreceive_a.png=usr/share/gnome/help/evolution/cs/figures/evo_mhreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_newmail.png=usr/share/gnome/help/evolution/cs/figures/evo_newmail.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_newmess_a.png=usr/share/gnome/help/evolution/cs/figures/evo_newmess_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_offline.png=usr/share/gnome/help/evolution/cs/figures/evo_offline.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_popreceive_a.png=usr/share/gnome/help/evolution/cs/figures/evo_popreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_proxyadd_a.png=usr/share/gnome/help/evolution/cs/figures/evo_proxyadd_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_rule_a.png=usr/share/gnome/help/evolution/cs/figures/evo_rule_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_send_option_a.png=usr/share/gnome/help/evolution/cs/figures/evo_send_option_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_send_setup_a.png=usr/share/gnome/help/evolution/cs/figures/evo_send_setup_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_sendstatus_a.png=usr/share/gnome/help/evolution/cs/figures/evo_sendstatus_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_shd_memo_a.png=usr/share/gnome/help/evolution/cs/figures/evo_shd_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evo_usereceive_a.png=usr/share/gnome/help/evolution/cs/figures/evo_usereceive_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evolution_contact_preference.png=usr/share/gnome/help/evolution/cs/figures/evolution_contact_preference.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/evolution_mail_preference.png=usr/share/gnome/help/evolution/cs/figures/evolution_mail_preference.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/exchng-rec-mails.png=usr/share/gnome/help/evolution/cs/figures/exchng-rec-mails.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/exchng-rec-options.png=usr/share/gnome/help/evolution/cs/figures/exchng-rec-options.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/filter-new-fig.png=usr/share/gnome/help/evolution/cs/figures/filter-new-fig.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/cs/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+f none share/gnome/help/evolution/cs/figures/folder_size_preference.png=usr/share/gnome/help/evolution/cs/figures/folder_size_preference.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/google_cal_view.png=usr/share/gnome/help/evolution/cs/figures/google_cal_view.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/cs/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+f none share/gnome/help/evolution/cs/figures/local_ics_calendar.png=usr/share/gnome/help/evolution/cs/figures/local_ics_calendar.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/mailer_preferences.png=usr/share/gnome/help/evolution/cs/figures/mailer_preferences.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/cs/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/cs/figures/plus.png=../../C/figures/plus.png
+f none share/gnome/help/evolution/cs/figures/quick_add_a.png=usr/share/gnome/help/evolution/cs/figures/quick_add_a.png 0644 root bin
+f none share/gnome/help/evolution/cs/figures/quick_reference.png=usr/share/gnome/help/evolution/cs/figures/quick_reference.png 0644 root bin
+s none share/gnome/help/evolution/cs/figures/stock_search.png=../../C/figures/stock_search.png
+f none share/gnome/help/evolution/cs/figures/ver_view_a.png=usr/share/gnome/help/evolution/cs/figures/ver_view_a.png 0644 root bin
+d none share/gnome/help/evolution/de 0755 root bin
+f none share/gnome/help/evolution/de/evolution.help.copyright=usr/share/gnome/help/evolution/de/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/de/evolution.xml=usr/share/gnome/help/evolution/de/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/de/figures 0755 root bin
+f none share/gnome/help/evolution/de/figures/attach_reminder_a.png=usr/share/gnome/help/evolution/de/figures/attach_reminder_a.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+f none share/gnome/help/evolution/de/figures/categories_a.png=usr/share/gnome/help/evolution/de/figures/categories_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/contacts_mainwindow_a.png=usr/share/gnome/help/evolution/de/figures/contacts_mainwindow_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/delgt-add.png=usr/share/gnome/help/evolution/de/figures/delgt-add.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+f none share/gnome/help/evolution/de/figures/evo_adv_search_a.png=usr/share/gnome/help/evolution/de/figures/evo_adv_search_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_attachreminder_plugin.png=usr/share/gnome/help/evolution/de/figures/evo_attachreminder_plugin.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_backup_prgsbar.png=usr/share/gnome/help/evolution/de/figures/evo_backup_prgsbar.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_backup_warning.png=usr/share/gnome/help/evolution/de/figures/evo_backup_warning.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_blink.png=../../C/figures/evo_blink.png
+s none share/gnome/help/evolution/de/figures/evo_cal_callout_a.png=../../C/figures/evo_cal_callout_a.png
+f none share/gnome/help/evolution/de/figures/evo_calender_appointmnt.png=usr/share/gnome/help/evolution/de/figures/evo_calender_appointmnt.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+f none share/gnome/help/evolution/de/figures/evo_caltasks_a.png=usr/share/gnome/help/evolution/de/figures/evo_caltasks_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_contacteditor_a.png=usr/share/gnome/help/evolution/de/figures/evo_contacteditor_a.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/de/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/de/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+f none share/gnome/help/evolution/de/figures/evo_edit_search.png=usr/share/gnome/help/evolution/de/figures/evo_edit_search.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+f none share/gnome/help/evolution/de/figures/evo_flag_follow_up_a.png=usr/share/gnome/help/evolution/de/figures/evo_flag_follow_up_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_gwreceive_a.png=usr/share/gnome/help/evolution/de/figures/evo_gwreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+f none share/gnome/help/evolution/de/figures/evo_imapreceive_a.png=usr/share/gnome/help/evolution/de/figures/evo_imapreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_junk_a.png=usr/share/gnome/help/evolution/de/figures/evo_junk_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_label_a.png=usr/share/gnome/help/evolution/de/figures/evo_label_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_labels_a.png=usr/share/gnome/help/evolution/de/figures/evo_labels_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_mail_a.png=usr/share/gnome/help/evolution/de/figures/evo_mail_a.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_mail_callout_a.png=../../C/figures/evo_mail_callout_a.png
+s none share/gnome/help/evolution/de/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+f none share/gnome/help/evolution/de/figures/evo_maildirreceive_a.png=usr/share/gnome/help/evolution/de/figures/evo_maildirreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_mboxreceive_a.png=usr/share/gnome/help/evolution/de/figures/evo_mboxreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_memo_a.png=usr/share/gnome/help/evolution/de/figures/evo_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_mhreceive_a.png=usr/share/gnome/help/evolution/de/figures/evo_mhreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_newmail.png=usr/share/gnome/help/evolution/de/figures/evo_newmail.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_newmess_a.png=usr/share/gnome/help/evolution/de/figures/evo_newmess_a.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_offline.png=../../C/figures/evo_offline.png
+f none share/gnome/help/evolution/de/figures/evo_popreceive_a.png=usr/share/gnome/help/evolution/de/figures/evo_popreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+f none share/gnome/help/evolution/de/figures/evo_rule_a.png=usr/share/gnome/help/evolution/de/figures/evo_rule_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_send_option_a.png=usr/share/gnome/help/evolution/de/figures/evo_send_option_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_send_setup_a.png=usr/share/gnome/help/evolution/de/figures/evo_send_setup_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_sendstatus_a.png=usr/share/gnome/help/evolution/de/figures/evo_sendstatus_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_shd_memo_a.png=usr/share/gnome/help/evolution/de/figures/evo_shd_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evo_usereceive_a.png=usr/share/gnome/help/evolution/de/figures/evo_usereceive_a.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evolution_contact_preference.png=usr/share/gnome/help/evolution/de/figures/evolution_contact_preference.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/evolution_mail_preference.png=usr/share/gnome/help/evolution/de/figures/evolution_mail_preference.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/exchng-rec-mails.png=usr/share/gnome/help/evolution/de/figures/exchng-rec-mails.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+f none share/gnome/help/evolution/de/figures/filter-new-fig.png=usr/share/gnome/help/evolution/de/figures/filter-new-fig.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/de/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/de/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+f none share/gnome/help/evolution/de/figures/google_cal_view.png=usr/share/gnome/help/evolution/de/figures/google_cal_view.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/de/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+f none share/gnome/help/evolution/de/figures/local_ics_calendar.png=usr/share/gnome/help/evolution/de/figures/local_ics_calendar.png 0644 root bin
+f none share/gnome/help/evolution/de/figures/mailer_preferences.png=usr/share/gnome/help/evolution/de/figures/mailer_preferences.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/de/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/de/figures/plus.png=../../C/figures/plus.png
+f none share/gnome/help/evolution/de/figures/quick_add_a.png=usr/share/gnome/help/evolution/de/figures/quick_add_a.png 0644 root bin
+s none share/gnome/help/evolution/de/figures/quick_reference.png=../../C/figures/quick_reference.png
+s none share/gnome/help/evolution/de/figures/stock_search.png=../../C/figures/stock_search.png
+f none share/gnome/help/evolution/de/figures/ver_view_a.png=usr/share/gnome/help/evolution/de/figures/ver_view_a.png 0644 root bin
+d none share/gnome/help/evolution/el 0755 root bin
+f none share/gnome/help/evolution/el/evolution.help.copyright=usr/share/gnome/help/evolution/el/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/el/evolution.xml=usr/share/gnome/help/evolution/el/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/el/figures 0755 root bin
+f none share/gnome/help/evolution/el/figures/attach_reminder_a.png=usr/share/gnome/help/evolution/el/figures/attach_reminder_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+f none share/gnome/help/evolution/el/figures/categories_a.png=usr/share/gnome/help/evolution/el/figures/categories_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/contacts_mainwindow_a.png=usr/share/gnome/help/evolution/el/figures/contacts_mainwindow_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/delgt-add.png=../../C/figures/delgt-add.png
+f none share/gnome/help/evolution/el/figures/evo_Wcal_prop_a.png=usr/share/gnome/help/evolution/el/figures/evo_Wcal_prop_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_adv_search_a.png=usr/share/gnome/help/evolution/el/figures/evo_adv_search_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_attachreminder_plugin.png=usr/share/gnome/help/evolution/el/figures/evo_attachreminder_plugin.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_backup_prgsbar.png=usr/share/gnome/help/evolution/el/figures/evo_backup_prgsbar.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_backup_warning.png=usr/share/gnome/help/evolution/el/figures/evo_backup_warning.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_blink.png=../../C/figures/evo_blink.png
+f none share/gnome/help/evolution/el/figures/evo_cal_callout_a.png=usr/share/gnome/help/evolution/el/figures/evo_cal_callout_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_calender_appointmnt.png=usr/share/gnome/help/evolution/el/figures/evo_calender_appointmnt.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+s none share/gnome/help/evolution/el/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+f none share/gnome/help/evolution/el/figures/evo_contacteditor_a.png=usr/share/gnome/help/evolution/el/figures/evo_contacteditor_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/el/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/el/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+f none share/gnome/help/evolution/el/figures/evo_edit_search.png=usr/share/gnome/help/evolution/el/figures/evo_edit_search.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_exchng_mapi.png=usr/share/gnome/help/evolution/el/figures/evo_exchng_mapi.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_flag_follow_up_a.png=usr/share/gnome/help/evolution/el/figures/evo_flag_follow_up_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_gwreceive_a.png=usr/share/gnome/help/evolution/el/figures/evo_gwreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+f none share/gnome/help/evolution/el/figures/evo_imapreceive_a.png=usr/share/gnome/help/evolution/el/figures/evo_imapreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_junk_a.png=../../C/figures/evo_junk_a.png
+s none share/gnome/help/evolution/el/figures/evo_label_a.png=../../C/figures/evo_label_a.png
+s none share/gnome/help/evolution/el/figures/evo_labels_a.png=../../C/figures/evo_labels_a.png
+f none share/gnome/help/evolution/el/figures/evo_mail_a.png=usr/share/gnome/help/evolution/el/figures/evo_mail_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_mail_callout_a.png=usr/share/gnome/help/evolution/el/figures/evo_mail_callout_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+f none share/gnome/help/evolution/el/figures/evo_maildirreceive_a.png=usr/share/gnome/help/evolution/el/figures/evo_maildirreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_mboxreceive_a.png=usr/share/gnome/help/evolution/el/figures/evo_mboxreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_memo_a.png=usr/share/gnome/help/evolution/el/figures/evo_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_mhreceive_a.png=usr/share/gnome/help/evolution/el/figures/evo_mhreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_newmail.png=usr/share/gnome/help/evolution/el/figures/evo_newmail.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_newmess_a.png=usr/share/gnome/help/evolution/el/figures/evo_newmess_a.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_offline.png=usr/share/gnome/help/evolution/el/figures/evo_offline.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/evo_popreceive_a.png=usr/share/gnome/help/evolution/el/figures/evo_popreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+f none share/gnome/help/evolution/el/figures/evo_rule_a.png=usr/share/gnome/help/evolution/el/figures/evo_rule_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+f none share/gnome/help/evolution/el/figures/evo_send_setup_a.png=usr/share/gnome/help/evolution/el/figures/evo_send_setup_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+s none share/gnome/help/evolution/el/figures/evo_shd_memo_a.png=../../C/figures/evo_shd_memo_a.png
+f none share/gnome/help/evolution/el/figures/evo_usereceive_a.png=usr/share/gnome/help/evolution/el/figures/evo_usereceive_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/el/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+f none share/gnome/help/evolution/el/figures/exchng-rec-mails.png=usr/share/gnome/help/evolution/el/figures/exchng-rec-mails.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/exchng-rec-options.png=usr/share/gnome/help/evolution/el/figures/exchng-rec-options.png 0644 root bin
+f none share/gnome/help/evolution/el/figures/filter-new-fig.png=usr/share/gnome/help/evolution/el/figures/filter-new-fig.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/el/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/el/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+f none share/gnome/help/evolution/el/figures/google_cal_view.png=usr/share/gnome/help/evolution/el/figures/google_cal_view.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/el/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/el/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+s none share/gnome/help/evolution/el/figures/mailer_preferences.png=../../C/figures/mailer_preferences.png
+s none share/gnome/help/evolution/el/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/el/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/el/figures/plus.png=../../C/figures/plus.png
+f none share/gnome/help/evolution/el/figures/quick_add_a.png=usr/share/gnome/help/evolution/el/figures/quick_add_a.png 0644 root bin
+s none share/gnome/help/evolution/el/figures/quick_reference.png=../../C/figures/quick_reference.png
+s none share/gnome/help/evolution/el/figures/stock_search.png=../../C/figures/stock_search.png
+f none share/gnome/help/evolution/el/figures/ver_view_a.png=usr/share/gnome/help/evolution/el/figures/ver_view_a.png 0644 root bin
+d none share/gnome/help/evolution/en_GB 0755 root bin
+f none share/gnome/help/evolution/en_GB/evolution.help.copyright=usr/share/gnome/help/evolution/en_GB/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/en_GB/evolution.xml=usr/share/gnome/help/evolution/en_GB/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/en_GB/figures 0755 root bin
+s none share/gnome/help/evolution/en_GB/figures/attach_reminder_a.png=../../C/figures/attach_reminder_a.png
+s none share/gnome/help/evolution/en_GB/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+s none share/gnome/help/evolution/en_GB/figures/categories_a.png=../../C/figures/categories_a.png
+s none share/gnome/help/evolution/en_GB/figures/contacts_mainwindow_a.png=../../C/figures/contacts_mainwindow_a.png
+s none share/gnome/help/evolution/en_GB/figures/delgt-add.png=../../C/figures/delgt-add.png
+s none share/gnome/help/evolution/en_GB/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_adv_search_a.png=../../C/figures/evo_adv_search_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_attachreminder_plugin.png=../../C/figures/evo_attachreminder_plugin.png
+s none share/gnome/help/evolution/en_GB/figures/evo_backup_prgsbar.png=../../C/figures/evo_backup_prgsbar.png
+s none share/gnome/help/evolution/en_GB/figures/evo_backup_warning.png=../../C/figures/evo_backup_warning.png
+s none share/gnome/help/evolution/en_GB/figures/evo_blink.png=../../C/figures/evo_blink.png
+s none share/gnome/help/evolution/en_GB/figures/evo_cal_callout_a.png=../../C/figures/evo_cal_callout_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_calender_appointmnt.png=../../C/figures/evo_calender_appointmnt.png
+s none share/gnome/help/evolution/en_GB/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_contacteditor_a.png=../../C/figures/evo_contacteditor_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/en_GB/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+s none share/gnome/help/evolution/en_GB/figures/evo_edit_search.png=../../C/figures/evo_edit_search.png
+s none share/gnome/help/evolution/en_GB/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+s none share/gnome/help/evolution/en_GB/figures/evo_flag_follow_up_a.png=../../C/figures/evo_flag_follow_up_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_gwreceive_a.png=../../C/figures/evo_gwreceive_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+s none share/gnome/help/evolution/en_GB/figures/evo_imapreceive_a.png=../../C/figures/evo_imapreceive_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_junk_a.png=../../C/figures/evo_junk_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_label_a.png=../../C/figures/evo_label_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_labels_a.png=../../C/figures/evo_labels_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_mail_a.png=../../C/figures/evo_mail_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_mail_callout_a.png=../../C/figures/evo_mail_callout_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+s none share/gnome/help/evolution/en_GB/figures/evo_maildirreceive_a.png=../../C/figures/evo_maildirreceive_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_mboxreceive_a.png=../../C/figures/evo_mboxreceive_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_memo_a.png=../../C/figures/evo_memo_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_mhreceive_a.png=../../C/figures/evo_mhreceive_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_newmail.png=../../C/figures/evo_newmail.png
+s none share/gnome/help/evolution/en_GB/figures/evo_newmess_a.png=../../C/figures/evo_newmess_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_offline.png=../../C/figures/evo_offline.png
+s none share/gnome/help/evolution/en_GB/figures/evo_popreceive_a.png=../../C/figures/evo_popreceive_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_rule_a.png=../../C/figures/evo_rule_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_send_setup_a.png=../../C/figures/evo_send_setup_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_shd_memo_a.png=../../C/figures/evo_shd_memo_a.png
+s none share/gnome/help/evolution/en_GB/figures/evo_usereceive_a.png=../../C/figures/evo_usereceive_a.png
+s none share/gnome/help/evolution/en_GB/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/en_GB/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+s none share/gnome/help/evolution/en_GB/figures/exchng-rec-mails.png=../../C/figures/exchng-rec-mails.png
+s none share/gnome/help/evolution/en_GB/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+s none share/gnome/help/evolution/en_GB/figures/filter-new-fig.png=../../C/figures/filter-new-fig.png
+s none share/gnome/help/evolution/en_GB/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/en_GB/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/en_GB/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+s none share/gnome/help/evolution/en_GB/figures/google_cal_view.png=../../C/figures/google_cal_view.png
+s none share/gnome/help/evolution/en_GB/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/en_GB/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/en_GB/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+s none share/gnome/help/evolution/en_GB/figures/mailer_preferences.png=../../C/figures/mailer_preferences.png
+s none share/gnome/help/evolution/en_GB/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/en_GB/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/en_GB/figures/plus.png=../../C/figures/plus.png
+s none share/gnome/help/evolution/en_GB/figures/quick_add_a.png=../../C/figures/quick_add_a.png
+s none share/gnome/help/evolution/en_GB/figures/quick_reference.png=../../C/figures/quick_reference.png
+s none share/gnome/help/evolution/en_GB/figures/stock_search.png=../../C/figures/stock_search.png
+s none share/gnome/help/evolution/en_GB/figures/ver_view_a.png=../../C/figures/ver_view_a.png
+d none share/gnome/help/evolution/es 0755 root bin
+f none share/gnome/help/evolution/es/evolution.help.copyright=usr/share/gnome/help/evolution/es/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/es/evolution.xml=usr/share/gnome/help/evolution/es/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/es/figures 0755 root bin
+f none share/gnome/help/evolution/es/figures/attach_reminder_a.png=usr/share/gnome/help/evolution/es/figures/attach_reminder_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+f none share/gnome/help/evolution/es/figures/categories_a.png=usr/share/gnome/help/evolution/es/figures/categories_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/contacts_mainwindow_a.png=usr/share/gnome/help/evolution/es/figures/contacts_mainwindow_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/delgt-add.png=../../C/figures/delgt-add.png
+f none share/gnome/help/evolution/es/figures/evo_Wcal_prop_a.png=usr/share/gnome/help/evolution/es/figures/evo_Wcal_prop_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_adv_search_a.png=usr/share/gnome/help/evolution/es/figures/evo_adv_search_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_attachreminder_plugin.png=usr/share/gnome/help/evolution/es/figures/evo_attachreminder_plugin.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_backup_prgsbar.png=usr/share/gnome/help/evolution/es/figures/evo_backup_prgsbar.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_backup_warning.png=usr/share/gnome/help/evolution/es/figures/evo_backup_warning.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_blink.png=../../C/figures/evo_blink.png
+s none share/gnome/help/evolution/es/figures/evo_cal_callout_a.png=../../C/figures/evo_cal_callout_a.png
+f none share/gnome/help/evolution/es/figures/evo_calender_appointmnt.png=usr/share/gnome/help/evolution/es/figures/evo_calender_appointmnt.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+f none share/gnome/help/evolution/es/figures/evo_caltasks_a.png=usr/share/gnome/help/evolution/es/figures/evo_caltasks_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_contacteditor_a.png=usr/share/gnome/help/evolution/es/figures/evo_contacteditor_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/es/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/es/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+f none share/gnome/help/evolution/es/figures/evo_edit_search.png=usr/share/gnome/help/evolution/es/figures/evo_edit_search.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_exchng_mapi.png=usr/share/gnome/help/evolution/es/figures/evo_exchng_mapi.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_flag_follow_up_a.png=usr/share/gnome/help/evolution/es/figures/evo_flag_follow_up_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_gwreceive_a.png=usr/share/gnome/help/evolution/es/figures/evo_gwreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+f none share/gnome/help/evolution/es/figures/evo_imapreceive_a.png=usr/share/gnome/help/evolution/es/figures/evo_imapreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_junk_a.png=usr/share/gnome/help/evolution/es/figures/evo_junk_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_label_a.png=usr/share/gnome/help/evolution/es/figures/evo_label_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_labels_a.png=usr/share/gnome/help/evolution/es/figures/evo_labels_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_mail_a.png=../../C/figures/evo_mail_a.png
+f none share/gnome/help/evolution/es/figures/evo_mail_callout_a.png=usr/share/gnome/help/evolution/es/figures/evo_mail_callout_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+f none share/gnome/help/evolution/es/figures/evo_maildirreceive_a.png=usr/share/gnome/help/evolution/es/figures/evo_maildirreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_mboxreceive_a.png=usr/share/gnome/help/evolution/es/figures/evo_mboxreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_memo_a.png=usr/share/gnome/help/evolution/es/figures/evo_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_mhreceive_a.png=usr/share/gnome/help/evolution/es/figures/evo_mhreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_newmail.png=usr/share/gnome/help/evolution/es/figures/evo_newmail.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_newmess_a.png=usr/share/gnome/help/evolution/es/figures/evo_newmess_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_offline.png=usr/share/gnome/help/evolution/es/figures/evo_offline.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_popreceive_a.png=usr/share/gnome/help/evolution/es/figures/evo_popreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+f none share/gnome/help/evolution/es/figures/evo_rule_a.png=usr/share/gnome/help/evolution/es/figures/evo_rule_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+f none share/gnome/help/evolution/es/figures/evo_send_setup_a.png=usr/share/gnome/help/evolution/es/figures/evo_send_setup_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+f none share/gnome/help/evolution/es/figures/evo_shd_memo_a.png=usr/share/gnome/help/evolution/es/figures/evo_shd_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/evo_usereceive_a.png=usr/share/gnome/help/evolution/es/figures/evo_usereceive_a.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/es/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+f none share/gnome/help/evolution/es/figures/exchng-rec-mails.png=usr/share/gnome/help/evolution/es/figures/exchng-rec-mails.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+f none share/gnome/help/evolution/es/figures/filter-new-fig.png=usr/share/gnome/help/evolution/es/figures/filter-new-fig.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/es/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/es/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+f none share/gnome/help/evolution/es/figures/google_cal_view.png=usr/share/gnome/help/evolution/es/figures/google_cal_view.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/es/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/es/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+f none share/gnome/help/evolution/es/figures/mailer_preferences.png=usr/share/gnome/help/evolution/es/figures/mailer_preferences.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/es/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/es/figures/plus.png=../../C/figures/plus.png
+f none share/gnome/help/evolution/es/figures/quick_add_a.png=usr/share/gnome/help/evolution/es/figures/quick_add_a.png 0644 root bin
+f none share/gnome/help/evolution/es/figures/quick_reference.png=usr/share/gnome/help/evolution/es/figures/quick_reference.png 0644 root bin
+s none share/gnome/help/evolution/es/figures/stock_search.png=../../C/figures/stock_search.png
+f none share/gnome/help/evolution/es/figures/ver_view_a.png=usr/share/gnome/help/evolution/es/figures/ver_view_a.png 0644 root bin
+d none share/gnome/help/evolution/eu 0755 root bin
+f none share/gnome/help/evolution/eu/evolution.help.copyright=usr/share/gnome/help/evolution/eu/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/eu/evolution.xml=usr/share/gnome/help/evolution/eu/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/eu/figures 0755 root bin
+s none share/gnome/help/evolution/eu/figures/attach_reminder_a.png=../../C/figures/attach_reminder_a.png
+s none share/gnome/help/evolution/eu/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+f none share/gnome/help/evolution/eu/figures/categories_a.png=usr/share/gnome/help/evolution/eu/figures/categories_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/contacts_mainwindow_a.png=usr/share/gnome/help/evolution/eu/figures/contacts_mainwindow_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/delgt-add.png=../../C/figures/delgt-add.png
+s none share/gnome/help/evolution/eu/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+f none share/gnome/help/evolution/eu/figures/evo_adv_search_a.png=usr/share/gnome/help/evolution/eu/figures/evo_adv_search_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_attachreminder_plugin.png=usr/share/gnome/help/evolution/eu/figures/evo_attachreminder_plugin.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_backup_prgsbar.png=usr/share/gnome/help/evolution/eu/figures/evo_backup_prgsbar.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_backup_warning.png=usr/share/gnome/help/evolution/eu/figures/evo_backup_warning.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_blink.png=usr/share/gnome/help/evolution/eu/figures/evo_blink.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_cal_callout_a.png=usr/share/gnome/help/evolution/eu/figures/evo_cal_callout_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_calender_appointmnt.png=usr/share/gnome/help/evolution/eu/figures/evo_calender_appointmnt.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+s none share/gnome/help/evolution/eu/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+f none share/gnome/help/evolution/eu/figures/evo_contacteditor_a.png=usr/share/gnome/help/evolution/eu/figures/evo_contacteditor_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+f none share/gnome/help/evolution/eu/figures/evo_dialog-info.png=usr/share/gnome/help/evolution/eu/figures/evo_dialog-info.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_dialog-warning.png=usr/share/gnome/help/evolution/eu/figures/evo_dialog-warning.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_edit_search.png=usr/share/gnome/help/evolution/eu/figures/evo_edit_search.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+s none share/gnome/help/evolution/eu/figures/evo_flag_follow_up_a.png=../../C/figures/evo_flag_follow_up_a.png
+f none share/gnome/help/evolution/eu/figures/evo_gwreceive_a.png=usr/share/gnome/help/evolution/eu/figures/evo_gwreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+f none share/gnome/help/evolution/eu/figures/evo_imapreceive_a.png=usr/share/gnome/help/evolution/eu/figures/evo_imapreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_junk_a.png=usr/share/gnome/help/evolution/eu/figures/evo_junk_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_label_a.png=usr/share/gnome/help/evolution/eu/figures/evo_label_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_labels_a.png=usr/share/gnome/help/evolution/eu/figures/evo_labels_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_mail_a.png=usr/share/gnome/help/evolution/eu/figures/evo_mail_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_mail_callout_a.png=usr/share/gnome/help/evolution/eu/figures/evo_mail_callout_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_mail_notifier.png=usr/share/gnome/help/evolution/eu/figures/evo_mail_notifier.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_maildirreceive_a.png=usr/share/gnome/help/evolution/eu/figures/evo_maildirreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_mboxreceive_a.png=usr/share/gnome/help/evolution/eu/figures/evo_mboxreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_memo_a.png=usr/share/gnome/help/evolution/eu/figures/evo_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_mhreceive_a.png=usr/share/gnome/help/evolution/eu/figures/evo_mhreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_newmail.png=usr/share/gnome/help/evolution/eu/figures/evo_newmail.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/evo_newmess_a.png=usr/share/gnome/help/evolution/eu/figures/evo_newmess_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_offline.png=../../C/figures/evo_offline.png
+f none share/gnome/help/evolution/eu/figures/evo_popreceive_a.png=usr/share/gnome/help/evolution/eu/figures/evo_popreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+f none share/gnome/help/evolution/eu/figures/evo_rule_a.png=usr/share/gnome/help/evolution/eu/figures/evo_rule_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+f none share/gnome/help/evolution/eu/figures/evo_send_setup_a.png=usr/share/gnome/help/evolution/eu/figures/evo_send_setup_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+s none share/gnome/help/evolution/eu/figures/evo_shd_memo_a.png=../../C/figures/evo_shd_memo_a.png
+f none share/gnome/help/evolution/eu/figures/evo_usereceive_a.png=usr/share/gnome/help/evolution/eu/figures/evo_usereceive_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/eu/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+f none share/gnome/help/evolution/eu/figures/exchng-rec-mails.png=usr/share/gnome/help/evolution/eu/figures/exchng-rec-mails.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+f none share/gnome/help/evolution/eu/figures/filter-new-fig.png=usr/share/gnome/help/evolution/eu/figures/filter-new-fig.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/eu/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/eu/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+f none share/gnome/help/evolution/eu/figures/google_cal_view.png=usr/share/gnome/help/evolution/eu/figures/google_cal_view.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/eu/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/eu/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+f none share/gnome/help/evolution/eu/figures/mailer_preferences.png=usr/share/gnome/help/evolution/eu/figures/mailer_preferences.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/meeting.png=../../C/figures/meeting.png
+f none share/gnome/help/evolution/eu/figures/minus.png=usr/share/gnome/help/evolution/eu/figures/minus.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/plus.png=usr/share/gnome/help/evolution/eu/figures/plus.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/quick_add_a.png=usr/share/gnome/help/evolution/eu/figures/quick_add_a.png 0644 root bin
+s none share/gnome/help/evolution/eu/figures/quick_reference.png=../../C/figures/quick_reference.png
+f none share/gnome/help/evolution/eu/figures/stock_search.png=usr/share/gnome/help/evolution/eu/figures/stock_search.png 0644 root bin
+f none share/gnome/help/evolution/eu/figures/ver_view_a.png=usr/share/gnome/help/evolution/eu/figures/ver_view_a.png 0644 root bin
+d none share/gnome/help/evolution/fr 0755 root bin
+f none share/gnome/help/evolution/fr/evolution.help.copyright=usr/share/gnome/help/evolution/fr/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/fr/evolution.xml=usr/share/gnome/help/evolution/fr/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/fr/figures 0755 root bin
+f none share/gnome/help/evolution/fr/figures/attach_reminder_a.png=usr/share/gnome/help/evolution/fr/figures/attach_reminder_a.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+f none share/gnome/help/evolution/fr/figures/categories_a.png=usr/share/gnome/help/evolution/fr/figures/categories_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/contacts_mainwindow_a.png=usr/share/gnome/help/evolution/fr/figures/contacts_mainwindow_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/delgt-add.png=usr/share/gnome/help/evolution/fr/figures/delgt-add.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+f none share/gnome/help/evolution/fr/figures/evo_adv_search_a.png=usr/share/gnome/help/evolution/fr/figures/evo_adv_search_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_attachreminder_plugin.png=usr/share/gnome/help/evolution/fr/figures/evo_attachreminder_plugin.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_backup_prgsbar.png=usr/share/gnome/help/evolution/fr/figures/evo_backup_prgsbar.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_backup_warning.png=usr/share/gnome/help/evolution/fr/figures/evo_backup_warning.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/evo_blink.png=../../C/figures/evo_blink.png
+f none share/gnome/help/evolution/fr/figures/evo_cal_callout_a.png=usr/share/gnome/help/evolution/fr/figures/evo_cal_callout_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_calender_appointmnt.png=usr/share/gnome/help/evolution/fr/figures/evo_calender_appointmnt.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_calstatus_a.png=usr/share/gnome/help/evolution/fr/figures/evo_calstatus_a.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+f none share/gnome/help/evolution/fr/figures/evo_contacteditor_a.png=usr/share/gnome/help/evolution/fr/figures/evo_contacteditor_a.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/fr/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/fr/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+f none share/gnome/help/evolution/fr/figures/evo_edit_search.png=usr/share/gnome/help/evolution/fr/figures/evo_edit_search.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+f none share/gnome/help/evolution/fr/figures/evo_flag_follow_up_a.png=usr/share/gnome/help/evolution/fr/figures/evo_flag_follow_up_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_gwreceive_a.png=usr/share/gnome/help/evolution/fr/figures/evo_gwreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_gwstatustrack.png=usr/share/gnome/help/evolution/fr/figures/evo_gwstatustrack.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_imapreceive_a.png=usr/share/gnome/help/evolution/fr/figures/evo_imapreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_junk_a.png=usr/share/gnome/help/evolution/fr/figures/evo_junk_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_label_a.png=usr/share/gnome/help/evolution/fr/figures/evo_label_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_labels_a.png=usr/share/gnome/help/evolution/fr/figures/evo_labels_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_mail_a.png=usr/share/gnome/help/evolution/fr/figures/evo_mail_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_mail_callout_a.png=usr/share/gnome/help/evolution/fr/figures/evo_mail_callout_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_mail_notifier.png=usr/share/gnome/help/evolution/fr/figures/evo_mail_notifier.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_maildirreceive_a.png=usr/share/gnome/help/evolution/fr/figures/evo_maildirreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_mboxreceive_a.png=usr/share/gnome/help/evolution/fr/figures/evo_mboxreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_memo_a.png=usr/share/gnome/help/evolution/fr/figures/evo_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_mhreceive_a.png=usr/share/gnome/help/evolution/fr/figures/evo_mhreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_newmail.png=usr/share/gnome/help/evolution/fr/figures/evo_newmail.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_newmess_a.png=usr/share/gnome/help/evolution/fr/figures/evo_newmess_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_offline.png=usr/share/gnome/help/evolution/fr/figures/evo_offline.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_popreceive_a.png=usr/share/gnome/help/evolution/fr/figures/evo_popreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+f none share/gnome/help/evolution/fr/figures/evo_rule_a.png=usr/share/gnome/help/evolution/fr/figures/evo_rule_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_send_option_a.png=usr/share/gnome/help/evolution/fr/figures/evo_send_option_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_send_setup_a.png=usr/share/gnome/help/evolution/fr/figures/evo_send_setup_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_sendstatus_a.png=usr/share/gnome/help/evolution/fr/figures/evo_sendstatus_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_shd_memo_a.png=usr/share/gnome/help/evolution/fr/figures/evo_shd_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/evo_usereceive_a.png=usr/share/gnome/help/evolution/fr/figures/evo_usereceive_a.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/fr/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+f none share/gnome/help/evolution/fr/figures/exchng-rec-mails.png=usr/share/gnome/help/evolution/fr/figures/exchng-rec-mails.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+f none share/gnome/help/evolution/fr/figures/filter-new-fig.png=usr/share/gnome/help/evolution/fr/figures/filter-new-fig.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/fr/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/fr/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+f none share/gnome/help/evolution/fr/figures/google_cal_view.png=usr/share/gnome/help/evolution/fr/figures/google_cal_view.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/fr/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/fr/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+f none share/gnome/help/evolution/fr/figures/mailer_preferences.png=usr/share/gnome/help/evolution/fr/figures/mailer_preferences.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/fr/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/fr/figures/plus.png=../../C/figures/plus.png
+f none share/gnome/help/evolution/fr/figures/quick_add_a.png=usr/share/gnome/help/evolution/fr/figures/quick_add_a.png 0644 root bin
+f none share/gnome/help/evolution/fr/figures/quick_reference.png=usr/share/gnome/help/evolution/fr/figures/quick_reference.png 0644 root bin
+s none share/gnome/help/evolution/fr/figures/stock_search.png=../../C/figures/stock_search.png
+f none share/gnome/help/evolution/fr/figures/ver_view_a.png=usr/share/gnome/help/evolution/fr/figures/ver_view_a.png 0644 root bin
+d none share/gnome/help/evolution/mk 0755 root bin
+f none share/gnome/help/evolution/mk/evolution.help.copyright=usr/share/gnome/help/evolution/mk/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/mk/evolution.xml=usr/share/gnome/help/evolution/mk/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/mk/figures 0755 root bin
+s none share/gnome/help/evolution/mk/figures/attach_reminder_a.png=../../C/figures/attach_reminder_a.png
+s none share/gnome/help/evolution/mk/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+s none share/gnome/help/evolution/mk/figures/categories_a.png=../../C/figures/categories_a.png
+s none share/gnome/help/evolution/mk/figures/contacts_mainwindow_a.png=../../C/figures/contacts_mainwindow_a.png
+s none share/gnome/help/evolution/mk/figures/delgt-add.png=../../C/figures/delgt-add.png
+s none share/gnome/help/evolution/mk/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+s none share/gnome/help/evolution/mk/figures/evo_adv_search_a.png=../../C/figures/evo_adv_search_a.png
+s none share/gnome/help/evolution/mk/figures/evo_attachreminder_plugin.png=../../C/figures/evo_attachreminder_plugin.png
+s none share/gnome/help/evolution/mk/figures/evo_backup_prgsbar.png=../../C/figures/evo_backup_prgsbar.png
+s none share/gnome/help/evolution/mk/figures/evo_backup_warning.png=../../C/figures/evo_backup_warning.png
+s none share/gnome/help/evolution/mk/figures/evo_blink.png=../../C/figures/evo_blink.png
+s none share/gnome/help/evolution/mk/figures/evo_cal_callout_a.png=../../C/figures/evo_cal_callout_a.png
+s none share/gnome/help/evolution/mk/figures/evo_calender_appointmnt.png=../../C/figures/evo_calender_appointmnt.png
+s none share/gnome/help/evolution/mk/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+s none share/gnome/help/evolution/mk/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+s none share/gnome/help/evolution/mk/figures/evo_contacteditor_a.png=../../C/figures/evo_contacteditor_a.png
+s none share/gnome/help/evolution/mk/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/mk/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/mk/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+s none share/gnome/help/evolution/mk/figures/evo_edit_search.png=../../C/figures/evo_edit_search.png
+s none share/gnome/help/evolution/mk/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+s none share/gnome/help/evolution/mk/figures/evo_flag_follow_up_a.png=../../C/figures/evo_flag_follow_up_a.png
+s none share/gnome/help/evolution/mk/figures/evo_gwreceive_a.png=../../C/figures/evo_gwreceive_a.png
+s none share/gnome/help/evolution/mk/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+s none share/gnome/help/evolution/mk/figures/evo_imapreceive_a.png=../../C/figures/evo_imapreceive_a.png
+s none share/gnome/help/evolution/mk/figures/evo_junk_a.png=../../C/figures/evo_junk_a.png
+s none share/gnome/help/evolution/mk/figures/evo_label_a.png=../../C/figures/evo_label_a.png
+s none share/gnome/help/evolution/mk/figures/evo_labels_a.png=../../C/figures/evo_labels_a.png
+s none share/gnome/help/evolution/mk/figures/evo_mail_a.png=../../C/figures/evo_mail_a.png
+s none share/gnome/help/evolution/mk/figures/evo_mail_callout_a.png=../../C/figures/evo_mail_callout_a.png
+s none share/gnome/help/evolution/mk/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+s none share/gnome/help/evolution/mk/figures/evo_maildirreceive_a.png=../../C/figures/evo_maildirreceive_a.png
+s none share/gnome/help/evolution/mk/figures/evo_mboxreceive_a.png=../../C/figures/evo_mboxreceive_a.png
+s none share/gnome/help/evolution/mk/figures/evo_memo_a.png=../../C/figures/evo_memo_a.png
+s none share/gnome/help/evolution/mk/figures/evo_mhreceive_a.png=../../C/figures/evo_mhreceive_a.png
+s none share/gnome/help/evolution/mk/figures/evo_newmail.png=../../C/figures/evo_newmail.png
+s none share/gnome/help/evolution/mk/figures/evo_newmess_a.png=../../C/figures/evo_newmess_a.png
+s none share/gnome/help/evolution/mk/figures/evo_offline.png=../../C/figures/evo_offline.png
+s none share/gnome/help/evolution/mk/figures/evo_popreceive_a.png=../../C/figures/evo_popreceive_a.png
+s none share/gnome/help/evolution/mk/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+s none share/gnome/help/evolution/mk/figures/evo_rule_a.png=../../C/figures/evo_rule_a.png
+s none share/gnome/help/evolution/mk/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+s none share/gnome/help/evolution/mk/figures/evo_send_setup_a.png=../../C/figures/evo_send_setup_a.png
+s none share/gnome/help/evolution/mk/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+s none share/gnome/help/evolution/mk/figures/evo_shd_memo_a.png=../../C/figures/evo_shd_memo_a.png
+s none share/gnome/help/evolution/mk/figures/evo_usereceive_a.png=../../C/figures/evo_usereceive_a.png
+s none share/gnome/help/evolution/mk/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/mk/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+s none share/gnome/help/evolution/mk/figures/exchng-rec-mails.png=../../C/figures/exchng-rec-mails.png
+s none share/gnome/help/evolution/mk/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+s none share/gnome/help/evolution/mk/figures/filter-new-fig.png=../../C/figures/filter-new-fig.png
+s none share/gnome/help/evolution/mk/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/mk/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/mk/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+s none share/gnome/help/evolution/mk/figures/google_cal_view.png=../../C/figures/google_cal_view.png
+s none share/gnome/help/evolution/mk/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/mk/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/mk/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+s none share/gnome/help/evolution/mk/figures/mailer_preferences.png=../../C/figures/mailer_preferences.png
+s none share/gnome/help/evolution/mk/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/mk/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/mk/figures/plus.png=../../C/figures/plus.png
+s none share/gnome/help/evolution/mk/figures/quick_add_a.png=../../C/figures/quick_add_a.png
+s none share/gnome/help/evolution/mk/figures/quick_reference.png=../../C/figures/quick_reference.png
+s none share/gnome/help/evolution/mk/figures/stock_search.png=../../C/figures/stock_search.png
+s none share/gnome/help/evolution/mk/figures/ver_view_a.png=../../C/figures/ver_view_a.png
+d none share/gnome/help/evolution/oc 0755 root bin
+f none share/gnome/help/evolution/oc/evolution.help.copyright=usr/share/gnome/help/evolution/oc/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/oc/evolution.xml=usr/share/gnome/help/evolution/oc/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/oc/figures 0755 root bin
+s none share/gnome/help/evolution/oc/figures/attach_reminder_a.png=../../C/figures/attach_reminder_a.png
+s none share/gnome/help/evolution/oc/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+s none share/gnome/help/evolution/oc/figures/categories_a.png=../../C/figures/categories_a.png
+s none share/gnome/help/evolution/oc/figures/contacts_mainwindow_a.png=../../C/figures/contacts_mainwindow_a.png
+s none share/gnome/help/evolution/oc/figures/delgt-add.png=../../C/figures/delgt-add.png
+s none share/gnome/help/evolution/oc/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+s none share/gnome/help/evolution/oc/figures/evo_adv_search_a.png=../../C/figures/evo_adv_search_a.png
+s none share/gnome/help/evolution/oc/figures/evo_attachreminder_plugin.png=../../C/figures/evo_attachreminder_plugin.png
+s none share/gnome/help/evolution/oc/figures/evo_backup_prgsbar.png=../../C/figures/evo_backup_prgsbar.png
+s none share/gnome/help/evolution/oc/figures/evo_backup_warning.png=../../C/figures/evo_backup_warning.png
+s none share/gnome/help/evolution/oc/figures/evo_blink.png=../../C/figures/evo_blink.png
+s none share/gnome/help/evolution/oc/figures/evo_cal_callout_a.png=../../C/figures/evo_cal_callout_a.png
+s none share/gnome/help/evolution/oc/figures/evo_calender_appointmnt.png=../../C/figures/evo_calender_appointmnt.png
+s none share/gnome/help/evolution/oc/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+s none share/gnome/help/evolution/oc/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+s none share/gnome/help/evolution/oc/figures/evo_contacteditor_a.png=../../C/figures/evo_contacteditor_a.png
+s none share/gnome/help/evolution/oc/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/oc/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/oc/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+s none share/gnome/help/evolution/oc/figures/evo_edit_search.png=../../C/figures/evo_edit_search.png
+s none share/gnome/help/evolution/oc/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+s none share/gnome/help/evolution/oc/figures/evo_flag_follow_up_a.png=../../C/figures/evo_flag_follow_up_a.png
+s none share/gnome/help/evolution/oc/figures/evo_gwreceive_a.png=../../C/figures/evo_gwreceive_a.png
+s none share/gnome/help/evolution/oc/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+s none share/gnome/help/evolution/oc/figures/evo_imapreceive_a.png=../../C/figures/evo_imapreceive_a.png
+s none share/gnome/help/evolution/oc/figures/evo_junk_a.png=../../C/figures/evo_junk_a.png
+s none share/gnome/help/evolution/oc/figures/evo_label_a.png=../../C/figures/evo_label_a.png
+s none share/gnome/help/evolution/oc/figures/evo_labels_a.png=../../C/figures/evo_labels_a.png
+s none share/gnome/help/evolution/oc/figures/evo_mail_a.png=../../C/figures/evo_mail_a.png
+s none share/gnome/help/evolution/oc/figures/evo_mail_callout_a.png=../../C/figures/evo_mail_callout_a.png
+s none share/gnome/help/evolution/oc/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+s none share/gnome/help/evolution/oc/figures/evo_maildirreceive_a.png=../../C/figures/evo_maildirreceive_a.png
+s none share/gnome/help/evolution/oc/figures/evo_mboxreceive_a.png=../../C/figures/evo_mboxreceive_a.png
+s none share/gnome/help/evolution/oc/figures/evo_memo_a.png=../../C/figures/evo_memo_a.png
+s none share/gnome/help/evolution/oc/figures/evo_mhreceive_a.png=../../C/figures/evo_mhreceive_a.png
+s none share/gnome/help/evolution/oc/figures/evo_newmail.png=../../C/figures/evo_newmail.png
+s none share/gnome/help/evolution/oc/figures/evo_newmess_a.png=../../C/figures/evo_newmess_a.png
+s none share/gnome/help/evolution/oc/figures/evo_offline.png=../../C/figures/evo_offline.png
+s none share/gnome/help/evolution/oc/figures/evo_popreceive_a.png=../../C/figures/evo_popreceive_a.png
+s none share/gnome/help/evolution/oc/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+s none share/gnome/help/evolution/oc/figures/evo_rule_a.png=../../C/figures/evo_rule_a.png
+s none share/gnome/help/evolution/oc/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+s none share/gnome/help/evolution/oc/figures/evo_send_setup_a.png=../../C/figures/evo_send_setup_a.png
+s none share/gnome/help/evolution/oc/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+s none share/gnome/help/evolution/oc/figures/evo_shd_memo_a.png=../../C/figures/evo_shd_memo_a.png
+s none share/gnome/help/evolution/oc/figures/evo_usereceive_a.png=../../C/figures/evo_usereceive_a.png
+s none share/gnome/help/evolution/oc/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/oc/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+s none share/gnome/help/evolution/oc/figures/exchng-rec-mails.png=../../C/figures/exchng-rec-mails.png
+s none share/gnome/help/evolution/oc/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+s none share/gnome/help/evolution/oc/figures/filter-new-fig.png=../../C/figures/filter-new-fig.png
+s none share/gnome/help/evolution/oc/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/oc/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/oc/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+s none share/gnome/help/evolution/oc/figures/google_cal_view.png=../../C/figures/google_cal_view.png
+s none share/gnome/help/evolution/oc/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/oc/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/oc/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+s none share/gnome/help/evolution/oc/figures/mailer_preferences.png=../../C/figures/mailer_preferences.png
+s none share/gnome/help/evolution/oc/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/oc/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/oc/figures/plus.png=../../C/figures/plus.png
+s none share/gnome/help/evolution/oc/figures/quick_add_a.png=../../C/figures/quick_add_a.png
+s none share/gnome/help/evolution/oc/figures/quick_reference.png=../../C/figures/quick_reference.png
+s none share/gnome/help/evolution/oc/figures/stock_search.png=../../C/figures/stock_search.png
+s none share/gnome/help/evolution/oc/figures/ver_view_a.png=../../C/figures/ver_view_a.png
+d none share/gnome/help/evolution/ru 0755 root bin
+f none share/gnome/help/evolution/ru/evolution.help.copyright=usr/share/gnome/help/evolution/ru/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/ru/evolution.xml=usr/share/gnome/help/evolution/ru/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/ru/figures 0755 root bin
+s none share/gnome/help/evolution/ru/figures/attach_reminder_a.png=../../C/figures/attach_reminder_a.png
+s none share/gnome/help/evolution/ru/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+s none share/gnome/help/evolution/ru/figures/categories_a.png=../../C/figures/categories_a.png
+s none share/gnome/help/evolution/ru/figures/contacts_mainwindow_a.png=../../C/figures/contacts_mainwindow_a.png
+s none share/gnome/help/evolution/ru/figures/delgt-add.png=../../C/figures/delgt-add.png
+s none share/gnome/help/evolution/ru/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+s none share/gnome/help/evolution/ru/figures/evo_adv_search_a.png=../../C/figures/evo_adv_search_a.png
+s none share/gnome/help/evolution/ru/figures/evo_attachreminder_plugin.png=../../C/figures/evo_attachreminder_plugin.png
+s none share/gnome/help/evolution/ru/figures/evo_backup_prgsbar.png=../../C/figures/evo_backup_prgsbar.png
+s none share/gnome/help/evolution/ru/figures/evo_backup_warning.png=../../C/figures/evo_backup_warning.png
+s none share/gnome/help/evolution/ru/figures/evo_blink.png=../../C/figures/evo_blink.png
+s none share/gnome/help/evolution/ru/figures/evo_cal_callout_a.png=../../C/figures/evo_cal_callout_a.png
+s none share/gnome/help/evolution/ru/figures/evo_calender_appointmnt.png=../../C/figures/evo_calender_appointmnt.png
+s none share/gnome/help/evolution/ru/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+s none share/gnome/help/evolution/ru/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+s none share/gnome/help/evolution/ru/figures/evo_contacteditor_a.png=../../C/figures/evo_contacteditor_a.png
+s none share/gnome/help/evolution/ru/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/ru/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/ru/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+s none share/gnome/help/evolution/ru/figures/evo_edit_search.png=../../C/figures/evo_edit_search.png
+s none share/gnome/help/evolution/ru/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+s none share/gnome/help/evolution/ru/figures/evo_flag_follow_up_a.png=../../C/figures/evo_flag_follow_up_a.png
+s none share/gnome/help/evolution/ru/figures/evo_gwreceive_a.png=../../C/figures/evo_gwreceive_a.png
+s none share/gnome/help/evolution/ru/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+s none share/gnome/help/evolution/ru/figures/evo_imapreceive_a.png=../../C/figures/evo_imapreceive_a.png
+s none share/gnome/help/evolution/ru/figures/evo_junk_a.png=../../C/figures/evo_junk_a.png
+s none share/gnome/help/evolution/ru/figures/evo_label_a.png=../../C/figures/evo_label_a.png
+s none share/gnome/help/evolution/ru/figures/evo_labels_a.png=../../C/figures/evo_labels_a.png
+s none share/gnome/help/evolution/ru/figures/evo_mail_a.png=../../C/figures/evo_mail_a.png
+s none share/gnome/help/evolution/ru/figures/evo_mail_callout_a.png=../../C/figures/evo_mail_callout_a.png
+s none share/gnome/help/evolution/ru/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+s none share/gnome/help/evolution/ru/figures/evo_maildirreceive_a.png=../../C/figures/evo_maildirreceive_a.png
+s none share/gnome/help/evolution/ru/figures/evo_mboxreceive_a.png=../../C/figures/evo_mboxreceive_a.png
+s none share/gnome/help/evolution/ru/figures/evo_memo_a.png=../../C/figures/evo_memo_a.png
+s none share/gnome/help/evolution/ru/figures/evo_mhreceive_a.png=../../C/figures/evo_mhreceive_a.png
+s none share/gnome/help/evolution/ru/figures/evo_newmail.png=../../C/figures/evo_newmail.png
+s none share/gnome/help/evolution/ru/figures/evo_newmess_a.png=../../C/figures/evo_newmess_a.png
+s none share/gnome/help/evolution/ru/figures/evo_offline.png=../../C/figures/evo_offline.png
+s none share/gnome/help/evolution/ru/figures/evo_popreceive_a.png=../../C/figures/evo_popreceive_a.png
+s none share/gnome/help/evolution/ru/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+s none share/gnome/help/evolution/ru/figures/evo_rule_a.png=../../C/figures/evo_rule_a.png
+s none share/gnome/help/evolution/ru/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+s none share/gnome/help/evolution/ru/figures/evo_send_setup_a.png=../../C/figures/evo_send_setup_a.png
+s none share/gnome/help/evolution/ru/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+s none share/gnome/help/evolution/ru/figures/evo_shd_memo_a.png=../../C/figures/evo_shd_memo_a.png
+s none share/gnome/help/evolution/ru/figures/evo_usereceive_a.png=../../C/figures/evo_usereceive_a.png
+s none share/gnome/help/evolution/ru/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/ru/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+s none share/gnome/help/evolution/ru/figures/exchng-rec-mails.png=../../C/figures/exchng-rec-mails.png
+s none share/gnome/help/evolution/ru/figures/exchng-rec-options.png=../../C/figures/exchng-rec-options.png
+s none share/gnome/help/evolution/ru/figures/filter-new-fig.png=../../C/figures/filter-new-fig.png
+s none share/gnome/help/evolution/ru/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/ru/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/ru/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+s none share/gnome/help/evolution/ru/figures/google_cal_view.png=../../C/figures/google_cal_view.png
+s none share/gnome/help/evolution/ru/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/ru/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/ru/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+s none share/gnome/help/evolution/ru/figures/mailer_preferences.png=../../C/figures/mailer_preferences.png
+s none share/gnome/help/evolution/ru/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/ru/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/ru/figures/plus.png=../../C/figures/plus.png
+s none share/gnome/help/evolution/ru/figures/quick_add_a.png=../../C/figures/quick_add_a.png
+s none share/gnome/help/evolution/ru/figures/quick_reference.png=../../C/figures/quick_reference.png
+s none share/gnome/help/evolution/ru/figures/stock_search.png=../../C/figures/stock_search.png
+s none share/gnome/help/evolution/ru/figures/ver_view_a.png=../../C/figures/ver_view_a.png
+d none share/gnome/help/evolution/sv 0755 root bin
+f none share/gnome/help/evolution/sv/evolution.help.copyright=usr/share/gnome/help/evolution/sv/evolution.help.copyright 0644 root bin
+f none share/gnome/help/evolution/sv/evolution.xml=usr/share/gnome/help/evolution/sv/evolution.xml 0644 root bin
+d none share/gnome/help/evolution/sv/figures 0755 root bin
+s none share/gnome/help/evolution/sv/figures/attach_reminder_a.png=../../C/figures/attach_reminder_a.png
+s none share/gnome/help/evolution/sv/figures/calendar_preference_display.png=../../C/figures/calendar_preference_display.png
+s none share/gnome/help/evolution/sv/figures/categories_a.png=../../C/figures/categories_a.png
+f none share/gnome/help/evolution/sv/figures/contacts_mainwindow_a.png=usr/share/gnome/help/evolution/sv/figures/contacts_mainwindow_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/delgt-add.png=../../C/figures/delgt-add.png
+s none share/gnome/help/evolution/sv/figures/evo_Wcal_prop_a.png=../../C/figures/evo_Wcal_prop_a.png
+f none share/gnome/help/evolution/sv/figures/evo_adv_search_a.png=usr/share/gnome/help/evolution/sv/figures/evo_adv_search_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_attachreminder_plugin.png=../../C/figures/evo_attachreminder_plugin.png
+s none share/gnome/help/evolution/sv/figures/evo_backup_prgsbar.png=../../C/figures/evo_backup_prgsbar.png
+s none share/gnome/help/evolution/sv/figures/evo_backup_warning.png=../../C/figures/evo_backup_warning.png
+s none share/gnome/help/evolution/sv/figures/evo_blink.png=../../C/figures/evo_blink.png
+f none share/gnome/help/evolution/sv/figures/evo_cal_callout_a.png=usr/share/gnome/help/evolution/sv/figures/evo_cal_callout_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_calender_appointmnt.png=../../C/figures/evo_calender_appointmnt.png
+s none share/gnome/help/evolution/sv/figures/evo_calstatus_a.png=../../C/figures/evo_calstatus_a.png
+s none share/gnome/help/evolution/sv/figures/evo_caltasks_a.png=../../C/figures/evo_caltasks_a.png
+f none share/gnome/help/evolution/sv/figures/evo_contacteditor_a.png=usr/share/gnome/help/evolution/sv/figures/evo_contacteditor_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_delegate_permission_a.png=../../C/figures/evo_delegate_permission_a.png
+s none share/gnome/help/evolution/sv/figures/evo_dialog-info.png=../../C/figures/evo_dialog-info.png
+s none share/gnome/help/evolution/sv/figures/evo_dialog-warning.png=../../C/figures/evo_dialog-warning.png
+s none share/gnome/help/evolution/sv/figures/evo_edit_search.png=../../C/figures/evo_edit_search.png
+s none share/gnome/help/evolution/sv/figures/evo_exchng_mapi.png=../../C/figures/evo_exchng_mapi.png
+f none share/gnome/help/evolution/sv/figures/evo_flag_follow_up_a.png=usr/share/gnome/help/evolution/sv/figures/evo_flag_follow_up_a.png 0644 root bin
+f none share/gnome/help/evolution/sv/figures/evo_gwreceive_a.png=usr/share/gnome/help/evolution/sv/figures/evo_gwreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_gwstatustrack.png=../../C/figures/evo_gwstatustrack.png
+f none share/gnome/help/evolution/sv/figures/evo_imapreceive_a.png=usr/share/gnome/help/evolution/sv/figures/evo_imapreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_junk_a.png=../../C/figures/evo_junk_a.png
+s none share/gnome/help/evolution/sv/figures/evo_label_a.png=../../C/figures/evo_label_a.png
+s none share/gnome/help/evolution/sv/figures/evo_labels_a.png=../../C/figures/evo_labels_a.png
+f none share/gnome/help/evolution/sv/figures/evo_mail_a.png=usr/share/gnome/help/evolution/sv/figures/evo_mail_a.png 0644 root bin
+f none share/gnome/help/evolution/sv/figures/evo_mail_callout_a.png=usr/share/gnome/help/evolution/sv/figures/evo_mail_callout_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_mail_notifier.png=../../C/figures/evo_mail_notifier.png
+f none share/gnome/help/evolution/sv/figures/evo_maildirreceive_a.png=usr/share/gnome/help/evolution/sv/figures/evo_maildirreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/sv/figures/evo_mboxreceive_a.png=usr/share/gnome/help/evolution/sv/figures/evo_mboxreceive_a.png 0644 root bin
+f none share/gnome/help/evolution/sv/figures/evo_memo_a.png=usr/share/gnome/help/evolution/sv/figures/evo_memo_a.png 0644 root bin
+f none share/gnome/help/evolution/sv/figures/evo_mhreceive_a.png=usr/share/gnome/help/evolution/sv/figures/evo_mhreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_newmail.png=../../C/figures/evo_newmail.png
+f none share/gnome/help/evolution/sv/figures/evo_newmess_a.png=usr/share/gnome/help/evolution/sv/figures/evo_newmess_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_offline.png=../../C/figures/evo_offline.png
+f none share/gnome/help/evolution/sv/figures/evo_popreceive_a.png=usr/share/gnome/help/evolution/sv/figures/evo_popreceive_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_proxyadd_a.png=../../C/figures/evo_proxyadd_a.png
+f none share/gnome/help/evolution/sv/figures/evo_rule_a.png=usr/share/gnome/help/evolution/sv/figures/evo_rule_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_send_option_a.png=../../C/figures/evo_send_option_a.png
+f none share/gnome/help/evolution/sv/figures/evo_send_setup_a.png=usr/share/gnome/help/evolution/sv/figures/evo_send_setup_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evo_sendstatus_a.png=../../C/figures/evo_sendstatus_a.png
+s none share/gnome/help/evolution/sv/figures/evo_shd_memo_a.png=../../C/figures/evo_shd_memo_a.png
+f none share/gnome/help/evolution/sv/figures/evo_usereceive_a.png=usr/share/gnome/help/evolution/sv/figures/evo_usereceive_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/evolution_contact_preference.png=../../C/figures/evolution_contact_preference.png
+s none share/gnome/help/evolution/sv/figures/evolution_mail_preference.png=../../C/figures/evolution_mail_preference.png
+f none share/gnome/help/evolution/sv/figures/exchng-rec-mails.png=usr/share/gnome/help/evolution/sv/figures/exchng-rec-mails.png 0644 root bin
+f none share/gnome/help/evolution/sv/figures/exchng-rec-options.png=usr/share/gnome/help/evolution/sv/figures/exchng-rec-options.png 0644 root bin
+f none share/gnome/help/evolution/sv/figures/filter-new-fig.png=usr/share/gnome/help/evolution/sv/figures/filter-new-fig.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/folder_plus.png=../../C/figures/folder_plus.png
+s none share/gnome/help/evolution/sv/figures/folder_size_mapi.png=../../C/figures/folder_size_mapi.png
+s none share/gnome/help/evolution/sv/figures/folder_size_preference.png=../../C/figures/folder_size_preference.png
+s none share/gnome/help/evolution/sv/figures/google_cal_view.png=../../C/figures/google_cal_view.png
+s none share/gnome/help/evolution/sv/figures/groupwise_resend.png=../../C/figures/groupwise_resend.png
+s none share/gnome/help/evolution/sv/figures/groupwise_resend_retract.png=../../C/figures/groupwise_resend_retract.png
+s none share/gnome/help/evolution/sv/figures/local_ics_calendar.png=../../C/figures/local_ics_calendar.png
+f none share/gnome/help/evolution/sv/figures/mailer_preferences.png=usr/share/gnome/help/evolution/sv/figures/mailer_preferences.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/meeting.png=../../C/figures/meeting.png
+s none share/gnome/help/evolution/sv/figures/minus.png=../../C/figures/minus.png
+s none share/gnome/help/evolution/sv/figures/plus.png=../../C/figures/plus.png
+f none share/gnome/help/evolution/sv/figures/quick_add_a.png=usr/share/gnome/help/evolution/sv/figures/quick_add_a.png 0644 root bin
+s none share/gnome/help/evolution/sv/figures/quick_reference.png=../../C/figures/quick_reference.png
+s none share/gnome/help/evolution/sv/figures/stock_search.png=../../C/figures/stock_search.png
+f none share/gnome/help/evolution/sv/figures/ver_view_a.png=usr/share/gnome/help/evolution/sv/figures/ver_view_a.png 0644 root bin
+d none share/locale 0755 root other
+d none share/locale/af 0755 root other
+d none share/locale/af/LC_MESSAGES 0755 root other
+f none share/locale/af/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/af/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/af/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/af/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/am 0755 root other
+d none share/locale/am/LC_MESSAGES 0755 root other
+f none share/locale/am/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/am/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/am/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/am/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ar 0755 root other
+d none share/locale/ar/LC_MESSAGES 0755 root other
+f none share/locale/ar/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ar/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ar/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ar/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/as 0755 root other
+d none share/locale/as/LC_MESSAGES 0755 root other
+f none share/locale/as/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/as/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/as/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/as/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ast 0755 root other
+d none share/locale/ast/LC_MESSAGES 0755 root other
+f none share/locale/ast/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ast/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ast/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ast/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/az 0755 root other
+d none share/locale/az/LC_MESSAGES 0755 root other
+f none share/locale/az/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/az/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/az/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/az/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/be@latin 0755 root other
+d none share/locale/be@latin/LC_MESSAGES 0755 root other
+f none share/locale/be@latin/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/be@latin/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/be@latin/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/be@latin/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/bg 0755 root other
+d none share/locale/bg/LC_MESSAGES 0755 root other
+f none share/locale/bg/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/bg/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/bg/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/bg/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/bn 0755 root other
+d none share/locale/bn/LC_MESSAGES 0755 root other
+f none share/locale/bn/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/bn/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/bn/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/bn/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/bn_IN 0755 root other
+d none share/locale/bn_IN/LC_MESSAGES 0755 root other
+f none share/locale/bn_IN/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/bn_IN/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/bn_IN/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/bn_IN/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/br 0755 root other
+d none share/locale/br/LC_MESSAGES 0755 root other
+f none share/locale/br/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/br/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/br/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/br/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/bs 0755 root other
+d none share/locale/bs/LC_MESSAGES 0755 root other
+f none share/locale/bs/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/bs/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/bs/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/bs/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ca 0755 root other
+d none share/locale/ca/LC_MESSAGES 0755 root other
+f none share/locale/ca/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ca/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ca/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ca/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ca@valencia 0755 root other
+d none share/locale/ca@valencia/LC_MESSAGES 0755 root other
+f none share/locale/ca@valencia/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ca@valencia/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ca@valencia/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ca@valencia/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/cs 0755 root other
+d none share/locale/cs/LC_MESSAGES 0755 root other
+f none share/locale/cs/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/cs/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/cs/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/cs/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/cy 0755 root other
+d none share/locale/cy/LC_MESSAGES 0755 root other
+f none share/locale/cy/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/cy/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/cy/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/cy/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/da 0755 root other
+d none share/locale/da/LC_MESSAGES 0755 root other
+f none share/locale/da/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/da/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/da/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/da/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/de 0755 root other
+d none share/locale/de/LC_MESSAGES 0755 root other
+f none share/locale/de/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/de/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/de/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/de/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/dz 0755 root other
+d none share/locale/dz/LC_MESSAGES 0755 root other
+f none share/locale/dz/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/dz/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/dz/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/dz/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/el 0755 root other
+d none share/locale/el/LC_MESSAGES 0755 root other
+f none share/locale/el/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/el/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/el/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/el/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/en@shaw 0755 root other
+d none share/locale/en@shaw/LC_MESSAGES 0755 root other
+f none share/locale/en@shaw/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/en@shaw/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/en@shaw/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/en@shaw/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/en_AU 0755 root other
+d none share/locale/en_AU/LC_MESSAGES 0755 root other
+f none share/locale/en_AU/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/en_AU/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/en_AU/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/en_AU/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/en_CA 0755 root other
+d none share/locale/en_CA/LC_MESSAGES 0755 root other
+f none share/locale/en_CA/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/en_CA/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/en_CA/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/en_CA/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/en_GB 0755 root other
+d none share/locale/en_GB/LC_MESSAGES 0755 root other
+f none share/locale/en_GB/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/en_GB/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/en_GB/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/en_GB/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/es 0755 root other
+d none share/locale/es/LC_MESSAGES 0755 root other
+f none share/locale/es/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/es/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/es/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/es/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/et 0755 root other
+d none share/locale/et/LC_MESSAGES 0755 root other
+f none share/locale/et/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/et/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/et/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/et/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/eu 0755 root other
+d none share/locale/eu/LC_MESSAGES 0755 root other
+f none share/locale/eu/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/eu/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/eu/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/eu/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/fa 0755 root other
+d none share/locale/fa/LC_MESSAGES 0755 root other
+f none share/locale/fa/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/fa/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/fa/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/fa/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/fi 0755 root other
+d none share/locale/fi/LC_MESSAGES 0755 root other
+f none share/locale/fi/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/fi/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/fi/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/fi/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/fr 0755 root other
+d none share/locale/fr/LC_MESSAGES 0755 root other
+f none share/locale/fr/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/fr/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/fr/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/fr/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ga 0755 root other
+d none share/locale/ga/LC_MESSAGES 0755 root other
+f none share/locale/ga/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ga/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ga/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ga/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/gl 0755 root other
+d none share/locale/gl/LC_MESSAGES 0755 root other
+f none share/locale/gl/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/gl/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/gl/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/gl/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/gu 0755 root other
+d none share/locale/gu/LC_MESSAGES 0755 root other
+f none share/locale/gu/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/gu/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/gu/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/gu/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/he 0755 root other
+d none share/locale/he/LC_MESSAGES 0755 root other
+f none share/locale/he/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/he/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/he/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/he/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/hi 0755 root other
+d none share/locale/hi/LC_MESSAGES 0755 root other
+f none share/locale/hi/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/hi/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/hi/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/hi/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/hr 0755 root other
+d none share/locale/hr/LC_MESSAGES 0755 root other
+f none share/locale/hr/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/hr/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/hr/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/hr/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/hu 0755 root other
+d none share/locale/hu/LC_MESSAGES 0755 root other
+f none share/locale/hu/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/hu/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/hu/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/hu/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/id 0755 root other
+d none share/locale/id/LC_MESSAGES 0755 root other
+f none share/locale/id/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/id/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/id/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/id/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/is 0755 root other
+d none share/locale/is/LC_MESSAGES 0755 root other
+f none share/locale/is/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/is/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/is/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/is/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/it 0755 root other
+d none share/locale/it/LC_MESSAGES 0755 root other
+f none share/locale/it/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/it/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/it/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/it/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ja 0755 root other
+d none share/locale/ja/LC_MESSAGES 0755 root other
+f none share/locale/ja/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ja/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ja/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ja/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ka 0755 root other
+d none share/locale/ka/LC_MESSAGES 0755 root other
+f none share/locale/ka/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ka/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ka/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ka/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/kn 0755 root other
+d none share/locale/kn/LC_MESSAGES 0755 root other
+f none share/locale/kn/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/kn/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/kn/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/kn/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ko 0755 root other
+d none share/locale/ko/LC_MESSAGES 0755 root other
+f none share/locale/ko/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ko/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ko/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ko/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ku 0755 root other
+d none share/locale/ku/LC_MESSAGES 0755 root other
+f none share/locale/ku/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ku/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ku/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ku/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/lt 0755 root other
+d none share/locale/lt/LC_MESSAGES 0755 root other
+f none share/locale/lt/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/lt/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/lt/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/lt/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/lv 0755 root other
+d none share/locale/lv/LC_MESSAGES 0755 root other
+f none share/locale/lv/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/lv/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/lv/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/lv/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/mai 0755 root other
+d none share/locale/mai/LC_MESSAGES 0755 root other
+f none share/locale/mai/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/mai/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/mai/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/mai/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/mk 0755 root other
+d none share/locale/mk/LC_MESSAGES 0755 root other
+f none share/locale/mk/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/mk/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/mk/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/mk/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ml 0755 root other
+d none share/locale/ml/LC_MESSAGES 0755 root other
+f none share/locale/ml/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ml/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ml/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ml/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/mn 0755 root other
+d none share/locale/mn/LC_MESSAGES 0755 root other
+f none share/locale/mn/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/mn/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/mn/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/mn/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/mr 0755 root other
+d none share/locale/mr/LC_MESSAGES 0755 root other
+f none share/locale/mr/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/mr/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/mr/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/mr/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ms 0755 root other
+d none share/locale/ms/LC_MESSAGES 0755 root other
+f none share/locale/ms/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ms/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ms/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ms/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/nb 0755 root other
+d none share/locale/nb/LC_MESSAGES 0755 root other
+f none share/locale/nb/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/nb/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/nb/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/nb/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/nds 0755 root other
+d none share/locale/nds/LC_MESSAGES 0755 root other
+f none share/locale/nds/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/nds/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/nds/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/nds/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ne 0755 root other
+d none share/locale/ne/LC_MESSAGES 0755 root other
+f none share/locale/ne/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ne/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ne/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ne/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/nl 0755 root other
+d none share/locale/nl/LC_MESSAGES 0755 root other
+f none share/locale/nl/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/nl/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/nl/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/nl/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/nn 0755 root other
+d none share/locale/nn/LC_MESSAGES 0755 root other
+f none share/locale/nn/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/nn/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/nn/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/nn/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/oc 0755 root other
+d none share/locale/oc/LC_MESSAGES 0755 root other
+f none share/locale/oc/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/oc/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/oc/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/oc/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/or 0755 root other
+d none share/locale/or/LC_MESSAGES 0755 root other
+f none share/locale/or/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/or/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/or/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/or/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/pa 0755 root other
+d none share/locale/pa/LC_MESSAGES 0755 root other
+f none share/locale/pa/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/pa/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/pa/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/pa/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/pl 0755 root other
+d none share/locale/pl/LC_MESSAGES 0755 root other
+f none share/locale/pl/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/pl/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/pl/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/pl/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ps 0755 root other
+d none share/locale/ps/LC_MESSAGES 0755 root other
+f none share/locale/ps/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ps/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ps/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ps/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/pt 0755 root other
+d none share/locale/pt/LC_MESSAGES 0755 root other
+f none share/locale/pt/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/pt/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/pt/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/pt/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/pt_BR 0755 root other
+d none share/locale/pt_BR/LC_MESSAGES 0755 root other
+f none share/locale/pt_BR/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/pt_BR/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/pt_BR/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/pt_BR/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ro 0755 root other
+d none share/locale/ro/LC_MESSAGES 0755 root other
+f none share/locale/ro/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ro/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ro/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ro/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ru 0755 root other
+d none share/locale/ru/LC_MESSAGES 0755 root other
+f none share/locale/ru/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ru/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ru/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/rw 0755 root other
+d none share/locale/rw/LC_MESSAGES 0755 root other
+f none share/locale/rw/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/rw/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/rw/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/rw/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/si 0755 root other
+d none share/locale/si/LC_MESSAGES 0755 root other
+f none share/locale/si/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/si/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/si/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/si/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/sk 0755 root other
+d none share/locale/sk/LC_MESSAGES 0755 root other
+f none share/locale/sk/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/sk/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/sk/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/sk/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/sl 0755 root other
+d none share/locale/sl/LC_MESSAGES 0755 root other
+f none share/locale/sl/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/sl/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/sl/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/sl/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/sq 0755 root other
+d none share/locale/sq/LC_MESSAGES 0755 root other
+f none share/locale/sq/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/sq/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/sq/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/sq/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/sr 0755 root other
+d none share/locale/sr/LC_MESSAGES 0755 root other
+f none share/locale/sr/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/sr/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/sr/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/sr/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/sr@latin 0755 root other
+d none share/locale/sr@latin/LC_MESSAGES 0755 root other
+f none share/locale/sr@latin/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/sr@latin/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/sr@latin/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/sr@latin/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/sv 0755 root other
+d none share/locale/sv/LC_MESSAGES 0755 root other
+f none share/locale/sv/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/sv/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/sv/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/sv/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/ta 0755 root other
+d none share/locale/ta/LC_MESSAGES 0755 root other
+f none share/locale/ta/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/ta/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/ta/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/ta/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/te 0755 root other
+d none share/locale/te/LC_MESSAGES 0755 root other
+f none share/locale/te/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/te/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/te/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/te/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/th 0755 root other
+d none share/locale/th/LC_MESSAGES 0755 root other
+f none share/locale/th/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/th/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/th/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/th/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/tr 0755 root other
+d none share/locale/tr/LC_MESSAGES 0755 root other
+f none share/locale/tr/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/tr/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/tr/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/tr/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/uk 0755 root other
+d none share/locale/uk/LC_MESSAGES 0755 root other
+f none share/locale/uk/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/uk/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/uk/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/uk/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/vi 0755 root other
+d none share/locale/vi/LC_MESSAGES 0755 root other
+f none share/locale/vi/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/vi/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/vi/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/vi/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/wa 0755 root other
+d none share/locale/wa/LC_MESSAGES 0755 root other
+f none share/locale/wa/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/wa/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/wa/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/wa/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/xh 0755 root other
+d none share/locale/xh/LC_MESSAGES 0755 root other
+f none share/locale/xh/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/xh/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/xh/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/xh/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/zh_CN 0755 root other
+d none share/locale/zh_CN/LC_MESSAGES 0755 root other
+f none share/locale/zh_CN/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/zh_CN/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/zh_CN/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/zh_CN/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/zh_HK 0755 root other
+d none share/locale/zh_HK/LC_MESSAGES 0755 root other
+f none share/locale/zh_HK/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/zh_HK/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/zh_HK/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/zh_HK/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/locale/zh_TW 0755 root other
+d none share/locale/zh_TW/LC_MESSAGES 0755 root other
+f none share/locale/zh_TW/LC_MESSAGES/evolution-2.30.mo=usr/share/locale/zh_TW/LC_MESSAGES/evolution-2.30.mo 0644 root other
+f none share/locale/zh_TW/LC_MESSAGES/evolution-2.30.ui.copyright=usr/share/locale/zh_TW/LC_MESSAGES/evolution-2.30.ui.copyright 0644 root other
+d none share/omf 0755 root bin
+d none share/omf/evolution 0755 root bin
+f none share/omf/evolution/evolution-cs.omf=usr/share/omf/evolution/evolution-cs.omf 0644 root bin
+f none share/omf/evolution/evolution-de.omf=usr/share/omf/evolution/evolution-de.omf 0644 root bin
+f none share/omf/evolution/evolution-el.omf=usr/share/omf/evolution/evolution-el.omf 0644 root bin
+f none share/omf/evolution/evolution-en_GB.omf=usr/share/omf/evolution/evolution-en_GB.omf 0644 root bin
+f none share/omf/evolution/evolution-es.omf=usr/share/omf/evolution/evolution-es.omf 0644 root bin
+f none share/omf/evolution/evolution-eu.omf=usr/share/omf/evolution/evolution-eu.omf 0644 root bin
+f none share/omf/evolution/evolution-fr.omf=usr/share/omf/evolution/evolution-fr.omf 0644 root bin
+f none share/omf/evolution/evolution-mk.omf=usr/share/omf/evolution/evolution-mk.omf 0644 root bin
+f none share/omf/evolution/evolution-oc.omf=usr/share/omf/evolution/evolution-oc.omf 0644 root bin
+f none share/omf/evolution/evolution-ru.omf=usr/share/omf/evolution/evolution-ru.omf 0644 root bin
+f none share/omf/evolution/evolution-sv.omf=usr/share/omf/evolution/evolution-sv.omf 0644 root bin

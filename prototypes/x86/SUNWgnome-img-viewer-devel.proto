@@ -1,0 +1,32 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-img-viewer-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-img-viewer-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-img-viewer-devel.copyright
+d none include 0755 root bin
+d none include/eog-2.20 0755 root bin
+d none include/eog-2.20/eog 0755 root bin
+f none include/eog-2.20/eog/eog-application.h=usr/include/eog-2.20/eog/eog-application.h 0644 root bin
+f none include/eog-2.20/eog/eog-debug.h=usr/include/eog-2.20/eog/eog-debug.h 0644 root bin
+f none include/eog-2.20/eog/eog-dialog.h=usr/include/eog-2.20/eog/eog-dialog.h 0644 root bin
+f none include/eog-2.20/eog/eog-enums.h=usr/include/eog-2.20/eog/eog-enums.h 0644 root bin
+f none include/eog-2.20/eog/eog-error-message-area.h=usr/include/eog-2.20/eog/eog-error-message-area.h 0644 root bin
+f none include/eog-2.20/eog/eog-exif-details.h=usr/include/eog-2.20/eog/eog-exif-details.h 0644 root bin
+f none include/eog-2.20/eog/eog-exif-util.h=usr/include/eog-2.20/eog/eog-exif-util.h 0644 root bin
+f none include/eog-2.20/eog/eog-file-chooser.h=usr/include/eog-2.20/eog/eog-file-chooser.h 0644 root bin
+f none include/eog-2.20/eog/eog-image-save-info.h=usr/include/eog-2.20/eog/eog-image-save-info.h 0644 root bin
+f none include/eog-2.20/eog/eog-image.h=usr/include/eog-2.20/eog/eog-image.h 0644 root bin
+f none include/eog-2.20/eog/eog-job-queue.h=usr/include/eog-2.20/eog/eog-job-queue.h 0644 root bin
+f none include/eog-2.20/eog/eog-jobs.h=usr/include/eog-2.20/eog/eog-jobs.h 0644 root bin
+f none include/eog-2.20/eog/eog-list-store.h=usr/include/eog-2.20/eog/eog-list-store.h 0644 root bin
+f none include/eog-2.20/eog/eog-plugin.h=usr/include/eog-2.20/eog/eog-plugin.h 0644 root bin
+f none include/eog-2.20/eog/eog-properties-dialog.h=usr/include/eog-2.20/eog/eog-properties-dialog.h 0644 root bin
+f none include/eog-2.20/eog/eog-scroll-view.h=usr/include/eog-2.20/eog/eog-scroll-view.h 0644 root bin
+f none include/eog-2.20/eog/eog-sidebar.h=usr/include/eog-2.20/eog/eog-sidebar.h 0644 root bin
+f none include/eog-2.20/eog/eog-statusbar.h=usr/include/eog-2.20/eog/eog-statusbar.h 0644 root bin
+f none include/eog-2.20/eog/eog-thumb-nav.h=usr/include/eog-2.20/eog/eog-thumb-nav.h 0644 root bin
+f none include/eog-2.20/eog/eog-thumb-view.h=usr/include/eog-2.20/eog/eog-thumb-view.h 0644 root bin
+f none include/eog-2.20/eog/eog-thumbnail.h=usr/include/eog-2.20/eog/eog-thumbnail.h 0644 root bin
+f none include/eog-2.20/eog/eog-transform.h=usr/include/eog-2.20/eog/eog-transform.h 0644 root bin
+f none include/eog-2.20/eog/eog-window.h=usr/include/eog-2.20/eog/eog-window.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/eog.pc=usr/lib/pkgconfig/eog.pc 0644 root bin

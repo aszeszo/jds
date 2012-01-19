@@ -1,0 +1,33 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWvinagre-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWvinagre-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWvinagre-devel.copyright
+d none include 0755 root bin
+d none include/vinagre-1.0 0755 root bin
+d none include/vinagre-1.0/vinagre 0755 root bin
+f none include/vinagre-1.0/vinagre/vinagre-app.h=usr/include/vinagre-1.0/vinagre/vinagre-app.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-bacon.h=usr/include/vinagre-1.0/vinagre/vinagre-bacon.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-bookmarks-entry.h=usr/include/vinagre-1.0/vinagre/vinagre-bookmarks-entry.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-bookmarks-migration.h=usr/include/vinagre-1.0/vinagre/vinagre-bookmarks-migration.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-bookmarks-tree.h=usr/include/vinagre-1.0/vinagre/vinagre-bookmarks-tree.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-bookmarks-ui.h=usr/include/vinagre-1.0/vinagre/vinagre-bookmarks-ui.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-bookmarks.h=usr/include/vinagre-1.0/vinagre/vinagre-bookmarks.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-cache-prefs.h=usr/include/vinagre-1.0/vinagre/vinagre-cache-prefs.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-commands.h=usr/include/vinagre-1.0/vinagre/vinagre-commands.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-connect.h=usr/include/vinagre-1.0/vinagre/vinagre-connect.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-connection.h=usr/include/vinagre-1.0/vinagre/vinagre-connection.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-debug.h=usr/include/vinagre-1.0/vinagre/vinagre-debug.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-dirs.h=usr/include/vinagre-1.0/vinagre/vinagre-dirs.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-dnd.h=usr/include/vinagre-1.0/vinagre/vinagre-dnd.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-fav.h=usr/include/vinagre-1.0/vinagre/vinagre-fav.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-notebook.h=usr/include/vinagre-1.0/vinagre/vinagre-notebook.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-plugin-loader.h=usr/include/vinagre-1.0/vinagre/vinagre-plugin-loader.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-plugin.h=usr/include/vinagre-1.0/vinagre/vinagre-plugin.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-prefs.h=usr/include/vinagre-1.0/vinagre/vinagre-prefs.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-ssh.h=usr/include/vinagre-1.0/vinagre/vinagre-ssh.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-tab.h=usr/include/vinagre-1.0/vinagre/vinagre-tab.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-ui.h=usr/include/vinagre-1.0/vinagre/vinagre-ui.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-utils.h=usr/include/vinagre-1.0/vinagre/vinagre-utils.h 0644 root bin
+f none include/vinagre-1.0/vinagre/vinagre-window.h=usr/include/vinagre-1.0/vinagre/vinagre-window.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/vinagre-1.0.pc=usr/lib/pkgconfig/vinagre-1.0.pc 0644 root bin

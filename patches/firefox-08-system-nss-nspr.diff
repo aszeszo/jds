@@ -1,0 +1,76 @@
+diff --git a/content/html/content/src/nsHTMLFrameSetElement.cpp b/content/html/content/src/nsHTMLFrameSetElement.cpp
+index caa93e1..15b912d 100644
+--- a/content/html/content/src/nsHTMLFrameSetElement.cpp
++++ b/content/html/content/src/nsHTMLFrameSetElement.cpp
+@@ -34,6 +34,7 @@
+  * the terms of any one of the MPL, the GPL or the LGPL.
+  *
+  * ***** END LICENSE BLOCK ***** */
++#include "prlog.h"
+ #include "nsIDOMHTMLFrameSetElement.h"
+ #include "nsIDOMEventTarget.h"
+ #include "nsGenericHTMLElement.h"
+diff --git a/security/manager/Makefile.in b/security/manager/Makefile.in
+index 4227bf4..fb000ac 100644
+--- a/security/manager/Makefile.in
++++ b/security/manager/Makefile.in
+@@ -85,6 +85,11 @@ SDK_LIBS = \
+   $(DIST)/lib/$(LIB_PREFIX)nssutil.$(LIB_SUFFIX) \
+   $(NULL)
+ endif
++else
++ifeq ($(OS_ARCH), SunOS)
++SDK_LIBS = \
++  $(DIST)/lib/$(LIB_PREFIX)crmf.$(LIB_SUFFIX)
++endif
+ endif
+ 
+ # Default
+@@ -400,6 +405,12 @@ endif
+ 	$(INSTALL) -m 755 $(DIST)/lib/$(FREEBL_64INT_LIB) $(DIST)/bin
+ 	$(INSTALL) -m 755 $(DIST)/lib/$(FREEBL_64FPU_LIB) $(DIST)/bin
+ endif
++else
++ifeq ($(OS_ARCH), SunOS)
++	$(NSSMAKE) -C $(topsrcdir)/security/coreconf $(DEFAULT_GMAKE_FLAGS)
++	$(NSSMAKE) -C $(topsrcdir)/security/nss/lib/crmf $(DEFAULT_GMAKE_FLAGS)
++	$(INSTALL) -m 755 $(SDK_LIBS) $(DIST)/sdk/lib
++endif
+ endif
+ ifndef MOZ_NATIVE_NSS
+ # NSS installs headers to dist/public and we want them in dist/include
+@@ -482,4 +493,9 @@ ifndef SKIP_CHK
+ 	$(NSSMAKE) -C $(NSS_SRCDIR)/security/nss/cmd/lib $(DEFAULT_GMAKE_FLAGS) clean
+ 	$(NSSMAKE) -C $(NSS_SRCDIR)/security/nss/cmd/shlibsign $(DEFAULT_GMAKE_FLAGS) clean
+ endif
++else
++ifeq ($(OS_ARCH), SunOS)
++	$(NSSMAKE) -C $(topsrcdir)/security/coreconf $(DEFAULT_GMAKE_FLAGS) clean
++	$(NSSMAKE) -C $(topsrcdir)/security/nss/lib/crmf $(DEFAULT_GMAKE_FLAGS) clean
++endif
+ endif
+diff --git a/security/manager/ssl/src/nsNSSComponent.cpp b/security/manager/ssl/src/nsNSSComponent.cpp
+index 33377ac..128a303 100644
+--- a/security/manager/ssl/src/nsNSSComponent.cpp
++++ b/security/manager/ssl/src/nsNSSComponent.cpp
+@@ -857,6 +857,7 @@ nsNSSComponent::InstallLoadableRoots()
+   const char *possible_ckbi_locations[] = {
+     NS_XPCOM_CURRENT_PROCESS_DIR,
+     NS_GRE_DIR,
++    (const char *)-1, // This special value means: /usr/lib/mps
+     0 // This special value means: 
+       //   search for ckbi in the directories on the shared
+       //   library/DLL search path
+@@ -866,7 +867,11 @@ nsNSSComponent::InstallLoadableRoots()
+     nsCOMPtr<nsILocalFile> mozFile;
+     char *fullLibraryPath = nsnull;
+ 
+-    if (!possible_ckbi_locations[il])
++    if (possible_ckbi_locations[il] == (const char *)-1)
++    {
++      fullLibraryPath = PR_GetLibraryName("/usr/lib/mps", "nssckbi");
++    }
++    else if (!possible_ckbi_locations[il])
+     {
+       fullLibraryPath = PR_GetLibraryName(nsnull, "nssckbi");
+     }

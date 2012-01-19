@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibdiscid.pkginfo
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibdiscid.copyright
+f none share/doc/SUNWlibdiscid/AUTHORS=usr/share/doc/SUNWlibdiscid/AUTHORS 0444 root bin
+f none share/doc/SUNWlibdiscid/COPYING.bz2=usr/share/doc/SUNWlibdiscid/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibdiscid/ChangeLog.bz2=usr/share/doc/SUNWlibdiscid/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibdiscid/README=usr/share/doc/SUNWlibdiscid/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libdiscid.so=libdiscid.so.0.2.1
+s none lib/libdiscid.so.0=libdiscid.so.0.2.1
+f none lib/libdiscid.so.0.2.1=usr/lib/libdiscid.so.0.2.1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibdiscid 0755 root bin

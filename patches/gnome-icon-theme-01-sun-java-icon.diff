@@ -1,0 +1,10 @@
+--- gnome-icon-theme-2.23.2-orig/48x48/apps/Makefile.am	2006-09-05 02:02:26.000000000 +0100
++++ gnome-icon-theme-2.23.2-patch-01/48x48/apps/Makefile.am	2006-10-20 16:58:01.705626000 +0100
+@@ -10,6 +10,7 @@
+ 	palm-pilot.png			\
+ 	palm-pilot-sync.png		\
+ 	visor.png			\
++	sun_java.png			\
+ 	$(NULL)
+ 
+ EXTRA_DIST = $(icons_DATA)

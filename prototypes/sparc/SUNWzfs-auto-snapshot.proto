@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWzfs-auto-snapshot.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWzfs-auto-snapshot.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWzfs-auto-snapshot.copyright
+d none etc 0755 root sys
+d none etc/security 0755 root sys
+e rbac etc/security/auth_attr=etc/security/auth_attr 0644 root sys
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/method 0755 root bin
+f none lib/svc/method/zfs-auto-snapshot=lib/svc/method/zfs-auto-snapshot 0555 root bin
+f none lib/svc/method/zfs-auto-snapshot-roleadd=lib/svc/method/zfs-auto-snapshot-roleadd 0555 root bin
+d none var 0755 root sys
+d none var/svc 0755 root sys
+d none var/svc/manifest 0755 root sys
+d none var/svc/manifest/system 0755 root sys
+d none var/svc/manifest/system/filesystem 0755 root sys
+f manifest var/svc/manifest/system/filesystem/auto-snapshot-roleadd.xml=var/svc/manifest/system/filesystem/auto-snapshot-roleadd.xml 0444 root sys
+f manifest var/svc/manifest/system/filesystem/auto-snapshot.xml=var/svc/manifest/system/filesystem/auto-snapshot.xml 0444 root sys

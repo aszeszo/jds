@@ -1,0 +1,23 @@
+diff -ruN librsvg-2.26.0.orig/doc/rsvg-docs.sgml librsvg-2.26.0/doc/rsvg-docs.sgml
+--- librsvg-2.26.0.orig/doc/rsvg-docs.sgml	2010-01-04 22:02:50.468363918 +0000
++++ librsvg-2.26.0/doc/rsvg-docs.sgml	2010-01-04 22:03:28.734508102 +0000
+@@ -3,7 +3,6 @@
+                "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+ <!NOTATION PNG SYSTEM "PNG">
+ <!ENTITY hash "#">
+-<!ENTITY % local.notation.class "| PNG">
+ <!ENTITY RSVG SYSTEM "xml/rsvg.xml">
+ <!ENTITY Cairo SYSTEM "xml/rsvg-cairo.xml">
+ <!ENTITY GdkPixbuf SYSTEM "xml/rsvg-file-util.xml">
+diff -ruN librsvg-2.26.0.orig/doc/Makefile.am librsvg-2.26.0/doc/Makefile.am
+--- librsvg-2.26.0.orig/doc/Makefile.am	2010-01-04 22:08:21.953984762 +0000
++++ librsvg-2.26.0/doc/Makefile.am	2010-01-04 22:08:48.004437260 +0000
+@@ -19,7 +19,7 @@
+ MKDB_OPTIONS= --sgml-mode --output-format=xml
+ 
+ # Extra options to supply to gtkdoc-fixref
+-FIXXREF_OPTIONS=
++FIXXREF_OPTIONS=--module=$(DOC_MODULE)
+ 
+ # Used for dependencies
+ HFILE_GLOB=$(top_srcdir)/*.h

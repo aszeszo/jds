@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibdaemon-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibdaemon-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibdaemon-devel.copyright
+d none include 0755 root bin
+d none include/libdaemon 0755 root other
+f none include/libdaemon/daemon.h=usr/include/libdaemon/daemon.h 0644 root other
+f none include/libdaemon/dexec.h=usr/include/libdaemon/dexec.h 0644 root other
+f none include/libdaemon/dfork.h=usr/include/libdaemon/dfork.h 0644 root other
+f none include/libdaemon/dlog.h=usr/include/libdaemon/dlog.h 0644 root other
+f none include/libdaemon/dnonblock.h=usr/include/libdaemon/dnonblock.h 0644 root other
+f none include/libdaemon/dpid.h=usr/include/libdaemon/dpid.h 0644 root other
+f none include/libdaemon/dsignal.h=usr/include/libdaemon/dsignal.h 0644 root other
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libdaemon.pc=usr/lib/pkgconfig/libdaemon.pc 0644 root other

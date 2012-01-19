@@ -1,0 +1,19 @@
+--- zenity-2.30.0.orig/src/util.c	2009-08-08 10:34:41.000000000 +0100
++++ zenity-2.30.0/src/util.c	2010-04-12 17:05:54.216311376 +0100
+@@ -323,13 +323,12 @@
+   const char *wid_str = g_getenv ("WINDOWID");
+   if (wid_str) {
+     char *wid_str_end;
++    int ret;
+     Window wid = strtoul (wid_str, &wid_str_end, 10);
+     if (*wid_str != '\0' && *wid_str_end == '\0' && wid != 0) {
+       XWindowAttributes attrs;
+-      gdk_error_trap_push ();
+-      XGetWindowAttributes (GDK_DISPLAY(), wid, &attrs);
+-      gdk_flush();
+-      if (gdk_error_trap_pop () != 0) {
++      ret = XGetWindowAttributes (GDK_DISPLAY(), wid, &attrs);
++      if (ret == 0) {
+         return None;
+       }
+       return wid;

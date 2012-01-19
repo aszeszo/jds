@@ -1,0 +1,35 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWspeex.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWspeex.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWspeex.copyright
+f none share/doc/SUNWspeex/AUTHORS=usr/share/doc/SUNWspeex/AUTHORS 0444 root bin
+f none share/doc/SUNWspeex/COPYING.bz2=usr/share/doc/SUNWspeex/COPYING.bz2 0444 root bin
+f none share/doc/SUNWspeex/ChangeLog.bz2=usr/share/doc/SUNWspeex/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWspeex/NEWS.bz2=usr/share/doc/SUNWspeex/NEWS.bz2 0444 root bin
+f none share/doc/SUNWspeex/README=usr/share/doc/SUNWspeex/README 0444 root bin
+d none bin 0755 root bin
+d none bin/amd64 0755 root bin
+f none bin/amd64/speexdec=usr/bin/amd64/speexdec 0755 root bin
+f none bin/amd64/speexenc=usr/bin/amd64/speexenc 0755 root bin
+f none bin/speexdec=usr/bin/speexdec 0755 root bin
+f none bin/speexenc=usr/bin/speexenc 0755 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libspeex.so=libspeex.so.1.5.0
+s none lib/amd64/libspeex.so.1=libspeex.so.1.5.0
+f none lib/amd64/libspeex.so.1.5.0=usr/lib/amd64/libspeex.so.1.5.0 0755 root bin
+s none lib/amd64/libspeexdsp.so=libspeexdsp.so.1.5.0
+s none lib/amd64/libspeexdsp.so.1=libspeexdsp.so.1.5.0
+f none lib/amd64/libspeexdsp.so.1.5.0=usr/lib/amd64/libspeexdsp.so.1.5.0 0755 root bin
+s none lib/libspeex.so=libspeex.so.1.5.0
+s none lib/libspeex.so.1=libspeex.so.1.5.0
+f none lib/libspeex.so.1.5.0=usr/lib/libspeex.so.1.5.0 0755 root bin
+s none lib/libspeexdsp.so=libspeexdsp.so.1.5.0
+s none lib/libspeexdsp.so.1=libspeexdsp.so.1.5.0
+f none lib/libspeexdsp.so.1.5.0=usr/lib/libspeexdsp.so.1.5.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWspeex 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/speexdec.1=usr/share/man/man1/speexdec.1 0644 root bin
+f none share/man/man1/speexenc.1=usr/share/man/man1/speexenc.1 0644 root bin

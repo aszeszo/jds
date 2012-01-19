@@ -1,0 +1,356 @@
+--- zenity-2.30.0/help/C/zenity.xml.orig	2011-05-12 10:02:52.494961299 +0100
++++ zenity-2.30.0/help/C/zenity.xml	2011-05-12 10:03:15.863829676 +0100
+@@ -1,6 +1,5 @@
+-<?xml version="1.0"?>
+-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN"
+-  "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
++<?xml version="1.0" encoding="UTF-8"?>
++<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd" [
+   <!ENTITY author1 "Sun">
+   <!ENTITY author2 "Java Desktop System Documentation Team">
+   <!ENTITY publisher "Sun Microsystems, Inc.">
+@@ -11,18 +10,16 @@
+   <!ENTITY date "August 2004">
+   <!ENTITY manrevision "2.0">
+ ]>
+-
+ <!-- ================ Document Header ================= -->
+-
+ <article id="index" lang="en">
+ 
+   <articleinfo>
+-    <title>&appname; Manual</title>
+-    <subtitle>&appname; Desktop Application Manual V&manrevision;</subtitle>
++    <title>Zenity Manual</title>
++    <subtitle>Zenity Desktop Application Manual V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>&publisher;</holder>
++	    <year>2011</year>
++	    <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -33,16 +30,16 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>&publisher;</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+-    &legal;
++    
+ 
+     <authorgroup>
+       <author>
+-        <firstname>&author1;</firstname>
+-        <surname>&author2;</surname>
+-        <affiliation><orgname>&publisher;</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -62,11 +59,11 @@
+ 
+     <revhistory>
+       <revision>
+-        <revnumber>&appname; Desktop Application Manual V&manrevision;</revnumber>
+-        <date>&date;</date>
++        <revnumber>Zenity Desktop Application Manual V2.0</revnumber>
++        <date>August 2004</date>
+         <revdescription>
+-          <para role="author">&author1; &author2;</para>
+-          <para role="publisher">&publisher;</para>
++          <para role="author">Sun Java Desktop System Documentation Team</para>
++          <para role="publisher">Sun Microsystems, Inc.</para>
+         </revdescription>
+       </revision>
+ 
+@@ -80,7 +77,7 @@
+       </revision>
+     </revhistory>
+ 
+-    <releaseinfo>This manual describes version &appversion; of &appname;.
++    <releaseinfo>This manual describes version 2.6.0 of Zenity.
+     </releaseinfo>
+ 
+     <legalnotice>
+@@ -112,7 +109,7 @@
+     <title>Introduction</title>
+ 
+     <para>
+-        &app; enables you to create the following types of simple dialog:
++        <application>Zenity</application> enables you to create the following types of simple dialog:
+     </para>
+ 
+     <itemizedlist>
+@@ -141,7 +138,7 @@
+     <title>Usage</title>
+ 
+     <para>
+-	When you write scripts, you can use &app; to create simple dialogs that interact graphically with the user, as follows:
++	When you write scripts, you can use <application>Zenity</application> to create simple dialogs that interact graphically with the user, as follows:
+     </para>
+     <itemizedlist>
+       <listitem>
+@@ -156,12 +153,12 @@
+       </listitem>
+     </itemizedlist>
+     <para>
+-	When the user closes the dialog, &app; prints the text produced by the dialog to standard output.
++	When the user closes the dialog, <application>Zenity</application> prints the text produced by the dialog to standard output.
+     </para>
+ 
+     <note>
+       <para>
+-        When you write &app; commands, ensure that you place quotation marks around each argument. 
++        When you write <application>Zenity</application> commands, ensure that you place quotation marks around each argument. 
+       </para>
+       <para>
+         For example, use: <screen><userinput><command>zenity --calendar --title="Holiday Planner"</command></userinput></screen> Do not use: <screen><userinput><command>zenity --calendar --title=Holiday Planner</command></userinput></screen>
+@@ -177,7 +174,7 @@
+ 	  An access key is a key that enables you to perform an action from the keyboard rather than use the mouse to choose a command from a menu or dialog. Each access key is identified by an underlined letter on a menu or dialog option.
+ 	</para>
+ 	<para>
+-          Some &app; dialogs support the use of access keys. To specify the character to use as the access key, place an underscore before that character in the text of the dialog. The following example shows how to specify the letter 'C' as the access key:
++          Some <application>Zenity</application> dialogs support the use of access keys. To specify the character to use as the access key, place an underscore before that character in the text of the dialog. The following example shows how to specify the letter 'C' as the access key:
+ 	</para>
+ 	<screen><userinput>"_Choose a name".</userinput></screen>
+     </sect2>
+@@ -185,7 +182,7 @@
+     <sect2 id="zenity-usage-exitcodes">
+       <title>Exit Codes</title>
+     <para>
+-        &app; returns the following exit codes:
++        <application>Zenity</application> returns the following exit codes:
+     </para>
+ 
+     <informaltable frame="all">
+@@ -246,7 +243,7 @@
+     <title>General Options</title>
+ 
+     <para>
+-	All &app; dialogs support the following general options:
++	All <application>Zenity</application> dialogs support the following general options:
+     </para>
+ 
+     <variablelist>
+@@ -299,7 +296,7 @@
+     <title>Help Options</title>
+ 
+     <para>
+-	&app; provides the following help options:
++	<application>Zenity</application> provides the following help options:
+     </para>
+ 
+     <variablelist>
+@@ -426,7 +423,7 @@
+     <title>Miscellaneous Options</title>
+ 
+     <para>
+-	&app; also provides the following miscellaneous options:
++	<application>Zenity</application> also provides the following miscellaneous options:
+     </para>
+ 
+     <variablelist>
+@@ -434,14 +431,14 @@
+       <varlistentry>
+         <term><option>--about</option></term>
+ 	<listitem>
+-	  <para>Displays the <guilabel>About &appname;</guilabel> dialog, which contains &app; version information, copyright information, and developer information.</para>
++	  <para>Displays the <guilabel>About Zenity</guilabel> dialog, which contains <application>Zenity</application> version information, copyright information, and developer information.</para>
+ 	</listitem>
+       </varlistentry>
+ 
+       <varlistentry>
+         <term><option>--version</option></term>
+ 	<listitem>
+-	  <para>Displays the version number of &app;.</para>
++	  <para>Displays the version number of <application>Zenity</application>.</para>
+ 	</listitem>
+       </varlistentry>
+ 
+@@ -455,7 +452,7 @@
+     <title>GTK+ Options</title>
+ 
+     <para>
+-	&app; supports the standard GTK+ options. For more information about the GTK+ options, execute the <command>zenity -?</command> command.
++	<application>Zenity</application> supports the standard GTK+ options. For more information about the GTK+ options, execute the <command>zenity -?</command> command.
+     </para>
+ 
+   </sect2>
+@@ -466,7 +463,7 @@
+     <title>Environment Variables</title>
+ 
+     <para>
+-      Normally, &app; detects the terminal window from which it was launched
++      Normally, <application>Zenity</application> detects the terminal window from which it was launched
+       and keeps itself above that window.  This behavior can be disabled by
+       unsetting the <envar>WINDOWID</envar> environment variable.
+     </para>
+@@ -480,7 +477,7 @@
+     <title>Calendar Dialog</title>
+ 
+     <para>
+-        Use the <option>--calendar</option> option to create a calendar dialog. &app; returns the selected date to standard output. If no date is specified on the command line, the dialog uses the current date.
++        Use the <option>--calendar</option> option to create a calendar dialog. <application>Zenity</application> returns the selected date to standard output. If no date is specified on the command line, the dialog uses the current date.
+     </para>
+     <para>
+ 	The calendar dialog supports the following options:
+@@ -554,7 +551,7 @@
+               <imagedata fileref="figures/zenity-calendar-screenshot.png" format="PNG"/>
+           </imageobject>
+           <textobject>
+-              <phrase>&app; calendar dialog example</phrase>
++              <phrase><application>Zenity</application> calendar dialog example</phrase>
+           </textobject>
+         </mediaobject>
+       </screenshot>
+@@ -569,7 +566,7 @@
+     <title>File Selection Dialog</title>
+ 
+     <para>
+-	Use the <option>--file-selection</option> option to create a file selection dialog. &app; returns the selected files or directories to standard 
++	Use the <option>--file-selection</option> option to create a file selection dialog. <application>Zenity</application> returns the selected files or directories to standard 
+         output. The default mode of the file selection dialog is open.
+     </para>
+     <para>
+@@ -642,7 +639,7 @@
+             <imagedata fileref="figures/zenity-fileselection-screenshot.png" format="PNG"/>
+ 	  </imageobject>
+ 	  <textobject>
+-	    <phrase>&app; file selection dialog example</phrase>
++	    <phrase><application>Zenity</application> file selection dialog example</phrase>
+ 	  </textobject>
+         </mediaobject>
+       </screenshot>
+@@ -688,7 +685,7 @@
+               <imagedata fileref="figures/zenity-notification-screenshot.png" format="PNG"/>
+           </imageobject>
+           <textobject>
+-              <phrase>&app; notification icon example</phrase>
++              <phrase><application>Zenity</application> notification icon example</phrase>
+           </textobject>
+         </mediaobject>
+       </screenshot>
+@@ -702,7 +699,7 @@
+     <title>List Dialog</title>
+ 
+     <para>
+-	Use the <option>--list</option> option to create a list dialog. &app; returns the entries in the first column of text of selected rows to standard output.
++	Use the <option>--list</option> option to create a list dialog. <application>Zenity</application> returns the entries in the first column of text of selected rows to standard output.
+     </para>
+ 
+     <para>
+@@ -793,7 +790,7 @@
+             <imagedata fileref="figures/zenity-list-screenshot.png" format="PNG"/>
+ 	  </imageobject>
+ 	  <textobject>
+-	    <phrase>&app; list dialog example</phrase>
++	    <phrase><application>Zenity</application> list dialog example</phrase>
+ 	  </textobject>
+         </mediaobject>
+       </screenshot>
+@@ -807,7 +804,7 @@
+     <title>Message Dialogs</title>
+ 
+     <para>
+-        &app; can create four types of message dialog: 
++        <application>Zenity</application> can create four types of message dialog: 
+     </para>
+     <itemizedlist>
+       <listitem>
+@@ -855,7 +852,7 @@
+               <imagedata fileref="figures/zenity-error-screenshot.png" format="PNG"/>
+ 	    </imageobject>
+ 	    <textobject>
+-	      <phrase>&app; error dialog example</phrase>
++	      <phrase><application>Zenity</application> error dialog example</phrase>
+ 	    </textobject>
+           </mediaobject>
+         </screenshot>
+@@ -889,7 +886,7 @@
+               <imagedata fileref="figures/zenity-information-screenshot.png" format="PNG"/>
+ 	    </imageobject>
+ 	    <textobject>
+-	      <phrase>&app; information dialog example</phrase>
++	      <phrase><application>Zenity</application> information dialog example</phrase>
+ 	    </textobject>
+           </mediaobject>
+         </screenshot>
+@@ -923,7 +920,7 @@
+               <imagedata fileref="figures/zenity-question-screenshot.png" format="PNG"/>
+ 	    </imageobject>
+ 	    <textobject>
+-	      <phrase>&app; question dialog example</phrase>
++	      <phrase><application>Zenity</application> question dialog example</phrase>
+ 	    </textobject>
+           </mediaobject>
+         </screenshot>
+@@ -957,7 +954,7 @@
+               <imagedata fileref="figures/zenity-warning-screenshot.png" format="PNG"/>
+ 	    </imageobject>
+ 	    <textobject>
+-	      <phrase>&app; warning dialog example</phrase>
++	      <phrase><application>Zenity</application> warning dialog example</phrase>
+ 	    </textobject>
+           </mediaobject>
+         </screenshot>
+@@ -976,7 +973,7 @@
+     </para>
+ 
+     <para>
+-      &app; reads data from standard input line by line. If a line is prefixed with #, the text is updated with the text on that line. If a line contains only a number, the percentage is updated with that number.
++      <application>Zenity</application> reads data from standard input line by line. If a line is prefixed with #, the text is updated with the text on that line. If a line contains only a number, the percentage is updated with that number.
+     </para>
+ 	
+     <para>
+@@ -1052,7 +1049,7 @@
+             <imagedata fileref="figures/zenity-progress-screenshot.png" format="PNG"/>
+ 	  </imageobject>
+ 	  <textobject>
+-	    <phrase>&app; progress dialog example</phrase>
++	    <phrase><application>Zenity</application> progress dialog example</phrase>
+ 	  </textobject>
+         </mediaobject>
+       </screenshot>
+@@ -1066,7 +1063,7 @@
+     <title>Text Entry Dialog</title>
+ 
+     <para>
+-        Use the <option>-entry</option> option to create a text entry dialog. &app; returns the contents of the text entry to standard output. 
++        Use the <option>-entry</option> option to create a text entry dialog. <application>Zenity</application> returns the contents of the text entry to standard output. 
+     </para>	
+     <para>	
+ 	The text entry dialog supports the following options:
+@@ -1123,7 +1120,7 @@
+             <imagedata fileref="figures/zenity-entry-screenshot.png" format="PNG"/>
+ 	  </imageobject>
+ 	  <textobject>
+-	    <phrase>&app; text entry dialog example</phrase>
++	    <phrase><application>Zenity</application> text entry dialog example</phrase>
+ 	  </textobject>
+         </mediaobject>
+       </screenshot>
+@@ -1174,7 +1171,7 @@
+                         zenity --text-info \
+                           --title=$FILE \
+                           --filename=$FILE \
+-                          --editable 2>/tmp/tmp.txt;;
++                          --editable 2&gt;/tmp/tmp.txt;;
+                  1)
+                         echo "No file selected.";;
+                 -1)
+@@ -1192,7 +1189,7 @@
+             <imagedata fileref="figures/zenity-text-screenshot.png" format="PNG"/>
+ 	  </imageobject>
+ 	  <textobject>
+-	    <phrase>&app; text information dialog example</phrase>
++	    <phrase><application>Zenity</application> text information dialog example</phrase>
+ 	  </textobject>
+         </mediaobject>
+       </screenshot>

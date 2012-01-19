@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibdaemon.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibdaemon.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibdaemon.copyright
+f none share/doc/SUNWlibdaemon/LICENSE=usr/share/doc/SUNWlibdaemon/LICENSE 0444 root bin
+f none share/doc/SUNWlibdaemon/README=usr/share/doc/SUNWlibdaemon/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libdaemon.so=libdaemon.so.0.5.0
+s none lib/libdaemon.so.0=libdaemon.so.0.5.0
+f none lib/libdaemon.so.0.5.0=usr/lib/libdaemon.so.0.5.0 0755 root other
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibdaemon 0755 root other
+d none share/doc/libdaemon 0755 root other
+f none share/doc/libdaemon/README.html=usr/share/doc/libdaemon/README.html 0644 root other
+f none share/doc/libdaemon/style.css=usr/share/doc/libdaemon/style.css 0644 root other
