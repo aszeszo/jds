@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2003, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -56,9 +56,9 @@ install the packages.
  hacks/glx/Makefile.in           |    4 +-
  8 files changed, 84 insertions(+), 20 deletions(-)
 
-diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefile.in
---- xscreensaver-5.12/driver/Makefile.in
-+++ xscreensaver-5.12/driver/Makefile.in
+diff --git driver/Makefile.in driver/Makefile.in
+--- driver/Makefile.in
++++ driver/Makefile.in
 @@ -27,7 +27,7 @@ INTLTOOL_MERGE	= @INTLTOOL_MERGE@
  GTK_DATADIR	= @GTK_DATADIR@
  GTK_APPDIR	= $(GTK_DATADIR)/applications
@@ -82,10 +82,10 @@ diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefil
  CONF_DEFS	= -DHACK_CONFIGURATION_PATH='"$(HACK_CONF_DIR)"'
  
  LIBS		= @LIBS@
-diff --git xscreensaver-5.12/driver/XScreenSaver.ad.in xscreensaver-5.12/driver/XScreenSaver.ad.in
---- xscreensaver-5.12/driver/XScreenSaver.ad.in
-+++ xscreensaver-5.12/driver/XScreenSaver.ad.in
-@@ -87,18 +87,24 @@ GetViewPortIsFullOfLies: False
+diff --git driver/XScreenSaver.ad.in driver/XScreenSaver.ad.in
+--- driver/XScreenSaver.ad.in
++++ driver/XScreenSaver.ad.in
+@@ -91,18 +91,24 @@ GetViewPortIsFullOfLies: False
  
  ! This is the URL loaded by the "Help" button on the splash screen,
  ! and by the "Documentation" menu item in xscreensaver-demo.
@@ -114,10 +114,10 @@ diff --git xscreensaver-5.12/driver/XScreenSaver.ad.in xscreensaver-5.12/driver/
  !
  !   Gnome 2.2:
  !
-diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk.c
---- xscreensaver-5.12/driver/demo-Gtk.c
-+++ xscreensaver-5.12/driver/demo-Gtk.c
-@@ -990,7 +990,7 @@ restart_menu_cb (GtkWidget *widget, gpointer user_data)
+diff --git driver/demo-Gtk.c driver/demo-Gtk.c
+--- driver/demo-Gtk.c
++++ driver/demo-Gtk.c
+@@ -991,7 +991,7 @@ restart_menu_cb (GtkWidget *widget, gpointer user_data)
    flush_dialog_changes_and_save (s);
    xscreensaver_command (GDK_DISPLAY(), XA_EXIT, 0, False, NULL);
    sleep (1);
@@ -126,7 +126,7 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
      fprintf (stderr, "%s: fork error\n", blurb());
  
    await_xscreensaver (s);
-@@ -4933,7 +4933,7 @@ main (int argc, char **argv)
+@@ -4951,7 +4951,7 @@ main (int argc, char **argv)
  
        if (init_results == 1)
  	{
@@ -135,9 +135,9 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
  	  return 0;
  	}
  
-diff --git xscreensaver-5.12/driver/subprocs.c xscreensaver-5.12/driver/subprocs.c
---- xscreensaver-5.12/driver/subprocs.c
-+++ xscreensaver-5.12/driver/subprocs.c
+diff --git driver/subprocs.c driver/subprocs.c
+--- driver/subprocs.c
++++ driver/subprocs.c
 @@ -14,6 +14,7 @@
  # include "config.h"
  #endif
@@ -247,9 +247,9 @@ diff --git xscreensaver-5.12/driver/subprocs.c xscreensaver-5.12/driver/subprocs
    av[ac] = 0;
  
    if (pipe (fds))
-diff --git xscreensaver-5.12/driver/xscreensaver-demo.glade2 xscreensaver-5.12/driver/xscreensaver-demo.glade2
---- xscreensaver-5.12/driver/xscreensaver-demo.glade2
-+++ xscreensaver-5.12/driver/xscreensaver-demo.glade2
+diff --git driver/xscreensaver-demo.glade2 driver/xscreensaver-demo.glade2
+--- driver/xscreensaver-demo.glade2
++++ driver/xscreensaver-demo.glade2
 @@ -927,10 +927,12 @@ Installed</property>
  			      <property name="visible">True</property>
  			      <property name="label" translatable="yes">Very few (or no) screen savers appear to be available.
@@ -266,10 +266,10 @@ diff --git xscreensaver-5.12/driver/xscreensaver-demo.glade2 xscreensaver-5.12/d
  			      <property name="justify">GTK_JUSTIFY_CENTER</property>
  			      <property name="wrap">False</property>
  			      <property name="selectable">False</property>
-diff --git xscreensaver-5.12/driver/xscreensaver-text xscreensaver-5.12/driver/xscreensaver-text
---- xscreensaver-5.12/driver/xscreensaver-text
-+++ xscreensaver-5.12/driver/xscreensaver-text
-@@ -695,12 +695,15 @@ sub reformat_rss($) {
+diff --git driver/xscreensaver-text driver/xscreensaver-text
+--- driver/xscreensaver-text
++++ driver/xscreensaver-text
+@@ -698,12 +698,15 @@ sub reformat_rss($) {
      $i++;
  
      my ($title, $body1, $body2, $body3);
@@ -285,7 +285,7 @@ diff --git xscreensaver-5.12/driver/xscreensaver-text xscreensaver-5.12/driver/x
      # If there are both <description> and <content> or <content:encoded>,
      # use whichever one contains more text.
      #
-@@ -724,10 +727,11 @@ sub reformat_rss($) {
+@@ -727,10 +730,11 @@ sub reformat_rss($) {
  
      $title = rss_field_to_html ($title || '');
      $body1 = rss_field_to_html ($body1 || '');
@@ -298,9 +298,9 @@ diff --git xscreensaver-5.12/driver/xscreensaver-text xscreensaver-5.12/driver/x
      print "\n";
    }
  }
-diff --git xscreensaver-5.12/driver/xscreensaver.man xscreensaver-5.12/driver/xscreensaver.man
---- xscreensaver-5.12/driver/xscreensaver.man
-+++ xscreensaver-5.12/driver/xscreensaver.man
+diff --git driver/xscreensaver.man driver/xscreensaver.man
+--- driver/xscreensaver.man
++++ driver/xscreensaver.man
 @@ -97,9 +97,8 @@ xscreensaver-command -restart
  If you want to set the system-wide defaults, then make your edits to
  the xscreensaver app-defaults file, which should have been installed
@@ -313,10 +313,10 @@ diff --git xscreensaver-5.12/driver/xscreensaver.man xscreensaver-5.12/driver/xs
  
  When settings are changed in the Preferences dialog box (see above)
  the current settings will be written to the \fI.xscreensaver\fP file.
-diff --git xscreensaver-5.12/hacks/glx/Makefile.in xscreensaver-5.12/hacks/glx/Makefile.in
---- xscreensaver-5.12/hacks/glx/Makefile.in
-+++ xscreensaver-5.12/hacks/glx/Makefile.in
-@@ -270,7 +270,7 @@ install-program:: $(EXES)
+diff --git hacks/glx/Makefile.in hacks/glx/Makefile.in
+--- hacks/glx/Makefile.in
++++ hacks/glx/Makefile.in
+@@ -278,7 +278,7 @@ install-program:: $(EXES)
  # the xscreensaver-gl-helper program, in $bindir
  install-program:: $(EXES)
  	@exes="@GL_UTIL_EXES@" ;					\
@@ -325,7 +325,7 @@ diff --git xscreensaver-5.12/hacks/glx/Makefile.in xscreensaver-5.12/hacks/glx/M
  	 if [ "$$exes" != "" ]; then					\
  	   if [ ! -d $$idir ]; then					\
  	     $(INSTALL_DIRS) $$idir ;					\
-@@ -339,7 +339,7 @@ uninstall-program::
+@@ -347,7 +347,7 @@ uninstall-program::
  # the xscreensaver-gl-helper program, in $bindir
  uninstall-program::
  	@exes="$(GL_UTIL_EXES)" ;					\

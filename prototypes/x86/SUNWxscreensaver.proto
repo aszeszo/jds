@@ -1,6 +1,10 @@
 i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxscreensaver.pkginfo
 i depend=/jds/packages/PKGMAPS/depend/SUNWxscreensaver.depend
 i copyright=/jds/packages/PKGMAPS/copyright/SUNWxscreensaver.copyright
+d none etc 0755 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/xscreensaver.desktop=etc/xdg/autostart/xscreensaver.desktop 0444 root bin
 d none X11 0755 root bin
 d none X11/bin 0755 root bin
 s none X11/bin/xscreensaver=../../bin/xscreensaver

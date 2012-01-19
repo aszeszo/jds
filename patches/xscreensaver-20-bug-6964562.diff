@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -24,10 +24,10 @@
  driver/lock.c |    2 +-
  1 files changed, 1 insertions(+), 1 deletions(-)
 
-diff --git xscreensaver-5.12/driver/lock.c xscreensaver-5.12/driver/lock.c
---- xscreensaver-5.12/driver/lock.c
-+++ xscreensaver-5.12/driver/lock.c
-@@ -3012,7 +3012,7 @@ auth_finished_cb (saver_info *si)
+diff --git driver/lock.c driver/lock.c
+--- driver/lock.c
++++ driver/lock.c
+@@ -3086,7 +3086,7 @@ auth_finished_cb (saver_info *si)
    }
  
   END:
@@ -36,4 +36,3 @@ diff --git xscreensaver-5.12/driver/lock.c xscreensaver-5.12/driver/lock.c
      destroy_passwd_window (si);
  }
  
-

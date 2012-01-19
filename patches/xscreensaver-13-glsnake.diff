@@ -29,9 +29,9 @@ images & language randomly displayed on screen.
  hacks/glx/glsnake.c |   31 -------------------------------
  1 files changed, 0 insertions(+), 31 deletions(-)
 
-diff --git xscreensaver-5.12/hacks/glx/glsnake.c xscreensaver-5.12/hacks/glx/glsnake.c
---- xscreensaver-5.12/hacks/glx/glsnake.c
-+++ xscreensaver-5.12/hacks/glx/glsnake.c
+diff --git hacks/glx/glsnake.c hacks/glx/glsnake.c
+--- hacks/glx/glsnake.c
++++ hacks/glx/glsnake.c
 @@ -535,11 +535,6 @@ static const struct model_s model[] = {
  	PIN, ZERO, RIGHT, RIGHT, ZERO, PIN, PIN, ZERO, PIN, PIN, ZERO,
  	RIGHT, ZERO }

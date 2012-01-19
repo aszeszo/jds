@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -24,9 +24,9 @@
  driver/windows.c |    1 +
  1 files changed, 1 insertions(+), 0 deletions(-)
 
-diff --git xscreensaver-5.12/driver/windows.c xscreensaver-5.12/driver/windows.c
---- xscreensaver-5.12/driver/windows.c
-+++ xscreensaver-5.12/driver/windows.c
+diff --git driver/windows.c driver/windows.c
+--- driver/windows.c
++++ driver/windows.c
 @@ -1580,6 +1580,7 @@ raise_window (saver_info *si,
  	  if (!dont_clear || ssi->stderr_overlay_window)
  	    clear_stderr (ssi);
@@ -35,4 +35,3 @@ diff --git xscreensaver-5.12/driver/windows.c xscreensaver-5.12/driver/windows.c
  #ifdef HAVE_MIT_SAVER_EXTENSION
  	  if (ssi->server_mit_saver_window &&
  	      window_exists_p (si->dpy, ssi->server_mit_saver_window))
-

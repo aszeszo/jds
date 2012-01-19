@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -32,15 +32,15 @@ Support needed for Solaris Trusted Extensions / Trusted GNOME.
  driver/trusted-utils.h         |   54 +++++++++++++
  driver/types.h                 |    2 +
  driver/xscreensaver-getimage.c |    3 +-
- driver/xscreensaver.c          |   11 +++
+ driver/xscreensaver.c          |   13 +++
  driver/xscreensaver.h          |    2 +
- 11 files changed, 406 insertions(+), 12 deletions(-)
+ 11 files changed, 408 insertions(+), 12 deletions(-)
  create mode 100644 driver/trusted-utils.c
  create mode 100644 driver/trusted-utils.h
 
-diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefile.in
---- xscreensaver-5.12/driver/Makefile.in
-+++ xscreensaver-5.12/driver/Makefile.in
+diff --git driver/Makefile.in driver/Makefile.in
+--- driver/Makefile.in
++++ driver/Makefile.in
 @@ -105,6 +105,10 @@ GTK_OBJS	= demo-Gtk.o demo-Gtk-conf.o @GTK_EXTRA_OBJS@
  GTK_LOCK_SRCS	= lock-Gtk.c atoms.c remote.c
  GTK_LOCK_OBJS	= lock-Gtk.o atoms.o remote.o
@@ -98,9 +98,9 @@ diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefil
  
  pdf2jpeg: $(PDF2JPEG_OBJS)
  	$(OBJCC) $(LDFLAGS) -o $@ $(PDF2JPEG_OBJS) $(PDF2JPEG_LIBS) -lm
-diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk.c
---- xscreensaver-5.12/driver/demo-Gtk.c
-+++ xscreensaver-5.12/driver/demo-Gtk.c
+diff --git driver/demo-Gtk.c driver/demo-Gtk.c
+--- driver/demo-Gtk.c
++++ driver/demo-Gtk.c
 @@ -137,6 +137,14 @@
  #include <string.h>
  #include <ctype.h>
@@ -116,7 +116,7 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
  #ifdef HAVE_GTK2
  enum {
    COL_ENABLED,
-@@ -2935,6 +2943,73 @@ populate_prefs_page (state *s)
+@@ -2953,6 +2961,73 @@ dpms_supported=1;
      SENSITIZE ("fade_spinbutton", (fading_possible &&
                                     (p->fade_p || p->unfade_p)));
  
@@ -190,7 +190,7 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
  # undef SENSITIZE
    }
  }
-@@ -3022,6 +3097,9 @@ sensitize_menu_items (state *s, Bool force_p)
+@@ -3040,6 +3115,9 @@ sensitize_menu_items (state *s, Bool force_p)
  
    for (i = 0; i < countof(names); i++)
      {
@@ -200,7 +200,7 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
        GtkWidget *w = name_to_widget (s, names[i]);
        gtk_widget_set_sensitive (GTK_WIDGET(w), running_p);
      }
-@@ -4991,7 +5069,7 @@ main (int argc, char **argv)
+@@ -5009,7 +5087,7 @@ main (int argc, char **argv)
                                       applicationShellWidgetClass,
                                       dpy, 0, 0);
  
@@ -209,9 +209,9 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
    db = XtDatabase (dpy);
    XtGetApplicationNameAndClass (dpy, &progname, &progclass);
    XSetErrorHandler (demo_ehandler);
-diff --git xscreensaver-5.12/driver/lock-Gtk.c xscreensaver-5.12/driver/lock-Gtk.c
---- xscreensaver-5.12/driver/lock-Gtk.c
-+++ xscreensaver-5.12/driver/lock-Gtk.c
+diff --git driver/lock-Gtk.c driver/lock-Gtk.c
+--- driver/lock-Gtk.c
++++ driver/lock-Gtk.c
 @@ -72,6 +72,7 @@
  
  #include "remote.h"
@@ -232,9 +232,9 @@ diff --git xscreensaver-5.12/driver/lock-Gtk.c xscreensaver-5.12/driver/lock-Gtk
  
    if (stat (logofile, &statbuf) != 0)
      {
-diff --git xscreensaver-5.12/driver/prefs.c xscreensaver-5.12/driver/prefs.c
---- xscreensaver-5.12/driver/prefs.c
-+++ xscreensaver-5.12/driver/prefs.c
+diff --git driver/prefs.c driver/prefs.c
+--- driver/prefs.c
++++ driver/prefs.c
 @@ -37,6 +37,8 @@
  # include "vms-pwd.h"
  #endif /* VMS */
@@ -254,7 +254,7 @@ diff --git xscreensaver-5.12/driver/prefs.c xscreensaver-5.12/driver/prefs.c
  /* don't use realpath() on fedora system */
  #ifdef _FORTIFY_SOURCE
  #undef HAVE_REALPATH
-@@ -1046,7 +1051,10 @@ load_init_file (Display *dpy, saver_preferences *p)
+@@ -1048,7 +1053,10 @@ load_init_file (Display *dpy, saver_preferences *p)
    p->xsync_p	    = get_boolean_resource (dpy, "synchronous", "Synchronous");
    p->verbose_p	    = get_boolean_resource (dpy, "verbose", "Boolean");
    p->timestamp_p    = get_boolean_resource (dpy, "timestamp", "Boolean");
@@ -266,7 +266,7 @@ diff --git xscreensaver-5.12/driver/prefs.c xscreensaver-5.12/driver/prefs.c
    p->fade_p	    = get_boolean_resource (dpy, "fade", "Boolean");
    p->unfade_p	    = get_boolean_resource (dpy, "unfade", "Boolean");
    p->fade_seconds   = 1000 * get_seconds_resource (dpy, "fadeSeconds", "Time");
-@@ -1070,6 +1078,7 @@ load_init_file (Display *dpy, saver_preferences *p)
+@@ -1072,6 +1080,7 @@ load_init_file (Display *dpy, saver_preferences *p)
    p->lock_timeout    = 1000 * get_minutes_resource (dpy, "lockTimeout", "Time");
    p->cycle           = 1000 * get_minutes_resource (dpy, "cycle", "Time");
    p->passwd_timeout  = 1000 * get_seconds_resource (dpy, "passwdTimeout", "Time");
@@ -274,7 +274,7 @@ diff --git xscreensaver-5.12/driver/prefs.c xscreensaver-5.12/driver/prefs.c
    /* bugid 5077981 */
    p->unlock_timeout_p = get_boolean_resource (dpy, "passwdTimeoutEnabled", "Boolean");
    p->pointer_timeout = 1000 * get_seconds_resource (dpy, "pointerPollTime", "Time");
-@@ -1175,6 +1184,38 @@ load_init_file (Display *dpy, saver_preferences *p)
+@@ -1181,6 +1190,38 @@ load_init_file (Display *dpy, saver_preferences *p)
      if (s) free (s);
    }
  
@@ -313,9 +313,9 @@ diff --git xscreensaver-5.12/driver/prefs.c xscreensaver-5.12/driver/prefs.c
    if (system_default_screenhack_count)  /* note: first_time is also true */
      {
        merge_system_screenhacks (dpy, p, system_default_screenhacks,
-diff --git xscreensaver-5.12/driver/subprocs.c xscreensaver-5.12/driver/subprocs.c
---- xscreensaver-5.12/driver/subprocs.c
-+++ xscreensaver-5.12/driver/subprocs.c
+diff --git driver/subprocs.c driver/subprocs.c
+--- driver/subprocs.c
++++ driver/subprocs.c
 @@ -70,6 +70,7 @@ extern int kill (pid_t, int);		/* signal() is in sys/signal.h... */
  #include "exec.h"
  #include "yarandom.h"
@@ -355,10 +355,10 @@ diff --git xscreensaver-5.12/driver/subprocs.c xscreensaver-5.12/driver/subprocs
  void
  spawn_screenhack (saver_screen_info *ssi)
  {
-diff --git xscreensaver-5.12/driver/trusted-utils.c xscreensaver-5.12/driver/trusted-utils.c
+diff --git driver/trusted-utils.c driver/trusted-utils.c
 new file mode 100644
 --- /dev/null
-+++ xscreensaver-5.12/driver/trusted-utils.c
++++ driver/trusted-utils.c
 @@ -0,0 +1,171 @@
 +/*
 + * Trusted xscreensaver
@@ -531,10 +531,10 @@ new file mode 100644
 +
 +  return ( value );
 +}
-diff --git xscreensaver-5.12/driver/trusted-utils.h xscreensaver-5.12/driver/trusted-utils.h
+diff --git driver/trusted-utils.h driver/trusted-utils.h
 new file mode 100644
 --- /dev/null
-+++ xscreensaver-5.12/driver/trusted-utils.h
++++ driver/trusted-utils.h
 @@ -0,0 +1,54 @@
 +/*
 + * Trusted xscreensaver
@@ -590,9 +590,9 @@ new file mode 100644
 +	LOGOUT_CMD
 +};
 +#endif /* TRUSTED_XSCREENSAVER_H */
-diff --git xscreensaver-5.12/driver/types.h xscreensaver-5.12/driver/types.h
---- xscreensaver-5.12/driver/types.h
-+++ xscreensaver-5.12/driver/types.h
+diff --git driver/types.h driver/types.h
+--- driver/types.h
++++ driver/types.h
 @@ -105,6 +105,8 @@ struct saver_preferences {
    Time initial_delay;		/* how long to sleep after launch */
    Time splash_duration;		/* how long the splash screen stays up */
@@ -602,10 +602,10 @@ diff --git xscreensaver-5.12/driver/types.h xscreensaver-5.12/driver/types.h
    Time lock_timeout;		/* how long after activation locking starts */
    Time cycle;			/* how long each hack should run */
    Time passwd_timeout;		/* how much time before pw dialog goes down */
-diff --git xscreensaver-5.12/driver/xscreensaver-getimage.c xscreensaver-5.12/driver/xscreensaver-getimage.c
---- xscreensaver-5.12/driver/xscreensaver-getimage.c
-+++ xscreensaver-5.12/driver/xscreensaver-getimage.c
-@@ -83,6 +83,7 @@ static char *defaults[] = {
+diff --git driver/xscreensaver-getimage.c driver/xscreensaver-getimage.c
+--- driver/xscreensaver-getimage.c
++++ driver/xscreensaver-getimage.c
+@@ -86,6 +86,7 @@ static char *defaults[] = {
   0
  };
  
@@ -613,7 +613,7 @@ diff --git xscreensaver-5.12/driver/xscreensaver-getimage.c xscreensaver-5.12/dr
  
  
  char *progname = 0;
-@@ -1797,7 +1798,7 @@ main (int argc, char **argv)
+@@ -1835,7 +1836,7 @@ main (int argc, char **argv)
  
    toplevel = XtAppInitialize (&app, progclass, 0, 0, &argc, argv,
                                defaults, 0, 0);
@@ -622,9 +622,9 @@ diff --git xscreensaver-5.12/driver/xscreensaver-getimage.c xscreensaver-5.12/dr
    screen = XtScreen (toplevel);
    db = XtDatabase (dpy);
    XtGetApplicationNameAndClass (dpy, &s, &progclass);
-diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscreensaver.c
---- xscreensaver-5.12/driver/xscreensaver.c
-+++ xscreensaver-5.12/driver/xscreensaver.c
+diff --git driver/xscreensaver.c driver/xscreensaver.c
+--- driver/xscreensaver.c
++++ driver/xscreensaver.c
 @@ -142,6 +142,7 @@
  
  #include <stdio.h>
@@ -653,17 +653,26 @@ diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscr
        if (p->mode == DONT_BLANK)
          {
            if (p->verbose_p)
-@@ -1459,6 +1466,9 @@ main (int argc, char **argv)
+@@ -1476,6 +1483,9 @@ main (int argc, char **argv)
    struct passwd *spasswd;
    int i;
  
 +  if (tsol_is_multi_label_session () && (getzoneid () != 0))
 +    exit (1);
 +
+   /* It turns out that if we do setlocale (LC_ALL, "") here, people
+      running in Japanese locales get font craziness on the password
+      dialog, presumably because it is displaying Japanese characters
+@@ -1494,6 +1504,8 @@ main (int argc, char **argv)
+ 
+        -- jwz, 24-Sep-2011
+    */
++
++
  #ifdef ENABLE_NLS
-   if (!setlocale (LC_ALL, ""))
-     fprintf (stderr, "locale not supported by C library\n");
-@@ -1509,6 +1519,7 @@ main (int argc, char **argv)
+   if (!setlocale (LC_CTYPE, ""))
+     fprintf (stderr, "%s: warning: could not set default locale\n",
+@@ -1545,6 +1557,7 @@ main (int argc, char **argv)
  # endif /* !NO_LOCKING */
  
    shell = connect_to_server (si, &argc, argv);
@@ -671,9 +680,9 @@ diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscr
    process_command_line (si, &argc, argv);
    stderr_log_file (si);
    print_banner (si);
-diff --git xscreensaver-5.12/driver/xscreensaver.h xscreensaver-5.12/driver/xscreensaver.h
---- xscreensaver-5.12/driver/xscreensaver.h
-+++ xscreensaver-5.12/driver/xscreensaver.h
+diff --git driver/xscreensaver.h driver/xscreensaver.h
+--- driver/xscreensaver.h
++++ driver/xscreensaver.h
 @@ -170,6 +170,8 @@ extern struct screenhack_job *make_job (pid_t pid, int screen,
                                          const char *cmd);
  #endif

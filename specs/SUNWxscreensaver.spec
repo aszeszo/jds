@@ -21,7 +21,7 @@
 %define OSR 12732:5.0.1
 
 %define src_name xscreensaver
-%define src_version 5.12
+%define src_version 5.15
 %define src_url http://www.jwz.org/xscreensaver
 %define src_dir %{src_name}-%{src_version}
 
@@ -130,35 +130,34 @@ Patch102: rss-glx-102-install-util.diff
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWcslr
-Requires: SUNWglib2
-Requires: SUNWgnome-a11y-libs
-Requires: SUNWgnome-component
-Requires: SUNWgnome-config
-Requires: SUNWgtk2
-Requires: SUNWlibatk
-Requires: SUNWlibglade
-Requires: SUNWlibmsr
-Requires: SUNWlxmlr
-Requires: SUNWpango
+Requires: system/library
+Requires: library/glib2
+Requires: gnome/accessibility/gnome-a11y-libs
+Requires: library/gnome/gnome-component
+Requires: gnome/config/gconf
+Requires: library/desktop/gtk2
+Requires: library/desktop/atk
+Requires: library/desktop/libglade
+Requires: system/library/math
+Requires: library/libxml2
+Requires: library/desktop/pango
 BuildRequires: runtime/perl-512
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWarc
-BuildRequires: SUNWbtool
-BuildRequires: SUNWhea
-BuildRequires: SUNWggrp
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgnome-a11y-libs-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlibatk-devel
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWpango-devel
-BuildRequires: SUNWtoo
-BuildRequires: SUNWxwinc
+BuildRequires: compatibility/packages/SUNWxwplt
+BuildRequires: developer/library/lint
+BuildRequires: developer/base-developer-utilities
+BuildRequires: system/header
+BuildRequires: text/gnu-grep
+BuildRequires: library/glib2
+BuildRequires: gnome/accessibility/gnome-a11y-libs
+BuildRequires: library/gnome/gnome-component
+BuildRequires: developer/gnome/gettext
+BuildRequires: gnome/config/gconf
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/desktop/atk
+BuildRequires: library/desktop/libglade
+BuildRequires: library/libxml2
+BuildRequires: library/desktop/pango
+BuildRequires: compatibility/packages/SUNWxwinc
 BuildRequires: system/library/libdbus
 BuildRequires: consolidation/desktop/gnome-incorporation
 
@@ -229,28 +228,28 @@ Requires: %{name}
 %setup -q -n %{src_dir}
 bzcat %SOURCE5 | tar xf -
 cd po-sun; make; cd ..
-%patch1 -p1
-%patch2 -p1
-%patch3 -p1
-%patch4 -p1
-%patch5 -p1
-%patch6 -p1
-%patch7 -p1
-%patch8 -p1
-%patch9 -p1
-%patch10 -p1
-%patch11 -p1
-%patch12 -p1
-%patch13 -p1
-%patch14 -p1
-%patch15 -p1
-%patch16 -p1
-%patch17 -p1
-%patch18 -p1
-%patch19 -p1
-%patch20 -p1
-%patch21 -p1
-%patch22 -p1
+%patch1 -p0 
+%patch2 -p0
+%patch3 -p0
+%patch4 -p0
+%patch5 -p0
+%patch6 -p0
+%patch7 -p0
+%patch8 -p0
+%patch9 -p0
+%patch10 -p0
+%patch11 -p0
+%patch12 -p0
+%patch13 -p0
+%patch14 -p0
+%patch15 -p0
+%patch16 -p0
+%patch17 -p0
+%patch18 -p0
+%patch19 -p0
+%patch20 -p0
+%patch21 -p0
+%patch22 -p0
 
 chmod a+x install-sh configure
 
@@ -621,6 +620,8 @@ rm -rf ${RPM_BUILD_ROOT}
 %attr (-, root, other) /usr/share/locale
 
 %changelog
+* Thu Jan 19 2012 -arvind.umrao@oracle.com
+  Updated xscreensaver to 5.15
 * Wed Aug 15 2011 -arvind.umrao@oracle.com
   Updated xscreensaver-06-gtk-lock.diff for bug 7072588
 * Fri Jun 10 2011 - jeff.cai@oracle.com

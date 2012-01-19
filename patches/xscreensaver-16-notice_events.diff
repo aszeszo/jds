@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -26,9 +26,9 @@ Fix for: 6585644 xscreensaver can cause KeyPress event loop between itself and x
  driver/timers.c |    7 +++++++
  1 files changed, 7 insertions(+), 0 deletions(-)
 
-diff --git xscreensaver-5.12/driver/timers.c xscreensaver-5.12/driver/timers.c
---- xscreensaver-5.12/driver/timers.c
-+++ xscreensaver-5.12/driver/timers.c
+diff --git driver/timers.c driver/timers.c
+--- driver/timers.c
++++ driver/timers.c
 @@ -131,6 +131,13 @@ notice_events (saver_info *si, Window window, Bool top_p)
    unsigned int nkids;
    int screen_no;

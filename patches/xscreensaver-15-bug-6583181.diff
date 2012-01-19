@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -24,10 +24,10 @@
  driver/xscreensaver.c |    2 ++
  1 files changed, 2 insertions(+), 0 deletions(-)
 
-diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscreensaver.c
---- xscreensaver-5.12/driver/xscreensaver.c
-+++ xscreensaver-5.12/driver/xscreensaver.c
-@@ -1552,6 +1552,7 @@ main (int argc, char **argv)
+diff --git driver/xscreensaver.c driver/xscreensaver.c
+--- driver/xscreensaver.c
++++ driver/xscreensaver.c
+@@ -1590,6 +1590,7 @@ main (int argc, char **argv)
        if (ssi->real_screen_p)
          if (ensure_no_screensaver_running (si->dpy, si->screens[i].screen))
            exit (1);
@@ -35,7 +35,7 @@ diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscr
      }
  
    lock_initialization (si, &argc, argv);
-@@ -1586,6 +1587,7 @@ main (int argc, char **argv)
+@@ -1624,6 +1625,7 @@ main (int argc, char **argv)
  
    make_splash_dialog (si);
  
@@ -43,4 +43,3 @@ diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscr
    main_loop (si);		/* doesn't return */
    return 0;
  }
-

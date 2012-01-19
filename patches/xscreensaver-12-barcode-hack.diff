@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -34,9 +34,9 @@ like "boobies", "vibrator" and "Viagra".)
  hacks/barcode.c |  124 ++++++++++++++++++++++++++++++++++++++++++++++++------
  1 files changed, 110 insertions(+), 14 deletions(-)
 
-diff --git xscreensaver-5.12/hacks/barcode.c xscreensaver-5.12/hacks/barcode.c
---- xscreensaver-5.12/hacks/barcode.c
-+++ xscreensaver-5.12/hacks/barcode.c
+diff --git hacks/barcode.c hacks/barcode.c
+--- hacks/barcode.c
++++ hacks/barcode.c
 @@ -102,44 +102,67 @@ static const char *words[] =
    "addiction",
    "alertness",

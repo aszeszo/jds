@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -39,9 +39,9 @@ round trip for each XInternAtom individual call.
  create mode 100644 driver/atoms.c
  create mode 100644 driver/atoms.h
 
-diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefile.in
---- xscreensaver-5.12/driver/Makefile.in
-+++ xscreensaver-5.12/driver/Makefile.in
+diff --git driver/Makefile.in driver/Makefile.in
+--- driver/Makefile.in
++++ driver/Makefile.in
 @@ -190,18 +190,18 @@ SAVER_OBJS_1	= xscreensaver.o windows.o screens.o timers.o subprocs.o \
  		  exec.o xset.o splash.o setuid.o stderr.o mlstring.o
  
@@ -76,10 +76,10 @@ diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefil
  MEN_1		= xscreensaver.man xscreensaver-demo.man \
  		  xscreensaver-command.man \
  		  xscreensaver-text.man \
-diff --git xscreensaver-5.12/driver/atoms.c xscreensaver-5.12/driver/atoms.c
+diff --git driver/atoms.c driver/atoms.c
 new file mode 100644
 --- /dev/null
-+++ xscreensaver-5.12/driver/atoms.c
++++ driver/atoms.c
 @@ -0,0 +1,113 @@
 +/* xscreensaver, Copyright (c) 1991-2010 Jamie Zawinski <jwz@jwz.org>
 + *
@@ -88,7 +88,7 @@ new file mode 100644
 + * the above copyright notice appear in all copies and that both that
 + * copyright notice and this permission notice appear in supporting
 + * documentation.  No representations are made about the suitability of this
-+ * software for any purpose.  It is provided "as is" without express or 
++ * software for any purpose.  It is provided "as is" without express or
 + * implied warranty.
 + */
 +
@@ -194,10 +194,10 @@ new file mode 100644
 +
 +  return result;
 +}
-diff --git xscreensaver-5.12/driver/atoms.h xscreensaver-5.12/driver/atoms.h
+diff --git driver/atoms.h driver/atoms.h
 new file mode 100644
 --- /dev/null
-+++ xscreensaver-5.12/driver/atoms.h
++++ driver/atoms.h
 @@ -0,0 +1,33 @@
 +/* xscreensaver, Copyright (c) 1991-2010 Jamie Zawinski <jwz@jwz.org>
 + *
@@ -206,7 +206,7 @@ new file mode 100644
 + * the above copyright notice appear in all copies and that both that
 + * copyright notice and this permission notice appear in supporting
 + * documentation.  No representations are made about the suitability of this
-+ * software for any purpose.  It is provided "as is" without express or 
++ * software for any purpose.  It is provided "as is" without express or
 + * implied warranty.
 + */
 +
@@ -232,9 +232,9 @@ new file mode 100644
 +  XA_SELECT, XA_THROTTLE, XA_UNTHROTTLE;
 +
 +#endif /* _XSCREENSAVER_ATOMS_H_ */
-diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk.c
---- xscreensaver-5.12/driver/demo-Gtk.c
-+++ xscreensaver-5.12/driver/demo-Gtk.c
+diff --git driver/demo-Gtk.c driver/demo-Gtk.c
+--- driver/demo-Gtk.c
++++ driver/demo-Gtk.c
 @@ -118,6 +118,7 @@
  #include "resources.h"		/* for parse_time() */
  #include "visual.h"		/* for has_writable_cells() */
@@ -256,7 +256,7 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
  static void populate_demo_window (state *, int list_elt);
  static void populate_prefs_page (state *);
  static void populate_popup_window (state *);
-@@ -5032,20 +5027,11 @@ main (int argc, char **argv)
+@@ -5050,20 +5045,11 @@ main (int argc, char **argv)
  
    /* Intern the atoms that xscreensaver_command() needs.
     */
@@ -282,9 +282,9 @@ diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk
  
    /* Create the window and all its widgets.
     */
-diff --git xscreensaver-5.12/driver/demo-Xm.c xscreensaver-5.12/driver/demo-Xm.c
---- xscreensaver-5.12/driver/demo-Xm.c
-+++ xscreensaver-5.12/driver/demo-Xm.c
+diff --git driver/demo-Xm.c driver/demo-Xm.c
+--- driver/demo-Xm.c
++++ driver/demo-Xm.c
 @@ -82,6 +82,7 @@
  #include "resources.h"		/* for parse_time() */
  #include "visual.h"		/* for has_writable_cells() */
@@ -331,9 +331,9 @@ diff --git xscreensaver-5.12/driver/demo-Xm.c xscreensaver-5.12/driver/demo-Xm.c
  
    /* Create the window and all its widgets.
     */
-diff --git xscreensaver-5.12/driver/remote.c xscreensaver-5.12/driver/remote.c
---- xscreensaver-5.12/driver/remote.c
-+++ xscreensaver-5.12/driver/remote.c
+diff --git driver/remote.c driver/remote.c
+--- driver/remote.c
++++ driver/remote.c
 @@ -34,15 +34,13 @@
  #include <X11/Xos.h>
  
@@ -351,9 +351,9 @@ diff --git xscreensaver-5.12/driver/remote.c xscreensaver-5.12/driver/remote.c
  
  
  static XErrorHandler old_handler = 0;
-diff --git xscreensaver-5.12/driver/windows.c xscreensaver-5.12/driver/windows.c
---- xscreensaver-5.12/driver/windows.c
-+++ xscreensaver-5.12/driver/windows.c
+diff --git driver/windows.c driver/windows.c
+--- driver/windows.c
++++ driver/windows.c
 @@ -69,14 +69,12 @@ typedef long PROP32;
  #include "xscreensaver.h"
  #include "visual.h"
@@ -370,9 +370,9 @@ diff --git xscreensaver-5.12/driver/windows.c xscreensaver-5.12/driver/windows.c
  
  extern saver_info *global_si_kludge;	/* I hate C so much... */
  
-diff --git xscreensaver-5.12/driver/xscreensaver-command.c xscreensaver-5.12/driver/xscreensaver-command.c
---- xscreensaver-5.12/driver/xscreensaver-command.c
-+++ xscreensaver-5.12/driver/xscreensaver-command.c
+diff --git driver/xscreensaver-command.c driver/xscreensaver-command.c
+--- driver/xscreensaver-command.c
++++ driver/xscreensaver-command.c
 @@ -40,6 +40,7 @@
  typedef long PROP32;
  
@@ -429,9 +429,9 @@ diff --git xscreensaver-5.12/driver/xscreensaver-command.c xscreensaver-5.12/dri
  
    if (cmd == &XA_WATCH)
      {
-diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscreensaver.c
---- xscreensaver-5.12/driver/xscreensaver.c
-+++ xscreensaver-5.12/driver/xscreensaver.c
+diff --git driver/xscreensaver.c driver/xscreensaver.c
+--- driver/xscreensaver.c
++++ driver/xscreensaver.c
 @@ -224,6 +224,7 @@
  #include "visual.h"
  #include "usleep.h"
@@ -498,9 +498,9 @@ diff --git xscreensaver-5.12/driver/xscreensaver.c xscreensaver-5.12/driver/xscr
  
    return toplevel_shell;
  }
-diff --git xscreensaver-5.12/driver/xscreensaver.h xscreensaver-5.12/driver/xscreensaver.h
---- xscreensaver-5.12/driver/xscreensaver.h
-+++ xscreensaver-5.12/driver/xscreensaver.h
+diff --git driver/xscreensaver.h driver/xscreensaver.h
+--- driver/xscreensaver.h
++++ driver/xscreensaver.h
 @@ -200,8 +200,5 @@ Bool safe_XF86VidModeGetViewPort (Display *, int, int *, int *);
  #endif /* HAVE_XF86VMODE */
  

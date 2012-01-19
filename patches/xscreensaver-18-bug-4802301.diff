@@ -3,10 +3,10 @@
  driver/demo-Gtk.c |   11 +----------
  1 files changed, 1 insertions(+), 10 deletions(-)
 
-diff --git xscreensaver-5.12/driver/demo-Gtk.c xscreensaver-5.12/driver/demo-Gtk.c
---- xscreensaver-5.12/driver/demo-Gtk.c
-+++ xscreensaver-5.12/driver/demo-Gtk.c
-@@ -1065,16 +1065,7 @@ await_xscreensaver (state *s)
+diff --git driver/demo-Gtk.c driver/demo-Gtk.c
+--- driver/demo-Gtk.c
++++ driver/demo-Gtk.c
+@@ -1066,16 +1066,7 @@ await_xscreensaver (state *s)
          strcat (buf, STFU
  	  _("You are running as root.  This usually means that xscreensaver\n"
              "was unable to contact your X server because access control is\n"

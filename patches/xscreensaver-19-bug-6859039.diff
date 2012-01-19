@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -24,10 +24,10 @@
  driver/prefs.c |   14 ++++++++++++++
  1 files changed, 14 insertions(+), 0 deletions(-)
 
-diff --git xscreensaver-5.12/driver/prefs.c xscreensaver-5.12/driver/prefs.c
---- xscreensaver-5.12/driver/prefs.c
-+++ xscreensaver-5.12/driver/prefs.c
-@@ -382,7 +382,21 @@ parse_init_file (saver_preferences *p)
+diff --git driver/prefs.c driver/prefs.c
+--- driver/prefs.c
++++ driver/prefs.c
+@@ -383,7 +383,21 @@ parse_init_file (saver_preferences *p)
        return 0;
      }
  

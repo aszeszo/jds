@@ -2,9 +2,9 @@
  po/Makefile.in.in |    6 ++++++
  1 files changed, 6 insertions(+), 0 deletions(-)
 
-diff --git xscreensaver-5.12/po/Makefile.in.in xscreensaver-5.12/po/Makefile.in.in
---- xscreensaver-5.12/po/Makefile.in.in
-+++ xscreensaver-5.12/po/Makefile.in.in
+diff --git po/Makefile.in.in po/Makefile.in.in
+--- po/Makefile.in.in
++++ po/Makefile.in.in
 @@ -84,6 +84,9 @@
  #       refering to $(srcdir) anyway.  So I just commented (my half-fixed
  #       version of) this rule out.
@@ -25,4 +25,3 @@ diff --git xscreensaver-5.12/po/Makefile.in.in xscreensaver-5.12/po/Makefile.in.
  CATALOGS = @CATALOGS@
  CATOBJEXT = @CATOBJEXT@
  INSTOBJEXT = @INSTOBJEXT@
-

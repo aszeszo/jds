@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2006, 2010, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -33,9 +33,9 @@ to fallback to direct use of getpwent(), which isn't audited
  driver/passwd.c     |    4 +
  3 files changed, 163 insertions(+), 5 deletions(-)
 
-diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefile.in
---- xscreensaver-5.12/driver/Makefile.in
-+++ xscreensaver-5.12/driver/Makefile.in
+diff --git driver/Makefile.in driver/Makefile.in
+--- driver/Makefile.in
++++ driver/Makefile.in
 @@ -109,8 +109,8 @@ TRUSTED_LIBS	= -lglib-2.0 -lsecdb
  TRUSTED_SRCS	= trusted-utils.c
  TRUSTED_OBJS	= trusted-utils.o
@@ -56,9 +56,9 @@ diff --git xscreensaver-5.12/driver/Makefile.in xscreensaver-5.12/driver/Makefil
  
  CMD_LIBS	= $(LIBS) $(X_LIBS) \
  		  $(X_PRE_LIBS) -lX11 -lXext $(X_EXTRA_LIBS)
-diff --git xscreensaver-5.12/driver/passwd-pam.c xscreensaver-5.12/driver/passwd-pam.c
---- xscreensaver-5.12/driver/passwd-pam.c
-+++ xscreensaver-5.12/driver/passwd-pam.c
+diff --git driver/passwd-pam.c driver/passwd-pam.c
+--- driver/passwd-pam.c
++++ driver/passwd-pam.c
 @@ -47,6 +47,8 @@
  
  #ifdef __sun
@@ -273,9 +273,9 @@ diff --git xscreensaver-5.12/driver/passwd-pam.c xscreensaver-5.12/driver/passwd
        if (verbose_p)
          sleep (1);
  #endif
-diff --git xscreensaver-5.12/driver/passwd.c xscreensaver-5.12/driver/passwd.c
---- xscreensaver-5.12/driver/passwd.c
-+++ xscreensaver-5.12/driver/passwd.c
+diff --git driver/passwd.c driver/passwd.c
+--- driver/passwd.c
++++ driver/passwd.c
 @@ -79,9 +79,11 @@ extern void pam_try_unlock (saver_info *si, Bool verbose_p,
  extern Bool ext_priv_init (int argc, char **argv, Bool verbose_p);
  extern Bool ext_passwd_valid_p (const char *typed_passwd, Bool verbose_p);

@@ -21,18 +21,23 @@
  * DEALINGS IN THE SOFTWARE.
  */
 
+---
+ driver/lock.c         |    4 ++--
+ driver/xscreensaver.c |    1 -
+ 2 files changed, 2 insertions(+), 3 deletions(-)
 
---- xscreensaver-5.12/driver/lock.c_org	2011-05-03 22:33:20.519068800 +0530
-+++ xscreensaver-5.12/driver/lock.c	2011-05-03 22:41:45.786785093 +0530
-@@ -907,6 +907,7 @@ new_passwd_window (saver_info *si)
+diff --git driver/lock.c driver/lock.c
+--- driver/lock.c
++++ driver/lock.c
+@@ -918,6 +918,7 @@ new_passwd_window (saver_info *si)
                 blurb(), pw->prompt_screen->number);
    }
  
 +#ifdef CR7033508
    /* Before mapping the window, save a pixmap of the current screen.
-      When we lower the window, we
-      restore these bits.  This works, because the running screenhack
-@@ -929,6 +930,7 @@ new_passwd_window (saver_info *si)
+      When we lower the window, we restore these bits.  This works,
+      because the running screenhack has already been sent SIGSTOP, so
+@@ -939,6 +940,7 @@ new_passwd_window (saver_info *si)
  	       0, 0);
      XFreeGC (si->dpy, gc);
    }
@@ -40,7 +45,7 @@
  
    si->pw_data = pw;
    return 0;
-@@ -3028,8 +3030,6 @@ unlock_p (saver_info *si)
+@@ -3102,8 +3104,6 @@ unlock_p (saver_info *si)
        return False;
      }
  
@@ -49,8 +54,9 @@
    xss_authenticate(si, p->verbose_p);
  
    return (si->unlock_state == ul_success);
---- xscreensaver-5.12/driver/xscreensaver.c_org	2011-05-03 22:34:12.756063865 +0530
-+++ xscreensaver-5.12/driver/xscreensaver.c	2011-05-03 22:37:26.784405530 +0530
+diff --git driver/xscreensaver.c driver/xscreensaver.c
+--- driver/xscreensaver.c
++++ driver/xscreensaver.c
 @@ -1283,7 +1283,6 @@ main_loop (saver_info *si)
        for (i = 0; i < si->nscreens; i++)
          kill_screenhack (&si->screens[i]);
