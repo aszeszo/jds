@@ -35,10 +35,12 @@ Requires: SUNWPython26
 Requires: SUNWbash
 Requires: SUNWdesktop-cache
 Requires: SUNWdbus-python26
+Requires: SUNWliblouis
 BuildRequires: SUNWPython26-devel
 BuildRequires: SUNWpygtk2-26-devel
 BuildRequires: SUNWpycairo26-devel
 BuildRequires: SUNWpyorbit26-devel
+BuildRequires: SUNWliblouis
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -118,6 +120,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Wed Jan 18 2012 - lee.yuan@oracle.com
+- Add liblouis to dependency.
 * Fri Jun 11 2010 - li.yuan@sun.com
 - Review build require SUNWpyatspi.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
