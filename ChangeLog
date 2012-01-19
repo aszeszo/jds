@@ -1,3 +1,8 @@
+2012-01-19  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 6779932 nautilus core dumps during deleting shapshot of root dir
+	* patches/nautilus-14-zfs-snapshot.diff
+
 2012-01-19  Ghee Teo  <ghee.teo@oracle.com>
 
         CR 7026871 glib2, dbus, dbus-glib linked in additional libraries
