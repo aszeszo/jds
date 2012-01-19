@@ -35,12 +35,12 @@ Requires: SUNWPython26
 Requires: SUNWbash
 Requires: SUNWdesktop-cache
 Requires: SUNWdbus-python26
-Requires: SUNWliblouis
+Requires: library/liblouis
 BuildRequires: SUNWPython26-devel
 BuildRequires: SUNWpygtk2-26-devel
 BuildRequires: SUNWpycairo26-devel
 BuildRequires: SUNWpyorbit26-devel
-BuildRequires: SUNWliblouis
+BuildRequires: library/liblouis
 
 %package l10n
 Summary:                 %{summary} - l10n files
