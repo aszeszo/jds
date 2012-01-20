@@ -1,3 +1,10 @@
+2012-01-20  Ghee Teo  <ghee.teo@oracle.com>
+
+        work around a bug in jucr for the fix to
+	CR 7026871 glib2, dbus, dbus-glib linked in additional libraries
+        which are not used. webrti:358583.
+        * specs/SUNWglib2.spec:
+
 2012-01-19  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	CR 6779932 nautilus core dumps during deleting shapshot of root dir

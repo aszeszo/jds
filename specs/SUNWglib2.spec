@@ -61,11 +61,11 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: library/glib2
+Requires: SUNWglib2
 
 %package l10n
 Summary:                 %{summary} - l10n content
-Requires: library/glib2
+Requires: SUNWglib2
 
 %prep
 rm -rf %name-%version
