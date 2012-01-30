@@ -1,0 +1,28 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-time-slider-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-time-slider-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-time-slider-root.copyright
+d none etc 0755 root sys
+d none etc/dbus-1 0755 root bin
+d none etc/dbus-1/system.d 0755 root bin
+f none etc/dbus-1/system.d/time-slider.conf=etc/dbus-1/system.d/time-slider.conf 0644 root bin
+d none etc/security 0755 root sys
+e rbac etc/security/auth_attr=etc/security/auth_attr 0644 root sys
+e rbac etc/user_attr=etc/user_attr 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/time-slider-notify.desktop=etc/xdg/autostart/time-slider-notify.desktop 0644 root sys
+d none lib 0755 root bin
+d none lib/svc 0755 root bin
+d none lib/svc/method 0755 root bin
+f none lib/svc/method/time-slider=lib/svc/method/time-slider 0555 root bin
+f none lib/svc/method/time-slider-plugin=lib/svc/method/time-slider-plugin 0555 root bin
+f none lib/svc/method/time-slider-rsync=lib/svc/method/time-slider-rsync 0555 root bin
+d none var 0755 root sys
+d none var/svc 0755 root sys
+d none var/svc/manifest 0755 root sys
+d none var/svc/manifest/application 0755 root sys
+f manifest var/svc/manifest/application/time-slider-plugin.xml=var/svc/manifest/application/time-slider-plugin.xml 0444 root sys
+f manifest var/svc/manifest/application/time-slider.xml=var/svc/manifest/application/time-slider.xml 0444 root sys
+d none var/svc/manifest/system 0755 root sys
+d none var/svc/manifest/system/filesystem 0755 root sys
+f manifest var/svc/manifest/system/filesystem/auto-snapshot.xml=var/svc/manifest/system/filesystem/auto-snapshot.xml 0444 root sys

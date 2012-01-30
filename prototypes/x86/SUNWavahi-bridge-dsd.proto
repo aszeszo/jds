@@ -1,0 +1,87 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWavahi-bridge-dsd.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWavahi-bridge-dsd.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWavahi-bridge-dsd.copyright
+f none share/doc/SUNWavahi-bridge-dsd/LICENSE=usr/share/doc/SUNWavahi-bridge-dsd/LICENSE 0444 root bin
+f none share/doc/SUNWavahi-bridge-dsd/README=usr/share/doc/SUNWavahi-bridge-dsd/README 0444 root bin
+d none bin 0755 root bin
+f none bin/avahi-browse=usr/bin/avahi-browse 0755 root bin
+s none bin/avahi-browse-domains=avahi-browse
+f none bin/avahi-discover=usr/bin/avahi-discover 0755 root bin
+f none bin/avahi-publish=usr/bin/avahi-publish 0755 root bin
+s none bin/avahi-publish-address=avahi-publish
+s none bin/avahi-publish-service=avahi-publish
+f none bin/avahi-resolve=usr/bin/avahi-resolve 0755 root bin
+s none bin/avahi-resolve-address=avahi-resolve
+s none bin/avahi-resolve-host-name=avahi-resolve
+f none bin/avahi-set-host-name=usr/bin/avahi-set-host-name 0755 root bin
+s none bin/bshell=bssh
+f none bin/bssh=usr/bin/bssh 0755 root bin
+s none bin/bvnc=bssh
+d none lib 0755 root bin
+d none lib/avahi 0755 root bin
+f none lib/avahi/service-types.db.dir=usr/lib/avahi/service-types.db.dir 0644 root bin
+f none lib/avahi/service-types.db.pag=usr/lib/avahi/service-types.db.pag 0644 root bin
+s none lib/libavahi-client.so=libavahi-client.so.3.2.5
+s none lib/libavahi-client.so.3=libavahi-client.so.3.2.5
+f none lib/libavahi-client.so.3.2.5=usr/lib/libavahi-client.so.3.2.5 0755 root bin
+s none lib/libavahi-common.so=libavahi-common.so.3.5.1
+s none lib/libavahi-common.so.3=libavahi-common.so.3.5.1
+f none lib/libavahi-common.so.3.5.1=usr/lib/libavahi-common.so.3.5.1 0755 root bin
+s none lib/libavahi-core.so=libavahi-core.so.6.0.1
+s none lib/libavahi-core.so.6=libavahi-core.so.6.0.1
+f none lib/libavahi-core.so.6.0.1=usr/lib/libavahi-core.so.6.0.1 0755 root bin
+s none lib/libavahi-glib.so=libavahi-glib.so.1.0.1
+s none lib/libavahi-glib.so.1=libavahi-glib.so.1.0.1
+f none lib/libavahi-glib.so.1.0.1=usr/lib/libavahi-glib.so.1.0.1 0755 root bin
+s none lib/libavahi-gobject.so=libavahi-gobject.so.0.0.1
+s none lib/libavahi-gobject.so.0=libavahi-gobject.so.0.0.1
+f none lib/libavahi-gobject.so.0.0.1=usr/lib/libavahi-gobject.so.0.0.1 0755 root bin
+s none lib/libavahi-ui.so=libavahi-ui.so.0.1.1
+s none lib/libavahi-ui.so.0=libavahi-ui.so.0.1.1
+f none lib/libavahi-ui.so.0.1.1=usr/lib/libavahi-ui.so.0.1.1 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/avahi 0755 root bin
+f none lib/python2.6/vendor-packages/avahi/ServiceTypeDatabase.py=usr/lib/python2.6/vendor-packages/avahi/ServiceTypeDatabase.py 0755 root bin
+f none lib/python2.6/vendor-packages/avahi/__init__.py=usr/lib/python2.6/vendor-packages/avahi/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/avahi/__init__.pyc=usr/lib/python2.6/vendor-packages/avahi/__init__.pyc 0644 root bin
+d none lib/python2.6/vendor-packages/avahi_discover 0755 root bin
+f none lib/python2.6/vendor-packages/avahi_discover/SimpleGladeApp.py=usr/lib/python2.6/vendor-packages/avahi_discover/SimpleGladeApp.py 0644 root bin
+f none lib/python2.6/vendor-packages/avahi_discover/SimpleGladeApp.pyc=usr/lib/python2.6/vendor-packages/avahi_discover/SimpleGladeApp.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/avahi_discover/__init__.py=usr/lib/python2.6/vendor-packages/avahi_discover/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/avahi_discover/__init__.pyc=usr/lib/python2.6/vendor-packages/avahi_discover/__init__.pyc 0644 root bin
+d none sbin 0755 root bin
+f none sbin/avahi-daemon-bridge-dsd=usr/sbin/avahi-daemon-bridge-dsd 0755 root bin
+d none share 0755 root sys
+d none share/avahi 0755 root bin
+f none share/avahi/avahi-service.dtd=usr/share/avahi/avahi-service.dtd 0644 root bin
+d none share/avahi/interfaces 0755 root bin
+f none share/avahi/interfaces/avahi-discover.glade=usr/share/avahi/interfaces/avahi-discover.glade 0644 root bin
+d none share/avahi/introspection 0755 root bin
+f none share/avahi/introspection/AddressResolver.introspect=usr/share/avahi/introspection/AddressResolver.introspect 0644 root bin
+f none share/avahi/introspection/DomainBrowser.introspect=usr/share/avahi/introspection/DomainBrowser.introspect 0644 root bin
+f none share/avahi/introspection/EntryGroup.introspect=usr/share/avahi/introspection/EntryGroup.introspect 0644 root bin
+f none share/avahi/introspection/HostNameResolver.introspect=usr/share/avahi/introspection/HostNameResolver.introspect 0644 root bin
+f none share/avahi/introspection/RecordBrowser.introspect=usr/share/avahi/introspection/RecordBrowser.introspect 0644 root bin
+f none share/avahi/introspection/Server.introspect=usr/share/avahi/introspection/Server.introspect 0644 root bin
+f none share/avahi/introspection/ServiceBrowser.introspect=usr/share/avahi/introspection/ServiceBrowser.introspect 0644 root bin
+f none share/avahi/introspection/ServiceResolver.introspect=usr/share/avahi/introspection/ServiceResolver.introspect 0644 root bin
+f none share/avahi/introspection/ServiceTypeBrowser.introspect=usr/share/avahi/introspection/ServiceTypeBrowser.introspect 0644 root bin
+f none share/avahi/service-types=usr/share/avahi/service-types 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWavahi-bridge-dsd 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+s none share/man/man1/avahi-browse-domains.1=avahi-browse.1
+f none share/man/man1/avahi-browse.1=usr/share/man/man1/avahi-browse.1 0644 root bin
+f none share/man/man1/avahi-daemon-bridge-dsd.1=usr/share/man/man1/avahi-daemon-bridge-dsd.1 0644 root bin
+f none share/man/man1/avahi-discover.1=usr/share/man/man1/avahi-discover.1 0644 root bin
+s none share/man/man1/avahi-publish-address.1=avahi-publish.1
+s none share/man/man1/avahi-publish-service.1=avahi-publish.1
+f none share/man/man1/avahi-publish.1=usr/share/man/man1/avahi-publish.1 0644 root bin
+s none share/man/man1/avahi-resolve-address.1=avahi-resolve.1
+s none share/man/man1/avahi-resolve-host-name.1=avahi-resolve.1
+f none share/man/man1/avahi-resolve.1=usr/share/man/man1/avahi-resolve.1 0644 root bin
+f none share/man/man1/avahi-set-host-name.1=usr/share/man/man1/avahi-set-host-name.1 0644 root bin
+f none share/man/man1/bssh.1=usr/share/man/man1/bssh.1 0644 root bin
+s none share/man/man1/bvnc.1=bssh.1

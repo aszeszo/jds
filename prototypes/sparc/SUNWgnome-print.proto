@@ -1,0 +1,138 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-print.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-print.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-print.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-print.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-print.copyright
+f none share/doc/SUNWgnome-print/libgnomeprint-2.18.7/AUTHORS=usr/share/doc/SUNWgnome-print/libgnomeprint-2.18.7/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprint-2.18.7/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-print/libgnomeprint-2.18.7/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprint-2.18.7/ChangeLog.bz2=usr/share/doc/SUNWgnome-print/libgnomeprint-2.18.7/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprint-2.18.7/README=usr/share/doc/SUNWgnome-print/libgnomeprint-2.18.7/README 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/AUTHORS=usr/share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/ChangeLog.bz2=usr/share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/README=usr/share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1/README 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/AUTHORS=usr/share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/ChangeLog.bz2=usr/share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/README=usr/share/doc/SUNWgnome-print/libgnomeprintui-2.18.5/README 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/AUTHORS=usr/share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/COPYING.LIB.bz2=usr/share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/ChangeLog.bz2=usr/share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/README=usr/share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1/README 0444 root bin
+f none share/doc/SUNWgnome-print/printman-0.0.2/AUTHORS=usr/share/doc/SUNWgnome-print/printman-0.0.2/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-print/printman-0.0.2/COPYING.bz2=usr/share/doc/SUNWgnome-print/printman-0.0.2/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/printman-0.0.2/ChangeLog.bz2=usr/share/doc/SUNWgnome-print/printman-0.0.2/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-print/printman-0.0.2/README=usr/share/doc/SUNWgnome-print/printman-0.0.2/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gnome-printinfo=usr/bin/gnome-printinfo 0755 root bin
+f none bin/libgnomeprint-2.0-font-install=usr/bin/libgnomeprint-2.0-font-install 0755 root bin
+d none lib 0755 root bin
+d none lib/gnome-print-2.0 0755 root bin
+d none lib/gnome-print-2.0/drivers 0755 root bin
+s none lib/gnome-print-2.0/drivers/libgnomeprint-fax.so=libgnomeprint-fax.so.0.0.0
+s none lib/gnome-print-2.0/drivers/libgnomeprint-fax.so.0=libgnomeprint-fax.so.0.0.0
+f none lib/gnome-print-2.0/drivers/libgnomeprint-fax.so.0.0.0=usr/lib/gnome-print-2.0/drivers/libgnomeprint-fax.so.0.0.0 0755 root bin
+d none lib/gnome-print-2.0/sft 0755 root bin
+s none lib/gnome-print-2.0/sft/libsft.so=libsft.so.0.0.0
+s none lib/gnome-print-2.0/sft/libsft.so.0=libsft.so.0.0.0
+f none lib/gnome-print-2.0/sft/libsft.so.0.0.0=usr/lib/gnome-print-2.0/sft/libsft.so.0.0.0 0755 root bin
+d none lib/gnome-print-2.0/transports 0755 root bin
+s none lib/gnome-print-2.0/transports/libgnomeprint-custom.so=libgnomeprint-custom.so.0.0.0
+s none lib/gnome-print-2.0/transports/libgnomeprint-custom.so.0=libgnomeprint-custom.so.0.0.0
+f none lib/gnome-print-2.0/transports/libgnomeprint-custom.so.0.0.0=usr/lib/gnome-print-2.0/transports/libgnomeprint-custom.so.0.0.0 0755 root bin
+s none lib/gnome-print-2.0/transports/libgnomeprint-file.so=libgnomeprint-file.so.0.0.0
+s none lib/gnome-print-2.0/transports/libgnomeprint-file.so.0=libgnomeprint-file.so.0.0.0
+f none lib/gnome-print-2.0/transports/libgnomeprint-file.so.0.0.0=usr/lib/gnome-print-2.0/transports/libgnomeprint-file.so.0.0.0 0755 root bin
+s none lib/gnome-print-2.0/transports/libgnomeprint-lpr.so=libgnomeprint-lpr.so.0.0.0
+s none lib/gnome-print-2.0/transports/libgnomeprint-lpr.so.0=libgnomeprint-lpr.so.0.0.0
+f none lib/gnome-print-2.0/transports/libgnomeprint-lpr.so.0.0.0=usr/lib/gnome-print-2.0/transports/libgnomeprint-lpr.so.0.0.0 0755 root bin
+d none lib/libgnomeprint 0755 root bin
+s none lib/libgnomeprint-2-2.so.0=libgnomeprint-2-2.so.0.1.0
+f none lib/libgnomeprint-2-2.so.0.1.0=usr/lib/libgnomeprint-2-2.so.0.1.0 0755 root bin
+s none lib/libgnomeprint-2.so.0=libgnomeprint-2.so.0.0.0
+f none lib/libgnomeprint-2.so.0.0.0=usr/lib/libgnomeprint-2.so.0.0.0 0755 root bin
+d none lib/libgnomeprint/2.18.7 0755 root bin
+d none lib/libgnomeprint/2.18.7/modules 0755 root bin
+d none lib/libgnomeprint/2.18.7/modules/filters 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-clip.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-clip.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-draft.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-draft.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-frgba.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-frgba.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-multipage.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-multipage.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-position.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-position.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-reorder.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-reorder.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-reverse.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-reverse.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-rotate.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-rotate.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-select.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-select.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-zoom.so=usr/lib/libgnomeprint/2.18.7/modules/filters/libgnomeprint-zoom.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/libgnomeprintlpd.so=usr/lib/libgnomeprint/2.18.7/modules/libgnomeprintlpd.so 0755 root bin
+d none lib/libgnomeprint/2.18.7/modules/transports 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/transports/libgnomeprint-custom.so=usr/lib/libgnomeprint/2.18.7/modules/transports/libgnomeprint-custom.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/transports/libgnomeprint-file.so=usr/lib/libgnomeprint/2.18.7/modules/transports/libgnomeprint-file.so 0755 root bin
+f none lib/libgnomeprint/2.18.7/modules/transports/libgnomeprint-lpr.so=usr/lib/libgnomeprint/2.18.7/modules/transports/libgnomeprint-lpr.so 0755 root bin
+s none lib/libgnomeprintui-2-2.so.0=libgnomeprintui-2-2.so.0.1.0
+f none lib/libgnomeprintui-2-2.so.0.1.0=usr/lib/libgnomeprintui-2-2.so.0.1.0 0755 root bin
+s none lib/libgnomeprintui-2.so.0=libgnomeprintui-2.so.0.0.0
+f none lib/libgnomeprintui-2.so.0.0.0=usr/lib/libgnomeprintui-2.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-print 0755 root bin
+d none share/doc/SUNWgnome-print/libgnomeprint-2.18.7 0755 root bin
+d none share/doc/SUNWgnome-print/libgnomeprint-sun-1.116.1 0755 root bin
+d none share/doc/SUNWgnome-print/libgnomeprintui-2.18.5 0755 root bin
+d none share/doc/SUNWgnome-print/libgnomeprintui-sun-1.116.1 0755 root bin
+d none share/doc/SUNWgnome-print/printman-0.0.2 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome-print-2.0 0755 root bin
+d none share/gnome-print-2.0/media 0755 root bin
+f none share/gnome-print-2.0/media/media.xml=usr/share/gnome-print-2.0/media/media.xml 0644 root bin
+d none share/gnome-print-2.0/models 0755 root bin
+f none share/gnome-print-2.0/models/GNOME-GENERIC-PS.xml=usr/share/gnome-print-2.0/models/GNOME-GENERIC-PS.xml 0644 root bin
+f none share/gnome-print-2.0/models/HP-LASERJET-4ML.xml=usr/share/gnome-print-2.0/models/HP-LASERJET-4ML.xml 0644 root bin
+f none share/gnome-print-2.0/models/STYLUS-COLOR-740.xml=usr/share/gnome-print-2.0/models/STYLUS-COLOR-740.xml 0644 root bin
+d none share/gnome-print-2.0/ppd 0755 root bin
+d none share/gnome-print-2.0/ppd/Generic 0755 root bin
+f none share/gnome-print-2.0/ppd/Generic/Generic-PostScript_Printer-Postscript.ppd.gz=usr/share/gnome-print-2.0/ppd/Generic/Generic-PostScript_Printer-Postscript.ppd.gz 0644 root bin
+d none share/gnome-print-2.0/printers 0755 root bin
+f none share/gnome-print-2.0/printers/GENERIC.xml=usr/share/gnome-print-2.0/printers/GENERIC.xml 0644 root bin
+d none share/gnome-print-2.0/vendors 0755 root bin
+f none share/gnome-print-2.0/vendors/EPSON.vendor=usr/share/gnome-print-2.0/vendors/EPSON.vendor 0644 root bin
+f none share/gnome-print-2.0/vendors/GNOME.vendor=usr/share/gnome-print-2.0/vendors/GNOME.vendor 0644 root bin
+f none share/gnome-print-2.0/vendors/HP.vendor=usr/share/gnome-print-2.0/vendors/HP.vendor 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-printinfo 0755 root bin
+d none share/gnome/help/gnome-printinfo/C 0755 root bin
+d none share/gnome/help/gnome-printinfo/C/figures 0755 root bin
+f none share/gnome/help/gnome-printinfo/C/figures/main-window.png=usr/share/gnome/help/gnome-printinfo/C/figures/main-window.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/C/gnome-print-manager.xml=usr/share/gnome/help/gnome-printinfo/C/gnome-print-manager.xml 0644 root bin
+f none share/gnome/help/gnome-printinfo/C/legal.xml=usr/share/gnome/help/gnome-printinfo/C/legal.xml 0644 root bin
+d none share/libgnomeprint 0755 root bin
+d none share/libgnomeprint-2.0 0755 root bin
+d none share/libgnomeprint-2.0/fonts 0755 root bin
+f none share/libgnomeprint-2.0/fonts/adobe-urw.font=usr/share/libgnomeprint-2.0/fonts/adobe-urw.font 0644 root bin
+f none share/libgnomeprint-2.0/fonts/defaults.fontmap=usr/share/libgnomeprint-2.0/fonts/defaults.fontmap 0644 root bin
+d none share/libgnomeprint/2.18.7 0755 root bin
+f none share/libgnomeprint/2.18.7/globals.xml=usr/share/libgnomeprint/2.18.7/globals.xml 0644 root bin
+d none share/libgnomeprint/2.18.7/models 0755 root bin
+f none share/libgnomeprint/2.18.7/models/GNOME-GENERIC-PS.xml=usr/share/libgnomeprint/2.18.7/models/GNOME-GENERIC-PS.xml 0644 root bin
+f none share/libgnomeprint/2.18.7/models/GNOME-PDF-WRITER.xml=usr/share/libgnomeprint/2.18.7/models/GNOME-PDF-WRITER.xml 0644 root bin
+d none share/libgnomeprint/2.18.7/models/uninstalled 0755 root bin
+f none share/libgnomeprint/2.18.7/models/uninstalled/GNOME-META.xml=usr/share/libgnomeprint/2.18.7/models/uninstalled/GNOME-META.xml 0644 root bin
+d none share/libgnomeprint/2.18.7/printers 0755 root bin
+f none share/libgnomeprint/2.18.7/printers/GENERIC.xml=usr/share/libgnomeprint/2.18.7/printers/GENERIC.xml 0644 root bin
+f none share/libgnomeprint/2.18.7/printers/PDF-WRITER.xml=usr/share/libgnomeprint/2.18.7/printers/PDF-WRITER.xml 0644 root bin
+d none share/libgnomeprint/2.18.7/printers/uninstalled 0755 root bin
+f none share/libgnomeprint/2.18.7/printers/uninstalled/META.xml=usr/share/libgnomeprint/2.18.7/printers/uninstalled/META.xml 0644 root bin
+d none share/libgnomeprintui 0755 root bin
+d none share/libgnomeprintui/2.18.5 0755 root bin
+f none share/libgnomeprintui/2.18.5/gnome-print-job-preview.xml=usr/share/libgnomeprintui/2.18.5/gnome-print-job-preview.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/printman 0755 root bin
+f none share/omf/printman/gnome-print-manager-C.omf=usr/share/omf/printman/gnome-print-manager-C.omf 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/gnome-print-manager 0755 root bin
+f none share/pixmaps/gnome-print-manager/broken.png=usr/share/pixmaps/gnome-print-manager/broken.png 0644 root bin
+f none share/pixmaps/gnome-print-manager/default.png=usr/share/pixmaps/gnome-print-manager/default.png 0644 root bin
+f none share/pixmaps/gnome-print-manager/inkjet.png=usr/share/pixmaps/gnome-print-manager/inkjet.png 0644 root bin
+f none share/pixmaps/gnome-print-manager/personal-laser.png=usr/share/pixmaps/gnome-print-manager/personal-laser.png 0644 root bin
+f none share/pixmaps/gnome-print-manager/workgroup-laser.png=usr/share/pixmaps/gnome-print-manager/workgroup-laser.png 0644 root bin
+f none share/pixmaps/print-manager.png=usr/share/pixmaps/print-manager.png 0644 root bin

@@ -1,0 +1,20 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxchat.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxchat.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWxchat.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxchat.copyright
+d none bin 0755 root bin
+f none bin/xchat=usr/bin/xchat 0755 root bin
+d none lib 0755 root bin
+d none lib/xchat 0755 root bin
+d none lib/xchat/plugins 0755 root bin
+f none lib/xchat/plugins/perl.so=usr/lib/xchat/plugins/perl.so 0755 root bin
+f none lib/xchat/plugins/python.so=usr/lib/xchat/plugins/python.so 0755 root bin
+f none lib/xchat/plugins/tcl.so=usr/lib/xchat/plugins/tcl.so 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/xchat.desktop=usr/share/applications/xchat.desktop 0644 root bin
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+f none share/dbus-1/services/org.xchat.service.service=usr/share/dbus-1/services/org.xchat.service.service 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/xchat.png=usr/share/pixmaps/xchat.png 0644 root bin

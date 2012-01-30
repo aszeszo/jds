@@ -1,0 +1,49 @@
+--- eog-2.30.2/help/C/eog.xml.orig	2011-05-11 14:22:42.009848363 +0100
++++ eog-2.30.2/help/C/eog.xml	2011-05-11 14:32:09.483056284 +0100
+@@ -30,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year> 
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -57,7 +55,7 @@
+       <publishername> GNOME Documentation Project </publishername> 
+     </publisher> 
+ 
+-   &legal;
++   
+    <!-- This file  contains link to license for the documentation (GNU FDL), and 
+         other legal stuff such as "NO WARRANTY" statement. Please do not change 
+ 	any of this. -->
+@@ -84,10 +82,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris </firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -urN eog.orig/src/eog-window.c eog.new/src/eog-window.c
+--- eog.orig/src/eog-window.c	2011-06-27 15:44:28.644631209 +0100
++++ eog.new/src/eog-window.c	2011-06-27 15:46:03.272752151 +0100
+@@ -2715,7 +2715,7 @@
+ 	static const char *documenters[] = {
+ 		"Eliot Landrum <eliot@landrum.cx>",
+ 		"Federico Mena-Quintero <federico@gnu.org>",
+-		"Sun GNOME Documentation Team <gdocteam@sun.com>",
++		"Oracle Solaris Desktop Documentation Team",
+ 		NULL
+ 	};
+ 

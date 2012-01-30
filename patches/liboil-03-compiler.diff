@@ -1,0 +1,18 @@
+--- liboil-0.3.17/liboil/amd64/wavelet.c-orig	2011-03-08 23:16:00.959437569 -0600
++++ liboil-0.3.17/liboil/amd64/wavelet.c	2011-03-08 23:16:25.067127074 -0600
+@@ -1602,6 +1602,7 @@ mas4_across_add_s16_mmx (int16_t *d, int
+ OIL_DEFINE_IMPL_FULL (mas4_across_add_s16_mmx, mas4_across_add_s16,
+     OIL_IMPL_FLAG_MMX);
+ 
++#if 0
+ void
+ mas8_across_add_s16_mmx (int16_t *d, int16_t *s1, int16_t *s2_nx8, int sstr2,
+     int16_t *s3_8, int16_t *s4_2, int n)
+@@ -1759,6 +1760,7 @@ mas8_across_add_s16_mmx (int16_t *d, int
+ }
+ OIL_DEFINE_IMPL_FULL (mas8_across_add_s16_mmx, mas8_across_add_s16,
+     OIL_IMPL_FLAG_MMX);
++#endif
+ 
+ void
+ lshift_s16_mmx(int16_t *d1, int16_t *s1, int16_t *s3_1, int n)

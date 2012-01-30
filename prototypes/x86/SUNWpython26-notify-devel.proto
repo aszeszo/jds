@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWpython26-notify-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWpython26-notify-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWpython26-notify-devel.copyright
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/notify-python.pc=usr/lib/pkgconfig/notify-python.pc 0644 root bin

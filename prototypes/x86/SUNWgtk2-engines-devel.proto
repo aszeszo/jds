@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk2-engines-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk2-engines-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk2-engines-devel.copyright
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/pkgconfig 0755 root other
+f none lib/amd64/pkgconfig/gtk-engines-2.pc=usr/lib/amd64/pkgconfig/gtk-engines-2.pc 0644 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gtk-engines-2.pc=usr/lib/pkgconfig/gtk-engines-2.pc 0644 root bin

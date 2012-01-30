@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibpopt.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibpopt.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibpopt.copyright
+d none lib 0755 root bin
+s none lib/libpopt.so=libpopt.so.0.0.0
+s none lib/libpopt.so.0=libpopt.so.0.0.0
+f none lib/libpopt.so.0.0.0=usr/lib/libpopt.so.0.0.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libpopt.so=libpopt.so.0.0.0
+s none lib/sparcv9/libpopt.so.0=libpopt.so.0.0.0
+f none lib/sparcv9/libpopt.so.0.0.0=usr/lib/sparcv9/libpopt.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libpopt.3=usr/share/man/man3/libpopt.3 0644 root bin

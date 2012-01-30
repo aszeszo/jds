@@ -1,0 +1,27 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapdc.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapdc.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapdc.copyright
+d none bin 0755 root bin
+f none bin/apoc-config=usr/bin/apoc-config 0755 root bin
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/apoc 0755 root bin
+f none share/lib/apoc/ConfigurationWizard.class=usr/share/lib/apoc/ConfigurationWizard.class 0755 root bin
+d none share/lib/apoc/com 0755 root bin
+d none share/lib/apoc/com/sun 0755 root bin
+d none share/lib/apoc/com/sun/apoc 0755 root bin
+d none share/lib/apoc/com/sun/apoc/install 0755 root bin
+d none share/lib/apoc/com/sun/apoc/install/resource 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_de.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_de.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_en.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_en.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_en_US.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_en_US.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_es.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_es.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_fr.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_fr.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_it.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_it.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_ja.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_ja.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_ko.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_ko.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_pt_BR.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_pt_BR.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_sv.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_sv.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_zh_CN.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_zh_CN.properties 0755 root bin
+f none share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_zh_TW.properties=usr/share/lib/apoc/com/sun/apoc/install/resource/DaemonConfigResources_zh_TW.properties 0755 root bin

@@ -1,0 +1,37 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgst-python26-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgst-python26-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgst-python26-devel.copyright
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gst-python-0.10.pc=usr/lib/pkgconfig/gst-python-0.10.pc 0644 root bin
+d none share 0755 root sys
+d none share/gst-python 0755 root bin
+d none share/gst-python/0.10 0755 root bin
+d none share/gst-python/0.10/defs 0755 root bin
+f none share/gst-python/0.10/defs/audio.defs=usr/share/gst-python/0.10/defs/audio.defs 0644 root bin
+f none share/gst-python/0.10/defs/base.defs=usr/share/gst-python/0.10/defs/base.defs 0644 root bin
+f none share/gst-python/0.10/defs/gst-extrafuncs.defs=usr/share/gst-python/0.10/defs/gst-extrafuncs.defs 0644 root bin
+f none share/gst-python/0.10/defs/gst-types.defs=usr/share/gst-python/0.10/defs/gst-types.defs 0644 root bin
+f none share/gst-python/0.10/defs/libs.defs=usr/share/gst-python/0.10/defs/libs.defs 0644 root bin
+f none share/gst-python/0.10/defs/pbutils.defs=usr/share/gst-python/0.10/defs/pbutils.defs 0644 root bin
+f none share/gst-python/0.10/defs/tag.defs=usr/share/gst-python/0.10/defs/tag.defs 0644 root bin
+f none share/gst-python/0.10/defs/video.defs=usr/share/gst-python/0.10/defs/video.defs 0644 root bin
+d none share/gst-python/0.10/examples 0755 root bin
+f none share/gst-python/0.10/examples/audio-controller.py=usr/share/gst-python/0.10/examples/audio-controller.py 0644 root bin
+f none share/gst-python/0.10/examples/audioconcat.py=usr/share/gst-python/0.10/examples/audioconcat.py 0644 root bin
+f none share/gst-python/0.10/examples/bps.py=usr/share/gst-python/0.10/examples/bps.py 0644 root bin
+f none share/gst-python/0.10/examples/cp.py=usr/share/gst-python/0.10/examples/cp.py 0644 root bin
+f none share/gst-python/0.10/examples/debugslider.py=usr/share/gst-python/0.10/examples/debugslider.py 0644 root bin
+f none share/gst-python/0.10/examples/decodebin.py=usr/share/gst-python/0.10/examples/decodebin.py 0644 root bin
+f none share/gst-python/0.10/examples/f2f.py=usr/share/gst-python/0.10/examples/f2f.py 0644 root bin
+f none share/gst-python/0.10/examples/filesrc.py=usr/share/gst-python/0.10/examples/filesrc.py 0644 root bin
+f none share/gst-python/0.10/examples/fvumeter.py=usr/share/gst-python/0.10/examples/fvumeter.py 0644 root bin
+f none share/gst-python/0.10/examples/gst-discover=usr/share/gst-python/0.10/examples/gst-discover 0644 root bin
+f none share/gst-python/0.10/examples/gstfile.py=usr/share/gst-python/0.10/examples/gstfile.py 0644 root bin
+f none share/gst-python/0.10/examples/maemogst.py=usr/share/gst-python/0.10/examples/maemogst.py 0644 root bin
+f none share/gst-python/0.10/examples/mixer.py=usr/share/gst-python/0.10/examples/mixer.py 0644 root bin
+f none share/gst-python/0.10/examples/pipeline-tester=usr/share/gst-python/0.10/examples/pipeline-tester 0644 root bin
+f none share/gst-python/0.10/examples/play.py=usr/share/gst-python/0.10/examples/play.py 0644 root bin
+f none share/gst-python/0.10/examples/remuxer.py=usr/share/gst-python/0.10/examples/remuxer.py 0644 root bin
+f none share/gst-python/0.10/examples/sinkelement.py=usr/share/gst-python/0.10/examples/sinkelement.py 0644 root bin
+f none share/gst-python/0.10/examples/vumeter.py=usr/share/gst-python/0.10/examples/vumeter.py 0644 root bin

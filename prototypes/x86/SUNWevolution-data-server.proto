@@ -1,0 +1,124 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-data-server.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-data-server.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-data-server.copyright
+f none share/doc/SUNWevolution-data-server/COPYING.bz2=usr/share/doc/SUNWevolution-data-server/COPYING.bz2 0444 root bin
+f none share/doc/SUNWevolution-data-server/ChangeLog.bz2=usr/share/doc/SUNWevolution-data-server/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWevolution-data-server/NEWS.bz2=usr/share/doc/SUNWevolution-data-server/NEWS.bz2 0444 root bin
+d none lib 0755 root bin
+f none lib/camel-index-control-1.2=usr/lib/camel-index-control-1.2 0755 root bin
+f none lib/camel-lock-helper-1.2=usr/lib/camel-lock-helper-1.2 0755 root bin
+f none lib/e-addressbook-factory=usr/lib/e-addressbook-factory 0755 root bin
+f none lib/e-calendar-factory=usr/lib/e-calendar-factory 0755 root bin
+d none lib/evolution-data-server-1.2 0755 root bin
+d none lib/evolution-data-server-1.2/camel-providers 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelgroupwise.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelgroupwise.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelgroupwise.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelgroupwise.urls 0644 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelimap.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelimap.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelimap.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelimap.urls 0644 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelimapx.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelimapx.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelimapx.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelimapx.urls 0644 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamellocal.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamellocal.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamellocal.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamellocal.urls 0644 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelnntp.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelnntp.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelnntp.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelnntp.urls 0644 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelpop3.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelpop3.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelpop3.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelpop3.urls 0644 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelsendmail.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelsendmail.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelsendmail.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelsendmail.urls 0644 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelsmtp.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelsmtp.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelsmtp.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelsmtp.urls 0644 root bin
+d none lib/evolution-data-server-1.2/extensions 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libebookbackendfile.so=usr/lib/evolution-data-server-1.2/extensions/libebookbackendfile.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libebookbackendgoogle.so=usr/lib/evolution-data-server-1.2/extensions/libebookbackendgoogle.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libebookbackendgroupwise.so=usr/lib/evolution-data-server-1.2/extensions/libebookbackendgroupwise.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libebookbackendldap.so=usr/lib/evolution-data-server-1.2/extensions/libebookbackendldap.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libebookbackendvcf.so=usr/lib/evolution-data-server-1.2/extensions/libebookbackendvcf.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libebookbackendwebdav.so=usr/lib/evolution-data-server-1.2/extensions/libebookbackendwebdav.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendcaldav.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendcaldav.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendcontacts.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendcontacts.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendfile.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendfile.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendgoogle.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendgoogle.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendgroupwise.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendgroupwise.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendhttp.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendhttp.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendweather.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendweather.so 0755 root bin
+s none lib/libcamel-1.2.so=libcamel-1.2.so.14.0.1
+s none lib/libcamel-1.2.so.14=libcamel-1.2.so.14.0.1
+f none lib/libcamel-1.2.so.14.0.1=usr/lib/libcamel-1.2.so.14.0.1 0755 root bin
+s none lib/libcamel-provider-1.2.so=libcamel-provider-1.2.so.14.0.1
+s none lib/libcamel-provider-1.2.so.14=libcamel-provider-1.2.so.14.0.1
+f none lib/libcamel-provider-1.2.so.14.0.1=usr/lib/libcamel-provider-1.2.so.14.0.1 0755 root bin
+s none lib/libebackend-1.2.so=libebackend-1.2.so.0.0.1
+s none lib/libebackend-1.2.so.0=libebackend-1.2.so.0.0.1
+f none lib/libebackend-1.2.so.0.0.1=usr/lib/libebackend-1.2.so.0.0.1 0755 root bin
+s none lib/libebook-1.2.so=libebook-1.2.so.9.3.1
+s none lib/libebook-1.2.so.9=libebook-1.2.so.9.3.1
+f none lib/libebook-1.2.so.9.3.1=usr/lib/libebook-1.2.so.9.3.1 0755 root bin
+s none lib/libecal-1.2.so=libecal-1.2.so.7.2.2
+s none lib/libecal-1.2.so.7=libecal-1.2.so.7.2.2
+f none lib/libecal-1.2.so.7.2.2=usr/lib/libecal-1.2.so.7.2.2 0755 root bin
+s none lib/libedata-book-1.2.so=libedata-book-1.2.so.2.4.1
+s none lib/libedata-book-1.2.so.2=libedata-book-1.2.so.2.4.1
+f none lib/libedata-book-1.2.so.2.4.1=usr/lib/libedata-book-1.2.so.2.4.1 0755 root bin
+s none lib/libedata-cal-1.2.so=libedata-cal-1.2.so.7.0.0
+s none lib/libedata-cal-1.2.so.7=libedata-cal-1.2.so.7.0.0
+f none lib/libedata-cal-1.2.so.7.0.0=usr/lib/libedata-cal-1.2.so.7.0.0 0755 root bin
+s none lib/libedataserver-1.2.so=libedataserver-1.2.so.13.0.1
+s none lib/libedataserver-1.2.so.13=libedataserver-1.2.so.13.0.1
+f none lib/libedataserver-1.2.so.13.0.1=usr/lib/libedataserver-1.2.so.13.0.1 0755 root bin
+s none lib/libedataserverui-1.2.so=libedataserverui-1.2.so.8.1.1
+s none lib/libedataserverui-1.2.so.8=libedataserverui-1.2.so.8.1.1
+f none lib/libedataserverui-1.2.so.8.1.1=usr/lib/libedataserverui-1.2.so.8.1.1 0755 root bin
+s none lib/libegroupwise-1.2.so=libegroupwise-1.2.so.13.0.1
+s none lib/libegroupwise-1.2.so.13=libegroupwise-1.2.so.13.0.1
+f none lib/libegroupwise-1.2.so.13.0.1=usr/lib/libegroupwise-1.2.so.13.0.1 0755 root bin
+s none lib/libgdata-1.2.so=libgdata-1.2.so.1.0.0
+s none lib/libgdata-1.2.so.1=libgdata-1.2.so.1.0.0
+f none lib/libgdata-1.2.so.1.0.0=usr/lib/libgdata-1.2.so.1.0.0 0755 root bin
+s none lib/libgdata-google-1.2.so=libgdata-google-1.2.so.1.0.0
+s none lib/libgdata-google-1.2.so.1=libgdata-google-1.2.so.1.0.0
+f none lib/libgdata-google-1.2.so.1.0.0=usr/lib/libgdata-google-1.2.so.1.0.0 0755 root bin
+d none share 0755 root sys
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+f none share/dbus-1/services/org.gnome.evolution.dataserver.AddressBook.service=usr/share/dbus-1/services/org.gnome.evolution.dataserver.AddressBook.service 0644 root bin
+f none share/dbus-1/services/org.gnome.evolution.dataserver.Calendar.service=usr/share/dbus-1/services/org.gnome.evolution.dataserver.Calendar.service 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWevolution-data-server 0755 root bin
+d none share/evolution-data-server-2.30 0755 root bin
+f none share/evolution-data-server-2.30/evolutionperson.schema=usr/share/evolution-data-server-2.30/evolutionperson.schema 0644 root bin
+d none share/evolution-data-server-2.30/ui 0755 root bin
+f none share/evolution-data-server-2.30/ui/e-categories-dialog.ui=usr/share/evolution-data-server-2.30/ui/e-categories-dialog.ui 0644 root bin
+f none share/evolution-data-server-2.30/ui/e-name-selector-dialog.ui=usr/share/evolution-data-server-2.30/ui/e-name-selector-dialog.ui 0644 root bin
+d none share/evolution-data-server-2.30/weather 0755 root bin
+f none share/evolution-data-server-2.30/weather/Locations.xml=usr/share/evolution-data-server-2.30/weather/Locations.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libcamel-1.2.3=usr/share/man/man3/libcamel-1.2.3 0644 root bin
+f none share/man/man3/libebook-1.2.3=usr/share/man/man3/libebook-1.2.3 0644 root bin
+f none share/man/man3/libecal-1.2.3=usr/share/man/man3/libecal-1.2.3 0644 root bin
+f none share/man/man3/libedata-book-1.2.3=usr/share/man/man3/libedata-book-1.2.3 0644 root bin
+f none share/man/man3/libedata-cal-1.2.3=usr/share/man/man3/libedata-cal-1.2.3 0644 root bin
+f none share/man/man3/libedataserver-1.2.3=usr/share/man/man3/libedataserver-1.2.3 0644 root bin
+f none share/man/man3/libedataserverui-1.2.3=usr/share/man/man3/libedataserverui-1.2.3 0644 root bin
+f none share/man/man3/libgdata-1.2.3=usr/share/man/man3/libgdata-1.2.3 0644 root bin
+f none share/man/man3/libgdata-google-1.2.3=usr/share/man/man3/libgdata-google-1.2.3 0644 root bin
+d none share/pixmaps 0755 root other
+d none share/pixmaps/evolution-data-server 0755 root bin
+f none share/pixmaps/evolution-data-server/category_birthday_16.png=usr/share/pixmaps/evolution-data-server/category_birthday_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_business_16.png=usr/share/pixmaps/evolution-data-server/category_business_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_favorites_16.png=usr/share/pixmaps/evolution-data-server/category_favorites_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_gifts_16.png=usr/share/pixmaps/evolution-data-server/category_gifts_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_goals_16.png=usr/share/pixmaps/evolution-data-server/category_goals_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_holiday-cards_16.png=usr/share/pixmaps/evolution-data-server/category_holiday-cards_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_holiday_16.png=usr/share/pixmaps/evolution-data-server/category_holiday_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_hot-contacts_16.png=usr/share/pixmaps/evolution-data-server/category_hot-contacts_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_ideas_16.png=usr/share/pixmaps/evolution-data-server/category_ideas_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_international_16.png=usr/share/pixmaps/evolution-data-server/category_international_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_key-customer_16.png=usr/share/pixmaps/evolution-data-server/category_key-customer_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_miscellaneous_16.png=usr/share/pixmaps/evolution-data-server/category_miscellaneous_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_personal_16.png=usr/share/pixmaps/evolution-data-server/category_personal_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_phonecalls_16.png=usr/share/pixmaps/evolution-data-server/category_phonecalls_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_status_16.png=usr/share/pixmaps/evolution-data-server/category_status_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_strategies_16.png=usr/share/pixmaps/evolution-data-server/category_strategies_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_suppliers_16.png=usr/share/pixmaps/evolution-data-server/category_suppliers_16.png 0644 root bin
+f none share/pixmaps/evolution-data-server/category_time-and-expenses_16.png=usr/share/pixmaps/evolution-data-server/category_time-and-expenses_16.png 0644 root bin

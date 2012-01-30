@@ -1,0 +1,41 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-exchange.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-exchange.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWevolution-exchange.postinstall
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-exchange.copyright
+f none share/doc/SUNWevolution-exchange/AUTHORS=usr/share/doc/SUNWevolution-exchange/AUTHORS 0444 root bin
+f none share/doc/SUNWevolution-exchange/COPYING.bz2=usr/share/doc/SUNWevolution-exchange/COPYING.bz2 0444 root bin
+f none share/doc/SUNWevolution-exchange/ChangeLog.bz2=usr/share/doc/SUNWevolution-exchange/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/exchange-connector-setup=usr/bin/exchange-connector-setup 0755 root bin
+d none lib 0755 root bin
+d none lib/evolution 0755 root bin
+d none lib/evolution-data-server-1.2 0755 root bin
+d none lib/evolution-data-server-1.2/camel-providers 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelexchange.so=usr/lib/evolution-data-server-1.2/camel-providers/libcamelexchange.so 0755 root bin
+f none lib/evolution-data-server-1.2/camel-providers/libcamelexchange.urls=usr/lib/evolution-data-server-1.2/camel-providers/libcamelexchange.urls 0644 root bin
+d none lib/evolution-data-server-1.2/extensions 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libebookbackendexchange.so=usr/lib/evolution-data-server-1.2/extensions/libebookbackendexchange.so 0755 root bin
+f none lib/evolution-data-server-1.2/extensions/libecalbackendexchange.so=usr/lib/evolution-data-server-1.2/extensions/libecalbackendexchange.so 0755 root bin
+d none lib/evolution/2.30 0755 root bin
+d none lib/evolution/2.30/plugins 0755 root bin
+f none lib/evolution/2.30/plugins/liborg-gnome-exchange-operations.so=usr/lib/evolution/2.30/plugins/liborg-gnome-exchange-operations.so 0755 root bin
+f none lib/evolution/2.30/plugins/org-gnome-exchange-operations.eplug=usr/lib/evolution/2.30/plugins/org-gnome-exchange-operations.eplug 0644 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWevolution-exchange 0755 root bin
+d none share/evolution 0755 root bin
+d none share/evolution-exchange 0755 root bin
+d none share/evolution-exchange/2.30 0755 root bin
+d none share/evolution-exchange/2.30/images 0755 root bin
+f none share/evolution-exchange/2.30/images/connector-mini.png=usr/share/evolution-exchange/2.30/images/connector-mini.png 0644 root bin
+f none share/evolution-exchange/2.30/images/connector.png=usr/share/evolution-exchange/2.30/images/connector.png 0644 root bin
+f none share/evolution-exchange/2.30/images/exchange-delegates-48.png=usr/share/evolution-exchange/2.30/images/exchange-delegates-48.png 0644 root bin
+f none share/evolution-exchange/2.30/images/exchange-oof-48.png=usr/share/evolution-exchange/2.30/images/exchange-oof-48.png 0644 root bin
+d none share/evolution-exchange/2.30/ui 0755 root bin
+f none share/evolution-exchange/2.30/ui/ximian-connector.xml=usr/share/evolution-exchange/2.30/ui/ximian-connector.xml 0644 root bin
+d none share/evolution/2.30 0755 root bin
+d none share/evolution/2.30/errors 0755 root bin
+f none share/evolution/2.30/errors/org-gnome-exchange-operations.error=usr/share/evolution/2.30/errors/org-gnome-exchange-operations.error 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/exchange-connector-setup.1=usr/share/man/man1/exchange-connector-setup.1 0644 root bin

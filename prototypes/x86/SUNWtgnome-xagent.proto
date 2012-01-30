@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-xagent.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-xagent.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-xagent.copyright
+f none share/doc/SUNWtgnome-xagent/AUTHORS=usr/share/doc/SUNWtgnome-xagent/AUTHORS 0444 root bin
+f none share/doc/SUNWtgnome-xagent/COPYING.bz2=usr/share/doc/SUNWtgnome-xagent/COPYING.bz2 0444 root bin
+f none share/doc/SUNWtgnome-xagent/ChangeLog.bz2=usr/share/doc/SUNWtgnome-xagent/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWtgnome-xagent/NEWS.bz2=usr/share/doc/SUNWtgnome-xagent/NEWS.bz2 0444 root bin
+f none share/doc/SUNWtgnome-xagent/README=usr/share/doc/SUNWtgnome-xagent/README 0444 root bin
+d none bin 0755 root bin
+f none bin/tsoljds-xagent=usr/bin/tsoljds-xagent 0755 root other
+d none dt 0755 root bin
+d none dt/config 0755 root bin
+f none dt/config/tsoljds-migration=usr/dt/config/tsoljds-migration 0755 root other
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWtgnome-xagent 0755 root other

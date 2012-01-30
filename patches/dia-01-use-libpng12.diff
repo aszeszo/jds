@@ -1,0 +1,12 @@
+diff -urN dia-0.97.1/configure.in ../SUNWdia-0.97.1.hacked/dia-0.97.1/configure.in
+--- dia-0.97.1/configure.in	2010-01-24 18:43:15.000000000 +0000
++++ ../SUNWdia-0.97.1.hacked/dia-0.97.1/configure.in	2011-02-23 15:47:24.206626523 +0000
+@@ -202,7 +202,7 @@
+   LDFLAGS="${old_LDFLAGS}"
+   AC_MSG_RESULT($png_ok)
+   if test "$png_ok" = yes; then
+-    PNG_LIBS='-lpng -lz -lm'
++    PNG_LIBS='-lpng12 -lz -lm'
+     AC_DEFINE(HAVE_LIBPNG,,[PNG library available])
+   fi
+ fi

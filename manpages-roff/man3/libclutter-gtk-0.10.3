@@ -1,0 +1,51 @@
+'\" te
+.ds s1 libclutter-gtk-0.10
+.TH \*(s1 3 "19 Feb 2009" "SunOS 5.11" "C Library Functions"
+.SH "NAME"
+\*(s1 - Gtk library add-on of Cluter.
+.SH "DESCRIPTION"
+.PP
+Clutter uses OpenGL (and optionally OpenGL ES for use on Mobile and
+embedded platforms) for rendering but with an API which hides the
+underlying GL complexity from the developer. The Clutter API is
+intended to be easy to use, efficient and flexible.
+.PP
+Clutter support for media playback with GStreamer, Cairo graphics
+rendering, GTK+ embedding, via libclutter-gst, libclutter-gtk, and
+libclutter-gtk.
+.SH "FILES"
+.PP
+The following files are used by this library:
+.sp
+.TS
+tab(@);
+l l.
+\fB/usr/lib/\*(s1.so\fR@Clutter shared library
+.TE
+.SH "ATTRIBUTES"
+.PP
+See \fBattributes\fR(5)
+for descriptions of the following attributes:
+.sp
+.TS
+tab() allbox;
+cw(2.750000i)| cw(2.750000i)
+lw(2.750000i)| lw(2.750000i).
+ATTRIBUTE TYPEATTRIBUTE VALUE
+AvailabilitySUNWclutter-gtk
+Interface stabilityVolatile
+.TE
+.sp
+.SH "SEE ALSO"
+.PP
+\fBlibclutter-glx-0.10\fR(3)
+\fBlibgtk-x11-2.0\fR(3)
+.PP
+Online documentation:
+.PP
+http://clutter-project.org/docs.html
+.SH "NOTES"
+.PP
+Written by Chris Wang, Sun Microsystems Inc., 2009.
+...\" created by instant / solbook-to-man, Mon 07 Sep 2009, 01:33
+...\" LSARC 2008/426 Clutter for OpenSolaris

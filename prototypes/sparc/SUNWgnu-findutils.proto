@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnu-findutils.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnu-findutils.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnu-findutils.copyright
+f none share/doc/SUNWgnu-findutils/AUTHORS=usr/share/doc/SUNWgnu-findutils/AUTHORS 0444 root bin
+f none share/doc/SUNWgnu-findutils/COPYING=usr/share/doc/SUNWgnu-findutils/COPYING 0444 root bin
+f none share/doc/SUNWgnu-findutils/ChangeLog=usr/share/doc/SUNWgnu-findutils/ChangeLog 0444 root bin
+f none share/doc/SUNWgnu-findutils/NEWS=usr/share/doc/SUNWgnu-findutils/NEWS 0444 root bin
+f none share/doc/SUNWgnu-findutils/README=usr/share/doc/SUNWgnu-findutils/README 0444 root bin
+f none share/doc/SUNWgnu-findutils/THANKS=usr/share/doc/SUNWgnu-findutils/THANKS 0444 root bin
+d none bin 0755 root bin
+f none bin/gfind=usr/bin/gfind 0755 root bin
+f none bin/gxargs=usr/bin/gxargs 0755 root bin
+d none gnu 0755 root bin
+d none gnu/bin 0755 root bin
+s none gnu/bin/find=../../bin/gfind
+s none gnu/bin/xargs=../../bin/gxargs
+d none gnu/share 0755 root sys
+d none gnu/share/man 0755 root bin
+d none gnu/share/man/man1 0755 root bin
+s none gnu/share/man/man1/find.1=../../../../share/man/man1/gfind.1
+s none gnu/share/man/man1/xargs.1=../../../../share/man/man1/gxargs.1
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWgnu-findutils 0755 root bin
+d none share/info 0755 root bin
+f none share/info/find.info=usr/share/info/find.info 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gfind.1=usr/share/man/man1/gfind.1 0644 root bin
+f none share/man/man1/gxargs.1=usr/share/man/man1/gxargs.1 0644 root bin

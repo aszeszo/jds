@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-media-mp3.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-media-mp3.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-media-mp3.copyright
+d none lib 0755 root bin
+d none lib/gstreamer-0.10 0755 root bin
+f none lib/gstreamer-0.10/libgstflump3dec.so=usr/lib/gstreamer-0.10/libgstflump3dec.so 0755 root bin

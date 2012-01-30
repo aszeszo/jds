@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-hex-editor-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-hex-editor-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-hex-editor-devel.copyright
+d none include 0755 root bin
+d none include/gtkhex 0755 root bin
+f none include/gtkhex/gtkhex.h=usr/include/gtkhex/gtkhex.h 0644 root bin
+f none include/gtkhex/hex-document.h=usr/include/gtkhex/hex-document.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gtkhex.pc=usr/lib/pkgconfig/gtkhex.pc 0644 root bin

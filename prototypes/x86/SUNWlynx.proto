@@ -1,0 +1,14 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlynx.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlynx.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlynx.copyright
+f none share/doc/SUNWlynx/AUTHORS=usr/share/doc/SUNWlynx/AUTHORS 0444 root bin
+f none share/doc/SUNWlynx/COPYHEADER=usr/share/doc/SUNWlynx/COPYHEADER 0444 root bin
+f none share/doc/SUNWlynx/COPYING=usr/share/doc/SUNWlynx/COPYING 0444 root bin
+d none bin 0755 root bin
+f none bin/lynx=usr/bin/lynx 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlynx 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/lynx.1=usr/share/man/man1/lynx.1 0644 root bin

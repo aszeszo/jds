@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlcms-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlcms-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlcms-devel.copyright
+d none include 0755 root bin
+f none include/icc34.h=usr/include/icc34.h 0644 root bin
+f none include/lcms.h=usr/include/lcms.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/lcms.pc=usr/lib/pkgconfig/lcms.pc 0644 root bin

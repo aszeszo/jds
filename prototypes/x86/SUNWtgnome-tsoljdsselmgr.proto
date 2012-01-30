@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-tsoljdsselmgr.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-tsoljdsselmgr.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-tsoljdsselmgr.copyright
+d none bin 0755 root bin
+f none bin/tsoljdsselmgr=usr/bin/tsoljdsselmgr 0755 root other
+d none share 0755 root sys
+d none share/gnome 0755 root other
+f none share/gnome/sel_config=usr/share/gnome/sel_config 0644 root other
+d none share/locale 0755 root other

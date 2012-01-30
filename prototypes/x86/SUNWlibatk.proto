@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibatk.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibatk.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibatk.copyright
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libatk-1.0.so=libatk-1.0.so.0.3009.1
+s none lib/amd64/libatk-1.0.so.0=libatk-1.0.so.0.3009.1
+f none lib/amd64/libatk-1.0.so.0.3009.1=usr/lib/amd64/libatk-1.0.so.0.3009.1 0755 root bin
+s none lib/libatk-1.0.so=libatk-1.0.so.0.3009.1
+s none lib/libatk-1.0.so.0=libatk-1.0.so.0.3009.1
+f none lib/libatk-1.0.so.0.3009.1=usr/lib/libatk-1.0.so.0.3009.1 0755 root bin
+d none share 0755 root sys

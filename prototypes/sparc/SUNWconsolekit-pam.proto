@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWconsolekit-pam.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWconsolekit-pam.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWconsolekit-pam.copyright
+d none lib 0755 root bin
+d none lib/security 0755 root bin
+f none lib/security/pam_ck_connector.so=usr/lib/security/pam_ck_connector.so 0755 root bin
+d none share 0755 root sys
+d none share/man 0755 root bin
+d none share/man/man8 0755 root bin
+f none share/man/man8/pam_ck_connector.8=usr/share/man/man8/pam_ck_connector.8 0644 root bin

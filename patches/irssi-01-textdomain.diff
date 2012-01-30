@@ -1,0 +1,64 @@
+--- irssi-0.8.13/src/fe-text/irssi.c.old	2009-04-16 14:34:36.169204393 +0800
++++ irssi-0.8.13/src/fe-text/irssi.c	2009-04-16 15:06:59.849315261 +0800
+@@ -297,6 +297,12 @@
+ #ifdef USE_GC
+ 	g_mem_set_vtable(&gc_mem_table);
+ #endif
++	
++	setlocale(LC_ALL, "");
++	
++	textdomain(PACKAGE_NAME);
++	bindtextdomain(PACKAGE_NAME, LOCALEDIR);
++	bind_textdomain_codeset(PACKAGE_NAME, "UTF-8");
+ 
+ 	core_register_options();
+ 	fe_common_core_register_options();
+--- irssi-0.8.13/src/fe-text/Makefile.am.old	2009-04-16 15:16:27.605247905 +0800
++++ irssi-0.8.13/src/fe-text/Makefile.am	2009-04-16 15:33:18.799254532 +0800
+@@ -5,7 +5,8 @@
+ 	-I$(top_srcdir)/src/core/ \
+ 	-I$(top_srcdir)/src/fe-common/core/ \
+ 	$(GLIB_CFLAGS) \
+-	$(CURSES_INCLUDEDIR)
++	$(CURSES_INCLUDEDIR) \
++	-DLOCALEDIR=\""$(datadir)/locale"\"
+ 
+ irssi_DEPENDENCIES = \
+ 	@COMMON_LIBS@ \
+--- irssi-0.8.13/src/fe-text/Makefile.in.old	2009-04-16 15:21:50.627503281 +0800
++++ irssi-0.8.13/src/fe-text/Makefile.in	2009-04-16 15:33:32.768741413 +0800
+@@ -246,7 +246,8 @@
+ 	-I$(top_srcdir)/src/core/ \
+ 	-I$(top_srcdir)/src/fe-common/core/ \
+ 	$(GLIB_CFLAGS) \
+-	$(CURSES_INCLUDEDIR)
++	$(CURSES_INCLUDEDIR) \
++	-DLOCALEDIR=\""$(datadir)/locale"\"
+ 
+ irssi_DEPENDENCIES = \
+ 	@COMMON_LIBS@ \
+--- irssi-0.8.13/src/fe-common/core/fe-common-core.c.old	2009-04-16 14:37:03.660255363 +0800
++++ irssi-0.8.13/src/fe-common/core/fe-common-core.c	2009-04-16 14:38:55.718578426 +0800
+@@ -47,6 +47,7 @@
+ #include "fe-recode.h"
+ 
+ #include <signal.h>
++#include <glib/gi18n.h>
+ 
+ static char *autocon_server;
+ static char *autocon_password;
+@@ -277,12 +278,12 @@
+ 	WINDOW_REC *window;
+ 	int have_status = settings_get_bool("use_status_window");
+ 
+-	window = window_find_name("(status)");
++	window = window_find_name(_("(status)"));
+ 	if (have_status) {
+ 		if (window == NULL) {
+ 			window = window_create(NULL, TRUE);
+ 			window_set_refnum(window, 1);
+-			window_set_name(window, "(status)");
++			window_set_name(window, _("(status)"));
+ 			window_set_level(window, MSGLEVEL_ALL ^
+ 					 (settings_get_bool("use_msgs_window") ?
+ 					  MSGS_WINDOW_LEVELS : 0));

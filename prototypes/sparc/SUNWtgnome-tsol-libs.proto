@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-tsol-libs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-tsol-libs.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-tsol-libs.copyright
+d none bin 0755 root bin
+f none bin/tgnome-selectlabel=usr/bin/tgnome-selectlabel 0755 root other
+d none lib 0755 root bin
+s none lib/libgnometsol.so=libgnometsol.so.0.0.0
+s none lib/libgnometsol.so.0=libgnometsol.so.0.0.0
+f none lib/libgnometsol.so.0.0.0=usr/lib/libgnometsol.so.0.0.0 0755 root other

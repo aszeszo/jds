@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWbrltty-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWbrltty-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWbrltty-devel.copyright
+d none include 0755 root bin
+f none include/brlapi.h=usr/include/brlapi.h 0644 root bin
+f none include/brlapi_constants.h=usr/include/brlapi_constants.h 0644 root bin
+f none include/brlapi_keycodes.h=usr/include/brlapi_keycodes.h 0644 root bin
+f none include/brlapi_protocol.h=usr/include/brlapi_protocol.h 0644 root bin
+d none include/brltty 0755 root bin
+f none include/brltty/api.h=usr/include/brltty/api.h 0644 root bin
+f none include/brltty/brldefs-al.h=usr/include/brltty/brldefs-al.h 0644 root bin
+f none include/brltty/brldefs-at.h=usr/include/brltty/brldefs-at.h 0644 root bin
+f none include/brltty/brldefs-bm.h=usr/include/brltty/brldefs-bm.h 0644 root bin
+f none include/brltty/brldefs-cb.h=usr/include/brltty/brldefs-cb.h 0644 root bin
+f none include/brltty/brldefs-fs.h=usr/include/brltty/brldefs-fs.h 0644 root bin
+f none include/brltty/brldefs-hm.h=usr/include/brltty/brldefs-hm.h 0644 root bin
+f none include/brltty/brldefs-ht.h=usr/include/brltty/brldefs-ht.h 0644 root bin
+f none include/brltty/brldefs-mt.h=usr/include/brltty/brldefs-mt.h 0644 root bin
+f none include/brltty/brldefs-pg.h=usr/include/brltty/brldefs-pg.h 0644 root bin
+f none include/brltty/brldefs-pm.h=usr/include/brltty/brldefs-pm.h 0644 root bin
+f none include/brltty/brldefs-sk.h=usr/include/brltty/brldefs-sk.h 0644 root bin
+f none include/brltty/brldefs-vo.h=usr/include/brltty/brldefs-vo.h 0644 root bin
+f none include/brltty/brldefs-vs.h=usr/include/brltty/brldefs-vs.h 0644 root bin
+f none include/brltty/brldefs.h=usr/include/brltty/brldefs.h 0644 root bin
+d none share 0755 root sys

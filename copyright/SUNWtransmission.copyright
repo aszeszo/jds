@@ -1,0 +1,236 @@
+--------------------------------------------------------------------
+
+  Created by Evan Schoenberg on Wed Jun 16 2004.
+  Copyright 2004-2006 The Growl Project. All rights reserved.
+
+--------------------------------------------------------------------
+
+ (c) 2005-2008 Thomas Bernard 
+ This software is subject to the conditions detailed
+ * in the LICENCE file provided within the distribution 
+
+--------------------------------------------------------------------
+
+  Copyright 2006 Andy Matuschak. All rights reserved.
+
+--------------------------------------------------------------------
+
+ Copyright 2001 Niels Provos <provos@citi.umich.edu>
+ All rights reserved.
+
+--------------------------------------------------------------------
+
+ Copyright (C) 2007 Charles Kerr <charles@rebelbase.com>
+
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; version 2 of the License.
+
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with this program; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+--------------------------------------------------------------------
+
+    COPYRIGHT:  (c) 2003-2005 M. Uli Kusterer, all rights reserved.
+	AUTHORS:	M. Uli Kusterer - UK
+    LICENSES:   MIT License
+
+----------------------------------------------------------------------------
+
+ @Copyright (C) 2004-2006 Christian Hammond.
+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the
+ Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+ Boston, MA  02111-1307, USA.
+ 
+
+--------------------------------------------------------------------
+
+  Copyright (c) 2007 Chad Weider.
+  Some rights reserved: <http://creativecommons.org/licenses/by/2.5/>
+
+--------------------------------------------------------------------
+
+ Copyright (c) 2007-2008, Thomas BERNARD <miniupnp@free.fr>
+
+ Permission to use, copy, modify, and/or distribute this software for any
+ purpose with or without fee is hereby granted, provided that the above
+ copyright notice and this permission notice appear in all copies.
+
+ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE. 
+
+--------------------------------------------------------------------
+
+ This file Copyright (C) 2007-2008 Charles Kerr <charles@rebelbase.com>
+
+ This file is licensed by the GPL version 2.  Works owned by the
+ Transmission project are granted a special exemption to clause 2(b)
+ so that the bulk of its code can remain under the MIT license. 
+ This exemption does not extend to derived works not owned by
+ the Transmission project.
+
+--------------------------------------------------------------------
+
+  Copyright 2006 Andy Matuschak. All rights reserved.
+
+--------------------------------------------------------------------
+
+ This file Copyright (C) 2007-2008 Charles Kerr <charles@rebelbase.com>
+ Copyright (c) 2007-2008 Joshua Elsasser
+ Copyright (c) 2005-2008 Transmission authors and contributors
+ Copyright (C) 2007 Bryan Varner
+
+ Permission is hereby granted, free of charge, to any person obtaining a
+ copy of this software and associated documentation files (the "Software"),
+ to deal in the Software without restriction, including without limitation
+ the rights to use, copy, modify, merge, publish, distribute, sublicense,
+ and/or sell copies of the Software, and to permit persons to whom the
+ Software is furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+
+--------------------------------------------------------------------
+
+ Copyright (c) 2006 Maxim Yegorushkin <maxim.yegorushkin@gmail.com>
+ Copyright 2000-2007 Niels Provos <provos@citi.umich.edu>
+ Copyright 2003 Michael A. Davis <mike@datanerds.net>
+ Copyright (c) 1998 Todd C. Miller <Todd.Miller@courtesan.com>
+ All rights reserved.
+ Copyright (c) 2005-2007, Thomas BERNARD 
+ All rights reserved.
+ Copyright (c) 2002, Brent Simmons
+
+ $OpenBSD: queue.h,v 1.16 2000/09/07 19:47:59 art Exp $	
+ $Id: bsdqueue.h 1580 2007-03-23 08:41:15Z joshe $        
+ $OpenBSD: queue.h,v 1.31 2005/11/25 08:06:25 otto Exp $	
+ $NetBSD: queue.h,v 1.11 1996/05/16 05:17:14 mycroft Exp $	
+
+ Copyright (c) 1991, 1993
+ $OpenBSD: time.h,v 1.11 2000/10/10 13:36:48 itojun Exp $	
+ $NetBSD: time.h,v 1.18 1996/04/23 10:29:33 mycroft Exp $	
+
+ Copyright (c) 1982, 1986, 1993
+ $OpenBSD: err.c,v 1.2 2002/06/25 15:50:15 mickey Exp $	
+
+ Copyright (c) 2005 Nick Mathewson <nickm@freehaven.net>
+ Copyright (c) 2000 Dug Song <dugsong@monkey.org>
+ Copyright (c) 1993
+
+ The Regents of the University of California.  All rights reserved.
+
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ 
+-------------------------------------------------------------------------
+
+ The original DNS code is due to Adam Langley with heavy
+ modifications by Nick Mathewson.  Adam put his DNS software in the
+ public domain.  You can find his original copyright below.  Please,
+ aware that the code as part of libevent is governed by the 3-clause
+ BSD license above.
+
+ The original version of this module was written by Adam Langley; for
+ a history of modifications, check out the subversion logs.
+
+ When editing this module, try to keep it re-mergeable by Adam.  Don't
+ reformat the whitespace, add Tor dependencies, or so on.
+
+ Adam Langley <agl@imperialviolet.org>
+ Public Domain code
+
+ This software is Public Domain. To view a copy of the public domain dedication,
+ visit http://creativecommons.org/licenses/publicdomain/ or send a letter to
+ Creative Commons, 559 Nathan Abbott Way, Stanford, California 94305, USA.
+
+ I ask and expect, but do not require, that all derivative works contain an
+ attribution similar to:
+ 	Parts developed by Adam Langley <agl@imperialviolet.org>
+
+ You may wish to replace the word "Parts" with something else depending on
+ the amount of original code.
+
+ (Derivative works does not include programs which link against, run or include
+ the source verbatim in their source distributions)
+
+---------------------------------------------------------------------------
+
+ Copyright (c) 2007 Sun Microsystems. All rights reserved.
+ Use is subject to license terms.
+
+ Submitted by David Pacheco (dp.spambait@gmail.com)
+ 
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ 1. Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY SUN MICROSYSTEMS, INC. ``AS IS'' AND ANY
+ EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ DISCLAIMED. IN NO EVENT SHALL SUN MICROSYSTEMS, INC. BE LIABLE FOR ANY
+ DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
+ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. 
+
+ --------------------------------------------------------------------------
+

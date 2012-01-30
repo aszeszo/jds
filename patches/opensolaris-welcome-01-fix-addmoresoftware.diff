@@ -1,0 +1,24 @@
+--- /usr/tmp/clean/opensolaris-welcome-0.0.30/opensolaris-icons-copy.sh	2009-12-20 23:19:05.000000000 +0000
++++ opensolaris-welcome-0.0.30/opensolaris-icons-copy.sh	2010-01-12 08:22:16.022619000 +0000
+@@ -10,6 +10,7 @@
+ MARKER=".os-icons-installed"
+ APPDIR=/usr/share/applications
+ DESKTOP_FILES="register-opensolaris.desktop addmoresoftware.desktop opensolaris-next-steps.desktop"
++ADDMORESOFTWARE="addmoresoftware.desktop"
+ 
+ /bin/mkdir -p "$MARKER_DIR"
+ 
+@@ -24,4 +25,13 @@
+     done
+     /bin/mkdir -p "$MARKER_DIR"
+     /bin/touch "$MARKER_DIR/$MARKER"
++else
++    apptime=`stat --format=%Y $APPDIR/$ADDMORESOFTWARE`
++    desktoptime=`stat --format=%Y $DESKTOP_DIR/$ADDMORESOFTWARE`
++    if [ $apptime -gt $desktoptime ] ; then
++        /bin/cp "$APPDIR/$ADDMORESOFTWARE" "$DESKTOP_DIR"
++        /bin/chmod u+w "$DESKTOP_DIR/$ADDMORESOFTWARE"
++        /bin/chmod a+x "$DESKTOP_DIR/$ADDMORESOFTWARE"
++    fi
+ fi
++

@@ -1,0 +1,10 @@
+--- clutter-1.2.14/clutter/json/Makefile.am-orig	2010-10-22 13:54:31.122046649 -0500
++++ clutter-1.2.14/clutter/json/Makefile.am	2010-10-22 13:56:24.916229719 -0500
+@@ -45,6 +45,7 @@ ClutterJson-@CLUTTER_API_VERSION@.gir: $
+ 	$(QUIET_GEN)$(INTROSPECTION_SCANNER) -v \
+ 		--namespace ClutterJson --nsversion=@CLUTTER_API_VERSION@ \
+ 		$(INCLUDES) \
++		--identifier-prefix=Json \
+ 		--add-include-path=$(srcdir) --add-include-path=. \
+ 		--include=GObject-2.0 \
+ 		--library=libclutter-json.la \

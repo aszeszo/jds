@@ -1,0 +1,15 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-keyring-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-keyring-root.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-keyring-root.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-keyring-root.preremove
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-keyring-root.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-keyring-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gnome-keyring.schemas=etc/gconf/schemas/gnome-keyring.schemas 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/gnome-keyring-pkcs11.desktop=etc/xdg/autostart/gnome-keyring-pkcs11.desktop 0644 root sys
+f none etc/xdg/autostart/gnome-keyring-secrets.desktop=etc/xdg/autostart/gnome-keyring-secrets.desktop 0644 root sys
+f none etc/xdg/autostart/gnome-keyring-ssh.desktop=etc/xdg/autostart/gnome-keyring-ssh.desktop 0644 root sys

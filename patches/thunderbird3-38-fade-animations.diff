@@ -1,0 +1,113 @@
+--- comm-1.9.2.original/mozilla/extensions/pref/system-pref/src/gconf/gconf_pref_list.inc	2010-12-07 17:35:40.000000000 +0100
++++ comm-1.9.2/mozilla/extensions/pref/system-pref/src/gconf/gconf_pref_list.inc	2011-02-02 14:59:14.018430808 +0100
+@@ -17,3 +17,4 @@
+     {"network.proxy.autoconfig_url", "/system/proxy/autoconfig_url"},
+     {"network.proxy.type", "/system/proxy/mode"}, 
+     {"config.use_system_prefs.accessibility", "/desktop/gnome/interface/accessibility"},
++    {"config.use_system_prefs.enable_animations", "/desktop/gnome/interface/enable_animations"},
+--- comm-1.9.2.original/mozilla/modules/libpref/src/init/all.js	2011-02-02 15:10:33.069361112 +0100
++++ comm-1.9.2/mozilla/modules/libpref/src/init/all.js	2011-02-02 14:59:05.430130182 +0100
+@@ -1222,6 +1222,9 @@
+ // if the system has enabled accessibility
+ pref("config.use_system_prefs.accessibility", false);
+ 
++// if the new message alert should use fading in/out animated effect
++pref("config.use_system_prefs.enable_animations", true);
++
+ // enable single finger gesture input (win7+ tablets)
+ pref("gestures.enable_single_finger_input", true);
+ 
+--- comm-1.9.2.original/suite/profile/migration/src/nsSeamonkeyProfileMigrator.cpp	2010-12-07 17:30:12.000000000 +0100
++++ comm-1.9.2/suite/profile/migration/src/nsSeamonkeyProfileMigrator.cpp	2011-02-02 14:59:04.816051636 +0100
+@@ -313,6 +313,7 @@
+   MAKESAMETYPEPREFTRANSFORM("compose.throbber.url",                    String),
+   MAKESAMETYPEPREFTRANSFORM("config.use_system_prefs",                 Bool),
+   MAKESAMETYPEPREFTRANSFORM("config.use_system_prefs.accessibility",   Bool),
++  MAKESAMETYPEPREFTRANSFORM("config.use_system_prefs.enable_animations",   Bool),
+ 
+   MAKESAMETYPEPREFTRANSFORM("custtoolbar.personal_toolbar_folder",     String),
+ 
+--- comm-1.9.2.original/mozilla/extensions/pref/system-pref/src/nsSystemPref.cpp	2010-12-07 17:35:40.000000000 +0100
++++ comm-1.9.2/mozilla/extensions/pref/system-pref/src/nsSystemPref.cpp	2011-02-02 14:59:14.018939375 +0100
+@@ -83,6 +83,7 @@
+     "network.proxy.autoconfig_url",
+     "network.proxy.type",
+     "config.use_system_prefs.accessibility",
++    "config.use_system_prefs.enable_animations",
+ };
+ 
+ PRLogModuleInfo *gSysPrefLog = NULL;
+--- comm-1.9.2.original/mail/base/content/newmailalert.js	2010-12-07 17:30:10.000000000 +0100
++++ comm-1.9.2/mail/base/content/newmailalert.js	2011-02-03 14:17:56.542430605 +0100
+@@ -46,6 +46,7 @@
+ var gAlertListener = null;
+ var gPendingPreviewFetchRequests = 0;
+ var gUserInitiated = false;
++var gEnableAnimations = true;
+ var gFadeIncrement = .05;
+ var gOrigin = 0;
+ 
+@@ -133,7 +134,7 @@
+     gSlideTime = prefBranch.getIntPref("alerts.slideIncrementTime");
+     gOpenTime = prefBranch.getIntPref("alerts.totalOpenTime");
+   } catch (ex) {}
+-  
++
+   // bogus call to make sure the window is moved offscreen until we are ready for it.
+   resizeAlert(true);
+ 
+@@ -148,6 +149,14 @@
+ // the fade effect. 
+ function showAlert()
+ {
++
++  try 
++  {
++    var prefsSys = Components.classes["@mozilla.org/system-preference-service;1"].getService(Components.interfaces.nsIPrefBranch);
++    gEnableAnimations = prefsSys.getBoolPref("config.use_system_prefs.enable_animations");
++  } catch (ex) {}
++
++  // read out information werther to open allert instantly or use fade effect
+   if (!gUserInitiated) // set the initial opacity before we resize the window
+     document.getElementById('alertContainer').style.opacity = 0;
+   
+@@ -156,8 +165,10 @@
+   
+   if (document.getElementById('folderSummaryInfo').hasMessages)
+   {
+-    if (!gUserInitiated) // don't fade in if the user opened the alert
++    if (!gUserInitiated && gEnableAnimations) // don't fade in if the user opened the alert
+       setTimeout(fadeOpen, gSlideTime);
++    else if (!gEnableAnimations)
++      setTimeout(nonfadeOpen, 0);
+   }
+   else
+     closeAlert(); // no mail, so don't bother showing the alert...
+@@ -203,6 +214,13 @@
+     setTimeout(fadeClose, gOpenTime);  
+ }
+ 
++function nonfadeOpen()
++{
++  var alertContainer = document.getElementById('alertContainer');
++  alertContainer.style.opacity = 1.0;
++  setTimeout(nonfadeClose, gOpenTime);  
++}
++
+ function fadeClose()
+ {
+   var alertContainer = document.getElementById('alertContainer');
+@@ -215,6 +233,13 @@
+     setTimeout(fadeClose, gSlideTime);
+ }
+ 
++function nonfadeClose()
++{
++  var alertContainer = document.getElementById('alertContainer');
++  alertContainer.style.opacity = 0;
++  closeAlert();
++}
++
+ function closeAlert()
+ {
+   if (gAlertListener)

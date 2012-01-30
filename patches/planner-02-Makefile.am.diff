@@ -1,0 +1,9 @@
+--- planner-0.14.2-orig/libegg/recent-files/Makefile.am	2004-10-03 02:32:15.000000000 -0700
++++ planner-0.14.2/libegg/recent-files/Makefile.am	2008-09-05 13:44:18.458146721 -0700
+@@ -1,6 +1,6 @@
+ INCLUDES = \
+ 	$(PLANNER_CFLAGS) 		\
+-	-DEGG_COMPILATION
++	-DEGG_COMPILATION		\
+ 	-DGTK_DISABLE_DEPRECATED	\
+ 	-DG_DISABLE_DEPRECATED

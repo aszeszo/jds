@@ -1,0 +1,26 @@
+--- gnome-media-2.30.0/gstreamer-properties/pipeline-constants.c-orig	2010-05-11 15:39:33.241845098 -0500
++++ gnome-media-2.30.0/gstreamer-properties/pipeline-constants.c	2010-05-11 15:44:25.461690726 -0500
+@@ -76,8 +76,12 @@ GSTPPipelineDescription audiosink_pipeli
+ #endif
+   {PIPE_TYPE_AUDIOSINK, 0, N_("OSS - Open Sound System"),
+       "osssink", NULL, FALSE, TEST_PIPE_SUPPLIED, audiosink_test_pipe, TRUE},
++  {PIPE_TYPE_AUDIOSINK, 0, N_("OSS - Open Sound System Version 4"),
++      "oss4sink", NULL, FALSE, TEST_PIPE_SUPPLIED, audiosink_test_pipe, TRUE},
+   {PIPE_TYPE_AUDIOSINK, 0, N_("PulseAudio Sound Server"),
+       "pulsesink", NULL, FALSE, TEST_PIPE_SUPPLIED, audiosink_test_pipe, FALSE},
++  {PIPE_TYPE_AUDIOSINK, 0, N_("Sun Audio"),
++      "sunaudiosink", NULL, FALSE, TEST_PIPE_SUPPLIED, audiosink_test_pipe, TRUE},
+   {PIPE_TYPE_AUDIOSINK, 0, N_("Custom"), NULL, NULL, TRUE, TEST_PIPE_SUPPLIED,
+       audiosink_test_pipe, TRUE}
+ };
+@@ -125,6 +129,10 @@ GSTPPipelineDescription audiosrc_pipelin
+ #endif
+   {PIPE_TYPE_AUDIOSRC, 0, N_("OSS - Open Sound System"), "osssrc", NULL, FALSE,
+       TEST_PIPE_AUDIOSINK, NULL, FALSE},
++  {PIPE_TYPE_AUDIOSRC, 0, N_("OSS - Open Sound System Version 4"), "oss4src", NULL, FALSE,
++      TEST_PIPE_AUDIOSINK, NULL, FALSE},
++  {PIPE_TYPE_AUDIOSRC, 0, N_("Sun Audio"), "sunaudiosrc", NULL, FALSE,
++      TEST_PIPE_AUDIOSINK, NULL, FALSE},
+   {PIPE_TYPE_AUDIOSRC, 0, N_("PulseAudio Sound Server"), "pulsesrc", NULL,
+       FALSE, TEST_PIPE_AUDIOSINK, NULL, FALSE},
+   /* Note: using triangle instead of sine for test sound so we

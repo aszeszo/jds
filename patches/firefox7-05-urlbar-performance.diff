@@ -1,0 +1,21 @@
+# HG changeset patch
+# Parent e040a21cdc0ee53ef97e6d789e23233119020808
+# User Marco Bonardo <mbonardo@mozilla.com>
+Bug 682676 - urlbar performance regression with SQLite 3.7.7.1.
+r=sdwilsh
+
+diff --git a/toolkit/components/places/nsPlacesAutoComplete.js b/toolkit/components/places/nsPlacesAutoComplete.js
+--- a/toolkit/components/places/nsPlacesAutoComplete.js
++++ b/toolkit/components/places/nsPlacesAutoComplete.js
+@@ -285,7 +285,10 @@ function nsPlacesAutoComplete()
+   });
+ 
+   XPCOMUtils.defineLazyGetter(this, "_historyQuery", function() {
+-    let replacementText = "AND h.visit_count > 0";
++    // Enforce ignoring the visit_count index, since the frecency one is much
++    // faster in this case.  ANALYZE helps the query planner to figure out the
++    // faster path, but it may not have run yet.
++    let replacementText = "AND +h.visit_count > 0";
+     return this._db.createAsyncStatement(
+       SQL_BASE.replace("{ADDITIONAL_CONDITIONS}", replacementText, "g")
+     );

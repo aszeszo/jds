@@ -1,0 +1,29 @@
+--- slocate-3.1/src/utils.c.ori	2010-10-21 01:32:35.913874756 +0100
++++ slocate-3.1/src/utils.c	2010-10-21 01:33:22.527000503 +0100
+@@ -34,7 +34,7 @@
+ #endif
+ 
+ #define RAND_MAX 9999
+-char* strcasestr( char *, char *);
++char* mystrcasestr( char *, char *);
+ 
+ /* Duplicate string and make all characters lowercase */
+ char * tolower_strdup(char *str)
+@@ -132,7 +132,7 @@
+ 			
+ 		} else {
+ 
+-			if (strcasestr(full_path, search_str) != NULL)
++			if (mystrcasestr(full_path, search_str) != NULL)
+ 				foundit = 1;
+ 			else
+ 				foundit = 0;
+@@ -551,7 +551,7 @@
+ 	return ret;
+ }
+ 
+-char *strcasestr(char *a, char *b) {
++char *mystrcasestr(char *a, char *b) {
+ 	size_t l;
+ 	char f[3];
+ 

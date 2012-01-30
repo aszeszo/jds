@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompiz-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompiz-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompiz-devel.copyright
+d none include 0755 root bin
+d none include/compiz 0755 root bin
+f none include/compiz/compiz-common.h=usr/include/compiz/compiz-common.h 0644 root bin
+f none include/compiz/compiz-core.h=usr/include/compiz/compiz-core.h 0644 root bin
+f none include/compiz/compiz-cube.h=usr/include/compiz/compiz-cube.h 0644 root bin
+f none include/compiz/compiz-plugin.h=usr/include/compiz/compiz-plugin.h 0644 root bin
+f none include/compiz/compiz-scale.h=usr/include/compiz/compiz-scale.h 0644 root bin
+f none include/compiz/compiz.h=usr/include/compiz/compiz.h 0644 root bin
+f none include/compiz/decoration.h=usr/include/compiz/decoration.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/compiz-cube.pc=usr/lib/pkgconfig/compiz-cube.pc 0644 root bin
+f none lib/pkgconfig/compiz-gconf.pc=usr/lib/pkgconfig/compiz-gconf.pc 0644 root bin
+f none lib/pkgconfig/compiz-scale.pc=usr/lib/pkgconfig/compiz-scale.pc 0644 root bin
+f none lib/pkgconfig/compiz.pc=usr/lib/pkgconfig/compiz.pc 0644 root bin
+f none lib/pkgconfig/libdecoration.pc=usr/lib/pkgconfig/libdecoration.pc 0644 root bin

@@ -1,0 +1,31 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-camera-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-camera-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-camera-devel.copyright
+d none bin 0755 root bin
+f none bin/gphoto2-config=usr/bin/gphoto2-config 0755 root bin
+f none bin/gphoto2-port-config=usr/bin/gphoto2-port-config 0755 root bin
+d none include 0755 root bin
+d none include/gphoto2 0755 root bin
+s none include/gphoto2/gphoto2=.
+f none include/gphoto2/gphoto2-abilities-list.h=usr/include/gphoto2/gphoto2-abilities-list.h 0644 root bin
+f none include/gphoto2/gphoto2-camera.h=usr/include/gphoto2/gphoto2-camera.h 0644 root bin
+f none include/gphoto2/gphoto2-context.h=usr/include/gphoto2/gphoto2-context.h 0644 root bin
+f none include/gphoto2/gphoto2-file.h=usr/include/gphoto2/gphoto2-file.h 0644 root bin
+f none include/gphoto2/gphoto2-filesys.h=usr/include/gphoto2/gphoto2-filesys.h 0644 root bin
+f none include/gphoto2/gphoto2-library.h=usr/include/gphoto2/gphoto2-library.h 0644 root bin
+f none include/gphoto2/gphoto2-list.h=usr/include/gphoto2/gphoto2-list.h 0644 root bin
+f none include/gphoto2/gphoto2-port-info-list.h=usr/include/gphoto2/gphoto2-port-info-list.h 0644 root bin
+f none include/gphoto2/gphoto2-port-log.h=usr/include/gphoto2/gphoto2-port-log.h 0644 root bin
+f none include/gphoto2/gphoto2-port-portability.h=usr/include/gphoto2/gphoto2-port-portability.h 0644 root bin
+f none include/gphoto2/gphoto2-port-result.h=usr/include/gphoto2/gphoto2-port-result.h 0644 root bin
+f none include/gphoto2/gphoto2-port-version.h=usr/include/gphoto2/gphoto2-port-version.h 0644 root bin
+f none include/gphoto2/gphoto2-port.h=usr/include/gphoto2/gphoto2-port.h 0644 root bin
+f none include/gphoto2/gphoto2-result.h=usr/include/gphoto2/gphoto2-result.h 0644 root bin
+f none include/gphoto2/gphoto2-setting.h=usr/include/gphoto2/gphoto2-setting.h 0644 root bin
+f none include/gphoto2/gphoto2-version.h=usr/include/gphoto2/gphoto2-version.h 0644 root bin
+f none include/gphoto2/gphoto2-widget.h=usr/include/gphoto2/gphoto2-widget.h 0644 root bin
+f none include/gphoto2/gphoto2.h=usr/include/gphoto2/gphoto2.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libgphoto2.pc=usr/lib/pkgconfig/libgphoto2.pc 0644 root bin
+f none lib/pkgconfig/libgphoto2_port.pc=usr/lib/pkgconfig/libgphoto2_port.pc 0644 root bin

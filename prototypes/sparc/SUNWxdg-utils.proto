@@ -1,0 +1,32 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxdg-utils.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxdg-utils.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxdg-utils.copyright
+f none share/doc/SUNWxdg-utils/ChangeLog.bz2=usr/share/doc/SUNWxdg-utils/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWxdg-utils/LICENSE=usr/share/doc/SUNWxdg-utils/LICENSE 0444 root bin
+f none share/doc/SUNWxdg-utils/README.bz2=usr/share/doc/SUNWxdg-utils/README.bz2 0444 root bin
+f none share/doc/SUNWxdg-utils/scripts/README=usr/share/doc/SUNWxdg-utils/scripts/README 0444 root bin
+f none share/doc/SUNWxdg-utils/tests/README.bz2=usr/share/doc/SUNWxdg-utils/tests/README.bz2 0444 root bin
+f none share/doc/SUNWxdg-utils/tests/debug/README=usr/share/doc/SUNWxdg-utils/tests/debug/README 0444 root bin
+d none bin 0755 root bin
+f none bin/xdg-desktop-icon=usr/bin/xdg-desktop-icon 0755 root bin
+f none bin/xdg-desktop-menu=usr/bin/xdg-desktop-menu 0755 root bin
+f none bin/xdg-email=usr/bin/xdg-email 0755 root bin
+f none bin/xdg-icon-resource=usr/bin/xdg-icon-resource 0755 root bin
+f none bin/xdg-mime=usr/bin/xdg-mime 0755 root bin
+f none bin/xdg-open=usr/bin/xdg-open 0755 root bin
+f none bin/xdg-screensaver=usr/bin/xdg-screensaver 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWxdg-utils 0755 root bin
+d none share/doc/SUNWxdg-utils/scripts 0755 root bin
+d none share/doc/SUNWxdg-utils/tests 0755 root bin
+d none share/doc/SUNWxdg-utils/tests/debug 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/xdg-desktop-icon.1=usr/share/man/man1/xdg-desktop-icon.1 0644 root bin
+f none share/man/man1/xdg-desktop-menu.1=usr/share/man/man1/xdg-desktop-menu.1 0644 root bin
+f none share/man/man1/xdg-email.1=usr/share/man/man1/xdg-email.1 0644 root bin
+f none share/man/man1/xdg-icon-resource.1=usr/share/man/man1/xdg-icon-resource.1 0644 root bin
+f none share/man/man1/xdg-mime.1=usr/share/man/man1/xdg-mime.1 0644 root bin
+f none share/man/man1/xdg-open.1=usr/share/man/man1/xdg-open.1 0644 root bin
+f none share/man/man1/xdg-screensaver.1=usr/share/man/man1/xdg-screensaver.1 0644 root bin

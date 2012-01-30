@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-media-apps-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-media-apps-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-media-apps-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gnome-audio-profiles.schemas=etc/gconf/schemas/gnome-audio-profiles.schemas 0644 root sys
+f none etc/gconf/schemas/gnome-volume-control.schemas=etc/gconf/schemas/gnome-volume-control.schemas 0644 root sys

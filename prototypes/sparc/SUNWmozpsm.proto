@@ -1,0 +1,23 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmozpsm.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmozpsm.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWmozpsm.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWmozpsm.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmozpsm.copyright
+d none sfw 0755 root bin
+d none sfw/lib 0755 root bin
+d none sfw/lib/mozilla 0755 root sys
+d none sfw/lib/mozilla/chrome 0755 root sys
+f none sfw/lib/mozilla/chrome/pipnss.jar=usr/sfw/lib/mozilla/chrome/pipnss.jar 0644 root sys
+f none sfw/lib/mozilla/chrome/pippki.jar=usr/sfw/lib/mozilla/chrome/pippki.jar 0644 root sys
+d none sfw/lib/mozilla/components 0755 root sys
+f none sfw/lib/mozilla/components/libpipboot.so=usr/sfw/lib/mozilla/components/libpipboot.so 0755 root sys
+f none sfw/lib/mozilla/components/libpipnss.so=usr/sfw/lib/mozilla/components/libpipnss.so 0755 root sys
+f none sfw/lib/mozilla/components/libpippki.so=usr/sfw/lib/mozilla/components/libpippki.so 0755 root sys
+f none sfw/lib/mozilla/components/pipboot.xpt=usr/sfw/lib/mozilla/components/pipboot.xpt 0644 root sys
+f none sfw/lib/mozilla/components/pipnss.xpt=usr/sfw/lib/mozilla/components/pipnss.xpt 0644 root sys
+f none sfw/lib/mozilla/components/pippki.xpt=usr/sfw/lib/mozilla/components/pippki.xpt 0644 root sys
+f none sfw/lib/mozilla/libfreebl_hybrid_3.chk=usr/sfw/lib/mozilla/libfreebl_hybrid_3.chk 0644 root sys
+f none sfw/lib/mozilla/libfreebl_hybrid_3.so=usr/sfw/lib/mozilla/libfreebl_hybrid_3.so 0755 root sys
+f none sfw/lib/mozilla/libfreebl_pure32_3.chk=usr/sfw/lib/mozilla/libfreebl_pure32_3.chk 0644 root sys
+f none sfw/lib/mozilla/libfreebl_pure32_3.so=usr/sfw/lib/mozilla/libfreebl_pure32_3.so 0755 root sys
+f none sfw/lib/mozilla/libsoftokn3.chk=usr/sfw/lib/mozilla/libsoftokn3.chk 0644 root sys

@@ -1,0 +1,13 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgtk2-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgtk2-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgtk2-root.copyright
+d none etc 0755 root sys
+d none etc/gtk-2.0 0755 root sys
+v none etc/gtk-2.0/gdk-pixbuf.loaders=etc/gtk-2.0/gdk-pixbuf.loaders 0644 root sys
+v none etc/gtk-2.0/gtk.immodules=etc/gtk-2.0/gtk.immodules 0644 root sys
+f none etc/gtk-2.0/im-multipress.conf=etc/gtk-2.0/im-multipress.conf 0644 root sys
+d none etc/sparcv9 0755 root sys
+d none etc/sparcv9/gtk-2.0 0755 root sys
+v none etc/sparcv9/gtk-2.0/gdk-pixbuf.loaders=etc/sparcv9/gtk-2.0/gdk-pixbuf.loaders 0644 root sys
+v none etc/sparcv9/gtk-2.0/gtk.immodules=etc/sparcv9/gtk-2.0/gtk.immodules 0644 root sys
+f none etc/sparcv9/gtk-2.0/im-multipress.conf=etc/sparcv9/gtk-2.0/im-multipress.conf 0644 root sys

@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-tsoljdslabel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-tsoljdslabel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-tsoljdslabel.copyright
+d none bin 0755 root bin
+f none bin/tsoljdslabel=usr/bin/tsoljdslabel 4755 root other
+f none bin/tsoljdslabel-ui=usr/bin/tsoljdslabel-ui 0755 root other
+f none bin/txfailsafe=usr/bin/txfailsafe 0755 root other
+d none dt 0755 root bin
+d none dt/config 0755 root bin
+f none dt/config/Xinitrc.tjds=usr/dt/config/Xinitrc.tjds 0755 root other
+f none dt/config/Xsession.tjds=usr/dt/config/Xsession.tjds 0755 root other
+f none dt/config/Xsession2.tjds=usr/dt/config/Xsession2.tjds 0755 root other
+d none share 0755 root sys
+d none share/xsessions 0755 root bin
+d none share/xsessions/multilabel 0755 root bin
+f none share/xsessions/multilabel/tgnome.desktop=usr/share/xsessions/multilabel/tgnome.desktop 0644 root other
+f none share/xsessions/multilabel/txfailsafe.desktop=usr/share/xsessions/multilabel/txfailsafe.desktop 0644 root other

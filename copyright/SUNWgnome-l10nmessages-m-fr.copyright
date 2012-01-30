@@ -1,0 +1,1935 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+
+-------------------------------------------------------------
+
+Copyright for avahi.mo
+  Copyright (C) 2008 THE avahi-fr'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the avahi-fr package.
+  Matthieu Rondeau <milanito1985@yahoo.fr>, 2008
+  Pablo Martin-Gomez <pablo.martin-gomez@laposte.net>, 2008
+  Martin-Gomez Pablo <pablo.martin-gomez@laposte.net>, 2008.
+ 
+ 
+-------------------------------------------------------------
+
+Copyright for tracker.mo
+  French translation of Tracker
+  Copyright (C) 2006-2008, Free Software Foundation, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Laurent Aguerreche <laurent.aguerreche@free.fr>, 2006.
+  Claude Paroz <claude@2xlibre.net>, 2007-2008.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2008.
+  Bruno Brouard <annoa.b@gmail.com>, 2008.
+  Marc Veillet <scouigne@gmail.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the tracker package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dia.mo
+  French translation of dia.
+  Copyright (C) 1999-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the dia package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1999-2000.
+  Fabrice Bellet <fabrice.bellet@imag.fr>, 1999.
+  Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Cyrille Chépélov <cyrille@chepelov.org>, 2001-2003
+  Frédéric Boiteux <furgarat@free.fr>, 2001.
+  Benoît Dejean <bnet@ifrance.com>, 2003.
+  Marc-André Lureau <marcandre.lureau@gmail.com>, 2005.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Élie Roux <elie.roux@enst-bretagne.fr>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for fsexam.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the fsexam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for dasher.mo
+  French translation of dasher.
+  Copyright (C) 2003-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the dasher package.
+ 
+  Phil Cowens <pjc51@srcf.ucam.org>, 2003.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2004-2006.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Samuel Mutel <samuel.mutel@free.fr>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the dasher package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gok.mo
+  French translation of gok.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gok package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003-2006.
+  Mathieu Giraud <magiraud@free.fr>, 2003.
+  Benoît Dejean <tazforever@dlfp.org>, 2005.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Pierre Lemaire <pierre.lemaire@kamick.org>, 2008.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2008.
+  Claude Paroz <claude@2xlibre.net>, 2009.
+ 
+  Access method = mode de saisie
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for at-spi.mo
+  French translation of at-spi.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the at-spi package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for mousetweaks.mo
+  French translation of mousetweaks.
+  Copyright (C) 2007 Gerd Kohlberger <lowfi@chello.at>, Francesco Fumanti <francesco.fumanti@gmx.net>
+ 
+  This file is distributed under the same license as the mousetweaks package.
+ 
+  Francesco Fumanti <francesco.fumanti@gmx.net>, 2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Bruno Brouard <annoa.b@gmail.com>, 2008-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for orca.mo
+  French translation of orca.
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the orca package.
+ 
+  Cédric Corazza <cedric.corazza@laposte.net>, 2004.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007
+  Claude Paroz <claude@2xlibre.net>, 2008-2009
+  Pierre Lemaire <pierre.lemaire@kamick.org>, 2008
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the orca package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for quick-lounge-applet.mo
+  French translation of quick-lounge-applet.
+  Copyright (C) 2003-2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the quick-lounge-applet package.
+ 
+  Frédéric Logier <fred@taonix.net>, 2003.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-netstatus.mo
+  French translation of gnome netstatus.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Jean-Michel Ardantz <jmardantz@ifrance.com>, 2003-2005.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-netstatus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for file-roller.mo
+  French translation of file-roller.
+  Copyright (C) 2002-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the file-roller package.
+ 
+  Jean-Michel Ardantz <jmardantz@ifrance.com>, 2002-2006.
+  Roland Baudin <roland65@free.fr>, 2002.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Benoît Dejean <tazforever@dlfp.org>, 2005-2006.
+  Christophe Bliard <christophe.bliard@trux.info>, 2005.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+  Antoine Cailliau <a.cailliau@ac-graphic.net>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Michaël Zakrzewski <m.zakrzewski@free.fr>, 2008
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the file-roller package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gcalctool.mo
+  French translation of gcalctool.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the GNU General Public License Version 2.
+ 
+  Laurent Richard <laurent.richard@lilit.be>, 2002-2006.
+  Gildas Guillemot <g.guillemot@laposte.net>, 2003.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003-2006.
+  Benoit Dejean <TazForEver@dlfp.org>, 2004.
+  Vincent Carriere <carriere_vincent@yahoo.fr>, 2005.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007, 2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007, 2009.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Bruno Brouard <annoa.b@gmail.com>, 2008-2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkam.mo
+  French message catalog for gtKam, a GTK+ front end for gphoto2
+  Copyright © 2000 Scott Fritzinger <scottf@unr.edu>
+  Philippe Marzouk <philm@users.sourceforge.net>, 2000.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gtkam package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for brasero.mo
+  French translation of brasero.
+  Copyright (C) 2005-2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the brasero package.
+ 
+  Philippe Rouquier <brasero@wanadoo.fr>, 2005.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2006-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007, 2009.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Bruno Brouard <annoa.b@gmail.com>, 2008-2009.
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the brasero package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for sound-juicer.mo
+  French translation of sound-juicer.
+  Copyright (C) 2003-2008 Free Software Foundation, Inc.
+  This file is distributed under the GNU General Public License Version 2.
+ 
+  Jean-Michel Ardantz <jmardantz@ifrance.com>, 2003-2006.
+  Yann Laviolette <yann_laviolette@gnome.org>, 2003.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003-2006.
+  Christophe Fergeau  <teuf@gnome.org>, 2006.
+  Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Christophe Benz <christophe.benz@gmail.com>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2008.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonobo-2.0.mo
+  French translation of libbonobo.
+  Copyright (C) 2001-2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the libbonobo package.
+ 
+  Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2001-2005.
+  Christophe Fergeau <teuf@users.sourceforge.net> 2002.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Gianni Moschini <gianni@cmsoft.net>, 2006.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007
+ 
+-------------------------------------------------------------
+
+Copyright for gconf-editor.mo
+  French translation of gconf-editor.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gconf-editor package.
+ 
+  Jean-Michel Ardantz <jmardantz@ifrance.com>, 2002-2004.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2004.
+  Benoît Dejean <tazforever@dlfp.org>, 2005.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+ 
+-------------------------------------------------------------
+
+Copyright for GConf2.mo
+  French translation of GConf.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gconf package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2005.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Emmanuel Andry <eandry@free.fr>, 2006.
+  Claude Paroz <claude@2xlibre.net>, 2006-2009.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
+ 
+-------------------------------------------------------------
+
+Copyright for bug-buddy.mo
+  French translation of bug-buddy.
+  Copyright (C) 1999-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the bug-buddy package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Hervé Dréau <hdreau@cybercable.fr>, 1999.
+  Vincent Renardias <vincent@ldsol.com>, 1999-2000.
+  Yannick Tailliez <yannickta@yahoo.com>, 2005
+  Guillaume Desmottes <cass@skynet.be>, 2006
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Philippe Lefevre <ph.l@libertysurf.fr>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2006-2008
+ 
+-------------------------------------------------------------
+
+Copyright for gdesklets.mo
+  French gDesklets translation.
+  Copyright (C) 2003-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gDesklets package.
+ 
+  Sébastien Bacher <seb128@debian.org>, 2003-2004
+  Benoît Dejean <tazforever@dlfp.org>, 2004, 2006
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdesklet package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-control-center-2.0.mo
+  French translation of gnome-control-center.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is under the same license as the gnome-control-center package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-1999.
+  Fabrice Bellet <fabrice.bellet@imag.fr>, 1999.
+  Thibaut Cousin <thibaut.cousin@clermont.in2p3.fr>, 1999.
+  Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Mathieu Gauthier-Pilote <mathieu.g.p@videotron.ca>, 2002.
+  Sebastien Oustric <sebastien.oustric@laposte.net>, 2002.
+  Simon Manlay <simon@solintech.fr>, 2005.
+  Vincent Untz <vuntz@gnome.org>, 2005.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Samuel Mutel <samuel.mutel@free.fr>, 2006.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Marc Lorber <linux-lorber@club-internet.fr>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Christophe Benz <christophe.benz@gmail.com>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Bruno Brouard <annoa.b@gmail.com>, 2008-2009
+  Laurent Coudeur <laurentc@iol.ie>, 2009
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the control-center package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-settings-daemon.mo
+  French translation of gnome-daemon-settings.
+  Copyright (C) 2008-2009 Free Software Foundation, Inc.
+  This file is under the same license as the gnome-settings-daemon package.
+ 
+  Claude Paroz <claude@2xlibre.net>, 2008-2009
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2008
+  Laurent Coudeur <laurentc@iol.ie, 2009
+  Nicolas Repentin <nicolas@shivaserv.fr>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for zenity.mo
+  French Translation of Zenity.
+  Copyright (C) 2003-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the Zenity package.
+ 
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2003-2004.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003-2006.
+  Benoît Dejean <benoit@placenet.org>, 2005-2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for gdm.mo
+  French translation of gdm2.
+  Copyright (C) 1998-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gdm2 package.
+ 
+  Vincent Renardias <vincent@debian.org>, 1998.
+  Fabrice Bellet <Fabrice.Bellet@imag.fr>, 1999.
+  Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2001.
+  Xavier Claessens <x_claessens@skynet.be>, 2005.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2006-2008.
+  Guillaume Desmottes <cass@skynet.be>, 2006.
+  Vincent Fretin <vincent.fretin@gmail.com>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+  Claude Paroz <claude@2xlibre.net>, 2007.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gdm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for nautilus.mo
+  French translation of nautilus.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the nautilus package.
+ 
+  Jean-Michel Ardantz <jmardantz@ifrance.com>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2001-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2001-2002.
+  Sébastien Bacher <seb128@debian.org>, 2004.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2004.
+  Yannick Tailliez <yannickta@yahoo.com>, 2005.
+  Vincent Carriere <carriere_vincent@yahoo.fr>, 2005.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Christophe Bliard <christophe.bliard@trux.info>, 2006.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Bruno Brouard <annoa.b@gmail.com>, 2008-2009.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the nautilus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-1.0.mo
+  French translation of gtksourceview.
+  Copyright (C) 2003-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtksourceview package.
+ 
+  Cédric Delfosse <cdelfosse@free.fr>, 2003.
+  Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2003-2006.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2004.
+  Benoît Dejean <TazForEver@dlfp.org>, 2005.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+ 
+-------------------------------------------------------------
+
+Copyright for gtksourceview-2.0.mo
+  French translation of gtksourceview.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtksourceview package.
+ 
+  Cédric Delfosse <cdelfosse@free.fr>, 2003.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003-2006.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2004.
+  Benoît Dejean <tazforever@dlfp.org>, 2005.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Laurent Coudeur <laurentc@iol.ie>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for yelp.mo
+  French translation of Yelp.
+  Copyright (C) 2002-2007 Free Software Foundation, Inc.
+  This file is under the same license as the yelp package.
+ 
+  Jean-Michel Ardantz <jmardantz@ifrance.com>, 2002-2005.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Sébastien Bacher <seb128@debian.org>, 2004.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2005.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+  Claude Paroz <claude@2xlibre.net>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Valentin Gatien-Baron <bbaiyfb@gmail.com>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the yelp package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ghex-2.0.mo
+  French translation of ghex.
+  Copyright (C) 1998-2006 Free Software Foundation, Inc.
+  This file is under the same license as the ghex package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-2000.
+  Thibaut Cousin <cousin@clermont.in2p3.fr>, 1999.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Olivier Jousselin <ojousselin@pcaway.com>, 2002.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ghex package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for pidgin.mo
+  Pidgin French translation
+ 
+  Copyright (C) 2001-2002, Sébastien François <sebfrance@ifrance.com>
+  Copyright (C) 2002, Stéphane Pontier <stephane.pontier@free.fr>
+  Copyright (C) 2002, Stéphane Wirtel <stephane.wirtel@belgacom.net>
+  Copyright (C) 2002, Loïc Jeannin <loic.jeannin@free.fr>
+  Copyright (C) 2002-2009, Éric Boumaour <zongo_fr@users.sourceforge.net>
+ 
+  This file is distributed under the same license as the Pidgin package.
+ 
+  Avant de soumettre des changements ou des conseils de traduction,
+  consultez le document des règles de traduction en français de Mozilla.
+  Ces règles servent de base pour ce fichier.
+  http://frenchmozilla.sourceforge.net/pages/regles.html
+ 
+  D'autres documents utiles peuvent être consultés sur le projet de
+  traduction de GNOME.
+  http://wiki.traduc.org/gnomefr/
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the pidgin package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gimp20.mo
+  French translation for The GIMP.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gimp package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-2000.
+  David Monniaux <monniaux@brick.ens.fr>, 1999-2000.
+  Daniel Egger <daniel.egger@rz.fh-muenchen.de>, 1999.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2004.
+  Raymond Ostertag <r.ostertag@caramail.com>, 2002-2007.
+  Thomas Morin <t0m@free.fr>, 2002-2003.
+  Jean-Louis Berliet <jl.berliet@free.fr>, 2004.
+  Julien Hardelin, <jm.hard@wanadoo.fr>, 2004, 2009.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Laurent Monin <gimp@norz.org>, 2007.
+  Yannick Tailliez <ytdispatch-libre@yahoo.com>, 2008.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2008.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gthumb.mo
+  French translation of gthumb.
+  Copyright (C) 2002-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gthumb package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Stéphane Genaud <genaud@icps.u-strasbg.fr>, 2002.
+  Christian Marillat <marillat.christian@wanadoo.fr>, 2003.
+  Fabien Gatell-Rica <f.gatell@gmail.com>, 2005.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Christophe Bliard <christophe.bliard@trux.info>, 2006.
+  Cyprien Le Pannérer <cyplp@free.fr>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2007.
+  Bruno Brouard <annoa.b@gmail.com>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gthumb package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for eog.mo
+  French translation of eog.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the eog package.
+ 
+  Vincent Renardias <vincent@debian.org>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Sébastien Bacher <seb128@debian.org>, 2004.
+  Benoît Dejean <tazforever@dlfp.org>, 2005.
+  Stéphane Raimbault <stephane.raimbault@free.fr>, 2005-2008.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2007.
+  Christophe Bliard <christophe.bliard@trux.info>, 2006.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Pierre Lemaire <pierre.lemaire@kamick.org>, 2008.
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-keyring.mo
+  French translation of gnome-keyring.
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-keyring package.
+ 
+  Sébastien Bacher <seb128@debian.org>, 2004.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2004.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Yann Simon <yann.simon.fr@gmail.com>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2008.
+  Bruno Brouard <annoa.b@gmail.com>, 2008.
+  Laurent Coudeur <laurentc@iol.ie>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for libgnome-2.0.mo
+  French translation of libgnome.
+  Copyright (C) 2001-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the libgnome package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2001-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for libbonoboui-2.0.mo
+  French translation of libbonoboui.
+  Copyright (C) 2001-2007 Free Software Foundation, Inc.
+  This file is distributed uder the same license as the libbonoboui package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2001-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-media-2.0.mo
+  French translation of gnome-media.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-1999.
+  Thibaut Cousin <thibaut.cousin@clermont.in2p3.fr>, 1999.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2005.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-media package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-good-0.10.mo
+  Translation of gst-plugins-good to French
+  Copyright (C) 2003-2008 GStreamer core team
+  This file is distributed under the same license as the gst-plugins-good package.
+ 
+  Nicolas Velin <nicolas@velin.fr>, 2008.
+  Claude Paroz <claude@2xlibre.net>, 2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gst-plugin-good package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gst-plugins-base-0.10.mo
+  Translation of gst-plugins-base to French
+  Copyright (C) 2003-2009 GStreamer core team
+  This file is distributed under the same license as the gst-plugins-base package.
+ 
+  Nicolas Velin <nicolas@velin.fr>, 2008.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for gstreamer-0.10.mo
+  Translation of GStreamer to French
+  Copyright (C) 2003-2009 GStreamer core team
+  This file is distributed under the same license as the gstreamer package.
+ 
+  Thomas Vander Stichele <thomas@apestaart.org>, 2004.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+ 
+-------------------------------------------------------------
+
+Copyright for totem.mo
+  French translation of totem.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the totem package.
+ 
+  Christophe Fergeau <christophe.fergeau@laposte.net>, 2002.
+  Sébastien Oustric <sebastien.oustric@laposte.net>, 2002.
+  Baptiste Mille-Mathias <bmm80@ifrance.com>, 2003.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003-2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2005, 2007-2008.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Claude Paroz <claude@2xlibre.net>, 2006-2009.
+  Ivan Buresi <err747@free.fr>, 2007.
+  Bruno Brouard <annoa.b@gmail.com>, 2007, 2009.
+  Laurent Pomarede <laurent.pomarede+gnomefr@gmail.com>, 2008.
+  Nicolas Repentin <nicolas@shivaserv.fr>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the totem package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for rhythmbox.mo
+  French translation of rhythmbox.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the rhythmbox package.
+ 
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2002-2005.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002, 2008.
+  Gildas Guillemot <g.guillemot@laposte.net>, 2003.
+  Laurent Richard <laurent.richard@ael.be>, 2003.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2004-2005, 2007-2008.
+  Christophe Bliard <christophe.bliard@trux.info>, 2005, 2007.
+  Haïkel Guémar <karlthered@gmail.com>, 2006.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Le Coz Florent <louizatakk@gmail.com>, 2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
+  Laurent POMAREDE <laurent.pomarede@gmail.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for alacarte.mo
+  French translation of alacarte.
+  Copyright (C) 2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the alacarte package.
+ 
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the alacarte package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for libwnck.mo
+  French translation of libwnck.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the libwnck package.
+ 
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Benoît Dejean <tazforever@dlfp.org>, 2005.
+  Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Robert-André-Mauchin <zebob.m@pengzone.org>, 2007-2008.
+  Vincent Untz <vincent@vuntz.net>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+ 
+  Unmaximize, unminimize -> restaurer
+  cf http://www.traduc.org/pipermail/gnomefr/2008-October/003765.html
+  Minimize -> réduire
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-menus.mo
+  French translation of gnome-menus.
+  Copyright (C) 2004-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-menu package.
+ 
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2004-2005.
+  Vincent Untz <vuntz@gnome.org>, 2005.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2005.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-menus package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-panel-2.0.mo
+  French translation of gnome-panel.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-panel package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-2000.
+  Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2004-2005.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Myriam Malga <mmalga@redhat.com>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Bruno Brouard <annoa.b@gmail.com>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-desktop-2.0.mo
+  French translation of gnome-desktop.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-2000.
+  Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002-2003.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Yannick Tailliez <ytdispatch-libre@yahoo.com>, 2008.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-desktop package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evince.mo
+  French translation of evince.
+  Copyright (C) 2005-2009 The Free Software Foundation, Inc.
+  This file is distributed under the GNU General Public License Version 2.
+ 
+  Vincent Carriere <carriere_vincent@yahoo.fr>, 2005.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2005-2006.
+  Vincent Untz <vuntz@gnome.org>, 2005.
+  Thomas Vergnaud <thomas.vergnaud@laposte.net>, 2006.
+  Guillaume Desmottes <cass@skynet.be>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007, 2009.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Pierre Lemaire <pierre.lemaire@kamick.org>, 2008.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-pilot.mo
+  French translation of gnome-pilot.
+  Copyright (C) 1998-2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-pilot package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-1999.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Laurent Richard <laurent.richard@lilit.be>, 2003.
+  Jonathan Chauvet <jonathan.chauvet@wanadoo.fr>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-power-manager.mo
+  French translation of gnome-power-manager.
+  Copyright (C) 2005-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  See http://wiki.traduc.org/gnomefr/NomenclatureEnergie.
+  NOT USED YET.
+ 
+  Yann Simon <yann.simon.fr@gmail.com>, 2005.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2005.
+  Guillaume Savary <guillaume@savary.name>, 2005.
+  Julien Valroff <julien@kirya.net>, 2006.
+  Elrik <elrik@tele2.fr>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Mathieu Gaspard <lukeg@altern.org>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2006-2008.
+  Claude Paroz <claude@2xlibre.net>, 2008.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-power-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+  Pascal.Kreyer <pascal.kreyer@sun.com>
+ 
+-------------------------------------------------------------
+
+Copyright for libgnomeprint-2.0.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR Free Software Foundation, Inc.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for vino.mo
+  French translation of vino.
+  Copyright (C) 2004-2009 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the vino package.
+ 
+  Audrey Simons <asimons@redhat.com>, 2004.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2005-2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Bruno Brouard <annoa.b@gmail.com>, 2009
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the vino package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-session-2.0.mo
+  French translation of gnome-session.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-2000.
+  Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2008.
+  Frédéric Péters <fpeters@0d.be>, 2008.
+  Bruno Brouard <annoa.b@gmail.com>, 2009
+ 
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-session package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-monitor.mo
+  French translation of gnome-system-monitor.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-system-monitor package.
+ 
+  Mathieu Gauthier-Pilote <mathieu.g.p@videotron.ca>, 2002.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Benoît Dejean <benoit@placenet.org>, 2006-2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-system-tools.mo
+  French translation of gnome-system-tools.
+  Copyright (C) 2001-2005 Free Software Foundation, Inc.
+  This file is distributed under the GNU General Public License Version 2.
+ 
+  Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2001-2005.
+  Guillaume Desmottes <cass@skynet.be>, 2006.
+  maintainer: Jean-Michel Ardantz <jmardantz@ifrance.com>, 2001-2006.
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the gnome-system-tools package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-terminal.mo
+  French translation of gnome-terminal.
+  Copyright (C) 2002-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-terminal package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2002-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Sébastien Tricaud <stricaud@mwsp.net>, 2003.
+  Mathieu Giraud <magiraud@free.fr>, 2003.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2008.
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+  Nicolas Repentin <nicolas@shivaserv.fr>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gedit.mo
+  French translation of gedit.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gedit package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-1999.
+  Joaquim Fellmann <joaquim@hrnet.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2005.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Laurent Richard <kouran@iespana.es>, 2002.
+  Yann Laviolette <borisgazoo@hotmail.com>, 2003.
+  Sébastien Bacher <seb128@debian.org>, 2004.
+  Baptiste Mille-Mathias <baptiste.millemathias@gmail.com>, 2005-2006.
+  Guillaume Desmottes <cass@skynet.be>, 2005.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2005, 2007-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Samuel Mutel <samuel.mutel@free.fr>, 2006.
+  Marc Lorber <linux-lorber@club-internet.fr>, 2006.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Bruno Brouard <annoa.b@gmail.com>, 2008.
+  Yannick Tailliez <ytdispatch-libre@yahoo.com>, 2008.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-backgrounds.mo
+  French translation of gnome-backgrounds.
+  Copyright (C) 1998-2006 Free Software Foundation, Inc.
+  This file is distributed under the GNU General Public License Version 2.
+ 
+  Benoît Dejean <TazForEver@dlfp.org>, 2005.
+  Thierry Moisan <thierryn@videotron.ca>, 2005.
+  Stéphane Raimbault <stephane.raimbault@free.fr>, 2006
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for blueprint.mo
+  SOME DESCRIPTIVE TITLE.
+  Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+  This file is distributed under the same license as the PACKAGE package.
+  FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+ 
+-------------------------------------------------------------
+
+Copyright for sun-gdm-themes.mo
+-------------------------------------------------------------
+
+Copyright for gnome-themes.mo
+  French Tranlation of gnome-themes.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-themes package.
+ 
+  Baptiste Mille-Mathias <bmm80@ifrance.com>, 2002.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2003.
+  Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2003-2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Pierre Lemaire <pierre.lemaire@kamick.org>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-icon-theme.mo
+  French Tranlation of gnome-icon-theme.
+  Copyright (C) 2002-2006 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-icon-theme package.
+ 
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2002-2004.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2003-2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for glade3.mo
+  French translation of glade3.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the glade package.
+ 
+  Frédéric Gobry <gobry@idiap.ch>, 1998.
+  Vincent Renardias <vincent@ldsol.com>, 1999-2000.
+  Fabrice Bellet <fabrice.bellet@imag.fr>, 1999.
+  Emmanuel Deloget <logout@free.fr>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2004.
+  Stéphane Blondin <stephane.blondin@caramail.com>, 2003.
+  Cyprien Le Pannérer <cyplp@free.fr>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007-2008.
+ 
+  Propositions de Bruno Brouard:
+  - pour "packing", je mettrais "agencement"
+  - pour "widget as toplevel", je mettrais "widget (composant) de premier niveau"
+    (car on ne peux pas mettre, je crois, n'importe quel widget (composant) comme
+    premier niveau. Les widgets sont intrinsèquement de premier niveau ou pas.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-utils-2.0.mo
+  French translation of gnome-utils.
+  Copyright (C) 1998-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-utils package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1998-2000.
+  Thibaut Cousin <cousin@clermont.in2p3.fr>, 1999.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Bretin Didier <didier@bretin.net>, 2001.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2005.
+  Cyprien Le Pannérer <cyplp@free.fr>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2005-2008.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Antoine Cailliau <a.cailliau@ac-graphic.net>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-vfs-2.0.mo
+  French translation of gnome-vfs.
+  Copyright (C) 1999-2005 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gnome-vfs package.
+ 
+  Vincent Renardias <vincent@ldsol.com>, 1999-2000.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2005.
+  Baptiste Mille-Mathias (crevette) <bmm80@free.fr>, 2003-2004.
+  Benoît Dejean <benoit@placenet.org>, 2006.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for shared-mime-info.mo
+  Messages français pour GNU concernant shared-mime-info.
+  Copyright © 2004-2008 Free Software Foundation, Inc.
+  This file is distributed under the same license as the shared-mime-info package.
+ 
+  Michel Robitaille <robitail@IRO.UMontreal.CA>, 2004, 2005.
+  Claude Paroz <claude@2xlibre.net>, 2007-2008.
+ 
+-------------------------------------------------------------
+
+Copyright for gnome-mime-data.mo
+  French translation for gnome-mime-data.
+  Copyright (C) 2001-2004 Free Software Foundation, Inc.
+  This file is under the same license as the gnome-mime-data package.
+ 
+  maintainer: Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2001-2004.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+ 
+-------------------------------------------------------------
+
+Copyright for metacity.mo
+  French translation of metacity.
+  Copyright (C) 2002-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the metacity package.
+ 
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2002.
+  Christophe Merlet (RedFox) <redfox@redfoxcenter.org>, 2002-2006.
+  Sun G11n <gnome_int_l10n@ireland.sun.com>, 2002.
+  Guy Clotilde <guy.clotilde@wanadoo.fr>, 2002.
+  Baptiste Mille-Mathias <baptiste@mille-mathias.info>, 2004.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Cyprien Le Pannérer <cyplp@free.fr>, 2006.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Claude Paroz <claude@2xlibre.net>, 2008-2009.
+ 
+ 
+ 
+  Copyright 2007 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+ 
+-------------------------------------------------------------
+
+Copyright for gtkspell.mo
+  Messages fran�ais pour GNU concernant gtkspell.
+  Copyright � 2004 Free Software Foundation, Inc.
+  Michel Robitaille <robitail@IRO.UMontreal.CA>, traducteur depuis/since 1996.
+ 
+-------------------------------------------------------------
+
+Copyright for libgsf.mo
+  French translation of libgsf.
+  Copyright (C) 2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the libgsf package.
+ 
+  Gérard Baylard <<gerard.b@bbox.fr>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for nwam-manager.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the nwam-manager package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for ospm.mo
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the ospm package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for seahorse.mo
+  French translation of seahorse.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the seahorse package.
+ 
+  Gaël Quéri <gqueri@mail.dotcom.fr>, 2000.
+  Stéphane Blondin <stephane.blondin@caramail.com>, 2003.
+  Christophe Merlet <redfox@redfoxcenter.org>. 2003-2006.
+  David Soulayrol <david.soulayrol.2000@anciens.enib.fr>, 2005.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007-2008.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2008.
+  Bruno Brouard <annoa.b@gmail.com>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs-gtk.mo
+  French translation of dg-user-dirs-gtk.
+  Copyright (C) 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the xdg-user-dir-gtk package.
+ 
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for xdg-user-dirs.mo
+  French translation of xdg-user-dirs
+  Copyright (C) 2007 Free Software Foundation, Inc.
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007
+ 
+  Copyright (C) 2009 Sun Microsystems, Inc
+  This file is distributed under the same license as the xdg-user-dirs package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-2.28.mo
+  French translation of evolution.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution package.
+ 
+  Vincent Renardias <vincent@debian.org>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Jean-Noël Guiheneuf <jean-noel.guiheneuf@wanadoo.fr>, 2001.
+  Frédéric Riss <frederic.riss@laposte.net>, 2001-2002.
+  Joaquim Fellmann <joaquim@altern.org>, 2002.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2003.
+  Brigitte Le Grand <brigitte.le.grand@sun.com> pour Sun Microsystems(tm), 2003.
+  Yannick Marchegay <yannick.marchegay@lokanova.com>, 2004.
+  Sébastien Bacher <seb128@debian.org>, 2004.
+  Craig Jeffares <cjeffares@novell.com> pour Novell(tm), 2004.
+  Vincent Carriere <carriere_vincent@yahoo.fr>, 2005.
+  Vincent Untz <vuntz@gnome.org>, 2005.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2005-2008.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007, 2009.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Myriam Malga <mmalga@redhat.com>, 2007.
+  Bruno Brouard <annoa.b@gmail.com>, 2008-2009.
+  Yannick Tailliez <ytdispatch-libre@yahoo.com>, 2008.
+  Rémi Peixoto <remi.peixoto@gmail.com>, 2009.
+ 
+ : ../shell/main.c:631
+  Copyright (C) 2008 Sun Microsystems, Inc
+  This file is distributed under the same license as the evolution package.
+ 
+  Desktop Discuss <desktop-discuss@opensolaris.org>
+ 
+-------------------------------------------------------------
+
+Copyright for gtkhtml-3.14.mo
+  French translation of gtkhtml.
+  Copyright (C) 2000-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the gtkhtml package.
+ 
+  Yannick Le Ny <y-le-ny@ifrance.com>, 2000.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Gildas Guillemot <g.guillemot@laposte.net>, 2003.
+  Audrey Simons <asimons@redhat.com>, 2004.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Bruno Brouard <annoa.b@gmail.com>, 2008
+  Claude Paroz <claude@2xlibre.net>, 2009
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-exchange-2.28.mo
+  French translation of evolution-exchange.
+  Copyright (C) 2004-2008 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the GNU General Public License Version 2.
+ 
+  Craig Jeffares <cjeffares@novell.com> pour Novell(tm), 2004.
+  Christophe Merlet <redfox@redfoxcenter.org>, 2004-2006.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+  Yannick Tailliez <ytdispatch-libre@yahoo.com>, 2008.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-data-server-2.28.mo
+  French translation of evolution-data-server.
+  Copyright (C) 2003-2009 Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution-data-server package.
+ 
+  Christophe Merlet <redfox@redfoxcenter.org>, 2000-2006.
+  Christophe Fergeau <teuf@users.sourceforge.net>, 2003.
+  Brigitte Le Grand <brigitte.le.grand@sun.com> pour Sun Microsystems(tm), 2003.
+  Sébastien Bacher <seb128@debian.org>, 2004.
+  Craig Jeffares <cjeffares@novell.com> pour Novell(tm), 2004.
+  Thierry Moisan <thierryn@videotron.ca>, 2005.
+  Stéphane Raimbault <stephane.raimbault@free.fr>, 2005-2007.
+  Laurent Richard <laurent.richard@ael.be>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Robert-André Mauchin <zebob.m@pengzone.org>, 2006-2008.
+  Claude Paroz <claude@2xlibre.net>, 2007-2009.
+  Bruno Brouard <annoa.b@gmail.com>, 2008.
+  Yannick Tailliez <ytdispatch-libre@yahoo.com>, 2008.
+  Laurent Coudeur <laurentc@iol.ie>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-jescs-2.28.mo
+  French translation of evolution-jescs.
+  Copyright (C) 2003-2006 The Free Software Foundation, Inc.
+  This file is distributed under the same license as the evolution-jescs package.
+ 
+  G11N <gnome_int_l10n@ireland.sun.com>, 2003.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2009.
+ 
+-------------------------------------------------------------
+
+Copyright for evolution-webcal.mo
+  French translation of evolution-webcal.
+  Copyright (C) 2004-2007 Free Sofware Foundation, Inc.
+  This file is distributed under the GNU General Public License Version 2.
+ 
+  Baptiste Mille-Mathias <bmm80@free.fr>, 2004-2005.
+  Robert-André Mauchin <zebob.m@gmail.com>, 2006.
+  Jonathan Ernst <jonathan@ernstfamily.ch>, 2006-2007.
+  Stéphane Raimbault <stephane.raimbault@gmail.com>, 2007.
+ 
+-------------------------------------------------------------
+
+Copyright for virt-manager.mo
+  translation of virt-manager.tip.po to french
+  Copyright (C) 2006 Virt-Manager
+  This file is distributed under the same license as the Virt-Manager package.
+ 
+  Damien Durand <splinux@fedoraproject.org>, 2006.
+  Thomas Canniot <thomas.canniot@laposte.net>, 2006, 2007.
+  Alain PORTAL <aportal@univ-montp2.fr>, 2006, 2007.
+  Decroux Fabien <fdecroux@redhat.com>, 2006.
+  Gauthier Ancelin <gauthier.ancelin@laposte.net>, 2007, 2008.
+-------------------------------------------------------------
+
+
+-------------------------------------------------------------
+Copyright for SUNWdia
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of dia
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of dia
+    po/ChangeLog.bz2: List of all l10n changes and authors of dia
+    NEWS.bz2: List of the most important changes to dia
+    README: More information about dia
+
+  The sources of dia-%{dia.version} were downloaded
+  from %{dia.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-gok
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gok
+  NEWS.bz2: list of the most important changes in gok
+  ChangeLog.bz2: list of all changes and authors of gok 
+  README: more information about gok
+
+ The sources of gok-%{gok.version} were downloaded
+ from %{gok.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-a11y-reader
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU LIBRARY GENERAL PUBLIC LICENSE Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of orca
+  NEWS.bz2: list of the most important changes in orca
+  ChangeLog.bz2: list of all changes and authors of orca
+  README: more information about orca
+
+ The sources of orca-%{orca.version} were downloaded
+ from %{orca.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-character-map
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of gucharmap
+    COPYING.bz2: GNU GPL
+    COPYING.UNICODE: Unicode Copyright
+    ChangeLog.bz2: List of all changes and authors of gucharmap
+    ChangeLog.pre-2-23.bz2: List of all changes and authors of gucharmap before
+                            version 2.23
+    help/ChangeLog.pre-2-23.bz2: List of all help changes and authors of
+                                 gucharmap before version 2.23
+    po/ChangeLog.pre-2-23.bz2: List of all l10n changes and authors of
+                               gucharmap before version 2.23
+    NEWS: List of the most important changes to gucharmap
+    README: More information about gucharmap
+    ChangeLog.README: Information on ChangeLog changes from 2.23
+
+  The sources of gucharmap-%{gucharmap.version} were downloaded
+  from %{gucharmap.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-im-client
+
+  Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+  Use is subject to license terms.
+
+--------------------------------------------------------------------
+
+ For the avoidance of doubt, except that if any license choice other
+ than GPL or LGPL is available it will apply instead, Sun elects to
+ use only the General Public License version 2 (GPLv2) at this time
+ for any software where a choice of GPL license versions is made
+ available with the language indicating that GPLv2 or any later
+ version may be used, or where a choice of which version of the GPL
+ is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+Package %name consists of the following components:
+
+  - pidgin-%{pidgin.version}
+  - pidginotr-%{pidginotr.version}
+  - libotr-%{libotr.version}
+
+Licensing and copyright information for pidgin-%{pidgin.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-%{pidgin.version}
+
+  COPYING.bz2: GNU GPL
+  COPYRIGHT: list of authors of Pidgin
+  ChangeLog: List of the most important changes in Pidgin
+  README: more information about Pidgin
+
+ The sources of pidgin-%{pidgin.version} were downloaded
+ from %{pidgin.SOURCE0.url}
+
+Licensing and copyright information for pidginotr-%{pidginotr.version}:
+
+ License: GNU General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/pidgin-otr-%{pidginotr.version}
+
+  COPYING.bz2: GNU GPL
+  ChangeLog: List of the changes in pidgin-otr
+  README: information about pidgin-otr
+  AUTHORS: list of authors of pidgin-otr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of pidgin-otr-%{pidginotr.version} were downloaded
+ from %{pidginotr.SOURCE0.url}
+
+Licensing and copyright information for libotr-%{libotr.version}:
+
+ License: GNU General Public License Version 2
+          GNU Lesser General Public License Version 2
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}/libotr-%{libotr.version}
+
+  COPYING.bz2: GNU GPL
+  COPYING.LIB.bz2: GNU LGPL
+  ChangeLog: List of changes in libotr
+  README: more information about libotr
+  AUTHORS: list of authors of libotr
+  NEWS: List of the important changes in pidgin-otr
+
+ The sources of libotr-%{libotr.version} were downloaded
+ from %{libotr.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWgnome-pdf-viewer
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %{name} consists of the following components:
+
+  - libspectre-%{libspectre.version}
+  - poppler-data-%{popplerdata.version}
+  - poppler-%{poppler.version}
+  - evince-%{evince.version}
+
+Licensing and copyright information for libspectre-%{libspectre.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/libspectre-%{libspectre.version}
+
+    AUTHORS: List of authors of libspectre
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of libspectre
+    NEWS.bz2: List of the most important changes to libspectre
+    README: More information about libspectre
+
+  The sources of libspectre-%{libspectre.version} were downloaded
+  from %{libspectre.SOURCE0.url}
+
+Licensing and copyright information for poppler-data-%{popplerdata.version}
+
+  License: MIT License, GPLv2, Adobe License
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-data-%{popplerdata.version}
+
+    COPYING:        MIT
+    GOPYING.adobe:  Adobe License
+    GOPYING.gpl2:   GPLv2
+    README: More information about poppler-data
+
+  The sources of poppler-data-%{poppler.version} were downloaded
+  from %{popplerdata.SOURCE0.url}
+
+Licensing and copyright information for poppler-%{poppler.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/poppler-%{poppler.version}
+
+    AUTHORS: List of authors of poppler
+    COPYING.bz2: GNU GPL
+    cmake/modules/COPYING-CMAKE-SCRIPTS: CMAKE Scripts License
+    ChangeLog.bz2: List of all changes and authors of poppler
+    NEWS.bz2: List of the most important changes to poppler
+    README: More information about poppler
+    README-XPDF.bz2: Information about xpdf
+
+  The sources of poppler-%{poppler.version} were downloaded
+  from %{poppler.SOURCE0.url}
+
+Licensing and copyright information for evince-%{evince.version}
+
+  License: GNU General Public License Version 2
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}/evince-%{evince.version}
+
+    AUTHORS: List of authors of evince
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of evince
+    po/ChangeLog.bz2: List of all l10n changes and authors of evince
+    help/ChangeLog.bz2: List of all help changes and authors of evince
+    NEWS.bz2: List of the most important changes to evince
+    README: More information about evince
+
+  The sources of evince-%{evince.version} were downloaded
+  from %{evince.SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWgtk2
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - gtk+-%{gtk.version}
+  
+Licensing and copyright information for gtk+-%{gtk.version}:
+
+License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gtk+-%{gtk.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gtk+
+  ChangeLog.bz2: list of all changes and authors of gtk+
+  ChangeLog.gtk-async-file-chooser.bz2: list of all changes and authors of gtk+ for gtk-async-file-chooser 
+  ChangeLog.gtk-printing.bz2: list of all changes and authors of gtk+ printing
+  ChangeLog.pre-1-0.bz2: list of all changes and authors of gtk+ pre-1-0
+  ChangeLog.pre-1-2.bz2: list of all changes and authors of gtk+ pre-1-2
+  ChangeLog.pre-2-0.bz2: list of all changes and authors of gtk+ pre-2-0
+  ChangeLog.pre-2-2.bz2: list of all changes and authors of gtk+ pre-2-2
+  ChangeLog.pre-2-4.bz2: list of all changes and authors of gtk+ pre-2-4
+  ChangeLog.pre-2-6.bz2: list of all changes and authors of gtk+ pre-2-6
+  ChangeLog.pre-2-8.bz2: list of all changes and authors of gtk+ pre-2-8
+  ChangeLog.pre-2-10.bz2: list of all changes and authors of gtk+ pre-2-10
+  gdk-pixbuf/ChangeLog.bz2: list of all changes and authors of gdk-pixbuf
+  po-properties/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  po/ChangeLog.bz2: list of all changes and authors of po files for gtk+
+  NEWS.bz2: list of the most importa nt changes in gtk+
+  README: more information about gtk+
+
+ The sources of gtk+-%{gtk.version} were downloaded
+ from %{gtk.SOURCE0.url}
+
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs-gtk
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: GNU General Public License Version 2
+
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    AUTHORS: List of authors of xdg-user-dirs-gtk
+    COPYING.bz2: GNU GPL
+    ChangeLog.bz2: List of all changes and authors of xdg-user-dirs-gtk
+    po/ChangeLog.bz2: List of all l10n changes and authors of xdg-user-dirs-gtk
+    NEWS: List of the most important changes to xdg-user-dirs-gtk
+    README: More information about xdg-user-dirs-gtk
+
+  The sources of xdg-user-dirs-gtk-%{version} were downloaded
+  from %{SOURCE0.url}
+
+-------------------------------------------------------------
+Copyright for SUNWxdg-user-dirs
+
+Copyright 2008 Sun Microsystems, Inc.  All rights reserved.
+Use is subject to license terms.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}:
+
+ License: GNU General Public License Version 2
+ License: MIT/X license
+ 
+ You can find more information in the following directory:
+ %{_pkg_docdir}
+
+  AUTHORS: list of authors of xdg-user-dirs
+  COPYING.bz2: GNU GPL
+  ChangeLog.bz2: list of all changes and authors of xdg-user-dirs
+  po/ChangeLog.bz2: List of all changes and authors of xdg-user-dirs
+  NEWS: list of the most important changes in xdg-user-dirs
+  README: more information about xdg-user-dirs
+
+  Some source files in xdg-user-dirs-%{version} have the following MIT/X
+  license:
+
+  Permission is hereby granted, free of charge, to any person
+  obtaining a copy of this software and associated documentation files
+  (the "Software"), to deal in the Software without restriction,
+  including without limitation the rights to use, copy, modify, merge,
+  publish, distribute, sublicense, and/or sell copies of the Software,
+  and to permit persons to whom the Software is furnished to do so,
+  subject to the following conditions: 
+
+  The above copyright notice and this permission notice shall be
+  included in all copies or substantial portions of the Software. 
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+  BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+  ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+
+ The sources of xdg-user-dirs-%{version} were downloaded
+ from %{SOURCE0.url}
+

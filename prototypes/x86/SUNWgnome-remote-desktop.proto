@@ -1,0 +1,41 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-remote-desktop.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-remote-desktop.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-remote-desktop.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-remote-desktop.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-remote-desktop.copyright
+d none bin 0755 root bin
+f none bin/vino-passwd=usr/bin/vino-passwd 0755 root bin
+f none bin/vino-preferences=usr/bin/vino-preferences 0755 root bin
+d none lib 0755 root bin
+f none lib/vino-server=usr/lib/vino-server 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/vino-preferences.desktop=usr/share/applications/vino-preferences.desktop 0644 root bin
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+f none share/dbus-1/services/org.gnome.Vino.service=usr/share/dbus-1/services/org.gnome.Vino.service 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-remote-desktop 0755 root bin
+d none share/doc/SUNWgnome-remote-desktop/vino-2.28.2 0755 root bin
+d none share/doc/SUNWgnome-remote-desktop/vino-2.28.2/po 0755 root bin
+d none share/doc/SUNWgnome-remote-desktop/vnc-4_1-javasrc 0755 root bin
+d none share/doc/SUNWgnome-remote-desktop/vnc-4_1-javasrc/java 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/vino-passwd.1=usr/share/man/man1/vino-passwd.1 0644 root bin
+f none share/man/man1/vino-preferences.1=usr/share/man/man1/vino-preferences.1 0644 root bin
+f none share/man/man1/vino-server.1=usr/share/man/man1/vino-server.1 0644 root bin
+d none share/vino 0755 root bin
+f none share/vino/vino-client.html=usr/share/vino/vino-client.html 0755 root bin
+f none share/vino/vino-client.jar=usr/share/vino/vino-client.jar 0755 root bin
+f none share/vino/vino-preferences.ui=usr/share/vino/vino-preferences.ui 0644 root bin
+f none share/vino/vino-prompt.ui=usr/share/vino/vino-prompt.ui 0644 root bin
+f none share/vino/webservices=usr/share/vino/webservices 0644 root bin
+f none share/doc/SUNWgnome-remote-desktop/vino-2.28.2/AUTHORS=usr/share/doc/SUNWgnome-remote-desktop/vino-2.28.2/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-remote-desktop/vino-2.28.2/COPYING.bz2=usr/share/doc/SUNWgnome-remote-desktop/vino-2.28.2/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-remote-desktop/vino-2.28.2/ChangeLog.bz2=usr/share/doc/SUNWgnome-remote-desktop/vino-2.28.2/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-remote-desktop/vino-2.28.2/NEWS.bz2=usr/share/doc/SUNWgnome-remote-desktop/vino-2.28.2/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-remote-desktop/vino-2.28.2/README=usr/share/doc/SUNWgnome-remote-desktop/vino-2.28.2/README 0444 root bin
+f none share/doc/SUNWgnome-remote-desktop/vino-2.28.2/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-remote-desktop/vino-2.28.2/po/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-remote-desktop/vnc-4_1-javasrc/java/LICENCE.TXT.bz2=usr/share/doc/SUNWgnome-remote-desktop/vnc-4_1-javasrc/java/LICENCE.TXT.bz2 0444 root bin
+f none share/doc/SUNWgnome-remote-desktop/vnc-4_1-javasrc/java/README.bz2=usr/share/doc/SUNWgnome-remote-desktop/vnc-4_1-javasrc/java/README.bz2 0444 root bin

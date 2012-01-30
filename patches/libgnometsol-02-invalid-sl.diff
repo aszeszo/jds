@@ -1,0 +1,32 @@
+Index: src/selectlabel.c
+===================================================================
+--- src/selectlabel.c	(revision 14)
++++ src/selectlabel.c	(working copy)
+@@ -143,10 +143,10 @@
+ 	gtk_window_set_title (GTK_WINDOW (lbuilder), 
+ 			      title ? title : "Label Selector");
+ 
+-	g_object_set (G_OBJECT (lbuilder), "sl", def, NULL);
+-	
+ 	gtk_widget_show_all (lbuilder);
+ 
++	g_object_set (G_OBJECT (lbuilder), "sl", def, NULL);
++
+ 	switch (gtk_dialog_run (GTK_DIALOG (lbuilder))) {
+ 	case GTK_RESPONSE_OK:
+ 		g_object_get (G_OBJECT (lbuilder), "sl", &label, NULL);
+Index: src/label_builder.c
+===================================================================
+--- src/label_builder.c	(revision 13)
++++ src/label_builder.c	(working copy)
+@@ -237,7 +237,9 @@
+ 	int  i, ret, err;
+ 	GtkTreeIter iter;
+ 
+-	label_to_str (details->sl, &label_str, M_LABEL, LONG_NAMES);
++	if (label_to_str (details->sl, &label_str, M_LABEL, LONG_NAMES) < 0) {
++		return;
++	}
+ 	m_label_free (details->sl);
+ 	details->sl = NULL;
+ 

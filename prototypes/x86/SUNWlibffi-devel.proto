@@ -1,0 +1,17 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibffi-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibffi-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibffi-devel.copyright
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/libffi-3.0.9 0755 root bin
+d none lib/amd64/libffi-3.0.9/include 0755 root bin
+f none lib/amd64/libffi-3.0.9/include/ffi.h=usr/lib/amd64/libffi-3.0.9/include/ffi.h 0644 root bin
+f none lib/amd64/libffi-3.0.9/include/ffitarget.h=usr/lib/amd64/libffi-3.0.9/include/ffitarget.h 0644 root bin
+d none lib/amd64/pkgconfig 0755 root other
+f none lib/amd64/pkgconfig/libffi.pc=usr/lib/amd64/pkgconfig/libffi.pc 0644 root bin
+d none lib/libffi-3.0.9 0755 root bin
+d none lib/libffi-3.0.9/include 0755 root bin
+f none lib/libffi-3.0.9/include/ffi.h=usr/lib/libffi-3.0.9/include/ffi.h 0644 root bin
+f none lib/libffi-3.0.9/include/ffitarget.h=usr/lib/libffi-3.0.9/include/ffitarget.h 0644 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libffi.pc=usr/lib/pkgconfig/libffi.pc 0644 root bin

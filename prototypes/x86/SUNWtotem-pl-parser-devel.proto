@@ -1,0 +1,38 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtotem-pl-parser-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtotem-pl-parser-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtotem-pl-parser-devel.copyright
+d none include 0755 root bin
+d none include/totem-pl-parser 0755 root bin
+d none include/totem-pl-parser/1 0755 root bin
+d none include/totem-pl-parser/1/plparser 0755 root bin
+f none include/totem-pl-parser/1/plparser/totem-disc.h=usr/include/totem-pl-parser/1/plparser/totem-disc.h 0644 root bin
+f none include/totem-pl-parser/1/plparser/totem-pl-parser-builtins.h=usr/include/totem-pl-parser/1/plparser/totem-pl-parser-builtins.h 0644 root bin
+f none include/totem-pl-parser/1/plparser/totem-pl-parser-features.h=usr/include/totem-pl-parser/1/plparser/totem-pl-parser-features.h 0644 root bin
+f none include/totem-pl-parser/1/plparser/totem-pl-parser-mini.h=usr/include/totem-pl-parser/1/plparser/totem-pl-parser-mini.h 0644 root bin
+f none include/totem-pl-parser/1/plparser/totem-pl-parser.h=usr/include/totem-pl-parser/1/plparser/totem-pl-parser.h 0644 root bin
+f none include/totem-pl-parser/1/plparser/totem-pl-playlist.h=usr/include/totem-pl-parser/1/plparser/totem-pl-playlist.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/totem-plparser-mini.pc=usr/lib/pkgconfig/totem-plparser-mini.pc 0644 root bin
+f none lib/pkgconfig/totem-plparser.pc=usr/lib/pkgconfig/totem-plparser.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/totem-pl-parser 0755 root bin
+f none share/gtk-doc/html/totem-pl-parser/TotemPlParser.html=usr/share/gtk-doc/html/totem-pl-parser/TotemPlParser.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/TotemPlPlaylist.html=usr/share/gtk-doc/html/totem-pl-parser/TotemPlPlaylist.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/annotation-glossary.html=usr/share/gtk-doc/html/totem-pl-parser/annotation-glossary.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/api-index-deprecated.html=usr/share/gtk-doc/html/totem-pl-parser/api-index-deprecated.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/api-index-full.html=usr/share/gtk-doc/html/totem-pl-parser/api-index-full.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/api-reference.html=usr/share/gtk-doc/html/totem-pl-parser/api-reference.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/home.png=usr/share/gtk-doc/html/totem-pl-parser/home.png 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/index.html=usr/share/gtk-doc/html/totem-pl-parser/index.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/index.sgml=usr/share/gtk-doc/html/totem-pl-parser/index.sgml 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/left.png=usr/share/gtk-doc/html/totem-pl-parser/left.png 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/right.png=usr/share/gtk-doc/html/totem-pl-parser/right.png 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/style.css=usr/share/gtk-doc/html/totem-pl-parser/style.css 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/totem-pl-parser-TotemDisc.html=usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser-TotemDisc.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/totem-pl-parser-TotemPlPlaylistIter.html=usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser-TotemPlPlaylistIter.html 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp=usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp2=usr/share/gtk-doc/html/totem-pl-parser/totem-pl-parser.devhelp2 0644 root bin
+f none share/gtk-doc/html/totem-pl-parser/up.png=usr/share/gtk-doc/html/totem-pl-parser/up.png 0644 root bin

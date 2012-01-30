@@ -1,0 +1,30 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-base-libs-java.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-base-libs-java.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-base-libs-java.copyright
+d none lib 0755 root bin
+f none lib/libcairojni-1.0.so=usr/lib/libcairojni-1.0.so 0755 root bin
+s none lib/libcairojni.so=libcairojni-1.0.so
+f none lib/libgladejni-2.12.so=usr/lib/libgladejni-2.12.so 0755 root bin
+s none lib/libgladejni.so=libgladejni-2.12.so
+f none lib/libglibjni-0.4.so=usr/lib/libglibjni-0.4.so 0755 root bin
+s none lib/libglibjni.so=libglibjni-0.4.so
+f none lib/libgnomejni-2.12.so=usr/lib/libgnomejni-2.12.so 0755 root bin
+s none lib/libgnomejni.so=libgnomejni-2.12.so
+f none lib/libgtkjni-2.10.so=usr/lib/libgtkjni-2.10.so 0755 root bin
+s none lib/libgtkjni.so=libgtkjni-2.10.so
+d none share 0755 root sys
+d none share/lib 0755 root sys
+d none share/lib/java 0755 root sys
+f none share/lib/java/cairo1.0-1.0.8.jar=usr/share/lib/java/cairo1.0-1.0.8.jar 0644 root bin
+s none share/lib/java/cairo1.0.jar=cairo1.0-1.0.8.jar
+f none share/lib/java/glade2.12-2.12.8.jar=usr/share/lib/java/glade2.12-2.12.8.jar 0644 root bin
+s none share/lib/java/glade2.12.jar=glade2.12-2.12.8.jar
+f none share/lib/java/glib0.4-0.4.2.jar=usr/share/lib/java/glib0.4-0.4.2.jar 0644 root bin
+s none share/lib/java/glib0.4.jar=glib0.4-0.4.2.jar
+f none share/lib/java/gnome2.12-2.12.7.jar=usr/share/lib/java/gnome2.12-2.12.7.jar 0644 root bin
+s none share/lib/java/gnome2.12.jar=gnome2.12-2.12.7.jar
+f none share/lib/java/gtk2.10-2.10.2.jar=usr/share/lib/java/gtk2.10-2.10.2.jar 0644 root bin
+s none share/lib/java/gtk2.10.jar=gtk2.10-2.10.2.jar
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/java-gnome.3=usr/share/man/man3/java-gnome.3 0644 root bin

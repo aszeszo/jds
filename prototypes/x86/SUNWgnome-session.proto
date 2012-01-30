@@ -1,0 +1,57 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-session.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-session.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-session.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-session.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-session.copyright
+f none share/doc/SUNWgnome-session/AUTHORS=usr/share/doc/SUNWgnome-session/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-session/COPYING.bz2=usr/share/doc/SUNWgnome-session/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-session/ChangeLog.bz2=usr/share/doc/SUNWgnome-session/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-session/NEWS.bz2=usr/share/doc/SUNWgnome-session/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-session/README=usr/share/doc/SUNWgnome-session/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gnome-session=usr/bin/gnome-session 0755 root bin
+f none bin/gnome-session-properties=usr/bin/gnome-session-properties 0755 root bin
+f none bin/gnome-session-save=usr/bin/gnome-session-save 0755 root bin
+f none bin/gnome-wm=usr/bin/gnome-wm 0755 root bin
+d none lib 0755 root bin
+f none lib/compiz-by-default=usr/lib/compiz-by-default 0755 root bin
+d none lib/gnome-session 0755 root bin
+d none lib/gnome-session/helpers 0755 root bin
+f none lib/gnome-session/helpers/gnome-settings-daemon-helper=usr/lib/gnome-session/helpers/gnome-settings-daemon-helper 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/compiz-by-default.desktop=usr/share/applications/compiz-by-default.desktop 0644 root bin
+f none share/applications/session-properties.desktop=usr/share/applications/session-properties.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-session 0755 root bin
+d none share/gnome-session 0755 root other
+f none share/gnome-session/gsm-inhibit-dialog.ui=usr/share/gnome-session/gsm-inhibit-dialog.ui 0644 root bin
+f none share/gnome-session/session-properties.ui=usr/share/gnome-session/session-properties.ui 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/session-properties.png=usr/share/icons/hicolor/16x16/apps/session-properties.png 0644 root bin
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/session-properties.png=usr/share/icons/hicolor/22x22/apps/session-properties.png 0644 root bin
+d none share/icons/hicolor/24x24 0755 root other
+d none share/icons/hicolor/24x24/apps 0755 root other
+f none share/icons/hicolor/24x24/apps/session-properties.png=usr/share/icons/hicolor/24x24/apps/session-properties.png 0644 root bin
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/session-properties.png=usr/share/icons/hicolor/32x32/apps/session-properties.png 0644 root bin
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/session-properties.png=usr/share/icons/hicolor/48x48/apps/session-properties.png 0644 root bin
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/session-properties.svg=usr/share/icons/hicolor/scalable/apps/session-properties.svg 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-session-properties.1=usr/share/man/man1/gnome-session-properties.1 0644 root bin
+f none share/man/man1/gnome-session-save.1=usr/share/man/man1/gnome-session-save.1 0644 root bin
+f none share/man/man1/gnome-session.1=usr/share/man/man1/gnome-session.1 0644 root bin
+f none share/man/man1/gnome-wm.1=usr/share/man/man1/gnome-wm.1 0644 root bin
+d none share/xsessions 0755 root bin
+f none share/xsessions/gnome.desktop=usr/share/xsessions/gnome.desktop 0644 root bin

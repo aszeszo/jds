@@ -1,0 +1,26 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgcrypt.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgcrypt.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgcrypt.copyright
+f none share/doc/SUNWlibgcrypt/AUTHORS=usr/share/doc/SUNWlibgcrypt/AUTHORS 0444 root bin
+f none share/doc/SUNWlibgcrypt/COPYING.bz2=usr/share/doc/SUNWlibgcrypt/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibgcrypt/COPYING.LIB.bz2=usr/share/doc/SUNWlibgcrypt/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWlibgcrypt/ChangeLog.bz2=usr/share/doc/SUNWlibgcrypt/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibgcrypt/NEWS.bz2=usr/share/doc/SUNWlibgcrypt/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibgcrypt/README=usr/share/doc/SUNWlibgcrypt/README 0444 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libgcrypt.so=libgcrypt.so.11.5.3
+s none lib/amd64/libgcrypt.so.11=libgcrypt.so.11.5.3
+f none lib/amd64/libgcrypt.so.11.5.3=usr/lib/amd64/libgcrypt.so.11.5.3 0755 root bin
+s none lib/libgcrypt.so=libgcrypt.so.11.5.3
+s none lib/libgcrypt.so.11=libgcrypt.so.11.5.3
+f none lib/libgcrypt.so.11.5.3=usr/lib/libgcrypt.so.11.5.3 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibgcrypt 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/dumpsexp.1=usr/share/man/man1/dumpsexp.1 0644 root bin
+f none share/man/man1/libgcrypt-config.1=usr/share/man/man1/libgcrypt-config.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgcrypt.3=usr/share/man/man3/libgcrypt.3 0644 root bin

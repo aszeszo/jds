@@ -1,0 +1,1070 @@
+--- gnome-menus-2.30.4/libmenu/Makefile.am-orig	2011-02-01 20:32:20.338888769 -0600
++++ gnome-menus-2.30.4/libmenu/Makefile.am	2011-02-01 20:32:53.397121492 -0600
+@@ -19,7 +19,8 @@ libgnome_menu_sources =			\
+ 	gmenu-tree.c			\
+ 	menu-layout.c			\
+ 	menu-monitor.c			\
+-	menu-util.c
++	menu-util.c			\
++	menu-solaris.c
+ 
+ libgnome_menu_la_SOURCES =		\
+ 	$(libgnome_menu_sources)	\
+@@ -29,7 +30,8 @@ libgnome_menu_la_SOURCES =		\
+ 	gmenu-tree.h			\
+ 	menu-layout.h			\
+ 	menu-monitor.h			\
+-	menu-util.h
++	menu-util.h			\
++	menu-solaris.h
+ 
+ libgnome_menu_la_LIBADD = 		\
+ 	$(GLIB_LIBS)
+--- gnome-menus-2.30.4/libmenu/desktop-entries.c-orig	2011-01-31 14:33:59.083221487 -0600
++++ gnome-menus-2.30.4/libmenu/desktop-entries.c	2011-02-01 17:57:31.679887328 -0600
+@@ -24,6 +24,7 @@
+ #include <string.h>
+ 
+ #include "menu-util.h"
++#include "menu-solaris.h"
+ 
+ #define DESKTOP_ENTRY_GROUP     "Desktop Entry"
+ #define KDE_DESKTOP_ENTRY_GROUP "KDE Desktop Entry"
+@@ -80,6 +81,7 @@ get_flags_from_key_file (DesktopEntry *e
+   char      *tryexec;
+   guint      flags;
+   int        i;
++  gboolean   use_global = FALSE;
+ 
+   error = NULL;
+   no_display = g_key_file_get_boolean (key_file,
+@@ -142,21 +144,41 @@ get_flags_from_key_file (DesktopEntry *e
+     }
+   g_strfreev (strv);
+ 
++  if (strncmp (entry->path,
++               "/usr/share/gnome/trusted/applications",
++               strlen ("/usr/share/gnome/trusted/applications")) == 0)
++    {
++      use_global = TRUE;
++    }
++
+   tryexec_failed = FALSE;
+   tryexec = g_key_file_get_string (key_file,
+                                    desktop_entry_group,
+                                    "TryExec",
+                                    NULL);
++
++  /*
++   * Call filter_with_rbac to check TryExec and also see if the
++   * menu item should be filtered out for RBAC purposes.
++   */
+   if (tryexec)
+     {
+-      char *path;
+-
+-      path = g_find_program_in_path (g_strstrip (tryexec));
++      tryexec_failed = filter_with_rbac (tryexec, use_global);
++      g_free (tryexec);
++    }
+ 
+-      tryexec_failed = (path == NULL);
++  if (tryexec_failed == FALSE)
++    {
++      tryexec = g_key_file_get_string (key_file,
++                                       desktop_entry_group,
++                                       "Exec",
++                                       NULL);
+ 
+-      g_free (path);
+-      g_free (tryexec);
++      if (tryexec)
++        {
++          tryexec_failed = filter_with_rbac (tryexec, use_global);
++          g_free (tryexec);
++        }
+     }
+ 
+   flags = 0;
+--- gnome-menus-2.30.4/libmenu/entry-directories.c-orig	2011-01-31 21:26:01.492500629 -0600
++++ gnome-menus-2.30.4/libmenu/entry-directories.c	2011-01-31 21:55:41.687967111 -0600
+@@ -292,6 +292,9 @@ cached_dir_remove_entry (CachedDir  *dir
+ {
+   GSList *tmp;
+ 
++  if (dir_cache == NULL)
++    return;
++
+   tmp = dir->entries;
+   while (tmp != NULL)
+     {
+@@ -345,6 +348,9 @@ cached_dir_remove_subdir (CachedDir  *di
+ {
+   CachedDir *subdir;
+ 
++  if (dir_cache == NULL)
++    return;
++
+   subdir = find_subdir (dir, basename);
+ 
+   if (subdir != NULL)
+@@ -585,6 +591,9 @@ cached_dir_remove_monitor (CachedDir    
+ {
+   GSList *tmp;
+ 
++  if (dir_cache == NULL)
++    return;
++
+   tmp = dir->monitors;
+   while (tmp != NULL)
+     {
+@@ -619,6 +628,9 @@ cached_dir_remove_reference (CachedDir *
+ {
+   CachedDir *parent;
+ 
++  if (dir_cache == NULL)
++    return;
++
+   parent = dir->parent;
+ 
+   if (--dir->references == 0 && dir->deleted)
+@@ -1221,3 +1233,14 @@ entry_directory_list_remove_monitors (En
+       tmp = tmp->next;
+     }
+ }
++
++void
++_reset_dir_cache (void)
++{
++  if (dir_cache != NULL)
++    {
++      cached_dir_free (dir_cache);
++      dir_cache = NULL;
++    }
++}
++
+--- gnome-menus-2.30.4/libmenu/gmenu-tree.c-orig	2011-01-31 15:51:01.017894153 -0600
++++ gnome-menus-2.30.4/libmenu/gmenu-tree.c	2011-02-01 18:20:16.637612233 -0600
+@@ -19,6 +19,12 @@
+ 
+ #include <config.h>
+ 
++#include <sys/stat.h>
++
++#include <glib.h>
++#include <glib/gstdio.h>
++#include <gio/gio.h>
++
+ #include "gmenu-tree.h"
+ 
+ #include <string.h>
+@@ -29,6 +35,8 @@
+ #include "menu-util.h"
+ #include "canonicalize.h"
+ 
++#include "menu-solaris.h"
++
+ /*
+  * FIXME: it might be useful to be able to construct a menu
+  * tree from a traditional directory based menu hierarchy
+@@ -63,6 +71,18 @@ struct GMenuTree
+   gpointer       user_data;
+   GDestroyNotify dnotify;
+ 
++  gpointer wnckscreen;
++  guint workspace_handler;
++  guint roles_handler;
++  guint labels_handler;
++
++  GFileMonitor *rbac_monitor1;
++  GFileMonitor *rbac_monitor2;
++  GFileMonitor *rbac_monitor3;
++  guint rbac_handler1;
++  guint rbac_handler2;
++  guint rbac_handler3;
++
+   guint canonical : 1;
+ };
+ 
+@@ -229,6 +249,11 @@ gmenu_tree_remove_from_cache (GMenuTree 
+ 
+   menu_verbose ("Removing menu tree from cache: %s\n", cache_key);
+ 
++  if (gmenu_tree_cache == NULL)
++    {
++      g_free (cache_key);
++      return;
++    }
+   g_hash_table_remove (gmenu_tree_cache, cache_key);
+ 
+   g_free (cache_key);
+@@ -630,6 +655,74 @@ gmenu_tree_lookup (const char     *menu_
+   return retval;
+ }
+ 
++/*
++ * This function completely clears the cache which forces the panel to reload
++ * via the monitors it invokes.  We want to reload the entire menu when RBAC
++ * configuration files change or when the users RBAC profile changes (e.g.
++ * on workspace switch in Trusted mode).
++ */
++static void
++rebuild_menu (GMenuTree *tree)
++{
++  if (tree != NULL)
++    {
++      if (gmenu_tree_cache != NULL) 
++        {
++          g_hash_table_destroy (gmenu_tree_cache);
++          gmenu_tree_cache = NULL;
++        }
++
++      _entry_directory_list_empty_desktop_cache ();
++      gmenu_tree_force_reload (tree);
++      _reset_dir_cache ();
++      gmenu_tree_invoke_monitors (tree);
++    }
++}
++
++/*
++ * On workspace switch, reload the entire menu when in Trusted mode.
++ */
++static void
++workspace_changed_callback (gpointer screen, gpointer prev_workspace, gpointer data)
++{
++  GMenuTree *tree;
++
++  tree = (GMenuTree *)data;
++  if (tree != NULL)
++    {
++      rebuild_menu (tree);
++    }
++}
++
++static void
++role_or_label_changed_callback (gpointer workspace, gpointer data)
++{
++  GMenuTree *tree;
++
++  tree = (GMenuTree *)data;
++  if (tree != NULL)
++    {
++      rebuild_menu (tree);
++    }
++}
++
++static gboolean
++rbac_callback (GFileMonitor      *monitor,
++               GFile             *child,
++               GFile             *other_file,
++               GFileMonitorEvent eflags,
++               gpointer          data)
++{
++  GMenuTree *tree;
++
++  tree = (GMenuTree *)data;
++  if (tree != NULL) 
++    {
++      rebuild_menu (tree);
++    }
++}
++
++
+ static GMenuTree *
+ gmenu_tree_new (GMenuTreeType   type,
+ 		const char     *menu_file,
+@@ -637,12 +730,25 @@ gmenu_tree_new (GMenuTreeType   type,
+ 		GMenuTreeFlags  flags)
+ {
+   GMenuTree *tree;
++  GFile *rbac_file;
++  gboolean trusted;
+ 
+   tree = g_new0 (GMenuTree, 1);
+ 
+   tree->type     = type;
+   tree->flags    = flags;
+   tree->refcount = 1;
++  tree->root              = NULL;
++  tree->wnckscreen        = NULL;
++  tree->workspace_handler = 0;
++  tree->roles_handler     = 0;
++  tree->labels_handler    = 0;
++  tree->rbac_monitor1     = NULL;
++  tree->rbac_monitor2     = NULL;
++  tree->rbac_monitor3     = NULL;
++  tree->rbac_handler1     = 0;
++  tree->rbac_handler2     = 0;
++  tree->rbac_handler3     = 0;
+ 
+   tree->sort_key = GMENU_TREE_SORT_NAME;
+ 
+@@ -671,6 +777,70 @@ gmenu_tree_new (GMenuTreeType   type,
+ 	}
+     }
+ 
++  /*
++   * Gince the panel is already monitoring all desktop files, add
++   * monitors for RBAC configuration files.  If these change, we want
++   * to reload the panel.  We check for these files and clear the
++   * cache in handle_entries_changed ().
++   */
++  rbac_file = g_file_new_for_path ("/etc/user_attr");
++  if (rbac_file != NULL) 
++    {
++      tree->rbac_monitor1 = g_file_monitor_file (rbac_file,
++                            G_FILE_MONITOR_NONE, NULL, NULL);
++      if (tree->rbac_monitor1)
++        {
++          tree->rbac_handler1 = g_signal_connect (tree->rbac_monitor1,
++                                "changed",
++                                G_CALLBACK (rbac_callback), tree);
++        }
++      g_object_unref (G_OBJECT (rbac_file));
++    }
++  rbac_file = g_file_new_for_path ("/etc/security/exec_attr");
++  if (rbac_file != NULL) 
++    {
++      tree->rbac_monitor2 = g_file_monitor_file (rbac_file,
++                            G_FILE_MONITOR_NONE, NULL, NULL);
++      if (tree->rbac_monitor2)
++        {
++          tree->rbac_handler2 = g_signal_connect (tree->rbac_monitor2,
++                                "changed",
++                                G_CALLBACK (rbac_callback), tree);
++        }
++      g_object_unref (G_OBJECT (rbac_file));
++    }
++  rbac_file = g_file_new_for_path ("/etc/security/prof_attr");
++  if (rbac_file != NULL) 
++    {
++      tree->rbac_monitor3 = g_file_monitor_file (rbac_file,
++                            G_FILE_MONITOR_NONE, NULL, NULL);
++      if (tree->rbac_monitor3)
++        {
++          tree->rbac_handler3 = g_signal_connect (tree->rbac_monitor3,
++                                "changed",
++                                G_CALLBACK (rbac_callback), tree);
++        }
++      g_object_unref (G_OBJECT (rbac_file));
++    }
++
++  /*
++   * Set up a signal handler to cause the menu to reload on workspace
++   * switch or when the label or role changes, but only do this in Trusted mode.
++   * In Trusted, workspaces are associated with RBAC roles, so a workspace
++   * switch should trigger a menu reload in this situation.
++   */
++  trusted = use_trusted_extensions ();
++  if (trusted == TRUE)
++    {
++      tree->wnckscreen = libmenu_wnck_screen_get_default ();
++      if (tree->wnckscreen)
++        {
++          tree->workspace_handler = g_signal_connect (tree->wnckscreen, "active-workspace-changed", G_CALLBACK(workspace_changed_callback), tree);
++          tree->labels_handler = g_signal_connect (tree->wnckscreen, "labels_changed", G_CALLBACK(role_or_label_changed_callback), tree);
++          tree->roles_handler = g_signal_connect (tree->wnckscreen, "roles_changed", G_CALLBACK(role_or_label_changed_callback), tree);
++        }
++    }
++
+   gmenu_tree_add_to_cache (tree, tree->flags);
+ 
+   return tree;
+@@ -696,6 +866,46 @@ gmenu_tree_unref (GMenuTree *tree)
+   if (--tree->refcount > 0)
+     return;
+ 
++  if (tree->wnckscreen != NULL)
++    {
++      if (tree->workspace_handler != 0)
++        g_signal_handler_disconnect (tree->wnckscreen, tree->workspace_handler);
++      if (tree->roles_handler != 0)
++        g_signal_handler_disconnect (tree->wnckscreen, tree->roles_handler);
++      if (tree->labels_handler != 0)
++        g_signal_handler_disconnect (tree->wnckscreen, tree->labels_handler);
++    }
++
++  if (tree->rbac_monitor1 != NULL)
++    {
++      if (tree->rbac_handler1 != 0)
++        g_signal_handler_disconnect (tree->rbac_monitor1, tree->rbac_handler1);
++      g_object_unref (tree->rbac_monitor1);
++    }
++  if (tree->rbac_monitor2 != NULL)
++    {
++      if (tree->rbac_handler2 != 0)
++        g_signal_handler_disconnect (tree->rbac_monitor2, tree->rbac_handler2);
++      g_object_unref (tree->rbac_monitor2);
++    }
++  if (tree->rbac_monitor3 != NULL)
++    {
++      if (tree->rbac_handler3 != 0)
++        g_signal_handler_disconnect (tree->rbac_monitor3, tree->rbac_handler3);
++      g_object_unref (tree->rbac_monitor3);
++    }
++
++  tree->wnckscreen        = NULL;
++  tree->workspace_handler = 0;
++  tree->roles_handler     = 0;
++  tree->labels_handler    = 0;
++  tree->rbac_monitor1     = NULL;
++  tree->rbac_monitor2     = NULL;
++  tree->rbac_monitor3     = NULL;
++  tree->rbac_handler1     = 0;
++  tree->rbac_handler2     = 0;
++  tree->rbac_handler3     = 0;
++
+   if (tree->dnotify)
+     tree->dnotify (tree->user_data);
+   tree->user_data = NULL;
+@@ -850,6 +1060,7 @@ gmenu_tree_get_directory_from_path (GMen
+ {
+   GMenuTreeDirectory *root;
+   GMenuTreeDirectory *directory;
++  gboolean trusted;
+ 
+   g_return_val_if_fail (tree != NULL, NULL);
+   g_return_val_if_fail (path != NULL, NULL);
+@@ -857,6 +1068,40 @@ gmenu_tree_get_directory_from_path (GMen
+   if (path[0] != G_DIR_SEPARATOR)
+     return NULL;
+ 
++  trusted = use_trusted_extensions ();
++
++  /*
++   * If the zone /usr/share/application directory is not available, just return
++   * NULL.  This will show an empty menu, but the menu will populate when the
++   * directory becomes available since this function is called each time the
++   * panel menu is opened.
++   */
++  if (trusted == TRUE)
++    {
++      char *trusted_system_data_dir = NULL;
++      char *zoneroot = NULL;
++      struct stat statbuf;
++      int r;
++
++      zoneroot = get_zoneroot ();
++      if (zoneroot != NULL)
++        {
++          trusted_system_data_dir = g_strdup_printf ("%s/usr/share",
++                                                   zoneroot);
++          r = g_stat (trusted_system_data_dir, &statbuf);
++          g_free (trusted_system_data_dir);
++
++          if (r < 0 || ! S_ISDIR (statbuf.st_mode))
++            {
++              return NULL;
++            }
++        }
++      else
++        {
++          return NULL;
++        }
++    }
++
+   if (!(root = gmenu_tree_get_root_directory (tree)))
+     return NULL;
+ 
+@@ -2081,7 +2326,48 @@ resolve_default_app_dirs (GMenuTree     
+   MenuLayoutNode     *before;
+   const char * const *system_data_dirs;
+   int                 i;
++  gboolean trusted;
++  gboolean using_trusted = FALSE;
++
++  trusted = use_trusted_extensions ();
+ 
++  /*
++   * Load the applications from the zone specific /usr/share/applications
++   * directory.  The zone is determined from the label associated with the
++   * workspace.
++   */ 
++  if (trusted == TRUE)
++    {
++      char *trusted_system_data_dir = NULL;
++      char *zoneroot = NULL;
++
++      zoneroot = get_zoneroot ();
++
++      if (zoneroot != NULL)
++        {
++          using_trusted = TRUE;
++          trusted_system_data_dir = g_strdup_printf ("%s/usr/share",
++                                                  zoneroot);
++
++          before = add_app_dir (tree,
++			        menu_layout_node_ref (layout),
++			        trusted_system_data_dir);
++
++          g_free (trusted_system_data_dir);
++
++          /*
++           * Add /usr/share/gnome/trusted/applications since desktop files
++           * associated with /usr/share/gnome/TrustedPathExecutables need to
++           * be loaded.
++           */
++          before = add_app_dir (tree,
++			        menu_layout_node_ref (layout),
++			        "/usr/share/gnome/trusted");
++        }
++    }
++
++  if (using_trusted == FALSE)
++    {
+   system_data_dirs = g_get_system_data_dirs ();
+ 
+   before = add_app_dir (tree,
+@@ -2095,6 +2381,7 @@ resolve_default_app_dirs (GMenuTree     
+ 
+       ++i;
+     }
++    }
+ 
+   menu_layout_node_unref (before);
+ 
+@@ -4492,7 +4779,16 @@ static void
+ handle_entries_changed (MenuLayoutNode *layout,
+                         GMenuTree       *tree)
+ {
+-  if (tree->layout == layout)
++  /* If an RBAC configuration file changes, then reload the whole menu */
++  if (tree->basename != NULL &&
++     (strcmp (tree->basename, "user_attr") == 0 ||
++      strcmp (tree->basename, "exec_attr") == 0 ||
++      strcmp (tree->basename, "prof_attr") == 0 ||
++      strcmp (tree->basename, "auth_attr") == 0))
++    {
++      rebuild_menu (tree);
++    }   
++  else if (tree->layout == layout)
+     {
+       gmenu_tree_force_rebuild (tree);
+       gmenu_tree_invoke_monitors (tree);
+--- /dev/null	2011-02-17 17:51:25.000000000 -0600
++++ gnome-menus-2.30.4/libmenu/menu-solaris.h	2011-02-17 17:50:08.763540499 -0600
+@@ -0,0 +1,90 @@
++
++#ifndef __MENU_SOLARIS_H__
++#define __MENU_SOLARIS_H__
++
++#include <tsol/label.h>
++#include <sys/tsol/label_macro.h>
++#include <X11/Xlib.h>
++#include <X11/extensions/Xtsol.h>
++
++#include <glib.h>
++#include <glib-object.h>
++
++G_BEGIN_DECLS
++
++gboolean use_trusted_extensions (void);
++gboolean filter_with_rbac (gchar *, gboolean);
++char * get_zoneroot (void);
++
++/* Libtsol functions */
++
++typedef int     (*tsol_blequal) (const m_label_t *label1, const m_label_t *label2);
++typedef int     (*tsol_label_to_str) (const m_label_t *label, char **string,
++                 const m_label_str_t conversion_type,
++                 uint_t flags);
++typedef int            (*tsol_str_to_label) (const char *string, m_label_t **label,
++                 const m_label_type_t label_type, uint_t flags,
++                 int *error);
++typedef void (*tsol_m_label_dup) (m_label_t **dst, const m_label_t *src);
++typedef void   (*tsol_m_label_free) (m_label_t *label);
++
++/* Other misc. libtsol functions that seem to be stable */
++typedef blrange_t*             (*tsol_getuserrange) (const char *username);
++typedef int                            (*tsol_blinrange) (const m_label_t *label,
++                         const blrange_t *range);
++typedef void                   (*tsol_blminimum) (m_label_t *minimum_label,
++                         const m_label_t *bounding_label);
++typedef void                   (*tsol_blmaximum) (m_label_t *maximum_label,
++                         const m_label_t *bounding_label);
++typedef m_label_t*             (*tsol_blabel_alloc) (void);
++typedef void                   (*tsol_blabel_free)  (m_label_t *label_p);
++typedef void                   (*tsol_bsllow)  (m_label_t *label);
++typedef void                   (*tsol_bslhigh) (m_label_t *label);
++
++/* libXtsol functions */
++typedef Status (*xtsol_XTSOLgetClientLabel) (Display *dpy, XID xid,
++                 bslabel_t *sl);
++typedef Bool   (*xtsol_XTSOLIsWindowTrusted) (Display *dpy, Window win);
++
++/* libgnometsol functions */
++typedef gpointer       (*gnometsol_gnome_label_builder_new) (char *msg,
++                        blevel_t *upper, blevel_t *lower, int mode);
++typedef GType          (*gnometsol_gnome_label_builder_get_type) (void);
++
++/* libwnck functions */
++typedef gpointer        (*menu_wnck_screen_get_default) (void);
++typedef gpointer        (*menu_wnck_screen_get_active_workspace) (gpointer);
++typedef const char*     (*menu_wnck_workspace_get_role) (gpointer);
++typedef const char*     (*menu_wnck_workspace_get_label) (gpointer);
++
++/* libtsol functions */
++tsol_blequal           libtsol_blequal;
++tsol_label_to_str      libtsol_label_to_str;
++tsol_str_to_label      libtsol_str_to_label;
++tsol_m_label_dup libtsol_m_label_dup;
++tsol_m_label_free      libtsol_m_label_free;
++/* Other misc. libtsol functions */
++tsol_blminimum         libtsol_blminimum;
++tsol_blmaximum         libtsol_blmaximum;
++tsol_blinrange      libtsol_blinrange;
++tsol_getuserrange      libtsol_getuserrange;
++tsol_blabel_alloc      libtsol_blabel_alloc;
++tsol_blabel_free       libtsol_blabel_free;
++tsol_bsllow                    libtsol_bsllow;
++tsol_bslhigh           libtsol_bslhigh;
++
++xtsol_XTSOLgetClientLabel      libxtsol_XTSOLgetClientLabel;
++xtsol_XTSOLIsWindowTrusted     libxtsol_XTSOLIsWindowTrusted;
++
++gnometsol_gnome_label_builder_new libgnometsol_gnome_label_builder_new;
++gnometsol_gnome_label_builder_get_type libgnometsol_gnome_label_builder_get_type;
++
++/* libwnck functions */
++menu_wnck_screen_get_default          libmenu_wnck_screen_get_default;
++menu_wnck_screen_get_active_workspace libmenu_wnck_screen_get_active_workspace;
++menu_wnck_workspace_get_role          libmenu_wnck_workspace_get_role;
++menu_wnck_workspace_get_label         libmenu_wnck_workspace_get_label;
++
++G_END_DECLS
++
++#endif /* __MENU_SOLARIS_H__ */
+--- /dev/null	2011-02-01 18:21:34.000000000 -0600
++++ gnome-menus-2.30.4/libmenu/menu-solaris.c	2011-02-01 18:28:12.721308906 -0600
+@@ -0,0 +1,431 @@
++/*
++ * Note that the following code is in three patches:
++ * - gnome-panel-XX-rbac.diff (filter_with_rbac)
++ * - gnome-menus-XX-rbac.diff (filter_with_rbac)
++ * - glib-XX-gio-rbac.diff    (get_gksu_role)
++ * - gnome-session-XX-rbac.diff (get_gksu_role)
++ *
++ * So if there is a need to fix this code, it is probably necessary to fix the
++ * code in these other two places as well.  Though the functions are a bit
++ * different.
++ */
++#include <config.h>
++
++#include <stdlib.h>
++#include <string.h>
++#include <dlfcn.h>
++#include <link.h>
++#include <user_attr.h>
++#include <exec_attr.h>
++#include <secdb.h>
++
++#include "menu-solaris.h"
++
++static
++void * dlopen_tsol (void)
++{
++   void  *handle = NULL;
++
++   /*
++    * No 64-bit version of libwnck so we can get away with hardcoding
++    * to a single path on this occasion
++    */
++   if ((handle = dlopen ("/usr/lib/libtsol.so.2", RTLD_LAZY)) != NULL)
++       return handle;
++
++   return handle;
++}
++
++static
++void * dlopen_xtsol (void)
++{
++   void  *handle = NULL;
++
++   if ((handle = dlopen ("/usr/lib/libXtsol.so.1", RTLD_LAZY)) != NULL)
++       return handle;
++   if ((handle = dlopen ("/usr/openwin/lib/libXtsol.so.1", RTLD_LAZY)) != NULL)
++       return handle;
++
++   return handle;
++}
++
++static
++void * dlopen_gnometsol (void)
++{
++   void  *handle = NULL;
++
++   if ((handle = dlopen ("/usr/lib/libgnometsol.so", RTLD_LAZY)) != NULL)
++       return handle;
++
++   return handle;
++}
++
++static
++void * dlopen_libwnck (void)
++{
++   void  *handle = NULL;
++
++   if ((handle = dlopen ("/usr/lib/libwnck-1.so", RTLD_LAZY)) != NULL)
++       return handle;
++
++   return handle;
++}
++
++gboolean
++use_trusted_extensions (void)
++{
++    static int trusted = -1;
++
++    /*
++     * Sun Trusted Extensions (tm) for Solaris (tm) support. (Damn I should be a lawyer).
++     *
++     * It is necessary to use dlopen because the label aware extensions to libwnck work
++     * only on systems with the trusted extensions installed and with the SUN_TSOL
++     * xserver extension present
++     */
++
++    if (trusted < 0) {
++        static gpointer tsol_handle = NULL;
++        static gpointer xtsol_handle = NULL;
++        static gpointer gnometsol_handle = NULL;
++        static gpointer libwnck_handle = NULL;
++
++        if (getenv ("TRUSTED_SESSION") == NULL) {
++            trusted = 0;
++            return 0;
++        }
++
++	libwnck_handle = dlopen_libwnck ();
++        if (libwnck_handle != NULL)
++            tsol_handle = dlopen_tsol ();
++        if (tsol_handle != NULL)
++            xtsol_handle = dlopen_xtsol ();
++        if (libwnck_handle && tsol_handle && xtsol_handle) {
++
++           libmenu_wnck_screen_get_default = (menu_wnck_screen_get_default) dlsym (libwnck_handle, "wnck_screen_get_default");
++           libmenu_wnck_screen_get_active_workspace = (menu_wnck_screen_get_active_workspace) dlsym (libwnck_handle, "wnck_screen_get_active_workspace");
++           libmenu_wnck_workspace_get_role = (menu_wnck_workspace_get_role) dlsym (libwnck_handle, "wnck_workspace_get_role");
++           libmenu_wnck_workspace_get_label = (menu_wnck_workspace_get_label) dlsym (libwnck_handle, "wnck_workspace_get_label");
++
++           /* libtsol functions */
++           libtsol_blequal = (tsol_blequal) dlsym (tsol_handle, "blequal");
++           libtsol_label_to_str = (tsol_label_to_str) dlsym (tsol_handle, "label_to_str");
++           libtsol_str_to_label = (tsol_str_to_label) dlsym (tsol_handle, "str_to_label");
++           libtsol_m_label_dup = (tsol_m_label_dup) dlsym (tsol_handle, "m_label_dup");
++           libtsol_m_label_free = (tsol_m_label_free) dlsym (tsol_handle, "m_label_free");
++
++           /* Other misc. libtsol functions */
++           libtsol_blminimum = (tsol_blminimum) dlsym (tsol_handle, "blminimum");
++           libtsol_blmaximum = (tsol_blmaximum) dlsym (tsol_handle, "blmaximum");
++           libtsol_blinrange = (tsol_blinrange) dlsym (tsol_handle, "blinrange");
++           libtsol_getuserrange = (tsol_getuserrange) dlsym (tsol_handle, "getuserrange");
++           libtsol_blabel_alloc = (tsol_blabel_alloc) dlsym (tsol_handle, "blabel_alloc");
++           libtsol_blabel_free  = (tsol_blabel_free)  dlsym (tsol_handle, "blabel_free");
++           libtsol_bsllow  = (tsol_bsllow)  dlsym (tsol_handle, "bsllow");
++           libtsol_bslhigh = (tsol_bslhigh) dlsym (tsol_handle, "bslhigh");
++
++           /* libXtsol functions */
++           libxtsol_XTSOLgetClientLabel = (xtsol_XTSOLgetClientLabel) dlsym (xtsol_handle,
++                                     "XTSOLgetClientLabel");
++           libxtsol_XTSOLIsWindowTrusted = (xtsol_XTSOLIsWindowTrusted) dlsym (xtsol_handle,
++                                      "XTSOLIsWindowTrusted");
++
++           if (libtsol_label_to_str == NULL ||
++               libtsol_str_to_label == NULL ||
++               libtsol_m_label_dup == NULL ||
++               libtsol_m_label_free == NULL ||
++               libtsol_blminimum == NULL ||
++               libtsol_blmaximum == NULL ||
++               libtsol_blinrange == NULL ||
++               libtsol_getuserrange == NULL ||
++               libtsol_blabel_alloc == NULL ||
++               libtsol_blabel_free  == NULL ||
++               libtsol_bsllow  == NULL ||
++               libtsol_bslhigh == NULL ||
++               libxtsol_XTSOLgetClientLabel == NULL ||
++               libxtsol_XTSOLIsWindowTrusted == NULL ||
++               libmenu_wnck_screen_get_default == NULL ||
++               libmenu_wnck_screen_get_active_workspace == NULL ||
++               libmenu_wnck_workspace_get_role == NULL ||
++               libmenu_wnck_workspace_get_label == NULL) {
++               dlclose (tsol_handle);
++               dlclose (xtsol_handle);
++               dlclose (libwnck_handle);
++               tsol_handle = NULL;
++               xtsol_handle = NULL;
++               libwnck_handle = NULL;
++            }
++        }
++
++        gnometsol_handle = dlopen_gnometsol ();
++        if (gnometsol_handle != NULL)
++            {
++               libgnometsol_gnome_label_builder_new =
++                               (gnometsol_gnome_label_builder_new) dlsym (gnometsol_handle,
++                               "gnome_label_builder_new");
++              libgnometsol_gnome_label_builder_get_type =
++                               (gnometsol_gnome_label_builder_get_type) dlsym (gnometsol_handle,
++                               "gnome_label_builder_get_type");
++              if (libgnometsol_gnome_label_builder_new == NULL ||
++                  libgnometsol_gnome_label_builder_get_type == NULL)
++                  gnometsol_handle = NULL;
++            }
++        trusted = ((tsol_handle != NULL) && (xtsol_handle != NULL) && (gnometsol_handle != NULL) && (libwnck_handle != NULL)) ? 1 : 0;
++    }
++    return trusted ? TRUE : FALSE;
++}
++
++static gchar *
++get_stripped_exec (const gchar *full_exec, gboolean use_global)
++{
++	gchar *str1, *str2, *retval, *p;
++	char *zoneroot = NULL;
++	gboolean trusted;
++
++	str1 = g_strdup (full_exec);
++	p = strtok (str1, " ");
++
++	if (p != NULL)
++		str2 = g_strdup (p);
++	else
++		str2 = g_strdup (full_exec);
++
++	g_free (str1);
++
++	trusted = use_trusted_extensions ();
++	if (trusted && use_global == FALSE) {
++		zoneroot = get_zoneroot ();
++	}
++
++	if (g_path_is_absolute (str2)) {
++		if (zoneroot != NULL) {
++			retval = g_strdup_printf ("%s/%s", zoneroot, str2);
++		} else {
++			retval = g_strdup (str2);
++		}
++	} else {
++		if (zoneroot != NULL) {
++			/*
++			 * If the desktop file doesn't specify the full path
++			 * and in Trusted mode, then check the zone's /usr/bin
++			 * directory.
++			 */
++			retval = g_strdup_printf ("%s/usr/bin/%s", zoneroot, str2);
++		} else {
++			retval = g_strdup (g_find_program_in_path ((const gchar *)str2));
++
++			/*
++			 * If a program is not installed in the global zone,
++			 * then assume it is installed in /usr/bin.
++			 */
++			if (use_global == TRUE && retval == NULL) {
++				retval = g_strdup_printf ("/usr/bin/%s", str2);
++			}
++		}
++	}
++	g_free (str2);
++
++	return retval;
++}
++
++/*
++ * Checks RBAC to see if the user can run the command.
++ */
++gboolean
++filter_with_rbac (gchar *command, gboolean use_global)
++{
++	execattr_t *exec;
++	gchar *stripped_cmd;
++	gchar *real_cmd;
++	char *path;
++	const char *username = NULL;
++	userattr_t *user;
++	int        i;
++	gboolean   program_has_profile;
++	gboolean   rc;
++	gboolean   trusted;
++
++	rc = TRUE;
++
++	stripped_cmd = get_stripped_exec (command, TRUE);
++	real_cmd     = get_stripped_exec (command, use_global);
++
++	trusted = use_trusted_extensions ();
++	if (trusted) {
++		/*
++		 * In trusted mode, use the single role associated with
++		 * the workspace.
++		 */
++		gpointer wnckscreen = NULL;
++		gpointer wnckworkspace = NULL;
++
++		wnckscreen = libmenu_wnck_screen_get_default ();
++		if (wnckscreen != NULL)
++			wnckworkspace = libmenu_wnck_screen_get_active_workspace (wnckscreen);
++
++		if (wnckworkspace != NULL)
++			username = libmenu_wnck_workspace_get_role (wnckworkspace);
++	}
++
++	if (username == NULL) {
++		username = g_get_user_name ();
++	}
++
++	/* If the command does not exist, do not show it. */
++	if (real_cmd == NULL || stripped_cmd == NULL) {
++		goto out;
++	}
++
++	path = g_find_program_in_path (g_strstrip (real_cmd));
++	if (path == NULL)
++		goto out;
++
++	/*
++	 * All programs should be available to root.  This check is done after
++	 * verifying the binary is in path.
++	 */
++	if (strcmp (username, "root") == 0) {
++		rc = FALSE;
++		goto out;
++	}
++
++	/* Check if the program is in any profile. */
++	program_has_profile = FALSE;
++	exec = getexecprof (NULL, KV_COMMAND, stripped_cmd, GET_ONE);
++	if (exec == NULL) {
++		goto out;
++	}
++
++	while (exec != NULL) {
++		if (strcmp (exec->id, "*") != 0) {
++			program_has_profile = TRUE;
++			break;
++		}
++		exec = exec->next;
++	}
++
++	free_execattr (exec);
++
++	/* Check if the user can run the command.  If not filter it. */
++	exec = getexecuser (username, KV_COMMAND, stripped_cmd, GET_ONE);
++
++	/*
++	 * If the program is not associated with any profile, then do not
++	 * show it.
++	 */
++	if (exec == NULL)
++		goto out;
++
++	/*
++	 * If getexecuser does not return NULL and the program is not
++	 * associated with any profile, then show it.  Otherwise, more
++	 * tests are needed.
++	 */
++	if (use_global == TRUE || program_has_profile == FALSE) {
++		rc = FALSE;
++		goto out;
++	}
++
++	/*
++	 * If the user has a profile that can run the command, then it can
++	 * be shown.
++	 */
++	while (exec != NULL) {
++		if (strcmp (exec->id, "*") != 0) {
++			rc = FALSE;
++			break;
++		}
++		exec = exec->next;
++	}
++
++	free_execattr (exec);
++
++	if (rc == FALSE)
++		goto out;
++
++	if (!trusted) {
++		/* If no gksu is available, then do not try to use it */
++	        path = g_find_program_in_path ("/usr/bin/gksu");
++		if (path == NULL)
++			goto out;
++	}
++
++	/* Check if the user is in a role that can run the command. */
++	/* If so, use gksu with that role */
++	if ((user = getusernam (username)) != NULL) {
++		const char *rolelist = NULL;
++		char **v = NULL;
++		char *role = NULL;
++
++		if (trusted && username != NULL) {
++			/* In trusted mode, use role associated with workspace */
++			rolelist = username;
++		} else {
++			/* Otherwise use roles associated with the user. */
++			rolelist = kva_match (user->attr, USERATTR_ROLES_KW);
++		}
++
++		if (rolelist != NULL)
++			v = g_strsplit (rolelist, ",", -1);
++
++		for (i=0; v != NULL && v[i] != NULL; i++) {
++			role = g_strdup (v[i]);
++			g_strstrip (role);
++
++			exec = getexecuser (role, KV_COMMAND, stripped_cmd, GET_ONE);
++			while (exec != NULL) {
++				if ((strcmp (role, "root") == 0) ||
++				    (strcmp (exec->id, "*") != 0)) {
++					rc = FALSE;
++					break;
++				}
++				exec = exec->next;
++			}
++
++			g_free (role);
++			free_execattr (exec);
++
++			if (rc == FALSE) {
++				break;
++			}
++		}
++		if (v != NULL)
++			g_strfreev (v);
++	}
++
++out:
++	if (stripped_cmd)
++		g_free (stripped_cmd);
++	if (real_cmd)
++		g_free (real_cmd);
++
++	return (rc);
++}
++
++/* Function to return the zone root directory for the current workspace. */
++char *
++get_zoneroot (void)
++{
++  gpointer    wnckscreen    = NULL;
++  gpointer    wnckworkspace = NULL;
++  const char *zonelabelstr  = NULL;
++  m_label_t  *zonelabel     = NULL;
++  char       *zoneroot      = NULL;
++  int         err;
++
++  wnckscreen = libmenu_wnck_screen_get_default ();
++  if (wnckscreen != NULL)
++    wnckworkspace = libmenu_wnck_screen_get_active_workspace (wnckscreen);
++
++  if (wnckworkspace != NULL)
++    zonelabelstr = libmenu_wnck_workspace_get_label (wnckworkspace);
++
++  if (zonelabelstr != NULL)
++    str_to_label (zonelabelstr, &zonelabel, MAC_LABEL, L_NO_CORRECTION, &err);
++
++  if (zonelabel != NULL)
++    zoneroot = getzonerootbylabel (zonelabel);
++
++  return zoneroot;
++}
++

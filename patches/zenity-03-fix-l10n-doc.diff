@@ -1,0 +1,628 @@
+diff -r 1974759a5e84 help/bg/zenity.xml
+--- a/help/bg/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/bg/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Ръководство за Zenity, версия 2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2005</year><holder>Ростислав "zbrox" Райков (zbrox@i-space.org)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Desktop System Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>August 2004</date>
+         <revdescription>
+           <para role="author">Sun Java Desktop System Documentation Team</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/cs/zenity.xml
+--- a/help/cs/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/cs/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Příručka V2.0 k aplikaci Zenity</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2009</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Dokumentační tým Java Desktop System</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Srpen 2004</date>
+         <revdescription>
+           <para role="author">Dokumentační tým Sun Java Desktop System</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/da/zenity.xml
+--- a/help/da/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/da/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Manual til skrivebordsprogrammet Zenity, V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Desktop System Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>August 2004</date>
+         <revdescription>
+           <para role="author">Sun Java Desktop System Documentation Team</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/de/zenity.xml
+--- a/help/de/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/de/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Zenity-Desktop-Anwenderhandbuch V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2008, 2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java-Desktopsystem-Dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>August 2004</date>
+         <revdescription>
+           <para role="author">Sun Java-Desktopsystem-Dokumentationsteam</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/el/zenity.xml
+--- a/help/el/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/el/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Εγχειρίδιο της εφαρμογής επιφάνειας εργασίας Zenity V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2009</year><holder>Ελληνική μεταφραστική ομάδα GNOME (team@gnome.gr)</holder></copyright><copyright><year>2009</year><holder>Στέργιος Προσινικλής (steriosprosiniklis@gmail.com)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Ομάδα τεκμηρίωσης του συστήματος επιφάνειας εργασίας Java</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Αύγουστος 2004</date>
+         <revdescription>
+           <para role="author">Ομάδα τεκμηρίωσης του συστήματος επιφάνειας εργασίας Java της Sun</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/en_GB/zenity.xml
+--- a/help/en_GB/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/en_GB/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Zenity Desktop Application Manual V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2007</year><holder>David Lodge (dave@cirt.net)</holder></copyright><copyright><year>2009</year><holder>Jen Ockwell (jenfraggleubuntu@gmail.com)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Desktop System Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>August 2004</date>
+         <revdescription>
+           <para role="author">Sun Java Desktop System Documentation Team</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/es/zenity.xml
+--- a/help/es/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/es/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Manual de la aplicación de escritorio Zenity V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2007-2009</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright><copyright><year>2005</year><holder>Alejandro Aravena (raidenblast@gmail.com)</holder></copyright><copyright><year>2005</year><holder>QA: Francisco Javier F. Serrador (serrador@cvs.gnome.org)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equipo de documentación del escritorio de Java Desktop System</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Agosto de 2004</date>
+         <revdescription>
+           <para role="author">Equipo de documentación del escritorio de Sun Java Desktop System</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/eu/zenity.xml
+--- a/help/eu/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/eu/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -53,7 +53,7 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Mahaigaineko Sistemaren dokumentazio-taldea</surname>
+         <affiliation><orgname>Sun Microsystems Inc.</orgname></affiliation>
+       </author>
+diff -r 1974759a5e84 help/fi/zenity.xml
+--- a/help/fi/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/fi/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Zenity-työpöytäsovelluksen ohje v2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2008.</year><holder>Tommi Vainikainen (thv@iki.fi)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java-työpöytäjärjestelmän dokumentointiryhmä</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Elokuu 2004</date>
+         <revdescription>
+           <para role="author">Sun Java -työpöytäjärjestelmän dokumentointiryhmä</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/fr/zenity.xml
+--- a/help/fr/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/fr/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Manuel de l'applicaton Zenity V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2005</year><holder>Christophe Bliard (cbliard@gmail.com)</holder></copyright><copyright><year>2005</year><holder>Vincent Untz (vuntz@gnome.org)</holder></copyright><copyright><year>2009</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>L'équipe de documentation de Java Desktop System</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Août 2004</date>
+         <revdescription>
+           <para role="author">L'équipe de documentation de Sun Java Desktop System</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/oc/zenity.xml
+--- a/help/oc/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/oc/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Zenity Desktop Application Manual V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -112,9 +112,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Desktop System Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -138,7 +138,7 @@
+         <date>Agost de 2004</date>
+         <revdescription>
+           <para role="author">Sun Java Desktop System Documentation Team</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/pt_BR/zenity.xml
+--- a/help/pt_BR/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/pt_BR/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Manual do aplicativo Zenity V2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Desktop System Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Agosto de 2004</date>
+         <revdescription>
+           <para role="author">Sun Java Desktop System Documentation Team</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/ru/zenity.xml
+--- a/help/ru/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/ru/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Zenity Руководство приложения рабочего стола В2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Desktop System Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>August 2004</date>
+         <revdescription>
+           <para role="author">Sun Java Desktop System Documentation Team</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/sv/zenity.xml
+--- a/help/sv/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/sv/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Handbok för skrivbordsprogrammet Zenity v2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2006, 2009</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Java Desktop System Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Augusti 2004</date>
+         <revdescription>
+           <para role="author">Sun Java Desktop System Documentation Team</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 
+diff -r 1974759a5e84 help/uk/zenity.xml
+--- a/help/uk/zenity.xml	Fri Jul 08 15:47:22 2011 +0800
++++ b/help/uk/zenity.xml	Fri Jul 08 16:43:24 2011 +0800
+@@ -18,8 +18,8 @@
+     <subtitle>Довідка з програми Zenity 2.0</subtitle>
+     <copyright>
+ 	    <year>2003</year>
+-	    <year>2004</year>
+-	    <holder>Sun Microsystems, Inc.</holder>
++	    <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder>
+     </copyright><copyright><year>2005</year><holder>Максим Дзюманенко (mvd@mylinux.com.ua)</holder></copyright>
+ 
+     <!-- Translators: uncomment this
+@@ -30,7 +30,7 @@
+     -->
+ 
+     <publisher>
+-	    <publishername>Sun Microsystems, Inc.</publishername>
++	    <publishername>Oracle Corporation</publishername>
+     </publisher>
+ 
+       <legalnotice id="legalnotice">
+@@ -53,9 +53,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Команда документування Java Desktop System</surname>
+-        <affiliation><orgname>Sun Microsystems, Inc.</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author role="maintainer">
+         <firstname>Glynn</firstname>
+@@ -79,7 +79,7 @@
+         <date>Серпень 2004</date>
+         <revdescription>
+           <para role="author">Sun команда документування Java Desktop System</para>
+-          <para role="publisher">Sun Microsystems, Inc.</para>
++          <para role="publisher">Oracle Corporation</para>
+         </revdescription>
+       </revision>
+ 

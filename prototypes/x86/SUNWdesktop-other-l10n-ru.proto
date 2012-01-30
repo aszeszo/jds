@@ -1,0 +1,47 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-other-l10n-ru.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-other-l10n-ru.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-other-l10n-ru.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/ru 0755 root other
+d none share/locale/ru/LC_MESSAGES 0755 root other
+f none share/locale/ru/LC_MESSAGES/COPYING.desktop-other.gz=usr/share/locale/ru/LC_MESSAGES/COPYING.desktop-other.gz 0644 root other
+f none share/locale/ru/LC_MESSAGES/avant-window-navigator.mo=usr/share/locale/ru/LC_MESSAGES/avant-window-navigator.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/bluefish.mo=usr/share/locale/ru/LC_MESSAGES/bluefish.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/bluefish_plugin_about.mo=usr/share/locale/ru/LC_MESSAGES/bluefish_plugin_about.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/bluefish_plugin_charmap.mo=usr/share/locale/ru/LC_MESSAGES/bluefish_plugin_charmap.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/bluefish_plugin_entities.mo=usr/share/locale/ru/LC_MESSAGES/bluefish_plugin_entities.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/bluefish_plugin_htmlbar.mo=usr/share/locale/ru/LC_MESSAGES/bluefish_plugin_htmlbar.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/bluefish_plugin_infbrowser.mo=usr/share/locale/ru/LC_MESSAGES/bluefish_plugin_infbrowser.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/bluefish_plugin_snippets.mo=usr/share/locale/ru/LC_MESSAGES/bluefish_plugin_snippets.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/ccsm.mo=usr/share/locale/ru/LC_MESSAGES/ccsm.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/codeina.mo=usr/share/locale/ru/LC_MESSAGES/codeina.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/compiz-plugins-extra.mo=usr/share/locale/ru/LC_MESSAGES/compiz-plugins-extra.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/compiz-plugins-main.mo=usr/share/locale/ru/LC_MESSAGES/compiz-plugins-main.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/compiz.mo=usr/share/locale/ru/LC_MESSAGES/compiz.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/contact-lookup-applet.mo=usr/share/locale/ru/LC_MESSAGES/contact-lookup-applet.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/dcraw.mo=usr/share/locale/ru/LC_MESSAGES/dcraw.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/dialog.mo=usr/share/locale/ru/LC_MESSAGES/dialog.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/elisa-plugin-base.mo=usr/share/locale/ru/LC_MESSAGES/elisa-plugin-base.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/elisa-plugin-database.mo=usr/share/locale/ru/LC_MESSAGES/elisa-plugin-database.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/elisa-plugin-dvd.mo=usr/share/locale/ru/LC_MESSAGES/elisa-plugin-dvd.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/elisa-plugin-poblesec.mo=usr/share/locale/ru/LC_MESSAGES/elisa-plugin-poblesec.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/elisa-plugin-search.mo=usr/share/locale/ru/LC_MESSAGES/elisa-plugin-search.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/findutils.mo=usr/share/locale/ru/LC_MESSAGES/findutils.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/gftp.mo=usr/share/locale/ru/LC_MESSAGES/gftp.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/gkrellm.mo=usr/share/locale/ru/LC_MESSAGES/gkrellm.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/gnome-compiz-preferences.mo=usr/share/locale/ru/LC_MESSAGES/gnome-compiz-preferences.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/gobby.mo=usr/share/locale/ru/LC_MESSAGES/gobby.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/goffice-0.8.5.mo=usr/share/locale/ru/LC_MESSAGES/goffice-0.8.5.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/lynx.mo=usr/share/locale/ru/LC_MESSAGES/lynx.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/net6.mo=usr/share/locale/ru/LC_MESSAGES/net6.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/planner.mo=usr/share/locale/ru/LC_MESSAGES/planner.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/terminator.mo=usr/share/locale/ru/LC_MESSAGES/terminator.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/time-slider.mo=usr/share/locale/ru/LC_MESSAGES/time-slider.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/transmission.mo=usr/share/locale/ru/LC_MESSAGES/transmission.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/tsclient.mo=usr/share/locale/ru/LC_MESSAGES/tsclient.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/xchat.mo=usr/share/locale/ru/LC_MESSAGES/xchat.mo 0644 root other
+f none share/locale/ru/LC_MESSAGES/xsane.mo=usr/share/locale/ru/LC_MESSAGES/xsane.mo 0644 root other
+d none share/openproj 0755 root sys
+d none share/openproj/lib 0755 root sys
+f none share/openproj/lib/openproj_ru.jar=usr/share/openproj/lib/openproj_ru.jar 0755 root bin

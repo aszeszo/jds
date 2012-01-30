@@ -1,0 +1,22 @@
+diff -urN stripe.orig/src/TrustedPathExecutables stripe.new/src/TrustedPathExecutables
+--- stripe.orig/src/TrustedPathExecutables	2011-01-13 10:19:44.377659749 +0000
++++ stripe.new/src/TrustedPathExecutables	2011-03-01 12:13:37.690665566 +0000
+@@ -13,8 +13,6 @@
+ /usr/bin/gnome-keyboard-properties
+ /usr/bin/gnome-keybinding-properties
+ /usr/bin/gnome-mouse-properties
+-/usr/sbin/gdmsetup
+-/usr/bin/time-admin
+ /usr/bin/users-admin
+ /usr/bin/gnome-appearance-properties
+ /usr/bin/alacarte
+@@ -22,7 +20,5 @@
+ /usr/bin/gnome-power-manager
+ /usr/bin/gnome-power-preferences
+ /usr/bin/gnome-power-statistics
+-/usr/bin/avahi-discover
+-/usr/bin/awn-manager
+ /usr/bin/time-slider-setup
+-/usr/bin/gdmflexiserver
++/usr/bin/imf-selector
+

@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompizconfig-python.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompizconfig-python.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompizconfig-python.copyright
+f none share/doc/SUNWcompizconfig-python/COPYING.bz2=usr/share/doc/SUNWcompizconfig-python/COPYING.bz2 0444 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+f none lib/python2.6/vendor-packages/compizconfig.so=usr/lib/python2.6/vendor-packages/compizconfig.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWcompizconfig-python 0755 root bin

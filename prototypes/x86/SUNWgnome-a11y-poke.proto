@@ -1,0 +1,312 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-poke.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-poke.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-poke.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-a11y-poke.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-poke.copyright
+f none share/doc/SUNWgnome-a11y-poke/AUTHORS=usr/share/doc/SUNWgnome-a11y-poke/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-a11y-poke/COPYING.bz2=usr/share/doc/SUNWgnome-a11y-poke/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-poke/ChangeLog.bz2=usr/share/doc/SUNWgnome-a11y-poke/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-poke/NEWS.bz2=usr/share/doc/SUNWgnome-a11y-poke/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-a11y-poke/README=usr/share/doc/SUNWgnome-a11y-poke/README 0444 root bin
+d none bin 0755 root bin
+f none bin/accerciser=usr/bin/accerciser 0755 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/accerciser 0755 root bin
+f none lib/python2.6/vendor-packages/accerciser/__init__.py=usr/lib/python2.6/vendor-packages/accerciser/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/__init__.pyc=usr/lib/python2.6/vendor-packages/accerciser/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/about_dialog.py=usr/lib/python2.6/vendor-packages/accerciser/about_dialog.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/about_dialog.pyc=usr/lib/python2.6/vendor-packages/accerciser/about_dialog.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/accerciser.py=usr/lib/python2.6/vendor-packages/accerciser/accerciser.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/accerciser.pyc=usr/lib/python2.6/vendor-packages/accerciser/accerciser.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/accessible_treeview.py=usr/lib/python2.6/vendor-packages/accerciser/accessible_treeview.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/accessible_treeview.pyc=usr/lib/python2.6/vendor-packages/accerciser/accessible_treeview.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/bookmarks.py=usr/lib/python2.6/vendor-packages/accerciser/bookmarks.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/bookmarks.pyc=usr/lib/python2.6/vendor-packages/accerciser/bookmarks.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/hotkey_manager.py=usr/lib/python2.6/vendor-packages/accerciser/hotkey_manager.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/hotkey_manager.pyc=usr/lib/python2.6/vendor-packages/accerciser/hotkey_manager.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/i18n.py=usr/lib/python2.6/vendor-packages/accerciser/i18n.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/i18n.pyc=usr/lib/python2.6/vendor-packages/accerciser/i18n.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/icons.py=usr/lib/python2.6/vendor-packages/accerciser/icons.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/icons.pyc=usr/lib/python2.6/vendor-packages/accerciser/icons.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/main_window.py=usr/lib/python2.6/vendor-packages/accerciser/main_window.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/main_window.pyc=usr/lib/python2.6/vendor-packages/accerciser/main_window.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/node.py=usr/lib/python2.6/vendor-packages/accerciser/node.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/node.pyc=usr/lib/python2.6/vendor-packages/accerciser/node.pyc 0644 root bin
+d none lib/python2.6/vendor-packages/accerciser/plugin 0755 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/__init__.py=usr/lib/python2.6/vendor-packages/accerciser/plugin/__init__.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/__init__.pyc=usr/lib/python2.6/vendor-packages/accerciser/plugin/__init__.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/base_plugin.py=usr/lib/python2.6/vendor-packages/accerciser/plugin/base_plugin.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/base_plugin.pyc=usr/lib/python2.6/vendor-packages/accerciser/plugin/base_plugin.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/message.py=usr/lib/python2.6/vendor-packages/accerciser/plugin/message.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/message.pyc=usr/lib/python2.6/vendor-packages/accerciser/plugin/message.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/plugin_manager.py=usr/lib/python2.6/vendor-packages/accerciser/plugin/plugin_manager.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/plugin_manager.pyc=usr/lib/python2.6/vendor-packages/accerciser/plugin/plugin_manager.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/view.py=usr/lib/python2.6/vendor-packages/accerciser/plugin/view.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/plugin/view.pyc=usr/lib/python2.6/vendor-packages/accerciser/plugin/view.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/prefs_dialog.py=usr/lib/python2.6/vendor-packages/accerciser/prefs_dialog.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/prefs_dialog.pyc=usr/lib/python2.6/vendor-packages/accerciser/prefs_dialog.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/script_playback.py=usr/lib/python2.6/vendor-packages/accerciser/script_playback.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/script_playback.pyc=usr/lib/python2.6/vendor-packages/accerciser/script_playback.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/tools.py=usr/lib/python2.6/vendor-packages/accerciser/tools.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/tools.pyc=usr/lib/python2.6/vendor-packages/accerciser/tools.pyc 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/ui_manager.py=usr/lib/python2.6/vendor-packages/accerciser/ui_manager.py 0644 root bin
+f none lib/python2.6/vendor-packages/accerciser/ui_manager.pyc=usr/lib/python2.6/vendor-packages/accerciser/ui_manager.pyc 0644 root bin
+d none share 0755 root sys
+d none share/accerciser 0755 root bin
+d none share/accerciser/pixmaps 0755 root bin
+d none share/accerciser/pixmaps/hicolor 0755 root bin
+d none share/accerciser/pixmaps/hicolor/22x22 0755 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/acceleratorlabel.png=usr/share/accerciser/pixmaps/hicolor/22x22/acceleratorlabel.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/alert.png=usr/share/accerciser/pixmaps/hicolor/22x22/alert.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/animation.png=usr/share/accerciser/pixmaps/hicolor/22x22/animation.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/arrow.png=usr/share/accerciser/pixmaps/hicolor/22x22/arrow.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/calendar.png=usr/share/accerciser/pixmaps/hicolor/22x22/calendar.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/canvas.png=usr/share/accerciser/pixmaps/hicolor/22x22/canvas.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/care.png=usr/share/accerciser/pixmaps/hicolor/22x22/care.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/character.png=usr/share/accerciser/pixmaps/hicolor/22x22/character.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/chart.png=usr/share/accerciser/pixmaps/hicolor/22x22/chart.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/checkbox.png=usr/share/accerciser/pixmaps/hicolor/22x22/checkbox.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/checkmenuitem.png=usr/share/accerciser/pixmaps/hicolor/22x22/checkmenuitem.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/clock.png=usr/share/accerciser/pixmaps/hicolor/22x22/clock.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/colorchooser.png=usr/share/accerciser/pixmaps/hicolor/22x22/colorchooser.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/column.png=usr/share/accerciser/pixmaps/hicolor/22x22/column.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/columnheader.png=usr/share/accerciser/pixmaps/hicolor/22x22/columnheader.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/combobox.png=usr/share/accerciser/pixmaps/hicolor/22x22/combobox.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/cursor.png=usr/share/accerciser/pixmaps/hicolor/22x22/cursor.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/dateeditor.png=usr/share/accerciser/pixmaps/hicolor/22x22/dateeditor.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/desktopicon.png=usr/share/accerciser/pixmaps/hicolor/22x22/desktopicon.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/dial.png=usr/share/accerciser/pixmaps/hicolor/22x22/dial.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/dialog.png=usr/share/accerciser/pixmaps/hicolor/22x22/dialog.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/directorypane.png=usr/share/accerciser/pixmaps/hicolor/22x22/directorypane.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/drawingarea.png=usr/share/accerciser/pixmaps/hicolor/22x22/drawingarea.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/embedded.png=usr/share/accerciser/pixmaps/hicolor/22x22/embedded.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/endnote.png=usr/share/accerciser/pixmaps/hicolor/22x22/endnote.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/entry.png=usr/share/accerciser/pixmaps/hicolor/22x22/entry.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/filechooser.png=usr/share/accerciser/pixmaps/hicolor/22x22/filechooser.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/filler.png=usr/share/accerciser/pixmaps/hicolor/22x22/filler.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/focustraversable.png=usr/share/accerciser/pixmaps/hicolor/22x22/focustraversable.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/fontchooser.png=usr/share/accerciser/pixmaps/hicolor/22x22/fontchooser.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/form.png=usr/share/accerciser/pixmaps/hicolor/22x22/form.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/frame.png=usr/share/accerciser/pixmaps/hicolor/22x22/frame.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/glasspane.png=usr/share/accerciser/pixmaps/hicolor/22x22/glasspane.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/grip.png=usr/share/accerciser/pixmaps/hicolor/22x22/grip.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/heading.png=usr/share/accerciser/pixmaps/hicolor/22x22/heading.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/helpballoon.png=usr/share/accerciser/pixmaps/hicolor/22x22/helpballoon.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/htmlcontainer.png=usr/share/accerciser/pixmaps/hicolor/22x22/htmlcontainer.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/icon.png=usr/share/accerciser/pixmaps/hicolor/22x22/icon.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/image.png=usr/share/accerciser/pixmaps/hicolor/22x22/image.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/imagemap.png=usr/share/accerciser/pixmaps/hicolor/22x22/imagemap.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/inputmethodwindow.png=usr/share/accerciser/pixmaps/hicolor/22x22/inputmethodwindow.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/invalid.png=usr/share/accerciser/pixmaps/hicolor/22x22/invalid.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/label.png=usr/share/accerciser/pixmaps/hicolor/22x22/label.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/link.png=usr/share/accerciser/pixmaps/hicolor/22x22/link.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/list.png=usr/share/accerciser/pixmaps/hicolor/22x22/list.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/listitem.png=usr/share/accerciser/pixmaps/hicolor/22x22/listitem.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/menu.png=usr/share/accerciser/pixmaps/hicolor/22x22/menu.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/menubar.png=usr/share/accerciser/pixmaps/hicolor/22x22/menubar.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/menuitem.png=usr/share/accerciser/pixmaps/hicolor/22x22/menuitem.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/pagetab.png=usr/share/accerciser/pixmaps/hicolor/22x22/pagetab.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/pagetablist.png=usr/share/accerciser/pixmaps/hicolor/22x22/pagetablist.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/passwordtext.png=usr/share/accerciser/pixmaps/hicolor/22x22/passwordtext.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/popupmenu.png=usr/share/accerciser/pixmaps/hicolor/22x22/popupmenu.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/progressbar.png=usr/share/accerciser/pixmaps/hicolor/22x22/progressbar.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/pushbutton.png=usr/share/accerciser/pixmaps/hicolor/22x22/pushbutton.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/radiobutton.png=usr/share/accerciser/pixmaps/hicolor/22x22/radiobutton.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/radiomenuitem.png=usr/share/accerciser/pixmaps/hicolor/22x22/radiomenuitem.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/row.png=usr/share/accerciser/pixmaps/hicolor/22x22/row.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/ruler.png=usr/share/accerciser/pixmaps/hicolor/22x22/ruler.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/scrollbar.png=usr/share/accerciser/pixmaps/hicolor/22x22/scrollbar.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/scrollpane.png=usr/share/accerciser/pixmaps/hicolor/22x22/scrollpane.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/section.png=usr/share/accerciser/pixmaps/hicolor/22x22/section.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/separator.png=usr/share/accerciser/pixmaps/hicolor/22x22/separator.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/shape.png=usr/share/accerciser/pixmaps/hicolor/22x22/shape.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/slider.png=usr/share/accerciser/pixmaps/hicolor/22x22/slider.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/sound.png=usr/share/accerciser/pixmaps/hicolor/22x22/sound.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/spinbutton.png=usr/share/accerciser/pixmaps/hicolor/22x22/spinbutton.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/splitpane.png=usr/share/accerciser/pixmaps/hicolor/22x22/splitpane.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/statusbar.png=usr/share/accerciser/pixmaps/hicolor/22x22/statusbar.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/table.png=usr/share/accerciser/pixmaps/hicolor/22x22/table.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/tablecell.png=usr/share/accerciser/pixmaps/hicolor/22x22/tablecell.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/tearoffmenuitem.png=usr/share/accerciser/pixmaps/hicolor/22x22/tearoffmenuitem.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/terminal.png=usr/share/accerciser/pixmaps/hicolor/22x22/terminal.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/text.png=usr/share/accerciser/pixmaps/hicolor/22x22/text.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/togglebutton.png=usr/share/accerciser/pixmaps/hicolor/22x22/togglebutton.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/toolbar.png=usr/share/accerciser/pixmaps/hicolor/22x22/toolbar.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/tooltip.png=usr/share/accerciser/pixmaps/hicolor/22x22/tooltip.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/tree.png=usr/share/accerciser/pixmaps/hicolor/22x22/tree.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/treetable.png=usr/share/accerciser/pixmaps/hicolor/22x22/treetable.png 0644 root bin
+f none share/accerciser/pixmaps/hicolor/22x22/window.png=usr/share/accerciser/pixmaps/hicolor/22x22/window.png 0644 root bin
+d none share/accerciser/plugindata 0755 root bin
+d none share/accerciser/plugindata/validate 0755 root bin
+f none share/accerciser/plugindata/validate/basic.py=usr/share/accerciser/plugindata/validate/basic.py 0644 root bin
+d none share/accerciser/plugins 0755 root bin
+f none share/accerciser/plugins/api_view.py=usr/share/accerciser/plugins/api_view.py 0644 root bin
+f none share/accerciser/plugins/console.py=usr/share/accerciser/plugins/console.py 0644 root bin
+f none share/accerciser/plugins/event_monitor.py=usr/share/accerciser/plugins/event_monitor.py 0644 root bin
+f none share/accerciser/plugins/event_monitor.ui=usr/share/accerciser/plugins/event_monitor.ui 0644 root bin
+f none share/accerciser/plugins/interface_view.py=usr/share/accerciser/plugins/interface_view.py 0644 root bin
+f none share/accerciser/plugins/interface_view.ui=usr/share/accerciser/plugins/interface_view.ui 0644 root bin
+f none share/accerciser/plugins/ipython_view.py=usr/share/accerciser/plugins/ipython_view.py 0644 root bin
+f none share/accerciser/plugins/quick_select.py=usr/share/accerciser/plugins/quick_select.py 0644 root bin
+f none share/accerciser/plugins/script_recorder.py=usr/share/accerciser/plugins/script_recorder.py 0644 root bin
+f none share/accerciser/plugins/script_recorder.ui=usr/share/accerciser/plugins/script_recorder.ui 0644 root bin
+f none share/accerciser/plugins/validate.py=usr/share/accerciser/plugins/validate.py 0644 root bin
+f none share/accerciser/plugins/validate.ui=usr/share/accerciser/plugins/validate.ui 0644 root bin
+d none share/applications 0755 root other
+f none share/applications/accerciser.desktop=usr/share/applications/accerciser.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-a11y-poke 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/accerciser 0755 root bin
+d none share/gnome/help/accerciser/C 0755 root bin
+f none share/gnome/help/accerciser/C/accerciser.xml=usr/share/gnome/help/accerciser/C/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/C/figures 0755 root bin
+f none share/gnome/help/accerciser/C/figures/accerciser.png=usr/share/gnome/help/accerciser/C/figures/accerciser.png 0644 root bin
+f none share/gnome/help/accerciser/C/figures/api_browser.png=usr/share/gnome/help/accerciser/C/figures/api_browser.png 0644 root bin
+f none share/gnome/help/accerciser/C/figures/event_monitor.png=usr/share/gnome/help/accerciser/C/figures/event_monitor.png 0644 root bin
+f none share/gnome/help/accerciser/C/figures/interface_viewer.png=usr/share/gnome/help/accerciser/C/figures/interface_viewer.png 0644 root bin
+f none share/gnome/help/accerciser/C/figures/script_recorder.png=usr/share/gnome/help/accerciser/C/figures/script_recorder.png 0644 root bin
+f none share/gnome/help/accerciser/C/legal.xml=usr/share/gnome/help/accerciser/C/legal.xml 0644 root bin
+d none share/gnome/help/accerciser/ca 0755 root bin
+f none share/gnome/help/accerciser/ca/accerciser.xml=usr/share/gnome/help/accerciser/ca/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/ca/figures 0755 root bin
+f none share/gnome/help/accerciser/ca/figures/accerciser.png=usr/share/gnome/help/accerciser/ca/figures/accerciser.png 0644 root bin
+f none share/gnome/help/accerciser/ca/figures/api_browser.png=usr/share/gnome/help/accerciser/ca/figures/api_browser.png 0644 root bin
+f none share/gnome/help/accerciser/ca/figures/event_monitor.png=usr/share/gnome/help/accerciser/ca/figures/event_monitor.png 0644 root bin
+f none share/gnome/help/accerciser/ca/figures/interface_viewer.png=usr/share/gnome/help/accerciser/ca/figures/interface_viewer.png 0644 root bin
+f none share/gnome/help/accerciser/ca/figures/script_recorder.png=usr/share/gnome/help/accerciser/ca/figures/script_recorder.png 0644 root bin
+d none share/gnome/help/accerciser/cs 0755 root bin
+f none share/gnome/help/accerciser/cs/accerciser.xml=usr/share/gnome/help/accerciser/cs/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/cs/figures 0755 root bin
+s none share/gnome/help/accerciser/cs/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/cs/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/cs/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/cs/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/cs/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/de 0755 root bin
+f none share/gnome/help/accerciser/de/accerciser.xml=usr/share/gnome/help/accerciser/de/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/de/figures 0755 root bin
+f none share/gnome/help/accerciser/de/figures/accerciser.png=usr/share/gnome/help/accerciser/de/figures/accerciser.png 0644 root bin
+f none share/gnome/help/accerciser/de/figures/api_browser.png=usr/share/gnome/help/accerciser/de/figures/api_browser.png 0644 root bin
+f none share/gnome/help/accerciser/de/figures/event_monitor.png=usr/share/gnome/help/accerciser/de/figures/event_monitor.png 0644 root bin
+f none share/gnome/help/accerciser/de/figures/interface_viewer.png=usr/share/gnome/help/accerciser/de/figures/interface_viewer.png 0644 root bin
+f none share/gnome/help/accerciser/de/figures/script_recorder.png=usr/share/gnome/help/accerciser/de/figures/script_recorder.png 0644 root bin
+d none share/gnome/help/accerciser/el 0755 root bin
+f none share/gnome/help/accerciser/el/accerciser.xml=usr/share/gnome/help/accerciser/el/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/el/figures 0755 root bin
+s none share/gnome/help/accerciser/el/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/el/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/el/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/el/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/el/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/en_GB 0755 root bin
+f none share/gnome/help/accerciser/en_GB/accerciser.xml=usr/share/gnome/help/accerciser/en_GB/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/en_GB/figures 0755 root bin
+s none share/gnome/help/accerciser/en_GB/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/en_GB/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/en_GB/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/en_GB/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/en_GB/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/es 0755 root bin
+f none share/gnome/help/accerciser/es/accerciser.xml=usr/share/gnome/help/accerciser/es/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/es/figures 0755 root bin
+f none share/gnome/help/accerciser/es/figures/accerciser.png=usr/share/gnome/help/accerciser/es/figures/accerciser.png 0644 root bin
+f none share/gnome/help/accerciser/es/figures/api_browser.png=usr/share/gnome/help/accerciser/es/figures/api_browser.png 0644 root bin
+f none share/gnome/help/accerciser/es/figures/event_monitor.png=usr/share/gnome/help/accerciser/es/figures/event_monitor.png 0644 root bin
+f none share/gnome/help/accerciser/es/figures/interface_viewer.png=usr/share/gnome/help/accerciser/es/figures/interface_viewer.png 0644 root bin
+s none share/gnome/help/accerciser/es/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/fr 0755 root bin
+f none share/gnome/help/accerciser/fr/accerciser.xml=usr/share/gnome/help/accerciser/fr/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/fr/figures 0755 root bin
+f none share/gnome/help/accerciser/fr/figures/accerciser.png=usr/share/gnome/help/accerciser/fr/figures/accerciser.png 0644 root bin
+f none share/gnome/help/accerciser/fr/figures/api_browser.png=usr/share/gnome/help/accerciser/fr/figures/api_browser.png 0644 root bin
+f none share/gnome/help/accerciser/fr/figures/event_monitor.png=usr/share/gnome/help/accerciser/fr/figures/event_monitor.png 0644 root bin
+f none share/gnome/help/accerciser/fr/figures/interface_viewer.png=usr/share/gnome/help/accerciser/fr/figures/interface_viewer.png 0644 root bin
+f none share/gnome/help/accerciser/fr/figures/script_recorder.png=usr/share/gnome/help/accerciser/fr/figures/script_recorder.png 0644 root bin
+d none share/gnome/help/accerciser/it 0755 root bin
+f none share/gnome/help/accerciser/it/accerciser.xml=usr/share/gnome/help/accerciser/it/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/it/figures 0755 root bin
+s none share/gnome/help/accerciser/it/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/it/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/it/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/it/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/it/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/oc 0755 root bin
+f none share/gnome/help/accerciser/oc/accerciser.xml=usr/share/gnome/help/accerciser/oc/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/oc/figures 0755 root bin
+s none share/gnome/help/accerciser/oc/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/oc/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/oc/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/oc/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/oc/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/pt_BR 0755 root bin
+f none share/gnome/help/accerciser/pt_BR/accerciser.xml=usr/share/gnome/help/accerciser/pt_BR/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/pt_BR/figures 0755 root bin
+s none share/gnome/help/accerciser/pt_BR/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/pt_BR/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/pt_BR/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/pt_BR/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/pt_BR/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/sv 0755 root bin
+f none share/gnome/help/accerciser/sv/accerciser.xml=usr/share/gnome/help/accerciser/sv/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/sv/figures 0755 root bin
+f none share/gnome/help/accerciser/sv/figures/accerciser.png=usr/share/gnome/help/accerciser/sv/figures/accerciser.png 0644 root bin
+f none share/gnome/help/accerciser/sv/figures/api_browser.png=usr/share/gnome/help/accerciser/sv/figures/api_browser.png 0644 root bin
+f none share/gnome/help/accerciser/sv/figures/event_monitor.png=usr/share/gnome/help/accerciser/sv/figures/event_monitor.png 0644 root bin
+f none share/gnome/help/accerciser/sv/figures/interface_viewer.png=usr/share/gnome/help/accerciser/sv/figures/interface_viewer.png 0644 root bin
+s none share/gnome/help/accerciser/sv/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/uk 0755 root bin
+f none share/gnome/help/accerciser/uk/accerciser.xml=usr/share/gnome/help/accerciser/uk/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/uk/figures 0755 root bin
+s none share/gnome/help/accerciser/uk/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/uk/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/uk/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/uk/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/uk/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/gnome/help/accerciser/zh_CN 0755 root bin
+f none share/gnome/help/accerciser/zh_CN/accerciser.xml=usr/share/gnome/help/accerciser/zh_CN/accerciser.xml 0644 root bin
+d none share/gnome/help/accerciser/zh_CN/figures 0755 root bin
+s none share/gnome/help/accerciser/zh_CN/figures/accerciser.png=../../C/figures/accerciser.png
+s none share/gnome/help/accerciser/zh_CN/figures/api_browser.png=../../C/figures/api_browser.png
+s none share/gnome/help/accerciser/zh_CN/figures/event_monitor.png=../../C/figures/event_monitor.png
+s none share/gnome/help/accerciser/zh_CN/figures/interface_viewer.png=../../C/figures/interface_viewer.png
+s none share/gnome/help/accerciser/zh_CN/figures/script_recorder.png=../../C/figures/script_recorder.png
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/16x16 0755 root other
+d none share/icons/hicolor/16x16/apps 0755 root other
+f none share/icons/hicolor/16x16/apps/accerciser.png=usr/share/icons/hicolor/16x16/apps/accerciser.png 0644 root bin
+d none share/icons/hicolor/22x22 0755 root other
+d none share/icons/hicolor/22x22/apps 0755 root other
+f none share/icons/hicolor/22x22/apps/accerciser.png=usr/share/icons/hicolor/22x22/apps/accerciser.png 0644 root bin
+d none share/icons/hicolor/32x32 0755 root other
+d none share/icons/hicolor/32x32/apps 0755 root other
+f none share/icons/hicolor/32x32/apps/accerciser.png=usr/share/icons/hicolor/32x32/apps/accerciser.png 0644 root bin
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/accerciser.png=usr/share/icons/hicolor/48x48/apps/accerciser.png 0644 root bin
+d none share/icons/hicolor/scalable 0755 root other
+d none share/icons/hicolor/scalable/apps 0755 root other
+f none share/icons/hicolor/scalable/apps/accerciser.svg=usr/share/icons/hicolor/scalable/apps/accerciser.svg 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/accerciser.1=usr/share/man/man1/accerciser.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/accerciser 0755 root bin
+f none share/omf/accerciser/accerciser-C.omf=usr/share/omf/accerciser/accerciser-C.omf 0644 root bin
+f none share/omf/accerciser/accerciser-ca.omf=usr/share/omf/accerciser/accerciser-ca.omf 0644 root bin
+f none share/omf/accerciser/accerciser-cs.omf=usr/share/omf/accerciser/accerciser-cs.omf 0644 root bin
+f none share/omf/accerciser/accerciser-de.omf=usr/share/omf/accerciser/accerciser-de.omf 0644 root bin
+f none share/omf/accerciser/accerciser-el.omf=usr/share/omf/accerciser/accerciser-el.omf 0644 root bin
+f none share/omf/accerciser/accerciser-en_GB.omf=usr/share/omf/accerciser/accerciser-en_GB.omf 0644 root bin
+f none share/omf/accerciser/accerciser-es.omf=usr/share/omf/accerciser/accerciser-es.omf 0644 root bin
+f none share/omf/accerciser/accerciser-fr.omf=usr/share/omf/accerciser/accerciser-fr.omf 0644 root bin
+f none share/omf/accerciser/accerciser-it.omf=usr/share/omf/accerciser/accerciser-it.omf 0644 root bin
+f none share/omf/accerciser/accerciser-oc.omf=usr/share/omf/accerciser/accerciser-oc.omf 0644 root bin
+f none share/omf/accerciser/accerciser-pt_BR.omf=usr/share/omf/accerciser/accerciser-pt_BR.omf 0644 root bin
+f none share/omf/accerciser/accerciser-sv.omf=usr/share/omf/accerciser/accerciser-sv.omf 0644 root bin
+f none share/omf/accerciser/accerciser-uk.omf=usr/share/omf/accerciser/accerciser-uk.omf 0644 root bin
+f none share/omf/accerciser/accerciser-zh_CN.omf=usr/share/omf/accerciser/accerciser-zh_CN.omf 0644 root bin

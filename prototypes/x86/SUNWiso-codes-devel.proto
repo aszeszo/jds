@@ -1,0 +1,6 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWiso-codes-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWiso-codes-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWiso-codes-devel.copyright
+d none share 0755 root sys
+d none share/pkgconfig 0755 root bin
+f none share/pkgconfig/iso-codes.pc=usr/share/pkgconfig/iso-codes.pc 0644 root bin

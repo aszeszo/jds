@@ -1,0 +1,41 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibcdio-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibcdio-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibcdio-devel.copyright
+d none include 0755 root bin
+d none include/cdio 0755 root bin
+f none include/cdio/audio.h=usr/include/cdio/audio.h 0644 root bin
+f none include/cdio/bytesex.h=usr/include/cdio/bytesex.h 0644 root bin
+f none include/cdio/bytesex_asm.h=usr/include/cdio/bytesex_asm.h 0644 root bin
+f none include/cdio/cd_types.h=usr/include/cdio/cd_types.h 0644 root bin
+f none include/cdio/cdda.h=usr/include/cdio/cdda.h 0644 root bin
+f none include/cdio/cdio.h=usr/include/cdio/cdio.h 0644 root bin
+f none include/cdio/cdio_config.h=usr/include/cdio/cdio_config.h 0644 root bin
+f none include/cdio/cdtext.h=usr/include/cdio/cdtext.h 0644 root bin
+f none include/cdio/device.h=usr/include/cdio/device.h 0644 root bin
+f none include/cdio/disc.h=usr/include/cdio/disc.h 0644 root bin
+f none include/cdio/ds.h=usr/include/cdio/ds.h 0644 root bin
+f none include/cdio/dvd.h=usr/include/cdio/dvd.h 0644 root bin
+f none include/cdio/ecma_167.h=usr/include/cdio/ecma_167.h 0644 root bin
+f none include/cdio/iso9660.h=usr/include/cdio/iso9660.h 0644 root bin
+f none include/cdio/logging.h=usr/include/cdio/logging.h 0644 root bin
+f none include/cdio/mmc.h=usr/include/cdio/mmc.h 0644 root bin
+f none include/cdio/paranoia.h=usr/include/cdio/paranoia.h 0644 root bin
+f none include/cdio/posix.h=usr/include/cdio/posix.h 0644 root bin
+f none include/cdio/read.h=usr/include/cdio/read.h 0644 root bin
+f none include/cdio/rock.h=usr/include/cdio/rock.h 0644 root bin
+f none include/cdio/sector.h=usr/include/cdio/sector.h 0644 root bin
+f none include/cdio/track.h=usr/include/cdio/track.h 0644 root bin
+f none include/cdio/types.h=usr/include/cdio/types.h 0644 root bin
+f none include/cdio/udf.h=usr/include/cdio/udf.h 0644 root bin
+f none include/cdio/udf_file.h=usr/include/cdio/udf_file.h 0644 root bin
+f none include/cdio/udf_time.h=usr/include/cdio/udf_time.h 0644 root bin
+f none include/cdio/utf8.h=usr/include/cdio/utf8.h 0644 root bin
+f none include/cdio/util.h=usr/include/cdio/util.h 0644 root bin
+f none include/cdio/version.h=usr/include/cdio/version.h 0644 root bin
+f none include/cdio/xa.h=usr/include/cdio/xa.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libcdio.pc=usr/lib/pkgconfig/libcdio.pc 0644 root bin
+f none lib/pkgconfig/libcdio_cdda.pc=usr/lib/pkgconfig/libcdio_cdda.pc 0644 root bin
+f none lib/pkgconfig/libcdio_paranoia.pc=usr/lib/pkgconfig/libcdio_paranoia.pc 0644 root bin
+f none lib/pkgconfig/libiso9660.pc=usr/lib/pkgconfig/libiso9660.pc 0644 root bin

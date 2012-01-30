@@ -1,0 +1,9 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWapoc-adapter-gconf.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWapoc-adapter-gconf.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWapoc-adapter-gconf.postinstall
+i preremove=/jds/packages/PKGMAPS/scripts/SUNWapoc-adapter-gconf.preremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWapoc-adapter-gconf.copyright
+d none lib 0755 root bin
+d none lib/GConf 0755 root bin
+d none lib/GConf/2 0755 root bin
+f none lib/GConf/2/libgconfbackend-apoc.so=usr/lib/GConf/2/libgconfbackend-apoc.so 0755 root bin

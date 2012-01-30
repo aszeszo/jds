@@ -1,0 +1,26 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibgpg-error.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibgpg-error.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibgpg-error.copyright
+f none share/doc/SUNWlibgpg-error/AUTHORS=usr/share/doc/SUNWlibgpg-error/AUTHORS 0444 root bin
+f none share/doc/SUNWlibgpg-error/COPYING.bz2=usr/share/doc/SUNWlibgpg-error/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibgpg-error/COPYING.LIB.bz2=usr/share/doc/SUNWlibgpg-error/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWlibgpg-error/ChangeLog.bz2=usr/share/doc/SUNWlibgpg-error/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibgpg-error/NEWS.bz2=usr/share/doc/SUNWlibgpg-error/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibgpg-error/README=usr/share/doc/SUNWlibgpg-error/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libgpg-error.so=libgpg-error.so.0.6.0
+s none lib/libgpg-error.so.0=libgpg-error.so.0.6.0
+f none lib/libgpg-error.so.0.6.0=usr/lib/libgpg-error.so.0.6.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/libgpg-error.so=libgpg-error.so.0.6.0
+s none lib/sparcv9/libgpg-error.so.0=libgpg-error.so.0.6.0
+f none lib/sparcv9/libgpg-error.so.0.6.0=usr/lib/sparcv9/libgpg-error.so.0.6.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibgpg-error 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gpg-error-config.1=usr/share/man/man1/gpg-error-config.1 0644 root bin
+f none share/man/man1/gpg-error.1=usr/share/man/man1/gpg-error.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgpg-error.3=usr/share/man/man3/libgpg-error.3 0644 root bin

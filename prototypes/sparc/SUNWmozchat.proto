@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmozchat.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmozchat.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWmozchat.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWmozchat.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmozchat.copyright
+d none sfw 0755 root bin
+d none sfw/lib 0755 root bin
+d none sfw/lib/mozilla 0755 root sys
+d none sfw/lib/mozilla/chrome 0755 root sys
+f none sfw/lib/mozilla/chrome/chatzilla.jar=usr/sfw/lib/mozilla/chrome/chatzilla.jar 0644 root sys
+d none sfw/lib/mozilla/chrome/icons 0755 root sys
+d none sfw/lib/mozilla/chrome/icons/default 0755 root sys
+f none sfw/lib/mozilla/chrome/icons/default/chatzilla-window.xpm=usr/sfw/lib/mozilla/chrome/icons/default/chatzilla-window.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/chatzilla-window16.xpm=usr/sfw/lib/mozilla/chrome/icons/default/chatzilla-window16.xpm 0644 root sys
+d none sfw/lib/mozilla/components 0755 root sys
+f none sfw/lib/mozilla/components/chatzilla-service.js=usr/sfw/lib/mozilla/components/chatzilla-service.js 0755 root sys

@@ -1,0 +1,15 @@
+--- comm-central/mailnews/mailnews.js.old	2009-09-23 13:57:22.281694000 +0800
++++ comm-central/mailnews/mailnews.js	2009-09-23 13:59:04.908429000 +0800
+@@ -522,9 +522,9 @@
+ // should we inhibit whitelisting of the domain for a server's identities?
+ pref("mail.server.default.inhibitWhiteListingIdentityDomain", false);
+ 
+-// to activate auto-sync feature (preemptive message download for imap) by default
+-pref("mail.server.default.autosync_offline_stores",true);
+-pref("mail.server.default.offline_download",true);
++// disable auto-sync feature (preemptive message download for imap) by default
++pref("mail.server.default.autosync_offline_stores",false);
++pref("mail.server.default.offline_download",false);
+ 
+ // -1 means no limit, no purging of offline stores.
+ pref("mail.server.default.autosync_max_age_days", -1);

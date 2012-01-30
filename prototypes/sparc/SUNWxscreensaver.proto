@@ -1,0 +1,56 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxscreensaver.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxscreensaver.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxscreensaver.copyright
+d none X11 0755 root bin
+d none X11/bin 0755 root bin
+s none X11/bin/xscreensaver=../../bin/xscreensaver
+s none X11/bin/xscreensaver-command=../../bin/xscreensaver-command
+s none X11/bin/xscreensaver-demo=../../bin/xscreensaver-demo
+d none X11/lib 0755 root bin
+d none X11/lib/X11 0755 root bin
+d none X11/lib/X11/app-defaults 0755 root bin
+s none X11/lib/X11/app-defaults/XScreenSaver=../../../../share/X11/app-defaults/XScreenSaver
+s none X11/lib/xscreensaver=../../lib/xscreensaver
+d none bin 0755 root bin
+f none bin/xscreensaver=usr/bin/xscreensaver 4555 root bin
+f none bin/xscreensaver-command=usr/bin/xscreensaver-command 0755 root bin
+f none bin/xscreensaver-demo=usr/bin/xscreensaver-demo 0755 root bin
+d none lib 0755 root bin
+d none lib/xscreensaver 0755 root bin
+d none lib/xscreensaver/bin 0755 root bin
+f none lib/xscreensaver/bin/xscreensaver-getimage=usr/lib/xscreensaver/bin/xscreensaver-getimage 0755 root bin
+f none lib/xscreensaver/bin/xscreensaver-getimage-file=usr/lib/xscreensaver/bin/xscreensaver-getimage-file 0755 root bin
+f none lib/xscreensaver/bin/xscreensaver-getimage-video=usr/lib/xscreensaver/bin/xscreensaver-getimage-video 0755 root bin
+f none lib/xscreensaver/bin/xscreensaver-lock=usr/lib/xscreensaver/bin/xscreensaver-lock 0755 root bin
+f none lib/xscreensaver/bin/xscreensaver-text=usr/lib/xscreensaver/bin/xscreensaver-text 0755 root bin
+d none lib/xscreensaver/config 0755 root bin
+d none lib/xscreensaver/config/control-center-2.0 0755 root bin
+f none lib/xscreensaver/config/control-center-2.0/README=usr/lib/xscreensaver/config/control-center-2.0/README 0644 root bin
+f none lib/xscreensaver/config/logo-180.gif=usr/lib/xscreensaver/config/logo-180.gif 0644 root bin
+f none lib/xscreensaver/config/opensolaris-logo.png=usr/lib/xscreensaver/config/opensolaris-logo.png 0644 root bin
+f none lib/xscreensaver/config/screensaver-cmndln.png=usr/lib/xscreensaver/config/screensaver-cmndln.png 0644 root bin
+f none lib/xscreensaver/config/screensaver-colorselector.png=usr/lib/xscreensaver/config/screensaver-colorselector.png 0644 root bin
+f none lib/xscreensaver/config/screensaver-diagnostic.png=usr/lib/xscreensaver/config/screensaver-diagnostic.png 0644 root bin
+f none lib/xscreensaver/config/screensaver-locking.png=usr/lib/xscreensaver/config/screensaver-locking.png 0644 root bin
+f none lib/xscreensaver/config/screensaver-power.png=usr/lib/xscreensaver/config/screensaver-power.png 0644 root bin
+f none lib/xscreensaver/config/screensaver-snap.png=usr/lib/xscreensaver/config/screensaver-snap.png 0644 root bin
+f none lib/xscreensaver/config/trusted-logo.png=usr/lib/xscreensaver/config/trusted-logo.png 0644 root bin
+f none lib/xscreensaver/config/unlock-logo.png=usr/lib/xscreensaver/config/unlock-logo.png 0644 root bin
+f none lib/xscreensaver/config/xscreensaver-demo.glade2=usr/lib/xscreensaver/config/xscreensaver-demo.glade2 0644 root bin
+d none share 0755 root sys
+d none share/X11 0755 root bin
+d none share/X11/app-defaults 0755 root bin
+f none share/X11/app-defaults/XScreenSaver=usr/share/X11/app-defaults/XScreenSaver 0444 root bin
+d none share/applications 0755 root other
+f none share/applications/xscreensaver-properties.desktop=usr/share/applications/xscreensaver-properties.desktop 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/xscreensaver-command.1=usr/share/man/man1/xscreensaver-command.1 0644 root bin
+f none share/man/man1/xscreensaver-demo.1=usr/share/man/man1/xscreensaver-demo.1 0644 root bin
+f none share/man/man1/xscreensaver-getimage-file.1=usr/share/man/man1/xscreensaver-getimage-file.1 0644 root bin
+f none share/man/man1/xscreensaver-getimage-video.1=usr/share/man/man1/xscreensaver-getimage-video.1 0644 root bin
+f none share/man/man1/xscreensaver-getimage.1=usr/share/man/man1/xscreensaver-getimage.1 0644 root bin
+f none share/man/man1/xscreensaver-text.1=usr/share/man/man1/xscreensaver-text.1 0644 root bin
+f none share/man/man1/xscreensaver.1=usr/share/man/man1/xscreensaver.1 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/xscreensaver.xpm=usr/share/pixmaps/xscreensaver.xpm 0644 root bin

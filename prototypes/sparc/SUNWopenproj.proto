@@ -1,0 +1,37 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWopenproj.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWopenproj.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWopenproj.copyright
+f none share/doc/SUNWopenproj/index.html.bz2=usr/share/doc/SUNWopenproj/index.html.bz2 0444 root bin
+f none share/doc/SUNWopenproj/third-party/Apache-LICENSE-2.0.txt.bz2=usr/share/doc/SUNWopenproj/third-party/Apache-LICENSE-2.0.txt.bz2 0444 root bin
+f none share/doc/SUNWopenproj/third-party/Jasper-LGPL.txt=usr/share/doc/SUNWopenproj/third-party/Jasper-LGPL.txt 0444 root bin
+f none share/doc/SUNWopenproj/third-party/antlr.txt=usr/share/doc/SUNWopenproj/third-party/antlr.txt 0444 root bin
+f none share/doc/SUNWopenproj/third-party/bsd-generic.txt=usr/share/doc/SUNWopenproj/third-party/bsd-generic.txt 0444 root bin
+f none share/doc/SUNWopenproj/third-party/groovy.txt=usr/share/doc/SUNWopenproj/third-party/groovy.txt 0444 root bin
+f none share/doc/SUNWopenproj/third-party/index.html.bz2=usr/share/doc/SUNWopenproj/third-party/index.html.bz2 0444 root bin
+f none share/doc/SUNWopenproj/third-party/jgoodies-forms.txt=usr/share/doc/SUNWopenproj/third-party/jgoodies-forms.txt 0444 root bin
+f none share/doc/SUNWopenproj/third-party/lgpl-2.1.txt=usr/share/doc/SUNWopenproj/third-party/lgpl-2.1.txt 0444 root bin
+f none share/doc/SUNWopenproj/third-party/sun-jwsdp.txt=usr/share/doc/SUNWopenproj/third-party/sun-jwsdp.txt 0444 root bin
+f none share/doc/SUNWopenproj/third-party/sun.txt=usr/share/doc/SUNWopenproj/third-party/sun.txt 0444 root bin
+d none bin 0755 root bin
+f none bin/openproj=usr/bin/openproj 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/openproj.desktop=usr/share/applications/openproj.desktop 0755 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWopenproj 0755 root bin
+d none share/doc/SUNWopenproj/third-party 0755 root bin
+d none share/icons 0755 root other
+f none share/icons/openproj.png=usr/share/icons/openproj.png 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/openproj.1=usr/share/man/man1/openproj.1 0644 root bin
+d none share/mime 0755 root root
+d none share/mime/packages 0755 root root
+f none share/mime/packages/openproj.xml=usr/share/mime/packages/openproj.xml 0755 root bin
+d none share/openproj 0755 root sys
+d none share/openproj/lib 0755 root sys
+f none share/openproj/lib/openproj-contrib.jar=usr/share/openproj/lib/openproj-contrib.jar 0755 root bin
+f none share/openproj/lib/openproj-exchange.jar=usr/share/openproj/lib/openproj-exchange.jar 0755 root bin
+f none share/openproj/lib/openproj-reports.jar=usr/share/openproj/lib/openproj-reports.jar 0755 root bin
+f none share/openproj/lib/openproj-script.jar=usr/share/openproj/lib/openproj-script.jar 0755 root bin
+f none share/openproj/openproj.jar=usr/share/openproj/openproj.jar 0755 root bin

@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWxchat-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWxchat-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWxchat-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/apps_xchat_url_handler.schemas=etc/gconf/schemas/apps_xchat_url_handler.schemas 0644 root sys

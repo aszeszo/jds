@@ -1,0 +1,106 @@
+'\" te
+.TH seahorse\-agent 1 "Nov 11, 2009" "seahorse" "GNOME" 
+
+.SH NAME
+seahorse\-agent \- seahorse pass phrase caching agent
+
+.SH SYNOPSIS
+\fBseahorse\-agent\fR
+[\fB\-\-cshell\fR] [\fB\-\-no\-daemonize\fR] [\fB\-\-any-display\fR] [\fB\-\-variables]
+
+.SH "DESCRIPTION"
+.PP
+Seahorse is a GNOME application for managing encryption keys. 
+.PP
+This is the agent program for seahorse which keeps a temporary secure
+storage of your pass phrases in the memory. It also works with the SSH agent to prompt you for SSH passphrases.
+
+.SH "OPTIONS"
+.TP
+\fB\-?, \-\-help\fR
+Show summary of all options and exit.
+.TP
+\fB\-\-usage\fR
+Display brief usage message and exit.
+.TP
+\fB\-c, \-\-cshell\fR
+Print variable GPG_AGENT_INFO for a C type shell.
+.TP
+\fB\-d, \-\-no\-daemonize\fR
+Do not daemonize seahorse\-agent.
+.TP
+\fB\-A, \-\-any\-display\fR
+Do not make sure that requests only come from the X display on which seahorse\-agent was started.
+.TP
+\fB\-\-v, \-\-variables\fR
+Display variable GPG_AGENT_INFO instead of editing gpg.conf.
+.\" End List
+
+.SH "BUGS"
+.PP
+If you find a bug, please report it at 
+ \fIhttp://bugzilla.gnome.org/enter_bug.cgi?product=seahorse\fR.
+
+.SH "AUTHORS"
+.PP
+Jacob
+Perkins
+<jap1@users.sourceforge.net>
+.PP
+Jose Carlos Garcia
+Sogo
+<jsogo@users.sourceforge.net>
+.PP
+Jean
+Schurger
+<jk24@users.sourceforge.net>
+.PP
+Stef
+Walter
+<stef@memberwebs.com>
+.PP
+Adam
+Schreiber
+<sadam@clemson.edu>
+.PP
+This man page was originally written by
+Michael
+Mende
+<debian@menole.net>
+for the Debian system.
+
+.SH "COPYRIGHT"
+.PP
+.br
+Copyright (C) 2001, 2002 Jose Carlos Garcia Sogo
+.br
+Copyright (C) 2002, 2003 Jacob Perkins
+.br
+Copyright (C) 2004, 2006 Nate Nielsen, Adam Schreiber
+
+.SH "LICENSE"
+.PP
+.br
+You are free to distribute this software under the terms of the GNU General Public License.
+.br
+Documentation and help files are covered by GFDL license.
+
+.SH "ATTRIBUTES"
+.PP
+See \fBattributes\fR(5)
+for descriptions of the following attributes:
+.TS
+tab(^G) allbox;
+cw(2.750000i)| cw(2.750000i)
+lw(2.750000i)| lw(2.750000i).
+ATTRIBUTE TYPE^ATTRIBUTE VALUE
+Availability^SUNWseahorse-plugins
+Interface stability^Volatile
+.TE
+
+.SH "SEE ALSO"
+.PP
+\fBseahorse(1)\fR,
+\fBseahorse-tool(1)\fR,
+\fBseahorse-daemon(1)\fR
+...\" LSARC 2009/598 Seahorse Plugins

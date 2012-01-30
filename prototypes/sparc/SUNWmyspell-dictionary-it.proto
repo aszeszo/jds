@@ -1,0 +1,28 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmyspell-dictionary-it.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmyspell-dictionary-it.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmyspell-dictionary-it.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/dictionaries 0755 root bin
+s none lib/firefox/dictionaries/it-IT.aff=../../../../usr/share/spell/myspell/it_IT.aff
+s none lib/firefox/dictionaries/it-IT.dic=../../../../usr/share/spell/myspell/it_IT.dic
+d none lib/thunderbird 0755 root bin
+d none lib/thunderbird/dictionaries 0755 root bin
+s none lib/thunderbird/dictionaries/it-IT.aff=../../../../usr/share/spell/myspell/it_IT.aff
+s none lib/thunderbird/dictionaries/it-IT.dic=../../../../usr/share/spell/myspell/it_IT.dic
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/myspell-dictionary 0755 root bin
+d none share/doc/myspell-dictionary/it_IT 0755 root bin
+f none share/doc/myspell-dictionary/it_IT/GPL.txt=usr/share/doc/myspell-dictionary/it_IT/GPL.txt 0644 root other
+f none share/doc/myspell-dictionary/it_IT/README.txt=usr/share/doc/myspell-dictionary/it_IT/README.txt 0644 root other
+f none share/doc/myspell-dictionary/it_IT/README_it_IT.txt=usr/share/doc/myspell-dictionary/it_IT/README_it_IT.txt 0644 root other
+f none share/doc/myspell-dictionary/it_IT/history.txt=usr/share/doc/myspell-dictionary/it_IT/history.txt 0644 root other
+f none share/doc/myspell-dictionary/it_IT/license.txt=usr/share/doc/myspell-dictionary/it_IT/license.txt 0644 root other
+f none share/doc/myspell-dictionary/it_IT/notes.txt=usr/share/doc/myspell-dictionary/it_IT/notes.txt 0644 root other
+f none share/doc/myspell-dictionary/it_IT/statistiche.ods=usr/share/doc/myspell-dictionary/it_IT/statistiche.ods 0644 root other
+f none share/doc/myspell-dictionary/it_IT/thanks.txt=usr/share/doc/myspell-dictionary/it_IT/thanks.txt 0644 root other
+d none share/spell 0755 root bin
+d none share/spell/myspell 0755 root bin
+f none share/spell/myspell/it_IT.aff=usr/share/spell/myspell/it_IT.aff 0644 root other
+f none share/spell/myspell/it_IT.dic=usr/share/spell/myspell/it_IT.dic 0644 root other

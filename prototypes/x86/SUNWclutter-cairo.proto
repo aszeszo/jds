@@ -1,0 +1,18 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWclutter-cairo.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWclutter-cairo.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWclutter-cairo.copyright
+f none share/doc/SUNWclutter-cairo/AUTHORS=usr/share/doc/SUNWclutter-cairo/AUTHORS 0444 root bin
+f none share/doc/SUNWclutter-cairo/COPYING.bz2=usr/share/doc/SUNWclutter-cairo/COPYING.bz2 0444 root bin
+f none share/doc/SUNWclutter-cairo/ChangeLog.bz2=usr/share/doc/SUNWclutter-cairo/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWclutter-cairo/NEWS.bz2=usr/share/doc/SUNWclutter-cairo/NEWS.bz2 0444 root bin
+f none share/doc/SUNWclutter-cairo/README=usr/share/doc/SUNWclutter-cairo/README 0444 root bin
+d none lib 0755 root bin
+s none lib/libclutter-cairo-0.8.so=libclutter-cairo-0.8.so.0.801.1
+s none lib/libclutter-cairo-0.8.so.0=libclutter-cairo-0.8.so.0.801.1
+f none lib/libclutter-cairo-0.8.so.0.801.1=usr/lib/libclutter-cairo-0.8.so.0.801.1 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWclutter-cairo 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libclutter-cairo-0.8.3=usr/share/man/man3/libclutter-cairo-0.8.3 0644 root bin

@@ -1,0 +1,146 @@
+# Copyright (C) 2009 Sun Microsystems, Inc
+# This file is distributed under the same license as the compiz-desktop-integration package.
+#
+# Desktop Discuss <desktop-discuss@opensolaris.org>, 2009.
+#
+msgid ""
+msgstr ""
+       "Project-Id-Version: compiz-desktop-integration HEAD\n"
+       "Report-Msgid-Bugs-To: \n"
+       "POT-Creation-Date: 2009-12-03 10:19+0800\n"
+       "PO-Revision-Date: 2010-01-20 20:31+0100\n"
+       "Last-Translator: Hosam Al Ali\n"
+       "Language-Team: Arabic language team <i18n-discuss@opensolaris.org>\n"
+       "MIME-Version: 1.0\n"
+       "Content-Type: text/plain; charset=UTF-8\n"
+       "Content-Transfer-Encoding: 8bit\n"
+
+#: ../compiz-config.glade.h:1
+msgid "<b>Status</b>"
+msgstr "<b>حالات</b>"
+
+#: ../compiz-config.glade.h:2
+msgid "<b>System Compatibility checks</b>"
+msgstr "<b>التحقق من توافقية النظام</b>"
+
+#: ../compiz-config.glade.h:3
+msgid "Architecture"
+msgstr "البنية الداخلية "
+
+#: ../compiz-config.glade.h:4
+msgid "Session Type"
+msgstr "نوع الجلسة "
+
+#: ../compiz-config.glade.h:5
+msgid "Video Card"
+msgstr "كرت الشاشة "
+
+#: ../compiz-config.glade.h:6
+msgid "Video Card Driver"
+msgstr "برنامج تشغيل كرت الشاشة "
+
+#: ../compiz-config.glade.h:7
+msgid "Visual Effect System Checks"
+msgstr "التحقق من تأثيرات المرئية للنظام "
+
+#: ../compiz-config.glade.h:8
+msgid "Xserver Configuration"
+msgstr "إعدادات Xserver "
+
+#: ../compiz-config.glade.h:9
+msgid "gtk-close"
+msgstr "gtk-close"
+
+#: ../compiz-config.glade.h:10
+msgid "modify configuration"
+msgstr "تعديل الإعدادات "
+
+#: ../compiz-config.glade.h:11
+msgid "undefined"
+msgstr "غير معدلة "
+
+#: ../compiz-config.glade.h:12
+msgid "unknown"
+msgstr "غير معروف "
+
+#: ../compiz-configure.in:113
+msgid "support 3D acceleration"
+msgstr "دعم التسريع الثلاثي البعد 3D"
+
+#: ../compiz-configure.in:115
+#, c-format
+msgid ""
+"no supported driver for card of type (%s) : Compiz will not run on this "
+"system"
+msgstr ""
+       "لا يدعم التعريف نوع الكرت (%s) : Compiz لن يعمل على هذا النظام "
+
+#: ../compiz-configure.in:116
+msgid "no 3D acceleration"
+msgstr "لا يوجد تسريع ثلاثي البعد 3D"
+
+#: ../compiz-configure.in:131
+msgid "Trusted Session detected : Compiz will not run in this configuration"
+msgstr "تحققت الجلسة الموثوقة : Compiz لن يعمل ضمن هذه الإعدادات"
+
+#: ../compiz-configure.in:132
+msgid "Trusted Session"
+msgstr "الجلسة الموثوقة"
+
+#: ../compiz-configure.in:142
+msgid "Sunray Session detected : Compiz will not run in this configuration"
+msgstr "تحققت الجلسة Sunray : Compiz لن يعمل ضمن هذه الإعدادات"
+
+#: ../compiz-configure.in:143
+msgid "Sunray Session"
+msgstr "جلسة Sunray"
+
+#: ../compiz-configure.in:145
+msgid "Regular Session"
+msgstr "الجلسة المعتادة "
+
+#: ../compiz-configure.in:190 ../compiz-configure.in:241
+msgid "configured"
+msgstr "معير  "
+
+#: ../compiz-configure.in:192 ../compiz-configure.in:243
+msgid "Xorg configuration file is not configured to run the visual effects"
+msgstr "ملف إعدادات Xorg  لم يعير للعمل بالتأثيرات المرئية "
+
+#: ../compiz-configure.in:193 ../compiz-configure.in:244
+msgid "not configured"
+msgstr "غير معير "
+
+#: ../compiz-configure.in:344
+msgid "This system can run the visual effects"
+msgstr "هذا النظام بإمكانه تشغيل التأثيرات المرئية "
+
+#: ../compiz-configure.in:346
+msgid ""
+"This system can run the visual effects but is not configured to do so. Click "
+"on the modify button to configure it."
+msgstr ""
+       "هذا النظام بإمكانه تشغيل التأثيرات المرئية ولكنه غير معير للعمل. إضغط على زر التعديل لتعيره "
+
+#: ../compiz-configure.in:349
+msgid ""
+"This system cannot run the visual effects as it is not running a regular "
+"session"
+msgstr ""
+       "هذا النظام لايمكنه تشغيل التأثيرات المرئية وهي لا تعمل ضمن الجلسة المعتادة "
+
+#: ../compiz-configure.in:353
+msgid ""
+"This system can run the visual effects but the current graphics driver does "
+"not support 3D acceleration. Refer to http://opensolaris.org/os/project/dri/ "
+"for more information about the supported cards"
+msgstr ""
+       "هذا النظام بإمكانه تشغيل التأثيرات المرئية ولكن برنامج تعريف كرت الشاشة لايدعم التسريع الثلاثي البعد 3D إنظر إلى"
+       "http://opensolaris.org/os/project/dri/ لمزيد من المعلومات حول تدعم الكرووت "
+
+#: ../compiz-configure.in:356
+msgid ""
+"This system cannot run the visual effects due to the lack of supported 3D "
+"Video Card Driver"
+msgstr ""
+       "هذا النظام لايمكنه من تشغيل التأثيرات المرئية نظرا لإفتقار لدعم التسريع الثلاثي البعد 3D ضمن تعريف كرت الشاشة "

@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmoznss.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmoznss.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmoznss.copyright
+d none sfw 0755 root bin
+d none sfw/lib 0755 root bin
+d none sfw/lib/mozilla 0755 root sys
+f none sfw/lib/mozilla/libnss3.so=usr/sfw/lib/mozilla/libnss3.so 0755 root sys
+f none sfw/lib/mozilla/libnssckbi.so=usr/sfw/lib/mozilla/libnssckbi.so 0755 root sys
+f none sfw/lib/mozilla/libsmime3.so=usr/sfw/lib/mozilla/libsmime3.so 0755 root sys
+f none sfw/lib/mozilla/libsoftokn3.so=usr/sfw/lib/mozilla/libsoftokn3.so 0755 root sys
+f none sfw/lib/mozilla/libssl3.so=usr/sfw/lib/mozilla/libssl3.so 0755 root sys

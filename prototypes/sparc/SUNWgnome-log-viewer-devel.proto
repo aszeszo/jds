@@ -1,0 +1,12 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-log-viewer-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-log-viewer-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-log-viewer-devel.copyright
+d none include 0755 root bin
+d none include/gnome-system-log 0755 root bin
+f none include/gnome-system-log/logview-debug.h=usr/include/gnome-system-log/logview-debug.h 0644 root bin
+f none include/gnome-system-log/logview-iface-collector.h=usr/include/gnome-system-log/logview-iface-collector.h 0644 root bin
+f none include/gnome-system-log/logview-iface-io.h=usr/include/gnome-system-log/logview-iface-io.h 0644 root bin
+f none include/gnome-system-log/logview-iface-view.h=usr/include/gnome-system-log/logview-iface-view.h 0644 root bin
+f none include/gnome-system-log/logview-iface.h=usr/include/gnome-system-log/logview-iface.h 0644 root bin
+f none include/gnome-system-log/logview-log.h=usr/include/gnome-system-log/logview-log.h 0644 root bin
+f none include/gnome-system-log/logview-plugin.h=usr/include/gnome-system-log/logview-plugin.h 0644 root bin

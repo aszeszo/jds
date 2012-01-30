@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-libs-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-libs-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-libs-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/at-spi.schemas=etc/gconf/schemas/at-spi.schemas 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/at-spi-registryd.desktop=etc/xdg/autostart/at-spi-registryd.desktop 0644 root sys

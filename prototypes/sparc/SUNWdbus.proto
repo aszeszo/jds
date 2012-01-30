@@ -1,0 +1,37 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdbus.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdbus.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdbus.copyright
+f none share/doc/SUNWdbus/AUTHORS=usr/share/doc/SUNWdbus/AUTHORS 0444 root bin
+f none share/doc/SUNWdbus/COPYING.bz2=usr/share/doc/SUNWdbus/COPYING.bz2 0444 root bin
+f none share/doc/SUNWdbus/ChangeLog.bz2=usr/share/doc/SUNWdbus/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWdbus/ChangeLog.pre-1-0.bz2=usr/share/doc/SUNWdbus/ChangeLog.pre-1-0.bz2 0444 root bin
+f none share/doc/SUNWdbus/ChangeLog.pre-1-2.bz2=usr/share/doc/SUNWdbus/ChangeLog.pre-1-2.bz2 0444 root bin
+f none share/doc/SUNWdbus/NEWS.bz2=usr/share/doc/SUNWdbus/NEWS.bz2 0444 root bin
+f none share/doc/SUNWdbus/NEWS.pre-1-0.bz2=usr/share/doc/SUNWdbus/NEWS.pre-1-0.bz2 0444 root bin
+f none share/doc/SUNWdbus/NEWS.pre-1-2.bz2=usr/share/doc/SUNWdbus/NEWS.pre-1-2.bz2 0444 root bin
+f none share/doc/SUNWdbus/README=usr/share/doc/SUNWdbus/README 0444 root bin
+d none bin 0755 root bin
+f none bin/dbus-cleanup-sockets=usr/bin/dbus-cleanup-sockets 0755 root bin
+f none bin/dbus-launch=usr/bin/dbus-launch 0755 root bin
+f none bin/dbus-monitor=usr/bin/dbus-monitor 0755 root bin
+f none bin/dbus-send=usr/bin/dbus-send 0755 root bin
+f none bin/dbus-uuidgen=usr/bin/dbus-uuidgen 0755 root bin
+d none lib 0755 root bin
+d none lib/dbus-1 0755 root bin
+f none lib/dbus-daemon=usr/lib/dbus-daemon 0755 root bin
+d none share 0755 root sys
+d none share/dbus-1 0755 root bin
+d none share/dbus-1/services 0755 root bin
+d none share/dbus-1/system-services 0755 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWdbus 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/dbus-cleanup-sockets.1=usr/share/man/man1/dbus-cleanup-sockets.1 0644 root bin
+f none share/man/man1/dbus-daemon.1=usr/share/man/man1/dbus-daemon.1 0644 root bin
+f none share/man/man1/dbus-launch.1=usr/share/man/man1/dbus-launch.1 0644 root bin
+f none share/man/man1/dbus-monitor.1=usr/share/man/man1/dbus-monitor.1 0644 root bin
+f none share/man/man1/dbus-send.1=usr/share/man/man1/dbus-send.1 0644 root bin
+f none share/man/man1/dbus-uuidgen.1=usr/share/man/man1/dbus-uuidgen.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libdbus-1.3=usr/share/man/man3/libdbus-1.3 0644 root bin

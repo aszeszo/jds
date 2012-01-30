@@ -1,0 +1,31 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompiz-fusion-main-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompiz-fusion-main-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompiz-fusion-main-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/compiz-animation.schemas=etc/gconf/schemas/compiz-animation.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-colorfilter.schemas=etc/gconf/schemas/compiz-colorfilter.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-expo.schemas=etc/gconf/schemas/compiz-expo.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-ezoom.schemas=etc/gconf/schemas/compiz-ezoom.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-imgjpeg.schemas=etc/gconf/schemas/compiz-imgjpeg.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-kdecompat.schemas=etc/gconf/schemas/compiz-kdecompat.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-mag.schemas=etc/gconf/schemas/compiz-mag.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-mousepoll.schemas=etc/gconf/schemas/compiz-mousepoll.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-neg.schemas=etc/gconf/schemas/compiz-neg.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-opacify.schemas=etc/gconf/schemas/compiz-opacify.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-put.schemas=etc/gconf/schemas/compiz-put.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-resizeinfo.schemas=etc/gconf/schemas/compiz-resizeinfo.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-ring.schemas=etc/gconf/schemas/compiz-ring.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-scaleaddon.schemas=etc/gconf/schemas/compiz-scaleaddon.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-session.schemas=etc/gconf/schemas/compiz-session.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-shift.schemas=etc/gconf/schemas/compiz-shift.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-snap.schemas=etc/gconf/schemas/compiz-snap.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-staticswitcher.schemas=etc/gconf/schemas/compiz-staticswitcher.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-text.schemas=etc/gconf/schemas/compiz-text.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-thumbnail.schemas=etc/gconf/schemas/compiz-thumbnail.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-titleinfo.schemas=etc/gconf/schemas/compiz-titleinfo.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-vpswitch.schemas=etc/gconf/schemas/compiz-vpswitch.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-wall.schemas=etc/gconf/schemas/compiz-wall.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-winrules.schemas=etc/gconf/schemas/compiz-winrules.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-workarounds.schemas=etc/gconf/schemas/compiz-workarounds.schemas 0755 root sys

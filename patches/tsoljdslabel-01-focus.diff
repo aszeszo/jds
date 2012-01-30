@@ -1,0 +1,32 @@
+Index: src/tsoljdslabel.c
+===================================================================
+--- src/tsoljdslabel.c	(revision 19)
++++ src/tsoljdslabel.c	(working copy)
+@@ -410,9 +410,9 @@
+ 	g_signal_connect (G_OBJECT (lbuilder), "response",
+ 			  G_CALLBACK (lbuilder_response_cb), NULL);
+ 
++	gtk_widget_show_all (lbuilder);
++
+ 	g_object_set (G_OBJECT (lbuilder), "sl", &upper_clear, NULL);
+-
+-	gtk_widget_show_all (lbuilder);
+ }
+ 
+ 
+@@ -476,6 +476,7 @@
+ 
+ 	putenv ("GTK2_RC_FILES=/usr/share/themes/nimbus/gtk-2.0/gtkrc");
+ 	putenv ("GNOME_DISABLE_CRASH_DIALOG=1");
++	putenv ("GDK_NATIVE_WINDOWS=True");
+ 
+ 	gnome_program_init (PACKAGE, VERSION, LIBGNOMEUI_MODULE, argc, argv, 
+ 			    NULL);
+@@ -528,7 +529,6 @@
+ 	}
+ 	
+ 	if (is_trusted_session (desktop_session)) {
+-		printf ("this is a trusted session\n");
+ 		sl_only = FALSE;
+ 	} else {
+ 		sl_only = TRUE;

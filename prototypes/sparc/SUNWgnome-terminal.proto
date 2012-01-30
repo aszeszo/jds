@@ -1,0 +1,75 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-terminal.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-terminal.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-terminal.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-terminal.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-terminal.copyright
+f none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/AUTHORS=usr/share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/COPYING.bz2=usr/share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/ChangeLog.bz2=usr/share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/ChangeLog.README.bz2=usr/share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/ChangeLog.README.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/ChangeLog.pre-2-23.bz2=usr/share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/ChangeLog.pre-2-23.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/NEWS.bz2=usr/share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/README=usr/share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gnome-terminal=usr/bin/gnome-terminal 0755 root bin
+f none bin/vte=usr/bin/vte 0755 root bin
+d none lib 0755 root bin
+f none lib/gnome-pty-helper=usr/lib/gnome-pty-helper 0755 root bin
+s none lib/libvte.so=libvte.so.9.13.2
+s none lib/libvte.so.9=libvte.so.9.13.2
+f none lib/libvte.so.9.13.2=usr/lib/libvte.so.9.13.2 0755 root bin
+d none lib/python2.4 0755 root bin
+d none lib/python2.4/vendor-packages 0755 root bin
+d none lib/python2.4/vendor-packages/gtk-2.0 0755 root bin
+f none lib/python2.4/vendor-packages/gtk-2.0/vtemodule.so=usr/lib/python2.4/vendor-packages/gtk-2.0/vtemodule.so 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+d none lib/python2.6/vendor-packages/gtk-2.0 0755 root bin
+f none lib/python2.6/vendor-packages/gtk-2.0/vtemodule.so=usr/lib/python2.6/vendor-packages/gtk-2.0/vtemodule.so 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-terminal.desktop=usr/share/applications/gnome-terminal.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-terminal 0755 root bin
+d none share/doc/SUNWgnome-terminal/gnome-terminal-2.30.2 0755 root bin
+d none share/doc/SUNWgnome-terminal/vte-0.24.2 0755 root bin
+d none share/doc/SUNWgnome-terminal/vte-0.24.2/gnome-pty-helper 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome-terminal 0755 root bin
+f none share/gnome-terminal/encodings-dialog.ui=usr/share/gnome-terminal/encodings-dialog.ui 0644 root bin
+f none share/gnome-terminal/keybinding-editor.ui=usr/share/gnome-terminal/keybinding-editor.ui 0644 root bin
+f none share/gnome-terminal/profile-manager.ui=usr/share/gnome-terminal/profile-manager.ui 0644 root bin
+f none share/gnome-terminal/profile-new-dialog.ui=usr/share/gnome-terminal/profile-new-dialog.ui 0644 root bin
+f none share/gnome-terminal/profile-preferences.ui=usr/share/gnome-terminal/profile-preferences.ui 0644 root bin
+f none share/gnome-terminal/skey-challenge.ui=usr/share/gnome-terminal/skey-challenge.ui 0644 root bin
+f none share/gnome-terminal/terminal.about=usr/share/gnome-terminal/terminal.about 0644 root bin
+f none share/gnome-terminal/terminal.xml=usr/share/gnome-terminal/terminal.xml 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-terminal 0755 root bin
+d none share/gnome/help/gnome-terminal/C 0755 root bin
+d none share/gnome/help/gnome-terminal/C/figures 0755 root bin
+f none share/gnome/help/gnome-terminal/C/figures/gnome-terminal-default.png=usr/share/gnome/help/gnome-terminal/C/figures/gnome-terminal-default.png 0644 root bin
+f none share/gnome/help/gnome-terminal/C/figures/gnome-terminal-tabbed.png=usr/share/gnome/help/gnome-terminal/C/figures/gnome-terminal-tabbed.png 0644 root bin
+f none share/gnome/help/gnome-terminal/C/gnome-terminal.xml=usr/share/gnome/help/gnome-terminal/C/gnome-terminal.xml 0644 root bin
+f none share/gnome/help/gnome-terminal/C/legal.xml=usr/share/gnome/help/gnome-terminal/C/legal.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-terminal.1=usr/share/man/man1/gnome-terminal.1 0644 root bin
+f none share/man/man1/vte.1=usr/share/man/man1/vte.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-terminal 0755 root bin
+f none share/omf/gnome-terminal/gnome-terminal-C.omf=usr/share/omf/gnome-terminal/gnome-terminal-C.omf 0644 root bin
+d none share/pygtk 0755 root bin
+d none share/pygtk/2.0 0755 root bin
+d none share/pygtk/2.0/defs 0755 root bin
+f none share/pygtk/2.0/defs/vte.defs=usr/share/pygtk/2.0/defs/vte.defs 0644 root bin
+d none share/vte 0755 root bin
+d none share/vte/termcap 0755 root bin
+f none share/vte/termcap/xterm=usr/share/vte/termcap/xterm 0644 root bin
+f none share/doc/SUNWgnome-terminal/vte-0.24.2/AUTHORS=usr/share/doc/SUNWgnome-terminal/vte-0.24.2/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-terminal/vte-0.24.2/COPYING.bz2=usr/share/doc/SUNWgnome-terminal/vte-0.24.2/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/vte-0.24.2/ChangeLog.bz2=usr/share/doc/SUNWgnome-terminal/vte-0.24.2/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/vte-0.24.2/ChangeLog.pre-git.bz2=usr/share/doc/SUNWgnome-terminal/vte-0.24.2/ChangeLog.pre-git.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/vte-0.24.2/NEWS.bz2=usr/share/doc/SUNWgnome-terminal/vte-0.24.2/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-terminal/vte-0.24.2/README=usr/share/doc/SUNWgnome-terminal/vte-0.24.2/README 0444 root bin
+f none share/doc/SUNWgnome-terminal/vte-0.24.2/gnome-pty-helper/NEWS.bz2=usr/share/doc/SUNWgnome-terminal/vte-0.24.2/gnome-pty-helper/NEWS.bz2 0444 root bin

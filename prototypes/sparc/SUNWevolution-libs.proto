@@ -1,0 +1,52 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWevolution-libs.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWevolution-libs.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWevolution-libs.copyright
+f none share/doc/SUNWevolution-libs/AUTHORS=usr/share/doc/SUNWevolution-libs/AUTHORS 0444 root bin
+f none share/doc/SUNWevolution-libs/COPYING.bz2=usr/share/doc/SUNWevolution-libs/COPYING.bz2 0444 root bin
+f none share/doc/SUNWevolution-libs/COPYING.LIB.bz2=usr/share/doc/SUNWevolution-libs/COPYING.LIB.bz2 0444 root bin
+f none share/doc/SUNWevolution-libs/ChangeLog.bz2=usr/share/doc/SUNWevolution-libs/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWevolution-libs/NEWS.bz2=usr/share/doc/SUNWevolution-libs/NEWS.bz2 0444 root bin
+f none share/doc/SUNWevolution-libs/README=usr/share/doc/SUNWevolution-libs/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gtkhtml-editor-test=usr/bin/gtkhtml-editor-test 0755 root bin
+d none lib 0755 root bin
+s none lib/libgtkhtml-3.14.so=libgtkhtml-3.14.so.19.1.1
+s none lib/libgtkhtml-3.14.so.19=libgtkhtml-3.14.so.19.1.1
+f none lib/libgtkhtml-3.14.so.19.1.1=usr/lib/libgtkhtml-3.14.so.19.1.1 0755 root bin
+s none lib/libgtkhtml-editor.so=libgtkhtml-editor.so.0.0.0
+s none lib/libgtkhtml-editor.so.0=libgtkhtml-editor.so.0.0.0
+f none lib/libgtkhtml-editor.so.0.0.0=usr/lib/libgtkhtml-editor.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWevolution-libs 0755 root bin
+d none share/gtkhtml-3.14 0755 root bin
+f none share/gtkhtml-3.14/gtkhtml-editor-builder.ui=usr/share/gtkhtml-3.14/gtkhtml-editor-builder.ui 0644 root bin
+f none share/gtkhtml-3.14/gtkhtml-editor-manager.ui=usr/share/gtkhtml-3.14/gtkhtml-editor-manager.ui 0644 root bin
+d none share/gtkhtml-3.14/icons 0755 root bin
+f none share/gtkhtml-3.14/icons/bulb.png=usr/share/gtkhtml-3.14/icons/bulb.png 0644 root bin
+f none share/gtkhtml-3.14/icons/confidential-stamp.jpg=usr/share/gtkhtml-3.14/icons/confidential-stamp.jpg 0644 root bin
+f none share/gtkhtml-3.14/icons/draft-paper.png=usr/share/gtkhtml-3.14/icons/draft-paper.png 0644 root bin
+f none share/gtkhtml-3.14/icons/draft-stamp.jpg=usr/share/gtkhtml-3.14/icons/draft-stamp.jpg 0644 root bin
+f none share/gtkhtml-3.14/icons/empty_image.png=usr/share/gtkhtml-3.14/icons/empty_image.png 0644 root bin
+f none share/gtkhtml-3.14/icons/flowers.png=usr/share/gtkhtml-3.14/icons/flowers.png 0644 root bin
+f none share/gtkhtml-3.14/icons/html-viewer.png=usr/share/gtkhtml-3.14/icons/html-viewer.png 0644 root bin
+f none share/gtkhtml-3.14/icons/info_bulb.png=usr/share/gtkhtml-3.14/icons/info_bulb.png 0644 root bin
+f none share/gtkhtml-3.14/icons/midnight-stars.jpg=usr/share/gtkhtml-3.14/icons/midnight-stars.jpg 0644 root bin
+f none share/gtkhtml-3.14/icons/paper.png=usr/share/gtkhtml-3.14/icons/paper.png 0644 root bin
+f none share/gtkhtml-3.14/icons/rect.png=usr/share/gtkhtml-3.14/icons/rect.png 0644 root bin
+f none share/gtkhtml-3.14/icons/ribbon.jpg=usr/share/gtkhtml-3.14/icons/ribbon.jpg 0644 root bin
+f none share/gtkhtml-3.14/icons/rule-blue-center.png=usr/share/gtkhtml-3.14/icons/rule-blue-center.png 0644 root bin
+f none share/gtkhtml-3.14/icons/rule-blue-left.png=usr/share/gtkhtml-3.14/icons/rule-blue-left.png 0644 root bin
+f none share/gtkhtml-3.14/icons/rule-blue-right.png=usr/share/gtkhtml-3.14/icons/rule-blue-right.png 0644 root bin
+f none share/gtkhtml-3.14/icons/rule-yellow-flowers-center.png=usr/share/gtkhtml-3.14/icons/rule-yellow-flowers-center.png 0644 root bin
+f none share/gtkhtml-3.14/icons/rule-yellow-flowers-left.png=usr/share/gtkhtml-3.14/icons/rule-yellow-flowers-left.png 0644 root bin
+f none share/gtkhtml-3.14/icons/rule-yellow-flowers-right.png=usr/share/gtkhtml-3.14/icons/rule-yellow-flowers-right.png 0644 root bin
+f none share/gtkhtml-3.14/icons/texture.png=usr/share/gtkhtml-3.14/icons/texture.png 0644 root bin
+f none share/gtkhtml-3.14/icons/transparent.png=usr/share/gtkhtml-3.14/icons/transparent.png 0644 root bin
+f none share/gtkhtml-3.14/keybindingsrc.emacs=usr/share/gtkhtml-3.14/keybindingsrc.emacs 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gtkhtml-editor-test.1=usr/share/man/man1/gtkhtml-editor-test.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgtkhtml-3.14.3=usr/share/man/man3/libgtkhtml-3.14.3 0644 root bin
+f none share/man/man3/libgtkhtml-editor.3=usr/share/man/man3/libgtkhtml-editor.3 0644 root bin

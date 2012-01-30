@@ -1,0 +1,42 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibcroco-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibcroco-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibcroco-devel.copyright
+d none bin 0755 root bin
+f none bin/croco-0.6-config=usr/bin/croco-0.6-config 0755 root bin
+d none include 0755 root bin
+d none include/libcroco-0.6 0755 root bin
+d none include/libcroco-0.6/libcroco 0755 root bin
+f none include/libcroco-0.6/libcroco/cr-additional-sel.h=usr/include/libcroco-0.6/libcroco/cr-additional-sel.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-attr-sel.h=usr/include/libcroco-0.6/libcroco/cr-attr-sel.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-cascade.h=usr/include/libcroco-0.6/libcroco/cr-cascade.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-declaration.h=usr/include/libcroco-0.6/libcroco/cr-declaration.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-doc-handler.h=usr/include/libcroco-0.6/libcroco/cr-doc-handler.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-enc-handler.h=usr/include/libcroco-0.6/libcroco/cr-enc-handler.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-fonts.h=usr/include/libcroco-0.6/libcroco/cr-fonts.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-input.h=usr/include/libcroco-0.6/libcroco/cr-input.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-num.h=usr/include/libcroco-0.6/libcroco/cr-num.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-om-parser.h=usr/include/libcroco-0.6/libcroco/cr-om-parser.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-parser.h=usr/include/libcroco-0.6/libcroco/cr-parser.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-parsing-location.h=usr/include/libcroco-0.6/libcroco/cr-parsing-location.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-prop-list.h=usr/include/libcroco-0.6/libcroco/cr-prop-list.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-pseudo.h=usr/include/libcroco-0.6/libcroco/cr-pseudo.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-rgb.h=usr/include/libcroco-0.6/libcroco/cr-rgb.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-sel-eng.h=usr/include/libcroco-0.6/libcroco/cr-sel-eng.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-selector.h=usr/include/libcroco-0.6/libcroco/cr-selector.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-simple-sel.h=usr/include/libcroco-0.6/libcroco/cr-simple-sel.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-statement.h=usr/include/libcroco-0.6/libcroco/cr-statement.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-string.h=usr/include/libcroco-0.6/libcroco/cr-string.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-style.h=usr/include/libcroco-0.6/libcroco/cr-style.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-stylesheet.h=usr/include/libcroco-0.6/libcroco/cr-stylesheet.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-term.h=usr/include/libcroco-0.6/libcroco/cr-term.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-tknzr.h=usr/include/libcroco-0.6/libcroco/cr-tknzr.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-token.h=usr/include/libcroco-0.6/libcroco/cr-token.h 0644 root bin
+f none include/libcroco-0.6/libcroco/cr-utils.h=usr/include/libcroco-0.6/libcroco/cr-utils.h 0644 root bin
+f none include/libcroco-0.6/libcroco/libcroco-config.h=usr/include/libcroco-0.6/libcroco/libcroco-config.h 0644 root bin
+f none include/libcroco-0.6/libcroco/libcroco.h=usr/include/libcroco-0.6/libcroco/libcroco.h 0644 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+d none lib/amd64/pkgconfig 0755 root other
+f none lib/amd64/pkgconfig/libcroco-0.6.pc=usr/lib/amd64/pkgconfig/libcroco-0.6.pc 0644 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/libcroco-0.6.pc=usr/lib/pkgconfig/libcroco-0.6.pc 0644 root bin

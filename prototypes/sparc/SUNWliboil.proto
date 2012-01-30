@@ -1,0 +1,29 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWliboil.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWliboil.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWliboil.copyright
+f none share/doc/SUNWliboil/sparc/liboil-0.3.17/AUTHORS=usr/share/doc/SUNWliboil/sparc/liboil-0.3.17/AUTHORS 0444 root bin
+f none share/doc/SUNWliboil/sparc/liboil-0.3.17/COPYING.bz2=usr/share/doc/SUNWliboil/sparc/liboil-0.3.17/COPYING.bz2 0444 root bin
+f none share/doc/SUNWliboil/sparc/liboil-0.3.17/NEWS.bz2=usr/share/doc/SUNWliboil/sparc/liboil-0.3.17/NEWS.bz2 0444 root bin
+f none share/doc/SUNWliboil/sparc/liboil-0.3.17/README=usr/share/doc/SUNWliboil/sparc/liboil-0.3.17/README 0444 root bin
+d none bin 0755 root bin
+f none bin/oil-bugreport=usr/bin/oil-bugreport 0755 root bin
+d none bin/sparcv9 0755 root bin
+f none bin/sparcv9/oil-bugreport=usr/bin/sparcv9/oil-bugreport 0755 root bin
+d none lib 0755 root bin
+s none lib/liboil-0.3.so=liboil-0.3.so.0.3.0
+s none lib/liboil-0.3.so.0=liboil-0.3.so.0.3.0
+f none lib/liboil-0.3.so.0.3.0=usr/lib/liboil-0.3.so.0.3.0 0755 root bin
+d none lib/sparcv9 0755 root bin
+s none lib/sparcv9/liboil-0.3.so=liboil-0.3.so.0.3.0
+s none lib/sparcv9/liboil-0.3.so.0=liboil-0.3.so.0.3.0
+f none lib/sparcv9/liboil-0.3.so.0.3.0=usr/lib/sparcv9/liboil-0.3.so.0.3.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWliboil 0755 root bin
+d none share/doc/SUNWliboil/sparc 0755 root bin
+d none share/doc/SUNWliboil/sparc/liboil-0.3.17 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/oil-bugreport.1=usr/share/man/man1/oil-bugreport.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/liboil-0.3.3=usr/share/man/man3/liboil-0.3.3 0644 root bin

@@ -1,0 +1,22 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-desktop-prefs-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-desktop-prefs-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-desktop-prefs-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/apps_gnome_settings_daemon_housekeeping.schemas=etc/gconf/schemas/apps_gnome_settings_daemon_housekeeping.schemas 0644 root sys
+f none etc/gconf/schemas/apps_gnome_settings_daemon_keybindings.schemas=etc/gconf/schemas/apps_gnome_settings_daemon_keybindings.schemas 0644 root sys
+f none etc/gconf/schemas/apps_gnome_settings_daemon_xrandr.schemas=etc/gconf/schemas/apps_gnome_settings_daemon_xrandr.schemas 0644 root sys
+f none etc/gconf/schemas/control-center.schemas=etc/gconf/schemas/control-center.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_font_rendering.schemas=etc/gconf/schemas/desktop_gnome_font_rendering.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_keybindings.schemas=etc/gconf/schemas/desktop_gnome_keybindings.schemas 0644 root sys
+f none etc/gconf/schemas/desktop_gnome_peripherals_touchpad.schemas=etc/gconf/schemas/desktop_gnome_peripherals_touchpad.schemas 0644 root sys
+f none etc/gconf/schemas/fontilus.schemas=etc/gconf/schemas/fontilus.schemas 0644 root sys
+f none etc/gconf/schemas/gnome-control-center.schemas=etc/gconf/schemas/gnome-control-center.schemas 0644 root sys
+f none etc/gconf/schemas/gnome-settings-daemon.schemas=etc/gconf/schemas/gnome-settings-daemon.schemas 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/gnome-at-session.desktop=etc/xdg/autostart/gnome-at-session.desktop 0644 root sys
+f none etc/xdg/autostart/gnome-settings-daemon.desktop=etc/xdg/autostart/gnome-settings-daemon.desktop 0644 root sys
+d none etc/xdg/menus 0755 root sys
+f none etc/xdg/menus/gnomecc.menu=etc/xdg/menus/gnomecc.menu 0644 root sys

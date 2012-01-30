@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "compiz is not supported on sparc runnning metacity instead"
+/usr/bin/metacity

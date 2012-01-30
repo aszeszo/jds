@@ -1,0 +1,32 @@
+--- nautilus-2.30.1/src/nautilus-pathbar.c.orig	2011-12-02 15:56:23.774834034 +0000
++++ nautilus-2.30.1/src/nautilus-pathbar.c	2011-12-02 15:56:32.033033466 +0000
+@@ -1548,7 +1548,29 @@
+ 			g_object_unref (current_location);
+ 			return;
+ 		}
++	} else if (nautilus_file_is_gone (file)) {
++		gint idx, position;
+ 
++		/* if the current or a parent location is gone, don't do anything, as the view
++		 * will get the event too and call us back.
++		 */
++		current_location = nautilus_file_get_location (current_button_data->file);
++
++		if (g_file_has_prefix (location, current_location)) {
++			/* remove this and the following buttons */
++			position = g_list_position (path_bar->button_list,
++						    g_list_find (path_bar->button_list, button_data));
++
++			if (position != -1) {
++				for (idx = 0; idx <= position; idx++) {
++					gtk_container_remove (GTK_CONTAINER (path_bar),
++							      BUTTON_DATA (path_bar->button_list->data)->button);
++				}
++			}
++		}
++
++		g_object_unref (current_location);
++		return;
+ 	}
+ 	g_object_unref (location);
+ 

@@ -1,0 +1,29 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-screenshot.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-screenshot.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-screenshot.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-screenshot.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-screenshot.copyright
+d none bin 0755 root bin
+s none bin/gnome-panel-screenshot=gnome-screenshot
+f none bin/gnome-screenshot=usr/bin/gnome-screenshot 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gnome-screenshot.desktop=usr/share/applications/gnome-screenshot.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-screenshot 0755 root bin
+f none share/doc/SUNWgnome-screenshot/AUTHORS=usr/share/doc/SUNWgnome-screenshot/AUTHORS 0644 root bin
+f none share/doc/SUNWgnome-screenshot/COPYING.bz2=usr/share/doc/SUNWgnome-screenshot/COPYING.bz2 0644 root bin
+f none share/doc/SUNWgnome-screenshot/ChangeLog.bz2=usr/share/doc/SUNWgnome-screenshot/ChangeLog.bz2 0644 root bin
+f none share/doc/SUNWgnome-screenshot/NEWS.bz2=usr/share/doc/SUNWgnome-screenshot/NEWS.bz2 0644 root bin
+f none share/doc/SUNWgnome-screenshot/README=usr/share/doc/SUNWgnome-screenshot/README 0644 root bin
+d none share/doc/SUNWgnome-screenshot/gnome-screenshot 0755 root bin
+f none share/doc/SUNWgnome-screenshot/gnome-screenshot/ChangeLog.bz2=usr/share/doc/SUNWgnome-screenshot/gnome-screenshot/ChangeLog.bz2 0644 root bin
+d none share/doc/SUNWgnome-screenshot/po 0755 root bin
+f none share/doc/SUNWgnome-screenshot/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-screenshot/po/ChangeLog.bz2 0644 root bin
+d none share/gnome-screenshot 0755 root bin
+f none share/gnome-screenshot/gnome-screenshot.ui=usr/share/gnome-screenshot/gnome-screenshot.ui 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-panel-screenshot.1=usr/share/man/man1/gnome-panel-screenshot.1 0644 root bin
+f none share/man/man1/gnome-screenshot.1=usr/share/man/man1/gnome-screenshot.1 0644 root bin
+d none share/man/man4 0755 root bin

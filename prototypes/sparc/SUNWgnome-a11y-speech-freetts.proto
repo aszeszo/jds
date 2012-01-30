@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-a11y-speech-freetts.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-a11y-speech-freetts.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-a11y-speech-freetts.copyright
+d none bin 0755 root bin
+f none bin/freetts-synthesis-driver=usr/bin/freetts-synthesis-driver 0755 root bin
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_Speech_SynthesisDriver_FreeTTS.server=usr/lib/bonobo/servers/GNOME_Speech_SynthesisDriver_FreeTTS.server 0644 root bin
+s none lib/libfreettsdriver.so=libfreettsdriver.so.7.0.1
+s none lib/libfreettsdriver.so.7=libfreettsdriver.so.7.0.1
+f none lib/libfreettsdriver.so.7.0.1=usr/lib/libfreettsdriver.so.7.0.1 0755 root bin
+d none share 0755 root sys
+d none share/gnome-speech 0755 root bin
+d none share/gnome-speech/drivers 0755 root bin
+d none share/gnome-speech/drivers/freetts 0755 root bin
+f none share/gnome-speech/drivers/freetts/user_addenda.txt=usr/share/gnome-speech/drivers/freetts/user_addenda.txt 0644 root bin
+d none share/jar 0755 root bin
+f none share/jar/freetts-synthesis-driver.jar=usr/share/jar/freetts-synthesis-driver.jar 0644 root bin

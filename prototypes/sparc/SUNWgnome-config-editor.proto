@@ -1,0 +1,56 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-config-editor.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-config-editor.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-config-editor.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-config-editor.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-config-editor.copyright
+f none share/doc/SUNWgnome-config-editor/AUTHORS=usr/share/doc/SUNWgnome-config-editor/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-config-editor/COPYING.bz2=usr/share/doc/SUNWgnome-config-editor/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-config-editor/ChangeLog.bz2=usr/share/doc/SUNWgnome-config-editor/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-config-editor/MAINTAINERS=usr/share/doc/SUNWgnome-config-editor/MAINTAINERS 0444 root bin
+f none share/doc/SUNWgnome-config-editor/NEWS.bz2=usr/share/doc/SUNWgnome-config-editor/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-config-editor/README=usr/share/doc/SUNWgnome-config-editor/README 0444 root bin
+d none bin 0755 root bin
+f none bin/gconf-editor=usr/bin/gconf-editor 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gconf-editor.desktop=usr/share/applications/gconf-editor.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-config-editor 0755 root bin
+d none share/gconf-editor 0755 root other
+d none share/gconf-editor/icons 0755 root bin
+d none share/gconf-editor/icons/hicolor 0755 root bin
+d none share/gconf-editor/icons/hicolor/16x16 0755 root bin
+d none share/gconf-editor/icons/hicolor/16x16/status 0755 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-boolean.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-boolean.png 0644 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-float.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-float.png 0644 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-integer.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-integer.png 0644 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-list.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-list.png 0644 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-pair.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-pair.png 0644 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-schema.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-schema.png 0644 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-string.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-string.png 0644 root bin
+f none share/gconf-editor/icons/hicolor/16x16/status/type-undefined.png=usr/share/gconf-editor/icons/hicolor/16x16/status/type-undefined.png 0644 root bin
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gconf-editor 0755 root bin
+d none share/gnome/help/gconf-editor/C 0755 root bin
+d none share/gnome/help/gconf-editor/C/figures 0755 root bin
+f none share/gnome/help/gconf-editor/C/figures/entry-blank.png=usr/share/gnome/help/gconf-editor/C/figures/entry-blank.png 0644 root bin
+f none share/gnome/help/gconf-editor/C/figures/entry-bool.png=usr/share/gnome/help/gconf-editor/C/figures/entry-bool.png 0644 root bin
+f none share/gnome/help/gconf-editor/C/figures/entry-list.png=usr/share/gnome/help/gconf-editor/C/figures/entry-list.png 0644 root bin
+f none share/gnome/help/gconf-editor/C/figures/entry-number.png=usr/share/gnome/help/gconf-editor/C/figures/entry-number.png 0644 root bin
+f none share/gnome/help/gconf-editor/C/figures/entry-schema.png=usr/share/gnome/help/gconf-editor/C/figures/entry-schema.png 0644 root bin
+f none share/gnome/help/gconf-editor/C/figures/entry-string.png=usr/share/gnome/help/gconf-editor/C/figures/entry-string.png 0644 root bin
+f none share/gnome/help/gconf-editor/C/figures/gconf_editor_anno_window.png=usr/share/gnome/help/gconf-editor/C/figures/gconf_editor_anno_window.png 0644 root bin
+f none share/gnome/help/gconf-editor/C/gconf-editor.xml=usr/share/gnome/help/gconf-editor/C/gconf-editor.xml 0644 root bin
+f none share/gnome/help/gconf-editor/C/legal.xml=usr/share/gnome/help/gconf-editor/C/legal.xml 0644 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/48x48 0755 root other
+d none share/icons/hicolor/48x48/apps 0755 root other
+f none share/icons/hicolor/48x48/apps/gconf-editor.png=usr/share/icons/hicolor/48x48/apps/gconf-editor.png 0644 root other
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gconf-editor.1=usr/share/man/man1/gconf-editor.1 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gconf-editor 0755 root bin
+f none share/omf/gconf-editor/gconf-editor-C.omf=usr/share/omf/gconf-editor/gconf-editor-C.omf 0644 root bin

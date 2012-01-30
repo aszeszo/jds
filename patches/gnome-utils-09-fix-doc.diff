@@ -1,0 +1,68 @@
+--- gnome-utils-2.30.0/gsearchtool/help/C/gnome-search-tool.xml.orig	2011-05-10 11:50:18.220303061 +0100
++++ gnome-utils-2.30.0/gsearchtool/help/C/gnome-search-tool.xml	2011-05-10 11:50:26.896811154 +0100
+@@ -33,10 +33,8 @@
+       <holder>Dennis Cranston</holder> 
+     </copyright>
+     <copyright> 
+-      <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year> 
++	<holder>Oracle and/or its affiliates. All rights reserved.</holder>  
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -66,10 +64,10 @@
+ 	</affiliation> 
+       </author> 
+       <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris</firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname> 
++	  <orgname>Oracle Corporation</orgname> 
+ 	  <address></address> 
+ 	</affiliation> 
+       </author> 
+--- gnome-utils-2.30.0/logview/help/C/gnome-system-log.xml.orig	2011-05-10 15:45:28.502656005 +0100
++++ gnome-utils-2.30.0/logview/help/C/gnome-system-log.xml	2011-05-10 15:45:54.779604412 +0100
+@@ -28,8 +28,8 @@
+     </abstract>
+ 
+     <copyright> 
+-      <year>2003</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2003</year> <year>2011</year> 
++	<holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -51,10 +51,10 @@
+ 
+    <authorgroup> 
+    <author> 
+-		<firstname>Sun</firstname> 
+-		<surname>GNOME Documentation Team</surname> 
++		<firstname>Oracle Solaris</firstname> 
++		<surname>Desktop Documentation Team</surname> 
+ 		<affiliation> 
+-	  	<orgname>Sun Microsystems</orgname> 
++	  	<orgname>Oracle Corporation</orgname> 
+ 	  	<address> <email>gdocteam@sun.com</email> </address> 
+ 		</affiliation> 
+    </author> 
+diff -urN gnome-utils.orig/gnome-dictionary/src/gdict-about.c gnome-utils.new/gnome-dictionary/src/gdict-about.c
+--- gnome-utils.orig/gnome-dictionary/src/gdict-about.c	2011-06-27 14:40:09.696632183 +0100
++++ gnome-utils.new/gnome-dictionary/src/gdict-about.c	2011-06-27 14:55:35.885712165 +0100
+@@ -46,7 +46,7 @@
+   };
+ 
+   const gchar *documenters[] = {
+-    "Sun GNOME Documentation Team <gdocteam@sun.com>",
++    "Oracle Solaris Desktop Documentation Team",
+     "John Fleck <jfleck@inkstain.net>",
+     "Emmanuele Bassi <ebassi@gmail.com>",
+     NULL

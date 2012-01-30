@@ -1,0 +1,146 @@
+diff -urN system-config-printer-1.0.16/Makefile.am ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/Makefile.am
+--- system-config-printer-1.0.16/Makefile.am	2011-06-16 13:30:10.267593485 +0000
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/Makefile.am	2011-06-16 13:31:09.822393773 +0000
+@@ -1,4 +1,4 @@
+-SUBDIRS=po
++SUBDIRS=po help
+ 
+ EXPORT_MODULES=					\
+ 	cupshelpers/__init__.py			\
+diff -urN system-config-printer-1.0.16/configure.in ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/configure.in
+--- system-config-printer-1.0.16/configure.in	2009-03-13 17:08:52.000000000 +0000
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/configure.in	2011-06-16 13:32:15.747201771 +0000
+@@ -2,6 +2,7 @@
+ AC_CONFIG_SRCDIR(system-config-printer.py)
+ AM_INIT_AUTOMAKE([dist-bzip2 subdir-objects 1.6])
+ IT_PROG_INTLTOOL
++GNOME_DOC_INIT
+ AM_GNU_GETTEXT([external])
+ AM_PATH_PYTHON
+ PACKAGE="AC_PACKAGE_NAME"
+@@ -22,4 +23,6 @@
+ system-config-printer
+ system-config-printer-applet
+ ])
+-AC_OUTPUT
++AC_OUTPUT([
++help/Makefile
++])
+diff -urN system-config-printer-1.0.16/help/Makefile.am ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/help/Makefile.am
+--- system-config-printer-1.0.16/help/Makefile.am	1970-01-01 00:00:00.000000000 +0000
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/help/Makefile.am	2011-06-16 13:33:29.820297492 +0000
+@@ -0,0 +1,31 @@
++include $(top_srcdir)/gnome-doc-utils.make
++figdir = graphics
++DOC_MODULE = system-config-printer
++dist-hook: app-dist-hook
++
++DOC_FIGURES = graphics/Advanced_Server_Settings.png
++DOC_FIGURES += graphics/autodetect-create-print-queue.png
++DOC_FIGURES += graphics/BasicServerSettings.png
++DOC_FIGURES += graphics/change-driver.png
++DOC_FIGURES += graphics/choose-driver.png
++DOC_FIGURES += graphics/ConnecttoCUPSserver.png
++DOC_FIGURES += graphics/cups-web-admin.png
++DOC_FIGURES += graphics/job-queue-view.png
++DOC_FIGURES += graphics/menu-print-manager.png
++DOC_FIGURES += graphics/new-class-1.png
++DOC_FIGURES += graphics/new-class-2.png
++DOC_FIGURES += graphics/print-jobs-queues.png
++DOC_FIGURES += graphics/printer-access-control.png
++DOC_FIGURES += graphics/printer-job-options.png
++DOC_FIGURES += graphics/printer-options.png
++DOC_FIGURES += graphics/printer-policies.png
++DOC_FIGURES += graphics/printer-settings.png
++DOC_FIGURES += graphics/published-printers-final.png
++DOC_FIGURES += graphics/select-device-ipp.png
++DOC_FIGURES += graphics/select-device-jetdirect.png
++DOC_FIGURES += graphics/select-device-lpd.png
++DOC_FIGURES += graphics/select-device-other.png
++DOC_FIGURES += graphics/sharing-unsharing-final.png
++DOC_FIGURES += graphics/view-print-queue.png
++DOC_LINGUAS = C
++
+diff -urN system-config-printer-1.0.16/help/system-config-printer.omf.in ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/help/system-config-printer.omf.in
+--- system-config-printer-1.0.16/help/system-config-printer.omf.in	1970-01-01 00:00:00.000000000 +0000
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/help/system-config-printer.omf.in	2011-07-05 17:09:54.406579454 +0000
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<omf>
++  <resource>
++    <title>
++      system-config-printer
++    </title>
++    <date>
++      2011-06-16
++    </date>
++    <type>
++	User's guide
++    </type>
++    <subject category="System|Other"/>
++    <format mime="text/xml"/>
++    <identifier url="file:///usr/share/gnome/help/system-config-printer/C/system-config-printer.xml"/>
++    <language code="C"/>
++    <relation seriesid="38937ae4-85dc-11da-8508-d0ce7329dddd"/>
++    <rights type="GNU FDL" license.version="1.1" holder="Oracle and/or its affiliates. All rights reserved."/>
++  </resource>
++</omf>
+diff -urN system-config-printer-1.0.16/system-config-printer.glade ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/system-config-printer.glade
+--- system-config-printer-1.0.16/system-config-printer.glade	2011-06-16 13:30:10.265287421 +0000
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/system-config-printer.glade	2011-06-16 13:31:09.825638162 +0000
+@@ -302,11 +302,11 @@
+ 		<widget class="GtkMenu" id="menuitem7_menu">
+ 
+ 		  <child>
+-		    <widget class="GtkImageMenuItem" id="troubleshoot">
++		    <widget class="GtkImageMenuItem" id="contents">
+ 		      <property name="visible">True</property>
+-		      <property name="label" translatable="yes">_Troubleshoot</property>
++		      <property name="label" translatable="yes">_Contents</property>
+ 		      <property name="use_underline">True</property>
+-		      <signal name="activate" handler="on_troubleshoot_activate" last_modification_time="Mon, 04 Feb 2008 13:34:51 GMT"/>
++		      <signal name="activate" handler="on_contents_activate" last_modification_time="Wed, 15 Jun 2011 11:27:51 GMT"/>
+ 		      <accelerator key="F1" modifiers="0" signal="activate"/>
+ 
+ 		      <child internal-child="image">
+@@ -322,6 +322,24 @@
+ 		      </child>
+ 		    </widget>
+ 		  </child>
++		  <child>
++		    <widget class="GtkImageMenuItem" id="troubleshoot">
++		      <property name="visible">True</property>
++		      <property name="label" translatable="yes">_Troubleshoot</property>
++		      <property name="use_underline">True</property>
++		      <signal name="activate" handler="on_troubleshoot_activate" last_modification_time="Mon, 04 Feb 2008 13:34:51 GMT"/>
++
++		      <child internal-child="image">
++			<widget class="GtkImage" id="image114">
++			  <property name="visible">True</property>
++			  <property name="xalign">0.5</property>
++			  <property name="yalign">0.5</property>
++			  <property name="xpad">0</property>
++			  <property name="ypad">0</property>
++			</widget>
++		      </child>
++		    </widget>
++		  </child>
+ 
+ 		  <child>
+ 		    <widget class="GtkImageMenuItem" id="about">
+diff -urN system-config-printer-1.0.16/system-config-printer.py ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/system-config-printer.py
+--- system-config-printer-1.0.16/system-config-printer.py	2011-06-16 13:30:10.278395102 +0000
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/system-config-printer.py	2011-06-16 13:31:09.826921520 +0000
+@@ -2427,6 +2427,12 @@
+         name = unicode (model.get_value (iter, 2))
+         self.set_system_or_user_default_printer (name)
+ 
++    def on_contents_activate(self, widget):
++        props = { gnome.PARAM_APP_DATADIR : os.path.join("/",
++                    'usr/share/gnome/help') }
++        gnome.program_init('system-config-printer', '0.1', properties=props)
++        gnome.help_display('system-config-printer')
++
+     def on_troubleshoot_activate(self, widget):
+         if not self.__dict__.has_key ('troubleshooter'):
+             self.troubleshooter = troubleshoot.run (self.on_troubleshoot_quit)

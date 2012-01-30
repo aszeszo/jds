@@ -1,0 +1,34 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWclutter-gst-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWclutter-gst-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWclutter-gst-devel.copyright
+d none include 0755 root bin
+d none include/clutter-1.0 0755 root bin
+d none include/clutter-1.0/clutter-gst 0755 root bin
+f none include/clutter-1.0/clutter-gst/clutter-gst-util.h=usr/include/clutter-1.0/clutter-gst/clutter-gst-util.h 0644 root bin
+f none include/clutter-1.0/clutter-gst/clutter-gst-version.h=usr/include/clutter-1.0/clutter-gst/clutter-gst-version.h 0644 root bin
+f none include/clutter-1.0/clutter-gst/clutter-gst-video-sink.h=usr/include/clutter-1.0/clutter-gst/clutter-gst-video-sink.h 0644 root bin
+f none include/clutter-1.0/clutter-gst/clutter-gst-video-texture.h=usr/include/clutter-1.0/clutter-gst/clutter-gst-video-texture.h 0644 root bin
+f none include/clutter-1.0/clutter-gst/clutter-gst.h=usr/include/clutter-1.0/clutter-gst/clutter-gst.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/clutter-gst-1.0.pc=usr/lib/pkgconfig/clutter-gst-1.0.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/clutter-gst 0755 root bin
+f none share/gtk-doc/html/clutter-gst/ClutterGstVideoSink.html=usr/share/gtk-doc/html/clutter-gst/ClutterGstVideoSink.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/ClutterGstVideoTexture.html=usr/share/gtk-doc/html/clutter-gst/ClutterGstVideoTexture.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/ch01.html=usr/share/gtk-doc/html/clutter-gst/ch01.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/ch02.html=usr/share/gtk-doc/html/clutter-gst/ch02.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/clutter-gst-Utilities.html=usr/share/gtk-doc/html/clutter-gst/clutter-gst-Utilities.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/clutter-gst-Versioning-Macros.html=usr/share/gtk-doc/html/clutter-gst/clutter-gst-Versioning-Macros.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/clutter-gst.devhelp=usr/share/gtk-doc/html/clutter-gst/clutter-gst.devhelp 0644 root bin
+f none share/gtk-doc/html/clutter-gst/clutter-gst.devhelp2=usr/share/gtk-doc/html/clutter-gst/clutter-gst.devhelp2 0644 root bin
+f none share/gtk-doc/html/clutter-gst/home.png=usr/share/gtk-doc/html/clutter-gst/home.png 0644 root bin
+f none share/gtk-doc/html/clutter-gst/index.html=usr/share/gtk-doc/html/clutter-gst/index.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/index.sgml=usr/share/gtk-doc/html/clutter-gst/index.sgml 0644 root bin
+f none share/gtk-doc/html/clutter-gst/left.png=usr/share/gtk-doc/html/clutter-gst/left.png 0644 root bin
+f none share/gtk-doc/html/clutter-gst/license.html=usr/share/gtk-doc/html/clutter-gst/license.html 0644 root bin
+f none share/gtk-doc/html/clutter-gst/right.png=usr/share/gtk-doc/html/clutter-gst/right.png 0644 root bin
+f none share/gtk-doc/html/clutter-gst/style.css=usr/share/gtk-doc/html/clutter-gst/style.css 0644 root bin
+f none share/gtk-doc/html/clutter-gst/up.png=usr/share/gtk-doc/html/clutter-gst/up.png 0644 root bin

@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsqlite3tcl.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsqlite3tcl.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsqlite3tcl.copyright
+d none lib 0755 root bin
+d none lib/tcl8.4 0755 root bin
+d none lib/tcl8.4/sqlite3 0755 root bin
+f none lib/tcl8.4/sqlite3/libtclsqlite3.so=usr/lib/tcl8.4/sqlite3/libtclsqlite3.so 0755 root bin
+f none lib/tcl8.4/sqlite3/pkgIndex.tcl=usr/lib/tcl8.4/sqlite3/pkgIndex.tcl 0644 root bin
+d none lib/tcl8.4/sqlite3/sparcv9 0755 root bin
+f none lib/tcl8.4/sqlite3/sparcv9/libtclsqlite3.so=usr/lib/tcl8.4/sqlite3/sparcv9/libtclsqlite3.so 0755 root bin

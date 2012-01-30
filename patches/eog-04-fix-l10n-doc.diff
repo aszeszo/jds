@@ -1,0 +1,1220 @@
+diff -r abdae61b2e36 help/ca/eog.xml
+--- a/help/ca/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/ca/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Equip de documentació del GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/cs/eog.xml
+--- a/help/cs/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/cs/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Dokumentační tým GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/da/eog.xml
+--- a/help/da/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/da/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOME-dokumentationsholdet</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Manual til Billedfremviser v. 2.7</revnumber>
+ 		<date>Februar 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Manual til GNOME's Øje v. 2.6</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Manual til GNOME's Øje v. 2.5</revnumber> 
+ 		<date>September 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Manual til GNOME's Øje v. 2.4</revnumber> 
+ 		<date>Januar 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Manual til GNOME's Øje v. 2.3</revnumber> 
+ 		<date>Oktober 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Manual til GNOME's Øje v. 2.2</revnumber> 
+ 		<date>August 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Manual til GNOME's Øje v. 2.1</revnumber> 
+ 		<date>Juli 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Manual til GNOME's Øje v. 2.0</revnumber> 
+ 		<date>Maj 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-dokumentationsholdet</para>
++	  		<para role="author">Oracle Solaris Desktop-dokumentationsholdet</para>
+ 	  		<para role="publisher">GNOME-dokumentationsprojektet</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/de/eog.xml
+--- a/help/de/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/de/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOME-Dokumentationsteam</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Bildbetrachter-Handbuch V2.7</revnumber>
+ 		<date>Februar 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Eye of GNOME-Handbuch V2.6</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Eye of GNOME-Handbuch V2.3</revnumber> 
+ 		<date>September 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Eye of GNOME-Handbuch V2.4</revnumber> 
+ 		<date>Januar 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Eye of GNOME-Handbuch V2.3</revnumber> 
+ 		<date>Oktober 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Eye of GNOME-Handbuch V2.2</revnumber> 
+ 		<date>August 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Eye of GNOME-Handbuch V2.1</revnumber> 
+ 		<date>Juli 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Eye of GNOME-Handbuch V2.0</revnumber> 
+ 		<date>Mai 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME-Dokumentationsteam</para>
++	  		<para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+ 	  		<para role="publisher">GNOME-Dokumentationsprojekt</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/el/eog.xml
+--- a/help/el/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/el/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Ομάδα τεκμηρίωσης του GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/en_GB/eog.xml
+--- a/help/en_GB/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/en_GB/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris</firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Image Viewer Manual V2.7</revnumber>
+ 		<date>February 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.6</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.5</revnumber> 
+ 		<date>September 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.4</revnumber> 
+ 		<date>January 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.3</revnumber> 
+ 		<date>October 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.2</revnumber> 
+ 		<date>August 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.1</revnumber> 
+ 		<date>July 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.0</revnumber> 
+ 		<date>May 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/es/eog.xml
+--- a/help/es/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/es/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Equipo de documentación de Gnome</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/eu/eog.xml
+--- a/help/eu/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/eu/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -98,7 +98,7 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOMEren dokumentazio-taldea</surname> 
+ 	<affiliation> 
+ 	  <orgname>Sun Microsystems </orgname>  
+diff -r abdae61b2e36 help/fi/eog.xml
+--- a/help/fi/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/fi/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Gnome dokumentointiryhmä</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/fr/eog.xml
+--- a/help/fr/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/fr/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Équipe de documentation GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/it/eog.xml
+--- a/help/it/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/it/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris</firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Manuale di Visualizzatore di immagini V2.7</revnumber>
+ 		<date>Febbraio 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Manuale di Eye of GNOME V2.6</revnumber> 
+ 		<date>Novembre 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Manuale di Eye of GNOME V2.5</revnumber> 
+ 		<date>Settembre 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Manuale di Eye of GNOME V2.4</revnumber> 
+ 		<date>Gennaio 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Manuale di Eye of GNOME V2.3</revnumber> 
+ 		<date>Ottobre 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Manuale di Eye of GNOME V2.2</revnumber> 
+ 		<date>Agosto 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Manuale di Eye of GNOME V2.1</revnumber> 
+ 		<date>Luglio 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Manuale di Eye of GNOME V2.0</revnumber> 
+ 		<date>Maggio 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Progetto di documentazione di GNOME</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/ja/eog.xml
+--- a/help/ja/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/ja/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000 年</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOME ドキュメンテーションチーム</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Image Viewer Manual V2.7</revnumber>
+ 		<date>February 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.6</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.5</revnumber> 
+ 		<date>September 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.4</revnumber> 
+ 		<date>January 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Eye of GNOME のマニュアル V2.3</revnumber> 
+ 		<date>October 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Eye of GNOME のマニュアル V2.2</revnumber> 
+ 		<date>2002 年 8 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Eye of GNOME のマニュアル V2.1</revnumber> 
+ 		<date>2002 年 7 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Eye of GNOME のマニュアル V2.0</revnumber> 
+ 		<date>2002 年 5 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME ドキュメンテーションプロジェクト</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/ko/eog.xml
+--- a/help/ko/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/ko/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>그놈 문서 팀</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/oc/eog.xml
+--- a/help/oc/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/oc/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -157,10 +156,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Còla de documentacion de GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/pl/eog.xml
+--- a/help/pl/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/pl/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Projekt dokumentacji GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Podręcznik przeglądarki obrazów V2.7</revnumber>
+ 		<date>Luty 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Podręcznik Eye of GNOME V2.6</revnumber> 
+ 		<date>Listopad 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Podręcznik Eye of GNOME V2.5</revnumber> 
+ 		<date>Wrzesień 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Podręcznik Eye of GNOME V2.4</revnumber> 
+ 		<date>Styczeń 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Podręcznik Eye of GNOME V2.3</revnumber> 
+ 		<date>Październik 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Podręcznik Eye of GNOME V2.2</revnumber> 
+ 		<date>Sierpień 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Podręcznik Eye of GNOME V2.1</revnumber> 
+ 		<date>Lipiec 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Podręcznik Eye of GNOME V2.0</revnumber> 
+ 		<date>Maj 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Projekt dokumentacji GNOME</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/pt_BR/eog.xml
+--- a/help/pt_BR/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/pt_BR/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Equipe de Documentação do GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/ru/eog.xml
+--- a/help/ru/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/ru/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris</firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Руководство по программе просмотра изображений V2.7</revnumber>
+ 		<date>Февраль 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Руководство по программе «Глаз GNOME» V2.6</revnumber> 
+ 		<date>Ноябрь 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Руководство по программе «Глаз GNOME» V2.5</revnumber> 
+ 		<date>Сентябрь 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Руководство по программе «Глаз GNOME» V2.4</revnumber> 
+ 		<date>Январь 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Руководство по программе «Глаз GNOME» V2.3</revnumber> 
+ 		<date>Октябрь 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Руководство по программе «Глаз GNOME» V2.2</revnumber> 
+ 		<date>Август 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Руководство по программе «Глаз GNOME» V2.1</revnumber> 
+ 		<date>Июль 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Руководство по программе «Глаз GNOME» V2.0</revnumber> 
+ 		<date>Май 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">Проект документирования GNOME</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/sv/eog.xml
+--- a/help/sv/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/sv/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -101,7 +100,7 @@
+ 	<firstname>Suns</firstname> 
+ 	<surname>GNOME-dokumentationsteam</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/uk/eog.xml
+--- a/help/uk/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/uk/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>Команда документування GNOME</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+diff -r abdae61b2e36 help/zh_CN/eog.xml
+--- a/help/zh_CN/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/zh_CN/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
+-	<surname>GNOME Documentation Team</surname> 
++	<firstname>Oracle Solaris</firstname> 
++	<surname>Desktop Documentation Team</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Image Viewer Manual V2.7</revnumber>
+ 		<date>February 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.6</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.5</revnumber> 
+ 		<date>September 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.4</revnumber> 
+ 		<date>January 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Eye of GNOME 手册 V2.3</revnumber> 
+ 		<date>October 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>GNOME 之眼手册 V2.2</revnumber> 
+ 		<date>2002 年 8 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>GNOME 之眼手册 V2.1</revnumber> 
+ 		<date>2002 年 7 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>GNOME 之眼手册 V2.0</revnumber> 
+ 		<date>2002 年 5 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME Documentation Project</para>
+ 		</revdescription> 
+     </revision> 
+diff -r abdae61b2e36 help/zh_TW/eog.xml
+--- a/help/zh_TW/eog.xml	Fri Jul 08 14:21:47 2011 +0800
++++ b/help/zh_TW/eog.xml	Fri Jul 08 16:35:43 2011 +0800
+@@ -29,9 +29,8 @@
+     </copyright>
+     <copyright> 
+       <year>2002</year> 
+-      <year>2003</year> 
+-      <year>2004</year> 
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright> 
+     <copyright> 
+       <year>2000</year> 
+@@ -98,10 +97,10 @@
+ 	</affiliation>
+    </author>
+    <author> 
+-	<firstname>Sun</firstname> 
++	<firstname>Oracle Solaris</firstname> 
+ 	<surname>GNOME 文件小組</surname> 
+ 	<affiliation> 
+-	  <orgname>Sun Microsystems</orgname>  
++	  <orgname>Oracle Corporation</orgname>  
+ 	</affiliation> 
+    </author> 
+    <author> 
+@@ -145,7 +144,7 @@
+ 		<revnumber>Image Viewer Manual V2.7</revnumber>
+ 		<date>February 2004</date>
+ 		<revdescription>
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription>
+     </revision>
+@@ -153,7 +152,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.6</revnumber> 
+ 		<date>November 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription> 
+     </revision>
+@@ -161,7 +160,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.5</revnumber> 
+ 		<date>September 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription> 
+     </revision>
+@@ -169,7 +168,7 @@
+ 		<revnumber>Eye of GNOME Manual V2.4</revnumber> 
+ 		<date>January 2003</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription> 
+     </revision>
+@@ -177,7 +176,7 @@
+ 		<revnumber>Eye of GNOME 手冊 V2.3</revnumber> 
+ 		<date>October 2002</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription> 
+     </revision>
+@@ -185,7 +184,7 @@
+ 		<revnumber>Eye of GNOME 手冊 V2.2</revnumber> 
+ 		<date>2002 年 8 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription> 
+     </revision>
+@@ -193,7 +192,7 @@
+ 		<revnumber>Eye of GNOME 手冊 V2.1</revnumber> 
+ 		<date>2002 年 7 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription> 
+     </revision> 
+@@ -201,7 +200,7 @@
+ 		<revnumber>Eye of GNOME 手冊 V2.0</revnumber> 
+ 		<date>2002 年 5 月</date> 
+ 		<revdescription> 
+-	  		<para role="author">Sun GNOME Documentation Team</para>
++	  		<para role="author">Oracle Solaris Desktop Documentation Team</para>
+ 	  		<para role="publisher">GNOME 文件專案</para>
+ 		</revdescription> 
+     </revision> 

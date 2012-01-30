@@ -1,0 +1,183 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-l10ndocument-zhTW.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-l10ndocument-zhTW.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-zhTW.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-l10ndocument-zhTW.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-l10ndocument-zhTW.copyright
+d none share 0755 root sys
+d none share/gnome 0755 root other
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/baobab 0755 root bin
+d none share/gnome/help/baobab/zh_TW 0755 root bin
+f none share/gnome/help/baobab/zh_TW/baobab.xml=usr/share/gnome/help/baobab/zh_TW/baobab.xml 0644 root bin
+d none share/gnome/help/baobab/zh_TW/figures 0755 root bin
+s none share/gnome/help/baobab/zh_TW/figures/baobab_fullscan.png=../../C/figures/baobab_fullscan.png
+s none share/gnome/help/baobab/zh_TW/figures/baobab_prefs.png=../../C/figures/baobab_prefs.png
+s none share/gnome/help/baobab/zh_TW/figures/baobab_remote.png=../../C/figures/baobab_remote.png
+s none share/gnome/help/baobab/zh_TW/figures/baobab_ringschart1.png=../../C/figures/baobab_ringschart1.png
+s none share/gnome/help/baobab/zh_TW/figures/baobab_ringschart2.png=../../C/figures/baobab_ringschart2.png
+s none share/gnome/help/baobab/zh_TW/figures/baobab_treemaps.png=../../C/figures/baobab_treemaps.png
+s none share/gnome/help/baobab/zh_TW/figures/baobab_window.png=../../C/figures/baobab_window.png
+d none share/gnome/help/clock 0755 root bin
+d none share/gnome/help/clock/zh_TW 0755 root bin
+f none share/gnome/help/clock/zh_TW/clock.xml=usr/share/gnome/help/clock/zh_TW/clock.xml 0644 root bin
+d none share/gnome/help/clock/zh_TW/figures 0755 root bin
+f none share/gnome/help/clock/zh_TW/figures/clock_applet.png=usr/share/gnome/help/clock/zh_TW/figures/clock_applet.png 0644 root bin
+f none share/gnome/help/clock/zh_TW/legal.xml=usr/share/gnome/help/clock/zh_TW/legal.xml 0644 root bin
+d none share/gnome/help/copyright 0755 root bin
+d none share/gnome/help/copyright/zh_TW 0755 root bin
+f none share/gnome/help/copyright/zh_TW/COPYING.gnome.gz=usr/share/gnome/help/copyright/zh_TW/COPYING.gnome.gz 0644 root bin
+d none share/gnome/help/eog 0755 root bin
+d none share/gnome/help/eog/zh_TW 0755 root bin
+f none share/gnome/help/eog/zh_TW/eog.xml=usr/share/gnome/help/eog/zh_TW/eog.xml 0644 root bin
+d none share/gnome/help/eog/zh_TW/figures 0755 root bin
+s none share/gnome/help/eog/zh_TW/figures/eog_save_as_window.png=../../C/figures/eog_save_as_window.png
+f none share/gnome/help/eog/zh_TW/figures/eog_start_window.png=usr/share/gnome/help/eog/zh_TW/figures/eog_start_window.png 0644 root bin
+s none share/gnome/help/eog/zh_TW/figures/eog_toolbar_editor_window.png=../../C/figures/eog_toolbar_editor_window.png
+d none share/gnome/help/fsexam 0755 root bin
+d none share/gnome/help/fsexam/zh_TW 0755 root bin
+d none share/gnome/help/fsexam/zh_TW/figures 0755 root bin
+f none share/gnome/help/fsexam/zh_TW/figures/fsexam-pref.png=usr/share/gnome/help/fsexam/zh_TW/figures/fsexam-pref.png 0644 root bin
+f none share/gnome/help/fsexam/zh_TW/figures/fsexam.png=usr/share/gnome/help/fsexam/zh_TW/figures/fsexam.png 0644 root bin
+f none share/gnome/help/fsexam/zh_TW/fsexam.xml=usr/share/gnome/help/fsexam/zh_TW/fsexam.xml 0644 root bin
+d none share/gnome/help/gcalctool 0755 root bin
+d none share/gnome/help/gcalctool/zh_TW 0755 root bin
+f none share/gnome/help/gcalctool/zh_TW/absolute.page=usr/share/gnome/help/gcalctool/zh_TW/absolute.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/base.page=usr/share/gnome/help/gcalctool/zh_TW/base.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/boolean.page=usr/share/gnome/help/gcalctool/zh_TW/boolean.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/complex.page=usr/share/gnome/help/gcalctool/zh_TW/complex.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/conv-base.page=usr/share/gnome/help/gcalctool/zh_TW/conv-base.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/conv-character.page=usr/share/gnome/help/gcalctool/zh_TW/conv-character.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/conv-currency.page=usr/share/gnome/help/gcalctool/zh_TW/conv-currency.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/conv-length.page=usr/share/gnome/help/gcalctool/zh_TW/conv-length.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/conv-time.page=usr/share/gnome/help/gcalctool/zh_TW/conv-time.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/conv-weight.page=usr/share/gnome/help/gcalctool/zh_TW/conv-weight.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/equation.page=usr/share/gnome/help/gcalctool/zh_TW/equation.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/factorial.page=usr/share/gnome/help/gcalctool/zh_TW/factorial.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/factorize.page=usr/share/gnome/help/gcalctool/zh_TW/factorize.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/financial.page=usr/share/gnome/help/gcalctool/zh_TW/financial.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/functions.page=usr/share/gnome/help/gcalctool/zh_TW/functions.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/index.page=usr/share/gnome/help/gcalctool/zh_TW/index.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/keyboard.page=usr/share/gnome/help/gcalctool/zh_TW/keyboard.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/legal.xml=usr/share/gnome/help/gcalctool/zh_TW/legal.xml 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/logarithm.page=usr/share/gnome/help/gcalctool/zh_TW/logarithm.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/modulus.page=usr/share/gnome/help/gcalctool/zh_TW/modulus.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/mouse.page=usr/share/gnome/help/gcalctool/zh_TW/mouse.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/number-display.page=usr/share/gnome/help/gcalctool/zh_TW/number-display.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/percentage.page=usr/share/gnome/help/gcalctool/zh_TW/percentage.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/power.page=usr/share/gnome/help/gcalctool/zh_TW/power.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/scientific.page=usr/share/gnome/help/gcalctool/zh_TW/scientific.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/superscript.page=usr/share/gnome/help/gcalctool/zh_TW/superscript.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/trigonometry.page=usr/share/gnome/help/gcalctool/zh_TW/trigonometry.page 0644 root bin
+f none share/gnome/help/gcalctool/zh_TW/variables.page=usr/share/gnome/help/gcalctool/zh_TW/variables.page 0644 root bin
+d none share/gnome/help/gedit 0755 root bin
+d none share/gnome/help/gedit/zh_TW 0755 root bin
+d none share/gnome/help/gedit/zh_TW/figures 0755 root bin
+s none share/gnome/help/gedit/zh_TW/figures/gedit_format_bold.png=../../C/figures/gedit_format_bold.png
+s none share/gnome/help/gedit/zh_TW/figures/gedit_format_italic.png=../../C/figures/gedit_format_italic.png
+s none share/gnome/help/gedit/zh_TW/figures/gedit_format_strikethrough.png=../../C/figures/gedit_format_strikethrough.png
+s none share/gnome/help/gedit/zh_TW/figures/gedit_format_underline.png=../../C/figures/gedit_format_underline.png
+s none share/gnome/help/gedit/zh_TW/figures/gedit_recent_files_menu_icon.png=../../C/figures/gedit_recent_files_menu_icon.png
+f none share/gnome/help/gedit/zh_TW/figures/gedit_window.png=usr/share/gnome/help/gedit/zh_TW/figures/gedit_window.png 0644 root bin
+f none share/gnome/help/gedit/zh_TW/gedit.xml=usr/share/gnome/help/gedit/zh_TW/gedit.xml 0644 root bin
+f none share/gnome/help/gedit/zh_TW/legal.xml=usr/share/gnome/help/gedit/zh_TW/legal.xml 0644 root bin
+d none share/gnome/help/geyes 0755 root bin
+d none share/gnome/help/geyes/zh_TW 0755 root bin
+d none share/gnome/help/geyes/zh_TW/figures 0755 root bin
+f none share/gnome/help/geyes/zh_TW/figures/geyes_applet.png=usr/share/gnome/help/geyes/zh_TW/figures/geyes_applet.png 0644 root bin
+f none share/gnome/help/geyes/zh_TW/geyes.xml=usr/share/gnome/help/geyes/zh_TW/geyes.xml 0644 root bin
+d none share/gnome/help/ghex2 0755 root bin
+d none share/gnome/help/ghex2/zh_TW 0755 root bin
+d none share/gnome/help/ghex2/zh_TW/figures 0755 root bin
+f none share/gnome/help/ghex2/zh_TW/figures/ghex_window_empty.png=usr/share/gnome/help/ghex2/zh_TW/figures/ghex_window_empty.png 0644 root bin
+f none share/gnome/help/ghex2/zh_TW/figures/ghex_window_open.png=usr/share/gnome/help/ghex2/zh_TW/figures/ghex_window_open.png 0644 root bin
+f none share/gnome/help/ghex2/zh_TW/ghex2.xml=usr/share/gnome/help/ghex2/zh_TW/ghex2.xml 0644 root bin
+d none share/gnome/help/gnome-netstatus 0755 root bin
+d none share/gnome/help/gnome-netstatus/zh_TW 0755 root bin
+d none share/gnome/help/gnome-netstatus/zh_TW/figures 0755 root bin
+s none share/gnome/help/gnome-netstatus/zh_TW/figures/gnome-netstatus-disconn.png=../../C/figures/gnome-netstatus-disconn.png
+s none share/gnome/help/gnome-netstatus/zh_TW/figures/gnome-netstatus-error.png=../../C/figures/gnome-netstatus-error.png
+s none share/gnome/help/gnome-netstatus/zh_TW/figures/gnome-netstatus-idle.png=../../C/figures/gnome-netstatus-idle.png
+s none share/gnome/help/gnome-netstatus/zh_TW/figures/gnome-netstatus-rx.png=../../C/figures/gnome-netstatus-rx.png
+s none share/gnome/help/gnome-netstatus/zh_TW/figures/gnome-netstatus-tx.png=../../C/figures/gnome-netstatus-tx.png
+s none share/gnome/help/gnome-netstatus/zh_TW/figures/gnome-netstatus-txrx.png=../../C/figures/gnome-netstatus-txrx.png
+f none share/gnome/help/gnome-netstatus/zh_TW/gnome-netstatus.xml=usr/share/gnome/help/gnome-netstatus/zh_TW/gnome-netstatus.xml 0644 root bin
+f none share/gnome/help/gnome-netstatus/zh_TW/legal.xml=usr/share/gnome/help/gnome-netstatus/zh_TW/legal.xml 0644 root bin
+d none share/gnome/help/gnome-printinfo 0755 root bin
+d none share/gnome/help/gnome-printinfo/zh_TW 0755 root bin
+d none share/gnome/help/gnome-printinfo/zh_TW/figures 0755 root bin
+f none share/gnome/help/gnome-printinfo/zh_TW/figures/main-window.png=usr/share/gnome/help/gnome-printinfo/zh_TW/figures/main-window.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/zh_TW/figures/per-printer-prefs.png=usr/share/gnome/help/gnome-printinfo/zh_TW/figures/per-printer-prefs.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/zh_TW/figures/search.png=usr/share/gnome/help/gnome-printinfo/zh_TW/figures/search.png 0644 root bin
+f none share/gnome/help/gnome-printinfo/zh_TW/gnome-print-manager.xml=usr/share/gnome/help/gnome-printinfo/zh_TW/gnome-print-manager.xml 0644 root bin
+f none share/gnome/help/gnome-printinfo/zh_TW/legal.xml=usr/share/gnome/help/gnome-printinfo/zh_TW/legal.xml 0644 root bin
+d none share/gnome/help/gnome-terminal 0755 root bin
+d none share/gnome/help/gnome-terminal/zh_TW 0755 root bin
+d none share/gnome/help/gnome-terminal/zh_TW/figures 0755 root bin
+f none share/gnome/help/gnome-terminal/zh_TW/figures/gnome-terminal-default.png=usr/share/gnome/help/gnome-terminal/zh_TW/figures/gnome-terminal-default.png 0644 root bin
+f none share/gnome/help/gnome-terminal/zh_TW/figures/gnome-terminal-tabbed.png=usr/share/gnome/help/gnome-terminal/zh_TW/figures/gnome-terminal-tabbed.png 0644 root bin
+f none share/gnome/help/gnome-terminal/zh_TW/gnome-terminal.xml=usr/share/gnome/help/gnome-terminal/zh_TW/gnome-terminal.xml 0644 root bin
+f none share/gnome/help/gnome-terminal/zh_TW/legal.xml=usr/share/gnome/help/gnome-terminal/zh_TW/legal.xml 0644 root bin
+d none share/gnome/help/gucharmap 0755 root bin
+d none share/gnome/help/gucharmap/zh_TW 0755 root bin
+d none share/gnome/help/gucharmap/zh_TW/figures 0755 root bin
+f none share/gnome/help/gucharmap/zh_TW/figures/gucharmap_window.png=usr/share/gnome/help/gucharmap/zh_TW/figures/gucharmap_window.png 0644 root bin
+f none share/gnome/help/gucharmap/zh_TW/gucharmap.xml=usr/share/gnome/help/gucharmap/zh_TW/gucharmap.xml 0644 root bin
+f none share/gnome/help/gucharmap/zh_TW/legal.xml=usr/share/gnome/help/gucharmap/zh_TW/legal.xml 0644 root bin
+d none share/gnome/help/ospm-pm 0755 root bin
+d none share/gnome/help/ospm-pm/zh_TW 0755 root bin
+f none share/gnome/help/ospm-pm/zh_TW/ospm-pm.xml=usr/share/gnome/help/ospm-pm/zh_TW/ospm-pm.xml 0644 root bin
+d none share/gnome/help/stickynotes_applet 0755 root bin
+d none share/gnome/help/stickynotes_applet/zh_TW 0755 root bin
+d none share/gnome/help/stickynotes_applet/zh_TW/figures 0755 root bin
+s none share/gnome/help/stickynotes_applet/zh_TW/figures/stickynote-right-menu-lock.png=../../C/figures/stickynote-right-menu-lock.png
+s none share/gnome/help/stickynotes_applet/zh_TW/figures/stickynote-right-menu-new.png=../../C/figures/stickynote-right-menu-new.png
+s none share/gnome/help/stickynotes_applet/zh_TW/figures/stickynotes-note-prefs.png=../../C/figures/stickynotes-note-prefs.png
+s none share/gnome/help/stickynotes_applet/zh_TW/figures/stickynotes-prefs.png=../../C/figures/stickynotes-prefs.png
+f none share/gnome/help/stickynotes_applet/zh_TW/figures/stickynotes_applet.png=usr/share/gnome/help/stickynotes_applet/zh_TW/figures/stickynotes_applet.png 0644 root bin
+f none share/gnome/help/stickynotes_applet/zh_TW/stickynotes_applet.xml=usr/share/gnome/help/stickynotes_applet/zh_TW/stickynotes_applet.xml 0644 root bin
+d none share/gnome/help/totem 0755 root bin
+d none share/gnome/help/totem/zh_TW 0755 root bin
+d none share/gnome/help/totem/zh_TW/figures 0755 root bin
+s none share/gnome/help/totem/zh_TW/figures/totem_next_button.png=../../C/figures/totem_next_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_pause_button.png=../../C/figures/totem_pause_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_play_button.png=../../C/figures/totem_play_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_previous_button.png=../../C/figures/totem_previous_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_show_playlist_button.png=../../C/figures/totem_show_playlist_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_start_window.png=../../C/figures/totem_start_window.png
+s none share/gnome/help/totem/zh_TW/figures/totem_volume_maximum_button.png=../../C/figures/totem_volume_maximum_button.png
+s none share/gnome/help/totem/zh_TW/figures/totem_volume_mute_button.png=../../C/figures/totem_volume_mute_button.png
+f none share/gnome/help/totem/zh_TW/totem.xml=usr/share/gnome/help/totem/zh_TW/totem.xml 0644 root bin
+d none share/gnome/help/trashapplet 0755 root bin
+d none share/gnome/help/trashapplet/zh_TW 0755 root bin
+d none share/gnome/help/trashapplet/zh_TW/figures 0755 root bin
+s none share/gnome/help/trashapplet/zh_TW/figures/trash-applet.png=../../C/figures/trash-applet.png
+f none share/gnome/help/trashapplet/zh_TW/trashapplet.xml=usr/share/gnome/help/trashapplet/zh_TW/trashapplet.xml 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/baobab 0755 root bin
+f none share/omf/baobab/baobab-zh_TW.omf=usr/share/omf/baobab/baobab-zh_TW.omf 0644 root bin
+d none share/omf/clock 0755 root bin
+f none share/omf/clock/clock-zh_TW.omf=usr/share/omf/clock/clock-zh_TW.omf 0644 root bin
+d none share/omf/eog 0755 root bin
+f none share/omf/eog/eog-zh_TW.omf=usr/share/omf/eog/eog-zh_TW.omf 0644 root bin
+d none share/omf/fsexam 0755 root bin
+f none share/omf/fsexam/fsexam-zh_TW.omf=usr/share/omf/fsexam/fsexam-zh_TW.omf 0644 root bin
+d none share/omf/gedit 0755 root bin
+f none share/omf/gedit/gedit-zh_TW.omf=usr/share/omf/gedit/gedit-zh_TW.omf 0644 root bin
+d none share/omf/geyes 0755 root bin
+f none share/omf/geyes/geyes-zh_TW.omf=usr/share/omf/geyes/geyes-zh_TW.omf 0644 root bin
+d none share/omf/gnome-netstatus 0755 root bin
+f none share/omf/gnome-netstatus/gnome-netstatus-zh_TW.omf=usr/share/omf/gnome-netstatus/gnome-netstatus-zh_TW.omf 0644 root bin
+d none share/omf/gnome-terminal 0755 root bin
+f none share/omf/gnome-terminal/gnome-terminal-zh_TW.omf=usr/share/omf/gnome-terminal/gnome-terminal-zh_TW.omf 0644 root bin
+d none share/omf/gucharmap 0755 root bin
+f none share/omf/gucharmap/gucharmap-zh_TW.omf=usr/share/omf/gucharmap/gucharmap-zh_TW.omf 0644 root bin
+d none share/omf/ospm-pm 0755 root bin
+f none share/omf/ospm-pm/ospm-pm-zh_TW.omf=usr/share/omf/ospm-pm/ospm-pm-zh_TW.omf 0644 root bin
+d none share/omf/printman 0755 root bin
+f none share/omf/printman/gnome-print-manager-zh_TW.omf=usr/share/omf/printman/gnome-print-manager-zh_TW.omf 0644 root bin
+d none share/omf/stickynotes_applet 0755 root bin
+f none share/omf/stickynotes_applet/stickynotes_applet-zh_TW.omf=usr/share/omf/stickynotes_applet/stickynotes_applet-zh_TW.omf 0644 root bin
+d none share/omf/totem 0755 root bin
+f none share/omf/totem/totem-zh_TW.omf=usr/share/omf/totem/totem-zh_TW.omf 0644 root bin
+d none share/omf/trashapplet 0755 root bin
+f none share/omf/trashapplet/trashapplet-zh_TW.omf=usr/share/omf/trashapplet/trashapplet-zh_TW.omf 0644 root bin

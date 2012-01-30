@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-remote-desktop-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-remote-desktop-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-remote-desktop-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/vino-server.schemas=etc/gconf/schemas/vino-server.schemas 0644 root sys
+d none etc/xdg 0755 root sys
+d none etc/xdg/autostart 0755 root sys
+f none etc/xdg/autostart/vino-server.desktop=etc/xdg/autostart/vino-server.desktop 0644 root sys

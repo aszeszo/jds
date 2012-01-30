@@ -1,0 +1,32 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWcompiz-fusion-extra-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWcompiz-fusion-extra-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWcompiz-fusion-extra-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/compiz-3d.schemas=etc/gconf/schemas/compiz-3d.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-addhelper.schemas=etc/gconf/schemas/compiz-addhelper.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-animationaddon.schemas=etc/gconf/schemas/compiz-animationaddon.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-bench.schemas=etc/gconf/schemas/compiz-bench.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-bicubic.schemas=etc/gconf/schemas/compiz-bicubic.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-crashhandler.schemas=etc/gconf/schemas/compiz-crashhandler.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-cubeaddon.schemas=etc/gconf/schemas/compiz-cubeaddon.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-extrawm.schemas=etc/gconf/schemas/compiz-extrawm.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-fadedesktop.schemas=etc/gconf/schemas/compiz-fadedesktop.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-firepaint.schemas=etc/gconf/schemas/compiz-firepaint.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-gears.schemas=etc/gconf/schemas/compiz-gears.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-grid.schemas=etc/gconf/schemas/compiz-grid.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-group.schemas=etc/gconf/schemas/compiz-group.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-loginout.schemas=etc/gconf/schemas/compiz-loginout.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-maximumize.schemas=etc/gconf/schemas/compiz-maximumize.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-mblur.schemas=etc/gconf/schemas/compiz-mblur.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-notification.schemas=etc/gconf/schemas/compiz-notification.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-reflex.schemas=etc/gconf/schemas/compiz-reflex.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-scalefilter.schemas=etc/gconf/schemas/compiz-scalefilter.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-shelf.schemas=etc/gconf/schemas/compiz-shelf.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-showdesktop.schemas=etc/gconf/schemas/compiz-showdesktop.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-showmouse.schemas=etc/gconf/schemas/compiz-showmouse.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-splash.schemas=etc/gconf/schemas/compiz-splash.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-trailfocus.schemas=etc/gconf/schemas/compiz-trailfocus.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-wallpaper.schemas=etc/gconf/schemas/compiz-wallpaper.schemas 0755 root sys
+f none etc/gconf/schemas/compiz-widget.schemas=etc/gconf/schemas/compiz-widget.schemas 0755 root sys

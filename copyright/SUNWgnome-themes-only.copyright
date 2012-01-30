@@ -1,0 +1,27 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+
+Licensing and copyright information for gnome-themes-%{gthemes.version}:
+
+ License: GNU Lesser General Public License Version 2.1
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/gnome-themes-%{gthemes.version}
+
+  COPYING.bz2: GNU LGPL
+  AUTHORS: list of authors of gnome-themes
+  NEWS.bz2: list of the most important changes in gnome-themes
+  ChangeLog.bz2: list of all changes and authors of gnome-themes
+  po/ChangeLog.bz2: list of all changes and authors of gnome-themes globalization
+  README: more information about gnome-themes
+
+ The sources of gnome-themes-%{gthemes.version} were downloaded
+ from %{gthemes.SOURCE0.url}

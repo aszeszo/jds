@@ -1,0 +1,7 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWjre-config-plugin.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWjre-config-plugin.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWjre-config-plugin.copyright
+d none lib 0755 root bin
+d none lib/firefox 0755 root bin
+d none lib/firefox/plugins 0755 root bin
+s none lib/firefox/plugins/libnpjp2.so=../../../java/jre/lib/sparc/libnpjp2.so

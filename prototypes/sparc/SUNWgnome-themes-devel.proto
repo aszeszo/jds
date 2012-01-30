@@ -1,0 +1,14 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-themes-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-themes-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-themes-devel.copyright
+d none lib 0755 root bin
+f none lib/icon-name-mapping=usr/lib/icon-name-mapping 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/gtk-engines-2.pc=usr/lib/pkgconfig/gtk-engines-2.pc 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/pkgconfig 0755 root other
+f none lib/sparcv9/pkgconfig/gtk-engines-2.pc=usr/lib/sparcv9/pkgconfig/gtk-engines-2.pc 0644 root bin
+d none share 0755 root sys
+d none share/pkgconfig 0755 root bin
+f none share/pkgconfig/gnome-icon-theme.pc=usr/share/pkgconfig/gnome-icon-theme.pc 0644 root bin
+f none share/pkgconfig/icon-naming-utils.pc=usr/share/pkgconfig/icon-naming-utils.pc 0644 root bin

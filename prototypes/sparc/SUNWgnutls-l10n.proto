@@ -1,0 +1,38 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnutls-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnutls-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnutls-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/cs 0755 root other
+d none share/locale/cs/LC_MESSAGES 0755 root other
+f none share/locale/cs/LC_MESSAGES/libgnutls.mo=usr/share/locale/cs/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/de 0755 root other
+d none share/locale/de/LC_MESSAGES 0755 root other
+f none share/locale/de/LC_MESSAGES/libgnutls.mo=usr/share/locale/de/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/en@boldquot 0755 root other
+d none share/locale/en@boldquot/LC_MESSAGES 0755 root other
+f none share/locale/en@boldquot/LC_MESSAGES/libgnutls.mo=usr/share/locale/en@boldquot/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/en@quot 0755 root other
+d none share/locale/en@quot/LC_MESSAGES 0755 root other
+f none share/locale/en@quot/LC_MESSAGES/libgnutls.mo=usr/share/locale/en@quot/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/fr 0755 root other
+d none share/locale/fr/LC_MESSAGES 0755 root other
+f none share/locale/fr/LC_MESSAGES/libgnutls.mo=usr/share/locale/fr/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/ms 0755 root other
+d none share/locale/ms/LC_MESSAGES 0755 root other
+f none share/locale/ms/LC_MESSAGES/libgnutls.mo=usr/share/locale/ms/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/nl 0755 root other
+d none share/locale/nl/LC_MESSAGES 0755 root other
+f none share/locale/nl/LC_MESSAGES/libgnutls.mo=usr/share/locale/nl/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/pl 0755 root other
+d none share/locale/pl/LC_MESSAGES 0755 root other
+f none share/locale/pl/LC_MESSAGES/libgnutls.mo=usr/share/locale/pl/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/sv 0755 root other
+d none share/locale/sv/LC_MESSAGES 0755 root other
+f none share/locale/sv/LC_MESSAGES/libgnutls.mo=usr/share/locale/sv/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/vi 0755 root other
+d none share/locale/vi/LC_MESSAGES 0755 root other
+f none share/locale/vi/LC_MESSAGES/libgnutls.mo=usr/share/locale/vi/LC_MESSAGES/libgnutls.mo 0644 root other
+d none share/locale/zh_CN 0755 root other
+d none share/locale/zh_CN/LC_MESSAGES 0755 root other
+f none share/locale/zh_CN/LC_MESSAGES/libgnutls.mo=usr/share/locale/zh_CN/LC_MESSAGES/libgnutls.mo 0644 root other

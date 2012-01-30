@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-component-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-component-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-component-root.copyright
+d none etc 0755 root sys
+d none etc/amd64 0755 root sys
+d none etc/amd64/bonobo-activation 0755 root sys
+f none etc/amd64/bonobo-activation/bonobo-activation-config.xml=etc/amd64/bonobo-activation/bonobo-activation-config.xml 0644 root sys
+f none etc/amd64/orbitrc=etc/amd64/orbitrc 0644 root sys
+d none etc/bonobo-activation 0755 root sys
+f none etc/bonobo-activation/bonobo-activation-config.xml=etc/bonobo-activation/bonobo-activation-config.xml 0644 root sys
+f none etc/orbitrc=etc/orbitrc 0644 root sys

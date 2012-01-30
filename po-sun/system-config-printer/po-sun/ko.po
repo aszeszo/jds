@@ -1,0 +1,22 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr "Project-Id-Version: PACKAGE VERSION\nReport-Msgid-Bugs-To: https://bugzilla.redhat.com/bugzilla\nPOT-Creation-Date: 2011-06-29 10:44+0800\nPO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\nLast-Translator: FULL NAME <EMAIL@ADDRESS>\nLanguage-Team: LANGUAGE <LL@li.org>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=UTF-8\nContent-Transfer-Encoding: 8bit\n"
+
+# SUN_BRANDING
+#: ../troubleshoot/base.py:34
+msgid ""
+"To start this tool, select System->Administration->Print Manager from the "
+"main menu."
+msgstr "이 도구를 시작하려면 주 메뉴에서 시스템->관리->인쇄 관리자를 선택하십시오."
+
+# SUN_BRANDING
+#: ../troubleshoot/SchedulerNotRunning.py:29
+msgid ""
+"The CUPS print spooler does not appear to be running.  To correct this, run "
+"'/usr/sbin/print-service -s cups' as a privileged user in a terminal."
+msgstr "CUPS 인쇄 스풀러가 실행 중인 것으로 표시되지 않습니다.  이를 해결하려면 터미널에서 권한 있는 사용자로 로그인하여 '/usr/sbin/print-service -s cups'를 실행합니다."

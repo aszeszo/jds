@@ -1,0 +1,57 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmozmail.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmozmail.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWmozmail.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWmozmail.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmozmail.copyright
+d none sfw 0755 root bin
+d none sfw/lib 0755 root bin
+d none sfw/lib/mozilla 0755 root sys
+d none sfw/lib/mozilla/chrome 0755 root sys
+d none sfw/lib/mozilla/chrome/icons 0755 root sys
+d none sfw/lib/mozilla/chrome/icons/default 0755 root sys
+f none sfw/lib/mozilla/chrome/icons/default/abcardWindow.xpm=usr/sfw/lib/mozilla/chrome/icons/default/abcardWindow.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/abcardWindow16.xpm=usr/sfw/lib/mozilla/chrome/icons/default/abcardWindow16.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/addressbookWindow.xpm=usr/sfw/lib/mozilla/chrome/icons/default/addressbookWindow.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/addressbookWindow16.xpm=usr/sfw/lib/mozilla/chrome/icons/default/addressbookWindow16.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/messengerWindow.xpm=usr/sfw/lib/mozilla/chrome/icons/default/messengerWindow.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/messengerWindow16.xpm=usr/sfw/lib/mozilla/chrome/icons/default/messengerWindow16.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/msgcomposeWindow.xpm=usr/sfw/lib/mozilla/chrome/icons/default/msgcomposeWindow.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/msgcomposeWindow16.xpm=usr/sfw/lib/mozilla/chrome/icons/default/msgcomposeWindow16.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/messenger.jar=usr/sfw/lib/mozilla/chrome/messenger.jar 0644 root sys
+d none sfw/lib/mozilla/components 0755 root sys
+f none sfw/lib/mozilla/components/addrbook.xpt=usr/sfw/lib/mozilla/components/addrbook.xpt 0644 root sys
+f none sfw/lib/mozilla/components/impComm4xMail.xpt=usr/sfw/lib/mozilla/components/impComm4xMail.xpt 0644 root sys
+f none sfw/lib/mozilla/components/import.xpt=usr/sfw/lib/mozilla/components/import.xpt 0644 root sys
+f none sfw/lib/mozilla/components/libaddrbook.so=usr/sfw/lib/mozilla/components/libaddrbook.so 0755 root sys
+f none sfw/lib/mozilla/components/libbayesflt.so=usr/sfw/lib/mozilla/components/libbayesflt.so 0755 root sys
+f none sfw/lib/mozilla/components/libimpComm4xMail.so=usr/sfw/lib/mozilla/components/libimpComm4xMail.so 0755 root sys
+f none sfw/lib/mozilla/components/libimpText.so=usr/sfw/lib/mozilla/components/libimpText.so 0755 root sys
+f none sfw/lib/mozilla/components/libimport.so=usr/sfw/lib/mozilla/components/libimport.so 0755 root sys
+f none sfw/lib/mozilla/components/liblocalmail.so=usr/sfw/lib/mozilla/components/liblocalmail.so 0755 root sys
+f none sfw/lib/mozilla/components/libmailnews.so=usr/sfw/lib/mozilla/components/libmailnews.so 0755 root sys
+f none sfw/lib/mozilla/components/libmailview.so=usr/sfw/lib/mozilla/components/libmailview.so 0755 root sys
+f none sfw/lib/mozilla/components/libmime.so=usr/sfw/lib/mozilla/components/libmime.so 0755 root sys
+f none sfw/lib/mozilla/components/libmimeemitter.so=usr/sfw/lib/mozilla/components/libmimeemitter.so 0755 root sys
+f none sfw/lib/mozilla/components/libmsgcompose.so=usr/sfw/lib/mozilla/components/libmsgcompose.so 0755 root sys
+f none sfw/lib/mozilla/components/libmsgdb.so=usr/sfw/lib/mozilla/components/libmsgdb.so 0755 root sys
+f none sfw/lib/mozilla/components/libmsgimap.so=usr/sfw/lib/mozilla/components/libmsgimap.so 0755 root sys
+f none sfw/lib/mozilla/components/libmsgmdn.so=usr/sfw/lib/mozilla/components/libmsgmdn.so 0755 root sys
+f none sfw/lib/mozilla/components/libmsgnews.so=usr/sfw/lib/mozilla/components/libmsgnews.so 0755 root sys
+f none sfw/lib/mozilla/components/libmsgsmime.so=usr/sfw/lib/mozilla/components/libmsgsmime.so 0755 root sys
+f none sfw/lib/mozilla/components/libvcard.so=usr/sfw/lib/mozilla/components/libvcard.so 0755 root sys
+f none sfw/lib/mozilla/components/mailnews.xpt=usr/sfw/lib/mozilla/components/mailnews.xpt 0644 root sys
+f none sfw/lib/mozilla/components/mailview.xpt=usr/sfw/lib/mozilla/components/mailview.xpt 0644 root sys
+f none sfw/lib/mozilla/components/mdn-service.js=usr/sfw/lib/mozilla/components/mdn-service.js 0755 root sys
+f none sfw/lib/mozilla/components/mime.xpt=usr/sfw/lib/mozilla/components/mime.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msgbase.xpt=usr/sfw/lib/mozilla/components/msgbase.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msgcompose.xpt=usr/sfw/lib/mozilla/components/msgcompose.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msgdb.xpt=usr/sfw/lib/mozilla/components/msgdb.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msgimap.xpt=usr/sfw/lib/mozilla/components/msgimap.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msglocal.xpt=usr/sfw/lib/mozilla/components/msglocal.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msgnews.xpt=usr/sfw/lib/mozilla/components/msgnews.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msgsearch.xpt=usr/sfw/lib/mozilla/components/msgsearch.xpt 0644 root sys
+f none sfw/lib/mozilla/components/msgsmime.xpt=usr/sfw/lib/mozilla/components/msgsmime.xpt 0644 root sys
+f none sfw/lib/mozilla/components/nsLDAPPrefsService.js=usr/sfw/lib/mozilla/components/nsLDAPPrefsService.js 0755 root sys
+f none sfw/lib/mozilla/components/offlineStartup.js=usr/sfw/lib/mozilla/components/offlineStartup.js 0755 root sys
+f none sfw/lib/mozilla/components/smime-service.js=usr/sfw/lib/mozilla/components/smime-service.js 0755 root sys
+f none sfw/lib/mozilla/libmsgbaseutil.so=usr/sfw/lib/mozilla/libmsgbaseutil.so 0755 root sys

@@ -1,0 +1,19 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+--------------------------------------------------------------------
+
+Licensing and copyright information for %{name}
+
+  License: Python Imaging
+
+  You can find more information in the following directory:
+  %{_pkg_docdir}
+
+    CHANGES.bz2: Important changes to Imaging
+    Sane/CHANGES.bz2: Important changes to Imaging Sane
+    README.bz2: More informaiton about Imaging
+    Scripts/README.bz2: More informaiton about Imaging Scripts
+    Sane/README: More informaiton about Imaging Sane
+
+  The sources of Imaging-%{pil.version} were downloaded
+  from %{pil.SOURCE0.url}

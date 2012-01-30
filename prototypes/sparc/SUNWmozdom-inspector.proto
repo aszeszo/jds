@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmozdom-inspector.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmozdom-inspector.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWmozdom-inspector.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWmozdom-inspector.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmozdom-inspector.copyright
+d none sfw 0755 root bin
+d none sfw/lib 0755 root bin
+d none sfw/lib/mozilla 0755 root sys
+d none sfw/lib/mozilla/chrome 0755 root sys
+d none sfw/lib/mozilla/chrome/icons 0755 root sys
+d none sfw/lib/mozilla/chrome/icons/default 0755 root sys
+f none sfw/lib/mozilla/chrome/icons/default/winInspectorMain.xpm=usr/sfw/lib/mozilla/chrome/icons/default/winInspectorMain.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/winInspectorMain16.xpm=usr/sfw/lib/mozilla/chrome/icons/default/winInspectorMain16.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/inspector.jar=usr/sfw/lib/mozilla/chrome/inspector.jar 0644 root sys
+d none sfw/lib/mozilla/components 0755 root sys
+f none sfw/lib/mozilla/components/inspector-cmdline.js=usr/sfw/lib/mozilla/components/inspector-cmdline.js 0755 root sys
+f none sfw/lib/mozilla/components/inspector.xpt=usr/sfw/lib/mozilla/components/inspector.xpt 0644 root sys
+f none sfw/lib/mozilla/components/libinspector.so=usr/sfw/lib/mozilla/components/libinspector.so 0755 root sys
+d none sfw/lib/mozilla/defaults 0755 root sys
+d none sfw/lib/mozilla/defaults/pref 0755 root sys
+f none sfw/lib/mozilla/defaults/pref/inspector.js=usr/sfw/lib/mozilla/defaults/pref/inspector.js 0644 root sys
+d none sfw/lib/mozilla/res 0755 root sys
+d none sfw/lib/mozilla/res/inspector 0755 root sys
+f none sfw/lib/mozilla/res/inspector/search-registry.rdf=usr/sfw/lib/mozilla/res/inspector/search-registry.rdf 0644 root sys
+f none sfw/lib/mozilla/res/inspector/viewer-registry.rdf=usr/sfw/lib/mozilla/res/inspector/viewer-registry.rdf 0644 root sys

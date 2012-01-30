@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-other-l10n-th.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-other-l10n-th.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-other-l10n-th.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/th 0755 root other
+d none share/locale/th/LC_MESSAGES 0755 root other
+f none share/locale/th/LC_MESSAGES/dialog.mo=usr/share/locale/th/LC_MESSAGES/dialog.mo 0644 root other

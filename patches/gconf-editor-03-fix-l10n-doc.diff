@@ -1,0 +1,463 @@
+diff -r 308207b0e27d docs/ca/gconf-editor.xml
+--- a/docs/ca/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/ca/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Manual de l'editor de la configuració</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2008, 2009</year><holder>Joan Duran (jodufi@gmail.com)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equip de documentació del GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/cs/gconf-editor.xml
+--- a/docs/cs/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/cs/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Příručka k Editoru nastavení </title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2009.</year><holder>Marek Černocký (marek@manet.cz)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Dokumentační tým GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/de/gconf-editor.xml
+--- a/docs/de/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/de/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Konfigurationseditor-Handbuch</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2004, 2005</year><holder>Keywan Najafi Tonekaboni (keywan@uni-duisburg.de)</holder></copyright><copyright><year>2007</year><holder>Jan Arne Petersen (jap@gnome.org)</holder></copyright><copyright><year>2008, 2009</year><holder>Mario Blättermann (mariobl@gnome.org)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME-Dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+@@ -103,7 +104,7 @@
+         <revnumber>Version 2.1</revnumber> 
+         <date>August 2004</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME-Dokumentationsteam</para>
++          <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+           <para role="publisher">GNOME-Dokumentationsprojekt</para>
+         </revdescription> 
+       </revision>
+@@ -111,7 +112,7 @@
+         <revnumber>Version 2.0.1</revnumber> 
+         <date>Januar 2004</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME-Dokumentationsteam</para>
++          <para role="author">Oracle Solaris Desktop-Dokumentationsteam</para>
+           <para role="publisher">GNOME-Dokumentationsprojekt</para>
+         </revdescription> 
+       </revision>
+diff -r 308207b0e27d docs/el/gconf-editor.xml
+--- a/docs/el/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/el/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Εγχειρίδιο του επεξεργαστή ρυθμίσεων</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Ομάδα Τεκμηρίωσης GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/en_GB/gconf-editor.xml
+--- a/docs/en_GB/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/en_GB/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Configuration Editor Manual</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2009</year><holder>Philip Withnall (philip@tecnocode.co.uk)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
+-        <surname>GNOME Documentation Team</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <firstname>Oracle Solaris</firstname>
++        <surname>Desktop Documentation Team</surname>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+@@ -103,7 +104,7 @@
+         <revnumber>Version 2.1</revnumber> 
+         <date>August 2004</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription> 
+       </revision>
+@@ -111,7 +112,7 @@
+         <revnumber>Version 2.0.1</revnumber> 
+         <date>January 2004</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME Documentation Team</para>
++          <para role="author">Oracle Solaris Desktop Documentation Team</para>
+           <para role="publisher">GNOME Documentation Project</para>
+         </revdescription> 
+       </revision>
+diff -r 308207b0e27d docs/es/gconf-editor.xml
+--- a/docs/es/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/es/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Manual del Editor de configuración</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2007-2008</year><holder>Jorge González (jorgegonz@svn.gnome.org)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Equipo de documentación de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+@@ -103,7 +104,7 @@
+         <revnumber>Versión 2.1</revnumber> 
+         <date>Agosto de 2004</date> 
+         <revdescription> 
+-          <para role="author">Equipo de documentación de Sun GNOME</para>
++          <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+           <para role="publisher">Proyecto de Documentación GNOME</para>
+         </revdescription> 
+       </revision>
+@@ -111,7 +112,7 @@
+         <revnumber>Versión 2.0.1</revnumber> 
+         <date>Enero de 2004</date> 
+         <revdescription> 
+-          <para role="author">Equipo de documentación de Sun GNOME</para>
++          <para role="author">Equipo de documentación de Oracle Solaris Desktop</para>
+           <para role="publisher">Proyecto de Documentación GNOME</para>
+         </revdescription> 
+       </revision>
+diff -r 308207b0e27d docs/fr/gconf-editor.xml
+--- a/docs/fr/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/fr/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Manuel de l’éditeur de configuration</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2006.</year><holder>Aymeric Nys (aymeric@nnx.com)</holder></copyright><copyright><year>2006-2008.</year><holder>Claude Paroz (claude@2xlibre.net)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Équipe de documentation GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/it/gconf-editor.xml
+--- a/docs/it/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/it/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Manuale dell'editor di configurazione</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2009</year><holder>Milo Casagrande (milo@ubuntu.com)</holder></copyright><copyright><year>2004, 2007.</year><holder>Luca Ferretti (elle.uca@infinito.it)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Gruppo Documentazione di GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+@@ -103,7 +104,7 @@
+         <revnumber>Versione 2.1</revnumber> 
+         <date>Agosto 2004</date> 
+         <revdescription> 
+-          <para role="author">Gruppo documentazione Sun GNOME</para>
++          <para role="author">Gruppo documentazione Oracle Solaris Desktop</para>
+           <para role="publisher">Progetto Documentazione di GNOME</para>
+         </revdescription> 
+       </revision>
+@@ -111,7 +112,7 @@
+         <revnumber>Versione 2.0.1</revnumber> 
+         <date>Gennaio 2004</date> 
+         <revdescription> 
+-          <para role="author">Gruppo documentazione Sun GNOME</para>
++          <para role="author">Gruppo documentazione Oracle Solaris Desktop</para>
+           <para role="publisher">Progetto Documentazione di GNOME</para>
+         </revdescription> 
+       </revision>
+diff -r 308207b0e27d docs/oc/gconf-editor.xml
+--- a/docs/oc/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/oc/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Configuration Editor Manual</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -115,9 +116,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Còla de documentacion de GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/pt_BR/gconf-editor.xml
+--- a/docs/pt_BR/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/pt_BR/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Manual do Editor de Configurações</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2008</year><holder>Fabrício Godoy (skarllot@gmail.com)</holder></copyright><copyright><year>2009</year><holder>Leonardo Ferreira Fontenelle (leonardof@gnome.org)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Time de Documentação do GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/ru/gconf-editor.xml
+--- a/docs/ru/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/ru/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Руководство по редактору конфигурации</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2008</year><holder>Никита Белобров (qvzqvz@gmail.com)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Команда документирования GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/sv/gconf-editor.xml
+--- a/docs/sv/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/sv/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Handbok för Konfigurationsredigerare</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2006, 2009</year><holder>Daniel Nylander (po@danielnylander.se)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -58,7 +59,7 @@
+       <author>
+         <firstname>Suns</firstname>
+         <surname>GNOME-dokumentationsteam</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/th/gconf-editor.xml
+--- a/docs/th/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/th/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>คู่มือ เครื่องมือแก้ไขค่าตั้ง</title>       
+     <copyright> 
+       <year>2547</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>ทีมเอกสาร GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/uk/gconf-editor.xml
+--- a/docs/uk/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/uk/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>Довідка з редактора конфігурації</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>Команда документування GNOME</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+diff -r 308207b0e27d docs/zh_CN/gconf-editor.xml
+--- a/docs/zh_CN/gconf-editor.xml	Fri Jul 08 14:35:19 2011 +0800
++++ b/docs/zh_CN/gconf-editor.xml	Fri Jul 08 16:37:16 2011 +0800
+@@ -21,7 +21,8 @@
+     <title>配置编辑器手册</title>       
+     <copyright> 
+       <year>2004</year>
+-      <holder>Sun Microsystems</holder> 
++      <year>2011</year>
++      <holder>Oracle and/or its affiliates. All rights reserved.</holder> 
+     </copyright><copyright><year>2009.</year><holder>Awgnl (y.z.h@gmx.com)</holder></copyright>
+     <!-- translators: uncomment this:
+          <copyright>
+@@ -56,9 +57,9 @@
+ 
+     <authorgroup>
+       <author>
+-        <firstname>Sun</firstname>
++        <firstname>Oracle Solaris</firstname>
+         <surname>GNOME 文档团队</surname>
+-        <affiliation><orgname>Sun Microsystems</orgname></affiliation>
++        <affiliation><orgname>Oracle Corporation</orgname></affiliation>
+       </author>
+       <author>
+         <firstname>Angela</firstname>
+@@ -103,7 +104,7 @@
+         <revnumber>版本 2.1</revnumber> 
+         <date>2004年8月</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME 文档团队</para>
++          <para role="author">Oracle Solaris Desktop 文档团队</para>
+           <para role="publisher">GNOME 文档项目</para>
+         </revdescription> 
+       </revision>
+@@ -111,7 +112,7 @@
+         <revnumber>版本 2.0.1</revnumber> 
+         <date>2004年1月</date> 
+         <revdescription> 
+-          <para role="author">Sun GNOME 文档团队</para>
++          <para role="author">Oracle Solaris Desktop 文档团队</para>
+           <para role="publisher">GNOME 文档项目</para>
+         </revdescription> 
+       </revision>

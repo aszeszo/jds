@@ -1,0 +1,11 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWtgnome-tstripe.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWtgnome-tstripe.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWtgnome-tstripe.copyright
+d none bin 0755 root bin
+f none bin/tsoljds-setssheight=usr/bin/tsoljds-setssheight 0755 root other
+f none bin/tsoljds-tstripe=usr/bin/tsoljds-tstripe 0755 root other
+f none bin/tsoljds-xagent-proxy=usr/bin/tsoljds-xagent-proxy 0755 root other
+d none share 0755 root sys
+d none share/gnome 0755 root other
+f none share/gnome/TrustedPathExecutables=usr/share/gnome/TrustedPathExecutables 0644 root other
+f none share/gnome/gtkrc.tjds=usr/share/gnome/gtkrc.tjds 0644 root other

@@ -1,0 +1,20 @@
+commit d2c570f9fb9d6c6b4183680e4cb8afe200728c9e
+Author: Ginn Chen <ginn.chen@oracle.com>
+Date:   Wed Mar 9 14:13:53 2011 +0800
+
+    firefox4-24-storage-test.diff
+
+diff --git a/storage/test/Makefile.in b/storage/test/Makefile.in
+index 8df8db1..a7198a7 100644
+--- a/storage/test/Makefile.in
++++ b/storage/test/Makefile.in
+@@ -81,8 +81,8 @@
+ 
+ LIBS = \
+ 	$(LIBS_DIR) \
+-	$(MOZ_COMPONENT_LIBS) \
+ 	$(SQLITE_LIBS) \
++	$(MOZ_COMPONENT_LIBS) \
+ 	$(NULL)
+ 
+ include $(topsrcdir)/config/rules.mk

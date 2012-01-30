@@ -1,0 +1,66 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-help-viewer.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-help-viewer.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-help-viewer.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-help-viewer.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-help-viewer.copyright
+f none share/doc/SUNWgnome-help-viewer/AUTHORS=usr/share/doc/SUNWgnome-help-viewer/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-help-viewer/COPYING.bz2=usr/share/doc/SUNWgnome-help-viewer/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-help-viewer/ChangeLog.bz2=usr/share/doc/SUNWgnome-help-viewer/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-help-viewer/NEWS.bz2=usr/share/doc/SUNWgnome-help-viewer/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-help-viewer/README=usr/share/doc/SUNWgnome-help-viewer/README 0444 root bin
+f none share/doc/SUNWgnome-help-viewer/po/ChangeLog.bz2=usr/share/doc/SUNWgnome-help-viewer/po/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-help-viewer/stylesheets/ChangeLog.bz2=usr/share/doc/SUNWgnome-help-viewer/stylesheets/ChangeLog.bz2 0444 root bin
+d none bin 0755 root bin
+s none bin/gnome-help=yelp
+f none bin/yelp=usr/bin/yelp 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/yelp.desktop=usr/share/applications/yelp.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-help-viewer 0755 root bin
+d none share/doc/SUNWgnome-help-viewer/po 0755 root bin
+d none share/doc/SUNWgnome-help-viewer/stylesheets 0755 root bin
+d none share/icons 0755 root other
+d none share/icons/hicolor 0755 root other
+d none share/icons/hicolor/192x192 0755 root other
+d none share/icons/hicolor/192x192/apps 0755 root other
+f none share/icons/hicolor/192x192/apps/yelp-icon-big.png=usr/share/icons/hicolor/192x192/apps/yelp-icon-big.png 0644 root other
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gnome-help.1=usr/share/man/man1/gnome-help.1 0644 root bin
+f none share/man/man1/yelp.1=usr/share/man/man1/yelp.1 0644 root bin
+d none share/yelp 0755 root bin
+f none share/yelp/default.css=usr/share/yelp/default.css 0644 root bin
+d none share/yelp/icons 0755 root bin
+f none share/yelp/icons/yelp-icon-caution.png=usr/share/yelp/icons/yelp-icon-caution.png 0644 root bin
+f none share/yelp/icons/yelp-icon-important.png=usr/share/yelp/icons/yelp-icon-important.png 0644 root bin
+f none share/yelp/icons/yelp-icon-note.png=usr/share/yelp/icons/yelp-icon-note.png 0644 root bin
+f none share/yelp/icons/yelp-icon-tip.png=usr/share/yelp/icons/yelp-icon-tip.png 0644 root bin
+f none share/yelp/icons/yelp-icon-warning.png=usr/share/yelp/icons/yelp-icon-warning.png 0644 root bin
+f none share/yelp/icons/yelp-watermark-blockquote-00AB.png=usr/share/yelp/icons/yelp-watermark-blockquote-00AB.png 0644 root bin
+f none share/yelp/icons/yelp-watermark-blockquote-00BB.png=usr/share/yelp/icons/yelp-watermark-blockquote-00BB.png 0644 root bin
+f none share/yelp/icons/yelp-watermark-blockquote-201C.png=usr/share/yelp/icons/yelp-watermark-blockquote-201C.png 0644 root bin
+f none share/yelp/icons/yelp-watermark-blockquote-201D.png=usr/share/yelp/icons/yelp-watermark-blockquote-201D.png 0644 root bin
+f none share/yelp/icons/yelp-watermark-blockquote-201E.png=usr/share/yelp/icons/yelp-watermark-blockquote-201E.png 0644 root bin
+f none share/yelp/important_docs.xml=usr/share/yelp/important_docs.xml 0644 root bin
+f none share/yelp/info.xml=usr/share/yelp/info.xml 0644 root bin
+f none share/yelp/man.xml=usr/share/yelp/man.xml 0644 root bin
+f none share/yelp/scrollkeeper.xml=usr/share/yelp/scrollkeeper.xml 0644 root bin
+f none share/yelp/toc.xml=usr/share/yelp/toc.xml 0644 root bin
+d none share/yelp/ui 0755 root bin
+f none share/yelp/ui/yelp-bookmarks-add.ui=usr/share/yelp/ui/yelp-bookmarks-add.ui 0644 root bin
+f none share/yelp/ui/yelp-bookmarks.ui=usr/share/yelp/ui/yelp-bookmarks.ui 0644 root bin
+f none share/yelp/ui/yelp-open-location.ui=usr/share/yelp/ui/yelp-open-location.ui 0644 root bin
+f none share/yelp/ui/yelp-preferences.ui=usr/share/yelp/ui/yelp-preferences.ui 0644 root bin
+f none share/yelp/ui/yelp-search-ui.xml=usr/share/yelp/ui/yelp-search-ui.xml 0644 root bin
+f none share/yelp/ui/yelp-ui.xml=usr/share/yelp/ui/yelp-ui.xml 0644 root bin
+d none share/yelp/xslt 0755 root bin
+f none share/yelp/xslt/db-title.xsl=usr/share/yelp/xslt/db-title.xsl 0644 root bin
+f none share/yelp/xslt/db2html.xsl=usr/share/yelp/xslt/db2html.xsl 0644 root bin
+f none share/yelp/xslt/info2html.xsl=usr/share/yelp/xslt/info2html.xsl 0644 root bin
+f none share/yelp/xslt/mal2html.xsl=usr/share/yelp/xslt/mal2html.xsl 0644 root bin
+f none share/yelp/xslt/man2html.xsl=usr/share/yelp/xslt/man2html.xsl 0644 root bin
+f none share/yelp/xslt/search2html.xsl=usr/share/yelp/xslt/search2html.xsl 0644 root bin
+f none share/yelp/xslt/toc2html.xsl=usr/share/yelp/xslt/toc2html.xsl 0644 root bin
+f none share/yelp/xslt/yelp-common.xsl=usr/share/yelp/xslt/yelp-common.xsl 0644 root bin
+f none share/yelp/yelp.js=usr/share/yelp/yelp.js 0644 root bin

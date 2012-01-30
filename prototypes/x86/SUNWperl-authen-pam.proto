@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWperl-authen-pam.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWperl-authen-pam.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWperl-authen-pam.copyright
+f none share/doc/SUNWperl-authen-pam/README=usr/share/doc/SUNWperl-authen-pam/README 0444 root bin
+d none perl5 0755 root bin
+d none perl5/vendor_perl 0755 root bin
+d none perl5/vendor_perl/5.8.4 0755 root bin
+d none perl5/vendor_perl/5.8.4/i86pc-solaris-64int 0755 root bin
+d none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Authen 0755 root bin
+d none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Authen/PAM 0755 root bin
+f none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Authen/PAM.pm=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Authen/PAM.pm 0444 root bin
+f none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Authen/PAM/FAQ.pod=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/Authen/PAM/FAQ.pod 0444 root bin
+d none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto 0755 root bin
+d none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen 0755 root bin
+d none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen/PAM 0755 root bin
+f none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen/PAM/.packlist=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen/PAM/.packlist 0644 root bin
+f none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen/PAM/PAM.bs=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen/PAM/PAM.bs 0444 root bin
+f none perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen/PAM/PAM.so=usr/perl5/vendor_perl/5.8.4/i86pc-solaris-64int/auto/Authen/PAM/PAM.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWperl-authen-pam 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/Authen::PAM.3=usr/share/man/man3/Authen::PAM.3 0444 root bin
+f none share/man/man3/Authen::PAM::FAQ.3=usr/share/man/man3/Authen::PAM::FAQ.3 0444 root bin

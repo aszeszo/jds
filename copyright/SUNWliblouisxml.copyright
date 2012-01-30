@@ -1,0 +1,40 @@
+Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+
+--------------------------------------------------------------------
+
+Package %name consists of the following component:
+
+  - liblouisxml+-%{liblouisxml.version}
+
+Licensing and copyright information for liblouisxml+-%{liblouisxml.version}:
+
+ License: GNU General Public License Version 3
+ License: GNU Lesser General Public License Version 3
+
+Copyright (C) 1999-2006 by the BRLTTY Team.
+
+Copyright (C) 2004, 2005, 2006, 2009
+ViewPlus Technologies, Inc. www.viewplus.com
+
+Copyright (C) 2004, 2005, 2006, 2009
+JJB Software, Inc. www.jjb-software.com
+
+Copyright (C) 1987-2009 Free Software Foundation, Inc.
+
+ You can find more information in the following directory:
+ %{_pkg_docdir}/liblouisxml+-%{liblouisxml.version}
+
+  COPYING.bz2: GNU GPL v3
+  COPYING.LIB.bz2: GNU LGPL v3
+  AUTHORS: list of authors of liblouisxml
+  ChangeLog.bz2: list of all changes and authors of liblouisxml
+  NEWS.bz2: List of the most important changes in %{liblouisxml.name}
+  README: More information about %{liblouisxml.name}

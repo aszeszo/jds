@@ -1,0 +1,94 @@
+--- a/configure	2011-10-25 22:20:52.695607762 +0800
++++ b/configure	2011-10-25 22:21:20.096899216 +0800
+@@ -14632,29 +14632,29 @@
+   else
+      PKG_CONFIG_MIN_VERSION=0.9.0
+      if $PKG_CONFIG --atleast-pkgconfig-version $PKG_CONFIG_MIN_VERSION; then
+-        echo $ac_n "checking for libffi > 3.0.9""... $ac_c" 1>&6
+-echo "configure:14637: checking for libffi > 3.0.9" >&5
++        echo $ac_n "checking for libffi >= 3.0.9""... $ac_c" 1>&6
++echo "configure:14637: checking for libffi >= 3.0.9" >&5
+ 
+-        if $PKG_CONFIG --exists "libffi > 3.0.9" ; then
++        if $PKG_CONFIG --exists "libffi >= 3.0.9" ; then
+             echo "$ac_t""yes" 1>&6
+             succeeded=yes
+ 
+             echo $ac_n "checking MOZ_FFI_CFLAGS""... $ac_c" 1>&6
+ echo "configure:14644: checking MOZ_FFI_CFLAGS" >&5
+-            MOZ_FFI_CFLAGS=`$PKG_CONFIG --cflags "libffi > 3.0.9"`
++            MOZ_FFI_CFLAGS=`$PKG_CONFIG --cflags "libffi >= 3.0.9"`
+             echo "$ac_t""$MOZ_FFI_CFLAGS" 1>&6
+ 
+             echo $ac_n "checking MOZ_FFI_LIBS""... $ac_c" 1>&6
+ echo "configure:14649: checking MOZ_FFI_LIBS" >&5
+             ## Remove evil flags like -Wl,--export-dynamic
+-            MOZ_FFI_LIBS="`$PKG_CONFIG --libs \"libffi > 3.0.9\" |sed s/-Wl,--export-dynamic//g`"
++            MOZ_FFI_LIBS="`$PKG_CONFIG --libs \"libffi >= 3.0.9\" |sed s/-Wl,--export-dynamic//g`"
+             echo "$ac_t""$MOZ_FFI_LIBS" 1>&6
+         else
+             MOZ_FFI_CFLAGS=""
+             MOZ_FFI_LIBS=""
+             ## If we have a custom action on failure, don't print errors, but 
+             ## do set a variable so people can do so.
+-            MOZ_FFI_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libffi > 3.0.9"`
++            MOZ_FFI_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libffi >= 3.0.9"`
+             echo $MOZ_FFI_PKG_ERRORS
+         fi
+ 
+@@ -14670,7 +14670,7 @@
+      :
+   else
+      if test "$COMPILE_ENVIRONMENT"; then 
+-       { echo "configure: error: Library requirements (libffi > 3.0.9) not met; consider adjusting the PKG_CONFIG_PATH environment variable if your libraries are in a nonstandard prefix so pkg-config can find them." 1>&2; exit 1; }
++       { echo "configure: error: Library requirements (libffi >= 3.0.9) not met; consider adjusting the PKG_CONFIG_PATH environment variable if your libraries are in a nonstandard prefix so pkg-config can find them." 1>&2; exit 1; }
+      fi
+   fi
+ 
+--- a/js/src/configure	2011-10-25 22:15:38.317650766 +0800
++++ b/js/src/configure	2011-10-25 22:22:22.684688894 +0800
+@@ -12892,29 +12892,29 @@
+   else
+      PKG_CONFIG_MIN_VERSION=0.9.0
+      if $PKG_CONFIG --atleast-pkgconfig-version $PKG_CONFIG_MIN_VERSION; then
+-        echo $ac_n "checking for libffi > 3.0.9""... $ac_c" 1>&6
+-echo "configure:12897: checking for libffi > 3.0.9" >&5
++        echo $ac_n "checking for libffi >= 3.0.9""... $ac_c" 1>&6
++echo "configure:12897: checking for libffi >= 3.0.9" >&5
+ 
+-        if $PKG_CONFIG --exists "libffi > 3.0.9" ; then
++        if $PKG_CONFIG --exists "libffi >= 3.0.9" ; then
+             echo "$ac_t""yes" 1>&6
+             succeeded=yes
+ 
+             echo $ac_n "checking MOZ_FFI_CFLAGS""... $ac_c" 1>&6
+ echo "configure:12904: checking MOZ_FFI_CFLAGS" >&5
+-            MOZ_FFI_CFLAGS=`$PKG_CONFIG --cflags "libffi > 3.0.9"`
++            MOZ_FFI_CFLAGS=`$PKG_CONFIG --cflags "libffi >= 3.0.9"`
+             echo "$ac_t""$MOZ_FFI_CFLAGS" 1>&6
+ 
+             echo $ac_n "checking MOZ_FFI_LIBS""... $ac_c" 1>&6
+ echo "configure:12909: checking MOZ_FFI_LIBS" >&5
+             ## Remove evil flags like -Wl,--export-dynamic
+-            MOZ_FFI_LIBS="`$PKG_CONFIG --libs \"libffi > 3.0.9\" |sed s/-Wl,--export-dynamic//g`"
++            MOZ_FFI_LIBS="`$PKG_CONFIG --libs \"libffi >= 3.0.9\" |sed s/-Wl,--export-dynamic//g`"
+             echo "$ac_t""$MOZ_FFI_LIBS" 1>&6
+         else
+             MOZ_FFI_CFLAGS=""
+             MOZ_FFI_LIBS=""
+             ## If we have a custom action on failure, don't print errors, but 
+             ## do set a variable so people can do so.
+-            MOZ_FFI_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libffi > 3.0.9"`
++            MOZ_FFI_PKG_ERRORS=`$PKG_CONFIG --errors-to-stdout --print-errors "libffi >= 3.0.9"`
+             echo $MOZ_FFI_PKG_ERRORS
+         fi
+ 
+@@ -12930,7 +12930,7 @@
+      :
+   else
+      if test "$COMPILE_ENVIRONMENT"; then 
+-       { echo "configure: error: Library requirements (libffi > 3.0.9) not met; consider adjusting the PKG_CONFIG_PATH environment variable if your libraries are in a nonstandard prefix so pkg-config can find them." 1>&2; exit 1; }
++       { echo "configure: error: Library requirements (libffi >= 3.0.9) not met; consider adjusting the PKG_CONFIG_PATH environment variable if your libraries are in a nonstandard prefix so pkg-config can find them." 1>&2; exit 1; }
+      fi
+   fi
+ 

@@ -1,0 +1,29 @@
+diff -ruN gnome-control-center-2.27.5.orig/capplets/about-me/gnome-about-me.c gnome-control-center-2.27.5/capplets/about-me/gnome-about-me.c
+--- gnome-control-center-2.27.5.orig/capplets/about-me/gnome-about-me.c	2009-08-12 15:43:32.631978317 +0100
++++ gnome-control-center-2.27.5/capplets/about-me/gnome-about-me.c	2009-08-12 15:45:30.962135218 +0100
+@@ -864,7 +864,25 @@
+ 	GtkBuilder *dialog;
+ 
+ 	dialog = me->dialog;
++#if (defined(sun) && defined(__SVR4))
++    /* Use gnome-terminal embedded passwd due to inability to fork passwd in
++     * the background.
++     */
++    {
++        GError  *error = NULL;
++        gchar   *command = NULL;
++
++        command = g_strdup_printf("gnome-terminal --window --title '%s' --hide-menubar -e /usr/bin/passwd",
++                                _("Change password") );
++
++        if ( command != NULL ) {
++            g_spawn_command_line_async( command, &error);
++            g_free(command);
++        }
++    }
++#else
+ 	gnome_about_me_password (GTK_WINDOW (WID ("about-me-dialog")));
++#endif
+ }
+ 
+ static void

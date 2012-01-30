@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWdesktop-search-libs-l10n.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWdesktop-search-libs-l10n.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWdesktop-search-libs-l10n.copyright
+d none share 0755 root sys
+d none share/locale 0755 root other
+d none share/locale/es 0755 root other
+d none share/locale/es/LC_MESSAGES 0755 root other
+f none share/locale/es/LC_MESSAGES/libgsf.mo=usr/share/locale/es/LC_MESSAGES/libgsf.mo 0644 root other
+f none share/locale/es/LC_MESSAGES/libgsf.ui.copyright=usr/share/locale/es/LC_MESSAGES/libgsf.ui.copyright 0644 root other
+d none share/locale/oc 0755 root other
+d none share/locale/oc/LC_MESSAGES 0755 root other
+f none share/locale/oc/LC_MESSAGES/libgsf.mo=usr/share/locale/oc/LC_MESSAGES/libgsf.mo 0644 root other
+f none share/locale/oc/LC_MESSAGES/libgsf.ui.copyright=usr/share/locale/oc/LC_MESSAGES/libgsf.ui.copyright 0644 root other
+d none share/locale/sv 0755 root other
+d none share/locale/sv/LC_MESSAGES 0755 root other
+f none share/locale/sv/LC_MESSAGES/libgsf.mo=usr/share/locale/sv/LC_MESSAGES/libgsf.mo 0644 root other
+f none share/locale/sv/LC_MESSAGES/libgsf.ui.copyright=usr/share/locale/sv/LC_MESSAGES/libgsf.ui.copyright 0644 root other
+d none share/locale/zh_HK 0755 root other
+d none share/locale/zh_HK/LC_MESSAGES 0755 root other
+f none share/locale/zh_HK/LC_MESSAGES/libgsf.mo=usr/share/locale/zh_HK/LC_MESSAGES/libgsf.mo 0644 root other
+f none share/locale/zh_HK/LC_MESSAGES/libgsf.ui.copyright=usr/share/locale/zh_HK/LC_MESSAGES/libgsf.ui.copyright 0644 root other
+d none share/locale/zh_TW 0755 root other
+d none share/locale/zh_TW/LC_MESSAGES 0755 root other
+f none share/locale/zh_TW/LC_MESSAGES/libgsf.mo=usr/share/locale/zh_TW/LC_MESSAGES/libgsf.mo 0644 root other
+f none share/locale/zh_TW/LC_MESSAGES/libgsf.ui.copyright=usr/share/locale/zh_TW/LC_MESSAGES/libgsf.ui.copyright 0644 root other

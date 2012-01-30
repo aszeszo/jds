@@ -1,0 +1,21 @@
+diff -urN dtlogin-integration-0.36.orig/config/Xsession.in dtlogin-integration-0.36.hacked/config/Xsession.in
+--- dtlogin-integration-0.36.orig/config/Xsession.in	2008-08-29 12:20:36.000000000 -0100
++++ dtlogin-integration-0.36.hacked/config/Xsession.in	2008-09-19 17:53:48.405539000 -0100
+@@ -21,6 +21,16 @@
+ 
+ command=/usr/dt/bin/Xsession
+ 
+-eval `dbus-launch --exit-with-session --auto-syntax`
++# Save a copy of the user's SHELL value and restore after dbus-launch command
++shell_saved=$SHELL
++
++# Tell dbus-launch we want the environment value in ksh compatible syntax
++export SHELL=/bin/ksh
++eval `dbus-launch --exit-with-session --sh-syntax`
++
++# unset SHELL and restore user's value
++unset SHELL
++export SHELL=$shell_saved
+ 
+ exec $command
++

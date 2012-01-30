@@ -1,0 +1,12 @@
+--- a/toolkit/mozapps/extensions/XPIProvider.jsm	2011-11-08 22:28:59.232523897 +0800
++++ b/toolkit/mozapps/extensions/XPIProvider.jsm	2011-11-08 22:30:09.072350085 +0800
+@@ -2554,7 +2554,8 @@
+           newAddon = loadManifestFromFile(file);
+ 
+           // The default theme is never a foreign install
+-          if (newAddon.type != "theme" || newAddon.internalName != XPIProvider.defaultSkin)
++          // Locale is never a foreign install
++          if ((newAddon.type != "theme" || newAddon.internalName != XPIProvider.defaultSkin) && (newAddon.type != "locale"))
+             newAddon.foreignInstall = true;
+ 
+         }

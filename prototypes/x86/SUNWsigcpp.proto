@@ -1,0 +1,23 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsigcpp.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsigcpp.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsigcpp.copyright
+f none share/doc/SUNWsigcpp/AUTHORS=usr/share/doc/SUNWsigcpp/AUTHORS 0444 root bin
+f none share/doc/SUNWsigcpp/COPYING.bz2=usr/share/doc/SUNWsigcpp/COPYING.bz2 0444 root bin
+f none share/doc/SUNWsigcpp/ChangeLog.bz2=usr/share/doc/SUNWsigcpp/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWsigcpp/NEWS.bz2=usr/share/doc/SUNWsigcpp/NEWS.bz2 0444 root bin
+f none share/doc/SUNWsigcpp/README=usr/share/doc/SUNWsigcpp/README 0444 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libsigc-2.0.so=libsigc-2.0.so.0.0.0
+s none lib/amd64/libsigc-2.0.so.0=libsigc-2.0.so.0.0.0
+f none lib/amd64/libsigc-2.0.so.0.0.0=usr/lib/amd64/libsigc-2.0.so.0.0.0 0755 root bin
+s none lib/libsigc-2.0.so=libsigc-2.0.so.0.0.0
+s none lib/libsigc-2.0.so.0=libsigc-2.0.so.0.0.0
+f none lib/libsigc-2.0.so.0.0.0=usr/lib/libsigc-2.0.so.0.0.0 0755 root bin
+d none share 0755 root sys
+d none share/devhelp 0755 root bin
+d none share/devhelp/books 0755 root bin
+d none share/devhelp/books/libsigc++-2.0 0755 root bin
+f none share/devhelp/books/libsigc++-2.0/libsigc++-2.0.devhelp2=usr/share/devhelp/books/libsigc++-2.0/libsigc++-2.0.devhelp2 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWsigcpp 0755 root bin

@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWid3lib-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWid3lib-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWid3lib-devel.copyright
+d none include 0755 root bin
+d none include/id3 0755 root bin
+f none include/id3.h=usr/include/id3.h 0644 root bin
+f none include/id3/field.h=usr/include/id3/field.h 0644 root bin
+f none include/id3/globals.h=usr/include/id3/globals.h 0644 root bin
+f none include/id3/id3lib_frame.h=usr/include/id3/id3lib_frame.h 0644 root bin
+f none include/id3/id3lib_streams.h=usr/include/id3/id3lib_streams.h 0644 root bin
+f none include/id3/id3lib_strings.h=usr/include/id3/id3lib_strings.h 0644 root bin
+f none include/id3/misc_support.h=usr/include/id3/misc_support.h 0644 root bin
+f none include/id3/reader.h=usr/include/id3/reader.h 0644 root bin
+f none include/id3/readers.h=usr/include/id3/readers.h 0644 root bin
+f none include/id3/sized_types.h=usr/include/id3/sized_types.h 0644 root bin
+f none include/id3/tag.h=usr/include/id3/tag.h 0644 root bin
+f none include/id3/utils.h=usr/include/id3/utils.h 0644 root bin
+f none include/id3/writer.h=usr/include/id3/writer.h 0644 root bin
+f none include/id3/writers.h=usr/include/id3/writers.h 0644 root bin

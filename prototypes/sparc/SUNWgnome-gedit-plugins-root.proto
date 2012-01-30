@@ -1,0 +1,8 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-gedit-plugins-root.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-gedit-plugins-root.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-gedit-plugins-root.copyright
+d none etc 0755 root sys
+d none etc/gconf 0755 root sys
+d none etc/gconf/schemas 0755 root sys
+f none etc/gconf/schemas/gedit-drawspaces.schemas=etc/gconf/schemas/gedit-drawspaces.schemas 0644 root sys
+f none etc/gconf/schemas/gedit-show-tabbar-plugin.schemas=etc/gconf/schemas/gedit-show-tabbar-plugin.schemas 0644 root sys

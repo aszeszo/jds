@@ -1,0 +1,10 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-print-papi.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-print-papi.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-print-papi.copyright
+d none lib 0755 root bin
+d none lib/libgnomeprint 0755 root bin
+d none lib/libgnomeprint/2.18.7 0755 root bin
+d none lib/libgnomeprint/2.18.7/modules 0755 root bin
+s none lib/libgnomeprint/2.18.7/modules/libgnomeprintpapi.so=libgnomeprintpapi.so.0.0.0
+s none lib/libgnomeprint/2.18.7/modules/libgnomeprintpapi.so.0=libgnomeprintpapi.so.0.0.0
+f none lib/libgnomeprint/2.18.7/modules/libgnomeprintpapi.so.0.0.0=usr/lib/libgnomeprint/2.18.7/modules/libgnomeprintpapi.so.0.0.0 0755 root bin

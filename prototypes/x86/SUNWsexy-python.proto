@@ -1,0 +1,19 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWsexy-python.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWsexy-python.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWsexy-python.copyright
+f none share/doc/SUNWsexy-python/AUTHORS=usr/share/doc/SUNWsexy-python/AUTHORS 0444 root bin
+f none share/doc/SUNWsexy-python/COPYING.bz2=usr/share/doc/SUNWsexy-python/COPYING.bz2 0444 root bin
+f none share/doc/SUNWsexy-python/ChangeLog.bz2=usr/share/doc/SUNWsexy-python/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWsexy-python/NEWS=usr/share/doc/SUNWsexy-python/NEWS 0444 root bin
+f none share/doc/SUNWsexy-python/README=usr/share/doc/SUNWsexy-python/README 0444 root bin
+d none lib 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+f none lib/python2.6/vendor-packages/sexy.so=usr/lib/python2.6/vendor-packages/sexy.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWsexy-python 0755 root bin
+d none share/pygtk 0755 root bin
+d none share/pygtk/2.0 0755 root bin
+d none share/pygtk/2.0/defs 0755 root bin
+f none share/pygtk/2.0/defs/sexy.defs=usr/share/pygtk/2.0/defs/sexy.defs 0644 root bin

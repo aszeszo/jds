@@ -1,0 +1,25 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWnautilus-sendto-devel.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWnautilus-sendto-devel.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWnautilus-sendto-devel.copyright
+d none include 0755 root bin
+d none include/nautilus-sendto 0755 root bin
+f none include/nautilus-sendto/nautilus-sendto-plugin.h=usr/include/nautilus-sendto/nautilus-sendto-plugin.h 0644 root bin
+d none lib 0755 root bin
+d none lib/pkgconfig 0755 root other
+f none lib/pkgconfig/nautilus-sendto.pc=usr/lib/pkgconfig/nautilus-sendto.pc 0644 root bin
+d none share 0755 root sys
+d none share/gtk-doc 0755 root bin
+d none share/gtk-doc/html 0755 root bin
+d none share/gtk-doc/html/nautilus-sendto 0755 root bin
+f none share/gtk-doc/html/nautilus-sendto/api-index-full.html=usr/share/gtk-doc/html/nautilus-sendto/api-index-full.html 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/ch01.html=usr/share/gtk-doc/html/nautilus-sendto/ch01.html 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/home.png=usr/share/gtk-doc/html/nautilus-sendto/home.png 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/index.html=usr/share/gtk-doc/html/nautilus-sendto/index.html 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/index.sgml=usr/share/gtk-doc/html/nautilus-sendto/index.sgml 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/left.png=usr/share/gtk-doc/html/nautilus-sendto/left.png 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/nautilus-sendto-nautilus-sendto-plugin.html=usr/share/gtk-doc/html/nautilus-sendto/nautilus-sendto-nautilus-sendto-plugin.html 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/nautilus-sendto.devhelp=usr/share/gtk-doc/html/nautilus-sendto/nautilus-sendto.devhelp 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/nautilus-sendto.devhelp2=usr/share/gtk-doc/html/nautilus-sendto/nautilus-sendto.devhelp2 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/right.png=usr/share/gtk-doc/html/nautilus-sendto/right.png 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/style.css=usr/share/gtk-doc/html/nautilus-sendto/style.css 0644 root bin
+f none share/gtk-doc/html/nautilus-sendto/up.png=usr/share/gtk-doc/html/nautilus-sendto/up.png 0644 root bin

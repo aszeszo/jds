@@ -1,0 +1,77 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWgnome-pilot.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWgnome-pilot.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWgnome-pilot.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWgnome-pilot.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWgnome-pilot.copyright
+f none share/doc/SUNWgnome-pilot/AUTHORS=usr/share/doc/SUNWgnome-pilot/AUTHORS 0444 root bin
+f none share/doc/SUNWgnome-pilot/COPYING.bz2=usr/share/doc/SUNWgnome-pilot/COPYING.bz2 0444 root bin
+f none share/doc/SUNWgnome-pilot/ChangeLog.bz2=usr/share/doc/SUNWgnome-pilot/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWgnome-pilot/NEWS.bz2=usr/share/doc/SUNWgnome-pilot/NEWS.bz2 0444 root bin
+f none share/doc/SUNWgnome-pilot/README.bz2=usr/share/doc/SUNWgnome-pilot/README.bz2 0444 root bin
+d none bin 0755 root bin
+f none bin/gpilot-install-file=usr/bin/gpilot-install-file 0755 root bin
+f none bin/gpilotd-control-applet=usr/bin/gpilotd-control-applet 0755 root bin
+d none lib 0755 root bin
+d none lib/bonobo 0755 root bin
+d none lib/bonobo/servers 0755 root bin
+f none lib/bonobo/servers/GNOME_PilotApplet.server=usr/lib/bonobo/servers/GNOME_PilotApplet.server 0644 root bin
+f none lib/bonobo/servers/GNOME_Pilot_Daemon.server=usr/lib/bonobo/servers/GNOME_Pilot_Daemon.server 0644 root bin
+d none lib/gnome-pilot 0755 root bin
+d none lib/gnome-pilot/conduits 0755 root bin
+f none lib/gnome-pilot/conduits/libbackup_conduit.so=usr/lib/gnome-pilot/conduits/libbackup_conduit.so 0755 root bin
+f none lib/gnome-pilot/conduits/libfile_conduit.so=usr/lib/gnome-pilot/conduits/libfile_conduit.so 0755 root bin
+f none lib/gnome-pilot/conduits/libtest_conduit.so=usr/lib/gnome-pilot/conduits/libtest_conduit.so 0755 root bin
+f none lib/gpilot-applet=usr/lib/gpilot-applet 0755 root bin
+f none lib/gpilotd=usr/lib/gpilotd 0755 root bin
+s none lib/libgpilotd.so=libgpilotd.so.2.2.0
+s none lib/libgpilotd.so.2=libgpilotd.so.2.2.0
+f none lib/libgpilotd.so.2.2.0=usr/lib/libgpilotd.so.2.2.0 0755 root bin
+s none lib/libgpilotdcm.so=libgpilotdcm.so.2.1.0
+s none lib/libgpilotdcm.so.2=libgpilotdcm.so.2.1.0
+f none lib/libgpilotdcm.so.2.1.0=usr/lib/libgpilotdcm.so.2.1.0 0755 root bin
+s none lib/libgpilotdconduit.so=libgpilotdconduit.so.2.0.4
+s none lib/libgpilotdconduit.so.2=libgpilotdconduit.so.2.0.4
+f none lib/libgpilotdconduit.so.2.0.4=usr/lib/libgpilotdconduit.so.2.0.4 0755 root bin
+d none share 0755 root sys
+d none share/applications 0755 root other
+f none share/applications/gpilotd-control-applet.desktop=usr/share/applications/gpilotd-control-applet.desktop 0644 root bin
+d none share/doc 0755 root other
+d none share/doc/SUNWgnome-pilot 0755 root bin
+d none share/gnome 0755 root other
+d none share/gnome-pilot 0755 root bin
+d none share/gnome-pilot/conduits 0755 root bin
+f none share/gnome-pilot/conduits/backup.conduit=usr/share/gnome-pilot/conduits/backup.conduit 0644 root bin
+f none share/gnome-pilot/conduits/file.conduit=usr/share/gnome-pilot/conduits/file.conduit 0644 root bin
+f none share/gnome-pilot/conduits/test.conduit=usr/share/gnome-pilot/conduits/test.conduit 0644 root bin
+f none share/gnome-pilot/devices.xml=usr/share/gnome-pilot/devices.xml 0644 root bin
+d none share/gnome-pilot/glade 0755 root bin
+f none share/gnome-pilot/glade/gnome-palm.png=usr/share/gnome-pilot/glade/gnome-palm.png 0644 root bin
+f none share/gnome-pilot/glade/gnome-pilot-watermark.png=usr/share/gnome-pilot/glade/gnome-pilot-watermark.png 0644 root bin
+f none share/gnome-pilot/glade/gpilotd-capplet.glade=usr/share/gnome-pilot/glade/gpilotd-capplet.glade 0644 root bin
+f none share/gnome-pilot/glade/pilot-applet.glade=usr/share/gnome-pilot/glade/pilot-applet.glade 0644 root bin
+d none share/gnome/help 0755 root bin
+d none share/gnome/help/gnome-pilot 0755 root bin
+d none share/gnome/help/gnome-pilot/C 0755 root bin
+f none share/gnome/help/gnome-pilot/C/gnome-pilot.xml=usr/share/gnome/help/gnome-pilot/C/gnome-pilot.xml 0644 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/gpilot-install-file.1=usr/share/man/man1/gpilot-install-file.1 0644 root bin
+f none share/man/man1/gpilotd-control-applet.1=usr/share/man/man1/gpilotd-control-applet.1 0644 root bin
+f none share/man/man1/gpilotd.1=usr/share/man/man1/gpilotd.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libgpilotd.3=usr/share/man/man3/libgpilotd.3 0644 root bin
+f none share/man/man3/libgpilotdcm.3=usr/share/man/man3/libgpilotdcm.3 0644 root bin
+f none share/man/man3/libgpilotdconduit.3=usr/share/man/man3/libgpilotdconduit.3 0644 root bin
+d none share/mime-info 0755 root other
+f none share/mime-info/palm.keys=usr/share/mime-info/palm.keys 0644 root bin
+f none share/mime-info/palm.mime=usr/share/mime-info/palm.mime 0644 root bin
+d none share/omf 0755 root bin
+d none share/omf/gnome-pilot 0755 root bin
+f none share/omf/gnome-pilot/gnome-pilot-C.omf=usr/share/omf/gnome-pilot/gnome-pilot-C.omf 0644 root bin
+d none share/pixmaps 0755 root other
+f none share/pixmaps/gnome-palm-conduit.png=usr/share/pixmaps/gnome-palm-conduit.png 0644 root bin
+f none share/pixmaps/gnome-palm.png=usr/share/pixmaps/gnome-palm.png 0644 root bin
+f none share/pixmaps/sync_broken.png=usr/share/pixmaps/sync_broken.png 0644 root bin
+f none share/pixmaps/sync_icon.png=usr/share/pixmaps/sync_icon.png 0644 root bin
+f none share/pixmaps/sync_paused.png=usr/share/pixmaps/sync_paused.png 0644 root bin
+f none share/pixmaps/syncing_icon.png=usr/share/pixmaps/syncing_icon.png 0644 root bin

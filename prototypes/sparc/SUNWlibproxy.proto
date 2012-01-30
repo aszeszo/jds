@@ -1,0 +1,48 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWlibproxy.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWlibproxy.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWlibproxy.copyright
+f none share/doc/SUNWlibproxy/libproxy-0.3.1/AUTHORS=usr/share/doc/SUNWlibproxy/libproxy-0.3.1/AUTHORS 0444 root bin
+f none share/doc/SUNWlibproxy/libproxy-0.3.1/COPYING.bz2=usr/share/doc/SUNWlibproxy/libproxy-0.3.1/COPYING.bz2 0444 root bin
+f none share/doc/SUNWlibproxy/libproxy-0.3.1/ChangeLog.bz2=usr/share/doc/SUNWlibproxy/libproxy-0.3.1/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWlibproxy/libproxy-0.3.1/NEWS.bz2=usr/share/doc/SUNWlibproxy/libproxy-0.3.1/NEWS.bz2 0444 root bin
+f none share/doc/SUNWlibproxy/libproxy-0.3.1/README=usr/share/doc/SUNWlibproxy/libproxy-0.3.1/README 0444 root bin
+d none lib 0755 root bin
+d none lib/libproxy 0755 root bin
+s none lib/libproxy.so=libproxy.so.0.0.0
+s none lib/libproxy.so.0=libproxy.so.0.0.0
+f none lib/libproxy.so.0.0.0=usr/lib/libproxy.so.0.0.0 0755 root bin
+d none lib/libproxy/0.3.1 0755 root bin
+d none lib/libproxy/0.3.1/modules 0755 root bin
+f none lib/libproxy/0.3.1/modules/config_direct.so=usr/lib/libproxy/0.3.1/modules/config_direct.so 0755 root bin
+f none lib/libproxy/0.3.1/modules/config_envvar.so=usr/lib/libproxy/0.3.1/modules/config_envvar.so 0755 root bin
+f none lib/libproxy/0.3.1/modules/config_file.so=usr/lib/libproxy/0.3.1/modules/config_file.so 0755 root bin
+f none lib/libproxy/0.3.1/modules/config_wpad.so=usr/lib/libproxy/0.3.1/modules/config_wpad.so 0755 root bin
+f none lib/libproxy/0.3.1/modules/ignore_domain.so=usr/lib/libproxy/0.3.1/modules/ignore_domain.so 0755 root bin
+f none lib/libproxy/0.3.1/modules/ignore_ip.so=usr/lib/libproxy/0.3.1/modules/ignore_ip.so 0755 root bin
+f none lib/libproxy/0.3.1/modules/wpad_dns.so=usr/lib/libproxy/0.3.1/modules/wpad_dns.so 0755 root bin
+f none lib/libproxy/0.3.1/modules/wpad_dnsdevolution.so=usr/lib/libproxy/0.3.1/modules/wpad_dnsdevolution.so 0755 root bin
+d none lib/python2.6 0755 root bin
+d none lib/python2.6/vendor-packages 0755 root bin
+f none lib/python2.6/vendor-packages/libproxy.py=usr/lib/python2.6/vendor-packages/libproxy.py 0644 root bin
+d none lib/sparcv9 0755 root bin
+d none lib/sparcv9/libproxy 0755 root bin
+s none lib/sparcv9/libproxy.so=libproxy.so.0.0.0
+s none lib/sparcv9/libproxy.so.0=libproxy.so.0.0.0
+f none lib/sparcv9/libproxy.so.0.0.0=usr/lib/sparcv9/libproxy.so.0.0.0 0755 root bin
+d none lib/sparcv9/libproxy/0.3.1 0755 root bin
+d none lib/sparcv9/libproxy/0.3.1/modules 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/config_direct.so=usr/lib/sparcv9/libproxy/0.3.1/modules/config_direct.so 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/config_envvar.so=usr/lib/sparcv9/libproxy/0.3.1/modules/config_envvar.so 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/config_file.so=usr/lib/sparcv9/libproxy/0.3.1/modules/config_file.so 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/config_wpad.so=usr/lib/sparcv9/libproxy/0.3.1/modules/config_wpad.so 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/ignore_domain.so=usr/lib/sparcv9/libproxy/0.3.1/modules/ignore_domain.so 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/ignore_ip.so=usr/lib/sparcv9/libproxy/0.3.1/modules/ignore_ip.so 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/wpad_dns.so=usr/lib/sparcv9/libproxy/0.3.1/modules/wpad_dns.so 0755 root bin
+f none lib/sparcv9/libproxy/0.3.1/modules/wpad_dnsdevolution.so=usr/lib/sparcv9/libproxy/0.3.1/modules/wpad_dnsdevolution.so 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWlibproxy 0755 root bin
+d none share/doc/SUNWlibproxy/libproxy-0.3.1 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libproxy.3=usr/share/man/man3/libproxy.3 0644 root bin

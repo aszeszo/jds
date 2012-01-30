@@ -1,0 +1,16 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWmozjs-debugger.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWmozjs-debugger.depend
+i postinstall=/jds/packages/PKGMAPS/scripts/SUNWmozjs-debugger.postinstall
+i postremove=/jds/packages/PKGMAPS/scripts/SUNWmozjs-debugger.postremove
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWmozjs-debugger.copyright
+d none sfw 0755 root bin
+d none sfw/lib 0755 root bin
+d none sfw/lib/mozilla 0755 root sys
+d none sfw/lib/mozilla/chrome 0755 root sys
+d none sfw/lib/mozilla/chrome/icons 0755 root sys
+d none sfw/lib/mozilla/chrome/icons/default 0755 root sys
+f none sfw/lib/mozilla/chrome/icons/default/venkman-window.xpm=usr/sfw/lib/mozilla/chrome/icons/default/venkman-window.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/icons/default/venkman-window16.xpm=usr/sfw/lib/mozilla/chrome/icons/default/venkman-window16.xpm 0644 root sys
+f none sfw/lib/mozilla/chrome/venkman.jar=usr/sfw/lib/mozilla/chrome/venkman.jar 0644 root sys
+d none sfw/lib/mozilla/components 0755 root sys
+f none sfw/lib/mozilla/components/venkman-service.js=usr/sfw/lib/mozilla/components/venkman-service.js 0755 root sys

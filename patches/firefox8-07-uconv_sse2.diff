@@ -1,0 +1,11 @@
+diff --git a/intl/uconv/src/Makefile.in b/intl/uconv/src/Makefile.in
+--- a/intl/uconv/src/Makefile.in
++++ b/intl/uconv/src/Makefile.in
+@@ -83,6 +83,7 @@
+ 
+ ifdef SOLARIS_SUNPRO_CXX
+ nsUTF8ToUnicodeSSE2.$(OBJ_SUFFIX): OS_CXXFLAGS += -xarch=sse2 -xO4
++nsUTF8ToUnicode.$(OBJ_SUFFIX): OS_CXXFLAGS += -xarch=sse2 -xO4
+ endif
+ endif
+ 

@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+
+<gnome-version>
+  <platform>@GNOME_PLATFORM@</platform>
+  <minor>@GNOME_MINOR@</minor>
+  <micro>@GNOME_MICRO@</micro>
+  <distributor-version>@GNOME_DISTRIBUTOR_VERSION@</distributor-version>
+  <distributor>@GNOME_DISTRIBUTOR@</distributor>
+  <date>@GNOME_DATE@</date>
+
+  <description>
+    <!-- SUN_BRANDING -->
+    <_p>
+Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+    </_p>
+    <!-- SUN_BRANDING -->
+    <_p>
+U.S. Government Rights - Commercial software. Government users are
+subject to the Sun Microsystems, Inc. standard license agreement and
+applicable provisions of the FAR and its supplements. Use is subject to
+license terms. This distribution may include materials developed by
+third parties. Portions may be derived from Berkeley BSD systems,
+licensed from U. of CA.
+    </_p>
+    <!-- SUN_BRANDING -->
+    <_p>
+Sun, Sun Microsystems, the Sun logo and Java are trademarks or
+registered trademarks of Sun Microsystems, Inc. in the U.S. and other
+countries.
+    </_p>
+    <!-- SUN_BRANDING -->
+    <_p>
+Contains Macromedia Flash Player technology by Macromedia, Inc.,
+Copyright 1995-2002 Macromedia, Inc. All rights reserved.
+Macromedia, Flash and Macromedia Flash are trademarks or registered
+trademarks of Macromedia, Inc. in the United States and internationally.
+    </_p>
+    <!-- SUN_BRANDING -->
+    <_p>
+For the avoidance of doubt, except that if any license choice other
+than GPL or LGPL is available it will apply instead, Sun elects to
+use only the General Public License version 2 (GPLv2) at this time
+for any software where a choice of GPL license versions is made
+available with the language indicating that GPLv2 or any later
+version may be used, or where a choice of which version of the GPL
+is applied is otherwise unspecified.
+    </_p>
+    <!-- SUN_BRANDING -->
+    <_p>
+Developers and System Support personnel should be aware that future
+versions of GNOME may contain different applications, tools and programming
+interfaces from those found in GNOME 2.0, 2.6 or later released versions.
+    </_p>
+    <p>
+Copyright 2009 Sun Microsystems, Inc. Tous droits réservés.
+    </p>
+    <p>
+L'utilisation est soumise aux termes du contrat de licence. Cette distribution
+peut comprendre des composants développés par des tierces parties. Des parties
+de ce produit pourront être dérivées des systèmes Berkeley BSD licenciés par
+l'Université de Californie.
+    </p>
+    <p>
+Sun, Sun Microsystems, le logo Sun et Java sont des marques de fabrique ou des
+marques déposées de Sun Microsystems, Inc. aux Etats-Unis et dans d'autres pays.
+    </p>
+    <p>
+Inclue la technologie Macromedia Flash Player de Macromedia, Inc.,
+Copyright 1995-2002 Macromedia, Inc. Tous droits réservés.
+Macromedia, Flash et Macromedia Flash sont des marques de fabrique ou des marques
+déposées de Macromedia, Inc. aux Etats-Unis et dans d'autres pays.
+    </p>
+    <p>
+Afin d'écarter le moindre doute, à moins qu'un choix de licence autre que
+la GPL ou LGPL ne soit proposé et donc appliqué à sa place, Sun a décidé,
+pour le moment, d'utiliser uniquement la General Public License version 2 (GPLv2)
+pour tout logiciel où le choix de versions de licences GPL s'accompagne d'une mention
+indiquant que la GPLv2 ou toute version ultérieure peut être utilisée, ou pour tout
+logiciel où le choix de version de la GPL à appliquer n'est spécifié en aucune manière.
+    </p>
+    <p>
+Les développeurs et le personnel de support système doivent savoir que les futures
+versions de GNOME peuvent contenir des applications, des outils et des interfaces de
+programmation différents de ceux qui se trouvent dans GNOME 2.0, 2.6 ou dans des
+versions publiées ultérieurement.
+    </p>
+  </description>
+
+</gnome-version>

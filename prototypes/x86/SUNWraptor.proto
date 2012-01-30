@@ -1,0 +1,29 @@
+i pkginfo=/jds/packages/PKGMAPS/pkginfo/SUNWraptor.pkginfo
+i depend=/jds/packages/PKGMAPS/depend/SUNWraptor.depend
+i copyright=/jds/packages/PKGMAPS/copyright/SUNWraptor.copyright
+f none share/doc/SUNWraptor/raptor-1.4.19/AUTHORS=usr/share/doc/SUNWraptor/raptor-1.4.19/AUTHORS 0444 root bin
+f none share/doc/SUNWraptor/raptor-1.4.19/COPYING.bz2=usr/share/doc/SUNWraptor/raptor-1.4.19/COPYING.bz2 0444 root bin
+f none share/doc/SUNWraptor/raptor-1.4.19/ChangeLog.bz2=usr/share/doc/SUNWraptor/raptor-1.4.19/ChangeLog.bz2 0444 root bin
+f none share/doc/SUNWraptor/raptor-1.4.19/NEWS.bz2=usr/share/doc/SUNWraptor/raptor-1.4.19/NEWS.bz2 0444 root bin
+f none share/doc/SUNWraptor/raptor-1.4.19/README=usr/share/doc/SUNWraptor/raptor-1.4.19/README 0444 root bin
+d none bin 0755 root bin
+f none bin/rapper=usr/bin/rapper 0755 root bin
+f none bin/raptor-config=usr/bin/raptor-config 0755 root bin
+d none lib 0755 root bin
+d none lib/amd64 0755 root bin
+s none lib/amd64/libraptor.so=libraptor.so.1.2.0
+s none lib/amd64/libraptor.so.1=libraptor.so.1.2.0
+f none lib/amd64/libraptor.so.1.2.0=usr/lib/amd64/libraptor.so.1.2.0 0755 root bin
+s none lib/libraptor.so=libraptor.so.1.2.0
+s none lib/libraptor.so.1=libraptor.so.1.2.0
+f none lib/libraptor.so.1.2.0=usr/lib/libraptor.so.1.2.0 0755 root bin
+d none share 0755 root sys
+d none share/doc 0755 root other
+d none share/doc/SUNWraptor 0755 root bin
+d none share/doc/SUNWraptor/raptor-1.4.19 0755 root bin
+d none share/man 0755 root bin
+d none share/man/man1 0755 root bin
+f none share/man/man1/rapper.1=usr/share/man/man1/rapper.1 0644 root bin
+f none share/man/man1/raptor-config.1=usr/share/man/man1/raptor-config.1 0644 root bin
+d none share/man/man3 0755 root bin
+f none share/man/man3/libraptor.3=usr/share/man/man3/libraptor.3 0644 root bin
