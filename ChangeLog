@@ -1,3 +1,10 @@
+2011-02-02  Brian Cameron  <brian.cameron@oracle.com>
+
+	* ext-sources/consolekit.xml, ext-sources/svc-consolekit: Add 
+	  property_group tag to xml file and fix FMRI in script.  Fixes CR 
+	  #7116014.
+	* ext-sources/svc-gdm: Fix FMRI in script.  Fixes CR #7120515.
+
 2011-01-12  Jeff Cai <jeff.cai@oracle.com>
 
 	* base-specs/uperf.spec:
@@ -8,7 +15,7 @@
 
 	* specs/SUNWlibgc.spec, base-specs/libgc.spec: Move atomic_ops header
 	  files into /usr/include/gc with the rest of the libgc headers.  This
-          change was agreed in ARC.
+	  change was agreed in ARC.
 	* base-specs/pulseaudio.spec, patches/pulseaudio-09-sada.diff,
 	  patches/pulseaudio-10-oss4.diff:  Update PulseAudio to build with the
 	  atomic_ops headers in the new location.  Add patches to resolve
@@ -60,17 +67,17 @@
 2011-11-01  Brian Cameron  <brian.cameron@oracle.com>
 
 	* base-specs/pulseaudio.spec, patches/pulseaudio-08-configure.diff:
- 	  Set up default configuration of PulseAudio to use the OSS module.
+	  Set up default configuration of PulseAudio to use the OSS module.
 	* specs/SUNWpulseaudio.spec, manpages/Makefile,
 	  manpages/man5/pulse-daemon.conf.5, manpages/man5/pulse-cleint.conf.5:
- 	  Rework manpages since the upstream ones do not format reasonably on
+	  Rework manpages since the upstream ones do not format reasonably on
 	  Solaris.
 
 2011-10-24  Brian Cameron  <brian.cameron@oracle.com>
 
 	* base-specs/pulseaudio.spec, patches/pulseaudio-07-shm.diff:  Add
 	  patch so that the SHM files in /tmp get cleaned up.  Without this
- 	  patch, a system becomes unusable after a while when /tmp fills up
+	  patch, a system becomes unusable after a while when /tmp fills up
 	  with PulseAudio shared memory files.
 
 2011-10-24  Brian Cameron  <brian.cameron@oracle.com>

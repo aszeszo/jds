@@ -42,6 +42,11 @@
 	    exec=':kill'
 	    timeout_seconds='60' />
 
+	<!-- these are passed to gdm in the method script -->
+	<property_group name='consolekit' type='application'>
+		<propval name='args' type='astring' value='' />
+	</property_group>
+
 	<instance name='default' enabled='true' />
 
 	<stability value='Unstable' />
