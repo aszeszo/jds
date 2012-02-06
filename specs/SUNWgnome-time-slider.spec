@@ -3,7 +3,7 @@
 #
 # includes module(s): time-slider
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -11,8 +11,8 @@
 #
 %include Solaris.inc
 %include l10n.inc
-# NOTE: If the version is bumped the new tarball must be uploaded to the
-#       Sun Download Center. Contact GNOME RE for assistance.
+# NOTE: If the version is bumped the new tarball just submit the new tarball
+#       to /sgnome.
 
 %define OSR developed in the open, no OSR needed:0
 
@@ -21,7 +21,7 @@ IPS_package_name:        desktop/time-slider
 Meta(info.classification): %{classification_prefix}:Applications/Configuration and Preferences
 Summary:                 Time Slider ZFS snapshot management for GNOME
 License:                 cr_Oracle
-Version:                 0.2.99
+Version:                 0.2.100
 Source:                  http://dlc.sun.com/osol/jds/downloads/extras/time-slider/time-slider-%{version}.tar.bz2
 Source1:                 time-slider-po-sun-%{po_sun_version}.tar.bz2
 SUNW_BaseDir:            %{_basedir}
@@ -30,14 +30,13 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires:           SUNWpygtk2-26
-BuildRequires:           SUNWgksu-devel
-Requires:                SUNWPython26
-Requires:                SUNWdbus-python26
-Requires:                SUNWpython26-notify
-Requires:                SUNWgksu
-Requires:                SUNWgnome-dialog
-Requires:                %{name}-root
+BuildRequires:           library/python-2/pygtk2-26
+BuildRequires:           desktop/gksu
+Requires:                runtime/python-26
+Requires:                library/python-2/python-dbus-26
+Requires:                library/python-2/python-notify-26
+Requires:                desktop/gksu
+Requires:                gnome/zenity
 Requires:                service/gnome/desktop-cache
 Obsoletes:               SUNWzfs-auto-snapshot
 
@@ -159,6 +158,8 @@ user ftpuser=false gcos-field="ZFS Automatic Snapshots Reserved UID" group=daemo
 %{_datadir}/locale/*
 
 %changelog
+* Tue Jan 24 2012 - padraig.obriain@oracle.com
+- Bump to version 0.2.100 to fix CR 7064327.
 * Fri Jul 29 2011 - erwann.chenede@oracle.com
 - moved smf files from var to lib
 * Tue Aug 17 2010 - niall.power@oracle.com
