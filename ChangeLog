@@ -1,3 +1,8 @@
+2012-02-07  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 7065464 zfssend timeslider plugin does not verify prevlabel correctly
+	* specs/SUNWgnome-time-slider.spec:
+
 2012-02-06  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	CR 7064327 time-slider error when verbose output level is active
