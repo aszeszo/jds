@@ -219,7 +219,7 @@
      u->use_getospace = u->use_getispace = TRUE;
      u->use_getodelay = TRUE;
      u->mode = mode;
-@@ -1416,6 +1591,196 @@ int pa__init(pa_module*m) {
+@@ -1416,6 +1591,194 @@ int pa__init(pa_module*m) {
      if ((u->mixer_fd = pa_oss_open_mixer_for_device(u->device_name)) >= 0) {
          pa_bool_t do_close = TRUE;
  
@@ -317,7 +317,6 @@
 +                              u->sink_mixext.type);
 +                pa_log_debug ("  maxval : %d", u->sink_mixext.maxvalue);
 +                pa_log_debug ("  parent : %d", u->sink_mixext.parent);
-+                pa_log_debug ("  flags  : %s (0x%04x)");
 +                mixer_showflags (u->sink_mixext.flags);
 +
 +                if ((u->sink_mixext.flags & MIXF_PCMVOL)) {
@@ -381,7 +380,6 @@
 +                              u->source_mixext.type);
 +                pa_log_debug ("  maxval : %d", u->source_mixext.maxvalue);
 +                pa_log_debug ("  parent : %d", u->source_mixext.parent);
-+                pa_log_debug ("  flags  : %s (0x%04x)");
 +                mixer_showflags (u->source_mixext.flags);
 +
 +                /*

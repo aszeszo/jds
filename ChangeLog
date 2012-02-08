@@ -1,5 +1,10 @@
 2011-02-02  Brian Cameron  <brian.cameron@oracle.com>
 
+	* patches/pulseaudio-10-oss4.diff:  Fix to avoid crash when the
+	  pulseaudio daemon starts.
+
+2011-02-02  Brian Cameron  <brian.cameron@oracle.com>
+
 	* ext-sources/consolekit.xml, ext-sources/svc-consolekit: Add 
 	  property_group tag to xml file and fix FMRI in script.  Fixes CR 
 	  #7116014.
