@@ -46,6 +46,8 @@ rm -f $RPM_BUILD_ROOT/%{_infodir}/dir
 #
 install -d $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin
 mv $RPM_BUILD_ROOT%{_bindir}/* $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin
+rm -rf $RPM_BUILD_ROOT%{_bindir}
+rm -rf $RPM_BUILD_ROOT%{_mandir}
 
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.a" -exec rm -f {} ';'
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
@@ -82,7 +84,6 @@ rm -rf $RPM_BUILD_ROOT
 %doc(bzip2) -d liblouis-%{liblouis.version} COPYING COPYING.LIB
 %doc(bzip2) -d liblouis-%{liblouis.version} NEWS
 %defattr (-, root, bin)
-%dir %attr (0755, root, bin) %{_bindir}
 %dir %attr (0755, root, bin) %dir %{_prefix}/demo
 %dir %attr (0755, root, bin) %dir %{_prefix}/demo/jds
 %dir %attr (0755, root, bin) %dir %{_prefix}/demo/jds/bin
@@ -92,8 +93,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_libdir}/pkgconfig
 %{_libdir}/pkgconfig/liblouis.pc
 %dir %attr (0755, root, bin) %{_infodir}
-%defattr (0444, root, bin)
-%{_infodir}/liblouis.info
+%attr (0444, root, bin) %{_infodir}/liblouis.info
 %dir %attr (0755, root, sys) %{_datadir}
 %dir %attr (0755, root, other) %{_datadir}/doc
 %dir %attr (0755, root, bin) %{_datadir}/doc/liblouis
@@ -106,8 +106,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_libdir}/python?.?/vendor-packages/louis
 %dir %attr (0755, root, bin) %{_libdir}/python?.?/vendor-packages/louis-%{version}-py%{pythonver}.egg-info
 %{_libdir}/python?.?/vendor-packages/louis/*
-%dir %attr(0755, root, bin) %{_mandir}
-%dir %attr(0755, root, bin) %{_mandir}/man1
 
 %files devel
 %defattr (-, root, bin)
@@ -115,6 +113,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/liblouis/*
 
 %changelog
+* Fri Feb 03 2012 - Li Yuan <lee.yuan@oracle.com>
+- Fix 7142110. Correct files permission.
 * Tue Jan 04 2011 - Li Yuan <lee.yuan@oracle.com>
 - Fix build error.
 * Mon Nov 22 2010 - Li Yuan <lee.yuan@oracle.com>

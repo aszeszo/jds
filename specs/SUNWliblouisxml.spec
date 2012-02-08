@@ -41,6 +41,7 @@ gzcat ../../SOURCES/%{liblouisxml.name}-%{liblouisxml.version}.tar.gz | tar xf -
 %install
 %liblouisxml.install -d %name-%liblouisxml.version
 rm -f $RPM_BUILD_ROOT/%{_infodir}/dir
+rm -rf $RPM_BUILD_ROOT/%{_mandir}
 
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.a" -exec rm -f {} ';'
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
@@ -86,16 +87,13 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_libdir}/pkgconfig
 %{_libdir}/pkgconfig/liblouisxml.pc
 %dir %attr (0755, root, bin) %{_infodir}
-%defattr (0444, root, bin)
-%{_infodir}/liblouisxml.info
+%attr (0444, root, bin) %{_infodir}/liblouisxml.info
 %dir %attr (0755, root, sys) %{_datadir}
 %dir %attr (0755, root, other) %{_datadir}/doc
 %dir %attr (0755, root, bin) %{_datadir}/doc/liblouisxml
 %{_datadir}/doc/liblouisxml/*
 %dir %attr (0755, root, sys) %{_datadir}/liblouisxml
 %{_datadir}/liblouisxml/*
-%dir %attr(0755, root, bin) %{_mandir}
-%dir %attr(0755, root, bin) %{_mandir}/man1
 
 %files devel
 %defattr (-, root, bin)
@@ -103,6 +101,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/liblouisxml/*
 
 %changelog
+* Fri Feb 03 2012 - Li Yuan <lee.yuan@oracle.com>
+- Fix 7142110. Correct files permission.
 * Mon Nov 22 2010 - Li Yuan <lee.yuan@oracle.com>
 - Remove lbx_devonly which we do not plan to ship.
 * Wed Nov 03 2010 - Li Yuan <lee.yuan@oracle.com>

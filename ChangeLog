@@ -1,3 +1,9 @@
+2012-02-08  Li Yuan  <lee.yuan@oracle.com>
+
+	CR 7142110 incorrect permissions set for dir /usr/share/doc/SUNWliblouis
+	* specs/SUNWliblouis.spec:
+	* specs/SUNWliblouisxml.spec:
+
 2012-02-07  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	CR 7065464 zfssend timeslider plugin does not verify prevlabel correctly
