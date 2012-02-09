@@ -1,7 +1,7 @@
 #
 # spec file for package libvorbis (Version 1.0)
 #
-# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -18,7 +18,7 @@
 Name:         libvorbis
 License:      Xiph.org BSD-style
 Group:        Libraries/Multimedia
-Version:      1.3.2
+Version:      1.3.3
 Distribution: Java Desktop System
 Vendor:       Xiph
 Summary:      The Vorbis General Audio Compression Codec
@@ -96,6 +96,8 @@ sed -e s/XIPH_PATH_VORBIS/AM_PATH_VORBIS/g < $RPM_BUILD_ROOT%{_datadir}/aclocal/
 %{_datadir}/gtk-doc
 
 %changelog -n libvorbis
+* Thu Feb 09 2012 - brian.cameron@oracle.com
+- Bump to 1.3.3.
 * Tue Apr 12 2011 - brian.cameron@oracle.com
 - Bump to 1.3.2.
 * Thu Apr 15 2010 - brian.cameron@sun.com
