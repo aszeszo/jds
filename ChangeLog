@@ -1,3 +1,8 @@
+2011-02-08  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWgnome-display-mgr.spec, specs/SUNWconsolekit.spec,
+	  specs/SUNWogg-vorbis.spec: Update Requires/BuildRequires.
+
 2011-02-02  Brian Cameron  <brian.cameron@oracle.com>
 
 	* patches/pulseaudio-10-oss4.diff:  Fix to avoid crash when the
