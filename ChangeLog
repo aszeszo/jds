@@ -1,3 +1,9 @@
+2012-02-09  Ghee Teo  <ghee.teo@oracle.com>
+
+	Port the use of IPS names in place of svr4 names for Build[Requires]
+	from the update 1 branch.
+	* specs/SUNWgnome-desktop-prefs.spec:
+
 2011-02-08  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWgnome-display-mgr.spec, specs/SUNWconsolekit.spec,
