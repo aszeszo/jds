@@ -3,7 +3,7 @@
 #
 # includes module(s): libcanberra
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -32,20 +32,13 @@ SUNW_BaseDir:            %{_basedir}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWgtk3
-Requires: SUNWlibcanberra-root
-Requires: SUNWxdg-sound-theme
-Requires: SUNWgnome-media
-Requires: SUNWogg-vorbis
-Requires: SUNWlibltdl
-Requires: SUNWdesktop-cache
-Requires: SUNWpulseaudio
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgtk3-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWogg-vorbis-devel
-BuildRequires: SUNWpulseaudio-devel
+Requires: codec/ogg-vorbis
+Requires: gnome/theme/sound/xdg-sound-theme
+Requires: library/audio/gstreamer
+Requires: library/audio/pulseaudio
+Requires: library/desktop/gtk2
+Requires: library/libtool/libltdl
+Requires: service/gnome/desktop-cache
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -76,9 +69,9 @@ cd %{_builddir}/%{name}-%{version}
 gzcat %SOURCE1 | tar xf -
 
 %build
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
+# There seems to be an issue with the version of libtool that is now being
+# used.  The libtool script uses the echo and RM variables but does not define
+# them, so setting them here addresses this.
 export echo="/usr/bin/echo"
 export RM="/usr/bin/rm"
 
@@ -93,8 +86,8 @@ export CFLAGS="%optflags"
 %libcanberra.build -d %name-%version/%base_arch
 
 %install
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
+# There seems to be an issue with the version of libtool that is now being
+# used.  The libtool script uses the echo and RM variables but does not define
 # define them, so setting them here addresses this.
 export echo="/usr/bin/echo"
 export RM="/usr/bin/rm"

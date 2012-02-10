@@ -3,7 +3,7 @@
 #
 # includes module(s): libgc
 #
-# Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -31,7 +31,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibms
+Requires: system/library/math
 
 %package devel
 Summary:                 %{summary} - development files

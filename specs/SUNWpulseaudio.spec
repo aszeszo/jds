@@ -41,34 +41,21 @@ BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 
 %if %SFElibsndfile
-BuildRequires:  SFElibsndfile-devel
-Requires:       SFElibsndfile
+BuildRequires: SFElibsndfile-devel
+Requires: SFElibsndfile
 %else
-BuildRequires: SUNWlibsndfile
-Requires: SUNWlibsndfile
+Requires: library/libsndfile
 %endif
 
-BuildRequires: SUNWopensslr
-BuildRequires: SUNWopenssl-libraries
-BuildRequires: SUNWopenssl-include
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWspeex-devel
-BuildRequires: SUNWavahi-bridge-dsd-devel
-BuildRequires: SUNWlibgc-devel
-BUildRequires: SUNWjson-c-devel
-Requires: SUNWopensslr
-Requires: SUNWopenssl-libraries
-Requires: SUNWdbus-glib
-Requires: SUNWglib2
-Requires: SUNWgtk2
-Requires: SUNWgnome-config
-Requires: SUNWspeex
-Requires: SUNWavahi-bridge-dsd
-Requires: SUNWlibgc
-Requires: SUNWjson-c
+Requires: codec/speex
+Requires: gnome/config/gconf
+Requires: library/desktop/gtk2
+Requires: library/gc
+Requires: library/json-c
+Requires: library/libtool/libltdl
+Requires: library/security/openssl
+Requires: system/library/libdbus-glib
+Requires: system/network/avahi
 
 %package devel
 Summary:                 %{summary} - development files

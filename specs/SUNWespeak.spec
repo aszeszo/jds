@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWespeak
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -36,13 +36,12 @@ BuildRoot:	%{_tmppath}/%{name}-%{tarball_version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWaudh
-BuildRequires: SUNWunzip
-BuildRequires: SUNWgcc
-BuildRequires: SUNWpulseaudio-devel
-Requires: SUNWlibC
-Requires: SUNWlibmsr
-Requires: SUNWpulseaudio
+
+BuildRequires: compress/unzip
+BuildRequires: system/header
+Requires: library/audio/pulseaudio
+Requires: system/library/c++-runtime
+Requires: system/library/math
 
 %package devel
 Summary:                 %{summary} - development files

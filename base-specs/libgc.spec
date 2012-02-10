@@ -1,7 +1,7 @@
 #
 # spec file for package libgc
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,7 +13,7 @@
 %define real_name gc
 
 Name:			libgc
-License:		BSD
+License:		GPL v2,MIT
 Group:			System/Libraries
 Version:		7.2
 Release:	 	4

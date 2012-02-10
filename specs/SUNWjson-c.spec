@@ -37,7 +37,6 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 Requires: %name
-Requires: SUNWgnome-base-libs-devel
 
 %prep
 rm -rf %name-%version
