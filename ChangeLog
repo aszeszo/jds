@@ -1,3 +1,9 @@
+2012-02-10  Leon Fan  <leon.fan@oracle.com>
+
+	CR 7142889 typo in pacrunner_mozjs.cpp cause libproxy-mozjs build failed
+	* base-specs/libproxy.spec:
+	* patches/libproxy-04-bug-7142889.diff:
+
 2012-02-08  Li Yuan  <lee.yuan@oracle.com>
 
 	CR 7142110 incorrect permissions set for dir /usr/share/doc/SUNWliblouis

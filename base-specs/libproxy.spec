@@ -34,6 +34,8 @@ Patch1:       libproxy-01-build.diff
 Patch2:       libproxy-02-bug-7108704.diff
 #owner:leonfan date:2011-12-13 type:bug bugster:7108702
 Patch3:       libproxy-03-bug-7108702.diff
+#owner:leonfan date:2012-02-01 type:bug bugster:7142889
+Patch4:       libproxy-04-bug-7142889.diff
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
 %package devel
@@ -45,6 +47,7 @@ Requires:     %{name} = %{version}
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
+%patch4 -p1
 
 %build
 libtoolize --force
