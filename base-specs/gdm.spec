@@ -106,6 +106,8 @@ Patch33:      gdm-33-linc-cleanup.diff
 Patch34:      gdm-34-vt.diff
 #owner:yippi date:2011-11-07 type:bug bugster:7096672
 Patch35:      gdm-35-restart.diff
+#owner:ja208388 date:2012-02-01 type:bug bugster:7116350
+Patch36:      gdm-36-no-remote-layout.diff
 URL:          http://projects.gnome.org/gdm/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
@@ -153,6 +155,7 @@ graphical interface.
 %patch33 -p1
 %patch34 -p1
 %patch35 -p1
+%patch36 -p1
 
 cp %SOURCE1 gui/simple-greeter
 cp %SOURCE2 gui/simple-greeter
@@ -264,6 +267,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_localstatedir}/lib/gdm
 
 %changelog
+* Wed Feb 01 2012 - javier.acosta@oracle.com
+- Add patch gdm-36-no-remote-layout.diff to fix #7116350 (Escalated).
+  Do not display Keyboard Layout Selection in GDM when GDM is
+  is launched remotely.
 * Mon Nov 07 2011 - brian.cameron@oracle.com
 - Add patch gdm-35-restart.diff to fix CR #7096672, so that GDM will stop
   trying to manage a display if it fails 5 times in less than 60 seconds.

@@ -1,3 +1,10 @@
+2012-02-10  Javier Acosta  <javier.acosta@oracle.com>
+
+	CR 7116350 Solaris11 GDM accessed remotely from dtlogin(Xsun)
+	defaults GDM_KEYBOARD_LAYOUT to "us" on 2nd login
+	* base-specs/gdm.spec:
+	* patches/gdm-36-no-remote-layout.diff:
+
 2012-02-10  Leon Fan  <leon.fan@oracle.com>
 
 	CR 7142889 typo in pacrunner_mozjs.cpp cause libproxy-mozjs build failed
