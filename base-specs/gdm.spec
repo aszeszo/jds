@@ -104,6 +104,8 @@ Patch32:      gdm-32-disconnect.diff
 Patch33:      gdm-33-linc-cleanup.diff
 #owner:yippi date:2011-08-29 type:bug bugster:7082840
 Patch34:      gdm-34-vt.diff
+#owner:ja208388 date:2012-01-26 type:bug bugster:7116350
+Patch35:      gdm-35-no-remote-layout.diff
 URL:          http://projects.gnome.org/gdm/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
@@ -150,6 +152,7 @@ graphical interface.
 %patch32 -p1
 %patch33 -p1
 %patch34 -p1
+%patch35 -p1
 
 cp %SOURCE1 gui/simple-greeter
 cp %SOURCE2 gui/simple-greeter
@@ -261,6 +264,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_localstatedir}/lib/gdm
 
 %changelog
+* Thu Jan 26 2012 - javier.acosta@oracle.com
+- Add patch gdm-35-no-remote-layout.diff to fix #7116350 (Escalated).
+  Do not display Keyboard Layout Selection in GDM when GDM is
+  is launched remotely.
 * Mon Aug 29 2011 - brian.cameron@oracle.com
 - Add patch gdm-34-vt.diff to fix CR #7082840, where GDM does not return to
   VT1 when the gdm service is disabled.  This was a regression caused by

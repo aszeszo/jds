@@ -1,3 +1,10 @@
+2012-02-13  Javier Acosta  <javier.acosta@oracle.com>
+
+	* base-specs/gdm.spec:
+	* patches/gdm-35-no-remote-layout.diff:
+	CR 7116350 Solaris11 GDM accessed remotely from dtlogin(Xsun) 
+	defaults GDM_KEYBOARD_LAYOUT to "us" on 2nd login
+
 2011-11-22  Leon Sha  <leon.sha@oracle.com>
 
 	* specs/SUNWflash-player-plugin.spec:
