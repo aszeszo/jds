@@ -1,7 +1,7 @@
 #
 # spec file for package dbus
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,7 +14,7 @@
 Name:         dbus
 License:      GPL v2, AFL v2.1
 Group:        System/Libraries
-Version:      1.4.16
+Version:      1.4.18
 Release:      1
 Distribution: Java Desktop System
 Vendor:       freedesktop.org
@@ -33,6 +33,8 @@ Patch3:       dbus-03-consoleuser.diff
 Patch4:       dbus-04-cleanup-libs.diff
 #owner:yippi date:2011-06-24 type:bug 
 Patch5:       dbus-05-compile.diff
+#owner:yippi date:2012-02-13 type:bug 
+Patch6:       dbus-06-m4.diff
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:	      %{_defaultdocdir}/doc
 Autoreqprov:  on
@@ -79,6 +81,7 @@ daemon).
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 
 %build
 %ifos linux
@@ -157,6 +160,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/python?.?/vendor-packages/*
 
 %changelog
+* Mon Feb 13 2012 - brian.cameron@oracle.com
+- Bump to 1.4.18.
 * Wed Sep 21 2011 - brian.cameron@oracle.com
 - Bump to 1.4.16.
 * Tue Sep 13 2011 - brian.cameron@oracle.com
