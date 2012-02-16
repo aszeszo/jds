@@ -44,6 +44,7 @@ Source2:                 svc-consolekit
 Requires: library/glib2
 Requires: system/library/dbus
 Requires: system/library/libdbus
+Requires: system/library/libdbus-glib
 BuildRequires: x11/server/xorg
 
 %package root
