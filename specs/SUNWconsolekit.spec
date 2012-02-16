@@ -3,7 +3,7 @@
 #
 # includes module(s): ConsoleKit
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -41,13 +41,10 @@ Source2:                 svc-consolekit
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: SUNWdbus-libs
-Requires: SUNWdbus-glib
-BuildRequires: SUNWglib2
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWxorg-headers
+Requires: library/glib2
+Requires: system/library/dbus
+Requires: system/library/libdbus
+BuildRequires: x11/server/xorg
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -218,6 +215,8 @@ exit 0
 %endif
 
 %changelog
+* Wed Feb 08 2012 - brian.cameron@oracle.com
+- Update Requires/BuildRequires.
 * Fri Apr 08 2011 - brian.cameron@oracle.com
 - Add a /lib/svc/method/svc-consolekit script to fix CR #7025709
 * Fri Apr 23 2010 - halton.huo@sun.com

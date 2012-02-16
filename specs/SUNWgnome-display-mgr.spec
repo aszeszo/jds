@@ -3,7 +3,7 @@
 #
 # includes module(s): gdm
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -71,22 +71,22 @@ Requires: x11/keyboard/xkb-utilities
 # Xserver
 Requires: x11/server/xserver-common
 
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWconsolekit-devel
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlibcanberra-devel
-BuildRequires: SUNWpango-devel
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWlibgnome-keyring
-BuildRequires: SUNWuiu8
+BuildRequires: compatibility/packages/SUNWxwplt
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: gnome/gnome-panel
+BuildRequires: gnome/config/gconf
+BuildRequires: library/desktop/cairo
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/desktop/pango
+BuildRequires: library/desktop/xdg/libcanberra
+BuildRequires: library/glib2
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/gnome/gnome-keyring
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/xdg/consolekit
+BuildRequires: system/library/dbus
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: system/library/libdbus
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -287,6 +287,8 @@ user gcos-field="GDM Reserved UID" group=gdm home-dir=/var/lib/gdm uid=50 userna
 %{_datadir}/omf/gdm/*-[a-z]*.omf
 
 %changelog
+* Wed Feb 08 2012 - brian.cameron@oracle.com
+- Update Requires/BuildRequires.
 * Tue Nov 29 2011 - brian.cameron@oracle.com
 - Fix packaging CR #7110596.
 * Mon Dec 27 2010 - alan.coopersmith@oracle.com

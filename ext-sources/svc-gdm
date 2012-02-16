@@ -18,7 +18,7 @@
 
 case "$1" in
 'start')
-	FMRI=svc:/application/graphical-login/gdm:default
+	FMRI=svc:/application/graphical-login/gdm
 
 	arg=`eval "echo \`svcprop -p gdm/args $FMRI\`"`
 

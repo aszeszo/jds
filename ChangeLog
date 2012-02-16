@@ -1,3 +1,12 @@
+2011-02-02  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWconsolekit.spec, specs/SUNWgnome-display-mgr.spec:  Fix
+	  Requires/BuildRequires lines.
+	* ext-sources/consolekit.xml, ext-sources/svc-consolekit: Add
+	  property_group tag to xml file and fix FMRI in script.  Fixes CR
+	  #7116014.
+	* ext-sources/svc-gdm: Fix FMRI in script.  Fixes CR #7120515.
+
 2012-02-16  Ghee Teo  <ghee.teo@oracle.com>
 
 	CR 6656281 man page needed for desktop-file-install. WEBRTI#359665
