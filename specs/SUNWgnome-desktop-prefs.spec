@@ -3,7 +3,7 @@
 #
 # includes module(s): desktop-file-utils, control-center
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010,2012 Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -38,56 +38,55 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibglade
-Requires: SUNWdbus-glib
-Requires: SUNWevolution-data-server
-Requires: SUNWfontconfig
-Requires: SUNWfreetype2
-Requires: SUNWgnome-audio
-Requires: SUNWgnome-desktop-prefs-root
-Requires: SUNWgnome-config
-Requires: SUNWgnome-component
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-media
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-wm
-Requires: SUNWlibcanberra
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWlxml
-Requires: SUNWdesktop-cache
-Requires: SUNWbash
-Requires: SUNWlibxklavier
-Requires: SUNWgnome-keyboard-libs
+Requires: library/desktop/libglade
+Requires: system/library/libdbus-glib
+Requires: library/desktop/evolution-data-server
+Requires: system/library/fontconfig
+Requires: system/library/freetype-2
+Requires: gnome/gnome-audio
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-component
+Requires: gnome/gnome-panel
+Requires: gnome/file-manager/nautilus
+Requires: library/gnome/gnome-libs
+Requires: library/audio/gstreamer
+Requires: library/gnome/gnome-vfs
+Requires: gnome/window-manager/metacity
+Requires: library/desktop/xdg/libcanberra
+Requires: system/library/math
+Requires: library/popt
+Requires: library/libxml2
+Requires: service/gnome/desktop-cache
+Requires: shell/bash
+Requires: library/desktop/libxklavier
+Requires: library/gnome/libgnomekbd
 %if %with_hal
-Requires: SUNWhal
+Requires: service/hal
 %endif
-Requires: SUNWxorg-mesa
-BuildRequires: SUNWxwxft
-BuildRequires: SUNWlibglade-devel
+Requires: x11/library/mesa
+BuildRequires: x11/library/libxft
+BuildRequires: library/desktop/libglade
 BuildRequires: x11/library/libxscrnsaver
-BuildRequires: SUNWgnome-audio-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWlibcanberra-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-wm-devel
+BuildRequires: x11/library/mesa
+BuildRequires: library/audio/gstreamer
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/desktop/xdg/libcanberra
+BuildRequires: library/popt
+BuildRequires: gnome/window-manager/metacity
 %if %option_without_fox
-BuildRequires: SUNWxorg-headers
+BuildRequires: x11/server/xorg
 %endif
 %if %option_with_dt
-BuildRequires: SUNWtltk
+BuildRequires: library/tooltalk
 %endif
-BuildRequires: SUNWevolution-data-server-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-file-mgr-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWgnome-doc-utils
+BuildRequires: library/desktop/evolution-data-server
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-component
+BuildRequires: gnome/file-manager/nautilus
+BuildRequires: gnome/gnome-panel
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: system/library/libdbus-glib
+BuildRequires: developer/gnome/gnome-doc-utils
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -100,12 +99,10 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgnome-desktop-prefs
-Requires: SUNWgamin
+Requires: library/file-monitor/gamin
                                                                                 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -140,7 +137,6 @@ export PATH=%{_builddir}/%name-%version/desktop-file-utils-%{dfu.version}/src:$P
 %cc.install -d %name-%version
 %gsd.install -d %name-%version
 
-rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 

@@ -1,3 +1,8 @@
+2012-02-16  Ghee Teo  <ghee.teo@oracle.com>
+
+	CR 6656281 man page needed for desktop-file-install. WEBRTI#359665
+	* specs/SUNWgnome-desktop-prefs.spec:
+
 2012-02-13 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 10 ====
