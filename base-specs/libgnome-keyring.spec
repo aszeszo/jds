@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-keyring
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -128,6 +128,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/lib*.so
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Changes needed to build 64-bit version.
 * Mon Apr 26 2010 - christian.kelly@oracle.com
 - Bump to 2.30.1.
 * Jan 26 2010 - jeff.cai@sun.com

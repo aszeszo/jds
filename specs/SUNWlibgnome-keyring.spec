@@ -3,7 +3,7 @@
 #
 # includes module(s): libgnome-keyring
 #
-# Copyright 2010 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -137,6 +137,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Now build 64-bit.
 * Thu May 27 2010 - jeff.cai@sun.com
 - Add dependency on SUNWgnome-keyring
 * Wed Feb 24 2010 - jeff.cai@sun.com
