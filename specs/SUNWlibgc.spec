@@ -3,7 +3,7 @@
 #
 # includes module(s): libgc
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -11,6 +11,12 @@
 #
 %include Solaris.inc
 
+%ifarch amd64 sparcv9
+%include arch64.inc
+%use libgc64 = libgc.spec
+%endif
+
+%include base.inc
 %use libgc = libgc.spec
 
 Name:                    SUNWlibgc
@@ -25,7 +31,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibms
+Requires: system/library/math
 
 %package devel
 Summary:                 %{summary} - development files
@@ -37,42 +43,76 @@ Requires:                %{name}
 %prep
 rm -rf %name-%version
 mkdir %name-%version
-%libgc.prep -d %name-%version
+
+%ifarch amd64 sparcv9
+mkdir %name-%version/%_arch64
+%libgc64.prep -d %name-%version/%_arch64
+%endif
+
+mkdir %name-%version/%{base_arch}
+%libgc.prep -d %name-%version/%{base_arch}
 
 %build
-export CFLAGS="%optflags"
-export LDFLAGS="%{_ldflags}"
+%ifarch amd64 sparcv9
+%libgc64.build -d %name-%version/%_arch64
+%endif
 
-%libgc.build -d %name-%version
+%libgc.build -d %name-%version/%{base_arch}
 
 %install
 rm -rf $RPM_BUILD_ROOT
-%libgc.install -d %name-%version
+
+%ifarch amd64 sparcv9
+%libgc64.install -d %name-%version/%_arch64
+%endif
+
+%libgc.install -d %name-%version/%{base_arch}
+
+# Deliver atomic_ops headers into the /usr/include/gc directory, so they do
+# not confuse users with the system atomic_ops(3C) interfaces.
+#
+mv $RPM_BUILD_ROOT%{_includedir}/atomic_ops $RPM_BUILD_ROOT%{_includedir}/gc
+mv $RPM_BUILD_ROOT%{_includedir}/atomic_ops.h $RPM_BUILD_ROOT%{_includedir}/gc
+mv $RPM_BUILD_ROOT%{_includedir}/atomic_ops_malloc.h $RPM_BUILD_ROOT%{_includedir}/gc
+mv $RPM_BUILD_ROOT%{_includedir}/atomic_ops_stack.h $RPM_BUILD_ROOT%{_includedir}/gc
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%doc -d gc-%{libgc.version} doc/README README.QUICK
-%doc(bzip2) -d gc-%{libgc.version} ChangeLog
+%doc %{base_arch}/gc-%{libgc.version}alpha6/doc/README
+%doc %{base_arch}/gc-%{libgc.version}alpha6/README.QUICK
+%doc(bzip2) %{base_arch}/gc-%{libgc.version}alpha6/ChangeLog
 %dir %attr (0755, root, other) %{_datadir}/doc
 %dir %attr (0755, root, sys) %{_datadir}
 %defattr (-, root, bin)
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/lib*.so*
+%ifarch amd64 sparcv9
+%dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
+%{_libdir}/%{_arch64}/lib*.so*
+%endif
+%{_datadir}/libatomic_ops
 
 %files devel
 %defattr (-, root, bin)
 %dir %attr (0755, root, bin) %{_libdir}
 %{_mandir}/man?/*
-%dir %attr (0755, root, other) %{_libdir}/pkgconfig
-%{_libdir}/pkgconfig/*
 %dir %attr (0755, root, bin) %{_includedir}
 %{_includedir}/*
+%dir %attr (0755, root, other) %{_libdir}/pkgconfig
+%{_libdir}/pkgconfig/*
+%ifarch amd64 sparcv9
+%dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
+%dir %attr (0755, root, other) %{_libdir}/%{_arch64}/pkgconfig
+%{_libdir}/%{_arch64}/pkgconfig/*
+%endif
 %dir %attr (0755, root, sys) %{_datadir}
 %{_datadir}/gc
 
 %changelog
+* Thu Feb 09 2012 - brian.cameron@oracle.com
+- Add libatomic-ops to the package.
 * Fri Apr 30 2010 - yuntong.jin@sun.com
 - Change the ownership to jouby 
 * Thu Mar 27 2008 - halton.huo@sun.com
@@ -92,5 +132,4 @@ rm -rf $RPM_BUILD_ROOT
 - delete unnecessary env variables
 * Mon Jan 30 2006 - glynn.foster@sun.com
 - Initial version
-
 

@@ -1,5 +1,15 @@
 2011-02-17  Brian Cameron  <brian.cameron@oracle.com>
 
+	* specs/SUNWjson-c.spec, base-specs/json-c.spec,
+	  copyright/SUNWjson-c.copyright, patches/json-c-01-compile.diff:
+	  Update libgc to 7.2 and deliver atomic_ops.  Fixes CR #7144313.
+	* specs/SUNWlibgc.spec, base-specs/libgc.spec,
+	  patches/libgc-02-change-location.diff,
+	  patches/libgc-02-rename-libbgc.diff: Add json-c to S11u1.  Fixes CR
+	  #7144537.
+
+2011-02-17  Brian Cameron  <brian.cameron@oracle.com>
+
 	* specs/SUNWogg-vorbis.spec, base-specs/libvorbis.spec: Update
 	  libvorbis to 1.3.3, fixing CR #7141624.
 

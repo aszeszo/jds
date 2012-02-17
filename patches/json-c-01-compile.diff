@@ -1,0 +1,8 @@
+--- json-c-0.9/Makefile.am-orig	2011-09-15 16:41:55.852516959 -0500
++++ json-c-0.9/Makefile.am	2011-09-15 16:42:22.874429636 -0500
+@@ -1,4 +1,4 @@
+-AM_CFLAGS = -Wall -Wwrite-strings -Werror -std=gnu99 -D_GNU_SOURCE -D_REENTRANT
++AM_CFLAGS = -D_GNU_SOURCE -D_REENTRANT
+ 
+ EXTRA_DIST = README.html README-WIN32.html config.h.win32 doc
+ 
