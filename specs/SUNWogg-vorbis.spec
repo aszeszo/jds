@@ -3,7 +3,7 @@
 #
 # includes module(s): libogg, libvorbis
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,10 +33,11 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWbison
-BuildRequires: SUNWPython26
-Requires: SUNWlibms
+
+Requires: system/library/math
+BuildRequires: developer/gnome/gettext
+BuildRequires: developer/parser/bison
+BuildRequires: runtime/python-26
 
 %package devel
 Summary:                 %{summary} - development files
@@ -141,6 +142,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Wed Feb 08 2012 - brian.cameron@oracle.com
+- Update Requires/BuildRequires.
 * Tue Jan 05 2010 - dave.lin@sun.com
 - Changed the dependency from CBEbison to SUNWbison.
 * Wed Sep 17 2008 - christian.kelly@sun.com
