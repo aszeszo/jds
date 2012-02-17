@@ -32,11 +32,10 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibgcrypt
-Requires: SUNWglib2
-Requires: SUNWgnome-keyring
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWglib2
+
+Requires: gnome/gnome-keyring
+Requires: library/glib2
+Requires: system/library/security/libgcrypt
 
 %package devel		
 Summary:                 %{summary} - development files

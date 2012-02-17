@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-mime-data, gnome-vfs
 #
-# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -36,33 +36,25 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWglib2
-Requires: SUNWgnome-vfs-root
-Requires: SUNWgnome-config
-Requires: SUNWgnome-component
-Requires: SUNWdbus
-Requires: SUNWdbus-glib
+Requires: compress/bzip2
+Requires: gnome/config/gconf
+Requires: library/file-monitor/gamin
+Requires: library/glib2
+Requires: library/gnome/gnome-component
+Requires: library/libxml2
+Requires: library/security/openssl
+Requires: library/zlib
+Requires: service/gnome/desktop-cache
+Requires: service/network/samba
+Requires: system/hal
+Requires: system/library/dbus
+Requires: system/library/libdbus
+Requires: system/library/libdbus-glib
+Requires: system/library/math
+Requires: system/network/avahi
+
 BuildRequires: runtime/perl-512
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlxml
-Requires: SUNWdesktop-cache
-Requires: SUNWlibms
-Requires: SUNWavahi-bridge-dsd
-BuildRequires: SUNWopenssl-libraries
-BuildRequires: SUNWhal
-BuildRequires: SUNWgamin
-BuildRequires: SUNWsmbau
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWopenssl-libraries
-BuildRequires: SUNWopenssl-include
-BuildRequires: SUNWgamin-devel
-BuildRequires: SUNWggrp
-BuildRequires: SUNWgnome-xml-share
+BuildRequires: text/gnu-grep
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -233,6 +225,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Now support 64-bit.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Thu May 14 2009 - jeff.cai@sun.com

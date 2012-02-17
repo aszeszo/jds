@@ -1,3 +1,9 @@
+2011-02-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWlibgnome-keyring.spec, specs/SUNWlibsoup.spec,
+	  specs/SUNWgnome-media.spec, specs/SUNWgnome-vfs.spec:  Fix
+	  Requires/BuildRequires lines.
+
 2011-02-13  Brian Cameron  <brian.cameron@oracle.com>
 
 	* base-specs/dbus.spec, patches/dbus-06-m4.diff: Bump to 1.4.18.

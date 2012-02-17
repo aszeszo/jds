@@ -3,7 +3,7 @@
 #
 # includes module(s): gst, gst-plugins-base, gst-plugins-good
 #
-# Copyright 2009, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -40,64 +40,47 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWaudh
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWbison
-BuildRequires: SUNWmkcd
-BuildRequires: SUNWPython26
-BuildRequires: SUNWmusicbrainz-devel
-BuildRequires: SUNWspeex-devel
-BuildRequires: SUNWflac-devel
-BuildRequires: SUNWlibtheora-devel
-BuildRequires: SUNWogg-vorbis-devel
-BuildRequires: SUNWPython26-extra
-BuildRequires: SUNWliboil-devel
-BuildRequires: SUNWgnome-audio-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWjpg-devel
-BuildRequires: SUNWpng-devel
-BuildRequires: SUNWlibsoup-devel
-BuildRequires: SUNWlibvisual-devel
-BuildRequires: SUNWaalib
-BuildRequires: SUNWlibgnome-keyring
-BuildRequires: SUNWgobject-introspection
-# gnu grep
-BuildRequires: SUNWggrp
-BuildRequires: SUNWgawk
-BuildRequires: SUNWgsed
-BuildRequires: SUNWpulseaudio-devel
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-media-root
-Requires: SUNWmusicbrainz
-# The package SUNWmkcd not in SUNWCuser metacluster
-# Comment out this line until we work it out(CR6840919)
-#Requires: SUNWmkcd
-Requires: SUNWspeex
-Requires: SUNWflac
-Requires: SUNWlibtheora
-Requires: SUNWogg-vorbis
-Requires: SUNWliboil
-Requires: SUNWlibms
-Requires: SUNWgnome-audio
-Requires: SUNWgnome-config
-Requires: SUNWgnome-vfs
-Requires: SUNWlibsoup
-Requires: SUNWjpg
-Requires: SUNWlibms
-Requires: SUNWlxml
+
+Requires: codec/flac
+Requires: codec/libtheora
+Requires: codec/ogg-vorbis
+Requires: codec/speex
+Requires: gnome/config/gconf
+Requires: gnome/gnome-audio
+Requires: image/library/libjpeg
+Requires: image/library/libpng
+Requires: library/aalib
+Requires: library/desktop/gobject/gobject-introspection
+Requires: library/desktop/gtk2
+Requires: library/desktop/pango
+Requires: library/gnome/gnome-keyring
+Requires: library/gnome/gnome-libs
+Requires: library/gnome/gnome-vfs
+Requires: library/liboil
+Requires: library/libsoup
+Requires: library/libxml2
+Requires: library/musicbrainz/libdiscid
+Requires: library/musicbrainz/libmusicbrainz
+Requires: library/python-2/python-extra-26
+Requires: library/zlib
+Requires: media/cdrtools
+Requires: runtime/python-26
+Requires: service/gnome/desktop-cache
+Requires: system/hal
+Requires: system/library/math
+Requires: x11/library/libx11
+Requires: x11/library/libxext
+Requires: x11/library/libxv
+
+BuildRequires: developer/parser/bison
+BuildRequires: library/desktop/libvisual
+BuildRequires: media/cdrtools
 BuildRequires: runtime/perl-512
-Requires: SUNWpng
-Requires: SUNWzlib
-Requires: SUNWlibvisual
-Requires: SUNWdesktop-cache
-Requires: SUNWaalib
-%if %with_hal
-Requires: SUNWhal
-%endif
-Requires: SUNWpulseaudio
+BuildRequires: system/header
+BuildRequires: text/gawk
+BuildRequires: text/gnu-grep
+BuildRequires: text/gnu-sed
+BuildRequires: x11/server/xorg
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -374,6 +357,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Now build with vfs and soup 64-bit plug-ins.
 * Wed Apr 06 2011 - brian.cameron@oracle.com
 - Add "RO" to prof_attr config.
 * Thu Apr 15 2010 - christian.kelly@oracle.com

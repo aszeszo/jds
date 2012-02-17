@@ -3,7 +3,7 @@
 #
 # includes module(s): libsoup
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -30,30 +30,27 @@ SUNW_Category: EVO25,%{default_category}
 SUNW_BaseDir:  %{_basedir}
 SUNW_Copyright: %{name}.copyright
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
+
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWglib2
-Requires: SUNWlibgcrypt
-Requires: SUNWgnutls
-Requires: SUNWlxml
-Requires: SUNWzlib
-Requires: SUNWlibms
-Requires: SUNWlibproxy
-Requires: SUNWsqlite3
-Requires: SUNWgobject-introspection
-Requires: SUNWlibgnome-keyring
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWlibproxy-devel
-BuildRequires: SUNWzlib
-BuildRequires: SUNWgnome-libs
+
+Requires: database/sqlite-3
+Requires: library/desktop/gobject/gobject-introspection
+Requires: library/glib2
+Requires: library/gnutls
+Requires: library/gnome/gnome-libs
+Requires: library/gnome/gnome-keyring
+Requires: library/libproxy/libproxy-gnome
+Requires: library/libxml2
+Requires: library/zlib
+Requires: system/library/security/libgcrypt
+Requires: system/library/math
 
 %package devel
 Summary:		%{summary} - development files
 SUNW_BaseDir:		%{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:      SUNWlibsoup
 
 %prep
 rm -rf %name-%version
@@ -134,7 +131,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*
 
 %changelog
-* Mon Oct 10 2011 - brian.cameron@oracle.com
+* Fri Feb 17 2012 - brian.cameron@oracle.com
 - Add 64-bit support.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
