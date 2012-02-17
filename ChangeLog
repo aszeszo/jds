@@ -13,7 +13,7 @@
 	* specs/SUNWogg-vorbis.spec, base-specs/libvorbis.spec: Update
 	  libvorbis to 1.3.3, fixing CR #7141624.
 
-2011-02-02  Brian Cameron  <brian.cameron@oracle.com>
+2011-02-16  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWconsolekit.spec, specs/SUNWgnome-display-mgr.spec:  Fix
 	  Requires/BuildRequires lines.
