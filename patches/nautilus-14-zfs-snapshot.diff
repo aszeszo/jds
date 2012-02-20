@@ -940,7 +940,7 @@ diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-file-mgr-2.30.0-b4/naut
 +
 +      for (tmp; tmp; tmp = tmp->next)
 +	{
-+	  g_sprintf (snap_name, "%s/%s", 
++	  g_snprintf (snap_name, sizeof(snap_name), "%s/%s", 
 +		     ((ZfsDataSet *) tmp->data)->mountpoint, 
 +		     name);
 +	  if (g_cancellable_is_cancelled (cancel))
@@ -1543,7 +1543,7 @@ diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-file-mgr-2.30.0-b4/naut
 +			  gchar **split;
 +			  split = g_strsplit (real_dir, mtab.mnt_mountp, 2);
 +			  /*split 2nd part contains path without mount point */
-+			  sprintf (real_path,"%s%s",mtab.mnt_special,split[1]);
++			  g_snprintf (real_path,sizeof(real_path),"%s%s",mtab.mnt_special,split[1]);
 +			  g_strfreev (split);
 +			}
 +		      found = TRUE;
@@ -2651,7 +2651,7 @@ diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-file-mgr-2.30.0-b4/naut
 +
 +  while (!found && !end_path)
 +    {
-+      g_sprintf (tmp_path, "%s/.zfs/snapshot", stripped_path);
++      g_snprintf (tmp_path, sizeof(tmp_path), "%s/.zfs/snapshot", stripped_path);
 +      if (g_file_test (tmp_path, G_FILE_TEST_IS_DIR))
 +        {
 +          GList *entries = get_dir_entries (tmp_path);

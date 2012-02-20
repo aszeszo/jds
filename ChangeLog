@@ -1,3 +1,8 @@
+2012-02-20  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 7145461 Problem with gnome/file-manager
+	* patches/nautilus-14-zfs-snapshot.diff:
+
 2011-02-17  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWjson-c.spec, base-specs/json-c.spec,
