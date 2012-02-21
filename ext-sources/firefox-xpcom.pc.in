@@ -6,7 +6,7 @@ idldir=IDLDIR
 
 Name: XPCOM
 Description: The Mozilla Cross Platform Component Library
-Version: 9.0
+Version: 10.0
 REQUIRES_NSPR
 Libs: -L${libdir} -R${libdir} NSPR_RUNPATH -lxpcom -lxul -lmozalloc NSPR_LIB
 Cflags:-I${includedir} NSPR_INCLUDE -D_XOPEN_SOURCE=500 -D__EXTENSIONS__ -DMOZ_DEFAULT_TOOLKIT=\"cairo-gtk2\" -features=no%except

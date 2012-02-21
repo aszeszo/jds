@@ -1,0 +1,51 @@
+diff --git a/content/base/public/nsINode.h b/content/base/public/nsINode.h
+--- a/content/base/public/nsINode.h
++++ b/content/base/public/nsINode.h
+@@ -1149,22 +1149,22 @@
+   };
+ 
+   void SetBoolFlag(BooleanFlag name, bool value) {
+-    PR_STATIC_ASSERT(BooleanFlagCount <= 8*sizeof(mBoolFlags));
++    PR_STATIC_ASSERT(BooleanFlagCount <= 8*4);
+     mBoolFlags = (mBoolFlags & ~(1 << name)) | (value << name);
+   }
+ 
+   void SetBoolFlag(BooleanFlag name) {
+-    PR_STATIC_ASSERT(BooleanFlagCount <= 8*sizeof(mBoolFlags));
++    PR_STATIC_ASSERT(BooleanFlagCount <= 8*4);
+     mBoolFlags |= (1 << name);
+   }
+ 
+   void ClearBoolFlag(BooleanFlag name) {
+-    PR_STATIC_ASSERT(BooleanFlagCount <= 8*sizeof(mBoolFlags));
++    PR_STATIC_ASSERT(BooleanFlagCount <= 8*4);
+     mBoolFlags &= ~(1 << name);
+   }
+ 
+   bool GetBoolFlag(BooleanFlag name) const {
+-    PR_STATIC_ASSERT(BooleanFlagCount <= 8*sizeof(mBoolFlags));
++    PR_STATIC_ASSERT(BooleanFlagCount <= 8*4);
+     return mBoolFlags & (1 << name);
+   }
+ 
+diff --git a/content/media/wave/nsWaveReader.cpp b/content/media/wave/nsWaveReader.cpp
+--- a/content/media/wave/nsWaveReader.cpp
++++ b/content/media/wave/nsWaveReader.cpp
+@@ -408,7 +408,7 @@
+                    sizeof(PRUint32) +
+                    4 +
+                    sizeof(PRUint16) +
+-                   sizeof(PRUint16) <= sizeof(waveFormat));
++                   sizeof(PRUint16) <= WAVE_FORMAT_CHUNK_SIZE);
+   if (ReadUint16LE(&p) != WAVE_FORMAT_ENCODING_PCM) {
+     NS_WARNING("WAVE is not uncompressed PCM, compressed encodings are not supported");
+     return false;
+@@ -437,7 +437,7 @@
+       return false;
+     }
+ 
+-    PR_STATIC_ASSERT(sizeof(PRUint16) <= sizeof(extLength));
++    PR_STATIC_ASSERT(sizeof(PRUint16) <= 2);
+     PRUint16 extra = ReadUint16LE(&p);
+     if (fmtSize - (WAVE_FORMAT_CHUNK_SIZE + 2) != extra) {
+       NS_WARNING("Invalid extended format chunk size");

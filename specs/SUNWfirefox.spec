@@ -20,7 +20,7 @@
 #####################################
 
 %define lang_list ar be bg ca cs da de el es-AR es-CL es-ES et fi fr he hi-IN hr hu id is it ja kk ko lt lv mk nb-NO nl nn-NO pl pt-BR pt-PT ro ru sk sl sq sr sv-SE th tr uk vi zh-CN zh-HK zh-TW 
-%define l10n_version 9.0.1
+%define l10n_version 10.0.2esr
 
 Name:          SUNWfirefox
 IPS_package_name: web/browser/firefox
@@ -41,42 +41,42 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibC
-Requires: SUNWlibms
-Requires: SUNWbash
-Requires: SUNWgtk2
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWaudh
-Requires: SUNWfontconfig
-Requires: SUNWfreetype2
-Requires: SUNWgnome-config
-BuildRequires: SUNWgnome-config-devel
-Requires: SUNWgnome-libs
-BuildRequires: SUNWgnome-libs-devel
-Requires: SUNWgnome-vfs
-BuildRequires: SUNWgnome-vfs-devel
-Requires: SUNWzlib
-BuildRequires: SUNWzlib
-Requires: SUNWlibtheora
-BuildRequires: SUNWlibtheora
-Requires: SUNWogg-vorbis
-BuildRequires: SUNWogg-vorbis
-Requires: SUNWsqlite3
-BuildRequires: SUNWsqlite3
-Requires: SUNWlibnotify
-BuildRequires: SUNWlibnotify
-Requires: SUNWdbus-glib
-BuildRequires: SUNWdbus-glib
-Requires: SUNWdbus-libs
-BuildRequires: SUNWdbus-libs
-Requires: SUNWlibffi
-BuildRequires: SUNWlibffi
-Requires: SUNWdbus
-BuildRequires: SUNWdbus
-BuildRequires: SUNWzip
-BuildRequires: SUNWgtar
-BuildRequires: SUNWbzip
+Requires: system/library/c++-runtime
+Requires: system/library/math
+Requires: shell/bash
+Requires: library/desktop/gtk2
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/gnome/gnome-component
+BuildRequires: system/header
+Requires: system/library/fontconfig
+Requires: system/library/freetype-2
+Requires: gnome/config/gconf
+BuildRequires: gnome/config/gconf
+Requires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-libs
+Requires: library/gnome/gnome-vfs
+BuildRequires: library/gnome/gnome-vfs
+Requires: library/zlib
+BuildRequires: library/zlib
+Requires: codec/libtheora
+BuildRequires: codec/libtheora
+Requires: codec/ogg-vorbis
+BuildRequires: codec/ogg-vorbis
+Requires: database/sqlite-3
+BuildRequires: database/sqlite-3
+Requires: library/libnotify
+BuildRequires: library/libnotify
+Requires: system/library/libdbus-glib
+BuildRequires: system/library/libdbus-glib
+Requires: system/library/libdbus
+BuildRequires: system/library/libdbus
+Requires: library/libffi
+BuildRequires: library/libffi
+Requires: system/library/dbus
+BuildRequires: system/library/dbus
+BuildRequires: compress/zip
+BuildRequires: archiver/gnu-tar
+BuildRequires: compress/bzip2
 #%if %option_with_indiana_branding
 # comment this out until I can find where to get it 
 # to install it on the build machines
@@ -86,7 +86,7 @@ BuildRequires: SUNWbzip
 # Requires: library/nspr
 # Requires: library/security/nss
 # %endif
-BuildRequires: SUNWxorg-mesa
+BuildRequires: x11/library/mesa
 BuildRequires: x11/library/libxscrnsaver
 Requires: system/font/truetype/dejavu
 
@@ -191,7 +191,7 @@ exit 0
 
 %files -f SUNWfirefox.list
 
-%doc -d firefox/mozilla-release README.txt LICENSE 
+%doc -d firefox/mozilla-esr10 README.txt LICENSE 
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %defattr(-, root, bin)

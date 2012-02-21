@@ -5,7 +5,7 @@ includedir=INCLUDEDIR/NAME
 
 Name: JavaScript
 Description: The Mozilla JavaScript Library
-Version: 9.0
+Version: 10.0
 REQUIRES_NSPR
 Libs: -L${libdir} -R${libdir} NSPR_RUNPATH -lxul NSPR_LIB
 Cflags: -I${includedir} NSPR_INCLUDE -DXP_UNIX -DJS_THREADSAFE

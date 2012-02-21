@@ -41,3 +41,14 @@
  
  fi # if gecko_cv_have_gecko
  
+--- a/src/dh-gecko-utils.cpp	2012-01-29 11:38:00.888131835 +0800
++++ b/src/dh-gecko-utils.cpp	2012-01-29 11:38:20.836033670 +0800
+@@ -78,7 +78,7 @@
+ dh_gecko_utils_get_mouse_event_modifiers (gpointer event)
+ {
+ 	nsIDOMMouseEvent *aMouseEvent;
+-	PRBool            ctrl, alt, shift, meta;
++	bool              ctrl, alt, shift, meta;
+ 	gint              mask;
+ 	
+ 	aMouseEvent = (nsIDOMMouseEvent *) event;

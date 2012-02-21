@@ -1,0 +1,341 @@
+diff --git a/dom/plugins/ipc/PluginInstanceChild.cpp b/dom/plugins/ipc/PluginInstanceChild.cpp
+--- a/dom/plugins/ipc/PluginInstanceChild.cpp
++++ b/dom/plugins/ipc/PluginInstanceChild.cpp
+@@ -2605,17 +2605,17 @@ PluginInstanceChild::MaybeCreatePlatform
+             return true;
+         }
+ #endif
+         // For image layer surface we should always create helper surface
+         createHelperSurface = true;
+         // Check if we can create helper surface with non-default visual
+         visual = gfxXlibSurface::FindVisual(screen,
+             static_cast<gfxImageSurface*>(mCurrentSurface.get())->Format());
+-        if (visual && defaultVisual != visual && !supportNonDefaultVisual) {
++        if (!visual || (defaultVisual != visual && !supportNonDefaultVisual)) {
+             visual = defaultVisual;
+             mDoAlphaExtraction = mIsTransparent;
+         }
+     }
+ 
+     if (createHelperSurface) {
+         if (!visual) {
+             NS_ERROR("Need X falback surface, but visual failed");
+# HG changeset patch
+# User Karl Tomlinson <karlt+@karlt.net>
+# Date 1326192875 -46800
+# Node ID e2d3f721ffc900e88dff591fdadfeb380dea6c44
+# Parent  c5aecfec255a2fe3fcb47def49e5c6178575356a
+b=682625 share code for layers::SurfaceDescriptorX11 with plugins r=cjones
+
+diff --git a/dom/plugins/ipc/PPluginInstance.ipdl b/dom/plugins/ipc/PPluginInstance.ipdl
+--- a/dom/plugins/ipc/PPluginInstance.ipdl
++++ b/dom/plugins/ipc/PPluginInstance.ipdl
+@@ -59,6 +59,7 @@
+ using gfxIntSize;
+ using mozilla::null_t;
+ using mozilla::plugins::WindowsSharedMemoryHandle;
++using SurfaceDescriptorX11;
+ using nsIntRect;
+ using nsTextEvent;
+ using nsKeyEvent;
+@@ -66,12 +67,6 @@
+ namespace mozilla {
+ namespace plugins {
+ 
+-struct SurfaceDescriptorX11 {
+-  int XID;
+-  int xrenderPictID;
+-  gfxIntSize size;
+-};
+-
+ struct IOSurfaceDescriptor {
+   uint32_t surfaceId;
+ };
+diff --git a/dom/plugins/ipc/PluginInstanceChild.cpp b/dom/plugins/ipc/PluginInstanceChild.cpp
+--- a/dom/plugins/ipc/PluginInstanceChild.cpp
++++ b/dom/plugins/ipc/PluginInstanceChild.cpp
+@@ -3446,14 +3446,7 @@
+         switch (aBackground.type()) {
+ #ifdef MOZ_X11
+         case SurfaceDescriptor::TSurfaceDescriptorX11: {
+-            SurfaceDescriptorX11 xdesc = aBackground.get_SurfaceDescriptorX11();
+-            XRenderPictFormat pf;
+-            pf.id = xdesc.xrenderPictID();
+-            XRenderPictFormat *incFormat =
+-                XRenderFindFormat(DefaultXDisplay(), PictFormatID, &pf, 0);
+-            mBackground =
+-                new gfxXlibSurface(DefaultScreenOfDisplay(DefaultXDisplay()),
+-                                   xdesc.XID(), incFormat, xdesc.size());
++            mBackground = aBackground.get_SurfaceDescriptorX11().OpenForeign();
+             break;
+         }
+ #endif
+diff --git a/dom/plugins/ipc/PluginInstanceParent.cpp b/dom/plugins/ipc/PluginInstanceParent.cpp
+--- a/dom/plugins/ipc/PluginInstanceParent.cpp
++++ b/dom/plugins/ipc/PluginInstanceParent.cpp
+@@ -535,14 +535,7 @@
+ #endif
+ #ifdef MOZ_X11
+     else if (newSurface.type() == SurfaceDescriptor::TSurfaceDescriptorX11) {
+-        SurfaceDescriptorX11 xdesc = newSurface.get_SurfaceDescriptorX11();
+-        XRenderPictFormat pf;
+-        pf.id = xdesc.xrenderPictID();
+-        XRenderPictFormat *incFormat =
+-            XRenderFindFormat(DefaultXDisplay(), PictFormatID, &pf, 0);
+-        surface =
+-            new gfxXlibSurface(DefaultScreenOfDisplay(DefaultXDisplay()),
+-                               xdesc.XID(), incFormat, xdesc.size());
++        surface = newSurface.get_SurfaceDescriptorX11().OpenForeign();
+     }
+ #endif
+ #ifdef XP_WIN
+diff --git a/dom/plugins/ipc/PluginMessageUtils.h b/dom/plugins/ipc/PluginMessageUtils.h
+--- a/dom/plugins/ipc/PluginMessageUtils.h
++++ b/dom/plugins/ipc/PluginMessageUtils.h
+@@ -43,6 +43,7 @@
+ #include "base/message_loop.h"
+ 
+ #include "mozilla/ipc/RPCChannel.h"
++#include "IPC/ShadowLayerUtils.h"
+ 
+ #include "npapi.h"
+ #include "npruntime.h"
+@@ -66,6 +67,8 @@
+ namespace mozilla {
+ namespace plugins {
+ 
++using layers::SurfaceDescriptorX11;
++
+ enum ScriptableObjectType
+ {
+   LocalObject,
+# HG changeset patch
+# User Karl Tomlinson <karlt+@karlt.net>
+# Date 1326192878 -46800
+# Node ID 04dd5995b0861582ec32d947ff3615d9f277b8fe
+# Parent  e2d3f721ffc900e88dff591fdadfeb380dea6c44
+b=682625 use simpler SurfaceDescriptorX11(gfxXlibSurface) constructor in PluginInstances r=cjones
+
+diff --git a/dom/plugins/ipc/PluginInstanceChild.cpp b/dom/plugins/ipc/PluginInstanceChild.cpp
+--- a/dom/plugins/ipc/PluginInstanceChild.cpp
++++ b/dom/plugins/ipc/PluginInstanceChild.cpp
+@@ -3280,8 +3280,7 @@
+ #ifdef MOZ_X11
+     if (mCurrentSurface->GetType() == gfxASurface::SurfaceTypeXlib) {
+         gfxXlibSurface *xsurf = static_cast<gfxXlibSurface*>(mCurrentSurface.get());
+-        currSurf = SurfaceDescriptorX11(xsurf->XDrawable(), xsurf->XRenderFormat()->id,
+-                                        mCurrentSurface->GetSize());
++        currSurf = SurfaceDescriptorX11(xsurf);
+         // Need to sync all pending x-paint requests
+         // before giving drawable to another process
+         XSync(mWsInfo.display, False);
+diff --git a/dom/plugins/ipc/PluginInstanceParent.cpp b/dom/plugins/ipc/PluginInstanceParent.cpp
+--- a/dom/plugins/ipc/PluginInstanceParent.cpp
++++ b/dom/plugins/ipc/PluginInstanceParent.cpp
+@@ -840,8 +840,7 @@
+ 
+ #ifdef MOZ_X11
+     gfxXlibSurface* xsurf = static_cast<gfxXlibSurface*>(mBackground.get());
+-    return SurfaceDescriptorX11(xsurf->XDrawable(), xsurf->XRenderFormat()->id,
+-                                xsurf->GetSize());
++    return SurfaceDescriptorX11(xsurf);
+ #endif
+ 
+ #ifdef XP_WIN
+# HG changeset patch
+# User Karl Tomlinson <karlt+@karlt.net>
+# Date 1326192878 -46800
+# Node ID 98768291cee95712410e1ca285693f8aaa32c253
+# Parent  04dd5995b0861582ec32d947ff3615d9f277b8fe
+b=682625 move XVisualIDToInfo to X11Util r=cjones
+
+diff --git a/dom/plugins/ipc/PluginInstanceChild.cpp b/dom/plugins/ipc/PluginInstanceChild.cpp
+--- a/dom/plugins/ipc/PluginInstanceChild.cpp
++++ b/dom/plugins/ipc/PluginInstanceChild.cpp
+@@ -963,37 +963,6 @@
+ #endif
+ }
+ 
+-
+-#if defined(MOZ_X11) && defined(XP_UNIX) && !defined(XP_MACOSX)
+-static bool
+-XVisualIDToInfo(Display* aDisplay, VisualID aVisualID,
+-                Visual** aVisual, unsigned int* aDepth)
+-{
+-    if (aVisualID == None) {
+-        *aVisual = NULL;
+-        *aDepth = 0;
+-        return true;
+-    }
+-
+-    const Screen* screen = DefaultScreenOfDisplay(aDisplay);
+-
+-    for (int d = 0; d < screen->ndepths; d++) {
+-        Depth *d_info = &screen->depths[d];
+-        for (int v = 0; v < d_info->nvisuals; v++) {
+-            Visual* visual = &d_info->visuals[v];
+-            if (visual->visualid == aVisualID) {
+-                *aVisual = visual;
+-                *aDepth = d_info->depth;
+-                return true;
+-            }
+-        }
+-    }
+-
+-    NS_ERROR("VisualID not on Screen.");
+-    return false;
+-}
+-#endif
+-
+ bool
+ PluginInstanceChild::AnswerNPP_SetWindow(const NPRemoteWindow& aWindow)
+ {
+diff --git a/gfx/src/X11Util.cpp b/gfx/src/X11Util.cpp
+--- a/gfx/src/X11Util.cpp
++++ b/gfx/src/X11Util.cpp
+@@ -41,6 +41,34 @@
+ 
+ namespace mozilla {
+ 
++bool
++XVisualIDToInfo(Display* aDisplay, VisualID aVisualID,
++                Visual** aVisual, unsigned int* aDepth)
++{
++    if (aVisualID == None) {
++        *aVisual = NULL;
++        *aDepth = 0;
++        return true;
++    }
++
++    const Screen* screen = DefaultScreenOfDisplay(aDisplay);
++
++    for (int d = 0; d < screen->ndepths; d++) {
++        Depth *d_info = &screen->depths[d];
++        for (int v = 0; v < d_info->nvisuals; v++) {
++            Visual* visual = &d_info->visuals[v];
++            if (visual->visualid == aVisualID) {
++                *aVisual = visual;
++                *aDepth = d_info->depth;
++                return true;
++            }
++        }
++    }
++
++    NS_ERROR("VisualID not on Screen.");
++    return false;
++}
++
+ ScopedXErrorHandler::ErrorEvent* ScopedXErrorHandler::sXErrorPtr;
+ 
+ int
+diff --git a/gfx/src/X11Util.h b/gfx/src/X11Util.h
+--- a/gfx/src/X11Util.h
++++ b/gfx/src/X11Util.h
+@@ -73,6 +73,17 @@
+ }
+ 
+ /**
++ * Sets *aVisual to point to aDisplay's Visual struct corresponding to
++ * aVisualID, and *aDepth to its depth.  When aVisualID is None, these are set
++ * to NULL and 0 respectively.  Both out-parameter pointers are assumed
++ * non-NULL.  Returns true in both of these situations, but false if aVisualID
++ * is not None and not found on the Display.
++ */
++bool
++XVisualIDToInfo(Display* aDisplay, VisualID aVisualID,
++                Visual** aVisual, unsigned int* aDepth);
++
++/**
+  * Invoke XFree() on a pointer to memory allocated by Xlib (if the
+  * pointer is nonnull) when this class goes out of scope.
+  */
+# HG changeset patch
+# User Karl Tomlinson <karlt+@karlt.net>
+# Date 1326192878 -46800
+# Node ID 6571d631dd40922a6ba6b25dcd0ddb8460894ebd
+# Parent  98768291cee95712410e1ca285693f8aaa32c253
+b=682625 pass VisualID when PictFormat is not available r=cjones
+
+diff --git a/gfx/layers/ipc/ShadowLayerUtilsX11.cpp b/gfx/layers/ipc/ShadowLayerUtilsX11.cpp
+--- a/gfx/layers/ipc/ShadowLayerUtilsX11.cpp
++++ b/gfx/layers/ipc/ShadowLayerUtilsX11.cpp
+@@ -45,6 +45,7 @@
+ 
+ #include "gfxXlibSurface.h"
+ #include "mozilla/X11Util.h"
++#include "cairo-xlib.h"
+ 
+ namespace mozilla {
+ namespace layers {
+@@ -82,13 +83,20 @@
+ SurfaceDescriptorX11::SurfaceDescriptorX11(gfxXlibSurface* aSurf)
+   : mId(aSurf->XDrawable())
+   , mSize(aSurf->GetSize())
+-  , mFormat(aSurf->XRenderFormat()->id)
+-{ }
++{
++  const XRenderPictFormat *pictFormat = aSurf->XRenderFormat();
++  if (pictFormat) {
++    mFormat = pictFormat->id;
++  } else {
++    mFormat = cairo_xlib_surface_get_visual(aSurf->CairoSurface())->visualid;
++  }
++}
+ 
+-SurfaceDescriptorX11::SurfaceDescriptorX11(const int aXid, const int aXrenderPictID, const gfxIntSize& aSize)
+-  : mId(aXid)
++SurfaceDescriptorX11::SurfaceDescriptorX11(Drawable aDrawable, XID aFormatID,
++                                           const gfxIntSize& aSize)
++  : mId(aDrawable)
++  , mFormat(aFormatID)
+   , mSize(aSize)
+-  , mFormat(aXrenderPictID)
+ { }
+ 
+ already_AddRefed<gfxXlibSurface>
+@@ -97,9 +105,19 @@
+   Display* display = DefaultXDisplay();
+   Screen* screen = DefaultScreenOfDisplay(display);
+ 
+-  XRenderPictFormat* format = GetXRenderPictFormatFromId(display, mFormat);
+-  nsRefPtr<gfxXlibSurface> surf =
+-    new gfxXlibSurface(screen, mId, format, mSize);
++  nsRefPtr<gfxXlibSurface> surf;
++  XRenderPictFormat* pictFormat = GetXRenderPictFormatFromId(display, mFormat);
++  if (pictFormat) {
++    surf = new gfxXlibSurface(screen, mId, pictFormat, mSize);
++  } else {
++    Visual* visual = NULL;
++    unsigned int depth;
++    XVisualIDToInfo(display, mFormat, &visual, &depth);
++    if (!visual)
++      return nsnull;
++
++    surf = new gfxXlibSurface(display, mId, visual, mSize);
++  }
+   return surf->CairoStatus() ? nsnull : surf.forget();
+ }
+ 
+diff --git a/gfx/layers/ipc/ShadowLayerUtilsX11.h b/gfx/layers/ipc/ShadowLayerUtilsX11.h
+--- a/gfx/layers/ipc/ShadowLayerUtilsX11.h
++++ b/gfx/layers/ipc/ShadowLayerUtilsX11.h
+@@ -60,7 +60,8 @@
+ 
+   SurfaceDescriptorX11(gfxXlibSurface* aSurf);
+ 
+-  SurfaceDescriptorX11(const int aXid, const int aXrenderPictID, const gfxIntSize& aSize);
++  SurfaceDescriptorX11(Drawable aDrawable, XID aFormatID,
++                       const gfxIntSize& aSize);
+ 
+   // Default copy ctor and operator= are OK
+ 
+@@ -76,8 +77,8 @@
+   already_AddRefed<gfxXlibSurface> OpenForeign() const;
+ 
+   Drawable mId;
++  XID mFormat; // either a PictFormat or VisualID
+   gfxIntSize mSize;
+-  PictFormat mFormat;
+ };
+ 
+ } // namespace layers

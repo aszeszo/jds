@@ -1,3 +1,35 @@
+2012-02-21  Ginn Chen  <ginn.chen@oracle.com>
+
+	CR 7141621 Update to Firefox 10.0.2 ESR.
+	* base-specs/firefox.spec:
+	* copyright/SUNWfirefox.copyright:
+	* copyright/SUNWgnome-devhelp.copyright:
+	* copyright/SUNWgnome-help-viewer.copyright:
+	* ext-sources/firefox-js.pc.in:
+	* ext-sources/firefox-plugin.pc.in:
+	* ext-sources/firefox-xpcom.pc.in:
+	* ext-sources/firefox10-profile-sparc-ss12-2.tar.bz2:
+	* ext-sources/firefox10-profile-x86-ss12-2.tar.bz2:
+	* ext-sources/firefox90-profile-sparc-ss12-2.tar.bz2:
+	* ext-sources/firefox90-profile-x86-ss12-2.tar.bz2:
+	* patches/devhelp-02-gecko20.diff:
+	* patches/firefox10-09-ipc.diff:
+	* patches/firefox10-16-nsXBLProtoImpl.diff:
+	* patches/firefox10-17-js-compiler.diff:
+	* patches/firefox10-20-xBGR-plugin.diff:
+	* patches/firefox10-26-pgo-ss12_2.diff:
+	* patches/firefox10-30-gfxAlphaRecovery.diff:
+	* patches/firefox10-33-jsgc-pagesize.diff:
+	* patches/firefox10-35-static-assert.diff:
+	* patches/firefox10-36-gtkembed.diff:
+	* patches/firefox10-37-sunaudio-buffer.diff:
+	* patches/firefox10-41-xBGR-performance.diff:
+	* patches/firefox10-42-about-memory.diff:
+	* patches/firefox10-43-donot-disable-locale-addon.diff:
+	* patches/firefox10-44-dtrace-probe.diff:
+	* patches/yelp-03-using-firefox4-gecko.diff:
+	* specs/SUNWfirefox.spec:
+
 2012-02-20  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	CR 7145461 Problem with gnome/file-manager

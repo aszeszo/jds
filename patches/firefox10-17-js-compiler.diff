@@ -1,0 +1,169 @@
+diff -r 182abf9ec7db jsapi.h
+--- a/js/src/jsapi.h	Tue Nov 15 16:22:47 2011 +0800
++++ b/js/src/jsapi.h	Tue Nov 15 16:27:01 2011 +0800
+@@ -681,8 +681,8 @@
+         JS_STATIC_ASSERT(sizeof(Value) == 8);
+     }
+ 
+-    friend jsval_layout (::JSVAL_TO_IMPL)(Value);
+-    friend Value (::IMPL_TO_JSVAL)(jsval_layout l);
++    friend jsval_layout JSVAL_TO_IMPL(Value);
++    friend Value IMPL_TO_JSVAL(jsval_layout l);
+ };
+ 
+ /************************************************************************/
+diff -r 182abf9ec7db methodjit/FastBuiltins.cpp
+--- a/js/src/methodjit/FastBuiltins.cpp	Tue Nov 15 16:22:47 2011 +0800
++++ b/js/src/methodjit/FastBuiltins.cpp	Tue Nov 15 16:27:01 2011 +0800
+@@ -48,7 +48,7 @@
+ 
+ using namespace js;
+ using namespace js::mjit;
+-using namespace JSC;
++// using namespace JSC;
+ 
+ typedef JSC::MacroAssembler::FPRegisterID FPRegisterID;
+ 
+diff --git a/js/src/jsobj.cpp b/js/src/jsobj.cpp
+--- a/js/src/jsobj.cpp
++++ b/js/src/jsobj.cpp
+@@ -2384,24 +2384,24 @@ DefinePropertyOnObject(JSContext *cx, JS
+         if (desc.hasSet)
+             changed |= JSPROP_SETTER | JSPROP_SHARED;
+ 
+         attrs = (desc.attrs & changed) | (shape->attributes() & ~changed);
+         if (desc.hasGet) {
+             getter = desc.getter();
+         } else {
+             getter = (shape->isMethod() || (shape->hasDefaultGetter() && !shape->hasGetterValue()))
+-                     ? JS_PropertyStub
++                     ? (JSPropertyOp)JS_PropertyStub
+                      : shape->getter();
+         }
+         if (desc.hasSet) {
+             setter = desc.setter();
+         } else {
+             setter = (shape->hasDefaultSetter() && !shape->hasSetterValue())
+-                     ? JS_StrictPropertyStub
++                     ? (JSStrictPropertyOp)JS_StrictPropertyStub
+                      : shape->setter();
+         }
+     }
+ 
+     *rval = true;
+ 
+     /*
+      * Since "data" properties implemented using native C functions may rely on
+diff --git a/js/src/methodjit/RematInfo.h b/js/src/methodjit/RematInfo.h
+--- a/js/src/methodjit/RematInfo.h
++++ b/js/src/methodjit/RematInfo.h
+@@ -119,17 +119,17 @@ struct ValueRemat {
+         struct {
+             union {
+                 int32       typeRemat_;
+                 JSValueType knownType_;
+             } type;
+             int32   dataRemat_   : MIN_STATE_REMAT_BITS;
+             bool    isTypeKnown_ : 1;
+         } s;
+-        jsval v_;
++        Value v_;
+         FPRegisterID fpreg_;
+     } u;
+     bool isConstant_    : 1;
+     bool isFPRegister_  : 1;
+     bool isDataSynced   : 1;
+     bool isTypeSynced   : 1;
+ 
+     static ValueRemat FromConstant(const Value &v) {
+diff -r be7de1a5bbf1 js/src/jsprvtd.h
+--- a/js/src/jsprvtd.h	Thu Sep 29 15:20:29 2011 -0700
++++ b/js/src/jsprvtd.h	Tue Oct 04 14:44:28 2011 +0800
+@@ -54,6 +54,10 @@
+  * make dependency induced by this file should not prove painful.
+  */
+ 
++#ifdef __cplusplus
++#include "js/HashTable.h"
++#endif
++
+ #include "jsapi.h"
+ #include "jsutil.h"
+ 
+--- a/js/src/jsstr.cpp	Tue Nov 15 16:22:47 2011 +0800
++++ b/js/src/jsstr.cpp	Tue Nov 15 16:27:01 2011 +0800
+@@ -1425,6 +1425,9 @@
+             patstr = fm.patstr;
+         }
+         JS_ASSERT(patstr);
++        
++        if (!cx)
++            return NULL;
+ 
+         AlreadyIncRefed<RegExpPrivate> re = RegExpPrivate::createFlagged(cx, patstr, opt, NULL);
+         if (!re)
+diff --git a/js/src/frontend/TokenStream.h b/js/src/frontend/TokenStream.h
+--- a/js/src/frontend/TokenStream.h
++++ b/js/src/frontend/TokenStream.h
+@@ -267,17 +267,17 @@ struct TokenPtr {
+ 
+ struct TokenPos {
+     TokenPtr          begin;          /* first character and line of token */
+     TokenPtr          end;            /* index 1 past last char, last line */
+ 
+     static TokenPos make(const TokenPtr &begin, const TokenPtr &end) {
+         // Assertions temporarily disabled by jorendorff. See bug 695922.
+         //JS_ASSERT(begin <= end);
+-        TokenPos pos = {begin, end};
++        TokenPos pos = {(TokenPtr)begin, (TokenPtr)end};
+         return pos;
+     }
+ 
+     /* Return a TokenPos that covers left, right, and anything in between. */
+     static TokenPos box(const TokenPos &left, const TokenPos &right) {
+         // Assertions temporarily disabled by jorendorff. See bug 695922.
+         //JS_ASSERT(left.begin <= left.end);
+         //JS_ASSERT(left.end <= right.begin);
+diff --git a/js/src/jsgcchunk.cpp b/js/src/jsgcchunk.cpp
+--- a/js/src/jsgcchunk.cpp
++++ b/js/src/jsgcchunk.cpp
+@@ -61,6 +61,7 @@
+ 
+ # include <unistd.h>
+ # include <sys/mman.h>
++extern "C" int madvise(caddr_t, size_t, int);
+ 
+ # ifndef MAP_NOSYNC
+ #  define MAP_NOSYNC    0
+@@ -367,7 +368,7 @@
+ DecommitMemory(void *addr, size_t size)
+ {
+     JS_ASSERT(uintptr_t(addr) % 4096UL == 0);
+-    int result = madvise(addr, size, MADV_DONTNEED);
++    int result = madvise((caddr_t)addr, size, MADV_DONTNEED);
+     return result != -1;
+ }
+ #else
+diff --git a/mfbt/Util.h b/mfbt/Util.h
+--- a/mfbt/Util.h
++++ b/mfbt/Util.h
+@@ -223,7 +223,7 @@
+  * will declare a two-character array |arr| aligned to 8 bytes.
+  */
+ 
+-#if defined(__GNUC__)
++#if defined(__GNUC__) || defined(__SUNPRO_CC)
+ #define MOZ_ALIGNED_DECL(_type, _align) \
+   _type __attribute__((aligned(_align)))
+ 
+--- a/js/src/jsobj.h
++++ b/js/src/jsobj.h
+@@ -1411,7 +1411,7 @@
+ 
+     JSBool enumerate(JSContext *cx, JSIterateOp iterop, js::Value *statep, jsid *idp) {
+         JSNewEnumerateOp op = getOps()->enumerate;
+-        return (op ? op : JS_EnumerateState)(cx, this, iterop, statep, idp);
++        return (op ? op : (JSNewEnumerateOp)JS_EnumerateState)(cx, this, iterop, statep, idp);
+     }
+ 
+     bool defaultValue(JSContext *cx, JSType hint, js::Value *vp) {

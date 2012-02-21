@@ -13,15 +13,15 @@
 
 Name:        firefox
 Summary:     Mozilla Firefox Web browser
-Version:     9.0.1
-%define tarball_version 9.0.1
+Version:     10.0.2
+%define tarball_version 10.0.2esr
 Release:     1
 Copyright:   MPL
 License:     MPL
 Group:       Applications/Internet
 Distribution:Java Desktop System
 Vendor:      Mozilla Foundation
-Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
+Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/nightly/%{tarball_version}-candidates/build1/source/%{name}-%{tarball_version}.source.tar.bz2
 Source1:     firefox-icon.png
 Source2:     firefox.desktop
 #%if %option_without_moz_nss_nspr
@@ -38,9 +38,9 @@ Source7:     http://www.tortall.net/projects/yasm/releases/yasm-1.1.0.tar.gz
 %define studio_12_2 %($CC -V 2>&1 | grep -c 5\.11)
 
 %ifarch sparc
-Source8:     firefox90-profile-sparc-ss12-2.tar.bz2
+Source8:     firefox10-profile-sparc-ss12-2.tar.bz2
 %else
-Source8:     firefox90-profile-x86-ss12-2.tar.bz2
+Source8:     firefox10-profile-x86-ss12-2.tar.bz2
 %endif
 
 %if %option_with_indiana_branding
@@ -79,7 +79,7 @@ Patch7: firefox9-07-uconv_sse2.diff
 #%endif
 
 # owner:ginnchen date:2011-03-07 type:feature
-Patch9: firefox9-09-ipc.diff
+Patch9: firefox10-09-ipc.diff
 
 # owner:ginnchen date:2011-07-18 type:bug
 Patch10: firefox6-10-appname-tr.diff
@@ -101,11 +101,11 @@ Patch14: firefox8-14-getting-started.diff
 # owner:hawklu date:2009-05-22 type:branding
 Patch15: firefox-15-use-system-theora.diff
 
-# owner:leon.sha date:2011-11-21 type:bug bugzilla:697014 status:upstream
-Patch16: firefox9-16-sparc-js.diff
+# owner:ginnchen date:2011-11-21 type:bug bugzilla:701273 status:upstream
+Patch16: firefox10-16-nsXBLProtoImpl.diff
 
 # owner:ginnchen date:2011-10-25 type:feature
-Patch17: firefox9-17-js-compiler.diff
+Patch17: firefox10-17-js-compiler.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
 Patch18: firefox-18-libvpx-compile.diff
@@ -113,8 +113,8 @@ Patch18: firefox-18-libvpx-compile.diff
 # owner:ginnchen date:2011-03-08 type:feature
 Patch19: firefox6-19-xpcom-sparc-compile.diff
 
-# owner:ginnchen date:2010-12-10 type:feature
-Patch20: firefox-20-ots-makepair.diff
+# owner:ginnchen date:2012-1-11 type:bug bugzilla:717174 bugzilla:682625 status:upstream
+Patch20: firefox10-20-xBGR-plugin.diff
 
 # owner:ginnchen date:2011-03-08 type:feature
 # See CR#7023690
@@ -136,7 +136,7 @@ Patch23: firefox9-23-ycbcr.diff
 Patch25: firefox-25-json-compile.diff
 
 # owner:ginnchen date:2010-03-14 type:feature
-Patch26: firefox9-26-pgo-ss12_2.diff
+Patch26: firefox10-26-pgo-ss12_2.diff
 
 # owner:ginnchen date:2011-04-06 type:feature bugzilla:610323
 Patch27: firefox9-27-methodjit-sparc.diff
@@ -148,7 +148,7 @@ Patch28: firefox6-28-patch-for-debugging.diff
 Patch29: firefox9-29-selectAddons-app-scope.diff
 
 # owner:ginnchen date:2010-03-14 type:bug
-Patch30: firefox-30-gfxAlphaRecovery.diff
+Patch30: firefox10-30-gfxAlphaRecovery.diff
 
 # owner:ginnchen date:2010-05-12 type:bug
 Patch31: firefox-31-async-channel-crash.diff
@@ -156,14 +156,20 @@ Patch31: firefox-31-async-channel-crash.diff
 # owner:ginnchen date:2010-06-20 type:branding
 Patch32: firefox7-32-yasm.diff
 
+# owner:ginnchen date:2012-01-12 type:bug bugzilla:717863 status:upstream
+Patch33: firefox10-33-jsgc-pagesize.diff
+
 # owner:ginnchen date:2011-10-08 type:branding
 Patch34: firefox7-34-js-numeric-limits.diff
 
 # owner:ginnchen date:2010-06-20 type:branding
-Patch35: firefox-35-static-assert.diff
+Patch35: firefox10-35-static-assert.diff
 
 # owner:ginnchen date:2010-10-26 type:branding
-Patch36: firefox9-36-gtkembed.diff
+Patch36: firefox10-36-gtkembed.diff
+
+# owner:ginnchen date:2012-01-18 type:bug bugzilla:669556
+Patch37: firefox10-37-sunaudio-buffer.diff
 
 # owner:ginnchen date:2011-10-25 type:branding
 Patch38: firefox9-38-libffi-3-0-9.diff
@@ -175,17 +181,17 @@ Patch39: firefox-39-nss-compile.diff
 # owner:ginnchen date:2011-10-10 type:bug bugzilla:675585
 Patch40: firefox8-40-gthread-dlopen.diff
 
-# owner:ginnchen date:2011-10-10 type:bug buzilla:689916
-Patch41: firefox7-41-js-regexp-sparc.diff
+# owner:ginnchen date:2012-1-10 type:bug buzilla:716462
+Patch41: firefox10-41-xBGR-performance.diff
 
 # owner:ginnchen date:2011-11-04 type:bug bugzilla:702529
-Patch42: firefox8-42-about-memory.diff
+Patch42: firefox10-42-about-memory.diff
 
 # owner:ginnchen date:2011-11-08 type:bug bugzilla:700615
-Patch43: firefox8-43-donot-disable-locale-addon.diff
+Patch43: firefox10-43-donot-disable-locale-addon.diff
 
 # owner:ginnchen date:2011-11-15 type:bug bugzilla:702179
-Patch44: firefox8-44-dtrace-probe.diff
+Patch44: firefox10-44-dtrace-probe.diff
 
 # owner:ginnchen date:2011-11-15 type:feature
 Patch45: firefox8-45-libnspr_flt4.diff
@@ -224,7 +230,7 @@ compliance, performance and portability.
 %prep
 %setup -q -c -n %{name}
 
-cd mozilla-release
+cd mozilla-esr10
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
@@ -253,9 +259,11 @@ cd mozilla-release
 %patch30 -p1
 %patch31 -p1
 %patch32 -p1
+%patch33 -p1
 %patch34 -p1
 %patch35 -p1
 %patch36 -p1
+%patch37 -p1
 %patch38 -p1
 %patch39 -p1
 %patch40 -p1
@@ -337,7 +345,7 @@ SRCDIR=$PWD
 export MOZCONFIG=$PWD/.mozconfig
 
 %if %option_with_indiana_branding
-cp %{SOURCE9} ${SRCDIR}/mozilla-release/browser/branding/official/content
+cp %{SOURCE9} ${SRCDIR}/mozilla-esr10/browser/branding/official/content
 %endif
 
 mkdir -p ../obj
@@ -356,7 +364,7 @@ cd ../obj
 # to generate PGO profile
 # export MOZ_PROFILE_GENERATE=1
 # Notes:
-# cd ~/packages/BUILD/SUNWfirefox-9.0/obj
+# cd ~/packages/BUILD/SUNWfirefox-10.0/obj
 # export OBJDIR=`pwd`
 # mkdir -p jarlog/en-US
 # export JARLOG_DIR=$OBJDIR/jarlog/en-US
@@ -383,7 +391,7 @@ export YASM=${SRCDIR}/../obj/yasm/yasm
 export LIBJPEG_TURBO_AS=${SRCDIR}/../obj/yasm/yasm
 %endif
 
-${SRCDIR}/mozilla-release/configure
+${SRCDIR}/mozilla-esr10/configure
 make -j $CPUS
 
 cd browser/installer
@@ -502,6 +510,8 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/firefox/defaults/profile/bookmarks.html
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Tue Feb 21 2012 - ginn.chen@oracle.com
+- Bump to Firefox 10.0.2 ESR
 * Tue Dec 27 2011 - ginn.chen@oracle.com
 - Bump to Firefox 9.0..1.
 * Tue Nov 15 2011 - ginn.chen@oracle.com
