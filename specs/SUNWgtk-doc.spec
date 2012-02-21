@@ -14,24 +14,22 @@ SUNW_Copyright:          %{name}.copyright
 License:                 %{gtkdoc.license}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
-Requires: SUNWPython26
+Requires: runtime/python-26
 Requires: data/sgml-common
 Requires: data/docbook/docbook-dtds
 Requires: data/xml-common
 Requires: data/docbook/docbook-style-xsl
 Requires: data/docbook/docbook-style-dsssl
-Requires: SUNWgnome-common-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWPython26
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWdesktop-cache
-Requires: SUNWlxml
-Requires: SUNWlxml-python26
+Requires: developer/gnome/gettext
+BuildRequires: runtime/python-26
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: service/gnome/desktop-cache
+Requires: library/libxml2
+Requires: library/python-2/libxml2-26
 Requires: editor/vim
 
 %package l10n
 Summary:		 %{summary} - l10n files
-Requires:		 %{name}
 
 %prep
 rm -rf %name-%version

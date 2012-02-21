@@ -3,7 +3,7 @@
 #
 # includes module(s): goffice
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,33 +28,28 @@ Source1:                 %{name}-manpages-0.1.tar.gz
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:       SUNWlibglade
-Requires:       SUNWlxml
-Requires:       SUNWzlib
-Requires:       SUNWlibgsf
-Requires:       SUNWlibms
-Requires:       SUNWgnome-libs
-BuildRequires:  SUNWlibglade-devel
-BuildRequires:  SUNWlxml-devel
-BuildRequires:  SUNWgnome-libs-devel
+Requires:       library/desktop/libglade
+Requires:       library/libxml2
+Requires:       library/zlib
+Requires:       library/desktop/libgsf
+Requires:       system/library/math
+Requires:       library/gnome-libs
+BuildRequires:  library/desktop/libglade
+BuildRequires:  library/libxml2
+BuildRequires:  library/gnome/gnome-libs
 %if %option_with_gnu_iconv
 Requires:       SUNWgnu-libiconv
 Requires:       SUNWgnu-gettext
 %else
-Requires:       SUNWuiu8
+Requires:       system/library/iconv/utf-8
 %endif
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires: %name
-BuildRequires: SUNWgnome-libs-devel
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -118,6 +113,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Nov 05 2008 - halton.huo@sun.com
 - Add po/ChangeLog to %files
 * Wed Sep 10 2008 - halton.huo@sun.com

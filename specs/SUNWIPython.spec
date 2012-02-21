@@ -3,7 +3,7 @@
 #
 # includes module(s): ipython
 #
-# Copyright (c) 2005 Sun Microsystems, Inc.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,9 +26,9 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: SUNWPython26
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpython26-setuptools
+Requires: runtime/python-26
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/setuptools-26
 
 %prep
 rm -rf %name-%version
@@ -76,6 +76,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_docdir}/ipython/*
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Oct 14 2009 - li.yuan@sun.com
 - Update dependencies.
 * Wed Oct 14 2009 - li.yuan@sun.com

@@ -3,7 +3,7 @@
 #
 # includes module(s): libglade
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,19 +33,14 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWlxml
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlxml-devel
+Requires: library/desktop/gtk2
+Requires: library/libxml2
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/libxml2
 
 %package devel		
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires: SUNWPython26
-Requires: SUNWlxml-devel
-Requires: SUNWgtk2-devel
 
 %prep
 rm -rf %name-%version
@@ -134,6 +129,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Tue Jun 02 2009 - dave.lin@sun.com

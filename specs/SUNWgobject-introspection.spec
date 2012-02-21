@@ -3,7 +3,7 @@
 #
 # includes module(s): gobject-introspection
 #
-# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -41,21 +41,16 @@ License:            %{gi.license}
 SUNW_BaseDir:       %{_basedir}
 BuildRoot:          %{_tmppath}/%{name}-%{version}-build
 
-BuildRequires:      SUNWPython26-devel
-BuildRequires:      SUNWglib2-devel
-BuildRequires:      SUNWlibffi
-BuildRequires:      SUNWuiu8
-BuildRequires:      SUNWglib2
-BuildRequires:      SUNWlibffi
-BuildRequires:      SUNWPython26
+BuildRequires:      library/glib2
+BuildRequires:      library/libffi
+BuildRequires:      system/library/iconv/utf-8
+BuildRequires:      runtime/python-26
 %include default-depend.inc
 %include gnome-incorporation.inc
 
 %package devel
 Summary:            %{summary} - development files
 SUNW_BaseDir: %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
 
 %prep
 rm -rf %name-%version
@@ -160,6 +155,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Oct 20 2010 - brian.cameorn@oracle.com
 - Fix packaging after bumptin to 0.9.12.
 * Sat Aug 14 2010 - brian.cameron@oracle.com

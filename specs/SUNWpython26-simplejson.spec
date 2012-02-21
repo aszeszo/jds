@@ -3,7 +3,7 @@
 #
 # includes module(s): simplejson
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -30,9 +30,9 @@ BuildRoot:              %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:               SUNWPython26
-BuildRequires:          SUNWPython26-devel
-BuildRequires:          SUNWpython26-setuptools
+Requires:               runtime/python-26
+BuildRequires:          runtime/python-26
+BuildRequires:          library/python-2/setuptools-26
 
 %prep
 rm -rf %name-%version
@@ -66,6 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Thu Feb 12 2009 - brian.cameron@sun.com
 - created 2.6 version based on SUNWpython-simplejson.spec.
 * Mon Nov 24 2008 - brian.cameron@sun.com

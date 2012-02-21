@@ -1,14 +1,39 @@
-2011-02-17  Brian Cameron  <brian.cameron@oracle.com>
+2012-02-21  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	* specs/SUNWPython26-extra.spec, specs/SUNWgnome-im-client.spec,
+	specs/SUNWpython26-imaging.spec, specs/SUNWlibglade.spec,
+	specs/SUNWpython26-simplejson.spec, specs/SUNWpython26-notify.spec,
+	specs/SUNWgnome-doc-utils.spec, specs/SUNWgnome-text-editor.spec,
+	specs/SUNWtsclient.spec, specs/SUNWgnome-cd-burner.spec,
+	specs/SUNWterminator.spec, specs/SUNWgtk-doc.spec,
+	specs/SUNWgnome-python26.spec, specs/SUNWgnome-games.spec,
+	specs/SUNWpyorbit26.spec, specs/SUNWpygtk2-26.spec,
+	specs/SUNWgnome-a11y-poke.spec, specs/SUNWgobject-introspection.spec,
+	specs/SUNWpython26-zope-interface.spec,
+	specs/SUNWpython26-setuptools.spec, specs/SUNWpython26-xdg.spec,
+	specs/SUNWbrltty.spec, specs/SUNWlibgoffice.spec,
+	specs/SUNWvinagre.spec, specs/SUNWlibcroco.spec,
+	specs/SUNWpycairo26.spec, specs/SUNWlibsexy.spec,
+	specs/SUNWmysql-python26.spec, specs/SUNWgnome-a11y-libs.spec,
+	specs/SUNWlibgsf.spec, specs/SUNWpygtksourceview26.spec,
+	specs/SUNWgnome-terminal.spec, specs/SUNWjokosher.spec,
+	specs/SUNWIPython.spec, specs/SUNWplanner.spec,
+	specs/SUNWgtk-vnc.spec, specs/SUNWpython26-twisted.spec,
+	specs/SUNWpython26-coherence.spec, specs/SUNWtotem-pl-parser.spec,
+	specs/SUNWcompizconfig-python.spec: Update Requires/BuildRequires
+	lines to use IPS package names (CR 7144112)
+ 
+2012-02-17  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWlibgnome-keyring.spec, specs/SUNWlibsoup.spec,
 	  specs/SUNWgnome-media.spec, specs/SUNWgnome-vfs.spec:  Fix
 	  Requires/BuildRequires lines.
 
-2011-02-13  Brian Cameron  <brian.cameron@oracle.com>
+2012-02-13  Brian Cameron  <brian.cameron@oracle.com>
 
 	* base-specs/dbus.spec, patches/dbus-06-m4.diff: Bump to 1.4.18.
 
-2011-02-09  Brian Cameron  <brian.cameron@oracle.com>
+2012-02-09  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWjson-c.spec, specs/SUNWlibcanberra.spec,
 	  specs/SUNWpulseaudio.spec, specs/SUNWlibgc.spec,
@@ -17,7 +42,7 @@
 	* base-specs/libcanberra.spec, base-specs/pulseaudio.spec,
 	  base-specs/libgc.spec: Fix comments.
 
-2011-02-09  Brian Cameron  <brian.cameron@oracle.com>
+2012-02-09  Brian Cameron  <brian.cameron@oracle.com>
 
 	* base-specs/libvorbis.spec: Bump to 1.3.3.
 

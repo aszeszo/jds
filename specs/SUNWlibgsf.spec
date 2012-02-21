@@ -3,7 +3,7 @@
 #
 # includes module(s): libgsf
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,47 +33,35 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlxmlr
-Requires: SUNWglib2
-Requires: SUNWlibgsf-root
-Requires: SUNWgnome-component
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-config
-Requires: SUNWlxml
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlibms
-Requires: SUNWpygobject26
-Requires: SUNWpygtk2-26
-Requires: SUNWdesktop-cache
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWlibm
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWpygobject26-devel
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpython26-setuptools
+Requires: library/libxml2
+Requires: library/glib2
+Requires: library/gnome/gnome-component
+Requires: library/gnome/gnome-vfs
+Requires: gnome/config/gconf
+Requires: compress/bzip
+Requires: library/zlib
+Requires: system/library/math
+Requires: library/python-2/pygobject-26
+Requires: library/python-2/pygtk2-26
+Requires: service/gnome/desktop-cache
+BuildRequires: library/glib2
+BuildRequires: system/library/math
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: gnome/config/gconf
+BuildRequires: library/python-2/pygobject-26
+BuildRequires: library/python-2/setuptools-26
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include gnome-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires:                %{name}
-Requires:                SUNWglib2-devel
-Requires:                SUNWlxml-devel
-Requires:                SUNWgnome-component-devel
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -183,6 +171,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Mon Dec 06 2010 - brian.cameron@oracle.com
 - Now use default_python_version.
 * Mon Nov 08 2010 - brian.lu@oracle.com

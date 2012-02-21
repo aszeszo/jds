@@ -3,7 +3,7 @@
 #
 # includes module(s): vte gnome-terminal
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,53 +26,46 @@ License:                 GPL v2, LGPL v2
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-config
-Requires: SUNWgnome-component
-Requires: SUNWgnome-vfs
-Requires: SUNWncurses
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-libs
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-component
+Requires: library/gnome/gnome-vfs
+Requires: library/ncurses
 BuildRequires: runtime/perl-512
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlxml
-Requires: SUNWPython26
-Requires: SUNWpygtk2-26
-Requires: SUNWfontconfig
-Requires: SUNWfreetype2
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWdesktop-cache
-Requires: %{name}-root
-BuildRequires: SUNWxwxft
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWncurses-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWuiu8
+Requires: compress/bzip2
+Requires: library/zlib
+Requires: library/libxml2
+Requires: runtime/python-26
+Requires: library/python-2/pygtk2-26
+Requires: system/library/fontconfig
+Requires: system/library/freetype-2
+Requires: system/library/math
+Requires: library/popt
+Requires: service/gnome/desktop-cache
+BuildRequires: x11/library/libxft
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/ncurses
+BuildRequires: library/popt
+BuildRequires: runtime/python-26
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: system/library/iconv/utf-8
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires: %{name}
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package  devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires: SUNWgtk2
 
 %prep
 rm -rf %name-%version
@@ -178,6 +171,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Tue Nov 17 2009 - brian.cameron@sun.com

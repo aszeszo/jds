@@ -3,6 +3,11 @@
 #
 # includes module(s): libsexy
 #
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
+# This file and all modifications and additions to the pristine
+# package are under the same license as the package itself.
+#
+
 %define owner erwannc
 
 %define OSR 10058:0.11.1
@@ -26,11 +31,11 @@ SUNW_Copyright: %{name}.copyright
 Patch1:       libsexy-01-gtk-includes.diff
 
 Autoreqprov:  on
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWiso-codes-devel
-Requires: SUNWgtk2
-Requires: SUNWlxml
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/libxml2
+BuildRequires: data/iso-codes
+Requires: library/desktop/gtk2
+Requires: library/libxml2
 Requires: data/iso-codes
 
 %include desktop-incorporation.inc
@@ -38,9 +43,6 @@ Requires: data/iso-codes
 %package devel
 Summary:       %{summary} - development files
 SUNW_BaseDir:  %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires:      %name
 
 %prep
 %setup -q -n libsexy-%version
@@ -95,6 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Apr 20 2010 - christian.kelly@oracle.com
 - Set LDFLAGS, otherwise stuff in /usr/lib ends up as 64bit versions.
 * Sat Jul 18 2009 - christian.kelly@sun.com

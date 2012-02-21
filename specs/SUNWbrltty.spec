@@ -3,7 +3,7 @@
 #
 # includes module(s): brltty
 #
-# Copyright 2007 Sun Microsystems, Inc.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,23 +28,21 @@ Version:           %{brltty.version}
 SUNW_BaseDir:      %{_basedir}
 SUNW_Copyright:    %{name}.copyright
 BuildRoot:         %{_tmppath}/%{name}-%{version}-build
-Requires: SUNWugen
-Requires: SUNWcslr
-Requires: SUNWPython26
-Requires: SUNWPython26-extra
-Requires: SUNWgnome-a11y-libs
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWugenu
-BuildRequires: SUNWcslr
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWPython26-extra
-BuildRequires: SUNWgnome-a11y-libs-devel
-BuildRequires: SUNWgnome-media
-BuildRequires: SUNWaudh
+Requires: system/io/usb
+Requires: system/library
+Requires: runtime/python-26
+Requires: library/python-2/python-extra-2
+Requires: gnome/accessibility/gnome-a11y-libs
+BuildRequires: system/io/usb
+BuildRequires: system/library
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/python-extra-26
+BuildRequires: gnome/accessibility/gnome-a11y-libs
+BuildRequires: library/audio/gstreamer
+BuildRequires: system/header
 # Add BuildConfli to workaround the build issue: 
 # "wrong ELF class: ELFCLASS64"
-BuildConflicts: SUNWocaml
+BuildConflicts: runtime/ocaml
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -53,14 +51,11 @@ BuildConflicts: SUNWocaml
 Summary:           %{summary} - / filesystem
 IPS_package_name:  library/accessibility/brltty
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package -n SUNWbrltty-devel
 Summary:           %{summary} - development files
 IPS_package_name:  library/accessibility/brltty
 SUNW_BaseDir:      %{_basedir}
-%include default-depend.inc
 
 %prep
 rm -rf %name-%version
@@ -149,6 +144,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr(0755, root, sys) %{_datadir}
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Aug 21 2009 - li.yuan@sun.com
 - Change owner to liyuan.
 * Tue Jun 30 2009 - christian.kelly@sun.com

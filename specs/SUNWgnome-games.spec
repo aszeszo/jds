@@ -2,7 +2,7 @@
 #
 # includes module(s): gnome-games
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,39 +25,35 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlibrsvg-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-python26-desktop-devel
-BuildRequires: SUNWlibsdl-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWgnome-doc-utils
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-config
-Requires: SUNWlibms
-Requires: SUNWgnome-python26-desktop
-Requires: SUNWlibrsvg
-Requires: SUNWPython26
-Requires: SUNWdesktop-cache
-Requires: SUNWgnome-media
-Requires: SUNWclutter
-Requires: SUNWclutter-gtk
-Requires: %{name}-root
+BuildRequires: library/desktop/gtk2
+BuildRequires: image/library/librsvg
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: gnome/config/gconf
+BuildRequires: library/python-2/python-gnome-desktop-26
+BuildRequires: library/sdl
+BuildRequires: library/audio/gstreamer
+BuildRequires: developer/gnome/gnome-doc-utils
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-libs
+Requires: gnome/config/gconf
+Requires: system/library/math
+Requires: library/python-2/python-gnome-desktop-26
+Requires: image/library/librsvg
+Requires: runtime/python-26
+Requires: service/gnome/desktop-cache
+Requires: library/audio/gstreamer
+Requires: library/desktop/clutter
+Requires: library/desktop/clutter-gtk
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %prep
 rm -rf %name-%version
@@ -142,6 +138,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/*.schemas
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Jul 07 2010 - brian.cameron@oracle.com
 - Remove GGZ, it is no longer used by gnome-games.
 * Thu Apr 22 2010 - christian.kelly@oracle.com

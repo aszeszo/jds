@@ -3,7 +3,7 @@
 #
 # includes module(s): gtk-vnc
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -40,43 +40,28 @@ Source1:            %{name}-manpages-0.1.tar.gz
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:      SUNWgtk2
-Requires:      SUNWgnutls
-Requires:      SUNWzlibr
-Requires:      SUNWlibsasl
-BuildRequires: SUNWxwinc
+Requires:      library/desktop/gtk2
+Requires:      library/gnutls
+Requires:      library/zlib
+Requires:      system/library.security/libsasl
 BuildRequires: library/nspr
+BuildRequires: library/desktop/gtk2
 BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnutls-devel
-BuildRequires: SUNWfirefox-devel
-BuildRequires: SUNWxwplt
+BuildRequires: library/gnutls
+BuildRequires: web/browser/firefox
 
 %package devel
 Summary:       %{summary} - development files
 SUNW_BaseDir:  %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires:      %{name}
-Requires:      SUNWgtk2-devel
-Requires:      SUNWgnutls-devel
 
 %package python26
 Summary:       %{summary} - Python 2.6 binding files
 IPS_package_name: library/python-2/python-gtk-vnc-26
 Meta(info.classification): %{classification_prefix}:Development/GNOME and GTK+
 SUNW_BaseDir:  %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires:      %{name}
-Requires:      SUNWPython26
-Requires:      SUNWpygtk2-26
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWpygtk2-26-devel
 
 %package l10n
 Summary:       %{summary} - l10n files
-Requires:      %{name}
 
 %prep
 rm -rf %name-%version
@@ -179,6 +164,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Mon Dec 06 2010 - brian.cameron@oracle.com
 - Remove Python 2.4 bindings.
 * Wed Jan 27 2010 - halton.huo@sun.com

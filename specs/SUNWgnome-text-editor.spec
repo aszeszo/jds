@@ -3,7 +3,7 @@
 #
 # includes module(s): gedit gtksourceview
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,56 +26,46 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWgnome-text-editor-root
-Requires: SUNWgnome-libs
-Requires: SUNWlibms
-Requires: SUNWgnome-config
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-component
-Requires: SUNWlibms
-Requires: SUNWlxml
-Requires: SUNWPython26
-Requires: SUNWpygobject26
-Requires: SUNWpygtk2-26
-Requires: SUNWpygtksourceview26
-Requires: SUNWgnome-python26-desktop
-Requires: SUNWdesktop-cache
-Requires: SUNWgnome-gtksourceview
-Requires: SUNWgnome-spell
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWxwinc
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpygobject26-devel
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpygtksourceview26-devel
-BuildRequires: SUNWgnome-python26-desktop-devel
-BuildRequires: SUNWgnome-gtksourceview-devel
-BuildRequires: SUNWgnome-spell-devel
-BuildRequires: SUNWgnome-doc-utils
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-libs
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-vfs
+Requires: library/gnome/gnome-component
+Requires: system/library/math
+Requires: library/libxml2
+Requires: runtime/python-26
+Requires: library/python-2/pygobject-26
+Requires: library/python-2/pygtk2-26
+Requires: library/python-2/pygtksourceview2-26
+Requires: library/python-2/python-gnome-desktop-26
+Requires: service/gnome/desktop-cache
+Requires: library/desktop/gtksourceview
+Requires: library/spell-checking/enchant
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/libxml2
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-component
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/pygobject-26
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/python-2/pygtksourceview2-26
+BuildRequires: library/python-2/python-gnome-desktop-26
+BuildRequires: library/desktop/gtksourceview
+BuildRequires: library/spell-checking/enchant
+BuildRequires: developer/gnome/gnome-doc-utils
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-#Requires:                %{name} = %{version}
-Requires:                %{name}
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %prep
 rm -rf %name-%version
@@ -171,6 +161,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Thu Apr 22 2010 - christian.kelly@oracle.com

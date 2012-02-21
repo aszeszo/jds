@@ -3,7 +3,7 @@
 #
 # includes module(s): at-spi java-atk-wrapper libgail-gnome freetts gnome-mag
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -43,65 +43,51 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-component
-Requires: SUNWgnome-config
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWj6rt
-Requires: SUNWzoner
-Requires: SUNWzoneu
-Requires: SUNWpkgcmdsu
-Requires: %{name}-root
-Requires: SUNWdesktop-cache
-Requires: SUNWpygtk2-26
-Requires: SUNWpygobject26
-Requires: SUNWgnome-python26
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-libs
+Requires: gnome/gnome-panel
+Requires: library/gnome/gnome-component
+Requires: gnome/config/gconf
+Requires: system/library/math
+Requires: library/popt
+Requires: runtime/java/jre-6
+Requires: system/zones
+Requires: package/svr4
+Requires: service/gnome/desktop-cache
+Requires: library/python-2/pygtk2-26
+Requires: library/python-2/pygobject26
+Requires: library/python-2/python-gnome-26
 # xprop
 Requires: x11/x11-server-utilities
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpygobject26-devel
-BuildRequires: SUNWgnome-python26-devel
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWunzip
-BuildRequires: SUNWlibgnome-keyring
-BuildRequires: SUNWj6dev
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/python-2/pygobject-26
+BuildRequires: library/python-2/python-gnome-26
+BuildRequires: library/desktop/gtk2
+BuildRequires: gnome/config/gconf
+BuildRequires: gnome/gnome-panel
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-component
+BuildRequires: compress/unzip
+BuildRequires: library/gnome/gnome-keyring
+BuildRequires: developer/java/jdk-6
+BuildRequires: runtime/perl-512
+Requires:      runtime/python-26
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/setuptools-26
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include gnome-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-BuildRequires: runtime/perl-512
-Requires: SUNWgtk2-devel
-Requires: SUNWgnome-libs-devel
-Requires: SUNWgnome-component-devel
 
 %package python26
 IPS_package_name: library/python-2/pyatspi-26
 Meta(info.classification): %{classification_prefix}:Applications/Universal Access
 Summary:       %{summary} - Python 2.6 binding files
 SUNW_BaseDir:  %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires:      %{name}
-Requires:      SUNWPython26
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpython26-setuptools
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -293,6 +279,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/python2.6/vendor-packages/*
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Mon Feb 08 2009 - li.yuan@sun.com

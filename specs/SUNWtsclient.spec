@@ -3,7 +3,7 @@
 #
 # includes module(s): tsclient
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,49 +28,48 @@ Source1:            %{name}-manpages-0.1.tar.gz
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:           SUNWlibgnomecanvas
-Requires:           SUNWgnome-panel
-Requires:           SUNWgnome-libs
-Requires:           SUNWgnome-vfs
-Requires:           SUNWgnome-config
-Requires:           SUNWlibpopt
-Requires:           SUNWlibms
-Requires:           SUNWfontconfig
-Requires:           SUNWgnome-component
-Requires:           SUNWlxml
-Requires:           SUNWdbus-glib
-Requires:           SUNWdbus
-Requires:           SUNWopenssl-libraries
-Requires:           SUNWgnome-audio
-Requires:           SUNWfreetype2
-Requires:           SUNWlexpt
-Requires:           SUNWzlib
-Requires:           SUNWpng
-Requires:           SUNWrdesktop
-Requires:           SUNWvncviewer
-Requires:           SUNWxorg-server
-Requires:           SUNWgnome-keyring
-Requires:           SUNWlibgnome-keyring
-BuildRequires:      SUNWxwplt
-BuildRequires:      SUNWxwice
-BuildRequires:      SUNWlibgnomecanvas-devel
-BuildRequires:      SUNWlibm
-BuildRequires:      SUNWgnome-panel-devel
-BuildRequires:      SUNWgnome-libs-devel
-BuildRequires:      SUNWgnome-vfs-devel
-BuildRequires:      SUNWgnome-config-devel
-BuildRequires:      SUNWlibpopt-devel
-BuildRequires:      SUNWmlibh
+Requires:           library/desktop/libgnomecanvas
+Requires:           gnome/-panel
+Requires:           library/gnome/gnome-libs
+Requires:           library/gnome/gnome-vfs
+Requires:           gnome/config/gconf
+Requires:           library/popt
+Requires:           system/library/math
+Requires:           system/library/fontconfig
+Requires:           library/gnome/gnome-component
+Requires:           library/libxml2
+Requires:           system/library/libdbus-glib
+Requires:           system/library/dbus
+Requires:           library/security/openssl
+Requires:           gnome/gnome-audio
+Requires:           system/library/freetype-2
+Requires:           library/expat
+Requires:           library/zlib
+Requires:           image/library/libpng
+Requires:           desktop/remote-desktop/rdesktop
+Requires:           desktop/remote-desktop/tigervnc
+Requires:           x11/server/xorg
+Requires:           gnome/gnome-keyring
+Requires:           library/gnome/gnome-keyring
+BuildRequires:      x11/library/libice
+BuildRequires:      library/desktop/libgnomecanvas
+BuildRequires:      system/library/math
+BuildRequires:      gnome/gnome-panel
+BuildRequires:      library/gnome/gnome-libs
+BuildRequires:      library/gnome/gnome-vfs
+BuildRequires:      gnome/config/gconf
+BuildRequires:      library/popt
+BuildRequires:      library/medialib
 BuildRequires:      SUNWgnome-component-devel
-BuildRequires:      SUNWlxml-devel
-BuildRequires:      SUNWdbus-glib-devel
-BuildRequires:      SUNWdbus-devel
-BuildRequires:      SUNWgnome-audio-devel
-BuildRequires:      SUNWpng-devel
+BuildRequires:      library/gnome/gnome-component
+BuildRequires:      library/libxml2
+BuildRequires:      system/library/libdbus-glib
+BuildRequires:      system/library/dbus
+BuildRequires:      gnome/gnome-audio
+BuildRequires:      image/library/libpng
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -133,6 +132,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Thu Mar 05 2009 - brian.cameron@sun.com
 - Change SUNWdbus-bindings to SUNWdbus-glib.
 * Wed Nov 05 2008 - halton.huo@sun.com

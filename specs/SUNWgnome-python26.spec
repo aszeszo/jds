@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-python
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -28,39 +28,34 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibgnomecanvas
-Requires: SUNWgnome-component
-Requires: SUNWgnome-config
-Requires: SUNWgnome-vfs
-Requires: SUNWlibgnomecanvas
-Requires: SUNWgnome-libs
-Requires: SUNWPython26-extra
-Requires: SUNWPython26
-Requires: SUNWpygobject26
-Requires: SUNWpygtk2-26
-Requires: SUNWpyorbit26
-BuildRequires: SUNWlibgnomecanvas-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-file-mgr-devel
-BuildRequires: SUNWPython26-extra
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-gtksourceview-devel
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWgsed
+Requires: library/desktop/libgnomecanvas
+Requires: library/gnome/gnome-component
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-vfs
+Requires: library/gnome/gnome-libs
+Requires: library/python-2/python-extra-26
+Requires: runtime/python-26
+Requires: library/python-2/pygobject-26
+Requires: library/python-2/pygtk2-26
+Requires: library/python-2/pyorbit-26
+BuildRequires: library/desktop/libgnomecanvas
+BuildRequires: runtime/python-26
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/popt
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: gnome/file-manager/nautilus
+BuildRequires: library/python-2/python-extra-26
+BuildRequires: library/gnome/gnome-component
+BuildRequires: gnome/config/gconf
+BuildRequires: library/desktop/gtksourceview
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: text/gnu-sed
 
 %package devel
 Summary:           %{summary} - development files
 SUNW_BaseDir:      %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires: %name
-Requires: SUNWPython26
 
 %prep
 rm -rf %name-%version
@@ -119,6 +114,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/*
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Feb  4 2010 - laszlo.peter@oracle.com
 - created, based on SUNWgnome-python26-libs.spec
 * Wed Sep 23 2009 - brian.cameron@sun.com

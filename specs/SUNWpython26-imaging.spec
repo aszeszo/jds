@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWpython-imaging
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -24,17 +24,16 @@ Release:                 1
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          SUNWpython-imaging.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
-BuildRequires:           SUNWPython26-devel
-BuildRequires:           SUNWzlib
-BuildRequires:           SUNWjpg-devel
-BuildRequires:           SUNWpng-devel
-BuildRequires:           SUNWfreetype2
-BuildRequires:           SUNWpython26-setuptools
-BuildRequires:           SUNWxwinc
-Requires:                SUNWzlibr
-Requires:                SUNWfreetype2
-Requires:                SUNWPython26
-BuildRequires:           SUNWjpg
+BuildRequires:           runtime/python-26
+BuildRequires:           library/zlib
+BuildRequires:           image/library/libjpeg
+BuildRequires:           image/library/libpng
+BuildRequires:           system/library/freetype-2
+BuildRequires:           library/python-2/setuptools-26
+Requires:                library/zlib
+Requires:                system/library/freetype-2
+Requires:                runtime/python-26
+Requires:                image/library/libjpeg
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -76,6 +75,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Mon Nov 16 2009 - li.yuan@sun.com
 - Change owner to liyuan.
 * Thu Feb 12 2009 - brian.cameron@sun.com

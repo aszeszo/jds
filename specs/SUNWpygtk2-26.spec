@@ -3,7 +3,7 @@
 #
 # includes module(s): pygtk2
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -28,29 +28,25 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWPython26
+Requires: library/desktop/gtk2
+Requires: runtime/python-26
 # for numpy
-Requires: SUNWPython26-extra
-Requires: SUNWpygobject26
-Requires: SUNWpycairo26
-Requires: SUNWlibglade
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWPython26-extra
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWpygobject26-devel
-BuildRequires: SUNWpycairo26-devel
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgsed
+Requires: runtime/python-2/python-extra-26
+Requires: library/python-2/pygoject-26
+Requires: library/python-2/pycairo26
+Requires: library/desktop/libglade
+BuildRequires: library/desktop/gtk2
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/python-extra-26
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: library/python-2/pygobject-26
+BuildRequires: library/python-2/pycairo-26
+BuildRequires: library/desktop/libglade
+BuildRequires: text/gnu-sed
 
 %package devel
 Summary:           %{summary} - development files
 SUNW_BaseDir:      %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires: %name
-Requires: SUNWPython26
 
 %prep
 rm -rf %name-%version
@@ -116,6 +112,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_prefix}/demo/jds/bin/pygtk-demo-2.6
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Feb  4 2010 - laszlo.peter@oracle.com
 - created, based on SUNWgnome-python26-libs.spec
 * Wed Sep 23 2009 - brian.cameron@sun.com

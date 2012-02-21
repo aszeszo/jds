@@ -3,7 +3,7 @@
 #
 # includes module(s): libcroco
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -32,17 +32,12 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWglib2
-BuildRequires: SUNWlxml
-BuildRequires: SUNWglib2-devel
+BuildRequires: library/glib2
+BuildRequires: library/libxml2
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires: SUNWglib2-devel
-Requires: SUNWlxml-devel
 
 %prep
 rm -rf %name-%version
@@ -121,6 +116,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Mar 24 2009 - jeff.cai@sun.com
 - Since /usr/lib/amd64/pkgconfig/libcroco-0.6.pc (SUNWlibcroco-devel) requires
   /usr/lib/amd64/pkgconfig/glib-2.0.pc which is found in
