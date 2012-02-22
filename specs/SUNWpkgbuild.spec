@@ -3,7 +3,7 @@
 #
 # includes module(s): pkgbuild
 #
-# Copyright (c) 2010 Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010,2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,28 +15,24 @@ Name:         pkgbuild
 IPS_Package_Name: package/pkgbuild
 License:      GPLv2
 URL:	      http://pkgbuild.sourceforge.net/
-Version:      1.3.103
+Version:      1.3.104
 Release:      1
-BuildArch:    noarch
 Summary:      pkgbuild - rpmbuild-like tool for building Solaris packages
 Source:       http://prdownloads.sourceforge.net/pkgbuild/pkgbuild-%{version}.tar.bz2
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 SUNW_BaseDir: %{_basedir}
 SUNW_Pkg:                  SUNWpkgbuild
 SUNW_Copyright:            SUNW%{name}.copyright
-# OpenSolaris IPS Package Manifest Fields
-Meta(info.upstream):	 	Laszlo (Laca) Peter <laszlo.peter@oracle.com>
-Meta(info.maintainer):	 	Laszlo (Laca) Peter <laca@opensolaris.org>
-Meta(info.repository_url):	http://pkgbuild.cvs.sourceforge.net/viewvc/pkgbuild/pkgbuild/
 Meta(info.classification):	%{classification_prefix}:System/Packaging
-Requires:     SUNWbash
+Requires:     /usr/bin/bash
 BuildRequires: runtime/perl-512
-Requires:     SUNWgpch
-%include gnome-incorporation.inc
+Requires:     text/gnu-patch
+%include desktop-incorporation.inc
 
 %description
-A tool for building Solaris SVr4 packages based on RPM spec files.
+A tool for building Solaris packages based on RPM-like spec files.
 Most features and some extensions of the spec format are implemented.
+More details at http://pkgbuild.sf.net/
 
 %prep
 %setup -q -n pkgbuild-%version
@@ -62,6 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}
 
 %changelog
+* Tue Feb 21 2012 - laszlo.peter@oracle.com
+- bump to 1.3.104, minor updates
 * Mon Jul 26 2010 - laszlo.peter@oracle.com
 - bump to 1.3.103
 * Sun Jun  6 2010 - laszlo.peter@oracle.com

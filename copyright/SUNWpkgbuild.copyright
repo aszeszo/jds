@@ -1,3 +1,8 @@
+Name:    pkgbuild
+Version: %{version}
+
+Oracle Internal Tracking Number: 7558
+
 		    GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991
 
