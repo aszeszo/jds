@@ -13,8 +13,8 @@
 
 Name:        thunderbird
 Summary:     Mozilla Thunderbird Standalone E-mail and Newsgroup Client
-Version:     9.0.1
-%define tarball_version 9.0.1
+Version:     10.0.2
+%define tarball_version 10.0.2esr
 Release:     1
 Copyright:   MPL
 License:     MPL
@@ -26,11 +26,12 @@ Source1:     thunderbird-icon.png
 Source2:     thunderbird.desktop
 
 %if %option_with_lightning
-%define lightning_version 1.1.1
-%define lightning_tarball_version 1.1.1
+%define lightning_version 1.2.1
+%define lightning_tarball_version 1.2.1
+%define lightningl10n_tarball_version 1.2.1
 
 Source3:     http://ftp.mozilla.org/pub/mozilla.org/calendar/lightning/releases/%{lightning_tarball_version}/source/lightning-%{lightning_tarball_version}.source.tar.bz2
-Source4:     lightning-l10n-%{lightning_version}.tar.bz2
+Source4:     lightning-l10n-%{lightningl10n_tarball_version}.tar.bz2
 %endif
 
 %ifarch i386
@@ -47,7 +48,7 @@ Source8:     nspr-nss-config
 
 %define _unpackaged_files_terminate_build 0
 %define lightning_dir "{e2fda1a4-762b-4020-b5ad-a41df1933103}"
-%define moz_srcdir comm-release
+%define moz_srcdir comm-esr10
 %define moz_objdir obj-tb
 %define moz_l10n_srcdir l10n-release
 %define lightning_lang_list bg ca cs da de es-AR es-ES et eu fi fr gl hu id is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-PT ro ru sk sl sq sv-SE tr uk zh-CN zh-HK zh-TW
@@ -56,6 +57,8 @@ Source8:     nspr-nss-config
 ##      Thunderbird patches        ##
 #####################################
 
+# owner:lin date:2012-01-17 type:bug
+Patch500: thunderbird10-00-bin-libs.diff
 
 # owner:lin date:2011-11-09 type:bug
 Patch501: thunderbird8-01-enable-extensions.diff
@@ -105,7 +108,7 @@ Patch7: firefox9-07-uconv_sse2.diff
 #%endif
 
 # owner:ginnchen date:2011-03-07 type:feature
-Patch9: firefox9-09-ipc.diff
+Patch9: firefox10-09-ipc.diff
 
 # owner:ginnchen date:2011-07-18 type:bug
 Patch10: firefox6-10-appname-tr.diff
@@ -127,11 +130,11 @@ Patch14: firefox8-14-getting-started.diff
 # owner:hawklu date:2009-05-22 type:branding
 Patch15: firefox-15-use-system-theora.diff
 
-# owner:leon.sha date:2011-11-21 type:bug bugzilla:697014 status:upstream
-Patch16: firefox9-16-sparc-js.diff
+# owner:ginnchen date:2011-11-21 type:bug bugzilla:701273 status:upstream
+Patch16: firefox10-16-nsXBLProtoImpl.diff
 
 # owner:ginnchen date:2011-10-25 type:feature
-Patch17: firefox9-17-js-compiler.diff
+Patch17: firefox10-17-js-compiler.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
 Patch18: firefox-18-libvpx-compile.diff
@@ -139,8 +142,8 @@ Patch18: firefox-18-libvpx-compile.diff
 # owner:ginnchen date:2011-03-08 type:feature
 Patch19: firefox6-19-xpcom-sparc-compile.diff
 
-# owner:ginnchen date:2010-12-10 type:feature
-Patch20: firefox-20-ots-makepair.diff
+# owner:ginnchen date:2012-1-11 type:bug bugzilla:717174 bugzilla:682625 status:upstream
+Patch20: firefox10-20-xBGR-plugin.diff
 
 # owner:ginnchen date:2011-03-08 type:feature
 # See CR#7023690
@@ -162,7 +165,7 @@ Patch23: firefox9-23-ycbcr.diff
 Patch25: firefox-25-json-compile.diff
 
 # owner:ginnchen date:2010-03-14 type:feature
-Patch26: firefox9-26-pgo-ss12_2.diff
+Patch26: firefox10-26-pgo-ss12_2.diff
 
 # owner:ginnchen date:2011-04-06 type:feature bugzilla:610323
 Patch27: firefox9-27-methodjit-sparc.diff
@@ -174,7 +177,7 @@ Patch28: firefox6-28-patch-for-debugging.diff
 Patch29: firefox9-29-selectAddons-app-scope.diff
 
 # owner:ginnchen date:2010-03-14 type:bug
-Patch30: firefox-30-gfxAlphaRecovery.diff
+Patch30: firefox10-30-gfxAlphaRecovery.diff
 
 # owner:ginnchen date:2010-05-12 type:bug
 Patch31: firefox-31-async-channel-crash.diff
@@ -182,14 +185,20 @@ Patch31: firefox-31-async-channel-crash.diff
 # owner:ginnchen date:2010-06-20 type:branding
 Patch32: firefox7-32-yasm.diff
 
+# owner:ginnchen date:2012-01-12 type:bug bugzilla:717863 status:upstream
+Patch33: firefox10-33-jsgc-pagesize.diff
+
 # owner:ginnchen date:2011-10-08 type:branding
 Patch34: firefox7-34-js-numeric-limits.diff
 
 # owner:ginnchen date:2010-06-20 type:branding
-Patch35: firefox-35-static-assert.diff
+Patch35: firefox10-35-static-assert.diff
 
 # owner:ginnchen date:2010-10-26 type:branding
-Patch36: firefox9-36-gtkembed.diff
+Patch36: firefox10-36-gtkembed.diff
+
+# owner:ginnchen date:2012-01-18 type:bug bugzilla:669556
+Patch37: firefox10-37-sunaudio-buffer.diff
 
 # owner:ginnchen date:2011-10-25 type:branding
 Patch38: firefox9-38-libffi-3-0-9.diff
@@ -201,17 +210,17 @@ Patch39: firefox-39-nss-compile.diff
 # owner:ginnchen date:2011-10-10 type:bug bugzilla:675585
 Patch40: firefox8-40-gthread-dlopen.diff
 
-# owner:ginnchen date:2011-10-10 type:bug buzilla:689916
-Patch41: firefox7-41-js-regexp-sparc.diff
+# owner:ginnchen date:2012-1-10 type:bug buzilla:716462
+Patch41: firefox10-41-xBGR-performance.diff
 
 # owner:ginnchen date:2011-11-04 type:bug bugzilla:702529
-Patch42: firefox8-42-about-memory.diff
+Patch42: firefox10-42-about-memory.diff
 
 # owner:ginnchen date:2011-11-08 type:bug bugzilla:700615
-Patch43: firefox8-43-donot-disable-locale-addon.diff
+Patch43: firefox10-43-donot-disable-locale-addon.diff
 
 # owner:ginnchen date:2011-11-15 type:bug bugzilla:702179
-Patch44: firefox8-44-dtrace-probe.diff
+Patch44: firefox10-44-dtrace-probe.diff
 
 # owner:ginnchen date:2011-11-15 type:feature
 Patch45: firefox8-45-libnspr_flt4.diff
@@ -300,9 +309,11 @@ cd %{moz_srcdir}/mozilla
 %patch30 -p1
 %patch31 -p1
 %patch32 -p1
+%patch33 -p1
 %patch34 -p1
 %patch35 -p1
 #%patch36 -p1
+%patch37 -p1
 %patch38 -p1
 %patch39 -p1
 %patch40 -p1
@@ -328,6 +339,7 @@ cd %{moz_srcdir}/mozilla
 
 # go back to the thunderbird directory
 cd ..  
+%patch500 -p1
 %patch501 -p1
 %patch526 -p1
 # %patch528 -p1
@@ -483,6 +495,9 @@ rmdir $RPM_BUILD_ROOT%{_libdir}/%{name}/dictionaries
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Fri Feb 17 2012 - lin.ma@oracle.com
+- Bump to Thunderbird 10.0.2
+- Bump to Lightning 1.2.1
 * Tue Jan 10 2012 - lin.ma@oracle.com
 - Bump to Thunderbird 9.0.1
 - Bump to Lightning 1.1.1

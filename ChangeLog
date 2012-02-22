@@ -1,3 +1,23 @@
+2012-02-22  Lin Ma  <lin.ma@oracle.com>
+
+	CR 7141623 Bump Thunderbird to 10.0.2 ESR. Lightning 1.2.1.
+	* base-specs/thunderbird.spec:
+	* copyright/SUNWthunderbird.copyright:
+	* patches/firefox-20-ots-makepair.diff:
+	* patches/firefox-30-gfxAlphaRecovery.diff:
+	* patches/firefox-35-static-assert.diff:
+	* patches/firefox7-41-js-regexp-sparc.diff:
+	* patches/firefox8-42-about-memory.diff:
+	* patches/firefox8-43-donot-disable-locale-addon.diff:
+	* patches/firefox8-44-dtrace-probe.diff:
+	* patches/firefox9-09-ipc.diff:
+	* patches/firefox9-16-sparc-js.diff:
+	* patches/firefox9-17-js-compiler.diff:
+	* patches/firefox9-26-pgo-ss12_2.diff:
+	* patches/firefox9-36-gtkembed.diff:
+	* patches/thunderbird10-00-bin-libs.diff:
+	* specs/SUNWthunderbird.spec:
+
 2012-02-21  Ginn Chen  <ginn.chen@oracle.com>
 
 	CR 7141621 Update to Firefox 10.0.2 ESR.

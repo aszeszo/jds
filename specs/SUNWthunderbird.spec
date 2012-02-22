@@ -20,7 +20,7 @@
 #####################################
 
 %define lang_list ar bg ca cs da de el es-AR es-ES et eu fi fr gl he hu id is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-BR pt-PT ro ru sk sl sq sv-SE tr uk zh-CN zh-HK zh-TW
-%define l10n_version 9.0.1
+%define l10n_version 10.0.2
 
 Name:          SUNWthunderbird
 IPS_package_name: mail/thunderbird
@@ -41,37 +41,34 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWlibnotify
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWdbus-glib
-BuildRequires: SUNWdbus-libs
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWlibtheora-devel
-BuildRequires: SUNWogg-vorbis-devel
-BuildRequires: SUNWsqlite3
-BuildRequires: SUNWfontconfig
-BuildRequires: SUNWfreetype2
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWlibC
-BuildRequires: SUNWlibms
-BuildRequires: SUNWbash
-BuildRequires: SUNWzip
-BuildRequires: SUNWunzip
-BuildRequires: SUNWgtar
-BuildRequires: SUNWbzip
+BuildRequires: archiver/gnu-tar
+BuildRequires: codec/libtheora
+BuildRequires: codec/ogg-vorbis
+BuildRequires: compress/zip
+BuildRequires: compress/bzip2
+BuildRequires: database/sqlite-3
+BuildRequires: gnome/config/gconf
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/zlib
+BuildRequires: library/libnotify
+BuildRequires: library/libffi
+BuildRequires: text/gnu-sed
+BuildRequires: system/header
+BuildRequires: system/library/libdbus-glib
+BuildRequires: system/library/libdbus
+BuildRequires: system/library/dbus
+BuildRequires: system/library/freetype-2
+BuildRequires: system/library/fontconfig
+BuildRequires: system/library/math
+BuildRequires: x11/library/mesa
+BuildRequires: x11/library/libxscrnsaver
 %if %option_without_moz_nss_nspr
 #BuildRequires: library/nspr
 #BuildRequires: library/security/nss
 %endif
-BuildRequires: SUNWaudh
-BuildRequires: SUNWgsed
-BuildRequires: SUNWlibffi
-BuildRequires: SUNWxorg-mesa
-BuildRequires: x11/library/libxscrnsaver
 Requires: system/font/truetype/dejavu
 
 #####################################
@@ -114,10 +111,10 @@ gzcat %SOURCE0 | tar xf -
 %thunderbird.install -d %name-%version
 
 # Lightning extension ID
-rm -rf $RPM_BUILD_ROOT/usr/lib/thunderbird/extensions/calendar-timezones@mozilla.org
-rm $RPM_BUILD_ROOT/usr/lib/thunderbird/distribution/extensions/tbtestpilot@labs.mozilla.com.xpi
-rmdir $RPM_BUILD_ROOT/usr/lib/thunderbird/distribution/extensions/
-rmdir $RPM_BUILD_ROOT/usr/lib/thunderbird/distribution
+# rm -rf $RPM_BUILD_ROOT/usr/lib/thunderbird/extensions/calendar-timezones@mozilla.org
+# rm $RPM_BUILD_ROOT/usr/lib/thunderbird/distribution/extensions/tbtestpilot@labs.mozilla.com.xpi
+# rmdir $RPM_BUILD_ROOT/usr/lib/thunderbird/distribution/extensions/
+# rmdir $RPM_BUILD_ROOT/usr/lib/thunderbird/distribution
 
 # create file list for SUNWthunderbird, SUNWthunderbird-calendar(ie. Lightning)
 cd $RPM_BUILD_ROOT%{_libdir}
@@ -223,6 +220,9 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri Feb 17 2012 - lin.ma@oracle.com
+- Bump to Thunderbird 10.0.2
+- Bump to Lightning 1.2.1
 * Tue Jan 10 2012 - lin.ma@oracle.com
 - Bump to Thunderbird 9.0.1
 - Bump to Lightning 1.1.1
