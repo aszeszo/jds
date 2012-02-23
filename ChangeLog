@@ -1,5 +1,9 @@
 2012-02-23  Padraig O'Briain  <padraig.obriain@oracle.com>
 
+	* specs/SUNWgnome-im-client.spec: Fix typo.
+
+2012-02-23  Padraig O'Briain  <padraig.obriain@oracle.com>
+
 	CR 7143414 GTK does not build on Solaris 11 update 1 build 8
 	CR 7144112 Build failure for packages with build dependency on SUNWPython26-devel or SUNWlxml-devel
 	* specs/SUNWPython26-extra.spec, specs/SUNWgnome-im-client.spec,
