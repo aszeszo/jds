@@ -36,24 +36,25 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: compress/bzip2
-Requires: gnome/config/gconf
-Requires: library/file-monitor/gamin
-Requires: library/glib2
-Requires: library/gnome/gnome-component
-Requires: library/libxml2
-Requires: library/security/openssl
-Requires: library/zlib
+
 Requires: service/gnome/desktop-cache
 Requires: service/network/samba
 Requires: system/hal
-Requires: system/library/dbus
-Requires: system/library/libdbus
-Requires: system/library/libdbus-glib
-Requires: system/library/math
-Requires: system/network/avahi
 
+BuildRequires: compress/bzip2
+BuildRequires: gnome/config/gconf
+BuildRequires: library/file-monitor/gamin
+BuildRequires: library/glib2
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/libxml2
+BuildRequires: library/security/openssl
+BuildRequires: library/zlib
 BuildRequires: runtime/perl-512
+BuildRequires: system/library/dbus
+BuildRequires: system/library/libdbus
+BuildRequires: system/library/libdbus-glib
+BuildRequires: system/library/math
+BuildRequires: system/network/avahi
 BuildRequires: text/gnu-grep
 
 %package root
@@ -92,7 +93,7 @@ gzcat %SOURCE0 | tar xf -
 %build
 export PKG_CONFIG_PATH=../gnome-mime-data-%{gmdata.version}:../gnome-vfs-%{gvfs.version}:%{_pkg_config_path}
 # /usr/sfw/include needed for libsmbclient.h
-export CFLAGS="%optflags -I/usr/sfw/include"
+export CFLAGS="%optflags -I/usr/sfw/include -DDBUS_API_SUBJECT_TO_CHANGE=1"
 export RPM_OPT_FLAGS="$CFLAGS"
 export LDFLAGS="%_ldflags"
 

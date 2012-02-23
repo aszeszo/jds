@@ -31,7 +31,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: system/library/math
+BuildRequires: system/library/math
 
 %package devel
 Summary:                 %{summary} - development files

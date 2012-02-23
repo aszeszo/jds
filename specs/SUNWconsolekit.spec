@@ -41,10 +41,10 @@ Source2:                 svc-consolekit
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: library/glib2
-Requires: system/library/dbus
-Requires: system/library/libdbus
-Requires: system/library/libdbus-glib
+BuildRequires: library/glib2
+BuildRequires: system/library/dbus
+BuildRequires: system/library/libdbus
+BuildRequires: system/library/libdbus-glib
 BuildRequires: x11/server/xorg
 
 %package root
@@ -171,7 +171,9 @@ exit 0
 %{_bindir}/*
 %{_sbindir}/*
 %{_libdir}/lib*.so*
-%{_libdir}/ConsoleKit
+%{_libdir}/ConsoleKit/run-seat.d
+%{_libdir}/ConsoleKit/run-session.d
+%ips_tag(preserve=true) %{_libdir}/ConsoleKit/scripts/*
 %{_libexecdir}/ck-collect-session-info
 %{_libexecdir}/ck-get-x11-server-pid
 %{_libexecdir}/ck-get-x11-display-device
@@ -185,7 +187,11 @@ exit 0
 
 %files root
 %defattr (-, root, sys)
-%{_sysconfdir}/ConsoleKit
+%{_sysconfdir}/ConsoleKit/run-seat.d
+%{_sysconfdir}/ConsoleKit/run-session.d
+%ips_tag(preserve=true) %{_sysconfdir}/ConsoleKit/displays.d/*.display
+%ips_tag(preserve=true) %{_sysconfdir}/ConsoleKit/seats.d/*.seat
+%ips_tag(preserve=true) %{_sysconfdir}/ConsoleKit/sessions.d/*.session
 %dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1
 %dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1/system.d
 %{_sysconfdir}/dbus-1/system.d/ConsoleKit.conf

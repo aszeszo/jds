@@ -39,7 +39,8 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: gnome/config/gconf
+# GDM has runtime dependencies on many desktop components.
+#
 Requires: gnome/gnome-panel
 Requires: gnome/gnome-power-manager
 Requires: gnome/gnome-session
@@ -48,20 +49,9 @@ Requires: gnome/theme/gnome-themes
 Requires: gnome/theme/hicolor-icon-theme
 Requires: gnome/theme/tango-icon-theme
 Requires: gnome/window-manager/metacity
-Requires: library/glib2
-Requires: library/gnome/gnome-component
-Requires: library/gnome/gnome-libs
-Requires: library/desktop/cairo
-Requires: library/desktop/gtk2
-Requires: library/desktop/libxklavier
-Requires: library/desktop/pango
 Requires: library/desktop/xdg/libcanberra
+Requires: library/gnome/gnome-libs
 Requires: library/xdg/consolekit
-Requires: system/library/libdbus-glib
-Requires: system/library/dbus
-Requires: system/library/fontconfig
-Requires: system/library/libdbus
-Requires: system/library/math
 Requires: system/display-manager/desktop-startup
 Requires: system/display-manager/xdm
 # xmodmap, xrdb
@@ -77,16 +67,22 @@ BuildRequires: gnome/gnome-panel
 BuildRequires: gnome/config/gconf
 BuildRequires: library/desktop/cairo
 BuildRequires: library/desktop/gtk2
+BuildRequires: library/desktop/libxklavier
 BuildRequires: library/desktop/pango
 BuildRequires: library/desktop/xdg/libcanberra
 BuildRequires: library/glib2
-BuildRequires: library/gnome/gnome-component
 BuildRequires: library/gnome/gnome-keyring
 BuildRequires: library/gnome/gnome-libs
 BuildRequires: library/xdg/consolekit
 BuildRequires: system/library/dbus
+BuildRequires: system/library/fontconfig
 BuildRequires: system/library/iconv/utf-8
 BuildRequires: system/library/libdbus
+BuildRequires: system/library/libdbus-glib
+BuildRequires: system/library/math
+BuildRequires: x11/x11-server-utilities
+BuildRequires: x11/keyboard/xkb-utilities
+BuildRequires: x11/server/xserver-common
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -217,8 +213,8 @@ user gcos-field="GDM Reserved UID" group=gdm home-dir=/var/lib/gdm uid=50 userna
 %dir %attr (0755, root, sys) %{_datadir}
 %dir %attr (0755, root, bin) %{_datadir}/gdm
 %{_datadir}/gdm/autostart/LoginWindow/*.desktop
-%{_datadir}/gdm/gdm-greeter-login-window.ui
-%{_datadir}/gdm/locale.alias
+%ips_tag(preserve=true) %{_datadir}/gdm/gdm-greeter-login-window.ui
+%ips_tag(preserve=true) %{_datadir}/gdm/locale.alias
 #%{_datadir}/gdm/box.png
 #%{_datadir}/gdm/logo.png
 #%{_datadir}/gdm/bkg.jpg
@@ -255,10 +251,12 @@ user gcos-field="GDM Reserved UID" group=gdm home-dir=/var/lib/gdm uid=50 userna
 %{_sysconfdir}/dbus-1/system.d/*
 %{_sysconfdir}/gconf
 %dir %{_sysconfdir}/gdm
-%{_sysconfdir}/gdm/Init
-%{_sysconfdir}/gdm/Post*
-%{_sysconfdir}/gdm/Pre*
-%{_sysconfdir}/gdm/X*
+%ips_tag(preserve=true) %{_sysconfdir}/gdm/gdm.schemas
+%ips_tag(preserve=true) %{_sysconfdir}/gdm/Init/Default
+%ips_tag(preserve=true) %{_sysconfdir}/gdm/PreSession/Default
+%ips_tag(preserve=true) %{_sysconfdir}/gdm/PostSession/Default
+%ips_tag(preserve=true) %{_sysconfdir}/gdm/Xsession
+%{_sysconfdir}/gdm/PostLogin
 %config %ips_tag(original_name=SUNWgnome-display-mgr:etc/X11/gdm/custom.conf) %{_sysconfdir}/gdm/custom.conf
 %dir %{_sysconfdir}/security
 %dir %{_sysconfdir}/security/auth_attr.d

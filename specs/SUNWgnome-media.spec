@@ -11,8 +11,6 @@
 #
 %include Solaris.inc
 
-%define with_hal %(pkginfo -q SUNWhal && echo 1 || echo 0)
-
 %ifarch amd64 sparcv9
 %include arch64.inc
 %use gst64 = gst.spec
@@ -41,45 +39,46 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 
-Requires: codec/flac
-Requires: codec/libtheora
-Requires: codec/ogg-vorbis
-Requires: codec/speex
-Requires: gnome/config/gconf
-Requires: gnome/gnome-audio
-Requires: image/library/libjpeg
-Requires: image/library/libpng
-Requires: library/aalib
 Requires: library/desktop/gobject/gobject-introspection
-Requires: library/desktop/gtk2
-Requires: library/desktop/pango
-Requires: library/gnome/gnome-keyring
-Requires: library/gnome/gnome-libs
-Requires: library/gnome/gnome-vfs
-Requires: library/liboil
-Requires: library/libsoup
-Requires: library/libxml2
-Requires: library/musicbrainz/libdiscid
-Requires: library/musicbrainz/libmusicbrainz
-Requires: library/python-2/python-extra-26
-Requires: library/zlib
-Requires: media/cdrtools
+Requires: runtime/perl-512
 Requires: runtime/python-26
 Requires: service/gnome/desktop-cache
 Requires: system/hal
-Requires: system/library/math
-Requires: x11/library/libx11
-Requires: x11/library/libxext
-Requires: x11/library/libxv
 
+BuildRequires: codec/flac
+BuildRequires: codec/libtheora
+BuildRequires: codec/ogg-vorbis
+BuildRequires: codec/speex
 BuildRequires: developer/parser/bison
+BuildRequires: gnome/config/gconf
+BuildRequires: gnome/gnome-audio
+BuildRequires: image/library/libjpeg
+BuildRequires: image/library/libpng
 BuildRequires: library/desktop/libvisual
+BuildRequires: library/aalib
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/desktop/pango
+BuildRequires: library/gnome/gnome-keyring
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/liboil
+BuildRequires: library/libsoup
+BuildRequires: library/libxml2
+BuildRequires: library/musicbrainz/libdiscid
+BuildRequires: library/musicbrainz/libmusicbrainz
+BuildRequires: library/python-2/python-extra-26
+BuildRequires: library/zlib
 BuildRequires: media/cdrtools
 BuildRequires: runtime/perl-512
+BuildRequires: runtime/python-26
 BuildRequires: system/header
+BuildRequires: system/library/math
 BuildRequires: text/gawk
 BuildRequires: text/gnu-grep
 BuildRequires: text/gnu-sed
+BuildRequires: x11/library/libx11
+BuildRequires: x11/library/libxext
+BuildRequires: x11/library/libxv
 BuildRequires: x11/server/xorg
 
 %package root

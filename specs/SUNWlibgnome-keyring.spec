@@ -34,8 +34,13 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include gnome-incorporation.inc
 
 Requires: gnome/gnome-keyring
-Requires: library/glib2
-Requires: system/library/security/libgcrypt
+BuildRequires: gnome/gnome-keyring
+BuildRequires: library/glib2
+BuildRequires: library/security/libgpg-error
+BuildRequires: system/library/dbus
+BuildRequires: system/library/libdbus
+BuildRequires: system/library/libdbus-glib
+BuildRequires: system/library/security/libgcrypt
 
 %package devel		
 Summary:                 %{summary} - development files

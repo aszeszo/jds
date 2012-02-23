@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-vfs
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -134,9 +134,6 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-export CFLAGS="%optflags -I/usr/sfw/include"
-export LDFLAGS="%_ldflags"
-
 libtoolize --force
 glib-gettextize --force
 intltoolize -c -f --automake
@@ -150,7 +147,6 @@ gtkdocize
 autoheader
 automake -a -c -f
 autoconf
-CFLAGS="$CFLAGS -DDBUS_API_SUBJECT_TO_CHANGE=1"	\
 
 ./configure --prefix=%{_prefix}		\
             --bindir=%{_bindir}		\
@@ -210,7 +206,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
-* Tue Oct 11 2011 - brian.cameron@oracle.com
+* Fri Feb 23 2012 - brian.cameron@oracle.com
 - Now support 64-bit.
 * Thu Oct 21 2010 - brian.cameron@oracle.com
 - Bump to 2.24.4.

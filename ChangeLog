@@ -1,3 +1,14 @@
+2012-02-23  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWlibgnome-keyring.spec, specs/SUNWlibsoup.spec,
+	  specs/SUNWgnome-media.spec, SUNWlibgc.spec, SUNWgnome-vfs.spec,
+	  specs/SUNWgnome-display-mgr.spec, specs/SUNWconsolekit.spec,
+	  specs/SUNWogg-vorbis.spec:  Fix Requires/BuildRequires lines.
+	* base-specs/gnome-vfs.spec, base/specs/libgnome-keyring.spec,
+	  base-specs/libsoup.spec: Cleanup.
+	* patches/gdm-30-vt.diff: Remove unnecessary warning.
+	* patches/ConsoleKit-01-ck-dyanmic.diff: Add debug messages.
+
 2012-02-21  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	* specs/SUNWPython26-extra.spec, specs/SUNWgnome-im-client.spec,

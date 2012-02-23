@@ -34,17 +34,26 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: database/sqlite-3
 Requires: library/desktop/gobject/gobject-introspection
-Requires: library/glib2
-Requires: library/gnutls
 Requires: library/gnome/gnome-libs
-Requires: library/gnome/gnome-keyring
-Requires: library/libproxy/libproxy-gnome
-Requires: library/libxml2
-Requires: library/zlib
-Requires: system/library/security/libgcrypt
-Requires: system/library/math
+
+BuildRequires: database/sqlite-3
+BuildRequires: gnome/config/gconf
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: library/glib2
+BuildRequires: library/gnome/gnome-keyring
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnutls
+BuildRequires: library/libproxy/libproxy-gnome
+BuildRequires: library/libtasn1
+BuildRequires: library/libxml2
+BuildRequires: library/security/libgpg-error
+BuildRequires: library/zlib
+BuildRequires: system/library/dbus
+BuildRequires: system/library/libdbus
+BuildRequires: system/library/libdbus-glib
+BuildRequires: system/library/security/libgcrypt
+BuildRequires: system/library/math
 
 %package devel
 Summary:		%{summary} - development files

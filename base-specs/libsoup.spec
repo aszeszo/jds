@@ -1,7 +1,7 @@
 #
 # spec file for package libsoup
 #
-# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -106,7 +106,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc/*
 
 %changelog
-* Tue Oct 11 2011 - brian.cameron@oracle.com
+* Tue Feb 23 2012 - brian.cameron@oracle.com
 - Now support 64-bit.
 * Mon Oct 25 2010 - brian.cameron@oracle.com
 - Bump to 2.32.0

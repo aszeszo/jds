@@ -86,7 +86,7 @@ export CFLAGS="%optflags -D_POSIX_PTHREAD_SEMANTICS -I/usr/include/glib-2.0 -I/u
 export LDFLAGS="%_ldflags"
 
 ./configure --prefix=%{_prefix}			\
-            --libdir=%{_libdir}			\
+	    --libdir=%{_libdir}			\
 	    --sysconfdir=%{_sysconfdir}		\
 	    --mandir=%{_mandir}			\
 	    --disable-pam			\
