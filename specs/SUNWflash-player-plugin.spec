@@ -32,7 +32,7 @@ Name:		SUNWflash-player-plugin
 IPS_package_name: web/browser/firefox/plugin/firefox-flashplayer
 Meta(info.classification): %{classification_prefix}:Applications/Plug-ins and Run-times
 Summary:	Adobe Flash Player plugin
-Version:	11.1.102.56
+Version:	11.1.102.62
 Release:	4
 Copyright:	Commercial
 License:        Commercial
@@ -45,16 +45,12 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-build
 SUNW_Category:  FLASH,FIREFOX,application,%{jds_version}
 SUNW_BaseDir:   %{_basedir}
 SUNW_Copyright: %{name}.copyright
-Requires:       SUNWgtk2
-Requires:       SUNWcsl
-Requires:       SUNWcslr
-Requires:       library/nspr
-Requires:       library/security/nss
-Requires:       SUNWfirefox
-Requires:       SUNWlibms
-BuildRequires:  SUNWxwplt
-BuildRequires:  SUNWxwrtl
-BuildRequires:  SUNWgtk2-devel
+Requires:       library/desktop/gtk2
+Requires:       system/library
+Requires:       web/browser/firefox
+Requires:       system/library/math
+BuildRequires:  compatibility/packages/SUNWxwplt
+BuildRequires:  library/desktop/gtk2
 
 #####################################
 ##   Package Description Section   ##
@@ -98,6 +94,9 @@ rm -rf $RPM_BUILD_ROOT
 depend fmri=pkg:/web/firefox/plugin/flash@10.1.82.76-1 type=optional
 
 %changelog
+* Mon Feb 20 2012 leon.sha@oracle.com
+- Bump to 11.1.102.62 (CR 7146508).
+- Change Requires and BuildRequires lines to IPS package names.
 * Tue Nov 15 2011 leon.sha@oracle.com
 - bump to 11.1.102.56 (CR 7111023).
 * Thur Oct 27 2011 leon.sha@oracle.com
