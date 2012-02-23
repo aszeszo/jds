@@ -75,6 +75,7 @@ fi
 # Automake will fail without these files.
 touch NEWS README
 autoreconf --force --install
+intltoolize --force  --copy
 
 CFLAGS="$RPM_OPT_FLAGS" \
   ./configure \

@@ -72,6 +72,7 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
 fi
 
 autoreconf --force --install
+intltoolize --force --copy
 
 CFLAGS="$RPM_OPT_FLAGS" \
   ./configure \

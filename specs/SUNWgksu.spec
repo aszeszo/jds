@@ -24,30 +24,28 @@ SUNW_BaseDir:            %{_basedir}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWlibgtop-devel
-BuildRequires: SUNWgnome-file-mgr-devel
-Requires: SUNWgtk2
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-config
-Requires: SUNWgnome-component
-Requires: SUNWlibgtop
+BuildRequires: library/desktop/gtk2
+BuildRequires: gnome/gnome-panel
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-component
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: library/libgtop
+BuildRequires: gnome/file-manager/nautilus
+Requires: library/desktop/gtk2
+Requires: gnome/gnome-panel
+Requires: library/gnome/gnome-libs
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-component
+Requires: library/libgtop
 
 %package devel
 Summary:                 %{summary} - development files 
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
-Requires: %name
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -138,8 +136,7 @@ rm -rf $RPM_BUILD_ROOT
 %files l10n
 %defattr (-, root, bin)
 %dir %attr (0755, root, sys) %{_datadir}
-#FIXME: l10n files missing
-#%attr (-, root, other) %{_datadir}/locale
+%attr (-, root, other) %{_datadir}/locale
 
 %changelog
 * Wed Aug 19 2009 - lin.ma@sun.com

@@ -1,3 +1,11 @@
+2012-02-15 Yong Sun <y.yong.sun@oracle.com>
+	
+	CR 7101049 missing localization - gksu
+
+	* base-specs/gksu.spec
+	* base-specs/libgksu.spec
+	* specs/SUNWgksu.spec:
+
 2012-02-23  Jeff Cai  <jeff.cai@oracle.com>
 
         Add patch to fix raptor security #bug 7143950, rti 360037
