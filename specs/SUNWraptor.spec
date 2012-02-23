@@ -34,12 +34,12 @@ BuildRoot:           %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: SUNWlxsl
-Requires: SUNWlxml
-Requires: SUNWcurl
-Requires: SUNWgss
-Requires: SUNWgnu-idn
-Requires: SUNWopensslr
+BuildRequires: library/libxslt
+BuildRequires: library/libxml2
+BuildRequires: web/curl
+BuildRequires: system/library/security/gss
+BuildRequires: library/libidn
+BuildRequires: library/security/openssl
 
 
 %package devel

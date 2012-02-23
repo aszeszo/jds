@@ -21,6 +21,8 @@ BuildRoot:           %{_tmppath}/%{name}-%{version}-build
 
 # date:2009-09-17    owner:jefftsai type:branding
 Patch1:              raptor-01-manpage.diff
+# date:2012-02-17    bugster:7143950 owner:jefftsai type:bug
+Patch2:              raptor-02-cve-2012-037.diff
 Docdir:              %{_defaultdocdir}/doc
 
 %description
@@ -37,6 +39,7 @@ needed to develop applications with libraptor
 %prep
 %setup 
 %patch1 -p1
+%patch2 -p1
 
 %build
 
@@ -83,6 +86,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc
 
 %changelog
+* Mon Feb 20 2012 - jeff.cai@oracle.com
+- Add patch -02-cve-2012-037 to fix security bug #7143950
 * Sat Aug 15 2009 - christian.kelly@sun.com
 - Bump to 1.4.19.
 * Fri Jul 31 2009 <jerry.tan@sun.com>

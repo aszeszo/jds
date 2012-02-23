@@ -1,3 +1,10 @@
+2012-02-23  Jeff Cai  <jeff.cai@oracle.com>
+
+        Add patch to fix raptor security #bug 7143950, rti 360037
+	* base-specs/raptor.spec:
+	* patches/raptor-02-cve-2012-037.diff:
+	* specs/SUNWraptor.spec:
+
 2012-02-23  Leon Sha  <leon.sha@oracle.com>
 
 	Bump to 11.1.102.62 (CR 7146508).
