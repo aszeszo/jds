@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWpython-twisted
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -22,11 +22,11 @@ SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          SUNWpython-twisted.copyright
 License:                 MIT
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
-Requires:                SUNWPython26
+Requires:                runtime/python-26
 Requires:                library/python-2/python-zope-interface-26
-BuildRequires:           SUNWPython26-devel
-BuildRequires:           SUNWpython26-zope-interface
-BuildRequires:           SUNWpython26-setuptools
+BuildRequires:           runtime/python-26
+BuildRequires:           library/python-2/python-zope-interface-26
+BuildRequires:           library/python-2/setuptools-26
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -74,6 +74,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Thu Oct 27 2009 - yuntong.jin@sun.com
 - Change the owner to jouby
 * Thu Feb 12 2009 - brian.cameron@sun.com

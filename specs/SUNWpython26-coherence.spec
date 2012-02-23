@@ -3,7 +3,7 @@
 #
 # includes module(s): coherence
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -37,17 +37,15 @@ BuildRoot:              %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:               SUNWPython26
+Requires:               runtime/python-26
 Requires:               library/python-2/python-twisted-26
-Requires:               SUNWpython26-zope-interface
-BuildRequires:          SUNWPython26-devel
-BuildRequires:          SUNWpython26-setuptools
+Requires:               library/python-2/python-zope-interface-26
+BuildRequires:          runtime/python-26
+BuildRequires:          library/python-2/setuptools-26
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %prep
 rm -rf %name-%version
@@ -125,6 +123,8 @@ user gcos-field="UPnP Server Reserved UID" group=upnp home-dir=/var/coherence lo
 %attr (0644, upnp, upnp) %{_localstatedir}/coherence/coherence.conf
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wen Jan 01 2010 - yuntong.jin@sun.com
 - Bump to 0.6.6.2, del upstream patch: coherence-01-appletrailers-storage.diff 
 * Thu Dec 03 2009 - yuntong.jin@sun.com

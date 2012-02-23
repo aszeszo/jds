@@ -39,25 +39,24 @@ Patch4:		brasero-04-tmpdir.diff
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWtotem-pl-parser-devel
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWhal
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWlibcanberra
-BuildRequires: SUNWgnupg
-Requires: SUNWgtk2
-Requires: %{name}-root
-Requires: SUNWdesktop-cache
-Requires: SUNWdbus
-Requires: SUNWgnome-media
-Requires: SUNWtotem-pl-parser
-Requires: SUNWlxml
-Requires: SUNWhal
-Requires: SUNWgksu
-Requires: SUNWgnome-file-mgr
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/audio/gstreamer
+BuildRequires: library/media-player/totem-pl-parser
+BuildRequires: library/libxml2
+BuildRequires: system/library/dbus
+BuildRequires: system/hal
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: library/desktop/xdg/libcanberra
+BuildRequires: crypto/gnupg
+Requires: library/desktop/gtk2
+Requires: service/gnome/desktop-cache
+Requires: system/library/dbus
+Requires: library/audio/gstreamer
+Requires: library/media-player/totem-pl-parser
+Requires: library/libxml2
+Requires: system/hal
+Requires: desktop/gksu
+Requires: gnome/file-manager/nautilus
 
 %description
 Brasero is a application to burn CD/DVD for the Gnome Desktop. It is designed to be as simple as possible and has some unique features to enable users to create their discs easily and quickly.
@@ -65,19 +64,13 @@ Brasero is a application to burn CD/DVD for the Gnome Desktop. It is designed to
 %package devel
 Summary:                 %summary - developer files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires:                %name
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package l10n
 Summary: %{summary} - l10n files
-Requires: %{name}
 
 %prep
 %setup -q -n brasero-%{version}
@@ -203,6 +196,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(-, root, other) %{_datadir}/locale/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Apr 19 2011 - lin.ma@oracle.com
 - Fixed 6988688.
 * Wed Apr 06 2011 - brian.cameron@oracle.com

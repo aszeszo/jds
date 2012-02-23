@@ -3,7 +3,7 @@
 #
 # includes module(s): gtk2
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -34,29 +34,25 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWglib2
-Requires: SUNWcairo
-Requires: SUNWpango
-Requires: SUNWlibatk
-Requires: SUNWjpg
-Requires: SUNWpng
-BuildRequires: SUNWTiff
-Requires: SUNWlibms
-Requires: SUNWdesktop-cache
+BuildRequires: library/glib2
+Requires: library/desktop/cairo
+Requires: library/desktop/pango
+Requires: library/desktop/atk
+Requires: image/library/libjpeg
+Requires: image/library/libpng
+Requires: system/library/math
+Requires: service/gnome/desktop-cache
 Requires: x11/library/libxinerama
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWgobject-introspection
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWpango-devel
-BuildRequires: SUNWlibatk-devel
-BuildRequires: SUNWpng-devel
-BuildRequires: SUNWjpg-devel
-BuildRequires: SUNWTiff-devel
-BuildRequires: SUNWxorg-headers
-BuildRequires: SUNWlibm
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: library/desktop/cairo
+BuildRequires: library/desktop/pango
+BuildRequires: library/desktop/atk
+BuildRequires: image/library/libjpeg
+BuildRequires: image/library/libpng
+BuildRequires: image/library/libtiff
+BuildRequires: x11/server/xorg
+BuildRequires: system/library/math
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -69,12 +65,6 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibms
-Requires: SUNWpng-devel
-Requires: SUNWglib2-devel
-Requires: SUNWcairo-devel
-Requires: SUNWpango-devel
-Requires: SUNWlibatk-devel
 
 %package print-cups
 IPS_package_name:        library/desktop/gtk2/gtk-backend-cups
@@ -86,17 +76,13 @@ SUNW_BaseDir:            %{_basedir}
 # static dependencies needed in this package as some of the libraries
 # needed to detect the dependencies are built in the same spec but are
 # not in the same package (e.g. libatk)
-Requires: SUNWglib2
-Requires: SUNWcairo
-Requires: SUNWpango
-Requires: SUNWlibatk
-Requires: SUNWgtk2
-Requires: SUNWcupsr
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWcupsr
+Requires: library/glib2
+Requires: library/desktop/cairo
+Requires: library/desktop/pango
+Requires: library/desktop/atk
+Requires: library/desktop/gtk2
+Requires: print/cups
+BuildRequires: print/cups
 
 %package l10n
 Summary:                 %{summary} - l10n content
@@ -320,6 +306,8 @@ rm -rf $RPM_BUILD_ROOT
 depend type=conditional predicate=print/cups fmri=pkg:/library/desktop/gtk2/gtk-backend-cups
 
 %changelog
+* Thu Feb 09 2012 - padraig.obriain@sun.com
+- Update Requires and BuildRequires package names to IPS package names.
 * Fri Sep 30 2011 - Ghee Teo@sun.com
 - Fixes 7096277. stopper.
 * Thu Jun 17 2010 - erwann.chenede@sun.com

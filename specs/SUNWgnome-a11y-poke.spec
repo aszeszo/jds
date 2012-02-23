@@ -3,7 +3,7 @@
 #
 # includes module(s): accerciser
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,29 +25,25 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWpygtk2-26
-Requires: SUNWgnome-python26-desktop
-Requires: SUNWPython26
-Requires: SUNWIPython
-Requires: SUNWgnome-config
-Requires: %{name}-root
-Requires: SUNWdesktop-cache
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWgnome-python26-desktop-devel
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgnome-a11y-libs-python26
+Requires: library/python-2/pygtk2-26
+Requires: library/python-2/python-gnome-desktop-26
+Requires: runtime-python-26
+Requires: library/python-2/ipython-26
+Requires: gnome/config/gconf
+Requires: service/gnome/desktop-cache
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/python-2/python-gnome-desktop-26
+BuildRequires: developer/gnome/gettext
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: library/python-2/pyatspi-26
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %prep
 rm -rf %name-%version
@@ -132,6 +128,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Mon Feb 08 2009 - li.yuan@sun.com

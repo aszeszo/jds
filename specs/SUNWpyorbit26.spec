@@ -3,7 +3,7 @@
 #
 # includes module(s): pyorbit
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -28,20 +28,16 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgnome-component
-Requires: SUNWPython26
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWgsed
+Requires: library/gnome/gnome-component
+Requires: runtime/python-26
+BuildRequires: runtime/python-26
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: text/gnu-sed
 
 %package devel
 Summary:           %{summary} - development files
 SUNW_BaseDir:      %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires: %name
-Requires: SUNWPython26
 
 %prep
 rm -rf %name-%version
@@ -93,6 +89,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Feb  4 2010 - laszlo.peter@oracle.com
 - created, based on SUNWgnome-python26-libs.spec
 * Wed Sep 23 2009 - brian.cameron@sun.com

@@ -4,6 +4,7 @@
 # includes module(s): orca
 #
 # Copyright 2009 Sun Microsystems, Inc.
+# Copyright 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,25 +27,24 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 # obsoletes SUNWgnome-orca:
-Requires: SUNWpygtk2-26
-Requires: SUNWpycairo26
-Requires: SUNWpyorbit26
-Requires: SUNWgnome-python26-desktop
-Requires: SUNWgnome-a11y-libs-python26
-Requires: SUNWPython26
-Requires: SUNWbash
-Requires: SUNWdesktop-cache
-Requires: SUNWdbus-python26
+Requires: library/python-2/pygtk2-26
+Requires: library/python-2/pycairo-26
+Requires: library/python-2/pyorbit-26
+Requires: library/python-2/python-gnome-desktop-26
+Requires: gnome/accessibility/gnome-a11y-libs
+Requires: runtime/python-26
+Requires: shell/bash
+Requires: service/gnome/desktop-cache
+Requires: library/python-2/python-dbus-26
 Requires: library/liblouis
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpycairo26-devel
-BuildRequires: SUNWpyorbit26-devel
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/python-2/pycairo-26
+BuildRequires: library/python-2/pyorbit-26
 BuildRequires: library/liblouis
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -120,6 +120,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Jan 18 2012 - lee.yuan@oracle.com
 - Add liblouis to dependency.
 * Fri Jun 11 2010 - li.yuan@sun.com

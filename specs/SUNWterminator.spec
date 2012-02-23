@@ -1,7 +1,7 @@
 #
 # spec file for package terminator
 #
-# Copyright 2010 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -31,12 +31,12 @@ BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpython26-setuptools
-Requires: SUNWpygtk2-26
-Requires: SUNWdesktop-cache
-Requires: SUNWPython26
-Requires: SUNWgnome-libs
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/setuptools-26
+Requires: library/python-2/pygtk2-26
+Requires: service/gnome/desktop-cache
+Requires: runtime/python-26
+Requires: library/gnome/gnome-libs
 
 %description
 This is a project to produce an efficient way of filling a
@@ -47,7 +47,6 @@ for different tasks.
 
 %package l10n
 Summary: %{summary} - l10n files
-Requires: %{name}
 
 %prep
 %setup -q -c -n terminator-%{version}
@@ -104,6 +103,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr(-, root, other) %{_datadir}/locale/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Oct 27 2010 - brian.cameron@oracle.com
 - Bump to 0.95.
 * Tue May 25 2010 - brian.cameron@oracle.com

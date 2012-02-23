@@ -3,7 +3,7 @@
 #
 # includes module(s): planner 
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -29,54 +29,48 @@ Requires:                %{name}-root
 BuildRequires:           SUNWgnome-common-devel
                                                                                 
 # GLIB GTK LIBGNOMECANVAS LIBGLADE
-BuildRequires: SUNWlibgnomecanvas-devel
+BuildRequires: library/desktop/libgnomecanvas
 # LIBGNOMEUI LIBGNOMEUI
-BuildRequires: SUNWgnome-libs-devel
+BuildRequires: library/gnome/gnome-libs
 # GNOME_VFS
-BuildRequires: SUNWgnome-vfs-devel
+BuildRequires: library/gnome/gnome-vfs
 # GCONF
-BuildRequires: SUNWgnome-config-devel
+BuildRequires: gnome/config/gconf
 # LIBXML
-BuildRequires: SUNWlxml-devel
+BuildRequires: library/libxml2
 # LIBXSLT
-BuildRequires: SUNWlxsl-devel
+BuildRequires: library/libxslt
 # PYGTK
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpython26-setuptools
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/python-2/setuptools-26
 
 # GLIB GTK LIBGNOMECANVAS LIBGLADE
 # LIBGNOMEUI LIBGNOMEUI
-Requires: SUNWgnome-libs
+Requires: library/gnome/gnome-libs
 # GNOME_VFS
-Requires: SUNWgnome-vfs
+Requires: library/gnome/gnome-vfs
 # GCONF
-Requires: SUNWgnome-config
+Requires: gnome/config/gconf
 # LIBXML
-Requires: SUNWlxml
+Requires: library/libxml2
 # LIBXSLT
-Requires: SUNWlxsl
+Requires: library/libxslt
 # PYGTK
-Requires: SUNWpygtk2-26
+Requires: library/python-2/pygtk2-26
 
-Requires: SUNWlibgnome-keyring
+Requires: library/gnome/gnome-keyring
 
 
 %package devel
 Summary:      %{summary} - development files
 SUNW_BaseDir: %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires:     %{name}
 
 %package root
 Summary:      %{summary} - / filesystem
 SUNW_BaseDir: /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package l10n
 Summary:      %{summary} - l10n files
-Requires:     %{name}
 
 %prep
 rm -rf %name-%version
@@ -196,6 +190,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/omf/*/*-[a-z]*.omf
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Apr  3 2009 - laca@sun.com
 - use desktop-cache instead of postrun
 * Tue Mar 03 2009 - brian.cameron@sun.com

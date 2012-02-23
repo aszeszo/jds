@@ -23,9 +23,9 @@ License:         %{pyxdg.license}
 SUNW_BaseDir:    %{_basedir}
 SUNW_Copyright:  SUNWpython-xdg.copyright
 BuildRoot:       %{_tmppath}/%{name}-%{version}-build
-BuildRequires:   SUNWPython26-devel
-BuildRequires:   SUNWpython26-setuptools
-Requires:        SUNWPython26
+BuildRequires:   runtime/python-26
+BuildRequires:   library/python-2/setuptools-26
+Requires:        runtime/python-26
 
 %include default-depend.inc
 %include gnome-incorporation.inc

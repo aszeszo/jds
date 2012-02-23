@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWpython26-notify
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,22 +26,20 @@ SUNW_Copyright:          SUNWpython-notify.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires:                SUNWgtk2
-Requires:                SUNWPython26
-Requires:                SUNWgnome-panel
-Requires:                SUNWpygtk2-26
-BuildRequires:           SUNWgtk2-devel
-BuildRequires:           SUNWPython26-devel
-BuildRequires:           SUNWgnome-panel-devel
-BuildRequires:           SUNWpygtk2-26-devel
-BuildRequires:           SUNWpython26-setuptools
-BuildRequires:           SUNWgm4
+Requires:                library/desktop/gtk2
+Requires:                runtime/python-26
+Requires:                gnome/gnome-panel
+Requires:                library/python-2/pygtk2-26
+BuildRequires:           library/desktop/gtk2
+BuildRequires:           runtime/python-26
+BuildRequires:           gnome/gnome-panel
+BuildRequires:           library/python-2/pygtk2-26
+BuildRequires:           library/python-2/setuptools-26
+BuildRequires:           developer/macro/gnu-m4
 
 %package devel
 Summary:                %{summary} - development files
 SUNW_BaseDir:           %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
 
 %prep
 rm -rf %name-%version
@@ -75,6 +73,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Thu Feb 12 2009 - brian.cameron@sunc.om
 - created 2.6 version based on SUNWpython-notify.spec.
 * Wed Onv 05 2008 - jedy.wang@sun.com

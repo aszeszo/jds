@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWpython26-setuptools
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -23,8 +23,8 @@ SUNW_BaseDir:    %{_basedir}
 SUNW_Copyright:  SUNWpython-setuptools.copyright
 License:         PSF, Zope Public License
 BuildRoot:       %{_tmppath}/%{name}-%{version}-build
-BuildRequires:   SUNWPython26-devel
-Requires:        SUNWPython26
+BuildRequires:   runtime/python-26
+Requires:        runtime/python-26
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -66,6 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Apr 30 2010 - yuntong.jin@sun.com
 - Change the ownership to jouby 
 * Mon Feb  2 2009 - laca@sun.com

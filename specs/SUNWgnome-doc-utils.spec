@@ -3,7 +3,7 @@
 #
 # includes module(s): gucharmap
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -24,18 +24,17 @@ License:                 %{gnomedocutils.license}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlxml-python26
-Requires: SUNWgnome-common-devel
-Requires: SUNWlxml
-Requires: SUNWlxsl
-Requires: SUNWPython26
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWlxsl-devel
-BuildRequires: SUNWlxml-python26
+Requires: library/python-2/libxml2-26
+Requires: developer/gnome/gettext
+Requires: library/libxml2
+Requires: library/libxslt
+Requires: runtime/python-26
+BuildRequires: library/libxml2
+BuildRequires: library/libxslt
+BuildRequires: library/python-2/libxml2-26
 
 %package l10n
 Summary:                 %{summary} - l10n content
-Requires: %{name}
 
 %prep
 rm -rf %name-%version
@@ -98,6 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Mon Jan 18 2010 - christian.kelly@sun.com
 - Fix %files.
 * Tue Dec  8 2009 - christian.kelly@sun.com

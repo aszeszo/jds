@@ -3,7 +3,7 @@
 #
 # includes module(s): vinagre
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,55 +28,46 @@ Source1:            %{name}-manpages-0.1.tar.gz
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:           SUNWlibgnomecanvas
-Requires:           SUNWgnome-libs
-Requires:           SUNWgnutls
-Requires:           SUNWavahi-bridge-dsd
-Requires:           SUNWgnome-component
-Requires:           SUNWgnome-config
-Requires:           SUNWgnome-panel
-Requires:           SUNWgnome-vfs
-Requires:           SUNWgtk-vnc
-Requires:           SUNWlibpopt
-Requires:           SUNWfontconfig
-Requires:           SUNWfreetype2
-Requires:           SUNWlibmsr
-Requires:           SUNWlxmlr
-BuildRequires:      SUNWxwice
-BuildRequires:      SUNWxwplt
-Requires:           SUNWdesktop-cache
-Requires:           %{name}-root
-BuildRequires:      SUNWlibgnomecanvas-devel
-BuildRequires:      SUNWgnome-libs-devel
-BuildRequires:      SUNWgnutls-devel
-BuildRequires:      SUNWavahi-bridge-dsd-devel
-BuildRequires:      SUNWgnome-component-devel
-BuildRequires:      SUNWgnome-config-devel
-BuildRequires:      SUNWgnome-panel-devel
-BuildRequires:      SUNWgnome-vfs-devel
-BuildRequires:      SUNWgtk-vnc-devel
-BuildRequires:      SUNWlibpopt-devel
-BuildRequires:      SUNWlxml-devel
-BuildRequires:      SUNWgnome-doc-utils
-BuildRequires:      SUNWgnome-keyring
-BuildRequires:      SUNWlibgnome-keyring
+Requires:           library/desktop/libgnomecanvas
+Requires:           library/gnome/gnome-libs
+Requires:           library/gnutls
+Requires:           system/network/avahi
+Requires:           library/gnome/gnome-component
+Requires:           gnome/config/gconf
+Requires:           gnome/gnome-panel
+Requires:           library/gnome/gnome-vfs
+Requires:           library/desktop/gtk-vnc
+Requires:           library/popt
+Requires:           system/library/fontconfig
+Requires:           system/library/freetype-2
+Requires:           system/library/math
+Requires:           library/libxml2
+BuildRequires:      x11/library/libice
+Requires:           service/gnome/desktop-cache
+BuildRequires:      library/desktop/libgnomecanvas
+BuildRequires:      library/gnome/gnome-libs
+BuildRequires:      library/gnutls
+BuildRequires:      system/network/avahi
+BuildRequires:      library/gnome/gnome-component
+BuildRequires:      gnome/config/gconf
+BuildRequires:      gnome/gnome-panel
+BuildRequires:      library/gnome/gnome-vfs
+BuildRequires:      library/desktop/gtk-vnc
+BuildRequires:      library/libxml2
+BuildRequires:      developer/gnome/gnome-doc-utils
+BuildRequires:      gnome/gnome-keyring
+BuildRequires:      library/gnome/gnome-keyring
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %package devel
 Summary:        %{summary} - development files
 SUNW_BaseDir:   %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires:       %name
 
 %package root
 Summary:       %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %prep
 rm -rf %name-%version
@@ -173,6 +164,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/vinagre.schemas
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Tue Jan 26 2010 - halton.huo@sun.com

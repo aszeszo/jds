@@ -3,7 +3,7 @@
 #
 # includes module(s): Pyrex, numpy
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,10 +25,10 @@ SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWPython26
-Requires: SUNWlexpt
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpython26-setuptools
+Requires: runtime/python-26
+Requires: library/expat
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/setuptools-26
 
 %prep
 rm -rf %name-%version
@@ -59,6 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Mon Feb  2 2009 - laca@sun.com
 - create based on SUNWPython25-extra.spec
 * Mon Nov 24 2008 - laca@sun.com

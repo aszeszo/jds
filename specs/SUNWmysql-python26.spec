@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWmysql-python
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,11 +26,11 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires:           SUNWPython26-devel
-BuildRequires:           SUNWpython26-setuptools
-Requires:                SUNWPython26
-Requires:                SUNWmysql51u
-Requires:                SUNWmysql51lib
+BuildRequires:           runtime/python-26
+BuildRequires:           library/python-2/setuptools-26
+Requires:                runtime/python-26
+Requires:                database/mysql-51
+Requires:                database/mysql-51/library
 
 %define python_version  2.6
 
@@ -70,6 +70,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Mon Nov 16 2009 - li.yuan@sun.com
 - Change owner to liyuan.
 * Mon Oct 05 2009 - darren.kenny@sun.com

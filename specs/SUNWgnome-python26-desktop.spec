@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-python-desktop
 #
-# Copyright (c) 2005 Sun Microsystems, Inc.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,56 +26,55 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibgnomecanvas
-Requires: SUNWgnome-python26
-Requires: SUNWpygtk2-26
-Requires: SUNWpygobject26
-Requires: SUNWpycairo26
-Requires: SUNWpyorbit26
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-a11y-libs
-Requires: SUNWgnome-libs
-Requires: SUNWPython26-extra
-Requires: SUNWgnome-config
-Requires: SUNWPython26
-Requires: SUNWgnome-vfs
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-BuildRequires: SUNWmlib
-Requires: SUNWgnome-gtksourceview
-Requires: SUNWgnome-cd-burner
-Requires: SUNWgnome-component
-Requires: SUNWgnome-media-apps
-Requires: SUNWgnome-media-player
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-wm
-Requires: SUNWlibgtop
-BuildRequires: SUNWlibgnomecanvas-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-python26-devel
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpygobject26-devel
-BuildRequires: SUNWpycairo26-devel
-BuildRequires: SUNWpyorbit26-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-file-mgr-devel
-BuildRequires: SUNWgnome-a11y-libs-devel
-BuildRequires: SUNWPython26-extra
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-cd-burner-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-media-apps-devel
-BuildRequires: SUNWgnome-media-player
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-wm-devel
-BuildRequires: SUNWgnome-gtksourceview-devel
-BuildRequires: SUNWlibgtop-devel
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWgnome-pdf-viewer
+Requires: library/desktop/libgnomecanvas
+Requires: library/python-2/python-gnome-26
+Requires: library/python-2/pygtk2-26
+Requires: library/python-2/pygobject-26
+Requires: library/python-2/pycairo-26
+Requires: library/python-2/pyorbit-26
+Requires: gnome/file-manager/nautilus
+Requires: gnome/accessibility/gnome-a11y-libs
+Requires: library/gnome/gnome-libs
+Requires: library/python-2/python-extra-26
+Requires: gnome/config/gconf
+Requires: runtime/python-26
+Requires: library/gnome/gnome-vfs
+Requires: system/library/math
+Requires: library/popt
+BuildRequires: library/medialib
+Requires: library/desktop/gtksourceview
+Requires: desktop/cd-burning/brasero
+Requires: library/gnome/gnome-component
+Requires: gnome/media/gnome-media
+Requires: gnome/media/gnome-media-player
+Requires: gnome/gnome-panel
+Requires: gnome/window-manager/metacity
+Requires: library/libgtop
+BuildRequires: library/desktop/libgnomecanvas
+BuildRequires: runtime/python-26
+BuildRequires: gnome/config/gconf
+BuildRequires: library/python-2/python-gnome-26
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/python-2/pygobject-26
+BuildRequires: library/python-2/pycairo-26
+BuildRequires: library/python-2/pyorbit-26
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/popt
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: gnome/file-manager/nautilus
+BuildRequires: gnome/accessibility/gnome-a11y-libs
+BuildRequires: library/python-2/python-extra-26
+BuildRequires: library/gnome/gnome-component
+BuildRequires: desktop/cd-burning/brasero
+BuildRequires: library/gnome/gnome-component
+BuildRequires: gnome/media/gnome-media
+BuildRequires: gnome/media/gnome-media-player
+BuildRequires: gnome/gnome-panel
+BuildRequires: gnome/window-manager/metacity
+BuildRequires: library/desktop/gtksourceview
+BuildRequires: library/libgtop
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: desktop/pdf-viewer/evince
 
 %package devel
 Summary:           %{summary} - development files
@@ -125,6 +124,8 @@ rm -rf $RPM_BUILD_ROOT
 #%endif
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Tue Jul 07 2009 - brian.cameron@sun.com
 - Split out into Python 2.4 and 2.6 spec-files
 * Tue Apr 07 2009 - dave.lin@sun.com

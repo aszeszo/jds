@@ -4,7 +4,7 @@
 # Python bindings for the compizconfig library
 ####################################################################
 #
-# Copyright 2006 Sun Microsystems, Inc.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.`
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -36,21 +36,18 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 # add build and runtime dependencies here:
-BuildRequires:  SUNWPython26-devel
-BuildRequires:  SUNWlibcompizconfig
-BuildRequires:  SUNWpython26-setuptools
-BuildRequires:  SUNWcompiz-devel
-BuildRequires:  SUNWPython26-extra
-Requires:       SUNWPython26
-Requires:       SUNWlibcompizconfig
+BuildRequires:  runtime/python-26
+BuildRequires:  desktop/compiz/library/libcompizconfig
+BuildRequires:  library/python-2/setuptools-26
+BuildRequires:  desktop/compiz
+BuildRequires:  library/python-2/python-extra-26
+Requires:       runtime/python-26
+Requires:       desktop/compiz/library/libcompizconfig
 BuildRequires:  consolidation/desktop/gnome-incorporation
 
 %package devel
 Summary:		 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-#Requires:                %{name} = %{version}
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %define pythonver 2.6
 
@@ -119,6 +116,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Sep 17 2008 - matt.keenn@sun.com
 - Update copyright
 * Wed Mar 26 2008 - dave.lin@sun.com

@@ -3,7 +3,7 @@
 #
 # includes module(s): totem-pl-parser
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -27,28 +27,25 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWhea
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWevolution-data-server-devel
-BuildRequires: SUNWlibgmime-devel
-BuildRequires: SUNWgtar
-BuildRequires: SUNWbinutils
-Requires: SUNWevolution-data-server
-Requires: SUNWcsl
-Requires: SUNWlxml
-Requires: SUNWlibgmime
-Requires: SUNWgnupg
-Requires: SUNWgobject-introspection
+BuildRequires: system/header
+BuildRequires: library/libxml2
+BuildRequires: library/desktop/evolution-data-server
+BuildRequires: library/gmime
+BuildRequires: archiver/gnu-tar
+BuildRequires: developer/gnu-binutils
+Requires: library/desktop/evolution-data-server
+Requires: system/library
+Requires: library/libxml2
+Requires: library/gmime
+Requires: crypto/gnupg
+Requires: library/desktop/gobject/gobject-introspection
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir: %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -111,6 +108,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Mar 19 2010 - christian.kelly@sun.com
 - Fix %files.
 * Mon Sep 28 2009 - dave.lin@sun.com

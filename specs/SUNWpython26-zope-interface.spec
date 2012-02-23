@@ -1,6 +1,10 @@
 #
 # spec file for package SUNWpython-zope-interface
 #
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
+# This file and all modifications and additions to the pristine
+# package are under the same license as the package itself.
+#
 %define owner jouby 
 #
 
@@ -19,9 +23,9 @@ SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          SUNWpython-zope-interface.copyright
 License:                 ZPL
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
-Requires:                SUNWPython26
-BuildRequires:           SUNWPython26-devel
-BuildRequires:           SUNWpython26-setuptools
+Requires:                runtime/python-26
+BuildRequires:           runtime/python-26
+BuildRequires:           library/python-2/setuptools-26
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -55,6 +59,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Thu Oct 27 2009 - yuntong.jin@sun.com
 - Change the owner to jouby
 * Thu Feb 12 2009 - brian.cameron@sun.com

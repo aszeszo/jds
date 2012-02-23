@@ -3,7 +3,7 @@
 #
 # includes module(s): totem
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,87 +28,83 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWxorg-headers
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWiso-codes-devel
-BuildRequires: SUNWtotem-pl-parser-devel
-BuildRequires: SUNWgnome-file-mgr
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpygobject26-devel
-BuildRequires: SUNWevolution-libs-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWmusicbrainz-devel
-BuildRequires: SUNWgnome-media-apps
-BuildRequires: SUNWfirefox-devel
-BuildRequires: SUNWgnome-icon-theme
-BuildRequires: SUNWlibsoup-devel
-BuildRequires: SUNWgst-python26
-BuildRequires: SUNWlibsexy-devel
-BuildRequires: SUNWlibgdata
-BuildRequires: SUNWgnupg
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgnome-xml-share
-BuildRequires: SUNWgsed
-BuildRequires: SUNWvala
-Requires: SUNWlibglade
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-panel
-Requires: SUNWtotem-pl-parser
-Requires: SUNWiso-codes
-Requires: SUNWdbus
-Requires: SUNWgnome-config
-Requires: SUNWgnome-media
-Requires: SUNWgnome-vfs
-Requires: SUNWlibms
-Requires: SUNWlxml
-Requires: SUNWgnome-component
-Requires: SUNWdesktop-cache
-Requires: SUNWPython26
-Requires: SUNWpygtk2-26
-Requires: SUNWpygobject26
-Requires: SUNWevolution-libs
-Requires: SUNWlibpopt
-Requires: SUNWmusicbrainz
-Requires: SUNWgnome-media-apps
-Requires: SUNWfirefox
-Requires: SUNWgnome-icon-theme
-Requires: SUNWhal
-Requires: SUNWlibsoup
-Requires: SUNWgst-python26
-Requires: SUNWlibsexy
-Requires: SUNWgtk2
-Requires: SUNWlibgdata
-Requires: SUNWlibsoup
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-media
-Requires: SUNWdbus
-Requires: %{name}-root
+BuildRequires: library/desktop/libglade
+BuildRequires: library/audio/gstreamer
+BuildRequires: x11/server/xorg
+BuildRequires: gnome/gnome-panel
+BuildRequires: data/iso-codes
+BuildRequires: library/media-player/totem-pl-parser
+BuildRequires: gnome/file-manager/nautilus
+BuildRequires: system/library/dbus
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/gnome/gnome-component
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/python-2/pygobject-26
+BuildRequires: library/desktop/gtkhtml
+BuildRequires: library/popt
+BuildRequires: library/musicbrainz/libmusicbrainz
+BuildRequires: gnome/media/gnome-media
+BuildRequires: web/browser/firefox
+BuildRequires: gnome/theme/gnome-icon-theme
+BuildRequires: library/libsoup
+BuildRequires: library/python-2/python-gst-26
+BuildRequires: library/desktop/libsexy
+BuildRequires: library/desktop/libgdata
+BuildRequires: crypto/gnupg
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: data/xml-common
+BuildRequires: data/docbook/docbook-style-dsssl
+BuildRequires: data/docbook/docbook-style-xsl
+BuildRequires: data/docbook/docbook-dtds
+BuildRequires: data/sgml-common
+BuildRequires: text/gnu-sed
+BuildRequires: developer/vala
+Requires: library/desktop/libglade
+Requires: library/gnome/gnome-libs
+Requires: gnome/file-manager/nautilus
+Requires: gnome/gnome-panel
+Requires: library/media-player/totem-pl-parser
+Requires: data/iso-codes
+Requires: system/library/dbus
+Requires: gnome/config/gconf
+Requires: gnome/media/gnome-media
+Requires: library/gnome/gnome-vfs
+Requires: system/library/math
+Requires: library/libxml2
+Requires: library/gnome/gnome-component
+Requires: service/gnome/desktop-cache
+Requires: runtime/python-26
+Requires: library/python-2/pygtk2-26
+Requires: library/python-2/pygobject-26
+Requires: library/desktop/gtkhtml
+Requires: library/popt
+Requires: library/musicbrainz/libmusicbrainz
+Requires: gnome/media/gnome-media
+Requires: web/browser/firefox
+Requires: gnome/theme/gnome-icon-theme
+Requires: system/hal
+Requires: library/libsoup
+Requires: library/python-2/gst-python-26
+Requires: library/desktop/libsexy
+Requires: library/desktop/libgdata
+Requires: library/desktop/gtk2
+Requires: gnome/file-manager/nautilus
+Requires: library/audio/gstreamer
+Requires: system/library/dbus
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -274,6 +270,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/omf/*/*-[a-z]*.omf
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Wed Oct 20 2010 - brian.cameron@oracle.com
 - Add devel package for include files.
 * Thu Mar 06 2010 - yuntong.jin@sun.com

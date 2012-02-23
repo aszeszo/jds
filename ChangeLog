@@ -1,3 +1,32 @@
+2012-02-23  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 7143414 GTK does not build on Solaris 11 update 1 build 8
+	CR 7144112 Build failure for packages with build dependency on SUNWPython26-devel or SUNWlxml-devel
+	* specs/SUNWPython26-extra.spec, specs/SUNWgnome-im-client.spec,
+	specs/SUNWpython26-imaging.spec, specs/SUNWlibglade.spec,
+	specs/SUNWgtk2.spec, specs/SUNWpython26-simplejson.spec,
+	specs/SUNWpython26-notify.spec, specs/SUNWgnome-doc-utils.spec,
+	specs/SUNWgnome-text-editor.spec, specs/SUNWtsclient.spec,
+	specs/SUNWgnome-python26-desktop.spec, specs/SUNWpygobject26.spec,
+	specs/SUNWgnome-cd-burner.spec, specs/SUNWterminator.spec,
+	specs/SUNWgtk-doc.spec, specs/SUNWgnome-python26.spec,
+	specs/SUNWgnome-games.spec, specs/SUNWpyorbit26.spec,
+	specs/SUNWpygtk2-26.spec, specs/SUNWgnome-a11y-poke.spec,
+	specs/SUNWgobject-introspection.spec, specs/SUNWgnome-a11y-reader.spec,
+	specs/SUNWpython26-zope-interface.spec,
+	specs/SUNWpython26-setuptools.spec, specs/SUNWpython26-xdg.spec,
+	specs/SUNWgnome-media-player.spec, specs/SUNWbrltty.spec,
+	specs/SUNWlibgoffice.spec, specs/SUNWvinagre.spec,
+	specs/SUNWlibcroco.spec, specs/SUNWgnome-panel.spec,
+	specs/SUNWpycairo26.spec, specs/SUNWlibsexy.spec,
+	specs/SUNWmysql-python26.spec, specs/SUNWgnome-a11y-libs.spec,
+	specs/SUNWlibgsf.spec, specs/SUNWpygtksourceview26.spec,
+	specs/SUNWgnome-terminal.spec, specs/SUNWjokosher.spec,
+	specs/SUNWIPython.spec, specs/SUNWplanner.spec,
+	specs/SUNWgtk-vnc.spec, specs/SUNWpython26-twisted.spec,
+	specs/SUNWpython26-coherence.spec, specs/SUNWtotem-pl-parser.spec,
+	specs/SUNWcompizconfig-python.spec
+
 2012-02-23  Li Yuan  <lee.yuan@oracle.com>
 
 	CR 7145773 security fix for vino.

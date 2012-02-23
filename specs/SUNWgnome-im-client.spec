@@ -3,7 +3,7 @@
 #
 # includes module(s): pidgin, pidgin-otr, libotr
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -29,60 +29,49 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWPython26
-Requires: SUNWbash
-Requires: SUNWdbus
-Requires: SUNWevolution-data-server
-Requires: SUNWgnome-component
-Requires: SUNWgnome-libs
-Requires: SUNWgnutls
-Requires: SUNWlibms
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-libs
+Requires: runtime/python-26
+Requires: shell/bash
+Requires: system/library/dbus
+Requires: library/desktop/evolution-data-server
+Requires: library/gnome/gnome-component
+Requires: library/gnutls
+Requires: system/library/math
 Requires: runtime/perl-512
-Requires: SUNWdesktop-cache
-Requires: SUNWgnome-media
-Requires: SUNWavahi-bridge-dsd
-Requires: SUNWsqlite3
+Requires: service/gnome/desktop-cache
+Requires: library/audio/gstreamer
+Requires: system/network/avahi
+Requires: database/sqlite-3
 Requires: library/nspr
 Requires: library/security/nss
-Requires: SUNWgtkspell
-Requires: SUNWgnu-idn
-Requires: SUNWPython26
-Requires: SUNWlibgnome-keyring
-Requires: %{name}-root
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWevolution-data-server-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnutls-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWavahi-bridge-dsd-devel
-BuildRequires: SUNWsqlite3
-BuildRequires: SUNWgtkspell-devel
-BuildRequires: SUNWlibgnome-keyring-devel
+Requires: library/desktop/gtkspell
+Requires: library/libidn
+Requires: library/gnome/libgnome-keyring
+BuildRequires: library/desktop/gtk2
+BuildRequires: runtime/python-26
+BuildRequires: system/library/dbus
+BuildRequires: library/desktop/evolution-data-server
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnutls
+BuildRequires: library/audio/gstreamer
+BuildRequires: system/network/avahi
+BuildRequires: database/sqlite-3
+BuildRequires: library/desktop/gtkspell
+BuildRequires: library/gnome/gnome-keyring
 BuildRequires: x11/library/libxscrnsaver
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires: %name
-Requires: SUNWgtk2
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -225,6 +214,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Mon Aug 29 2011 - yanjing.guo@oracle.com
 - remove the perl empty directory
 * Mon Nov 08 2010 - brian.lu@oracle.com

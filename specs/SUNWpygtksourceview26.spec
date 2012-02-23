@@ -4,7 +4,7 @@
 #
 # includes module(s): pygtksourceview
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -29,23 +29,19 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWPython26
-Requires: SUNWpygobject26
-Requires: SUNWgnome-gtksourceview
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWpygobject26-devel
-BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWgnome-gtksourceview-devel
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWgsed
+Requires: runtime/python-26
+Requires: library/python-2/pygobject-26
+Requires: library/desktop/gtksourceview
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/pygobject-26
+BuildRequires: library/python-2/pygtk2-26
+BuildRequires: library/desktop/gtksourceview
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: text/gnu-sed
 
 %package devel
 Summary:           %{summary} - development files
 SUNW_BaseDir:      %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires: %name
-Requires: SUNWPython26
 
 %prep
 rm -rf %name-%version
@@ -95,6 +91,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/*
 
 %changelog
+* Fri Feb 10 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Fri Feb  4 2010 - laszlo.peter@oracle.com
 - created, based on SUNWgnome-python26-libs.spec
 * Wed Sep 23 2009 - brian.cameron@sun.com

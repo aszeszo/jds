@@ -1,6 +1,11 @@
 #
 # spec file for package SUNWjokosher
 #
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
+#
+# This file and all modifications and additions to the pristine
+# package are under the same license as the package itself.
+#
 %define owner yippi
 
 %define OSR 11994:0.11.1
@@ -29,21 +34,21 @@ URL:            http://jokosher.org
 BuildRoot:      %{_tmppath}/jokosher-%{version}-build
 SUNW_BaseDir:   %{_basedir}
 
-Requires:       SUNWPython26
-Requires:       SUNWdbus-python26
-Requires:       SUNWgnome-media
-Requires:       SUNWpygtk2-26
-Requires:       SUNWgst-python26
-Requires:       SUNWgnonlin
-Requires:       SUNWpython26-setuptools
-BuildRequires:  SUNWPython26-devel
-BUildRequires:  SUNWdbus-python26-devel
-BuildRequires:  SUNWgnome-media-devel
-BuildRequires:  SUNWpygtk2-26-devel
-BuildRequires:  SUNWgst-python26-devel
-BuildRequires:  SUNWpython26-setuptools
-BuildRequires:  SUNWgnonlin
-BuildRequires:  SUNWgnome-desktop-prefs
+Requires:       runtime/python-26
+Requires:       library/python-2/python-dbus-26
+Requires:       library/audio/gstreamer
+Requires:       library/python-2/pygtk2-26
+Requires:       library/python-2/python-gst-26
+Requires:       library/audio/gstreamer/plugin/gnonlin
+Requires:       library/python-2/setuptools-26
+BuildRequires:  runtime/python-26
+BuildRequires:  library/python-2/python-dbus-26
+BuildRequires:  library/audio/gstreamer
+BuildRequires:  library/python-2/pygtk2-26
+BuildRequires:  library/python-2/python-gst-26
+BuildRequires:  library/python-2/setuptools-26
+BuildRequires:  library/audio/gstreamer/plugin/gnonlin
+BuildRequires:  gnome/preferences/control-center
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -53,7 +58,6 @@ Jokosher is a simple yet powerful multi-track studio.
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 %setup -q -n jokosher-%version
@@ -134,6 +138,8 @@ test -x $BASEDIR/lib/postrun || exit 0
 %dir %attr (0755, root, other) %{_datadir}/gnome
 
 %changelog
+* Mon Feb 13 2012 - padraig.obriain@oracle.com
+- Update Requires and BuildRequires to be IPS package names.
 * Thu Apr 15 2010 - brian.cameron@sun.com
 - Bump to 0.11.5.  Remove code to replace the FreeSound plugin since it now
   uses gnome-keyring.
