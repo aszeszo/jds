@@ -15,7 +15,7 @@ Index: trunk/server/vino-input.c
  
    g_free (cb_str);
 -  cb_str = g_convert (text, len, "utf-8", "iso8859-1", &a, &b, NULL);
-+  cb_str = g_strdup (text);
++  cb_str = g_strndup (text, len);
    if (cb_str)
      {
        cb = gtk_clipboard_get_for_display (gdk_screen_get_display (screen),

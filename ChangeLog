@@ -1,3 +1,8 @@
+2012-02-23  Li Yuan  <lee.yuan@oracle.com>
+
+	CR 7145773 security fix for vino.
+	* patches/vino-02-cp-utf8.diff:
+
 2012-02-15 Yong Sun <y.yong.sun@oracle.com>
 	
 	CR 7101049 missing localization - gksu
