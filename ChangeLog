@@ -1,5 +1,13 @@
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
 
+	* specs/SUNWgnome-games.spec, specs/SUNWpygtk2-26.spec,
+	specs/SUNWgnome-a11y-poke.spec, specs/SUNWgnome-media-player.spec,
+	specs/SUNWbrltty.spec, specs/SUNWlibgoffice.spec,
+	specs/SUNWgnome-a11y-libs.spec: Fix typo
+	* specs/SUNWgtk2.spec: Add BuildRequires for x11/library/libxi
+
+2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
+
 	* specs/SUNWtsclient.spec: Fix typo.
 
 2012-02-23  Padraig O'Briain  <padraig.obriain@oracle.com>

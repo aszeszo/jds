@@ -87,7 +87,7 @@ Requires: web/browser/firefox
 Requires: gnome/theme/gnome-icon-theme
 Requires: system/hal
 Requires: library/libsoup
-Requires: library/python-2/gst-python-26
+Requires: library/python-2/python-gst-26
 Requires: library/desktop/libsexy
 Requires: library/desktop/libgdata
 Requires: library/desktop/gtk2

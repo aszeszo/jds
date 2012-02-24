@@ -33,7 +33,7 @@ Requires: runtime/python-26
 # for numpy
 Requires: runtime/python-2/python-extra-26
 Requires: library/python-2/pygoject-26
-Requires: library/python-2/pycairo26
+Requires: library/python-2/pycairo-26
 Requires: library/desktop/libglade
 BuildRequires: library/desktop/gtk2
 BuildRequires: runtime/python-26

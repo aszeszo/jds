@@ -27,7 +27,7 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 Requires: library/python-2/pygtk2-26
 Requires: library/python-2/python-gnome-desktop-26
-Requires: runtime-python-26
+Requires: runtime/python-26
 Requires: library/python-2/ipython-26
 Requires: gnome/config/gconf
 Requires: service/gnome/desktop-cache

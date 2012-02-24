@@ -52,6 +52,7 @@ BuildRequires: image/library/libjpeg
 BuildRequires: image/library/libpng
 BuildRequires: image/library/libtiff
 BuildRequires: x11/server/xorg
+BuildRequires: x11/library/libxi
 BuildRequires: system/library/math
 
 %package root
@@ -306,6 +307,8 @@ rm -rf $RPM_BUILD_ROOT
 depend type=conditional predicate=print/cups fmri=pkg:/library/desktop/gtk2/gtk-backend-cups
 
 %changelog
+* Fri Feb 24 2012 - padraig.obriain@sun.com
+- Add BuildRequires for x11/library/libxi
 * Thu Feb 09 2012 - padraig.obriain@sun.com
 - Update Requires and BuildRequires package names to IPS package names.
 * Fri Sep 30 2011 - Ghee Teo@sun.com

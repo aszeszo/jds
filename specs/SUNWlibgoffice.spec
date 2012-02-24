@@ -33,7 +33,7 @@ Requires:       library/libxml2
 Requires:       library/zlib
 Requires:       library/desktop/libgsf
 Requires:       system/library/math
-Requires:       library/gnome-libs
+Requires:       library/gnome/gnome-libs
 BuildRequires:  library/desktop/libglade
 BuildRequires:  library/libxml2
 BuildRequires:  library/gnome/gnome-libs
