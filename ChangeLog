@@ -1,3 +1,7 @@
+2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	* specs/SUNWtsclient.spec: Fix typo.
+
 2012-02-23  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	* specs/SUNWgnome-im-client.spec: Fix typo.
