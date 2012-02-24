@@ -31,8 +31,8 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 Requires: library/desktop/gtk2
 Requires: runtime/python-26
 # for numpy
-Requires: runtime/python-2/python-extra-26
-Requires: library/python-2/pygoject-26
+Requires: library/python-2/python-extra-26
+Requires: library/python-2/pygobject-26
 Requires: library/python-2/pycairo-26
 Requires: library/desktop/libglade
 BuildRequires: library/desktop/gtk2

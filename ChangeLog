@@ -1,5 +1,9 @@
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
 
+	* specs/SUNWpygtk2-26.spec: Fix additional typos.
+
+2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
+
 	* specs/SUNWgnome-a11y-reader.spec: Add Requires and BuildRequires for
 	pyatspi-26.
 
