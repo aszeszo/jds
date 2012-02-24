@@ -30,6 +30,7 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 Requires: library/python-2/pygtk2-26
 Requires: library/python-2/pycairo-26
 Requires: library/python-2/pyorbit-26
+Requires: library/python-2/pyatspi-26
 Requires: library/python-2/python-gnome-desktop-26
 Requires: gnome/accessibility/gnome-a11y-libs
 Requires: runtime/python-26
@@ -41,6 +42,7 @@ BuildRequires: runtime/python-26
 BuildRequires: library/python-2/pygtk2-26
 BuildRequires: library/python-2/pycairo-26
 BuildRequires: library/python-2/pyorbit-26
+BuildRequires: library/python-2/pyatspi-26
 BuildRequires: library/liblouis
 
 %package l10n
@@ -120,6 +122,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 24 2012 - padraig.obriain@oracle.com
+- Add Requires and BuildRequires for pyatspi-26.
 * Mon Feb 13 2012 - padraig.obriain@oracle.com
 - Update Requires and BuildRequires to be IPS package names.
 * Wed Jan 18 2012 - lee.yuan@oracle.com

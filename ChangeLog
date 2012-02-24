@@ -1,5 +1,10 @@
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
 
+	* specs/SUNWgnome-a11y-reader.spec: Add Requires and BuildRequires for
+	pyatspi-26.
+
+2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
+
 	* specs/SUNWgnome-games.spec, specs/SUNWpygtk2-26.spec,
 	specs/SUNWgnome-a11y-poke.spec, specs/SUNWgnome-media-player.spec,
 	specs/SUNWbrltty.spec, specs/SUNWlibgoffice.spec,
