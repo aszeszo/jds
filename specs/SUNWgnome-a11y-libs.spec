@@ -55,7 +55,7 @@ Requires: system/zones
 Requires: package/svr4
 Requires: service/gnome/desktop-cache
 Requires: library/python-2/pygtk2-26
-Requires: library/python-2/pygobject26
+Requires: library/python-2/pygobject-26
 Requires: library/python-2/python-gnome-26
 # xprop
 Requires: x11/x11-server-utilities

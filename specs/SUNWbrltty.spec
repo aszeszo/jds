@@ -31,7 +31,7 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 Requires: system/io/usb
 Requires: system/library
 Requires: runtime/python-26
-Requires: library/python-2/python-extra-2
+Requires: library/python-2/python-extra-26
 Requires: gnome/accessibility/gnome-a11y-libs
 BuildRequires: system/io/usb
 BuildRequires: system/library

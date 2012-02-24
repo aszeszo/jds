@@ -1,3 +1,10 @@
+2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	* specs/SUNWgnome-im-client.spec, specs/SUNWtsclient.spec,
+	specs/SUNWgnome-games.spec, specs/SUNWpygtk2-26.spec,
+	specs/SUNWgnome-a11y-poke.spec, specs/SUNWbrltty.spec,
+	specs/SUNWlibgoffice.spec specs/SUNWgnome-a11y-libs.spec: Fix typos.
+
 2012-02-23  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWlibgnome-keyring.spec, specs/SUNWlibsoup.spec,

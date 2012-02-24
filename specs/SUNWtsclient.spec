@@ -29,7 +29,7 @@ Source1:            %{name}-manpages-0.1.tar.gz
 %include default-depend.inc
 %include desktop-incorporation.inc
 Requires:           library/desktop/libgnomecanvas
-Requires:           gnome/-panel
+Requires:           gnome/gnome-panel
 Requires:           library/gnome/gnome-libs
 Requires:           library/gnome/gnome-vfs
 Requires:           gnome/config/gconf
@@ -60,7 +60,6 @@ BuildRequires:      library/gnome/gnome-vfs
 BuildRequires:      gnome/config/gconf
 BuildRequires:      library/popt
 BuildRequires:      library/medialib
-BuildRequires:      SUNWgnome-component-devel
 BuildRequires:      library/gnome/gnome-component
 BuildRequires:      library/libxml2
 BuildRequires:      system/library/libdbus-glib

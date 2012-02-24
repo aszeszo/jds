@@ -46,7 +46,7 @@ Requires: runtime/python-26
 Requires: service/gnome/desktop-cache
 Requires: library/audio/gstreamer
 Requires: library/desktop/clutter
-Requires: library/desktop/clutter-gtk
+Requires: library/desktop/clutter/clutter-gtk
 
 %package l10n
 Summary:                 %{summary} - l10n files

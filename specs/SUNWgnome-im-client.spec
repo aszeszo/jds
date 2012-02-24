@@ -47,7 +47,7 @@ Requires: library/nspr
 Requires: library/security/nss
 Requires: library/desktop/gtkspell
 Requires: library/libidn
-Requires: library/gnome/libgnome-keyring
+Requires: library/gnome/gnome-keyring
 BuildRequires: library/desktop/gtk2
 BuildRequires: runtime/python-26
 BuildRequires: system/library/dbus
