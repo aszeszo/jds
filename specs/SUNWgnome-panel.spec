@@ -52,7 +52,7 @@ BuildRequires: library/desktop/libsexy
 BuildRequires: library/python-2/setuptools-26
 BuildRequires: developer/documentation-tool/gtk-doc
 BuildRequires: library/libnotify
-BuildRequires: desktop/gobject/gobject-introspection
+BuildRequires: library/desktop/gobject/gobject-introspection
 BuildRequires: system/library/iconv/utf-8
 BuildRequires: library/gnome/gnome-keyring
 BuildRequires: library/desktop/libgweather
