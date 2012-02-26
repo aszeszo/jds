@@ -627,18 +627,6 @@ Renamed_To: consolidation/desktop/desktop-incorporation = *
 Renamed_To: desktop/system-monitor/gkrellm >= 0.5.11-0.133
 PkgBuild_Make_Empty_Package: true
 
-%package -n SUNWpython-setuptools
-IPS_Package_Name: SUNWpython-setuptools
-SUNW_Pkg: SUNWobsolete-gnome
-IPS_component_version: 0.5.11
-IPS_build_version: 5.11
-IPS_vendor_version: 0.175.0.0.0.0.0
-IPS_legacy: false
-Meta(pkg.obsolete): true
-Meta(org.opensolaris.consolidation): desktop
-Meta(variant.opensolaris.zone): global, nonglobal
-PkgBuild_Make_Empty_Package: true
-
 %package -n SUNWlibvisual
 IPS_Package_Name: SUNWlibvisual
 SUNW_Pkg: SUNWobsolete-gnome
@@ -1785,20 +1773,6 @@ Meta(pkg.renamed): true
 Meta(org.opensolaris.consolidation): desktop
 Meta(variant.opensolaris.zone): global, nonglobal
 Renamed_To: data/docbook >= 0.5.11-0.133
-Renamed_To: consolidation/desktop/desktop-incorporation = *
-PkgBuild_Make_Empty_Package: true
-
-%package -n SUNWpython26-setuptools
-IPS_Package_Name: SUNWpython26-setuptools
-SUNW_Pkg: SUNWobsolete-gnome
-IPS_component_version: 0.5.11
-IPS_build_version: 5.11
-IPS_vendor_version: 0.175.0.0.0.0.0
-IPS_legacy: false
-Meta(pkg.renamed): true
-Meta(org.opensolaris.consolidation): desktop
-Meta(variant.opensolaris.zone): global, nonglobal
-Renamed_To: library/python-2/setuptools-26 >= 0.5.11-0.133
 Renamed_To: consolidation/desktop/desktop-incorporation = *
 PkgBuild_Make_Empty_Package: true
 
@@ -6738,18 +6712,6 @@ PkgBuild_Make_Empty_Package: true
 
 %package -n python-zope-interface-24
 IPS_Package_Name: library/python-2/python-zope-interface-24
-SUNW_Pkg: SUNWobsolete-gnome
-IPS_component_version: 0.5.11
-IPS_build_version: 5.11
-IPS_vendor_version: 0.175.0.0.0.0.0
-IPS_legacy: false
-Meta(pkg.obsolete): true
-Meta(org.opensolaris.consolidation): desktop
-Meta(variant.opensolaris.zone): global, nonglobal
-PkgBuild_Make_Empty_Package: true
-
-%package -n setuptools-24
-IPS_Package_Name: library/python-2/setuptools-24
 SUNW_Pkg: SUNWobsolete-gnome
 IPS_component_version: 0.5.11
 IPS_build_version: 5.11
