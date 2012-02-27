@@ -1,3 +1,9 @@
+2012-02-27  Leon Sha  <leon.sha@oracle.com>
+
+	* specs/SUNWflash-player-plugin.spec:
+	Bump to 11.1.102.62 (CR 7146508).
+	Change Requires and BuildRequires lines to IPS package names.
+
 2012-02-13  Javier Acosta  <javier.acosta@oracle.com>
 
 	* base-specs/gdm.spec:
