@@ -3,7 +3,7 @@
 #
 # includes module(s): pulseaudio
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011,2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -222,7 +222,10 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-, root, sys)
 %attr (0755, root, sys) %dir %{_sysconfdir}
 %attr (0755, root, sys) %dir %{_sysconfdir}/pulse
-%{_sysconfdir}/pulse/*
+%ips_tag(preserve=true) %{_sysconfdir}/pulse/client.conf
+%ips_tag(preserve=true) %{_sysconfdir}/pulse/daemon.conf
+%ips_tag(preserve=true) %{_sysconfdir}/pulse/default.pa
+%ips_tag(preserve=true) %{_sysconfdir}/pulse/system.pa
 %dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1
 %dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1/system.d
 %{_sysconfdir}/dbus-1/system.d/*
@@ -239,6 +242,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Mon Feb 27 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Provide preserve tag for files installed to /etc/pulse.
 * Sun Oct 02 2011 - Brian Cameron  <brian.cameron@oracle.com>
 - Bump to 1.0.
 * Tue Sep 28 2011 - Brian Cameron  <brian.cameron@oracle.com>

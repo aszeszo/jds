@@ -1,3 +1,7 @@
+2012-02-27  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWpulseaudio.spec: Use preserve tag for files in /etc/pulse.
+
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	* specs/SUNWpygtk2-26.spec: Fix additional typos.
