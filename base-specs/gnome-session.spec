@@ -5,7 +5,7 @@
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner niall
+%define owner gheet
 #
 
 %define OSR LFI#105446 (gnome Exec. summary):n/a
