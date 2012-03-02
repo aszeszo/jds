@@ -69,6 +69,9 @@ cp %{_builddir}/%name-%version/%{base_arch}/%{src_dir}/ChangeLog $RPM_BUILD_ROOT
 cp %{_builddir}/%name-%version/%{base_arch}/%{src_dir}/COPYING $RPM_BUILD_ROOT/usr/share/doc/uperf
 cp %{_builddir}/%name-%version/%{base_arch}/%{src_dir}/NEWS $RPM_BUILD_ROOT/usr/share/doc/uperf
 
+mkdir -p $RPM_BUILD_ROOT/usr/share/uperf
+cp %{_builddir}/%name-%version/%{base_arch}/%{src_dir}/*.pem $RPM_BUILD_ROOT/usr/share/uperf
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
