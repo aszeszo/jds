@@ -1,3 +1,25 @@
+2011-03-05  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWgnome-media.spec, specs/SUNWlibgnome-keyring.spec,
+	  specs/SUNWlibsoup.spec, specs/SUNWgnome-vfs.spec,
+	  base-specs/libgnome-keyring.spec, base-specs/libsoup.spec,
+	  base-specs/gnome-vfs.spec: Now support 64-bit versions of the 
+	  gnome-keyring, libsoup, and gnome-vfs libraries.  Also support the
+	  GStreamer 64-bit plugins for gnome-vfs and libsoup.  Also fix
+	  Requires/BuildRequires.
+	  RTI 360290, CR 7078660, 7146691.
+	* base-specs/gdm.spec, patches/gdm-37-strndup.diff: Use strndup.
+	  RTI 360291, CR 7146593.
+	* specs/SUNWgnome-display-mgr.spec, specs/SUNWconsolekit.spec: Fix
+	  Requires/BuildRequires, and now /etc and /usr/share configuration
+	  files have the preserve flag set.
+	* patches/ConsoleKit-01-ck-dynamic.diff: Add additional debug flags.
+	* patches/gdm-34-vt.diff: Remove needless warning message.
+	  RTI 360292, CR 7093653, 7144246
+	* specs/SUNWogg-vorbis.spec, specs/SUNWlibgc.spec: Fix
+	  Requires/BuildRequires.  Corrects minor spec-file issues that were
+	  noticed after the 2011-02-17 putback.
+
 2011-02-27 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 11 ====

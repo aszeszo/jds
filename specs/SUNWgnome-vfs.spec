@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-mime-data, gnome-vfs
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -11,8 +11,14 @@
 #
 %include Solaris.inc
 
+%ifarch amd64 sparcv9
+%include arch64.inc
+%use gvfs64 = gnome-vfs.spec
+%endif
+
 %define with_hal %(pkginfo -q SUNWhal && echo 1 || echo 0)
 
+%include base.inc
 %use smimeinfo = shared-mime-info.spec
 %use gmdata = gnome-mime-data.spec
 %use gvfs = gnome-vfs.spec
@@ -30,33 +36,25 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWglib2
-Requires: SUNWgnome-vfs-root
-Requires: SUNWgnome-config
-Requires: SUNWgnome-component
-Requires: SUNWdbus
-Requires: SUNWdbus-glib
+Requires: service/gnome/desktop-cache
+Requires: service/network/samba
+Requires: system/hal
+
+BuildRequires: compress/bzip2
+BuildRequires: gnome/config/gconf
+BuildRequires: library/file-monitor/gamin
+BuildRequires: library/glib2
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/libxml2
+BuildRequires: library/security/openssl
+BuildRequires: library/zlib
 BuildRequires: runtime/perl-512
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlxml
-Requires: SUNWdesktop-cache
-Requires: SUNWlibms
-Requires: SUNWavahi-bridge-dsd
-BuildRequires: SUNWopenssl-libraries
-BuildRequires: SUNWhal
-BuildRequires: SUNWgamin
-BuildRequires: SUNWsmbau
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWopenssl-libraries
-BuildRequires: SUNWopenssl-include
-BuildRequires: SUNWgamin-devel
-BuildRequires: SUNWggrp
-BuildRequires: SUNWgnome-xml-share
+BuildRequires: system/library/dbus
+BuildRequires: system/library/libdbus
+BuildRequires: system/library/libdbus-glib
+BuildRequires: system/library/math
+BuildRequires: system/network/avahi
+BuildRequires: text/gnu-grep
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -79,14 +77,22 @@ rm -rf %name-%version
 mkdir %name-%version
 %smimeinfo.prep -d %name-%version
 %gmdata.prep -d %name-%version
-%gvfs.prep -d %name-%version
+
+%ifarch amd64 sparcv9
+mkdir %name-%version/%_arch64
+%gvfs64.prep -d %name-%version/%_arch64
+%endif
+
+mkdir %name-%version/%{base_arch}
+%gvfs.prep -d %name-%version/%{base_arch}
+
 cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
 export PKG_CONFIG_PATH=../gnome-mime-data-%{gmdata.version}:../gnome-vfs-%{gvfs.version}:%{_pkg_config_path}
 # /usr/sfw/include needed for libsmbclient.h
-export CFLAGS="%optflags -I/usr/sfw/include"
+export CFLAGS="%optflags -I/usr/sfw/include -DDBUS_API_SUBJECT_TO_CHANGE=1"
 export RPM_OPT_FLAGS="$CFLAGS"
 export LDFLAGS="%_ldflags"
 
@@ -94,14 +100,26 @@ export LDFLAGS="%_ldflags"
 %gmdata.build -d %name-%version
 
 export LDFLAGS="%_ldflags -L/usr/sfw/lib -R/usr/sfw/lib"
-%gvfs.build -d %name-%version
+
+%ifarch amd64 sparcv9
+export VFS_EXTRA_CONFIG="--disable-avahi"
+%gvfs64.build -d %name-%version/%_arch64
+%endif
+
+export VFS_EXTRA_CONFIG=""
+%gvfs.build -d %name-%version/%{base_arch}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 export PKG_CONFIG_PATH=../gnome-mime-data-%{gmdata.version}:../gnome-vfs-%{gvfs.version}:%{_libdir}/pkgconfig:/usr/lib/pkgconfig
 %smimeinfo.install -d %name-%version
 %gmdata.install -d %name-%version
-%gvfs.install -d %name-%version
+
+%ifarch amd64 sparcv9
+%gvfs64.install -d %name-%version/%_arch64
+%endif
+
+%gvfs.install -d %name-%version/%{base_arch}
 LD_LIBRARY_PATH=$RPM_BUILD_ROOT%{_libdir} $RPM_BUILD_ROOT%{_bindir}/update-mime-database $RPM_BUILD_ROOT%{_datadir}/mime
 
 rm -rf $RPM_BUILD_ROOT%{_mandir}
@@ -109,6 +127,9 @@ cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
 rm -rf $RPM_BUILD_ROOT%{_prefix}/doc
+
+find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
+find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.a" -exec rm -f {} ';'
 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}
 
@@ -126,20 +147,31 @@ rm -rf $RPM_BUILD_ROOT
 %doc(bzip2) gnome-mime-data-%{gmdata.version}/COPYING
 %doc(bzip2) gnome-mime-data-%{gmdata.version}/ChangeLog
 %doc(bzip2) gnome-mime-data-%{gmdata.version}/NEWS
-%doc gnome-vfs-%{gvfs.version}/README
-%doc gnome-vfs-%{gvfs.version}/AUTHORS
-%doc(bzip2) gnome-vfs-%{gvfs.version}/COPYING
-%doc(bzip2) gnome-vfs-%{gvfs.version}/COPYING.LIB
-%doc(bzip2) gnome-vfs-%{gvfs.version}/ChangeLog
-%doc(bzip2) gnome-vfs-%{gvfs.version}/NEWS
+%doc %{base_arch}/gnome-vfs-%{gvfs.version}/README
+%doc %{base_arch}/gnome-vfs-%{gvfs.version}/AUTHORS
+%doc(bzip2) %{base_arch}/gnome-vfs-%{gvfs.version}/COPYING
+%doc(bzip2) %{base_arch}/gnome-vfs-%{gvfs.version}/COPYING.LIB
+%doc(bzip2) %{base_arch}/gnome-vfs-%{gvfs.version}/ChangeLog
+%doc(bzip2) %{base_arch}/gnome-vfs-%{gvfs.version}/NEWS
 %dir %attr (0755, root, other) %{_datadir}/doc
 %defattr (-, root, bin)
 %dir %attr (0755, root, bin) %{_bindir}
-%{_bindir}/*
+%{_bindir}/gnomevfs-*
+%{_bindir}/update-mime-database
 %dir %attr (0755, root, bin) %{_libdir}
-%{_libdir}/gnome-vfs-2.0/modules/*.so
 %{_libdir}/lib*.so*
 %{_libdir}/gnome-vfs-daemon
+%{_libdir}/gnome-vfs-2.0/modules/*.so
+
+%ifarch amd64 sparcv9
+%dir %attr (0755, root, bin) %{_bindir}/%{_arch64}
+%{_bindir}/%{_arch64}/gnomevfs-*
+%dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
+%{_libdir}/%{_arch64}/lib*.so*
+%{_libdir}/%{_arch64}/gnome-vfs-daemon
+%{_libdir}/%{_arch64}/gnome-vfs-2.0/modules/*.so
+%endif
+
 %dir %attr (0755, root, sys) %{_datadir}
 %ghost %attr (-, root, root) %ips_tag(original_name=SUNWgnome-vfs:%{@} preserve=true) %{_datadir}/mime
 %dir %attr (0755, root, other) %{_datadir}/mime-info
@@ -170,6 +202,12 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_libdir}/pkgconfig
 %{_libdir}/pkgconfig/*
 %{_libdir}/gnome-vfs-2.0/include
+%ifarch amd64 sparcv9
+%dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
+%dir %attr (0755, root, other) %{_libdir}/%{_arch64}/pkgconfig
+%{_libdir}/%{_arch64}/pkgconfig/*
+%{_libdir}/%{_arch64}/gnome-vfs-2.0/include
+%endif
 %dir %attr (0755, root, bin) %{_includedir}
 %{_includedir}/*
 %dir %attr (0755, root, sys) %{_datadir}
@@ -187,6 +225,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Now support 64-bit.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Thu May 14 2009 - jeff.cai@sun.com
@@ -302,6 +342,4 @@ rm -rf $RPM_BUILD_ROOT
 - install gconf schemas at end of install stage.
 * Mon Jan 26 2004 - Laszlo.Peter@sun.com
 - initial version added to CVS
-
-
 

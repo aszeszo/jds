@@ -34,7 +34,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: system/library/math
+BuildRequires: system/library/math
 BuildRequires: developer/gnome/gettext
 BuildRequires: developer/parser/bison
 BuildRequires: runtime/python-26

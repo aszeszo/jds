@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-vfs
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -103,7 +103,7 @@ It provides a URI-based API, a backend supporting asynchronous file operations,
 a MIME type manipulation library and other features.
 
 %prep
-%setup -q
+%setup -q -n gnome-vfs-%version
 %if %build_l10n
 bzcat %SOURCE1 | tar xf -
 cd po-sun; make; cd ..
@@ -133,6 +133,7 @@ fi
 if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
+
 libtoolize --force
 glib-gettextize --force
 intltoolize -c -f --automake
@@ -146,22 +147,20 @@ gtkdocize
 autoheader
 automake -a -c -f
 autoconf
-CFLAGS="$RPM_OPT_FLAGS -DDBUS_API_SUBJECT_TO_CHANGE=1"	\
+
 ./configure --prefix=%{_prefix}		\
-            --sysconfdir=%{_sysconfdir} \
+            --bindir=%{_bindir}		\
+            --libdir=%{_libdir}		\
             --libexecdir=%{_libexecdir} \
+            --sysconfdir=%{_sysconfdir} \
             --enable-fam		\
-            %{gtk_doc_option}
+            $VFS_EXTRA_CONFIG %{gtk_doc_option}
 make -j $CPUS
 
 %install
 export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 make DESTDIR=$RPM_BUILD_ROOT install
 unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
-rm $RPM_BUILD_ROOT%{_libdir}/gnome-vfs-2.0/modules/*.a
-rm $RPM_BUILD_ROOT%{_libdir}/gnome-vfs-2.0/modules/*.la
-rm $RPM_BUILD_ROOT%{_libdir}/*.a
-rm $RPM_BUILD_ROOT%{_libdir}/*.la
 
 #Copy zh_HK from zh_TW
 #Fixes bug 4930405
@@ -207,6 +206,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Now support 64-bit.
 * Thu Oct 21 2010 - brian.cameron@oracle.com
 - Bump to 2.24.4.
 * Sat Apr  3 2010 - christian.kelly@sun.com
@@ -682,7 +683,7 @@ rm -rf $RPM_BUILD_ROOT
 - added gnome-vfs-16-network-all-users-support.diff
 * Wed Jul 2 2003 - Laszlo.Kovacs@sun.com
 - added patches gnome-vfs-15-uri-canonizing.diff
-and gnome-vfs-14-network-vfolder-etc.diff
+  and gnome-vfs-14-network-vfolder-etc.diff
 * Tue Jul 1 2003 - glynn.foster@sun.com
 - Correct icon for applications:/// view
 * Tue Jul 1 2003 - niall.power@sun.com
@@ -692,11 +693,13 @@ and gnome-vfs-14-network-vfolder-etc.diff
 * Fri Jun 30 2003 - glynn.foster@sun.com
 - add patch to exlude star.desktop that we use in favorites:/// uri
 * Fri Jun 8 2003 - Laszlo.Kovacs@sun.com
-- fix access to authn cache in http module (gnome-vfs-06-http-fix-authn-cache-access.diff)
+- fix access to authn cache in http module
+  (gnome-vfs-06-http-fix-authn-cache-access.diff)
 * Thu Jun 5 2003 - Laszlo.Kovacs@sun.com
 - open root as default folder in the ftp module (gnome-vfs-03-ftp-open-root-as-default.diff)
 - port fix for pathname containg %2F from HEAD (gnome-vfs-04-%2F-fix.diff)
-- add authorization callback to ftp module (gnome-vfs-05-ftp-authn-callback.diff)
+- add authorization callback to ftp module
+  (gnome-vfs-05-ftp-authn-callback.diff)
 * Fri May 30 2003 - markmc@sun.com
 - Make favorites:// include Mozilla and Evolution by default.
 * Tue May 13 2003 - matt.keenan@sun.com

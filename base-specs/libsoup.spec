@@ -1,7 +1,7 @@
 #
 # spec file for package libsoup
 #
-# Copyright (c) 2010 Sun Microsystems, Inc.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -65,10 +65,12 @@ and implementing SOAP methods.
 %setup -q
 
 %build
+export CFLAGS="%optflags"
 export LDFLAGS="%_ldflags -lz"
-CFLAGS="$RPM_OPT_FLAGS" \
+
   ./configure \
     --prefix=%{_prefix} \
+    --libdir=%{_libdir} \
     --libexecdir=%{_libexecdir} \
     --sysconfdir=%{_sysconfdir} \
     --disable-gtk-doc
@@ -104,6 +106,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc/*
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Now support 64-bit.
 * Mon Oct 25 2010 - brian.cameron@oracle.com
 - Bump to 2.32.0
 * Thu Oct 21 2010 - ke.wang@oracle.com
