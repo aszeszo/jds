@@ -2,7 +2,7 @@
 #
 # includes module(s): poppler, poppler-data, evince
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,60 +28,51 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-file-mgr-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWPython26
-BuildRequires: SUNWfontconfig
-BuildRequires: SUNWTiff-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWjpg-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWghostscript
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgnome-icon-theme
-BuildRequires: SUNWlibgnome-keyring
-Requires: SUNWlibglade
-Requires: SUNWlibpopt
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-component
-Requires: SUNWgnome-pdf-viewer-root
-Requires: SUNWfontconfig
-Requires: SUNWTiff
-Requires: SUNWdbus
-Requires: SUNWfreetype2
-Requires: SUNWgnome-config
-Requires: SUNWgnome-vfs
-Requires: SUNWjpg
-Requires: SUNWlibC
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWlxml
-Requires: SUNWzlib
-Requires: SUNWdesktop-cache
+BuildRequires: library/desktop/libglade
+BuildRequires: library/popt
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: gnome/file-manager/nautilus
+BuildRequires: library/gnome/gnome-component
+BuildRequires: runtime/python-26
+BuildRequires: system/library/fontconfig
+BuildRequires: image/library/libtiff
+BuildRequires: system/library/dbus
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: image/library/libjpeg
+BuildRequires: print/filter/ghostscript
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: gnome/theme/gnome-icon-theme
+BuildRequires: library/gnome/gnome-keyring
+Requires: library/desktop/libglade
+Requires: library/popt
+Requires: library/gnome/gnome-libs
+Requires: gnome/file-manager/nautilus
+Requires: library/gnome/gnome-component
+Requires: system/library/fontconfig
+Requires: image/library/libtiff
+Requires: system/library/dbus
+Requires: system/library/freetype-2
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-vfs
+Requires: image/library/libjpeg
+Requires: system/library/c++/sunpro
+Requires: system/library/math
+Requires: library/libxml2
+Requires: library/zlib
+Requires: service/gnome/desktop-cache
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
 BuildRequires: runtime/perl-512
-Requires: SUNWlibglade-devel
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %prep
 rm -rf %name-%version

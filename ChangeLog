@@ -1,3 +1,15 @@
+2012-03-06  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI 360308 for CR#7033412 
+	/etc/X11/xinit/xinitrc.d/0120.xrdb causes messages in .xesssion-errors
+	* ext-sources/0120.xrdb:
+	* specs/SUNWgnome-dtlogin-integration.spec:
+	RTI 360342 for CR#7132463
+	[evince] garbled character is pasted when copy&paste to find field
+	* base-specs/evince.spec:
+	* patches/evince-05-remove-newline.diff:
+	* specs/SUNWgnome-pdf-viewer.spec:
+
 2012-03-06  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	RTI 360398

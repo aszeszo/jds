@@ -3,7 +3,7 @@
 #
 # includes module(s): dtlogin-integration
 #
-# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -45,11 +45,11 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %if %option_with_dt
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWesu
-Requires: SUNWmfrun
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-session
-Requires: SUNWgnome-wm
+Requires: system/core-os
+Requires: library/motif
+Requires: gnome/gnome-panel
+Requires: gnome/gnome-session
+Requires: gnome/window-manager/metacity
 %endif
 
 %package -n SUNWdesktop-startup
@@ -57,9 +57,6 @@ IPS_package_name:        system/display-manager/desktop-startup
 Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Scripts
 Summary:                 Desktop startup scripts in xinitrc.d
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires: SUNWdesktop-startup-root
 
 %package -n SUNWdesktop-startup-root
 IPS_package_name:        system/display-manager/desktop-startup
@@ -67,14 +64,15 @@ Summary:                 Desktop startup scripts in xinitrc.d - / filesystem
 SUNW_BaseDir:            /
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWesu
+Requires: system/core-os
 Requires: system/input-method/imf-startup
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-session
-Requires: SUNWgnome-wm
-Requires: SUNWgnome-component
-Requires: SUNWdbus
-Requires: SUNWdbus-x11
+Requires: gnome/gnome-panel
+Requires: gnome/gnome-session
+Requires: gnome/window-manager/metacity
+Requires: library/gnome/gnome-component
+Requires: system/library/dbus
+Requires: system/library/dbus/dbus-x11
+Requires: x11/x11-server-utilities
 
 %prep
 %setup -q -n dtlogin-integration-%{tarball_version}
