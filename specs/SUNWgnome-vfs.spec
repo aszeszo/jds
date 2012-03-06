@@ -90,11 +90,6 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
-# /usr/sfw/include needed for libsmbclient.h
-export CFLAGS="%optflags -I/usr/sfw/include -DDBUS_API_SUBJECT_TO_CHANGE=1"
-export RPM_OPT_FLAGS="$CFLAGS"
-export LDFLAGS="%_ldflags"
-
 %smimeinfo.build -d %name-%version
 %gmdata.build -d %name-%version
 

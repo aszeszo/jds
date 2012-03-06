@@ -1,6 +1,7 @@
 2011-03-06  Brian Cameron  <brian.cameron@oracle.com>
 
-	* specs/SUNWgnome-vfs.spec: Fix PKG_CONFIG_PATH setting.
+	* specs/SUNWgnome-vfs.spec, base-specs/gnome-vfs.spec: Fix
+	  PKG_CONFIG_PATH setting and 64-bit build.
 
 2012-03-06  Ghee Teo  <ghee.teo@oracle.com>
 
