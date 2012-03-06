@@ -1,3 +1,9 @@
+2012-03-06  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	RTI 360398
+	CR 7149775 library/python-2/pyatspi-26 does not list a required incorporation depend
+	specs/SUNWgnome-a11y-libs.spec:
+
 2012-03-06  Leon Fan  <leon.fan@oracle.com>
 
 	RTI 360387

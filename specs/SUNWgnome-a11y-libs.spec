@@ -88,6 +88,10 @@ IPS_package_name: library/python-2/pyatspi-26
 Meta(info.classification): %{classification_prefix}:Applications/Universal Access
 Summary:       %{summary} - Python 2.6 binding files
 SUNW_BaseDir:  %{_basedir}
+%include default-depend.inc
+%include gnome-incorporation.inc
+Requires:      gnome/accessibility/gnome-a11y-libs
+Requires:      runtime/python-26
 
 %package l10n
 Summary:                 %{summary} - l10n files
