@@ -7,7 +7,7 @@
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner wangke
+%define owner leonfan
 #
 
 %include Solaris.inc
@@ -58,6 +58,9 @@ Summary:       %{summary} - Python 2.6 binding files
 IPS_package_name: library/python-2/python-gtk-vnc-26
 Meta(info.classification): %{classification_prefix}:Development/GNOME and GTK+
 SUNW_BaseDir:  %{_basedir}
+
+%include default-depend.inc
+%include desktop-incorporation.inc
 
 %package l10n
 Summary:       %{summary} - l10n files

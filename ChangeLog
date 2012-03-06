@@ -1,3 +1,10 @@
+2012-03-06  Leon Fan  <leon.fan@oracle.com>
+
+	RTI 360387
+        CR 7149762 library/python-2/python-gtk-vnc-26 does not list a required 
+        incorporation depend
+	* specs/SUNWgtk-vnc.spec:
+
 2011-03-05  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWgnome-media.spec, specs/SUNWlibgnome-keyring.spec,
