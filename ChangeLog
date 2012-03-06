@@ -1,3 +1,7 @@
+2011-03-06  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWgnome-vfs.spec: Fix PKG_CONFIG_PATH setting.
+
 2012-03-06  Ghee Teo  <ghee.teo@oracle.com>
 
 	RTI 360308 for CR#7033412 
@@ -13,14 +17,15 @@
 2012-03-06  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	RTI 360398
-	CR 7149775 library/python-2/pyatspi-26 does not list a required incorporation depend
+	CR 7149775 library/python-2/pyatspi-26 does not list a required
+	incorporation depend
 	specs/SUNWgnome-a11y-libs.spec:
 
 2012-03-06  Leon Fan  <leon.fan@oracle.com>
 
 	RTI 360387
-        CR 7149762 library/python-2/python-gtk-vnc-26 does not list a required 
-        incorporation depend
+	CR 7149762 library/python-2/python-gtk-vnc-26 does not list a required 
+	incorporation depend
 	* specs/SUNWgtk-vnc.spec:
 
 2011-03-05  Brian Cameron  <brian.cameron@oracle.com>
@@ -47,7 +52,7 @@
 
 2011-02-27 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 11 ====
+	==== S11U1 build 11 ====
 
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
 
@@ -56,14 +61,14 @@
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	* specs/SUNWgnome-a11y-reader.spec: Add Requires and BuildRequires for
-	pyatspi-26.
+	  pyatspi-26.
 
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	* specs/SUNWgnome-games.spec, specs/SUNWpygtk2-26.spec,
-	specs/SUNWgnome-a11y-poke.spec, specs/SUNWgnome-media-player.spec,
-	specs/SUNWbrltty.spec, specs/SUNWlibgoffice.spec,
-	specs/SUNWgnome-a11y-libs.spec: Fix typo
+	  specs/SUNWgnome-a11y-poke.spec, specs/SUNWgnome-media-player.spec,
+	  specs/SUNWbrltty.spec, specs/SUNWlibgoffice.spec,
+	  specs/SUNWgnome-a11y-libs.spec: Fix typo
 	* specs/SUNWgtk2.spec: Add BuildRequires for x11/library/libxi
 
 2012-02-24  Padraig O'Briain  <padraig.obriain@oracle.com>
@@ -77,31 +82,33 @@
 2012-02-23  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	CR 7143414 GTK does not build on Solaris 11 update 1 build 8
-	CR 7144112 Build failure for packages with build dependency on SUNWPython26-devel or SUNWlxml-devel
+	CR 7144112 Build failure for packages with build dependency on
+	SUNWPython26-devel or SUNWlxml-devel
 	* specs/SUNWPython26-extra.spec, specs/SUNWgnome-im-client.spec,
-	specs/SUNWpython26-imaging.spec, specs/SUNWlibglade.spec,
-	specs/SUNWgtk2.spec, specs/SUNWpython26-simplejson.spec,
-	specs/SUNWpython26-notify.spec, specs/SUNWgnome-doc-utils.spec,
-	specs/SUNWgnome-text-editor.spec, specs/SUNWtsclient.spec,
-	specs/SUNWgnome-python26-desktop.spec, specs/SUNWpygobject26.spec,
-	specs/SUNWgnome-cd-burner.spec, specs/SUNWterminator.spec,
-	specs/SUNWgtk-doc.spec, specs/SUNWgnome-python26.spec,
-	specs/SUNWgnome-games.spec, specs/SUNWpyorbit26.spec,
-	specs/SUNWpygtk2-26.spec, specs/SUNWgnome-a11y-poke.spec,
-	specs/SUNWgobject-introspection.spec, specs/SUNWgnome-a11y-reader.spec,
-	specs/SUNWpython26-zope-interface.spec,
-	specs/SUNWpython26-setuptools.spec, specs/SUNWpython26-xdg.spec,
-	specs/SUNWgnome-media-player.spec, specs/SUNWbrltty.spec,
-	specs/SUNWlibgoffice.spec, specs/SUNWvinagre.spec,
-	specs/SUNWlibcroco.spec, specs/SUNWgnome-panel.spec,
-	specs/SUNWpycairo26.spec, specs/SUNWlibsexy.spec,
-	specs/SUNWmysql-python26.spec, specs/SUNWgnome-a11y-libs.spec,
-	specs/SUNWlibgsf.spec, specs/SUNWpygtksourceview26.spec,
-	specs/SUNWgnome-terminal.spec, specs/SUNWjokosher.spec,
-	specs/SUNWIPython.spec, specs/SUNWplanner.spec,
-	specs/SUNWgtk-vnc.spec, specs/SUNWpython26-twisted.spec,
-	specs/SUNWpython26-coherence.spec, specs/SUNWtotem-pl-parser.spec,
-	specs/SUNWcompizconfig-python.spec
+	  specs/SUNWpython26-imaging.spec, specs/SUNWlibglade.spec,
+	  specs/SUNWgtk2.spec, specs/SUNWpython26-simplejson.spec,
+	  specs/SUNWpython26-notify.spec, specs/SUNWgnome-doc-utils.spec,
+	  specs/SUNWgnome-text-editor.spec, specs/SUNWtsclient.spec,
+	  specs/SUNWgnome-python26-desktop.spec, specs/SUNWpygobject26.spec,
+	  specs/SUNWgnome-cd-burner.spec, specs/SUNWterminator.spec,
+	  specs/SUNWgtk-doc.spec, specs/SUNWgnome-python26.spec,
+	  specs/SUNWgnome-games.spec, specs/SUNWpyorbit26.spec,
+	  specs/SUNWpygtk2-26.spec, specs/SUNWgnome-a11y-poke.spec,
+	  specs/SUNWgobject-introspection.spec,
+	  specs/SUNWgnome-a11y-reader.spec,
+	  specs/SUNWpython26-zope-interface.spec,
+	  specs/SUNWpython26-setuptools.spec, specs/SUNWpython26-xdg.spec,
+	  specs/SUNWgnome-media-player.spec, specs/SUNWbrltty.spec,
+	  specs/SUNWlibgoffice.spec, specs/SUNWvinagre.spec,
+	  specs/SUNWlibcroco.spec, specs/SUNWgnome-panel.spec,
+	  specs/SUNWpycairo26.spec, specs/SUNWlibsexy.spec,
+	  specs/SUNWmysql-python26.spec, specs/SUNWgnome-a11y-libs.spec,
+	  specs/SUNWlibgsf.spec, specs/SUNWpygtksourceview26.spec,
+	  specs/SUNWgnome-terminal.spec, specs/SUNWjokosher.spec,
+	  specs/SUNWIPython.spec, specs/SUNWplanner.spec,
+	  specs/SUNWgtk-vnc.spec, specs/SUNWpython26-twisted.spec,
+	  specs/SUNWpython26-coherence.spec, specs/SUNWtotem-pl-parser.spec,
+	  specs/SUNWcompizconfig-python.spec
 
 2012-02-23  Li Yuan  <lee.yuan@oracle.com>
 
@@ -118,7 +125,7 @@
 
 2012-02-23  Jeff Cai  <jeff.cai@oracle.com>
 
-        Add patch to fix raptor security #bug 7143950, rti 360037
+	Add patch to fix raptor security #bug 7143950, rti 360037
 	* base-specs/raptor.spec:
 	* patches/raptor-02-cve-2012-037.diff:
 	* specs/SUNWraptor.spec:
@@ -224,7 +231,7 @@
 
 2012-02-13 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 10 ====
+	==== S11U1 build 10 ====
 
 2012-02-10  Javier Acosta  <javier.acosta@oracle.com>
 
@@ -257,14 +264,14 @@
 
 2012-01-30 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 09 ====
+	==== S11U1 build 09 ====
 
 2012-01-20  Ghee Teo  <ghee.teo@oracle.com>
 
-        work around a bug in jucr for the fix to
+	work around a bug in jucr for the fix to
 	CR 7026871 glib2, dbus, dbus-glib linked in additional libraries
-        which are not used. webrti:358583.
-        * specs/SUNWglib2.spec:
+	which are not used. webrti:358583.
+	* specs/SUNWglib2.spec:
 
 2012-01-19  Padraig O'Briain  <padraig.obriain@oracle.com>
 
@@ -273,36 +280,37 @@
 
 2012-01-19  Ghee Teo  <ghee.teo@oracle.com>
 
-        CR 7026871 glib2, dbus, dbus-glib linked in additional libraries
-        which are not used. webrti:358583.
-        * base-specs/glib2.spec:
-        * specs/SUNWglib2.spec:
+	CR 7026871 glib2, dbus, dbus-glib linked in additional libraries
+	which are not used. webrti:358583.
+	* base-specs/glib2.spec:
+	* specs/SUNWglib2.spec:
 
 2012-01-19  Li Yuan  <lee.yuan@oracle.com>
 
 	* copyright/SUNWliblouis.copyright:
 	* copyright/SUNWliblouisxml.copyright:
 	* specs/SUNWgnome-a11y-reader.spec:
-	Bug #6995978 - Integrate liblouis and liblouisxml into Solaris.
+	  Bug #6995978 - Integrate liblouis and liblouisxml into Solaris.
 
 2012-01-19 Arvind Umrao <arvind.umrao@oracle.com>
-        CR 7111568 Updated xscreensaver to 5.15
+
+	CR 7111568 Updated xscreensaver to 5.15
 
 2012-01-13 Adam Paul <adam.paul@oracle.com>
 
-        ==== S11U1 build 08 ====
+	==== S11U1 build 08 ====
 
 2012-01-10  Lin Ma  <lin.ma@oracle.com>
 
 	* patches/firefox6-27-methoidjit-sparc.diff: Omit this one in the
-	previous removal.
+	  previous removal.
 
 2012-01-10  Lin Ma  <lin.ma@oracle.com>
 
 	* specs/SUNWthunderbird.spec:
 	* base-specs/thunderbird.spec: Bump to Thunderbird 9.0.1, bump to
-	Lightning 1.1.1, update l10n list. Remove obsolete patches.
-	CR#7123153
+	  Lightning 1.1.1, update l10n list. Remove obsolete patches.
+	  CR#7123153
 	* patches/firefox-11-sqlite-unix-excl.diff:
 	* patches/firefox-29-sparc-ctypes-int-overflow.diff:
 	* patches/firefox6-27-methoidjit-sparc.diff:
@@ -323,10 +331,12 @@
 	* patches/thunderbird3-22-use-system-theora-and-sqlite.diff:
 
 2012-01-10  Ginn Chen  <ginn.chen@oracle.com>
-	CR 7119320 firefox pulls an optional font package into minimal installation
-	CR 7123151 Problem with firefox/browser
-	CR 7121745 [FF8.0]Sqlite3 locked when load http://www.mozilla.com/firefox/its-a-trap.html
 
+	CR 7119320 firefox pulls an optional font package into minimal
+	installation
+	CR 7123151 Problem with firefox/browser
+	CR 7121745 [FF8.0]Sqlite3 locked when load
+	http://www.mozilla.com/firefox/its-a-trap.html
 	* base-specs/firefox.spec:
 	* ext-sources/firefox-js.pc.in:
 	* ext-sources/firefox-plugin.pc.in:
@@ -358,13 +368,14 @@
 
 2012-01-05  Padraig O'Briain  <padraig.obriain@oracle.com>
 
-	 CR 7021719 Nautilus doesn't show webdav bookmark in the menu if the webdav connection is not open
+	CR 7021719 Nautilus doesn't show webdav bookmark in the menu if the
+	webdav connection is not open
 	* base_specs/nautilus.spec:
 	* patches/nautilus-03-frp-rename.diff: Remove
 
 2012-01-03 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 07 ====
+	==== S11U1 build 07 ====
 
 2011-12-22  Jerry Guo  <yanjing.guo@oracle.com>
 
@@ -373,7 +384,7 @@
 
 2011-12-19 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 06 ====
+	==== S11U1 build 06 ====
 	
 2011-12-15  Padraig O'Briain  <padraig.obriain@oracle.com>
 
@@ -383,8 +394,8 @@
 
 2011-12-15  Padraig O'Briain  <padraig.obriain@oracle.com>
 
-	CR 7116883 Nautilus shows deleted folders as empty box in the location bar
-
+	CR 7116883 Nautilus shows deleted folders as empty box in the location
+	bar
 	* base-specs/nautilus.spec:
 	* patches/nautilus-20-deleted-empty-folders.diff:
 	* specs/SUNWgnome-file-mgr.spec:
@@ -392,9 +403,8 @@
 2011-12-14  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	CR 6859847 [davs] copying folder to another folder copies it as file.
-
 	* specs/SUNWgnome-gvfs.spec: Change system/hal to service/hal so
-	that it builds using jucr.
+	  that it builds using jucr.
 
 2011-12-05  Padraig O'Briain  <padraig.obriain@oracle.com>
 
@@ -406,8 +416,7 @@
 
 2011-12-06 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 05 ====
-
+	==== S11U1 build 05 ====
 
 2011-12-02  Lin Ma  <lin.ma@oracle.com>
 
@@ -490,7 +499,6 @@
 
 	CR 7111983 the meta information in community message header are
 	overwritten during merging po-sun messages
-
 	* po-sun/Makefile.template:
 
 2011-11-17  Ginn Chen  <ginn.chen@oracle.com>

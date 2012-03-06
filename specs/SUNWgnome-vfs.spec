@@ -90,7 +90,6 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
-export PKG_CONFIG_PATH=../gnome-mime-data-%{gmdata.version}:../gnome-vfs-%{gvfs.version}:%{_pkg_config_path}
 # /usr/sfw/include needed for libsmbclient.h
 export CFLAGS="%optflags -I/usr/sfw/include -DDBUS_API_SUBJECT_TO_CHANGE=1"
 export RPM_OPT_FLAGS="$CFLAGS"
@@ -99,6 +98,7 @@ export LDFLAGS="%_ldflags"
 %smimeinfo.build -d %name-%version
 %gmdata.build -d %name-%version
 
+export PKG_CONFIG_PATH=../../gnome-mime-data-%{gmdata.version}:%{_pkg_config_path}
 export LDFLAGS="%_ldflags -L/usr/sfw/lib -R/usr/sfw/lib"
 
 %ifarch amd64 sparcv9
