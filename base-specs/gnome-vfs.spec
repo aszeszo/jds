@@ -134,6 +134,10 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
+# /usr/sfw/include needed for libsmbclient.h
+export CFLAGS="%optflags -I/usr/sfw/include -DDBUS_API_SUBJECT_TO_CHANGE=1"
+export LDFLAGS="%_ldflags"
+
 libtoolize --force
 glib-gettextize --force
 intltoolize -c -f --automake

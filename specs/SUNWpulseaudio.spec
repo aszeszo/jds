@@ -38,35 +38,33 @@ License:                   %{pulseaudio.license}
 SUNW_BaseDir:              %{_basedir}
 SUNW_Copyright:            %{name}.copyright
 BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
+
 %include default-depend.inc
+%include desktop-incorporation.inc
 
-%if %SFElibsndfile
-BuildRequires: SFElibsndfile-devel
-Requires: SFElibsndfile
-%else
-Requires: library/libsndfile
-%endif
-
-Requires: codec/speex
-Requires: gnome/config/gconf
-Requires: library/desktop/gtk2
-Requires: library/gc
-Requires: library/json-c
-Requires: library/libtool/libltdl
-Requires: library/security/openssl
-Requires: system/library/libdbus-glib
-Requires: system/network/avahi
+BuildRequires: codec/speex
+BuildRequires: gnome/config/gconf
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/gc
+BuildRequires: library/json-c
+BuildRequires: library/libtool/libltdl
+BuildRequires: library/libsndfile
+BuildRequires: library/security/openssl
+BuildRequires: system/library/libdbus-glib
+BuildRequires: system/network/avahi
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
+%include desktop-incorporation.inc
 Requires: %name
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
 %include default-depend.inc
+%include desktop-incorporation.inc
 
 %if %build_l10n
 %package l10n
@@ -74,6 +72,7 @@ IPS_package_name:        system/display-manager/gdm/l10n
 Summary:                 %{summary} - l10n files
 SUNW_BaseDir(relocate_from:%{_prefix}): %{_gnome_il10n_basedir}
 %include default-depend.inc
+%include desktop-incorporation.inc
 Requires:                %{name}
 %endif
 

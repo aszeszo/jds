@@ -56,6 +56,7 @@ BuildRequires: image/library/libjpeg
 BuildRequires: image/library/libpng
 BuildRequires: library/desktop/libvisual
 BuildRequires: library/aalib
+BuildRequires: library/audio/pulseaudio
 BuildRequires: library/desktop/gtk2
 BuildRequires: library/desktop/pango
 BuildRequires: library/gnome/gnome-keyring

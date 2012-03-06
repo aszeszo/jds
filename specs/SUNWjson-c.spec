@@ -3,7 +3,7 @@
 #
 # includes module(s): json-c
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011,2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -21,7 +21,7 @@
 
 Name:                      SUNWjson-c
 IPS_package_name:          library/json-c
-Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Libraries
+Meta(info.classification): %{classification_prefix}:System/Libraries
 Summary:                   %{jsonc.summary}
 URL:                       http://live.gnome.org/JsonGlib
 Version:                   %{jsonc.version}
@@ -31,11 +31,13 @@ SUNW_Copyright:            %{name}.copyright
 BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
+%include desktop-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
+%include desktop-incorporation.inc
 Requires: %name
 
 %prep
@@ -97,6 +99,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Tue Mar 06 2012 - brian.cameron@oracle.com
+- Fix incorporation.
 * Thu Oct 06 2011 - brian.cameron@oracle.com
 - Now support amd64.
 * Thu Sep 15 2011 - brian.cameron@oracle.com
