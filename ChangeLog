@@ -1,3 +1,9 @@
+2012-03-07  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fixes a renamed package, system/library/c++/sunpro was renamed
+	to system/library/c++-runtime instead.
+	* specs/SUNWgnome-pdf-viewer.spec:
+
 2011-03-06  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWgnome-vfs.spec, base-specs/gnome-vfs.spec: Fix

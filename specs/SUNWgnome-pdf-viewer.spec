@@ -56,7 +56,7 @@ Requires: system/library/freetype-2
 Requires: gnome/config/gconf
 Requires: library/gnome/gnome-vfs
 Requires: image/library/libjpeg
-Requires: system/library/c++/sunpro
+Requires: system/library/c++-runtime
 Requires: system/library/math
 Requires: library/libxml2
 Requires: library/zlib
