@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-utils
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -21,16 +21,16 @@ Source:                  %{name}-manpages-0.1.tar.gz
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWlibgtop-devel
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWgnome-libs
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/desktop/libglade
+BuildRequires: gnome/gnome-panel
+BuildRequires: gnome/gnome-libs
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-component
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: library/libgtop
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: library/gnome/gnome-libs
 
 %package -n SUNWgnome-search-tool
 IPS_package_name:        gnome/gnome-search-tool
@@ -39,18 +39,17 @@ Summary:                 GNOME file search tool
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-search-tool-root
-Requires: SUNWgtk2
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-vfs
-Requires: SUNWdesktop-cache
-Requires: SUNWxcu4
-Requires: SUNWlibglade
-Requires: SUNWlibgtop
-Requires: SUNWgnome-keyring
-Requires: SUNWlibgnome-keyring
+Requires: library/desktop/gtk2
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-libs
+Requires: gnome/gnome-panel
+Requires: library/gnome/gnome-vfs
+Requires: service/gnome/desktop-cache
+Requires: system/xopen/xcu4
+Requires: library/desktop/libglade
+Requires: library/libgtop
+Requires: gnome/gnome-keyring
+Requires: library/gnome/gnome-keyring
 
 %package -n SUNWgnome-search-tool-root
 IPS_package_name:        gnome/gnome-search-tool
@@ -66,11 +65,10 @@ Summary:                 GNOME dictionary tool
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-dictionary-root
-Requires: SUNWlibglade
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-config
+Requires: library/desktop/libglade
+Requires: library/gnome/gnome-libs
+Requires: gnome/gnome-panel
+Requires: gnome/config/gconf
 
 %package -n SUNWgnome-dictionary-root
 IPS_package_name:        gnome/gnome-dictionary
@@ -86,13 +84,12 @@ Summary:                 GNOME screenshot tool
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-screenshot-root
-Requires: SUNWgtk2
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-vfs
-Requires: SUNWdesktop-cache
-Requires: SUNWlibcanberra
+Requires: library/desktop/gtk2
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-libs
+Requires: library/gnome/gnome-vfs
+Requires: service/gnome/desktop-cache
+Requires: library/desktop/xdg/libcanberra
 
 %package -n SUNWgnome-screenshot-root
 IPS_package_name:        gnome/gnome-screenshot
@@ -108,13 +105,12 @@ Summary:                 GNOME log viewer
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-log-viewer-root
-Requires: SUNWgtk2
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-vfs
-Requires: SUNWdesktop-cache
+Requires: library/desktop/gtk2
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-libs
+Requires: gnome/gnome-panel
+Requires: library/gnome/gnome-vfs
+Requires: service/gnome/desktop-cache
 
 %package -n SUNWgnome-log-viewer-devel
 IPS_package_name:        gnome/gnome-log-viewer
@@ -122,7 +118,6 @@ Summary:                 GNOME log viewer development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-log-viewer
 
 %package -n SUNWgnome-log-viewer-root
 IPS_package_name:        gnome/gnome-log-viewer
@@ -138,13 +133,12 @@ Summary:                 GNOME disk usage analyzer
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibglade
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-vfs
-Requires: SUNWlibgtop
-Requires: SUNWgnome-disk-analyzer-root
-Requires: SUNWdesktop-cache
+Requires: library/desktop/libglade
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-libs
+Requires: library/gnome/gnome-vfs
+Requires: library/libgtop
+Requires: service/gnome/desktop-cache
 
 %package -n SUNWgnome-disk-analyzer-root
 IPS_package_name:        gnome/disk-analyzer/baobab
@@ -153,8 +147,25 @@ SUNW_BaseDir:            /
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-%package l10n
-Summary:                 %{summary} - l10n files
+%package -n SUNWgnome-search-tool-l10n
+IPS_package_name:        gnome/gnome-search-tool
+Summary:                 gnome/gnome-search-tool - l10n files
+
+%package -n SUNWgnome-dictionary-l10n
+IPS_package_name:        gnome/gnome-dictionary
+Summary:                 gnome/gnome-dictionary - l10n files
+
+%package -n SUNWgnome-screenshot-l10n
+IPS_package_name:        gnome/gnome-screenshot
+Summary:                 gnome/gnome-screenshot - l10n files
+
+%package -n SUNWgnome-log-viewer-l10n
+IPS_package_name:        gnome/gnome-log-viewer
+Summary:                 gnome/gnome-log-viewer - l10n files
+
+%package -n SUNWgnome-disk-analyzer-l10n
+IPS_package_name:        gnome/disk-analyzer/baobab
+Summary:                 gnome/disk-analyzer/baobab - l10n files
 
 %prep
 rm -rf %name-%version
@@ -390,16 +401,53 @@ rm -rf $RPM_BUILD_ROOT
 %attr (0755, root, sys) %dir %{_sysconfdir}
 %{_sysconfdir}/gconf/schemas/baobab.schemas
 
-%files l10n
+
+%files -n SUNWgnome-search-tool-l10n
 %defattr (-, root, bin)
 %dir %attr (0755, root, sys) %{_datadir}
 %attr (-, root, other) %{_datadir}/locale
 %dir %attr (0755, root, other) %{_datadir}/gnome
-%{_datadir}/gnome/help/[a-z]*/[a-z]*
-%{_datadir}/omf/*/*-[a-z][a-z].omf
-%{_datadir}/omf/*/*-[a-z][a-z]_[A-Z][A-Z].omf
+%{_datadir}/gnome/help/gnome-search-tool/[a-z]*
+%{_datadir}/omf/gnome-search-tool/*-[a-z][a-z].omf
+%{_datadir}/omf/gnome-search-tool/*-[a-z][a-z]_[A-Z][A-Z].omf
+
+
+%files -n SUNWgnome-dictionary-l10n
+%defattr (-, root, bin)
+%dir %attr (0755, root, sys) %{_datadir}
+%dir %attr (0755, root, other) %{_datadir}/gnome
+%{_datadir}/gnome/help/gnome-dictionary/[a-z]*
+%{_datadir}/omf/gnome-dictionary/*-[a-z][a-z].omf
+%{_datadir}/omf/gnome-dictionary/*-[a-z][a-z]_[A-Z][A-Z].omf
+
+
+%files -n SUNWgnome-screenshot-l10n
+%defattr (-, root, bin)
+%dir %attr (0755, root, sys) %{_datadir}
+%dir %attr (0755, root, other) %{_datadir}/gnome
+
+
+%files -n SUNWgnome-log-viewer-l10n
+%defattr (-, root, bin)
+%dir %attr (0755, root, sys) %{_datadir}
+%dir %attr (0755, root, other) %{_datadir}/gnome
+%{_datadir}/gnome/help/gnome-system-log/[a-z]*
+%{_datadir}/omf/gnome-system-log/*-[a-z][a-z].omf
+#%{_datadir}/omf/gnome-system-log/*-[a-z][a-z]_[A-Z][A-Z].omf
+
+
+%files -n SUNWgnome-disk-analyzer-l10n
+%defattr (-, root, bin)
+%dir %attr (0755, root, sys) %{_datadir}
+%dir %attr (0755, root, other) %{_datadir}/gnome
+%{_datadir}/gnome/help/baobab/[a-z]*
+%{_datadir}/omf/baobab/*-[a-z][a-z].omf
+%{_datadir}/omf/baobab/*-[a-z][a-z]_[A-Z][A-Z].omf
+
 
 %changelog
+* Fri Mar  9 2012 - y.yong.sun@oracle.com
+- Split the l10n contents into base IPS packages, refer to CR #7101655.
 * Fri Apr  3 2009 - laca@sun.com
 - use desktop-cache instead of postrun
 * Thu Feb 26 2009 - lin.ma@sun.com

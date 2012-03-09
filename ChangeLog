@@ -1,3 +1,9 @@
+2012-03-09  Yong Sun <y.yong.sun@oracle.com>
+
+	Fix CR #7101655: l10n contents are not delived for SUNWgnome-utils.spec
+	in IPS repo
+	* spec/SUNWgnome-utils.spec:
+
 2012-03-07  Ghee Teo  <ghee.teo@oracle.com>
 
 	Fixes a renamed package, system/library/c++/sunpro was renamed
