@@ -24,7 +24,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 BuildRequires: library/desktop/gtk2
 BuildRequires: library/desktop/libglade
 BuildRequires: gnome/gnome-panel
-BuildRequires: gnome/gnome-libs
+BuildRequires: library/gnome/gnome-libs
 BuildRequires: gnome/config/gconf
 BuildRequires: library/gnome/gnome-component
 BuildRequires: developer/gnome/gnome-doc-utils
