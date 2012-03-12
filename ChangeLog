@@ -1,3 +1,7 @@
+2011-03-12 Ada Luong <ada.luong@oracle.com>
+
+        ==== S11U1 build 12 ====
+
 2012-03-09  Yong Sun <y.yong.sun@oracle.com>
 
 	Fix CR #7101655: l10n contents are not delived for SUNWgnome-utils.spec
