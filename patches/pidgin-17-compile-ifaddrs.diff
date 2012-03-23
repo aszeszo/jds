@@ -1,0 +1,14 @@
+diff -ur pidgin-2.10.2/configure.ac pidgin-2.10.2_new/configure.ac
+--- pidgin-2.10.2/configure.ac	2012-03-23 18:46:59.350544942 +0800
++++ pidgin-2.10.2_new/configure.ac	2012-03-23 18:43:18.814891844 +0800
+@@ -161,8 +161,8 @@
+ 		[AC_DEFINE([HAVE_GETADDRINFO]) LIBS="-lsocket -lsnl $LIBS"], , , -lnsl)])
+ AC_CHECK_FUNCS(inet_ntop)
+ AC_CHECK_FUNCS(getifaddrs)
+-AC_CHECK_MEMBERS(struct ifaddrs.ifa_addr->ss_family,[],[],[[ #include <ifaddrs.h> 
+-#include <net/if.h> ]])
++#AC_CHECK_MEMBERS(struct ifaddrs.ifa_addr->ss_family,[],[],[[ #include <ifaddrs.h> 
++##include <net/if.h> ]])
+ dnl Check for socklen_t (in Unix98)
+ AC_MSG_CHECKING(for socklen_t)
+ AC_COMPILE_IFELSE([AC_LANG_PROGRAM([[

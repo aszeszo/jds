@@ -49,6 +49,7 @@ Patch11:        pidgin-11-gtkstatusicon.diff
 
 # date:2010-05-20 owner:hawklu type:bug d.o.o:16007
 Patch13:        pidgin-14-ifaddrs.diff
+Patch17:        pidgin-17-compile-ifaddrs.diff
 
 URL:		http://www.pidgin.im
 BuildRoot:	%{_tmppath}/%{name}-%{version}-build
@@ -99,6 +100,7 @@ done
 %patch9 -p1
 %patch11 -p1
 %patch13 -p1
+%patch17 -p1
 
 %build
 %ifos linux
