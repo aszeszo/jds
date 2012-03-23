@@ -1,3 +1,9 @@
+2012-03-23  Jerry Guo  <yanjing.guo@oracle.com>
+
+        Fix for 7154328
+	* base-specs/pidgin.spec:
+	* copyright/SUNWncurses.copyright:
+
 2011-03-12 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 12 ====
