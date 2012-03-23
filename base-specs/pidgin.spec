@@ -1,7 +1,7 @@
 #
 # spec file for package pidgin
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,7 +14,7 @@
 
 %include l10n.inc
 Name:		pidgin
-Version:	2.10.1
+Version:	2.10.2
 Release:        1
 License:	GPL
 Group:		Applications/Internet
@@ -198,6 +198,8 @@ rm -rf $RPM_BUILD_ROOT%{_libdir}/purple-2/dbus-example.so
 rm -r $RPM_BUILD_ROOT
 
 %changelog
+* Fri Mar 23 2012 - yanjing.guo@oracle.com
+- Bump to 2.10.2
 * Mon July 25 2011 - yanjing.guo@oracle.com
 - Add patch pidgin-16-irc-parse.diff
 * Mon July 8 2011 - yanjing.guo@oracle.com
