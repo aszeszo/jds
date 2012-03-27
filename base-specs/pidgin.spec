@@ -49,7 +49,6 @@ Patch11:        pidgin-11-gtkstatusicon.diff
 
 # date:2010-05-20 owner:hawklu type:bug d.o.o:16007
 Patch13:        pidgin-14-ifaddrs.diff
-Patch17:        pidgin-17-compile-ifaddrs.diff
 
 URL:		http://www.pidgin.im
 BuildRoot:	%{_tmppath}/%{name}-%{version}-build
@@ -100,7 +99,6 @@ done
 %patch9 -p1
 %patch11 -p1
 %patch13 -p1
-%patch17 -p1
 
 %build
 %ifos linux
@@ -200,7 +198,7 @@ rm -rf $RPM_BUILD_ROOT%{_libdir}/purple-2/dbus-example.so
 rm -r $RPM_BUILD_ROOT
 
 %changelog
-* Fri Mar 23 2012 - yanjing.guo@oracle.com
+* Tue Mar 27 2012 - yanjing.guo@oracle.com
 - Bump to 2.10.2
 * Mon July 25 2011 - yanjing.guo@oracle.com
 - Add patch pidgin-16-irc-parse.diff

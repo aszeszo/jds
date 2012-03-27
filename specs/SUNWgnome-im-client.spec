@@ -214,6 +214,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Tue Mar 27 2012 - yanjing.guo@oracle.com
+- Bump to 2.10.2
 * Mon Feb 13 2012 - padraig.obriain@oracle.com
 - Update Requires and BuildRequires to be IPS package names.
 * Mon Aug 29 2011 - yanjing.guo@oracle.com

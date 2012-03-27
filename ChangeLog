@@ -1,3 +1,11 @@
+2012-03-27  Jerry Guo  <yanjing.guo@oracle.com>
+
+        Update the fix for 7154328
+	* base-specs/pidgin.spec:
+	* patches/pidgin-14-ifaddrs.diff:
+	* patches/pidgin-17-compile-ifaddrs.diff:
+	* specs/SUNWgnome-im-client.spec:
+
 2011-03-26 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 13 ====
