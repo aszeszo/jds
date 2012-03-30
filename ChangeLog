@@ -1,3 +1,16 @@
+2012-03-30  Ghee Teo  <ghee.teo@oracle.com>
+
+	CR#7154519 [s11u1] missing libsmb.so from library/gnome/gnome-vfs
+	RTI#361360
+	* specs/SUNWgnome-vfs.spec:
+	* base-specs/gnome-vfs.spec:
+	* patches/gnome-vfs-14-libsmb.diff:
+
+	CR#7152240 Slocate missing library libast.so.1 RTI#361400
+	* patches/slocate-01-makefile.diff:
+	* patches/slocate-05-remove-libast.diff:
+	* specs/SUNWslocate.spec:
+
 2012-03-30  Jeff Cai  <set EMAIL_ADDRESS environment variable>
 
 	Remove patch-03-remove-bdb patch

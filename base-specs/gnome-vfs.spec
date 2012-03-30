@@ -50,6 +50,8 @@ Patch11:      gnome-vfs-11-zfs-trash.diff
 Patch12:      gnome-vfs-12-vfsinfo-crash.diff
 # date:2007-11-26 type:bug bugster:6509673 bugzilla:499151 owner:padraig
 Patch13:      gnome-vfs-13-hal-crash.diff
+# date:2012-03-22 type:bug bugster:7154519 owner:gheet
+Patch14:      gnome-vfs-14-libsmb.diff
  
 URL:          http://www.gnome.org/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -121,6 +123,7 @@ cd po-sun; make; cd ..
 %patch11 -p1
 %patch12 -p1
 %patch13 -p1
+%patch14 -p1
 
 %build
 %ifos linux
@@ -158,6 +161,9 @@ autoconf
             --libexecdir=%{_libexecdir} \
             --sysconfdir=%{_sysconfdir} \
             --enable-fam		\
+	    --enable-samba		\
+	    --with-samba-includes=/usr/sfw/include	\
+	    --with-samba-libs=/usr/sfw/lib		\
             $VFS_EXTRA_CONFIG %{gtk_doc_option}
 make -j $CPUS
 

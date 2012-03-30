@@ -1,15 +1,14 @@
 --- slocate-3.1.orig/src/Makefile	Tue Dec 20 15:47:03 2005
 +++ slocate-3.1/src/Makefile	Mon Jun 30 17:18:21 2008
-@@ -1,13 +1,13 @@
+@@ -1,13 +1,12 @@
  OBJS=slocate.o cmds.o conf.o utils.o
  HEADERS=slocate.h cmds.h conf.h utils.h
  	
 -CFLAGS=-Wall -Wshadow
 -CFLAGS+=-O2
-+CFLAGS=-I/usr/include/ast
++CFLAGS=-I/usr/include
  #CFLAGS+=-g3
  #LDFLAGS+=-lefence
-+LDFLAGS=/usr/lib/libast.so.1
  
  PROG=slocate
 -CC=gcc
