@@ -3,7 +3,7 @@
 #
 # includes module(s): ncurses
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved. 
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #

@@ -1,3 +1,10 @@
+2012-03-30  Jerry Guo  <yanjing.guo@oracle.com>
+
+        Fix for 7155901
+	* base-specs/ncurses.spec:
+	* copyright/SUNWncurses.copyright:
+	* specs/SUNWncurses.spec:
+
 2012-03-27  Jerry Guo  <yanjing.guo@oracle.com>
 
         Update the fix for 7154328
