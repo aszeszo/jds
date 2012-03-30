@@ -25,7 +25,7 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 Source2:       %{name}-manpages-0.1.tar.gz
-Requires:      library/dekstop/libglade
+Requires:      library/desktop/libglade
 Requires:      library/gnome/gnome-libs
 Requires:      library/gnome/gnome-component
 Requires:      library/desktop/gtkhtml
