@@ -122,6 +122,10 @@ Patch20: xscreensaver-20-bug-6964562.diff
 Patch21: xscreensaver-21-verbose.diff
 # date:2011-05-10 owner:arvind type:bug bugster:7033508
 Patch22: xscreensaver-22-bug-7033508.diff
+# date:2012-03-28 owner:arvind type:bug bugster:7136531
+Patch23: xscreensaver-23-bug-7136531.diff
+# date:2012-03-28 owner:arvind type:bug bugster:7144354
+patch24: xscreensaver-24-bug-7144354.diff
 
 # date:2008-03-07 owner:alanc type:branding
 Patch101: rss-glx-101-matrixview.diff
@@ -250,6 +254,8 @@ cd po-sun; make; cd ..
 %patch20 -p0
 %patch21 -p0
 %patch22 -p0
+%patch23 -p0
+%patch24 -p0
 
 chmod a+x install-sh configure
 
@@ -620,6 +626,9 @@ rm -rf ${RPM_BUILD_ROOT}
 %attr (-, root, other) /usr/share/locale
 
 %changelog
+* Wed Mar 28 2012 -arvind.umrao@oracle.com
+  Added patch xscreensaver-23-bug-7136531.diff
+  Added patch xscreensaver-24-bug-7144354.diff 
 * Thu Jan 19 2012 -arvind.umrao@oracle.com
   Updated xscreensaver to 5.15
 * Wed Aug 15 2011 -arvind.umrao@oracle.com
