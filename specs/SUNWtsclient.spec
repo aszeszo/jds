@@ -3,7 +3,7 @@
 #
 # includes module(s): tsclient
 #
-# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -51,24 +51,22 @@ Requires:           desktop/remote-desktop/tigervnc
 Requires:           x11/server/xorg
 Requires:           gnome/gnome-keyring
 Requires:           library/gnome/gnome-keyring
+BuildRequires:      SUNWxwplt
 BuildRequires:      x11/library/libice
+BuildRequires:      system/library/math/header-math
+BuildRequires:      library/medialib
 BuildRequires:      library/desktop/libgnomecanvas
-BuildRequires:      system/library/math
 BuildRequires:      gnome/gnome-panel
 BuildRequires:      library/gnome/gnome-libs
 BuildRequires:      library/gnome/gnome-vfs
-BuildRequires:      gnome/config/gconf
-BuildRequires:      library/popt
-BuildRequires:      library/medialib
-BuildRequires:      library/gnome/gnome-component
-BuildRequires:      library/libxml2
 BuildRequires:      system/library/libdbus-glib
 BuildRequires:      system/library/dbus
-BuildRequires:      gnome/gnome-audio
+BuildRequires:      library/libxml2
 BuildRequires:      image/library/libpng
 
 %package l10n
 Summary:                 %{summary} - l10n files
+Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -131,8 +129,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
-* Fri Feb 10 2012 - padraig.obriain@oracle.com
-- Update Requires and BuildRequires to be IPS package names.
+* Thu Mar 29 2012 - jeff.cai@oracle.com
+- Change to ips package names
 * Thu Mar 05 2009 - brian.cameron@sun.com
 - Change SUNWdbus-bindings to SUNWdbus-glib.
 * Wed Nov 05 2008 - halton.huo@sun.com

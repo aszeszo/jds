@@ -1,3 +1,11 @@
+2012-03-30  Jeff Cai  <jeff.cai@oracle.com>
+
+	Add patch tsclient-09-screensize.diff to fix
+	#7151849, RTI 361482
+	* base-specs/tsclient.spec:
+	* patches/tsclient-09-screensize.diff:
+	* specs/SUNWtsclient.spec:
+
 2012-03-30 Arvind Umrao <arvind.umrao@oracle.com>
 	Added patch xscreensaver-23-bug-7136531.diff
 	Added patch xscreensaver-24-bug-7144354.diff
