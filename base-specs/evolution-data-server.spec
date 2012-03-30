@@ -30,8 +30,6 @@ Patch1:       evolution-data-server-01-open-address-book-sparc.diff
 %endif
 # date:2009-10-13 owner:jefftsai bugzilla:593998 bugster:6878377 type:bug
 Patch2:       evolution-data-server-02-ldap-search.diff
-# date:2009-12-03 owner:jefftsai type:branding bugzilla:410164
-Patch3:       evolution-data-server-03-remove-bdb.diff
 # date:2009-12-03 owner:jefftsai type:branding
 Patch4:       evolution-data-server-04-not-build-test.diff
 # date:2009-12-03 owner:jefftsai type:bug bugzilla:603773
@@ -117,7 +115,6 @@ sh -x %SOURCE1 --disable-gnu-extensions
 %patch1 -p1
 %endif
 %patch2 -p1
-%patch3 -p1
 %patch4 -p1
 %patch5 -p1
 %patch7 -p1
@@ -222,6 +219,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/idl/*
 
 %changelog
+* Tue Mar 20 2012 - jeff.cai@oracle.com
+- Remove patch -03-remove-bdb
+  This patch is not needed since we will use the system bdb
+  while not the embedded bdb
 * Mon May 16 2011 - jeff.cai@oracle.com
 - Add patch -13-gpg.diff to fix bug 6639570
 * Tue Dec 07 2010 - jeff.cai@oracle.com

@@ -25,56 +25,48 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 Source2:       %{name}-manpages-0.1.tar.gz
-Requires:      SUNWlibglade
-Requires:      SUNWgnome-libs
+Requires:      library/dekstop/libglade
+Requires:      library/gnome/gnome-libs
+Requires:      library/gnome/gnome-component
+Requires:      library/desktop/gtkhtml
+Requires:      library/libsoup
+Requires:      library/popt
+Requires:      library/zlib
+Requires:      library/security/libgpg-error
+Requires:      gnome/config/gconf
+Requires:      library/gnome/gnome-vfs
+Requires:      library/gnutls
+Requires:      system/library/security/libgcrypt
+Requires:      system/library/math
+Requires:      library/libxml2
+Requires:      service/security/kerberos-5
+Requires:      system/library/security/gss
+Requires:      database/sqlite-3
+Requires:      library/libical
+BuildRequires: database/berkeleydb-5
+BuildRequires: library/desktop/libglade
+BuildRequires: library/gnutls
+BuildRequires: system/library/security/libgcrypt
+BuildRequires: library/security/libgpg-error
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-component
+BuildRequires: gnome/config/gconf
+BUildRequires: library/gnome/gnome-vfs
+BuildRequires: library/desktop/gtkhtml
+BuildRequires: library/libsoup
+BuildRequires: library/popt
+BuildRequires: system/header
+BuildRequires: database/sqlite-3
+BuildRequires: library/libical
+BuildRequires: library/desktop/libgweather
+BuildRequires: developer/gperf
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: system/library/iconv/unicode
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/gnome/gnome-keyring
+BuildRequires: data/sgml-common
 BuildRequires: library/security/nss
-Requires:      SUNWgnome-component
-Requires:      SUNWevolution-libs
-Requires:      SUNWlibsoup
-Requires:      SUNWlibpopt
-Requires:      SUNWzlib
-Requires:      SUNWlibgpg-error
 BuildRequires: library/nspr
-Requires:      SUNWgnome-config
-Requires:      SUNWgnome-vfs
-Requires:      SUNWgnutls
-Requires:      SUNWlibgcrypt
-Requires:      SUNWlibms
-Requires:      SUNWlxml
-Requires:      SUNWkrbu
-Requires:      SUNWgss
-Requires:      SUNWsqlite3
-Requires:      SUNWlibical
-%if %option_with_sun_branding
-Requires:      SUNWbdb
-%endif
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgnutls-devel
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWlibgpg-error-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWevolution-libs-devel
-BuildRequires: SUNWlibsoup-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWhea
-BuildRequires: SUNWsqlite3
-BuildRequires: SUNWlibical
-%if %option_with_sun_branding
-# must build the supported SUNWevolution-data-server product using
-# the version of bdb included in Solaris
-BuildRequires: SUNWevolution-bdb-devel
-%endif
-BuildRequires: SUNWlibgweather
-BuildRequires: SUNWgnu-gperf
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWiconv-unicode
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWlibgnome-keyring
-#BuildRequires: data/docbook
-BuildRequires: SUNWgnome-xml-share
 
 %package devel
 Summary:       %{summary} - development files
@@ -164,6 +156,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Tue Mar 20 2012 - jeff.cai@oracle.com
+- Change to ips package names
 * Thu Dec 02 2010 - jeff.cai@oracle.com
 - Add BuildRequires data/docbook
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
