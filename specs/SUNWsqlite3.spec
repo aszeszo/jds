@@ -3,7 +3,7 @@
 #
 # includes module(s): sqlite3 
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -31,7 +31,7 @@ SUNW_Copyright:          %{name}.copyright
 License:                 Public Domain
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
-BuildRequires: SUNWunzip
+BuildRequires: compress/unzip
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -41,7 +41,7 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWsqlite3
+Requires: database/sqlite-3
 
 %package -n SUNWsqlite3tcl 
 IPS_package_name: runtime/tcl-8/tcl-sqlite-3
@@ -50,7 +50,7 @@ Summary: %{summary} - tcl files
 SUNW_BaseDIR: %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWsqlite3
+Requires: database/sqlite-3
 
 %package -n SUNWsqlite3docs 
 IPS_package_name: database/sqlite-3/documentation
@@ -59,7 +59,7 @@ Summary: %{summary} - Documention
 SUNW_BaseDIR: %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWsqlite3
+Requires: database/sqlite-3
 
 %prep
 rm -rf %name-%version
@@ -160,5 +160,4 @@ rm -rf $RPM_BUILD_ROOT
 - Change permission mode of header files to 0444
 * Fri Jan 15 2010 - brian.lu@sun.com
 - initial spec created
-
 

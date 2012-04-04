@@ -1,19 +1,19 @@
 #
-# Copyright (c) 2010 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner hawklu 
+%define owner ginnchen
 # bugdb: bugzilla.freedesktop.org
 #
 
 %define OSR 12578:1.0.2
-%define tarball_version 3070603
+%define tarball_version 3071100
 
 Name:         sqlite-tea 
 License:      public domain 
 Group:        System/Libraries
-Version:      3.7.6.3
+Version:      3.7.11
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      www.sqlite.org
@@ -56,9 +56,9 @@ fi
 export PATH=`pwd`:$PATH
 
 %if %option_with_debug
- export CFLAGS="%optflags -D_POSIX_PTHREAD_SEMANTICS -DSQLITE_SECURE_DELETE -DSQLITE_ENABLE_FTS3 -DUSE_PREAD -DHAVE_USLEEP -DHAVE_FDATASYNC -DHAVE_STATVFS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_STAT2 -I. "
+ export CFLAGS="%optflags -D_POSIX_PTHREAD_SEMANTICS -DSQLITE_SECURE_DELETE -DSQLITE_ENABLE_FTS3 -DUSE_PREAD -DHAVE_USLEEP -DHAVE_FDATASYNC -DHAVE_STATVFS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_STAT2 -DSQLITE_MAX_SCHEMA_RETRY=25 -DSQLITE_DEFAULT_PAGE_SIZE=32768 -DSQLITE_MAX_DEFAULT_PAGE_SIZE=32768 -I. "
 %else
- export CFLAGS="%optflags -D_POSIX_PTHREAD_SEMANTICS -DNDEBUG -DSQLITE_SECURE_DELETE -DSQLITE_ENABLE_FTS3 -DUSE_PREAD -DHAVE_USLEEP -DHAVE_FDATASYNC -DHAVE_STATVFS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_STAT2 -I. "
+ export CFLAGS="%optflags -D_POSIX_PTHREAD_SEMANTICS -DNDEBUG -DSQLITE_SECURE_DELETE -DSQLITE_ENABLE_FTS3 -DUSE_PREAD -DHAVE_USLEEP -DHAVE_FDATASYNC -DHAVE_STATVFS -DSQLITE_ENABLE_UNLOCK_NOTIFY -DSQLITE_ENABLE_STAT2 -DSQLITE_MAX_SCHEMA_RETRY=25 -DSQLITE_DEFAULT_PAGE_SIZE=32768 -DSQLITE_MAX_DEFAULT_PAGE_SIZE=32768 -I. "
 %endif
 
 export LDFLAGS="%_ldflags -Bdirect"
@@ -84,6 +84,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 
 %changelog
+* Fri Mar 23 2012 - ginn.chen@oracle.com
+- Bump to 3.7.11. Add -DSQLITE_MAX_SCHEMA_RETRY=25 -DSQLITE_DEFAULT_PAGE_SIZE=32768 -DSQLITE_MAX_DEFAULT_PAGE_SIZE=32768
 * Tue May 31 2011 - ginn.chen@oracle.com
 - Bump to 3.7.6.3.
 * Mon Apr 18 2011 - ginn.chen@oracle.com

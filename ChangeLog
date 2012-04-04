@@ -1,3 +1,12 @@
+2012-04-04  Ginn Chen  <ginn.chen@oracle.com>
+	CR#7152540 sqlite3's default page_size should be maxed
+	RTI#361452
+	* base-specs/sqlite.spec: Update to sqlite 3.7.11.
+	* base-specs/sqlitetcl.spec:
+	* ext-sources/mapfile-libsqlite3:
+	* ext-sources/update-sqlite-map-file.sh:
+	* specs/SUNWsqlite3.spec:
+
 2012-03-30  Ghee Teo  <ghee.teo@oracle.com>
 
 	CR#7154519 [s11u1] missing libsmb.so from library/gnome/gnome-vfs
