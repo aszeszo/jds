@@ -13,15 +13,15 @@
 
 Name:        firefox
 Summary:     Mozilla Firefox Web browser
-Version:     10.0.2
-%define tarball_version 10.0.2esr
+Version:     10.0.3
+%define tarball_version 10.0.3esr
 Release:     1
 Copyright:   MPL
 License:     MPL
 Group:       Applications/Internet
 Distribution:Java Desktop System
 Vendor:      Mozilla Foundation
-Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/nightly/%{tarball_version}-candidates/build1/source/%{name}-%{tarball_version}.source.tar.bz2
+Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/nightly/%{tarball_version}-candidates/build2/source/%{name}-%{tarball_version}.source.tar.bz2
 Source1:     firefox-icon.png
 Source2:     firefox.desktop
 #%if %option_without_moz_nss_nspr
@@ -124,7 +124,7 @@ Patch21: firefox-21-compiler-workaround.diff
 Patch22: firefox9-22-jsfunc.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
-Patch23: firefox9-23-ycbcr.diff
+Patch23: firefox10-23-ycbcr.diff
 
 #%if %option_without_moz_nss_nspr
 # owner:ginnchen date:2010-03-04 type:branding
@@ -195,6 +195,9 @@ Patch44: firefox10-44-dtrace-probe.diff
 
 # owner:ginnchen date:2011-11-15 type:feature
 Patch45: firefox8-45-libnspr_flt4.diff
+
+# owner:ginnchen date:2012-03-14 type:bug bugzilla:731917 status:upstream
+Patch46: firefox10-46-plugin-bool.diff
 
 URL:         http://www.mozilla.com/firefox
 
@@ -271,6 +274,7 @@ cd mozilla-esr10
 %patch42 -p1
 %patch43 -p1
 %patch44 -p1
+%patch46 -p1
 
 %if %option_with_debug
 %patch28 -p1
@@ -510,6 +514,8 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/firefox/defaults/profile/bookmarks.html
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Wed Apr 04 2012 - ginn.chen@oracle.com
+- Bump to Firefox 10.0.3 ESR
 * Tue Feb 21 2012 - ginn.chen@oracle.com
 - Bump to Firefox 10.0.2 ESR
 * Tue Dec 27 2011 - ginn.chen@oracle.com

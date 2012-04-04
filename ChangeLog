@@ -1,6 +1,20 @@
 2012-04-04  Ginn Chen  <ginn.chen@oracle.com>
+	CR#7155458 Firefox 10.0.2 ESR and Firefox 11 dies horribly
+		   if you LD_PRELOAD libumem.so
+	CR#7153985 Update to Firefox 10.0.3 ESR
+	RTI#361541
+	* base-specs/firefox.spec:
+	* patches/firefox10-17-js-compiler.diff:
+	* patches/firefox10-23-ycbcr.diff:
+	* patches/firefox10-43-donot-disable-locale-addon.diff:
+	* patches/firefox10-46-plugin-bool.diff:
+	* patches/firefox9-06-jemalloc.diff:
+	* patches/firefox9-27-methodjit-sparc.diff:
+	* specs/SUNWfirefox.spec:
+
+2012-04-04  Ginn Chen  <ginn.chen@oracle.com>
 	CR#7152540 sqlite3's default page_size should be maxed
-	RTI#361452
+	RTI#361542
 	* base-specs/sqlite.spec: Update to sqlite 3.7.11.
 	* base-specs/sqlitetcl.spec:
 	* ext-sources/mapfile-libsqlite3:

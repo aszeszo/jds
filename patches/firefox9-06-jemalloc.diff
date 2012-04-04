@@ -110,17 +110,57 @@ index 841a77b..bf10981 100644
  size_t
  moz_malloc_usable_size(void *ptr)
  {
-@@ -260,7 +264,12 @@
+@@ -260,7 +264,22 @@
  #if defined(XP_MACOSX)
      return malloc_size(ptr);
  #elif defined(MOZ_MEMORY)
--    return malloc_usable_size(ptr);
-+    jemalloc_stats_t stats;
-+    jemalloc_stats(&stats);
-+    if (stats.allocated)
-+      return malloc_usable_size(ptr);
++#if defined(SOLARIS)
++    static bool checked = false;
++    static bool using_jemalloc = false;
++    if (!checked) {
++        checked = true;
++        jemalloc_stats_t stats;
++        jemalloc_stats(&stats);
++        using_jemalloc = stats.allocated;
++    }
++    if (using_jemalloc)
++        return malloc_usable_size(ptr);
 +    else
-+      return 0;
++        return 0;
++#else
+     return malloc_usable_size(ptr);
++#endif
  #elif defined(XP_WIN)
      return _msize(ptr);
  #else
+--- a/storage/src/mozStorageService.cpp	2012-03-21 13:19:09.666435389 +0800
++++ b/storage/src/mozStorageService.cpp	2012-03-21 13:25:47.117028654 +0800
+@@ -407,9 +407,14 @@
+   int rc;
+ 
+ #ifdef MOZ_MEMORY
+-  rc = ::sqlite3_config(SQLITE_CONFIG_MALLOC, &memMethods);
+-  if (rc != SQLITE_OK)
+-    return convertResultCode(rc);
++  // in case other malloc library is PRELOAD-ed
++  void *test_jemalloc = malloc(4);
++  if (::moz_malloc_usable_size(test_jemalloc)) {
++    rc = ::sqlite3_config(SQLITE_CONFIG_MALLOC, &memMethods);
++    if (rc != SQLITE_OK)
++      return convertResultCode(rc);
++  }
++  free(test_jemalloc);
+ #endif
+ 
+   // Explicitly initialize sqlite3.  Although this is implicitly called by
+--- a/xpcom/base/nsMemoryReporterManager.cpp	2012-03-23 08:46:24.622098537 +0800
++++ b/xpcom/base/nsMemoryReporterManager.cpp	2012-03-23 08:47:59.661341057 +0800
+@@ -375,6 +375,8 @@
+ {
+     jemalloc_stats_t stats;
+     jemalloc_stats(&stats);
++    if (!stats.allocated)
++        return 0;
+     return (PRInt64) 10000 * (1 - stats.allocated / (double)stats.committed);
+ }
+ 

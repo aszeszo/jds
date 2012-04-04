@@ -1524,3 +1524,29 @@ index 029a22a..a73be3d 100644
          if (ins->isop(LIR_reti)) {
              findSpecificRegFor(val, retRegs[0]);
          } else {
+diff --git a/js/src/jsapi.h b/js/src/jsapi.h
+--- a/js/src/jsapi.h
++++ b/js/src/jsapi.h
+@@ -624,20 +624,21 @@ class Value
+     const size_t *payloadWord() const {
+ #if JS_BITS_PER_WORD == 32
+         return &data.s.payload.word;
+ #elif JS_BITS_PER_WORD == 64
+         return &data.asWord;
+ #endif
+     }
+ 
+-#ifndef _MSC_VER
++#if !defined(_MSC_VER) && !defined(__sparc)
+   /* To make jsval binary compatible when linking across C and C++ with MSVC,
+    * JS::Value needs to be POD. Otherwise, jsval will be passed in memory
+    * in C++ but by value in C (bug 645111).
++   * Same issue for SPARC ABI. (bug 737344).
+    */
+   private:
+ #endif
+ 
+     jsval_layout data;
+ 
+   private:
+     void staticAssertions() {
