@@ -1,3 +1,8 @@
+2012-04-05  Jerry Guo  <yanjing.guo@oracle.com>
+
+	Fix for 6880567
+	* specs/SUNWncurses.spec:
+
 2012-04-04  Ginn Chen  <ginn.chen@oracle.com>
 	CR#7155458 Firefox 10.0.2 ESR and Firefox 11 dies horribly
 		   if you LD_PRELOAD libumem.so

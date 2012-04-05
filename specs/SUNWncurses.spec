@@ -86,6 +86,8 @@ rm -rf $RPM_BUILD_ROOT
 %ifarch amd64 sparcv9
 %ncurses_64.install -d %name-%version/%{_arch64}
 rm -rf $RPM_BUILD_ROOT/usr/gnu/bin/%{_arch64}
+mkdir -p $RPM_BUILD_ROOT%{_basedir}/lib/%{_arch64}/
+mv $RPM_BUILD_ROOT%{_basedir}/%{_subdir}/lib/%{_arch64}/libncurses* $RPM_BUILD_ROOT%{_basedir}/lib/%{_arch64}/
 %endif
 
 cd $RPM_BUILD_DIR
@@ -104,6 +106,9 @@ ln -s ../%{_subdir}/bin/tset gtset
 ln -s ../%{_subdir}/bin/captoinfo gcaptoinfo
 ln -s ../%{_subdir}/bin/infotocap ginfotocap
 ln -s ../%{_subdir}/bin/reset greset
+
+mkdir -p $RPM_BUILD_ROOT%{_basedir}/lib
+mv $RPM_BUILD_ROOT%{_basedir}/%{_subdir}/lib/libncurses* $RPM_BUILD_ROOT%{_basedir}/lib/
 
 #install man page
 #rm -rf $RPM_BUILD_ROOT%{_mandir}
@@ -142,6 +147,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/terminfo
 %{_libdir}/lib*.so
 %{_libdir}/lib*.so.*
+%{_basedir}/lib/libncurses*
 %{_datadir}/terminfo/*
 %{_datadir}/tabset/*
 
@@ -160,7 +166,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
 %{_libdir}/%{_arch64}/lib*.so
 %{_libdir}/%{_arch64}/lib*.so.*
-
+%dir %attr (0755, root, bin) %{_basedir}/lib/%{_arch64}
+%{_basedir}/lib/%{_arch64}/libncurses*
 %endif
 
 %dir %attr(0755, root, bin) %{_mandir}
