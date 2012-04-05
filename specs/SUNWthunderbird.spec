@@ -20,7 +20,7 @@
 #####################################
 
 %define lang_list ar bg ca cs da de el es-AR es-ES et eu fi fr gl he hu id is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-BR pt-PT ro ru sk sl sq sv-SE tr uk zh-CN zh-HK zh-TW
-%define l10n_version 10.0.2
+%define l10n_version 10.0.3
 
 Name:          SUNWthunderbird
 IPS_package_name: mail/thunderbird

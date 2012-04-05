@@ -1,3 +1,10 @@
+2012-04-05  Lin Ma  <lin.ma@oracle.com>
+
+	Update to Thunderbird 10.0.3 ESR and Lightning 1.2.3
+	* base-specs/thunderbird.spec:
+	* patches/firefox9-23-ycbcr.diff:
+	* specs/SUNWthunderbird.spec:
+
 2012-04-05  Jerry Guo  <yanjing.guo@oracle.com>
 
 	Fix for 6880567
