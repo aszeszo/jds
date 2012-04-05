@@ -1,3 +1,8 @@
+2012-04-05  Leon Sha  <leon.sha@oracle.com>
+
+	CR#7157311 Bump to 11.2.202.223.
+	* specs/SUNWflash-player-plugin.spec:
+
 2012-04-05  Lin Ma  <lin.ma@oracle.com>
 
 	Update to Thunderbird 10.0.3 ESR and Lightning 1.2.3

@@ -3,7 +3,7 @@
 #
 # includes module(s): Flash Player Plugin
 #
-# Copyright (c) 2005 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -32,7 +32,7 @@ Name:		SUNWflash-player-plugin
 IPS_package_name: web/browser/firefox/plugin/firefox-flashplayer
 Meta(info.classification): %{classification_prefix}:Applications/Plug-ins and Run-times
 Summary:	Adobe Flash Player plugin
-Version:	11.1.102.62
+Version:	11.2.202.223
 Release:	4
 Copyright:	Commercial
 License:        Commercial
@@ -94,6 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 depend fmri=pkg:/web/firefox/plugin/flash@10.1.82.76-1 type=optional
 
 %changelog
+* Wed Mar 28 2012 leon.sha@oracle.com
+- Bump to 11.2.202.223 (CR 7157311).
 * Mon Feb 20 2012 leon.sha@oracle.com
 - Bump to 11.1.102.62 (CR 7146508).
 - Change Requires and BuildRequires lines to IPS package names.
