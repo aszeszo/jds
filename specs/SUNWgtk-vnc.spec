@@ -61,6 +61,12 @@ SUNW_BaseDir:  %{_basedir}
 
 %include default-depend.inc
 %include desktop-incorporation.inc
+Requires:      library/desktop/gtk-vnc
+Requires:      runtime/python-26
+Requires:      library/python-2/pygtk2-26
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: library/python-2/pygtk2-26
 
 %package l10n
 Summary:       %{summary} - l10n files

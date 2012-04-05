@@ -1,3 +1,11 @@
+2012-04-05  Leon Fan  <leon.fan@oracle.com>
+
+	RTI#361352
+        CR#7151514 python-gtk-vnc-26 miss dependency on library/desktop/gtk-vnc
+	* base-specs/gtk-vnc.spec:
+	* patches/gtk-vnc-03-buildissue.diff:
+	* specs/SUNWgtk-vnc.spec:
+
 2012-04-05  Leon Sha  <leon.sha@oracle.com>
 
 	CR#7157311 Bump to 11.2.202.223.
