@@ -44,7 +44,8 @@ BuildRequires: library/audio/gstreamer
 BuildRequires: library/media-player/totem-pl-parser
 BuildRequires: library/libxml2
 BuildRequires: system/library/dbus
-BuildRequires: system/hal
+#BuildRequires: system/hal
+BuildRequires: service/hal
 BuildRequires: developer/gnome/gnome-doc-utils
 BuildRequires: library/desktop/xdg/libcanberra
 BuildRequires: crypto/gnupg
@@ -54,7 +55,8 @@ Requires: system/library/dbus
 Requires: library/audio/gstreamer
 Requires: library/media-player/totem-pl-parser
 Requires: library/libxml2
-Requires: system/hal
+#Requires: system/hal
+Requires: service/hal
 Requires: desktop/gksu
 Requires: gnome/file-manager/nautilus
 

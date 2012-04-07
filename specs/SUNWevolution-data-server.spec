@@ -27,7 +27,8 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 Source2:       %{name}-manpages-0.1.tar.gz
 Requires:      SUNWlibglade
 Requires:      SUNWgnome-libs
-BuildRequires: library/security/nss
+#BuildRequires: library/security/nss
+BuildRequires: system/library/mozilla-nss/header-nss
 Requires:      SUNWgnome-component
 Requires:      SUNWevolution-libs
 Requires:      SUNWlibsoup

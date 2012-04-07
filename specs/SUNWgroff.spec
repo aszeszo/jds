@@ -107,9 +107,20 @@ BINARIES="diffmk eqn grn indxbib neqn nroff pic refer soelim"
 cd $RPM_BUILD_ROOT%{_bindir}
 
 for file in $BINARIES ; do
+    [ -f g$file ] || mv $file g$file
     cp g$file ../gnu/bin/$file
     rm g$file
     ln -s ../gnu/bin/$file g$file
+done
+
+for file in lookbib tbl troff; do
+    [ -f $file ] && mv $file g$file
+done
+
+MANPAGES="eqn neqn nroff pic soelim grn indxbib lookbib refer tbl troff"
+cd $RPM_BUILD_ROOT/%{_datadir}/man/man1
+for file in $MANPAGES; do
+    [ -f $file.1 ] && mv $file.1 g$file.1
 done
 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}

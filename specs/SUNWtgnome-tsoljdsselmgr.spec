@@ -58,7 +58,7 @@ Requires:                %{name}
 %prep
 %setup -q -n tsoljdsselmgr-%{tsoljdsselmgr_version}
 %patch1 -p1
-%patch2 -p1
+#%patch2 -p1
 
 %build
 export ACLOCAL_FLAGS="-I /usr/share/aclocal"

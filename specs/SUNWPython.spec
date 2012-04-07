@@ -256,6 +256,10 @@ cd $RPM_BUILD_ROOT%{_bindir} && rm python  && ln -s python2.4 python
 rm $RPM_BUILD_ROOT%{_libdir}/python?.?/config/lib*.a
 rm -r $RPM_BUILD_ROOT%{_libdir}/python?.?/bsddb
 
+# delete idle and pydoc binaries which are delivered by python 2.6 from userland gate
+rm $RPM_BUILD_ROOT%{_bindir}/idle
+rm $RPM_BUILD_ROOT%{_bindir}/pydoc
+
 echo deleting pyo files
 find $RPM_BUILD_ROOT -name '*.pyo' -exec rm {} \;
 
@@ -288,8 +292,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr (-, root, bin)
 %dir %attr (0755, root, bin) %{_bindir}
-%{_bindir}/idle
-%{_bindir}/pydoc
 %{_bindir}/python2.4
 %{_bindir}/%{base_isa}/isapython2.4
 %hard %{_bindir}/isapython2.4

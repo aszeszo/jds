@@ -39,7 +39,7 @@ Patch3:			 openjade-03-manpages.diff
 Requires: SUNWopensp
 Requires: SUNWlibC
 Requires: SUNWlibms
-BuildRequires: SUNWperl584usr
+BuildRequires: runtime/perl-512
 
 %package devel
 Summary:                 %{summary}  - development files

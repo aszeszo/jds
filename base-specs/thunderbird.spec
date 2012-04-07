@@ -14,7 +14,7 @@
 Name:        thunderbird
 Summary:     Mozilla Thunderbird Standalone E-mail and Newsgroup Client
 Version:     10.0.2
-%define tarball_version 10.0.2esr
+%define tarball_version 10.0.2
 Release:     1
 Copyright:   MPL
 License:     MPL
@@ -48,7 +48,7 @@ Source8:     nspr-nss-config
 
 %define _unpackaged_files_terminate_build 0
 %define lightning_dir "{e2fda1a4-762b-4020-b5ad-a41df1933103}"
-%define moz_srcdir comm-esr10
+%define moz_srcdir comm-release
 %define moz_objdir obj-tb
 %define moz_l10n_srcdir l10n-release
 %define lightning_lang_list bg ca cs da de es-AR es-ES et eu fi fr gl hu id is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-PT ro ru sk sl sq sv-SE tr uk zh-CN zh-HK zh-TW
@@ -315,7 +315,7 @@ cd %{moz_srcdir}/mozilla
 #%patch36 -p1
 %patch37 -p1
 %patch38 -p1
-%patch39 -p1
+#%patch39 -p1
 %patch40 -p1
 %patch41 -p1
 %patch42 -p1

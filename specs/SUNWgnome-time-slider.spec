@@ -21,7 +21,7 @@ IPS_package_name:        desktop/time-slider
 Meta(info.classification): %{classification_prefix}:Applications/Configuration and Preferences
 Summary:                 Time Slider ZFS snapshot management for GNOME
 License:                 cr_Oracle
-Version:                 0.2.101
+Version:                 0.2.99
 Source:                  http://dlc.sun.com/osol/jds/downloads/extras/time-slider/time-slider-%{version}.tar.bz2
 Source1:                 time-slider-po-sun-%{po_sun_version}.tar.bz2
 SUNW_BaseDir:            %{_basedir}

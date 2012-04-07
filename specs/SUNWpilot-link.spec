@@ -37,7 +37,7 @@ BuildConflicts: SUNWgnome-pilot-link-share
 BuildConflicts: SUNWgnome-pilot-link-devel
 BuildConflicts: SUNWgnome-pilot-link-devel-share
 Requires: SUNWuiu8
-Requires: SUNWiconv-unicode
+#Requires: SUNWiconv-unicode
 
 %package devel
 Summary:       %{summary} - development files

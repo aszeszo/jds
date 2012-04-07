@@ -31,7 +31,7 @@ Requires:     %name
 %prep
 %setup -q
 %patch1 -p1
-%patch2 -p1
+#%patch2 -p1
 
 %build
 
@@ -62,6 +62,7 @@ autoconf
 	    --infodir=%{_datadir}/info  	\
 	    --without-libspiro			\
 	    --without-libv4l			\
+	    --without-openexr \
 	    --enable-mmx=no			\
 	    --enable-sse=no
 	    		

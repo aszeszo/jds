@@ -90,7 +90,7 @@ object system
 %patch7 -p1
 %patch8 -p1
 %patch9 -p1
-%patch10 -p1
+#%patch10 -p1
 cp docs/reference/glib/html/mainloop-states.gif docs/reference/glib/mainloop-states.gif
 cp docs/reference/gio/html/gvfs-overview.png docs/reference/gio/gvfs-overview.png
 mkdir docs/reference/gobject/images

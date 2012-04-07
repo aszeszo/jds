@@ -14,7 +14,7 @@
 Name:        firefox
 Summary:     Mozilla Firefox Web browser
 Version:     10.0.2
-%define tarball_version 10.0.2esr
+%define tarball_version 10.0.2
 Release:     1
 Copyright:   MPL
 License:     MPL
@@ -230,7 +230,7 @@ compliance, performance and portability.
 %prep
 %setup -q -c -n %{name}
 
-cd mozilla-esr10
+cd mozilla-release
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
@@ -265,7 +265,7 @@ cd mozilla-esr10
 %patch36 -p1
 %patch37 -p1
 %patch38 -p1
-%patch39 -p1
+#%patch39 -p1
 %patch40 -p1
 %patch41 -p1
 %patch42 -p1
@@ -345,7 +345,7 @@ SRCDIR=$PWD
 export MOZCONFIG=$PWD/.mozconfig
 
 %if %option_with_indiana_branding
-cp %{SOURCE9} ${SRCDIR}/mozilla-esr10/browser/branding/official/content
+cp %{SOURCE9} ${SRCDIR}/mozilla-release/browser/branding/official/content
 %endif
 
 mkdir -p ../obj
@@ -375,8 +375,8 @@ cd ../obj
 # bzip2 profile.tar
 # 
 # to use PGO profile
-export MOZ_PROFILE_USE=1
-gtar jxf %{SOURCE8}
+#export MOZ_PROFILE_USE=1
+#gtar jxf %{SOURCE8}
 %endif
 
 # Build yasm
@@ -391,7 +391,7 @@ export YASM=${SRCDIR}/../obj/yasm/yasm
 export LIBJPEG_TURBO_AS=${SRCDIR}/../obj/yasm/yasm
 %endif
 
-${SRCDIR}/mozilla-esr10/configure
+${SRCDIR}/mozilla-release/configure
 make -j $CPUS
 
 cd browser/installer

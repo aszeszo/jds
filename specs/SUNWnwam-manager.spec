@@ -142,9 +142,9 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, sys) %{_datadir}
 %attr (-, root, other) %{_datadir}/locale
 %dir %attr (0755, root, other) %{_datadir}/gnome
-%{_datadir}/gnome/help/*/[a-z]*
-%{_datadir}/omf/*/*-[a-z][a-z].omf
-%{_datadir}/omf/*/*-[a-z][a-z]_[A-Z]*.omf
+#%{_datadir}/gnome/help/*/[a-z]*
+#%{_datadir}/omf/*/*-[a-z][a-z].omf
+#%{_datadir}/omf/*/*-[a-z][a-z]_[A-Z]*.omf
 
 %changelog
 * Mon Mar 14 2011 - brian.cameron@oracle.com

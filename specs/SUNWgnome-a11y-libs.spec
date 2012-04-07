@@ -50,7 +50,7 @@ Requires: library/gnome/gnome-component
 Requires: gnome/config/gconf
 Requires: system/library/math
 Requires: library/popt
-Requires: runtime/java/jre-6
+Requires: runtime/java
 Requires: system/zones
 Requires: package/svr4
 Requires: service/gnome/desktop-cache
@@ -69,7 +69,7 @@ BuildRequires: library/gnome/gnome-libs
 BuildRequires: library/gnome/gnome-component
 BuildRequires: compress/unzip
 BuildRequires: library/gnome/gnome-keyring
-BuildRequires: developer/java/jdk-6
+BuildRequires: developer/java/jdk
 BuildRequires: runtime/perl-512
 Requires:      runtime/python-26
 BuildRequires: runtime/python-26

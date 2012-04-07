@@ -47,7 +47,8 @@ Requires: SUNWzlib
 Requires: %{name}-root
 Requires: SUNWdesktop-cache
 Requires: SUNWlibunique
-BuildRequires: library/security/nss
+#BuildRequires: library/security/nss
+BuildRequires: system/library/mozilla-nss/header-nss
 BuildRequires: SUNWlibgnomecanvas-devel
 BuildRequires: SUNWevolution-data-server-devel
 BuildRequires: SUNWevolution-libs-devel

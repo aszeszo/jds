@@ -54,7 +54,7 @@ Requires:                %{name}
 
 %patch1 -p1
 %patch2
-%patch3
+#%patch3
 %patch4 -p1
 %patch5 -p1
 

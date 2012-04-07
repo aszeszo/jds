@@ -15,7 +15,7 @@ Name:         nwam-manager
 License:      cr_Oracle
 Vendor:       Sun Microsystems, Inc.
 Group:        System/GUI/GNOME
-Version:      1.174.0
+Version:      1.151.0
 Summary:      Network Auto-Magic User Interface
 Source:       http://www.opensolaris.org/os/project/nwam/picea/%{name}-%{version}.tar.gz
 # owner:lin date:2010-10-21 type:bug
@@ -108,7 +108,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/*
 %{_libexecdir}/*
 %{_datadir}/applications
-%{_datadir}/gnome/help/nwam/*
+#%{_datadir}/gnome/help/nwam/*
 %{_datadir}/locale/*/LC_MESSAGES/*.mo
 %{_datadir}/omf/nwam/*
 %{_datadir}/pixmaps/*

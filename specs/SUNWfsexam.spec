@@ -26,7 +26,7 @@ Release:	1
 License: 	cr_Oracle
 SUNW_BaseDir: 	%{_basedir}
 Source: 	%{cmpt}-%{version}.tar.bz2
-Source1:	fsexam-l10n-po-1.11.tar.bz2
+#Source1:	fsexam-l10n-po-1.11.tar.bz2
 Source2:	l10n-configure.sh
 Source3:        %{name}-manpages-0.1.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
@@ -72,7 +72,7 @@ legacy encoding to UTF8 encoding.
 
 %prep
 %setup -q -n %{cmpt}-%{version}
-bzcat %SOURCE1 | tar xf -
+#bzcat %SOURCE1 | tar xf -
 gzcat %SOURCE3 | tar xf -
 
 bash -x %SOURCE2 --enable-sun-linguas

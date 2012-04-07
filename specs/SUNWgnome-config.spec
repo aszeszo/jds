@@ -132,6 +132,9 @@ rm -f $RPM_BUILD_ROOT%{_bindir}/gconf-merge-tree
 find $RPM_BUILD_ROOT -name "*.la" -exec rm {} \;
 find $RPM_BUILD_ROOT -name "*.a" -exec rm {} \;
 
+rm $RPM_BUILD_ROOT/etc/gconf/2/evoldap.conf
+rm -r $RPM_BUILD_ROOT/usr/share/GConf
+
 # Multi User Desktop Optimization directory
 mkdir -p $RPM_BUILD_ROOT/etc/gconf/gconf.xml.multi.user.desktop.defaults
 cat >> $RPM_BUILD_ROOT/etc/gconf/2/local-multi-user-desktop-defaults.path <<EOF
@@ -145,6 +148,7 @@ xml:readonly:/etc/gconf/gconf.xml.multi.user.desktop.mandatory
 EOF
 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}
+
 
 %clean
 rm -rf $RPM_BUILD_ROOT

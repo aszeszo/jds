@@ -76,6 +76,7 @@ CFLAGS="$RPM_OPT_FLAGS"			  \
   --with-shared   \
   --enable-rpath  \
   --enable-widec  \
+  --with-default-terminfo-dir=%{_datadir}/terminfo \
 %if %debug_build
   --with-debug
 %else

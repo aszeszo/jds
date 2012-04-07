@@ -79,7 +79,8 @@ CFLAGS="$RPM_OPT_FLAGS -DDBUS_API_SUBJECT_TO_CHANGE=1"	\
 ./configure --prefix=%{_prefix}		\
             --sysconfdir=%{_sysconfdir} \
             --libexecdir=%{_libexecdir} \
-            %{gtk_doc_option}
+            %{gtk_doc_option} \
+            --disable-fuse
 make -j $CPUS
 
 %install

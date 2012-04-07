@@ -28,12 +28,14 @@ Version:           %{brltty.version}
 SUNW_BaseDir:      %{_basedir}
 SUNW_Copyright:    %{name}.copyright
 BuildRoot:         %{_tmppath}/%{name}-%{version}-build
-Requires: system/io/usb
+#Requires: system/io/usb
+Requires: driver/usb
 Requires: system/library
 Requires: runtime/python-26
 Requires: library/python-2/python-extra-26
 Requires: gnome/accessibility/gnome-a11y-libs
-BuildRequires: system/io/usb
+#BuildRequires: system/io/usb
+BuildRequires: driver/usb
 BuildRequires: system/library
 BuildRequires: runtime/python-26
 BuildRequires: library/python-2/python-extra-26

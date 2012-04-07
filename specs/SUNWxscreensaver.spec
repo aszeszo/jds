@@ -144,7 +144,9 @@ Requires: library/desktop/pango
 BuildRequires: runtime/perl-512
 BuildRequires: compatibility/packages/SUNWxwplt
 BuildRequires: developer/library/lint
-BuildRequires: developer/base-developer-utilities
+#BuildRequires: developer/base-developer-utilities
+BuildRequires: developer/linker
+BuildRequires: developer/object-file
 BuildRequires: system/header
 BuildRequires: text/gnu-grep
 BuildRequires: library/glib2

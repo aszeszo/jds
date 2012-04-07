@@ -23,8 +23,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-BuildRequires: SUNWperl584usr 
-BuildRequires: SUNWperl584core
+BuildRequires: runtime/perl-512
 
 %prep
 %setup -n sound-theme-freedesktop-%{version}

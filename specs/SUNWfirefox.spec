@@ -20,7 +20,7 @@
 #####################################
 
 %define lang_list ar be bg ca cs da de el es-AR es-CL es-ES et fi fr he hi-IN hr hu id is it ja kk ko lt lv mk nb-NO nl nn-NO pl pt-BR pt-PT ro ru sk sl sq sr sv-SE th tr uk vi zh-CN zh-HK zh-TW 
-%define l10n_version 10.0.2esr
+%define l10n_version 10.0.2
 
 Name:          SUNWfirefox
 IPS_package_name: web/browser/firefox
@@ -41,7 +41,8 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: system/library/c++-runtime
+#Requires: system/library/c++-runtime
+Requires: system/library/c++/sunpro
 Requires: system/library/math
 Requires: shell/bash
 Requires: library/desktop/gtk2
@@ -191,7 +192,7 @@ exit 0
 
 %files -f SUNWfirefox.list
 
-%doc -d firefox/mozilla-esr10 README.txt LICENSE 
+%doc -d firefox/mozilla-release README.txt LICENSE 
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %defattr(-, root, bin)

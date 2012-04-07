@@ -77,6 +77,7 @@ autoconf --force
 #   guile to our builds.
 # - gnometris is removed.
 #
+export LIBS=-lICE
 ./configure --prefix=%{_prefix} 	\
 	    --sysconfdir=%{_sysconfdir} \
 	    --bindir=%{_bindir} \
