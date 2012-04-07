@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWslocate
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -30,12 +30,12 @@ Patch2:		slocate-02-string.diff
 Patch3:		slocate-03-manpages.diff
 # date:2010-10-21 owner:wangke type:branding
 Patch4:		slocate-04-strcasestr.diff
+# date:2012-03-26 owner:gheet type:bug bugster:7152240
+Patch5:		slocate-05-remove-libast.diff
 %include desktop-incorporation.inc
-Requires:	SUNWcsl
-Requires:	SUNWcslr
-Requires:	SUNWlibmsr
-Requires:       %{name}-root
-BuildRequires:	SUNWhea
+Requires:	system/library
+Requires:	system/library/math
+BuildRequires:	system/header
 
 %description
 Slocate is a security-enhanced version of locate. Just like locate,
@@ -46,7 +46,7 @@ find files anywhere on your system.
 %package root
 Summary:		%{summary} - / filesystem
 SUNW_BaseDir:		/
-Requires:               SUNWcsr
+Requires:               system/library
 
 %prep
 %setup -q -n slocate-%{version}
@@ -54,10 +54,11 @@ Requires:               SUNWcsr
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
+%patch5 -p1
 
 %build
-export CFLAGS="%optflags -I/usr/include/ast"
-export LDFLAGS="/usr/lib/libast.so.1"
+export CFLAGS="%optflags"
+export LDFLAGS="%_ldflags"
 cd src
 make
 cd ..
@@ -111,6 +112,8 @@ group gid=95 groupname=slocate
 %dir %attr (0750, root, slocate) %{_localstatedir}/lib/slocate
 
 %changelog
+* Mon Mar 26 2012 - Ghee.Teo@oracle.com
+- Added patch -remove-libast.diff and modified -makefile.diff to fix 7152240.
 * Thu Feb 19 2009 - Matt.Keenan@sun.com
 - Add manpages patch for Attributes and ARC Comment
 * Wed Sep 17 2008 - Jim.Li@sun.com

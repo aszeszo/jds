@@ -2205,16 +2205,18 @@ index af7db59..dd2a387 100644
  
          g_return_val_if_fail (CK_IS_SEAT (seat), FALSE);
  
-@@ -298,12 +315,398 @@ ck_seat_activate_session (CkSeat        
+@@ -298,12 +315,410 @@ ck_seat_activate_session (CkSeat        
                  session = g_hash_table_lookup (seat->priv->sessions, ssid);
          }
  
 -        ret = _seat_activate_session (seat, session, context);
 +        ck_session_is_open (session, &is_open, NULL);
 +        if (!is_open) {
++                g_debug ("CkSeat: session is not open.  Request open session");
 +                ret = ck_seat_request_open_session (seat, session, NULL);
 +                dbus_g_method_return (context, NULL);
 +        } else {
++                g_debug ("CkSeat: session is open.  Activate session");
 +                ret = _seat_activate_session (seat, session, context);
 +        }
  
@@ -2361,6 +2363,8 @@ index af7db59..dd2a387 100644
 +        if (!ck_seat_is_managed (seat))
 +                return;
 +
++        g_debug ("CkSeat: Open Session Request");
++
 +        message = dbus_message_new_signal (seat->priv->id,
 +                                           "org.freedesktop.ConsoleKit.Seat",
 +                                           "OpenSessionRequest");
@@ -2397,14 +2401,18 @@ index af7db59..dd2a387 100644
 +        gboolean    ever_open;
 +        gboolean    under_request;
 +
++        g_debug ("CkSeat: Request Open Session");
++
 +        ck_session_is_open (session, &is_open, NULL);
 +
 +        if (is_open) {
++                g_debug ("CkSeat: Is Open");
 +                return TRUE;
 +        }
 +
 +        ck_session_get_under_request (session, &under_request, NULL);
 +        if (under_request) {
++                g_debug ("CkSeat: Is Under");
 +                return TRUE;
 +        }
 +
@@ -2415,12 +2423,14 @@ index af7db59..dd2a387 100644
 +        display_template = ck_session_get_display_template (session);
 +
 +        if (display_template == NULL) {
++                g_debug ("CkSeat: Is Display Template");
 +                return TRUE;
 +        }
 +
 +        ck_session_get_session_type (session, &type, NULL);
 +
 +        if (type == NULL) {
++                g_debug ("CkSeat: Type Is NULL");
 +                g_object_unref (display_template);
 +                return TRUE;
 +        }
@@ -2430,6 +2440,7 @@ index af7db59..dd2a387 100644
 +        display_parameters = ck_display_template_get_parameters (display_template);
 +
 +        if (display_parameters == NULL) {
++                g_debug ("CkSeat: Display Parms Are NULL");
 +                g_free (type);
 +                g_object_unref (display_template);
 +                g_hash_table_unref (display_variables);
@@ -2446,6 +2457,7 @@ index af7db59..dd2a387 100644
 +
 +        ck_session_get_id (session, &ssid, NULL);
 +
++        g_debug ("CkSeat: Emitting Open Request");
 +        emit_session_open_request (seat, ssid, type,
 +                                   ck_display_template_get_name (display_template),
 +                                   display_variables,
@@ -2635,7 +2647,7 @@ index af7db59..dd2a387 100644
          g_signal_emit (seat, signals [ACTIVE_SESSION_CHANGED], 0, ssid);
  
          if (old_session != NULL) {
-@@ -526,6 +936,42 @@ change_active_session (CkSeat    *seat,
+@@ -526,6 +936,48 @@ change_active_session (CkSeat    *seat,
  }
  
  static void
@@ -2660,14 +2672,20 @@ index af7db59..dd2a387 100644
 +                }
 +
 +                ck_session_get_session_type (value, &session_type, NULL);
++
++                g_debug ("CkSeat: Session Type %s", session_type);
++
 +                if (IS_STR_SET (session_type) &&
 +                    g_str_equal (session_type, "LoginWindow")) {
 +                        login_session = value;
++                        g_debug ("CkSeat: Setting login_session %s",
++                                 login_session);
 +                        g_free (session_type);
 +                }
 +        }
 +
 +        if (login_session != NULL) {
++                g_debug ("CkSeat: Login Session is not NULL");
 +                ck_session_set_ever_open (login_session, FALSE, NULL);
 +                ck_seat_request_open_session (seat, login_session, NULL);
 +        }
@@ -2855,11 +2873,12 @@ index af7db59..dd2a387 100644
  
          ck_session_set_seat_id (session, seat->priv->id, NULL);
  
-@@ -656,6 +1218,10 @@ ck_seat_add_session (CkSeat         *sea
+@@ -656,6 +1218,11 @@ ck_seat_add_session (CkSeat         *sea
  
          maybe_update_active_session (seat);
  
 +        if (ck_seat_is_managed (seat)) {
++                g_debug ("CkSeat: Seat is managed.  Request open session");
 +                ck_seat_request_open_session (seat, session, NULL);
 +        }
 +

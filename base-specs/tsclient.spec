@@ -1,7 +1,7 @@
 #
 # spec file for package tsclient
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -41,6 +41,8 @@ Patch6:         %{name}-06-desktop.diff
 Patch7:         %{name}-07-save-rdp.diff
 # date:2009-02-10 owner:davelam type:bug bugster:n/a
 Patch8:         %{name}-08-libgnomeui.diff
+# date:2012-03-29 owner:jefftsai type:bug bugster:7151849
+Patch9:         %{name}-09-screensize.diff
 BuildRoot:      %{tmpdir}/%{name}-%{version}-root
 
 Requires:	glib2 >= 2.0.0, gtk2 >= 2.0.0, rdesktop >= 1.3.0, vnc >= 4.0
@@ -61,6 +63,7 @@ Terminal Server Client is a frontend for rdesktop, vnc and other remote desktop 
 %patch6 -p1
 %patch7 -p1
 %patch8 -p1
+%patch9 -p1
 
 
 %build
@@ -128,6 +131,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu Mar 29 2012 - jeff.cai@oracle.com
+- Add patch -09-screensize to fix bug #7151849
 * Tue Feb 10 2009 - dave.lin@sun.com
 - Add patch -08-libgnomeui.diff.
 * Thu Aug 07 2008 - halton.huo@sun.com

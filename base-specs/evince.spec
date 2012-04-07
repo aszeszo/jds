@@ -1,7 +1,7 @@
 #
 # spec file for package evince
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,6 +33,8 @@ Patch2:	      evince-02-require-ice.diff
 # date:2011-11-12 type:branding owner:padraig bugster:7042562
 Patch3:	      evince-03-fix-doc.diff
 Patch4:	      evince-04-fix-l10n-doc.diff
+# date:2012-02-27 type:bug owner:gheet bugster:7132463
+Patch5:	      evince-05-remove-newline.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -68,6 +70,7 @@ cd po-sun; make; cd ..
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
+%patch5 -p1
 
 # Remove DOS line end chars. Fixes #395105.
 dos2unix -ascii po/be.po po/be.po
@@ -131,6 +134,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/*
 
 %changelog
+* Mon Feb 27 2012 - ghee.teo@oracle.com
+- Added -remove-newline.diff to fix bugster#7132463.
 * Thu May 12 2011 - padraig.obriain@oracle.com
 - Add -fix-doc patch to fix CR 7042562
 * Wed Oct 20 2010 - brian.cameron@oracle.com

@@ -3,15 +3,13 @@
 #
 # includes module(s): gst, gst-plugins-base, gst-plugins-good
 #
-# Copyright 2009, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
 %define owner yippi
 #
 %include Solaris.inc
-
-%define with_hal %(pkginfo -q SUNWhal && echo 1 || echo 0)
 
 %ifarch amd64 sparcv9
 %include arch64.inc
@@ -40,62 +38,48 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWaudh
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWbison
-BuildRequires: SUNWmkcd
-BuildRequires: SUNWPython26
-BuildRequires: SUNWmusicbrainz-devel
-BuildRequires: SUNWspeex-devel
-BuildRequires: SUNWflac-devel
-BuildRequires: SUNWlibtheora-devel
-BuildRequires: SUNWogg-vorbis-devel
-BuildRequires: SUNWPython26-extra
-BuildRequires: SUNWliboil-devel
-BuildRequires: SUNWgnome-audio-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWjpg-devel
-BuildRequires: SUNWpng-devel
-BuildRequires: SUNWlibsoup-devel
-BuildRequires: SUNWlibvisual-devel
-BuildRequires: SUNWaalib
-BuildRequires: SUNWlibgnome-keyring
-BuildRequires: SUNWgobject-introspection
-# gnu grep
-BuildRequires: SUNWggrp
-BuildRequires: SUNWgawk
-BuildRequires: SUNWgsed
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-media-root
-Requires: SUNWmusicbrainz
-# The package SUNWmkcd not in SUNWCuser metacluster
-# Comment out this line until we work it out(CR6840919)
-#Requires: SUNWmkcd
-Requires: SUNWspeex
-Requires: SUNWflac
-Requires: SUNWlibtheora
-Requires: SUNWogg-vorbis
-Requires: SUNWliboil
-Requires: SUNWlibms
-Requires: SUNWgnome-audio
-Requires: SUNWgnome-config
-Requires: SUNWgnome-vfs
-Requires: SUNWlibsoup
-Requires: SUNWjpg
-Requires: SUNWlibms
-Requires: SUNWlxml
+
+Requires: library/desktop/gobject/gobject-introspection
+Requires: runtime/perl-512
+Requires: runtime/python-26
+Requires: service/gnome/desktop-cache
+Requires: system/hal
+
+BuildRequires: codec/flac
+BuildRequires: codec/libtheora
+BuildRequires: codec/ogg-vorbis
+BuildRequires: codec/speex
+BuildRequires: developer/parser/bison
+BuildRequires: gnome/config/gconf
+BuildRequires: gnome/gnome-audio
+BuildRequires: image/library/libjpeg
+BuildRequires: image/library/libpng
+BuildRequires: library/desktop/libvisual
+BuildRequires: library/aalib
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/desktop/pango
+BuildRequires: library/gnome/gnome-keyring
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/liboil
+BuildRequires: library/libsoup
+BuildRequires: library/libxml2
+BuildRequires: library/musicbrainz/libdiscid
+BuildRequires: library/musicbrainz/libmusicbrainz
+BuildRequires: library/python-2/python-extra-26
+BuildRequires: library/zlib
+BuildRequires: media/cdrtools
 BuildRequires: runtime/perl-512
-Requires: SUNWpng
-Requires: SUNWzlib
-Requires: SUNWlibvisual
-Requires: SUNWdesktop-cache
-Requires: SUNWaalib
-%if %with_hal
-Requires: SUNWhal
-%endif
+BuildRequires: runtime/python-26
+BuildRequires: system/header
+BuildRequires: system/library/math
+BuildRequires: text/gawk
+BuildRequires: text/gnu-grep
+BuildRequires: text/gnu-sed
+BuildRequires: x11/library/libx11
+BuildRequires: x11/library/libxext
+BuildRequires: x11/library/libxv
+BuildRequires: x11/server/xorg
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -160,11 +144,6 @@ export CFLAGS="%optflags64 -I/usr/sfw/include -I/usr/X11/include -DANSICPP"
 export LDFLAGS="%{_ldflags} -lresolv"
 export PKG_CONFIG_PATH="%{_builddir}/%name-%version/%{_arch64}/gstreamer-%{gst.version}/pkgconfig:%{_pkg_config_path64}"
 
-# Need to disable building with these libraries since there is no 64-bit
-# version available yet.
-#
-export GST_EXTRA_CONFIG="--disable-gnome_vfs"
-
 %gst_plugins_base64.build -d %name-%version/%_arch64
 
 unset LDFLAGS
@@ -172,11 +151,11 @@ unset LDFLAGS
 export CFLAGS="%optflags64 -I/usr/sfw/include -DANSICPP"
 export PKG_CONFIG_PATH="%{_builddir}/%name-%version/%{_arch64}/gstreamer-%{gst.version}/pkgconfig:%{_builddir}/%name-%version/%{_arch64}/gst-plugins-base-%{gst_plugins_base.version}/pkgconfig:%{_pkg_config_path64}"
 
-# Need to disable building with these libraries since there is no 64-bit
-# version available yet.  We do not ship taglib, but the spec-file in SFE
-# does not build 64-bit yet.
+# The taglib library is not in Solaris, but the spec-file in SFE does not
+# provide 64-bit libraries, so avoid building it with 64-bit to avoid build
+# failing if it is installed.
 #
-export GST_EXTRA_CONFIG="--disable-soup --disable-taglib"
+export GST_EXTRA_CONFIG="--disable-taglib"
 
 %gst_plugins_good64.build -d %name-%version/%_arch64
 
@@ -347,7 +326,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/gstreamer-%{gst_minmaj}.schemas
 %attr (0755, root, sys) %dir /etc/security
 %attr (0755, root, sys) %dir /etc/security/prof_attr.d
-%config %ips_tag(restart_fmri=svc:/system/rbac:default) %attr (0444, root, sys) /etc/security/prof_attr.d/*
+%ips_tag(restart_fmri=svc:/system/rbac:default) %attr (0444, root, sys) /etc/security/prof_attr.d/*
 
 %files devel
 %defattr (-, root, bin)
@@ -377,6 +356,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Feb 17 2012 - brian.cameron@oracle.com
+- Now build with vfs and soup 64-bit plug-ins.
 * Wed Apr 06 2011 - brian.cameron@oracle.com
 - Add "RO" to prof_attr config.
 * Thu Apr 15 2010 - christian.kelly@oracle.com

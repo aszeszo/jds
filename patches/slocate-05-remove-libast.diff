@@ -1,0 +1,205 @@
+diff -urN -x'*.orig' -x'*.sh' -x'*.o' slocate-3.1.orig/src/cmds.c slocate-3.1.WIP/src/cmds.c
+--- slocate-3.1.orig/src/cmds.c	2012-03-26 14:41:28.302421808 +0100
++++ slocate-3.1.WIP/src/cmds.c	2012-03-26 14:28:06.065622160 +0100
+@@ -18,6 +18,7 @@
+ #include <sys/stat.h>
+ #include <unistd.h>
+ #include <string.h>
++#include <strings.h>
+ #include <errno.h>
+ #include <stdlib.h>
+ #include <ctype.h>
+diff -urN -x'*.orig' -x'*.sh' -x'*.o' slocate-3.1.orig/src/slocate.c slocate-3.1.WIP/src/slocate.c
+--- slocate-3.1.orig/src/slocate.c	2012-03-26 14:41:28.303511570 +0100
++++ slocate-3.1.WIP/src/slocate.c	2012-03-27 14:41:26.513088959 +0100
+@@ -39,7 +39,7 @@
+ #include <fcntl.h>
+ #include <ctype.h>
+ #include <time.h>
+-#include <fts.h>
++#include <ftw.h>
+ 
+ /* Local includes */
+ #include "slocate.h"
+@@ -47,6 +47,10 @@
+ #include "cmds.h"
+ #include "conf.h"
+ 
++struct g_data_s *my_g_data = NULL;
++FILE *my_fd;
++struct enc_data_s my_enc_data;
++
+ /* Init Input DB variable */
+ char **init_input_db(struct g_data_s *g_data, int len)
+ {
+@@ -177,6 +181,7 @@
+ }
+ 
+ /* Incremental Encoding algorithm */
++static 
+ int encode(struct g_data_s *g_data, FILE *fd, char *path, struct enc_data_s *enc_data)
+ {
+ 	short code_len = 0;
+@@ -246,12 +251,33 @@
+ 	return ret;
+ }
+ 
++/* Uses nftw(3C) to replace the libast.so's fts_open(), fts_read(), fts_close()
++ * to read through the files/directory to generate the database.
++ */
++int nftwfunc(const char *filename, const struct stat *statptr, int fileflags, struct FTW *pfwt)
++{
++  int matched;
++  int flags = FTW_CHDIR | FTW_PHYS | FTW_ANYERR;
++
++        matched = 0;
++        if (!my_g_data->exclude || !(matched = match_exclude (my_g_data, filename)))
++        {
++                if (!encode(my_g_data, my_fd, filename, &my_enc_data))
++                   if (my_g_data->VERBOSE)
++	   		fprintf(stderr, "failed to encode %s\n", filename);
++        } else if (matched != -1) {
++		pfwt->quit |= FTW_PRUNE;
++		if (my_g_data->VERBOSE)
++	   		fprintf(stderr, "excluding %s\n", filename);
++        }
++	return 0;
++	
++}
++
+ /* Create the database */
+-int create_db(struct g_data_s *g_data)
++static int create_db(struct g_data_s *g_data)
+ {
+ 	FILE *fd = NULL;
+-	FTS *dir = NULL;
+-	FTSENT *file = NULL;
+ 	char **index_path_list = NULL;
+ 	char *tmp_file = NULL;
+ 	uid_t db_uid = -1;
+@@ -260,11 +286,12 @@
+ 	int fd_int = -1;
+ 	int ret = 0;
+ 	int matched = 0;
+-	struct enc_data_s enc_data;
++	int flags = FTW_CHDIR | FTW_PHYS | FTW_ANYERR;
++
+ 	
+ 	/* Initialize encode data struct */
+-	enc_data.prev_line = NULL;
+-	enc_data.prev_len = 0;
++	my_enc_data.prev_line = NULL;
++	my_enc_data.prev_len = 0;
+ 
+ 	if (strcmp(g_data->output_db, DEFAULT_DB) == 0 && g_data->uid != DB_UID) {
+ 		if (!report_error(g_data, FATAL, "You are not authorized to create a default slocate database!\n"))
+@@ -330,33 +357,20 @@
+ 	*index_path_list = g_data->index_path;
+ 	index_path_list[1] = NULL;
+ 	/* Open a handle to fts */
+-	// XXX: TODO: Support limiting to single device FTS_XDEV
+-	if (!(dir = fts_open(index_path_list, FTS_PHYSICAL | FTS_NOSTAT, NULL))) {
+-		if (!report_error(g_data, FATAL, "fts_open: %s\n", strerror(errno)))
+-		    goto EXIT;		
+-	}
+-	/* The new FTS() funtionality */
+-	while ((file = fts_read(dir))) {
+-		/* fts_read () from glibc fails with EOVERFLOW when fts_pathlen
+-		 * would overflow the u_short file->fts_pathlen. */
+-		if (file->fts_info == FTS_DP || file->fts_info == FTS_NS)
+-		    continue;
+-		
+-		matched = 0;
+-		if (!g_data->exclude || !(matched = match_exclude(g_data, file->fts_path))) {
+-			if (!encode(g_data, fd, file->fts_path, &enc_data))
+-			    goto EXIT;
+-		} else if (matched != -1) {
+-			fts_set(NULL, file, FTS_SKIP);
+-		} else {
+-			goto EXIT;
+-		}
++
++	/* change reference to my_g_data so to use it in callback function */
++	my_g_data = g_data;
++	my_fd = fd;
++	ret = nftw(*index_path_list, nftwfunc, 20, flags);
++
++	if (ret < 0)
++	{
++		perror ("nftw");
+ 	}
+-	
+-	if (fts_close(dir) == -1) {
+-		if (!report_error(g_data, FATAL, "fts_close(): Could not close fts: %s\n", strerror(errno)))
+-		    goto EXIT;		
+-	}	
++
++	g_data = my_g_data;
++	fd = my_fd;
++
+ 	if (fd && fclose(fd) == -1) {
+ 		if (!report_error(g_data, FATAL, "fclose(): Could not close tmp file: %s: %s\n", tmp_file, strerror(errno)))
+ 		    goto EXIT;		
+@@ -387,10 +401,10 @@
+ 	if (index_path_list)
+ 	    free(index_path_list);	
+ 	index_path_list = NULL;
+-	if (enc_data.prev_line)
+-	    free(enc_data.prev_line);
+-	enc_data.prev_line = NULL;
+-	enc_data.prev_len = 0;
++	if (my_enc_data.prev_line)
++	    free(my_enc_data.prev_line);
++	my_enc_data.prev_line = NULL;
++	my_enc_data.prev_len = 0;
+ 
+ 	return ret;
+ }
+@@ -479,6 +493,7 @@
+ }
+ 
+ /* Search the database */
++static
+ int search_db(struct g_data_s *g_data, char *database, char *search_str)
+ {
+ 	int fd = -1;
+@@ -727,7 +742,6 @@
+ 	if (!(g_data = init_global_data(argv)))
+ 	    goto EXIT;	
+ 
+-	
+ 	/* Parse command line arguments */
+ 	if (!(cmd_data = parse_cmds(g_data, argc, argv)))
+ 	    goto EXIT;
+diff -urN -x'*.orig' -x'*.sh' -x'*.o' slocate-3.1.orig/src/utils.c slocate-3.1.WIP/src/utils.c
+--- slocate-3.1.orig/src/utils.c	2012-03-26 14:41:28.310683434 +0100
++++ slocate-3.1.WIP/src/utils.c	2012-03-27 14:42:00.714935523 +0100
+@@ -17,6 +17,7 @@
+ #include <stdarg.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <strings.h>
+ #include <errno.h>
+ #include <unistd.h>
+ #include <grp.h>
+@@ -163,7 +164,7 @@
+  * 0  == no match
+  * -1 == error
+  */
+-int match_exclude(struct g_data_s *g_data, char *path) {
++int match_exclude(struct g_data_s *g_data, const char *path) {
+ 	int i;
+ 
+ 	if (!g_data->exclude || !path)
+diff -urN -x'*.orig' -x'*.sh' -x'*.o' slocate-3.1.orig/src/utils.h slocate-3.1.WIP/src/utils.h
+--- slocate-3.1.orig/src/utils.h	2006-01-06 00:16:19.000000000 +0000
++++ slocate-3.1.WIP/src/utils.h	2012-03-26 14:25:52.880815649 +0100
+@@ -27,7 +27,7 @@
+ 
+ char * tolower_strdup(char *str);
+ int match(struct g_data_s *g_data, char *full_path, char *search_str, int globflag);
+-int match_exclude(struct g_data_s *gdata, char *path);
++int match_exclude(struct g_data_s *gdata, const char *path);
+ char *sl_strndup(const char *str, size_t size);
+ char * make_absolute_path(struct g_data_s *g_data, char *path);
+ char * get_temp_file(struct g_data_s *g_data);
