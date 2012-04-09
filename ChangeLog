@@ -1,3 +1,8 @@
+2012-04-09  Leon Sha  <leon.sha@oracle.com>
+
+	CR#7157311 Bump to 11.2.202.223.
+	* specs/SUNWflash-player-plugin.spec:
+
 2012-02-27  Leon Sha  <leon.sha@oracle.com>
 
 	* specs/SUNWflash-player-plugin.spec:
