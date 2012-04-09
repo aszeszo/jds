@@ -1,5 +1,11 @@
 2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
 
+        Fix for 654936: gnome-about does not start for some locales on S11 
+	* base-specs/gnome-desktop.spec:
+	* patches/gnome-desktop-07-pomessage.diff:
+
+2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
+
         Fix for 7060748: Some messages are not displayed correctly in
 		non-UTF-8 locale terminal environment
 	* base-specs/gdm.spec:
