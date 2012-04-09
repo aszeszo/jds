@@ -1,7 +1,7 @@
 #
 # spec file for package gdm
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -110,6 +110,8 @@ Patch35:      gdm-35-restart.diff
 Patch36:      gdm-36-no-remote-layout.diff
 #owner:yippi date:2011-02-21 type:bug
 Patch37:      gdm-37-strndup.diff
+# date:2012-03-23 owner:pengwang type:bug bugster: 7060748
+Patch38:      gdm-38-bindtextdomaincodeset.diff
 URL:          http://projects.gnome.org/gdm/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
@@ -159,6 +161,7 @@ graphical interface.
 %patch35 -p1
 %patch36 -p1
 %patch37 -p1
+%patch38 -p1
 
 cp %SOURCE1 gui/simple-greeter
 cp %SOURCE2 gui/simple-greeter
@@ -270,6 +273,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_localstatedir}/lib/gdm
 
 %changelog
+* Fri Mar 23 2012 - peng.pe.wang@oracle.com
+- Add gdm-38-bindtextdomaincodeset.diff to fix CR #7060748
 * Tue Feb 21 2012 - brian.cameron@oracle.com
 - Add gdm-37-strndup.diff to ensure PAM_MAX_RESP_SIZE is honored.
 * Wed Feb 01 2012 - javier.acosta@oracle.com

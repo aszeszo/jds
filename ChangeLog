@@ -1,3 +1,10 @@
+2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
+
+        Fix for 7060748: Some messages are not displayed correctly in
+		non-UTF-8 locale terminal environment
+	* base-specs/gdm.spec:
+	* patches/gdm-38-bindtextdomaincodeset.diff:
+
 2012-04-05  Leon Fan  <leon.fan@oracle.com>
 
 	RTI#361352
@@ -80,6 +87,7 @@
 	Added patch xscreensaver-23-bug-7136531.diff
 	Added patch xscreensaver-24-bug-7144354.diff
 
+>>>>>>> .r24332
 2012-03-30  Jerry Guo  <yanjing.guo@oracle.com>
 
         Fix for 7155901
