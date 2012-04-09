@@ -1,3 +1,7 @@
+2011-04-09 Ada Luong <ada.luong@oracle.com>
+
+        ==== S11U1 build 14 ====
+
 2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
 
         Fix for 654936: gnome-about does not start for some locales on S11 
