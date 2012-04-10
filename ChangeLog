@@ -97,7 +97,6 @@
 	Added patch xscreensaver-23-bug-7136531.diff
 	Added patch xscreensaver-24-bug-7144354.diff
 
->>>>>>> .r24332
 2012-03-30  Jerry Guo  <yanjing.guo@oracle.com>
 
         Fix for 7155901
