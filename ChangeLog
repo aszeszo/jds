@@ -1,7 +1,7 @@
 2011-04-13  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWjson-c.spec: Add "%include desktop-incorporation.inc".
-	  Fixes CR #7149760.
+	  Fixes CR #7149760.  WebRTI #361463.
 
 2011-04-09 Ada Luong <ada.luong@oracle.com>
 
