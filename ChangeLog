@@ -1,3 +1,7 @@
+2011-04-13  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWjson-c.spec: Add "%include desktop-incorporation.inc".
+
 2011-04-09 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 14 ====

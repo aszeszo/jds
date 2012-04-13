@@ -31,11 +31,13 @@ SUNW_Copyright:            %{name}.copyright
 BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
+%include desktop-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
+%include desktop-incorporation.inc
 Requires: %name
 
 %prep
@@ -97,5 +99,7 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri Mar 02 2012 - brian.cameron@oracle.com
+- Now include desktop-incorporation.inc.  Fix for CR #7149760.
 * Thu Feb 09 2012 - brian.cameron@oracle.com
 - Created.
