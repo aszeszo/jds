@@ -1,7 +1,7 @@
 #
 # spec file for package gtk2
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012 Oracle and/or its affiliates. All Rights Reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -58,6 +58,8 @@ Patch16:       gtk+-16-introspection.diff
 Patch17:       gtk+-17-gailwindow-name.diff
 # date:2011-08-15 owner:gheet type:bug bugster:7076227
 Patch18:       gtk+-18-remove-papi.diff
+# date:2012-03-27 owner:padraig type:bug bugster:7149817
+Patch19:       gtk+-19-unregister-callback.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -144,6 +146,7 @@ cd po-sun; gmake; cd ..
 %patch16 -p1
 %patch17 -p1
 %patch18 -p1
+%patch19 -p1
 
 %build
 %ifos linux

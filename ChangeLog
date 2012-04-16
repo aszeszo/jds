@@ -1,5 +1,12 @@
 2012-04-16  Padraig O'Briain  <padraig.obriain@oracle.com>
 
+	RTI 3616321
+        CR 7149817 firefox crashes when run ibus-daemon
+	* base-specs/gtk2.spec:
+	* patches/gtk+-19-unregister-callback.diff:
+
+2012-04-16  Padraig O'Briain  <padraig.obriain@oracle.com>
+
 	RTI 361546
         CR 7035088 gnome-terminal leaks fds
 	* base-specs/gnome-terminal.spec:
