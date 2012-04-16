@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-terminal
 #
-# Copyright (c) 2010, 2011 Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -32,6 +32,8 @@ Patch2:       gnome-terminal-02-require-ice.diff
 #owner:padraig date:2011-05-10 type:branding bugster:7043502
 Patch3:       gnome-terminal-03-fix-doc.diff
 Patch4:       gnome-terminal-04-fix-l10n-doc.diff
+#owner:padraig date:2012-03-30 type:bug bugster:7035088
+Patch5:       gnome-terminal-05-increase-nofds.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -67,6 +69,7 @@ cd po-sun; make; cd ..
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
+%patch5 -p1
 
 # dos2unix to fix 400207.
 dos2unix -ascii po/be.po po/be.po
@@ -136,7 +139,9 @@ done
 %{_mandir}/man1/*
 
 %changelog
-* Wed May 11 2010 - padraig.obriain@oracle.com
+* Fri Mar 30 2012 - padraig.obriain@oracle.com
+* Update number of file descriptors limit to workaround CR 7035088.
+* Wed May 11 2011 - padraig.obriain@oracle.com
 - Add patch -fix-doc to fix CR 7042502
 * Mon Jun 21 2010 - brian.cameron@oracle.com
 - Bump to 2.30.2.

@@ -1,9 +1,16 @@
-2011-04-13  Brian Cameron  <brian.cameron@oracle.com>
+2012-04-16  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	RTI 361546
+        CR 7035088 gnome-terminal leaks fds
+	* base-specs/gnome-terminal.spec:
+	* patches/gnome-terminal-05-increase-nofds.diff:
+
+2012-04-13  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWjson-c.spec: Add "%include desktop-incorporation.inc".
 	  Fixes CR #7149760.  WebRTI #361463.
 
-2011-04-09 Ada Luong <ada.luong@oracle.com>
+2012-04-09 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 14 ====
 
