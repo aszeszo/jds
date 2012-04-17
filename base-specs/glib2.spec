@@ -137,7 +137,8 @@ make DESTDIR=$RPM_BUILD_ROOT install
 #Fixes bug 4930405
 install -d $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES
 install --mode=0644 $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES/
-rm $RPM_BUILD_ROOT%{_libdir}/*.la $RPM_BUILD_ROOT%{_libdir}/*.a
+find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
+find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.a" -exec rm -f {} ';'
 rm -Rf $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean

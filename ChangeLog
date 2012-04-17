@@ -1,3 +1,9 @@
+2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWgnome-media.spec, base-specs/glib2.spec, 
+	  patches/glib-06-solaris-port.diff: Fixes so that these modules build
+	  with the latest version of libtool now in S11u1.
+
 2012-04-17  Ghee Teo  <ghee.teo@oracle.com>
 
 	CR#7144691 Solaris 11 man pages have excessive permissions

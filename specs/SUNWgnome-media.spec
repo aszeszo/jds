@@ -120,12 +120,6 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
-
 # Set default sinks and source plugins to use.
 export GST_DEFAULTS_EXTRA_CONFIG="\
 --with-default-audiosrc=autoaudiosrc \
@@ -194,12 +188,6 @@ export PKG_CONFIG_PATH="%{_builddir}/%name-%version/%{base_arch}/gstreamer-%{gst
 %gst_plugins_good.build -d %name-%version/%{base_arch}
 
 %install
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
-
 rm -rf $RPM_BUILD_ROOT
 
 %ifarch amd64 sparcv9
