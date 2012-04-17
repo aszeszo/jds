@@ -1,3 +1,12 @@
+2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	CR #7121864 "Continuous attempts to manage displays already being
+	managed on Sun Ray servers"
+	WebRTI #361956.
+	* patches/ConsoleKit-01-ck-dynamic.diff: Improve ConsoleKit
+	  robustness for Sun Ray.
+	* patches/ConsoleKit-13-vt-switch.diff: Improve debug message.
+
 2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
 
         RTI 361794,
