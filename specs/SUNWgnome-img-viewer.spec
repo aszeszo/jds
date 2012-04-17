@@ -3,7 +3,7 @@
 #
 # includes module(s): eog
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -35,41 +35,39 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibart
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-img-viewer-root
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-camera
-Requires: SUNWgnome-component
-Requires: SUNWgnome-config
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-vfs
-Requires: SUNWjpg
-Requires: SUNWlibexif
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWdesktop-cache
-Requires: SUNWlcms
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWjpg-devel
-BuildRequires: SUNWlibexif-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-file-mgr-devel
-BuildRequires: SUNWgnome-camera-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-icon-theme
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWlcms
-BuildRequires: SUNWgnome-doc-utils
+Requires: image/library/libart
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-libs
+Requires: gnome/file-manager/nautilus
+Requires: gnome/gnome-camera
+Requires: library/gnome/gnome-component
+Requires: gnome/config/gconf
+Requires: gnome/gnome-panel
+Requires: library/gnome/gnome-vfs
+Requires: image/library/libjpeg
+Requires: image/library/libexif
+Requires: system/library/math
+Requires: library/popt
+Requires: service/gnome/desktop-cache
+Requires: library/lcms
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/gnome/gnome-component
+BuildRequires: gnome/config/gconf
+BuildRequires: gnome/gnome-panel
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: image/library/libjpeg
+BuildRequires: image/library/libexif
+BuildRequires: library/popt
+BuildRequires: gnome/file-manager/nautilus
+BuildRequires: gnome/gnome-camera
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: gnome/theme/gnome-icon-theme
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: library/lcms
+BuildRequires: developer/gnome/gnome-doc-utils
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -82,19 +80,18 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-img-viewer-root
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-camera
-Requires: SUNWgtk2
-Requires: SUNWgnome-component
-Requires: SUNWgnome-config
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-vfs
-Requires: SUNWjpg
-Requires: SUNWlibexif
-Requires: SUNWlibms
-Requires: SUNWlibpopt
+Requires: library/gnome/gnome-libs
+Requires: gnome/file-manager/nautilus
+Requires: gnome/gnome-camera
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-component
+Requires: gnome/config/gconf
+Requires: gnome/gnome-panel
+Requires: library/gnome/gnome-vfs
+Requires: image/library/libjpeg
+Requires: image/library/libexif
+Requires: system/library/math
+Requires: library/popt
 
 %prep
 rm -rf %name-%version
@@ -120,7 +117,7 @@ rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 0755 $RPM_BUILD_ROOT%{_mandir}/man1/eog.1
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man1/eog.1
 
 install -d $RPM_BUILD_ROOT%{eog_libdir}/bonobo/servers
 

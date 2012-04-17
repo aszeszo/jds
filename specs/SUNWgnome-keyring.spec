@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-keyring
 #
-# Copyright 2010 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,24 +25,24 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibgcrypt
-Requires: SUNWdesktop-cache
-Requires: SUNWlibtasn1
-Requires: SUNWdbus
-Requires: SUNWglib2
-Requires: SUNWgtk2
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWlibtasn1-devel
-BuildRequires: SUNWdbus
-BuildRequires: SUNWglib2
-BuildRequires: SUNWgtk2
+Requires: system/library/security/libgcrypt
+Requires: service/gnome/desktop-cache
+Requires: library/libtasn1
+Requires: system/library/dbus
+Requires: library/glib2
+Requires: library/desktop/gtk2
+BuildRequires: system/library/security/libgcrypt
+BuildRequires: library/libtasn1
+BuildRequires: system/library/dbus
+BuildRequires: library/glib2
+BuildRequires: library/desktop/gtk2
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWpostrun
+Requires: service/postrun
 
 %package devel		
 Summary:                 %{summary} - development files
@@ -52,7 +52,6 @@ SUNW_BaseDir:            %{_basedir}
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -83,7 +82,7 @@ rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
 
 rm -rf $RPM_BUILD_ROOT%{_libdir}/gnome-keyring/devel
 rm -rf $RPM_BUILD_ROOT%{_libdir}/gnome-keyring/standalone

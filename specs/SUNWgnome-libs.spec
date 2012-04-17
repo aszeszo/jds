@@ -4,7 +4,7 @@
 # includes module(s): rarian, startup-notification, libgtkhtml,
 # 	              libgnome, libbonoboui, libgnomeui, libexif-gtk
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -32,63 +32,61 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibgnomecanvas
-Requires: SUNWgnome-libs-root
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-audio
-Requires: SUNWlibexif
-Requires: SUNWlibgcrypt
-Requires: SUNWlibms
-Requires: SUNWlxml
-Requires: SUNWfreetype2
-Requires: SUNWlibpopt
-Requires: SUNWpng
-Requires: SUNWTiff
-Requires: SUNWjpg
-Requires: SUNWgnome-component
-Requires: SUNWgnome-config
-Requires: SUNWlxsl
-Requires: SUNWdesktop-cache
-Requires: SUNWlibC
-Requires: SUNWlibtasn1
-Requires: SUNWbash
-Requires: SUNWlibgnome-keyring
-Requires: SUNWhal
-BuildRequires: SUNWlibgnomecanvas-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-audio-devel
-BuildRequires: SUNWlibexif-devel
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWlibC
-BuildRequires: SUNWlibtasn1-devel
-BuildRequires: SUNWhal
+Requires: library/desktop/libgnomecanvas
+Requires: library/gnome/gnome-vfs
+Requires: gnome/gnome-audio
+Requires: image/library/libexif
+Requires: system/library/security/libgcrypt
+Requires: system/library/math
+Requires: library/libxml2
+Requires: system/library/freetype-2
+Requires: library/popt
+Requires: image/library/libpng
+Requires: image/library/libtiff
+Requires: image/library/libjpeg
+Requires: library/gnome/gnome-component
+Requires: gnome/config/gconf
+Requires: library/libxslt
+Requires: service/gnome/desktop-cache
+Requires: system/library/c++-runtime
+Requires: library/libtasn1
+Requires: shell/bash
+Requires: library/gnome/gnome-keyring
+Requires: service/hal
+BuildRequires: library/desktop/libgnomecanvas
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-component
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: gnome/gnome-audio
+BuildRequires: image/library/libexif
+BuildRequires: system/library/security/libgcrypt
+BuildRequires: library/popt
+BuildRequires: system/library/c++-runtime
+BuildRequires: library/libtasn1
+BuildRequires: service/hal
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWpostrun
+Requires: service/postrun
 
 %package devel		
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgnome-vfs-devel
-Requires: SUNWgnome-audio-devel
+Requires: library/gnome/gnome-vfs
+Requires: gnome/gnome-audio
 BuildRequires: runtime/perl-512
-Requires: SUNWlibms
-Requires: SUNWlibgnomecanvas
-Requires: SUNWgnome-component
-Requires: SUNWlibpopt
+Requires: system/library/math
+Requires: library/desktop/libgnomecanvas
+Requires: library/gnome/gnome-component
+Requires: library/popt
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -141,8 +139,8 @@ rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
 chmod 0644 $RPM_BUILD_ROOT%{_libdir}/bonobo/servers/Bonobo_Sample_Controls.server
 chmod 0644 $RPM_BUILD_ROOT%{_libdir}/bonobo/servers/GNOME_Moniker_std.server
 

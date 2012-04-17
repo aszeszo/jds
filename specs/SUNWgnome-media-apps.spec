@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-media
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,28 +26,27 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWbison 
-BuildRequires: SUNWPython26
-BuildRequires: SUNWlibcanberra-devel
-BuildRequires: SUNWgnome-audio-devel
-BuildRequires: SUNWgnome-cd-burner-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-doc-utils
-Requires: SUNWlibglade
-Requires: SUNWlibcanberra
-Requires: SUNWlibms
-Requires: SUNWdesktop-cache
-Requires: SUNWgnome-cd-burner
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-media
-Requires: SUNWgnome-media-apps-root
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-ui-designer
+BuildRequires: developer/parser/bison
+BuildRequires: runtime/python-26
+BuildRequires: library/desktop/xdg/libcanberra
+BuildRequires: gnome/gnome-audio
+BuildRequires: desktop/cd-burning/brasero
+BuildRequires: library/gnome/gnome-component
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/audio/gstreamer
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: developer/gnome/gnome-doc-utils
+Requires: library/desktop/libglade
+Requires: library/desktop/xdg/libcanberra
+Requires: system/library/math
+Requires: service/gnome/desktop-cache
+Requires: desktop/cd-burning/brasero
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-libs
+Requires: library/audio/gstreamer
+Requires: library/gnome/gnome-vfs
+Requires: developer/ui-designer/glade
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -57,7 +56,6 @@ SUNW_BaseDir:            /
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %package devel
 Summary:                 %{summary} - development files
@@ -72,15 +70,13 @@ Summary:                 GNOME sound recording utilities
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgnome-sound-recorder-root
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-audio
-Requires: SUNWgnome-config
-Requires: SUNWgnome-media
-Requires: SUNWgnome-media-apps
-Requires: SUNWgnome-vfs
-Requires: SUNWdesktop-cache
+Requires: library/desktop/gtk2
+Requires: library/gnome/gnome-libs
+Requires: gnome/gnome-audio
+Requires: gnome/config/gconf
+Requires: library/audio/gstreamer
+Requires: library/gnome/gnome-vfs
+Requires: service/gnome/desktop-cache
 
 %package -n SUNWgnome-sound-recorder-root
 Summary:                 GNOME sound recording utilities - / filesystem
@@ -115,7 +111,7 @@ rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
 
 # Remove .la and .a file as we don't ship them.
 find $RPM_BUILD_ROOT -name "*.la" -exec rm {} \;
