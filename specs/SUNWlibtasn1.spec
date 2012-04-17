@@ -21,7 +21,7 @@ BuildRoot:           %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: SUNWlibC
+Requires: system/library/c++-runtime
 
 Source1:	%{name}-manpages-0.1.tar.gz
 Source2:        %{name}-bin-manpages-0.1.tar.gz
@@ -92,6 +92,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Apr 06 2012 - jeff.cai@oracle.com
+- Change SVR4 package name to IPS
 * Feb 24 2010 - jeff.cai@sun.com
 - Remove %{_bindir} in %files due to duplication with the 
   devel package.

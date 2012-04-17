@@ -1,3 +1,13 @@
+2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
+
+        RTI 361794,
+        CR 7159416
+        libtasn1 securiy bug fix
+	* base-specs/gnutls.spec: Add a space in the copyright line
+	* base-specs/libtasn1.spec:
+	* patches/libtasn1-02-cve-2012-1569.diff:
+	* specs/SUNWlibtasn1.spec:
+
 2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
 
  	CR #7095930 "GNOME needs to work better with the Stop RBAC profile"

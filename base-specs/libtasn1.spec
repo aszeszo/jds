@@ -1,5 +1,5 @@
 #
-# Copyright 2010 Sun Microsystems Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,6 +26,8 @@ Summary:	Libtasn is a library C for manipulating ASN.1 objects.
 
 # date:2011-09-02 owner:qc161282 bugster:7085293 type:bug
 Patch1:       libtasn1-01-buffer-overflow.diff
+# date:2011-04-06 owner:qc161282 bugster:7159416 type:bug
+Patch2:       libtasn1-02-cve-2012-1569.diff
 
 %description
 Libtasn is a library written in C for manipulating ASN.1 objects including 
@@ -48,6 +50,7 @@ files needed for tasn1 development.
 %prep
 %setup  -q -n %{name}-%{version}
 %patch1 -p1
+%patch2 -p1
 
 %build
 %ifos linux
@@ -85,6 +88,8 @@ find $RPM_BUILD_ROOT -type f -name "*.a" -exec rm -f {} ';'
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Apr 06 2012 - jeff.cai@oracle.com
+- Add patch -02-cve-2012-1569
 * Fri Sep 02 2011 - jeff.cai@oracle.com
 - Add patch -01-buffer-overflow to fix security bug #7085293 and #7093667.
 * Thu Oct 28 2010 - jeff.cai@oracle.com
