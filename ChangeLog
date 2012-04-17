@@ -1,3 +1,18 @@
+2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
+
+ 	CR #7095930 "GNOME needs to work better with the Stop RBAC profile"
+ 	WebRTI #361938.
+ 	* patches/gnome-session-24-rbac.diff, patches/glib-10-gio-rbac.diff,
+ 	  patches/libgksu-05-rbac-support.diff,
+ 	  patches/gnome-panel-17-rbac.diff, patches/gnome-menus-08-rbac.diff:
+ 	  Fix desktop RBAC integration so it checks exec->attr != NULL instead
+ 	  of exec->id != "*".
+ 	* specs/SUNWnwam-manager.spec, ext-sources/SUNWnwam-manager-exec_attr:
+ 	  Removed since the GNOME panel no longer filters out modules that have
+ 	  no exec->attr value, so these entries are not useful.
+ 	* manpages/man1/gnome-panel.1: No longer mention NWAM as using GNOME
+	  panel filtering features.
+
 2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
 
         Fix bug 7159409 and 7159444
@@ -32,7 +47,8 @@
 2012-04-13  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWjson-c.spec: Add "%include desktop-incorporation.inc".
-	  Fixes CR #7149760.  WebRTI #361463.
+ 	  Fixes CR #7149760 "package library/json-c missing consolidation entry
+ 	  from its manifest".  WebRTI #361463.
 
 2012-04-09 Ada Luong <ada.luong@oracle.com>
 
@@ -184,6 +200,9 @@
 
 	* specs/SUNWgnome-vfs.spec, base-specs/gnome-vfs.spec: Fix
 	  PKG_CONFIG_PATH setting and 64-bit build.
+	  CR #7146691 "Build 64-bit libgnome-keyring, libsoup, gnome-vfs and
+	  related GStreamer plugins"
+	  WebRTI #360290
 
 2012-03-06  Ghee Teo  <ghee.teo@oracle.com>
 
@@ -220,15 +239,24 @@
 	  gnome-keyring, libsoup, and gnome-vfs libraries.  Also support the
 	  GStreamer 64-bit plugins for gnome-vfs and libsoup.  Also fix
 	  Requires/BuildRequires.
-	  RTI 360290, CR 7078660, 7146691.
+	  CR #7078660 "library/audio/gstreamer should not deliver editable
+	  profile attribute file"
+	  CR #7146691 "Build 64-bit libgnome-keyring, libsoup, gnome-vfs and
+	  related GStreamer plugins"
+	  WebRTI #360290
 	* base-specs/gdm.spec, patches/gdm-37-strndup.diff: Use strndup.
-	  RTI 360291, CR 7146593.
+	  CR #7146593 "Problem with gnome/session"
+	  WebRTI #360291
 	* specs/SUNWgnome-display-mgr.spec, specs/SUNWconsolekit.spec: Fix
 	  Requires/BuildRequires, and now /etc and /usr/share configuration
 	  files have the preserve flag set.
 	* patches/ConsoleKit-01-ck-dynamic.diff: Add additional debug flags.
 	* patches/gdm-34-vt.diff: Remove needless warning message.
-	  RTI 360292, CR 7093653, 7144246
+	  CR 7093653 "syslog WARNING: Unable to switch to VT1: Invalid argument
+	  on every reboot"
+	  CR 7144246 "GNOME login dialog box customizations cannot be saved
+	  across package fixes and package updates"
+	  WebRTI #360292
 	* specs/SUNWogg-vorbis.spec, specs/SUNWlibgc.spec: Fix
 	  Requires/BuildRequires.  Corrects minor spec-file issues that were
 	  noticed after the 2011-02-17 putback.
@@ -25145,7 +25173,7 @@
 	Bump to 2.25.3.
 	Added gnome-session-16-stop-ice-negotiation as code has not released as
 	tarball yet.
-	To fix bugster#6760675(bugzilla 563354).
+	To fix bugster #6760675 (bugzilla 563354).
 	* base-specs/gnome-session.spec:
 	* patches/gnome-session-16-stop-ice-negotiation.diff:
 

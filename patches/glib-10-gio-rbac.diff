@@ -284,7 +284,7 @@
 +	}
 +
 +	while (exec != NULL) {
-+		if (strcmp (exec->id, "*") != 0) {
++		if (exec->attr != NULL) {
 +			rc = TRUE;
 +			break;
 +		}
@@ -345,7 +345,7 @@
 +	 * Does the user have a profile that can run the command?
 +	 */
 +	while (exec != NULL) {
-+		if (strcmp (exec->id, "*") != 0) {
++		if (exec->attr != NULL) {
 +			rc = TRUE;
 +			break;
 +		}
@@ -440,7 +440,7 @@
 +			exec = getexecuser (role, KV_COMMAND, stripped_cmd, GET_ONE);
 +			while (exec != NULL) {
 +				if ((strcmp (role, "root") == 0) ||
-+				    (strcmp (exec->id, "*") != 0)) {
++				    (exec->attr != NULL)) {
 +					rc = g_strdup (role);
 +					break;
 +				}

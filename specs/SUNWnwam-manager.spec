@@ -19,7 +19,6 @@ Meta(info.classification): %{classification_prefix}:System/Administration and Co
 Summary:                 Network Auto-Magic User Interface
 Version:                 %{nwam_manager.version}
 Source:                  %{name}-manpages-0.1.tar.gz
-Source1:                 %{name}-exec_attr
 SUNW_BaseDir:            %{_prefix}
 License:                 %{nwam_manager.license}
 SUNW_Copyright:          %{name}.copyright
@@ -67,9 +66,6 @@ rm -rf $RPM_BUILD_ROOT
 %nwam_manager.install -d %name-%version
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
-
-mkdir -p $RPM_BUILD_ROOT%{_sysconfdir}/security/exec_attr.d
-install --mode=0644 %SOURCE1 $RPM_BUILD_ROOT%{_sysconfdir}/security/exec_attr.d/desktop-administration-nwam-manager
 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):unsupported" $RPM_BUILD_ROOT}
 
@@ -133,9 +129,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (-, root, sys) %{_sysconfdir}/xdg
 %dir %attr (-, root, sys) %{_sysconfdir}/xdg/autostart
 %attr (-, root, sys) %{_sysconfdir}/xdg/autostart/*
-%dir %attr(0755, root, sys) /etc/security
-%dir %attr(0755, root, sys) /etc/security/exec_attr.d
-%config %ips_tag(restart_fmri=svc:/system/rbac:default) %attr (0444, root, sys) /etc/security/exec_attr.d/*
 
 %files l10n
 %defattr (-, root, bin)
@@ -147,6 +140,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/omf/*/*-[a-z][a-z]_[A-Z]*.omf
 
 %changelog
+* Thu Apr 12 2012 - brian.cameron@oracle.com
+- Remove exec_attr entries.  The fix for CR #709590 makes entries with no
+  exec->attr value no longer recognized as associated with a profile, so
+  these entries are non-functional now.
 * Mon Mar 14 2011 - brian.cameron@oracle.com
 - Add exec_attr entries.
 * Thu Aug 19 2010 - lin.ma@sun.com
