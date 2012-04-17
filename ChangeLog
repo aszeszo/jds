@@ -26,6 +26,8 @@
  	  patches/gnome-panel-17-rbac.diff, patches/gnome-menus-08-rbac.diff:
  	  Fix desktop RBAC integration so it checks exec->attr != NULL instead
  	  of exec->id != "*".
+	* patches/libgksu-01-Makefile.diff: Fix Makefile so it has uses tab
+	  instead of spaces.
  	* specs/SUNWnwam-manager.spec, ext-sources/SUNWnwam-manager-exec_attr:
  	  Removed since the GNOME panel no longer filters out modules that have
  	  no exec->attr value, so these entries are not useful.
