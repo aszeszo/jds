@@ -49,6 +49,9 @@ BuildRequires: codec/flac
 BuildRequires: codec/libtheora
 BuildRequires: codec/ogg-vorbis
 BuildRequires: codec/speex
+# GStreamer has some configure tests that are hardcoded to use the gcc
+# compiler, so the build will fail if it is not present.
+BuildRequires: developer/gcc-3
 BuildRequires: developer/parser/bison
 BuildRequires: gnome/config/gconf
 BuildRequires: gnome/gnome-audio
@@ -123,6 +126,13 @@ gzcat %SOURCE0 | tar xf -
 export echo="/usr/bin/echo"
 export RM="/usr/bin/rm"
 
+# Set default sinks and source plugins to use.
+export GST_DEFAULTS_EXTRA_CONFIG="\
+--with-default-audiosrc=autoaudiosrc \
+--with-default-audiosink=autoaudiosink \
+--with-default-videosink=autovideosink"
+export GST_EXTRA_CONFIG="$GST_DEFAULTS_EXTRA_CONFIG"
+
 export ACLOCAL_FLAGS="-I %{_datadir}/aclocal"
 
 # The taglib gst-plugins-good plugin does not build without setting this since
@@ -155,11 +165,11 @@ export PKG_CONFIG_PATH="%{_builddir}/%name-%version/%{_arch64}/gstreamer-%{gst.v
 # provide 64-bit libraries, so avoid building it with 64-bit to avoid build
 # failing if it is installed.
 #
-export GST_EXTRA_CONFIG="--disable-taglib"
+export GST_EXTRA_CONFIG="$GST_DEFAULTS_EXTRA_CONFIG --disable-taglib"
 
 %gst_plugins_good64.build -d %name-%version/%_arch64
 
-export GST_EXTRA_CONFIG=""
+export GST_EXTRA_CONFIG="$GST_DEFAULTS_EXTRA_CONFIG"
 %endif
 
 export CXXFLAGS="%cxx_optflags"
@@ -238,9 +248,9 @@ rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man5/*.5
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man5/*.5
 
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.a" -exec rm -f {} ';'
