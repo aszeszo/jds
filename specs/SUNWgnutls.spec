@@ -3,7 +3,7 @@
 #
 # includes module(s): gnutls
 #
-# Copyright (c) 2004 Sun Microsystems, Inc.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -29,12 +29,10 @@ SUNW_Copyright:%{name}.copyright
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:      SUNWzlibr
-Requires:      SUNWlibgcrypt
-Requires:      SUNWzlib
-Requires:      SUNWlibC
-BuildRequires: SUNWlibtasn1
-BuildRequires: SUNWlibtasn1-devel
+Requires:      library/zlib
+Requires:      system/library/security/libgcrypt
+Requires:      system/library/c++-runtime
+BuildRequires: library/libtasn1
 
 Source1:    %{name}-manpages-0.1.tar.gz
 
@@ -151,6 +149,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri Apr 06 2012 - jeff.cai@oracle.com
+- Change SVR4 package name to IPS
 * Set Sep 26 2009 - dave.lin@sun.com
 - Remove %{_data_dir}/man/man1 from %files section.
 * Fir Aug 20 2009 - jeff.cai@sun.com

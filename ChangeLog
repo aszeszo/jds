@@ -1,3 +1,13 @@
+2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
+
+        Fix bug 7159409 and 7159444
+        RTI 361795 Gnutls security fixes
+
+	* base-specs/gnutls.spec:
+	* patches/gnutls-02-cve-2012-1573.diff:
+	* patches/gnutls-03-cve-2011-4128.diff:
+	* specs/SUNWgnutls.spec:
+
 2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWgnome-media.spec, base-specs/gst.spec,

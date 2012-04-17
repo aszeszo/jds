@@ -1,5 +1,5 @@
 #
-# License 2009 Sun Microsystems Inc.
+#Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -27,6 +27,10 @@ Source1: 	l10n-configure.sh
 
 # date:2009-05-31 owner:jefftsai type:branding 
 Patch1:       gnutls-01-not-build-example.diff
+# date:2012-04-06 owner:jefftsai type:bug bugster:7159444
+Patch2:       gnutls-02-cve-2012-1573.diff
+# date:2012-04-06 owner:jefftsai type:bug bugster:7159416
+Patch3:       gnutls-03-cve-2011-4128.diff
 
 %define glib2_version 2.0
 %define libgcrypt_version 1.1.12
@@ -61,6 +65,8 @@ Requires:       libgcrypt >= %{libgcrypt_version}
 %prep
 %setup  -q -n %{name}-%{version}
 %patch1 -p1
+%patch2 -p1
+%patch3 -p1
 
 %build
 %ifos linux
@@ -117,6 +123,8 @@ ldconfig
 %{_includedir}/*
 
 %changelog
+* Fri Apr 06 2012 - jeff.cai@oracle.com
+- Add patch -02-cve-2012-1573 and -03-cve-2011-4128
 * Tue Mar 17 2010 - jeff.cai@sun.com
 - Bump to 2.8.6
 * Thu Nov 05 2009 - jeff.cai@sun.com
