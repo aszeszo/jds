@@ -31,11 +31,17 @@ Requires: library/libtasn1
 Requires: system/library/dbus
 Requires: library/glib2
 Requires: library/desktop/gtk2
+Requires: x11/library/libxscrnsaver
 BuildRequires: system/library/security/libgcrypt
 BuildRequires: library/libtasn1
 BuildRequires: system/library/dbus
 BuildRequires: library/glib2
 BuildRequires: library/desktop/gtk2
+BuildRequires: x11/library/libxi
+BuildRequires: x11/library/libxext
+BuildRequires: x11/library/libxevie
+BuildRequires: x11/library/libxscrnsaver
+BuildRequires: x11/header/x11-protocols
 
 %package root
 Summary:                 %{summary} - / filesystem

@@ -26,8 +26,14 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 Requires: library/desktop/gtk2
+Requires: x11/library/libxscrnsaver
 Requires: runtime/python-26
 BuildRequires: library/desktop/gtk2
+BuildRequires: x11/library/libxi
+BuildRequires: x11/library/libxext
+BuildRequires: x11/library/libxevie
+BuildRequires: x11/library/libxscrnsaver
+BuildRequires: x11/header/x11-protocols
 BuildRequires: developer/documentation-tool/gtk-doc
 
 %package devel		

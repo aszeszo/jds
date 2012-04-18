@@ -52,7 +52,7 @@ Requires: system/library/c++-runtime
 Requires: library/libtasn1
 Requires: shell/bash
 Requires: library/gnome/gnome-keyring
-Requires: service/hal
+Requires: system/hal
 BuildRequires: library/desktop/libgnomecanvas
 BuildRequires: gnome/config/gconf
 BuildRequires: library/gnome/gnome-component
@@ -63,7 +63,7 @@ BuildRequires: system/library/security/libgcrypt
 BuildRequires: library/popt
 BuildRequires: system/library/c++-runtime
 BuildRequires: library/libtasn1
-BuildRequires: service/hal
+BuildRequires: system/hal
 
 %package root
 Summary:                 %{summary} - / filesystem

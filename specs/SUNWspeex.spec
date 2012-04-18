@@ -62,6 +62,7 @@ gzcat %SOURCE0 | tar xf -
 
 %build
 export echo="/usr/bin/echo"
+export RANLIB="/usr/bin/ranlib"
 %ifarch amd64 sparcv9
 export PKG_CONFIG_LIBDIR=%{_pkg_config_path64}
 %speex_64.build -d %name-%version/%_arch64
@@ -72,6 +73,7 @@ export PKG_CONFIG_LIBDIR=%{_pkg_config_path}
                                     
 %install
 export echo="/usr/bin/echo"
+export RANLIB="/usr/bin/ranlib"
 %ifarch amd64 sparcv9
 %speex_64.install -d %name-%version/%_arch64
 %endif

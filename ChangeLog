@@ -1,3 +1,13 @@
+2012-04-18  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fixes some dependencies problem and ranlib definitions found by jucr.
+	CR#7144691 Solaris 11 man pages have excessive permissions
+	RTI#361728.
+	* specs/SUNWgnome-gtksourceview.spec:
+	* specs/SUNWgnome-keyring.spec:
+	* specs/SUNWgnome-libs.spec:
+	* specs/SUNWspeex.spec:
+
 2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWgnome-media.spec, base-specs/glib2.spec, 
@@ -7,7 +17,7 @@
 2012-04-17  Ghee Teo  <ghee.teo@oracle.com>
 
 	CR#7144691 Solaris 11 man pages have excessive permissions
-	RTIÂ#361728.
+	RTI#361728.
 	* specs/SUNWgnome-gtksourceview.spec:
 	* specs/SUNWgnome-img-viewer.spec:
 	* specs/SUNWgnome-keyring.spec:
