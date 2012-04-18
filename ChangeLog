@@ -1,3 +1,15 @@
+2012-04-18  Ghee Teo  <ghee.teo@oracle.com>
+
+	Put back those changes  related to CR#7144691
+	* specs/SUNWgnome-gtksourceview.spec:
+	* specs/SUNWgnome-img-viewer.spec:
+	* specs/SUNWgnome-keyring.spec:
+	* specs/SUNWgnome-libs.spec:
+	* specs/SUNWgnome-media-apps.spec:
+	* specs/SUNWgnome-vfs.spec:
+	* specs/SUNWlibtheora.spec:
+	* specs/SUNWspeex.spec:
+
 2012-03-06  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWgnome-vfs.spec, base-specs/gnome-vfs.spec: Fix 64-bit

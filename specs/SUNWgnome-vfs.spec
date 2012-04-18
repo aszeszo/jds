@@ -46,6 +46,7 @@ BuildRequires: library/file-monitor/gamin
 BuildRequires: library/glib2
 BuildRequires: library/gnome/gnome-component
 BuildRequires: library/libxml2
+BuildRequires: library/samba/libsmbclient
 BuildRequires: library/security/openssl
 BuildRequires: library/zlib
 BuildRequires: runtime/perl-512
