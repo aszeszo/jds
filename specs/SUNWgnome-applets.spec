@@ -370,17 +370,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/bonobo/servers/GNOME_MixerApplet.server
 %{_libdir}/bonobo/servers/GNOME_CDPlayerApplet.server
-%{_libexecdir}/mixer_applet2
 %dir %attr(0755, root, sys) %{_datadir}
 %dir %attr (0755, root, other) %{_datadir}/gnome
-%{_datadir}/gnome/help/mixer_applet2/C
-%{_datadir}/omf/mixer_applet*/mixer_applet*-C.omf
-%{_datadir}/gnome-2.0/ui/GNOME_MixerApplet.xml
-
-%files -n SUNWgnome-mm-applets-root
-%defattr(-, root, sys)
-%dir %attr(0755, root, sys) %{_sysconfdir}
-%{_sysconfdir}/gconf/schemas/mixer.schemas
 
 %files -n SUNWgnome-utility-applets
 %defattr (-, root, bin)

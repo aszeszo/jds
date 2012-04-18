@@ -1,0 +1,11 @@
+--- pulseaudio-1.1/src/daemon/default.pa.in-orig	2011-10-31 13:39:49.772299629 -0500
++++ pulseaudio-1.1/src/daemon/default.pa.in	2011-10-31 13:40:02.270114775 -0500
+@@ -52,7 +52,7 @@ ifelse(@HAVE_ALSA@, 1, [dnl
+ #load-module module-alsa-source device=hw:1,0
+ ])dnl
+ ifelse(@HAVE_OSS_OUTPUT@, 1, [dnl
+-#load-module module-oss device="/dev/dsp" sink_name=output source_name=input
++load-module module-oss device="/dev/dsp" sink_name=output source_name=input
+ #load-module module-oss-mmap device="/dev/dsp" sink_name=output source_name=input
+ ])dnl
+ ifelse(@HAVE_WAVEOUT@, 1, [dnl

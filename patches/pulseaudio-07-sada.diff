@@ -1,0 +1,61 @@
+--- pulseaudio-1.1/src/modules/module-solaris.c-orig	2011-11-29 16:41:26.244605338 -0600
++++ pulseaudio-1.1/src/modules/module-solaris.c	2011-11-29 16:41:29.894285167 -0600
+@@ -485,14 +485,26 @@ static int source_process_msg(pa_msgobje
+ static void sink_set_volume(pa_sink *s) {
+     struct userdata *u;
+     audio_info_t info;
++    pa_volume_t v;
+ 
+     pa_assert_se(u = s->userdata);
+ 
++    if (u->fd < 0) {
++       u->fd = pa_open_cloexec(u->device_name, u->mode | O_NONBLOCK, 0);
++    }
++
+     if (u->fd >= 0) {
+         AUDIO_INITINFO(&info);
+ 
+-        info.play.gain = pa_cvolume_max(&s->real_volume) * AUDIO_MAX_GAIN / PA_VOLUME_NORM;
+-        assert(info.play.gain <= AUDIO_MAX_GAIN);
++        v = pa_cvolume_max(&s->real_volume);
++        if (v > PA_VOLUME_NORM) {
++                v = PA_VOLUME_NORM;
++        }
++
++        info.play.gain = v * AUDIO_MAX_GAIN / PA_VOLUME_NORM;
++
++        pa_log_debug("PA_VOLUME_NORM is %ld", PA_VOLUME_NORM);
++        pa_log_debug("Setting volume %ld %ld", v, info.play.gain);
+ 
+         if (ioctl(u->fd, AUDIO_SETINFO, &info) < 0) {
+             if (errno == EINVAL)
+@@ -513,6 +525,7 @@ static void sink_get_volume(pa_sink *s) 
+         if (ioctl(u->fd, AUDIO_GETINFO, &info) < 0)
+             pa_log("AUDIO_SETINFO: %s", pa_cstrerror(errno));
+         else
++            pa_log_debug("Getting volume %ld %ld", info.play.gain, (info.play.gain * PA_VOLUME_NORM / AUDIO_MAX_GAIN));
+             pa_cvolume_set(&s->real_volume, s->sample_spec.channels, info.play.gain * PA_VOLUME_NORM / AUDIO_MAX_GAIN);
+     }
+ }
+@@ -520,14 +533,19 @@ static void sink_get_volume(pa_sink *s) 
+ static void source_set_volume(pa_source *s) {
+     struct userdata *u;
+     audio_info_t info;
++    pa_volume_t v;
+ 
+     pa_assert_se(u = s->userdata);
+ 
+     if (u->fd >= 0) {
+         AUDIO_INITINFO(&info);
+ 
+-        info.play.gain = pa_cvolume_max(&s->real_volume) * AUDIO_MAX_GAIN / PA_VOLUME_NORM;
+-        assert(info.play.gain <= AUDIO_MAX_GAIN);
++        v = pa_cvolume_max(&s->real_volume);
++        if (v > PA_VOLUME_NORM) {
++                v = PA_VOLUME_NORM;
++        }
++
++        info.play.gain = v * AUDIO_MAX_GAIN / PA_VOLUME_NORM;
+ 
+         if (ioctl(u->fd, AUDIO_SETINFO, &info) < 0) {
+             if (errno == EINVAL)

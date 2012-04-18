@@ -1,13 +1,12 @@
 #
 # spec file for package gnome-media
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
 %define owner yippi
 #
-
 %define OSR LFI#105446 (gnome Exec. summary):n/a
 
 %include l10n.inc
@@ -40,6 +39,10 @@ Patch5:       gnome-media-05-setaudio.diff
 #owner:padraig date:2011-05-11 type:branding bugster:7042503
 Patch6:       gnome-media-06-fix-doc.diff
 Patch7:       gnome-media-07-fix-l10n-doc.diff
+#owner:yippi date:2012-03-15 type:feature
+Patch8:       gnome-media-08-nopulsemix.diff
+#owner:yippi date:2012-03-15 type:feature
+Patch9:       gnome-media-09-round.diff
 
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -87,6 +90,8 @@ cd po-sun; make; cd ..
 %patch5 -p1
 %patch6 -p1
 %patch7 -p1
+%patch8 -p1
+%patch9 -p1
 
 %build
 %ifos linux
@@ -118,6 +123,7 @@ CFLAGS="$RPM_OPT_FLAGS"			\
 ./configure --prefix=%{_prefix}		\
 	    --libexecdir=%{_libexecdir}	\
 	    --sysconfdir=%{_sysconfdir} \
+	    --enable-gstmix \
 	    --disable-esdtest
 
 make -j $CPUS
@@ -176,6 +182,10 @@ done
 %{_mandir}/man5/*
 
 %changelog
+* Fri Mar 02 2012 - brian.cameron@oracle.com
+- Add gnome-media-08-nopulsemix.diff to ensure that the GStreamer volume 
+  control program is still built and gnome-media-09-round.diff which fixes a
+  bug in the PulseAudio volume control applet.
 * Wed May 11 2011 - padraig.obriain@oracle.com
 - Add patch -fix-doc to fix CR 7042503
 * Wed Jan 26 2011 - brian.cameron@oracle.com

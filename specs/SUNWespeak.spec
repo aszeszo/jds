@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWespeak
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -36,11 +36,12 @@ BuildRoot:	%{_tmppath}/%{name}-%{tarball_version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires:	SUNWaudh
-BuildRequires:  SUNWunzip
-BuildRequires:  SUNWgcc
-Requires: SUNWlibC
-Requires: SUNWlibmsr
+
+BuildRequires: compress/unzip
+BuildRequires: system/header
+BuildRequires: library/audio/pulseaudio
+BuildRequires: system/library/c++-runtime
+BUildRequires: system/library/math
 
 %package devel
 Summary:                 %{summary} - development files
@@ -71,8 +72,8 @@ cd ../..
 %define endian_macro ""
 %endif
 cd src
-make -j$CPUS EXTRA_LIBS=-lm AUDIO=sada CXXFLAGS="-norunpath -O2 %{endian_macro}"
-make install EXTRA_LIBS=-lm AUDIO=sada DESTDIR=$RPM_BUILD_ROOT CXXFLAGS="-norunpath -O2 %{endian_macro}"
+make -j$CPUS EXTRA_LIBS=-lm AUDIO=pulseaudio CXXFLAGS="-norunpath -O2 %{endian_macro}"
+make install EXTRA_LIBS=-lm AUDIO=pulseaudio DESTDIR=$RPM_BUILD_ROOT CXXFLAGS="-norunpath -O2 %{endian_macro}"
 rm $RPM_BUILD_ROOT/%{_libdir}/lib*.a
 
 %install
@@ -99,6 +100,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}
 
 %changelog
+* Fri Mar 02 2012 - brian.cameron@oracle.com
+- Now depends on PulseAudio.
 * Tue Jul 26 2011 - dave.lin@oracle.com
 - Added '-norunpath' in CXXFLAGS to fix 6754651.
 * Thu Dec 30 2010 - brian.cameron@oracle.com

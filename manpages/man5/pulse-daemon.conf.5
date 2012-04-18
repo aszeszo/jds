@@ -1,0 +1,676 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 2011, v.4002-->
+<!ENTITY cmd "pulse-daemon.conf">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2003,2006,2007 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<?Pub UDT _bookmark _target>
+<?Pub Inc>
+<refentry id="pules-daemon.conf-5">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>pulse-daemon.conf</refentrytitle><manvolnum>5</manvolnum>
+<refmiscinfo class="date">11 Oct 2011</refmiscinfo>
+<refmiscinfo class="sectdesc">&man5;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>pulse-daemon.conf</primary></indexterm><indexterm><primary>
+PulseAudio daemon configuration file</primary></indexterm>
+<refnamediv id="pulse-daemon.conf-5-name"><refname>pulse-daemon.conf</refname><refpurpose>
+PulseAudio daemon configuration file</refpurpose></refnamediv>
+
+<refsynopsisdiv id="pulse-daemon.conf-5-synp"><title>&synp-tt;</title>
+<cmdsynopsis><file>~/.pulse/daemon.conf</file></cmdsynopsis>
+<cmdsynopsis><file>~/etc/pulse/daemon.conf</file></cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id="pulse-daemon.conf-5-desc"><title>&desc-tt;</title>
+<para>
+The PulseAudio sound server reads configuration directives from a file
+<filename>~/.pulse/daemon.conf</filename> on startup and when that file does
+not exist from <filename>/etc/pulse/daemon.conf</filename>.  Please note that
+the server also reads a configuration script on startup
+<filename>default.pa</filename> which also contains runtime configuration
+directives.
+</para>
+
+<para>
+The configuration file is a simple collection of variable declarations.  If the
+configuration file parser encounters either ; or # it ignores the rest of the
+line until its end.
+</para>
+
+<para>
+For the settings that take a boolean argument the values true, yes, on and 1
+are equivalent, resp. false, no, off, 0.
+</para>
+</refsect1>
+
+<refsect1 id="pulse-daemon.conf-5-params"><title>&parm-tt;</title>
+<para>The following configuration options are supported:</para>
+
+<para>
+GENERAL DIRECTIVES
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>daemonize=</term>
+<listitem><para>
+Daemonize after startup.  Takes a boolean value, defaults to no.  The
+<option>-daemonize</option> command line option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>fail=</term>
+<listitem><para>
+Fail to start up if any of the directives in the configuration script
+<filename>default.pa</filename> fail.  Takes a boolean argument, defaults to
+yes.  The <option>-fail</option> command line option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>allow-module-loading=</term>
+<listitem><para>
+Allow/disallow module loading after startup. This is a security feature that if dsabled makes sure that no further modules may be loaded into the PulseAudio
+server after startup completed. It is recommended to disable this when
+system-instance is enabled.  Please note that certain features like automatic
+hot-plug support will not work if this option is enabled.  Takes a boolean
+argument, defaults to yes.  The <option>-disallow-module-loading</option>
+command line option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>allow-exit=</term>
+<listitem><para>
+Allow/disallow exit on user request.  Defaults to yes.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>resample-method=</term>
+<listitem><para>
+The resampling algorithm to use.  Use one of src-sinc-best-quality,
+src-sinc-medium-quality, src-sinc-fastest, src-zero-order-hold, src-linear,
+trivial, speex-float-N, speex-fixed-N, ffmpeg.  See the documentation of
+libsamplerate and speex for explanations of the different src- and speex-
+methods, respectively.  The method trivial is the most basic algorithm
+implemented.  If you are tight on CPU consider using this.  On the other hand
+it has the worst quality of them all.  The Speex resamplers take an integer
+quality setting in the range 0..10 (bad...good).  They exist in two flavours:
+fixed and float.  The former uses fixed point numbers, the latter relies on
+floating point numbers.  On most desktop CPUs the float point resampler is a
+lot faster, and it also offers slightly better quality.  See the output of
+dump-resample-methods for a complete list of all available resamplers.
+Defaults to speex-float-3.  The <option>-resample-method</option> command line
+option takes precedence.  Note that some modules overwrite or allow overwriting
+of the resampler to use.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>enable-remixing=</term>
+<listitem><para>
+If disabled never upmix or downmix channels to different channel maps.
+Instead, do a simple name-based matching only.  Defaults to yes.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>enable-lfe-remixing=</term>
+<listitem><para>
+If disabeld when upmixing or downmixing ignore LFE channels.  When this option
+is disabled the output LFE channel will only get a signal when an input LFE
+channel is available  as well.  If no input LFE channel is available the output
+LFE channel will always be 0.  If no output LFE channel is available the signal
+on the input LFE channel will be ignored.  Defaults to no.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>use-pid-file=</term>
+<listitem><para>
+Create a PID file in the runtime directory
+(<filename>$HOME/.pulse/*-runtime/pid</filename>). If this is enabled you may
+use commands like <option>-kill</option> or <option>-check</option>.  If you
+are planning to start more than one PulseAudio process per user, you better
+disable this option since it effectively disables multiple instances.  Takes a
+boolean argument, defaults to yes.  The <option>-use-pid-file</option> command
+line option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>cpu-limit=</term>
+<listitem><para>
+If disabled do not install the CPU load limiter, even on platforms where it is
+supported.  This option is useful when debugging/profiling PulseAudio to
+disable disturbing SIGXCPU signals.  Takes a boolean argument, defaults to no.
+The <option>-no-cpu-limit</option> command line argument takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>system-instance=</term>
+<listitem><para>
+Run the daemon as system-wide instance, requires root priviliges.  Takes a
+boolean argument, defaults to no. The <option>-system</option> command line
+argument takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>enable-shm=</term>
+<listitem><para>
+Enable data transfer via POSIX shared memory.  Takes a boolean argument,
+defaults to yes.  The <option>-disable-shm</option> command line argument takes
+precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>shm-size-bytes=</term>
+<listitem><para>
+Sets the shared memory segment size for the daemon, in bytes.  If left
+unspecified or is set to 0 it will default to some system-specific default,
+usually 64 MiB. Please note that usually there is no need to change this value,
+unless you are running an OS kernel that does not do memory overcommit.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>lock-memory=</term>
+<listitem><para>
+Locks the entire PulseAudio process into memory.  While this might increase
+drop-out safety when used in conjunction with real-time scheduling this takes
+away a lot of memory from  other processes and might hence considerably slow
+down your system.  Defaults to no.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>flat-volume=</term>
+<listitem><para>
+Enable 'flat' volumes, i.e. where possible let the sink volume equal the
+maximum of the volumes of the inputs connected to it.  Takes a boolean
+argument, defaults to yes.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>flat-volume=</term>
+<listitem><para>
+Enable 'flat' volumes, i.e. where possible let the sink volume equal the
+maximum of the volumes of the inputs connected to it.  Takes a boolean
+argument, defaults to yes.
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+SCHEDULING
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>high-priority=</term>
+<listitem><para>
+Renice the daemon after startup to become a high-priority process.  This a good
+idea if you experience drop-outs during playback.  However, this is a certain
+security issue, since it works when called SUID root only, or RLIMIT_NICE is
+used. root is dropped immediately after gaining the nice level on startup, thus
+it is presumably safe. See
+<citerefentry><refentrytitle>pulseaudio</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+for more information.  Takes a boolean argument, defaults to yes.  The
+<option>-high-priority</option> command line option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>realtime-scheduling=</term>
+<listitem><para>
+Try to acquire SCHED_FIFO scheduling for the IO threads.  The same security
+concerns as mentioned above apply.  However, if PA enters an endless loop,
+realtime scheduling causes a system lockup. Thus, realtime scheduling should
+only be enabled on trusted machines for now.  Please not that only the IO
+threads of PulseAudio are made real-time.  The controlling thread is left a
+normally scheduled thread.  Thus enabling the high-priority option is
+orthogonal.  See
+<citerefentry><refentrytitle>pulseaudio</refentrytitle><manvolnum>1</manvolnum></citerefentry>
+for more information.  Takes a boolean argument, defaults to yes. The
+<option>-realtime</option> command line option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>realtime-priority=</term>
+<listitem><para>
+The realtime priority to acquire, if realtime-scheduling is enabled.  Note:
+JACK uses 10 by default, 9 for clients. Thus it is recommended to choose the
+PulseAudio real-time priorities lower.  Some PulseAudio threads might choose a
+priority a little lower or higher than the specified value.  Defaults to 5.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>nice-level=</term>
+<listitem><para>
+The nice level to acquire for the daemon, if high-priority is enabled.  Note:
+on some distributions X11 uses -10 by default.  Defaults to -11.
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+IDLE TIMES
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>exit-idle-time=</term>
+<listitem><para>
+Terminate the daemon after the last client quit and this time in seconds
+passed.  Use a negative value to disable this feature. Defaults to 20.  The
+<option>-exit-idle-time</option> command line option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>scache-idle-time=</term>
+<listitem><para>
+Unload autoloaded sample cache entries after being idle for this time in
+seconds.  Defaults to 20.  The <option>-scache-idle-time</option> command line
+option takes precedence.
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+PATHS
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>dl-search-path=</term>
+<listitem><para>
+The path were to look for dynamic shared objects (DSOs/plugins).  You may
+specify more than one path seperated by colons. The default path depends on
+compile time settings.  The <option>-dl-search-path</option> command line
+option takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>default-script-file=</term>
+<listitem><para>
+The default configuration script file to load.  Specify an empty string for not
+loading a default script file.  The default behaviour is to load
+<filename>~/.pulse/default.pa</filename>, and if that file does not exist fall
+back to the system wide installed version
+<filename>/etc/pulse/default.pa</filename>.  If run in system-wide mode the
+file <filename>/etc/pulse/system.pa</filename> is used instead.  If
+<option>n</option> is passed on the command line or default-script-file= is
+disabled the default configuration script is ignored.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>load-default-script-file=</term>
+<listitem><para>
+Load the default configuration script file as specified in
+default-script-file=.  Defaults to yes.
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+LOGGING
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>log-target=</term>
+<listitem><para>
+The default log target.  Use either stderr, syslog or auto.  The latter is
+equivalent to sylog in case daemonize is enabled, otherwise to stderr.
+Defaults to auto.  The <option>-log-target</option> command line option takes
+precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>log-level=</term>
+<listitem><para>
+Log level, one of debug, info, notice, warning, error.  Log messages with a
+lower log level than specified here are not logged. Defaults to notice. The
+<option>-log-level</option> command line option takes precedence.  The
+<option>v</option> command line option might alter this setting.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>log-meta=</term>
+<listitem><para>
+With each logged message log the code location the message was generated from.
+Defaults to no.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>log-time=</term>
+<listitem><para>
+With each logged messages log the relative time since startup.  Defaults to no.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>log-backtrace=</term>
+<listitem><para>
+When greater than 0, with each logged message log a code stack trace up the the
+specified number of stack frames.  Defaults to 0.
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+RESOURCE LIMITS
+</para>
+
+<para>
+See
+<citerefentry><refentrytitle>getrlimit</refentrytitle><manvolnum>2</manvolnum></citerefentry>,
+for more information.  Set to -1 if PulseAudio shall not touch the resource
+limit.  Not all resource limits are available on all operating systems.
+</para>
+
+<variablelist>
+<varlistentry>
+<term>rlimit-as=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-rss=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-core=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-data=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-fsize=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-nofile=</term>
+<listitem><para>
+Defaults to 256.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-stack=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-nproc=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-locks=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-sigpending=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-msgqueue=</term>
+<listitem><para>
+Defaults to -1.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-memlock=</term>
+<listitem><para>
+Defaults to 16 KiB.  Please note that the JACK client libraries may require
+more locked memory.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-nice=</term>
+<listitem><para>
+Defaults to 31.  Please make sure that the default nice level as configured
+with nice-level fits in this resource limit, if high-priority is enabled.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-rtprio=</term>
+<listitem><para>
+Defaults to 9.  Please make sure that the default real-time priority level as
+configured with realtime-priority= fits in this resource limit, if
+realtime-scheduling is enabled.  The JACK client libraries require a real-time
+priority of 9 by default.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>rlimit-rttime=</term>
+<listitem><para>
+Defaults to 1000000.
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+DEFAULT DEVICE SETTINGS
+</para>
+
+<para>
+Most drivers try to open the audio device with these settings and then fall
+back to lower settings.  The default settings are CD quality: 16bit native
+endian, 2 channels, 44100 Hz sampling.
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>default-sample-format=</term>
+<listitem><para>
+The default sampling format.  Specify one of u8, s16le, s16be, s24le, s24be,
+s24-32le, s24-32be, s32le, s32be float32le, float32be, ulaw, alaw.  Depending
+on the endianess of the CPU the formats s16ne, s16re, s24ne, s24re, s24-32ne,
+s24-32re, s32ne, s32re, float32ne, float32re (for native, resp. reverse endian)
+are available as aliases.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>default-sample-rate=</term>
+<listitem><para>
+The default sample frequency.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>default-sample-channels=</term>
+<listitem><para>
+The default number of channels.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>default-sample-map=</term>
+<listitem><para>
+The default channel map.
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+DEFAULT FRAGMENT SETTINGS
+</para>
+
+<para>
+Some hardware drivers require the hardware playback buffer to be subdivided
+into several fragments.  It is possible to change these buffer metrics for
+machines with high scheduling latencies.  Not all possible values that may be
+configured here are available in all hardware.  The driver will to find the
+nearest setting supported.  Modern drivers that support timer-based scheduling
+ignore these options.
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>default-fragments=</term>
+<listitem><para>
+The default number of fragments.  Defaults to 4.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>default-fragment-size-msec=</term>
+<listitem><para>
+The duration of a single fragment.  Defaults to 25ms (i.e. the total buffer is
+thus 100ms long).
+</para></listitem></varlistentry>
+</variablelist>
+
+<para>
+DEFAULT DEFERRED VOLUME SETTINGS
+</para>
+
+<para>
+With the flat volume feature enabled, the sink HW volume is set to the same
+level as the highest volume input stream.  Any other streams (with lower
+volumes) have the appropriate adjustment applied in SW to bring them to the
+correct overall level.  Sadly hadware mixer changes cannot be timed accurately
+and thus this change of volumes can somtimes cause the resulting output sound
+to be momentarily too loud or too soft.  So to ensure SW and HW volumes are
+applied concurrently without any glitches, their application needs to be
+synchronized.  The sink implementation needs to support deferred volumes. The
+following parameters can be used to refine the process.
+</para>
+
+<variablelist termlength="wholeline">
+<varlistentry>
+<term>enable-deferred-volume=</term>
+<listitem><para>
+Enable deferred volume for the sinks that support it.  This feature is enabled
+by default.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>deferred-volume-safety-margin-usec=</term>
+<listitem><para>
+The amount of time (in usec) by which the HW volume increases are delayed and
+HW volume decreases are advanced.  Defaults to 8000 usec.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>deferred-volume-extra-delay-usec=</term>
+<listitem><para>
+The amount of time (in usec) by which HW volume changes are delayed.  Negative
+values are also allowed.  Defaults to 0.
+</para></listitem></varlistentry>
+</variablelist>
+</refsect1>
+
+<refsect1 id="pulse-daemon.conf-5-envr"><title>&envr-tt;</title>
+<para>See <citerefentry><refentrytitle>environ</refentrytitle><manvolnum>
+5</manvolnum></citerefentry> for descriptions of the following environment
+variables:</para>
+
+<variablelist>
+<varlistentry>
+<term>PULSE_SCRIPT</term>
+<listitem><para>
+Specify the default CLI script to run after startup.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_CONFIG</term>
+<listitem><para>
+Specify the default daemon configuration file to use.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_DLPATH</term>
+<listitem><para>
+Colon separated list of paths where to look for modules.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_NO_SIMD</term>
+<listitem><para>
+Disable SIMD optimizations (e.g. MMX, SSE, NEON).
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="pulse-daemon.conf-5-file"><title>&file-tt;</title>
+<para>The following files are used by this application:</para>
+
+<variablelist>
+<varlistentry>
+<term><filename>/etc/pulse/daemon.conf</filename></term>
+<listitem><para>
+System configuration file.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><filename>~/.pulse/daemon.conf</filename></term>
+<listitem><para>
+User configuration file.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><filename>/etc/pulse/default.pa</filename></term>
+<listitem><para>
+System configuration which specifies which PulseAudio modules to load when
+PulseAudio is not run in system-wide mode.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><filename>/etc/pulse/system.pa</filename></term>
+<listitem><para>
+System configuration which specifies which PulseAudio modules to load when
+PulseAudio is run in system-wide mode.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><filename>~/.pulse/default.pa</filename></term>
+<listitem><para>
+User configuration which specifies which PulseAudio modules to load when
+PulseAudio is not run in system-wide mode.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="pulse-daemon.conf-5-attr"><title>&attr-tt;</title>
+<para>See <olink targetdocent="REFMAN5" localinfo="attributes-5"><citerefentry>
+<refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1"><colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row><entry align="center" valign="middle">ATTRIBUTE TYPE</entry><entry align="center"
+valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row><entry><para>Availability</para></entry><entry><para>SUNWpulseaudio</para></entry>
+</row>
+<row><entry colname="COLSPEC0"><para>Interface stability</para></entry><entry
+colname="COLSPEC1"><para>Volatile</para></entry></row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="pulse-daemon.conf-5-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>pacmd</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>pulseaudio</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>default.pa</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+<citerefentry><refentrytitle>pulse-client.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+<refsect1 id="pulse-daemon.conf-5-note"><title>&note-tt;</title>
+<para>
+Written by the PulseAudio Developers <mzchyfrnhqvb (at) 0pointer (dot) net>;
+PulseAudio is available from http://www.pulseaudio.org/.
+</para>
+</refsect1>
+</refentry>

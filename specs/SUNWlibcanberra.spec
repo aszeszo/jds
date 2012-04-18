@@ -3,7 +3,7 @@
 #
 # includes module(s): libcanberra
 #
-# Copyright 2010 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -32,16 +32,15 @@ SUNW_BaseDir:            %{_basedir}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWlibcanberra-root
-Requires: SUNWxdg-sound-theme
-Requires: SUNWgnome-media
-Requires: SUNWogg-vorbis
-Requires: SUNWlibltdl
-Requires: SUNWdesktop-cache
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWogg-vorbis-devel
+
+BuildRequires: codec/ogg-vorbis
+BuildRequires: library/audio/gstreamer
+BuildRequires: library/audio/pulseaudio
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/libtool/libltdl
+
+Requires: gnome/theme/sound/xdg-sound-theme
+Requires: service/gnome/desktop-cache
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -155,6 +154,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/gnome
 
 %changelog
+* Fri Mar 02 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires.
 * Thu Jul 01 2010 - brian.cameron@oracle.com
 - Add CFLAGS to %build so that the 64-bit libraries get built with the correct
   ELFCLASS.
@@ -201,6 +202,4 @@ rm -rf $RPM_BUILD_ROOT
   a GStreamer backend.
 * Thu Aug 14 2008 - brian.cameron@sun.com
 - Created with version 0.6.
-
-
 

@@ -1,3 +1,35 @@
+2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
+
+	WebRTI #362069, CR #7077164 "enhanced sunray audio support - Add
+	PulseAudio to the Desktop"
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec,
+	  copyright/SUNWpulseaudio.copyright,
+	  patches/pulseaudio-01-esdcompat.diff,
+	  patches/pulseaudio-02-solaris.diff,
+	  patches/pulseaudio-03-fixlink.diff, patches/pulseaudio-04-gconf.diff,
+	  patches/pulseaudio-05-shm.diff, patches/pulseaudio-06-configure.diff,
+	  patches/pulseaudio-07-sada.diff, patches/pulseaudio-08-oss4.diff,
+	  patches/pulseaudio-09-amd64.diff: Add PulseAudio.
+	* manpages/Makefile, manpages/man5/pulse-daemon.conf.5,
+	  manpages/man5/pulse-client.conf.5: These two Linux manpages do not
+	  format properly with Solaris man, so they were rewritten in SGML.
+	* specs/SUNWespeak.spec, specs/SUNWgnome-media.spec,
+	* specs/SUNWlibcanberra.spec, base-specs/libcanberra.spec:
+	  Add "BuildRequires library/audio/pulseaudio" and fix
+	  Requires/BuildRequires.  Fix libcanberra so that it calls
+	  autoreconf since this works better with the new autotools.
+	* specs/SUNWgnome-media-apps.spec, base-specs/gnome-media.spec
+	  patches/gnome-media-09-round.diff,
+	  patches/gnome-media-08-nopulsemix.diff: Build the PulseAudio volume
+	  control applet and the GStreamer gnome-volume-control program.
+	* specs/SUNWgnome-applets.spec, base-specs/gnome-applets.spec,
+	  patches/gnome-applets-11-nomixerwarn.diff:  No longer build the
+	  GStreamer GNOME volume control applet.
+	* base-specs/gnome-settings-daemon.spec,
+	  patches/gnome-settings-daemon-12-mapfile.diff: Since this module
+	  manages the media keys, it needs to be rebuilt.  This patch fixes
+	  this module so it builds with the new autotools.
+
 2012-04-18  Ghee Teo  <ghee.teo@oracle.com>
 
 	Fixes some dependencies problem and ranlib definitions found by jucr.

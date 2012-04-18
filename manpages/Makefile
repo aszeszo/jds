@@ -177,6 +177,7 @@ PACKAGES = \
 	SUNWpangomm			\
 	SUNWpilot-link			\
 	SUNWpng				\
+	SUNWpulseaudio			\
 	SUNWpython26-coherence		\
 	SUNWseahorse			\
 	SUNWsigcpp			\
@@ -807,6 +808,11 @@ SUNWpng_PAGES =			\
 	man3/libpngpf.3		\
 	man4/png.4
 SUNWpng.PAGES: $(SUNWpng_PAGES)
+
+SUNWpulseaudio_PAGES =		 \
+	man5/pulse-daemon.conf.5 \
+	man5/pulse-client.conf.5
+SUNWpulseaudio.PAGES: $(SUNWpulseaudio_PAGES)
 
 SUNWthunderbird_PAGES =	\
 	man1/thunderbird.1

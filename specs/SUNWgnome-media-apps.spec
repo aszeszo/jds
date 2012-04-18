@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-media
 #
-# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,6 +28,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include gnome-incorporation.inc
 BuildRequires: developer/parser/bison
 BuildRequires: runtime/python-26
+BuildRequires: library/audio/pulseaudio
 BuildRequires: library/desktop/xdg/libcanberra
 BuildRequires: gnome/gnome-audio
 BuildRequires: desktop/cd-burning/brasero
@@ -149,6 +150,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/gnome-audio-profiles-properties
 %{_bindir}/gnome-volume-control
 %{_bindir}/gstreamer-properties
+%{_bindir}/gnome-volume-control-applet
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/libgnome-media*.so*
 #%{_libdir}/libglade/2.0/lib*.so*
@@ -258,6 +260,9 @@ rm -rf $RPM_BUILD_ROOT
 %attr (0755, root, sys) %dir %{_sysconfdir}
 %{_sysconfdir}/gconf/schemas/gnome-audio-profiles.schemas
 %{_sysconfdir}/gconf/schemas/gnome-volume-control.schemas
+%dir %attr (-, root, sys) %{_sysconfdir}/xdg
+%dir %attr (-, root, sys) %{_sysconfdir}/xdg/autostart
+%{_sysconfdir}/xdg/autostart/*
 
 %files -n SUNWgnome-sound-recorder-root
 %defattr (-, root, sys)
@@ -274,6 +279,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, sys) %{_datadir}
 
 %changelog
+* Fri Mar 02 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Sun Mar 21 2010 - christian.kelly@sun.com
@@ -364,6 +371,4 @@ rm -rf $RPM_BUILD_ROOT
 - Add nautilus-cd-burner dependency
 * Thu Jul 07 2005 - balamurali.viswanathan@wipro.com
 - Initial spec-file created
-
-
 
