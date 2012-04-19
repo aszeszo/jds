@@ -1,7 +1,8 @@
 2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWpulseaudio.spec: Fix l10n packaging.
-	* base-specs/libgc.spec: Build with gcc to fix sparc building issue.
+	* specs/SUNWlibgc.spec, base-specs/libgc.spec: Build with gcc to fix
+	  sparc building issue.
 
 2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
 

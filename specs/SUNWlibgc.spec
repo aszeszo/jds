@@ -31,6 +31,8 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
+Requires: SUNWgccruntime
+BuildRequires: SUNWgcc
 BuildRequires: system/library/math
 
 %package devel
