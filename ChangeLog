@@ -1,5 +1,10 @@
 2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
 
+	* specs/SUNWpulseaudio.spec: Fix l10n packaging.
+	* base-specs/libgc.spec: Build with gcc to fix sparc building issue.
+
+2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
+
 	WebRTI #362069, CR #7077164 "enhanced sunray audio support - Add
 	PulseAudio to the Desktop"
 	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec,

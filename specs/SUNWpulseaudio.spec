@@ -209,10 +209,7 @@ rm -rf $RPM_BUILD_ROOT
 %files l10n
 %defattr (-, root, bin)
 %dir %attr (0755, root, sys) %{_datadir}
-%dir %attr (0755, root, other) %{_datadir}/gnome
 %attr (-, root, other) %{_datadir}/locale
-%{_datadir}/gnome/*help/*/[a-z]*
-%{_datadir}/omf/gdm/*-[a-z]*.omf
 %endif
 
 %changelog

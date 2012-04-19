@@ -51,6 +51,8 @@ you will need to install %{name}-devel.
 %patch2 -p1
 
 %build
+export CC="/usr/sfw/bin/gcc"
+
 %ifos linux
 if [ -x /usr/bin/getconf ]; then
   CPUS=`getconf _NPROCESSORS_ONLN`
@@ -62,7 +64,7 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-export CFLAGS="%optflags"
+export CFLAGS="%gcc_optflags"
 export LDFLAGS="%{_ldflags}"
 
 libtoolize --force
