@@ -1,3 +1,9 @@
+2012-04-19  Ghee Teo  <ghee.teo@oracle.com>
+
+	CR#7162556 zfssnap user definition should not be a role.
+	RTI#362136.
+	* specs/SUNWgnome-time-slider.spec:
+
 2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWlibgc.spec, base-specs/libgc.spec,
