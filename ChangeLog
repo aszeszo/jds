@@ -1,5 +1,12 @@
 2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
 
+	* specs/SUNWlibgc.spec, base-specs/libgc.spec,
+	  patches/libgc-03-sparc-atomic.diff: Backout previous
+	  commit since it did not fix the problem effectively.  This is a
+	  second attempt to fix sparc building issue.
+
+2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
+
 	* specs/SUNWpulseaudio.spec: Fix l10n packaging.
 	* specs/SUNWlibgc.spec, base-specs/libgc.spec: Build with gcc to fix
 	  sparc building issue.

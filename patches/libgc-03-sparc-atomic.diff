@@ -1,0 +1,11 @@
+--- gc-7.2alpha6/libatomic_ops/src/atomic_ops.c-orig	2012-04-18 18:28:52.623546548 -0500
++++ gc-7.2alpha6/libatomic_ops/src/atomic_ops.c	2012-04-18 18:30:31.600446299 -0500
+@@ -44,7 +44,7 @@
+ #endif
+ 
+ #if !defined(_MSC_VER) && !defined(__MINGW32__) && !defined(__BORLANDC__) \
+-    || defined(AO_USE_NO_SIGNALS)
++    || defined(AO_USE_NO_SIGNALS) || defined(__sparc)
+ 
+ #undef AO_REQUIRE_CAS
+ 

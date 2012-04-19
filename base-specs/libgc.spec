@@ -26,6 +26,8 @@ URL:			http://www.hpl.hp.com/personal/Hans_Boehm/gc/
 Patch1:                 libgc-01-man.diff
 #date:2009-02-16 owner:jouby type:branding
 Patch2:                 libgc-02-rename-libbgc.diff
+#date:2012-04-18 owner:yippi type:bug
+Patch3:                 libgc-03-sparc-atomic.diff
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 Docdir:			%{_defaultdocdir}/doc
 Autoreqprov:		on
@@ -49,10 +51,9 @@ you will need to install %{name}-devel.
 %setup -q -n %{real_name}-%{version}alpha6
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
-export CC="/usr/sfw/bin/gcc"
-
 %ifos linux
 if [ -x /usr/bin/getconf ]; then
   CPUS=`getconf _NPROCESSORS_ONLN`
@@ -64,7 +65,7 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-export CFLAGS="%gcc_optflags"
+export CFLAGS="%optflags"
 export LDFLAGS="%{_ldflags}"
 
 libtoolize --force
