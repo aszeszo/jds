@@ -1,11 +1,11 @@
---- gc-7.2alpha6/libatomic_ops/src/atomic_ops.c-orig	2012-04-18 18:28:52.623546548 -0500
-+++ gc-7.2alpha6/libatomic_ops/src/atomic_ops.c	2012-04-18 18:30:31.600446299 -0500
-@@ -44,7 +44,7 @@
- #endif
+--- gc-7.2alpha6/Makefile.am-orig	2012-04-19 06:48:35.878236659 -0500
++++ gc-7.2alpha6/Makefile.am	2012-04-19 06:48:51.710010636 -0500
+@@ -84,7 +84,7 @@ nodist_libbgc_la_SOURCES = libatomic_ops
+ endif
  
- #if !defined(_MSC_VER) && !defined(__MINGW32__) && !defined(__BORLANDC__) \
--    || defined(AO_USE_NO_SIGNALS)
-+    || defined(AO_USE_NO_SIGNALS) || defined(__sparc)
+ if NEED_ATOMIC_OPS_ASM
+-nodist_libbgc_la_SOURCES = libatomic_ops/src/atomic_ops_sysdeps.S
++nodist_libbgc_la_SOURCES = libatomic_ops/src/atomic_ops.c libatomic_ops/src/atomic_ops_sysdeps.S
+ endif
  
- #undef AO_REQUIRE_CAS
- 
+ # Include THREADDLLIBS here to ensure that the correct versions of
