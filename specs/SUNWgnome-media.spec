@@ -65,7 +65,9 @@ BuildRequires: library/desktop/pango
 BuildRequires: library/gnome/gnome-keyring
 BuildRequires: library/gnome/gnome-libs
 BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/json-c
 BuildRequires: library/liboil
+BuildRequires: library/libsndfile
 BuildRequires: library/libsoup
 BuildRequires: library/libxml2
 BuildRequires: library/musicbrainz/libdiscid

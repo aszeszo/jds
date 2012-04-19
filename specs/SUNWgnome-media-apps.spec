@@ -38,6 +38,9 @@ BuildRequires: library/gnome/gnome-libs
 BuildRequires: library/audio/gstreamer
 BuildRequires: library/gnome/gnome-vfs
 BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: library/gc
+BuildRequires: library/json-c
+BuildRequires: library/libsndfile
 Requires: library/desktop/libglade
 Requires: library/desktop/xdg/libcanberra
 Requires: system/library/math

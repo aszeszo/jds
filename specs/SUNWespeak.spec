@@ -40,6 +40,9 @@ BuildRoot:	%{_tmppath}/%{name}-%{tarball_version}-build
 BuildRequires: compress/unzip
 BuildRequires: system/header
 BuildRequires: library/audio/pulseaudio
+BuildRequires: library/json-c
+BuildRequires: library/libsndfile
+
 BuildRequires: system/library/c++-runtime
 BUildRequires: system/library/math
 

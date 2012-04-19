@@ -61,7 +61,7 @@ Requires: shell/bash
 Requires: library/desktop/libxklavier
 Requires: library/gnome/libgnomekbd
 %if %with_hal
-Requires: service/hal
+Requires: system/hal
 %endif
 Requires: x11/library/mesa
 BuildRequires: x11/library/libxft
