@@ -1,3 +1,12 @@
+2012-04-20  Jeff Cai  <jeff.cai@oracle.com>
+
+        Fix CR #7151417 - File-roller crashes when creating an 
+        archive file which has been already existing
+        RTI #362015
+	* base-specs/file-roller.spec:
+	* patches/file-roller-06-new-file.diff:
+	* specs/SUNWgnome-archive-mgr.spec:
+
 2012-04-19  Ghee Teo  <ghee.teo@oracle.com>
 
 	CR#7162556 zfssnap user definition should not be a role.

@@ -3,7 +3,7 @@
 #
 # includes module(s): file-roller
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012 Oracle and/or its affiliates. All rights 
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,20 +25,19 @@ SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 %include default-depend.inc
-Requires: SUNWgtk2
-Requires: SUNWgnome-archive-mgr-root
-Requires: SUNWgnome-file-mgr
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-config
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWdesktop-cache
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-doc-utils
+Requires: library/desktop/gtk2
+Requires: gnome/file-manager/nautilus
+Requires: library/gnome/gnome-libs
+Requires: library/gnome/gnome-vfs
+Requires: gnome/config/gconf
+Requires: compress/bzip2
+Requires: library/zlib
+Requires: system/library/math
+Requires: library/popt
+Requires: service/gnome/desktop-cache
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/popt
+BuildRequires: developer/gnome/gnome-doc-utils
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -120,6 +119,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/file-roller.schemas
 
 %changelog
+* Mon Apr 09 2012 - jeff.cai@oracle.com
+- Change SVR4 package name to IPS
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Fri Apr  3 2009 - laca@sun.com

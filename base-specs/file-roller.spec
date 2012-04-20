@@ -1,7 +1,8 @@
 #
 # spec file for package file-roller
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2011, 2012 Oracle and/or its affiliates. All rights 
+# reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -34,6 +35,8 @@ Patch3:       file-roller-03-save-as.diff
 # date:2011-05-12 type:branding owner:padraig bugster:7042564
 Patch4:       file-roller-04-fix-doc.diff
 Patch5:       file-roller-05-fix-l10n-doc.diff
+# date:2012-04-09 type:bug owner:jefftsai bugster:7151417 bugzilla:673764
+Patch6:       file-roller-06-new-file.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}
@@ -79,6 +82,7 @@ cd po-sun; make; cd ..
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 for po in po/*.po; do
   dos2unix -ascii $po $po
 done
@@ -151,6 +155,8 @@ done
 %{_datadir}/pixmaps/*.png
 
 %changelog
+* Mon Apr 9 2012 - jeff.cai@oracle.com
+- Add patch -06-new-file, fix CR #7151417
 * Thu May 12 2010 - padraig.obriain@oracle.com
 - Add patch  -fix-doc for CR #7042564
 * Fri Oct 10 2010 - yun-tong.jin@oracle.com
