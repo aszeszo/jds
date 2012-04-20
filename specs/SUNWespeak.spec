@@ -37,6 +37,8 @@ BuildRoot:	%{_tmppath}/%{name}-%{tarball_version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
+Requires: SUNWgccruntime
+BuildRequires: SUNWgcc
 BuildRequires: compress/unzip
 BuildRequires: system/header
 BuildRequires: library/audio/pulseaudio
