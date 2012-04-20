@@ -62,6 +62,7 @@ BuildRequires: library/aalib
 BuildRequires: library/audio/pulseaudio
 BuildRequires: library/desktop/gtk2
 BuildRequires: library/desktop/pango
+BuildRequires: library/gc
 BuildRequires: library/gnome/gnome-keyring
 BuildRequires: library/gnome/gnome-libs
 BuildRequires: library/gnome/gnome-vfs
