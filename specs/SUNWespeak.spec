@@ -42,6 +42,7 @@ BuildRequires: SUNWgcc
 BuildRequires: compress/unzip
 BuildRequires: system/header
 BuildRequires: library/audio/pulseaudio
+BuildRequires: library/gc
 BuildRequires: library/json-c
 BuildRequires: library/libsndfile
 
