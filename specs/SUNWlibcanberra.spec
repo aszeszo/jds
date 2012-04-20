@@ -39,6 +39,7 @@ BuildRequires: library/audio/gstreamer
 BuildRequires: library/audio/pulseaudio
 BuildRequires: library/desktop/gtk2
 BuildRequires: library/libtool/libltdl
+BuildRequires: x11/library/libxi
 
 Requires: gnome/theme/sound/xdg-sound-theme
 Requires: service/gnome/desktop-cache
