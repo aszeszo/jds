@@ -34,6 +34,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include gnome-incorporation.inc
 
 BuildRequires: codec/ogg-vorbis
+BuildRequires: gnome/config/gconf
 BuildRequires: library/audio/gstreamer
 BuildRequires: library/audio/pulseaudio
 BuildRequires: library/desktop/gtk2
