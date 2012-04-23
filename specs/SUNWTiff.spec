@@ -3,7 +3,7 @@
 #
 # includes module(s): tiff
 #
-# Copyright (c) 2004, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -28,23 +28,23 @@ Source1:                 %{name}-manpages-0.1.tar.gz
 SUNW_BaseDir:            %{_prefix}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
+# date:2012-04-19 owner:padraig type:bug bugster:7158160
+Patch1: tiff-01-CVE-2012-1173.diff
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibms
-Requires: SUNWzlib
-BuildRequires: SUNWjpg
+Requires: system/library/math
+Requires: library/zlib
+BuildRequires: image/library/libjpeg
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_prefix}
-%include default-depend.inc
-%include desktop-incorporation.inc
-Requires: SUNWTiff
 
 %prep
 %setup -c -n %name-%version
 cd tiff-%{tarball_version}
+%patch1 -p0
 gzcat %SOURCE1 | tar -xf -
 
 %ifarch amd64 sparcv9
@@ -147,6 +147,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3tiff/*
 
 %changelog
+* Thu Apr 19 2012 - padraig.obriain@oracle.com
+- Added patch tiff-01-CVE-2012-1173.
 * Thu Mar 17 2011 - abhijit.nath@oracle.com
 - Added patch tiff-01-CVE-2011-0192.diff & tiff-01-CVE-2011-1167.diff to fix security vulnerability CVE-2011-0192 & CVE-2011-1167. 
 * Thu Jul 29 2010 - laszlo.peter@oracle.com

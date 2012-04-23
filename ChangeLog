@@ -1,3 +1,10 @@
+2012-04-23  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 7158160 Problem with gnome/libraries
+	RTI 362135
+	* specs/SUNWTiff.spec:
+	* patches/tiff-01-CVE-2012-1173.diff:
+
 2012-04-20  Jeff Cai  <jeff.cai@oracle.com>
 
         Fix CR #7151417 - File-roller crashes when creating an 
