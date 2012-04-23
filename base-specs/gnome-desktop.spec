@@ -42,7 +42,7 @@ Patch4:       gnome-desktop-04-gnome-about-label-size.diff
 Patch5:       gnome-desktop-05-randr-xerror.diff
 # date:2010-11-12 type:bug owner:yippi bugzilla:629168,634534 state:upstream
 Patch6:       gnome-desktop-06-fixcrash.diff
-# date:2012-03-30 type:bug owner:pengwang bugster:654936  
+# date:2012-04-23 type:bug owner:pengwang bugster:6975608
 Patch7:       gnome-desktop-07-pomessage.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
