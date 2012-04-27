@@ -38,3 +38,14 @@
  INCLUDES = ${GKSU_PROPERTIES_CFLAGS}
  AM_CPPFLAGS = -DLOCALEDIR=\"$(datadir)/locale\" -DDATA_DIR=\"$(datadir)\" -DPREFIX=\"$(prefix)\"
  
+--- libgksu-2.0.12/Makefile.am-orig	2012-04-11 11:55:20.309207407 -0500
++++ libgksu-2.0.12/Makefile.am	2012-04-11 11:55:26.745385460 -0500
+@@ -17,7 +17,7 @@ EXTRA_DIST = config.rpath mkinstalldirs 
+ 
+ if GCONF_SCHEMAS_INSTALL
+ install-data-local:
+-        if test -z "$(DESTDIR)" ; then \
++	if test -z "$(DESTDIR)" ; then \
+           for p in $(schemas_DATA) ; do \
+             GCONF_CONFIG_SOURCE=$(GCONF_SCHEMA_CONFIG_SOURCE) $(GCONFTOOL) --makefile-install-rule $(srcdir)/$$p ; \
+           done \

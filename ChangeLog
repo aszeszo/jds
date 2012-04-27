@@ -1,5 +1,22 @@
 2012-04-27  Brian Cameron  <brian.cameron@oracle.com>
 
+        CR #7095930 "GNOME needs to work better with the Stop RBAC profile"
+        WebRTI #361938.
+        * patches/gnome-session-24-rbac.diff, patches/glib-10-gio-rbac.diff,
+          patches/libgksu-05-rbac-support.diff,
+          patches/gnome-panel-17-rbac.diff, patches/gnome-menus-08-rbac.diff:
+          Fix desktop RBAC integration so it checks exec->attr != NULL instead
+          of exec->id != "*".
+        * patches/libgksu-01-Makefile.diff: Fix Makefile so it has uses tab
+          instead of spaces.
+        * specs/SUNWnwam-manager.spec, ext-sources/SUNWnwam-manager-exec_attr:
+          Removed since the GNOME panel no longer filters out modules that have
+          no exec->attr value, so these entries are not useful.
+        * manpages/man1/gnome-panel.1: No longer mention NWAM as using GNOME
+          panel filtering features.
+
+2012-04-27  Brian Cameron  <brian.cameron@oracle.com>
+
 	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec: No longer need
 	  to build with private libtool.
 	* ext-sources/libtool-2.2.6b.tar.gz: Remove.

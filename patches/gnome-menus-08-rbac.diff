@@ -936,7 +936,7 @@
 +	}
 +
 +	while (exec != NULL) {
-+		if (strcmp (exec->id, "*") != 0) {
++		if (exec->attr != NULL) {
 +			program_has_profile = TRUE;
 +			break;
 +		}
@@ -970,7 +970,7 @@
 +	 * be shown.
 +	 */
 +	while (exec != NULL) {
-+		if (strcmp (exec->id, "*") != 0) {
++		if (exec->attr != NULL) {
 +			rc = FALSE;
 +			break;
 +		}
@@ -1014,7 +1014,7 @@
 +			exec = getexecuser (role, KV_COMMAND, stripped_cmd, GET_ONE);
 +			while (exec != NULL) {
 +				if ((strcmp (role, "root") == 0) ||
-+				    (strcmp (exec->id, "*") != 0)) {
++				    (exec->attr != NULL)) {
 +					rc = FALSE;
 +					break;
 +				}
