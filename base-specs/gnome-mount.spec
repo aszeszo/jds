@@ -18,7 +18,7 @@ Release:      1
 Distribution: Java Desktop System
 Vendor:       Other
 Summary:      Programs for mounting, unmounting and ejecting storage devices.
-Source:       http://people.freedesktop.org/~david/dist/gnome-mount-%{version}.tar.gz
+Source:       http://hal.freedesktop.org/releases/gnome-mount-%{version}.tar.gz
 %if %build_l10n
 Source1:                 l10n-configure.sh
 %endif
