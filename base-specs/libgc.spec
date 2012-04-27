@@ -26,6 +26,8 @@ URL:			http://www.hpl.hp.com/personal/Hans_Boehm/gc/
 Patch1:                 libgc-01-man.diff
 #date:2009-02-16 owner:jouby type:branding
 Patch2:                 libgc-02-rename-libbgc.diff
+#date:2012-04-18 owner:yippi type:bug
+Patch3:                 libgc-03-sparc-atomic.diff
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 Docdir:			%{_defaultdocdir}/doc
 Autoreqprov:		on
@@ -49,6 +51,7 @@ you will need to install %{name}-devel.
 %setup -q -n %{real_name}-%{version}alpha6
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 %ifos linux
@@ -115,7 +118,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/bdw-gc.pc
 
 %changelog
-* Fri Sep 09 2011 - brian.cameron@oracle.com
+* Thu Feb 09 2012 - brian.cameron@oracle.com
 - Bump to 7.2 alpha6 and build libatomic-ops.
 * Fri Apr 30 2010 - yuntong.jin@sun.com
 - Change the ownership to jouby

@@ -9,10 +9,6 @@
 #
 # bugdb: www.pulseaudio.org/report/
 #
-# Note that PulseAudio has build and runtime requirements on the newer version
-# 2.2.6b of libtool, so this module builds and uses its own private copy.  This
-# should be removed when libtool is updated in Solaris to a newer version.
-#
 %define owner yippi
 #
 %include Solaris.inc
@@ -95,19 +91,13 @@ gzcat %SOURCE0 | tar xf -
 
 export SOLARIS_PULSE_ARGS="--disable-avahi"
 
-# Set LD_LIBRARY_PATH so the new version of libtool gets used.
-export LD_LIBRARY_PATH="%{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs"
-
-export SOLARIS_PULSE_CPPFLAGS="-xc99 -I%{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl"
-export SOLARIS_PULSE_CFLAGS="%optflags64 -xc99 -I%{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl"
-
 # Need to add -Wl,-z,now and -Wl,-z-nodelete and remove -Wl,-zignore for
 # PulseAudio to build.
 #
 %if %debug_build
-export SOLARIS_PULSE_LDFLAGS="-Wl,-z,now -Wl,-z,nodelete -R/usr/lib/pulse-%{version} -L%{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs %{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so -lxnet -lsocket -lgobject-2.0"
+export SOLARIS_PULSE_LDFLAGS="-Wl,-z,now -Wl,-z,nodelete -lxnet -lsocket -lgobject-2.0"
 %else
-export SOLARIS_PULSE_LDFLAGS="-Wl,-zcombreloc -Wl,-Bdirect -Wl,-z,now -Wl,-z,nodelete -R/usr/lib/pulse-%{version} -L%{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs %{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so -lxnet -lsocket -lgobject-2.0"
+export SOLARIS_PULSE_LDFLAGS="-Wl,-zcombreloc -Wl,-Bdirect -Wl,-z,now -Wl,-z,nodelete -lxnet -lsocket -lgobject-2.0"
 %endif
 
 %pulseaudio64.build -d %name-%version/%_arch64
@@ -117,16 +107,10 @@ export SOLARIS_PULSE_LDFLAGS="-Wl,-zcombreloc -Wl,-Bdirect -Wl,-z,now -Wl,-z,nod
 #
 export SOLARIS_PULSE_ARGS=""
 
-# Set LD_LIBRARY_PATH so the new version of libtool gets used.
-export LD_LIBRARY_PATH="%{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs"
-
-export SOLARIS_PULSE_CPPFLAGS="-xc99 -I%{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl"
-export SOLARIS_PULSE_CFLAGS="%optflags -xc99 -I%{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl"
-
 %if %debug_build
-export SOLARIS_PULSE_LDFLAGS="-Wl,-z,now -Wl,-z,nodelete -R/usr/lib/pulse-%{version} -L%{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs %{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so -lxnet -lsocket -lgobject-2.0"
+export SOLARIS_PULSE_LDFLAGS="-Wl,-z,now -Wl,-z,nodelete -lxnet -lsocket -lgobject-2.0"
 %else
-export SOLARIS_PULSE_LDFLAGS="-Wl,-zcombreloc -Wl,-Bdirect -Wl,-z,now -Wl,-z,nodelete -R/usr/lib/pulse-%{version} -L%{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs %{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so -lxnet -lsocket -lgobject-2.0"
+export SOLARIS_PULSE_LDFLAGS="-Wl,-zcombreloc -Wl,-Bdirect -Wl,-z,now -Wl,-z,nodelete -lxnet -lsocket -lgobject-2.0"
 %endif
 
 %pulseaudio.build -d %name-%version/%{base_arch}
@@ -136,15 +120,9 @@ rm -rf $RPM_BUILD_ROOT
 
 %ifarch amd64 sparcv9
 %pulseaudio64.install -d %name-%version/%_arch64
-
-cp %{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so $RPM_BUILD_ROOT%{_libdir}/%_arch64/pulse-%{version}
-cp %{_builddir}/%name-%version/%_arch64/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so.7 $RPM_BUILD_ROOT%{_libdir}/%_arch64/pulse-%{version}
 %endif
 
 %pulseaudio.install -d %name-%version/%{base_arch}
-
-cp %{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so $RPM_BUILD_ROOT%{_libdir}/pulse-%{version}
-cp %{_builddir}/%name-%version/%{base_arch}/pulseaudio-%version/libtool-2.2.6b/libltdl/.libs/libltdl.so.7 $RPM_BUILD_ROOT%{_libdir}/pulse-%{version}
 
 # Remove .la and .a file as we do not ship them.
 find $RPM_BUILD_ROOT -name "*.la" -exec rm {} \;
@@ -234,15 +212,10 @@ rm -rf $RPM_BUILD_ROOT
 %files l10n
 %defattr (-, root, bin)
 %dir %attr (0755, root, sys) %{_datadir}
-%dir %attr (0755, root, other) %{_datadir}/gnome
 %attr (-, root, other) %{_datadir}/locale
-%{_datadir}/gnome/*help/*/[a-z]*
-%{_datadir}/omf/gdm/*-[a-z]*.omf
 %endif
 
 %changelog
-* Mon Feb 27 2012 - Brian Cameron  <brian.cameron@oracle.com>
-- Provide preserve tag for files installed to /etc/pulse.
 * Sun Oct 02 2011 - Brian Cameron  <brian.cameron@oracle.com>
 - Bump to 1.0.
 * Tue Sep 28 2011 - Brian Cameron  <brian.cameron@oracle.com>

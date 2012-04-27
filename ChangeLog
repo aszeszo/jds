@@ -1,3 +1,13 @@
+2012-04-27  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec: No longer need
+	  to build with private libtool.
+	* ext-sources/libtool-2.2.6b.tar.gz: Remove.
+	* patches/pulseaudio-03-libtool.diff: Remove, renumber rest.
+	* base-specs/libgc.spec, patches/libgc-03-sparc-atomic.diff:  Add
+	  patch needed to compile on Sparc.
+	* copyright/SUNWpython-simplejson.copyright: Update.
+
 2012-04-18  Ghee Teo  <ghee.teo@oracle.com>
 
 	Put back those changes  related to CR#7144691
