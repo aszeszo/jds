@@ -1,6 +1,6 @@
 #!/bin/sh
 
-VERS=11.1.102.55
+VERS=11.1.102.62
 
 [ -f flash_player_11_solaris_x86.tar.bz2 ] || wget http://download.macromedia.com/pub/flashplayer/pdc/$VERS/flash_player_11_solaris_x86.tar.bz2
 [ -f flash_player_11_solaris_sparc.tar.bz2 ] || wget http://download.macromedia.com/pub/flashplayer/pdc/$VERS/flash_player_11_solaris_sparc.tar.bz2
