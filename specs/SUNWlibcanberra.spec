@@ -32,12 +32,16 @@ SUNW_BaseDir:            %{_basedir}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: codec/ogg-vorbis
+
+BuildRequires: codec/ogg-vorbis
+BuildRequires: gnome/config/gconf
+BuildRequires: library/audio/gstreamer
+BuildRequires: library/audio/pulseaudio
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/libtool/libltdl
+BuildRequires: x11/library/libxi
+
 Requires: gnome/theme/sound/xdg-sound-theme
-Requires: library/audio/gstreamer
-Requires: library/audio/pulseaudio
-Requires: library/desktop/gtk2
-Requires: library/libtool/libltdl
 Requires: service/gnome/desktop-cache
 
 %package root
@@ -69,12 +73,6 @@ cd %{_builddir}/%{name}-%{version}
 gzcat %SOURCE1 | tar xf -
 
 %build
-# There seems to be an issue with the version of libtool that is now being
-# used.  The libtool script uses the echo and RM variables but does not define
-# them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
-
 %ifarch amd64 sparcv9
 export PKG_CONFIG_LIBDIR="%{_pkg_config_path64}"
 export CFLAGS="%optflags64"
@@ -86,12 +84,6 @@ export CFLAGS="%optflags"
 %libcanberra.build -d %name-%version/%base_arch
 
 %install
-# There seems to be an issue with the version of libtool that is now being
-# used.  The libtool script uses the echo and RM variables but does not define
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
-
 %ifarch amd64 sparcv9
 %libcanberra_64.install -d %name-%version/%_arch64
 %endif

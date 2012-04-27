@@ -1,7 +1,7 @@
 #
 # spec file for package gstreamer
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,6 +25,8 @@ Source1:      l10n-configure.sh
 
 #owner:laca date:2005-08-11 type:bug bugster:6570425
 Patch1:       gst-01-gettext.diff
+#owner:yippi date:2012-04-03 type:bug
+Patch2:       gst-02-amd64.diff
 URL:          http://gstreamer.net/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -92,6 +94,7 @@ gst-launch.  It is split off to allow parallel-installability in the future.
 %prep
 %setup -q 
 %patch1 -p1
+%patch2 -p1
 
 %build
 %ifos linux
@@ -172,6 +175,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/gst-*
 
 %changelog
+* Fri Apr 27 2012 - brian.cameron@oracle.com
+- Add patch gst-02-amd64.diff.
 * Sat Oct 01 2011 - brian.cameron@oracle.com
 - Bump to 0.10.35.
 * Mon Jan 24 2011 - brian.cameron@oracle.com

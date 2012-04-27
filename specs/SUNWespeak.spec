@@ -37,11 +37,17 @@ BuildRoot:	%{_tmppath}/%{name}-%{tarball_version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
+Requires: SUNWgccruntime
+BuildRequires: SUNWgcc
 BuildRequires: compress/unzip
 BuildRequires: system/header
-Requires: library/audio/pulseaudio
-Requires: system/library/c++-runtime
-Requires: system/library/math
+BuildRequires: library/audio/pulseaudio
+BuildRequires: library/gc
+BuildRequires: library/json-c
+BuildRequires: library/libsndfile
+
+BuildRequires: system/library/c++-runtime
+BuildRequires: system/library/math
 
 %package devel
 Summary:                 %{summary} - development files

@@ -1,5 +1,16 @@
 2012-04-27  Brian Cameron  <brian.cameron@oracle.com>
 
+        * specs/SUNWgnome-media.spec, base-specs/gst.spec,
+          patches/gst-02-amd64.diff: Fix CR #7159492 "GStreamer amd64 and i386
+          sharing same registry files when they should not" and #7144691
+          "Solaris 11 man pages have excessive permissions".  WebRTI #361807.
+	  Now set plugin defaults on configure line.
+	* specs/SUNWlibcanberra.spec, base-specs/libcanberra.spec: Fix
+	  Requires, now use autoreconf.
+	* specs/SUNWespeak.spec, specs/SUNWgnome-media.spec: Fix BuildRequires.
+
+2012-04-27  Brian Cameron  <brian.cameron@oracle.com>
+
         CR #7095930 "GNOME needs to work better with the Stop RBAC profile"
         WebRTI #361938.
         * patches/gnome-session-24-rbac.diff, patches/glib-10-gio-rbac.diff,

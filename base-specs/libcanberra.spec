@@ -55,12 +55,7 @@ fi
 
 export LDFLAGS="%{_ldflags}"
 
-glib-gettextize -f
-aclocal $ACLOCAL_FLAGS -I ./m4
-libtoolize --force --copy
-autoheader
-autoconf
-automake -a -c -f
+autoreconf --force --install
 
 ./configure --prefix=%{_prefix} --mandir=%{_mandir} \
             --libdir=%{_libdir} --bindir=%{_bindir} \
@@ -86,6 +81,8 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Fri Apr 27 2012 - brian.cameron@oracle.com
+- Now use autoreconf.
 * Wed Jul 06 2011 - brian.cameron@oracle.com
 - Bump to 0.28.
 * Mon Oct 04 2010 - brian.cameron@oracle.com
