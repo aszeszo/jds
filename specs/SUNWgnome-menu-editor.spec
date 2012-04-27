@@ -29,12 +29,12 @@ Requires:      SUNWgnome-panel
 Requires:      SUNWpygobject26
 Requires:      SUNWpygtk2-26
 Requires:      SUNWdesktop-cache
-Requires:      SUNWPython26
+Requires:      runtime/python-26
 BuildRequires: SUNWgnome-libs-devel
 BuildRequires: SUNWpygobject26-devel
 BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWPython26
-BuildRequires: SUNWpython26-setuptools
+BuildRequires: runtime/python-26
+BuildRequires: library/python-2/setuptools-26
 
 %package l10n
 Summary:                 %{summary} - l10n files

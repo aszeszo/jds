@@ -31,7 +31,7 @@ SUNW_Copyright:          %{name}.copyright
 License:                 Public Domain
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
-BuildRequires: SUNWunzip
+BuildRequires: compress/unzip
 
 %include default-depend.inc
 %include desktop-incorporation.inc

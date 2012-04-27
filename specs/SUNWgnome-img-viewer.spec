@@ -50,7 +50,7 @@ Requires: SUNWlibexif
 Requires: SUNWlibms
 Requires: SUNWlibpopt
 Requires: SUNWdesktop-cache
-Requires: SUNWlcms
+Requires: library/lcms
 BuildRequires: SUNWgtk2-devel
 BuildRequires: SUNWgnome-component-devel
 BuildRequires: SUNWgnome-config-devel
@@ -63,8 +63,8 @@ BuildRequires: SUNWgnome-file-mgr-devel
 BuildRequires: SUNWgnome-camera-devel
 BuildRequires: SUNWgnome-libs-devel
 BuildRequires: SUNWgnome-icon-theme
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWlcms
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: library/lcms
 BuildRequires: SUNWgnome-doc-utils
 
 %package l10n
@@ -235,7 +235,7 @@ rm -rf $RPM_BUILD_ROOT
 - Delete *.a/*.la during %install; add %{_datadir}/gtk-doc and
   %{eog_libdir}/eog to %files.
 * Wed May 21 2008 - damien.carbery@sun.com
-- Add Build/Requires: SUNWlcms after check-deps.pl run.
+- Add Build/Requires: library/lcms after check-deps.pl run.
 * Thu Jan  3 2008 - laca@sun.com
 - use gconf-install.script instead of an inline script
 * Fri Sep 28 2007 - laca@sun.com

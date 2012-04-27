@@ -24,7 +24,7 @@ License:                 %{gud.license}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWlxml-python26
+BuildRequires: library/python-2/libxml2-26
 BuildRequires: SUNWgnome-doc-utils
 Requires: SUNWgnome-help-viewer
 

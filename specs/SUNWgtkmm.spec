@@ -39,7 +39,7 @@ BuildRequires: SUNWglibmm-devel
 BuildRequires: SUNWcairomm-devel
 BuildRequires: SUNWpangomm-devel
 BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgtk-doc
+BuildRequires: developer/documentation-tool/gtk-doc
 BuildRequires: SUNWmm-common
 
 %package devel

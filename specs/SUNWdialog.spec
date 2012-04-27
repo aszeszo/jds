@@ -33,7 +33,7 @@ Requires: SUNWsndmu
 Requires: SUNWlibms
 Requires: SUNWbash
 BuildRequires: SUNWncurses
-BuildRequires: SUNWgnu-gettext
+BuildRequires: text/gnu-gettext
 BuildRequires: SUNWncurses-devel
 
 %package l10n

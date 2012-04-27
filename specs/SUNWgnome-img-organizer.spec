@@ -57,7 +57,7 @@ BuildRequires: SUNWgnome-libs-devel
 BuildRequires: SUNWgnome-doc-utils
 BuildRequires: SUNWlibgnome-keyring
 BuildRequires: SUNWxcu4
-BuildRequires: SUNWgsed
+BuildRequires: text/gnu-sed
 
 %package l10n
 Summary:                 %{summary} - l10n files

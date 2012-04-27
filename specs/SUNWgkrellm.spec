@@ -39,7 +39,7 @@ BuildRequires:  SUNWdbus-glib
 BuildRequires:  SUNWdbus-libs
 BuildRequires:  SUNWgtk2-devel
 BuildRequires:  SUNWdbus-glib-devel
-BuildRequires:  SUNWgnu-gettext
+BuildRequires:  text/gnu-gettext
 BuildRequires:  SUNWhal
 BuildRequires:  SUNWgcc
 
@@ -137,7 +137,7 @@ rm -rf $RPM_BUILD_ROOT
 * Thu Feb 12 2009 - halton.huo@sun.com
 - Update Requires/BuildRequires after running check-deps.pl, fix CR #6798922
 * Sat Jan 17 2009 - dave.lin@sun.com
-- Change "Requires: SUNWgnu-gettext"to "BuildRequires: SUNWgnu-gettext".
+- Change "Requires: text/gnu-gettext"to "BuildRequires: SUNWgnu-gettext".
 * Wed. Oct. 22 2008 - Henry Zhang <hua.zhang@sun.com>
 - Bump to 2.3.2
 * Wed. Sep 17 2008 - Henry Zhang <hua.zhang@sun.com>

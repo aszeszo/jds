@@ -22,11 +22,11 @@ SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 Requires:                SUNWdbus-python26
-Requires:                SUNWPython26
+Requires:                runtime/python-26
 Requires:                SUNWpycups
-Requires:                SUNWcupsu
+Requires:                print/cups
 BuildRequires:           SUNWgnome-desktop-prefs
-BuildRequires:           SUNWcupsu
+BuildRequires:           print/cups
 BuildRequires:           SUNWgnome-doc-utils
 
 %include default-depend.inc
@@ -37,7 +37,7 @@ Summary:		 %{summary} - / filesystem
 SUNW_BaseDir:		 /
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWPython26
+Requires: runtime/python-26
 
 %package l10n
 Summary:                 %{summary} - l10n files

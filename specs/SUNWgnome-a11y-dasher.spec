@@ -34,7 +34,7 @@ BuildRequires: SUNWgnome-config-devel
 BuildRequires: SUNWgnome-vfs-devel
 BuildRequires: SUNWlibpopt-devel
 BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgtk-doc
+BuildRequires: developer/documentation-tool/gtk-doc
 Requires: SUNWlibglade
 Requires: SUNWlexpt
 Requires: SUNWgnome-a11y-libs

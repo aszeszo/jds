@@ -36,7 +36,7 @@ Requires:       SUNWdbus-glib
 BuildRequires:	SUNWdbus-devel
 BuildRequires:	SUNWlxml
 BuildRequires:  SUNWPython26-extra
-BuildRequires:  SUNWpython26-setuptools
+BuildRequires:  library/python-2/setuptools-26
 BuildRequires:  SUNWdbus-glib-devel
 BuildRequires:  consolidation/desktop/gnome-incorporation
 

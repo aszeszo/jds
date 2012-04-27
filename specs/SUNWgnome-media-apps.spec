@@ -27,7 +27,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 BuildRequires: SUNWbison 
-BuildRequires: SUNWPython26
+BuildRequires: runtime/python-26
 BuildRequires: SUNWlibcanberra-devel
 BuildRequires: SUNWgnome-audio-devel
 BuildRequires: SUNWgnome-cd-burner-devel

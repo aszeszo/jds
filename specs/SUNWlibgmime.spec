@@ -30,8 +30,8 @@ BuildRequires: SUNWglib2
 Requires:      SUNWzlib
 Requires:      SUNWlibms
 BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgtk-doc
-Requires: SUNWgnupg
+BuildRequires: developer/documentation-tool/gtk-doc
+Requires: crypto/gnupg
 Requires: library/security/gpgme
 
 %package devel

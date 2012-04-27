@@ -190,7 +190,7 @@ rm -rf $RPM_BUILD_ROOT
 * Fri Apr  3 2009 - laca@sun.com
 - use desktop-cache instead of postrun.
 * Wed Mar 18 2009 - halton.huo@sun.com
-- Add BuildRequires: SUNWgtk-doc.
+- Add BuildRequires: developer/documentation-tool/gtk-doc.
 * Tue Jan 20 2009 - brian.cameron@sun.com
 - Fix packaging after bumping gnome-terminal to 2.25.5.
 * Sat Dec 27 2008 - dave.lin@sun.com

@@ -24,7 +24,7 @@ SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          SUNWgnome-python-extras.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 Requires:                SUNWgtk2
-Requires:                SUNWPython26
+Requires:                runtime/python-26
 Requires:                SUNWgnome-python26
 Requires:                SUNWpygtk2-26
 Requires:                SUNWpygobject26
@@ -38,7 +38,7 @@ BuildRequires:           SUNWpygobject26-devel
 BuildRequires:           SUNWfirefox-devel
 BuildRequires:           SUNWgksu-devel
 BuildRequires:           SUNWgtkspell-devel
-BuildRequires:           SUNWpython26-setuptools
+BuildRequires:           library/python-2/setuptools-26
 
 %include default-depend.inc
 %include gnome-incorporation.inc

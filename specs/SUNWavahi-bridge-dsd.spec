@@ -33,13 +33,13 @@ Source2:        svc-avahi-bridge-dsd
 BuildRequires:  SUNWgtk2-devel
 BuildRequires:  SUNWpygtk2-26-devel
 BuildRequires:  SUNWdbus-python26
-BuildRequires:  SUNWpython26-setuptools
+BuildRequires:  library/python-2/setuptools-26
 BuildRequires:  SUNWdbus
 Requires:       SUNWgobject-introspection
 Requires:       SUNWgtk2
 Requires:       SUNWdsdu
 Requires:       SUNWpygtk2-26
-Requires:       SUNWPython26
+Requires:       runtime/python-26
 Requires:       SUNWdbus-python26
 Requires:       SUNWavahi-bridge-dsd-root
 Requires:       SUNWlibdaemon

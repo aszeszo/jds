@@ -31,7 +31,7 @@ BuildRoot:              %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 BuildRequires: runtime/perl-512
-BuildRequires:          SUNWcmake 
+BuildRequires: developer/build/cmake
 
 %package devel
 Summary:                 %{summary} - development files

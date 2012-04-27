@@ -41,7 +41,7 @@ Requires: SUNWpygtk2-26
 BuildRequires: SUNWgtk2-devel
 BuildRequires: SUNWpygtk2-26-devel
 BuildRequires: SUNWlibsexy
-BuildRequires: SUNWpython26-setuptools
+BuildRequires: library/python-2/setuptools-26
 BuildRequires: SUNWbtool
 BuildRequires: SUNWgnome-common-devel
 

@@ -23,7 +23,7 @@ BuildRoot:           %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 BuildRequires: SUNWgnome-common-devel
 BuildRequires: SUNWdesktop-cache
-Requires: SUNWPython26
+Requires: runtime/python-26
 
 %prep
 %setup -q -n os-welcome-%{version}

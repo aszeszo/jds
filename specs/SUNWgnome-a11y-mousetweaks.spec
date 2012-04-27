@@ -51,7 +51,7 @@ BuildRequires: SUNWgnome-a11y-libs-devel
 BuildRequires: SUNWdbus-glib-devel
 BuildRequires: SUNWgnome-libs-devel
 BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgtk-doc
+BuildRequires: developer/documentation-tool/gtk-doc
 
 %package root
 Summary:                 %{summary} - / filesystem

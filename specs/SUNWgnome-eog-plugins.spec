@@ -31,7 +31,7 @@ Requires: SUNWlibchamplain
 Requires: SUNWgnome-python26
 Requires: SUNWpygtk2-26
 Requires: SUNWglib2 
-Requires: SUNWPython26
+Requires: runtime/python-26
 
 BuildRequires: SUNWlibexif
 BuildRequires: SUNWgnome-img-viewer-devel
@@ -109,7 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 * Mon Mar 22 2010 - christian.kelly@sun.com
 - Grr, typo in libchamplain dep.
 * Mon Mar 22 2010 - christian.kelly@sun.com
-- s/Requires: SUNWpython26/Requires: SUNWPython26/
+- s/Requires: SUNWpython26/Requires: runtime/python-26/
 * Fri Jan 29 2010 - yuntong.jin@sun.com
 - Init 
 

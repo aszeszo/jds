@@ -28,9 +28,9 @@ SUNW_BaseDir:            %{_basedir}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:                SUNWPython26
-BuildRequires:           SUNWPython26
-BuildRequires:           SUNWpython26-setuptools
+Requires:                runtime/python-26
+BuildRequires:           runtime/python-26
+BuildRequires:           library/python-2/setuptools-26
 
 %prep
 rm -rf %name-%version

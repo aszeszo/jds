@@ -35,7 +35,7 @@ Patch2: transmission-02-desktop.diff
 %include default-depend.inc
 %include desktop-incorporation.inc
 BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWopenssl-include
+BuildRequires: library/security/openssl
 BuildRequires: SUNWgnome-panel-devel
 BuildRequires: SUNWdbus-glib-devel
 Requires: SUNWgtk2
@@ -45,7 +45,7 @@ Requires: SUNWgnome-panel
 Requires: SUNWdbus-glib
 %if %option_with_gnu_iconv
 Requires: SUNWgnu-libiconv
-Requires: SUNWgnu-gettext
+Requires: text/gnu-gettext
 %else
 Requires: SUNWuiu8
 %endif

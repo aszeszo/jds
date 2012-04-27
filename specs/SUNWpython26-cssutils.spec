@@ -21,9 +21,9 @@ Version:                 %{pycssutils.version}
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          SUNWpython-cssutils.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{pycssutils.tarball_version}-build
-Requires:                SUNWPython26
-BuildRequires:           SUNWpython26-setuptools
-BuildRequires:           SUNWunzip
+Requires:                runtime/python-26
+BuildRequires:           library/python-2/setuptools-26
+BuildRequires:           compress/unzip
 
 Patch1:                  cssutils-01-py26.diff 
 

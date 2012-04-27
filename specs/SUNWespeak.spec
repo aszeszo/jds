@@ -37,7 +37,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{tarball_version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 BuildRequires:	SUNWaudh
-BuildRequires:  SUNWunzip
+BuildRequires:  compress/unzip
 BuildRequires:  SUNWgcc
 Requires: SUNWlibC
 Requires: SUNWlibmsr

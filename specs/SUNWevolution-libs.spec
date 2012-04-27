@@ -50,8 +50,8 @@ BuildRequires: SUNWgnome-spell-devel
 BuildRequires: SUNWiso-codes-devel
 BuildRequires: SUNWgnome-icon-theme
 BuildRequires: SUNWhea
-BuildRequires: SUNWicud
-BuildRequires: SUNWpcre
+BuildRequires: developer/icu
+BuildRequires: library/pcre
 
 %package l10n
 Summary:		%{summary} - l10n files

@@ -28,7 +28,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 Requires: SUNWlibgnomecanvas
-Requires: SUNWpcre
+Requires: library/pcre
 Requires: SUNWgnome-spell
 Requires: SUNWgnome-libs
 BuildRequires: SUNWlibgnomecanvas-devel

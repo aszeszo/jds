@@ -27,7 +27,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 Requires: SUNWuiu8
 Requires: SUNWgtk2
-Requires: SUNWlcms
+Requires: library/lcms
 BuildRequires: SUNWgtk2-devel
 BuildRequires: SUNWgnome-common-devel
 

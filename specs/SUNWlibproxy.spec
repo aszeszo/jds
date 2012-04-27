@@ -150,7 +150,7 @@ depend type=group fmri=library/libproxy/libproxy-mozjs
 * Mon Sep 07 2009 - dave.lin@sun.com
 - set PYTHON to python2.6
 * Thu Sep 03 2009 - dave.lin@sun.com
-- Add 'BuildRequires: SUNWPython26-devel' to build python binding.
+- Add 'BuildRequires: runtime/python-26-devel' to build python binding.
 * Wed Feb 18, 2009 - ke.wang@sun.com
 - Set PKG_CONFIG_LIBDIR to _pkg_config_path64 to make PKG_CHECK_MODULES
   work correctly when building 64-bit library

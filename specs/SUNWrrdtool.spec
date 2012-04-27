@@ -30,7 +30,7 @@ BuildRoot:           %{_tmppath}/%{name}-%{version}-build
 Requires: SUNWlxmlr
 Requires: SUNWpango
 Requires: SUNWgccruntime
-Requires: SUNWlua
+Requires: runtime/lua
 BuildRequires: text/groff
 BuildRequires: SUNWpango-devel
 

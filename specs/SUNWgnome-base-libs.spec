@@ -96,7 +96,7 @@ Requires: SUNWlibgnomecanvas-devel
 - Remove gail module as it is not incorporated into gtk+. Update %files for
   new location of 64 bit gail libs.
 * Wed May 21 2008 - damien.carbery@sun.com
-- Add 'Requires: SUNWcupsu' to devel package to fix #6705123.
+- Add 'Requires: print/cups' to devel package to fix #6705123.
 * Fri Apr 18 2008 - darren.kenny@sun.com
 - Statically link in pixman into cairo, so don't ship libpixman.
 - This is a temporary workaround until the X server provide libpixman.

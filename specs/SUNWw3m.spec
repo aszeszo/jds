@@ -35,7 +35,7 @@ Requires:            SUNWopenssl-libraries
 BuildRequires:       SUNWgtk2-devel
 BuildRequires:       SUNWlibm 
 BuildRequires:       SUNWlibgc-devel
-BuildRequires:       SUNWopenssl-include
+BuildRequires:       library/security/openssl
 
 %package l10n
 Summary:                 %{summary} - l10n files

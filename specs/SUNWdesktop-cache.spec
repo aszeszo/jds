@@ -24,7 +24,7 @@ SUNW_Copyright: %{name}.copyright
 %include desktop-incorporation.inc
 
 # find_newer uses Python
-#Requires: SUNWPython26
+#Requires: runtime/python-26
 Requires: SUNWuiu8
 
 %package root

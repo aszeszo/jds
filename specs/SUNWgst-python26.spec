@@ -27,13 +27,13 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 Requires:                SUNWglib2
-Requires:                SUNWPython26
+Requires:                runtime/python-26
 Requires:                SUNWpygobject26
 Requires:                SUNWgnome-media
 BuildRequires:           SUNWglib2-devel
 BuildRequires:           SUNWpygobject26-devel
 BuildRequires:           SUNWgnome-media-devel
-BuildRequires:           SUNWpython26-setuptools
+BuildRequires:           library/python-2/setuptools-26
 
 %package devel		
 Summary:                 %{summary} - development files

@@ -24,8 +24,8 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWneon
-BuildRequires: SUNWcmake
+BuildRequires: library/neon
+BuildRequires: developer/build/cmake
 BuildRequires: SUNWlibdiscid-devel
 
 %package devel

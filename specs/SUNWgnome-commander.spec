@@ -31,10 +31,10 @@ BuildRequires: SUNWlibgnomecanvas-devel
 BuildRequires: SUNWlibgsf-devel
 BuildRequires: SUNWgnome-libs-devel
 BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWPython26
+BuildRequires: runtime/python-26
 BuildRequires: SUNWgnome-python26-devel
 BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgtk-doc
+BuildRequires: developer/documentation-tool/gtk-doc
 Requires: SUNWlibgnomecanvas
 Requires: SUNWgnome-vfs
 Requires: SUNWlibgsf
@@ -43,7 +43,7 @@ Requires: SUNWgnome-python26
 Requires: SUNWdesktop-cache
 Requires: SUNWgnome-panel
 Requires: SUNWvala
-Requires: SUNWaalib
+Requires: library/aalib
 
 %package l10n
 Summary:                 %{summary} - l10n files

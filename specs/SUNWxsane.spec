@@ -40,12 +40,12 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 Requires: SUNWgtk2
 Requires: SUNWfontconfig
 Requires: SUNWfreetype2
-Requires: SUNWlcms
+Requires: library/lcms
 Requires: SUNWlexpt
 Requires: SUNWlibexif
 Requires: SUNWlibms
 Requires: SUNWlibusb
-BuildRequires: SUNWlibltdl
+BuildRequires: library/libtool/libltdl
 BuildRequires: SUNWmlib
 Requires: SUNWzlib
 Requires: SUNWTiff
@@ -53,7 +53,7 @@ Requires: SUNWjpg
 Requires: SUNWpng
 Requires: SUNWgnome-camera
 Requires: SUNWgnome-img-editor
-Requires: SUNWsane-backendu
+Requires: image/scanner/xsane/sane-backends
 BuildRequires: SUNWxwplt
 BuildRequires: SUNWxwrtl
 BuildRequires: SUNWgtk2-devel
@@ -62,7 +62,7 @@ BuildRequires: SUNWjpg-devel
 BuildRequires: SUNWpng-devel
 BuildRequires: SUNWgnome-camera-devel
 BuildRequires: SUNWgnome-img-editor-devel
-BuildRequires: SUNWsane-backendu
+BuildRequires: image/scanner/xsane/sane-backends
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -89,6 +89,7 @@ aclocal -I m4
 libtoolize --force
 glib-gettextize --force
 autoconf -f
+cp /usr/share/automake-1.11/config.{guess,sub} .
 ./configure --prefix=%{_prefix} --mandir=%{_mandir} \
             --libdir=%{_libdir}              \
             --libexecdir=%{_libexecdir}      \

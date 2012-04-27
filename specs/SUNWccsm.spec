@@ -38,13 +38,13 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 # add build and runtime dependencies here:
 BuildRequires:  SUNWpygtk2-26-devel
-BuildRequires:  SUNWPython26
-BuildRequires:  SUNWpython26-setuptools
+BuildRequires:  runtime/python-26
+BuildRequires:  library/python-2/setuptools-26
 BuildRequires:  SUNWcompizconfig-python
 BuildRequires:  SUNWlibsexy
 Requires:       SUNWdbus-python26
 Requires:       SUNWpygtk2-26
-Requires:       SUNWPython26
+Requires:       runtime/python-26
 Requires:       SUNWcompizconfig-python
 Requires:       SUNWlibsexy
 Requires:       SUNWdesktop-cache

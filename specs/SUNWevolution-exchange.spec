@@ -61,7 +61,7 @@ BuildRequires: SUNWlibgpg-error-devel
 BuildRequires: SUNWlibpopt-devel
 BuildRequires: SUNWgnome-config-devel
 BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWevolution-devel
+BuildRequires: mail/evolution
 BuildRequires: SUNWlibunique
 
 %package root

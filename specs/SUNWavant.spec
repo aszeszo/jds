@@ -42,7 +42,7 @@ Requires:       SUNWdbus
 Requires:       SUNWdesktop-cache
 Requires:       SUNWgnome-themes-only
 Requires:       SUNWbash
-Requires:       SUNWPython26
+Requires:       runtime/python-26
 Requires:       SUNWpycairo26
 Requires:       SUNWpygtk2-26
 Requires:       SUNWpython26-xdg
@@ -51,9 +51,9 @@ BuildRequires:  SUNWgtk2-devel
 BuildRequires:  SUNWcompiz-devel
 BuildRequires:  SUNWdbus-devel
 BuildRequires:  SUNWxwinc
-BuildRequires:  SUNWPython26
-BuildRequires:  SUNWpython26-xdg
-BuildRequires:  SUNWpython26-setuptools
+BuildRequires:  runtime/python-26
+BuildRequires:  library/python-2/python-xdg-26
+BuildRequires:  library/python-2/setuptools-26
 BuildRequires:  SUNWvala-devel
 BuildRequires:  consolidation/desktop/gnome-incorporation
 

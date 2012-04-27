@@ -47,7 +47,7 @@ Requires: SUNWlibms
 Requires: SUNWlibpopt
 Requires: SUNWlxml
 Requires: SUNWdesktop-cache
-Requires: SUNWPython26
+Requires: runtime/python-26
 # SFEgeckosdk provides /usr/bin/mozilla-config but not the required headers.
 # SUNWfirefox-devel provides /usr/bin/firefox-config and the header files.
 BuildConflicts: SFEgeckosdk

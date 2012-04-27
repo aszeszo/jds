@@ -78,7 +78,7 @@ Requires: 	SUNWgnome-wm
 BuildRequires:  runtime/perl-512
 Requires:       SUNWpygtk2-26
 Requires:       SUNWxorg-mesa
-Requires:       SUNWPython26
+Requires:       runtime/python-26
 BuildRequires: 	SUNWgtk2-devel
 BuildRequires: 	SUNWpng-devel
 BuildRequires: 	SUNWdbus-devel

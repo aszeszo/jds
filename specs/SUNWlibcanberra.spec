@@ -37,7 +37,7 @@ Requires: SUNWlibcanberra-root
 Requires: SUNWxdg-sound-theme
 Requires: SUNWgnome-media
 Requires: SUNWogg-vorbis
-Requires: SUNWlibltdl
+Requires: library/libtool/libltdl
 Requires: SUNWdesktop-cache
 BuildRequires: SUNWgtk2-devel
 BuildRequires: SUNWgnome-media-devel

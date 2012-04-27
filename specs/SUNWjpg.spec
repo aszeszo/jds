@@ -30,7 +30,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-BuildRequires: SUNWgsed
+BuildRequires: text/gnu-sed
 
 %package devel
 Summary:                 %{summary} - development files

@@ -35,7 +35,7 @@ BuildRequires: SUNWpng-devel
 BuildRequires: SUNWcairomm        
 BuildRequires: SUNWxwinc
 BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWunzip
+BuildRequires: compress/unzip
 BuildRequires: SUNWj6dev
 
 %prep

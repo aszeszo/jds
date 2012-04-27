@@ -33,17 +33,17 @@ Requires: SUNWgnome-panel
 Requires: SUNWgnome-desktop-prefs
 Requires: SUNWsshcu
 Requires: SUNWdesktop-cache
-Requires: SUNWgnupg
+Requires: crypto/gnupg
 Requires: library/security/gpgme
-Requires: SUNWpth
+Requires: library/pth
 Requires: %{name}-root
 BuildRequires: SUNWlibglade-devel
 BuildRequires: SUNWgnome-config-devel
 BuildRequires: SUNWlibgnome-keyring-devel
 BuildRequires: SUNWgnome-panel-devel
 BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgnupg
-BuildRequires: SUNWpth
+BuildRequires: crypto/gnupg
+BuildRequires: library/pth
 
 %package l10n
 Summary:                 %{summary} - l10n files

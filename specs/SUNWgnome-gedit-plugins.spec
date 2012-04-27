@@ -30,7 +30,7 @@ SUNW_BaseDir:            %{_basedir}
 Requires:       SUNWgnome-text-editor
 Requires:       SUNWgnome-python26-desktop
 Requires:       SUNWgnome-gtksourceview
-Requires:       SUNWPython26 
+Requires:       runtime/python-26 
 
 BuildRequires:  SUNWgnome-text-editor-devel
 BuildRequires:  SUNWgnome-doc-utils
@@ -40,11 +40,11 @@ BuildRequires:  SUNWxwinc
 BuildRequires:  SUNWxorg-headers
 BuildRequires:  SUNWperl-xml-parser
 BuildRequires:  SUNWgmake
-BuildRequires:  SUNWgnu-automake-110
+BuildRequires:  developer/build/automake-110
 BuildRequires:  SUNWgnome-doc-utils
 BuildRequires:  SUNWgnome-base-libs
 BuildRequires:  SUNWgnome-common-devel
-BuildRequires:  SUNWgnu-gettext
+BuildRequires:  text/gnu-gettext
 BuildRequires:  SUNWgnome-character-map
 
 %package l10n

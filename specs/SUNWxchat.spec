@@ -25,12 +25,12 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 BuildRequires: SUNWgtk2-devel
 BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWPython26
+BuildRequires: runtime/python-26
 Requires: SUNWgtk2
-Requires: SUNWPython26
+Requires: runtime/python-26
 BuildRequires: runtime/perl-512
 Requires: SUNWopenssl-libraries
-BuildRequires: SUNWopenssl-include
+BuildRequires: library/security/openssl
 Requires: SUNWlibsexy
 BuildRequires: SUNWlibsexy-devel
 Requires: SUNWgnome-spell

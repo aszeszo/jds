@@ -42,11 +42,11 @@ Requires: SUNWlibrsvg
 Requires: SUNWpng
 Requires: SUNWzlib
 Requires: SUNWdesktop-cache
-Requires: SUNWlcms
-Requires: SUNWPython26
+Requires: library/lcms
+Requires: runtime/python-26
 Requires: SUNWgegl
 Requires: SUNWbabl
-Requires: SUNWaalib
+Requires: library/aalib
 BuildRequires: SUNWgtk2-devel
 BuildRequires: SUNWTiff-devel
 BuildRequires: SUNWgnome-vfs-devel
@@ -55,13 +55,13 @@ BuildRequires: SUNWlibexif-devel
 BuildRequires: SUNWlibrsvg-devel
 BuildRequires: SUNWpng-devel
 BuildRequires: SUNWpygtk2-26-devel
-BuildRequires: SUNWpython26-setuptools
+BuildRequires: library/python-2/setuptools-26
 BuildRequires: SUNWgnome-pdf-viewer-devel
 BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWlcms
+BuildRequires: library/lcms
 BuildRequires: SUNWgegl-devel
 BuildRequires: SUNWbabl-devel
-BuildRequires: SUNWaalib
+BuildRequires: library/aalib
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -238,7 +238,7 @@ rm -rf $RPM_BUILD_ROOT
 * Tue Sep 16 2008 - matt.keenan@sun.com
 - Update copyright
 * Wed May 21 2008 - damien.carbery@sun.com
-- Add Build/Requires: SUNWlcms after check-deps.pl run.
+- Add Build/Requires: library/lcms after check-deps.pl run.
 * Fri Jan 11 2008 - laca@sun.com
 - delete PKG_CONFIG_PATH setting since help was removed
 * Fri Sep 28 2007 - laca@sun.com

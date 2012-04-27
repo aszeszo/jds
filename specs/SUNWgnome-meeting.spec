@@ -66,7 +66,7 @@ BuildRequires: SUNWmlibh
 BuildRequires: SUNWgnome-config-devel
 BuildRequires: SUNWgnome-doc-utils
 BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWlxml-python26
+BuildRequires: library/python-2/libxml2-26
 BuildRequires: SUNWavahi-bridge-dsd-devel
 BuildRequires: SUNWlibsdl-devel
 BuildRequires: SUNWaudh

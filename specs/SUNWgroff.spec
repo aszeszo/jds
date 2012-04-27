@@ -49,8 +49,8 @@ BuildRequires: SUNWxwplt
 BuildRequires: SUNWxwice
 BuildRequires: SUNWgtk2
 BuildRequires: SUNWglib2
-BuildRequires: SUNWghostscript
-BuildRequires: SUNWgsed
+BuildRequires: print/filter/ghostscript
+BuildRequires: text/gnu-sed
 BuildRequires: SUNWpsutils
 
 %package -n SUNWgroff-core

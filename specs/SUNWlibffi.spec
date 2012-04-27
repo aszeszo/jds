@@ -31,7 +31,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 Requires: SUNWgccruntime
 BuildRequires: SUNWgcc
-BuildRequires: SUNWgnu-automake-110
+BuildRequires: developer/build/automake-110
 
 %package devel
 Summary:                 %{summary} - development files

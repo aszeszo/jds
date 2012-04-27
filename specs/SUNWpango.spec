@@ -41,8 +41,8 @@ BuildRequires: SUNWlibms
 BuildRequires: SUNWxwplt
 BuildRequires: SUNWxwrtl
 BuildRequires: SUNWxwxft
-BuildRequires: SUNWgawk
-BuildRequires: SUNWgsed
+BuildRequires: text/gawk
+BuildRequires: text/gnu-sed
 BuildRequires: SUNWbinutils
 BuildRequires: SUNWgnu-findutils
 BuildRequires: SUNWggrp

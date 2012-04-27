@@ -39,21 +39,21 @@ BuildRequires: SUNWmlib
 Requires: SUNWdesktop-cache
 Requires: SUNWdbus
 Requires: SUNWdsdu
-Requires: SUNWlibltdl
+Requires: library/libtool/libltdl
 Requires: SUNWslang
-Requires: SUNWaalib
+Requires: library/aalib
 BuildRequires: SUNWgtk2-devel
 BuildRequires: SUNWgnome-component-devel
 BuildRequires: SUNWlibexif-devel
 BuildRequires: SUNWlibpopt-devel
 # gtkam builds a gimp plug-in, so SUNWgnome-img-editor is a dependancy
 BuildRequires: SUNWgnome-img-editor-devel
-BuildRequires: SUNWgnu-gettext
+BuildRequires: text/gnu-gettext
 BuildRequires: SUNWlibusb
 BuildRequires: SUNWdbus-devel
 BuildRequires: SUNWdsdu
-BuildRequires: SUNWlibtool
-BuildRequires: SUNWlibltdl
+BuildRequires: developer/build/libtool
+BuildRequires: library/libtool/libltdl
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -228,7 +228,7 @@ rm -rf $RPM_BUILD_ROOT
 - Remove udev files as udev not supported on solaris
 * Mon Dec 17 2007 - patrick.ale@gmail.com
 - Add Build/Requires SUNWltdl
-- Remove Requires: SUNWlibtool
+- Remove Requires: developer/build/libtool
 * Fri Dec  1 2007 - damien.carbery@sun.com
 - Add Build/Requires SUNWlibtool.
 * Wed Oct 10 2007 - damien.carbery@sun.com

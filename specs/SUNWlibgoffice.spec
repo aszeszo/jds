@@ -39,7 +39,7 @@ BuildRequires:  library/libxml2
 BuildRequires:  library/gnome/gnome-libs
 %if %option_with_gnu_iconv
 Requires:       SUNWgnu-libiconv
-Requires:       SUNWgnu-gettext
+Requires:       text/gnu-gettext
 %else
 Requires:       system/library/iconv/utf-8
 %endif

@@ -30,8 +30,8 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 Requires:		SUNWlibmsr
 BuildRequires:  	SUNWjpg
-Requires:		SUNWlcms
-BuildRequires:		SUNWlcms
+Requires:		library/lcms
+BuildRequires:		library/lcms
 BuildRequires:		SUNWgnome-common-devel
 
 %package l10n

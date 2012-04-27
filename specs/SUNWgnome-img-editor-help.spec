@@ -30,7 +30,7 @@ BuildRequires: SUNWgnome-img-editor-devel
 BuildRequires: SUNWgnome-common-devel
 BuildRequires: SUNWgnome-doc-utils
 BuildRequires: SUNWgnome-xml-share
-BuildRequires: SUNWgsed
+BuildRequires: text/gnu-sed
 
 %package                 de
 Summary:                 Gimp on-line help in German

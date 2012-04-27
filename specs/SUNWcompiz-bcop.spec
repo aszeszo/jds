@@ -31,7 +31,7 @@ Requires:		 SUNWlxsl
 Requires:                SUNWbash
 BuildRequires:		 SUNWgnugetopt
 BuildRequires:           SUNWgnome-common-devel
-BuildRequires:		 SUNWlxsl-devel
+BuildRequires:		 library/libxslt
 %include default-depend.inc
 %include gnome-incorporation.inc
 

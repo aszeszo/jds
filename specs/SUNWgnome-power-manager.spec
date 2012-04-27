@@ -47,7 +47,7 @@ Requires:                SUNWxdg-utils
 Requires:                SUNWgnome-keyring
 BuildRequires:           SUNWgnome-doc-utils
 BuildRequires:           SUNWlibgnome-keyring
-BuildRequires:           SUNWgsed
+BuildRequires:           text/gnu-sed
 
 %package root
 Summary:                 %{summary} - / filesystem

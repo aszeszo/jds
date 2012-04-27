@@ -35,7 +35,7 @@ BuildRequires: SUNWgnome-doc-utils
 BuildRequires: SUNWgnome-vfs-devel
 BuildRequires: SUNWgnome-panel-devel
 BuildRequires: SUNWgnome-python26-desktop-devel
-BuildRequires: SUNWpython26-setuptools
+BuildRequires: library/python-2/setuptools-26
 BuildRequires: release/name
 BuildRequires: SUNWarc
 BuildRequires: SUNWevolution-data-server-devel

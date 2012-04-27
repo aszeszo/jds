@@ -23,8 +23,8 @@ SUNW_Copyright:          SUNWpython-twisted-web2.copyright
 License:                 MIT
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 BuildRequires:           library/python-2/python-twisted-26
-BuildRequires:           SUNWpython26-setuptools
-Requires:                SUNWPython26
+BuildRequires:           library/python-2/setuptools-26
+Requires:                runtime/python-26
 Requires:                library/python-2/python-twisted-26
 
 %include default-depend.inc

@@ -36,7 +36,7 @@ BuildRequires: SUNWglib2
 Requires: %name-root
 Requires: SUNWbash
 BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgnu-gettext
+BuildRequires: text/gnu-gettext
 
 %package l10n
 Summary:             %{summary} - l10n files

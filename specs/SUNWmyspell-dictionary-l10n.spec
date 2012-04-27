@@ -32,7 +32,7 @@ Version:                 %{default_pkg_version}
 SUNW_BaseDir:            %{_basedir}
 SUNW_Category:           GNOME2,application,%{jds_version}
 Docdir:                  %{_datadir}/doc/myspell-dictionary
-BuildRequires: SUNWunzip
+BuildRequires: compress/unzip
 SUNW_Copyright:          %{name}.copyright
 
 ## English (United States)

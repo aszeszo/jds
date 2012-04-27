@@ -30,7 +30,7 @@ Patch1:                  diveintopython-01-py26.diff
 Requires:                SUNWgnome-libs
 # SUNWgnome-themes needed for gnome-devel icon
 Requires:                SUNWgnome-themes-only
-BuildRequires:           SUNWunzip
+BuildRequires:           compress/unzip
 BuildRequires:           SUNWzip
 
 %include desktop-incorporation.inc

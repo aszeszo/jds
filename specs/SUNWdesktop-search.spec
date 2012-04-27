@@ -46,7 +46,7 @@ Requires:       SUNWlxsl
 Requires:       SUNWpng
 Requires:       SUNWogg-vorbis
 Requires:       SUNWsqlite3
-Requires:       SUNWunzip
+Requires:       compress/unzip
 Requires:       SUNWw3m
 Requires:       SUNWzlib
 Requires:       SUNWraptor
@@ -56,7 +56,7 @@ BuildRequires: SUNWlibgmime
 
 %if %option_with_gnu_iconv
 Requires: SUNWgnu-libiconv
-Requires: SUNWgnu-gettext
+Requires: text/gnu-gettext
 %else
 Requires: SUNWuiu8
 %endif
@@ -69,7 +69,7 @@ BuildRequires:  SUNWgnome-utility-applets-devel
 BuildRequires:  SUNWhal
 BuildRequires:  SUNWlibexif-devel
 BuildRequires:  SUNWlibgmime-devel
-BuildRequires:  SUNWlxsl-devel
+BuildRequires:  library/libxslt
 BuildRequires:  SUNWlibgsf-devel
 BuildRequires:  SUNWogg-vorbis-devel
 BuildRequires:  SUNWpng-devel

@@ -35,11 +35,11 @@ Requires:                SUNWgnome-libs
 Requires:                SUNWbabl
 Requires:                SUNWlibsdl
 Requires:                SUNWlibrsvg
-Requires:                SUNWlua
+Requires:                runtime/lua
 BuildRequires:           SUNWgtk2-devel
 BuildRequires:           SUNWgnome-libs-devel
 BuildRequires:           SUNWbabl-devel
-BuildRequires:           SUNWlua
+BuildRequires:           runtime/lua
 
 %package devel
 Summary:                 %{summary} - development files

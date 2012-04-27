@@ -26,9 +26,9 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 Requires: SUNWgtk2
-Requires: SUNWPython26
+Requires: runtime/python-26
 BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgtk-doc
+BuildRequires: developer/documentation-tool/gtk-doc
 
 %package devel		
 Summary:                 %{summary} - development files
