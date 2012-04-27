@@ -18,7 +18,7 @@ Release:      54
 Distribution: Java Desktop System
 Vendor:	      Other
 Summary:      Korean Baekmuk Truetype Fonts
-Source:       ftp://ftp.mizi.com/pub/baekmuk/baekmuk-ttf-%{version}.tar.gz
+Source:       http://dlc.sun.com/osol/jds/downloads/sources/baekmuk-ttf-%{version}.tar.gz
 URL:          ftp://ftp.mizi.com/pub/baekmuk/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
