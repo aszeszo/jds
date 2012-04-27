@@ -7,9 +7,9 @@ REPO=file://$BLDDIR/packages
 BUILDNUM=175.0.0.0.0.0
 PUBLISHER=jds
 
-PRIORITY_SPECS="SUNWfirefox.spec SUNWthunderbird.spec SUNWsongbird.spec SUNWmysql-python.spec SUNWgnome-media.spec"
+PRIORITY_SPECS="SUNWgtk-doc.spec SUNWfirefox.spec SUNWthunderbird.spec SUNWsongbird.spec SUNWmysql-python.spec SUNWgnome-media.spec"
 SKIP_SPECS="SUNWevolution-bdb-devel.spec SUNWos-welcome.spec SUNWpkgbuild.spec SUNWperl-authen-pam.spec"
-SKIP_SPECS="$SKIP_SPECS SUNWperl-xml-parser.spec SUNWfsexam.spec"
+SKIP_SPECS="$SKIP_SPECS SUNWperl-xml-parser.spec SUNWfsexam.spec SUNWPython"
 SS12u2_SPECS="SUNWfirefox.spec|SUNWthunderbird.spec"
 
 if [ ! x$1 = x-s ]; then
@@ -105,7 +105,7 @@ else
                 --tarballdirs=$TOPDIR/downloads:$TOPDIR/manpages/sun-manpage-tarballs:$TOPDIR/manpages-roff/sun-manpage-tarballs:$TOPDIR/po-sun/po-sun-tarballs \
                 --download --download-to=$TOPDIR/downloads --logdir=$BLDDIR/logs --live --with-l10n --ips \
                 --nosourcepkg --define "desktop_build $BUILDNUM" \
-                --without-gtk-docbuild-only build-only specs/$SPEC >/dev/null; then
+                build-only specs/$SPEC >/dev/null; then
                 echo $SPEC: PASSED >>$BLDDIR/build.log
             else
                 echo $SPEC: FAILED >>$BLDDIR/build.log
