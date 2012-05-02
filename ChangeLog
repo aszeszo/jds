@@ -1,6 +1,6 @@
 2012-05-02  Brian Cameron  <brian.cameron@oracle.com>
 
-	* copyright/SUNWsimplejson.copyright: Fix WebRTI #362418
+	* copyright/SUNWpython-simplejson.copyright: Fix WebRTI #362418
 	  7164770 Update simplejson license file - TPNO 5929
 
 2012-04-27 Arvind Umrao <arvind.umrao@oracle.com>
