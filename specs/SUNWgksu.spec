@@ -3,11 +3,11 @@
 #
 # includes module(s): gksu, libgksu
 #
-# Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner lin
+%define owner yippi
 #
 %include Solaris.inc
 
