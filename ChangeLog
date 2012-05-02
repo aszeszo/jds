@@ -1,9 +1,15 @@
+2012-05-02  Brian Cameron  <brian.cameron@oracle.com>
+
+	* copyright/SUNWsimplejson.copyright: Fix WebRTI #362418
+	  7164770 Update simplejson license file - TPNO 5929
+
 2012-04-27 Arvind Umrao <arvind.umrao@oracle.com>
+
 	Added patch xscreensaver-25-bug-7023648.diff
 
 2012-04-23 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 15 ====
+	==== S11U1 build 15 ====
 
 2012-04-23  Padraig O'Briain  <padraig.obriain@oracle.com>
 
@@ -14,9 +20,9 @@
 
 2012-04-20  Jeff Cai  <jeff.cai@oracle.com>
 
-        Fix CR #7151417 - File-roller crashes when creating an 
-        archive file which has been already existing
-        RTI #362015
+	Fix CR #7151417 - File-roller crashes when creating an 
+	archive file which has been already existing
+	RTI #362015
 	* base-specs/file-roller.spec:
 	* patches/file-roller-06-new-file.diff:
 	* specs/SUNWgnome-archive-mgr.spec:
@@ -111,9 +117,9 @@
 
 2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
 
-        RTI 361794,
-        CR 7159416
-        libtasn1 securiy bug fix
+	RTI 361794,
+	CR 7159416
+	libtasn1 securiy bug fix
 	* base-specs/gnutls.spec: Add a space in the copyright line
 	* base-specs/libtasn1.spec:
 	* patches/libtasn1-02-cve-2012-1569.diff:
@@ -121,25 +127,25 @@
 
 2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
 
- 	CR #7095930 "GNOME needs to work better with the Stop RBAC profile"
- 	WebRTI #361938.
- 	* patches/gnome-session-24-rbac.diff, patches/glib-10-gio-rbac.diff,
- 	  patches/libgksu-05-rbac-support.diff,
- 	  patches/gnome-panel-17-rbac.diff, patches/gnome-menus-08-rbac.diff:
- 	  Fix desktop RBAC integration so it checks exec->attr != NULL instead
- 	  of exec->id != "*".
+	CR #7095930 "GNOME needs to work better with the Stop RBAC profile"
+	WebRTI #361938.
+	* patches/gnome-session-24-rbac.diff, patches/glib-10-gio-rbac.diff,
+	  patches/libgksu-05-rbac-support.diff,
+	  patches/gnome-panel-17-rbac.diff, patches/gnome-menus-08-rbac.diff:
+	  Fix desktop RBAC integration so it checks exec->attr != NULL instead
+	  of exec->id != "*".
 	* patches/libgksu-01-Makefile.diff: Fix Makefile so it has uses tab
 	  instead of spaces.
- 	* specs/SUNWnwam-manager.spec, ext-sources/SUNWnwam-manager-exec_attr:
- 	  Removed since the GNOME panel no longer filters out modules that have
- 	  no exec->attr value, so these entries are not useful.
- 	* manpages/man1/gnome-panel.1: No longer mention NWAM as using GNOME
+	* specs/SUNWnwam-manager.spec, ext-sources/SUNWnwam-manager-exec_attr:
+	  Removed since the GNOME panel no longer filters out modules that have
+	  no exec->attr value, so these entries are not useful.
+	* manpages/man1/gnome-panel.1: No longer mention NWAM as using GNOME
 	  panel filtering features.
 
 2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
 
-        Fix bug 7159409 and 7159444
-        RTI 361795 Gnutls security fixes
+	Fix bug 7159409 and 7159444
+	RTI 361795 Gnutls security fixes
 
 	* base-specs/gnutls.spec:
 	* patches/gnutls-02-cve-2012-1573.diff:
@@ -156,36 +162,36 @@
 2012-04-16  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	RTI 3616321
-        CR 7149817 firefox crashes when run ibus-daemon
+	CR 7149817 firefox crashes when run ibus-daemon
 	* base-specs/gtk2.spec:
 	* patches/gtk+-19-unregister-callback.diff:
 
 2012-04-16  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	RTI 361546
-        CR 7035088 gnome-terminal leaks fds
+	CR 7035088 gnome-terminal leaks fds
 	* base-specs/gnome-terminal.spec:
 	* patches/gnome-terminal-05-increase-nofds.diff:
 
 2012-04-13  Brian Cameron  <brian.cameron@oracle.com>
 
 	* specs/SUNWjson-c.spec: Add "%include desktop-incorporation.inc".
- 	  Fixes CR #7149760 "package library/json-c missing consolidation entry
- 	  from its manifest".  WebRTI #361463.
+	  Fixes CR #7149760 "package library/json-c missing consolidation entry
+	  from its manifest".  WebRTI #361463.
 
 2012-04-09 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 14 ====
+	==== S11U1 build 14 ====
 
 2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
 
-        Fix for 654936: gnome-about does not start for some locales on S11 
+	Fix for 654936: gnome-about does not start for some locales on S11 
 	* base-specs/gnome-desktop.spec:
 	* patches/gnome-desktop-07-pomessage.diff:
 
 2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
 
-        Fix for 7060748: Some messages are not displayed correctly in
+	Fix for 7060748: Some messages are not displayed correctly in
 		non-UTF-8 locale terminal environment
 	* base-specs/gdm.spec:
 	* patches/gdm-38-bindtextdomaincodeset.diff:
@@ -193,7 +199,7 @@
 2012-04-05  Leon Fan  <leon.fan@oracle.com>
 
 	RTI#361352
-        CR#7151514 python-gtk-vnc-26 miss dependency on library/desktop/gtk-vnc
+	CR#7151514 python-gtk-vnc-26 miss dependency on library/desktop/gtk-vnc
 	* base-specs/gtk-vnc.spec:
 	* patches/gtk-vnc-03-buildissue.diff:
 	* specs/SUNWgtk-vnc.spec:
@@ -274,14 +280,14 @@
 
 2012-03-30  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Fix for 7155901
+	Fix for 7155901
 	* base-specs/ncurses.spec:
 	* copyright/SUNWncurses.copyright:
 	* specs/SUNWncurses.spec:
 
 2012-03-27  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Update the fix for 7154328
+	Update the fix for 7154328
 	* base-specs/pidgin.spec:
 	* patches/pidgin-14-ifaddrs.diff:
 	* patches/pidgin-17-compile-ifaddrs.diff:
@@ -289,23 +295,23 @@
 
 2011-03-26 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 13 ====
+	==== S11U1 build 13 ====
 
 2012-03-23  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Add the patch for compile 
+	Add the patch for compile 
 	* base-specs/pidgin.spec:
 	* patches/pidgin-17-compile-ifaddrs.diff:
 
 2012-03-23  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Fix for 7154328
+	Fix for 7154328
 	* base-specs/pidgin.spec:
 	* specs/SUNWgnome-im-client.spec
 
 2011-03-12 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 12 ====
+	==== S11U1 build 12 ====
 
 2012-03-09  Yong Sun <y.yong.sun@oracle.com>
 
