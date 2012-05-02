@@ -5,7 +5,7 @@
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner lin
+%define owner yippi
 #
 
 %define OSR LFI#105446 (gnome Exec. summary):n/a
@@ -27,14 +27,14 @@ URL:            http://www.gnome.org/projects/brasero
 SUNW_Basedir:   %{_basedir}
 SUNW_Copyright: %{name}.copyright
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
-# date:2009-05-27 owner:lin type:branding
+# date:2009-05-27 owner:yippi type:branding
 Patch1:         brasero-01-libtool.diff
 # date:2011-03-16 type:bug owner:davelam
 # bugzilla:639732
 Patch2:         brasero-02-require-ice.diff
 # date:2011-04-15 type:branding owner:gheet bugster:7028711
 Patch3:		brasero-03-fix-menu.diff
-# date:2011-04-15 type:branding owner:lin bugster:6988688,7042121
+# date:2011-04-15 type:branding owner:yippi bugster:6988688,7042121
 Patch4:		brasero-04-tmpdir.diff
 
 %include default-depend.inc
