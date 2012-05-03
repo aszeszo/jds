@@ -41,6 +41,7 @@ BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
 BuildRequires: codec/speex
 BuildRequires: gnome/config/gconf
 BuildRequires: library/desktop/gtk2
+BuildRequires: library/fftw-3
 BuildRequires: library/gc
 BuildRequires: library/json-c
 BuildRequires: library/libtool/libltdl
@@ -160,6 +161,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_bindir}
 %{_bindir}/pa*
 %{_bindir}/pulseaudio
+%{_bindir}/qpaeq
 %{_bindir}/start-pulseaudio*
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/lib*.so*
@@ -169,6 +171,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_bindir}/%{_arch64}
 %{_bindir}/%{_arch64}/pa*
 %{_bindir}/%{_arch64}/pulseaudio
+%{_bindir}/%{_arch64}/qpaeq
 %{_bindir}/%{_arch64}/start-pulseaudio*
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
 %{_libdir}/%{_arch64}/lib*.so*
@@ -216,6 +219,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu May 03 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Fix packaging to add qpaeq and add BuildRequires on library/fftw-3.
 * Sun Oct 02 2011 - Brian Cameron  <brian.cameron@oracle.com>
 - Bump to 1.0.
 * Tue Sep 28 2011 - Brian Cameron  <brian.cameron@oracle.com>

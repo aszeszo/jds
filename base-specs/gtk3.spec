@@ -1,7 +1,7 @@
 #
 # spec file for package gtk3
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@
 Name:         gtk3
 License:      LGPL v2
 Group:        System/Libraries
-Version:      3.2.1
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      GTK+ - GIMP Toolkit Library for creation of graphical user interfaces
-Source:       http://ftp.gnome.org/pub/GNOME/sources/gtk+/3.2/gtk+-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/gtk+/3.4/gtk+-%{version}.tar.xz
 Source1:      gtk.unset-hack.sh
 Source2:      gtk.unset-hack.csh
 #Source3:      %{name}-po-sun-%{po_sun_version}.tar.bz2
@@ -55,14 +55,18 @@ Patch12:      gtk+-12-show-lpr-backend.diff
 Patch13:      gtk+-13-check-libs.diff
 # date:2010-01-07 owner:gheet type:bug doo:13625
 Patch14:      gtk+-14-handle-copies.diff
+# date:2011-08-15 owner:gheet type:bug bugster:7076227
+Patch16:      gtk+-16-remove-papi.diff
+# date:2012-03-27 owner:padraig type:bug bugster:7149817
+Patch17:      gtk+-17-unregister-callback.diff
 # date:2010-07-16 owner:yippi type:branding
-Patch18:      gtk3+-01-libtool.diff
+Patch30:      gtk3+-01-libtool.diff
 # date:2010-07-16 owner:yippi type:bug bugzilla:654720
-Patch19:      gtk3+-02-configure.diff
+Patch31:      gtk3+-02-configure.diff
 # This just worksaround a compile issue and should be fixed properly.
-Patch20:      gtk3+-03-disable-papi.diff
-# date:2010-09-30 owner:yippi type:bug bugzilla:661089
-Patch21:      gtk3+-04-void-return.diff
+Patch32:      gtk3+-03-disable-papi.diff
+# date:2012-05-02 owner:yippi type:bug
+Patch33:      gtk3+-04-compile.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -146,10 +150,12 @@ done
 #%patch12 -p1
 %patch13 -p1
 #%patch14 -p1
-%patch18 -p1
-%patch19 -p1
-%patch20 -p1
-%patch21 -p1
+%patch16 -p1
+%patch17 -p1
+%patch30 -p1
+%patch31 -p1
+%patch32 -p1
+%patch33 -p1
 
 %build
 %ifos linux
@@ -167,6 +173,7 @@ export SED="/usr/gnu/bin/sed"
 
 libtoolize --force
 aclocal-1.11 $ACLOCAL_FLAGS -I .
+gtkdocize
 autoheader
 automake-1.11 -a -c -f
 autoconf
@@ -183,7 +190,6 @@ export LDFLAGS="%_ldflags"
 	    --enable-shm \
             --enable-xim \
             --enable-fbmanager \
-	    --disable-papi \
             --with-gdktarget=x11 \
 	    --sysconfdir=%{_sysconfdir}	\
 	    --enable-explicit-deps=yes	\
@@ -209,6 +215,11 @@ cp %SOURCE2 $RPM_BUILD_ROOT/etc/profile.d
 #Fixes bug 4930405
 install -d $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES
 install --mode=0644 $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES/
+
+rm $RPM_BUILD_ROOT%{_libdir}/gtk-3.0/*/printbackends/*.a
+rm $RPM_BUILD_ROOT%{_libdir}/gtk-3.0/*/printbackends/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/*.a
+rm $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -254,6 +265,8 @@ fi
 %{_mandir}/man3/*.gz
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

@@ -1,7 +1,7 @@
 #
 # spec file for package gtk2
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@
 Name:         gtk2
 License:      LGPL v2
 Group:        System/Libraries
-Version:      2.24.7
+Version:      2.24.10
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      GTK+ - GIMP Toolkit Library for creation of graphical user interfaces
-Source:       http://ftp.gnome.org/pub/GNOME/sources/gtk+/2.24/gtk+-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/gtk+/2.24/gtk+-%{version}.tar.xz
 Source1:      gtk.unset-hack.sh
 Source2:      gtk.unset-hack.csh
 Source3:      %{name}-po-sun-%{po_sun_version}.tar.bz2
@@ -54,6 +54,10 @@ Patch13:      gtk+-13-check-libs.diff
 Patch14:      gtk+-14-handle-copies.diff
 # date:2011-06-17 owner:liyuan type:bug bugster:7055396
 Patch15:      gtk+-15-gailwindow-name.diff
+# date:2011-08-15 owner:gheet type:bug bugster:7076227
+Patch16:      gtk+-16-remove-papi.diff
+# date:2012-03-27 owner:padraig type:bug bugster:7149817
+Patch17:      gtk+-17-unregister-callback.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -137,6 +141,8 @@ cd po-sun; gmake; cd ..
 %patch13 -p1
 %patch14 -p1
 %patch15 -p1
+%patch16 -p1
+%patch17 -p1
 
 %build
 %ifos linux
@@ -152,6 +158,7 @@ fi
 
 libtoolize --force
 aclocal $ACLOCAL_FLAGS -I .
+gtkdocize
 autoheader
 automake -a -c -f
 autoconf
@@ -168,7 +175,6 @@ export LDFLAGS="%_ldflags"
 	    --enable-shm \
             --enable-xim \
             --enable-fbmanager \
-	    --disable-papi	\
             --with-gdktarget=x11 \
 	    --sysconfdir=%{_sysconfdir}	\
 	    --enable-explicit-deps=yes	\
@@ -192,6 +198,12 @@ cp %SOURCE2 $RPM_BUILD_ROOT/etc/profile.d
 #Fixes bug 4930405
 install -d $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES
 install --mode=0644 $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES/
+
+rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/immodules/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/engines/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/printbackends/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/modules/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -237,6 +249,8 @@ fi
 %{_mandir}/man3/*.gz
 
 %changelog -n gtk2
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Bump to 2.24.10.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 2.24.7.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

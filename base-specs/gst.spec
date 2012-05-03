@@ -13,7 +13,7 @@
 Name:         gstreamer
 License:      LGPL v2, Public Domain
 Group:        Libraries/Multimedia
-Version:      0.10.35
+Version:      0.10.36
 Release:      1
 Distribution: Java Desktop System
 Vendor:       freedesktop.org
@@ -27,6 +27,8 @@ Source1:      l10n-configure.sh
 Patch1:       gst-01-gettext.diff
 #owner:yippi date:2012-04-03 type:bug
 Patch2:       gst-02-amd64.diff
+#owner:yippi date:2012-05-02 type:bug
+Patch3:       gst-03-compile.diff
 URL:          http://gstreamer.net/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -95,6 +97,7 @@ gst-launch.  It is split off to allow parallel-installability in the future.
 %setup -q 
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 %ifos linux
@@ -175,6 +178,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/gst-*
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 0.10.36.
 * Fri Apr 27 2012 - brian.cameron@oracle.com
 - Add patch gst-02-amd64.diff.
 * Sat Oct 01 2011 - brian.cameron@oracle.com

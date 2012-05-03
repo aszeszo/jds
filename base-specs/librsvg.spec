@@ -1,7 +1,7 @@
 #
 # spec file for package librsvg
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@
 Name:         librsvg
 License:      Library is LGPLv2, binaries are GPLv2
 Group:        System/Libraries/GNOME
-Version:      2.34.1
+Version:      2.36.1
 Release:      1 
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Library for SVG support for GNOME
-Source:       http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.34/librsvg-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.36/librsvg-%{version}.tar.xz
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_docdir}/librsvg
@@ -26,6 +26,7 @@ Autoreqprov:  on
 Prereq:       /sbin/ldconfig
 
 Patch1:       librsvg-01-sgml.diff
+Patch2:       librsvg-02-solaris.diff
 
 %define libxml2_version 2.6.7
 %define gtk2_version 2.4.0
@@ -65,6 +66,7 @@ librsvg provides SVG support for GNOME
 %prep
 %setup -q
 %patch1 -p1
+%patch2 -p1
 
 %build
 %ifos linux
@@ -91,6 +93,7 @@ export LDFLAGS="%_ldflags"
 	    --sysconfdir=%{_sysconfdir} \
 	    --mandir=%{_mandir}		\
 	    %{gtk_doc_option}           \
+	    --disable-Bsymbolic         \
 	    --with-html-dir=%{_datadir}/gtk-doc/html/librsvg
 make -j $CPUS
 
@@ -129,6 +132,8 @@ gdk-pixbuf-query-loaders > %{_sysconfdir}/gtk-2.0/gdk-pixbuf.loaders
 %{_datadir}/gtk-doc/html/librsvg
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Bump to 2.36.1.
 * Thu Sep 15 2011 - brian.cameron@oracle.com
 - Bump to 2.34.1.
 * Mon Jul 18 2011 - padraig.obriain@sun.com

@@ -1,7 +1,7 @@
 #
 # spec file for package atk
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@
 Name:         atk
 License:      LGPL v2
 Group:        System/Libraries
-Version:      2.2.0
+Version:      2.4.0
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      ATK - Accesibility Toolkit Libraries
-Source:       http://ftp.gnome.org/pub/GNOME/sources/atk/2.2/%{name}-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/atk/2.4/%{name}-%{version}.tar.xz
 Patch1:       atk-01-libtool.diff
 URL:          http://www.gtk.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -107,6 +107,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Mon Apr 30 2012 - brian.cameron@oracle.com
+- Bump to 2.4.0.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 2.2.0.
 * Tue Sep 13 2011 - brian.cameron@oracle.com

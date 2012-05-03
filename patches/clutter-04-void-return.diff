@@ -1,0 +1,11 @@
+--- clutter-1.10.4/clutter/gdk/clutter-stage-gdk.c-orig	2012-05-03 00:58:45.938615491 -0500
++++ clutter-1.10.4/clutter/gdk/clutter-stage-gdk.c	2012-05-03 00:58:59.202555488 -0500
+@@ -166,7 +166,7 @@ clutter_stage_gdk_unrealize (ClutterStag
+       stage_gdk->window = NULL;
+     }
+ 
+-  return clutter_stage_window_parent_iface->unrealize (stage_window);
++  clutter_stage_window_parent_iface->unrealize (stage_window);
+ }
+ 
+ static gboolean

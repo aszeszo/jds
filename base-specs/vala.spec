@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWvala
 #
-# Copyright (c) 2007, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -12,17 +12,17 @@
 %define OSR LFI#105446 (gnome Exec. summary):n/a
 
 %define	src_name vala
-%define	src_url	http://download.gnome.org/sources/vala/0.14
+%define	src_url	http://download.gnome.org/sources/vala/0.16
 
 Name:                vala 
 Summary:             Vala programming language
 License:             LGPL v2
-Version:             0.14.0
+Version:             0.16.0
 Distribution:        Java Desktop System
 Vendor:              Gnome Community
 Group:               System/Libraries
 
-Source:              %{src_url}/%{src_name}-%{version}.tar.bz2
+Source:              %{src_url}/%{src_name}-%{version}.tar.xz
 BuildRoot:           %{_tmppath}/%{name}-%{version}-build
 
 %package devel
@@ -70,12 +70,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-, root, bin)
 %{_bindir}
 %{_bindir}/vala
-%{_bindir}/vala-0.14
-%{_bindir}/valac-0.14
+%{_bindir}/vala-0.16
+%{_bindir}/valac-0.16
 %ifarch amd64 sparcv9
 %{_bindir}/${_arch64}/vala
-%{_bindir}/${_arch64}/vala-0.14
-%{_bindir}/${_arch64}/valac-0.14
+%{_bindir}/${_arch64}/vala-0.16
+%{_bindir}/${_arch64}/valac-0.16
 %endif
 
 %dir %attr (0755, root, bin) %{_libdir}
@@ -83,7 +83,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, sys) %{_datadir}
 %{_datadir}/aclocal
 %{_datadir}/devhelp
-%{_datadir}/vala-0.14
+%{_datadir}/vala-0.16
 %{_mandir}
 
 %files devel
@@ -94,6 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 0.16.0.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 0.14.0.
 * Wed Jul 06 2011 - brian.cameron@oracle.com

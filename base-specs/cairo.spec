@@ -1,7 +1,7 @@
 #
 # spec file for package cairo
 #
-# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,14 +14,19 @@
 Name:         cairo
 License:      LGPL v2.1, MPL 1.1
 Group:        System/Libraries
-Version:      1.10.2
+Version:      1.12.2
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      freedesktop.org
 Summary:      Vector graphics library
-Source:       http://cairographics.org/releases/%{name}-%{version}.tar.gz
+Source:       http://cairographics.org/releases/%{name}-%{version}.tar.xz
 #owner:erwannc date:2006-11-02 type:feature 
 Patch1:       cairo-01-full-hinting.diff
+# TODO: Some tests require spectre.  We need to split spectre from the
+#       SUNWgnome-pdf-viewer package to build cairo with it.  For now
+#       patch the code to just not build these tests.
+#owner:yippi date:2012-04-30 type:bug 
+Patch2:       cairo-02-solaris.diff
 URL:          http://www.cairographics.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}
@@ -69,6 +74,7 @@ compositing translucent images, and antialiased text rendering.
 %prep
 %setup -q
 %patch1 -p1
+%patch2 -p1
 
 %build
 %ifos linux
@@ -84,10 +90,10 @@ fi
 
 export PATH=`pwd`:$PATH
 
-aclocal $ACLOCAL_FLAGS -I build
+aclocal-1.11 $ACLOCAL_FLAGS -I build
 gtkdocize
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 %if %option_with_debug
  export CFLAGS="%optflags -D_POSIX_PTHREAD_SEMANTICS"
@@ -135,6 +141,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Mon Ap4 30 2012 - brian.cameron@oracle.com
+- Bump to 1.12.2.
 * Tue Jul 05 2011 - brian.cameron@oracle.com
 - Bump to 1.10.2.
 * Thu Oct 21 2010 - ginn.chen@oracle.com

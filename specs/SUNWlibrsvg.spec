@@ -3,7 +3,7 @@
 #
 # includes module(s): librsvg
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,21 +33,16 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWgtk3-devel
-BuildRequires: SUNWlibcroco-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWfirefox-devel
-Requires: SUNWgtk3
-Requires: SUNWlibcroco
-Requires: SUNWgnome-vfs
-Requires: SUNWfontconfig
-Requires: SUNWfreetype2
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWlxml
-Requires: SUNWdesktop-cache
-Requires: SUNWPython26
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/popt
+BuildRequires: library/libcroco
+BuildRequires: library/libxml2
+BuildRequires: runtime/python-26
+BuildRequires: service/gnome/desktop-cache
+BuildRequires: system/library/fontconfig
+BuildRequires: system/library/freetype-2
+BuildRequires: system/library/math
+BuildRequires: web/browser/firefox
 # SFEgeckosdk provides /usr/bin/mozilla-config but not the required headers.
 # SUNWfirefox-devel provides /usr/bin/firefox-config and the header files.
 BuildConflicts: SFEgeckosdk
@@ -57,7 +52,7 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:   SUNWgtk3-devel
+Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -123,6 +118,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/gtk-2.0
 %{_libdir}/gdk-pixbuf-2.0
 %{_libdir}/lib*.so*
+%{_libdir}/girepository-1.0
 %{_bindir}/*
 %ifarch amd64 sparcv9
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
@@ -130,11 +126,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{_arch64}/gtk-2.0
 #%{_libdir}/%{_arch64}/mozilla
 %{_libdir}/%{_arch64}/lib*.so*
+%{_libdir}/%{_arch64}/girepository-1.0
 %endif
 %dir %attr (0755, root, sys) %{_datadir}
-%dir %attr (0755, root, other) %{_datadir}/pixmaps
-%{_datadir}/pixmaps/*
 %{_datadir}/themes/*
+%{_datadir}/gir-1.0
 %dir %attr(0755, root, bin) %{_mandir}
 %dir %attr(0755, root, bin) %{_mandir}/man1
 %{_mandir}/man1/*
@@ -157,6 +153,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires and update packaging after update to 2.36.1.
 * Tue Jul 12 2011 - brian.cameron@oracle.com
 - Update packaging for librsvg 2.34.0 release.
 * Wed Nov 10 2010 - padraig.obriain@oracle.com

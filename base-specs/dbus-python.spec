@@ -1,7 +1,7 @@
 #
 # spec file for package dbus-python
 #
-# Copyright 2007 Sun Microsystems, Inc.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -16,7 +16,7 @@ Name:         dbus-python
 License:      MIT
 Vendor:       freedesktop.org
 Group:        System/Libraries
-Version:      0.84.0
+Version:      1.0.0
 Release:      1
 Distribution: Java Desktop System
 Summary:      Python bindings for D-Bus
@@ -108,6 +108,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/python?.?/vendor-packages/*
 
 %changelog
+* Wed May 02 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Bump to 1.0.0.
 * Tue Sep 13 2011 - Brian Cameron  <brian.cameron@oracle.com>
 - Bump to 0.84.0.
 * Mon Dec 27 2010 - Brian Cameron  <brian.cameron@oracle.com>

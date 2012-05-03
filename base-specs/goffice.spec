@@ -1,7 +1,7 @@
 #
 # spec file for package goffice
 #
-# Copyright (c) 2008, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -69,7 +69,7 @@ autoheader
 automake -a -f -c --gnu
 autoconf
 
-CFLAGS="$RPM_OPT_FLAGS"
+CFLAGS="$RPM_OPT_FLAGS -I/usr/include/pcre"
 ./configure  --prefix=%{_prefix}                \
              --libdir=%{_libdir}                \
              --libexecdir=%{_libexecdir}        \
@@ -107,6 +107,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Add -I/usr/include/pcre to CFLAGS.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 0.8.17.
 * Wed Oct 20 2010 - brian.cameron@oracle.com

@@ -1,7 +1,7 @@
 #
 # spec file for package gst-plugins-good
 #
-# Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,7 +13,7 @@
 %include l10n.inc
 Name:           gst-plugins-good
 License:        LGPL v2.1, BSD, MIT
-Version:        0.10.30
+Version:        0.10.31
 Release:        1
 Distribution:   Java Desktop System
 Vendor:         freedesktop.org
@@ -42,8 +42,6 @@ Patch4:         gst-plugins-good-04-sunaudiomixer.diff
 # and that patch has gone upstream.
 #owner:yippi date:2009-03-12 type:bug bugzilla:615998
 Patch5:         gst-plugins-good-05-goom.diff
-#owner:yippi date:2011-10-02 type:bug bugzilla:661122
-Patch6:         gst-plugins-good-06-compile.diff
 BuildRoot:      %{_tmppath}/%{name}-%{version}-root
 Docdir:         %{_defaultdocdir}/doc
 Autoreqprov:    on
@@ -98,7 +96,6 @@ cd po-sun; make; cd ..
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
-%patch6 -p1
 
 %build
 glib-gettextize -f
@@ -182,6 +179,8 @@ GStreamer support libraries header files.
 %{_datadir}/gtk-doc
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 0.10.31.
 * Sat Oct 01 2011 - brian.cameron@oracle.com
 - Bump to 0.10.30.
 * Mon Jan 24 2011 - brian.cameron@oracle.com

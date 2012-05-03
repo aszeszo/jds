@@ -18,7 +18,7 @@
  
  #ifdef HAVE_CRT_EXTERNS_H
  #include <crt_externs.h>
-@@ -724,6 +735,449 @@ expand_macro (char              macro, 
+@@ -970,6 +981,449 @@ expand_macro (char              macro, 
    *uri_list = uris;
  }
  
@@ -468,7 +468,7 @@
  static gboolean
  expand_application_parameters (GDesktopAppInfo   *info,
  			       GList            **uris,
-@@ -735,6 +1189,9 @@ expand_application_parameters (GDesktopA
+@@ -981,6 +1435,9 @@ expand_application_parameters (GDesktopA
    const char *p = info->exec;
    GString *expanded_exec;
    gboolean res;
@@ -478,7 +478,7 @@
  
    if (info->exec == NULL)
      {
-@@ -766,8 +1223,30 @@ expand_application_parameters (GDesktopA
+@@ -1012,8 +1469,30 @@ expand_application_parameters (GDesktopA
        expand_macro ('f', expanded_exec, info, uris);
      }
  

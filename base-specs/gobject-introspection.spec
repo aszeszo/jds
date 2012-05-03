@@ -1,7 +1,7 @@
 #
 # spec file for package gobject-introspection
 #
-# Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,13 +15,13 @@
 Name:         gobject-introspection
 License:      LGPL v2+ (giscanner), GPL v2+ (tools), MIT, BSD
 Group:        Libraries
-Version:      1.30.0
+Version:      1.32.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Introspection for GObject libraries
 URL:          http://live.gnome.org/GObjectIntrospection
-Source:       http://download.gnome.org/sources/%{name}/1.30/%{name}-%{version}.tar.bz2
+Source:       http://download.gnome.org/sources/%{name}/1.32/%{name}-%{version}.tar.xz
 # We only deliver one set of the Python files, so it is necessary to modify
 # /usr/bin/amd64/g-ir-scanner to point to the right python files.
 # date:2010-04-09 owner:yippi type:feature
@@ -148,6 +148,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libgirepository-everything-1.0.a
 
 %changelog
+* Mon Apr 30 2012 - brian.cameron@oracle.com
+- Bump to 1.32.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 1.30.0.
 * Tue Jul 05 2011 - brian.cameron@oracle.com

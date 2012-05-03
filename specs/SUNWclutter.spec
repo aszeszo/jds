@@ -4,7 +4,7 @@
 #
 # includes module(s): clutter
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,19 +26,17 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgobject-introspection
 Requires: SUNWgtk3
-Requires: SUNWglib-json
+Requires: SUNWjson-glib
 Requires: SUNWcogl
-Requires: SUNWxorg-mesa
-BuildRequires: SUNWgobject-introspection-devel
 BuildRequires: SUNWgtk3-devel
-BuildRequires: SUNWglib-json-devel
+BuildRequires: SUNWjson-glib-devel
 BuildRequires: SUNWcogl-devel
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWxwinc
-BuildRequires: SUNWxorg-headers
-BuildRequires: SUNWxorg-mesa
+BuildRequires: consolidation/X/X-incorporation
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: x11/library/mesa
+BuildRequires: x11/server/xorg
 
 %package devel
 Summary:                 %{summary} - developer files
@@ -129,6 +127,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
  
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires.
 * Tue Jul 12 2011 - brian.cameron@oracle.com
 - Update packaging for clutter 1.6.16 release.
 * Fri Oct 22 2010 - brian.cameron@oracle.com

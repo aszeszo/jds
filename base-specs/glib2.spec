@@ -1,7 +1,7 @@
-
+#
 # spec file for package glib2 
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,13 +13,12 @@
 Name:         glib2 
 License:      LGPL v2
 Group:        System/Libraries
-Version:      2.30.1
+Version:      2.32.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Low level core compatibility library for GTK+ and GNOME
-Source:       http://ftp.gnome.org/pub/GNOME/sources/glib/2.30/glib-%{version}.tar.bz2
-Source1:      glue.png
+Source:       http://ftp.gnome.org/pub/GNOME/sources/glib/2.32/glib-%{version}.tar.xz
 
 # Patch default-path to not include "." because on Solaris we want to avoid
 # setting PATH to include the current working directory.  This was an
@@ -92,11 +91,6 @@ object system
 %patch9 -p1
 %patch10 -p1
 
-cp docs/reference/glib/html/mainloop-states.gif docs/reference/glib/mainloop-states.gif
-cp docs/reference/gio/html/gvfs-overview.png docs/reference/gio/gvfs-overview.png
-mkdir -p docs/reference/gobject/images
-cp %SOURCE1 docs/reference/gobject/images
-
 %build
 %ifos linux
 if [ -x /usr/bin/getconf ]; then
@@ -119,6 +113,7 @@ chmod a+x mkinstalldirs
 autoconf
 export CFLAGS="%optflags"
 export LDFLAGS="%_ldflags -lsocket -lsecdb -lnsl"
+
 ./configure --prefix=%{_prefix} \
             --mandir=%{_mandir} \
             --datadir=%{_datadir} \
@@ -128,6 +123,7 @@ export LDFLAGS="%_ldflags -lsocket -lsecdb -lnsl"
 	    --disable-fam	\
 	    --disable-dtrace \
 	    --enable-shared \
+	    $GLIB_EXTRA_CONFIG_OPTIONS \
 	    %{gtk_doc_option}
 
 make -j $CPUS
@@ -140,7 +136,8 @@ make DESTDIR=$RPM_BUILD_ROOT install
 #Fixes bug 4930405
 install -d $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES
 install --mode=0644 $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES/
-rm $RPM_BUILD_ROOT%{_libdir}/*.la $RPM_BUILD_ROOT%{_libdir}/*.a
+find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
+find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.a" -exec rm -f {} ';'
 rm -Rf $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean
@@ -171,6 +168,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Fri Apr 27 2012 - brian.cameron@oracle.com
+- Bump to 2.32.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 2.30.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

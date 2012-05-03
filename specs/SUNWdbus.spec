@@ -3,7 +3,7 @@
 #
 # includes module(s): dbus
 #
-# Copyright 2007, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -95,12 +95,6 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm -f"
-
 # Put /usr/ccs/lib first in the PATH so that cpp is picked up from there
 # note: I didn't put /usr/lib in the PATH because there's too much other
 # stuff in there
@@ -113,12 +107,6 @@ export PATH=/usr/ccs/lib:$PATH
 %dbus.build -d %name-%version/%{base_arch}
 
 %install
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm -f"
-
 rm -rf $RPM_BUILD_ROOT
 
 %ifarch amd64 sparcv9
@@ -299,6 +287,8 @@ exit 0
 %endif
 
 %changelog
+* Mon May 02 2012 - brian.cameron@oracle.com
+- Update to work with latest autotools.
 * Mon Jun 27 2011 - brian.cameron@oracle.com
 - Add dbus-x11 package for dbus-launch, fixing CR #7055857.
 * Wed Apr 06 2011 - brian.cameron@oracle.com

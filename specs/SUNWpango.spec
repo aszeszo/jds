@@ -3,7 +3,7 @@
 #
 # includes module(s): pango
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -34,24 +34,19 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWglib2
-BuildRequires: SUNWcairo
-BuildRequires: SUNWfreetype2
-BuildRequires: SUNWlibms
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWxwxft
-BuildRequires: SUNWgawk
-BuildRequires: SUNWgsed
-BuildRequires: SUNWbinutils
-BuildRequires: SUNWgnu-findutils
-BuildRequires: SUNWggrp
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgobject-introspection
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWxorg-headers
-BuildRequires: SUNWlibm
-BuildRequires: SUNWgnome-xml-share
+BuildRequires: consolidation/X/X-incorporation
+BuildRequires: data/sgml-common
+BuildRequires: developer/gnu-binutils
+BuildRequires: file/gnu-findutils
+BuildRequires: library/glib2
+BuildRequires: library/desktop/cairo
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: system/library/math
+BuildRequires: text/gawk
+BuildRequires: text/gnu-grep
+BuildRequires: text/gnu-sed
+BuildRequires: x11/library/libxft
+BuildRequires: x11/server/xorg
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -64,7 +59,7 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWpango
+Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -198,11 +193,12 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Mon Mar  5 2010 - christian.kelly@sun.com
 - Deliver Pango-1.0.gir, gtk needs it.
 * Tue Mar 31 2009 - dave.lin@sun.com
 - initial version(split from SUNWgnome-base-libs)
-
 

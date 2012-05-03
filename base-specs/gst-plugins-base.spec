@@ -1,7 +1,7 @@
 #
 # spec file for package gst-plugins-base
 #
-# Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -12,7 +12,7 @@
 
 Name:           gst-plugins-base
 License:        LGPL v2, GPL v2, BSD, MIT
-Version:        0.10.35
+Version:        0.10.36
 Release:        1
 Distribution:   Java Desktop System
 Vendor:         freedesktop.org
@@ -25,8 +25,8 @@ Source1:        l10n-configure.sh
 %endif
 #owner:laca date:2006-01-19 type:bug bugster:6570425
 Patch1:         gst-plugins-base-01-gettext.diff
-#owner:yippi date:2011-10-01 type:bug bugzilla:661122
-Patch2:         gst-plugins-base-02-makefile.diff
+#owner:yippi date:2012-05-02 type:feature
+Patch2:         gst-plugins-base-02-resample.diff
 BuildRoot:      %{_tmppath}/gst-plugins-base-%{version}-root
 Docdir:         %{_defaultdocdir}/doc
 Autoreqprov:    on
@@ -145,6 +145,8 @@ unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
 %{_libdir}/libgst*.so
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 0.10.36.
 * Sat Oct 01 2011 - brian.cameron@oracle.com
 - Bump to 0.10.35.
 * Mon Jan 24 2011 - brian.cameron@oracle.com

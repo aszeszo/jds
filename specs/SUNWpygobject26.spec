@@ -3,7 +3,7 @@
 #
 # includes module(s): pygobject
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -28,14 +28,14 @@ BuildRoot:         %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
+Requires: runtime/python-26
 Requires: SUNWPython26
-BuildRequires: SUNWglib2
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgsed
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWgobject-introspection
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: library/glib2
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: runtime/python-26
+BuildRequires: text/gnu-sed
 
 %package devel
 Summary:           %{summary} - development files
@@ -43,7 +43,7 @@ SUNW_BaseDir:      %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
 Requires: %name
-Requires: SUNWPython26
+Requires: runtime/python-26
 
 %prep
 rm -rf %name-%version
@@ -96,6 +96,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires.
 * Fri Oct 21 2011 - brian.cameron@oracle.com
 - Fix packaging.
 * Fri Feb  4 2010 - laszlo.peter@oracle.com

@@ -3,7 +3,7 @@
 #
 # includes module(s): gdk-pixbuf
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -32,11 +32,13 @@ License:                 %{gdkpixbuf.license}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
+%include gnome-incorporation.inc
 
 %package devel
 Summary:		 %{summary} - development files
 SUNW_BaseDir:		 %{_basedir}
 %include default-depend.inc
+%include gnome-incorporation.inc
 Requires: SUNWpng-devel
 Requires: SUNWglib2-devel
 
@@ -46,6 +48,7 @@ IPS_package_name:        library/desktop/gdk-pixbuf/l10n
 Summary:		 %{summary} - l10n content
 SUNW_BaseDir:		 %{_basedir}
 %include default-depend.inc
+%include gnome-incorporation.inc
 Requires: %{name}
 %endif
 
@@ -132,11 +135,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/%{_arch64}/gdk-pixbuf-2.0/2.10.0/*
 %{_libdir}/%{_arch64}/libgdk_pixbuf*
 %{_bindir}/%{_arch64}/gdk-pixbuf-query-loaders
+%{_bindir}/%{_arch64}/gdk-pixbuf-pixdata
 %endif
 
 %{_libdir}/girepository-1.0/GdkPixbuf-2.0.typelib
 %{_bindir}/gdk-pixbuf-csource
 %{_bindir}/gdk-pixbuf-query-loaders
+%{_bindir}/gdk-pixbuf-pixdata
 
 %dir %attr (0755, root, sys) %dir %{_datadir}
 %{_datadir}/gir-1.0/GdkPixbuf-2.0.gir
@@ -162,7 +167,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, sys) %dir %{_datadir}
 %{_datadir}/gtk-doc
 
-
 %if %build_l10n
 %files l10n
 %defattr (-, root, bin)
@@ -171,6 +175,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Fix packaging after updating to 2.26.1.  Add include gnome-incorporation.inc.
 * Tue Jul 12 2011 - brian.cameron@oracle.com
 - Created.
 

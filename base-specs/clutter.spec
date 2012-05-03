@@ -1,7 +1,7 @@
 #
 # spec file for package clutter
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,18 +14,19 @@
 Name:         clutter
 License:      LGPLv2.1
 Group:        System/Libraries
-Version:      1.8.2
+Version:      1.10.4
 Release:      1
 Distribution: Java Desktop System
 Vendor:       clutter-project.org
 Summary:      clutter - a library for creating fast, visually rich and animated graphical user interfaces.
-Source:	      http://www.clutter-project.org/sources/%{name}/1.8/%{name}-%{version}.tar.bz2
+Source:	      http://www.clutter-project.org/sources/%{name}/1.10/%{name}-%{version}.tar.xz
 # date:2010-10-22 owner:yippi
 Patch1:       clutter-01-json.diff
 # Patch needed to make 1.2.8 build without libtool 2.2.6.
 # date:2010-05-28 owner:yippi type:feature
 Patch2:       clutter-02-m4.diff
 Patch3:       clutter-03-configure.diff
+Patch4:       clutter-04-void-return.diff
 URL:          http://www.clutter-project.org/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 %description
@@ -37,6 +38,7 @@ rich and animated graphical user interfaces.
 #%patch1 -p1
 #%patch2 -p1
 %patch3 -p1
+%patch4 -p1
 
 %build
 CPUS=`/usr/sbin/psrinfo | grep on-line | wc -l | tr -d ' '`
@@ -79,6 +81,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 1.10.4.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 1.8.2.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

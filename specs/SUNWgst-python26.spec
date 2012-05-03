@@ -1,7 +1,7 @@
 #
 # spec file for package SUNWgst-python
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -84,8 +84,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 %dir %attr (0755, root, sys) %{_datadir}
 %{_datadir}/gst-python
+%dir %attr (0755, root, bin) %{_includedir}
+%{_includedir}/gstreamer-*/gst
+
 
 %changelog
+* Wed May 02 2012 
+- Update packaging after updating to 0.10.22.
 * Wed Nov 04 2009 - brian.cameron@sun.com
 - Fix the way the patch is applied so it does not fail when the module is
   bumped.
@@ -109,6 +114,4 @@ rm -rf $RPM_BUILD_ROOT
 - Add Build/Requires for SUNWgnome-python-libs and SUNWgnome-media.
 * Tue Feb 12 2008 - dermot.mccluskey@sun.com
 - initial version
-
-
 

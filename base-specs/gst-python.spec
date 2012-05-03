@@ -1,7 +1,7 @@
 #
 # base spec file for package gst-python
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,7 +14,7 @@
 Name:                    gst-python
 License:                 LGPL v2.1
 Group:                   Libraries/Multimedia
-Version:                 0.10.21
+Version:                 0.10.22
 Distribution:            Java Desktop System
 Vendor:                  freedesktop.org
 Summary:                 Python bindings for the GStreamer streaming media framework
@@ -54,6 +54,8 @@ find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Wed May 02 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Bump to 0.10.22.
 * Mon Jan 24 2011 - Brian Cameron  <brian.cameron@oracle.com>
 - Bump to 0.10.21.
 * Fri Jan 14 2011 - Brian Cameron  <brian.cameron@oracle.com>

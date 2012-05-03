@@ -3,7 +3,7 @@
 #
 # includes module(s): json-glib
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,9 +15,9 @@ Name:                    SUNWjson-glib
 IPS_package_name:        library/json-glib
 Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Libraries
 Summary:                 JSON parser library for GLib
-Version:                 0.14.0
+Version:                 0.14.2
 License:                 LGPL v2.1
-Source:			 http://ftp.gnome.org/pub/GNOME/sources/json-glib/0.14/json-glib-%{version}.tar.bz2
+Source:			 http://ftp.gnome.org/pub/GNOME/sources/json-glib/0.14/json-glib-%{version}.tar.xz
 Url:                     http://live.gnome.org/JsonGlib
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
@@ -115,6 +115,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Wed May 02 2012 - Brian Cameron <brian.cameron@oracle.com>
+- Bump to 0.14.2.
 * Fri Sep 30 2011 - Brian Cameron <brian.cameron@oracle.com>
 - Bump to 0.14.0.
 * Thu Sep 15 2011 - Brian Cameron <brian.cameron@oracle.com>

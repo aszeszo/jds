@@ -3,7 +3,7 @@
 #
 # includes module(s): gtk2
 #
-# Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -34,31 +34,27 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWglib2
-Requires: SUNWgdk-pixbuf
-Requires: SUNWcairo
-Requires: SUNWpango
-Requires: SUNWlibatk
-Requires: SUNWjpg
-Requires: SUNWpng
-BuildRequires: SUNWTiff
-Requires: SUNWlibms
-Requires: SUNWdesktop-cache
+BuildRequires: library/glib2
+Requires: library/desktop/cairo
+Requires: library/desktop/pango
+Requires: library/desktop/atk
+Requires: image/library/libjpeg
+Requires: image/library/libpng
+Requires: system/library/math
+Requires: service/gnome/desktop-cache
 Requires: x11/library/libxinerama
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWgobject-introspection
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgdk-pixbuf-devel
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWpango-devel
-BuildRequires: SUNWlibatk-devel
-BuildRequires: SUNWpng-devel
-BuildRequires: SUNWjpg-devel
-BuildRequires: SUNWTiff-devel
-BuildRequires: SUNWxorg-headers
-BuildRequires: SUNWlibm
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: library/desktop/cairo
+BuildRequires: library/desktop/pango
+BuildRequires: library/desktop/atk
+BuildRequires: image/library/libjpeg
+BuildRequires: image/library/libpng
+BuildRequires: image/library/libtiff
+BuildRequires: x11/server/xorg
+BuildRequires: x11/library/libxi
+BuildRequires: system/library/math
+BuildRequires: library/desktop/gdk-pixbuf
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -71,12 +67,6 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibms
-Requires: SUNWpng-devel
-Requires: SUNWglib2-devel
-Requires: SUNWcairo-devel
-Requires: SUNWpango-devel
-Requires: SUNWlibatk-devel
 
 %package print-cups
 IPS_package_name:        library/desktop/gtk2/gtk-backend-cups
@@ -88,17 +78,13 @@ SUNW_BaseDir:            %{_basedir}
 # static dependencies needed in this package as some of the libraries
 # needed to detect the dependencies are built in the same spec but are
 # not in the same package (e.g. libatk)
-Requires: SUNWglib2
-Requires: SUNWcairo
-Requires: SUNWpango
-Requires: SUNWlibatk
-Requires: SUNWgtk2
-Requires: SUNWcupsr
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWcupsr
+Requires: library/glib2
+Requires: library/desktop/cairo
+Requires: library/desktop/pango
+Requires: library/desktop/atk
+Requires: library/desktop/gtk2
+Requires: print/cups
+BuildRequires: print/cups
 
 %package l10n
 Summary:                 %{summary} - l10n content
@@ -179,9 +165,6 @@ mv $RPM_BUILD_ROOT%{_bindir}/%{_arch64}/gtk-demo \
 %endif
 
 rm -rf $RPM_BUILD_ROOT%{_sysconfdir}/profile.d
-
-find $RPM_BUILD_ROOT%{_libdir} -name "*.la" -exec rm {} \;
-find $RPM_BUILD_ROOT%{_libdir} -name "*.a" -exec rm {} \;
 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}
 
@@ -302,6 +285,8 @@ rm -rf $RPM_BUILD_ROOT
 depend type=conditional predicate=print/cups fmri=pkg:/library/desktop/gtk2/gtk-backend-cups
 
 %changelog
+* Thu May 03 2012 - Brian Cameron@oracle.com
+- Fix Requires/BuildRequires.
 * Fri Sep 30 2011 - Ghee Teo@sun.com
 - Fixes 7096277. stopper.
 * Tue Jul 12 2011 - Brian.Cameron@Oracle.Com

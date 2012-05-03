@@ -3,7 +3,7 @@
 #
 # includes module(s): cairo
 #
-# Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,24 +33,21 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWglib2
-Requires: SUNWpixman
-Requires: SUNWfreetype2
-Requires: SUNWfontconfig
-Requires: SUNWpng
-Requires: SUNWzlib
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWxorg-headers
-BuildRequires: SUNWpng-devel
+BuildRequires: library/glib2
+BuildRequires: library/graphics/pixman
+BuildRequires: library/zlib
+BuildRequires: system/library/freetype-2
+BuildRequires: system/library/fontconfig
+BuildRequires: image/library/libpng
+BuildRequires: x11/compatibility/links-svid
+BuildRequires: x11/server/xorg
 
 %package devel		
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWcairo
-Requires: SUNWpng-devel
+Requires: %{name}
 
 %prep
 rm -rf %name-%version
@@ -111,7 +108,6 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-
 %files
 %doc -d %{base_arch} cairo-%{cairo.version}/README
 %doc -d %{base_arch} cairo-%{cairo.version}/AUTHORS
@@ -120,6 +116,7 @@ rm -rf $RPM_BUILD_ROOT
 %doc(bzip2) -d %{base_arch} cairo-%{cairo.version}/ChangeLog.pre-1.2
 %doc(bzip2) -d %{base_arch} cairo-%{cairo.version}/ChangeLog.pre-1.4
 %doc(bzip2) -d %{base_arch} cairo-%{cairo.version}/ChangeLog.pre-1.6
+%doc(bzip2) -d %{base_arch} cairo-%{cairo.version}/ChangeLog.pre-1.8
 %doc(bzip2) -d %{base_arch} cairo-%{cairo.version}/COPYING
 %doc(bzip2) -d %{base_arch} cairo-%{cairo.version}/COPYING-LGPL-2.1
 %doc(bzip2) -d %{base_arch} cairo-%{cairo.version}/COPYING-MPL-1.1
@@ -151,13 +148,11 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, sys) %dir %{_datadir}
 %{_datadir}/gtk-doc
 %ifarch amd64 sparcv9
-%{_bindir}/%{_arch64}/cairo-trace
-%{_libdir}/%{_arch64}/cairo/libcairo-trace*
 %endif
-%{_bindir}/cairo-trace
-%{_libdir}/cairo/libcairo-trace*
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Fix packaging after updating to 1.12.2.  Fix Requires/BuildRequires.
 * Tue Jul 05 2011 - brian.cameron@oracle.com
 - Fix packaging for cairo 1.10.2 release.
 * Wed Aug 26 2009 - christian.kelly@sun.com

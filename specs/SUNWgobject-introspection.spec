@@ -112,7 +112,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/g-ir-compiler
 %{_bindir}/g-ir-generate
 %{_bindir}/g-ir-scanner
-%{_bindir}/g-ir-doc-tool
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/*.so*
 %{_libdir}/girepository-1.0/*
@@ -122,7 +121,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%{_arch64}/g-ir-annotation-tool
 %{_bindir}/%{_arch64}/g-ir-compiler
 %{_bindir}/%{_arch64}/g-ir-generate
-%{_bindir}/%{_arch64}/g-ir-doc-tool
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
 %{_libdir}/%{_arch64}/*.so*
 %{_libdir}/%{_arch64}/girepository-1.0/*
@@ -155,6 +153,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Fix packaging after update to 1.32.1.
 * Mon Feb 13 2012 - padraig.obriain@oracle.com
 - Update Requires and BuildRequires to be IPS package names.
 * Wed Oct 20 2010 - brian.cameorn@oracle.com

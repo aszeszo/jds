@@ -1,7 +1,7 @@
 #
 # spec file for package pygobject
 #
-# Copyright 2010 Sun Microsystems, Inc.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@
 Name:			pygobject
 License:		LGPL	
 Group:			System/Library
-Version:		3.0.1
+Version:		3.2.0
 Release:		1
 Distribution:		Java Desktop System
 Vendor:			Gnome Community
 Summary:		Python bindings for GObject
-Source:			http://ftp.gnome.org/pub/GNOME/sources/pygobject/3.0/pygobject-%{version}.tar.bz2
+Source:			http://ftp.gnome.org/pub/GNOME/sources/pygobject/3.2/pygobject-%{version}.tar.xz
 URL:			http://www.gnome.org
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 Docdir:			%{_defaultdocdir}/doc
@@ -97,6 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pygobject/*
 
 %changelog -n pygobject
+* Mon Apr 30 2012 - brian.cameron@oracle.com
+- Bump to 3.2.0.
 * Mon Aug 15 2011 - lee.yuan@oracle.com
 - Bump to 2.26.0.
 * Thu Jan 28 2010 - brian.cameron@sun.com

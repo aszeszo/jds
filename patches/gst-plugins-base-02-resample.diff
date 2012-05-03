@@ -1,0 +1,11 @@
+--- gst-plugins-base-0.10.36/gst/audioresample/Makefile.am-orig	2012-05-02 19:19:06.602309861 -0500
++++ gst-plugins-base-0.10.36/gst/audioresample/Makefile.am	2012-05-02 19:20:11.141994999 -0500
+@@ -17,7 +17,7 @@ libgstaudioresample_la_CFLAGS = \
+ 	$(GST_PLUGINS_BASE_CFLAGS) \
+ 	$(GST_BASE_CFLAGS) \
+ 	$(GST_CFLAGS) \
+-	$(ORC_CFLAGS)
++	$(ORC_CFLAGS) -xarch=sse2
+ 
+ libgstaudioresample_la_LIBADD = \
+ 	$(GST_BASE_LIBS) \

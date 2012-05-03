@@ -3,7 +3,7 @@
 #
 # includes module(s): glib2
 #
-# Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -33,14 +33,19 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibms
-Requires: SUNWPython26
+Requires: system/library/math
+Requires: library/zlib
+Requires: runtime/python-26
 BuildRequires: runtime/perl-512
-BuildRequires: SUNWlibm
-BuildRequires: SUNWPython26-devel
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWgnome-xml-share
+BuildRequires: system/library/math/header-math
+BuildRequires: runtime/python-26
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: developer/gnome/gettext
+BuildRequires: data/sgml-common
+BuildRequires: data/xml-common
+BuildRequires: data/docbook/docbook-style-dsssl
+BuildRequires: data/docbook/docbook-style-xsl
+BuildRequires: data/docbook/docbook-dtds
 %if %option_with_svr4
 %else
 # required for including X11/extensions/Xtsol.h in gio-rbac.diff
@@ -83,11 +88,14 @@ unset PKG_CONFIG_DISABLE_UNINSTALLED
 
 export PERL_PATH=/usr/perl5/bin/perl
 export PERL=/usr/perl5/bin/perl
+export GLIB_EXTRA_CONFIG_OPTIONS=""
 
 %ifarch amd64 sparcv9
 export DFLAGS=-64
 %glib_64.build -d %name-%version/%_arch64
 %endif
+
+export GLIB_EXTRA_CONFIG_OPTIONS="--disable-largefile"
 
 %glib.build -d %name-%version/%{base_arch}
 
@@ -148,6 +156,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/gtester
 %{_bindir}/gtester-report
 %{_bindir}/gio-querymodules
+%{_bindir}/glib-compile-resources
 %{_bindir}/glib-compile-schemas
 %{_bindir}/gsettings
 %{_bindir}/gdbus
@@ -161,9 +170,11 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%{_arch64}/gtester
 %{_bindir}/%{_arch64}/gtester-report
 %{_bindir}/%{_arch64}/gio-querymodules
+%{_bindir}/%{_arch64}/gresource
 %{_bindir}/%{_arch64}/gsettings
 %{_bindir}/%{_arch64}/gdbus
 %{_bindir}/%{_arch64}/gdbus-codegen
+%{_bindir}/%{_arch64}/glib-compile-resources
 %{_bindir}/%{_arch64}/glib-compile-schemas
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
 %{_libdir}/%{_arch64}/lib*.so*
@@ -188,6 +199,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/glib-gettextize
 %{_bindir}/glib-mkenums
 %{_bindir}/gobject-query
+%{_bindir}/gresource
 %dir %attr (0755, root, bin) %dir %{_includedir}
 %{_includedir}/*
 %ifarch amd64 sparcv9
@@ -220,6 +232,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Fix packaging after update to 2.32.1.  Fix Requires/BuildRequires.
 * Tue Jul 12 2011 - brian.cameron@oracle.com
 - Fix packaging for glib2 2.29.10 release.
 * Wed Nov 17 2010 - dave.lin@oracle.com

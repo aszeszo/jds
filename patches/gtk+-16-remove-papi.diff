@@ -1,14 +1,14 @@
-diff -urN gtk+-2.20.1/configure.in ../../SUNWgtk2-2.20.1.hacked/i386/gtk+-2.20.1/configure.in
---- gtk+-2.20.1/configure.in	2011-08-11 16:24:07.371964160 +0000
-+++ ../../SUNWgtk2-2.20.1.hacked/i386/gtk+-2.20.1/configure.in	2011-08-11 17:05:56.394292246 +0000
-@@ -2169,7 +2169,6 @@
+diff -urN gtk+-2.20.1/configure.ac ../../SUNWgtk2-2.20.1.hacked/i386/gtk+-2.20.1/configure.ac
+--- gtk+-2.20.1/configure.ac	2011-08-11 16:24:07.371964160 +0000
++++ ../../SUNWgtk2-2.20.1.hacked/i386/gtk+-2.20.1/configure.ac	2011-08-11 17:05:56.394292246 +0000
+@@ -1759,7 +1759,6 @@ modules/printbackends/Makefile
  modules/printbackends/cups/Makefile
  modules/printbackends/lpr/Makefile
  modules/printbackends/file/Makefile
 -modules/printbackends/papi/Makefile
  modules/printbackends/test/Makefile
  perf/Makefile
- contrib/Makefile
+ ])
 diff -urN gtk+-2.20.1/modules/printbackends/Makefile.am ../../SUNWgtk2-2.20.1.hacked/i386/gtk+-2.20.1/modules/printbackends/Makefile.am
 --- gtk+-2.20.1/modules/printbackends/Makefile.am	2010-04-09 02:29:59.000000000 +0000
 +++ ../../SUNWgtk2-2.20.1.hacked/i386/gtk+-2.20.1/modules/printbackends/Makefile.am	2011-08-11 16:25:29.679135783 +0000

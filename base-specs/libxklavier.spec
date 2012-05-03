@@ -1,7 +1,7 @@
 #
 # spec file for package libxklavier
 #
-# Copyright (c) 2010, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -11,12 +11,12 @@
 Name:		libxklavier
 License:	LGPLv2+
 Group:		Development/Libraries
-Version:	5.1
+Version:	5.2
 Release:	1
 Vendor:		http://www.freedesktop.org/
 Summary:	libXklavier library
 Url:		http://gswitchit.sourceforge.net/
-Source:		http://download.gnome.org/sources/%{name}/%{version}/%{name}-%{version}.tar.bz2
+Source:		http://download.gnome.org/sources/%{name}/%{version}/%{name}-%{version}.tar.xz
 # date:2010-08-02 owner:ja208388 type:bug
 Patch1:		libxklavier-01-compile-makefile.diff
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root
@@ -90,6 +90,8 @@ rm $RPM_BUILD_ROOT%{_libdir}/*.a $RPM_BUILD_ROOT%{_libdir}/*.la
 %{_datadir}/gtk-doc/html/libxklavier
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 5.2.
 * Wed Jul 06 2011 - brian.cameron@oracle.com
 - Bump to 5.1.
 * Mon Aug 02 2010 - javier.acosta@sun.com

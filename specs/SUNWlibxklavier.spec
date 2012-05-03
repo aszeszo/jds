@@ -3,7 +3,7 @@
 #
 # includes module(s): libxklavier
 #
-# Copyright (c) 2010, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -106,11 +106,14 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-, root, bin)
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/lib*.so*
+%{_libdir}/girepository-1.0
 %ifarch amd64 sparcv9
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
 %{_libdir}/%{_arch64}/lib*.so*
+%{_libdir}/%{_arch64}/girepository-1.0
 %endif
 %dir %attr (0755, root, sys) %{_datadir}
+%{_datadir}/gir-1.0
 %dir %attr(0755, root, bin) %{_mandir}
 %dir %attr(0755, root, bin) %{_mandir}/man3
 %{_mandir}/man3/*
@@ -131,10 +134,13 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Fix packaging after update to 5.2.
 * Thu May 12 2011 - javier.acosta@oracle.com
 - Fix 64-bit support
 * Mon Aug 02 2010 - javier.acosta@sun.com
-- second version for release - remove l10n build plus corrections and modifications
+- second version for release - remove l10n build plus corrections and
+  modifications
 * Thu Oct 08 2009 - suresh.chandrasekharan@sun.com
 - 64-bit support
 * Fri Sep 04 2009 - suresh.chandrasekharan@sun.com

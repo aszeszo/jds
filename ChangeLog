@@ -1,3 +1,57 @@
+2012-05-03  Brian Cameron  <brian.cameron@oracle.com>
+
+	* base-specs/gnome-common.spec: Bump to 2.34.0.
+	* specs/SUNWglib2.spec, base-specs/glib2.spec: bump to 2.32.1.
+	* patches/glib-06-solaris-port.diff, patches/glib-09-cleanup-libs.diff,
+	  patches/glib-10-gio-rbac.diff: Rework patches.
+	* ext-sources/glue.png: No longer needed to build glib.
+	* specs/SUNWpygobject26.spec, base-specs/pygobject.spec: Bump to 3.2.0.
+	* specs/SUNWgobject-introspection.spec,
+	  base-specs/gobject-introspection.spec: Bump to 1.32.1.
+	* base-specs/atk.spec: Bump to 2.4.0.
+	* specs/SUNWcairo.spec, base-specs/cairo.spec: Bump to 1.12.2.
+	* patches/cairo-02-solaris.diff: Add patch needed to build.
+	* specs/SUNWpango.spec, base-specs/pango.spec: Bump to 1.30.0.
+	* specs/SUNWlibrsvg.spec, base-specs/librsvg.spec: Bump to 2.36.1.
+	* patches/librsvg-02-solaris.diff: Add patch needed to build.
+	* specs/SUNWgdk-pixbuf.spec, base-specs/gdk-pixbuf.spec: Bump to
+	  2.26.1.
+	* specs/SUNWgtk2.spec, base-specs/gtk2.spec: Bump to 2.24.10.
+	* patches/gtk+-16-introspection.diff, patches/gtk+-18-remove-papi.diff,
+	* patches/gtk+-17-gailwindow-name.diff: Remove patches not referenced
+	  in spec-file
+	* patches/gtk+-16-remove-papi.diff,
+	  patches/gtk+-17-unregister-callback.diff: Migrate patches from s11u1
+	  branch.
+	* specs/SUNWgtk3.spec, base-specs/gtk3.spec: Bump to 3.4.1.
+	* patches/gtk3+-04-void-return.diff: Remove patch no longer needed.
+	* patches/gtk3+-04-compile.diff: Add patch needed to build.
+	* specs/SUNWdbus.spec, base-specs/dbus.spec: Bump to 1.4.20.
+	* base-specs/dbus-python.spec: Bump to 1.0.0.
+	* specs/SUNWgnome-media.spec, base-specs/gst.spec,
+	  base-specs/gst-plugins-base.spec: Bump to 0.10.36.
+	* patches/gst-03-compile.diff: Add patch needed to build.
+	* patches/gst-plugins-base-02-makefile.diff: Removed patch no longer
+	  needed
+	* patches/gst-plugins-base-02-resample.diff: Add patch needed to build.
+	* base-specs/gst-plugins-good.spec: Bump to 0.10.31
+	* patches/gst-plugins-good-06-compile.diff: Remove patch no longer
+	  needed.
+	* specs/SUNWgst-python26.spec, base-specs/gst-python.spec: Bump to
+	  0.10.22.
+	* specs/SUNWlibxklavier.spec, base-specs/libxklavier.spec: Bump to 5.2.
+	* patches/libxklavier-01-compile-makefile.diff: Rework.
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec: Build with
+	  -KPIC and now depend on library/fftw-3 so /usr/bin/qpaeq builds.
+	* base-specs/libgc.spec, patches/libgc-03-sparc-atomic.diff: Now build
+	  with -KPIC.
+	* specs/SUNWjson-glib.spec: Bump to 0.14.2.
+	* specs/SUNWcogl.spec, patches/cogl-01-makefile.diff: Bump to 1.10.2.
+	* specs/SUNWclutter.spec, base-specs/clutter.spec: Bump to 1.10.4.
+	* specs/SUNWvala.spec, base-specs/vala.spec: Bump to 0.16.0.
+	* base-specs/goffice.spec: Fix CFLAGS to include pcre.
+	* specs/SUNWgnome-display-mgr.spec: Fix Requires.
+
 2012-04-27  Brian Cameron  <brian.cameron@oracle.com>
 
         * specs/SUNWgnome-media.spec, base-specs/gst.spec,
@@ -463,9 +517,9 @@
 	* specs/SUNWcogl.spec, copyright/SUNWcogl.copyright,
 	  patches/cogl-01-makefile.diff:  Add new clutter dependency.  Version
 	  1.8.0.
-	* specs/SUNWclutter.spec, base-specs/clutter.spec,
-	  patches/clutter-04-compile.diff: Bump to 1.8.0.  Remove patch no
-	  longer needed.
+	* specs/SUNWclutter.spec, base-specs/clutter.spec: Bump to 1.8.0.
+	* patches/clutter-04-compile.diff: Remove patch no longer needed.
+	* patches/clutter-04-void-return.diff: Add patch needed to build.
 	* specs/SUNWvala.spec, base-specs/vala.spec: Bump to 0.14.0.
 	* specs/SUNWgobject-introspection.spec,
 	  base-specs/gobject-introspection.spec: Bump to 1.30.0.

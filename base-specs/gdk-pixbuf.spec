@@ -1,7 +1,7 @@
 #
 # spec file for package gdk-pixbuf
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@
 Name:         gdk-pixbuf
 License:      Unknown
 Group:        System/Libraries
-Version:      2.24.0
+Version:      2.26.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      Library
-Source:       ftp://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.24/gdk-pixbuf-%{version}.tar.bz2
+Source:       ftp://ftp.gnome.org/pub/GNOME/sources/gdk-pixbuf/2.26/gdk-pixbuf-%{version}.tar.xz
 Patch1:       gdk-pixbuf-01-dlopen-medialib.diff
 URL:          http://cairographics.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -65,6 +65,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-, root, root)
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Bump to 2.26.1.
 * Thu Sep 08 2011 - brian.cameron@oracle.com
 - Bump to 2.24.0.
 * Thu Jul 21 2011 - brian.cameron@oracle.com

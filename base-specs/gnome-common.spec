@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-common
 #
-# Copyright (c) 2005 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@ Name:			gnome-common
 License:		GPL
 Group:			System/Libraries
 BuildArchitectures:	noarch
-Version:		2.28.0
+Version:		2.34.0
 Release:		1
 Distribution:		Java Desktop System
 Vendor:			Gnome Community
 Summary:		Multiply used files used by the GNOME 2.0 platform
-Source:			http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.28/%{name}-%{version}.tar.bz2
+Source:			http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.34/%{name}-%{version}.tar.bz2
 URL:			http://www.gnome.org
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 Docdir:			%{_defaultdocdir}/%{name}
@@ -61,58 +61,45 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/aclocal
 
 %changelog
+* Mon Apr 30 2012 - brian.cameron@oracle.com
+- Bump to 2.34.0.
 * Wed Sep 23 2009 - dave.lin@sun.com
 - Bump to 2.28.0
 * Mon Mar 23 2009 - dave.lin@sun.com
 - Bump to 2.26.0
 * Sat Sep 27 2007 - christian.kelly@sun.com
 - Bump to 2.24.0.
-
 * Tue Sep 18 2007 - damien.carbery@sun.com
 - Bump to 2.20.0.
-
 * Thu Apr 12 2007 - damien.carbery@sun.com
 - Bump to 2.18.0.
-
 * Mon Sep 26 2005 - glynn.foster@sun.com
 - Bump to 2.12.0
-
 * Tue Sep 06 2005 - brian.cameron@sun.com
 - Add patch 1 from gnome-common CVS head to fix problem with grep
   not working the same way on Solaris as it does on Linux.
-
 * Tue Aug 16 2005 - damien.carbery@sun.com
 - Bump to 2.11.0.
-
 * Fri May 06 2005 - glynn.foster@sun.com
 - Bump to 2.8.0
-
 * Thu Jan 27 2005 - brian.cameron@sun.com
 - added patch 2 to fix autogen.sh so it works with Solaris find.
-
 * Wed Jan 04 2005 - alvaro.lopez@sun.com
 - added patch 1 to fix bug #6206322
-
 * Wed Jul 07 2004 - dermot.mccluskey@sun.com
 - added "-j $CPUS" to make to speed up builds
-
 * Wed Feb 18 2004 - matt.keenan@sun.com
 - Distro to Cinnabar
-
 * Tue Oct 21 2003 - glynn.foster@sun.com
 - Remove the games m4 macro patch, since we're
   moving to 2.4
-
 * Fri Oct 10 2003 - laca@sun.com
 - include %_datadir/gnome-common
 - use _datadir instead of _prefix/share
-
 * Mon Oct 06 2003 - ghee.teo@sun.com
 - Updated 2.4 tarball for Quicksilver.
-
 * Tue Jul 08 2003 - glynn.foster@sun.com
 - Add in some gnome-games m4 macros
-
 * Thu May 13 2003 - ghee.teo@Sun.COM
 - Initial Sun Release
 

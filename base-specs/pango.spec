@@ -1,7 +1,7 @@
 #
 # spec file for package pango
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,14 +13,14 @@
 Name:         pango
 License:      LGPL v2
 Group:        System/Libraries
-Version:      1.29.4
+Version:      1.30.0
 # "grep pango_module_version configure.in" for the api version number.
 %define module_api_version 1.6.0
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      Library for layout and rendering of internationalized text
-Source:       http://ftp.gnome.org/pub/GNOME/sources/pango/1.29/pango-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/pango/1.30/pango-%{version}.tar.xz
 Source1:      pango-layout.gif
 Source2:      pango-rotated-text.png
 #owner:dcarbery date:2007-06-20 type:bug bugzilla:449482 bugster:6571762
@@ -99,12 +99,12 @@ fi
 cp %{SOURCE1} docs/layout.gif
 cp %{SOURCE2} docs/rotated-text.png
 
-aclocal $ACLOCAL_FLAGS
+aclocal-1.11 $ACLOCAL_FLAGS
 libtoolize --force --copy
 gtkdocize
 autoheader
 autoconf
-automake -a -c -f
+automake-1.11 -a -c -f
 export CFLAGS="%optflags"
 export CXXFLAGS="%cxx_optflags"
 export LDFLAGS="%{_ldflags}"
@@ -158,6 +158,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Bump to 1.30.0.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 1.29.4.
 * Tue Jul 05 2011 - brian.cameron@oracle.com

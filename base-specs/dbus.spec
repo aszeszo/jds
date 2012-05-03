@@ -14,7 +14,7 @@
 Name:         dbus
 License:      GPL v2, AFL v2.1
 Group:        System/Libraries
-Version:      1.4.18
+Version:      1.4.20
 Release:      1
 Distribution: Java Desktop System
 Vendor:       freedesktop.org
@@ -160,6 +160,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/python?.?/vendor-packages/*
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 1.4.20.
 * Mon Feb 13 2012 - brian.cameron@oracle.com
 - Bump to 1.4.18.
 * Wed Sep 21 2011 - brian.cameron@oracle.com

@@ -95,7 +95,7 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-display-mgr
+Requires:                %{name}
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -312,6 +312,8 @@ user gcos-field="GDM Reserved UID" group=gdm home-dir=/var/lib/gdm uid=50 userna
 %{_datadir}/omf/gdm/*-[a-z]*.omf
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Fix Requires.
 * Wed Feb 08 2012 - brian.cameron@oracle.com
 - Update Requires/BuildRequires.
 * Tue Jul 12 2011 - brian.cameron@oracle.com

@@ -315,6 +315,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gir-1.0/*.gir
 %dir %attr (0755, root, other) %{_datadir}/gstreamer-0.10
 %{_datadir}/gstreamer-0.10/*
+%{_datadir}/gst-plugins-base/*
 %dir %attr (0755, root, other)
 %dir %attr(0755, root, bin) %{_mandir}
 %dir %attr(0755, root, bin) %{_mandir}/man1
@@ -358,6 +359,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Fix packaging after update to gst-plugins-base 0.10.36.
 * Fri Feb 17 2012 - brian.cameron@oracle.com
 - Now build with vfs and soup 64-bit plug-ins.
 * Wed Apr 06 2011 - brian.cameron@oracle.com

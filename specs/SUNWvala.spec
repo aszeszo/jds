@@ -3,7 +3,7 @@
 #
 # includes module(s): vala
 #
-# Copyright (c) 2007, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -90,14 +90,14 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/vapicheck
 %{_bindir}/vapigen
 %{_bindir}/vala-gen-introspect
-%{_bindir}/vala-0.14
-%{_bindir}/valac-0.14
-%{_bindir}/vapicheck-0.14
-%{_bindir}/vapigen-0.14
-%{_bindir}/vala-gen-introspect-0.14
+%{_bindir}/vala-0.16
+%{_bindir}/valac-0.16
+%{_bindir}/vapicheck-0.16
+%{_bindir}/vapigen-0.16
+%{_bindir}/vala-gen-introspect-0.16
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/lib*.so*
-%{_libdir}/vala-0.14
+%{_libdir}/vala-0.16
 
 %ifarch amd64 sparcv9
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
@@ -106,18 +106,19 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/%{_arch64}/vapicheck
 %{_bindir}/%{_arch64}/vapigen
 %{_bindir}/%{_arch64}/vala-gen-introspect
-%{_bindir}/%{_arch64}/vala-0.14
-%{_bindir}/%{_arch64}/valac-0.14
-%{_bindir}/%{_arch64}/vapicheck-0.14
-%{_bindir}/%{_arch64}/vapigen-0.14
-%{_bindir}/%{_arch64}/vala-gen-introspect-0.14
+%{_bindir}/%{_arch64}/vala-0.16
+%{_bindir}/%{_arch64}/valac-0.16
+%{_bindir}/%{_arch64}/vapicheck-0.16
+%{_bindir}/%{_arch64}/vapigen-0.16
+%{_bindir}/%{_arch64}/vala-gen-introspect-0.16
 %{_libdir}/%{_arch64}/lib*.so*
-%{_libdir}/%{_arch64}/vala-0.14
+%{_libdir}/%{_arch64}/vala-0.16
 %endif
 
 %dir %attr (0755, root, sys) %{_datadir}
 %{_datadir}/devhelp
-%{_datadir}/vala-0.14
+%{_datadir}/vala
+%{_datadir}/vala-0.16
 %{_mandir}
 
 %files devel
@@ -126,6 +127,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_libdir}
 %dir %attr (0755, root, other) %{_libdir}/pkgconfig
 %{_libdir}/pkgconfig/*
+%{_datadir}/pkgconfig/*
 %ifarch amd64 sparcv9
 %dir %attr (0755, root, bin) %{_libdir}/%{_arch64}
 %dir %attr (0755, root, other) %{_libdir}/%{_arch64}/pkgconfig
@@ -136,6 +138,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Fix packaging for 0.16.0 release.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Fix packaging for 0.14.0 release.
 * Tue Jul 12 2011 - brian.cameron@oracle.com

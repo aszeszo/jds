@@ -3,7 +3,7 @@
 #
 # includes module(s): gtk3
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011,2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -34,32 +34,27 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWglib2
-Requires: SUNWgdk-pixbuf
-Requires: SUNWcairo
-Requires: SUNWpango
-Requires: SUNWlibatk
-Requires: SUNWjpg
-Requires: SUNWpng
-BuildRequires: SUNWTiff
-Requires: SUNWTiff
-Requires: SUNWlibms
-Requires: SUNWdesktop-cache
+BuildRequires: library/glib2
+Requires: library/desktop/cairo
+Requires: library/desktop/pango
+Requires: library/desktop/atk
+Requires: image/library/libjpeg
+Requires: image/library/libpng
+Requires: system/library/math
+Requires: service/gnome/desktop-cache
 Requires: x11/library/libxinerama
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWgobject-introspection
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWgdk-pixbuf-devel
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWpango-devel
-BuildRequires: SUNWlibatk-devel
-BuildRequires: SUNWpng-devel
-BuildRequires: SUNWjpg-devel
-BuildRequires: SUNWTiff-devel
-BuildRequires: SUNWxorg-headers
-BuildRequires: SUNWlibm
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: library/desktop/cairo
+BuildRequires: library/desktop/pango
+BuildRequires: library/desktop/atk
+BuildRequires: image/library/libjpeg
+BuildRequires: image/library/libpng
+BuildRequires: image/library/libtiff
+BuildRequires: x11/server/xorg
+BuildRequires: x11/library/libxi
+BuildRequires: system/library/math
+BuildRequires: library/desktop/gdk-pixbuf
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -72,12 +67,7 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibms
-Requires: SUNWpng-devel
-Requires: SUNWglib2-devel
-Requires: SUNWcairo-devel
-Requires: SUNWpango-devel
-Requires: SUNWlibatk-devel
+
 
 %package print-cups
 IPS_package_name:        library/desktop/gtk3/gtk-backend-cups
@@ -89,17 +79,13 @@ SUNW_BaseDir:            %{_basedir}
 # static dependencies needed in this package as some of the libraries
 # needed to detect the dependencies are built in the same spec but are
 # not in the same package (e.g. libatk)
-Requires: SUNWglib2
-Requires: SUNWcairo
-Requires: SUNWpango
-Requires: SUNWlibatk
-Requires: SUNWgtk3
-Requires: SUNWcupsr
-BuildRequires: SUNWxwplt
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWcupsr
+Requires: library/glib2
+Requires: library/desktop/cairo
+Requires: library/desktop/pango
+Requires: library/desktop/atk
+Requires: library/desktop/gtk2
+Requires: print/cups
+BuildRequires: print/cups
 
 %if %build_l10n
 %package l10n
@@ -128,9 +114,11 @@ PKG_CONFIG_DISABLE_UNINSTALLED=
 unset PKG_CONFIG_DISABLE_UNINSTALLED
 
 %ifarch amd64 sparcv9
+export CXXFLAGS="%cxx_optflags64 -I/usr/X11/include"
 %gtk_64.build -d %name-%version/%_arch64
 %endif
 
+export CXXFLAGS="%cxx_optflags -I/usr/X11/include"
 %gtk.build -d %name-%version/%{base_arch}
 
 %install
@@ -150,6 +138,7 @@ rm -rf $RPM_BUILD_ROOT
 #
 install -d $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin
 mv $RPM_BUILD_ROOT%{_bindir}/gtk3-demo $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin
+mv $RPM_BUILD_ROOT%{_bindir}/gtk3-demo-application $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin
 
 rm -f $RPM_BUILD_ROOT%{_libdir}/gtk-3.0/*/immodules/im-[a-wyz]*.so
 
@@ -177,12 +166,11 @@ $RPM_BUILD_ROOT%{_bindir}/%{_arch64}/gtk-query-immodules-3.0 \
 mkdir -p $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin/%{_arch64}
 mv $RPM_BUILD_ROOT%{_bindir}/%{_arch64}/gtk3-demo \
     $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin/%{_arch64}
+mv $RPM_BUILD_ROOT%{_bindir}/%{_arch64}/gtk3-demo-application \
+    $RPM_BUILD_ROOT%{_prefix}/demo/jds/bin/%{_arch64}
 %endif
 
 rm -rf $RPM_BUILD_ROOT%{_sysconfdir}/profile.d
-
-find $RPM_BUILD_ROOT%{_libdir} -name "*.la" -exec rm {} \;
-find $RPM_BUILD_ROOT%{_libdir} -name "*.a" -exec rm {} \;
 
 %if %build_l10n
 %else
@@ -220,9 +208,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-, root, bin)
 %dir %attr (0755, root, bin) %{_bindir}
 %{_bindir}/gtk-update-icon-cache
+%{_bindir}/gtk3-widget-factory
 %{_bindir}/gtk-*3.0
 %{_bindir}/%{_arch64}/gtk-*3.0
 %{_bindir}/%{_arch64}/gtk-update-icon-cache
+%{_bindir}/%{_arch64}/gtk3-widget-factory
 
 %dir %attr (0755, root, bin) %{_libdir}
 %{_libdir}/lib*.so*
@@ -261,8 +251,10 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %dir %{_prefix}/demo/jds
 %dir %attr (0755, root, bin) %dir %{_prefix}/demo/jds/bin
 %{_prefix}/demo/jds/bin/gtk3-demo
+%{_prefix}/demo/jds/bin/gtk3-demo-application
 %ifarch amd64 sparcv9
-%{_prefix}/demo/jds/bin/{%_arch64}/gtk3-demo
+%{_prefix}/demo/jds/bin/%{_arch64}/gtk3-demo
+%{_prefix}/demo/jds/bin/%{_arch64}/gtk3-demo-application
 %dir %attr (0755, root, bin) %dir %{_libdir}/%{_arch64}
 %dir %attr (0755, root, other) %{_libdir}/%{_arch64}/pkgconfig
 %{_libdir}/%{_arch64}/pkgconfig/*
@@ -303,6 +295,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Tue May 01 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires and packaging after update to 3.4.1.
 * Fri Aug 26 2011 - brian.cameron@oracle.com
 - Fix packaging after updating to GTK3 3.1.12.
 * Tue Jul 12 2011 - brian.cameron@oracle.com

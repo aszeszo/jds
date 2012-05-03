@@ -1,0 +1,12 @@
+--- librsvg-2.36.1/configure.in-orig	2012-05-01 09:48:25.969422876 -0500
++++ librsvg-2.36.1/configure.in	2012-05-01 09:48:50.064963278 -0500
+@@ -241,8 +241,7 @@ CC_CHECK_CFLAGS_APPEND([ \
+   -Wdeclaration-after-statement -Wold-style-definition \
+   -Wno-missing-field-initializers -Wno-unused-parameter \
+   -Wunused-variable -Wunused-function \
+-  -Wempty-body -Wno-switch-enum \
+-  -fno-common])
++  -Wempty-body -Wno-switch-enum])
+ AM_CFLAGS="$AM_CFLAGS $CFLAGS"
+ CFLAGS="$save_CFLAGS"
+ 

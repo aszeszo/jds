@@ -66,7 +66,7 @@ fi
 # headers are delivered there on Solaris.
 #
 export CPPFLAGS="-xc99"
-export CFLAGS="%optflags -xc99 -I/usr/include/gc"
+export CFLAGS="%optflags -xc99 -I/usr/include/gc -KPIC"
 export LDFLAGS="$SOLARIS_PULSE_LDFLAGS"
 
 autoreconf --force --install
