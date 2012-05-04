@@ -1,6 +1,6 @@
 #
 # spec file for package SUNWtgnome-tstripe
-#Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+#Copyright (c) 2010, 2012 Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -26,6 +26,7 @@ Patch1:			 tsoljds-tstripe-01-dont-set-DISPLAY.diff
 Patch2:			 tsoljds-tstripe-02-TPEXEC.diff
 Patch3:                  tsoljds-tstripe-03-pfexec.diff
 Patch4:                  tsoljds-tstripe-04-l10n-updates.diff
+Patch5:                  tsoljds-tstripe-05-primary-zone.diff
 Source1:                 l10n-configure.sh
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:		 %{name}.copyright
@@ -33,15 +34,8 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWlibgnomecanvas
-Requires: SUNWgnome-panel
-Requires: SUNWtgnome-tsol-libs
-BuildRequires: SUNWlibgnome-keyring
+BuildRequires: library/gnome/gnome-keyring
 BuildRequires: x11/trusted/libxtsol
-BuildRequires: consolidation/desktop/desktop-incorporation
-#BuildRequires: SUNWlibgnomecanvas-devel
-#BuildRequires: SUNWgnome-panel-devel
-#BuildRequires: SUNWtgnome-tsol-libs-devel
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -54,6 +48,7 @@ Requires:                %{name}
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
+%patch5 -p1
 
 %build
 export ACLOCAL_FLAGS="-I /usr/share/aclocal"
@@ -118,6 +113,10 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/locale
 
 %changelog
+* Thu Apr 19 2012 - stephen.browne@oracle.com
+- Add patch  tsoljds-tstripe-05-primary-zone.diff to make sure we only try
+  to lazy boot primary zones
+
 * Wed Mar 09 2011 - brian.cameron@oracle.com
 - Add patch tsoljds-tstripe-03-pfexec.diff so that the proxy always calls
   tsoljds-xagent with pfexec.

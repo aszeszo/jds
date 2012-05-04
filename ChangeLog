@@ -1,3 +1,11 @@
+2012-04-23  Stephen Browne  <Stephen.browne@oracle.com>
+
+	RTI: 362502
+	CR : 7108974
+	* patches/tsoljds-tstripe-05-primary-zone.diff: new patch to ignore
+	secondary zones when finding a match to lazy boot.
+	* specs/SUNWtgnome-tstripe.spec: add new patch
+
 2012-05-04  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	CR 7148392 Problem with gnome/libraries

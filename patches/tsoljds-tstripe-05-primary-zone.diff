@@ -1,0 +1,12 @@
+diff -urN tstripe.orig/src/xagent-proxy.c tstripe.new/src/xagent-proxy.c
+--- tstripe.orig/src/xagent-proxy.c	2012-04-18 22:14:36.251878855 +0100
++++ tstripe.new/src/xagent-proxy.c	2012-04-18 22:17:01.619969180 +0100
+@@ -666,6 +666,8 @@
+ 	while (fgets (line, sizeof (line), fp) != NULL) {
+ 		if ((zcent = tsol_sgetzcent (line, NULL, NULL)) == NULL)
+ 			continue;
++		if (zcent->zc_match & TSOL_MATCH_SHARED_LABEL)
++			continue;
+ 		if (blequal (sl, &zcent->zc_label)) {
+ 			zonename = strdup (zcent->zc_name);
+ 			tsol_freezcent (zcent);
