@@ -47,7 +47,7 @@ BuildRequires: library/json-c
 BuildRequires: library/libsndfile
 
 BuildRequires: system/library/c++-runtime
-BUildRequires: system/library/math
+BuildRequires: system/library/math
 
 %package devel
 Summary:                 %{summary} - development files
