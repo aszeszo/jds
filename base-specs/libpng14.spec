@@ -1,7 +1,7 @@
 #
 # spec file for package libpng14
 #
-# Copyright (c) 2007, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,7 +13,7 @@
 Name:         libpng14
 License:      libpng
 Group:        System/Libraries
-Version:      1.4.8
+Version:      1.4.11
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Sun Microsystems, Inc.
@@ -88,6 +88,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/*
 
 %changelog
+* Mon Apr 30 2012 - padraig.obriain@oracle.com
+- bump to 1.4.11
 * Wed Aug 17 2011 - laszlo.peter@oracle.com
 - bump to 1.4.8
 * Wed Jul 21 2010 - laszlo.peter@oracle.com

@@ -1,3 +1,14 @@
+2012-05-04  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 7148392 Problem with gnome/libraries
+	CR 7159392 Problem with gnome/libraries
+	CR 7159448 Problem with gnome/libraries
+	WebRTI 362369
+	* base-specs/libpng10.spec:
+	* base-specs/libpng12.spec:
+	* base-specs/libpng14.spec:
+	* specs/SUNWpng.spec: Update versions of libpng.
+
 2012-05-03  Brian Cameron  <brian.cameron@oracle.com>
 
 	* base-specs/gst-plugins-good.spec,
