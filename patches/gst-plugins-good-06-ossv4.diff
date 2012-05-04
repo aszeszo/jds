@@ -1,0 +1,18 @@
+--- gst-plugins-good-0.10.27/sys/oss4/oss4-property-probe.c-orig	2012-04-23 20:00:56.935024915 -0500
++++ gst-plugins-good-0.10.27/sys/oss4/oss4-property-probe.c	2012-04-23 20:01:53.248620308 -0500
+@@ -320,6 +320,7 @@ gst_oss4_property_probe_get_values (GstP
+   if (fd != -1)
+     fd = dup (fd);
+ 
++#if 0
+   /* this will also catch the unlikely case where the above dup() failed */
+   if (fd == -1) {
+     fd = open ("/dev/mixer", O_RDONLY | O_NONBLOCK, 0);
+@@ -328,6 +329,7 @@ gst_oss4_property_probe_get_values (GstP
+     else if (!gst_oss4_audio_check_version (GST_OBJECT (probe), fd))
+       goto legacy_oss;
+   }
++#endif
+ 
+   if (ioctl (fd, SNDCTL_SYSINFO, &si) == -1)
+     goto no_sysinfo;

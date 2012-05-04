@@ -1,3 +1,10 @@
+2012-05-03  Brian Cameron  <brian.cameron@oracle.com>
+
+	* base-specs/gst-plugins-good.spec,
+	  patches/gst-plugins-good-06-ossv4.diff: Fix WebRTI #362384
+	  CR #7145701 Totem will hang in the GStreamer OSSv4 plugin when the
+	  sound device is not available.
+
 2012-05-02  Brian Cameron  <brian.cameron@oracle.com>
 
 	* copyright/SUNWpython-simplejson.copyright: Fix WebRTI #362418
