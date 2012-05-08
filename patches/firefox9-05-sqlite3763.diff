@@ -1,0 +1,21 @@
+--- a/configure	2011-10-25 22:20:52.695607762 +0800
++++ b/configure	2011-10-25 22:21:20.096899216 +0800
+@@ -1094,7 +1094,7 @@
+ GIO_VERSION=2.18
+ STARTUP_NOTIFICATION_VERSION=0.8
+ DBUS_VERSION=0.60
+-SQLITE_VERSION=3.7.7.1
++SQLITE_VERSION=3.7.6.3
+ LIBNOTIFY_VERSION=0.4
+ 
+ MSMANIFEST_TOOL=
+--- a/storage/src/Makefile.in	2011-11-21 18:23:04.701541779 +0800
++++ b/storage/src/Makefile.in	2011-11-21 18:26:46.706983606 +0800
+@@ -87,6 +87,7 @@
+ # For nsDependentJSString
+ LOCAL_INCLUDES = \
+   $(SQLITE_CFLAGS) \
++  -I/usr/include \
+   -I$(topsrcdir)/db/sqlite3/src \
+   -I$(topsrcdir)/dom/base \
+   $(NULL)

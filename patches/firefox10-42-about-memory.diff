@@ -1,0 +1,109 @@
+diff --git a/xpcom/base/nsMemoryReporterManager.cpp b/xpcom/base/nsMemoryReporterManager.cpp
+--- a/xpcom/base/nsMemoryReporterManager.cpp
++++ b/xpcom/base/nsMemoryReporterManager.cpp
+@@ -64,7 +64,7 @@
+ #  endif  // XP_LINUX
+ #endif  // MOZ_MEMORY
+ 
+-#if defined(XP_LINUX) || defined(XP_MACOSX)
++#if defined(XP_LINUX) || defined(XP_MACOSX) || defined(SOLARIS)
+ 
+ #include <sys/time.h>
+ #include <sys/resource.h>
+@@ -122,6 +122,64 @@
+     return GetProcSelfStatmField(1);
+ }
+ 
++#elif defined(SOLARIS)
++
++#include <procfs.h>
++#include <fcntl.h>
++#include <unistd.h>
++
++static void XMappingIter(PRInt64& Vsize, PRInt64& Resident)
++{
++    int mapfd = open("/proc/self/xmap", O_RDONLY);
++    struct stat st;
++    prxmap_t *prmapp;
++    if (mapfd >= 0) {
++        if (!fstat(mapfd, &st)) {
++            int nmap = st.st_size / sizeof(prxmap_t);
++            while (1) {
++                nmap *= 2;
++                prmapp = (prxmap_t*)malloc((nmap + 1) * sizeof(prxmap_t));
++                int n = pread(mapfd, prmapp, (nmap + 1) * sizeof(prxmap_t), 0);
++                if (n < 0) {
++                    free(prmapp);
++                    close(mapfd);
++                    return;
++                }
++                if (nmap >= n / sizeof (prxmap_t)) {
++                    nmap = n / sizeof (prxmap_t);
++                    break;
++                }
++                free(prmapp);
++            }
++
++            Vsize = 0;
++            Resident = 0;
++            for (int i = 0; i < nmap; i++) {
++                Vsize += prmapp[i].pr_size;
++                Resident += prmapp[i].pr_rss * prmapp[i].pr_pagesize;
++            }
++            free(prmapp);
++        }
++        close(mapfd);
++    }
++}
++
++static PRInt64 GetVsize()
++{
++    PRInt64 Vsize = -1;
++    PRInt64 Resident = -1;
++    XMappingIter(Vsize, Resident);
++    return Vsize;
++}
++
++static PRInt64 GetResident()
++{
++    PRInt64 Vsize = -1;
++    PRInt64 Resident = -1;
++    XMappingIter(Vsize, Resident);
++    return Resident;
++}
++
+ #elif defined(XP_MACOSX)
+ 
+ #include <mach/mach_init.h>
+@@ -224,7 +282,7 @@
+ 
+ #endif
+ 
+-#if defined(XP_LINUX) || defined(XP_MACOSX) || defined(XP_WIN)
++#if defined(XP_LINUX) || defined(XP_MACOSX) || defined(XP_WIN) || defined(SOLARIS)
+ NS_MEMORY_REPORTER_IMPLEMENT(Vsize,
+     "vsize",
+     KIND_OTHER,
+@@ -239,7 +297,7 @@
+     "measure of the memory resources used by the process.")
+ #endif
+ 
+-#if defined(XP_LINUX) || defined(XP_MACOSX)
++#if defined(XP_LINUX) || defined(XP_MACOSX) || defined(SOLARIS)
+ NS_MEMORY_REPORTER_IMPLEMENT(PageFaultsSoft,
+     "page-faults-soft",
+     KIND_OTHER,
+@@ -457,11 +515,11 @@
+     REGISTER(HeapUnallocated);
+     REGISTER(Resident);
+ 
+-#if defined(XP_LINUX) || defined(XP_MACOSX) || defined(XP_WIN)
++#if defined(XP_LINUX) || defined(XP_MACOSX) || defined(XP_WIN) || defined(SOLARIS)
+     REGISTER(Vsize);
+ #endif
+ 
+-#if defined(XP_LINUX) || defined(XP_MACOSX)
++#if defined(XP_LINUX) || defined(XP_MACOSX) || defined(SOLARIS)
+     REGISTER(PageFaultsSoft);
+     REGISTER(PageFaultsHard);
+ #endif

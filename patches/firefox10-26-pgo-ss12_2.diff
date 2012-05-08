@@ -1,0 +1,105 @@
+diff --git a/configure b/configure
+index e4a5249..21433e7 100755
+--- a/configure
++++ b/configure
+@@ -22139,8 +22139,8 @@ fi
+ if test "$SOLARIS_SUNPRO_CC"; then
+   PROFILE_GEN_CFLAGS="-xprofile=collect:$_objdir/$enable_application"
+   PROFILE_GEN_LDFLAGS="-xprofile=collect:$_objdir/$enable_application"
+-  PROFILE_USE_CFLAGS="-xprofile=use:$_objdir/$enable_application"
+-  PROFILE_USE_LDFLAGS="-xprofile=use:$_objdir/$enable_application"
++  PROFILE_USE_CFLAGS="-xtemp=$_objdir -xprofile=use:$_objdir/$enable_application"
++  PROFILE_USE_LDFLAGS="-xtemp=$_objdir -xprofile=use:$_objdir/$enable_application"
+ fi
+ 
+ 
+diff --git a/js/src/configure b/js/src/configure
+index 0e98daf..11bb34f 100755
+--- a/js/src/configure
++++ b/js/src/configure
+@@ -14560,10 +14560,15 @@ if test -n "$INTEL_CC"; then
+ fi
+ 
+ if test "$SOLARIS_SUNPRO_CC"; then
+-  PROFILE_GEN_CFLAGS="-xprofile=collect:$_objdir/$enable_application"
+-  PROFILE_GEN_LDFLAGS="-xprofile=collect:$_objdir/$enable_application"
+-  PROFILE_USE_CFLAGS="-xprofile=use:$_objdir/$enable_application"
+-  PROFILE_USE_LDFLAGS="-xprofile=use:$_objdir/$enable_application"
++  PROFILE_GEN_CFLAGS="-xprofile=collect:$_objdir/../../$enable_application"
++  PROFILE_GEN_LDFLAGS="-xprofile=collect:$_objdir/../../$enable_application"
++  if test "$CPU_ARCH" = "sparc"; then
++    PROFILE_USE_CFLAGS="-xtemp=$_objdir -xprofile=use:$_objdir/../../$enable_application"
++    PROFILE_USE_LDFLAGS="-xtemp=$_objdir -xprofile=use:$_objdir/../../$enable_application"
++  else
++    PROFILE_USE_CFLAGS="-xtemp=$_objdir -xprofile=use:$_objdir/../../$enable_application"
++    PROFILE_USE_LDFLAGS="-xtemp=$_objdir -xprofile=use:$_objdir/../../$enable_application"
++  fi
+ fi
+ 
+ 
+--- a/nsprpub/configure
++++ b/nsprpub/configure
+@@ -2820,11 +2820,13 @@
+ rm -f conftest*
+ echo "$ac_t""$result" 1>&6
+ 
++if test "$GNU_CC"; then
+ if test $result = "yes"; then
+    PROFILE_GEN_LDFLAGS="-fprofile-generate"
+    PROFILE_USE_CFLAGS="-fprofile-use -fprofile-correction -Wcoverage-mismatch"
+    PROFILE_USE_LDFLAGS="-fprofile-use"
+ fi
++fi
+ 
+ CFLAGS="$_SAVE_CFLAGS"
+ 
+--- a/layout/style/Makefile.in
++++ b/layout/style/Makefile.in
+@@ -175,3 +175,9 @@
+ 	$(SYSINSTALL) $(IFLAGS1) $^ $(DESTDIR)$(mozappdir)/res
+ 
+ DEFINES += -D_IMPL_NS_LAYOUT
++
++Loader.o: Loader.cpp Makefile.in
++	$(REPORT_BUILD)
++	@$(MAKE_DEPS_AUTO_CXX)
++	$(CXX) -o $@ -c $(patsubst -xprofile=%,,$(COMPILE_CXXFLAGS)) $<
++
+--- a/extensions/spellcheck/hunspell/src/Makefile.in
++++ b/extensions/spellcheck/hunspell/src/Makefile.in
+@@ -38,6 +38,8 @@
+ srcdir          = @srcdir@
+ VPATH           = @srcdir@
+ 
++NO_PROFILE_GUIDED_OPTIMIZE = 1
++
+ include $(DEPTH)/config/autoconf.mk
+ 
+ MODULE           = hunspell
+--- a/layout/base/Makefile.in
++++ b/layout/base/Makefile.in
+@@ -174,6 +174,11 @@
+ 
+ DEFINES += -D_IMPL_NS_LAYOUT
+ 
++nsDisplayList.o: nsDisplayList.cpp Makefile.in
++	$(REPORT_BUILD)
++	@$(MAKE_DEPS_AUTO_CXX)
++	$(CXX) -o $@ -c $(patsubst -xprofile=%,,$(COMPILE_CXXFLAGS)) $<
++
+ ifndef MOZ_XUL
+ nsIBoxObject.idl: %: $(topsrcdir)/layout/xul/base/public/%
+ 	$(INSTALL) $^ .
+--- a/image/decoders/Makefile.in	2011-11-21 21:40:07.011580591 +0800
++++ b/image/decoders/Makefile.in	2011-11-21 21:41:57.084654624 +0800
+@@ -86,6 +86,10 @@
+ DIRS = icon/android icon
+ endif
+ 
++nsBMPDecoder.o: nsBMPDecoder.cpp Makefile.in
++	$(REPORT_BUILD)
++	@$(MAKE_DEPS_AUTO_CXX)
++	$(CXX) -o $@ -c $(patsubst -xprofile=%,,$(COMPILE_CXXFLAGS)) $<
+ 
+ include $(topsrcdir)/config/rules.mk
+ 

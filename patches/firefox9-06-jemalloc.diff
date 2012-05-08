@@ -1,0 +1,166 @@
+diff --git a/config/jemalloc_solaris.map b/config/jemalloc_solaris.map
+new file mode 100644
+index 0000000..7f4db39
+--- /dev/null
++++ b/config/jemalloc_solaris.map
+@@ -0,0 +1,12 @@
++{
++    global:
++        calloc             = NODIRECT;
++        free               = NODIRECT;
++        jemalloc_stats     = NODIRECT;
++        malloc             = NODIRECT;
++        malloc_usable_size = NODIRECT;
++        memalign           = NODIRECT;
++        posix_memalign     = NODIRECT;
++        realloc            = NODIRECT;
++        valloc             = NODIRECT;
++};
+diff --git a/js/src/config/jemalloc_solaris.map b/js/src/config/jemalloc_solaris.map
+new file mode 100644
+index 0000000..7f4db39
+--- /dev/null
++++ b/js/src/config/jemalloc_solaris.map
+@@ -0,0 +1,12 @@
++{
++    global:
++        calloc             = NODIRECT;
++        free               = NODIRECT;
++        jemalloc_stats     = NODIRECT;
++        malloc             = NODIRECT;
++        malloc_usable_size = NODIRECT;
++        memalign           = NODIRECT;
++        posix_memalign     = NODIRECT;
++        realloc            = NODIRECT;
++        valloc             = NODIRECT;
++};
+diff --git a/toolkit/library/Makefile.in b/toolkit/library/Makefile.in
+index 841a77b..bf10981 100644
+--- a/toolkit/library/Makefile.in
++++ b/toolkit/library/Makefile.in
+@@ -246,6 +246,12 @@
+ 
+ include $(srcdir)/libxul-rules.mk
+ 
++ifdef MOZ_MEMORY
++ifeq ($(OS_ARCH),SunOS)
++EXTRA_DSO_LDOPTS += $(call EXPAND_LIBNAME_PATH,jemalloc,$(DEPTH)/memory/jemalloc) -M $(topsrcdir)/config/jemalloc_solaris.map -z interpose
++endif
++endif
++
+ ifeq ($(OS_ARCH),OpenBSD)
+ # Needed by nsAuthGSSAPI
+ EXTRA_DSO_LDOPTS += -lkrb5 -lcrypto
+--- a/browser/app/Makefile.in	2011-11-04 09:44:18.789782434 +0800
++++ b/browser/app/Makefile.in	2011-11-04 09:45:15.736870933 +0800
+@@ -108,6 +108,12 @@
+ 	$(XPCOM_STANDALONE_GLUE_LDOPTS) \
+ 	$(NULL)
+ 
++ifdef MOZ_MEMORY
++ifeq ($(OS_ARCH),SunOS)
++LIBS += $(LIBXUL_LIBS)
++endif
++endif
++
+ ifndef MOZ_WINCONSOLE
+ ifdef MOZ_DEBUG
+ MOZ_WINCONSOLE = 1
+--- a/memory/mozutils/Makefile.in	2011-11-16 10:08:54.964564000 +0800
++++ b/memory/mozutils/Makefile.in	2011-11-16 10:14:42.979784000 +0800
+@@ -48,12 +48,18 @@
+ DIST_INSTALL = 1
+ 
+ ifdef MOZ_MEMORY
++ifneq ($(OS_ARCH),SunOS)
+ SHARED_LIBRARY_LIBS = $(call EXPAND_LIBNAME_PATH,jemalloc,../jemalloc)
+ else
+ # Temporary, until bug 662814 lands
+ VISIBILITY_FLAGS =
+ CPPSRCS = dummy.cpp
+ endif
++else
++# Temporary, until bug 662814 lands
++VISIBILITY_FLAGS =
++CPPSRCS = dummy.cpp
++endif
+  
+ # Build mozutils as a shared lib on Windows, OSX and Android.
+ ifneq (,$(filter WINNT Darwin Android,$(OS_TARGET)))
+--- a/memory/jemalloc/Makefile.in	2011-11-21 16:55:59.712191287 +0800
++++ b/memory/jemalloc/Makefile.in	2011-11-21 16:56:20.797854145 +0800
+@@ -58,6 +58,7 @@
+ ifndef GNU_CC
+ MODULE_OPTIMIZE_FLAGS = -xO5
+ endif
++NO_PROFILE_GUIDED_OPTIMIZE = 1
+ endif
+ 
+ ifeq (Linux,$(OS_TARGET))
+--- a/memory/mozalloc/mozalloc.cpp	2011-12-17 04:29:36.000000000 +0800
++++ b/memory/mozalloc/mozalloc.cpp	2011-12-19 20:29:13.153754546 +0800
+@@ -251,6 +251,10 @@
+ }
+ #endif // if defined(HAVE_VALLOC)
+ 
++extern "C" {
++extern void jemalloc_stats(jemalloc_stats_t* stats);
++}
++
+ size_t
+ moz_malloc_usable_size(void *ptr)
+ {
+@@ -260,7 +264,22 @@
+ #if defined(XP_MACOSX)
+     return malloc_size(ptr);
+ #elif defined(MOZ_MEMORY)
++#if defined(SOLARIS)
++    static bool checked = false;
++    static bool using_jemalloc = false;
++    if (!checked) {
++        checked = true;
++        jemalloc_stats_t stats;
++        jemalloc_stats(&stats);
++        using_jemalloc = stats.allocated;
++    }
++    if (using_jemalloc)
++        return malloc_usable_size(ptr);
++    else
++        return 0;
++#else
+     return malloc_usable_size(ptr);
++#endif
+ #elif defined(XP_WIN)
+     return _msize(ptr);
+ #else
+--- a/storage/src/mozStorageService.cpp	2012-03-21 13:19:09.666435389 +0800
++++ b/storage/src/mozStorageService.cpp	2012-03-21 13:25:47.117028654 +0800
+@@ -407,9 +407,14 @@
+   int rc;
+ 
+ #ifdef MOZ_MEMORY
+-  rc = ::sqlite3_config(SQLITE_CONFIG_MALLOC, &memMethods);
+-  if (rc != SQLITE_OK)
+-    return convertResultCode(rc);
++  // in case other malloc library is PRELOAD-ed
++  void *test_jemalloc = malloc(4);
++  if (::moz_malloc_usable_size(test_jemalloc)) {
++    rc = ::sqlite3_config(SQLITE_CONFIG_MALLOC, &memMethods);
++    if (rc != SQLITE_OK)
++      return convertResultCode(rc);
++  }
++  free(test_jemalloc);
+ #endif
+ 
+   // Explicitly initialize sqlite3.  Although this is implicitly called by
+--- a/xpcom/base/nsMemoryReporterManager.cpp	2012-03-23 08:46:24.622098537 +0800
++++ b/xpcom/base/nsMemoryReporterManager.cpp	2012-03-23 08:47:59.661341057 +0800
+@@ -375,6 +375,8 @@
+ {
+     jemalloc_stats_t stats;
+     jemalloc_stats(&stats);
++    if (!stats.allocated)
++        return 0;
+     return (PRInt64) 10000 * (1 - stats.allocated / (double)stats.committed);
+ }
+ 

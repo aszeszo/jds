@@ -19,8 +19,8 @@
 ##   Package Information Section   ##
 #####################################
 
-%define  lang_list ar be bg ca cs da de el es-AR es-CL es-ES et fi fr he hi-IN hr hu id is it ja kk ko lt lv mk nb-NO nl nn-NO pl pt-BR pt-PT ro ru sk sl sq sr sv-SE th tr uk vi zh-CN zh-HK zh-TW 
-%define l10n_version 8.0
+%define lang_list ar be bg ca cs da de el es-AR es-CL es-ES et fi fr he hi-IN hr hu id is it ja kk ko lt lv mk nb-NO nl nn-NO pl pt-BR pt-PT ro ru sk sl sq sr sv-SE th tr uk vi zh-CN zh-HK zh-TW 
+%define l10n_version 10.0.3esr
 
 Name:          SUNWfirefox
 IPS_package_name: web/browser/firefox
@@ -41,42 +41,42 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibC
-Requires: SUNWlibms
-Requires: SUNWbash
-Requires: SUNWgtk2
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWaudh
-Requires: SUNWfontconfig
-Requires: SUNWfreetype2
-Requires: SUNWgnome-config
-BuildRequires: SUNWgnome-config-devel
-Requires: SUNWgnome-libs
-BuildRequires: SUNWgnome-libs-devel
-Requires: SUNWgnome-vfs
-BuildRequires: SUNWgnome-vfs-devel
-Requires: SUNWzlib
-BuildRequires: SUNWzlib
-Requires: SUNWlibtheora
-BuildRequires: SUNWlibtheora
-Requires: SUNWogg-vorbis
-BuildRequires: SUNWogg-vorbis
-Requires: SUNWsqlite3
-BuildRequires: SUNWsqlite3
-Requires: SUNWlibnotify
-BuildRequires: SUNWlibnotify
-Requires: SUNWdbus-glib
-BuildRequires: SUNWdbus-glib
-Requires: SUNWdbus-libs
-BuildRequires: SUNWdbus-libs
-Requires: SUNWlibffi
-BuildRequires: SUNWlibffi
-Requires: SUNWdbus
-BuildRequires: SUNWdbus
-BuildRequires: SUNWzip
-BuildRequires: SUNWgtar
-BuildRequires: SUNWbzip
+Requires: system/library/c++-runtime
+Requires: system/library/math
+Requires: shell/bash
+Requires: library/desktop/gtk2
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/gnome/gnome-component
+BuildRequires: system/header
+Requires: system/library/fontconfig
+Requires: system/library/freetype-2
+Requires: gnome/config/gconf
+BuildRequires: gnome/config/gconf
+Requires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-libs
+Requires: library/gnome/gnome-vfs
+BuildRequires: library/gnome/gnome-vfs
+Requires: library/zlib
+BuildRequires: library/zlib
+Requires: codec/libtheora
+BuildRequires: codec/libtheora
+Requires: codec/ogg-vorbis
+BuildRequires: codec/ogg-vorbis
+Requires: database/sqlite-3
+BuildRequires: database/sqlite-3
+Requires: library/libnotify
+BuildRequires: library/libnotify
+Requires: system/library/libdbus-glib
+BuildRequires: system/library/libdbus-glib
+Requires: system/library/libdbus
+BuildRequires: system/library/libdbus
+Requires: library/libffi
+BuildRequires: library/libffi
+Requires: system/library/dbus
+BuildRequires: system/library/dbus
+BuildRequires: compress/zip
+BuildRequires: archiver/gnu-tar
+BuildRequires: compress/bzip2
 #%if %option_with_indiana_branding
 # comment this out until I can find where to get it 
 # to install it on the build machines
@@ -86,8 +86,9 @@ BuildRequires: SUNWbzip
 # Requires: library/nspr
 # Requires: library/security/nss
 # %endif
-BuildRequires: SUNWxorg-mesa
+BuildRequires: x11/library/mesa
 BuildRequires: x11/library/libxscrnsaver
+Requires: system/font/truetype/dejavu
 
 #####################################
 ##   Package Description Section   ##
@@ -151,14 +152,20 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}
 
 # re-sign these libraries after post process
+mcs -d $RPM_BUILD_ROOT/usr/lib/firefox/libsoftokn3.so
 LD_LIBRARY_PATH=$RPM_BUILD_ROOT/usr/lib/firefox %{_builddir}/%name-%version/obj/nss/shlibsign -v -i $RPM_BUILD_ROOT/usr/lib/firefox/libsoftokn3.so
+mcs -d $RPM_BUILD_ROOT/usr/lib/firefox/libnssdbm3.so
 LD_LIBRARY_PATH=$RPM_BUILD_ROOT/usr/lib/firefox %{_builddir}/%name-%version/obj/nss/shlibsign -v -i $RPM_BUILD_ROOT/usr/lib/firefox/libnssdbm3.so
 
 %ifarch sparc
+mcs -d $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl_32int_3.so
 LD_LIBRARY_PATH=$RPM_BUILD_ROOT/usr/lib/firefox %{_builddir}/%name-%version/obj/nss/shlibsign -v -i $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl_32int_3.so
+mcs -d $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl_32fpu_3.so
 LD_LIBRARY_PATH=$RPM_BUILD_ROOT/usr/lib/firefox %{_builddir}/%name-%version/obj/nss/shlibsign -v -i $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl_32fpu_3.so
+mcs -d $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl_32int64_3.so
 LD_LIBRARY_PATH=$RPM_BUILD_ROOT/usr/lib/firefox %{_builddir}/%name-%version/obj/nss/shlibsign -v -i $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl_32int64_3.so
 %else
+mcs -d $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl3.so
 LD_LIBRARY_PATH=$RPM_BUILD_ROOT/usr/lib/firefox %{_builddir}/%name-%version/obj/nss/shlibsign -v -i $RPM_BUILD_ROOT/usr/lib/firefox/libfreebl3.so
 %endif
 
@@ -184,7 +191,7 @@ exit 0
 
 %files -f SUNWfirefox.list
 
-%doc -d firefox/mozilla-release README.txt LICENSE 
+%doc -d firefox/mozilla-esr10 README.txt LICENSE 
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %defattr(-, root, bin)
@@ -224,9 +231,12 @@ exit 0
 %{_datadir}/idl/%{firefox.name}
 %dir %attr (0755, root, other) %{_libdir}/pkgconfig
 %{_libdir}/pkgconfig/*
-%{_libdir}/firefox/xpidl
 
 %changelog
+* Wed Apr 04 2012 - ginn.chen@oracle.com
+- Bump to Firefox 10.0.3 ESR
+* Tue Dec 27 2011 - ginn.chen@oracle.com
+- Update to Firefox 9.0.1.
 * Tue Nov 15 2011 - ginn.chen@oracle.com
 - Update to Firefox 8.0.
 * Thu Oct 13 2011 - ginn.chen@oracle.com

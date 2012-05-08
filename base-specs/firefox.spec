@@ -13,15 +13,15 @@
 
 Name:        firefox
 Summary:     Mozilla Firefox Web browser
-Version:     8.0
-%define tarball_version 8.0
+Version:     10.0.3
+%define tarball_version 10.0.3esr
 Release:     1
 Copyright:   MPL
 License:     MPL
 Group:       Applications/Internet
 Distribution:Java Desktop System
 Vendor:      Mozilla Foundation
-Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
+Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/nightly/%{tarball_version}-candidates/build2/source/%{name}-%{tarball_version}.source.tar.bz2
 Source1:     firefox-icon.png
 Source2:     firefox.desktop
 #%if %option_without_moz_nss_nspr
@@ -38,9 +38,9 @@ Source7:     http://www.tortall.net/projects/yasm/releases/yasm-1.1.0.tar.gz
 %define studio_12_2 %($CC -V 2>&1 | grep -c 5\.11)
 
 %ifarch sparc
-Source8:     firefox80-profile-sparc-ss12-2.tar.bz2
+Source8:     firefox10-profile-sparc-ss12-2.tar.bz2
 %else
-Source8:     firefox80-profile-x86-ss12-2.tar.bz2
+Source8:     firefox10-profile-x86-ss12-2.tar.bz2
 %endif
 
 %if %option_with_indiana_branding
@@ -63,16 +63,15 @@ Patch3: firefox-03-g11n-nav-lang.diff
 # bugster:6724471 bugzilla:451007
 Patch4: firefox-04-donot-delay-stopping-realplayer.diff
 
-# owner:ginnchen date:2011-10-10 type:bug status:upstream
-# buzilla:682676
-Patch5: firefox7-05-urlbar-performance.diff
+# owner:ginnchen date:2011-11-21 type:feature
+Patch5: firefox9-05-sqlite3763.diff
 
 # owner:ginnchen date:2008-10-15 type:feature
 # bugzilla:457196
-Patch6: firefox7-06-jemalloc.diff
+Patch6: firefox9-06-jemalloc.diff
 
 # owner:ginnchen date:2011-03-07 type:bug
-Patch7: firefox8-07-uconv_sse2.diff
+Patch7: firefox9-07-uconv_sse2.diff
 
 #%if %option_without_moz_nss_nspr
 # owner:ginnchen date:2009-05-21 type:branding
@@ -80,13 +79,13 @@ Patch7: firefox8-07-uconv_sse2.diff
 #%endif
 
 # owner:ginnchen date:2011-03-07 type:feature
-Patch9: firefox7-09-ipc.diff
+Patch9: firefox10-09-ipc.diff
 
 # owner:ginnchen date:2011-07-18 type:bug
 Patch10: firefox6-10-appname-tr.diff
 
 # owner:ginnchen date:2011-04-18 type:feature
-Patch11: firefox-11-sqlite-unix-excl.diff
+Patch11: firefox9-11-sqlite-unix-excl.diff
 
 # owner:hawklu date:2008-12-16 type:branding
 Patch12: firefox6-12-xpcom-glue-no-hidden.diff
@@ -102,11 +101,11 @@ Patch14: firefox8-14-getting-started.diff
 # owner:hawklu date:2009-05-22 type:branding
 Patch15: firefox-15-use-system-theora.diff
 
-# owner:ginnchen date:2011-10-25 type:bug status:upstream
-Patch16: firefox8-16-sparc-js.diff
+# owner:ginnchen date:2011-11-21 type:bug bugzilla:701273 status:upstream
+Patch16: firefox10-16-nsXBLProtoImpl.diff
 
 # owner:ginnchen date:2011-10-25 type:feature
-Patch17: firefox8-17-jshashtable.diff
+Patch17: firefox10-17-js-compiler.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
 Patch18: firefox-18-libvpx-compile.diff
@@ -114,18 +113,18 @@ Patch18: firefox-18-libvpx-compile.diff
 # owner:ginnchen date:2011-03-08 type:feature
 Patch19: firefox6-19-xpcom-sparc-compile.diff
 
-# owner:ginnchen date:2010-12-10 type:feature
-Patch20: firefox-20-ots-makepair.diff
+# owner:ginnchen date:2012-1-11 type:bug bugzilla:717174 bugzilla:682625 status:upstream
+Patch20: firefox10-20-xBGR-plugin.diff
 
 # owner:ginnchen date:2011-03-08 type:feature
 # See CR#7023690
 Patch21: firefox-21-compiler-workaround.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
-Patch22: firefox8-22-jsfunc.diff
+Patch22: firefox9-22-jsfunc.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
-Patch23: firefox7-23-ycbcr.diff
+Patch23: firefox10-23-ycbcr.diff
 
 #%if %option_without_moz_nss_nspr
 # owner:ginnchen date:2010-03-04 type:branding
@@ -137,19 +136,19 @@ Patch23: firefox7-23-ycbcr.diff
 Patch25: firefox-25-json-compile.diff
 
 # owner:ginnchen date:2010-03-14 type:feature
-Patch26: firefox8-26-pgo-ss12_2.diff
+Patch26: firefox10-26-pgo-ss12_2.diff
 
 # owner:ginnchen date:2011-04-06 type:feature bugzilla:610323
-Patch27: firefox6-27-methoidjit-sparc.diff
+Patch27: firefox9-27-methodjit-sparc.diff
 
 # owner:ginnchen date:2010-03-14 type:feature
 Patch28: firefox6-28-patch-for-debugging.diff
 
-# owner:ginnchen date:2010-03-14 type:bug bugzilla:572983
-Patch29: firefox-29-sparc-ctypes-int-overflow.diff
+# owner:ginnchen date:2011-12-29 type:feature
+Patch29: firefox9-29-selectAddons-app-scope.diff
 
 # owner:ginnchen date:2010-03-14 type:bug
-Patch30: firefox-30-gfxAlphaRecovery.diff
+Patch30: firefox10-30-gfxAlphaRecovery.diff
 
 # owner:ginnchen date:2010-05-12 type:bug
 Patch31: firefox-31-async-channel-crash.diff
@@ -157,23 +156,23 @@ Patch31: firefox-31-async-channel-crash.diff
 # owner:ginnchen date:2010-06-20 type:branding
 Patch32: firefox7-32-yasm.diff
 
-# owner:ginnchen date:2011-10-25 type:bug status:upstream
-Patch33: firefox8-33-dtrace.diff
+# owner:ginnchen date:2012-01-12 type:bug bugzilla:717863 status:upstream
+Patch33: firefox10-33-jsgc-pagesize.diff
 
 # owner:ginnchen date:2011-10-08 type:branding
 Patch34: firefox7-34-js-numeric-limits.diff
 
 # owner:ginnchen date:2010-06-20 type:branding
-Patch35: firefox-35-static-assert.diff
+Patch35: firefox10-35-static-assert.diff
 
 # owner:ginnchen date:2010-10-26 type:branding
-Patch36: firefox8-36-gtkembed.diff
+Patch36: firefox10-36-gtkembed.diff
 
-# owner:ginnchen date:2010-07-18 type:bug bugzilla:674468 status:upstream
-Patch37: firefox6-37-glxtest.diff
+# owner:ginnchen date:2012-01-18 type:bug bugzilla:669556
+Patch37: firefox10-37-sunaudio-buffer.diff
 
 # owner:ginnchen date:2011-10-25 type:branding
-Patch38: firefox8-38-libffi-3-0-9.diff
+Patch38: firefox9-38-libffi-3-0-9.diff
 
 # owner:ginnchen date:2010-07-04 type:branding
 # for snv_168 or later
@@ -182,20 +181,23 @@ Patch39: firefox-39-nss-compile.diff
 # owner:ginnchen date:2011-10-10 type:bug bugzilla:675585
 Patch40: firefox8-40-gthread-dlopen.diff
 
-# owner:ginnchen date:2011-10-10 type:bug buzilla:689916
-Patch41: firefox7-41-js-regexp-sparc.diff
+# owner:ginnchen date:2012-1-10 type:bug buzilla:716462
+Patch41: firefox10-41-xBGR-performance.diff
 
 # owner:ginnchen date:2011-11-04 type:bug bugzilla:702529
-Patch42: firefox8-42-about-memory.diff
+Patch42: firefox10-42-about-memory.diff
 
 # owner:ginnchen date:2011-11-08 type:bug bugzilla:700615
-Patch43: firefox8-43-donot-disable-locale-addon.diff
+Patch43: firefox10-43-donot-disable-locale-addon.diff
 
 # owner:ginnchen date:2011-11-15 type:bug bugzilla:702179
-Patch44: firefox8-44-dtrace-probe.diff
+Patch44: firefox10-44-dtrace-probe.diff
 
 # owner:ginnchen date:2011-11-15 type:feature
 Patch45: firefox8-45-libnspr_flt4.diff
+
+# owner:ginnchen date:2012-03-14 type:bug bugzilla:731917 status:upstream
+Patch46: firefox10-46-plugin-bool.diff
 
 URL:         http://www.mozilla.com/firefox
 
@@ -231,7 +233,7 @@ compliance, performance and portability.
 %prep
 %setup -q -c -n %{name}
 
-cd mozilla-release
+cd mozilla-esr10
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
@@ -272,6 +274,7 @@ cd mozilla-release
 %patch42 -p1
 %patch43 -p1
 %patch44 -p1
+%patch46 -p1
 
 %if %option_with_debug
 %patch28 -p1
@@ -346,7 +349,7 @@ SRCDIR=$PWD
 export MOZCONFIG=$PWD/.mozconfig
 
 %if %option_with_indiana_branding
-cp %{SOURCE9} ${SRCDIR}/mozilla-release/browser/branding/official/content
+cp %{SOURCE9} ${SRCDIR}/mozilla-esr10/browser/branding/official/content
 %endif
 
 mkdir -p ../obj
@@ -365,13 +368,14 @@ cd ../obj
 # to generate PGO profile
 # export MOZ_PROFILE_GENERATE=1
 # Notes:
-# cd ~/packages/BUILD/SUNWfirefox-8.0/obj
+# cd ~/packages/BUILD/SUNWfirefox-10.0/obj
 # export OBJDIR=`pwd`
 # mkdir -p jarlog/en-US
 # export JARLOG_DIR=$OBJDIR/jarlog/en-US
+# rm -rf browser.profile/*
 # rm toolkit/library/libxul.so
 # python _profile/pgo/profileserver.py 
-# gtar profile.tar browser.profile jarlog
+# gtar cvf profile.tar browser.profile jarlog
 # bzip2 profile.tar
 # 
 # to use PGO profile
@@ -391,7 +395,7 @@ export YASM=${SRCDIR}/../obj/yasm/yasm
 export LIBJPEG_TURBO_AS=${SRCDIR}/../obj/yasm/yasm
 %endif
 
-${SRCDIR}/mozilla-release/configure
+${SRCDIR}/mozilla-esr10/configure
 make -j $CPUS
 
 cd browser/installer
@@ -427,7 +431,6 @@ mv firefox/*  ${LIBDIR}
 cd $RPM_BUILD_ROOT/sdktmp
 cd firefox*
 find . | xargs touch
-mv sdk/bin/xpidl  ${LIBDIR}
 
 mv include/* ${INCLUDEDIR}
 mv idl/* ${IDLDIR}
@@ -511,7 +514,13 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/firefox/defaults/profile/bookmarks.html
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
-* Tus Nov 15 2011 - ginn.chen@oracle.com
+* Wed Apr 04 2012 - ginn.chen@oracle.com
+- Bump to Firefox 10.0.3 ESR
+* Tue Feb 21 2012 - ginn.chen@oracle.com
+- Bump to Firefox 10.0.2 ESR
+* Tue Dec 27 2011 - ginn.chen@oracle.com
+- Bump to Firefox 9.0..1.
+* Tue Nov 15 2011 - ginn.chen@oracle.com
 - Bump to Firefox 8.0.
 * Thu Oct 13 2011 - ginn.chen@oracle.com
 - Bump to Firefox 7.0.1.

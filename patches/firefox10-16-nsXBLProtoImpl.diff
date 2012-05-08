@@ -1,0 +1,44 @@
+diff --git a/content/xbl/src/nsXBLProtoImplField.cpp b/content/xbl/src/nsXBLProtoImplField.cpp
+--- a/content/xbl/src/nsXBLProtoImplField.cpp
++++ b/content/xbl/src/nsXBLProtoImplField.cpp
+@@ -64,17 +64,17 @@ nsXBLProtoImplField::nsXBLProtoImplField
+   if (aReadOnly) {
+     nsAutoString readOnly; readOnly.Assign(aReadOnly);
+     if (readOnly.LowerCaseEqualsLiteral("true"))
+       mJSAttributes |= JSPROP_READONLY;
+   }
+ }
+ 
+ 
+-nsXBLProtoImplField::nsXBLProtoImplField(bool aIsReadOnly)
++nsXBLProtoImplField::nsXBLProtoImplField(const bool aIsReadOnly)
+   : mNext(nsnull),
+     mFieldText(nsnull),
+     mFieldTextLength(0),
+     mLineNumber(0)
+ {
+   MOZ_COUNT_CTOR(nsXBLProtoImplField);
+ 
+   mJSAttributes = JSPROP_ENUMERATE;
+diff --git a/content/xbl/src/nsXBLProtoImplProperty.h b/content/xbl/src/nsXBLProtoImplProperty.h
+--- a/content/xbl/src/nsXBLProtoImplProperty.h
++++ b/content/xbl/src/nsXBLProtoImplProperty.h
+@@ -50,17 +50,17 @@
+ class nsXBLProtoImplProperty: public nsXBLProtoImplMember
+ {
+ public:
+   nsXBLProtoImplProperty(const PRUnichar* aName,
+                          const PRUnichar* aGetter, 
+                          const PRUnichar* aSetter,
+                          const PRUnichar* aReadOnly);
+ 
+-  nsXBLProtoImplProperty(const PRUnichar* aName, bool aIsReadOnly);
++  nsXBLProtoImplProperty(const PRUnichar* aName, const bool aIsReadOnly);
+  
+   virtual ~nsXBLProtoImplProperty();
+ 
+   void AppendGetterText(const nsAString& aGetter);
+   void AppendSetterText(const nsAString& aSetter);
+ 
+   void SetGetterLineNumber(PRUint32 aLineNumber);
+   void SetSetterLineNumber(PRUint32 aLineNumber);
