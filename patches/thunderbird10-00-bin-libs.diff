@@ -1,0 +1,16 @@
+diff -r f6cf521de880 mail/app/Makefile.in
+--- a/mail/app/Makefile.in	Sun Jan 15 16:32:46 2012 -0600
++++ b/mail/app/Makefile.in	Tue Jan 17 13:53:30 2012 +0800
+@@ -166,6 +166,12 @@
+ RCFLAGS += -DTHUNDERBIRD_ICO=\"$(DIST)/branding/thunderbird.ico\"
+ endif
+ 
++ifdef MOZ_MEMORY
++ifeq ($(OS_ARCH),SunOS)
++LIBS += $(XPCOM_LIBS)
++endif
++endif
++
+ include $(topsrcdir)/config/rules.mk
+ 
+ ifdef MOZILLA_OFFICIAL

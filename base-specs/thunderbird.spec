@@ -13,8 +13,8 @@
 
 Name:        thunderbird
 Summary:     Mozilla Thunderbird Standalone E-mail and Newsgroup Client
-Version:     8.0
-%define tarball_version 8.0
+Version:     10.0.3
+%define tarball_version 10.0.3esr
 Release:     1
 Copyright:   MPL
 License:     MPL
@@ -26,11 +26,12 @@ Source1:     thunderbird-icon.png
 Source2:     thunderbird.desktop
 
 %if %option_with_lightning
-%define lightning_version 1.0
-%define lightning_tarball_version 1.0
+%define lightning_version 1.2.3
+%define lightning_tarball_version 1.2.3
+%define lightningl10n_tarball_version 1.2.1
 
 Source3:     http://ftp.mozilla.org/pub/mozilla.org/calendar/lightning/releases/%{lightning_tarball_version}/source/lightning-%{lightning_tarball_version}.source.tar.bz2
-Source4:     lightning-l10n-%{lightning_version}.tar.bz2
+Source4:     lightning-l10n-%{lightningl10n_tarball_version}.tar.bz2
 %endif
 
 %ifarch i386
@@ -47,22 +48,20 @@ Source8:     nspr-nss-config
 
 %define _unpackaged_files_terminate_build 0
 %define lightning_dir "{e2fda1a4-762b-4020-b5ad-a41df1933103}"
-%define moz_srcdir comm-release
+%define moz_srcdir comm-esr10
 %define moz_objdir obj-tb
-%define moz_l10n_srcdir l10n-miramar
-%define lightning_lang_list ca cs de en-US es-AR es-ES fi fr hu it ja lt nb-NO nl nn-NO pl pt-PT ru sk sv-SE tr uk zh-CN zh-TW zh-HK
+%define moz_l10n_srcdir l10n-release
+%define lightning_lang_list bg ca cs da de es-AR es-ES et eu fi fr gl hu id is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-PT ro ru sk sl sq sv-SE tr uk zh-CN zh-HK zh-TW
 
 #####################################
 ##      Thunderbird patches        ##
 #####################################
 
+# owner:lin date:2012-01-17 type:bug
+Patch500: thunderbird10-00-bin-libs.diff
 
 # owner:lin date:2011-11-09 type:bug
 Patch501: thunderbird8-01-enable-extensions.diff
-
-# owner:ginnchen date:2008-10-15 type:feature
-# bugzilla:457196
-Patch511: thunderbird3-11-jemalloc-shared-library.diff
 
 # owner:hawklu date:2009-09-03 type:bug doo:1114 
 Patch526: thunderbird3-26-no-offline-download.diff
@@ -93,16 +92,15 @@ Patch3: firefox-03-g11n-nav-lang.diff
 # bugster:6724471 bugzilla:451007
 Patch4: firefox-04-donot-delay-stopping-realplayer.diff
 
-# owner:ginnchen date:2011-10-10 type:bug status:upstream
-# buzilla:682676
-Patch5: firefox7-05-urlbar-performance.diff
+# owner:ginnchen date:2011-11-21 type:feature
+Patch5: firefox9-05-sqlite3763.diff
 
 # owner:ginnchen date:2008-10-15 type:feature
 # bugzilla:457196
-Patch6: firefox7-06-jemalloc.diff
+Patch6: firefox9-06-jemalloc.diff
 
 # owner:ginnchen date:2011-03-07 type:bug
-Patch7: firefox8-07-uconv_sse2.diff
+Patch7: firefox9-07-uconv_sse2.diff
 
 #%if %option_without_moz_nss_nspr
 # owner:ginnchen date:2009-05-21 type:branding
@@ -110,13 +108,13 @@ Patch7: firefox8-07-uconv_sse2.diff
 #%endif
 
 # owner:ginnchen date:2011-03-07 type:feature
-Patch9: firefox7-09-ipc.diff
+Patch9: firefox10-09-ipc.diff
 
 # owner:ginnchen date:2011-07-18 type:bug
 Patch10: firefox6-10-appname-tr.diff
 
 # owner:ginnchen date:2011-04-18 type:feature
-Patch11: firefox-11-sqlite-unix-excl.diff
+Patch11: firefox9-11-sqlite-unix-excl.diff
 
 # owner:hawklu date:2008-12-16 type:branding
 Patch12: firefox6-12-xpcom-glue-no-hidden.diff
@@ -132,11 +130,11 @@ Patch14: firefox8-14-getting-started.diff
 # owner:hawklu date:2009-05-22 type:branding
 Patch15: firefox-15-use-system-theora.diff
 
-# owner:ginnchen date:2011-10-25 type:bug status:upstream
-Patch16: firefox8-16-sparc-js.diff
+# owner:ginnchen date:2011-11-21 type:bug bugzilla:701273 status:upstream
+Patch16: firefox10-16-nsXBLProtoImpl.diff
 
 # owner:ginnchen date:2011-10-25 type:feature
-Patch17: firefox8-17-jshashtable.diff
+Patch17: firefox10-17-js-compiler.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
 Patch18: firefox-18-libvpx-compile.diff
@@ -144,18 +142,18 @@ Patch18: firefox-18-libvpx-compile.diff
 # owner:ginnchen date:2011-03-08 type:feature
 Patch19: firefox6-19-xpcom-sparc-compile.diff
 
-# owner:ginnchen date:2010-12-10 type:feature
-Patch20: firefox-20-ots-makepair.diff
+# owner:ginnchen date:2012-1-11 type:bug bugzilla:717174 bugzilla:682625 status:upstream
+Patch20: firefox10-20-xBGR-plugin.diff
 
 # owner:ginnchen date:2011-03-08 type:feature
 # See CR#7023690
 Patch21: firefox-21-compiler-workaround.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
-Patch22: firefox8-22-jsfunc.diff
+Patch22: firefox9-22-jsfunc.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
-Patch23: firefox7-23-ycbcr.diff
+Patch23: firefox10-23-ycbcr.diff
 
 #%if %option_without_moz_nss_nspr
 # owner:ginnchen date:2010-03-04 type:branding
@@ -167,19 +165,19 @@ Patch23: firefox7-23-ycbcr.diff
 Patch25: firefox-25-json-compile.diff
 
 # owner:ginnchen date:2010-03-14 type:feature
-Patch26: firefox8-26-pgo-ss12_2.diff
+Patch26: firefox10-26-pgo-ss12_2.diff
 
 # owner:ginnchen date:2011-04-06 type:feature bugzilla:610323
-Patch27: firefox6-27-methoidjit-sparc.diff
+Patch27: firefox9-27-methodjit-sparc.diff
 
 # owner:ginnchen date:2010-03-14 type:feature
 Patch28: firefox6-28-patch-for-debugging.diff
 
-# owner:ginnchen date:2010-03-14 type:bug bugzilla:572983
-Patch29: firefox-29-sparc-ctypes-int-overflow.diff
+# owner:ginnchen date:2011-12-29 type:feature
+Patch29: firefox9-29-selectAddons-app-scope.diff
 
 # owner:ginnchen date:2010-03-14 type:bug
-Patch30: firefox-30-gfxAlphaRecovery.diff
+Patch30: firefox10-30-gfxAlphaRecovery.diff
 
 # owner:ginnchen date:2010-05-12 type:bug
 Patch31: firefox-31-async-channel-crash.diff
@@ -187,23 +185,23 @@ Patch31: firefox-31-async-channel-crash.diff
 # owner:ginnchen date:2010-06-20 type:branding
 Patch32: firefox7-32-yasm.diff
 
-# owner:ginnchen date:2011-10-25 type:bug status:upstream
-Patch33: firefox8-33-dtrace.diff
+# owner:ginnchen date:2012-01-12 type:bug bugzilla:717863 status:upstream
+Patch33: firefox10-33-jsgc-pagesize.diff
 
 # owner:ginnchen date:2011-10-08 type:branding
 Patch34: firefox7-34-js-numeric-limits.diff
 
 # owner:ginnchen date:2010-06-20 type:branding
-Patch35: firefox-35-static-assert.diff
+Patch35: firefox10-35-static-assert.diff
 
 # owner:ginnchen date:2010-10-26 type:branding
-Patch36: firefox8-36-gtkembed.diff
+Patch36: firefox10-36-gtkembed.diff
 
-# owner:ginnchen date:2010-07-18 type:bug bugzilla:674468 status:upstream
-Patch37: firefox6-37-glxtest.diff
+# owner:ginnchen date:2012-01-18 type:bug bugzilla:669556
+Patch37: firefox10-37-sunaudio-buffer.diff
 
 # owner:ginnchen date:2011-10-25 type:branding
-Patch38: firefox8-38-libffi-3-0-9.diff
+Patch38: firefox9-38-libffi-3-0-9.diff
 
 # owner:ginnchen date:2010-07-04 type:branding
 # for snv_168 or later
@@ -212,20 +210,23 @@ Patch39: firefox-39-nss-compile.diff
 # owner:ginnchen date:2011-10-10 type:bug bugzilla:675585
 Patch40: firefox8-40-gthread-dlopen.diff
 
-# owner:ginnchen date:2011-10-10 type:bug buzilla:689916
-Patch41: firefox7-41-js-regexp-sparc.diff
+# owner:ginnchen date:2012-1-10 type:bug buzilla:716462
+Patch41: firefox10-41-xBGR-performance.diff
 
 # owner:ginnchen date:2011-11-04 type:bug bugzilla:702529
-Patch42: firefox8-42-about-memory.diff
+Patch42: firefox10-42-about-memory.diff
 
 # owner:ginnchen date:2011-11-08 type:bug bugzilla:700615
-Patch43: firefox8-43-donot-disable-locale-addon.diff
+Patch43: firefox10-43-donot-disable-locale-addon.diff
 
 # owner:ginnchen date:2011-11-15 type:bug bugzilla:702179
-Patch44: firefox8-44-dtrace-probe.diff
+Patch44: firefox10-44-dtrace-probe.diff
 
 # owner:ginnchen date:2011-11-15 type:feature
 Patch45: firefox8-45-libnspr_flt4.diff
+
+# owner:ginnchen date:2012-03-14 type:bug bugzilla:731917 status:upstream
+Patch46: firefox10-46-plugin-bool.diff
 
 URL:         http://www.mozilla.com/thunderbird
 
@@ -267,12 +268,6 @@ cd lightning
 bzcat %SOURCE3 | tar xf -
 cd ..
 cp -r lightning/*/calendar %{moz_srcdir}/calendar
-mv %{moz_srcdir}/calendar/locales/shipped-locales /tmp/lightning-shipped-locales
-for lang in %{lightning_lang_list} 
-do
-    echo $lang >> %{moz_srcdir}/calendar/locales/shipped-locales
-done
-
 rm -rf lightning
 
 # Lightning l10n
@@ -328,7 +323,8 @@ cd %{moz_srcdir}/mozilla
 %patch41 -p1
 %patch42 -p1
 %patch43 -p1
-#%patch44 -p1
+%patch44 -p1
+%patch46 -p1
 
 %if %option_with_debug
 %patch28 -p1
@@ -347,8 +343,8 @@ cd %{moz_srcdir}/mozilla
 
 # go back to the thunderbird directory
 cd ..  
+%patch500 -p1
 %patch501 -p1
-%patch511 -p1
 %patch526 -p1
 # %patch528 -p1
 %patch538 -p1
@@ -385,7 +381,7 @@ export PATH=${SRCDIR}/sol_toolchain/bin:$PATH
 cd ${SRCDIR}
 %endif
 
-cat << "EOF" > .mozconfig
+cat << "EOF" > mozconfig.release
 mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/../%{moz_objdir}
 mk_add_options BUILD_OFFICIAL=1
 mk_add_options MOZILLA_OFFICIAL=1
@@ -424,7 +420,7 @@ EOF
 #
 # Thunderbird specific
 #
-cat << "EOF" >> .mozconfig
+cat << "EOF" >> mozconfig.release
 ac_add_options --enable-application=mail
 # ac_add_options --enable-system-cairo
 %if %option_with_lightning
@@ -438,7 +434,7 @@ export BUILD_OFFICIAL=1
 export MOZILLA_OFFICIAL=1
 export MOZ_PKG_FORMAT=BZ2
 export PKG_SKIP_STRIP=1
-export MOZCONFIG=$PWD/.mozconfig
+export MOZCONFIG=$PWD/mozconfig.release
 
 mkdir -p ${SRCDIR}/%{moz_objdir}
 
@@ -456,15 +452,24 @@ make -j $CPUS
 # Build package
 cd ${SRCDIR}/%{moz_objdir}/mail/installer
 make
-# Build lightning l10n
-cd ${SRCDIR}/%{moz_objdir}/calendar/lightning
-make AB_CD=all L10N_XPI_NAME=lightning-all repack-clobber-all
-for i in $(<${SRCDIR}/%{moz_srcdir}/calendar/locales/shipped-locales); do make AB_CD=all L10N_XPI_NAME=lightning-all libs-$i; done;
 
 %install
 /bin/rm -rf $RPM_BUILD_ROOT
 
-BUILDDIR=$PWD/%{moz_objdir}
+SRCDIR=$PWD
+# Build lightning l10n
+%if %option_with_lightning
+mv ${SRCDIR}/%{moz_srcdir}/calendar/locales/shipped-locales /tmp/lightning-shipped-locales
+for lang in %{lightning_lang_list}
+do
+    echo $lang >> ${SRCDIR}/%{moz_srcdir}/calendar/locales/shipped-locales
+done
+cd ${SRCDIR}/%{moz_objdir}/calendar/lightning
+make repack-l10n-all
+cd ${SRCDIR}
+%endif
+
+BUILDDIR=${SRCDIR}/%{moz_objdir}
 /bin/mkdir -p $RPM_BUILD_ROOT%{_libdir}
 cd $RPM_BUILD_ROOT%{_libdir}
 /usr/bin/bzip2 -dc $BUILDDIR/mozilla/dist/thunderbird-*.tar.bz2 | gtar -xf -
@@ -494,6 +499,14 @@ rmdir $RPM_BUILD_ROOT%{_libdir}/%{name}/dictionaries
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Fri Feb 17 2012 - lin.ma@oracle.com
+- Bump to Thunderbird 10.0.2
+- Bump to Lightning 1.2.1
+* Tue Jan 10 2012 - lin.ma@oracle.com
+- Bump to Thunderbird 9.0.1
+- Bump to Lightning 1.1.1
+- Update l10n list
+- Remove thunderbird3-11-jemalloc-shared-library.diff and thunderbird3-22-use-system-theora-and-sqlite.diff
 * Tus Nov 23 2011 - lin.ma@oracle.com
 - Bump to Thunderbird 8.0.
 * Fri Sep 16 2011 - lin.ma@oracle.com
