@@ -34,6 +34,9 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
+BuildRequires: library/desktop/libgnomecanvas
+BuildRequires: gnome/gnome-panel
+BuildRequires: gnome/trusted/libgnometsol
 BuildRequires: library/gnome/gnome-keyring
 BuildRequires: x11/trusted/libxtsol
 

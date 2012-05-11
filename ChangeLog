@@ -1,4 +1,9 @@
-2012-04-23  Stephen Browne  <Stephen.browne@oracle.com>
+2012-05-10  Stephen Browne  <Stephen.browne@oracle.com>
+
+	* specs/SUNWtgnome-tstripe.spec: add additional BuildRequires
+	so jucr can build.
+
+2012-05-04  Stephen Browne  <Stephen.browne@oracle.com>
 
 	RTI: 362502
 	CR : 7108974
