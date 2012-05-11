@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-desktop
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@
 Name:         gnome-desktop
 License:      LGPLv2
 Group:        System/Libraries/GNOME
-Version:      3.2.0
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      GNOME Desktop Library
-Source:       http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.2/%{name}-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 Source1:      blueprint-extra-icons.tar.bz2
 Source2:      gnome-feedback.xml
 Source3:      sun-gnome-version.xml
@@ -123,10 +123,10 @@ gtkdocize
 bash -x %SOURCE8 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS -I ./m4
+aclocal-1.11 $ACLOCAL_FLAGS -I ./m4
 autoconf
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 
 %ifos solaris
 release_version="GNOME %{version} Desktop"
@@ -189,6 +189,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libgnome-desktop-2.so
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Tue Sep 13 2011 - brian.cameron@oracle.com

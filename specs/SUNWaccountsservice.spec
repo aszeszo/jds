@@ -3,7 +3,7 @@
 #
 # includes module(s): accountsservice
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,9 +15,9 @@ Name:                    SUNWaccountsservice
 IPS_package_name:        library/xdg/accountsservice
 Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Sessions
 Summary:                 Accounts Service
-Version:                 0.6.12
+Version:                 0.6.15
 License:                 LGPL v2.1
-Source:			 http://www.freedesktop.org/software/accountsservice/accountsservice-%version.tar.bz2
+Source:			 http://www.freedesktop.org/software/accountsservice/accountsservice-%version.tar.xz
 Source1:                 accountsservice.xml
 Source2:                 svc-accountsservice
 Patch1:                  accountsservice-01-polkit.diff
@@ -68,8 +68,8 @@ export CFLAGS="%optflags -DFALLBACK_MINIMAL_UID=100"
 export LDFLAGS="%{_ldflags}"
 
 libtoolize --force
-aclocal $ACLOCAL_FLAGS
-automake -a -c -f
+aclocal-1.11 $ACLOCAL_FLAGS
+automake-1.11 -a -c -f
 autoconf
 ./configure --prefix=%{_prefix}		\
             --sysconfdir=%{_sysconfdir} \
@@ -149,5 +149,7 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu May 10 2012 - Brian Cameron <brian.cameron@oracle.com>
+- Bump to 0.6.15.
 * Sat Jul 09 2011 - Brian Cameron <brian.cameron@oracle.com>
 - Created with 0.6.12.

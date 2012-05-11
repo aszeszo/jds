@@ -34,7 +34,7 @@
 +#endif
  
  #include "gsm-logout-dialog.h"
- #include "gsm-consolekit.h"
+ #include "gsm-system.h"
 @@ -52,7 +54,11 @@ struct _GsmLogoutDialogPrivate
  {
          GsmDialogLogoutType  type;
@@ -44,7 +44,7 @@
 +#else
 +        gpointer            *up_client;
 +#endif
-         GsmConsolekit       *consolekit;
+         GsmSystem           *system;
  
          int                  timeout;
 @@ -144,7 +150,11 @@ gsm_logout_dialog_init (GsmLogoutDialog 
@@ -57,9 +57,9 @@
 +        logout_dialog->priv->up_client = NULL;
 +#endif
  
-         logout_dialog->priv->consolekit = gsm_get_consolekit ();
+         logout_dialog->priv->system = gsm_get_system ();
  
-@@ -184,13 +194,21 @@ gsm_logout_dialog_destroy (GsmLogoutDial
+@@ -181,13 +191,21 @@ gsm_logout_dialog_destroy (GsmLogoutDial
  static gboolean
  gsm_logout_supports_system_suspend (GsmLogoutDialog *logout_dialog)
  {

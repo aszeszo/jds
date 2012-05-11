@@ -1,3 +1,124 @@
+2012-05-04  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWpyatspi.spec: Bump to 2.4.0.
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec: Build fixes
+	  for sparc.
+	* specs/SUNWdconf.spec, patches/dconf-01-compile.diff: Bump to 0.12.1.
+	  Fix packaging.
+	* specs/SUNWat-spi2-core.spec, patches/at-spi2-core-01-configure.diff:
+	  Bump to 2.4.1.  Rework patch.
+	* specs/SUNWat-spi2-atk.spec: Bump to 2.4.0.
+	* base-specs/at-spi.spec: Bump to 1.32.0.
+	* patches/at-spi-07-warn-once.diff: Add patch needed to build.
+	* base-specs/atk.spec, patches/atk-01-libtool.diff: Remove patch no
+	  longer needed.
+	* base-specs/libgail-gnome.spec: Bump to 1.20.4.
+	* base-specs/java-atk-wrapper.spec,
+	  specs/SUNWgnome-remote-desktop.spec: Make work with the latest
+	  autotools.
+	* base-specs/gtk3-engines.spec: Add -lm to LDFLAGS.
+	* base-specs/libbonobo.spec: Bump to 2.32.1.
+	* base-specs/libbonoboui.spec: Bump to 2.24.5.
+	* base-specs/GConf.spec: Bump to 3.2.5.
+	* patches/GConf-08-cleanup-libs.diff: Remove patch no longer needed.
+	* specs/SUNWgnome-desktop-prefs.spec: Update packaging.
+	* base-specs/control-center.spec: Bump to 3.4.1
+	* base-specs/gnome-settings-daemon.spec: Bump to 3.4.1.
+	* patches/gnome-settings-daemon-12-dependencies.diff,
+	  patches/gnome-settings-daemon-14-mapfile.diff,
+	  patches/gnome-settings-daemon-15-libm.diff,
+	  patches/control-center-13-mapfile.diff,
+	  patches/control-center-14-static.diff: Add patches needed to build
+	* patches/gnome-settings-daemon-12-no-pnp.diff,
+	  patches/gnome-settings-daemon-14-upower.diff,
+	  patches/control-center-12-libtool.diff: Remove patches no longer
+	  needed.
+	* patches/gnome-settings-daemon-13-uninstalled-pc.diff: Rework.
+	* base-specs/desktop-file-utils.spec: Bump to 0.20.
+	* patches/desktop-file-utils-01-preserve-file-perm.diff: Rework.
+	* specs/SUNWgnome-wm.spec, base-specs/metacity.spec: Bump to 2.34.3,
+	  update packaging.
+	* base-specs/libgnomeui.spec: Bump to 2.24.5.
+	* patches/libgnomeui-03-math.diff: Add patch needed to build.
+	* base-specs/libgweather.spec: Bump to 3.4.1.
+	* base-specs/libgnome.spec: Bump to 2.32.1.
+	* base-specs/libgnomekbd.spec: Bump to 3.4.0.2.
+	* patches/libgnomekbd-01-compile-makefile.diff: Reowkr.
+	* base-specs/libnotify.spec: Bump to 0.7.5.
+	* specs/SUNWgnome-panel.spec, specs/SUNWgnome-applets.spec:
+	  Update packaging, fix Requires/BuildRequires.
+	* base-specs/gnome-panel.spec, base-specs/gnome-desktop.spec:  Bump to
+ 	  3.4.1.
+	* base-specs/gnome-menus.spec, base-specs/libwnck.spec: Bump to 3.4.0.
+	* base-specs/notification-daemon.spec: Bump to 0.7.4.
+	* patches/notification-daemon-01-libtool.diff: Remove patch no longer
+	  needed.
+	* patches/gnome-panel-20-polkit.diff: Add patch needed to build.
+	* patches/libwnck-02-libtool.diff, patches/gnome-panel-20-libtool.diff:
+	  Remove patches no longer needed.
+	* base-specs/gnome-applets.spec: Bump to 3.4.1.
+	* patches/gnome-applets-01-disable-drivemount.diff: Rework.
+	* base-specs/gnome-session.spec: Bump to 3.4.1.
+	* patches/gnome-session-26-libtool.diff: Remove patch no longer needed.
+	* specs/SUNWgnome-themes-standard.spec: Bump to 3.4.1.
+	* base-specs/gnome-icon-theme-symbolic.spec,
+	  base-specs/gnome-icon-theme.spec: Bump to 3.4.0.
+	* specs/SUNWgsettings-schemas.spec: Bump to 3.4.1.
+	* specs/SUNWgnome-file-mgr.spec: Fix packaging and Requires.
+	* base-specs/nautilus.spec: Bump to 3.4.1.
+	* patches/nautilus-17-void-return.diff: Add patch needed to build.
+	* patches/nautilus-03-ftp-rename.diff,
+	  patches/nautilus-07-lockdown.diff,  patches/nautilus-16-libxml.diff:
+	  Rework.
+	* specs/SUNWaccountsservice.spec,
+	  patches/accountsservice-01-polkit.diff: Bump to 0.6.15, rework patch.
+	* specs/SUNWgnome-dialog.spec, base-specs/zenity.spec: Update to 3.4.0
+	  and fix packaging.
+	* specs/SUNWgnome-terminal.spec: Fix packaging.
+	* base-specs/vte.spec: Bump to 0.32.1.
+	* patches/vte-01-libtool.diff: Remove patch no longer needed.
+	* patches/vte-01-configure.diff: Rework.
+	* base-specs/gnome-terminal.spec: Bump to 3.4.1.1.
+	* specs/SUNWespeak.spec: Bump to 1.46.0.5
+	* patches/espeak-01-makefile.diff, espeak-02-Wall.diff: Rework.
+	* patches/espeak-02-samplerate.diff: Remove patch no longer needed.
+	* copyright/SUNWgnome-display-mgr.copyright: Update.
+
+2012-05-04  Brian Cameron  <brian.cameron@oracle.com>
+
+	* base-specs/libgnomeui.spec, patches/libgnomeui-03-math.diff:
+	  Bump to 2.24.5.  Add patch needed to build.
+	* base-specs/libgweather.spec: Bump to 3.4.1.
+	* base-specs/java-atk-wrapper.spec: Call newer build tools.
+	* base-specs/libgnomekbd.spec,
+	  patches/libgnomekbd-01-compile-makefile.diff:  Bump to 3.4.0.2.
+	  Rework patch.
+	* base-specs/libnotify.spec: Bump to 0.7.5.
+	* base-specs/libgnome.spec: Bump to 2.32.1.
+	* base-specs/libgail-gnome.spec: Bump 1.20.4.
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec:  Now set
+	  optimization -xO2 on sparc to fix CR #7166622.
+	* base-specs/libbonoboui.spec: Bump to 2.24.5.
+	* base-specs/gnome-icon-theme-symbolic.spec: Bump to 3.4.0.
+	* base-specs/gnome-icon-theme.spec: Bump to 3.4.0.
+	* base-specs/at-spi.spec, patches/at-spi2-core-01-configure.diff,
+	  patches/at-spi-07-warn-once.diff: Bump to 1.32.0, rework patch 1 and
+	  add patch 7 from s11u1 branch.
+	* specs/SUNWgnome-themes-standard.spec: Bump to 3.4.1.
+	* specs/SUNWgsettings-schemas.spec: Bump to 3.2.1.
+	* specs/SUNWpyatspi.spec: Bump to 2.4.0.
+	* specs/SUNWdconf.spec, patches/dconf-01-compile.diff: Bump to 0.12.1
+	  and update patch.
+	* specs/SUNWat-spi2-core.spec: Bump to 2.4.1.
+	* specs/SUNWat-spi2-atk.spec: Bump to 2.4.0.
+	* specs/SUNWespeak.spec, patches/espeak-01-makefile.diff: Bump to
+	  1.46.05.  Rework patch.
+	* patches/espeak-02-samplerate.diff: Removed patch no longer needed to
+	  build.
+	* specs/SUNWgnome-panel.spec, specs/SUNWgnome-remote-desktop.spec,
+	  specs/SUNWgnome-pdf-viewer.spec: No longer set echo and RM.
+	* copyright/SUNWgnome-display-mgr.copyright: Update.
+
 2012-05-03  Brian Cameron  <brian.cameron@oracle.com>
 
 	* base-specs/gnome-common.spec: Bump to 2.34.0.

@@ -1,0 +1,11 @@
+--- libgnomeui-2.24.5/libgnomeui/Makefile.am-orig	2012-05-03 21:33:33.637119224 -0500
++++ libgnomeui-2.24.5/libgnomeui/Makefile.am	2012-05-03 21:33:57.721945284 -0500
+@@ -249,7 +249,7 @@ libgnomeui_2_la_LDFLAGS = \
+ libgnomeui_2_la_LIBADD = \
+ 	$(LIBGNOMEUI_LIBS)			\
+ 	$(SM_LIBS)				\
+-	$(X11_LIBS)
++	$(X11_LIBS) -lm
+ 
+ LDADD = \
+ 	libgnomeui-2.la $(LIBGNOMEUI_LIBS)

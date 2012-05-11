@@ -1,9 +1,9 @@
 #
-# spec file for package SUNWat-spi2
+# spec file for package SUNWat-spi2-core
 #
 # includes module(s): at-spi2-core
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -16,8 +16,8 @@ IPS_package_name:        gnome/accessibility/at-spi2-core
 Meta(info.classification): %{classification_prefix}:Applications/Universal Access
 License:                 LGPL v2, MIT/X
 Summary:                 Accessibility implementation on D-Bus
-Version:                 2.2.1
-Source:	                 http://ftp.gnome.org/pub/GNOME/sources/at-spi2-core/2.2/at-spi2-core-%{version}.tar.bz2
+Version:                 2.4.1
+Source:	                 http://ftp.gnome.org/pub/GNOME/sources/at-spi2-core/2.4/at-spi2-core-%{version}.tar.xz
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
@@ -105,6 +105,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/xdg/autostart/at-spi-dbus-bus.desktop
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 2.4.1.
 * Mon Oct 24 2011 - brian.cameron@oracle.com
 - Bump to 2.2.1.
 * Mon Aug 15 2011 - lee.yuan@oracle.com

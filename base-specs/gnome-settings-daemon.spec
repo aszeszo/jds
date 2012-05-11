@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-settings-daemon.
 #
-# Copyright (c) 2007, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,12 +15,12 @@
 Name:         gnome-settings-daemon
 License:      GPL v2, some code uses LGPL v2
 Group:        System/GUI/GNOME
-Version:      3.2.1
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      The GNOME Settings Daemon
-Source:       http://ftp.gnome.org/pub/GNOME/sources/gnome-settings-daemon/3.2/gnome-settings-daemon-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/gnome-settings-daemon/3.4/gnome-settings-daemon-%{version}.tar.xz
 %if %build_l10n
 Source1:                 l10n-configure.sh
 %endif
@@ -49,15 +49,13 @@ Patch10:     gnome-settings-daemon-10-gst-mediakeys.diff
 # date:2011-02-14 owner:migi type:bug doo:14557
 Patch11:     gnome-settings-daemon-11-animations-uses-gconf.diff
 # date:2011-06-07 owner:yippi type:bug
-Patch12:     gnome-settings-daemon-12-no-pnp.diff
+Patch12:     gnome-settings-daemon-12-dependencies.diff
 # date:2011-06-07 owner:yippi type:bug
 Patch13:     gnome-settings-daemon-13-uninstalled-pc.diff
 # date:2011-08-24 owner:yippi type:feature
-Patch14:     gnome-settings-daemon-14-upower.diff
-# date:2011-08-24 owner:yippi type:feature
-Patch15:     gnome-settings-daemon-15-mapfile.diff
+Patch14:     gnome-settings-daemon-14-mapfile.diff
 # date:2011-08-24 owner:yippi type:bug
-Patch16:     gnome-settings-daemon-16-libm.diff
+Patch15:     gnome-settings-daemon-15-libm.diff
 
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -118,7 +116,7 @@ This package contains the files need for development of GNOME control center cap
 #%endif
 #%patch1 -p1
 %patch2 -p1
-%patch3 -p1
+#%patch3 -p1
 #%patch4 -p1
 #%patch5 -p1
 %patch6 -p1
@@ -131,7 +129,6 @@ This package contains the files need for development of GNOME control center cap
 %patch13 -p1
 %patch14 -p1
 %patch15 -p1
-%patch16 -p1
 
 # Rename dir so that #include does not have to change on gnome-control-center.
 # Combines with patch mv-src-dir.diff (see bugzilla 511820).
@@ -162,9 +159,9 @@ intltoolize --force --copy
 bash -x %SOURCE1 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS -I .
+aclocal-1.11 $ACLOCAL_FLAGS -I .
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 
 CFLAGS="$RPM_OPT_FLAGS -DDBUS_API_SUBJECT_TO_CHANGE -I/usr/X11/share/include" \
@@ -173,7 +170,8 @@ CFLAGS="$RPM_OPT_FLAGS -DDBUS_API_SUBJECT_TO_CHANGE -I/usr/X11/share/include" \
     --datadir=%{_datadir}       \
     --libexecdir=%{_libexecdir} \
     --sysconfdir=%{_sysconfdir} \
-    --disable-packagekit
+    --disable-packagekit	\
+    --disable-gudev
 make -j $CPUS
 
 %install
@@ -232,6 +230,8 @@ done
 %{_libdir}/*.so
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

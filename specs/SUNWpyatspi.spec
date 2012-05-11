@@ -3,7 +3,7 @@
 #
 # includes module(s): pyatspi
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -17,8 +17,8 @@ Meta(info.classification): %{classification_prefix}:Applications/Universal Acces
 License:                 LGPL v2, MIT/X
 Vendor:                  Gnome Community
 Summary:                 Python bindings for accessibility implementation on D-Bus for GNOME
-Version:                 2.2.1
-Source:	                 http://ftp.gnome.org/pub/GNOME/sources/pyatspi/2.2/pyatspi-%{version}.tar.bz2
+Version:                 2.4.0
+Source:	                 http://ftp.gnome.org/pub/GNOME/sources/pyatspi/2.4/pyatspi-%{version}.tar.xz
 Patch1:                  pyatspi-01-configure.diff
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
@@ -99,6 +99,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/python2.6/vendor-packages/*
 
 %changelog
+* Fri May 04 2012 - brian.cameorn@oracle.com
+- Bump to 2.4.0.
 * Mon Oct 24 2011 - brian.cameron@oracle.com
 - Bump to 2.2.1.
 * Mon Aug 15 2011 - lee.yuan@oracle.com

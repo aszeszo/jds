@@ -1,7 +1,7 @@
 #
 # spec file for package zenity
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@
 Name:         zenity
 License:      LGPL
 Group:        System/GUI/GNOME
-Version:      3.2.0
+Version:      3.4.0
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community 
 Summary:      Show graphical dialog boxes from scripts
-Source:       http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.2/%{name}-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 %if %build_l10n
 Source1:                 l10n-configure.sh
 %endif
@@ -54,7 +54,7 @@ predecessor to dialog.
 
 %prep
 %setup -q
-%patch1 -p1
+#%patch1 -p1
 #%patch2 -p1
 
 %build
@@ -76,8 +76,8 @@ intltoolize --copy --force
 bash -x %SOURCE1 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS 
-automake -a -c -f
+aclocal-1.11 $ACLOCAL_FLAGS 
+automake-1.11 -a -c -f
 autoconf
 CFLAGS="$RPM_OPT_FLAGS" \
   ./configure \
@@ -112,6 +112,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.0.
 * Wed Oct 05 2011 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Thu May 12 2011 - padraig.obriain@oraacle.com

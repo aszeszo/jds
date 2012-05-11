@@ -1,19 +1,18 @@
 #
 # spec file for package libbonoboui 
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
 %define owner padraig
 #
-
 %define OSR LFI#105446 (gnome Exec. summary):n/a
 
 Name:         libbonoboui 
 License:      LGPLv2
 Group:        System/Libraries/GNOME 
-Version:      2.24.4
+Version:      2.24.5
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
@@ -133,6 +132,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*.gz
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 2.24.5.
 * Wed Oct 27 2010 - brian.cameron@oracle.com
 - Bump to 2.24.4.
 * Mon Apr 12 2010 - christian.kelly@oracle.com

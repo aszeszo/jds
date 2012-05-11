@@ -138,7 +138,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome/help/*/C
 %{_datadir}/gnome-terminal
 %{_datadir}/omf/*/*-C.omf
-%{_datadir}/vte
 %dir %attr(0755, root, bin) %{_mandir}
 %dir %attr(0755, root, bin) %{_mandir}/man1
 %{_mandir}/man1/*
@@ -171,6 +170,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/gnome-terminal.schemas
 
 %changelog
+* Fri May 11 2012 - brian.cameron@oracle.com
+- Update packaging after updating vte to 0.32.1 and gnome-terminal to 3.4.1.1.
 * Mon Feb 13 2012 - padraig.obriain@oracle.com
 - Update Requires and BuildRequires to be IPS package names.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
@@ -284,6 +285,4 @@ rm -rf $RPM_BUILD_ROOT
 * Mon Feb 23 2004 - <niall.power@sun.com>
 - install gconf schemas at end of install stage.
 - run rm -Rf during clean stage.
-
-
 

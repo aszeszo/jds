@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-session
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@
 Name:         gnome-session
 License:      GPLv2
 Group:        System/GUI/GNOME
-Version:      3.2.1
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      Session Manager for the GNOME Desktop
-Source:       http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.2/%{name}-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 Source2:      %{name}-po-sun-%{po_sun_version}.tar.bz2
 %if %build_l10n
 Source3:                 l10n-configure.sh
@@ -77,9 +77,7 @@ Patch24:     gnome-session-24-rbac.diff
 # date:2011-03-29 type:feature owner:yippi bugster:7026714,7049116
 Patch25:     gnome-session-25-no-warning.diff
 # date:2011-07-06 type:feature owner:yippi
-Patch26:     gnome-session-26-libtool.diff
-# date:2011-07-06 type:feature owner:yippi
-Patch27:     gnome-session-27-upower.diff
+Patch26:     gnome-session-26-upower.diff
 
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -133,7 +131,6 @@ gtar fxvj %{SOURCE5}
 %patch24 -p1
 %patch25 -p1
 %patch26 -p1
-%patch27 -p1
 
 %build
 %ifos linux
@@ -162,9 +159,9 @@ intltoolize -c -f --automake
 bash -x %SOURCE3 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS -I .
+aclocal-1.11 $ACLOCAL_FLAGS -I .
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 CFLAGS="$RPM_OPT_FLAGS"		\
 ./configure --prefix=%{_prefix}				\
@@ -207,6 +204,8 @@ done
 %{_libdir}/compiz-by-default
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

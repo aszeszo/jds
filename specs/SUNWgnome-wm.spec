@@ -3,7 +3,7 @@
 #
 # includes module(s): metacity
 #
-# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -45,12 +45,6 @@ Requires: SUNWlxml
 Requires: SUNWlibms
 Requires: SUNWdesktop-cache
 Requires: SUNWlibcanberra
-
-%package root
-Summary:                 %{summary} - / filesystem
-SUNW_BaseDir:            /
-%include default-depend.inc
-%include desktop-incorporation.inc
 
 %package  devel
 Summary:                 %{summary} - development files
@@ -129,6 +123,8 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/gnome
 %dir %attr(0755, root, bin) %{_datadir}/gnome/wm-properties
 %{_datadir}/applications/*
+%{_datadir}/GConf/*
+%{_datadir}/glib-2.0/*
 %{_datadir}/gnome/wm-properties/*
 %{_datadir}/gnome/help/*
 %{_datadir}/metacity/icons
@@ -159,11 +155,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_libdir}/pkgconfig
 %{_libdir}/pkgconfig/*
 %{_prefix}/demo/jds/bin/metacity-window-demo
-
-%files root
-%defattr (-, root, sys)
-%attr (0755, root, sys) %dir %{_sysconfdir}
-%{_sysconfdir}/gconf/schemas/metacity.schemas
 
 %files l10n
 %defattr (-, root, bin)

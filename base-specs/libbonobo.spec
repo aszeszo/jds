@@ -13,12 +13,12 @@
 Name:         libbonobo
 License:      LGPL
 Group:        System/Libraries/GNOME
-Version:      2.24.3
+Version:      2.32.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      Bonobo Base Library
-Source:       http://ftp.gnome.org/pub/GNOME/sources/libbonobo/2.24/libbonobo-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/libbonobo/2.32/libbonobo-%{version}.tar.bz2
 %if %build_l10n
 Source1:                 l10n-configure.sh
 %endif
@@ -165,6 +165,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 2.32.1.
 * Sat Apr  3 2010 - christian.kelly@sun.com
 - Bump to 2.24.3.
 * Wed Sep 23 2009 - dave.lin@sun.com

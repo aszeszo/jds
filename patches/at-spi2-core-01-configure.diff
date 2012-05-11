@@ -9,23 +9,3 @@
  
  AC_PROG_CC
  LT_INIT([disable-static])
---- at-spi2-core-2.2.1/atspi/atspi-collection.c-orig	2011-10-24 12:30:13.543035893 -0500
-+++ at-spi2-core-2.2.1/atspi/atspi-collection.c	2011-10-24 12:30:57.166197022 -0500
-@@ -187,7 +187,7 @@ atspi_collection_get_matches_to (AtspiCo
-                               AtspiMatchRule *rule,
-                               AtspiCollectionSortOrder sortby,
-                               AtspiCollectionTreeTraversalType tree,
--                              gboolean restrict,
-+                              gboolean at_restrict,
-                               gint count,
-                               gboolean traverse,
-                               GError **error)
-@@ -196,7 +196,7 @@ atspi_collection_get_matches_to (AtspiCo
-   DBusMessage *reply;
-   dbus_int32_t d_sortby = sortby;
-   dbus_int32_t d_tree = tree;
--  dbus_bool_t d_restrict = restrict;
-+  dbus_bool_t d_restrict = at_restrict;
-   dbus_int32_t d_count = count;
-   dbus_bool_t d_traverse = traverse;
- 

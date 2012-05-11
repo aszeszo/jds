@@ -1,0 +1,26 @@
+--- nautilus-3.4.1/libnautilus-private/nautilus-file-undo-operations.c-orig	2012-05-09 19:17:48.885648401 -0500
++++ nautilus-3.4.1/libnautilus-private/nautilus-file-undo-operations.c	2012-05-09 19:18:55.949338007 -0500
+@@ -257,9 +257,9 @@ nautilus_file_undo_info_get_strings (Nau
+ 				     gchar **redo_label,
+ 				     gchar **redo_description)
+ {
+-	return NAUTILUS_FILE_UNDO_INFO_CLASS (G_OBJECT_GET_CLASS (self))->strings_func (self,
+-											undo_label, undo_description,
+-											redo_label, redo_description);
++	NAUTILUS_FILE_UNDO_INFO_CLASS (G_OBJECT_GET_CLASS (self))->strings_func (self,
++										 undo_label, undo_description,
++										 redo_label, redo_description);
+ }
+ 
+ static void
+--- nautilus-3.4.1/src/nautilus-view.c-orig	2012-05-09 19:20:01.932460944 -0500
++++ nautilus-3.4.1/src/nautilus-view.c	2012-05-09 19:20:17.482522801 -0500
+@@ -2142,7 +2142,7 @@ sort_directories_first_changed_callback 
+ 
+ 	if (preference_value != view->details->sort_directories_first) {
+ 		view->details->sort_directories_first = preference_value;
+-		return NAUTILUS_VIEW_CLASS (G_OBJECT_GET_CLASS (view))->sort_directories_first_changed (view);
++		NAUTILUS_VIEW_CLASS (G_OBJECT_GET_CLASS (view))->sort_directories_first_changed (view);
+ 	}
+ }
+ 

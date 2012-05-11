@@ -1,7 +1,7 @@
 #
 # spec file for package nautilus
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,13 +13,13 @@
 Name:         nautilus
 License:      GPL
 Group:        Productivity/File utilities
-Version:      3.2.1
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      The GNOME Filemanager
 URL:          http://www.gnome.org
-Source:       http://ftp.gnome.org/pub/GNOME/sources/nautilus/3.2/nautilus-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/nautilus/3.4/nautilus-%{version}.tar.xz
 Source1:      %{name}-po-sun-%{po_sun_version}.tar.bz2
 # NOTE: If the version is bumped the new tarball must be uploaded to the
 #       Sun Download Center. Contact GNOME RE for assistance.
@@ -61,6 +61,8 @@ Patch14:       nautilus-14-zfs-snapshot.diff
 Patch15:       nautilus-15-rename-places.diff
 #owner: yippi  date:2011-07-07 type:branding
 Patch16:       nautilus-16-libxml.diff
+#owner: yippi  date:2012-05-09 type:bug
+Patch17:       nautilus-17-void-return.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/nautilus2
@@ -141,13 +143,14 @@ cd po-sun; make; cd ..
 %patch6 -p1
 %patch7 -p1
 #%patch8 -p1 ## not porting this patch until gvfs acl code is ready.  
-%patch9 -p1 
+#%patch9 -p1 
 %patch10 -p1
 %patch11 -p1
-%patch13 -p1
+#%patch13 -p1
 #%patch14 -p1
-%patch15 -p1
+#%patch15 -p1
 %patch16 -p1
+%patch17 -p1
 
 cp %SOURCE4 icons
 cp %SOURCE5 icons
@@ -191,9 +194,9 @@ gtkdocize
 bash -x %SOURCE3 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS -I .
+aclocal-1.11 $ACLOCAL_FLAGS -I .
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 EXTRA_CORE_MODULES="gnome-vfs-2.0 libgnomeui-2.0" \
 CFLAGS="$RPM_OPT_FLAGS" \
@@ -249,6 +252,8 @@ done
 %{_libdir}/pkgconfig/*.pc
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

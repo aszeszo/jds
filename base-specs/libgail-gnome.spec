@@ -1,7 +1,7 @@
 #
 # spec file for package libgail-gnome
 #
-# Copyright (c) 2005 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,7 +13,7 @@
 Name:         libgail-gnome
 License:      LGPL v2
 Group:        System/Libraries/GNOME
-Version:      1.20.3
+Version:      1.20.4
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
@@ -93,6 +93,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 1.20.4.
 * Wed Jan 19 2011 - <padraig.obriain@sun.com>
 - Set License to LGPL v2
 * Wed Oct 27 2010 - brian.cameron@oracle.com

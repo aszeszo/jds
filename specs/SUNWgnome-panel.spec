@@ -4,7 +4,7 @@
 # includes module(s): libwnck, notification-daemon, 
 #                     gnome-desktop, gnome-menus, gnome-panel
 #
-# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -31,79 +31,67 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 BuildRequires: x11/trusted/libxtsol
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWpng-devel
+BuildRequires: library/desktop/libglade
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: gnome/config/gconf
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/gnome/gnome-component
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: library/popt
+BuildRequires: image/library/libpng
 BuildRequires: release/name
-BuildRequires: SUNWarc
-BuildRequires: SUNWevolution-data-server-devel
-BuildRequires: SUNWiso-codes-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWlxml-devel
-BuildRequires: SUNWlxml-python26
-BuildRequires: SUNWlibrsvg-devel
-BuildRequires: SUNWlibsexy-devel
-BuildRequires: SUNWpython26-setuptools
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWlibnotify
-BuildRequires: SUNWgobject-introspection
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWlibgnome-keyring
-BuildRequires: SUNWlibgweather
-BuildRequires: SUNWgsettings-schemas-devel
-BuildRequires: SUNWdconf-devel
-Requires: SUNWlibglade
-Requires: SUNWlibsexy
-Requires: SUNWgnome-panel-root
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-config
-Requires: SUNWgnome-vfs
-Requires: SUNWlxml
-Requires: SUNWgnome-component
-Requires: SUNWlibpopt
-Requires: SUNWlibms
-Requires: SUNWlibrsvg
-Requires: SUNWpng
-Requires: SUNWdesktop-cache
-Requires: SUNWevolution-data-server
-Requires: SUNWiso-codes
-Requires: SUNWdbus
-Requires: SUNWPython26
-Requires: SUNWlibnotify
-Requires: SUNWlibcanberra
-Requires: SUNWlibxklavier
-Requires: SUNWgsettings-schemas
-Requires: SUNWdconf
+BuildRequires: developer/library/lint
+BuildRequires: library/desktop/evolution-data-server
+BuildRequires: data/iso-codes
+BuildRequires: system/library/libdbus
+BuildRequires: library/libxml2
+BuildRequires: library/python-2/libxml2-26
+BuildRequires: image/library/librsvg
+BuildRequires: library/desktop/libsexy
+BuildRequires: library/python-2/setuptools-26
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: library/libnotify
+BuildRequires: library/desktop/gobject/gobject-introspection
+BuildRequires: system/library/iconv/utf-8
+BuildRequires: library/gnome/gnome-keyring
+BuildRequires: library/desktop/libgweather
+Requires: library/desktop/libglade
+Requires: library/desktop/libsexy
+Requires: library/gnome/gnome-libs
+Requires: gnome/config/gconf
+Requires: library/gnome/gnome-vfs
+Requires: library/libxml2
+Requires: library/gnome/gnome-component
+Requires: library/popt
+Requires: system/library/math
+Requires: image/library/librsvg
+Requires: image/library/libpng
+Requires: service/gnome/desktop-cache
+Requires: library/desktop/evolution-data-server
+Requires: data/iso-codes
+Requires: system/library/libdbus
+Requires: runtime/python-26
+Requires: library/libnotify
+Requires: library/desktop/xdg/libcanberra
+Requires: library/desktop/libxklavier
 # FIXME: circular dep
 # BuildRequires: SUNWgnome-python26
-BuildRequires: SUNWtgnome-tsol-libs-devel
+BuildRequires: gnome/trusted/libgnometsol
 %ifarch i386
-Requires: SUNWxorg-xkb
-BuildRequires: SUNWxorg-xkb
+Requires: x11/keyboard/data-xkb
+BuildRequires: x11/keyboard/data-xkb
 %endif
+
+BuildRequires: SUNWgsettings-schemas-devel
+BuildRequires: SUNWdconf-devel
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
-%include default-depend.inc
-%include gnome-incorporation.inc
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
-%include default-depend.inc
-%include gnome-incorporation.inc
-Requires: SUNWgnome-libs-devel
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-config
-Requires: SUNWgnome-component
-Requires: SUNWlibglade
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -122,12 +110,6 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm -f"
-
 PKG_CONFIG_DISABLE_UNINSTALLED=
 unset PKG_CONFIG_DISABLE_UNINSTALLED
 export SED=/usr/gnu/bin/sed
@@ -150,12 +132,6 @@ export RPM_OPT_FLAGS="$CFLAGS"
 %gpanel.build -d %name-%version
 
 %install
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm -f"
-
 rm -rf $RPM_BUILD_ROOT
 %lwnck.install -d %name-%version
 
@@ -301,9 +277,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gnome/help/[e-z]*/[a-z]*
 %{_datadir}/omf/*/*-[a-z][a-z].omf
 %{_datadir}/omf/*/*-[a-z][a-z]_[A-Z][A-Z].omf
+%{_datadir}/omf/gpl/gpl-sr@latin.omf
 %{_datadir}/omf/gpl/gpl-nds.omf
 
 %changelog
+* Fri May 04 2012 - brian.cameron@oracle.com
+- Now use newer autotools.
 * Mon Aug 08 2011 - alan.coopersmith@oracle.com
 - Delete -I, -L, & -R flags for long-obsolete /usr/openwin paths
 * Tue Jul 12 2011 - brian.cameron@oracle.com

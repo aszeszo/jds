@@ -1,7 +1,7 @@
 #
 # spec file for package libnotify
 #
-# Copyright (c) 2007, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -12,7 +12,7 @@
 %define OSR 5892:0.4
 
 Name:         libnotify
-Version:      0.7.4
+Version:      0.7.5
 Release:      1
 Summary:      libnotify is a notification system for the GNOME desktop environment.
 
@@ -21,7 +21,7 @@ License:      LGPLv2
 URL:          http://www.galago-project.org/news/index.php
 Distribution: java-desktop-system
 Vendor:       Galago
-Source:       http://download.gnome.org/sources/libnotify/0.7/libnotify-%{version}.tar.bz2
+Source:       http://download.gnome.org/sources/libnotify/0.7/libnotify-%{version}.tar.xz
 # date:2009-01-20 owner:jedy type:feature bugid:176
 Patch1:       libnotify-01-uninstalled-pc.diff
 
@@ -83,6 +83,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc/*
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 0.7.5.
 * Thu Sep 08 2011 - brian.cameron@oracle.com
 - Bump to 0.7.4.
 * Wed Jul 06 2011 - brian.cameron@oracle.com

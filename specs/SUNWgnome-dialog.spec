@@ -3,7 +3,7 @@
 #
 # includes module(s): zenity
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -74,7 +74,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/gnome
 %dir %attr (0755, root, other) %{_datadir}/doc
 %{_datadir}/gnome/help/zenity/C
-%{_datadir}/omf/zenity/*-C.omf
 %{_datadir}/zenity
 %dir %attr(0755, root, bin) %{_mandir}
 %dir %attr(0755, root, bin) %{_mandir}/*
@@ -86,9 +85,10 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, other) %{_datadir}/gnome
 %attr (-, root, other) %{_datadir}/locale
 %{_datadir}/gnome/help/zenity/[a-z]*
-%{_datadir}/omf/zenity/zenity-[a-z]*.omf
 
 %changelog
+* Fri May 11 2012 - brian.cameron@oracle.com
+- Fix packaging after updating to 3.4.0.
 * Fri Apr  3 2009 - laca@sun.com
 - stop using postrun
 * Fri Sep 19 2008 - christian.kelly@sun.com
@@ -154,6 +154,4 @@ rm -rf $RPM_BUILD_ROOT
 - Added SGML man page integration
 * Mon Mar 01 2004 - <laca@sun.com>
 - define PERL5LIB.
-
-
 

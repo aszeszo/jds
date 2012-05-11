@@ -3,7 +3,7 @@
 #
 # includes module(s): vino, realvnc-java-client
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -77,12 +77,6 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE1 | tar xf -
 
 %build
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
-
 export PKG_CONFIG_PATH=%{_pkg_config_path}
 export CFLAGS="%optflags -I%{_includedir} -I/usr/sfw/include"
 export RPM_OPT_FLAGS="$CFLAGS"
@@ -90,25 +84,13 @@ export LDFLAGS="%_ldflags -L/usr/sfw/lib -R/usr/sfw/lib"
 
 %vino.build -d %name-%version
 
-unset echo
-unset RM
-
 %if %option_with_java
 %rjc.build -d %name-%version
 %endif
 
 %install
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
-
 rm -rf $RPM_BUILD_ROOT
 %vino.install -d %name-%version
-
-unset echo
-unset RM
 
 %if %option_with_java
 # install vnc client
@@ -171,6 +153,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/xdg/autostart/vino-server.desktop
 
 %changelog
+* Fri May 04 2012 - brian.cameron@oracle.com
+- Now use newer autotools.
 * Wed Mar 31 2010 - halton.huo@sun.com
 - Add %SUNW_Pkg %IPS_package_name
 * Mon Jul 27 2009 - christian.kelly@sun.com
@@ -261,6 +245,4 @@ rm -rf $RPM_BUILD_ROOT
   exist.
 * Thu Apr 15 2004 - brian.cameron@sun.com
 - Created
-
-
 

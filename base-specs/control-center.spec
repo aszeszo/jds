@@ -1,7 +1,7 @@
 #
 # spec file for package control-center.
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,12 +15,12 @@
 Name:         gnome-control-center
 License:      GPL
 Group:        System/GUI/GNOME
-Version:      3.2.1
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      The GNOME control center for GNOME
-Source:       http://ftp.gnome.org/pub/GNOME/sources/gnome-control-center/3.2/gnome-control-center-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/gnome-control-center/3.4/gnome-control-center-%{version}.tar.xz
 Source1:     %{name}-po-sun-%{po_sun_version}.tar.bz2
 %ifnarch sparc
 Source2:      visual-effects-images.tar.bz2
@@ -52,10 +52,12 @@ Patch9:      control-center-09-remove-gok.diff
 Patch10:      control-center-10-gconf-schema.diff
 # date:2011-06-15 owner:stephen type:bug bugster:6992823
 Patch11:      control-center-11-keyboard-help-action.diff
-# date:2011-07-06 owner:yippi type:branding
-Patch12:      control-center-12-libtool.diff
 # date:2011-07-07 owner:yippi type:branding
-Patch13:      control-center-13-optional-dependencies.diff
+Patch12:      control-center-12-optional-dependencies.diff
+# date:2012-05-09 owner:yippi type:feature
+Patch13:      control-center-13-mapfile.diff
+# date:2012-05-09 owner:yippi type:bug
+Patch14:      control-center-14-static.diff
 
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -133,6 +135,7 @@ cd po-sun; make; cd ..
 #%patch11 -p1
 %patch12 -p1
 %patch13 -p1
+%patch14 -p1
 
 %build
 %ifos linux
@@ -165,9 +168,9 @@ intltoolize --force --copy
 bash -x %SOURCE3 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS -I .
+aclocal-1.11 $ACLOCAL_FLAGS -I .
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 
 CFLAGS="$RPM_OPT_FLAGS -DDBUS_API_SUBJECT_TO_CHANGE -I/usr/X11/share/include" \
@@ -235,6 +238,8 @@ done
 %{_libdir}/*.so
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1. 
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

@@ -14,22 +14,20 @@
 %define src_url http://downloads.sourceforge.net/%{src_name}
 # remember to update the Version tag but make sure it's IPS compliant,
 # so no leading 0-s allowed.  1.44.05 should be 1.44.0.5
-%define tarball_version 1.44.05
+%define tarball_version 1.46.02
 
 Name:		SUNWespeak
 IPS_package_name: library/speech/espeak
 Meta(info.classification): %{classification_prefix}:Applications/Universal Access
 Summary:	eSpeak - compact open source software speech synthesizer
-Version:	1.45.05
+Version:	1.46.0.5
 License:	GPL v3
 Source:		%{src_url}/%{src_name}-%{tarball_version}-source.zip
 Source1:        %{name}-manpages-0.1.tar.gz
 # date:2008-08-15 owner:ww36193 type:bug
 Patch1:         espeak-01-makefile.diff
-# date:2010-10-27 owner:yippi type:bug
-Patch2:         espeak-02-samplerate.diff
 # date:2010-12-28 owner:liyuan type:bug
-Patch3:         espeak-03-Wall.diff
+Patch2:         espeak-02-Wall.diff
 SUNW_BaseDir:	%{_basedir}
 SUNW_Copyright: %{name}.copyright
 BuildRoot:	%{_tmppath}/%{name}-%{tarball_version}-build
@@ -60,7 +58,6 @@ Requires: %name
 %setup -q -n %{src_name}-%{tarball_version}-source
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
 gzcat %SOURCE1 | tar xf -
 
 %build
@@ -106,6 +103,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}
 
 %changelog
+* Fri May 04 2012 - brian.cameron@oracle.com
+- Bump to 1.46.02.
 * Tue Oct 04 2011 - brian.cameron@oracle.com
 - Bump to 1.45.05.
 * Tue Jul 26 2011 - dave.lin@oracle.com

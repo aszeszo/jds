@@ -1,7 +1,7 @@
 #
 # spec file for package libwnck
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,20 +14,18 @@
 Name:         libwnck
 License:      LGPLv2
 Group:        System/Libraries/GNOME
-Version:      3.2.0
+Version:      3.4.0
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Window Navigator Construction Kit Library
-Source:       http://ftp.gnome.org/pub/GNOME/sources/libwnck/3.2/libwnck-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/libwnck/3.4/libwnck-%{version}.tar.xz
 Source1:      %{name}-po-sun-%{po_sun_version}.tar.bz2
 %if %build_l10n
 Source2:                 l10n-configure.sh
 %endif
 #owner:niall date:2006-10-11 type:feature
 Patch1:       libwnck-01-trusted-extensions.diff
-#owner:yippi date:2011-10-04 type:bug
-Patch2:       libwnck-02-libtool.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -66,7 +64,6 @@ bzcat %SOURCE1 | tar xf -
 cd po-sun; gmake; cd ..
 %endif
 #%patch1 -p1
-%patch2 -p1
 
 %build
 %ifos linux
@@ -89,8 +86,8 @@ bash -x %SOURCE2 --enable-copyright
 %endif
 
 gtkdocize
-aclocal $ACLOCAL_FLAGS
-automake -a -c -f
+aclocal-1.11 $ACLOCAL_FLAGS
+automake-1.11 -a -c -f
 autoconf
 
 CFLAGS="$RPM_OPT_FLAGS"				\
@@ -121,6 +118,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gtk-doc
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.0.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Thu Sep 08 2011 - brian.cameron@oracle.com

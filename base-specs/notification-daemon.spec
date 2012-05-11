@@ -1,7 +1,7 @@
 #
 # spec file for package notificatioin-daemon
 #
-# Copyright (c) 2007, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -11,7 +11,7 @@
 %define OSR 5892:0.4
 
 Name:         notification-daemon
-Version:      0.7.2
+Version:      0.7.4
 Release:      1
 Summary:      A notification daemon for the GNOME desktop environment.
 
@@ -20,11 +20,10 @@ License:      GPLv2, LGPLv2
 URL:          http://www.galago-project.org/news/index.php
 Distribution: java-desktop-system
 Vendor:       Galago
-Source:       http://download.gnome.org/sources/notification-daemon/0.7/notification-daemon-%version.tar.bz2
+Source:       http://download.gnome.org/sources/notification-daemon/0.7/notification-daemon-%version.tar.xz
 # date:2008-11-13 owner:dkenny type:bug bugster:6752569 
 #Patch1:       notification-daemon-01-resize.diff
 # date:2011-07-06 owner:yippi type:branding
-Patch1:       notification-daemon-01-libtool.diff
 %if %build_l10n
 Source1:                 l10n-configure.sh
 %endif
@@ -49,7 +48,7 @@ SUNW_BaseDir:            /
 
 %prep
 %setup -q
-%patch1 -p1
+#%patch1 -p1
 
 %build
 %ifos linux
@@ -97,6 +96,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/locale/nl
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 0.7.4.
 * Thu Sep 15 2011 - brian.cameron@oracle.com
 - Bump to 0.7.2.
 * Wed Jul 06 2011 - brian.cameron@oracle.com

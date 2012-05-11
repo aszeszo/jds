@@ -1,7 +1,7 @@
 #
 # spec file for package libgweather
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@
 Name:         libgweather
 License:      GPLv2
 Group:        System/GUI/GNOME
-Version:      3.2.0
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Library to access weather information from online services
-Source:       http://ftp.gnome.org/pub/GNOME/sources/libgweather/3.2/%{name}-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/libgweather/3.4/%{name}-%{version}.tar.xz
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -45,9 +45,9 @@ fi
 
 #libtoolize --force
 intltoolize --force --copy --automake
-aclocal $ACLOCAL_FLAGS -I m4
+aclocal-1.11 $ACLOCAL_FLAGS -I m4
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 
 CFLAGS="$RPM_OPT_FLAGS"	\
@@ -71,8 +71,9 @@ unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Wed Jul 06 2011 - brian.cameron@oracle.com

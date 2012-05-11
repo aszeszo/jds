@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-applets 
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -12,12 +12,12 @@
 Name:         gnome-applets 
 License:      GPL
 Group:        System/GUI/GNOME 
-Version:      3.2.1
+Version:      3.4.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      GNOME Applets
-Source:       http://download.gnome.org/sources/%{name}/3.2/%{name}-%{version}.tar.bz2
+Source:       http://download.gnome.org/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 #owner:gman date:2005-05-11 type:branding
 Patch1:       gnome-applets-01-disable-drivemount.diff
 #owner:gman date:2005-05-11 type:branding
@@ -84,9 +84,9 @@ done
 %build
 export PYTHON=/usr/bin/python%{default_python_version}
 libtoolize --force
-aclocal $ACLOCAL_FLAGS -I ./m4
+aclocal-1.11 $ACLOCAL_FLAGS -I ./m4
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 
 # Set LIBGWEATHER info as the gweather.pc file has been removed. The interface
@@ -147,6 +147,8 @@ done
 %{_datadir}/pixmaps/*
 
 %changelog
+* Wed May 02 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

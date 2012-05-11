@@ -19,7 +19,6 @@ Distribution: Java Desktop System
 Vendor:	      Gnome Community
 Summary:      ATK - Accesibility Toolkit Libraries
 Source:       http://ftp.gnome.org/pub/GNOME/sources/atk/2.4/%{name}-%{version}.tar.xz
-Patch1:       atk-01-libtool.diff
 URL:          http://www.gtk.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:	      %{_defaultdocdir}/doc
@@ -45,7 +44,6 @@ The ATK Library provides a set of interfaces for accesibility. By supporting the
 
 %prep
 %setup -q
-%patch1 -p1
 
 %build
 %ifos linux

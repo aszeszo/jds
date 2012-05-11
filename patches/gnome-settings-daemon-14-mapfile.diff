@@ -1,7 +1,7 @@
 --- gnome-settings-daemon-3.1.5/configure.ac-orig	2011-08-24 09:18:29.710425446 -0500
 +++ gnome-settings-daemon-3.1.5/configure.ac	2011-08-24 09:18:58.492535062 -0500
-@@ -81,7 +81,7 @@ PKG_CHECK_MODULES(BACKLIGHT_HELPER,
-         gio-2.0 >= $GIO_REQUIRED_VERSION
+@@ -72,7 +72,7 @@ PKG_CHECK_MODULES(SETTINGS_PLUGIN,
+         x11
  )
  
 -GSD_PLUGIN_LDFLAGS="-export_dynamic -module -avoid-version -no-undefined"

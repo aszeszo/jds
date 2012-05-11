@@ -3,7 +3,7 @@
 #
 # includes module(s): dconf
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011,2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,9 +15,9 @@ Name:                    SUNWdconf
 IPS_package_name:        gnome/config/dconf
 Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Sessions
 Summary:                 DConf
-Version:                 0.10.0
+Version:                 0.12.1
 License:                 LGPL v2.1
-Source:			 http://ftp.gnome.org/pub/GNOME/sources/dconf/0.10/dconf-%{version}.tar.bz2
+Source:			 http://ftp.gnome.org/pub/GNOME/sources/dconf/0.12/dconf-%{version}.tar.xz
 Patch1:                  dconf-01-compile.diff
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
@@ -73,6 +73,9 @@ fi
 export CFLAGS="%optflags"
 export LDFLAGS="%{_ldflags}"
 
+touch README AUTHORS ChangeLog
+aclocal-1.11 $ACLOCAL_FLAGS -I ./m4
+automake-1.11 -a -c -f
 ./configure --prefix=%{_prefix}		\
             --prefix=%{_prefix} 	\
             --sysconfdir=%{_sysconfdir}	\
@@ -117,6 +120,17 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/dbus-1
 %{_datadir}/dconf-editor
 %{_datadir}/glib-2.0
+%dir %attr (0755, root, other) %{_datadir}/icons
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/32x32/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/32x32/apps/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/48x48/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/48x48/apps/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/64x64/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/64x64/apps/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/128x128/
+%dir %attr (0755, root, other) %{_datadir}/icons/hicolor/128x128/apps/
+%{_datadir}/icons/hicolor/*/apps/*
 %dir %attr (0755, root, other) %{_docdir}
 
 %files root
@@ -144,6 +158,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu May 03 2012 - Brian Cameron <brian.cameron@oracle.com>
+- Bump to 0.12.1.
 * Fri Sep 30 2011 - Brian Cameron <brian.cameron@oracle.com>
 - Bump to 0.10.0.
 * Thu Aug 18 2011 - Brian Cameron <brian.cameron@oracle.com>

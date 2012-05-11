@@ -1,8 +1,8 @@
 --- dconf-0.7.5/bin/Makefile.am-orig	2011-07-06 17:25:42.470164797 -0500
 +++ dconf-0.7.5/bin/Makefile.am	2011-07-06 17:26:04.082865862 -0500
 @@ -1,5 +1,4 @@
--AM_CFLAGS = -std=c89 -Wall -Wmissing-prototypes -Wwrite-strings
--CFLAGS += -Wno-error
+-AM_CFLAGS = -Wall -Wmissing-prototypes -Wwrite-strings
+-CFLAGS += -Wno-error -Wno-unused-but-set-variable -Wno-unused-variable
 +AM_CFLAGS = -xc99
  INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/engine -I$(top_srcdir)/client -I$(top_srcdir)/gvdb $(gio_CFLAGS)
  
@@ -32,7 +32,7 @@
  
  AM_CFLAGS = $(gtk_CFLAGS) $(gmodule_CFLAGS) $(libxml_CFLAGS) -I$(top_srcdir)/common -I$(top_srcdir)/client -DPKGDATADIR=\"@datadir@/dconf-editor\"
  AM_VALAFLAGS = --vapidir ../client --pkg gtk+-3.0 --pkg gmodule-2.0 --pkg libxml-2.0 --pkg dconf
--CFLAGS += -Wno-error
+-CFLAGS += -Wno-error -Wno-unused-but-set-variable -Wno-unused-variable
  dconf_editor_LDADD = ../client/libdconf.so.0 $(gtk_LIBS) $(gmodule_LIBS) $(gee_LIBS) $(libxml_LIBS)
  dconf_editor_SOURCES = config.vapi dconf-editor.vala dconf-model.vala dconf-schema.vala dconf-view.vala
  
@@ -56,7 +56,7 @@
 +++ dconf-0.7.5/client/Makefile.am	2011-07-06 17:25:30.722128730 -0500
 @@ -1,5 +1,4 @@
 -AM_CFLAGS = -std=c89 -Wall -Wmissing-prototypes -Wwrite-strings -D__dconf_h__ -fPIC -DPIC
--CFLAGS += -Wno-error
+-CFLAGS += -Wno-error -Wno-unused-but-set-variable -Wno-unused-variable
 +AM_CFLAGS = -xc99 -D__dconf_h__ -fPIC -DPIC
  INCLUDES = -I$(top_srcdir)/common -I$(top_srcdir)/gvdb -I$(top_srcdir)/engine $(gio_CFLAGS)
  
@@ -69,3 +69,14 @@
  
  libexec_PROGRAMS = dconf-service
  
+--- dconf-0.12.1/configure.ac-orig	2012-05-03 16:25:41.700885856 -0500
++++ dconf-0.12.1/configure.ac	2012-05-03 16:25:47.452351034 -0500
+@@ -5,7 +5,7 @@ AC_INIT([dconf],
+ 
+ AC_CONFIG_SRCDIR([configure.ac])
+ AC_CONFIG_MACRO_DIR([m4])
+-AC_CONFIG_AUX_DIR([aux])
++#AC_CONFIG_AUX_DIR([aux])
+ AC_CONFIG_HEADERS([config.h])
+ 
+ AM_INIT_AUTOMAKE([1.11 -Wno-portability no-dist-gzip dist-xz])

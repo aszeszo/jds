@@ -1,7 +1,7 @@
 #
 # spec file for package java-atk-wrapper
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -40,9 +40,10 @@ Requires:      at-spi >= %{at_spi_version}
 %patch1 -p1
 
 %build
-aclocal
+libtoolize --force
+aclocal-1.11
 autoconf
-automake -a -c -f
+automake-1.11 -a -c -f
 CFLAGS="%optflags"
 LDFLAGS="%{_ldflags}"
 %define java_home /usr/java
@@ -71,6 +72,8 @@ find $RPM_BUILD_ROOT -type f -name "*.a" -exec rm -f {} ';'
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Fri May 04 2012 - brian.cameron@oracle.com
+- Use newer autotools.
 * Wed Nov 10 2010 - kerr.wang@oracle.com
 - Bump to 0.30.4.
 * Mon Nov  8 2010 - kerr.wang@oracle.com

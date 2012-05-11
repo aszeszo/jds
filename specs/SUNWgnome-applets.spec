@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-applets, gnome-netstatus, deskbar-applet
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -35,7 +35,7 @@ BuildRequires: SUNWgnome-doc-utils
 BuildRequires: SUNWgnome-vfs-devel
 BuildRequires: SUNWgnome-panel-devel
 BuildRequires: SUNWgnome-python26-desktop-devel
-BuildRequires: SUNWpython26-setuptools
+BuildRequires: library/python-2/setuptools-26
 BuildRequires: release/name
 BuildRequires: SUNWarc
 BuildRequires: SUNWevolution-data-server-devel
@@ -221,7 +221,7 @@ rm -rf $RPM_BUILD_ROOT
 %restart_fmri icon-cache gconf-cache
 
 %files
-%doc -d gnome-applets-%{gapplets.version} README stickynotes/README cpufreq/README geyes/README mini-commander/README trashapplet/README gkb-new/README null_applet/README AUTHORS gweather/AUTHORS cpufreq/AUTHORS geyes/AUTHORS multiload/AUTHORS mini-commander/AUTHORS drivemount/AUTHORS gkb-new/AUTHORS accessx-status/AUTHORS mixer/AUTHORS modemlights/AUTHORS COPYING-DOCS accessx-status/COPYING COPYING MAINTAINERS
+%doc -d gnome-applets-%{gapplets.version} README stickynotes/README cpufreq/README geyes/README mini-commander/README trashapplet/README null_applet/README AUTHORS gweather/AUTHORS cpufreq/AUTHORS geyes/AUTHORS multiload/AUTHORS mini-commander/AUTHORS drivemount/AUTHORS accessx-status/AUTHORS mixer/AUTHORS modemlights/AUTHORS COPYING-DOCS accessx-status/COPYING COPYING MAINTAINERS
 %doc(bzip2) -d gnome-applets-%{gapplets.version} ChangeLog NEWS geyes/NEWS mini-commander/NEWS
 #%doc gnome-netstatus-%{gnetstatus.version}/README
 #%doc gnome-netstatus-%{gnetstatus.version}/NEWS
@@ -289,7 +289,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %dir %attr (0755, root, other) %{_datadir}/pixmaps
 %{_datadir}/pixmaps/*
-%{_datadir}/xmodmap
 
 %dir %attr (0755, root, other) %{_datadir}/gnome
 %{_datadir}/gnome/help/geyes/C

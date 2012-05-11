@@ -186,7 +186,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_bindir}
 %{_bindir}/*
 %dir %attr (0755, root, bin) %{_libdir}
-%{_libdir}/lib*.so*
 %{_libdir}/gnome-settings-daemon-3.0
 %{_libexecdir}/control-center-1
 %{_libexecdir}/gnome-settings-daemon
@@ -201,8 +200,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/dbus-1
 %{_datadir}/GConf
 %{_datadir}/glib-2.0
-%dir %attr (0755, root, other) %{_datadir}/gnome
-%{_datadir}/gnome/help/control-center/C
 %{_datadir}/gnome-control-center
 %{_datadir}/gnome-settings-daemon
 %{_datadir}/gnome-settings-daemon-3.0
@@ -246,8 +243,6 @@ rm -rf $RPM_BUILD_ROOT
 #PulseAudio
 %{_datadir}/icons/hicolor/48x48/devices/audio-headset.svg
 
-%{_datadir}/omf/control-center/control-center-C.omf
-
 %dir %attr(0755, root, bin) %{_mandir}
 %dir %attr(0755, root, bin) %{_mandir}/*
 %{_mandir}/*/*
@@ -281,8 +276,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr (-, root, sys)
 %attr (0755, root, sys) %dir %{_sysconfdir}
 %{_sysconfdir}/xdg
-%dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1
-%dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1/system.d
 %{_sysconfdir}/gnome-settings-daemon
 
 %if %build_l10n
@@ -296,6 +289,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri May 11 2012 - brian.cameron@oracle.com
+- Update packaging after updating to 3.4.1.
 * Tue Jul 12 2011 - brian.cameron@oracle.com
 - Fix packaging for gnome-settings-daemon 3.1.3 and gnome-control-center 3.1.3
   release.

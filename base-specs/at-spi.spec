@@ -1,7 +1,7 @@
 #
 # spec file for package at-spi
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@
 Name:         at-spi
 License:      LGPL v2
 Group:        System/Libraries
-Version:      1.30.1
+Version:      1.32.0
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Assistive Technology Service Provider Interface
-Source:       http://ftp.gnome.org/pub/GNOME/sources/at-spi/1.30/%{name}-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/at-spi/1.32/%{name}-%{version}.tar.bz2
 %if %build_l10n
 Source1:                 l10n-configure.sh
 %endif
@@ -34,6 +34,8 @@ Patch4:       at-spi-04-custom-g-main-context.diff
 Patch5:       at-spi-05-x-error-handlers.diff
 # date:2011-06-22 owner:liyuan type:bug bugster:7057247
 Patch6:       at-spi-06-gnome-session.diff
+# date:2011-11-08 owner:liyuan type:bug bugster:7105039
+Patch7:       at-spi-07-warn-once.diff
 URL:          http://developer.gnome.org/projects/gap/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -81,6 +83,7 @@ scripting interfaces can query and interact with GUI controls.
 %patch4 -p1
 %patch5 -p1
 %patch6 -p1
+%patch7 -p1
 
 %build
 %ifos linux
@@ -108,7 +111,7 @@ autoheader
 automake -a -c -f
 autoconf
 CFLAGS="%optflags"
-LDFLAGS="%{_ldflags}"
+LDFLAGS="%{_ldflags} -lm"
 ./configure --prefix=%{_prefix}			\
 	    --libdir=%{_libdir}			\
 	    --bindir=%{_bindir}			\
@@ -168,8 +171,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Fri May 04 2012 - brian.cameron@oracle.com
+- Bump to 1.32.0.
 * Web Jun 22 2011 - lee.yuan@oracle.com
 - Add at-spi-06-gnome-session.diff.
+* Tue Nov 08 2011 - lee.yuan@oracle.com
+- Add at-spi-07-warn-once.diff.
 * Fri May 28 2010 - ke.wang@sun.com
 - Add at-spi-04-custom-g-main-context.diff to fix doo 15964.
 * Mon Apr 26 2010 - christian.kelly@oracle.com

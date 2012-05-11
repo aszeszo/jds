@@ -1,7 +1,7 @@
 #
 # spec file for package vte
 #
-# Copyright 2010 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,20 +13,16 @@
 Name:         vte
 License:      LGPL v2
 Group:        System/Libraries
-Version:      0.30.1
+Version:      0.32.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Terminal Emulation Widget Library
-Source:       http://download.gnome.org/sources/%{name}/0.30/%{name}-%{version}.tar.bz2
-# date:2011-10-04 owner:yippi type:bug
-Patch1:       vte-01-libtool.diff
+Source:       http://download.gnome.org/sources/%{name}/0.32/%{name}-%{version}.tar.xz
 # date:2010-04-07 owner:yippi type:bug bugzilla:616001
-Patch2:       vte-02-configure.diff
+Patch1:       vte-01-configure.diff
 #owner:stephen date:2011-05-19 type:branding bugster:7030662
-Patch3:       vte-03-copy-paste-keys.diff
-#owner:yippi date:2011-10-05 type:bug bugzilla:661121
-Patch4:       vte-04-void-return.diff
+Patch2:       vte-02-copy-paste-keys.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:	      %{_defaultdocdir}/doc
@@ -55,8 +51,6 @@ VTE is a terminal emulation widget for GTK+, used in GNOME Terminal.
 %setup -q
 %patch1 -p1
 %patch2 -p1
-%patch3 -p1
-%patch4 -p1
 
 %build
 export PYTHON="/usr/bin/python%{default_python_version}"
@@ -73,9 +67,9 @@ fi
 
 libtoolize --force
 gtkdocize
-aclocal $ACLOCAL_FLAGS -I .
+aclocal-1.11 $ACLOCAL_FLAGS -I .
 autoheader
-automake -a -c -f
+automake-1.11 -a -c -f
 autoconf
 
 CFLAGS="$RPM_OPT_FLAGS"			\
@@ -139,6 +133,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/python%{default_python_version}/vendor-packages/gtk-2.0/vtemodule.so
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump ot 0.32.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 0.30.1.
 * Tue Oct 04 2011 - brian.cameron@oracle.com

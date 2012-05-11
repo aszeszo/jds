@@ -1,7 +1,7 @@
 #
 # spec file for package libgnomekbd
 #
-# Copyright (c) 2010, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -11,13 +11,13 @@
 Name:         libgnomekbd
 License:      LGPLv2+
 Group:        System/Libraries/GNOME
-Version:      3.2.0
+Version:      3.4.0.2
 Release:      1
 Distribution: Java Desktop System
 Vendor:       http://www.gnome.org
 Summary:      A keyboard configuration library
 URL:          http://gswitchit.sourceforge.net
-Source:       http://download.gnome.org/sources/libgnomekbd/3.2/%{name}-%{version}.tar.bz2
+Source:       http://download.gnome.org/sources/libgnomekbd/3.4/%{name}-%{version}.tar.xz
 # date:2010-08-02 owner:ja208388 type:bug
 Patch1:       libgnomekbd-01-compile-makefile.diff
 # date:2011-05-06 owner:gheet type:bug bugster:7022446
@@ -109,6 +109,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 3.4.0.2.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Sat Aug 06 2011 - brian.cameron@oracle.com

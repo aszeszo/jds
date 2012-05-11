@@ -1,7 +1,7 @@
 #
-# spec file for package gtk2-engines
+# spec file for package gtk3-engines
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2011, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -56,7 +56,7 @@ aclocal $ACLOCAL_FLAGS
 automake -a -c -f
 autoconf
 export CFLAGS="%optflags"
-export LDFLAGS="%_ldflags"
+export LDFLAGS="%_ldflags -lm"
 ./configure --prefix=%{_prefix}		\
 	    --libdir=%{_libdir}
 make -j $CPUS
@@ -83,6 +83,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*.pc
 
 %changelog -n gtk2-engines
+* Fri May 11 2012 - brian.cameron@oracle.com
+- Add -lm to LDFLAGS.
 * Thu Jul 07 2011 - brian.cameron@oracle.com
 - Created with 2.91.1.
 

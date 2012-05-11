@@ -1,0 +1,54 @@
+--- gnome-control-center-3.4.1/configure.ac-orig	2012-05-09 17:39:43.544632251 -0500
++++ gnome-control-center-3.4.1/configure.ac	2012-05-09 17:40:10.048314097 -0500
+@@ -272,7 +272,7 @@ AC_SUBST(PANEL_CFLAGS)
+ PANEL_LIBS=""
+ AC_SUBST(PANEL_LIBS)
+ 
+-PANEL_LDFLAGS="-export_dynamic -avoid-version -module -no-undefined -export-symbols-regex '^g_io_module_(load|unload)'"
++PANEL_LDFLAGS="-export_dynamic -avoid-version -module -no-undefined -export-symbols-regex '^g_io_module_(load|unload)' -Wl,-M,../../mapfile-cc"
+ AC_SUBST(PANEL_LDFLAGS)
+ 
+ dnl ==============================================
+--- /dev/null	2012-05-09 17:50:06.000000000 -0500
++++ gnome-control-center-3.4.1/mapfile-cc	2012-05-09 17:43:45.432003395 -0500
+@@ -0,0 +1,40 @@
++# CDDL HEADER START
++#
++# The contents of this file are subject to the terms of the
++# Common Development and Distribution License (the "License").
++# You may not use this file except in compliance with the License.
++#
++# You can obtain a copy of the license at usr/src/OPENSOLARIS.LICENSE
++# or http://www.opensolaris.org/os/licensing.
++# See the License for the specific language governing permissions
++# and limitations under the License.
++#
++# When distributing Covered Code, include this CDDL HEADER in each
++# file and include the License file at usr/src/OPENSOLARIS.LICENSE.
++# If applicable, add the following below this CDDL HEADER, with the
++# fields enclosed by brackets "[]" replaced with your own identifying
++# information: Portions Copyright [yyyy] [name of copyright owner]
++#
++# CDDL HEADER END
++#
++# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
++# Use is subject to license terms.
++#
++# ident "@(#)mapfile-libsqlite3 1.4     09/06/05 SMI"
++#
++# Defines the public interface to SQLite3
++#
++{
++       global:
++                cc_editable_entry_get_type = FUNCTION extern;
++                cc_editable_entry_get_text = FUNCTION extern;
++                cc_editable_entry_set_editable = FUNCTION extern;
++                cc_editable_entry_set_selectable = FUNCTION extern;
++                cc_editable_entry_set_text = FUNCTION extern;
++                cc_strength_bar_set_fraction = FUNCTION extern;
++                cc_panel_get_type = FUNCTION extern;
++                cc_panel_get_shell = FUNCTION extern;
++                cc_shell_get_toplevel = FUNCTION extern;
++                cc_shell_set_active_panel_from_id = FUNCTION extern;
++                cc_strength_bar_get_type = FUNCTION extern;
++};

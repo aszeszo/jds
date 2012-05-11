@@ -1,7 +1,7 @@
 #
 # spec file for package GConf
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@ Name:         GConf
 License:      LGPL v2
 Group:        System/Libraries/GNOME
 Provides:     GConf
-Version:      3.2.0
+Version:      3.2.5
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      GNOME Configuration Framework
-Source:       http://ftp.gnome.org/pub/GNOME/sources/GConf/3.2/GConf-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/GConf/3.2/GConf-%{version}.tar.xz
 %if %build_l10n
 Source1:      l10n-configure.sh
 %endif
@@ -37,6 +37,7 @@ Patch5:       GConf-05-fixxref-options.diff
 Patch6:       GConf-06-pkg-config.diff
 #owner:migi date:2011-01-13 type:feature
 Patch7:       GConf-07-multi-user-desktop-optimization.diff
+Patch8:       GConf-08-ldap.diff
 URL:	      http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:	      %{_defaultdocdir}/doc
@@ -81,12 +82,14 @@ sh %SOURCE1 --disable-gnu-extensions
 %endif
 
 %patch1 -p1
-%patch2 -p1
+# Patch 2 seems to be upstream.
+#%patch2 -p1
 #%patch3 -p1
 %patch4 -p1
 %patch5 -p1
 #%patch6 -p1
 %patch7 -p1
+%patch8 -p1
 
 %build
 %ifos linux
@@ -179,6 +182,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Tue May 08 2012 - brian.cameron@oracle.com
+- Bump to 3.2.5.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Thu Sep 08 2011 - brian.cameron@oracle.com

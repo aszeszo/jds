@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-themes-standard
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011,2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,9 +15,9 @@ Name:                    SUNWgnome-themes-standard
 IPS_package_name:        gnome/theme/gnome-icon-theme-standard
 Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Theming
 Summary:                 Standard GNOME themes
-Version:                 3.2.1
+Version:                 3.4.1
 License:                 LGPL v2.1
-Source:			 http://ftp.gnome.org/pub/GNOME/sources/gnome-themes-standard/3.2/gnome-themes-standard-%{version}.tar.bz2
+Source:			 http://ftp.gnome.org/pub/GNOME/sources/gnome-themes-standard/3.4/gnome-themes-standard-%{version}.tar.xz
 # date:2011-07-14 owner:yippi type:bug bugzilla:654714
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
@@ -117,6 +117,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri May 04 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

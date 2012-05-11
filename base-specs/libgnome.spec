@@ -1,7 +1,7 @@
 #
 # spec file for package libgnome
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@
 Name:         libgnome
 License:      LGPL
 Group:        System/Libraries/GNOME
-Version:      2.30.0
-Release:      5
+Version:      2.32.1
+Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      GNOME Base Library
-Source:       http://ftp.gnome.org/pub/GNOME/sources/libgnome/2.30/libgnome-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/libgnome/2.32/libgnome-%{version}.tar.bz2
 %if %build_l10n
 Source1:                 l10n-configure.sh
 %endif
@@ -202,6 +202,8 @@ done
 %{_mandir}/man7/*
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 2.32.1.
 * Thu Jul 28 2011 - lee.yuan@oracle.com
 - Bugster 6228681. Enable keyboard accessibility by default.
 * Wed Dec 15 2010 - brian.cameron@oracle.com

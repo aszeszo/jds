@@ -9,20 +9,20 @@ diff -urN desktop-file-utils-0.17/src/update-desktop-database.c ../SUNWgnome-des
  
  #include <glib.h>
  #include <glib/gi18n.h>
-@@ -313,6 +314,7 @@
+@@ -320,6 +321,7 @@ sync_database (const char *dir, GError *
    GError *sync_error;
    char *temp_cache_file, *cache_file;
    FILE *tmp_file;
 +  struct group *bingrp;
+   GList *keys, *key;
  
    temp_cache_file = NULL;
-   sync_error = NULL;
-@@ -329,6 +331,9 @@
- 
+@@ -345,6 +347,9 @@ sync_database (const char *dir, GError *
+   g_list_free (keys);
    fclose (tmp_file);
  
 +  bingrp= getgrnam ("bin");
-+  chown (temp_cache_file, 0, bingrp->gr_gid); 
++  chown (temp_cache_file, 0, bingrp->gr_gid);
 +
    cache_file = g_build_filename (dir, CACHE_FILENAME, NULL);
    if (rename (temp_cache_file, cache_file) < 0)

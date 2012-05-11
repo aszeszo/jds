@@ -1,7 +1,7 @@
 #
 # spec file for package desktop-file-utils
 #
-# Copyright (c) 2010 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@
 Name:			desktop-file-utils
 License:		GPLv2
 Group:			Development/Tools/Other 
-Version:		0.17
+Version:		0.20
 Release:		1
 Distribution:		Java Desktop System
 Vendor:			freedesktop.org
 Summary:		Desktop file utilities
-Source:			http://www.freedesktop.org/software/desktop-file-utils/releases/%{name}-%{version}.tar.bz2
+Source:			http://www.freedesktop.org/software/desktop-file-utils/releases/%{name}-%{version}.tar.xz
 URL:			http://www.gnome.org
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 Docdir: 		%{_defaultdocdir}/doc
@@ -58,6 +58,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 0.20. 
 * Wed Oct 27 2010 - brian.cameron@oracle.com
 - Bump to 0.17.
 * Thu Apr 15 2010 - brian.cameron@sun.com

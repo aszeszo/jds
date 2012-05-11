@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-panel
 #
-# Copyright (c) 2003, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,12 +14,12 @@
 Name:		gnome-panel
 License:	GPLv2,LGPLv2
 Group:		System/GUI/GNOME
-Version:	3.2.1
+Version:	3.4.1
 Release:	1
 Distribution:	Java Desktop System
 Vendor:		Gnome Community
 Summary:	The GNOME Panel
-Source:		http://ftp.gnome.org/pub/GNOME/sources/gnome-panel/3.2/gnome-panel-%{version}.tar.bz2
+Source:		http://ftp.gnome.org/pub/GNOME/sources/gnome-panel/3.4/gnome-panel-%{version}.tar.xz
 %if %option_with_sun_branding
 Source1:	gnome-main-menu.png
 %endif
@@ -83,8 +83,7 @@ Patch17:        gnome-panel-17-rbac.diff
 # date:2011-06-21 type:branding owner:gheet bugster:7042459,6957745
 Patch18:        gnome-panel-18-fix-doc.diff
 Patch19:        gnome-panel-19-fix-l10n-doc.diff
-# date:2011-10-04 type:bug owner:bug
-Patch20:        gnome-panel-20-libtool.diff
+Patch20:        gnome-panel-20-polkit.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/gnome-panel
@@ -166,7 +165,7 @@ sh -x %SOURCE5 --disable-gnu-extensions
 #%patch16 -p1
 #%patch17 -p1
 #%patch18 -p1
-%patch19 -p1
+#%patch19 -p1
 %patch20 -p1
 
 cp %SOURCE3 icons
@@ -208,8 +207,8 @@ gtkdocize
 bash -x %SOURCE8 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS
-automake -a -c -f
+aclocal-1.11 $ACLOCAL_FLAGS
+automake-1.11 -a -c -f
 autoconf
 
 CFLAGS="$RPM_OPT_FLAGS" \
@@ -286,6 +285,8 @@ gconftool-2 --direct --config-source=$GCONF_CONFIG_SOURCE --load %{_sysconfdir}/
 %{_mandir}/man3/*
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

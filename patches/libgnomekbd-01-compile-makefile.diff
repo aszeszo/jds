@@ -1,16 +1,5 @@
---- libgnomekbd-3.0.0/capplet/Makefile.am-orig	2011-07-06 21:56:27.454390998 -0500
-+++ libgnomekbd-3.0.0/capplet/Makefile.am	2011-07-06 21:56:32.301056162 -0500
-@@ -11,7 +11,7 @@ Desktop_in_files = gkbd-indicator-plugin
- desktop_DATA = $(Desktop_in_files:.desktop.in=.desktop)
- 
- gkbd_indicator_plugins_capplet_CFLAGS = \
--	-I$(top_srcdir)	-Wall 				\
-+	-I$(top_srcdir)	 				\
- 	$(GCONF_CFLAGS)					\
- 	$(GTK_CFLAGS)				\
- 	$(LIBXKLAVIER_CFLAGS)				\
---- libgnomekbd-3.0.0/test/Makefile.am-orig	2011-07-06 21:56:13.326212350 -0500
-+++ libgnomekbd-3.0.0/test/Makefile.am	2011-07-06 21:56:18.267538065 -0500
+--- libgnomekbd-3.4.0.2/test/Makefile.am-orig	2012-05-04 12:29:53.888573660 -0500
++++ libgnomekbd-3.4.0.2/test/Makefile.am	2012-05-04 12:29:59.997036636 -0500
 @@ -2,7 +2,7 @@ noinst_PROGRAMS = gkbd-indicator-test \
                    gkbd-keyboard-drawing-test \
                    gkbd-status-test

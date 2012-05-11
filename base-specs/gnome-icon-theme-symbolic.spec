@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-icon-theme-symbolic
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011,2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,12 +13,12 @@ Name:         		gnome-icon-theme-symbolic
 License:      		GPL v2
 Group:        		System/GUI/GNOME
 BuildArchitectures:	noarch
-Version:      		3.2.1
+Version:      		3.4.0
 Release:      		1
 Distribution: 		Java Desktop System
 Vendor:       		Gnome Community
 Summary:      		GNOME Icon Themes
-Source:       		http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.2/%{name}-%{version}.tar.bz2
+Source:       		http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 URL:          		http://www.gnome.org/
 BuildRoot:    		%{_tmppath}/%{name}-%{version}-build
 Docdir:	      		%{_defaultdocdir}/doc
@@ -75,6 +75,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/gnome-icon-theme.pc
 
 %changelog
+* Fri May 04 2012 - brian.cameron@oracle.com
+- Bump to 3.4.0.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

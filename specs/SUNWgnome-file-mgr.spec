@@ -4,7 +4,7 @@
 # includes module(s): nautilus, gnome-mount,
 #                     gnome-volume-manager
 #
-# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -34,44 +34,30 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWglib3-devel
-BuildRequires: SUNWgtk3-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWlibrsvg-devel
-BuildRequires: SUNWgnome-audio-devel
-BuildRequires: SUNWlibexif-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWlibunique-devel
-BuildRequires: SUNWgtk-doc
-BuildRequires: SUNWlibgnome-keyring
-Requires: SUNWgtk3
-Requires: SUNWgnome-file-mgr-root
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-config
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-audio
-Requires: SUNWgnome-component
-Requires: SUNWlibunique
-Requires: SUNWlibexif
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWlibrsvg
+BuildRequires: developer/gnome/gettext
+BuildRequires: library/glib2
+BuildRequires: library/desktop/gtk3
+BuildRequires: library/gnome/gnome-component
+BuildRequires: image/library/librsvg
+BuildRequires: gnome/gnome-audio
+BuildRequires: image/library/libexif
+BuildRequires: library/popt
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: gnome/config/gconf
+BuildRequires: gnome/gnome-panel
+BuildRequires: library/libunique
+BuildRequires: developer/documentation-tool/gtk-doc
+BuildRequires: library/gnome/gnome-keyring
+Requires: gnome/gnome-audio
+Requires: library/gnome/gnome-component
+Requires: library/popt
+Requires: image/library/librsvg
 BuildRequires: runtime/perl-512
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlxml
-Requires: SUNWzfsr
-Requires: SUNWdesktop-cache
-Requires: SUNWuiu8
-%if %with_hal
-Requires: SUNWhal
-%endif
+Requires: compress/bzip2
+Requires: library/zlib
+Requires: service/gnome/desktop-cache
+Requires: system/library/iconv/utf-8
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -201,8 +187,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gir-1.0
 %{_datadir}/icons/hicolor/scalable/apps/nautilus.svg
 %{_datadir}/nautilus
-%dir %attr (0755, root, other) %{_datadir}/pixmaps
-%{_datadir}/pixmaps/*
 %dir %attr (0755, root, root) %{_datadir}/mime
 %dir %attr (0755, root, root) %{_datadir}/mime/packages
 %{_datadir}/mime/packages/*
@@ -233,6 +217,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri May 11 2012 - brian.cameron@oracle.com
+- Fix packaging after bumping nautilus to 3.4.1.  Fix Requires.
 * Tue Jul 12 2011 - brian.cameron@oracle.com
 - Fix packaging for nautilus 3.1.3 and nautilus-open-terminal 0.19 releases.
 * Wed Nov 10 2010 - padraig.obriain@oracle.com

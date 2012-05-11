@@ -14,12 +14,12 @@
 Name:         gnome-terminal
 License:      GPL v2, LGPL v2
 Group:        System/GUI/GNOME
-Version:      3.2.1
+Version:      3.4.1.1
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      GNOME Terminal
-Source:       http://download.gnome.org/sources/%{name}/3.2/%{name}-%{version}.tar.bz2
+Source:       http://download.gnome.org/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 Source1:      %{name}-po-sun-%{po_sun_version}.tar.bz2
 %if %build_l10n
 Source2:                 l10n-configure.sh
@@ -132,6 +132,8 @@ done
 %{_mandir}/man1/*
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.1.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
 - Bump to 3.2.1.
 * Tue Oct 04 2011 - brian.cameron@oracle.com

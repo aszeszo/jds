@@ -1,6 +1,6 @@
 # spec file for package gnome-menus
 #
-# Copyright (c) 2005, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -12,12 +12,12 @@
 Name:			gnome-menus
 License:		GPLv2, LGPLv2
 Group:			System/GUI/GNOME
-Version:		3.2.0
+Version:		3.4.0
 Release:		1
 Distribution:		Java Desktop System
 Vendor:			Gnome Community
 Summary:		Implementation of Desktop Menu Specification for GNOME
-Source:                 http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.2/%{name}-%{version}.tar.bz2
+Source:                 http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 Source1:		%{name}-po-sun-%{po_sun_version}.tar.bz2
 %if %build_l10n
 Source2:                 l10n-configure.sh
@@ -112,8 +112,8 @@ intltoolize --force --copy --automake
 bash -x %SOURCE2 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS -I m4
-automake -a -c -f
+aclocal-1.11 $ACLOCAL_FLAGS -I m4
+automake-1.11 -a -c -f
 autoconf
 export LDFLAGS="%_ldflags -lsecdb -lsocket -lnsl -ltsol"
 ./configure --prefix=%{_prefix}			\
@@ -168,6 +168,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/gnome-menus/*
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 3.4.0.
 * Fri Sep 30 2011 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Thu Sep 08 2011 - brian.cameron@oracle.com

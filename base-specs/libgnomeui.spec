@@ -1,19 +1,18 @@
 #
 # spec file for package libgnomeui 
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
 %define owner padraig
 #
-
 %define OSR LFI#105446 (gnome Exec. summary):n/a
 
 Name:         libgnomeui 
 License:      LGPL v2
 Group:        System/Libraries/GNOME
-Version:      2.24.4
+Version:      2.24.5
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
@@ -22,6 +21,7 @@ Source:       http://ftp.gnome.org/pub/GNOME/sources/libgnomeui/2.24/libgnomeui-
 # date:2004-10-28 bugzilla:129668 owner:padraig type:bug
 Patch1:       libgnomeui-01-icon-a11y.diff
 Patch2:       libgnomeui-02-module-sections.diff
+Patch3:       libgnomeui-03-math.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Autoreqprov:  on
@@ -69,6 +69,7 @@ eg. About Dialog, Session Manager support
 %setup -q
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 %ifos linux
@@ -137,6 +138,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Thu May 03 2012 - brian.cameron@oracle.com
+- Bump to 2.24.5.
 * Wed Oct 27 2010 - brian.cameron@oracle.com
 - Bump to 2.24.4.
 * Mon Apr 12 2010 - christian.kelly@oracle.com

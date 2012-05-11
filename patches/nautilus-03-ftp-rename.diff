@@ -7,10 +7,10 @@
 +#include "nautilus-file-private.h"
 +#include "nautilus-file.h"
 +
- #include <eel/eel-gtk-extensions.h>
- #include <eel/eel-gtk-macros.h>
- #include <eel/eel-string.h>
-@@ -649,9 +652,17 @@
+ #include <eel/eel-vfs-extensions.h>
+ #include <gio/gio.h>
+ #include <glib/gi18n.h>
+@@ -646,9 +649,17 @@ nautilus_bookmark_uri_known_not_to_exist
  {
  	char *path_name;
  	gboolean exists;

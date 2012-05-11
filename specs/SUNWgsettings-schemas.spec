@@ -3,7 +3,7 @@
 #
 # includes module(s): gsettings-desktop-schemas
 #
-# Copyright (c) 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2011,2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -15,9 +15,9 @@ Name:                    SUNWgsettings-schemas
 IPS_package_name:        gnome/config/gsettings-schemas
 Meta(info.classification): %{classification_prefix}:Applications/Configuration and Preferences
 Summary:                 GSettings Desktop Schemas
-Version:                 3.2.0
+Version:                 3.4.1
 License:                 LGPL v2.1
-Source:			 http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.2/gsettings-desktop-schemas-%{version}.tar.bz2
+Source:			 http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.4/gsettings-desktop-schemas-%{version}.tar.xz
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
@@ -85,8 +85,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr (-, root, bin)
 %doc AUTHORS COPYING ChangeLog NEWS README
+%dir %attr (0755, root, bin) %{_libdir}
+%{_libdir}/girepository-1.0
 %dir %attr (0755, root, sys) %{_datadir}
 %{_datadir}/GConf
+%{_datadir}/gir-1.0
 %{_datadir}/glib-2.0
 %dir %attr (0755, root, other) %{_docdir}
 
@@ -105,6 +108,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri May 04 2012 - Brian Cameron <brian.cameron@oracle.com>
+- Bump to 3.2.1.
 * Fri Sep 30 2011 - Brian Cameron <brian.cameron@oracle.com>
 - Bump to 3.2.0.
 * Tue Sep 13 2011 - Brian Cameron <brian.cameron@oracle.com>

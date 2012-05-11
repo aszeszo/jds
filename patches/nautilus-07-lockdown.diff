@@ -42,15 +42,15 @@
  				  G_CALLBACK (async_data_preference_changed_callback),
 --- nautilus-3.1.3/libnautilus-private/nautilus-file.c.orig	2011-07-20 10:28:46.132094358 +0100
 +++ nautilus-3.1.3/libnautilus-private/nautilus-file.c	2011-07-20 10:32:12.597624478 +0100
-@@ -45,6 +45,7 @@
- #include "nautilus-thumbnails.h"
- #include "nautilus-vfs-file.h"
+@@ -47,6 +47,7 @@
+ #include "nautilus-file-undo-operations.h"
+ #include "nautilus-file-undo-manager.h"
  #include "nautilus-saved-search-file.h"
 +#include "nautilus-lockdown.h"
  #include <eel/eel-debug.h>
  #include <eel/eel-glib-extensions.h>
  #include <eel/eel-gtk-extensions.h>
-@@ -3319,6 +3320,7 @@ nautilus_file_should_show (NautilusFile 
+@@ -3335,6 +3336,7 @@ nautilus_file_should_show (NautilusFile 
  		return TRUE;
  	} else {
  		return (show_hidden || (!nautilus_file_is_hidden_file (file) && !is_file_hidden (file))) &&
@@ -539,7 +539,7 @@
 +#endif /* __NAUTILUS_LOCKDOWN_H__ */
 --- nautilus-3.1.3/src/nautilus-view.c.orig	2011-07-20 12:13:03.112995621 +0100
 +++ nautilus-3.1.3/src/nautilus-view.c	2011-07-20 12:16:08.990810763 +0100
-@@ -294,6 +294,7 @@
+@@ -296,6 +296,7 @@ static void     unschedule_display_of_pe
  static void     disconnect_model_handlers                      (NautilusView      *view);
  static void     metadata_for_directory_as_file_ready_callback  (NautilusFile         *file,
  								gpointer              callback_data);
@@ -547,15 +547,15 @@
  static void     metadata_for_files_in_directory_ready_callback (NautilusDirectory    *directory,
  								GList                *files,
  								gpointer              callback_data);
-@@ -2595,6 +2596,7 @@
+@@ -2562,6 +2563,7 @@ nautilus_view_init (NautilusView *view)
  	g_signal_connect_swapped (nautilus_window_state,
  				  "changed::" NAUTILUS_WINDOW_STATE_START_WITH_STATUS_BAR,
  				  G_CALLBACK (nautilus_view_display_selection_info), view);
-+	nautilus_lockdown_notify_add (lockdown_changed_callback, view);
- }
- 
- static void
-@@ -2707,6 +2709,7 @@
++        nautilus_lockdown_notify_add (lockdown_changed_callback, view);
+ 				  
+ 	manager = nautilus_file_undo_manager_get ();
+ 	g_signal_connect_object (manager, "undo-changed",
+@@ -2683,6 +2685,7 @@ nautilus_view_finalize (GObject *object)
  
  	g_signal_handlers_disconnect_by_func (gnome_lockdown_preferences,
  					      schedule_update_menus, view);
@@ -563,7 +563,7 @@
  
  	unschedule_pop_up_location_context_menu (view);
  	if (view->details->location_popup_event != NULL) {
-@@ -9139,6 +9142,15 @@
+@@ -9112,6 +9115,15 @@ metadata_for_files_in_directory_ready_ca
  	finish_loading_if_all_metadata_loaded (view);
  }
  
@@ -686,17 +686,17 @@
  {
 --- nautilus-3.1.3/src/nautilus-window.c.orig	2011-07-20 12:20:56.154446450 +0100
 +++ nautilus-3.1.3/src/nautilus-window.c	2011-07-20 12:23:54.684091436 +0100
-@@ -655,6 +655,7 @@
+@@ -617,6 +617,7 @@ nautilus_window_constructed (GObject *se
  
- 	slot = nautilus_window_open_slot (window->details->active_pane, 0);
+ 	slot = nautilus_window_pane_open_slot (window->details->active_pane, 0);
  	nautilus_window_set_active_slot (window, slot);
 +	nautilus_window_menus_lockdown_notify_add (window);
  }
  
  static void
-@@ -756,6 +757,8 @@
- 
- 	g_object_unref (window->details->ui_manager);
+@@ -726,6 +727,8 @@ nautilus_window_finalize (GObject *objec
+ 	/* nautilus_window_close() should have run */
+ 	g_assert (window->details->panes == NULL);
  
 +	nautilus_window_menus_lockdown_notify_remove(window);
 +
@@ -808,9 +808,9 @@
  #define NAUTILUS_PREFERENCES_SHOW_DESKTOP		   "show-desktop-icons"
 --- nautilus-3.1.3/src/nautilus-window-private.h.orig	2011-06-28 14:41:41.000000000 +0100
 +++ nautilus-3.1.3/src/nautilus-window-private.h	2011-07-20 13:22:02.919610157 +0100
-@@ -174,6 +174,8 @@ void               nautilus_window_remov
+@@ -159,6 +159,8 @@ void               nautilus_window_initi
+ void               nautilus_window_finalize_menus                        (NautilusWindow    *window);
  
- void               nautilus_window_remove_bookmarks_menu_items           (NautilusWindow    *window);
  void               nautilus_window_update_show_hide_menu_items           (NautilusWindow     *window);
 +void               nautilus_window_menus_lockdown_notify_add             (NautilusWindow    *window);
 +void               nautilus_window_menus_lockdown_notify_remove          (NautilusWindow    *window);

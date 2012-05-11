@@ -14,12 +14,12 @@
 Name:         metacity
 License:      GPL v2
 Group:        System/GUI/GNOME
-Version:      2.34.1
+Version:      2.34.3
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      GNOME Window Manager
-Source:       http://ftp.gnome.org/pub/GNOME/sources/metacity/2.34/metacity-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/metacity/2.34/metacity-%{version}.tar.xz
 Source1:      %{name}-po-sun-%{po_sun_version}.tar.bz2
 %if %build_l10n
 Source2:                 l10n-configure.sh
@@ -86,7 +86,7 @@ cd po-sun; make; cd ..
 %patch7 -p1
 %patch8 -p1
 #%patch9 -p1
-%patch10 -p1
+#%patch10 -p1
 %patch11 -p1
 #%patch12 -p1
 
@@ -166,6 +166,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 
 %changelog
+* Wed May 09 2012 - brian.cameron@oracle.com
+- Bump to 2.34.3.
 * Thu Jul 07 2011 - brian.cameron@oracle.com
 - Bump to 2.34.1.
 * Sat Apr 03 2010 - christian.kelly@sun.com

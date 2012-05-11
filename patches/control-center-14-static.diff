@@ -1,0 +1,38 @@
+--- gnome-control-center-3.4.1/panels/universal-access/zoom-options.c-orig	2012-05-09 17:55:05.361725894 -0500
++++ gnome-control-center-3.4.1/panels/universal-access/zoom-options.c	2012-05-09 17:55:24.481450368 -0500
+@@ -46,9 +46,9 @@ struct _ZoomOptionsPrivate
+ 
+ G_DEFINE_TYPE (ZoomOptions, zoom_options, G_TYPE_OBJECT);
+ 
+-inline void set_active (GtkWidget* toggle, gboolean sense);
+-inline gboolean get_active (GtkWidget* toggle);
+-inline void set_sensitive (GtkWidget *widget, gboolean sense);
++static inline void set_active (GtkWidget* toggle, gboolean sense);
++static inline gboolean get_active (GtkWidget* toggle);
++static inline void set_sensitive (GtkWidget *widget, gboolean sense);
+ 
+ static void set_enable_screen_part_ui (GtkWidget *widget, ZoomOptionsPrivate *priv);
+ static void mouse_tracking_notify_cb (GSettings *settings, const gchar *key, ZoomOptionsPrivate *priv);
+@@ -58,19 +58,19 @@ static void xhairs_length_add_marks (Gtk
+ 
+ /* Utilties to save on line length */
+ 
+-inline void
++static inline void
+ set_active (GtkWidget* toggle, gboolean sense)
+ {
+   gtk_toggle_button_set_active (GTK_TOGGLE_BUTTON (toggle), sense);
+ }
+ 
+-inline gboolean
++static inline gboolean
+ get_active (GtkWidget* toggle)
+ {
+     return gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (toggle));
+ }
+ 
+-inline void
++static inline void
+ set_sensitive (GtkWidget *widget, gboolean sense)
+ {
+     gtk_widget_set_sensitive (widget, sense);

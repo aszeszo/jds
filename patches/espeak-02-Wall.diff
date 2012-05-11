@@ -1,0 +1,20 @@
+--- espeak-1.44.05-source/src/Makefile-orig	2012-05-04 14:17:53.329647349 -0500
++++ espeak-1.44.05-source/src/Makefile	2012-05-04 14:18:07.373815352 -0500
+@@ -99,7 +99,7 @@ CXXFLAGS=-O2
+ all: $(BIN_NAME) $(LIB_NAME) $(STATIC_LIB_NAME) $(BIN2_NAME)
+ 
+ .cpp.o:
+-	$(CXX) $(CXXFLAGS) $(USE_AUDIO) -D PATH_ESPEAK_DATA=\"$(DATADIR)\" -Wall -pedantic -I. -c -fno-exceptions  $<
++	$(CXX) $(CXXFLAGS) $(USE_AUDIO) -D PATH_ESPEAK_DATA=\"$(DATADIR)\" -pedantic -I. -c -fno-exceptions  $<
+ 
+ $(BIN_NAME): $(OBJS1)
+ 	$(CXX) $(LDFLAGS) -o $@ $(OBJS1) $(LIBS1)
+@@ -110,7 +110,7 @@ $(BIN2_NAME): $(OBJS3) $(LIB_NAME)
+ 
+ 
+ x_%.o: %.cpp
+-	$(CXX) $(CXXFLAGS) $(USE_AUDIO) -D PATH_ESPEAK_DATA=\"$(DATADIR)\" -Wall -fpic -fvisibility=hidden -pedantic \
++	$(CXX) $(CXXFLAGS) $(USE_AUDIO) -D PATH_ESPEAK_DATA=\"$(DATADIR)\" -fpic -fvisibility=hidden -pedantic \
+ 	-I. -D LIBRARY -c -fno-exceptions  $<  -o x_$*.o
+ 
+ $(LIB_NAME): $(OBJS2)
