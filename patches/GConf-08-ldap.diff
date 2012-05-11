@@ -1,0 +1,11 @@
+--- gconf.orig/configure.in-orig	2012-05-08 19:32:07.936978879 -0500
++++ gconf/configure.in	2012-05-08 19:32:58.585230215 -0500
+@@ -314,7 +314,7 @@ LDAP_LIBS=
+ 
+ if test "x$with_openldap" != "xno"; then
+   AC_CHECK_HEADER(ldap.h, [
+-    AC_CHECK_LIB(ldap, ldap_init, AC_CHECK_LIB(lber, ber_free, [LDAP_LIBS="-lldap -llber"]))
++    AC_CHECK_LIB(ldap, ldap_init, AC_CHECK_LIB(lber, ber_free, [LDAP_LIBS="-lldap-2.4 -llber-2.4"]))
+   ])
+ 
+   if test "x$os_win32" != "xyes"; then

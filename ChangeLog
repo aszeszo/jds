@@ -21,6 +21,7 @@
 	* base-specs/libbonoboui.spec: Bump to 2.24.5.
 	* base-specs/GConf.spec: Bump to 3.2.5.
 	* patches/GConf-08-cleanup-libs.diff: Remove patch no longer needed.
+	* patches/GConf-08-ldap.diff: Add patch needed to build.
 	* specs/SUNWgnome-desktop-prefs.spec: Update packaging.
 	* base-specs/control-center.spec: Bump to 3.4.1
 	* base-specs/gnome-settings-daemon.spec: Bump to 3.4.1.
