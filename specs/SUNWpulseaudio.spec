@@ -41,6 +41,7 @@ BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
 BuildRequires: codec/speex
 BuildRequires: gnome/config/gconf
 BuildRequires: library/desktop/gtk2
+BuildRequires: library/fftw-3
 BuildRequires: library/gc
 BuildRequires: library/json-c
 BuildRequires: library/libtool/libltdl
@@ -87,8 +88,18 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
-%ifarch amd64 sparcv9
+# Use no higher than -xO2 on sparc.
+#
+%ifarch sparc
+export PA_OPTFLAGS64=`/usr/bin/echo %optflags64 | /usr/gnu/bin/sed -e 's/-xO./-xO2/'`
+export PA_OPTFLAGS=`/usr/bin/echo %optflags | /usr/gnu/bin/sed -e 's/-xO./-xO2/'`
+%else
+export PA_OPTFLAGS64=`/usr/bin/echo %optflags64`
+export PA_OPTFLAGS=`/usr/bin/echo %optflags`
+%endif
 
+%ifarch amd64 sparcv9
+export CFLAGS="$PA_OPTFLAGS64 -xc99 -I/usr/include/gc -KPIC"
 export SOLARIS_PULSE_ARGS="--disable-avahi"
 
 # Need to add -Wl,-z,now and -Wl,-z-nodelete and remove -Wl,-zignore for
@@ -105,6 +116,7 @@ export SOLARIS_PULSE_LDFLAGS="-Wl,-zcombreloc -Wl,-Bdirect -Wl,-z,now -Wl,-z,nod
 
 # Now build 32-bit.
 #
+export CFLAGS="$PA_OPTFLAGS -xc99 -I/usr/include/gc -KPIC"
 export SOLARIS_PULSE_ARGS=""
 
 %if %debug_build
@@ -213,6 +225,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri May 04 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Now set optimization -xO2 on sparc to fix CR #7166622.
 * Sun Oct 02 2011 - Brian Cameron  <brian.cameron@oracle.com>
 - Bump to 1.0.
 * Tue Sep 28 2011 - Brian Cameron  <brian.cameron@oracle.com>

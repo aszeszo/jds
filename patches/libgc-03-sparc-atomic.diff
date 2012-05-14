@@ -9,3 +9,14 @@
  endif
  
  # Include THREADDLLIBS here to ensure that the correct versions of
+--- gc-7.2alpha6/Makefile.am-orig	2012-05-02 07:45:17.396247578 +0800
++++ gc-7.2alpha6/Makefile.am	2012-05-02 07:46:40.232361840 +0800
+@@ -141,7 +144,7 @@ if COMPILER_XLC
+ else
+   ## We use -Wp,-P to strip #line directives.  Irix `as' chokes on
+   ## these.
+-  ASM_CPP_OPTIONS = -Wp,-P -x assembler-with-cpp
++  ASM_CPP_OPTIONS = -Wp,-P -x assembler-with-cpp -KPIC
+ endif
+ .s.lo:
+ 	$(LTCOMPILE) $(ASM_CPP_OPTIONS) -c $<

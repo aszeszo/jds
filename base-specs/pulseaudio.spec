@@ -66,7 +66,6 @@ fi
 # headers are delivered there on Solaris.
 #
 export CPPFLAGS="-xc99"
-export CFLAGS="%optflags -xc99 -I/usr/include/gc"
 export LDFLAGS="$SOLARIS_PULSE_LDFLAGS"
 
 autoreconf --force --install
@@ -104,6 +103,8 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Fri May 04 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Now set optimization -xO2 on sparc to fix CR #7166622.
 * Thu Oct 20 2011 - Brian Cameron <brian.cameron@oracle.com>
 - Bump to 1.1.
 * Thu Oct 06 2011 - Brian Cameron <brian.cameron@oracle.com>

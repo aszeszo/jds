@@ -1,3 +1,12 @@
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
+	WebRTI #362627.
+        CR #7166622 PulseAudio does not work on Sparc.
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec: Build with
+	  -xO2 on sparc and add -KPIC.
+	* base-specs/libgc.spec, patches/libgc-03-sparc-atomic.diff:  Build
+	  with -KPIC.
+
 2012-05-14 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 16 ====

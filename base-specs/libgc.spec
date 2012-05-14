@@ -65,7 +65,7 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-export CFLAGS="%optflags"
+export CFLAGS="%optflags -KPIC"
 export LDFLAGS="%{_ldflags}"
 
 libtoolize --force
