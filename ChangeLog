@@ -1,3 +1,8 @@
+2012-05-14  Abhijit Nath <abhijit.nath@oracle.com>
+
+	* Added patches/tiff-01-CVE-2012-1173.diff
+	* Modified specs/SUNWTiff.spec to fix CR#7158160
+
 2012-04-09  Leon Sha  <leon.sha@oracle.com>
 
 	CR#7157311 Bump to 11.2.202.223.
