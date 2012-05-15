@@ -1,5 +1,11 @@
 2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
 
+	* copyright/SUNWgnome-cd.copyright,
+	  copyright/SUNWgnome-terminal.copyright,
+	  copyright/SUNWgnome-media-player.copyright: Update.
+
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
 	* base-specs/pulseaudio.spec, patches/pulseaudio-07-sada.diff,
 	  patches/pulseaudio-10-endian.diff: Fix for CR #7168796.  Make
 	  the SADA plugin work better with Sun Ray, and ensure that
