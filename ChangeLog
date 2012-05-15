@@ -1,3 +1,11 @@
+2012-05-15  Michal Pryc <Michal.Pryc@Oracle.Com>
+
+        RTI: 362734
+        CR: 7165942
+        * base-specs/gedit.spec: add new patch
+        * patches/gedit-10-fix-socket-exploit.diff: new patch to
+          move gedit socket inside per user folder.
+
 2012-05-15  Rohini S  <rohini.s@oracle.com>
 
 	* patches/gdm-05-default.diff: Fixes CR 7157604

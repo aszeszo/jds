@@ -1,7 +1,7 @@
 #
 # spec file for package gedit
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -41,6 +41,8 @@ Patch7:         gedit-07-fix-doc.diff
 # date:2011-06-01 owner:gheet  type:bug freedesktop:33390
 Patch8:         gedit-08-link-ice.diff
 Patch9:         gedit-09-fix-l10n-doc.diff
+# date: 2012-05-09 owner:migi	type:security bug bugster:7165942
+Patch10:	gedit-10-fix-socket-exploit.diff
 URL:            http://www.gnome.org
 BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 Docdir:         %{_docdir}/doc
@@ -97,6 +99,7 @@ cd po-sun; make; cd ..
 %patch7 -p1
 %patch8 -p1
 %patch9 -p1
+%patch10 -p1
 
 %build
 %ifos linux
@@ -180,6 +183,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Wed May 9 2012 - Michal.Pryc@Oracle.Com
+- Add patch fixes security issue to fix CR #7165942
 * Thu May 12 2011 - padraig.obriain@oracle.com
 - Add patch -fix-doc to fix CR #7042567
 * Wed Oct 20 2010 - brian.cameron@oracle.com
