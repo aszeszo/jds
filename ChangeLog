@@ -1,3 +1,7 @@
+2012-05-15  Rohini S  <rohini.s@oracle.com>
+
+	* patches/gdm-05-default.diff: Fixes CR 7157604
+
 2012-05-15  Jerry Guo  <yanjing.guo@oracle.com>
 
 	WebRTI #362880

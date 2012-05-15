@@ -87,7 +87,7 @@
  static void
 --- gdm-2.30.1/daemon/gdm-session-worker.c-orig	2010-04-26 14:52:34.008619408 -0500
 +++ gdm-2.30.1/daemon/gdm-session-worker.c	2010-04-26 14:52:49.616650736 -0500
-@@ -1443,9 +1443,28 @@ gdm_session_worker_authorize_user (GdmSe
+@@ -1443,9 +1443,29 @@ gdm_session_worker_authorize_user (GdmSe
  {
          int error_code;
          int authentication_flags;
@@ -108,6 +108,7 @@
 +                                error_code = PAM_PERM_DENIED;
 +                 
 +                                g_debug ("The system administrator is not allowed to log in remotely");
++                                g_set_error (error, GDM_SESSION_WORKER_ERROR, GDM_SESSION_WORKER_ERROR_AUTHORIZING, "%s", pam_strerror (worker->priv->pam_handle, error_code));
 +                                goto out;
 +                        }
 +                }
@@ -116,7 +117,7 @@
          authentication_flags = 0;
  
          if (password_is_required) {
-@@ -1648,6 +1667,7 @@ gdm_session_worker_accredit_user (GdmSes
+@@ -1648,6 +1668,7 @@ gdm_session_worker_accredit_user (GdmSes
          gid_t    gid;
          char    *shell;
          char    *home;
@@ -124,7 +125,7 @@
          int      error_code;
  
          ret = FALSE;
-@@ -1687,17 +1707,17 @@ gdm_session_worker_accredit_user (GdmSes
+@@ -1687,17 +1708,17 @@ gdm_session_worker_accredit_user (GdmSes
                                                                  home,
                                                                  shell);
  
@@ -153,7 +154,7 @@
  
          if (! _change_user (worker, uid, gid)) {
                  g_debug ("GdmSessionWorker: Unable to change to user");
-@@ -2315,6 +2335,14 @@ do_setup (GdmSessionWorker *worker)
+@@ -2315,6 +2336,14 @@ do_setup (GdmSessionWorker *worker)
  {
          GError  *error;
          gboolean res;
