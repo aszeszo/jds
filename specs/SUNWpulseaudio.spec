@@ -235,6 +235,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Tue May 15 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Fix Requires and l10n IPS package name.
 * Fri May 04 2012 - Brian Cameron  <brian.cameron@oracle.com>
 - Now set optimization -xO2 on sparc to fix CR #7166622.
 * Thu May 03 2012 - Brian Cameron  <brian.cameron@oracle.com>
