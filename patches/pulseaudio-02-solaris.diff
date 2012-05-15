@@ -52,15 +52,6 @@
  ])
 --- pulseaudio-0.99.2/configure.ac-orig	2011-09-19 11:46:56.537031090 -0500
 +++ pulseaudio-0.99.2/configure.ac	2011-09-19 11:45:16.405113983 -0500
-@@ -26,7 +26,7 @@ AC_INIT([pulseaudio],[m4_esyscmd(./git-v
- AC_CONFIG_SRCDIR([src/daemon/main.c])
- AC_CONFIG_MACRO_DIR([m4])
- AC_CONFIG_HEADERS([config.h])
--AM_INIT_AUTOMAKE([foreign 1.11 -Wall -Wno-portability silent-rules dist-xz tar-ustar])
-+AM_INIT_AUTOMAKE([foreign 1.10 -Wall -Wno-portability tar-ustar])
- 
- m4_define(pa_major, `echo $VERSION | cut -d. -f1 | cut -d- -f1`)
- m4_define(pa_minor, `echo $VERSION | cut -d. -f2 | cut -d- -f1`)
 @@ -64,7 +64,7 @@ AS_IF([test "x$STOW" = "xyes" && test -d
      ac_default_prefix="/usr/local/stow/${PACKAGE_NAME}-${PACKAGE_VERSION}"
  ])

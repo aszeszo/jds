@@ -68,6 +68,8 @@ fi
 # Need to specify /usr/include/gc as an include directory since the atomic_ops
 # headers are delivered there on Solaris.
 #
+export ACLOCAL=aclocal-1.11
+export AUTOMAKE=automake-1.11
 export CPPFLAGS="-xc99"
 export LDFLAGS="$SOLARIS_PULSE_LDFLAGS"
 

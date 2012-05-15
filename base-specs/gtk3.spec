@@ -59,14 +59,12 @@ Patch14:      gtk+-14-handle-copies.diff
 Patch16:      gtk+-16-remove-papi.diff
 # date:2012-03-27 owner:padraig type:bug bugster:7149817
 Patch17:      gtk+-17-unregister-callback.diff
-# date:2010-07-16 owner:yippi type:branding
-Patch30:      gtk3+-01-libtool.diff
 # date:2010-07-16 owner:yippi type:bug bugzilla:654720
-Patch31:      gtk3+-02-configure.diff
+Patch30:      gtk3+-01-configure.diff
 # This just worksaround a compile issue and should be fixed properly.
-Patch32:      gtk3+-03-disable-papi.diff
+Patch31:      gtk3+-02-disable-papi.diff
 # date:2012-05-02 owner:yippi type:bug
-Patch33:      gtk3+-04-compile.diff
+Patch32:      gtk3+-03-compile.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -155,7 +153,6 @@ done
 %patch30 -p1
 %patch31 -p1
 %patch32 -p1
-%patch33 -p1
 
 %build
 %ifos linux
@@ -216,9 +213,7 @@ cp %SOURCE2 $RPM_BUILD_ROOT/etc/profile.d
 install -d $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES
 install --mode=0644 $RPM_BUILD_ROOT%{_datadir}/locale/zh_TW/LC_MESSAGES/*.mo $RPM_BUILD_ROOT%{_datadir}/locale/zh_HK/LC_MESSAGES/
 
-rm $RPM_BUILD_ROOT%{_libdir}/gtk-3.0/*/printbackends/*.a
 rm $RPM_BUILD_ROOT%{_libdir}/gtk-3.0/*/printbackends/*.la
-rm $RPM_BUILD_ROOT%{_libdir}/*.a
 rm $RPM_BUILD_ROOT%{_libdir}/*.la
 
 %clean

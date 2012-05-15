@@ -1,5 +1,13 @@
 2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
 
+	* base-specs/gtk3.spec, patches/gtk3+-01-libtool.diff: Remove patch no
+	  longer needed.
+	* base-specs/pulseaudio.spec, patches/pulseaudio-02-solaris.diff: 
+	  patches/libgc-02-rename-libbgc.diff,
+	  patches/libcanberra-01-solaris.diff: build with latest autotools.
+
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
 	* copyright/SUNWgnome-cd.copyright,
 	  copyright/SUNWgnome-terminal.copyright,
 	  copyright/SUNWgnome-media-player.copyright: Update.
