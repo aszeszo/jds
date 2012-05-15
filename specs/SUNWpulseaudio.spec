@@ -21,8 +21,6 @@
 %include base.inc
 %use pulseaudio = pulseaudio.spec
 
-%define SFElibsndfile   %(/usr/bin/pkginfo -q SFElibsndfile && echo 1 || echo 0)
-
 Name:                      SUNWpulseaudio
 IPS_package_name:          library/audio/pulseaudio
 Meta(info.classification): %{classification_prefix}:System/Multimedia Libraries
