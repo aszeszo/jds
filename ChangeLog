@@ -1,5 +1,9 @@
 2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
 
+	* specs/SUNWgnome-cd.spec: Fix Requires/BuildRequires.
+
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
 	* base-specs/gtk3.spec, patches/gtk3+-01-libtool.diff: Remove patch no
 	  longer needed.
 	* base-specs/pulseaudio.spec, patches/pulseaudio-02-solaris.diff: 
