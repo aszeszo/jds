@@ -1,3 +1,10 @@
+2012-05-15  Jerry Guo  <yanjing.guo@oracle.com>
+
+	WebRTI #362880
+        CR # 7168328 
+	* base-specs/pidgin.spec:
+	* patches/pidgin-01-gnome-keyring.diff:
+
 2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
 
 	WebRTI #362627.
