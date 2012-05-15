@@ -1,3 +1,13 @@
+2012-05-15  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362828.
+	CR#7167896, 7167897, 7167788.
+	* copyright/SUNWcheese.copyright:
+	* copyright/SUNWgnome-img-viewer.copyright:
+	* specs/SUNWcheese.spec:
+	* specs/SUNWgnome-img-viewer.spec:
+	* specs/SUNWos-welcome.spec:
+
 2012-05-15  Michal Pryc <Michal.Pryc@Oracle.Com>
 
         RTI: 362734

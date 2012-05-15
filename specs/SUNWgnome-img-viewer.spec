@@ -7,7 +7,7 @@
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner jouby 
+%define owner gheet 
 #
 %include Solaris.inc
 
