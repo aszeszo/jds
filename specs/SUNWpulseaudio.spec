@@ -38,17 +38,22 @@ BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
+# Needed to build tests.
+BuildRequires: library/desktop/gtk2
+
+# Optional dependencies
+BuildRequires: system/library/libdbus-glib
+BuildRequires: library/fftw-3
+
 BuildRequires: codec/speex
 BuildRequires: gnome/config/gconf
-BuildRequires: library/desktop/gtk2
-BuildRequires: library/fftw-3
 BuildRequires: library/gc
 BuildRequires: library/json-c
 BuildRequires: library/libtool/libltdl
 BuildRequires: library/libsndfile
 BuildRequires: library/security/openssl
-BuildRequires: system/library/libdbus-glib
 BuildRequires: system/network/avahi
+Requires:      library/security/openssl
 
 %package devel
 Summary:                 %{summary} - development files
