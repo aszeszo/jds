@@ -1,3 +1,32 @@
+2012-05-16  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362961.
+	7168556 eog-plugins needs TPNO and license file modification 
+	7168558 evince needs TPNO and license file modification 
+	7168563 gtkmm needs TPNO and license file modification
+	7168562 gnome-vfs needs TPNO and license file modification 
+	7168561 gnome-nettool needs TPNO and license file modification 
+	7168559 glibmm needs TPNO and license file modification 
+	7168564 gvfs needs TPNO and license file modification 
+	7168570 ORBit2 needs TPNO and license file modification 
+	7168569 libsigc++ needs TPNO and license file modification
+	7168568 libIDL needs TPNO and license file modification
+	* copyright/SUNWglibmm.copyright:
+	* copyright/SUNWgnome-component.copyright:
+	* copyright/SUNWgnome-eog-plugins.copyright:
+	* copyright/SUNWgnome-gvfs.copyright:
+	* copyright/SUNWgnome-nettool.copyright:
+	* copyright/SUNWgnome-pdf-viewer.copyright:
+	* copyright/SUNWgnome-vfs.copyright:
+	* copyright/SUNWgtkmm.copyright:
+	* copyright/SUNWsigcpp.copyright:
+	* specs/SUNWglibmm.spec:
+	* specs/SUNWgnome-component.spec:
+	* specs/SUNWgnome-eog-plugins.spec:
+	* specs/SUNWgnome-nettool.spec:
+	* specs/SUNWgtkmm.spec:
+	* specs/SUNWsigcpp.spec:
+
 2012-05-15  Ghee Teo  <ghee.teo@oracle.com>
 
 	RTI#362828.

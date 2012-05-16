@@ -4,7 +4,8 @@
 #
 # includes module(s): gtkmm
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,20 +27,20 @@ SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWglibmm
-Requires: SUNWcairomm
-Requires: SUNWlibms
-Requires: SUNWsigcpp
-Requires: SUNWlibC
-Requires: SUNWpangomm
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWsigcpp-devel
-BuildRequires: SUNWglibmm-devel
-BuildRequires: SUNWcairomm-devel
-BuildRequires: SUNWpangomm-devel
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWgtk-doc
+Requires: library/desktop/gtk2
+Requires: library/c++/glibmm
+Requires: library/desktop/c++/cairomm
+Requires: system/library/math
+Requires: library/c++/sigcpp
+Requires: system/library/c++-runtime
+Requires: library/desktop/c++/pangomm
+BuildRequires: library/desktop/gtk2
+BuildRequires: library/c++/sigcpp
+BuildRequires: library/c++/glibmm
+BuildRequires: library/desktop/c++/cairomm
+BuildRequires: library/desktop/c++/pangomm
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: developer/documentation-tool/gtk-doc
 BuildRequires: SUNWmm-common
 
 %package devel
@@ -47,10 +48,9 @@ Summary:                 gtkmm - C++ Wrapper for the Gtk+ Library - developer fi
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: %name
-Requires: SUNWgtk2-devel
-Requires: SUNWglibmm-devel
-Requires: SUNWsigcpp-devel
+Requires: library/desktop/gtk2
+Requires: library/c++/glibmm
+Requires: library/c++/sigcpp
 
 %prep
 rm -rf %name-%version
