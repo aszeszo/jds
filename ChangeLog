@@ -1,3 +1,8 @@
+2012-05-17  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fix build failure for RTI#362961.
+	* specs/SUNWgnome-gvfs.spec: serivce/hal has been renamed to system/hal.
+
 2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
 
 	RTI #362943
