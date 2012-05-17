@@ -1,6 +1,7 @@
-2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+2012-05-17  Brian Cameron  <brian.cameron@oracle.com>
 
-	* specs/SUNWgnome-cd.spec: Fix Requires/BuildRequires.
+	* patches/pulseaudio-06-configure.diff: Do not enable the gconf PA
+	  plugin by default.
 
 2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
 
