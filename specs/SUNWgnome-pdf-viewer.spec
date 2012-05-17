@@ -89,7 +89,6 @@ gzcat %SOURCE0 | tar xf -
 # now using.  The libtool script uses the echo and RM variables but does not
 # define them, so setting them here addresses this.
 export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
 
 export PKG_CONFIG_PATH=%{_pkg_config_path}
 export LDFLAGS="%_ldflags -L/usr/X11/lib -R /usr/X11/lib -L/usr/sfw/lib -R/usr/sfw/lib -lX11 -lm"
@@ -113,7 +112,6 @@ export PKG_CONFIG_PATH=../poppler-%{poppler.version}:../libspectre-%{libspectre.
 # now using.  The libtool script uses the echo and RM variables but does not
 # define them, so setting them here addresses this.
 export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
 
 rm -rf $RPM_BUILD_ROOT
 %libspectre.install -d %name-%version
@@ -125,10 +123,11 @@ cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
 # Remove *.a and *.la
-rm $RPM_BUILD_ROOT%{_libdir}/*.a
-rm $RPM_BUILD_ROOT%{_libdir}/*.la
-rm $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.a
-rm $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.la
+rm -f $RPM_BUILD_ROOT%{_libdir}/*.
+rm -f $RPM_BUILD_ROOT%{_libdir}/*.a
+rm -f $RPM_BUILD_ROOT%{_libdir}/*.la
+rm -f $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.a
+rm -f $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.la
 
 # Remove unneeded scrollkeeper dirs
 rm -rf $RPM_BUILD_ROOT%{_localstatedir}

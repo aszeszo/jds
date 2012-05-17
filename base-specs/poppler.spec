@@ -159,9 +159,7 @@ make -j $CPUS
 
 %install
 make DESTDIR=$RPM_BUILD_ROOT GTKDOC_REBASE=/usr/bin/gtkdoc-rebase install
-rm $RPM_BUILD_ROOT%{_libdir}/*.a
-rm $RPM_BUILD_ROOT%{_libdir}/*.la
-rm $RPM_BUILD_ROOT%{_bindir}/pdftoabw
+rm -f $RPM_BUILD_ROOT%{_bindir}/pdftoabw
 
 %clean
 rm -rf $RPM_BUILD_ROOT
