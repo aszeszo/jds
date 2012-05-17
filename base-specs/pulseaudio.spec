@@ -39,6 +39,8 @@ Patch7:                  pulseaudio-07-sada.diff
 Patch8:                  pulseaudio-08-oss4.diff
 # date:2011-10-06 owner:yippi type:feature
 Patch9:                  pulseaudio-09-amd64.diff
+# date:2012-05-14 owner:yippi type:bug
+Patch10:                 pulseaudio-10-endian.diff
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %prep
@@ -52,6 +54,7 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %patch7 -p1
 %patch8 -p1
 %patch9 -p1
+%patch10 -p1
 
 perl -pi -e 's,/bin/sh,/bin/ksh,' src/daemon/esdcompat.in
 
@@ -103,6 +106,8 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Tue May 15 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Add patch pulseaudio-10-endian.diff.  Fix CR #7168796.
 * Fri May 04 2012 - Brian Cameron  <brian.cameron@oracle.com>
 - Now set optimization -xO2 on sparc to fix CR #7166622.
 * Thu Oct 20 2011 - Brian Cameron <brian.cameron@oracle.com>

@@ -1,3 +1,12 @@
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
+	RTI #362943
+	CR 7168796 PulseAudio improvements
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec,
+	  patches/pulseaudio-07-sada.diff, patches/pulseaudio-10-endian.diff:
+	  Add patch to fix the PulseAudio SunAudio plugin and to ensure that
+	  ENDIAN defines are properly set for building on Sparc.
+
 2012-05-16  Ghee Teo  <ghee.teo@oracle.com>
 
 	RTI#362961.

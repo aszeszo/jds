@@ -21,8 +21,6 @@
 %include base.inc
 %use pulseaudio = pulseaudio.spec
 
-%define SFElibsndfile   %(/usr/bin/pkginfo -q SFElibsndfile && echo 1 || echo 0)
-
 Name:                      SUNWpulseaudio
 IPS_package_name:          library/audio/pulseaudio
 Meta(info.classification): %{classification_prefix}:System/Multimedia Libraries
@@ -38,17 +36,22 @@ BuildRoot:                 %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 
+# Needed to build tests.
+BuildRequires: library/desktop/gtk2
+
+# Optional dependencies
+BuildRequires: system/library/libdbus-glib
+BuildRequires: library/fftw-3
+
 BuildRequires: codec/speex
 BuildRequires: gnome/config/gconf
-BuildRequires: library/desktop/gtk2
-BuildRequires: library/fftw-3
 BuildRequires: library/gc
 BuildRequires: library/json-c
 BuildRequires: library/libtool/libltdl
 BuildRequires: library/libsndfile
 BuildRequires: library/security/openssl
-BuildRequires: system/library/libdbus-glib
 BuildRequires: system/network/avahi
+Requires:      library/security/openssl
 
 %package devel
 Summary:                 %{summary} - development files
@@ -65,7 +68,7 @@ SUNW_BaseDir:            /
 
 %if %build_l10n
 %package l10n
-IPS_package_name:        system/display-manager/gdm/l10n
+IPS_package_name:        library/audio/pulseaudio/l10n
 Summary:                 %{summary} - l10n files
 SUNW_BaseDir(relocate_from:%{_prefix}): %{_gnome_il10n_basedir}
 %include default-depend.inc
@@ -225,6 +228,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Tue May 15 2012 - Brian Cameron  <brian.cameron@oracle.com>
+- Fix Requires and l10n IPS package name.
 * Fri May 04 2012 - Brian Cameron  <brian.cameron@oracle.com>
 - Now set optimization -xO2 on sparc to fix CR #7166622.
 * Sun Oct 02 2011 - Brian Cameron  <brian.cameron@oracle.com>
