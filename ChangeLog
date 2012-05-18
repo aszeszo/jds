@@ -12,6 +12,17 @@
 
 2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
 
+	RTI #362942
+	CR 7168801 Add license file for GDM, rhythmbox, sound-juicer, totem,
+	and vte
+	* copyright/SUNWgnome-cd.copyright,
+	  copyright/SUNWgnome-terminal.copyright,
+	  copyright/SUNWgnome-media-player.copyright,
+	  copyright/SUNWgnome-display-mgr.copyright: Update.
+	* specs/SUNWgnome-cd.spec: Fix Requires/BuildRequires.
+
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
 	RTI #362943
 	CR 7168796 PulseAudio improvements
 	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec,
