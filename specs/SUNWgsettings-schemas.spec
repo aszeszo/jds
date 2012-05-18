@@ -15,7 +15,7 @@ Name:                    SUNWgsettings-schemas
 IPS_package_name:        gnome/config/gsettings-schemas
 Meta(info.classification): %{classification_prefix}:Applications/Configuration and Preferences
 Summary:                 GSettings Desktop Schemas
-Version:                 3.4.1
+Version:                 3.4.2
 License:                 LGPL v2.1
 Source:			 http://ftp.gnome.org/pub/GNOME/sources/gsettings-desktop-schemas/3.4/gsettings-desktop-schemas-%{version}.tar.xz
 SUNW_BaseDir:            %{_basedir}
@@ -108,8 +108,10 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu May 17 2012 - Brian Cameron <brian.cameron@oracle.com>
+- Bump to 3.4.2.
 * Fri May 04 2012 - Brian Cameron <brian.cameron@oracle.com>
-- Bump to 3.2.1.
+- Bump to 3.4.1.
 * Fri Sep 30 2011 - Brian Cameron <brian.cameron@oracle.com>
 - Bump to 3.2.0.
 * Tue Sep 13 2011 - Brian Cameron <brian.cameron@oracle.com>

@@ -14,12 +14,12 @@ Name:			gnome-common
 License:		GPL
 Group:			System/Libraries
 BuildArchitectures:	noarch
-Version:		2.34.0
+Version:		3.4.0.1
 Release:		1
 Distribution:		Java Desktop System
 Vendor:			Gnome Community
 Summary:		Multiply used files used by the GNOME 2.0 platform
-Source:			http://ftp.gnome.org/pub/GNOME/sources/%{name}/2.34/%{name}-%{version}.tar.bz2
+Source:			http://ftp.gnome.org/pub/GNOME/sources/%{name}/3.4/%{name}-%{version}.tar.xz
 URL:			http://www.gnome.org
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 Docdir:			%{_defaultdocdir}/%{name}
@@ -61,6 +61,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/aclocal
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 3.4.0.1.
 * Mon Apr 30 2012 - brian.cameron@oracle.com
 - Bump to 2.34.0.
 * Wed Sep 23 2009 - dave.lin@sun.com

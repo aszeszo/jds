@@ -14,7 +14,7 @@
 Name:		gnome-panel
 License:	GPLv2,LGPLv2
 Group:		System/GUI/GNOME
-Version:	3.4.1
+Version:	3.4.2.1
 Release:	1
 Distribution:	Java Desktop System
 Vendor:		Gnome Community
@@ -285,6 +285,8 @@ gconftool-2 --direct --config-source=$GCONF_CONFIG_SOURCE --load %{_sysconfdir}/
 %{_mandir}/man3/*
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 3.4.2.1.
 * Wed May 09 2012 - brian.cameron@oracle.com
 - Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com

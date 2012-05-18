@@ -13,7 +13,7 @@
 Name:			pygobject
 License:		LGPL	
 Group:			System/Library
-Version:		3.2.0
+Version:		3.2.2
 Release:		1
 Distribution:		Java Desktop System
 Vendor:			Gnome Community
@@ -97,6 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/pygobject/*
 
 %changelog -n pygobject
+* Wed May 17 2012 - brian.cameron@oracle.com
+- Bump to 3.2.2.
 * Mon Apr 30 2012 - brian.cameron@oracle.com
 - Bump to 3.2.0.
 * Mon Aug 15 2011 - lee.yuan@oracle.com

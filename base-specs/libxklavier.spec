@@ -11,12 +11,12 @@
 Name:		libxklavier
 License:	LGPLv2+
 Group:		Development/Libraries
-Version:	5.2
+Version:	5.2.1
 Release:	1
 Vendor:		http://www.freedesktop.org/
 Summary:	libXklavier library
 Url:		http://gswitchit.sourceforge.net/
-Source:		http://download.gnome.org/sources/%{name}/%{version}/%{name}-%{version}.tar.xz
+Source:		http://download.gnome.org/sources/%{name}/5.2/%{name}-%{version}.tar.xz
 # date:2010-08-02 owner:ja208388 type:bug
 Patch1:		libxklavier-01-compile-makefile.diff
 Buildroot:	%{_tmppath}/%{name}-%{version}-%{release}-root
@@ -90,6 +90,8 @@ rm $RPM_BUILD_ROOT%{_libdir}/*.a $RPM_BUILD_ROOT%{_libdir}/*.la
 %{_datadir}/gtk-doc/html/libxklavier
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 5.2.1.
 * Wed May 02 2012 - brian.cameron@oracle.com
 - Bump to 5.2.
 * Wed Jul 06 2011 - brian.cameron@oracle.com

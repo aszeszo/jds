@@ -16,7 +16,7 @@ IPS_package_name:        gnome/accessibility/at-spi2-core
 Meta(info.classification): %{classification_prefix}:Applications/Universal Access
 License:                 LGPL v2, MIT/X
 Summary:                 Accessibility implementation on D-Bus
-Version:                 2.4.1
+Version:                 2.4.2
 Source:	                 http://ftp.gnome.org/pub/GNOME/sources/at-spi2-core/2.4/at-spi2-core-%{version}.tar.xz
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
@@ -105,6 +105,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/xdg/autostart/at-spi-dbus-bus.desktop
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 2.4.2.
 * Thu May 03 2012 - brian.cameron@oracle.com
 - Bump to 2.4.1.
 * Mon Oct 24 2011 - brian.cameron@oracle.com

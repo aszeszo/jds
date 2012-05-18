@@ -15,7 +15,7 @@ Name:                    SUNWgnome-themes-standard
 IPS_package_name:        gnome/theme/gnome-icon-theme-standard
 Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Theming
 Summary:                 Standard GNOME themes
-Version:                 3.4.1
+Version:                 3.4.2
 License:                 LGPL v2.1
 Source:			 http://ftp.gnome.org/pub/GNOME/sources/gnome-themes-standard/3.4/gnome-themes-standard-%{version}.tar.xz
 # date:2011-07-14 owner:yippi type:bug bugzilla:654714
@@ -117,6 +117,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 3.4.2.
 * Fri May 04 2012 - brian.cameron@oracle.com
 - Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com

@@ -20,7 +20,7 @@ Name:		SUNWespeak
 IPS_package_name: library/speech/espeak
 Meta(info.classification): %{classification_prefix}:Applications/Universal Access
 Summary:	eSpeak - compact open source software speech synthesizer
-Version:	1.46.0.5
+Version:	1.46.0.2
 License:	GPL v3
 Source:		%{src_url}/%{src_name}-%{tarball_version}-source.zip
 Source1:        %{name}-manpages-0.1.tar.gz

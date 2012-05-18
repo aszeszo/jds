@@ -14,7 +14,7 @@
 Name:         gtk3
 License:      LGPL v2
 Group:        System/Libraries
-Version:      3.4.1
+Version:      3.4.3
 Release:      1
 Distribution: Java Desktop System
 Vendor:	      Gnome Community
@@ -65,6 +65,8 @@ Patch30:      gtk3+-01-configure.diff
 Patch31:      gtk3+-02-disable-papi.diff
 # date:2012-05-02 owner:yippi type:bug
 Patch32:      gtk3+-03-compile.diff
+# date:2012-05-17 owner:yippi type:bug
+Patch33:      gtk3+-04-isinf.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -146,13 +148,14 @@ done
 %patch10 -p1
 #%patch11 -p1
 #%patch12 -p1
-%patch13 -p1
+#%patch13 -p1
 #%patch14 -p1
 %patch16 -p1
 %patch17 -p1
 %patch30 -p1
 %patch31 -p1
 %patch32 -p1
+%patch33 -p1
 
 %build
 %ifos linux
@@ -260,6 +263,8 @@ fi
 %{_mandir}/man3/*.gz
 
 %changelog
+* Wed May 17 2012 - brian.cameron@oracle.com
+- Bump to 3.4.3.
 * Wed May 02 2012 - brian.cameron@oracle.com
 - Bump to 3.4.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com

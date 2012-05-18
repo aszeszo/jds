@@ -14,7 +14,7 @@
 Name:         gnome-desktop
 License:      LGPLv2
 Group:        System/Libraries/GNOME
-Version:      3.4.1
+Version:      3.4.2
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
@@ -189,6 +189,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libgnome-desktop-2.so
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 3.4.2.
 * Wed May 09 2012 - brian.cameron@oracle.com
 - Bump to 3.4.1.
 * Fri Sep 30 2011 - brian.cameron@oracle.com

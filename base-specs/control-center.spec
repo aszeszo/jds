@@ -15,7 +15,7 @@
 Name:         gnome-control-center
 License:      GPL
 Group:        System/GUI/GNOME
-Version:      3.4.1
+Version:      3.4.2
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
@@ -238,6 +238,8 @@ done
 %{_libdir}/*.so
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 3.4.2.
 * Wed May 09 2012 - brian.cameron@oracle.com
 - Bump to 3.4.1. 
 * Wed Oct 19 2011 - brian.cameron@oracle.com

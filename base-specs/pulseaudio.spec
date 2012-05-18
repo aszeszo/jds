@@ -109,7 +109,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %changelog
 * Tue May 15 2012 - Brian Cameron  <brian.cameron@oracle.com>
-- Add patch pulseaudio-10-endian.diff.
+- Add patch pulseaudio-10-endian.diff.  Fix CR #7168796.
 * Fri May 04 2012 - Brian Cameron  <brian.cameron@oracle.com>
 - Now set optimization -xO2 on sparc to fix CR #7166622.
 * Thu Oct 20 2011 - Brian Cameron <brian.cameron@oracle.com>

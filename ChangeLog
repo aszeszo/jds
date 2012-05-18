@@ -1,3 +1,22 @@
+2012-05-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWat-spi2-core.spec: Bump to 2.4.2.
+	* base-specs/pygobject.spec: Bump to 3.2.2.
+	* base-specs/gnome-common.spec: Bump to 3.4.0.1.
+	* base-specs/gnome-desktop.spec, base-specs/control-center.spec,
+	  base-specs/nautilus.spec, base-specs/gnome-menus.spec,
+	  base-specs/gnome-settings-daemon.spec, base-specs/gnome-session.spec,
+	  base-specs/libwnck.spec, specs/SUNWgnome-themes-standard.spec,
+	  specs/SUNWgsettings-schemas.spec
+	  Bump to 3.4.2.
+	* base-specs/gnome-panel.spec: Bump to 3.4.2.1.
+	* base-specs/gtk3.spec: Bump to 3.4.3.
+	* patches/gtk3+-04-isinf.diff: Add patch needed to build.
+	* base-specs/libxklavier.spec: Bump to 5.2.1.
+	* base-specs/glib2.spec; Bump to 2.32.3.
+	* specs/SUNWespeak.spec: Correct Version.
+	* base-specs/pulseaudio.spec: Add comment.
+
 2012-05-17  Jeff Cai  <jeff.cai@oracle.com>
 
         Add a script for transforming svr4 package names to ips
@@ -76,7 +95,7 @@
 	* base-specs/libgweather.spec: Bump to 3.4.1.
 	* base-specs/libgnome.spec: Bump to 2.32.1.
 	* base-specs/libgnomekbd.spec: Bump to 3.4.0.2.
-	* patches/libgnomekbd-01-compile-makefile.diff: Reowkr.
+	* patches/libgnomekbd-01-compile-makefile.diff: Rework.
 	* base-specs/libnotify.spec: Bump to 0.7.5.
 	* specs/SUNWgnome-panel.spec, specs/SUNWgnome-applets.spec:
 	  Update packaging, fix Requires/BuildRequires.
@@ -112,44 +131,9 @@
 	* patches/vte-01-libtool.diff: Remove patch no longer needed.
 	* patches/vte-01-configure.diff: Rework.
 	* base-specs/gnome-terminal.spec: Bump to 3.4.1.1.
-	* specs/SUNWespeak.spec: Bump to 1.46.0.5
+	* specs/SUNWespeak.spec: Bump to 1.46.02.
 	* patches/espeak-01-makefile.diff, espeak-02-Wall.diff: Rework.
 	* patches/espeak-02-samplerate.diff: Remove patch no longer needed.
-	* copyright/SUNWgnome-display-mgr.copyright: Update.
-
-2012-05-04  Brian Cameron  <brian.cameron@oracle.com>
-
-	* base-specs/libgnomeui.spec, patches/libgnomeui-03-math.diff:
-	  Bump to 2.24.5.  Add patch needed to build.
-	* base-specs/libgweather.spec: Bump to 3.4.1.
-	* base-specs/java-atk-wrapper.spec: Call newer build tools.
-	* base-specs/libgnomekbd.spec,
-	  patches/libgnomekbd-01-compile-makefile.diff:  Bump to 3.4.0.2.
-	  Rework patch.
-	* base-specs/libnotify.spec: Bump to 0.7.5.
-	* base-specs/libgnome.spec: Bump to 2.32.1.
-	* base-specs/libgail-gnome.spec: Bump 1.20.4.
-	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec:  Now set
-	  optimization -xO2 on sparc to fix CR #7166622.
-	* base-specs/libbonoboui.spec: Bump to 2.24.5.
-	* base-specs/gnome-icon-theme-symbolic.spec: Bump to 3.4.0.
-	* base-specs/gnome-icon-theme.spec: Bump to 3.4.0.
-	* base-specs/at-spi.spec, patches/at-spi2-core-01-configure.diff,
-	  patches/at-spi-07-warn-once.diff: Bump to 1.32.0, rework patch 1 and
-	  add patch 7 from s11u1 branch.
-	* specs/SUNWgnome-themes-standard.spec: Bump to 3.4.1.
-	* specs/SUNWgsettings-schemas.spec: Bump to 3.2.1.
-	* specs/SUNWpyatspi.spec: Bump to 2.4.0.
-	* specs/SUNWdconf.spec, patches/dconf-01-compile.diff: Bump to 0.12.1
-	  and update patch.
-	* specs/SUNWat-spi2-core.spec: Bump to 2.4.1.
-	* specs/SUNWat-spi2-atk.spec: Bump to 2.4.0.
-	* specs/SUNWespeak.spec, patches/espeak-01-makefile.diff: Bump to
-	  1.46.05.  Rework patch.
-	* patches/espeak-02-samplerate.diff: Removed patch no longer needed to
-	  build.
-	* specs/SUNWgnome-panel.spec, specs/SUNWgnome-remote-desktop.spec,
-	  specs/SUNWgnome-pdf-viewer.spec: No longer set echo and RM.
 	* copyright/SUNWgnome-display-mgr.copyright: Update.
 
 2012-05-03  Brian Cameron  <brian.cameron@oracle.com>

@@ -1,0 +1,23 @@
+--- gtk+-3.4.3/gdk/fallback-c89.c-orig	2012-05-17 11:15:48.267698461 -0500
++++ gtk+-3.4.3/gdk/fallback-c89.c	2012-05-17 11:18:17.497651233 -0500
+@@ -17,6 +17,7 @@
+  * License along with this library. If not, see <http://www.gnu.org/licenses/>.
+  */
+ 
++#include <math.h>
+ #include <float.h>
+ 
+ #ifndef HAVE_ISNAN
+@@ -31,6 +32,7 @@ isnan (double x)
+ }
+ #endif
+ 
++#if 0
+ #ifndef HAVE_ISINF
+ /* Unfortunately MSVC does not have finite()
+  * but it does have _finite() which is the same
+@@ -42,3 +44,4 @@ isinf (double x)
+   return (!_finite (x) && !_isnan (x));
+ }
+ #endif
++#endif

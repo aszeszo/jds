@@ -13,7 +13,7 @@
 Name:         glib2 
 License:      LGPL v2
 Group:        System/Libraries
-Version:      2.32.1
+Version:      2.32.3
 Release:      1
 Distribution: Java Desktop System
 Vendor:       Gnome Community
@@ -168,6 +168,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Thu May 17 2012 - brian.cameron@oracle.com
+- Bump to 2.32.3.
 * Fri Apr 27 2012 - brian.cameron@oracle.com
 - Bump to 2.32.1.
 * Wed Oct 19 2011 - brian.cameron@oracle.com
