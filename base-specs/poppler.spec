@@ -145,8 +145,7 @@ CFLAGS="$RPM_OPT_FLAGS"			\
             --disable-poppler-qt4       \
 	    --mandir=%{_mandir}	        \
             --enable-zlib               \
-            --enable-xpdf-headers       \
-            %{gtk_doc_option}
+            --enable-xpdf-headers       
 
 #Workaround a bug in libtool where it's using -Qoption to pass arguments
 #to ld, which causes the build to fail. See bugster#6877423.

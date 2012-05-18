@@ -1,3 +1,9 @@
+2012-05-18  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fix build failure for RTI#362961.
+	* base-specs/poppler.spec: disable-gtk-doc for now until root cause
+	  is fixed.
+
 2012-05-17  Ghee Teo  <ghee.teo@oracle.com>
 
 	Fix build failure for RTI#362961.
