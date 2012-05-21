@@ -1,7 +1,7 @@
 #
 # Copyright (c) Sun Microsystems, Inc.
 #
-%define owner lin
+%define owner leon.sha
 # bugdb: bugzilla.mozilla.org
 #
 
@@ -13,8 +13,8 @@
 
 Name:        thunderbird
 Summary:     Mozilla Thunderbird Standalone E-mail and Newsgroup Client
-Version:     10.0.3
-%define tarball_version 10.0.3esr
+Version:     10.0.4
+%define tarball_version 10.0.4esr
 Release:     1
 Copyright:   MPL
 License:     MPL
@@ -62,6 +62,9 @@ Patch500: thunderbird10-00-bin-libs.diff
 
 # owner:lin date:2011-11-09 type:bug
 Patch501: thunderbird8-01-enable-extensions.diff
+
+# owner:leon date:2012-05-04 type:bug
+Patch502: thunderbird10-01-ldap.diff
 
 # owner:hawklu date:2009-09-03 type:bug doo:1114 
 Patch526: thunderbird3-26-no-offline-download.diff
@@ -124,7 +127,7 @@ Patch13: firefox6-13-gen-devel-files.diff
 
 %if %option_with_indiana_branding
 # owner:davelam date:2009-03-02 type:branding
-Patch14: firefox8-14-getting-started.diff
+Patch14: firefox10-14-getting-started.diff
 %endif
 
 # owner:hawklu date:2009-05-22 type:branding
@@ -228,6 +231,9 @@ Patch45: firefox8-45-libnspr_flt4.diff
 # owner:ginnchen date:2012-03-14 type:bug bugzilla:731917 status:upstream
 Patch46: firefox10-46-plugin-bool.diff
 
+# owner:ginnchen date:2012-05-04 type:feature
+Patch47: firefox10-47-pulseaudio.diff
+
 URL:         http://www.mozilla.com/thunderbird
 
 BuildRoot:   %{_tmppath}/%{name}-%{tarball_version}-build
@@ -325,6 +331,7 @@ cd %{moz_srcdir}/mozilla
 %patch43 -p1
 %patch44 -p1
 %patch46 -p1
+%patch47 -p1
 
 %if %option_with_debug
 %patch28 -p1
@@ -345,6 +352,7 @@ cd %{moz_srcdir}/mozilla
 cd ..  
 %patch500 -p1
 %patch501 -p1
+%patch502 -p1
 %patch526 -p1
 # %patch528 -p1
 %patch538 -p1
@@ -415,6 +423,7 @@ ac_add_options --enable-debug-symbols=no
 # ac_add_options --with-system-nss
 %endif
 ac_add_options --enable-startup-notification
+ac_add_options --with-rpath="\\\$\$ORIGIN"
 EOF
 
 #
@@ -499,6 +508,8 @@ rmdir $RPM_BUILD_ROOT%{_libdir}/%{name}/dictionaries
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Fri May 11 2012 - len.sha@oracle.com
+- Bump to Thunderbird 10.0.4
 * Fri Feb 17 2012 - lin.ma@oracle.com
 - Bump to Thunderbird 10.0.2
 - Bump to Lightning 1.2.1

@@ -7,7 +7,7 @@
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner lin
+%define owner leon.sha
 #
 # DO NOT REMOVE NEXT LINE
 # PACKAGE NOT INCLUDED IN GNOME UMBRELLA ARC
@@ -20,7 +20,7 @@
 #####################################
 
 %define lang_list ar bg ca cs da de el es-AR es-ES et eu fi fr gl he hu id is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-BR pt-PT ro ru sk sl sq sv-SE tr uk zh-CN zh-HK zh-TW
-%define l10n_version 10.0.3
+%define l10n_version 10.0.4
 
 Name:          SUNWthunderbird
 IPS_package_name: mail/thunderbird
@@ -48,6 +48,7 @@ BuildRequires: compress/zip
 BuildRequires: compress/bzip2
 BuildRequires: database/sqlite-3
 BuildRequires: gnome/config/gconf
+BuildRequires: library/audio/pulseaudio
 BuildRequires: library/desktop/gtk2
 BuildRequires: library/gnome/gnome-component
 BuildRequires: library/gnome/gnome-libs
@@ -183,7 +184,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f SUNWthunderbird.list
 
-%doc -d %{thunderbird.name}/%{thunderbird.moz_srcdir}/mozilla README.txt LICENSE
+%doc -d %{thunderbird.name}/%{thunderbird.moz_srcdir}/mozilla README.txt
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %defattr(-, root, bin)
@@ -220,6 +221,8 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %changelog
+* Fri May 11 2012 - leon.sha@oracle.com
+- Bump to Thunderbird 10.0.4
 * Fri Feb 17 2012 - lin.ma@oracle.com
 - Bump to Thunderbird 10.0.2
 - Bump to Lightning 1.2.1

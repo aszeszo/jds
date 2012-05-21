@@ -1,3 +1,12 @@
+2012-05-21  Leon Sha <leon.sha@oracle.com>
+	CR#7164838 Update thunderbird to 10.0.4
+
+	* base-specs/thunderbird.spec:
+	* copyright/SUNWthunderbird.copyright:
+	* patches/firefox8-14-getting-started.diff:
+	* patches/thunderbird10-01-ldap.diff:
+	* specs/SUNWthunderbird.spec:
+
 2012-05-21  Ginn Chen  <ginn.chen@oracle.com>
 	Add missing BuildRequires for RTI#363014
 	* specs/SUNWfirefox.spec:
