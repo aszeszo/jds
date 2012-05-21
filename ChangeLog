@@ -1,4 +1,8 @@
 2012-05-21  Ginn Chen  <ginn.chen@oracle.com>
+	Add missing BuildRequires for RTI#363014
+	* specs/SUNWfirefox.spec:
+
+2012-05-21  Ginn Chen  <ginn.chen@oracle.com>
 	RTI#363014
 	CR#7164837 Update Firefox to 10.0.4
 	CR#7166425 Firefox volume can not be controlled by gnome volume applet

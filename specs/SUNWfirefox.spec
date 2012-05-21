@@ -88,6 +88,7 @@ BuildRequires: compress/bzip2
 # %endif
 BuildRequires: x11/library/mesa
 BuildRequires: x11/library/libxscrnsaver
+BuildRequires: library/audio/pulseaudio
 Requires: system/font/truetype/dejavu
 
 #####################################
