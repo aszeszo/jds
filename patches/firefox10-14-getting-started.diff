@@ -1,0 +1,57 @@
+diff --git a/browser/base/content/aboutHome.xhtml b/browser/base/content/aboutHome.xhtml
+index 9b62b87..6db1ea5 100644
+--- a/browser/base/content/aboutHome.xhtml
++++ b/browser/base/content/aboutHome.xhtml
+@@ -85,7 +85,7 @@
+     </div>
+ 
+     <div id="contentContainer">
+-      <div id="snippetContainer">
++      <div id="snippetContainer" hidden="true">
+         <div id="defaultSnippets" hidden="true">
+           <span id="defaultSnippet1">&abouthome.defaultSnippet1.v1;</span>
+           <span id="defaultSnippet2">&abouthome.defaultSnippet2.v1;</span>
+@@ -96,6 +96,10 @@
+       <div id="sessionRestoreContainer">
+         <button id="restorePreviousSession">&historyRestoreLastSession.label;</button>
+       </div>
++
++      <div style="padding-top: 100px; text-align: center;">
++         <a href="http://www.oracle.com/"><img src="chrome://branding/content/ora_solaris.png" alt="" border="0" /></a>
++      </div>
+     </div>
+ 
+     <div id="bottomSection">
+diff --git a/browser/base/content/aboutHome.css b/browser/base/content/aboutHome.css
+index 99f8d3f..25b91f2 100644
+--- a/browser/base/content/aboutHome.css
++++ b/browser/base/content/aboutHome.css
+@@ -193,9 +193,9 @@ body[dir=rtl] #searchSubmit:active {
+ 
+ #contentContainer {
+   height: 30%;
+-  background-image: -moz-radial-gradient(center top, ellipse farthest-side, rgba(16,83,130,.5), rgba(16,83,130,0) 75%),
+-                    -moz-radial-gradient(center top, ellipse farthest-side, rgba(180,218,244,.5), rgba(180,218,244,0)),
+-                    -moz-radial-gradient(center top, ellipse farthest-side, rgba(180,218,244,.3), rgba(180,218,244,0));
++  background-image: -moz-radial-gradient(center top, ellipse farthest-side, rgba(9,9,9,.5), rgba(9,9,9,0) 75%),
++                    -moz-radial-gradient(center top, ellipse farthest-side, rgba(208,208,208,.5), rgba(208,208,208,0)),
++                    -moz-radial-gradient(center top, ellipse farthest-side, rgba(208,208,208,.3), rgba(208,208,208,0));
+   background-size: 100% 5px,
+                    100% 50px,
+                    100% 100%;
+--- a/browser/branding/official/content/jar.mn	2011-07-14 16:23:45.539579498 +0800
++++ b/browser/branding/official/content/jar.mn	2011-07-14 16:23:55.865704245 +0800
+@@ -7,3 +7,4 @@
+   content/branding/icon64.png                    (icon64.png)
+   content/branding/icon16.png                    (../default16.png)
+   content/branding/aboutDialog.css               (aboutDialog.css)
++  content/branding/ora_solaris.png               (ora_solaris.png)
+--- a/browser/branding/official/pref/firefox-branding.js
+--- b/browser/branding/official/pref/firefox-branding.js
+@@ -1,5 +1,5 @@
+ pref("startup.homepage_override_url","");
+-pref("startup.homepage_welcome_url","http://www.mozilla.com/%LOCALE%/%APP%/%VERSION%/firstrun/");
++pref("startup.homepage_welcome_url","file:///usr/share/doc/os-welcome/html/index.html");
+ // Interval: Time between checks for a new version (in seconds)
+ // nightly=6 hours, official=24 hours
+ pref("app.update.interval", 86400);

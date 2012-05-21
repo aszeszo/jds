@@ -1,3 +1,14 @@
+2012-05-21  Ginn Chen  <ginn.chen@oracle.com>
+	RTI#363014
+	CR#7164837 Update Firefox to 10.0.4
+	CR#7166425 Firefox volume can not be controlled by gnome volume applet
+
+	* base-specs/firefox.spec:
+	* copyright/SUNWfirefox.copyright:
+	* patches/firefox10-14-getting-started.diff:
+	* patches/firefox10-47-pulseaudio.diff:
+	* specs/SUNWfirefox.spec:
+
 2012-05-18  Ghee Teo  <ghee.teo@oracle.com>
 
 	Fix build failure for RTI#362961.

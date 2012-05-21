@@ -13,15 +13,15 @@
 
 Name:        firefox
 Summary:     Mozilla Firefox Web browser
-Version:     10.0.3
-%define tarball_version 10.0.3esr
+Version:     10.0.4
+%define tarball_version 10.0.4esr
 Release:     1
 Copyright:   MPL
 License:     MPL
 Group:       Applications/Internet
 Distribution:Java Desktop System
 Vendor:      Mozilla Foundation
-Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/nightly/%{tarball_version}-candidates/build2/source/%{name}-%{tarball_version}.source.tar.bz2
+Source:      http://releases.mozilla.org/pub/mozilla.org/%{name}/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
 Source1:     firefox-icon.png
 Source2:     firefox.desktop
 #%if %option_without_moz_nss_nspr
@@ -95,7 +95,7 @@ Patch13: firefox6-13-gen-devel-files.diff
 
 %if %option_with_indiana_branding
 # owner:davelam date:2009-03-02 type:branding
-Patch14: firefox8-14-getting-started.diff
+Patch14: firefox10-14-getting-started.diff
 %endif
 
 # owner:hawklu date:2009-05-22 type:branding
@@ -199,6 +199,9 @@ Patch45: firefox8-45-libnspr_flt4.diff
 # owner:ginnchen date:2012-03-14 type:bug bugzilla:731917 status:upstream
 Patch46: firefox10-46-plugin-bool.diff
 
+# owner:ginnchen date:2012-05-04 type:feature
+Patch47: firefox10-47-pulseaudio.diff
+
 URL:         http://www.mozilla.com/firefox
 
 BuildRoot:   %{_tmppath}/%{name}-%{tarball_version}-build
@@ -275,6 +278,7 @@ cd mozilla-esr10
 %patch43 -p1
 %patch44 -p1
 %patch46 -p1
+%patch47 -p1
 
 %if %option_with_debug
 %patch28 -p1
@@ -514,6 +518,8 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/firefox/defaults/profile/bookmarks.html
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Mon May 21 2012 - ginn.chen@oracle.com
+- Bump to Firefox 10.0.4 ESR
 * Wed Apr 04 2012 - ginn.chen@oracle.com
 - Bump to Firefox 10.0.3 ESR
 * Tue Feb 21 2012 - ginn.chen@oracle.com
