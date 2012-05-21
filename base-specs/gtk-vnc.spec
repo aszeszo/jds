@@ -24,6 +24,7 @@ Source:         http://download.gnome.org/sources/%{name}/0.3/%{name}-%{version}
 Patch1:         gtk-vnc-01-cp-utf8.diff
 # date:2008-12-16 owner:wangke type:bug bugzilla:564718
 Patch2:         gtk-vnc-02-ff3.6.diff
+Patch3:         gtk-vnc-03-WERROR_CFLAGS.diff
 BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires: gtk2-devel pygtk2-devel python-devel
@@ -62,6 +63,7 @@ A module allowing use of the GTK-VNC widget from python
 %setup -q
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 %ifos linux
@@ -77,13 +79,15 @@ fi
 
 export PYTHON=/usr/bin/python%{pythonver}
 
-libtoolize --force --force
+#libtoolize --force --force
 # FIXME: community is doing i18n thing, disable it for now.
 #intltoolize --automake -c -f
-aclocal -I gnulib/m4
-autoheader
-automake --add-missing --copy
-autoconf
+#aclocal -I gnulib/m4
+#autoheader
+#automake --add-missing --copy
+#autoconf
+mkdir m4
+autoreconf --install --force
 
 ./configure --prefix=%{_prefix} \
             --bindir=%{_bindir} \

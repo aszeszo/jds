@@ -26,6 +26,7 @@ Autoreqprov:on
 Prereq:        /sbin/ldconfig
 
 Patch1:         libunique-01-fixxref-modules.diff
+Patch2:         libunique-02-compile-fix.diff
 
 %define gtk2_version 2.4.0
 %define pkgconfig_version 0.15.0
@@ -54,6 +55,7 @@ unique development headers
 %prep
 %setup -q
 %patch1 -p1
+%patch2 -p1
 
 #FIXME: remove uncompatible m4 files
 rm -f build/autotools/lt~obsolete.m4

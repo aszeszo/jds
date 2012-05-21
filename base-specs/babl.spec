@@ -54,7 +54,9 @@ autoconf
             --sysconfdir=%{_sysconfdir}         \
 	    --mandir=%{_mandir}                 \
 	    --datadir=%{_datadir}               \
-            --infodir=%{_datadir}/info
+            --infodir=%{_datadir}/info \
+        --enable-mmx=no \
+        --enable-sse=no
 	    		
 make -j$CPUS
 

@@ -1,0 +1,11 @@
+diff -ruN gnome-python-extras-2.25.3.orig/configure.ac gnome-python-extras-2.25.3/configure.ac
+--- gnome-python-extras-2.25.3.orig/configure.ac	2012-05-15 21:41:21.000000000 +0100
++++ gnome-python-extras-2.25.3/configure.ac	2012-05-15 21:44:46.831279632 +0100
+@@ -305,6 +305,7 @@
+ fi
+ AM_CONDITIONAL(BUILD_GTKMOZEMBED, $build_gtkmozembed)
+ 
++AC_PROG_CXX
+ AC_LANG_PUSH(C++)
+ _SAVE_CPPFLAGS=$CPPFLAGS
+ _SAVE_CXXFLAGS=$CXXFLAGS

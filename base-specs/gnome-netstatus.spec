@@ -20,7 +20,7 @@ Source:       http://ftp.gnome.org/pub/GNOME/sources/gnome-netstatus/2.28/%{name
 %if %build_l10n
 Source1:      l10n-configure.sh
 %endif
-Source2:      gnome-netstatus-wireless-icons-0.2.tar.gz
+Source2:      http://github.com/aszeszo/archives/raw/master/gnome-netstatus-wireless-icons-0.2.tar.gz
 %if %build_l10n
 Source3:      %{name}-po-sun-%{po_sun_version}.tar.bz2
 %endif

@@ -33,6 +33,7 @@ Patch1:			 openjade-01-macros.diff
 Patch2:			 openjade-02-forte.diff
 # date:2009-02-20 owner:mattman type:branding
 Patch3:			 openjade-03-manpages.diff
+Patch4:			 openjade-04-compile-fix.diff
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -59,6 +60,7 @@ cp %SOURCE1 dsssl
 %patch1 -p1 -b .macros
 %patch2 -p1 -b .forte
 %patch3 -p1
+%patch4 -p1
 
 %define INSTALL install -m755 -s
 %define INSTALL_DIR install -d -m755
@@ -75,6 +77,7 @@ rm -f aclocal.m4 missing
 [ -r config/configure.in ] && mv config/configure.in .
 aclocal -I config
 autoconf --force
+libtoolize --install --copy --force
 ./configure --prefix=%{_prefix} \
   --libdir=%{_libdir} \
   --mandir=%{_mandir} \
@@ -103,10 +106,13 @@ make install-man DESTDIR=$RPM_BUILD_ROOT mandir=%_mandir
 %{INSTALL_DATA} style/FOTBuilder.h style/GroveManager.h \
                 style/DssslApp.h style/dsssl_ns.h \
                 $RPM_BUILD_ROOT%{_includedir}/%{orig_name}
+
 pushd dsssl
 %{INSTALL_DATA} catalog dsssl.dtd extensions.dsl fot.dtd style-sheet.dtd \
   builtins.dsl jade_style-sheet.dtd $RPM_BUILD_ROOT%{sgml_dir_pkg}
+
 %{INSTALL_DIR} $RPM_BUILD_ROOT%{sgml_var_dir}
+
 sed 's:"\([^"]*\(dtd\|dsl\)\)"$:"%{sgml_dir_pkg}/\1":' catalog \
   > $RPM_BUILD_ROOT%{sgml_var_dir}/CATALOG.%{orig_name}
 ln -sf CATALOG.%{orig_name} $RPM_BUILD_ROOT%{sgml_var_dir}/CATALOG.jade_dsl
@@ -114,16 +120,25 @@ cd $RPM_BUILD_ROOT%{sgml_dir} \
   && ln -sf ../../../..%{sgml_var_dir}/CATALOG.%{orig_name} CATALOG.%{orig_name} \
   && ln -sf ../../../..%{sgml_var_dir}/CATALOG.%{orig_name} CATALOG.jade_dsl
 popd
+
 %{INSTALL_DIR} $RPM_BUILD_ROOT%{sgml_dir}/James_Clark/dtd
+
 %{INSTALL_DIR} $RPM_BUILD_ROOT%{sgml_dir}/OpenJade/dtd
+
 %{INSTALL_DIR} $RPM_BUILD_ROOT%{sgml_dir}/ISO_IEC_10179:1996/dtd
+
 (cd $RPM_BUILD_ROOT%{sgml_dir}/James_Clark/dtd \
-   && ln -sf ../../%{orig_name}/jade_style-sheet.dtd DSSSL_Style_Sheet \
-   && ln -sf ../../%{orig_name}/fot.dtd DSSSL_Flow_Object_Tree)
+   && ln -sf ../../openjade/jade_style-sheet.dtd DSSSL_Style_Sheet \
+   && ln -sf ../../openjade/fot.dtd DSSSL_Flow_Object_Tree)
+
 (cd $RPM_BUILD_ROOT%{sgml_dir}/OpenJade/dtd \
-   && ln -sf ../../%{orig_name}/style-sheet.dtd DSSSL_Style_Sheet)
+   && ln -sf ../../openjade/style-sheet.dtd DSSSL_Style_Sheet)
+
 (cd $RPM_BUILD_ROOT%{sgml_dir}/ISO_IEC_10179:1996/dtd \
-   && ln -sf ../../%{orig_name}/dsssl.dtd DSSSL_Architecture)
+   && ln -sf ../../openjade/dsssl.dtd DSSSL_Architecture)
+
+
+
 # for compatibility with SL <= 8.1
 pushd $RPM_BUILD_ROOT%{sgml_dir}
   pushd %{orig_name}
@@ -149,12 +164,12 @@ rm -rf $RPM_BUILD_ROOT
 %dir %attr (0755, root, bin) %{_bindir}
 %{_bindir}/*
 %dir %attr (0755, root, bin) %{_libdir}
-%{_libdir}/libogrove
-%{_libdir}/libogrove.0*
-%{_libdir}/libospgrove
-%{_libdir}/libospgrove.0*
-%{_libdir}/libostyle
-%{_libdir}/libostyle.0*
+%{_libdir}/libogrove.so
+%{_libdir}/libogrove.so.0*
+%{_libdir}/libospgrove.so
+%{_libdir}/libospgrove.so.0*
+%{_libdir}/libostyle.so
+%{_libdir}/libostyle.so.0*
 %dir %attr(0755, root, sys) %{_datadir}
 %{_datadir}/sgml
 %dir %attr(0755, root, bin) %{_mandir}

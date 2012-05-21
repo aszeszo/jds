@@ -21,7 +21,8 @@ Distribution:   	Java Desktop System
 SUNW_BaseDir:           %{_basedir}
 SUNW_Copyright:         %{name}.copyright
 BuildRoot:              %{_tmppath}/%{name}-%{version}-build
-Source:			http://slocate.trakker.ca/files/slocate-%{version}.tar.gz
+#Source:			http://slocate.trakker.ca/files/slocate-%{version}.tar.gz
+Source:			http://fossies.org/unix/misc/old/slocate-%{version}.tar.gz
 # date:2008-09-02 owner:wangke type:feature
 Patch1:		slocate-01-makefile.diff
 # date:2008-09-02 owner:wangke type:feature
@@ -32,6 +33,7 @@ Patch3:		slocate-03-manpages.diff
 Patch4:		slocate-04-strcasestr.diff
 # date:2012-03-26 owner:gheet type:bug bugster:7152240
 Patch5:		slocate-05-remove-libast.diff
+Patch6:		slocate-06-compile-fix.diff
 %include desktop-incorporation.inc
 Requires:	system/library
 Requires:	system/library/math
@@ -55,6 +57,7 @@ Requires:               system/library
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 
 %build
 export CFLAGS="%optflags"

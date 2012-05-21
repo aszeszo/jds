@@ -50,7 +50,7 @@ BuildRequires: SUNWgnome-spell-devel
 BuildRequires: SUNWiso-codes-devel
 BuildRequires: SUNWgnome-icon-theme
 BuildRequires: SUNWhea
-BuildRequires: developer/icu
+#BuildRequires: developer/icu
 BuildRequires: library/pcre
 
 %package l10n

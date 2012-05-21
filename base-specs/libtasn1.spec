@@ -20,7 +20,9 @@ Docdir:         %{_datadir}/doc
 Autoreqprov:	on
 URL:		http://josefsson.org/libtasn1/
 Epoch:		2
-Source:		ftp://ftp.gnutls.org/pub/gnutls/libtasn1/%{name}-%{version}.tar.gz
+#Source:		ftp://ftp.gnutls.org/pub/gnutls/libtasn1/%{name}-%{version}.tar.gz
+Source:		http://ftp.gnu.org/gnu/libtasn1/%{name}-%{version}.tar.gz
+
 
 Summary:	Libtasn is a library C for manipulating ASN.1 objects.
 

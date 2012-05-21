@@ -72,7 +72,9 @@ make -j $CPUS
 export GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL=1
 make DESTDIR=$RPM_BUILD_ROOT install
 unset GCONF_DISABLE_MAKEFILE_SCHEMA_INSTALL
-rm $RPM_BUILD_ROOT%{_libdir}/*.a $RPM_BUILD_ROOT%{_libdir}/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/*.a $RPM_BUILD_ROOT%{_libdir}/*.la || true
+rm $RPM_BUILD_ROOT%{_libdir}/libxklavier. || true
+rm -rf $RPM_BUILD_ROOT%/libxklavier || true
 
 
 %files

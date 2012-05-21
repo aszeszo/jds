@@ -22,6 +22,7 @@ Source:                  http://ftp.gnome.org/pub/GNOME/sources/gnome-python-ext
 Patch1:                  gnome-python-extras-01-libgksu-missing-funcs.diff
 # date:2008-05-29 owner:hawklu type:bug bugzilla:532856
 Patch2:                  gnome-python-extras-02-using-firefox3.diff
+Patch3:                  gnome-python-extras-03-autoconf.diff
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 Requires:                python
 
@@ -29,10 +30,11 @@ Requires:                python
 %setup -q -n %name-%version
 %patch1 -p1
 %patch2 -p1
+%patch3 -p1
 
 %build
 export PYTHON=/usr/bin/python%{pythonver}
-autoconf
+autoreconf --install --force
 ./configure --prefix=%{_prefix}
 make
 

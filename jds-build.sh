@@ -8,9 +8,26 @@ BUILDNUM=175.0.0.0.0.0
 PUBLISHER=jds
 
 PRIORITY_SPECS="SUNWgtk-doc.spec SUNWfirefox.spec SUNWthunderbird.spec SUNWsongbird.spec SUNWmysql-python.spec SUNWgnome-media.spec"
-SKIP_SPECS="SUNWevolution-bdb-devel.spec SUNWos-welcome.spec SUNWpkgbuild.spec SUNWperl-authen-pam.spec"
-SKIP_SPECS="$SKIP_SPECS SUNWperl-xml-parser.spec SUNWfsexam.spec SUNWPython"
-SS12u2_SPECS="SUNWfirefox.spec|SUNWthunderbird.spec"
+SKIP_SPECS="SUNWevolution-bdb-devel.spec SUNWos-welcome.spec"
+SKIP_SPECS="$SKIP_SPECS SUNWperl-xml-parser.spec SUNWfsexam.spec SUNWPython.spec"
+SKIP_SPECS="$SKIP_SPECS SFEswig.spec"
+
+# converted to userland
+SKIP_SPECS="$SKIP_SPECS SUNWpkgbuild.spec SUNWperl-authen-pam.spec SUNWavant.spec SUNWbrltty.spec"
+SKIP_SPECS="$SKIP_SPECS SUNWjpg.spec SUNWlibpopt.spec SUNWlibunique.spec SUNWrdesktop.spec"
+SKIP_SPECS="$SKIP_SPECS SUNWgnome-pdf-viewer.spec SUNWlibical.spec"
+
+# will fix later
+SKIP_SPECS="$SKIP_SPECS SUNWw3m.spec"
+
+# non-redistributable
+SKIP_SPECS="$SKIP_SPECS SUNWacroread.spec SUNWflash-player-plugin.spec "
+
+SS12u2_SPECS=""
+GCC3_SPECS="SUNWcompiz-fusion-extra.spec|SUNWcompiz-fusion-main.spec|SUNWcompiz.spec"
+GCC3_SPECS="$GCC3_SPECS|SUNWdesktop-search.spec|SUNWlibxklavier.spec"
+GCC3_SPECS="$GCC3_SPECS|SUNWgnome-desktop-prefs.spec|SUNWgnome-remote-desktop.spec"
+GCC3_SPECS="$GCC3_SPECS|SUNWlibunique.spec|SUNWlibcompizconfig.spec"
 
 if [ ! x$1 = x-s ]; then
 
@@ -85,6 +102,9 @@ else
             echo :: Building $SPEC [$$] ::
 
             case $SPEC in
+                $GCC3_SPECS)
+                    COMPILER=gcc3
+                    ;;
                 $SS12u2_SPECS)
                     COMPILER=ss12.2
                     ;;

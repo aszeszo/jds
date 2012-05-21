@@ -30,6 +30,7 @@ Patch2:       libgphoto2-02-man.diff
 Patch3:       libgphoto2-03-gettext.diff
 # date:2010-10-27 type:bug owner:yippi bugid:3141077
 Patch4:       libgphoto2-04-fixcompile.diff
+Patch5:       libgphoto2-05-__STRING.diff
 URL:          http://www.gphoto.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 DocDir:       %{_defaultdocdir}/libgphoto2
@@ -57,6 +58,7 @@ or by running
 %patch2 -p1
 %patch3 -p1
 %patch4 -p1
+%patch5 -p1
 
 %build
 %ifos linux
@@ -88,6 +90,8 @@ automake -a -f
 autoconf
 cd ..
 %define libusb_option "--with-libusb=/usr/sfw"
+
+export LIBS="-lsocket -lnsl"
 
 PATH="/usr/X11R6/bin:$PATH" CFLAGS="$RPM_OPT_FLAGS -fPIC" ./configure	\
   --prefix=%{_prefix} 	\

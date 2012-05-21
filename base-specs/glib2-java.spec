@@ -65,6 +65,7 @@ This release series, collectively called java-gnome, consists of glib-java, cair
 aclocal $ACLOCAL_FLAGS -I .
 automake -a -c -f
 autoconf
+libtoolize --install --copy --force
 %ifos solaris
 ./configure --prefix=%{_prefix}                 \
             --libexecdir=%{_libexecdir}         \

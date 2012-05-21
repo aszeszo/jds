@@ -20,7 +20,8 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 Docdir:         %{_datadir}/doc
 Autoreqprov:    on
 URL:		http://www.gnutls.org
-Source: 	ftp://ftp.gnutls.org/pub/gnutls/%{name}-%{version}.tar.bz2
+#Source: 	ftp://ftp.gnutls.org/pub/gnutls/%{name}-%{version}.tar.bz2
+Source: 	http://ftp.heanet.ie/mirrors/ftp.gnupg.org/gcrypt/gnutls/%{name}-%{version}.tar.bz2
 %if %build_l10n
 Source1: 	l10n-configure.sh
 %endif

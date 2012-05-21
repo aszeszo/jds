@@ -18,12 +18,16 @@ URL:                    http://localhost.nl/~synap/libvisual-wiki/index.php/Main
 Source:                 http://downloads.sourceforge.net/libvisual/libvisual-plugins-%{version}.tar.bz2
 # date:2009-09-24 owner:wangke type:branding
 Patch1:                 libvisual-plugins-01-opengl.diff
+Patch2:                 libvisual-plugins-02-no-alsa.diff
+Patch3:                 libvisual-plugins-03-mkinstalldirs.diff
 
 Requires: libvisual
 
 %prep
 %setup -q -n libvisual-plugins-%{version}
 %patch1 -p1
+%patch2 -p1
+%patch3 -p1
 
 %build
 %ifos linux
@@ -37,9 +41,12 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-autoconf
+autoreconf
+libtoolize --install --copy --force
+
 # the following ifarch-endif contains plugins
 # which depend on OpenGL 
+/bin/bash \
 ./configure --prefix=%{_prefix}		\
             --bindir=%{_bindir}		\
             --libdir=%{_libdir}		\

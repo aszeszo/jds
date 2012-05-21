@@ -63,7 +63,7 @@ autoconf
 
 export CFLAGS="%optflags"
 export RPM_OPT_FLAGS="$CFLAGS"
-export LDFLAGS="%{_ldflags}"
+export LDFLAGS="%{_ldflags} -lgobject-2.0"
 export MSGFMT="/usr/bin/msgfmt"
 
 ./configure --prefix=%{_prefix}			\

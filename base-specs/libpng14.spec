@@ -18,7 +18,8 @@ Release:      1
 Distribution: Java Desktop System
 Vendor:       Sun Microsystems, Inc.
 Summary:      Portable Network Graphics library
-Source:       ftp://ftp.simplesystems.org/pub/png/src/libpng-%{version}.tar.bz2
+#Source:       ftp://ftp.simplesystems.org/pub/png/src/libpng-%{version}.tar.bz2
+Source:       http://srclibs.googlecode.com/files/libpng-%{version}.tar.bz2
 URL:          http://www.libpng.org/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}

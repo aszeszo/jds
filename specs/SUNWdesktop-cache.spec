@@ -15,7 +15,7 @@ Meta(info.classification): %{classification_prefix}:System/Services
 License:      cr_Oracle
 Version:      0.2.7
 Summary:      desktop-cache is a set of SMF services used to update the various GNOME desktop caches.
-Source:       http://dlc.sun.com/osol/jds/downloads/extras/desktop-cache/desktop-cache-smf-services-%{version}.tar.bz2
+Source:       http://github.com/aszeszo/archives/raw/master/desktop-cache-smf-services-%{version}.tar.bz2
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:	      %{_defaultdocdir}/doc
 SUNW_BaseDir: %{_basedir}

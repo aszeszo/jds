@@ -15,7 +15,8 @@ Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Libraries
 Summary:             Standard Widget Toolkit
 License:             EPL v1.0 (Eclipse Public License)
 Version:             3.3.2
-Source:              http://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/eclipse/downloads/drops/R-%{version}-200802211800/swt-%{version}-gtk-solaris-sparc.zip
+#Source:              http://www.mirrorservice.org/sites/download.eclipse.org/eclipseMirror/eclipse/downloads/drops/R-%{version}-200802211800/swt-%{version}-gtk-solaris-sparc.zip
+Source:              http://archive.eclipse.org/eclipse/downloads/drops/R-%{version}-200802211800/swt-%{version}-gtk-solaris-sparc.zip
 
 SUNW_BaseDir:        %{_basedir}
 BuildRoot:           %{_tmppath}/%{name}-%{version}-build

@@ -18,7 +18,8 @@ Release:      40
 Distribution: Java Desktop System
 Vendor:       Sourceforge
 Summary:      FreeTTS Speech Synthesis System
-Source:       http://easynews.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}-src.zip
+#Source:       http://easynews.dl.sourceforge.net/sourceforge/%{name}/%{name}-%{version}-src.zip
+Source:       http://downloads.sourceforge.net/freetts/%{name}-%{version}-src.zip
 URL:          http://sourceforge.net/projects/freetts/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}

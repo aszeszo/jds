@@ -1,0 +1,18 @@
+diff -ruN libgphoto2-2.4.10.orig/camlibs/toshiba/pdrm11/pdrm11.h libgphoto2-2.4.10/camlibs/toshiba/pdrm11/pdrm11.h
+--- libgphoto2-2.4.10.orig/camlibs/toshiba/pdrm11/pdrm11.h	2007-07-27 06:53:00.000000000 +0100
++++ libgphoto2-2.4.10/camlibs/toshiba/pdrm11/pdrm11.h	2012-05-15 21:04:19.049712380 +0100
+@@ -25,6 +25,14 @@
+ #include <gphoto2/gphoto2.h>
+ #include <_stdint.h>
+ 
++#ifndef __STRING
++# ifdef __STDC__
++# define __STRING(x) #x
++# else
++# define __STRING(x) "x"
++# endif
++#endif
++
+ /* once in a while a gp_port command will fail and then work on a
+  * second try this tries to run the command twice and returns the
+  * error code if it fails the second time */

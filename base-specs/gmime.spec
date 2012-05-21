@@ -68,11 +68,12 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-libtoolize --copy --force
-aclocal $ACLOCAL_FLAGS
-autoheader
-automake -a -c -f
-autoconf
+#libtoolize --copy --force
+#aclocal $ACLOCAL_FLAGS
+#autoheader
+#automake -a -c -f
+#autoconf
+autoreconf --install --force
 
 CFLAGS="$RPM_OPT_FLAGS"			\
 ./configure --prefix=%{_prefix}         \
@@ -89,6 +90,7 @@ make
 make install DESTDIR=$RPM_BUILD_ROOT
 find $RPM_BUILD_ROOT -type f -name "*.la" -exec rm -f {} ';'
 find $RPM_BUILD_ROOT -type f -name "*.a" -exec rm -f {} ';'
+rm $RPM_BUILD_ROOT/usr/lib/libgmime-2.6. || true
 
 %clean
 rm -rf $RPM_BUILD_ROOT

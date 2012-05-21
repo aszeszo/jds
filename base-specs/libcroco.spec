@@ -99,9 +99,12 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-aclocal $ACLOCAL_FLAGS
-automake -a -c -f
-autoconf
+#aclocal $ACLOCAL_FLAGS
+#automake -a -c -f
+#autoconf
+
+autoreconf --install --force
+
 export CFLAGS="%optflags"
 export LDFLAGS="%_ldflags"
 ./configure --prefix=%{_prefix}			\

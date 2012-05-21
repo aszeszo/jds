@@ -121,6 +121,8 @@ autoheader
 automake -a -c -f
 autoconf
 
+export LIBS=-lpython2.6
+
 ./configure --prefix=%{_prefix}            \
       --bindir=%{_bindir}                  \
       --libdir=%{_libdir}                  \

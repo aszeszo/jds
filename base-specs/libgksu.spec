@@ -29,6 +29,7 @@ Patch3:       libgksu-03-gnu_gettext.diff
 Patch4:       libgksu-04-GUI-update.diff
 # date:2006-10-21 owner:lin type:feature
 Patch5:	      libgksu-05-rbac-support.diff
+Patch6:	      libgksu-06-tabs.diff
 URL:          http://www.nongnu.org/gksu/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -59,6 +60,7 @@ you will need to install %{name}-devel.
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 
 %build
 %ifos linux

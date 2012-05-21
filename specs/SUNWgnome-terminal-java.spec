@@ -62,6 +62,7 @@ export ACLOCAL_FLAGS="-I /usr/share/lib/java/javadoc/java-gnome/glib-java/macros
 aclocal $ACLOCAL_FLAGS -I .
 automake -a -c -f
 autoconf
+libtoolize --install --copy --force
 
 ./configure --prefix=%{_prefix}                 \
             --libexecdir=%{_libexecdir}         \

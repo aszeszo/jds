@@ -71,7 +71,7 @@ library providing HTML support for Evolution.
 %prep
 %setup -q
 
-%patch1 -p1
+#%patch1 -p1
 %patch2 -p1
 
 %build
@@ -83,7 +83,9 @@ export LDFLAGS="%{_ldflags}"
 aclocal  $ACLOCAL_FLAGS -I ./m4
 autoconf
 automake -a -c -f
+libtoolize --install --copy --force
 
+export PATH=/usr/gnu/bin:/usr/bin
 ./configure \
     --prefix=%{_prefix} \
     --libexecdir=%{_libexecdir} \

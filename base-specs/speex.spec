@@ -61,9 +61,10 @@ fi
 export LDFLAGS="%_ldflags"
 export CFLAGS="%optflags"
 
-aclocal $ACLOCAL_FLAGS
-automake -a -c -f
-autoconf
+#aclocal $ACLOCAL_FLAGS
+#automake -a -c -f
+#autoconf
+autoreconf --install --force
 ./configure --enable-shared     \
             --enable-static     \
             --prefix=%{_prefix} \

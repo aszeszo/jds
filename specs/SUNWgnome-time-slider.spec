@@ -22,7 +22,8 @@ Meta(info.classification): %{classification_prefix}:Applications/Configuration a
 Summary:                 Time Slider ZFS snapshot management for GNOME
 License:                 cr_Oracle
 Version:                 0.2.99
-Source:                  http://dlc.sun.com/osol/jds/downloads/extras/time-slider/time-slider-%{version}.tar.bz2
+#Source:                  http://dlc.sun.com/osol/jds/downloads/extras/time-slider/time-slider-%{version}.tar.bz2
+Source:                  http://github.com/aszeszo/archives/raw/master/time-slider-%{version}.tar.bz2
 Source1:                 time-slider-po-sun-%{po_sun_version}.tar.bz2
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright

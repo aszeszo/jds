@@ -157,7 +157,8 @@ autoconf
 libtoolize --force
 
 export CFLAGS="%optflags -I$PROTO_INC -I/usr/include/startup-notification-1.0 -I/usr/X11/include" 
-export LDFLAGS="-L$PROTO_LIB -L/usr/X11/lib -L/usr/openwin/lib -R/usr/X11/lib -R/usr/openwin/lib -lX11 -lXext"
+#export LDFLAGS="-L$PROTO_LIB -L/usr/X11/lib -L/usr/openwin/lib -R/usr/X11/lib -R/usr/openwin/lib -lX11 -lXext"
+export LDFLAGS="-lX11 -lXext -lgobject-2.0"
 
 ./configure --prefix=%{_prefix}		\
 	    --bindir=%{_bindir}         \
@@ -166,8 +167,8 @@ export LDFLAGS="-L$PROTO_LIB -L/usr/X11/lib -L/usr/openwin/lib -R/usr/X11/lib -R
             --includedir=%{_includedir} \
 	    --datadir=%{_datadir}	\
 	    --enable-gnome 		\
-	    --without-xcb		\
 	    --with-default-plugins=core,dbus,move,place,png,regex,resize,svg,switcher,imgjpeg,resizeinfo,session,text,workarounds,decoration,animation,wall,fade,gnomecompat
+#	    --without-xcb		\
 
 make -j$CPUS
 

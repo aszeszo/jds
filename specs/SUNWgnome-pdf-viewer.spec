@@ -127,8 +127,8 @@ make install DESTDIR=$RPM_BUILD_ROOT
 # Remove *.a and *.la
 rm $RPM_BUILD_ROOT%{_libdir}/*.a
 rm $RPM_BUILD_ROOT%{_libdir}/*.la
-rm $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.a
-rm $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.la
+rm $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.a || true
+rm $RPM_BUILD_ROOT%{_libdir}/evince/*/backends/*.la || true
 
 # Remove unneeded scrollkeeper dirs
 rm -rf $RPM_BUILD_ROOT%{_localstatedir}

@@ -1,0 +1,20 @@
+diff -ruN gnome-settings-daemon-2.30.2.orig/plugins/xrdb/gsd-xrdb-manager.c gnome-settings-daemon-2.30.2/plugins/xrdb/gsd-xrdb-manager.c
+--- gnome-settings-daemon-2.30.2.orig/plugins/xrdb/gsd-xrdb-manager.c	2012-05-16 22:59:39.000000000 +0100
++++ gnome-settings-daemon-2.30.2/plugins/xrdb/gsd-xrdb-manager.c	2012-05-16 23:01:20.560387650 +0100
+@@ -440,13 +440,15 @@
+         GSList     *list;
+         GSList     *p;
+         GError     *error;
++        int        i;
+ 
+         gnome_settings_profile_start (NULL);
+ 
+         if ( (command_path = g_find_program_in_path( XRDB_COMMAND_NAME )) == NULL ) {
+             g_warning("Couldn't find xrdb in path");
+             /* Search in well-known dirs */
+-            for ( int i = 0; xrdb_known_dirs[i] != NULL; i++ ) {
++            
++            for ( i = 0; xrdb_known_dirs[i] != NULL; i++ ) {
+                 gchar* path = g_build_filename( xrdb_known_dirs[i], XRDB_COMMAND_NAME, NULL );
+                 if ( path && (command_path = g_find_program_in_path( path )) != NULL  ) {
+                     /* Got a match, so break and use command_path */

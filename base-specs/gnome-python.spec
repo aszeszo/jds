@@ -77,6 +77,7 @@ aclocal $ACLOCAL_FLAGS
 automake -a -c -f
 autoconf
 CFLAGS="$RPM_OPT_FLAGS"				\
+LIBS="-lgobject-2.0" \
 ./configure 	--prefix=%{_prefix}		\
 	    	--sysconfdir=%{_sysconfdir}
 make \

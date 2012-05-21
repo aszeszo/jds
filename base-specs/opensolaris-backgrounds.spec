@@ -17,7 +17,8 @@ Release:		1
 Distribution:		Java Desktop System
 Vendor:			Sun Microsystems, Inc.
 Summary:		Selection of backgrounds for the OpenSolaris desktop
-Source:			http://dlc.sun.com/osol/jds/downloads/extras/opensolaris-branding/%{name}-%{version}.tar.bz2
+#Source:			http://dlc.sun.com/osol/jds/downloads/extras/opensolaris-branding/%{name}-%{version}.tar.bz2
+Source:			http://github.com/aszeszo/archives/raw/master/%{name}-%{version}.tar.bz2
 URL:			http://www.opensolaris.org
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 BuildArchitectures:     noarch

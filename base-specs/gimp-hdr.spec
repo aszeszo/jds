@@ -18,6 +18,7 @@ License: GPL
 Group:   System/GUI/GNOME
 Vendor:  Other
 Source:  http://nifelheim.dyndns.org/~cocidius/files/gimp-hdrtools-%{version}.tar.bz2
+Source:  http://github.com/aszeszo/archives/raw/master/gimp-hdrtools-%{version}.tar.bz2
 URL:     http://nifelheim.dyndns.org/~cocidius/hdrtools/
 # date:2008-07-18 owner:leon.sha type:branding
 Patch1:       gimp-hdr-01-compile.diff

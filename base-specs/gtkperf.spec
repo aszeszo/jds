@@ -55,10 +55,11 @@ fi
 # otherwise automake complains and fails.
 touch config.rpath
 
-aclocal $ACLOCAL_FLAGS
-autoheader
-automake -a  -c -f
-autoconf
+#aclocal $ACLOCAL_FLAGS
+#autoheader
+#automake -a  -c -f
+#autoconf
+autoreconf --install --force
 ./configure \
     --prefix=%{_prefix} \
     --bindir=%{_bindir} \

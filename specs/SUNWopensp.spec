@@ -22,7 +22,8 @@ Version:                 1.5.1
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
-Source:                  http://easynews.dl.sourceforge.net/sourceforge/openjade/OpenSP-%{version}.tar.gz
+#Source:                  http://easynews.dl.sourceforge.net/sourceforge/openjade/OpenSP-%{version}.tar.gz
+Source:                  http://pkgs.fedoraproject.org/repo/pkgs/opensp/OpenSP-%{version}.tar.gz/f46fe0a04b76a4454ec27b7fcc84ec54/OpenSP-%{version}.tar.gz
 Source1:                  l10n-configure.sh
 # date:2004-01-09 type:feature owner:laca
 # marking as a feature patch because upstream development stopped years ago

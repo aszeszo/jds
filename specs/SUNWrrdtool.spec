@@ -55,7 +55,8 @@ export LDFLAGS="%_ldflags"
             --disable-ruby \
 	    --enable-tcl \
 	    --disable-libintl \
-            --enable-static=no
+            --enable-static=no \
+            ac_cv_path_NROFF=/usr/bin/nroff
 
 make -j$CPUS
 

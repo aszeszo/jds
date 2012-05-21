@@ -19,7 +19,8 @@ BuildArch:    noarch
 Distribution: Java Desktop System
 Vendor:       Other
 Summary:      ISO code lists and translations
-Source:       ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2
+#Source:       ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2
+Source:       http://pkgs.fedoraproject.org/repo/pkgs/iso-codes/iso-codes-%{version}.tar.bz2/fce56d7fc8c4af4e4ee9582c89f48eb8/iso-codes-%{version}.tar.bz2
 URL:          http://alioth.debian.org/projects/pkg-isocodes/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}

@@ -47,6 +47,7 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
+libtoolize --copy --force
 aclocal $ACLOCAL_FLAGS -I ./m4
 autoheader
 automake -a -c -f

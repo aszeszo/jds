@@ -113,6 +113,7 @@ autoheader
 autoconf
 export CFLAGS="%optflags"
 export LDFLAGS="%_ldflags"
+export LIBS="-lldap_r"
 ./configure		                \
             --prefix=%{_prefix}         \
             --bindir=%{_bindir}         \

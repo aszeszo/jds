@@ -111,6 +111,7 @@ fi
 
 aclocal $ACLOCAL_FLAGS
 libtoolize --force --copy
+ln -s /usr/bin/libtool . || true
 gtkdocize
 autoheader
 automake -a -c -f

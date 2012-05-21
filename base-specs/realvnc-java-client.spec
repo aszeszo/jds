@@ -21,7 +21,9 @@ Vendor:			RealVNC
 Summary:		RealVNC Java Viewer
 URL:            http://www.realvnc.com
 # download the source manually from http://www.realvnc.com/cgi-bin/download.cgi
-Source:			vnc-%{tarball_version}-javasrc.tar.gz
+#Source:			vnc-%{tarball_version}-javasrc.tar.gz
+Source:			http://pkgs.fedoraproject.org/repo/pkgs/vnc/vnc-%{tarball_version}-javasrc.tar.gz/9407ce1f215aefca77bef12670745280/vnc-%{tarball_version}-javasrc.tar.gz
+
 # date:2007-06-22 owner:wangke type:branding
 Patch1:         %{name}-01-makefile.diff
 # date:2007-06-22 owner:wangke type:branding

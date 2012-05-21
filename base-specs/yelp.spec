@@ -42,6 +42,7 @@ Patch7:       yelp-07-terminal-search-crash.diff
 Patch8:       yelp-08-stylesheets.diff
 # date:2011-08-19 owner:leonfan type:bug bugster:7077193
 Patch9:       yelp-09-page-infinitloop.diff
+Patch10:      yelp-10-compile-fix.diff
 
 
 URL:          www.gnome.org
@@ -108,6 +109,7 @@ cd po-sun; make; cd ..
 %patch7 -p1
 %patch8 -p1
 %patch9 -p1
+%patch10 -p1
 
 %build
 %ifos linux
@@ -129,10 +131,11 @@ intltoolize --force --copy
 bash -x %SOURCE1 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS
-autoheader
-automake -a -c -f
-autoconf
+#aclocal $ACLOCAL_FLAGS
+#autoheader
+#automake -a -c -f
+#autoconf
+autoreconf --install --force
 
 %ifos solaris
 NO_RTTI=--enable-cpp-rtti

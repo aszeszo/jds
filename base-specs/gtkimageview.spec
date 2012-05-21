@@ -49,13 +49,14 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-aclocal $ACLOCAL_FLAGS
+#aclocal $ACLOCAL_FLAGS
 glib-gettextize --force --copy
 intltoolize --force --automake
 gtkdocize
 
-automake -a -f -c --gnu
-autoconf
+#automake -a -f -c --gnu
+#autoconf
+autoreconf --install --force
 ./configure --prefix=%{_prefix} \
             --bindir=%{_bindir} \
             --libdir=%{_libdir} \

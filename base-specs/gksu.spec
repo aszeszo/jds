@@ -71,8 +71,8 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-autoreconf --force --install
-intltoolize --force --copy
+autoreconf --install --force
+#intltoolize --force --copy
 
 CFLAGS="$RPM_OPT_FLAGS" \
   ./configure \

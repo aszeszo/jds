@@ -40,9 +40,10 @@ Requires:      at-spi >= %{at_spi_version}
 %patch1 -p1
 
 %build
-aclocal
-autoconf
-automake -a -c -f
+#aclocal
+#autoconf
+#automake -a -c -f
+autoreconf --install --force
 CFLAGS="%optflags"
 LDFLAGS="%{_ldflags}"
 %define java_home /usr/java

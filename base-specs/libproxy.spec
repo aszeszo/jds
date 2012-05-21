@@ -58,6 +58,7 @@ export CFLAGS="%optflags"
 export LDFLAGS="%{_ldflags}"
 export MOZJS_CFLAGS="%optflags"
 export MOZJS_LIBS="%{_ldflags}"
+export LIBS="-lnsl"
 
 ./configure --prefix=%{_prefix}			 \
 	    --libdir=%{_libdir}			 \

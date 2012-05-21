@@ -1,0 +1,12 @@
+diff -ruN yelp-2.30.2.orig/src/yelp-gecko-services.cpp yelp-2.30.2/src/yelp-gecko-services.cpp
+--- yelp-2.30.2.orig/src/yelp-gecko-services.cpp	2012-05-15 21:58:34.000000000 +0100
++++ yelp-2.30.2/src/yelp-gecko-services.cpp	2012-05-15 22:01:14.171737344 +0100
+@@ -71,7 +71,7 @@
+ }
+ 
+ /* void showProgress (in nsIDOMWindow parent, in nsIWebBrowserPrint webBrowserPrint, in nsIPrintSettings printSettings, in nsIObserver openDialogObserver, in boolean isForPrinting, out nsIWebProgressListener webProgressListener, out nsIPrintProgressParams printProgressParams, out boolean notifyOnOpen); */
+-NS_IMETHODIMP GPrintingPromptService::ShowProgress(nsIDOMWindow *parent, nsIWebBrowserPrint *webBrowserPrint, nsIPrintSettings *printSettings, nsIObserver *openDialogObserver, PRBool isForPrinting, nsIWebProgressListener **webProgressListener, nsIPrintProgressParams **printProgressParams, PRBool *notifyOnOpen)
++NS_IMETHODIMP GPrintingPromptService::ShowProgress(nsIDOMWindow *parent, nsIWebBrowserPrint *webBrowserPrint, nsIPrintSettings *printSettings, nsIObserver *openDialogObserver, bool isForPrinting, nsIWebProgressListener **webProgressListener, nsIPrintProgressParams **printProgressParams, bool *notifyOnOpen)
+ {
+   return NS_OK;
+ }

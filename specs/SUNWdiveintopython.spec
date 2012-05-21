@@ -18,7 +18,8 @@ Meta(info.classification): %{classification_prefix}:Development/Python
 License:  		 GNU Free Documentation License, v1.1
 Summary:                 A book on Python programming
 Version:                 5.4
-Source:                  http://www.diveintopython.org/download/diveintopython-html-%{version}.zip
+#Source:                  http://www.diveintopython.org/download/diveintopython-html-%{version}.zip
+Source:                  http://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/diveintopython/diveintopython-html-%{version}.zip
 Source1:                 diveintopython.desktop
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright

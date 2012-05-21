@@ -116,11 +116,13 @@ intltoolize --force --automake
 
 bash -x %SOURCE1 --enable-copyright
 
-libtoolize --force
-aclocal $ACLOCAL_FLAGS -I .
-autoheader
-automake -a -c -f
-autoconf
+#libtoolize --force
+#aclocal $ACLOCAL_FLAGS -I .
+#autoheader
+#automake -a -c -f
+#autoconf
+libtoolize --install --copy --force
+autoreconf --install --force
 
 ./configure --prefix=%{_prefix} \
 			--bindir=%{_bindir} \

@@ -30,10 +30,11 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 export PYTHON=/usr/bin/python%{pythonver}
 export ACLOCAL_FLAGS="-I %{_datadir}/aclocal"
 
-autoheader
-aclocal $ACLOCAL_FLAGS
-autoconf
-automake -a -c -f
+#autoheader
+#aclocal $ACLOCAL_FLAGS
+#autoconf
+#automake -a -c -f
+autoreconf --install --force
 ./configure --prefix=%{_prefix}
 
 # Refer to http://trac.galago-project.org/ticket/121 for the reason to remove

@@ -17,7 +17,8 @@ Vendor:       Sun Microsystems, Inc.
 Group:        System/GUI/GNOME
 Version:      1.151.0
 Summary:      Network Auto-Magic User Interface
-Source:       http://www.opensolaris.org/os/project/nwam/picea/%{name}-%{version}.tar.gz
+#Source:       http://www.opensolaris.org/os/project/nwam/picea/%{name}-%{version}.tar.gz
+Source:       http://github.com/aszeszo/archives/raw/master/%{name}-%{version}.tar.bz2
 # owner:lin date:2010-10-21 type:bug
 # Patch1:       nwam-manager-01-sa_family.diff
 %if %build_l10n

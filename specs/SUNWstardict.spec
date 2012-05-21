@@ -12,7 +12,8 @@
 %include Solaris.inc
 
 %define src_name stardict
-%define src_url http://downloads.sourceforge.net/stardict
+#%define src_url http://downloads.sourceforge.net/stardict
+%define src_url http://stardictproject.googlecode.com/files
 
 Name:		SUNWstardict
 IPS_package_name: system/desktop/stardict

@@ -82,8 +82,9 @@ if test "x$CPUS" = "x" -o $CPUS = 0; then
   CPUS=1
 fi
 
-libtoolize --force
+#libtoolize --force
 intltoolize --force --automake
+autoreconf --install --force
 
 %if %build_l10n
 bash -x %SOURCE1 --enable-copyright
@@ -102,7 +103,11 @@ CFLAGS="$RPM_OPT_FLAGS" \
 %endif
               --enable-ipv6=yes
 
-make -j $CPUS
+
+make -j $CPUS || true
+
+# naughty workaround
+for i in 1 2 3 4 5 6 7 8 9 10; do make && break || true; done
 
 
 %install

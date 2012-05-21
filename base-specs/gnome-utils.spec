@@ -127,6 +127,8 @@ aclocal $ACLOCAL_FLAGS
 automake -a -c -f
 autoconf
 
+export LIBS="-lsocket -lnsl"
+
 CFLAGS="$RPM_OPT_FLAGS" \
 LDFLAGS="%_ldflags -lz -lgthread-2.0" \
   ./configure \

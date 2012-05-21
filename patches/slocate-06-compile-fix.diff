@@ -1,0 +1,14 @@
+diff -ruN slocate-3.1.orig/src/utils.c slocate-3.1/src/utils.c
+--- slocate-3.1.orig/src/utils.c	2012-05-15 09:33:39.000000000 +0100
++++ slocate-3.1/src/utils.c	2012-05-15 09:37:19.367348115 +0100
+@@ -61,10 +61,8 @@
+ 	int ret = 0;
+ 	int nmatch = 32;
+ 	regmatch_t pmatch[32];
+-#ifdef FNM_CASEFOLD
+ 	char *nocase_str = NULL;
+ 	char *nocase_path = NULL;
+-#endif
+ 
+ 	/* If searching with regular expressions */
+ 	if (g_data->regexp_data) {

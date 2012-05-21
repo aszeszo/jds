@@ -101,7 +101,8 @@ export MSGFMT="/usr/bin/msgfmt"
             --libdir=%{_libdir}			\
 	    --enable-schemas 
 
-make -j$CPUS
+#make -j$CPUS
+make
 
 %install
 make install DESTDIR=$RPM_BUILD_ROOT

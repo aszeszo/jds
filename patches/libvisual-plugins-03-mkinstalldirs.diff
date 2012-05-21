@@ -1,0 +1,12 @@
+diff -ruN libvisual-plugins-0.4.0.orig/po/Makefile.in.in libvisual-plugins-0.4.0/po/Makefile.in.in
+--- libvisual-plugins-0.4.0.orig/po/Makefile.in.in	2006-03-20 18:48:28.000000000 +0000
++++ libvisual-plugins-0.4.0/po/Makefile.in.in	2012-05-17 12:09:13.686333109 +0100
+@@ -29,7 +29,7 @@
+ INSTALL = @INSTALL@
+ INSTALL_DATA = @INSTALL_DATA@
+ MKINSTALLDIRS = @MKINSTALLDIRS@
+-mkinstalldirs = $(SHELL) $(MKINSTALLDIRS)
++mkinstalldirs = mkdir -p
+ 
+ GMSGFMT = @GMSGFMT@
+ MSGFMT = @MSGFMT@

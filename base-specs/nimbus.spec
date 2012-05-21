@@ -21,7 +21,8 @@ License:      LGPL v2
 Distribution: Java Desktop System
 Vendor:	      Sun Microsystems, Inc.
 Group:        System/GUI/GNOME
-Source:       http://dlc.sun.com/osol/jds/downloads/extras/nimbus/%{name}-%{tarball_version}.tar.bz2
+#Source:       http://dlc.sun.com/osol/jds/downloads/extras/nimbus/%{name}-%{tarball_version}.tar.bz2
+Source:       http://github.com/aszeszo/archives/raw/master/%{name}-%{tarball_version}.tar.bz2
 Source1:      nimbus-media-play-rtl.png
 Source2:      start-here.tar.bz2
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build

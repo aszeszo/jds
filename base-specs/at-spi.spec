@@ -36,6 +36,7 @@ Patch5:       at-spi-05-x-error-handlers.diff
 Patch6:       at-spi-06-gnome-session.diff
 # date:2011-11-08 owner:liyuan type:bug bugster:7105039
 Patch7:       at-spi-07-warn-once.diff
+Patch8:       at-spi-08-new-autoconf.diff
 URL:          http://developer.gnome.org/projects/gap/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -84,6 +85,7 @@ scripting interfaces can query and interact with GUI controls.
 %patch5 -p1
 %patch6 -p1
 %patch7 -p1
+%patch8 -p1
 
 %build
 %ifos linux
@@ -112,6 +114,7 @@ automake -a -c -f
 autoconf
 CFLAGS="%optflags"
 LDFLAGS="%{_ldflags}"
+export LIBS=-lm
 ./configure --prefix=%{_prefix}			\
 	    --libdir=%{_libdir}			\
 	    --bindir=%{_bindir}			\
