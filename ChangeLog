@@ -1,3 +1,9 @@
+2012-05-22  Rohini S  <rohini.s@oracle.com>
+
+	* base-specs/librsvg.spec: Fix Security CR 7088901
+	* patches/librsvg-01-sgml.diff:
+	* specs/SUNWlibrsvg.spec: Bump to 2.34.1
+
 2012-05-14  Abhijit Nath <abhijit.nath@oracle.com>
 
 	* Added patches/tiff-01-CVE-2012-1173.diff

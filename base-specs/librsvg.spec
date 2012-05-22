@@ -13,12 +13,12 @@
 Name:         librsvg
 License:      Library is LGPLv2, binaries are GPLv2
 Group:        System/Libraries/GNOME
-Version:      2.26.3
+Version:      2.34.1
 Release:      1 
 Distribution: Java Desktop System
 Vendor:       Gnome Community
 Summary:      Library for SVG support for GNOME
-Source:       http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.26/librsvg-%{version}.tar.bz2
+Source:       http://ftp.gnome.org/pub/GNOME/sources/librsvg/2.34/librsvg-%{version}.tar.bz2
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_docdir}/librsvg
@@ -100,6 +100,7 @@ rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/engines/*.a
 rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/engines/*.la
 rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/loaders/*.a
 rm $RPM_BUILD_ROOT%{_libdir}/gtk-2.0/*/loaders/*.la
+rm -rf $RPM_BUILD_ROOT%{_datadir}/themes
 rm $RPM_BUILD_ROOT%{_libdir}/*.a
 rm $RPM_BUILD_ROOT%{_libdir}/*.la
 
@@ -133,6 +134,8 @@ gdk-pixbuf-query-loaders > %{_sysconfdir}/gtk-2.0/gdk-pixbuf.loaders
 %{_datadir}/gtk-doc/html/librsvg
 
 %changelog
+* Wed May 16 2011 - rohini.s@oracle.com
+- Bump to 2.34.1 to fix CR 7088901
 * Wed Jun 02 2010 - brian.cameron@oracle.com
 - Bump to 2.26.3.
 * Sat Apr 03 2010 - christian.kelly@sun.com

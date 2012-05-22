@@ -115,7 +115,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc(bzip2) -d %{base_arch}/librsvg-%{version} COPYING COPYING.LIB ChangeLog NEWS
-%doc -d %{base_arch}/librsvg-%{version} MAINTAINERS README
+%doc -d %{base_arch}/librsvg-%{version} README
 %dir %attr (0755, root, other) %{_datadir}/doc
 %defattr (-, root, bin)
 %dir %attr (0755, root, bin) %{_bindir}
@@ -154,6 +154,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man3/*
 
 %changelog
+* Wed May 16 2012 - rohini.s@oracle.com
+- Remove MAINTAINERS as it is no longer in 2.34.1
 * Wed Nov 10 2010 - padraig.obriain@oracle.com
 - Add license tag.
 * Fri Apr  3 2009 - laca@sun.com
