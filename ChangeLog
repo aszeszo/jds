@@ -1,5 +1,9 @@
 2012-05-22  Rohini S  <rohini.s@oracle.com>
 
+	* patches/gdm-05-default.diff: Fixes CR 7157604
+
+2012-05-22  Rohini S  <rohini.s@oracle.com>
+
 	* base-specs/librsvg.spec: Fix Security CR 7088901
 	* patches/librsvg-01-sgml.diff:
 	* specs/SUNWlibrsvg.spec: Bump to 2.34.1
