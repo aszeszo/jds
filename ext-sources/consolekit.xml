@@ -7,7 +7,7 @@
     pragma ident	"@(#)server.xml	1.2	04/08/09 SMI"
 -->
 
-<service_bundle type='manifest' name='SUNWconsolekit:consoleKit'>
+<service_bundle type='manifest' name='SUNWconsolekit:consolekit'>
 
 <service
     name='system/consolekit'
@@ -41,6 +41,11 @@
 	    name='stop'
 	    exec=':kill'
 	    timeout_seconds='60' />
+
+	<!-- these are passed to gdm in the method script -->
+	<property_group name='consolekit' type='application'>
+		<propval name='args' type='astring' value='' />
+	</property_group>
 
 	<instance name='default' enabled='true' />
 

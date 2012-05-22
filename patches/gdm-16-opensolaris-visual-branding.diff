@@ -58,7 +58,7 @@ diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-display-mgr-2.30.4-clea
 diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-display-mgr-2.30.4-clean/gdm-2.30.4/gui/simple-greeter/branding.c gdm-2.30.4/gui/simple-greeter/branding.c
 --- ../SUNWgnome-display-mgr-2.30.4-clean/gdm-2.30.4/gui/simple-greeter/branding.c	1970-01-01 01:00:00.000000000 +0100
 +++ gdm-2.30.4/gui/simple-greeter/branding.c	2010-08-09 09:51:46.928239708 +0200
-@@ -0,0 +1,824 @@
+@@ -0,0 +1,828 @@
 +#include <gtk/gtk.h>
 +#include <gdk/gdkx.h>
 +#include <string.h>
@@ -866,6 +866,7 @@ diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-display-mgr-2.30.4-clea
 +
 +  g_object_unref (scaled);
 +
++  bg_pixmap = NULL;
 +  if (GDK_IS_PIXBUF(app_bkg)) {
 +    gdk_pixbuf_render_pixmap_and_mask_for_colormap(app_bkg,
 +                                                   gtk_widget_get_colormap (window),
@@ -878,12 +879,14 @@ diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-display-mgr-2.30.4-clea
 +  style = gtk_style_copy (window->style);
 +  if (style->bg_pixmap[GTK_STATE_NORMAL])
 +    g_object_unref (style->bg_pixmap[GTK_STATE_NORMAL]);
-+  style->bg_pixmap[GTK_STATE_NORMAL] = g_object_ref (bg_pixmap);
++  if (bg_pixmap != NULL)
++    style->bg_pixmap[GTK_STATE_NORMAL] = g_object_ref (bg_pixmap);
++  else
++    style->bg_pixmap[GTK_STATE_NORMAL] = NULL;
 +  gtk_widget_set_style (window, style);
 +  g_object_unref (style);
 +}
 +
-diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-display-mgr-2.30.4-clean/gdm-2.30.4/gui/simple-greeter/branding.h gdm-2.30.4/gui/simple-greeter/branding.h
 --- ../SUNWgnome-display-mgr-2.30.4-clean/gdm-2.30.4/gui/simple-greeter/branding.h	1970-01-01 01:00:00.000000000 +0100
 +++ gdm-2.30.4/gui/simple-greeter/branding.h	2010-08-09 09:51:46.928416142 +0200
 @@ -0,0 +1,14 @@
@@ -1050,3 +1053,21 @@ diff -Nrup -x '*.orig' -x '*.rej' -x '*.*~' ../SUNWgnome-display-mgr-2.30.4-clea
  }
  
  static GObject *
+--- gdm-2.30.7/gui/simple-greeter/gdm-greeter-login-window.c-orig	2011-11-08 00:01:16.760564109 -0600
++++ gdm-2.30.7/gui/simple-greeter/gdm-greeter-login-window.c	2011-11-08 00:04:14.320084339 -0600
+@@ -1159,9 +1159,13 @@ create_computer_info (GdmGreeterLoginWin
+ 
+         label = GTK_WIDGET (gtk_builder_get_object (login_window->priv->builder, "computer-info-name-label"));
+         if (label != NULL) {
+-                char localhost[HOST_NAME_MAX + 1] = "";
++                /*
++                 * Limit the hostname to 100 characters, otherwise it gets too
++                 * big to display.
++                 */
++                char localhost[100 + 1] = "";
+ 
+-                if (gethostname (localhost, HOST_NAME_MAX) == 0) {
++                if (gethostname (localhost, 100) == 0) {
+                         gtk_label_set_text (GTK_LABEL (label), localhost);
+                 }
+ 

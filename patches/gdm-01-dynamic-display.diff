@@ -1837,7 +1837,7 @@ index 73ab499..f7f1a23 100644
                  break;
          case GDM_DISPLAY_PREPARED:
                  break;
-@@ -329,42 +550,534 @@ on_static_display_status_changed (GdmDis
+@@ -329,42 +550,536 @@ on_static_display_status_changed (GdmDis
          }
  }
  
@@ -1890,9 +1890,11 @@ index 73ab499..f7f1a23 100644
 +
 +        xserver_command = g_hash_table_lookup (parameters, "Exec");
 +
-+        if (! g_shell_parse_argv (xserver_command, &argc, &argv, &error)) {
-+                g_warning ("Could not parse command %s: %s", xserver_command, error->message);
-+                g_error_free (error);
++        error = NULL;
++        if (xserver_command == NULL || ! g_shell_parse_argv (xserver_command, &argc, &argv, &error)) {
++                g_warning ("Could not parse command %s: %s", xserver_command, error ? error->message : "ConsoleKit configuration file missing Exec key");
++                if (error)
++                        g_error_free (error);
 +                return;
 +        }
 +

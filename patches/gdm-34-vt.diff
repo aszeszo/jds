@@ -62,7 +62,7 @@
          int ret;
  
          g_debug ("Got callback for signal %d", signo);
-@@ -484,6 +528,27 @@ signal_cb (int      signo,
+@@ -484,6 +528,25 @@ signal_cb (int      signo,
          case SIGTERM:
                  /* let the fatal signals interrupt us */
                  g_debug ("Caught signal %d, shutting down normally.", signo);
@@ -81,8 +81,6 @@
 +                        if (res != 0) {
 +                                if (errno == ENOTSUP) {
 +                                        g_debug ("VT_ENABLE not supported, cannot switch to VT1");
-+                                } else {
-+                                        g_warning ("Unable to switch to VT1: %s", g_strerror (errno));
 +                                }
 +                        }
 +                }

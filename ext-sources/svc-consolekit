@@ -25,7 +25,7 @@ fi
 
 case "$1" in
 'start')
-	FMRI=svc:/system/consolekit:default
+	FMRI=svc:/system/consolekit
 
 	arg=`eval "echo \`svcprop -p consolekit/args $FMRI\`"`
 

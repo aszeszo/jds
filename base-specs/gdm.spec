@@ -1,7 +1,7 @@
 #
 # spec file for package gdm
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -104,8 +104,14 @@ Patch32:      gdm-32-disconnect.diff
 Patch33:      gdm-33-linc-cleanup.diff
 #owner:yippi date:2011-08-29 type:bug bugster:7082840
 Patch34:      gdm-34-vt.diff
-#owner:ja208388 date:2012-01-26 type:bug bugster:7116350
-Patch35:      gdm-35-no-remote-layout.diff
+#owner:yippi date:2011-11-07 type:bug bugster:7096672
+Patch35:      gdm-35-restart.diff
+#owner:ja208388 date:2012-02-01 type:bug bugster:7116350
+Patch36:      gdm-36-no-remote-layout.diff
+#owner:yippi date:2011-02-21 type:bug
+Patch37:      gdm-37-strndup.diff
+# date:2012-03-23 owner:pengwang type:bug bugster: 7060748
+Patch38:      gdm-38-bindtextdomaincodeset.diff
 URL:          http://projects.gnome.org/gdm/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 
@@ -153,6 +159,9 @@ graphical interface.
 %patch33 -p1
 %patch34 -p1
 %patch35 -p1
+%patch36 -p1
+%patch37 -p1
+%patch38 -p1
 
 cp %SOURCE1 gui/simple-greeter
 cp %SOURCE2 gui/simple-greeter
@@ -264,10 +273,17 @@ rm -rf $RPM_BUILD_ROOT
 %{_localstatedir}/lib/gdm
 
 %changelog
-* Thu Jan 26 2012 - javier.acosta@oracle.com
-- Add patch gdm-35-no-remote-layout.diff to fix #7116350 (Escalated).
+* Fri Mar 23 2012 - peng.pe.wang@oracle.com
+- Add gdm-38-bindtextdomaincodeset.diff to fix CR #7060748
+* Tue Feb 21 2012 - brian.cameron@oracle.com
+- Add gdm-37-strndup.diff to ensure PAM_MAX_RESP_SIZE is honored.
+* Wed Feb 01 2012 - javier.acosta@oracle.com
+- Add patch gdm-36-no-remote-layout.diff to fix #7116350 (Escalated).
   Do not display Keyboard Layout Selection in GDM when GDM is
   is launched remotely.
+* Mon Nov 07 2011 - brian.cameron@oracle.com
+- Add patch gdm-35-restart.diff to fix CR #7096672, so that GDM will stop
+  trying to manage a display if it fails 5 times in less than 60 seconds.
 * Mon Aug 29 2011 - brian.cameron@oracle.com
 - Add patch gdm-34-vt.diff to fix CR #7082840, where GDM does not return to
   VT1 when the gdm service is disabled.  This was a regression caused by

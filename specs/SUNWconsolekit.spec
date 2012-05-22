@@ -3,7 +3,7 @@
 #
 # includes module(s): ConsoleKit
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -41,13 +41,11 @@ Source2:                 svc-consolekit
 %include default-depend.inc
 %include desktop-incorporation.inc
 
-Requires: SUNWdbus-libs
-Requires: SUNWdbus-glib
-BuildRequires: SUNWglib2
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWxorg-headers
+BuildRequires: library/glib2
+BuildRequires: system/library/dbus
+BuildRequires: system/library/libdbus
+BuildRequires: system/library/libdbus-glib
+BuildRequires: x11/server/xorg
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -173,7 +171,9 @@ exit 0
 %{_bindir}/*
 %{_sbindir}/*
 %{_libdir}/lib*.so*
-%{_libdir}/ConsoleKit
+%{_libdir}/ConsoleKit/run-seat.d
+%{_libdir}/ConsoleKit/run-session.d
+%ips_tag(preserve=true) %{_libdir}/ConsoleKit/scripts/*
 %{_libexecdir}/ck-collect-session-info
 %{_libexecdir}/ck-get-x11-server-pid
 %{_libexecdir}/ck-get-x11-display-device
@@ -187,7 +187,11 @@ exit 0
 
 %files root
 %defattr (-, root, sys)
-%{_sysconfdir}/ConsoleKit
+%{_sysconfdir}/ConsoleKit/run-seat.d
+%{_sysconfdir}/ConsoleKit/run-session.d
+%ips_tag(preserve=true) %{_sysconfdir}/ConsoleKit/displays.d/*.display
+%ips_tag(preserve=true) %{_sysconfdir}/ConsoleKit/seats.d/*.seat
+%ips_tag(preserve=true) %{_sysconfdir}/ConsoleKit/sessions.d/*.session
 %dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1
 %dir %attr (0755, root, bin) %{_sysconfdir}/dbus-1/system.d
 %{_sysconfdir}/dbus-1/system.d/ConsoleKit.conf
@@ -218,6 +222,8 @@ exit 0
 %endif
 
 %changelog
+* Wed Feb 08 2012 - brian.cameron@oracle.com
+- Update Requires/BuildRequires.
 * Fri Apr 08 2011 - brian.cameron@oracle.com
 - Add a /lib/svc/method/svc-consolekit script to fix CR #7025709
 * Fri Apr 23 2010 - halton.huo@sun.com
