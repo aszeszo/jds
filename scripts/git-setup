@@ -1,0 +1,6 @@
+# If you cd into a build directory, like $HOME/packages/PKGS/(module)/(module)
+# and run the git-setup command, it will setup the directory for you with git.
+# Then make changes to the file and you can run the git-format-patch script
+# to generate a patch.
+#
+git init && git add --ignore-errors .; git commit -m "`basename $PWD`"
