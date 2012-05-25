@@ -1,3 +1,15 @@
+2012-05-24  Brian Cameron  <brian.cameron@oracle.com>
+
+	RTI #363090
+	CR #7166623 Solaris Trusted Extensions audio is broken since s11u1
+	build 15, not yet integrated with PulseAudio
+	* specs/SUNWtgnome-xagent.spec,
+	  patches/SUNWtgnome-xagent-01-trusted-extensions.diff:
+        RTI #363207
+	CR #7166168 PulseAudio generates harmless but annoying syslog messages
+	when the system has no audio card
+	* patches/pulseaudio-06-configure.diff
+
 2011-05-21 Ada Luong <ada.luong@oracle.com>
 
         ==== S11U1 build 17 ====
