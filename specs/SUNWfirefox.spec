@@ -28,7 +28,7 @@ Meta(info.classification): %{classification_prefix}:Applications/Internet
 Summary:       Mozilla Firefox Web browser
 Version:       %{firefox.version}
 Source:        %{name}-manpages-0.1.tar.gz
-Source1:       firefoxl10n-%{l10n_version}.tar.gz
+Source1:       https://github.com/aszeszo/archives/raw/master/firefoxl10n-%{l10n_version}.tar.gz
 SUNW_BaseDir:  %{_basedir}
 SUNW_Category: FIREFOX,application,%{jds_version}
 SUNW_Copyright:%{name}.copyright

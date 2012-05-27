@@ -28,7 +28,7 @@ Meta(info.classification): %{classification_prefix}:Applications/Internet
 Summary:       Mozilla Thunderbird Email/Newsgroup Client
 Version:       %{thunderbird.version}
 Source:        %{name}-manpages-0.1.tar.gz
-Source1:       thunderbirdl10n-%{l10n_version}.tar.gz 
+Source1:       http://github.com/aszeszo/archives/raw/master/thunderbirdl10n-%{l10n_version}.tar.gz
 SUNW_BaseDir:  %{_basedir}
 SUNW_Category: THUNDERBIRD,application,%{jds_version}
 SUNW_Copyright:%{name}.copyright

@@ -31,7 +31,7 @@ Source2:     thunderbird.desktop
 %define lightningl10n_tarball_version 1.2.1
 
 Source3:     http://ftp.mozilla.org/pub/mozilla.org/calendar/lightning/releases/%{lightning_tarball_version}/source/lightning-%{lightning_tarball_version}.source.tar.bz2
-Source4:     lightning-l10n-%{lightningl10n_tarball_version}.tar.bz2
+Source4:     http://github.com/aszeszo/archives/raw/master/lightning-l10n-%{lightningl10n_tarball_version}.tar.bz2
 %endif
 
 %ifarch i386
