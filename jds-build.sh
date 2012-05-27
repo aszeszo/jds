@@ -7,7 +7,7 @@ REPO=file://$BLDDIR/packages
 BUILDNUM=175.0.0.0.0.0
 PUBLISHER=jds
 
-PRIORITY_SPECS="SUNWgtk-doc.spec SUNWfirefox.spec SUNWthunderbird.spec SUNWsongbird.spec SUNWmysql-python.spec SUNWgnome-media.spec"
+PRIORITY_SPECS="SUNWgtk-doc.spec SUNWfirefox.spec SUNWthunderbird.spec SUNWsongbird.spec SUNWmysql-python.spec"
 SKIP_SPECS="SUNWevolution-bdb-devel.spec SUNWos-welcome.spec"
 SKIP_SPECS="$SKIP_SPECS SUNWperl-xml-parser.spec SUNWfsexam.spec SUNWPython.spec"
 SKIP_SPECS="$SKIP_SPECS SFEswig.spec"
@@ -15,7 +15,7 @@ SKIP_SPECS="$SKIP_SPECS SFEswig.spec"
 # converted to userland
 SKIP_SPECS="$SKIP_SPECS SUNWpkgbuild.spec SUNWperl-authen-pam.spec SUNWavant.spec SUNWbrltty.spec"
 SKIP_SPECS="$SKIP_SPECS SUNWjpg.spec SUNWlibpopt.spec SUNWlibunique.spec SUNWrdesktop.spec"
-SKIP_SPECS="$SKIP_SPECS SUNWgnome-pdf-viewer.spec SUNWlibical.spec"
+SKIP_SPECS="$SKIP_SPECS SUNWgnome-pdf-viewer.spec SUNWlibical.spec SUNWgnome-media.spec"
 
 # will fix later
 SKIP_SPECS="$SKIP_SPECS SUNWw3m.spec"
