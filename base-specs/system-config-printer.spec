@@ -1,11 +1,10 @@
 #
 # spec file for package system-config-printer
 #
-# includes module(s): system-onfig-printer
-#
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
+
 #
 %define owner gheet
 #
@@ -33,8 +32,8 @@ Patch2:	      system-config-printer-02-no-manpage.diff
 Patch3:	      system-config-printer-03-app-path.diff
 #owner:gheet date:2006-11-03 type:branding bugster:6780731
 Patch4:	      system-config-printer-04-remove-fedora-specific.diff
-#owner:gheet date:2009-12-10 type:bug doo:13117
-Patch5:	      system-config-printer-05-init-monitor-timer.diff
+#owner:gheet date:2012-05-02 type:bug bugster:7082445
+Patch5:	      system-config-printer-05-update-queue.diff
 #owner:gheet date:2009-12-18 type:branding 
 Patch6:	      system-config-printer-06-python-version.diff
 #owner:gheet date:2011-06-16 type:branding bugster:7049775 
@@ -43,6 +42,8 @@ Patch7:	      system-config-printer-07-online-help.diff
 Patch8:	      system-config-printer-08-desktop-files.diff
 #owner:yongsun date:2009-08-18 type:bug bugster:7077808
 Patch9:	      system-config-printer-09-online-help-l10n.diff
+#owner:gheet date:2012-05-02 type:bug bugster:7160583
+Patch10:	      system-config-printer-10-rename-printer.diff
 URL:          http://cyberelk.net/tim/software/%{name}
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -80,6 +81,7 @@ cd po-sun; make; cd ..
 %patch07 -p1
 %patch08 -p1
 %patch09 -p1
+%patch10 -p1
 
 %build
 export PYTHON=/usr/bin/python%{default_python_version}

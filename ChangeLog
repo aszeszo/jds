@@ -1,3 +1,14 @@
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362976. Fixes
+	7082445 [gnome2.30][cups] print queue does not update correctly
+	7160583 [CUPS] Renaming printer creates a duplicate printer
+	* base-specs/system-config-printer.spec:
+	* patches/system-config-printer-05-init-monitor-timer.diff:
+	* patches/system-config-printer-05-update-queue.diff:
+	* patches/system-config-printer-10-rename-printer.diff:
+	* specs/SUNWcups-manager.spec:
+
 2012-05-28  Jeff Cai  <jeff.cai@oracle.com>
 
         RTI 363131, bug id #7168852
