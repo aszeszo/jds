@@ -1,5 +1,11 @@
 2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
 
+	RTI#362976. 
+	Another broken dependency as found by jucr
+	* specs/SUNWcups-manager.spec:
+
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
 	RTI#363299 fixes a typo in the previous putback.
 	* base-specs/gmime.spec:
 

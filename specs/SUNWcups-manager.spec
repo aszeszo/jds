@@ -30,6 +30,7 @@ Requires:                print/cups
 BuildRequires:           print/cups
 BuildRequires:           developer/gnome/gnome-doc-utils
 BuildRequires:           library/gnome/gnome-libs
+BuildRequires:           gnome/preferences/control-center
 
 %include default-depend.inc
 %include desktop-incorporation.inc
