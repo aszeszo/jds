@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-power-manager
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,28 +26,27 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:                SUNWpolkit
-Requires:                SUNWlibunique
-Requires:                SUNWlibglade
-BuildRequires:           SUNWlibglade-devel
-Requires:                SUNWgnome-libs
-BuildRequires:           SUNWgnome-libs-devel
-Requires:                SUNWdbus
-BuildRequires:           SUNWdbus-devel
-Requires:                SUNWdbus-glib
-BuildRequires:           SUNWdbus-glib-devel
-Requires:                SUNWhal
-Requires:                SUNWgnome-panel
-BuildRequires:           SUNWgnome-panel-devel
-Requires:                SUNWgnome-media
-BuildRequires:           SUNWgnome-media-devel
-Requires:                SUNWdesktop-cache
-Requires:                %{name}-root
-Requires:                SUNWxdg-utils
-Requires:                SUNWgnome-keyring
-BuildRequires:           SUNWgnome-doc-utils
-BuildRequires:           SUNWlibgnome-keyring
-BuildRequires:           SUNWgsed
+Requires:       system/library/policykit
+Requires:       library/libunique
+Requires:       library/desktop/libglade
+BuildRequires:       library/desktop/libglade
+Requires:       library/gnome/gnome-libs
+BuildRequires:       library/gnome/gnome-libs
+Requires:       system/library/dbus
+BuildRequires:       system/library/dbus
+Requires:       system/library/libdbus-glib
+BuildRequires:       system/library/libdbus-glib
+Requires:       system/hal
+Requires:       gnome/gnome-panel
+BuildRequires:       gnome/gnome-panel
+Requires:       library/audio/gstreamer
+BuildRequires:       library/audio/gstreamer
+Requires:       service/gnome/desktop-cache
+Requires:       desktop/xdg/xdg-utils
+Requires:       gnome/gnome-keyring
+BuildRequires:       developer/gnome/gnome-doc-utils
+BuildRequires:       library/gnome/gnome-keyring
+BuildRequires:       text/gnu-sed
 
 %package root
 Summary:                 %{summary} - / filesystem

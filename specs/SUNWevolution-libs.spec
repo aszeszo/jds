@@ -3,7 +3,7 @@
 #
 # includes module(s): gtkhtml
 #
-# Copyright (c) 2004 Sun Microsystems, Inc.
+# Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,33 +25,31 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
 Source1:       %{name}-manpages-0.1.tar.gz
-Requires:      SUNWlibgnomecanvas
-Requires:      SUNWgnome-config
-Requires:      SUNWlxml
-Requires:      SUNWzlib
-Requires:      SUNWgnutls
-Requires: SUNWgnome-component
-Requires: SUNWgnome-libs
-Requires: SUNWlibgcrypt
-Requires: SUNWlibms
-#Requires: SUNWgnome-icon-theme
-Requires: SUNWlibsoup
-Requires: SUNWgnome-spell
-Requires: SUNWiso-codes
-BuildRequires: SUNWlibgnomecanvas-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-component-devel
-#BuildRequires: SUNWgnome-icon-theme
-BuildRequires: SUNWlibsoup-devel
-BuildRequires: SUNWgnome-spell-devel
-BuildRequires: SUNWiso-codes-devel
-BuildRequires: SUNWgnome-icon-theme
-BuildRequires: SUNWhea
-BuildRequires: SUNWicud
-BuildRequires: SUNWpcre
+Requires:       library/desktop/libgnomecanvas
+Requires:       gnome/config/gconf
+Requires:       library/libxml2
+Requires:       library/zlib
+Requires:       library/gnutls
+Requires:       library/gnome/gnome-component
+Requires:       library/gnome/gnome-libs
+Requires:       system/library/security/libgcrypt
+Requires:       system/library/math
+Requires:       library/libsoup
+Requires:       library/spell-checking/enchant
+Requires:       data/iso-codes
+BuildRequires:       library/desktop/libgnomecanvas
+BuildRequires:       library/gnome/gnome-component
+BuildRequires:       library/gnome/gnome-libs
+BuildRequires:       system/library/security/libgcrypt
+BuildRequires:       gnome/config/gconf
+BuildRequires:       library/gnome/gnome-component
+BuildRequires:       library/libsoup
+BuildRequires:       library/spell-checking/enchant
+BuildRequires:       data/iso-codes
+BuildRequires:       gnome/theme/gnome-icon-theme
+BuildRequires:       system/header
+BuildRequires:       developer/icu
+BuildRequires:       library/pcre
 
 %package l10n
 Summary:		%{summary} - l10n files
@@ -62,7 +60,7 @@ Summary:		%{summary} - development files
 SUNW_BaseDir:		%{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires:      SUNWevolution-libs
+Requires:       library/desktop/gtkhtml
 
 %prep
 rm -rf %name-%version
@@ -132,6 +130,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_includedir}/*
 
 %changelog
+* Fri May 18 2012 - jeff.cai@oracle.com
+- Add patch -030-libtool to use the new libtool
 * Sun Jan 17 2010 - christian.kelly@sun.com
 - Add dep on SUNWgnome-icon-theme.
 * Mon Dec 21 2009 - ghee.teo@sun.com

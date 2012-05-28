@@ -2,7 +2,7 @@
 
 # spec file for package gtkhtml
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -80,6 +80,7 @@ bash -x %SOURCE1 --enable-copyright
 
 export CFLAGS="%{optflags}"
 export LDFLAGS="%{_ldflags}"
+libtoolize
 aclocal  $ACLOCAL_FLAGS -I ./m4
 autoconf
 automake -a -c -f

@@ -1,3 +1,27 @@
+2012-05-28  Jeff Cai  <jeff.cai@oracle.com>
+
+        RTI 363131, bug id #7168852
+        Bug synopsis: Update license files of evolution, gtkhtml, seahorse 
+                      etc. as the requirements of Legal
+	* base-specs/gtkhtml.spec:
+	* copyright/SUNWdia.copyright:
+	* copyright/SUNWevolution-exchange.copyright:
+	* copyright/SUNWevolution-libs.copyright:
+	* copyright/SUNWevolution.copyright:
+	* copyright/SUNWgnome-archive-mgr.copyright:
+	* copyright/SUNWgnome-keyring.copyright:
+	* copyright/SUNWgnome-power-manager.copyright:
+	* copyright/SUNWgnome-utils.copyright:
+	* copyright/SUNWlibgweather.copyright:
+	* copyright/SUNWseahorse.copyright:
+	* specs/SUNWdia.spec:
+	* specs/SUNWevolution-exchange.spec:
+	* specs/SUNWevolution-libs.spec:
+	* specs/SUNWevolution.spec:
+	* specs/SUNWgnome-power-manager.spec:
+	* specs/SUNWlibgweather.spec:
+	* specs/SUNWseahorse.spec:
+
 2012-05-24  Brian Cameron  <brian.cameron@oracle.com>
 
 	RTI #363090
