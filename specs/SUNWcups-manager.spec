@@ -29,6 +29,7 @@ Requires:                library/python-2/pycups
 Requires:                print/cups
 BuildRequires:           print/cups
 BuildRequires:           developer/gnome/gnome-doc-utils
+BuildRequires:           library/gnome/gnome-libs
 
 %include default-depend.inc
 %include desktop-incorporation.inc
