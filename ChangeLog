@@ -1,5 +1,13 @@
 2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
 
+	RTI#363299 fixes
+	7168560 gmime needs TPNO and license file modification.
+	* base-specs/gmime.spec:
+	* copyright/SUNWlibgmime.copyright:
+	* specs/SUNWlibgmime.spec:
+
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
 	RTI#362976. Fixes
 	7082445 [gnome2.30][cups] print queue does not update correctly
 	7160583 [CUPS] Renaming printer creates a duplicate printer

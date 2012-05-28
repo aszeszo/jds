@@ -1,12 +1,11 @@
 #
 # spec file for package gmime
 #
-# Copyright (c) 2010 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner hawklu
-#
+%define owner gheet
 
 %define OSR LFI#105446 (gnome Exec. summary):n/a
 
@@ -73,6 +72,8 @@ aclocal $ACLOCAL_FLAGS
 autoheader
 automake -a -c -f
 autoconf
+# Need a proper config.rpath to work
+# cp /usr/share/gettext/config.rpath .
 
 CFLAGS="$RPM_OPT_FLAGS"			\
 ./configure --prefix=%{_prefix}         \
