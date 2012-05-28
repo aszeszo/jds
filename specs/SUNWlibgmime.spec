@@ -3,13 +3,13 @@
 #
 # includes module(s): gmime
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner hawklu 
+%define owner gheet
 #
-
 %include Solaris.inc
 
 %use gmime = gmime.spec
@@ -26,20 +26,20 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWglib2
-Requires:      SUNWzlib
-Requires:      SUNWlibms
-BuildRequires: SUNWglib2-devel
+BuildRequires: library/glib2
+Requires:      library/zlib
+Requires:      system/library/math
+BuildRequires: library/glib2
 BuildRequires: developer/documentation-tool/gtk-doc
-Requires: crypto/gnupg
-Requires: library/security/gpgme
+BuildRequires: text/gnu-gettext
+Requires:      crypto/gnupg
+Requires:      library/security/gpgme
 
 %package devel
 Summary:       %{summary} - development files
 SUNW_BaseDir:  %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires:      %name
 
 %prep
 rm -rf %name-%version

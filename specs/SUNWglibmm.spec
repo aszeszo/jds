@@ -3,7 +3,8 @@
 #
 # includes module(s): glibmm
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,21 +26,18 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWglib2
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWsigcpp
-BuildRequires: SUNWsigcpp-devel
+BuildRequires: library/glib2
+BuildRequires: library/c++/sigcpp
 BuildRequires: SUNWmm-common
 BuildRequires: runtime/perl-512
-Requires: SUNWdesktop-cache
+Requires: service/gnome/desktop-cache
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: %name
-Requires: SUNWglib2-devel
+Requires: library/glib2
 
 %prep
 rm -rf %name-%version

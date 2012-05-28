@@ -32,27 +32,24 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWxorg-headers
-BuildRequires: x11/trusted/libxtsol
-Requires: SUNWlibglade
-Requires: SUNWgnome-vfs-root
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-config
-Requires: SUNWgnome-panel
-# Requires: SUNWgnome-component
-BuildRequires: runtime/perl-512
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlxml
-Requires: SUNWgnome-desktop-prefs
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-desktop-prefs-devel
 BuildRequires: consolidation/desktop/desktop-incorporation
+BuildRequires: library/desktop/libglade
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: gnome/config/gconf
+BuildRequires: gnome/gnome-panel
+BuildRequires: gnome/preferences/control-center
+BuildRequires: runtime/perl-512
+BuildRequires: x11/trusted/libxtsol
+Requires: compress/bzip2
+Requires: gnome/config/gconf
+Requires: gnome/gnome-panel
+Requires: gnome/preferences/control-center
+Requires: library/desktop/libglade
+Requires: library/gnome/gnome-vfs
+Requires: library/gnome/gnome-libs
+Requires: library/libxml2
+Requires: library/zlib
 
 %prep
 rm -rf %name-%version
@@ -113,43 +110,34 @@ rm -rf $RPM_BUILD_ROOT
 /usr/dt/config/tsoljds-migration
 
 %changelog
+* Fri May 18 2012 - brian.cameron@oracle.com
+- Fix Requires/BuildRequires.
 * Mon Sep 2008 - ghee.teo@sun.com
 - Added new copyright format changes.
 * Fri May 16 2008 - stephen.browne@sun.com
 - remove conditional build
-
 * Wed May 07 2008 - damien.carbery@sun.com
 - Remove PERL5LIB setting as it is not necessary.
-
 * Wed Jun 06 2007 - damien.carbery@sun.com
 - %define with_hal to fix build.
-
 * Fri Nov 03 2006 - ghee.teo@sun.com
 - Updated SUNWtgnome-xagent-01-trusted-extensions.diff to work for 2.16
-
 * Wed Jul 26 2006 - damien.carbery@sun.com
 - Add Build/Requires SUNWgnome-desktop-prefs/-devel for gnome-settings-daemon.
-
 * Wed Jul 26 2006 - damien.carbery@sun.com
 - Use 'version' number from gnome-session.spec instead of hard coding here.
-
 * Thu Jul 13 2006 - damien.carbery@sun.com
 - Add Build/Requires SUNWgnome-panel/-devel for gnome-desktop.
-
 * Mon Jun 26 2006 - takao.fujiwara@sun.com
 - Add tsoljds-migration
 - Update SUNWtgnome-xagent-01-trusted-extensions.diff to add tsoljds-migration
   Fixes 6439165.
-
 * Wed May 24 2006 - stephen.browne@sun.com
 - shorten summary
-
 * Thu 16 Mar 2006 - ghee.teo@sun.com
 - Move mandatory.tsolsession to SUNWgnome-session spec file.
-
-*Fri 03 Mar 2006 - ghee.teo@sun.com
+* Fri 03 Mar 2006 - ghee.teo@sun.com
 - Make this build for cbe 0.18.
-
 * Wed 22 feb 2006  - ghee.teo@sun.com
 - Version which is based on SUNWgnome-session.spec.
   Remove all files which are not required by this module.

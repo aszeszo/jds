@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-applets 
 #
-# Copyright (c) 2010, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -36,6 +36,8 @@ Patch8:       gnome-applets-08-invest-gconf.diff
 #owner:padraig date:2011-05-11 type:branding bugster:7042531,7042546,7042558,7042569,7042573,7042574,7042575,6961209
 Patch9:       gnome-applets-09-fix-doc.diff
 Patch10:      gnome-applets-10-fix-l10n-doc.diff
+#owner:yippi date:2012-03-16 type:feature
+Patch11:      gnome-applets-11-nomixerwarn.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/gnome-applets
@@ -75,6 +77,7 @@ Panel.
 #%patch8 -p1
 %patch9 -p1
 %patch10 -p1
+%patch11 -p1
 
 for po in po/*.po; do
   dos2unix -ascii $po $po
@@ -100,7 +103,7 @@ CFLAGS="$RPM_OPT_FLAGS"			\
 	    --with-gstreamer=0.10       \
 	    --enable-stickynotes        \
             --disable-scrollkeeper      \
-            --enable-mixer-applet
+            --disable-mixer-applet
 
 make -j $CPUS \
         pythondir=%{_libdir}/python%{default_python_version}/vendor-packages
@@ -152,6 +155,10 @@ done
 %{_datadir}/pixmaps/*
 
 %changelog
+* Tue Apr 17 2012 - brian.cameron@oracle.com
+- Add patch gnome-applets-11-nomixerwarn.diff because we do not want users
+  to be notified that the mixer applet has changed from the GStreamer one to
+  the PulseAudio one.
 * Thu Jun 23 2011 - ghee.teo@oracle.com
 - cleaned up fix-doc patches and now included fix to 6961209.
 * Thu May 12 2011 - padraig.obriain@oracle.com

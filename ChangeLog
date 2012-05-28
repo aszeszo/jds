@@ -1,3 +1,489 @@
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362976. 
+	Another broken dependency as found by jucr
+	* specs/SUNWcups-manager.spec:
+
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#363299 fixes a typo in the previous putback.
+	* base-specs/gmime.spec:
+
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362976. 
+	Fixes broken dependency as found by jucr
+	* specs/SUNWcups-manager.spec:
+
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#363299 fixes
+	7168560 gmime needs TPNO and license file modification.
+	* base-specs/gmime.spec:
+	* copyright/SUNWlibgmime.copyright:
+	* specs/SUNWlibgmime.spec:
+
+2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362976. Fixes
+	7082445 [gnome2.30][cups] print queue does not update correctly
+	7160583 [CUPS] Renaming printer creates a duplicate printer
+	* base-specs/system-config-printer.spec:
+	* patches/system-config-printer-05-init-monitor-timer.diff:
+	* patches/system-config-printer-05-update-queue.diff:
+	* patches/system-config-printer-10-rename-printer.diff:
+	* specs/SUNWcups-manager.spec:
+
+2012-05-28  Jeff Cai  <jeff.cai@oracle.com>
+
+        RTI 363131, bug id #7168852
+        Bug synopsis: Update license files of evolution, gtkhtml, seahorse 
+                      etc. as the requirements of Legal
+	* base-specs/gtkhtml.spec:
+	* copyright/SUNWdia.copyright:
+	* copyright/SUNWevolution-exchange.copyright:
+	* copyright/SUNWevolution-libs.copyright:
+	* copyright/SUNWevolution.copyright:
+	* copyright/SUNWgnome-archive-mgr.copyright:
+	* copyright/SUNWgnome-keyring.copyright:
+	* copyright/SUNWgnome-power-manager.copyright:
+	* copyright/SUNWgnome-utils.copyright:
+	* copyright/SUNWlibgweather.copyright:
+	* copyright/SUNWseahorse.copyright:
+	* specs/SUNWdia.spec:
+	* specs/SUNWevolution-exchange.spec:
+	* specs/SUNWevolution-libs.spec:
+	* specs/SUNWevolution.spec:
+	* specs/SUNWgnome-power-manager.spec:
+	* specs/SUNWlibgweather.spec:
+	* specs/SUNWseahorse.spec:
+
+2012-05-24  Brian Cameron  <brian.cameron@oracle.com>
+
+	RTI #363090
+	CR #7166623 Solaris Trusted Extensions audio is broken since s11u1
+	build 15, not yet integrated with PulseAudio
+	* specs/SUNWtgnome-xagent.spec,
+	  patches/SUNWtgnome-xagent-01-trusted-extensions.diff:
+        RTI #363207
+	CR #7166168 PulseAudio generates harmless but annoying syslog messages
+	when the system has no audio card
+	* patches/pulseaudio-06-configure.diff
+
+2011-05-21 Ada Luong <ada.luong@oracle.com>
+
+        ==== S11U1 build 17 ====
+
+2012-05-21  Leon Sha <leon.sha@oracle.com>
+	CR#7164838 Update thunderbird to 10.0.4
+
+	* base-specs/thunderbird.spec:
+	* copyright/SUNWthunderbird.copyright:
+	* patches/firefox8-14-getting-started.diff:
+	* patches/thunderbird10-01-ldap.diff:
+	* specs/SUNWthunderbird.spec:
+
+2012-05-21  Ginn Chen  <ginn.chen@oracle.com>
+	Add missing BuildRequires for RTI#363014
+	* specs/SUNWfirefox.spec:
+
+2012-05-21  Ginn Chen  <ginn.chen@oracle.com>
+	RTI#363014
+	CR#7164837 Update Firefox to 10.0.4
+	CR#7166425 Firefox volume can not be controlled by gnome volume applet
+
+	* base-specs/firefox.spec:
+	* copyright/SUNWfirefox.copyright:
+	* patches/firefox10-14-getting-started.diff:
+	* patches/firefox10-47-pulseaudio.diff:
+	* specs/SUNWfirefox.spec:
+
+2012-05-18  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fix build failure for RTI#362961.
+	* base-specs/poppler.spec: disable-gtk-doc for now until root cause
+	  is fixed.
+
+2012-05-17  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fix build failure for RTI#362961.
+	* specs/SUNWgnome-pdf-viewer.spec: overwritten RM  in spec file.
+	* base-specs/poppler.spec: libext is defined to be '' instead of 'a'.
+	  let the clean out of lib*. files be removed in top level spec file.
+	
+2012-05-17  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fix build failure for RTI#362961.
+	* specs/SUNWgnome-gvfs.spec: serivce/hal has been renamed to system/hal.
+
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
+	RTI #362942
+	CR 7168801 Add license file for GDM, rhythmbox, sound-juicer, totem,
+	and vte
+	* copyright/SUNWgnome-cd.copyright,
+	  copyright/SUNWgnome-terminal.copyright,
+	  copyright/SUNWgnome-media-player.copyright,
+	  copyright/SUNWgnome-display-mgr.copyright: Update.
+	* specs/SUNWgnome-cd.spec: Fix Requires/BuildRequires.
+
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
+	RTI #362943
+	CR 7168796 PulseAudio improvements
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec,
+	  patches/pulseaudio-07-sada.diff, patches/pulseaudio-10-endian.diff:
+	  Add patch to fix the PulseAudio SunAudio plugin and to ensure that
+	  ENDIAN defines are properly set for building on Sparc.
+
+2012-05-16  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362961.
+	7168556 eog-plugins needs TPNO and license file modification 
+	7168558 evince needs TPNO and license file modification 
+	7168563 gtkmm needs TPNO and license file modification
+	7168562 gnome-vfs needs TPNO and license file modification 
+	7168561 gnome-nettool needs TPNO and license file modification 
+	7168559 glibmm needs TPNO and license file modification 
+	7168564 gvfs needs TPNO and license file modification 
+	7168570 ORBit2 needs TPNO and license file modification 
+	7168569 libsigc++ needs TPNO and license file modification
+	7168568 libIDL needs TPNO and license file modification
+	* copyright/SUNWglibmm.copyright:
+	* copyright/SUNWgnome-component.copyright:
+	* copyright/SUNWgnome-eog-plugins.copyright:
+	* copyright/SUNWgnome-gvfs.copyright:
+	* copyright/SUNWgnome-nettool.copyright:
+	* copyright/SUNWgnome-pdf-viewer.copyright:
+	* copyright/SUNWgnome-vfs.copyright:
+	* copyright/SUNWgtkmm.copyright:
+	* copyright/SUNWsigcpp.copyright:
+	* specs/SUNWglibmm.spec:
+	* specs/SUNWgnome-component.spec:
+	* specs/SUNWgnome-eog-plugins.spec:
+	* specs/SUNWgnome-nettool.spec:
+	* specs/SUNWgtkmm.spec:
+	* specs/SUNWsigcpp.spec:
+
+2012-05-15  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#362828.
+	CR#7167896, 7167897, 7167788.
+	* copyright/SUNWcheese.copyright:
+	* copyright/SUNWgnome-img-viewer.copyright:
+	* specs/SUNWcheese.spec:
+	* specs/SUNWgnome-img-viewer.spec:
+	* specs/SUNWos-welcome.spec:
+
+2012-05-15  Michal Pryc <Michal.Pryc@Oracle.Com>
+
+        RTI: 362734
+        CR: 7165942
+        * base-specs/gedit.spec: add new patch
+        * patches/gedit-10-fix-socket-exploit.diff: new patch to
+          move gedit socket inside per user folder.
+
+2012-05-15  Rohini S  <rohini.s@oracle.com>
+
+	* patches/gdm-05-default.diff: Fixes CR 7157604
+
+2012-05-15  Jerry Guo  <yanjing.guo@oracle.com>
+
+	WebRTI #362880
+        CR # 7168328 
+	* base-specs/pidgin.spec:
+	* patches/pidgin-01-gnome-keyring.diff:
+
+2012-05-14  Brian Cameron  <brian.cameron@oracle.com>
+
+	WebRTI #362627.
+        CR #7166622 PulseAudio does not work on Sparc.
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec: Build with
+	  -xO2 on sparc and add -KPIC.
+	* base-specs/libgc.spec, patches/libgc-03-sparc-atomic.diff:  Build
+	  with -KPIC.
+
+2012-05-14 Ada Luong <ada.luong@oracle.com>
+
+        ==== S11U1 build 16 ====
+
+2012-05-10  Stephen Browne  <Stephen.browne@oracle.com>
+
+	* specs/SUNWtgnome-tstripe.spec: add additional BuildRequires
+	so jucr can build.
+
+2012-05-04  Stephen Browne  <Stephen.browne@oracle.com>
+
+	RTI: 362502
+	CR : 7108974
+	* patches/tsoljds-tstripe-05-primary-zone.diff: new patch to ignore
+	secondary zones when finding a match to lazy boot.
+	* specs/SUNWtgnome-tstripe.spec: add new patch
+
+2012-05-04  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 7148392 Problem with gnome/libraries
+	CR 7159392 Problem with gnome/libraries
+	CR 7159448 Problem with gnome/libraries
+	WebRTI 362369
+	* base-specs/libpng10.spec:
+	* base-specs/libpng12.spec:
+	* base-specs/libpng14.spec:
+	* specs/SUNWpng.spec: Update versions of libpng.
+
+2012-05-03  Brian Cameron  <brian.cameron@oracle.com>
+
+	* base-specs/gst-plugins-good.spec,
+	  patches/gst-plugins-good-06-ossv4.diff: Fix WebRTI #362384
+	  CR #7145701 Totem will hang in the GStreamer OSSv4 plugin when the
+	  sound device is not available.
+
+2012-05-02  Brian Cameron  <brian.cameron@oracle.com>
+
+	* copyright/SUNWpython-simplejson.copyright: Fix WebRTI #362418
+	  7164770 Update simplejson license file - TPNO 5929
+
+2012-04-27 Arvind Umrao <arvind.umrao@oracle.com>
+
+	Added patch xscreensaver-25-bug-7023648.diff
+
+2012-04-23 Ada Luong <ada.luong@oracle.com>
+
+	==== S11U1 build 15 ====
+
+2012-04-23  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	CR 7158160 Problem with gnome/libraries
+	RTI 362135
+	* specs/SUNWTiff.spec:
+	* patches/tiff-01-CVE-2012-1173.diff:
+
+2012-04-20  Jeff Cai  <jeff.cai@oracle.com>
+
+	Fix CR #7151417 - File-roller crashes when creating an 
+	archive file which has been already existing
+	RTI #362015
+	* base-specs/file-roller.spec:
+	* patches/file-roller-06-new-file.diff:
+	* specs/SUNWgnome-archive-mgr.spec:
+
+2012-04-19  Ghee Teo  <ghee.teo@oracle.com>
+
+	CR#7162556 zfssnap user definition should not be a role.
+	RTI#362136.
+	* specs/SUNWgnome-time-slider.spec:
+
+2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWlibgc.spec, base-specs/libgc.spec,
+	  patches/libgc-03-sparc-atomic.diff: Backout previous
+	  commit since it did not fix the problem effectively.  This is a
+	  second attempt to fix sparc building issue.
+
+2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWpulseaudio.spec: Fix l10n packaging.
+	* specs/SUNWlibgc.spec, base-specs/libgc.spec: Build with gcc to fix
+	  sparc building issue.
+
+2012-04-18  Brian Cameron  <brian.cameron@oracle.com>
+
+	WebRTI #362069, CR #7077164 "enhanced sunray audio support - Add
+	PulseAudio to the Desktop"
+	* specs/SUNWpulseaudio.spec, base-specs/pulseaudio.spec,
+	  copyright/SUNWpulseaudio.copyright,
+	  patches/pulseaudio-01-esdcompat.diff,
+	  patches/pulseaudio-02-solaris.diff,
+	  patches/pulseaudio-03-fixlink.diff, patches/pulseaudio-04-gconf.diff,
+	  patches/pulseaudio-05-shm.diff, patches/pulseaudio-06-configure.diff,
+	  patches/pulseaudio-07-sada.diff, patches/pulseaudio-08-oss4.diff,
+	  patches/pulseaudio-09-amd64.diff: Add PulseAudio.
+	* manpages/Makefile, manpages/man5/pulse-daemon.conf.5,
+	  manpages/man5/pulse-client.conf.5: These two Linux manpages do not
+	  format properly with Solaris man, so they were rewritten in SGML.
+	* specs/SUNWespeak.spec, specs/SUNWgnome-media.spec,
+	* specs/SUNWlibcanberra.spec, base-specs/libcanberra.spec:
+	  Add "BuildRequires library/audio/pulseaudio" and fix
+	  Requires/BuildRequires.  Fix libcanberra so that it calls
+	  autoreconf since this works better with the new autotools.
+	* specs/SUNWgnome-media-apps.spec, base-specs/gnome-media.spec
+	  patches/gnome-media-09-round.diff,
+	  patches/gnome-media-08-nopulsemix.diff: Build the PulseAudio volume
+	  control applet and the GStreamer gnome-volume-control program.
+	* specs/SUNWgnome-applets.spec, base-specs/gnome-applets.spec,
+	  patches/gnome-applets-11-nomixerwarn.diff:  No longer build the
+	  GStreamer GNOME volume control applet.
+	* base-specs/gnome-settings-daemon.spec,
+	  patches/gnome-settings-daemon-12-mapfile.diff: Since this module
+	  manages the media keys, it needs to be rebuilt.  This patch fixes
+	  this module so it builds with the new autotools.
+
+2012-04-18  Ghee Teo  <ghee.teo@oracle.com>
+
+	Fixes some dependencies problem and ranlib definitions found by jucr.
+	CR#7144691 Solaris 11 man pages have excessive permissions
+	RTI#361728.
+	* specs/SUNWgnome-gtksourceview.spec:
+	* specs/SUNWgnome-keyring.spec:
+	* specs/SUNWgnome-libs.spec:
+	* specs/SUNWspeex.spec:
+
+2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWgnome-media.spec, base-specs/glib2.spec, 
+	  patches/glib-06-solaris-port.diff: Fixes so that these modules build
+	  with the latest version of libtool now in S11u1.
+
+2012-04-17  Ghee Teo  <ghee.teo@oracle.com>
+
+	CR#7144691 Solaris 11 man pages have excessive permissions
+	RTI#361728.
+	* specs/SUNWgnome-gtksourceview.spec:
+	* specs/SUNWgnome-img-viewer.spec:
+	* specs/SUNWgnome-keyring.spec:
+	* specs/SUNWgnome-libs.spec:
+	* specs/SUNWgnome-media-apps.spec:
+	* specs/SUNWlibtheora.spec:
+	* specs/SUNWspeex.spec:
+
+2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	CR #7121864 "Continuous attempts to manage displays already being
+	managed on Sun Ray servers"
+	WebRTI #361956.
+	* patches/ConsoleKit-01-ck-dynamic.diff: Improve ConsoleKit
+	  robustness for Sun Ray.
+	* patches/ConsoleKit-13-vt-switch.diff: Improve debug message.
+
+2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
+
+	RTI 361794,
+	CR 7159416
+	libtasn1 securiy bug fix
+	* base-specs/gnutls.spec: Add a space in the copyright line
+	* base-specs/libtasn1.spec:
+	* patches/libtasn1-02-cve-2012-1569.diff:
+	* specs/SUNWlibtasn1.spec:
+
+2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	CR #7095930 "GNOME needs to work better with the Stop RBAC profile"
+	WebRTI #361938.
+	* patches/gnome-session-24-rbac.diff, patches/glib-10-gio-rbac.diff,
+	  patches/libgksu-05-rbac-support.diff,
+	  patches/gnome-panel-17-rbac.diff, patches/gnome-menus-08-rbac.diff:
+	  Fix desktop RBAC integration so it checks exec->attr != NULL instead
+	  of exec->id != "*".
+	* patches/libgksu-01-Makefile.diff: Fix Makefile so it has uses tab
+	  instead of spaces.
+	* specs/SUNWnwam-manager.spec, ext-sources/SUNWnwam-manager-exec_attr:
+	  Removed since the GNOME panel no longer filters out modules that have
+	  no exec->attr value, so these entries are not useful.
+	* manpages/man1/gnome-panel.1: No longer mention NWAM as using GNOME
+	  panel filtering features.
+
+2012-04-17  Jeff Cai  <jeff.cai@oracle.com>
+
+	Fix bug 7159409 and 7159444
+	RTI 361795 Gnutls security fixes
+
+	* base-specs/gnutls.spec:
+	* patches/gnutls-02-cve-2012-1573.diff:
+	* patches/gnutls-03-cve-2011-4128.diff:
+	* specs/SUNWgnutls.spec:
+
+2012-04-17  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWgnome-media.spec, base-specs/gst.spec,
+	  patches/gst-02-amd64.diff: Fix CR #7159492 "GStreamer amd64 and i386
+	  sharing same registry files when they should not" and #7144691
+	  "Solaris 11 man pages have excessive permissions".  WebRTI #361807.
+
+2012-04-16  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	RTI 3616321
+	CR 7149817 firefox crashes when run ibus-daemon
+	* base-specs/gtk2.spec:
+	* patches/gtk+-19-unregister-callback.diff:
+
+2012-04-16  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	RTI 361546
+	CR 7035088 gnome-terminal leaks fds
+	* base-specs/gnome-terminal.spec:
+	* patches/gnome-terminal-05-increase-nofds.diff:
+
+2012-04-13  Brian Cameron  <brian.cameron@oracle.com>
+
+	* specs/SUNWjson-c.spec: Add "%include desktop-incorporation.inc".
+	  Fixes CR #7149760 "package library/json-c missing consolidation entry
+	  from its manifest".  WebRTI #361463.
+
+2012-04-09 Ada Luong <ada.luong@oracle.com>
+
+	==== S11U1 build 14 ====
+
+2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
+
+	Fix for 654936: gnome-about does not start for some locales on S11 
+	* base-specs/gnome-desktop.spec:
+	* patches/gnome-desktop-07-pomessage.diff:
+
+2012-04-09  Peng Wang	<peng.pe.wang@oracle.com>
+
+	Fix for 7060748: Some messages are not displayed correctly in
+		non-UTF-8 locale terminal environment
+	* base-specs/gdm.spec:
+	* patches/gdm-38-bindtextdomaincodeset.diff:
+
+2012-04-05  Leon Fan  <leon.fan@oracle.com>
+
+	RTI#361352
+	CR#7151514 python-gtk-vnc-26 miss dependency on library/desktop/gtk-vnc
+	* base-specs/gtk-vnc.spec:
+	* patches/gtk-vnc-03-buildissue.diff:
+	* specs/SUNWgtk-vnc.spec:
+
+2012-04-05  Leon Sha  <leon.sha@oracle.com>
+
+	CR#7157311 Bump to 11.2.202.223.
+	* specs/SUNWflash-player-plugin.spec:
+
+2012-04-05  Lin Ma  <lin.ma@oracle.com>
+
+	Update to Thunderbird 10.0.3 ESR and Lightning 1.2.3
+	* base-specs/thunderbird.spec:
+	* patches/firefox9-23-ycbcr.diff:
+	* specs/SUNWthunderbird.spec:
+
+2012-04-05  Jerry Guo  <yanjing.guo@oracle.com>
+
+	Fix for 6880567
+	* specs/SUNWncurses.spec:
+
+2012-04-04  Ginn Chen  <ginn.chen@oracle.com>
+	CR#7155458 Firefox 10.0.2 ESR and Firefox 11 dies horribly
+		   if you LD_PRELOAD libumem.so
+	CR#7153985 Update to Firefox 10.0.3 ESR
+	RTI#361541
+	* base-specs/firefox.spec:
+	* patches/firefox10-17-js-compiler.diff:
+	* patches/firefox10-23-ycbcr.diff:
+	* patches/firefox10-43-donot-disable-locale-addon.diff:
+	* patches/firefox10-46-plugin-bool.diff:
+	* patches/firefox9-06-jemalloc.diff:
+	* patches/firefox9-27-methodjit-sparc.diff:
+	* specs/SUNWfirefox.spec:
+
+2012-04-04  Ginn Chen  <ginn.chen@oracle.com>
+	CR#7152540 sqlite3's default page_size should be maxed
+	RTI#361542
+	* base-specs/sqlite.spec: Update to sqlite 3.7.11.
+	* base-specs/sqlitetcl.spec:
+	* ext-sources/mapfile-libsqlite3:
+	* ext-sources/update-sqlite-map-file.sh:
+	* specs/SUNWsqlite3.spec:
+
 2012-03-30  Ghee Teo  <ghee.teo@oracle.com>
 
 	CR#7154519 [s11u1] missing libsmb.so from library/gnome/gnome-vfs
@@ -34,14 +520,14 @@
 
 2012-03-30  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Fix for 7155901
+	Fix for 7155901
 	* base-specs/ncurses.spec:
 	* copyright/SUNWncurses.copyright:
 	* specs/SUNWncurses.spec:
 
 2012-03-27  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Update the fix for 7154328
+	Update the fix for 7154328
 	* base-specs/pidgin.spec:
 	* patches/pidgin-14-ifaddrs.diff:
 	* patches/pidgin-17-compile-ifaddrs.diff:
@@ -49,23 +535,23 @@
 
 2011-03-26 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 13 ====
+	==== S11U1 build 13 ====
 
 2012-03-23  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Add the patch for compile 
+	Add the patch for compile 
 	* base-specs/pidgin.spec:
 	* patches/pidgin-17-compile-ifaddrs.diff:
 
 2012-03-23  Jerry Guo  <yanjing.guo@oracle.com>
 
-        Fix for 7154328
+	Fix for 7154328
 	* base-specs/pidgin.spec:
 	* specs/SUNWgnome-im-client.spec
 
 2011-03-12 Ada Luong <ada.luong@oracle.com>
 
-        ==== S11U1 build 12 ====
+	==== S11U1 build 12 ====
 
 2012-03-09  Yong Sun <y.yong.sun@oracle.com>
 
@@ -83,6 +569,9 @@
 
 	* specs/SUNWgnome-vfs.spec, base-specs/gnome-vfs.spec: Fix
 	  PKG_CONFIG_PATH setting and 64-bit build.
+	  CR #7146691 "Build 64-bit libgnome-keyring, libsoup, gnome-vfs and
+	  related GStreamer plugins"
+	  WebRTI #360290
 
 2012-03-06  Ghee Teo  <ghee.teo@oracle.com>
 
@@ -119,15 +608,24 @@
 	  gnome-keyring, libsoup, and gnome-vfs libraries.  Also support the
 	  GStreamer 64-bit plugins for gnome-vfs and libsoup.  Also fix
 	  Requires/BuildRequires.
-	  RTI 360290, CR 7078660, 7146691.
+	  CR #7078660 "library/audio/gstreamer should not deliver editable
+	  profile attribute file"
+	  CR #7146691 "Build 64-bit libgnome-keyring, libsoup, gnome-vfs and
+	  related GStreamer plugins"
+	  WebRTI #360290
 	* base-specs/gdm.spec, patches/gdm-37-strndup.diff: Use strndup.
-	  RTI 360291, CR 7146593.
+	  CR #7146593 "Problem with gnome/session"
+	  WebRTI #360291
 	* specs/SUNWgnome-display-mgr.spec, specs/SUNWconsolekit.spec: Fix
 	  Requires/BuildRequires, and now /etc and /usr/share configuration
 	  files have the preserve flag set.
 	* patches/ConsoleKit-01-ck-dynamic.diff: Add additional debug flags.
 	* patches/gdm-34-vt.diff: Remove needless warning message.
-	  RTI 360292, CR 7093653, 7144246
+	  CR 7093653 "syslog WARNING: Unable to switch to VT1: Invalid argument
+	  on every reboot"
+	  CR 7144246 "GNOME login dialog box customizations cannot be saved
+	  across package fixes and package updates"
+	  WebRTI #360292
 	* specs/SUNWogg-vorbis.spec, specs/SUNWlibgc.spec: Fix
 	  Requires/BuildRequires.  Corrects minor spec-file issues that were
 	  noticed after the 2011-02-17 putback.
@@ -25044,7 +25542,7 @@
 	Bump to 2.25.3.
 	Added gnome-session-16-stop-ice-negotiation as code has not released as
 	tarball yet.
-	To fix bugster#6760675(bugzilla 563354).
+	To fix bugster #6760675 (bugzilla 563354).
 	* base-specs/gnome-session.spec:
 	* patches/gnome-session-16-stop-ice-negotiation.diff:
 

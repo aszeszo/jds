@@ -42,6 +42,8 @@ Patch4:         gst-plugins-good-04-sunaudiomixer.diff
 # and that patch has gone upstream.
 #owner:yippi date:2009-03-12 type:bug bugzilla:615998
 Patch5:         gst-plugins-good-05-goom.diff
+#owner:yippi date:2009-03-12 type:bug bugster:7145701
+Patch6:         gst-plugins-good-06-ossv4.diff
 BuildRoot:      %{_tmppath}/%{name}-%{version}-root
 Docdir:         %{_defaultdocdir}/doc
 Autoreqprov:    on
@@ -96,6 +98,7 @@ cd po-sun; make; cd ..
 %patch3 -p1
 %patch4 -p1
 %patch5 -p1
+%patch6 -p1
 
 %build
 glib-gettextize -f
@@ -179,6 +182,8 @@ GStreamer support libraries header files.
 %{_datadir}/gtk-doc
 
 %changelog
+* Mon Apr 23 2012 - brian.cameron@oracle.com
+- Add patch gst-plugins-good-06-ossv4.diff to fix P2 CR #7145701.
 * Mon Jan 24 2011 - brian.cameron@oracle.com
 - Bump to 0.10.27.
 * Fri Jan 14 2011 - brian.cameron@oracle.com

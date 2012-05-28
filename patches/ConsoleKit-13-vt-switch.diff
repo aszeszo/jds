@@ -47,7 +47,7 @@
  
          g_return_val_if_fail (CK_IS_SEAT (seat), FALSE);
  
-@@ -1076,7 +1104,46 @@ ck_seat_remove_session (CkSeat         *
+@@ -1076,7 +1104,48 @@ ck_seat_remove_session (CkSeat         *
          g_signal_emit (seat, signals [SESSION_REMOVED], 0, ssid);
  
          /* try to change the active session */
@@ -90,8 +90,10 @@
 +        }
 +
 +        /* Otherwise, look for an active session */
-+        if (found_login == FALSE)
++        if (found_login == FALSE) {
++                g_debug ("Login not found.  Maybe update active session");
 +                maybe_update_active_session (seat);
++        }
  
          if (orig_session != NULL) {
                  g_object_unref (orig_session);

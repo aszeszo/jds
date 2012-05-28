@@ -3,7 +3,8 @@
 #
 # includes module(s): gnome-nettool
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,18 +26,17 @@ SUNW_Copyright:  %{name}.copyright
 BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:      SUNWlibgtop
-Requires:      SUNWlibglade
-Requires:      SUNWgnome-libs
-Requires:      SUNWgnome-config
-Requires:      SUNWdesktop-cache
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-doc-utils
+Requires:      library/libgtop
+Requires:      library/desktop/libglade
+Requires:      library/gnome/gnome-libs
+Requires:      gnome/config/gconf
+Requires:      service/gnome/desktop-cache
+BuildRequires: library/desktop/libglade
+BuildRequires: gnome/config/gconf
+BuildRequires: developer/gnome/gnome-doc-utils
 
 %package l10n
 Summary:       %{summary} - l10n files
-Requires:      %{name}
 
 %prep
 rm -rf %name-%version

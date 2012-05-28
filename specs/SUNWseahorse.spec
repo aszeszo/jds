@@ -3,7 +3,7 @@
 #
 # includes module(s): seahorse
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,24 +26,23 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 Source1:	%{name}-manpages-0.1.tar.gz
-Requires: SUNWlibglade
-Requires: SUNWlibgnome-keyring
-Requires: SUNWgnome-config
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-desktop-prefs
-Requires: SUNWsshcu
-Requires: SUNWdesktop-cache
-Requires: crypto/gnupg
-Requires: library/security/gpgme
-Requires: library/pth
-Requires: %{name}-root
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWlibgnome-keyring-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: crypto/gnupg
-BuildRequires: library/pth
+Requires:       library/desktop/libglade
+Requires:       library/gnome/gnome-keyring
+Requires:       gnome/config/gconf
+Requires:       gnome/gnome-panel
+Requires:       gnome/preferences/control-center
+Requires:       network/ssh/ssh-key
+Requires:       service/gnome/desktop-cache
+Requires:       crypto/gnupg
+Requires:       library/security/gpgme
+Requires:       library/pth
+BuildRequires:       library/desktop/libglade
+BuildRequires:       gnome/config/gconf
+BuildRequires:       library/gnome/gnome-keyring
+BuildRequires:       gnome/gnome-panel
+BuildRequires:       developer/gnome/gnome-doc-utils
+BuildRequires:       crypto/gnupg
+BuildRequires:       library/pth
 
 %package l10n
 Summary:                 %{summary} - l10n files

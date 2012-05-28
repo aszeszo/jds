@@ -3,7 +3,7 @@
 #
 # includes module(s): libcanberra
 #
-# Copyright (c) 2009, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -56,10 +56,7 @@ fi
 export LDFLAGS="%{_ldflags}"
 
 glib-gettextize -f
-aclocal $ACLOCAL_FLAGS -I ./m4
-autoheader
-autoconf
-automake -a -c -f
+autoreconf --force --install
 
 ./configure --prefix=%{_prefix} --mandir=%{_mandir} \
             --libdir=%{_libdir} --bindir=%{_bindir} \
@@ -85,6 +82,8 @@ rm -rf $RPM_BUILD_ROOT%{_datadir}/locale
 rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Thu Feb 09 2011 - brian.cameron@oracle.com
+- Now call autoreconf.
 * Mon Oct 04 2010 - brian.cameron@oracle.com
 - Bump to 0.26.
 * Tue Sep 14 2010 - brian.cameron@oracle.com

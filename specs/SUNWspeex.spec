@@ -3,7 +3,7 @@
 #
 # includes module(s): speex 
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -35,10 +35,10 @@ Autoreqprov:             on
                                                                                 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWogg-vorbis-devel
-Requires: SUNWogg-vorbis
-Requires: SUNWlibms
+BuildRequires: developer/gnome/gettext
+BuildRequires: codec/ogg-vorbis
+Requires: codec/ogg-vorbis
+Requires: system/library/math
 
 %package devel
 Summary:      %{summary} - development files
@@ -61,6 +61,8 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
+export echo="/usr/bin/echo"
+export RANLIB="/usr/bin/ranlib"
 %ifarch amd64 sparcv9
 export PKG_CONFIG_LIBDIR=%{_pkg_config_path64}
 %speex_64.build -d %name-%version/%_arch64
@@ -70,6 +72,8 @@ export PKG_CONFIG_LIBDIR=%{_pkg_config_path}
 %speex.build -d %name-%version
                                     
 %install
+export echo="/usr/bin/echo"
+export RANLIB="/usr/bin/ranlib"
 %ifarch amd64 sparcv9
 %speex_64.install -d %name-%version/%_arch64
 %endif
@@ -79,7 +83,7 @@ export PKG_CONFIG_LIBDIR=%{_pkg_config_path}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
                                                                                 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}
 

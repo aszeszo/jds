@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-settings-daemon.
 #
-# Copyright (c) 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012 Oracle and/or its affiliates. All rights reserved.
 #
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
@@ -49,7 +49,10 @@ Patch9:      gnome-settings-daemon-09-dispswitch-keybinding.diff
 Patch10:     gnome-settings-daemon-10-gst-mediakeys.diff
 # date:2011-02-14 owner:migi type:bug doo:14557
 Patch11:     gnome-settings-daemon-11-animations-uses-gconf.diff
-Patch12:     gnome-settings-daemon-12-compile-fix.diff
+# date:2011-08-24 owner:yippi type:feature
+Patch12:     gnome-settings-daemon-12-mapfile.diff
+
+Patch13:     gnome-settings-daemon-13-compile-fix.diff
 
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
@@ -120,6 +123,7 @@ This package contains the files need for development of GNOME control center cap
 %patch10 -p1
 %patch11 -p1
 %patch12 -p1
+%patch13 -p1
 
 # Rename dir so that #include does not have to change on gnome-control-center.
 # Combines with patch mv-src-dir.diff (see bugzilla 511820).
@@ -232,6 +236,9 @@ done
 %{_libdir}/*.so
 
 %changelog
+* Tue Apr 17 2012 - brian.cameron@oracle.com
+- Add patch gnome-settings-daemon-12-mapfile.diff so plugins are built with a
+  mapfile.
 * Thu Feb 14 2011 - Michal.Pryc@Oracle.Com
 - gnome-settings-daemon-12-animations-uses-gconf.diff: added, so the gconf key
   /desktop/gnome/interface/enable_animations is also controlling animations

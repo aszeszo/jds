@@ -24,7 +24,11 @@ Source:         http://download.gnome.org/sources/%{name}/0.3/%{name}-%{version}
 Patch1:         gtk-vnc-01-cp-utf8.diff
 # date:2008-12-16 owner:wangke type:bug bugzilla:564718
 Patch2:         gtk-vnc-02-ff3.6.diff
-Patch3:         gtk-vnc-03-WERROR_CFLAGS.diff
+# date:2011-03-21 owner:leonfan type:bug bugster:7151514
+Patch3:         gtk-vnc-03-buildissue.diff
+
+Patch4:         gtk-vnc-04-WERROR_CFLAGS.diff
+
 BuildRoot:     %{_tmppath}/%{name}-%{version}-root
 
 BuildRequires: gtk2-devel pygtk2-devel python-devel
@@ -64,6 +68,7 @@ A module allowing use of the GTK-VNC widget from python
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
+%patch4 -p1
 
 %build
 %ifos linux

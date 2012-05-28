@@ -18,13 +18,27 @@
 #
 # CDDL HEADER END
 #
-# Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # Use is subject to license terms.
 #
 # ident "@(#)mapfile-libsqlite3 1.4     09/06/05 SMI"
 #
 # Defines the public interface to SQLite3
 #                    
+sqlite_3.7.11 {
+    global: 
+	sqlite3_db_release_memory;
+	sqlite3_db_filename;
+	sqlite3_stmt_busy;
+	sqlite3_uri_boolean;
+	sqlite3_uri_int64;
+	sqlite3_uri_parameter;
+	sqlite3_vtab_config;
+	sqlite3_vtab_on_conflict;
+	sqlite3_db_readonly;
+	sqlite3_stricmp;
+} sqlite_3.7.6;
+
 sqlite_3.7.6 {
     global: 
         sqlite3_wal_checkpoint_v2;

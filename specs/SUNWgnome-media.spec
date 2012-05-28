@@ -49,6 +49,9 @@ BuildRequires: codec/flac
 BuildRequires: codec/libtheora
 BuildRequires: codec/ogg-vorbis
 BuildRequires: codec/speex
+# GStreamer has some configure tests that are hardcoded to use the gcc
+# compiler, so the build will fail if it is not present.
+BuildRequires: developer/gcc-3
 BuildRequires: developer/parser/bison
 BuildRequires: gnome/config/gconf
 BuildRequires: gnome/gnome-audio
@@ -56,12 +59,16 @@ BuildRequires: image/library/libjpeg
 BuildRequires: image/library/libpng
 BuildRequires: library/desktop/libvisual
 BuildRequires: library/aalib
+BuildRequires: library/audio/pulseaudio
 BuildRequires: library/desktop/gtk2
 BuildRequires: library/desktop/pango
+BuildRequires: library/gc
 BuildRequires: library/gnome/gnome-keyring
 BuildRequires: library/gnome/gnome-libs
 BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/json-c
 BuildRequires: library/liboil
+BuildRequires: library/libsndfile
 BuildRequires: library/libsoup
 BuildRequires: library/libxml2
 BuildRequires: library/musicbrainz/libdiscid
@@ -117,11 +124,12 @@ cd %{_builddir}/%name-%version
 gzcat %SOURCE0 | tar xf -
 
 %build
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
+# Set default sinks and source plugins to use.
+export GST_DEFAULTS_EXTRA_CONFIG="\
+--with-default-audiosrc=autoaudiosrc \
+--with-default-audiosink=autoaudiosink \
+--with-default-videosink=autovideosink"
+export GST_EXTRA_CONFIG="$GST_DEFAULTS_EXTRA_CONFIG"
 
 export ACLOCAL_FLAGS="-I %{_datadir}/aclocal"
 
@@ -155,11 +163,11 @@ export PKG_CONFIG_PATH="%{_builddir}/%name-%version/%{_arch64}/gstreamer-%{gst.v
 # provide 64-bit libraries, so avoid building it with 64-bit to avoid build
 # failing if it is installed.
 #
-export GST_EXTRA_CONFIG="--disable-taglib"
+export GST_EXTRA_CONFIG="$GST_DEFAULTS_EXTRA_CONFIG --disable-taglib"
 
 %gst_plugins_good64.build -d %name-%version/%_arch64
 
-export GST_EXTRA_CONFIG=""
+export GST_EXTRA_CONFIG="$GST_DEFAULTS_EXTRA_CONFIG"
 %endif
 
 export CXXFLAGS="%cxx_optflags"
@@ -184,12 +192,6 @@ export PKG_CONFIG_PATH="%{_builddir}/%name-%version/%{base_arch}/gstreamer-%{gst
 %gst_plugins_good.build -d %name-%version/%{base_arch}
 
 %install
-# There seems to be an issue with the version of libtool that GStreamer is
-# now using.  The libtool script uses the echo and RM variables but does not
-# define them, so setting them here addresses this.
-export echo="/usr/bin/echo"
-export RM="/usr/bin/rm"
-
 rm -rf $RPM_BUILD_ROOT
 
 %ifarch amd64 sparcv9
@@ -238,9 +240,9 @@ rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man5/*.5
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man1/*.1
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man5/*.5
 
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.la" -exec rm -f {} ';'
 find $RPM_BUILD_ROOT%{_libdir} -type f -name "*.a" -exec rm -f {} ';'

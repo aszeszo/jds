@@ -339,7 +339,7 @@ diff -urN -x '*.orig' gnome-session-2.27.92/gnome-session/xagent.c ../SUNWtgnome
 +	char **app_path = NULL;
 +
 +	char *default_apps[] = {"/usr/bin/nautilus --no-default-window", 
-+				NULL };
++				"/usr/bin/gnome-volume-control-applet", NULL };
 +
 +	for (app_path = default_apps; *app_path != NULL; app_path++) {
 +		g_spawn_command_line_async (*app_path, NULL);

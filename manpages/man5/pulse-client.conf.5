@@ -1,0 +1,247 @@
+<!DOCTYPE REFENTRY PUBLIC "-//Sun Microsystems//DTD DocBook V3.0-Based SolBook Subset V2.0//EN" [
+<!--ArborText, Inc., 2011, v.4002-->
+<!ENTITY cmd "pulse-client.conf">
+<!ENTITY % commonents SYSTEM "smancommon.ent">
+%commonents;
+<!ENTITY % booktitles SYSTEM "booktitles.ent">
+%booktitles;
+<!ENTITY suncopy "Copyright (c) 2003,2006,2007 Sun Microsystems, Inc. All Rights Reserved.">
+]>
+<?Pub UDT _bookmark _target>
+<?Pub Inc>
+<refentry id="pules-client.conf-5">
+<!-- %Z%%M% %I% %E% SMI; -->
+<refmeta><refentrytitle>pulse-client.conf</refentrytitle><manvolnum>5</manvolnum>
+<refmiscinfo class="date">11 Oct 2011</refmiscinfo>
+<refmiscinfo class="sectdesc">&man5;</refmiscinfo>
+<refmiscinfo class="software">&release;</refmiscinfo>
+<refmiscinfo class="arch">generic</refmiscinfo>
+<refmiscinfo class="copyright">&suncopy;</refmiscinfo>
+</refmeta>
+<indexterm><primary>pulse-client.conf</primary></indexterm><indexterm><primary>
+PulseAudio client configuration file</primary></indexterm>
+<refnamediv id="pulse-client.conf-5-name"><refname>pulse-client.conf</refname><refpurpose>
+PulseAudio client configuration file</refpurpose></refnamediv>
+
+<refsynopsisdiv id="pulse-client.conf-5-synp"><title>&synp-tt;</title>
+<cmdsynopsis><file>~/.pulse/client.conf</file></cmdsynopsis>
+<cmdsynopsis><file>~/etc/pulse/client.conf</file></cmdsynopsis>
+</refsynopsisdiv>
+
+<refsect1 id="pulse-client.conf-5-desc"><title>&desc-tt;</title>
+<para>
+The PulseAudio client library reads configuration directives from a file
+<filename>~/.pulse/client.conf</filename> on startup and when that file does
+not exist from <filename>/etc/pulse/client.conf</filename>.
+</para>
+
+<para>
+The configuration file is a simple collection of variable declarations.  If the
+configuration file parser encounters either ; or # it ignores the rest of the
+line until its end.
+</para>
+
+<para>
+For the settings that take a boolean argument the values true, yes, on and 1
+are equivalent, resp. false, no, off, 0.
+</para>
+</refsect1>
+
+<refsect1 id="pulse-client.conf-5-params"><title>&parm-tt;</title>
+<para>The following configuration options are supported:</para>
+<variablelist termlength="wholeline">
+
+<varlistentry>
+<term>default_sink=</term>
+<listitem><para>
+The default sink to connect to.  If specified overwrites the setting in the
+daemon. The environment variable $PULSE_SINK however takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>default-source=</term>
+<listitem><para>
+The default source to connect to.  If specified overwrites the setting in the
+daemon. The environment variable $PULSE_SOURCE however takes precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>default-server=</term>
+<listitem><para>
+The default sever to connect to. The environment variable $PULSE_SERVER takes
+precedence.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>autospawn=</term>
+<listitem><para>
+Autospawn a PulseAudio daemon when needed.  Takes a boolean value, defaults to
+yes.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>daemon-binary=</term>
+<listitem><para>
+Path to the PulseAudio daemon to run when autospawning.  Defaults to a path
+configured at compile time.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>extra-arguments=</term>
+<listitem><para>
+Extra arguments to pass to the PulseAudio daemon when autospawning. Defaults to
+<option>-log-target=syslog</option>
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>cookie-file=</term>
+<listitem><para>
+Specify the path to the PulseAudio authentication cookie. Defaults to
+<filename>~/.pulse-cookie</filename>
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>enable-shm=</term>
+<listitem><para>
+Enable data transfer via POSIX shared memory. Takes a boolean argument,
+defaults to yes.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>shm-size-bytes=</term>
+<listitem><para>
+Sets the shared memory segment size for clients, in bytes.  If left unspecified
+or is set to 0 it will default to some system-specific default, usually 64 MiB.
+Please note that usually there is no need to change this value, unless you are
+running an OS kernel that does not do memory overcommit.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>auto-connect-localhost=</term>
+<listitem><para>
+Automatically try to connect to localhost via IP.  Enabling this is a potential
+security hole since connections are only authenticated one-way and a rogue
+server might hence fool a client into sending it its private (e.g. VoIP call)
+data. This was enabled by default on PulseAudio version 0.9.21 and older.
+Defaults to no.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>auto-connect-display=</term>
+<listitem><para>
+Automatically try to connect to the host X11's $DISPLAY variable is set to. The
+same security issues apply as to auto-connect-localhost=. Defaults to no.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="pulse-client.conf-5-envr"><title>&envr-tt;</title>
+<para>See <citerefentry><refentrytitle>environ</refentrytitle><manvolnum>
+5</manvolnum></citerefentry> for descriptions of the following environment
+variables:</para>
+
+<variablelist>
+<varlistentry>
+<term>PULSE_CLIENTCONFIG</term>
+<listitem><para>
+Specify the file that will be read instead of <filename>client.conf</filename>
+for client configuration.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_SINK</term>
+<listitem><para>
+Specify the default sink to use.  This takes precedence over the configuration
+settings specified in configuration files.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_SOURCE</term>
+<listitem><para>
+Specify the default source to use.  This takes precedence over the
+configuration settings specified in configuration files.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_SERVER</term>
+<listitem><para>
+Specify the default PulseAudio server to connect to.  This takes precedence
+over the configuration settings specified in configuration files.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_BINARY</term>
+<listitem><para>
+Specify the default PulseAudio daemon binary to run when autospawning.  This
+takes precedence over the configuration settings specified in configuration
+files.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_PROP</term>
+<listitem><para>
+A space separated list of properties of the form 'media.role=event' to be set
+for all streams.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term>PULSE_PROP_<replaceable>xxxx</replaceable></term>
+<listitem><para>
+Set property <replaceable>xxxx</replaceable> for all streams.
+</para>
+</listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="pulse-client.conf-5-file"><title>&file-tt;</title>
+<para>The following files are used by this application:</para>
+
+<variablelist>
+<varlistentry>
+<term><filename>/etc/pulse/client.conf</filename></term>
+<listitem><para>
+System configuration file.
+</para></listitem></varlistentry>
+
+<varlistentry>
+<term><filename>~/.pulse/client.conf</filename></term>
+<listitem><para>
+User configuration file.
+</para></listitem></varlistentry>
+</variablelist></refsect1>
+
+<refsect1 id="pulse-client.conf-5-attr"><title>&attr-tt;</title>
+<para>See <olink targetdocent="REFMAN5" localinfo="attributes-5"><citerefentry>
+<refentrytitle>attributes</refentrytitle><manvolnum>5</manvolnum></citerefentry></olink>
+for descriptions of the following attributes:</para>
+<informaltable frame="all">
+<tgroup cols="2" colsep="1" rowsep="1"><colspec colname="COLSPEC0" colwidth="1*">
+<colspec colname="COLSPEC1" colwidth="1*">
+<thead>
+<row><entry align="center" valign="middle">ATTRIBUTE TYPE</entry><entry align="center"
+valign="middle">ATTRIBUTE VALUE</entry></row>
+</thead>
+<tbody>
+<row><entry><para>Availability</para></entry><entry><para>SUNWpulseaudio</para></entry>
+</row>
+<row><entry colname="COLSPEC0"><para>Interface stability</para></entry><entry
+colname="COLSPEC1"><para>Volatile</para></entry></row>
+</tbody>
+</tgroup>
+</informaltable>
+</refsect1>
+
+<refsect1 id="pulse-client.conf-5-also"><title>&also-tt;</title>
+<!--Reference to another man page-->
+<!--Reference to a Help manual-->
+<!--Reference to a book.-->
+<para>
+<citerefentry><refentrytitle>pulseaudio</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
+<citerefentry><refentrytitle>pulse-daemon.conf</refentrytitle><manvolnum>5</manvolnum></citerefentry>
+</para>
+</refsect1>
+<refsect1 id="pulse-client.conf-5-note"><title>&note-tt;</title>
+<para>
+Written by the PulseAudio Developers <mzchyfrnhqvb (at) 0pointer (dot) net>;
+PulseAudio is available from http://www.pulseaudio.org/.
+</para>
+</refsect1>
+</refentry>

@@ -26,28 +26,24 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
                                                                                 
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWlibglade-devel
-BuildRequires: SUNWgnome-cd-burner-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-media-apps-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWmusicbrainz-devel
-BuildRequires: SUNWgnome-doc-utils
-Requires: SUNWlibglade
-Requires: SUNWlibcanberra
-Requires: SUNWgnome-cd-burner
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-media-apps
-Requires: SUNWgnome-media
-Requires: SUNWgnome-vfs
-Requires: SUNWlibC
-Requires: SUNWlibms
-Requires: SUNWmusicbrainz
-Requires: SUNWdesktop-cache
-Requires: %{name}-root
+BuildRequires: desktop/cd-burning/brasero
+BuildRequires: developer/gnome/gnome-doc-utils
+BuildRequires: gnome/config/gconf
+BuildRequires: gnome/media/gnome-media
+BuildRequires: library/audio/gstreamer
+BuildRequires: library/desktop/libglade
+BuildRequires: library/desktop/xdg/libcanberra
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: library/musicbrainz/libmusicbrainz
+Requires: desktop/cd-burning/brasero
+Requires: gnome/media/gnome-media
+Requires: system/library/math
+Requires: library/desktop/libglade
+Requires: library/desktop/xdg/libcanberra
+Requires: library/musicbrainz/libmusicbrainz
+Requires: service/gnome/desktop-cache
+Requires: system/library/c++-runtime
 
 %package l10n
 Summary:                 %{summary} - l10n files

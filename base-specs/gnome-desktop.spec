@@ -1,7 +1,7 @@
 #
 # spec file for package gnome-desktop
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -42,6 +42,8 @@ Patch4:       gnome-desktop-04-gnome-about-label-size.diff
 Patch5:       gnome-desktop-05-randr-xerror.diff
 # date:2010-11-12 type:bug owner:yippi bugzilla:629168,634534 state:upstream
 Patch6:       gnome-desktop-06-fixcrash.diff
+# date:2012-04-23 type:bug owner:pengwang bugster:6975608
+Patch7:       gnome-desktop-07-pomessage.diff
 URL:          http://www.gnome.org
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -99,6 +101,7 @@ cd po-sun; make; cd ..
 %patch3 -p1
 #%patch5 -p1
 %patch6 -p1
+%patch7 -p1
 
 %build
 %ifos linux
@@ -190,6 +193,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/libgnome-desktop-2.so
 
 %changelog
+* Fri Mar 30 2012 - peng.pe.wang@oracle.com
+- some messages should not be translated
 * Mon Jun 21 2010 - brian.cameron@oracle.com
 - Bump to 2.30.2.
 * Mon Jun 20 2010 - yuntong.jin@sun.com

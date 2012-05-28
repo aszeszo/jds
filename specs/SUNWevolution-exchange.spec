@@ -3,7 +3,7 @@
 #
 # includes module(s): exchange-connector
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -27,49 +27,48 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
 Source1:       %{name}-manpages-0.1.tar.gz
-Requires: SUNWlibgnomecanvas
-Requires: SUNWevolution
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWevolution-data-server
-Requires: SUNWevolution-libs
-Requires: SUNWlibsoup
-Requires: SUNWgnome-component
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-panel
-Requires: SUNWgnutls
-Requires: SUNWlibgcrypt
-Requires: SUNWlibgpg-error
-Requires: SUNWlibms
-Requires: SUNWlibpopt
-Requires: SUNWlxml
-Requires: SUNWzlib
-Requires: %{name}-root
-Requires: SUNWdesktop-cache
-Requires: SUNWlibunique
-#BuildRequires: library/security/nss
+Requires:       library/desktop/libgnomecanvas
+Requires:       mail/evolution
+Requires:       gnome/config/gconf
+Requires:       library/gnome/gnome-libs
+Requires:       library/desktop/evolution-data-server
+Requires:       library/desktop/gtkhtml
+Requires:       library/libsoup
+Requires:       library/gnome/gnome-component
+Requires:       library/gnome/gnome-vfs
+Requires:       gnome/gnome-panel
+Requires:       library/gnutls
+Requires:       system/library/security/libgcrypt
+Requires:       library/security/libgpg-error
+Requires:       system/library/math
+Requires:       library/popt
+Requires:       library/libxml2
+Requires:       library/zlib
+Requires:       service/gnome/desktop-cache
+Requires:       library/libunique
+#BuildRequires:       library/security/nss
 BuildRequires: system/library/mozilla-nss/header-nss
-BuildRequires: SUNWlibgnomecanvas-devel
-BuildRequires: SUNWevolution-data-server-devel
-BuildRequires: SUNWevolution-libs-devel
-BuildRequires: SUNWlibsoup-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnutls-devel
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWlibgpg-error-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: mail/evolution
-BuildRequires: SUNWlibunique
+BuildRequires:       library/desktop/libgnomecanvas
+BuildRequires:       library/desktop/evolution-data-server
+BuildRequires:       library/desktop/gtkhtml
+BuildRequires:       library/libsoup
+BuildRequires:       library/gnome/gnome-component
+BuildRequires:       library/gnome/gnome-vfs
+BuildRequires:       library/gnutls
+BuildRequires:       system/library/security/libgcrypt
+BuildRequires:       library/security/libgpg-error
+BuildRequires:       library/popt
+BuildRequires:       gnome/config/gconf
+BuildRequires:       library/gnome/gnome-libs
+BuildRequires:       mail/evolution
+BuildRequires:       library/libunique
 
 %package root
 Summary:       %{summary} - / filesystem
 SUNW_BaseDir:            /
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-config
+Requires:       gnome/config/gconf
 
 %package l10n
 Summary:	%{summary} - l10n files

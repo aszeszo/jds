@@ -2617,7 +2617,7 @@ index af7db59..dd2a387 100644
  match_session_display_device (const char *key,
                                CkSession  *session,
                                const char *display_device)
-@@ -314,6 +717,8 @@ match_session_display_device (const char
+@@ -314,6 +729,8 @@ match_session_display_device (const char
          device = NULL;
          ret = FALSE;
  
@@ -2626,7 +2626,7 @@ index af7db59..dd2a387 100644
          if (session == NULL) {
                  goto out;
          }
-@@ -486,6 +891,8 @@ change_active_session (CkSeat    *seat,
+@@ -486,6 +903,8 @@ change_active_session (CkSeat    *seat,
          char      *ssid;
          CkSession *old_session;
  
@@ -2635,7 +2635,7 @@ index af7db59..dd2a387 100644
          if (seat->priv->active_session == session) {
                  return;
          }
-@@ -515,7 +922,10 @@ change_active_session (CkSeat    *seat,
+@@ -515,7 +934,10 @@ change_active_session (CkSeat    *seat,
           * must be sent when the database dump is finished it is
           * important that the '-full' signalled is emitted first. */
  
@@ -2647,7 +2647,7 @@ index af7db59..dd2a387 100644
          g_signal_emit (seat, signals [ACTIVE_SESSION_CHANGED], 0, ssid);
  
          if (old_session != NULL) {
-@@ -526,6 +936,48 @@ change_active_session (CkSeat    *seat,
+@@ -526,6 +948,47 @@ change_active_session (CkSeat    *seat,
  }
  
  static void
@@ -2678,8 +2678,7 @@ index af7db59..dd2a387 100644
 +                if (IS_STR_SET (session_type) &&
 +                    g_str_equal (session_type, "LoginWindow")) {
 +                        login_session = value;
-+                        g_debug ("CkSeat: Setting login_session %s",
-+                                 login_session);
++                        g_debug ("CkSeat: Setting login_session");
 +                        g_free (session_type);
 +                }
 +        }
@@ -2696,7 +2695,7 @@ index af7db59..dd2a387 100644
  update_active_vt (CkSeat *seat,
                    guint   num)
  {
-@@ -537,7 +983,12 @@ update_active_vt (CkSeat *seat,
+@@ -537,7 +1000,12 @@ update_active_vt (CkSeat *seat,
          g_debug ("Active device: %s", device);
  
          session = find_session_for_display_device (seat, device);
@@ -2710,15 +2709,14 @@ index af7db59..dd2a387 100644
  
          g_free (device);
  }
-@@ -547,12 +998,20 @@ maybe_update_active_session (CkSeat *sea
+@@ -547,12 +1015,18 @@ maybe_update_active_session (CkSeat *sea
  {
          guint num;
  
 -        if (seat->priv->kind != CK_SEAT_KIND_STATIC) {
 -                return;
 -        }
-+        g_debug ("CkSeat: Check to see if we should update active session");
- 
+-
 -        if (ck_vt_monitor_get_active (seat->priv->vt_monitor, &num, NULL)) {
 -                update_active_vt (seat, num);
 +        switch (seat->priv->kind){
@@ -2736,7 +2734,7 @@ index af7db59..dd2a387 100644
          }
  }
  
-@@ -561,6 +1020,7 @@ session_activate (CkSession             
+@@ -561,6 +1035,7 @@ session_activate (CkSession             
                    DBusGMethodInvocation *context,
                    CkSeat                *seat)
  {
@@ -2744,7 +2742,7 @@ index af7db59..dd2a387 100644
          _seat_activate_session (seat, session, context);
  
          /* always return TRUE to indicate that the signal was handled */
-@@ -584,6 +1044,8 @@ ck_seat_remove_session (CkSeat         *
+@@ -584,6 +1059,8 @@ ck_seat_remove_session (CkSeat         *
          ssid = NULL;
          ck_session_get_id (session, &ssid, NULL);
  
@@ -2753,7 +2751,7 @@ index af7db59..dd2a387 100644
          /* Need to get the original key/value */
          res = g_hash_table_lookup_extended (seat->priv->sessions,
                                              ssid,
-@@ -628,18 +1090,118 @@ ck_seat_remove_session (CkSeat         *
+@@ -628,18 +1105,118 @@ ck_seat_remove_session (CkSeat         *
          return ret;
  }
  
@@ -2873,19 +2871,22 @@ index af7db59..dd2a387 100644
  
          ck_session_set_seat_id (session, seat->priv->id, NULL);
  
-@@ -656,6 +1218,11 @@ ck_seat_add_session (CkSeat         *sea
+@@ -654,7 +1231,13 @@ ck_seat_add_session (CkSeat         *sea
+         g_signal_emit (seat, signals [SESSION_ADDED_FULL], 0, session);
+         g_signal_emit (seat, signals [SESSION_ADDED], 0, ssid);
  
-         maybe_update_active_session (seat);
- 
+-        maybe_update_active_session (seat);
 +        if (ck_seat_is_managed (seat)) {
 +                g_debug ("CkSeat: Seat is managed.  Request open session");
 +                ck_seat_request_open_session (seat, session, NULL);
++        } else {
++                g_debug ("CkSeat: Seat is not managed.  Maybe update active session");
++                maybe_update_active_session (seat);
 +        }
-+
+ 
          g_free (ssid);
  
-         return TRUE;
-@@ -742,6 +1308,20 @@ ck_seat_get_kind (CkSeat        *seat,
+@@ -742,6 +1325,20 @@ ck_seat_get_kind (CkSeat        *seat,
  }
  
  gboolean
@@ -2906,7 +2907,7 @@ index af7db59..dd2a387 100644
  ck_seat_get_id (CkSeat         *seat,
                  char          **id,
                  GError        **error)
-@@ -771,6 +1351,7 @@ ck_seat_register (CkSeat *seat)
+@@ -771,6 +1368,7 @@ ck_seat_register (CkSeat *seat)
          GError *error = NULL;
  
          error = NULL;
@@ -2914,7 +2915,7 @@ index af7db59..dd2a387 100644
          seat->priv->connection = dbus_g_bus_get (DBUS_BUS_SYSTEM, &error);
          if (seat->priv->connection == NULL) {
                  if (error != NULL) {
-@@ -858,6 +1439,14 @@ _ck_seat_set_kind (CkSeat    *seat,
+@@ -858,6 +1456,14 @@ _ck_seat_set_kind (CkSeat    *seat,
  }
  
  static void
@@ -2929,7 +2930,7 @@ index af7db59..dd2a387 100644
  ck_seat_set_property (GObject            *object,
                        guint               prop_id,
                        const GValue       *value,
-@@ -874,6 +1463,9 @@ ck_seat_set_property (GObject           
+@@ -874,6 +1480,9 @@ ck_seat_set_property (GObject           
          case PROP_KIND:
                  _ck_seat_set_kind (self, g_value_get_enum (value));
                  break;
@@ -2939,7 +2940,7 @@ index af7db59..dd2a387 100644
          default:
                  G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
                  break;
-@@ -895,7 +1487,10 @@ ck_seat_get_property (GObject    *object
+@@ -895,7 +1504,10 @@ ck_seat_get_property (GObject    *object
                  g_value_set_string (value, self->priv->id);
                  break;
          case PROP_KIND:
@@ -2951,7 +2952,7 @@ index af7db59..dd2a387 100644
                  break;
          default:
                  G_OBJECT_WARN_INVALID_PROPERTY_ID (object, prop_id, pspec);
-@@ -1007,6 +1602,48 @@ ck_seat_class_init (CkSeatClass *klass)
+@@ -1007,6 +1619,47 @@ ck_seat_class_init (CkSeatClass *klass)
                                                   g_cclosure_marshal_VOID__BOXED,
                                                   G_TYPE_NONE,
                                                   1, CK_TYPE_DEVICE);
@@ -2996,11 +2997,10 @@ index af7db59..dd2a387 100644
 +                                                  NULL,
 +                                                  g_cclosure_marshal_VOID__VOID,
 +                                                  G_TYPE_NONE, 0);
-+/* HERE */
  
          g_object_class_install_property (object_class,
                                           PROP_ID,
-@@ -1024,6 +1661,13 @@ ck_seat_class_init (CkSeatClass *klass)
+@@ -1024,6 +1677,13 @@ ck_seat_class_init (CkSeatClass *klass)
                                                              CK_SEAT_KIND_DYNAMIC,
                                                              G_PARAM_READWRITE | G_PARAM_CONSTRUCT_ONLY));
  
@@ -3014,7 +3014,7 @@ index af7db59..dd2a387 100644
          g_type_class_add_private (klass, sizeof (CkSeatPrivate));
  
          dbus_g_object_type_install_info (CK_TYPE_SEAT, &dbus_glib_ck_seat_object_info);
-@@ -1039,6 +1683,7 @@ ck_seat_init (CkSeat *seat)
+@@ -1039,6 +1699,7 @@ ck_seat_init (CkSeat *seat)
                                                        g_free,
                                                        (GDestroyNotify) g_object_unref);
          seat->priv->devices = g_ptr_array_new ();
@@ -3022,7 +3022,7 @@ index af7db59..dd2a387 100644
  }
  
  static void
-@@ -1064,28 +1709,32 @@ ck_seat_finalize (GObject *object)
+@@ -1064,28 +1725,32 @@ ck_seat_finalize (GObject *object)
          g_ptr_array_free (seat->priv->devices, TRUE);
          g_hash_table_destroy (seat->priv->sessions);
          g_free (seat->priv->id);
@@ -3059,7 +3059,7 @@ index af7db59..dd2a387 100644
  {
          GObject *object;
          int      i;
-@@ -1100,27 +1749,62 @@ ck_seat_new_with_devices (const char *si
+@@ -1100,27 +1765,62 @@ ck_seat_new_with_devices (const char *si
                          ck_seat_add_device (CK_SEAT (object), g_ptr_array_index (devices, i), NULL);
                  }
          }
@@ -3133,7 +3133,7 @@ index af7db59..dd2a387 100644
          key_file = g_key_file_new ();
          error = NULL;
          res = g_key_file_load_from_file (key_file,
-@@ -1145,9 +1829,52 @@ ck_seat_new_from_file (const char *sid,
+@@ -1145,9 +1845,52 @@ ck_seat_new_from_file (const char *sid,
                  goto out;
          }
  
@@ -3187,7 +3187,7 @@ index af7db59..dd2a387 100644
  
          devices = g_ptr_array_sized_new (ndevices);
  
-@@ -1176,11 +1903,12 @@ ck_seat_new_from_file (const char *sid,
+@@ -1176,11 +1919,12 @@ ck_seat_new_from_file (const char *sid,
                  g_strfreev (split);
          }
          g_strfreev (device_list);
@@ -3202,7 +3202,7 @@ index af7db59..dd2a387 100644
  out:
  
          g_key_file_free (key_file);
-@@ -1348,10 +2076,15 @@ ck_seat_dump (CkSeat   *seat,
+@@ -1348,10 +2092,15 @@ ck_seat_dump (CkSeat   *seat,
  
                  error = NULL;
                  if (! ck_session_get_id (seat->priv->active_session, &session_id, &error)) {
@@ -3222,7 +3222,7 @@ index af7db59..dd2a387 100644
                  } else {
                          g_key_file_set_string (key_file,
                                                 group_name,
-@@ -1363,3 +2096,24 @@ ck_seat_dump (CkSeat   *seat,
+@@ -1363,3 +2112,24 @@ ck_seat_dump (CkSeat   *seat,
  
          g_free (group_name);
  }

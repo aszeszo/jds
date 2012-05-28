@@ -14,7 +14,7 @@
 
 %include l10n.inc
 Name:		pidgin
-Version:	2.10.2
+Version:	2.10.4
 Release:        1
 License:	GPL
 Group:		Applications/Internet

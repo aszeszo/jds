@@ -1,11 +1,11 @@
 #
 # spec file for package gksu
 #
-# Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner lin
+%define owner yippi
 #
 
 %define OSR 4532:1.x
@@ -22,9 +22,9 @@ Summary:      Graphical frontend to su
 Source:       http://people.debian.org/~kov/gksu/gksu-%{version}.tar.gz
 Source1:      %{name}-po-sun-%{po_sun_version}.tar.bz2
 Source2:      l10n-configure.sh
-# date:2006-08-03 owner:lin type:feature
+# date:2006-08-03 owner:yippi type:feature
 Patch1:	      gksu-01-Makefile.diff
-# date:2006-08-03 owner:lin type:feature
+# date:2006-08-03 owner:yippi type:feature
 Patch2:	      gksu-02-gksu.diff
 # date:2010-12-14 owner:yippi type:feature
 Patch3:       gksu-03-no-advanced.diff

@@ -3,11 +3,12 @@
 #
 # includes module(s): eog-plugins
 #
-# Copyright 2010 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner jouby 
+%define owner gheet 
 #
 %include Solaris.inc
 
@@ -26,16 +27,16 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-img-viewer
-Requires: SUNWlibchamplain
-Requires: SUNWgnome-python26
-Requires: SUNWpygtk2-26
-Requires: SUNWglib2 
+Requires: image/viewer/eog
+Requires: library/desktop/libchamplain
+Requires: library/python-2/python-gnome-26
+Requires: library/python-2/pygtk2-26
+Requires: library/glib2
 Requires: runtime/python-26
 
-BuildRequires: SUNWlibexif
-BuildRequires: SUNWgnome-img-viewer-devel
-BuildRequires: SUNWgnome-common-devel
+BuildRequires: image/library/libexif
+BuildRequires: image/viewer/eog
+BuildRequires: developer/gnome/gettext
 
 %description
 eog-plugins is a collection of plugins for use with the Eye of GNOME Image Viewer.

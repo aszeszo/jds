@@ -167,3 +167,41 @@ diff --git a/mfbt/Util.h b/mfbt/Util.h
      }
  
      bool defaultValue(JSContext *cx, JSType hint, js::Value *vp) {
+--- a/js/src/jsiter.cpp	2012-03-21 17:21:50.908082750 +0800
++++ b/js/src/jsiter.cpp	2012-03-21 17:22:17.104257900 +0800
+@@ -163,7 +163,9 @@
+ static inline bool
+ NewKeyValuePair(JSContext *cx, jsid id, const Value &val, Value *rval)
+ {
+-    Value vec[2] = { IdToValue(id), val };
++    Value vec[2];
++    vec[0] = IdToValue(id);
++    vec[1] = val;
+     AutoArrayRooter tvr(cx, ArrayLength(vec), vec);
+ 
+     JSObject *aobj = NewDenseCopiedArray(cx, 2, vec);
+--- a/js/src/jsproxy.cpp	2012-03-21 17:26:11.254227000 +0800
++++ b/js/src/jsproxy.cpp	2012-03-21 17:27:16.237038400 +0800
+@@ -644,7 +644,9 @@
+     if (!str)
+         return false;
+     AutoValueRooter tvr(cx, StringValue(str));
+-    Value argv[] = { ObjectOrNullValue(receiver), tvr.value() };
++    Value argv[2];
++    argv[0] = ObjectOrNullValue(receiver);
++    argv[1] =tvr.value();
+     AutoValueRooter fval(cx);
+     if (!GetDerivedTrap(cx, handler, ATOM(get), fval.addr()))
+         return false;
+@@ -662,7 +664,10 @@
+     if (!str)
+         return false;
+     AutoValueRooter tvr(cx, StringValue(str));
+-    Value argv[] = { ObjectOrNullValue(receiver), tvr.value(), *vp };
++    Value argv[3];
++    argv[0] = ObjectOrNullValue(receiver);
++    argv[1] = tvr.value();
++    argv[2] = *vp;
+     AutoValueRooter fval(cx);
+     if (!GetDerivedTrap(cx, handler, ATOM(set), fval.addr()))
+         return false;

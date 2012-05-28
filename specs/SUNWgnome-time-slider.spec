@@ -67,7 +67,7 @@ make install DESTDIR=$RPM_BUILD_ROOT
 
 mkdir -p $RPM_BUILD_ROOT/etc/security/auth_attr.d
 mkdir -p $RPM_BUILD_ROOT/etc/user_attr.d
-echo 'zfssnap::::type=role;auths=solaris.smf.manage.zfs-auto-snapshot;profiles=ZFS File System Management' > $RPM_BUILD_ROOT/etc/user_attr.d/desktop-time-slider
+echo 'zfssnap::::auths=solaris.smf.manage.zfs-auto-snapshot;profiles=ZFS File System Management' > $RPM_BUILD_ROOT/etc/user_attr.d/desktop-time-slider
 echo 'solaris.smf.manage.zfs-auto-snapshot:::Manage the ZFS Automatic Snapshot Service::' > $RPM_BUILD_ROOT/etc/security/auth_attr.d/desktop-time-slider
 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}

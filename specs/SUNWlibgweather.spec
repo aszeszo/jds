@@ -3,7 +3,7 @@
 #
 # includes module(s): libgweather
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -23,10 +23,10 @@ License:                 GPLv2
 
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
-BuildRequires:           SUNWgnome-doc-utils
-BuildRequires:           SUNWlibsoup
-BuildRequires:           SUNWgnome-config
-BuildRequires:           SUNWlibgnome-keyring
+BuildRequires:       developer/gnome/gnome-doc-utils
+BuildRequires:       library/libsoup
+BuildRequires:       gnome/config/gconf
+BuildRequires:       library/gnome/gnome-keyring
 
 %include default-depend.inc
 %include gnome-incorporation.inc

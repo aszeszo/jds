@@ -3,11 +3,14 @@
 #
 # includes module(s): cheese
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner jouby 
+
+#
+%define owner gheet 
 #
 
 %define OSR LFI#105446 (gnome Exec. summary):n/a
@@ -42,39 +45,36 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 Source1:                 %{name}-manpages-0.1.tar.gz
 
-Requires: SUNWlibgnomecanvas
-Requires: SUNWgnome-media
-Requires: SUNWgnome-vfs
-Requires: SUNWcheese-root
-Requires: SUNWdbus
-Requires: SUNWevolution-data-server
-Requires: SUNWgnome-config
-Requires: SUNWhal
-Requires: SUNWlibrsvg
-Requires: SUNWdesktop-cache
-Requires: SUNWcairo
-Requires: SUNWgnome-panel
-BuildRequires: SUNWxwrtl
-BuildRequires: SUNWlibgnomecanvas-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWevolution-data-server-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWhal
-BuildRequires: SUNWlibrsvg-devel
-BuildRequires: SUNWcairo-devel
-BuildRequires: SUNWgnome-doc-utils
+Requires: library/desktop/libgnomecanvas
+Requires: library/audio/gstreamer
+Requires: library/gnome/gnome-vfs
+Requires: system/library/dbus
+Requires: library/desktop/evolution-data-server
+Requires: gnome/config/gconf
+Requires: system/hal
+Requires: image/library/librsvg
+Requires: service/gnome/desktop-cache
+Requires: library/desktop/cairo
+Requires: gnome/gnome-panel
+BuildRequires: library/desktop/libgnomecanvas
+BuildRequires: system/library/dbus
+BuildRequires: library/desktop/evolution-data-server
+BuildRequires: library/audio/gstreamer
+BuildRequires: library/gnome/gnome-vfs
+BuildRequires: system/hal
+BuildRequires: image/library/librsvg
+BuildRequires: library/desktop/cairo
+BuildRequires: developer/gnome/gnome-doc-utils
 
 %package root
 Summary:                 %{summary} - / filesystem
 SUNW_BaseDir:            /
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgnome-config
+Requires: gnome/config/gconf
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 %setup -q -c -n %name-%version

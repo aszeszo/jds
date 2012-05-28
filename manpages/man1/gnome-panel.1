@@ -116,18 +116,15 @@ rights profiles do not see these programs.  These programs include:
 <listitem>brasero uses the "Desktop Removable Media User" profile.</listitem>
 <listitem>sound-juicer uses the "Desktop Removable Media User" profile.</listitem>
 <listitem>users-admin uses the "User Management" profile.</listitem>
-<listitem>nwam-manager-properties uses the "Network Autoconf Admin" profile.</listitem>
-<listitem>The "Network Monitor" applet uses the "Network Autoconf User" profile.</listitem>
 </itemizedlist>
 
-<para>
-The "Desktop Administration" profile includes all of the above profiles, and
-can be used to make them all available to a user.  When not using Trusted
-Extensions, you can configure the GNOME Panel so that a role password is
-required.  You set up a role with a password, assign the rights profile (such
-as the "Desktop Administration" profile) to the role, and then assign the role
-to the user.  The user must assume the role to gain access to the applets.
-RBAC can be configured to support these various configurations with the 
+<p>
+When not using Trusted Extensions, you can configure the GNOME Panel so that a
+role password is required.  You set up a role with a password, assign the
+rights profile (such as the "Desktop Administration" profile) to the role, and
+then assign the role to the user.  The user must assume the role to gain access
+to the applets.  RBAC can be configured to support these various configurations
+with the 
 <citerefentry><refentrytitle>profiles</refentrytitle><manvolnum>1</manvolnum></citerefentry>,
 <citerefentry><refentrytitle>roleadd</refentrytitle><manvolnum>1</manvolnum></citerefentry>
 and

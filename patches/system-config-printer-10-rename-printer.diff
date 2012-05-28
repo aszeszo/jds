@@ -1,0 +1,74 @@
+diff -urN system-config-printer-1.0.16/options.py ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/options.py
+--- system-config-printer-1.0.16/options.py	2009-02-04 16:14:05.000000000 +0000
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/options.py	2012-05-03 16:45:45.805528787 +0100
+@@ -62,6 +62,9 @@
+ # ---------------------------------------------------------------------------
+ 
+ class OptionInterface:
++    def get_default(self):
++	return None
++
+     def get_current_value(self):
+         raise NotImplemented
+ 
+@@ -110,6 +113,9 @@
+         # what that is.
+         self.system_default = self.ipp_type (system_default)
+ 
++    def get_default(self):
++        return self.system_default
++
+     def reinit(self, original_value, supported=None):
+         """Set the original value of the option and the supported choices.
+         The special value None for original_value resets the option to the
+diff -urN system-config-printer-1.0.16/system-config-printer.py ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/system-config-printer.py
+--- system-config-printer-1.0.16/system-config-printer.py	2012-05-03 16:41:49.690649470 +0100
++++ ../SUNWcups-manager-1.0.16.hacked/system-config-printer-1.0.16/system-config-printer.py	2012-05-03 16:48:40.870810671 +0100
+@@ -1548,7 +1548,7 @@
+             for option in self.server_side_options.itervalues():
+                 if (option.is_changed() or
+                     saveall and
+-                    option.get_current_value () != option.system_default):
++                    option.get_current_value () != option.get_default()):
+                     printer.setOption(option.name, option.get_current_value())
+ 
+         except cups.IPPError, (e, s):
+@@ -2167,6 +2167,12 @@
+             return
+ 
+         (path, cell) = tuple
++	if type (cell) != gtk.CellRendererText:
++	    cells = self.dests_iconview.get_cells ()
++            for cell in cells:
++                if type (cell) == gtk.CellRendererText:
++                    break
++
+         model = self.dests_iconview.get_model ()
+         iter = model.get_iter (path)
+         name = unicode (model.get_value (iter, 2))
+@@ -2209,6 +2215,10 @@
+         except RuntimeError:
+             # Perhaps cupsGetPPD2 failed for a browsed printer
+             pass
++	except cups.IPPError, (e, m):
++            show_IPP_Error (e, m, self.MainWindow)
++            self.populateList ()
++            return
+ 
+         if not self.is_rename_possible (old_name):
+             return
+@@ -2231,12 +2241,13 @@
+             # Restore original accepting/rejecting state.
+             if not rejecting:
+                 try:
++		    self.printer.name = old_name
+                     self.printers[old_name].setAccepting (True)
+                 except cups.HTTPError, (s,):
+                     show_HTTP_Error (s, self.MainWindow)
+                 except cups.IPPError, (e, msg):
+                     show_IPP_Error (e, msg, self.MainWindow)
+-
++            self.populateList ()
+             return
+ 
+         # Restore rejecting state.

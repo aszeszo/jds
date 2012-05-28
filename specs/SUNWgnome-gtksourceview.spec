@@ -3,7 +3,7 @@
 #
 # includes module(s): gtksourceview
 #
-# Copyright (c) 2003 Sun Microsystems, Inc.
+# Copyright (c) 2003, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,9 +25,15 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
+Requires: library/desktop/gtk2
+Requires: x11/library/libxscrnsaver
 Requires: runtime/python-26
-BuildRequires: SUNWgtk2-devel
+BuildRequires: library/desktop/gtk2
+BuildRequires: x11/library/libxi
+BuildRequires: x11/library/libxext
+BuildRequires: x11/library/libxevie
+BuildRequires: x11/library/libxscrnsaver
+BuildRequires: x11/header/x11-protocols
 BuildRequires: developer/documentation-tool/gtk-doc
 
 %package devel		
@@ -35,11 +41,9 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: %name
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
@@ -59,7 +63,7 @@ rm -rf $RPM_BUILD_ROOT%{_mandir}
 cd %{_builddir}/%name-%version/sun-manpages
 make install DESTDIR=$RPM_BUILD_ROOT
 
-chmod 755 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
+chmod 0644 $RPM_BUILD_ROOT%{_mandir}/man3/*.3
 
 %{?pkgbuild_postprocess: %pkgbuild_postprocess -v -c "%{version}:%{jds_version}:%{name}:$RPM_ARCH:%(date +%%Y-%%m-%%d):%{support_level}" $RPM_BUILD_ROOT}
 

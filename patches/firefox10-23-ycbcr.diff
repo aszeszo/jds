@@ -70,6 +70,7 @@ index b359db4..eed4c15 100644
 +
 +#elif defined(MOZILLA_MAY_SUPPORT_SSE) && defined(ARCH_CPU_X86_32) && defined(__SUNPRO_CC)
 +
++#if 0
 +void FastConvertYUVToRGB32Row_IL(const uint8* y_buf,
 +                                 const uint8* u_buf,
 +                                 const uint8* v_buf,
@@ -134,8 +135,7 @@ index b359db4..eed4c15 100644
 +  LinearScaleYUVToRGB32Row_C(y_buf, u_buf, v_buf, rgb_buf,
 +                             width, source_dx);
 +}
-+
-+/*
++#else
 +void PICConvertYUVToRGB32Row(const uint8* y_buf,
 +                             const uint8* u_buf,
 +                             const uint8* v_buf,
@@ -187,7 +187,7 @@ index b359db4..eed4c15 100644
 +  PICLinearScaleYUVToRGB32Row(y_buf, u_buf, v_buf, rgb_buf, width, source_dx,
 +                              &kCoefficientsRgbY[0][0]);
 +}
-+*/
++#endif
 +
  #else
  void FastConvertYUVToRGB32Row(const uint8* y_buf,
@@ -198,11 +198,11 @@ index 0000000..faf6463
 --- /dev/null
 +++ b/gfx/ycbcr/yuv_row_posix.il
 @@ -0,0 +1,480 @@
-+! void FastConvertYUVToRGB32Row_IL(const uint8* y_buf,
-+!                                  const uint8* u_buf,
-+!                                  const uint8* v_buf,
-+!                                  uint8* rgb_buf,
-+!                                  int width);
++/ void FastConvertYUVToRGB32Row_IL(const uint8* y_buf,
++/                                  const uint8* u_buf,
++/                                  const uint8* v_buf,
++/                                  uint8* rgb_buf,
++/                                  int width);
 +    .inline FastConvertYUVToRGB32Row_IL, 20
 +    pusha
 +    mov    0x20(%esp),%edx
@@ -252,12 +252,12 @@ index 0000000..faf6463
 +    popa
 +    .end
 +
-+! void ScaleYUVToRGB32Row_IL(const uint8* y_buf,
-+!                            const uint8* u_buf,
-+!                            const uint8* v_buf,
-+!                            uint8* rgb_buf,
-+!                            int width,
-+!                            int source_dx);
++/ void ScaleYUVToRGB32Row_IL(const uint8* y_buf,
++/                            const uint8* u_buf,
++/                            const uint8* v_buf,
++/                            uint8* rgb_buf,
++/                            int width,
++/                            int source_dx);
 +    .inline ScaleYUVToRGB32Row_IL, 24
 +    pusha
 +    mov    0x20(%esp),%edx
@@ -322,31 +322,31 @@ index 0000000..faf6463
 +    popa
 +    .end
 +
-+! void LinearScaleYUVToRGB32Row_IL(const uint8* y_buf,
-+!                                  const uint8* u_buf,
-+!                                  const uint8* v_buf,
-+!                                  uint8* rgb_buf,
-+!                                  int width,
-+!                                  int source_dx);
++/ void LinearScaleYUVToRGB32Row_IL(const uint8* y_buf,
++/                                  const uint8* u_buf,
++/                                  const uint8* v_buf,
++/                                  uint8* rgb_buf,
++/                                  int width,
++/                                  int source_dx);
 +    .inline LinearScaleYUVToRGB32Row_IL, 24
 +    pusha
 +    mov    0x20(%esp),%edx
 +    mov    0x24(%esp),%edi
 +    mov    0x2c(%esp),%ebp
 +
-+    ! source_width = width * source_dx + ebx
++    / source_width = width * source_dx + ebx
 +    mov    0x30(%esp), %ecx
 +    imull  0x34(%esp), %ecx
 +    mov    %ecx, 0x30(%esp)
 +
 +    mov    0x34(%esp), %ecx
 +    xor    %ebx,%ebx
-+       ! x = 0
++       / x = 0
 +    cmp    $0x20000,%ecx
-+       ! if source_dx >= 2.0
++       / if source_dx >= 2.0
 +    jl     1f
 +    mov    $0x8000,%ebx
-+       ! x = 0.5 for 1/2 or less
++       / x = 0.5 for 1/2 or less
 +    jmp    1f
 +
 +0:
@@ -433,12 +433,12 @@ index 0000000..faf6463
 +    popa
 +    .end
 +
-+! void PICConvertYUVToRGB32Row(const uint8* y_buf,
-+!                              const uint8* u_buf,
-+!                              const uint8* v_buf,
-+!                              uint8* rgb_buf,
-+!                              int width,
-+!                              int16 *kCoefficientsRgbY);
++/ void PICConvertYUVToRGB32Row(const uint8* y_buf,
++/                              const uint8* u_buf,
++/                              const uint8* v_buf,
++/                              uint8* rgb_buf,
++/                              int width,
++/                              int16 *kCoefficientsRgbY);
 +
 +    .inline PICConvertYUVToRGB32Row, 24
 +    pusha
@@ -491,13 +491,13 @@ index 0000000..faf6463
 +	.end
 +
 +
-+! void PICScaleYUVToRGB32Row(const uint8* y_buf,
-+!                            const uint8* u_buf,
-+!                            const uint8* v_buf,
-+!                            uint8* rgb_buf,
-+!                            int width,
-+!                            int source_dx,
-+!                            int16 *kCoefficientsRgbY);
++/ void PICScaleYUVToRGB32Row(const uint8* y_buf,
++/                            const uint8* u_buf,
++/                            const uint8* v_buf,
++/                            uint8* rgb_buf,
++/                            int width,
++/                            int source_dx,
++/                            int16 *kCoefficientsRgbY);
 +
 +    .inline PICScaleYUVToRGB32Row, 28
 +    pusha
@@ -564,13 +564,13 @@ index 0000000..faf6463
 +	.end
 +
 +
-+! void PICLinearScaleYUVToRGB32Row(const uint8* y_buf,
-+!                                  const uint8* u_buf,
-+!                                  const uint8* v_buf,
-+!                                  uint8* rgb_buf,
-+!                                  int width,
-+!                                  int source_dx,
-+!                                  int16 *kCoefficientsRgbY);
++/ void PICLinearScaleYUVToRGB32Row(const uint8* y_buf,
++/                                  const uint8* u_buf,
++/                                  const uint8* v_buf,
++/                                  uint8* rgb_buf,
++/                                  int width,
++/                                  int source_dx,
++/                                  int16 *kCoefficientsRgbY);
 +    .inline PICLinearScaleYUVToRGB32Row, 28
 +    pusha
 +    mov    0x20(%esp),%edx
@@ -579,19 +579,19 @@ index 0000000..faf6463
 +    mov    0x38(%esp),%edi
 +    xor    %ebx,%ebx
 +
-+    ! source_width = width * source_dx + ebx
++    / source_width = width * source_dx + ebx
 +    mov    0x30(%esp), %ecx
 +    imull  0x34(%esp), %ecx
 +    mov    %ecx, 0x30(%esp)
 +
 +    mov    0x34(%esp), %ecx
 +    xor    %ebx,%ebx
-+       ! x = 0
++       / x = 0
 +    cmp    $0x20000,%ecx
-+       ! if source_dx >= 2.0
++       / if source_dx >= 2.0
 +    jl     1f
 +    mov    $0x8000,%ebx
-+       ! x = 0.5 for 1/2 or less
++       / x = 0.5 for 1/2 or less
 +    jmp    1f
 +
 +0:

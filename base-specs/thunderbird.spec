@@ -1,7 +1,7 @@
 #
 # Copyright (c) Sun Microsystems, Inc.
 #
-%define owner lin
+%define owner leon.sha
 # bugdb: bugzilla.mozilla.org
 #
 
@@ -13,8 +13,8 @@
 
 Name:        thunderbird
 Summary:     Mozilla Thunderbird Standalone E-mail and Newsgroup Client
-Version:     10.0.2
-%define tarball_version 10.0.2
+Version:     10.0.4
+%define tarball_version 10.0.4esr
 Release:     1
 Copyright:   MPL
 License:     MPL
@@ -26,8 +26,8 @@ Source1:     thunderbird-icon.png
 Source2:     thunderbird.desktop
 
 %if %option_with_lightning
-%define lightning_version 1.2.1
-%define lightning_tarball_version 1.2.1
+%define lightning_version 1.2.3
+%define lightning_tarball_version 1.2.3
 %define lightningl10n_tarball_version 1.2.1
 
 Source3:     http://ftp.mozilla.org/pub/mozilla.org/calendar/lightning/releases/%{lightning_tarball_version}/source/lightning-%{lightning_tarball_version}.source.tar.bz2
@@ -48,7 +48,7 @@ Source8:     nspr-nss-config
 
 %define _unpackaged_files_terminate_build 0
 %define lightning_dir "{e2fda1a4-762b-4020-b5ad-a41df1933103}"
-%define moz_srcdir comm-release
+%define moz_srcdir comm-esr10
 %define moz_objdir obj-tb
 %define moz_l10n_srcdir l10n-release
 %define lightning_lang_list bg ca cs da de es-AR es-ES et eu fi fr gl hu id is it ja ko lt nb-NO nl nn-NO pa-IN pl pt-PT ro ru sk sl sq sv-SE tr uk zh-CN zh-HK zh-TW
@@ -62,6 +62,9 @@ Patch500: thunderbird10-00-bin-libs.diff
 
 # owner:lin date:2011-11-09 type:bug
 Patch501: thunderbird8-01-enable-extensions.diff
+
+# owner:leon date:2012-05-04 type:bug
+Patch502: thunderbird10-01-ldap.diff
 
 # owner:hawklu date:2009-09-03 type:bug doo:1114 
 Patch526: thunderbird3-26-no-offline-download.diff
@@ -124,7 +127,7 @@ Patch13: firefox6-13-gen-devel-files.diff
 
 %if %option_with_indiana_branding
 # owner:davelam date:2009-03-02 type:branding
-Patch14: firefox8-14-getting-started.diff
+Patch14: firefox10-14-getting-started.diff
 %endif
 
 # owner:hawklu date:2009-05-22 type:branding
@@ -153,7 +156,7 @@ Patch21: firefox-21-compiler-workaround.diff
 Patch22: firefox9-22-jsfunc.diff
 
 # owner:ginnchen date:2011-03-08 type:bug
-Patch23: firefox9-23-ycbcr.diff
+Patch23: firefox10-23-ycbcr.diff
 
 #%if %option_without_moz_nss_nspr
 # owner:ginnchen date:2010-03-04 type:branding
@@ -224,6 +227,12 @@ Patch44: firefox10-44-dtrace-probe.diff
 
 # owner:ginnchen date:2011-11-15 type:feature
 Patch45: firefox8-45-libnspr_flt4.diff
+
+# owner:ginnchen date:2012-03-14 type:bug bugzilla:731917 status:upstream
+Patch46: firefox10-46-plugin-bool.diff
+
+# owner:ginnchen date:2012-05-04 type:feature
+Patch47: firefox10-47-pulseaudio.diff
 
 URL:         http://www.mozilla.com/thunderbird
 
@@ -321,6 +330,8 @@ cd %{moz_srcdir}/mozilla
 %patch42 -p1
 %patch43 -p1
 %patch44 -p1
+%patch46 -p1
+%patch47 -p1
 
 %if %option_with_debug
 %patch28 -p1
@@ -341,6 +352,7 @@ cd %{moz_srcdir}/mozilla
 cd ..  
 %patch500 -p1
 %patch501 -p1
+%patch502 -p1
 %patch526 -p1
 # %patch528 -p1
 %patch538 -p1
@@ -411,6 +423,7 @@ ac_add_options --enable-debug-symbols=no
 # ac_add_options --with-system-nss
 %endif
 ac_add_options --enable-startup-notification
+ac_add_options --with-rpath="\\\$\$ORIGIN"
 EOF
 
 #
@@ -495,6 +508,8 @@ rmdir $RPM_BUILD_ROOT%{_libdir}/%{name}/dictionaries
 /bin/rm -rf $RPM_BUILD_ROOT
 
 %changelog
+* Fri May 11 2012 - len.sha@oracle.com
+- Bump to Thunderbird 10.0.4
 * Fri Feb 17 2012 - lin.ma@oracle.com
 - Bump to Thunderbird 10.0.2
 - Bump to Lightning 1.2.1

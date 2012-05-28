@@ -1,5 +1,5 @@
 #
-# Copyright (c) 2008, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -13,7 +13,7 @@ Name:                SUNWos-welcome
 IPS_package_name:    release/os-welcome
 Meta(info.classification): %{classification_prefix}:System/Text Tools
 Summary:             Oracle Solaris Welcome Pack
-Version:             1.1.8
+Version:             1.1.9
 Source:              os-welcome-%{version}.tar.bz2
 License:             cr_Oracle
 SUNW_BaseDir:        /
@@ -21,8 +21,8 @@ SUNW_Copyright:      %{name}.copyright
 BuildRoot:           %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWgnome-common-devel
-BuildRequires: SUNWdesktop-cache
+BuildRequires: developer/gnome/gettext
+BuildRequires: service/gnome/desktop-cache
 Requires: runtime/python-26
 
 %prep

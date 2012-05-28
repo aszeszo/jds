@@ -2,7 +2,7 @@
 #
 # includes module(s): evolution
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -29,65 +29,61 @@ BuildRoot:     %{_tmppath}/%{name}-%{version}-build
 %include desktop-incorporation.inc
 Source1:       idnkit.pc
 Source2:       %{name}-manpages-0.1.tar.gz
-Requires:      SUNWlibgnomecanvas
-Requires:      SUNWevolution-root
-Requires:      SUNWevolution-libs
-Requires:      library/security/nss
-Requires:      SUNWidnl
-Requires:      SUNWevolution-data-server
-BuildRequires: runtime/perl-512
-Requires:      SUNWgnome-component
-Requires:      SUNWgnome-config
-Requires:      SUNWgnome-libs
-Requires:      SUNWgnome-vfs
-Requires:      SUNWlibpopt
-Requires:      SUNWlxml
-Requires:      SUNWlibms
-Requires:      SUNWlibgcrypt
-Requires:      SUNWkrbu
-Requires:      SUNWgss
-Requires:      SUNWlibgnome-keyring
-#FIXME: put this back when dbus ARC case done
-#Requires:      SUNWdbus
-Requires:      SUNWevolution-data-server
-Requires:      SUNWgnutls
-Requires:      SUNWlibgcrypt
-Requires:      SUNWlibgpg-error
-Requires:      SUNWzlib
-Requires:      SUNWdesktop-cache
-Requires:      library/nspr
-Requires:      SUNWgnome-media
-#Requires:      SUNWgtkimageview
-%{?with_pilot_link:Requires:      SUNWpilot-link}
-%{?with_pilot_link:Requires:      SUNWgnome-pilot}
-BuildRequires: SUNWlibgnomecanvas-devel
-BuildRequires: SUNWidnd
-BuildRequires: SUNWevolution-data-server-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWlxml
-BuildRequires: SUNWlibms
-BuildRequires: SUNWlibgcrypt-devel
-BuildRequires: SUNWgnome-media-devel
-BuildRequires: SUNWlibgnome-keyring-devel
-#BuildRequires: SUNWgtkimageview
-BuildRequires: SUNWiconv-unicode
-BuildRequires: SUNWgnome-doc-utils
-BuildRequires: SUNWlibunique
-BuildRequires: SUNWgnome-icon-theme
-BuildRequires: SUNWuiu8
-BuildRequires: SUNWlibgweather
-BuildRequires: SUNWevolution-data-server
+Requires:       library/desktop/libgnomecanvas
+Requires:       library/desktop/gtkhtml
+Requires:       library/security/nss
+Requires:       library/idnkit
+Requires:       library/desktop/evolution-data-server
+Requires:       library/gnome/gnome-component
+Requires:       gnome/config/gconf
+Requires:       library/gnome/gnome-libs
+Requires:       library/gnome/gnome-vfs
+Requires:       library/popt
+Requires:       library/libxml2
+Requires:       system/library/math
+Requires:       system/library/security/libgcrypt
+Requires:       service/security/kerberos-5
+Requires:       system/library/security/gss
+Requires:       library/gnome/gnome-keyring
+Requires:       system/library/dbus
+Requires:       library/desktop/evolution-data-server
+Requires:       library/gnutls
+Requires:       system/library/security/libgcrypt
+Requires:       library/security/libgpg-error
+Requires:       library/zlib
+Requires:       service/gnome/desktop-cache
+Requires:       library/nspr
+Requires:       library/audio/gstreamer
+%{?with_pilot_link:Requires:      communication/pda/pilot-link }
+%{?with_pilot_link:Requires:      communication/pda/gnome-pilot }
+BuildRequires:       runtime/perl-512
+BuildRequires:       library/desktop/libgnomecanvas
+BuildRequires:       library/idnkit/header-idnkit
+BuildRequires:       library/desktop/evolution-data-server
+BuildRequires:       library/gnome/gnome-component
+BuildRequires:       gnome/config/gconf
+BuildRequires:       library/gnome/gnome-libs
+BuildRequires:       library/gnome/gnome-vfs
+BuildRequires:       library/popt
+BuildRequires:       library/libxml2
+BuildRequires:       system/library/math
+BuildRequires:       system/library/security/libgcrypt
+BuildRequires:       library/audio/gstreamer  
+BuildRequires:       library/gnome/gnome-keyring
+BuildRequires:       system/library/iconv/unicode
+BuildRequires:       developer/gnome/gnome-doc-utils
+BuildRequires:       library/libunique
+BuildRequires:       gnome/theme/gnome-icon-theme
+BuildRequires:       system/library/iconv/utf-8
+BuildRequires:       library/desktop/libgweather
+BuildRequires:       library/desktop/evolution-data-server
 
 %if %with_hal
-BuildRequires: SUNWhal
+BuildRequires:       system/hal
 %endif
-%{?with_pilot_link:BuildRequires:      SUNWpilot-link-devel}
-%{?with_pilot_link:BuildRequires:      SUNWgnome-pilot}
-%{?with_pilot_link:BuildRequires:      SUNWgnome-pilot-devel}
+%{?with_pilot_link:BuildRequires:     communication/pda/pilot-link}
+%{?with_pilot_link:BuildRequires:     communication/pda/pilot-link}
+%{?with_pilot_link:BuildRequires:     communication/pda/gnome-pilot}
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -104,7 +100,7 @@ Summary:       %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires:      SUNWevolution
+Requires:       mail/evolution
 
 %prep
 rm -rf %name-%version

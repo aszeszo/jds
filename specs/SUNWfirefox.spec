@@ -20,7 +20,7 @@
 #####################################
 
 %define lang_list ar be bg ca cs da de el es-AR es-CL es-ES et fi fr he hi-IN hr hu id is it ja kk ko lt lv mk nb-NO nl nn-NO pl pt-BR pt-PT ro ru sk sl sq sr sv-SE th tr uk vi zh-CN zh-HK zh-TW 
-%define l10n_version 10.0.2
+%define l10n_version 10.0.4esr
 
 Name:          SUNWfirefox
 IPS_package_name: web/browser/firefox
@@ -89,6 +89,7 @@ BuildRequires: compress/bzip2
 # %endif
 BuildRequires: x11/library/mesa
 BuildRequires: x11/library/libxscrnsaver
+BuildRequires: library/audio/pulseaudio
 Requires: system/font/truetype/dejavu
 
 #####################################
@@ -192,7 +193,7 @@ exit 0
 
 %files -f SUNWfirefox.list
 
-%doc -d firefox/mozilla-release README.txt LICENSE 
+%doc -d firefox/mozilla-esr10 README.txt
 %dir %attr (0755, root, other) %{_datadir}/doc
 
 %defattr(-, root, bin)
@@ -234,6 +235,10 @@ exit 0
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Mon May 21 2012 - ginn.chen@oracle.com
+- Bump to Firfox 10.0.4 ESR
+* Wed Apr 04 2012 - ginn.chen@oracle.com
+- Bump to Firefox 10.0.3 ESR
 * Tue Dec 27 2011 - ginn.chen@oracle.com
 - Update to Firefox 9.0.1.
 * Tue Nov 15 2011 - ginn.chen@oracle.com

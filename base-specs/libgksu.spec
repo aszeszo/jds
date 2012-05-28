@@ -1,11 +1,11 @@
 #
 # spec file for package libgksu
 #
-# Copyright (c) 2006, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2006, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner lin
+%define owner yippi
 #
 
 %define OSR 4532:1.x
@@ -19,15 +19,15 @@ Distribution: Java Desktop System
 Vendor:       www.nongnu.org/gksu
 Summary:      Simple API for embedded_su, pfexec and sudo (optional)
 Source:       http://people.debian.org/~kov/gksu/libgksu-%{version}.tar.gz
-# date:2006-10-21 owner:lin type:feature
+# date:2006-10-21 owner:yippi type:feature
 Patch1:	      libgksu-01-Makefile.diff
 # date:2010-12-14 owner:yippi type:feature
 Patch2:       libgksu-02-uninstalled-pc.diff
-# date:2006-10-21 owner:lin type:feature
+# date:2006-10-21 owner:yippi type:feature
 Patch3:       libgksu-03-gnu_gettext.diff
-# date:2006-10-21 owner:lin type:feature
+# date:2006-10-21 owner:yippi type:feature
 Patch4:       libgksu-04-GUI-update.diff
-# date:2006-10-21 owner:lin type:feature
+# date:2006-10-21 owner:yippi type:feature
 Patch5:	      libgksu-05-rbac-support.diff
 Patch6:	      libgksu-06-tabs.diff
 URL:          http://www.nongnu.org/gksu/

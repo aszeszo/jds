@@ -9,7 +9,7 @@
 #
 # includes module(s): xscreensaver, rss-glx
 #
-# Copyright (c) 2009, 2011, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # packages are under the same license as the packages themselves.
 #
@@ -126,6 +126,8 @@ Patch22: xscreensaver-22-bug-7033508.diff
 Patch23: xscreensaver-23-bug-7136531.diff
 # date:2012-03-28 owner:arvind type:bug bugster:7144354
 patch24: xscreensaver-24-bug-7144354.diff
+#date:2012-04-24 owner:arvind type:bug bugster:7023648
+patch25: xscreensaver-25-bug-7023648.diff
 
 # date:2008-03-07 owner:alanc type:branding
 Patch101: rss-glx-101-matrixview.diff
@@ -178,11 +180,11 @@ Version:                 %{src_version}
 %include default-depend.inc
 %include desktop-incorporation.inc
 Requires: %{name}
-Requires: SUNWcslr
-Requires: SUNWglib2
-Requires: SUNWgtk2
-Requires: SUNWlibmsr
-BuildRequires: SUNWxwplt
+Requires: system/library
+Requires: library/glib2
+Requires: library/desktop/gtk2
+Requires: system/library/math
+BuildRequires: compatibility/packages/SUNWxwplt
 
 %package hacks-gl
 IPS_package_name:        %{pkg5_name_hacks_gl}
@@ -196,13 +198,12 @@ Version:                 %{src_version}
 %include default-depend.inc
 %include desktop-incorporation.inc
 Requires: %{name}
-Requires: SUNWcslr
-Requires: SUNWglib2
-Requires: SUNWgtk2
-Requires: SUNWlibmsr
-Requires: SUNWxorg-mesa
-BuildRequires: SUNWxwplr
-BuildRequires: SUNWxwplt
+Requires: system/library
+Requires: library/glib2
+Requires: library/desktop/gtk2
+Requires: system/library/math
+Requires: x11/library/mesa
+BuildRequires: compatibility/packages/SUNWxwplt
 %define opengl_dir /usr
 
 %package -n SUNWrss-glx
@@ -217,14 +218,13 @@ Version:                 %{rss_version}
 %include default-depend.inc
 %include desktop-incorporation.inc
 Requires: %{name}
-Requires: SUNWbzip
-Requires: SUNWcslr
-Requires: SUNWimagick
-Requires: SUNWlibC
-Requires: SUNWlibmsr
-Requires: SUNWxorg-mesa
-BuildRequires: SUNWxwplr
-BuildRequires: SUNWxwplt
+Requires: compress/bzip2
+Requires: system/library
+Requires: image/imagemagick
+Requires: system/library
+Requires: system/library/math
+Requires: x11/library/mesa
+BuildRequires: compatibility/packages/SUNWxwplt
 
 %package l10n
 Summary:                 XScreenSaver - l10n content
@@ -258,6 +258,7 @@ cd po-sun; make; cd ..
 %patch22 -p0
 %patch23 -p0
 %patch24 -p0
+%patch25 -p0
 
 chmod a+x install-sh configure
 
@@ -628,6 +629,8 @@ rm -rf ${RPM_BUILD_ROOT}
 %attr (-, root, other) /usr/share/locale
 
 %changelog
+* Tue Apr 24 2012 -arvind.umrao@oracle.com
+Added patch xscreensaver-25-bug-7023648.diff
 * Wed Mar 28 2012 -arvind.umrao@oracle.com
   Added patch xscreensaver-23-bug-7136531.diff
   Added patch xscreensaver-24-bug-7144354.diff 

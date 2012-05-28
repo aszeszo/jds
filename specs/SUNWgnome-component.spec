@@ -3,7 +3,8 @@
 #
 # includes module(s): libIDL, ORBit2, libbonobo
 #
-# Copyright 2007 Sun Microsystems, Inc.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -39,22 +40,24 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-BuildRequires: SUNWglib2-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWdbus-devel
-BuildRequires: SUNWdbus-glib-devel
-BuildRequires: SUNWgnome-xml-share
-Requires: SUNWglib2
+BuildRequires: library/glib2
+BuildRequires: library/popt
+BuildRequires: system/library/dbus
+BuildRequires: system/library/libdbus-glib
+BuildRequires: data/xml-common
+BuildRequires: data/sgml-common
+BuildRequires: data/docbook/docbook-style-dsssl
+BuildRequires: data/docbook/docbook-style-xsl
+BuildRequires: data/docbook/docbook-dtds
+Requires: library/glib2
 Requires: library/popt
-Requires: SUNWgnome-component-root
-Requires: SUNWdbus
+Requires: system/library/dbus
 BuildRequires: runtime/perl-512
-Requires: SUNWlxml
-Requires: SUNWdbus-glib
+Requires: library/libxml2
+Requires: system/library/libdbus-glib
 %if %option_with_gnu_iconv
 # for /usr/gnu/bin/printf needed in po/Makefile
-BuildRequires: SUNWgnu-coreutils
+BuildRequires: file/gnu-coreutils
 %endif
 
 %package root
@@ -68,17 +71,14 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgnome-common-devel
-Requires: SUNWglib2-devel
-Requires: SUNWlxml
-Requires: SUNWgnome-component
-Requires: SUNWglib2
-Requires: SUNWlibpopt
-Requires: SUNWlibms
+Requires: developer/gnome/gettext
+Requires: library/glib2
+Requires: library/libxml2
+Requires: library/popt
+Requires: system/library/math
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires: %{name}
 
 %prep
 rm -rf %name-%version

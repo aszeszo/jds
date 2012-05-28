@@ -3,7 +3,7 @@
 #
 # includes module(s): libpng
 #
-# Copyright (c) 2007, 2010, Oracle and/or its affiliates. All rights reserved.
+# Copyright (c) 2007, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -34,8 +34,8 @@ Source1:                 %{name}-manpages-0.1.tar.gz
 SUNW_BaseDir:            %{_prefix}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
-Requires: SUNWzlib
-Requires: SUNWlibms
+Requires: library/zlib
+Requires: system/library/math
 
 %include default-depend.inc
 %include desktop-incorporation.inc
@@ -45,7 +45,7 @@ Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_prefix}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWcsr
+Requires: system/core-os
 
 %prep
 rm -rf %name-%version
@@ -164,6 +164,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man4/*
 
 %changelog
+* Tue May 01 2010 - padraig.obriain@oracle.com
+- Change SVR4 package names to IPS package names.
 * Wed Jul 21 2010 - laszlo.peter@oracle.com
 - add libpng 1.4.x
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com

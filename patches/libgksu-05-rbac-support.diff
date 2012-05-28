@@ -2019,7 +2019,7 @@
 +			fprintf (stderr, "Exec Id: %s\n", exec->id);
 +		}
 +
-+		if (strcmp (exec->id, "*") != 0) {
++		if (exec->attr != NULL) {
 +			if (CONTEXT_DEBUG_ON(context)) {
 +				fprintf (stderr, "User has access, using pfexec\n");
 +			}
@@ -2113,7 +2113,7 @@
 +				fprintf (stderr, "Exec Id: %s\n", exec->id);
 +			}
 +
-+			if (strcmp (exec->id, "*") != 0) {
++			if (exec->attr != NULL) {
 +				if (CONTEXT_DEBUG_ON(context)) {
 +					fprintf (stderr, "Using role %s\n", rolename);
 +				}

@@ -3,11 +3,11 @@
 #
 # includes module(s): dia
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
-%define owner wangke
+%define owner jeffcai 
 #
 %include Solaris.inc
 %use dia = dia.spec
@@ -25,13 +25,13 @@ BuildRoot:        %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWlibart
-Requires: SUNWgtk2
-Requires: SUNWgnome-libs
-Requires: SUNWgccruntime
-BuildRequires: SUNWlibgnome-keyring
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgccruntime
+Requires:       image/library/libart
+Requires:       library/desktop/gtk2
+Requires:       library/gnome/gnome-libs
+Requires:       system/library/gcc-3-runtime
+BuildRequires:       library/gnome/gnome-keyring
+BuildRequires:       library/desktop/gtk2
+BuildRequires:       system/library/gcc-3-runtime
 
 %package l10n
 Summary:                 %{summary} - l10n files
