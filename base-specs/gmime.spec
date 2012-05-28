@@ -73,7 +73,7 @@ autoheader
 automake -a -c -f
 autoconf
 # Need a proper config.rpath to work
-# cp /usr/share/gettext/config.rpath .
+cp /usr/share/gettext/config.rpath .
 
 CFLAGS="$RPM_OPT_FLAGS"			\
 ./configure --prefix=%{_prefix}         \
