@@ -19,6 +19,10 @@ Version:      1.3.104
 Release:      1
 Summary:      pkgbuild - rpmbuild-like tool for building Solaris packages
 Source:       http://prdownloads.sourceforge.net/pkgbuild/pkgbuild-%{version}.tar.bz2
+# date:2012-05-16 owner:laca type:bug bugster:7165637
+Patch1:       pkgbuild-01-pkgdepend.diff
+# date:2012-05-16 owner:laca type:bug bugster:7154098
+Patch2:       pkgbuild-02-description.diff
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 SUNW_BaseDir: %{_basedir}
 SUNW_Pkg:                  SUNWpkgbuild
@@ -36,6 +40,8 @@ More details at http://pkgbuild.sf.net/
 
 %prep
 %setup -q -n pkgbuild-%version
+%patch1 -p1
+%patch2 -p1
 
 %build
 ./configure --prefix=%{_prefix}
@@ -58,6 +64,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}
 
 %changelog
+* Wed May 16 2012 - laszlo.peter@oracle.com
+- add patches pkgdepend.diff and description.diff
 * Tue Feb 21 2012 - laszlo.peter@oracle.com
 - bump to 1.3.104, minor updates
 * Mon Jul 26 2010 - laszlo.peter@oracle.com
