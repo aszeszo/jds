@@ -3,9 +3,11 @@
 #
 # includes module(s): yelp
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
+
 #
 %define owner leonfan
 #
@@ -25,34 +27,32 @@ SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires:	SUNWlibglade
-Requires:	SUNWgnome-libs
-Requires:       SUNWgnome-vfs
-Requires:       SUNWgnome-component
-Requires:       SUNWgnome-config
-Requires:       SUNWlxml
-Requires:       SUNWlxsl
-Requires:  	SUNWfirefox
-Requires:       SUNWbzip
-Requires:       SUNWlibC
-Requires:       SUNWlibpopt
-Requires:       SUNWzlib
-Requires:       SUNWdesktop-cache
-Requires:       SUNWgnome-a11y-reader
-Requires:       %{name}-root
-BuildRequires:  SUNWlibglade-devel
-BuildRequires:  SUNWlibpopt-devel
-BuildRequires:  SUNWfirefox-devel
-BuildRequires:  SUNWfirefox
-BuildRequires:  SUNWgnome-vfs-devel
-BuildRequires:  SUNWgnome-component-devel
-BuildRequires:  SUNWgnome-libs-devel
-BuildRequires:  SUNWgnome-config-devel
-BuildRequires:  SUNWgnome-doc-utils
-BuildRequires:  SUNWlxml
-BuildRequires:  SUNWlxsl
-BuildRequires:  SUNWgtk2
-BuildRequires:  SUNWdbus
+Requires:	library/desktop/libglade
+Requires:	library/gnome/gnome-libs
+Requires:       library/gnome/gnome-vfs
+Requires:       library/gnome/gnome-component
+Requires:       gnome/config/gconf
+Requires:       library/libxml2
+Requires:       library/libxslt
+Requires:  	web/browser/firefox
+Requires:       compress/bzip2
+Requires:       system/library/c++-runtime
+Requires:       library/popt
+Requires:       library/zlib
+Requires:       service/gnome/desktop-cache
+Requires:       gnome/accessibility/orca
+BuildRequires:  library/desktop/libglade
+BuildRequires:  library/popt
+BuildRequires:  web/browser/firefox
+BuildRequires:  library/gnome/gnome-vfs
+BuildRequires:  library/gnome/gnome-component
+BuildRequires:  library/gnome/gnome-libs
+BuildRequires:  gnome/config/gconf
+BuildRequires:  developer/gnome/gnome-doc-utils
+BuildRequires:  library/libxml2
+BuildRequires:  library/libxslt
+BuildRequires:  library/desktop/gtk2
+BuildRequires:  system/library/dbus
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -62,7 +62,6 @@ SUNW_BaseDir:            /
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version

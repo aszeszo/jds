@@ -1,9 +1,11 @@
 #
 # spec file for package planner
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
+
 #
 %define owner jat
 #
@@ -92,6 +94,8 @@ rm -rf $RPM_BUILD_ROOT
 %postun -p /sbin/ldconfig
 
 %changelog
+* Wed May 16 2012 - ghee.teo@oracle.com
+- updated so to rebuild this module to fix CR#7157074.
 * Fri Feb 20 2009 - matt.keenan@sun.com
 - Add attributes/ARC manpage patch
 * Fri Jan 16 2008 - brian.cameron@sun.com

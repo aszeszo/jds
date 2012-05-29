@@ -1,3 +1,11 @@
+2012-05-29  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#363128 fixes
+	7157074 broken ldd link in  yelp and  project-management/planner.
+	* base-specs/planner.spec:
+	* base-specs/yelp.spec:
+	* specs/SUNWgnome-help-viewer.spec:
+
 2012-05-29  Jeff Cai  <jeff.cai@oracle.com>
 
 	Add patch to solve a build issue, some symbols in libnsl and libsocket
