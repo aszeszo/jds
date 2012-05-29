@@ -1,0 +1,57 @@
+Index: ips-dependency-generator
+===================================================================
+RCS file: /cvsroot/pkgbuild/pkgbuild/Attic/ips-dependency-generator,v
+retrieving revision 1.1.2.4
+diff -u -r1.1.2.4 ips-dependency-generator
+--- pkgbuild/ips-dependency-generator	14 Feb 2012 20:39:17 -0000	1.1.2.4
++++ pkgbuild/ips-dependency-generator	16 May 2012 10:48:31 -0000
+@@ -97,12 +97,12 @@
+ 	    test ! -f "$proto_path$line" && continue
+ 	    if [[ -x "$proto_path$line" ]]; then
+                 # dummy mode to enable pkgdepend's check for scripts
+-		echo "$line mode=0755" >> "$filelist_tmp0"
++		echo "$line mode=0755 owner=root group=bin" >> "$filelist_tmp0"
+             else
+-		echo "$line" >> "$filelist_tmp0"
++		echo "$line mode=0644 owner=root group=bin" >> "$filelist_tmp0"
+             fi
+ 	done < "$pkg_filelist"
+-        /usr/bin/awk '{print "file " $1 " path=" $1 " " $2}' "$filelist_tmp0" > "$filelist_tmp" || return 1
++        /usr/bin/awk '{print "file " $1 " path=" $1 " " $2 " " $3 " " $4 " "}' "$filelist_tmp0" > "$filelist_tmp" || return 1
+ 	ARCH=$(uname -p)
+ 	echo "set name=variant.arch value=${ARCH}" >> $filelist_tmp || return 1
+         echo "pkgdepend generate $search_path -m \"$filelist_tmp\" > \"$generate_tmp\"" | sh
+Index: pkgbuild.pl.in
+===================================================================
+RCS file: /cvsroot/pkgbuild/pkgbuild/pkgbuild.pl.in,v
+retrieving revision 1.36.2.42
+diff -u -r1.36.2.42 pkgbuild.pl.in
+--- pkgbuild/pkgbuild.pl.in	14 Feb 2012 20:39:17 -0000	1.36.2.42
++++ pkgbuild/pkgbuild.pl.in	16 May 2012 10:48:32 -0000
+@@ -2042,6 +2042,7 @@
+ 		    print "WARNING: dependency generator partially failed\n";
+ 		} else {
+ 		    print "No dependencies discovered\n";
++		    return 0;
+ 		}
+ 	    }
+ 	    `rm -f $tmpfile`;
+@@ -2186,7 +2187,8 @@
+     foreach my $ips_dep (keys %autodep_hash) {
+ 	push @dep_lines, "depend fmri=$autodep_hash{$ips_dep} type=require";
+     }
+-    push @$ref_lines, _uniq (@dep_lines)
++    push @$ref_lines, _uniq (@dep_lines);
++    return 1;
+ }
+ 
+ # Add open transaction line - with pkgsend command
+@@ -2723,7 +2742,7 @@
+     # must call make_ips_dependency after make_ips_files so that we can
+     # run the dependency generator against the file list
+     debug_print "Calling make_ips_dependency";
+-    make_ips_dependency(\@manifest_lines, $spec, $package);
++    make_ips_dependency(\@manifest_lines, $spec, $package) or return 0;
+     debug_print "Calling make_ips_actions";
+     make_ips_actions(\@manifest_lines, $package);
+     debug_print "Calling add_ips_summary";

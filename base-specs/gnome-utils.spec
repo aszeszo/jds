@@ -35,6 +35,8 @@ Patch2:       gnome-utils-02-logviewer224-manpages.diff
 Patch3:       gnome-utils-03-search-menu-entry.diff
 # date:2007-02-20 type:feature bugster:6491649,6493325,6522889 owner:lin
 Patch4:       gnome-utils-04-logview224-plugin.diff
+# date:2012-05028 type:branding owner:jefftsasi
+Patch5:       gnome-utils-05-build-gdict.diff
 # date:2006-11-15 owner:calumb bugster:6489289 bugzilla:375684 type:bug
 Patch6:       gnome-utils-06-baobab-man.diff
 # date:2009-08-02 owner:mattman type:branding
@@ -86,6 +88,7 @@ cd po-sun; make; cd ..
 %patch1 -p1
 %patch2 -p1
 %patch3 -p1
+%patch5 -p1
 %patch6 -p1
 %patch8 -p1
 %patch9 -p1
@@ -232,6 +235,8 @@ done
 %{_libdir}/pkgconfig
 
 %changelog
+* Tue May 29 2012 - jeff.cai@oracle.com
+- Add patch -05-build-gdict.diff to solve a build issue
 * Wed May 11 2011 - padraig.obriain@oracle.com
 - Update patch fix-doc for CR 7042498
 * Tue May 10 2011 - padraig.obriain@oracle.com

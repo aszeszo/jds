@@ -1,3 +1,20 @@
+2012-05-29  Jeff Cai  <jeff.cai@oracle.com>
+
+	Add patch to solve a build issue, some symbols in libnsl and libsocket
+        can not be found
+	* base-specs/gnome-utils.spec:
+	* patches/gnome-utils-05-build-gdict.diff:
+
+2012-05-29  Laszlo (Laca) Peter  <laszlo.peter@oracle.com>
+
+	* ext-sources/postrun.xml: fix for 7098212 postrun service depends
+	  on non-existent sysidtool:system service
+	* patches/pkgbuild-01-pkgdepend.diff: fix for 7165637 - make failed
+	  pkgdepend calls break the build
+	* patches/pkgbuild-02-description.diff: fix for 7154098 - use correct
+	  description when more than one package is defined in the spec
+	* specs/SUNWpkgbuild.spec: add above patches
+
 2012-05-28  Ghee Teo  <ghee.teo@oracle.com>
 
 	RTI#362976. 

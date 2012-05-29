@@ -1,0 +1,44 @@
+Index: pkgbuild.pl.in
+===================================================================
+RCS file: /cvsroot/pkgbuild/pkgbuild/pkgbuild.pl.in,v
+retrieving revision 1.36.2.42
+diff -u -r1.36.2.42 pkgbuild.pl.in
+--- pkgbuild/pkgbuild.pl.in	14 Feb 2012 20:39:17 -0000	1.36.2.42
++++ pkgbuild/pkgbuild.pl.in	16 May 2012 10:48:32 -0000
+@@ -2254,6 +2256,18 @@
+     push (@$ref_lines, "license $license_file license=\"$license\"");
+ }
+ 
++sub _concat($) {
++    my $text = shift;
++
++    return undef if not defined ($text);
++
++    $text =~ s/\n/ /g;
++    $text =~ s/ +/ /g;
++    $text =~ s/^ //;
++    $text =~ s/ $//;
++    return $text;
++}
++
+ # Add summary line
+ # src_fmri == "-src" means this is the source package
+ sub add_ips_summary($$;$) {
+@@ -2287,9 +2301,14 @@
+     }
+ 
+     if (not defined ($bighash{'pkg.description'})) {
+-	my $desc = $package->eval ("%DESC");
+-	if ($desc ne "%DESC") {
+-	    $bighash{'pkg.description'} = "\"$desc\"";
++	my $desc = $package->get_block('description');
++	if (defined($desc)) {
++	    $bighash{'pkg.description'} = "\"" . _concat($desc) . "\"";
++	} else {
++	    $desc = $package->eval ("%DESC");
++	    if ($desc ne "%DESC") {
++		$bighash{'pkg.description'} = "\"$desc\"";
++	    }
+ 	}
+     }
+     if (not defined ($bighash{'pkg.summary'})) {

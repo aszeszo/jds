@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE service_bundle SYSTEM "/usr/share/lib/xml/dtd/service_bundle.dtd.1">
 <!--
- Copyright 2005 Sun Microsystems, Inc.  All rights reserved.
- Use is subject to license terms.
+ Copyright (c) 2004, 2012, Oracle and/or its affiliates. All rights reserved.
 
  CDDL HEADER START
 
@@ -17,9 +16,6 @@
  and limitations under the License.
 
  CDDL HEADER END
-
-	Copyright 2004 Sun Microsystems, Inc.  All rights reserved.
-	Use is subject to license terms.
 
 	postrun.xml $rev$
 
@@ -42,21 +38,7 @@
 		type='service'
 		grouping='require_all'
 		restart_on='none'>
-		<service_fmri value='svc:/system/filesystem/local' />
-	</dependency>
-
-	<!--
-	 If sysidtool alters the time zone, it will reboot(1M) the server
-	 or zone.  This avoids doing package post-processing when there
-	 is a high likelihood of an abrubt reboot.
-	-->
-	<dependency
-		name='sysidtool'
-		grouping='optional_all'
-		restart_on='none'
-		type='service'>
-		<service_fmri
-			value='svc:/system/sysidtool:system' />
+		<service_fmri value='svc:/system/filesystem/minimal' />
 	</dependency>
 
 	<exec_method
