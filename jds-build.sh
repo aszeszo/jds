@@ -10,7 +10,7 @@ PUBLISHER=jds
 PRIORITY_SPECS="SUNWgtk-doc.spec SUNWfirefox.spec SUNWthunderbird.spec SUNWsongbird.spec SUNWmysql-python.spec"
 SKIP_SPECS="SUNWevolution-bdb-devel.spec SUNWos-welcome.spec"
 SKIP_SPECS="$SKIP_SPECS SUNWperl-xml-parser.spec SUNWfsexam.spec SUNWPython.spec"
-SKIP_SPECS="$SKIP_SPECS SFEswig.spec"
+SKIP_SPECS="$SKIP_SPECS SFEswig.spec SUNWjdsrm.spec SUNWjdsver.spec"
 
 # converted to userland
 SKIP_SPECS="$SKIP_SPECS SUNWpkgbuild.spec SUNWperl-authen-pam.spec SUNWavant.spec SUNWbrltty.spec"
