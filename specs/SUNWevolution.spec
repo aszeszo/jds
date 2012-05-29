@@ -79,7 +79,7 @@ BuildRequires:       library/desktop/libgweather
 BuildRequires:       library/desktop/evolution-data-server
 
 %if %with_hal
-BuildRequires:       system/hal
+#BuildRequires:       system/hal
 %endif
 %{?with_pilot_link:BuildRequires:     communication/pda/pilot-link}
 %{?with_pilot_link:BuildRequires:     communication/pda/pilot-link}

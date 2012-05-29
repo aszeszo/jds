@@ -36,7 +36,7 @@ Requires: library/gnome/gnome-libs
 Requires: system/network/avahi
 Requires: library/gnome/gnome-keyring
 BuildRequires: service/network/samba
-BuildRequires: system/hal
+#BuildRequires: system/hal
 BuildRequires: library/glib2
 BuildRequires: system/library/dbus
 BuildRequires: library/libsoup

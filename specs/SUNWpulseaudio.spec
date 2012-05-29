@@ -41,12 +41,12 @@ BuildRequires: library/desktop/gtk2
 
 # Optional dependencies
 BuildRequires: system/library/libdbus-glib
-BuildRequires: library/fftw-3
+#BuildRequires: library/fftw-3
 
 BuildRequires: codec/speex
 BuildRequires: gnome/config/gconf
 BuildRequires: library/gc
-BuildRequires: library/json-c
+#BuildRequires: library/json-c
 BuildRequires: library/libtool/libltdl
 BuildRequires: library/libsndfile
 BuildRequires: library/security/openssl

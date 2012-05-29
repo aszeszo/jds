@@ -51,7 +51,7 @@ Requires: library/gnome/gnome-vfs
 Requires: system/library/dbus
 Requires: library/desktop/evolution-data-server
 Requires: gnome/config/gconf
-Requires: system/hal
+#Requires: system/hal
 Requires: image/library/librsvg
 Requires: service/gnome/desktop-cache
 Requires: library/desktop/cairo
@@ -61,7 +61,7 @@ BuildRequires: system/library/dbus
 BuildRequires: library/desktop/evolution-data-server
 BuildRequires: library/audio/gstreamer
 BuildRequires: library/gnome/gnome-vfs
-BuildRequires: system/hal
+#BuildRequires: system/hal
 BuildRequires: image/library/librsvg
 BuildRequires: library/desktop/cairo
 BuildRequires: developer/gnome/gnome-doc-utils

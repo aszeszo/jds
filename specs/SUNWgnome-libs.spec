@@ -48,11 +48,11 @@ Requires: library/gnome/gnome-component
 Requires: gnome/config/gconf
 Requires: library/libxslt
 Requires: service/gnome/desktop-cache
-Requires: system/library/c++-runtime
+Requires: system/library/c++/sunpro
 Requires: library/libtasn1
 Requires: shell/bash
 Requires: library/gnome/gnome-keyring
-Requires: system/hal
+#Requires: system/hal
 BuildRequires: library/desktop/libgnomecanvas
 BuildRequires: gnome/config/gconf
 BuildRequires: library/gnome/gnome-component
@@ -61,9 +61,9 @@ BuildRequires: gnome/gnome-audio
 BuildRequires: image/library/libexif
 BuildRequires: system/library/security/libgcrypt
 BuildRequires: library/popt
-BuildRequires: system/library/c++-runtime
+BuildRequires: system/library/c++/sunpro
 BuildRequires: library/libtasn1
-BuildRequires: system/hal
+#BuildRequires: system/hal
 
 %package root
 Summary:                 %{summary} - / filesystem
