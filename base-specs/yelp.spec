@@ -1,7 +1,7 @@
 #
 # spec file for package yelp 
 #
-# Copyright (c) 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -176,6 +176,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_sysconfdir}/gconf/schemas/yelp.schemas
 
 %changelog
+* Wed May 16 2012 - ghee.teo@oracle.com
+- updated so to rebuild this module to fix CR#7157074.
 * Wed Jun  8 2011 - padraig.obriain@oracle.com
 - Add patch 07-terminal-search-crash.diff to fix CR 7049889
 * Thu Apr 28 2011 - ginn.chen@oracle.com
