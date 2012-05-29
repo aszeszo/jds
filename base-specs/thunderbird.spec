@@ -21,7 +21,8 @@ License:     MPL
 Group:       Applications/Internet
 Distribution:Java Desktop System
 Vendor:      Mozilla Foundation
-Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
+#Source:      http://ftp.mozilla.org/pub/mozilla.org/%{name}/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
+Source:      http://pv-mirror01.mozilla.org/pub/mozilla.org/thunderbird/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
 Source1:     thunderbird-icon.png
 Source2:     thunderbird.desktop
 
@@ -423,7 +424,7 @@ ac_add_options --enable-debug-symbols=no
 # ac_add_options --with-system-nss
 %endif
 ac_add_options --enable-startup-notification
-ac_add_options --with-rpath="\\\$\$ORIGIN"
+ac_add_options --with-rpath='\\\$ORIGIN'
 EOF
 
 #
