@@ -1,6 +1,6 @@
 2012-05-29  Ghee Teo  <ghee.teo@oracle.com>
 
-	RTIÂ#363128 fixes
+	RTI#363128 fixes
 	7157074 broken ldd link in  yelp and  project-management/planner.
 	* base-specs/planner.spec:
 	* base-specs/yelp.spec:
