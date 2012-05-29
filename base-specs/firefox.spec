@@ -21,7 +21,8 @@ License:     MPL
 Group:       Applications/Internet
 Distribution:Java Desktop System
 Vendor:      Mozilla Foundation
-Source:      http://releases.mozilla.org/pub/mozilla.org/%{name}/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
+#Source:      http://releases.mozilla.org/pub/mozilla.org/%{name}/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
+Source:      http://pv-mirror01.mozilla.org/pub/mozilla.org/firefox/releases/%{tarball_version}/source/%{name}-%{tarball_version}.source.tar.bz2
 Source1:     firefox-icon.png
 Source2:     firefox.desktop
 #%if %option_without_moz_nss_nspr
