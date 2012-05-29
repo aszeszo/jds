@@ -19,7 +19,7 @@ Distribution: Java Desktop System
 Vendor:       libpng.org
 Summary:      Portable Network Graphics library
 #Source:       ftp://ftp.simplesystems.org/pub/png/src/libpng-%{version}.tar.bz2
-Source:       http://pkgs.fedoraproject.org/lookaside/pkgs/libpng10/libpng-%{version}.tar.bz2/965ddd64a2c1686d9c1a654c941acca3/libpng-%{version}.tar.bz2
+Source:       http://downloads.sourceforge.net/libpng/libpng10/%{version}/libpng-%{version}.tar.bz2
 URL:          http://www.libpng.org/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
