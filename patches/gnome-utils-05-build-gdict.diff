@@ -1,0 +1,11 @@
+--- gnome-utils-2.30.0/gnome-dictionary/libgdict/Makefile.am.orig	Mon May 28 11:48:24 2012
++++ gnome-utils-2.30.0/gnome-dictionary/libgdict/Makefile.am	Mon May 28 11:48:44 2012
+@@ -59,7 +59,7 @@
+ # GNOME Dictionary shared library
+ libgdict_1_0_la_SOURCES  = $(sources_h) $(sources_h_priv) $(sources_c)
+ libgdict_1_0_la_CPPFLAGS = $(LIBGDICT_CFLAGS) $(GDICT_DEBUG_CFLAGS) $(MAINTAINER_CFLAGS)
+-libgdict_1_0_la_LIBADD   = $(LIBGDICT_LIBS)
++libgdict_1_0_la_LIBADD   = $(LIBGDICT_LIBS) -lnsl -lsocket
+ libgdict_1_0_la_LDFLAGS  = \
+ 	-version-info $(LIBGDICT_LT_VERSION) \
+ 	-export-dynamic \
