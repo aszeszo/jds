@@ -14,8 +14,8 @@
 
 Name:                SUNWmm-common
 # Since this is a private package and due to pkgbuild limitation of ++ in regular expression
-#IPS_package_name:    library/desktop/c++/mm-common
-IPS_package_name:    SUNWmm-common
+IPS_package_name:    library/desktop/c++/mm-common
+#IPS_package_name:    SUNWmm-common
 License:             GPLv2
 Meta(info.classification): %{classification_prefix}:Desktop (GNOME)/Libraries
 Summary:             GNOME C++ bindings effort http://www.gtkmm.org support tools

@@ -18,6 +18,7 @@
 %define src_name compiz-bcop
 
 Name:                    SUNWcompiz-bcop
+IPS_package_name:        desktop/compiz/bcop
 Summary:                 beryl compiz XML option parser
 License:                 GPL v2
 Version:                 0.8.4
@@ -26,10 +27,10 @@ Patch1:			 compiz-bcop-01-solaris-port.diff
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
-Requires:		 SUNWgnugetopt
+Requires:		 developer/gnu-getopt
 Requires:		 SUNWlxsl
 Requires:                SUNWbash
-BuildRequires:		 SUNWgnugetopt
+BuildRequires:		 developer/gnu-getopt
 BuildRequires:           SUNWgnome-common-devel
 BuildRequires:		 library/libxslt
 %include default-depend.inc

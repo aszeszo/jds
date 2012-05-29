@@ -3060,11 +3060,9 @@ IPS_component_version: 0.5.11
 IPS_build_version: 5.11
 IPS_vendor_version: 0.175.0.0.0.0.0
 IPS_legacy: false
-Meta(pkg.renamed): true
+Meta(pkg.obsolete): true
 Meta(org.opensolaris.consolidation): desktop
 Meta(variant.opensolaris.zone): global, nonglobal
-Renamed_To: release/opensolaris-welcome >= 0.5.11-0.133
-Renamed_To: consolidation/desktop/desktop-incorporation = *
 PkgBuild_Make_Empty_Package: true
 
 %package -n SUNWgnome-hex-editor
@@ -5122,11 +5120,9 @@ IPS_component_version: 0.5.11
 IPS_build_version: 5.11
 IPS_vendor_version: 0.175.0.0.0.0.0
 IPS_legacy: false
-Meta(pkg.renamed): true
+Meta(pkg.obsolete): true
 Meta(org.opensolaris.consolidation): desktop
 Meta(variant.opensolaris.zone): global, nonglobal
-Renamed_To: storage/fsexam >= 0.5.11-0.133
-Renamed_To: consolidation/desktop/desktop-incorporation = *
 PkgBuild_Make_Empty_Package: true
 
 %package -n SUNWgnome-img-editor-help-cs
@@ -6589,10 +6585,9 @@ IPS_component_version: 0.5.11
 IPS_build_version: 5.11
 IPS_vendor_version: 0.175.0.0.0.0.0
 IPS_legacy: false
-Meta(pkg.renamed): true
+Meta(pkg.obsolete): true
 Meta(org.opensolaris.consolidation): desktop
 Meta(variant.opensolaris.zone): global, nonglobal
-Renamed_To: release/os-welcome >= 0.5.11-0.148
 PkgBuild_Make_Empty_Package: true
 
 %package -n zfs-auto-snapshot
@@ -7104,6 +7099,48 @@ IPS_legacy: false
 Meta(pkg.obsolete): true
 Meta(org.opensolaris.consolidation): desktop
 Meta(variant.opensolaris.zone): global, nonglobal
+PkgBuild_Make_Empty_Package: true
+
+%package -n SUNWcompiz-bcop
+IPS_Package_Name: SUNWcompiz-bcop
+SUNW_Pkg: SUNWobsolete-gnome
+IPS_component_version: 0.8.4
+IPS_build_version: 5.11
+IPS_vendor_version: 0.175.0.0.0.0.0
+IPS_legacy: false
+Meta(pkg.renamed): true
+Meta(org.opensolaris.consolidation): desktop
+Meta(variant.opensolaris.zone): global, nonglobal
+Renamed_To: desktop/compiz/bcop >= 0.5.11-0.175
+Renamed_To: consolidation/desktop/desktop-incorporation = *
+PkgBuild_Make_Empty_Package: true
+
+%package -n SUNWgnugetopt
+IPS_Package_Name: SUNWgnugetopt
+SUNW_Pkg: SUNWobsolete-gnome
+IPS_component_version: 1.1.4
+IPS_build_version: 5.11
+IPS_vendor_version: 0.175.0.0.0.0.0
+IPS_legacy: false
+Meta(pkg.renamed): true
+Meta(org.opensolaris.consolidation): desktop
+Meta(variant.opensolaris.zone): global, nonglobal
+Renamed_To: developer/gnu-getopt >= 0.5.11-0.175
+Renamed_To: consolidation/desktop/desktop-incorporation = *
+PkgBuild_Make_Empty_Package: true
+
+%package -n SUNWmm-common
+IPS_Package_Name: SUNWmm-common
+SUNW_Pkg: SUNWobsolete-gnome
+IPS_component_version: 0.9.2
+IPS_build_version: 5.11
+IPS_vendor_version: 0.175.0.0.0.0.0
+IPS_legacy: false
+Meta(pkg.renamed): true
+Meta(org.opensolaris.consolidation): desktop
+Meta(variant.opensolaris.zone): global, nonglobal
+Renamed_To: library/desktop/c++/mm-common >= 0.5.11-0.175
+Renamed_To: consolidation/desktop/desktop-incorporation = *
 PkgBuild_Make_Empty_Package: true
 
 %changelog

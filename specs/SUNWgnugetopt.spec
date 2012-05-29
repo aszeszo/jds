@@ -13,6 +13,7 @@
 %include usr-gnu.inc
 
 Name:                    SUNWgnugetopt
+IPS_package_name:        developer/gnu-getopt
 Summary:                 getopt - a GNU getopt(3) compatible getopt utility
 License:                 GPL v2
 Version:                 1.1.4
