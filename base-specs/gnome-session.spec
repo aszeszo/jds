@@ -125,7 +125,7 @@ gtar fxvj %{SOURCE5}
 %patch21 -p1
 %patch22 -p1
 %patch23 -p1
-%patch24 -p1
+#%patch24 -p1
 %patch25 -p1
 
 %build
