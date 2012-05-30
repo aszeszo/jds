@@ -83,13 +83,7 @@ gzcat %SOURCE0 | tar xf -
 export PYTHON="/usr/bin/python%{default_python_version}"
 
 %ifarch amd64 sparcv9
-if [ "x`basename $CC`" != xgcc ]
-then
-  FLAG64="-xarch=generic64"
-else
-  FLAG64="-m64"
-fi
-
+FLAG64="-m64"
 export LDFLAGS="$FLAG64"
 export CFLAGS="%optflags64"
 export RPM_OPT_FLAGS="$CFLAGS"

@@ -1,7 +1,8 @@
 #
 # spec file for package libgsf
 #
-# Copyright 2008 Sun Microsystems, Inc.
+# Copyright (c) 2008, 2012, Oracle and/or its affiliates. All rights reserved.
+#
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -24,6 +25,8 @@ Source1:                 l10n-configure.sh
 %endif
 # date:2004-04-12 owner:hawklu type:feature
 Patch0:			libgsf-01-uninstalled-pc.diff
+# date:2012-05-28 owner:gheet type:bug bugster:7172260
+Patch1:			libgsf-02-python-lib.diff
 URL:			http://ftp.gnome.org/pub/gnome/sources/libgsf/
 BuildRoot:		%{_tmppath}/%{name}-%{version}-build
 Docdir:			%{_defaultdocdir}/doc
@@ -91,6 +94,7 @@ libgsf development headers
 %prep
 %setup -q
 %patch0 -p1
+%patch1 -p1
 
 #####################################
 ##      Package Build Section      ##
@@ -120,6 +124,7 @@ aclocal $ACLOCAL_FLAGS  -I ./m4
 autoheader
 automake -a -c -f
 autoconf
+cp /usr/share/gettext/config.rpath .
 
 ./configure --prefix=%{_prefix}            \
       --bindir=%{_bindir}                  \
@@ -127,7 +132,7 @@ autoconf
       --includedir=%{_includedir}          \
       --sysconfdir=%{_sysconfdir}          \
       --mandir=%{_mandir}                  \
-      --with-gnome                         \
+      --with-python                         \
       --with-bz2                           \
       --with-gnome-vfs                     \
       --with-gio                           
@@ -188,6 +193,8 @@ gconftool-2 --makefile-uninstall-rule %{_sysconfdir}/gconf/schemas/gsf-office-th
 %{_datadir}/gtk-doc/html/libgsf/*
 
 %changelog
+* Mon May 28 2012 - ghee.teo@oracle.com
+- added patch libgsf-02-python-lib.diff
 * Wed Oct 27 2010 - brian.cameron@oracle.com
 - Bump to 1.14.19.
 * Mon Apr 12 2010 - christian.kelly@oracle.com

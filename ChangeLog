@@ -1,3 +1,11 @@
+2012-05-30  Ghee Teo  <ghee.teo@oracle.com>
+
+	RTI#363433 fixes
+	7172260 SUNWlibgsf.spec does not build with new tool chain in s11 u1
+	* base-specs/libgsf.spec:
+	* patches/libgsf-02-python-lib.diff:
+	* specs/SUNWlibgsf.spec:
+
 2012-05-29  Ghee Teo  <ghee.teo@oracle.com>
 
 	RTI#363128 fixes
