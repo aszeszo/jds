@@ -3,7 +3,7 @@
 #
 # includes module(s): bug-buddy
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright 2009, 2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -35,25 +35,23 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWgnome-vfs
-Requires: SUNWgnome-component
-Requires: SUNWgnome-libs
-Requires: SUNWgnome-panel
-Requires: SUNWgnome-config
-Requires: SUNWlxml
-Requires: SUNWdesktop-cache
-Requires: SUNWlibgtop
-Requires: %{name}-root
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWgnome-vfs-devel
-BuildRequires: SUNWgnome-component-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-panel-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWlxml
-BuildRequires: SUNWlibgtop-devel
-#BuildRequires: SUNWgcc
+Requires:       library/desktop/gtk2
+Requires:       library/gnome/gnome-vfs
+Requires:       library/gnome/gnome-component
+Requires:       library/gnome/gnome-libs
+Requires:       gnome/gnome-panel
+Requires:       gnome/config/gconf
+Requires:       library/libxml2
+Requires:       service/gnome/desktop-cache
+Requires:       library/libgtop
+BuildRequires:       library/desktop/gtk2
+BuildRequires:       library/gnome/gnome-vfs
+BuildRequires:       library/gnome/gnome-component
+BuildRequires:       library/gnome/gnome-libs
+BuildRequires:       gnome/gnome-panel
+BuildRequires:       gnome/config/gconf
+BuildRequires:       library/libxml2
+BuildRequires: 	     library/libgtop
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -63,7 +61,6 @@ SUNW_BaseDir:            /
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version

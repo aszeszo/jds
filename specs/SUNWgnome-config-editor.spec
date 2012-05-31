@@ -3,7 +3,7 @@
 #
 # includes module(s): gconf-editor
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright 2009, 2012 Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -26,20 +26,19 @@ BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 
 %include default-depend.inc
 %include gnome-incorporation.inc
-Requires: SUNWgtk2
-Requires: SUNWgnome-config-editor-root
-Requires: SUNWgnome-config
-Requires: SUNWgnome-libs
-Requires: SUNWbzip
-Requires: SUNWzlib
-Requires: SUNWlxml
-Requires: SUNWlibpopt
-BuildRequires: SUNWgtk2-devel
-BuildRequires: SUNWlibpopt-devel
-BuildRequires: SUNWgnome-libs-devel
-BuildRequires: SUNWgnome-config-devel
-BuildRequires: SUNWgnome-doc-utils
-Requires: SUNWdesktop-cache
+Requires:       library/desktop/gtk2
+Requires:       gnome/config/gconf
+Requires:       library/gnome/gnome-libs
+Requires: 	compress/bzip2
+Requires:       library/zlib
+Requires:       library/libxml2
+Requires:       library/popt
+BuildRequires:  library/desktop/gtk2
+BuildRequires:  library/popt
+BuildRequires:  library/gnome/gnome-libs
+BuildRequires:  gnome/config/gconf
+BuildRequires:  developer/gnome/gnome-doc-utils
+Requires:       service/gnome/desktop-cache
 
 %package root
 Summary:                 %{summary} - / filesystem
@@ -49,7 +48,6 @@ SUNW_BaseDir:            /
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version
