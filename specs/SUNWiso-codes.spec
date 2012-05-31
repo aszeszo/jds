@@ -66,6 +66,8 @@ rm -rf $RPM_BUILD_ROOT
 %attr (-, root, other) %{_datadir}/locale
 
 %changelog
+* Fri May 25 2012 - peng.pe.wang@oracle.com
+- Fix bug:7167809, and rebranding
 * Mon Feb  5 2007 - laca@sun.com
 - add Python dependency
 * Sun Jan 21 2007 - laca@sun.com
