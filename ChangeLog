@@ -1,3 +1,12 @@
+2012-05-31  Brian Cameron  <brian.cameron@oracle.com>
+
+	* base-specs/shared-mime-info.spec: Bump to 1.0.
+	* base-specs/nautilus.spec, base-specs/pulseaudio.spec,
+	  base-specs/gnome-settings-daemon.spec, specs/SUNWdconf.spec:
+	  Add patch comments.
+	* base-specs/gnome-panel.spec: Add --disable-telepathy-glib so
+	  it does not build with this module we do not deliver.
+
 2012-05-23  Brian Cameron  <brian.cameron@oracle.com>
 
 	* scripts/git-setup, scripts/git-format-patch: Add scripts to make it

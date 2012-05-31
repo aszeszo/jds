@@ -50,7 +50,7 @@ Patch10:     gnome-settings-daemon-10-gst-mediakeys.diff
 Patch11:     gnome-settings-daemon-11-animations-uses-gconf.diff
 # date:2011-06-07 owner:yippi type:bug
 Patch12:     gnome-settings-daemon-12-dependencies.diff
-# date:2011-06-07 owner:yippi type:bug
+# date:2011-06-07 owner:yippi type:bug bugzilla:676620
 Patch13:     gnome-settings-daemon-13-uninstalled-pc.diff
 # date:2011-08-24 owner:yippi type:feature
 Patch14:     gnome-settings-daemon-14-mapfile.diff

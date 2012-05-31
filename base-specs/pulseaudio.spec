@@ -35,11 +35,11 @@ Patch5:                  pulseaudio-05-shm.diff
 Patch6:                  pulseaudio-06-configure.diff
 # date:2011-11-30 owner:yippi type:bug
 Patch7:                  pulseaudio-07-sada.diff
-# date:2011-12-13 owner:yippi type:bug
+# date:2011-12-13 owner:yippi type:bug bugid:50266
 Patch8:                  pulseaudio-08-oss4.diff
 # date:2011-10-06 owner:yippi type:feature
 Patch9:                  pulseaudio-09-amd64.diff
-# date:2012-05-14 owner:yippi type:bug
+# date:2012-05-14 owner:yippi type:bug bugid:50268
 Patch10:                 pulseaudio-10-endian.diff
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 

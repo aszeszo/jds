@@ -18,6 +18,7 @@ Summary:                 DConf
 Version:                 0.12.1
 License:                 LGPL v2.1
 Source:			 http://ftp.gnome.org/pub/GNOME/sources/dconf/0.12/dconf-%{version}.tar.xz
+# date:2012-05-22 owner:yippi type:bug bugzilla:676619
 Patch1:                  dconf-01-compile.diff
 SUNW_BaseDir:            %{_basedir}
 SUNW_Copyright:          %{name}.copyright

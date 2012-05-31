@@ -218,6 +218,7 @@ CFLAGS="$RPM_OPT_FLAGS" \
     --mandir=%{_mandir}	\
     --sysconfdir=%{_sysconfdir} \
     --disable-scrollkeeper \
+    --disable-telepathy-glib \
     %{gtk_doc_option}
 
 make
@@ -285,6 +286,9 @@ gconftool-2 --direct --config-source=$GCONF_CONFIG_SOURCE --load %{_sysconfdir}/
 %{_mandir}/man3/*
 
 %changelog
+* Thu May 31 2012 - brian.cameron@oracle.com
+- Add --disable-telepathy-glib so it does not build with this module we do not
+  deliver.
 * Thu May 17 2012 - brian.cameron@oracle.com
 - Bump to 3.4.2.1.
 * Wed May 09 2012 - brian.cameron@oracle.com

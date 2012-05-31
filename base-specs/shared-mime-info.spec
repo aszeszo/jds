@@ -1,7 +1,7 @@
 #
 # spec file for package shared-mime-info
 #
-# Copyright (c) 2010 Sun Microsystems, Inc.
+# Copyright (c) 2004, 2011, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -14,13 +14,13 @@
 Name:         shared-mime-info
 License:      GPLv2
 Group:        Hardware/Other
-Version:      0.80
+Version:      1.0
 Release:      1
 Distribution: Java Desktop System
 Vendor:       freedesktop.org
 Summary:      Core Common Mime Type Database
 #Source:       http://www.freedesktop.org/software/%{name}/%{name}-%{version}.tar.bz2
-Source:       http://freedesktop.org/~hadess/%{name}-%{version}.tar.bz2
+Source:       http://freedesktop.org/~hadess/%{name}-%{version}.tar.xz
 Source1:      defaults.list
 %if %build_l10n
 Source2:                 l10n-configure.sh
@@ -57,8 +57,8 @@ intltoolize --force --copy --automake
 bash -x %SOURCE2 --enable-copyright
 %endif
 
-aclocal $ACLOCAL_FLAGS
-automake -a -c -f
+aclocal-1.11 $ACLOCAL_FLAGS
+automake-1.11 -a -c -f
 autoconf
 CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=%{_prefix} --mandir=%{_mandir}
 make -j $CPUS
@@ -88,6 +88,8 @@ update-mime-database %{_datadir}/mime
 %{_datadir}/application-registry
 
 %changelog
+* Thu May 31 2012 - brian.cameron@oracle.com
+- Bump to 1.0.
 * Thu Oct 21 2010 - brian.cameron@oracle.com
 - Bump to 0.80.
 * Tue Apr 20 2010 - brian.cameron@sun.com

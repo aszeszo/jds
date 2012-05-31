@@ -61,7 +61,7 @@ Patch14:       nautilus-14-zfs-snapshot.diff
 Patch15:       nautilus-15-rename-places.diff
 #owner: yippi  date:2011-07-07 type:branding
 Patch16:       nautilus-16-libxml.diff
-#owner: yippi  date:2012-05-09 type:bug
+#owner: yippi  date:2012-05-09 type:bug bugzilla:676622
 Patch17:       nautilus-17-void-return.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
