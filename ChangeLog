@@ -1,3 +1,10 @@
+2012-05-31  Padraig O'Briain  <padraig.obriain@oracle.com>
+
+	RTI#363395
+	CR 7171766 Add license file for libbonobo and libbonoboui
+	* copyright/SUNWgnome-libs.copyright:
+	* copyright/SUNWgnome-component.copyright:
+
 2012-05-31  Dave Lin <dave.lin@oracle.com>
 
 	RTI#363528 fixed
