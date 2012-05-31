@@ -3,7 +3,7 @@
 #
 # includes module(s): GNOME Devel Docs
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -25,12 +25,12 @@ License:            %{gdd.license}
 BuildRoot:          %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWlxml-python26
-BuildRequires: SUNWlxsl
-BuildRequires: SUNWgnome-libs
-BuildRequires: SUNWgnome-doc-utils
-Requires: SUNWgnome-help-viewer
-Requires: SUNWgnome-libs
+BuildRequires: library/python-2/libxml2-26
+BuildRequires: library/libxslt
+BuildRequires: library/gnome/gnome-libs
+BuildRequires: developer/gnome/gnome-doc-utils
+Requires: gnome/help-viewer/yelp
+Requires: library/gnome/gnome-libs
 
 %package l10n
 Summary:                 %{summary} - l10n files

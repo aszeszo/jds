@@ -3,7 +3,7 @@
 #
 # includes module(s): gnome-user-docs
 #
-# Copyright 2009 Sun Microsystems, Inc.
+# Copyright (c) 2009, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -24,9 +24,9 @@ License:                 %{gud.license}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWlxml-python26
-BuildRequires: SUNWgnome-doc-utils
-Requires: SUNWgnome-help-viewer
+BuildRequires: library/python-2/libxml2-26
+BuildRequires: developer/gnome/gnome-doc-utils
+Requires: gnome/help-viewer/yelp
 
 %package l10n
 Summary:                 %{summary} - l10n files
@@ -77,6 +77,8 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
+* Thu May 31 2012 - dave.lin@oracle.com
+- Changed the dependency's name to IPS name.
 * Tue Jun 08 2010 - Michal.Pryc@Oracle.Com
 - Updated BuildRequires to fit SourceJuicer.
 * Fri Apr  3 2009 - laca@sun.com
