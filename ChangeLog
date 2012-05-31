@@ -1,3 +1,13 @@
+2012-05-31  Stephen Browne <stephen.browne@oracle.com>
+
+	RTI#363479
+	CR#7172423 TPNO updates needed
+	* copyright/SUNWgnome-config-editor.copyright:
+	* copyright/SUNWgnome-crash-report.copyright:
+	* copyright/SUNWgnome-desktop-prefs.copyright:
+	* specs/SUNWgnome-config-editor.spec:
+	* specs/SUNWgnome-crash-report.spec:
+
 2012-05-31  Padraig O'Briain  <padraig.obriain@oracle.com>
 
 	RTI#363395
