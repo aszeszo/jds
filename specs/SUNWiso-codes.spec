@@ -3,7 +3,7 @@
 #
 # includes module(s): iso-codes
 #
-# Copyright (c) 2005 Sun Microsystems, Inc.
+# Copyright (c) 2005, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -24,18 +24,16 @@ License:                 %{iso_codes.license}
 BuildRoot:               %{_tmppath}/%{name}-%{version}-build
 %include default-depend.inc
 %include desktop-incorporation.inc
-BuildRequires: SUNWPython26
+BuildRequires: runtime/python-26
 
 %package devel
 Summary:                 %{summary} - development files
 SUNW_BaseDir:            %{_basedir}
 %include default-depend.inc
 %include desktop-incorporation.inc
-Requires: SUNWiso-codes
 
 %package l10n
 Summary:                 %{summary} - l10n files
-Requires:                %{name}
 
 %prep
 rm -rf %name-%version

@@ -1,7 +1,7 @@
 #
 # spec file for package iso-codes
 #
-# Copyright (c) 2010 Sun Microsystems, Inc.
+# Copyright (c) 2010, 2012, Oracle and/or its affiliates. All rights reserved.
 # This file and all modifications and additions to the pristine
 # package are under the same license as the package itself.
 #
@@ -20,6 +20,8 @@ Distribution: Java Desktop System
 Vendor:       Other
 Summary:      ISO code lists and translations
 Source:       ftp://pkg-isocodes.alioth.debian.org/pub/pkg-isocodes/iso-codes-%{version}.tar.bz2
+# date:2012-05-25 type:bug owner:pengwang bugster:7167809
+Patch1:       iso-codes-01-taiwan.diff
 URL:          http://alioth.debian.org/projects/pkg-isocodes/
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/%{name}
@@ -33,6 +35,7 @@ and all their translations in gettext .po form.
 
 %prep
 %setup -q -n iso-codes-%{version}
+%patch1 -p1
 
 %build
 
@@ -53,6 +56,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/*
 
 %changelog
+* Fri May 25 2012 - peng.pe.wang@oracle.com
+- Fix bug:7167809
 * Wed Oct 20 2010 - brian.cameron@oracle.com
 - Bump to 3.21.
 * Thu Jul 15 2010 - brian.cameron@oracle.com
