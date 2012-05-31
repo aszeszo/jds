@@ -1,3 +1,9 @@
+2012-05-31  Ginn Chen  <ginn.chen@oracle.com>
+	RTI#363524
+	7164818 firefox crashes when closing it after run ibus-daemon
+	* base-specs/gtk2.spec:
+	* patches/gtk+-20-xim-info-display-closed-crash.diff:
+
 2012-05-30  Ghee Teo  <ghee.teo@oracle.com>
 
 	RTI#363433 fixes

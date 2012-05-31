@@ -60,6 +60,8 @@ Patch17:       gtk+-17-gailwindow-name.diff
 Patch18:       gtk+-18-remove-papi.diff
 # date:2012-03-27 owner:padraig type:bug bugster:7149817
 Patch19:       gtk+-19-unregister-callback.diff
+# date:2012-05-30 owner:ginnchen type:bug bugster:7164818
+Patch20:       gtk+-20-xim-info-display-closed-crash.diff
 
 BuildRoot:    %{_tmppath}/%{name}-%{version}-build
 Docdir:       %{_defaultdocdir}/doc
@@ -147,6 +149,7 @@ cd po-sun; gmake; cd ..
 %patch17 -p1
 %patch18 -p1
 %patch19 -p1
+%patch20 -p1
 
 %build
 %ifos linux
